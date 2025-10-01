@@ -132,7 +132,7 @@ export default function Home() {
     {
       id: 6,
       title: "Novillada en Madrid: Triunfo de los jóvenes valores",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.2&fp-y=0.6",
+      image: "/images/novilladaenmadrid.jpg",
       category: "Novilladas",
       date: "13 Enero 2025",
       excerpt: "La cantera taurina española demuestra su calidad en una tarde llena de emoción y arte.",
@@ -143,7 +143,7 @@ export default function Home() {
     {
       id: 7,
       title: "Feria de Sevilla 2025: Confirmados los primeros carteles",
-      image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.8&fp-y=0.2",
+      image: "/images/feriadesevilla.jpg",
       category: "Ferias",
       date: "12 Enero 2025",
       excerpt: "Los aficionados ya pueden conocer los primeros nombres que pisarán el albero de la Maestranza.",
@@ -154,7 +154,7 @@ export default function Home() {
     {
       id: 8,
       title: "Ganadería de Miura: Tradición y bravura en 2025",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.4&fp-y=0.7",
+      image: "/images/ganaderiademiura.jpeg",
       category: "Ganaderías",
       date: "11 Enero 2025",
       excerpt: "Un recorrido por una de las ganaderías más prestigiosas del panorama taurino español.",
@@ -165,7 +165,7 @@ export default function Home() {
     {
       id: 9,
       title: "Escuela Taurina de Madrid: Formando a las futuras figuras",
-      image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.6&fp-y=0.8",
+      image: "/images/escuelataurinademadrid.jpg",
       category: "Formación",
       date: "10 Enero 2025",
       excerpt: "La cantera madrileña trabaja intensamente para preparar a los toreros del futuro.",
@@ -176,7 +176,7 @@ export default function Home() {
     {
       id: 10,
       title: "Temporada americana: El toreo español conquista México",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3",
+      image: "/images/temporadaamericana.jpg",
       category: "Internacional",
       date: "9 Enero 2025",
       excerpt: "Las principales figuras españolas confirman su participación en la temporada mexicana.",
@@ -187,7 +187,7 @@ export default function Home() {
     {
       id: 11,
       title: "Revolución en Las Ventas: Nuevas medidas de seguridad",
-      image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=0.4",
+      image: "/images/revolucionenlasventas.jpg",
       category: "Actualidad",
       date: "8 Enero 2025",
       excerpt: "La plaza madrileña implementa innovadores sistemas para garantizar la seguridad de toreros y público.",
@@ -198,7 +198,7 @@ export default function Home() {
     {
       id: 12,
       title: "El arte del capote: Masterclass con figuras consagradas",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.7&fp-y=0.5",
+      image: "/images/elartedelcapote.jpeg",
       category: "Formación",
       date: "7 Enero 2025",
       excerpt: "Maestros del toreo comparten sus secretos en una jornada única de enseñanza.",
@@ -625,7 +625,7 @@ export default function Home() {
                 author: "Carlos Mendoza",
                 excerpt: "Un análisis profundo sobre los retos y oportunidades que enfrenta el mundo del toro en la actualidad.",
                 date: "14 Enero 2025",
-                image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=0.5",
+                image: "/images/elfuturodelatauromaquia.jpg",
                 fullContent: "El siglo XXI presenta desafíos únicos pero también oportunidades extraordinarias para la tauromaquia. En este análisis profundo, exploramos cómo la tradición taurina puede adaptarse a los tiempos modernos sin perder su esencia. La globalización, las nuevas tecnologías y los cambios sociales exigen una reflexión seria sobre el futuro de este arte milenario. Es fundamental encontrar el equilibrio entre la preservación de la tradición y la necesaria adaptación a los nuevos tiempos."
               },
               {
@@ -633,7 +633,7 @@ export default function Home() {
                 author: "María González",
                 excerpt: "Reflexiones sobre la formación de nuevos toreros y la preservación de la tradición.",
                 date: "13 Enero 2025",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.7&fp-y=0.4",
+                 image: "/images/escuelastaurinas.jpg",
                 fullContent: "Las escuelas taurinas son el corazón de la formación de las futuras figuras del toreo. Su papel va más allá de la enseñanza técnica, abarcando la transmisión de valores, tradiciones y el respeto por el arte del toreo. En estas instituciones se forman no solo los toreros del mañana, sino también los guardianes de una tradición centenaria. La calidad de la enseñanza y el compromiso de los maestros son fundamentales para garantizar la continuidad y excelencia del toreo."
               },
               {
@@ -641,7 +641,7 @@ export default function Home() {
                 author: "Antonio Ruiz",
                 excerpt: "Un recorrido por las catedrales del toreo y su importancia cultural.",
                 date: "12 Enero 2025",
-                image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.6",
+                image: "/images/lasplazashistoricas.jpg",
                 fullContent: "Las plazas de toros históricas son mucho más que simples edificios; son catedrales del toreo que albergan siglos de historia, tradición y arte. Cada una tiene su propia personalidad y ha sido testigo de momentos inolvidables que han marcado la historia de la tauromaquia. Desde Las Ventas en Madrid hasta la Maestranza de Sevilla, estas plazas representan el alma del toreo y constituyen un patrimonio cultural invaluable que debe ser preservado para las futuras generaciones."
               },
               {
@@ -649,7 +649,7 @@ export default function Home() {
                 author: "Fernando López",
                 excerpt: "Los secretos detrás de la cría del toro bravo y su importancia en el espectáculo.",
                 date: "11 Enero 2025",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.2&fp-y=0.3",
+                image: "/images/laganaderiabrava.jpeg",
                 fullContent: "La ganadería brava es el pilar fundamental sobre el que se sustenta el espectáculo taurino. La selección, crianza y cuidado del toro bravo requieren conocimientos ancestrales transmitidos de generación en generación. Los ganaderos dedican años a perfeccionar sus reses, buscando el equilibrio perfecto entre bravura, nobleza y trapío. Este artículo explora los métodos tradicionales y las innovaciones modernas en la cría del toro bravo, así como su impacto en la calidad del espectáculo taurino."
               },
               {
@@ -657,7 +657,7 @@ export default function Home() {
                 author: "Isabel Martín",
                 excerpt: "El papel de la mujer en la tauromaquia moderna y su evolución histórica.",
                 date: "10 Enero 2025",
-                image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.8&fp-y=0.7",
+                image: "/images/eltoreofemenino.jpeg",
                 fullContent: "El toreo femenino ha experimentado una evolución notable en las últimas décadas, rompiendo barreras tradicionales y ganando reconocimiento en el mundo taurino. Las toreras han demostrado que el arte del toreo no tiene género, aportando su propia sensibilidad y técnica al ruedo. Este análisis examina la trayectoria de las principales figuras femeninas del toreo, los desafíos que han enfrentado y su contribución al enriquecimiento del arte taurino. Su presencia ha abierto nuevos horizontes y ha demostrado que la pasión por el toreo trasciende cualquier barrera."
               },
               {
@@ -665,7 +665,7 @@ export default function Home() {
                 author: "Miguel Ángel Sánchez",
                 excerpt: "El equilibrio entre mantener las tradiciones y adaptarse a los nuevos tiempos.",
                 date: "9 Enero 2025",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.4&fp-y=0.2",
+                image: "/images/tradicionvsmodernidad.jpg",
                 fullContent: "El mundo del toreo se encuentra en una encrucijada entre la preservación de sus tradiciones milenarias y la necesidad de adaptarse a los tiempos modernos. Este debate no es nuevo, pero cobra especial relevancia en el siglo XXI. ¿Cómo puede la tauromaquia mantener su esencia mientras evoluciona para conectar con las nuevas generaciones? Este artículo explora las diferentes perspectivas sobre esta cuestión fundamental, analizando tanto las voces que abogan por la tradición pura como aquellas que proponen una modernización respetuosa del arte del toreo."
               }
             ].map((article, index) => (
