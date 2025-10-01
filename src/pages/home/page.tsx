@@ -80,7 +80,7 @@ export default function Home() {
     {
       id: 1,
       title: "Morante de la Puebla triunfa en Las Ventas con una faena histórica",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=600&fit=crop&crop=center",
+      image: "/images/morante.jpg",
       category: "Actualidad",
       date: "15 Enero 2025",
       excerpt: "Una tarde inolvidable en la catedral del toreo donde Morante demostró su maestría",
@@ -89,7 +89,7 @@ export default function Home() {
     {
       id: 2,
       title: "Temporada 2025: Las figuras del toreo se preparan para la Feria de San Isidro",
-      image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=1200&h=600&fit=crop&crop=center",
+      image: "/images/temporada.jpg",
       category: "Agenda",
       date: "14 Enero 2025",
       excerpt: "Los mejores toreros del mundo confirman su presencia en la feria más importante",
@@ -98,7 +98,7 @@ export default function Home() {
     {
       id: 3,
       title: "Entrevista exclusiva: José Tomás habla sobre su regreso a los ruedos",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=600&fit=crop&crop=focalpoint&fp-x=0.6&fp-y=0.4",
+      image: "/images/josetomas.jpeg",
       category: "Entrevistas",
       date: "13 Enero 2025",
       excerpt: "El torero de Galapagar revela sus planes para esta temporada",
@@ -110,7 +110,7 @@ export default function Home() {
     {
       id: 4,
       title: "El Cid corta dos orejas en la plaza de toros de Sevilla",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=0.5",
+       image: "/images/elcid.jpg",
       category: "Crónicas",
       date: "15 Enero 2025",
       excerpt: "Una tarde memorable en la Maestranza sevillana donde El Cid demostró su arte y valentía ante un público entregado.",
@@ -121,7 +121,7 @@ export default function Home() {
     {
       id: 5,
       title: "Análisis: Las claves del éxito en la temporada taurina 2025",
-      image: "https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=400&h=250&fit=crop&crop=focalpoint&fp-x=0.7&fp-y=0.3",
+      image: "/images/analisis.jpg",
       category: "Opinión",
       date: "14 Enero 2025",
       excerpt: "Expertos analizan las tendencias y figuras que marcarán el año taurino en España y América.",
