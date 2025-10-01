@@ -551,7 +551,7 @@ export default function Home() {
             <div id="multimedia" className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-100">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop&crop=center"
+                  src="/images/galeriataurina.jpeg"
                   alt="Galería multimedia"
                   className="w-full h-40 object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 />
