@@ -68,30 +68,6 @@ export default function Home() {
     };
   }, []);
 
-  // Estadísticas del portal
-  const stats = [
-    {
-      number: "50K+",
-      label: "Lectores mensuales",
-      icon: "ri-user-line"
-    },
-    {
-      number: "1,200+",
-      label: "Noticias publicadas",
-      icon: "ri-newspaper-line"
-    },
-    {
-      number: "25+",
-      label: "Plazas cubiertas",
-      icon: "ri-building-line"
-    },
-    {
-      number: "15",
-      label: "Años de experiencia",
-      icon: "ri-trophy-line"
-    }
-  ];
-
   const featuredNews = [
     {
       id: 1,
