@@ -213,31 +213,35 @@ export default function Home() {
   };
 
   // Función para abrir modal de noticia
-  const openNewsModal = (news: any) => {
-    setSelectedNews(news);
-    setIsNewsModalOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
+  import { Link } from "react-router-dom";
 
-  // Función para cerrar modal de noticia
-  const closeNewsModal = () => {
-    setIsNewsModalOpen(false);
-    setSelectedNews(null);
-    document.body.style.overflow = 'unset';
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+// dentro de latestNews.map
+<Link to={`/noticia/${news.id}`} key={news.id}>
+  <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100">
+    <div className="relative overflow-hidden">
+      <img
+        src={news.image}
+        alt={news.title}
+        className="w-full h-48 md:h-56 object-cover object-center group-hover:scale-110 transition-transform duration-500"
+      />
+      <div className="absolute top-4 left-4">
+        <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+          {news.category}
+        </span>
+      </div>
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
+        {news.title}
+      </h3>
+      <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
+      <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
+        Leer más 
+        <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+      </button>
+    </div>
+  </article>
+</Link>
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
