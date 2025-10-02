@@ -106,8 +106,6 @@ export default function Home() {
       category: "Crónicas",
       date: "15 Enero 2025",
       excerpt: "Una tarde memorable en la Maestranza sevillana donde El Cid demostró su arte y valentía ante un público entregado.",
-      views: "2.5K",
-      likes: "156",
       fullContent: "El Cid protagonizó una tarde triunfal en la Real Maestranza de Caballería de Sevilla, cortando dos orejas en una actuación que quedará grabada en la memoria de los aficionados. El diestro demostró una vez más su capacidad para emocionar y su dominio técnico ante toros de la ganadería de Miura. La faena al quinto toro fue especialmente brillante, con una serie de naturales que arrancaron los olés del respetable sevillano. El público, conocedor y exigente, premió su actuación con una ovación cerrada que se prolongó durante varios minutos. Esta actuación consolida a El Cid como una de las figuras más sólidas del panorama taurino actual."
     },
     {
@@ -117,8 +115,6 @@ export default function Home() {
       category: "Opinión",
       date: "14 Enero 2025",
       excerpt: "Expertos analizan las tendencias y figuras que marcarán el año taurino en España y América.",
-      views: "1.8K",
-      likes: "89",
       fullContent: "La temporada taurina 2025 se presenta con grandes expectativas y varios factores que determinarán su éxito. Según los expertos consultados, la renovación generacional será uno de los aspectos más destacados, con jóvenes figuras que buscan consolidarse junto a los maestros consagrados. La programación de las principales plazas muestra una apuesta decidida por la calidad, tanto en los carteles como en las ganaderías seleccionadas. América Latina también jugará un papel importante, con un creciente interés por el toreo español y la organización de eventos de gran nivel. Los aficionados esperan una temporada rica en emociones y momentos memorables."
     },
     {
@@ -128,8 +124,6 @@ export default function Home() {
       category: "Novilladas",
       date: "13 Enero 2025",
       excerpt: "La cantera taurina española demuestra su calidad en una tarde llena de emoción y arte.",
-      views: "3.2K",
-      likes: "203",
       fullContent: "La plaza de Las Ventas fue testigo de una extraordinaria novillada que puso de manifiesto la excelente salud de la cantera taurina española. Los tres novilleros que actuaron demostraron técnica, valor y arte, ingredientes fundamentales para el futuro del toreo. La tarde comenzó con gran expectación y se desarrolló con un nivel artístico muy alto. Los jóvenes diestros supieron aprovechar las oportunidades que les brindaron los novillos, ofreciendo faenas llenas de emoción y momentos de gran belleza. El público madrileño, siempre exigente, supo reconocer la calidad de lo visto y premió con generosidad a estos valores emergentes del toreo."
     },
     {
@@ -139,8 +133,6 @@ export default function Home() {
       category: "Ferias",
       date: "12 Enero 2025",
       excerpt: "Los aficionados ya pueden conocer los primeros nombres que pisarán el albero de la Maestranza.",
-      views: "4.1K",
-      likes: "287",
       fullContent: "La Real Maestranza de Caballería de Sevilla ha hecho públicos los primeros carteles de la Feria de Abril 2025, generando gran expectación entre los aficionados. Los nombres confirmados incluyen a las principales figuras del toreo actual, garantizando tardes de gran nivel artístico. La programación combina experiencia y juventud, con carteles que prometen emociones fuertes y momentos memorables. Las ganaderías seleccionadas son de reconocido prestigio, lo que augura corridas de gran calidad. Los abonos ya están disponibles y la demanda está siendo muy alta, como es habitual en una de las ferias más importantes del calendario taurino mundial."
     },
     {
@@ -150,8 +142,6 @@ export default function Home() {
       category: "Ganaderías",
       date: "11 Enero 2025",
       excerpt: "Un recorrido por una de las ganaderías más prestigiosas del panorama taurino español.",
-      views: "2.9K",
-      likes: "145",
       fullContent: "La ganadería de Miura continúa siendo una referencia en el mundo taurino, manteniendo la tradición y la bravura que la han caracterizado durante generaciones. En 2025, la divisa sevillana seguirá presente en las principales plazas de España, ofreciendo toros de gran calidad y trapío. Los responsables de la ganadería han trabajado intensamente en la selección y mejora del ganado, manteniendo las características que han hecho famosos a los toros de Miura en todo el mundo. Su presencia en los carteles siempre genera expectación, tanto entre los toreros como entre los aficionados, que saben que se enfrentarán a reses de gran nobleza y bravura."
     },
     {
@@ -161,8 +151,6 @@ export default function Home() {
       category: "Formación",
       date: "10 Enero 2025",
       excerpt: "La cantera madrileña trabaja intensamente para preparar a los toreros del futuro.",
-      views: "1.6K",
-      likes: "92",
       fullContent: "La Escuela Taurina de Madrid continúa su labor formativa, preparando a las futuras figuras del toreo con un programa integral que combina técnica, teoría y práctica. Los jóvenes aspirantes reciben formación de maestros experimentados que transmiten los conocimientos fundamentales del arte del toreo. Las instalaciones de la escuela permiten un aprendizaje progresivo y seguro, con especial atención a los aspectos técnicos y de seguridad. Muchos de los toreros que actualmente triunfan en las principales plazas han pasado por esta institución, que se ha convertido en un referente en la formación taurina. El compromiso con la excelencia y la tradición garantiza la continuidad del arte del toreo."
     },
     {
@@ -172,8 +160,6 @@ export default function Home() {
       category: "Internacional",
       date: "9 Enero 2025",
       excerpt: "Las principales figuras españolas confirman su participación en la temporada mexicana.",
-      views: "3.7K",
-      likes: "198",
       fullContent: "La temporada taurina mexicana 2025 contará con la presencia de las principales figuras del toreo español, consolidando los lazos entre ambos países en el arte del toreo. Plazas emblemáticas como la México y la Monumental de Aguascalientes recibirán a toreros de la talla de Morante de la Puebla, El Juli y José María Manzanares. Esta colaboración internacional fortalece la tradición taurina y permite el intercambio cultural entre España y México. Los aficionados mexicanos podrán disfrutar del más alto nivel artístico, mientras que los toreros españoles tendrán la oportunidad de demostrar su arte ante públicos conocedores y exigentes."
     },
     {
@@ -183,8 +169,6 @@ export default function Home() {
       category: "Actualidad",
       date: "8 Enero 2025",
       excerpt: "La plaza madrileña implementa innovadores sistemas para garantizar la seguridad de toreros y público.",
-      views: "2.1K",
-      likes: "134",
       fullContent: "La plaza de toros de Las Ventas ha anunciado la implementación de nuevas medidas de seguridad que revolucionarán la experiencia taurina sin comprometer la esencia del espectáculo. Estas innovaciones incluyen sistemas de monitoreo avanzado, protocolos de emergencia mejorados y tecnología de última generación para garantizar la seguridad tanto de los toreros como del público asistente. La dirección de la plaza ha trabajado en colaboración con expertos en seguridad y veterinarios especializados para desarrollar estos protocolos. Estas medidas sitúan a Las Ventas a la vanguardia en materia de seguridad taurina a nivel mundial."
     },
     {
@@ -194,8 +178,6 @@ export default function Home() {
       category: "Formación",
       date: "7 Enero 2025",
       excerpt: "Maestros del toreo comparten sus secretos en una jornada única de enseñanza.",
-      views: "1.9K",
-      likes: "167",
       fullContent: "Una jornada excepcional reunió a algunas de las figuras más respetadas del toreo para compartir sus conocimientos sobre el arte del capote. Esta masterclass, dirigida tanto a jóvenes aspirantes como a aficionados, abordó desde los fundamentos básicos hasta las técnicas más avanzadas del manejo del capote. Los maestros explicaron la importancia del temple, la colocación y el timing en cada lance, transmitiendo décadas de experiencia acumulada en los ruedos más importantes del mundo. Esta iniciativa forma parte de un programa más amplio destinado a preservar y transmitir los conocimientos tradicionales del arte del toreo."
     }
   ];
