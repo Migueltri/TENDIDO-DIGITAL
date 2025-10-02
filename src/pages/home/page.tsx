@@ -32,8 +32,8 @@ export default function Home() {
       "name": "TENDIDO DIGITAL",
       "url": process.env.VITE_SITE_URL || "https://example.com",
       "logo": {
-        "@type": "ImageObject",
-        "url": ${process.env.VITE_SITE_URL || "https://example.com"}/logo.png
+      "@type": "ImageObject",
+      "url": `${process.env.VITE_SITE_URL || "https://example.com"}/logo.png`
       },
       "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
       "foundingDate": "2010",
