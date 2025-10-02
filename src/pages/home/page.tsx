@@ -396,23 +396,10 @@ export default function Home() {
         </button>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-r from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover:bg-white/25 transition-all duration-300 transform hover:scale-105 border border-white/10 shadow-lg">
-                  <i className={${stat.icon} text-2xl md:text-4xl text-white mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300}></i>
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">{stat.number}</div>
-                  <div className="text-white/90 font-medium text-sm md:text-base">{stat.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* Stats Section */}
+<section className="py-12 md:py-20 bg-gradient-to-r from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
+   ...
+</section>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
