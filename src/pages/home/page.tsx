@@ -616,8 +616,7 @@ export default function Home() {
                 image: "/images/tradicionvsmodernidad.jpg",
                 fullContent: "El mundo del toreo se encuentra en una encrucijada entre la preservación de sus tradiciones milenarias y la necesidad de adaptarse a los tiempos modernos. Este debate no es nuevo, pero cobra especial relevancia en el siglo XXI. ¿Cómo puede la tauromaquia mantener su esencia mientras evoluciona para conectar con las nuevas generaciones? Este artículo explora las diferentes perspectivas sobre esta cuestión fundamental, analizando tanto las voces que abogan por la tradición pura como aquellas que proponen una modernización respetuosa del arte del toreo."
               }
-        }
-            ].map((article, index) => (
+              ]};.map((article, index) => (
               <article 
                 key={index} 
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
