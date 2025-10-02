@@ -1,11 +1,12 @@
-import { StrictMode } from 'react'
-import './i18n'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/page";
+import NoticiaPage from "./pages/NoticiaPage";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/noticia/:id" element={<NoticiaPage />} />
+    </Routes>
+  </Router>
+);
