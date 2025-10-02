@@ -178,36 +178,6 @@ export default function Home() {
     }
     setIsMenuOpen(false); // Cerrar menú móvil si está abierto
   };
-
-// dentro de latestNews.map
-{latestNews.map(news => (
-  <Link to={`/noticia/${news.id}`} key={news.id}>
-    <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100">
-      <div className="relative overflow-hidden">
-        <img
-          src={news.image}
-          alt={news.title}
-          className="w-full h-48 md:h-56 object-cover object-center group-hover:scale-110 transition-transform duration-500"
-        />
-        <div className="absolute top-4 left-4">
-          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-            {news.category}
-          </span>
-        </div>
-      </div>
-      <div className="p-6">
-        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
-          {news.title}
-        </h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
-        <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
-          Leer más 
-          <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-        </button>
-      </div>
-    </article>
-  </Link>
-))}
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
@@ -616,7 +586,6 @@ export default function Home() {
                 date: "9 Enero 2025",
                 image: "/images/tradicionvsmodernidad.jpg",
                 fullContent: "El mundo del toreo se encuentra en una encrucijada entre la preservación de sus tradiciones milenarias y la necesidad de adaptarse a los tiempos modernos. Este debate no es nuevo, pero cobra especial relevancia en el siglo XXI. ¿Cómo puede la tauromaquia mantener su esencia mientras evoluciona para conectar con las nuevas generaciones? Este artículo explora las diferentes perspectivas sobre esta cuestión fundamental, analizando tanto las voces que abogan por la tradición pura como aquellas que proponen una modernización respetuosa del arte del toreo."
-              }
                   ].map((article, index) => (
               <article 
                 key={index} 
@@ -760,9 +729,13 @@ export default function Home() {
                   { icon: 'ri-instagram-fill', color: 'hover:text-pink-400' },
                   { icon: 'ri-youtube-fill', color: 'hover:text-red-400' }
                 ].map((social, index) => (
-                  <a key={index} href="#" className={text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800}>
-                    <i className={${social.icon} text-2xl}></i>
-                  </a>
+                  <a
+  key={index}
+  href="#"
+  className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}
+>
+  <i className={`${social.icon} text-2xl`}></i>
+                </a>
                 ))}
               </div>
             </div>
