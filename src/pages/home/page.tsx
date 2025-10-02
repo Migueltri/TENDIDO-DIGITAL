@@ -1,20 +1,3 @@
-import { Link } from "react-router-dom";
-
-<Link to={`/noticia/${news.id}`}>
-  <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100">
-    <div className="relative overflow-hidden">
-      <img
-        src={news.image}
-        alt={news.title}
-        className="w-full h-48 md:h-56 object-cover object-center"
-      />
-    </div>
-    <div className="p-6">
-      <h3 className="text-lg font-bold">{news.title}</h3>
-      <p>{news.excerpt}</p>
-    </div>
-  </article>
-</Link>
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -52,7 +35,7 @@ export default function Home() {
         "url": process.env.VITE_SITE_URL || "https://example.com",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": ${process.env.VITE_SITE_URL || "https://example.com"}/search?q={search_term_string},
+          "target": `${process.env.VITE_SITE_URL || "https://example.com"}/search?q={search_term_string}`,
           "query-input": "required name=search_term_string"
         }
       }
@@ -228,7 +211,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
       {/* Header */}
-      <header className={bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}}>
+      <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             <div className="flex items-center group">
