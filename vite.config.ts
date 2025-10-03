@@ -1,27 +1,23 @@
 import { defineConfig } from 'vite'
-
-export default defineConfig({
-  build: {
-    outDir: 'dist', // 🔥 aquí cambiamos de 'out' a 'dist'
-  },
-})
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
 const base = process.env.BASE_PATH || '/'
-const isPreview = process.env.IS_PREVIEW  ? true : false;
-// https://vite.dev/config/
+const isPreview = process.env.IS_PREVIEW ? true : false
+
+// https://vitejs.dev/config/
 export default defineConfig({
   define: {
-   __BASE_PATH__: JSON.stringify(base),
-   __IS_PREVIEW__: JSON.stringify(isPreview)
+    __BASE_PATH__: JSON.stringify(base),
+    __IS_PREVIEW__: JSON.stringify(isPreview),
   },
-  plugins: [react(),
+  plugins: [
+    react(),
     AutoImport({
       imports: [
         {
-          'react': [
+          react: [
             'React',
             'useState',
             'useEffect',
@@ -45,8 +41,8 @@ export default defineConfig({
             'createContext',
             'createElement',
             'cloneElement',
-            'isValidElement'
-          ]
+            'isValidElement',
+          ],
         },
         {
           'react-router-dom': [
@@ -57,16 +53,12 @@ export default defineConfig({
             'Link',
             'NavLink',
             'Navigate',
-            'Outlet'
-          ]
+            'Outlet',
+          ],
         },
-        // React i18n
         {
-          'react-i18next': [
-            'useTranslation',
-            'Trans'
-          ]
-        }
+          'react-i18next': ['useTranslation', 'Trans'],
+        },
       ],
       dts: true,
     }),
@@ -74,15 +66,15 @@ export default defineConfig({
   base,
   build: {
     sourcemap: true,
-    outDir: 'out',
+    outDir: 'dist', // 👈 Usamos siempre "dist" para que Netlify sirva bien
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
+      '@': resolve(__dirname, './src'),
+    },
   },
   server: {
     port: 3000,
     host: '0.0.0.0',
-  }
-}
+  },
+})
