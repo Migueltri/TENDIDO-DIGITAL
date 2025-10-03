@@ -291,7 +291,7 @@ export default function Home() {
     {
       id: 1,
       title: "Morante de la Puebla triunfa en Las Ventas con una faena histórica",
-      image: "https://readdy.ai/api/search-image?query=Spanish%20bullfighter%20in%20traditional%20costume%20performing%20elegant%20cape%20work%20in%20Las%20Ventas%20bullring%20Madrid%2C%20dramatic%20lighting%2C%20professional%20photography%2C%20action%20shot%20showing%20grace%20and%20artistry%20of%20bullfighting&width=1200&height=600&seq=1&orientation=landscape",
+      image: "/images/morante.jpg",
       category: "Actualidad",
       date: "15 Enero 2025",
       excerpt: "Una tarde inolvidable en la catedral del toreo donde Morante demostró su maestría",
@@ -300,7 +300,7 @@ export default function Home() {
     {
       id: 2,
       title: "Temporada 2025: Las figuras del toreo se preparan para la Feria de San Isidro",
-      image: "https://readdy.ai/api/search-image?query=Historic%20Las%20Ventas%20bullring%20in%20Madrid%20during%20San%20Isidro%20fair%20preparation%2C%20traditional%20Spanish%20architecture%2C%20crowds%20gathering%2C%20festive%20atmosphere%2C%20golden%20hour%20lighting%2C%20professional%20photography&width=1200&height=600&seq=2&orientation=landscape",
+      image: "/images/temporada.jpg",
       category: "Agenda",
       date: "14 Enero 2025",
       excerpt: "Los mejores toreros del mundo confirman su presencia en la feria más importante",
@@ -309,7 +309,7 @@ export default function Home() {
     {
       id: 3,
       title: "Entrevista exclusiva: José Tomás habla sobre su regreso a los ruedos",
-      image: "https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20Spanish%20bullfighter%20Jos%C3%A9%20Tom%C3%A1s%20in%20traditional%20traje%20de%20luces%2C%20serious%20expression%2C%20studio%20lighting%2C%20elegant%20pose%20traditional%20Spanish%20bullfighting%20costume%20details&width=1200&height=600&seq=3&orientation=landscape",
+      image: "/images/josetomas.jpeg",
       category: "Entrevistas",
       date: "13 Enero 2025",
       excerpt: "El torero de Galapagar revela sus planes para esta temporada",
@@ -321,7 +321,7 @@ export default function Home() {
     {
       id: 4,
       title: "El Cid corta dos orejas en la plaza de toros de Sevilla",
-      image: "https://readdy.ai/api/search-image?query=Spanish%20bullfighter%20El%20Cid%20performing%20in%20Maestranza%20bullring%20Seville%2C%20cutting%20ears%20trophy%2C%20crowd%20cheering%2C%20traditional%20Andalusian%20architecture%2C%20dramatic%20moment%2C%20professional%20sports%20photography&width=400&height=250&seq=4&orientation=landscape",
+      image: "/images/elcid.jpg",
       category: "Crónicas",
       date: "15 Enero 2025",
       excerpt: "Una tarde memorable en la Maestranza sevillana donde El Cid demostró su arte y valentía ante un público entregado.",
@@ -330,7 +330,7 @@ export default function Home() {
     {
       id: 5,
       title: "Análisis: Las claves del éxito en la temporada taurina 2025",
-      image: "https://readdy.ai/api/search-image?query=Spanish%20bullfighting%20analysis%20infographic%2C%20traditional%20bullring%20architecture%2C%20statistical%20charts%2C%20professional%20journalism%20layout%2C%20modern%20design%20with%20traditional%20elements%2C%20clean%20background&width=400&height=250&seq=5&orientation=landscape",
+      image: "/images/analisis.jpg",
       category: "Opinión",
       date: "14 Enero 2025",
       excerpt: "Expertos analizan las tendencias y figuras que marcarán el año taurino en España y América.",
@@ -339,7 +339,7 @@ export default function Home() {
     {
       id: 6,
       title: "Novillada en Madrid: Triunfo de los jóvenes valores",
-      image: "https://readdy.ai/api/search-image?query=Young%20Spanish%20bullfighter%20novillero%20performing%20in%20Las%20Ventas%20Madrid%2C%20promising%20talent%2C%20traditional%20cape%20work%2C%20crowd%20support%2C%20future%20of%20bullfighting%2C%20professional%20action%20photography&width=400&height=250&seq=6&orientation=landscape",
+      image: "/images/novilladaenmadrid.jpg",
       category: "Novilladas",
       date: "13 Enero 2025",
       excerpt: "La cantera taurina española demuestra su calidad en una tarde llena de emoción y arte.",
@@ -348,7 +348,7 @@ export default function Home() {
     {
       id: 7,
       title: "Feria de Sevilla 2025: Confirmados los primeros carteles",
-      image: "https://readdy.ai/api/search-image?query=Seville%20April%20Fair%202025%20bullfighting%20posters%20announcement%2C%20traditional%20Spanish%20festival%20atmosphere%2C%20Maestranza%20bullring%2C%20elegant%20design%2C%20professional%20photography&width=400&height=250&seq=7&orientation=landscape",
+      image: "/images/feriadesevilla.jpg",
       category: "Ferias",
       date: "12 Enero 2025",
       excerpt: "Los aficionados ya pueden conocer los primeros nombres que pisarán el albero de la Maestranza.",
@@ -357,7 +357,7 @@ export default function Home() {
     {
       id: 8,
       title: "Ganadería de Miura: Tradición y bravura en 2025",
-      image: "https://readdy.ai/api/search-image?query=Miura%20bull%20ranch%20Spain%2C%20brave%20fighting%20bulls%20in%20countryside%2C%20traditional%20Spanish%20cattle%20breeding%2C%20professional%20agricultural%20photography%2C%20heritage%20and%20tradition&width=400&height=250&seq=8&orientation=landscape",
+      image: "/images/ganaderiademiura.jpeg",
       category: "Ganaderías",
       date: "11 Enero 2025",
       excerpt: "Un recorrido por una de las ganaderías más prestigiosas del panorama taurino español.",
@@ -366,7 +366,7 @@ export default function Home() {
     {
       id: 9,
       title: "Escuela Taurina de Madrid: Formando a las futuras figuras",
-      image: "https://readdy.ai/api/search-image?query=Madrid%20Bullfighting%20School%20training%20young%20bullfighters%2C%20educational%20facility%2C%20traditional%20teaching%20methods%2C%20future%20stars%20learning%2C%20professional%20photography&width=400&height=250&seq=9&orientation=landscape",
+      image: "/images/escuelataurinademadrid.jpg",
       category: "Formación",
       date: "10 Enero 2025",
       excerpt: "La cantera madrileña trabaja intensamente para preparar a los toreros del futuro.",
@@ -375,7 +375,7 @@ export default function Home() {
     {
       id: 10,
       title: "Temporada americana: El toreo español conquista México",
-      image: "https://readdy.ai/api/search-image?query=Spanish%20bullfighters%20performing%20in%20Mexico%2C%20international%20bullfighting%20season%2C%20cultural%20exchange%2C%20traditional%20Mexican%20bullring%2C%20professional%20photography&width=400&height=250&seq=10&orientation=landscape",
+      image: "/images/temporadaamericana.jpg",
       category: "Internacional",
       date: "9 Enero 2025",
       excerpt: "Las principales figuras españolas confirman su participación en la temporada mexicana.",
@@ -384,7 +384,7 @@ export default function Home() {
     {
       id: 11,
       title: "Revolución en Las Ventas: Nuevas medidas de seguridad",
-      image: "https://readdy.ai/api/search-image?query=Las%20Ventas%20bullring%20Madrid%20security%20innovations%2C%20modern%20safety%20technology%2C%20traditional%20architecture%20with%20contemporary%20upgrades%2C%20professional%20photography&width=400&height=250&seq=11&orientation=landscape",
+      image: "/images/revolucionenlasventas.jpg",
       category: "Actualidad",
       date: "8 Enero 2025",
       excerpt: "La plaza madrileña implementa innovadores sistemas para garantizar la seguridad de toreros y público.",
@@ -393,7 +393,7 @@ export default function Home() {
     {
       id: 12,
       title: "El arte del capote: Masterclass con figuras consagradas",
-      image: "https://readdy.ai/api/search-image?query=Bullfighting%20cape%20masterclass%2C%20experienced%20matadors%20teaching%20technique%2C%20traditional%20Spanish%20bullfighting%20education%2C%20professional%20photography&width=400&height=250&seq=12&orientation=landscape",
+      image: "/images/elartedelcapote.jpeg",
       category: "Formación",
       date: "7 Enero 2025",
       excerpt: "Maestros del toreo comparten sus secretos en una jornada única de enseñanza.",
@@ -415,7 +415,7 @@ export default function Home() {
         "Silencio tras aviso y Dos orejas tras aviso", 
         "Palmas y Silencio"
       ],
-      image: "https://readdy.ai/api/search-image?query=Spanish%20bullfighting%20chronicle%20Arnedo%20bullring%20La%20Rioja%2C%20traditional%20architecture%2C%20professional%20bullfighting%20action%2C%20dramatic%20lighting%2C%20crowd%20atmosphere%2C%20journalistic%20photography%20style&width=600&height=400&seq=101&orientation=landscape",
+      image: "/images/rioja.jpeg",
       resumen: "Un tercio de plaza. Se lidian novillos de El Montecillo. Emiliano Osornio (Blanco y Plata), Oreja tras aviso y Dos orejas tras aviso; Cristiano Torres (Canela y Oro), Silencio tras aviso y Dos orejas tras aviso; Gonzalo Capdevila que sustituyó a Julio Norte (Ciruela y Oro), Palmas y Silencio.",
       detalles: "Tras la muerte del segundo, Cristiano Torres salió por la enfermería y volvió por la puerta grande tras la muerte del quinto. Una tarde que comenzó con dificultades pero que terminó con el triunfo del arte y la valentía en el coso riojano."
     },
@@ -431,7 +431,7 @@ export default function Home() {
         "Oreja y ovación",
         "Ovación y oreja"
       ],
-      image: "https://readdy.ai/api/search-image?query=Maestranza%20bullring%20Seville%20Spain%2C%20historic%20architecture%2C%20professional%20bullfighting%20performance%2C%20traditional%20Spanish%20culture%2C%20dramatic%20moment%2C%20high%20quality%20photography&width=600&height=400&seq=102&orientation=landscape",
+      image: "/images/plazasevilla.jpeg",
       resumen: "Corrida de toros en la Real Maestranza de Sevilla con reses de Miura. Morante de la Puebla, Dos orejas y vuelta al ruedo; El Juli, Oreja y ovación; José María Manzanares, Ovación y oreja.",
       detalles: "Una tarde histórica en la catedral del toreo sevillano. Morante demostró una vez más su maestría con el capote y la muleta, especialmente brillante en su segundo toro. El Juli ofreció técnica y temple, mientras que Manzanares cerró la tarde con una faena de gran mérito ante un toro complicado."
     },
@@ -447,7 +447,7 @@ export default function Home() {
         "Ovación y oreja",
         "Silencio y ovación"
       ],
-      image: "https://readdy.ai/api/search-image?query=Las%20Ventas%20bullring%20Madrid%20novillada%2C%20young%20bullfighters%2C%20traditional%20Spanish%20bullfighting%2C%20promising%20talent%2C%20professional%20sports%20photography%2C%20dramatic%20action&width=600&height=400&seq=103&orientation=landscape",
+      image: "/images/novilladasinpicadores.jpeg",
       resumen: "Novillada sin picadores en Las Ventas con erales de Los Chospes. Manuel Perera, Oreja y dos orejas; Tomás Rufo, Ovación y oreja; Diego San Román, Silencio y ovación.",
       detalles: "La cantera taurina española brilló en Las Ventas con una novillada que puso de manifiesto el buen momento de los jóvenes valores. Manuel Perera se alzó como el triunfador de la tarde con un toque de temple y arte que emocionó al respetable madrileño."
     },
@@ -463,7 +463,7 @@ export default function Home() {
         "Oreja y ovación",
         "Dos orejas y oreja"
       ],
-      image: "https://readdy.ai/api/search-image?query=Valencia%20bullring%20Spain%20Fallas%20festival%2C%20traditional%20bullfighting%20celebration%2C%20festive%20atmosphere%2C%20professional%20photography%2C%20cultural%20heritage%2C%20dramatic%20lighting&width=600&height=400&seq=104&orientation=landscape",
+      image: "/images/fallas.jpeg",
       resumen: "Corrida de toros en Valencia con motivo de las Fallas, con reses de Victoriano del Río. Enrique Pince, Ovación y dos orejas; Cayetano Rivera, Oreja y ovación; Roca Rey, Dos orejas y oreja.",
       detalles: "Una tarde espectacular en la plaza valenciana donde el arte y la emoción se dieron cita. Roca Rey se alzó como el gran triunfador de la tarde con dos faenas memorables que emocionaron al público fallero."
     }
