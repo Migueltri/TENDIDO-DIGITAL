@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main  # o la rama que uses en tu repo
+
+media_folder: "public/uploads"      # dónde se subirán imágenes
+public_folder: "/uploads"
+
+collections:
+  - name: "noticias"
+    label: "Noticias"
+    folder: "src/noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha", name: "date", widget: "datetime"}
+      - {label: "Imagen destacada", name: "thumbnail", widget: "image"}
+      - {label: "Contenido", name: "body", widget: "markdown"}
