@@ -6,7 +6,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 const base = process.env.BASE_PATH || '/'
 const isPreview = process.env.IS_PREVIEW ? true : false
 
-// https://vitejs.dev/config/
 export default defineConfig({
   define: {
     __BASE_PATH__: JSON.stringify(base),
@@ -18,42 +17,17 @@ export default defineConfig({
       imports: [
         {
           react: [
-            'React',
-            'useState',
-            'useEffect',
-            'useContext',
-            'useReducer',
-            'useCallback',
-            'useMemo',
-            'useRef',
-            'useImperativeHandle',
-            'useLayoutEffect',
-            'useDebugValue',
-            'useDeferredValue',
-            'useId',
-            'useInsertionEffect',
-            'useSyncExternalStore',
-            'useTransition',
-            'startTransition',
-            'lazy',
-            'memo',
-            'forwardRef',
-            'createContext',
-            'createElement',
-            'cloneElement',
-            'isValidElement',
+            'React', 'useState', 'useEffect', 'useContext', 'useReducer', 'useCallback',
+            'useMemo', 'useRef', 'useImperativeHandle', 'useLayoutEffect', 'useDebugValue',
+            'useDeferredValue', 'useId', 'useInsertionEffect', 'useSyncExternalStore',
+            'useTransition', 'startTransition', 'lazy', 'memo', 'forwardRef', 'createContext',
+            'createElement', 'cloneElement', 'isValidElement'
           ],
         },
         {
           'react-router-dom': [
-            'useNavigate',
-            'useLocation',
-            'useParams',
-            'useSearchParams',
-            'Link',
-            'NavLink',
-            'Navigate',
-            'Outlet',
+            'useNavigate', 'useLocation', 'useParams', 'useSearchParams',
+            'Link', 'NavLink', 'Navigate', 'Outlet'
           ],
         },
         {
@@ -66,15 +40,8 @@ export default defineConfig({
   base,
   build: {
     sourcemap: true,
-    outDir: 'dist', // 👈 Usamos siempre "dist" para que Netlify sirva bien
+    outDir: 'dist', // 👈 IMPORTANTE: carpeta final
   },
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, './src'),
-    },
-  },
-  server: {
-    port: 3000,
-    host: '0.0.0.0',
-  },
+  resolve: { alias: { '@': resolve(__dirname, './src') } },
+  server: { port: 3000, host: '0.0.0.0' },
 })
