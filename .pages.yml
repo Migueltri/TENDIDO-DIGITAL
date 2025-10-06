@@ -1,4 +1,4 @@
-# .pages.yml  (colócalo EN LA RAÍZ del repo)
+# .pages.yml - coloca EN LA RAÍZ del repo (./.pages.yml)
 media:
   - name: uploads
     label: "Medios"
@@ -21,7 +21,7 @@ content:
   - name: noticias
     label: "Noticias"
     type: collection
-    path: content/news
+    path: src/content/news
     filename: '{year}-{month}-{day}-{primary}.md'
     view:
       primary: title
