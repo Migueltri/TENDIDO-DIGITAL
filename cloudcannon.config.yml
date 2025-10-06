@@ -8,6 +8,8 @@ collections_config:
     path: ''
     name: Pages
     icon: wysiwyg
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -25,6 +27,32 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  .html:
+    path:
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    url:
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 timezone: Europe/Madrid
 markdown:
   engine: commonmark
