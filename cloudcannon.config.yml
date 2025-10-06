@@ -1,5 +1,5 @@
 _schema: _schema
-source: /src/pages/
+source: /publics
 paths:
   uploads: uploads
   static: ''
