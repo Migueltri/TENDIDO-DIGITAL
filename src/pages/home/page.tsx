@@ -1143,7 +1143,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-white font-semibold">Email</p>
-                      <p className="text-white/80">tendidodigital@gmail.com</p>
+                      <p className="text-white/80">tendidodigitall@gmail.com</p>
                     </div>
                   </div>
                 </div>
