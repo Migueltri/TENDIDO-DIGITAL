@@ -290,7 +290,7 @@ export default function Home() {
   const featuredNews: NewsItem[] = [
     {
       id: 1,
-      title: "Morante de la Puebla triunfa en Las Ventas con una faena histórica",
+      title: "Morante de la Puebla triunfa en Las Ventas con una faena históricaa",
       image: "/images/morante.jpg",
       category: "Actualidad",
       date: "15 Enero 2025",
