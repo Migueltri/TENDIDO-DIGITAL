@@ -466,6 +466,22 @@ export default function Home() {
       resumen: "Corrida de toros en Valencia con motivo de las Fallas, con reses de Victoriano del Río. Enrique Pince, Ovación y dos orejas; Cayetano Rivera, Oreja y ovación; Roca Rey, Dos orejas y oreja.",
       detalles: "Una tarde espectacular en la plaza valenciana donde el arte y la emoción se dieron cita. Roca Rey se alzó como el gran triunfador de la tarde con dos faenas memorables que emocionaron al público fallero."
     }
+     {
+      id: 105,
+      title: "Plaza de toros las ventas",
+      plaza: "Las ventas",
+      date: "9 Octubre 2025",
+      toreros: ["Enrique Pince", "Cayetano Rivera", "Roca Rey"],
+      ganaderia: "Victoriano del Río",
+      resultado: [
+        "Ovación y dos orejas",
+        "Oreja y ovación",
+        "Dos orejas y oreja"
+      ],
+      image: "/images/lasventas.jpg",
+      resumen: "Corrida de toros en Valencia con motivo de las Fallas, con reses de Victoriano del Río. Enrique Pince, Ovación y dos orejas; Cayetano Rivera, Oreja y ovación; Roca Rey, Dos orejas y oreja.",
+      detalles: "Una tarde espectacular en la plaza valenciana donde el arte y la emoción se dieron cita. Roca Rey se alzó como el gran triunfador de la tarde con dos faenas memorables que emocionaron al público fallero."
+    }
   ];
 
   // Función para cargar más noticias
