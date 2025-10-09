@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 // Interfaces para tipado seguro
@@ -290,8 +289,8 @@ export default function Home() {
   const featuredNews: NewsItem[] = [
     {
       id: 1,
-      title: "Morante de la Puebla triunfa en Las Ventas con una faena histórica",
-      image: "/images/morante.jpg",
+      title: "Morante de la Puebla triunfa en Las Ventas con una faenaa históricaa",
+      image: "/images/temporada.jpg",
       category: "Actualidad",
       date: "15 Enero 2025",
       excerpt: "Una tarde inolvidable en la catedral del toreo donde Morante demostró su maestría",
