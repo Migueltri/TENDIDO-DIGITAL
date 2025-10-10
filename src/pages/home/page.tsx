@@ -324,11 +324,10 @@ export default function Home() {
       date: "10 de Octubre de 2025",
       toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
       ganaderia: "Fuente Ymbro",
-      resultado: [ "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio"
-       ],
+      resultado: [ "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio" ],
       image: "images/lasventascronica.jpg",
-      resumen: "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio",
-      detalles: ""
+      resumen: "PRIMER NOVILLO",
+      detalles: "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio",
     },
     {
       id: 5,
@@ -365,7 +364,8 @@ export default function Home() {
       ],
       image: "images/lasventascronica.jpg",
       resumen: "PRIMER NOVILLO",
-      detalles: ""
+      detalles: "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio
+"
     },
     {
       id: 102,
