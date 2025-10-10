@@ -327,67 +327,13 @@ export default function Home() {
       fullContent: ""
     },
     {
-      id: 6,
-      title: "Novillada en Madrid: Triunfo de los jóvenes valores",
-      image: "/images/novilladaenmadrid.jpg",
-      category: "Novilladas",
-      date: "13 Enero 2025",
-      excerpt: "La cantera taurina española demuestra su calidad en una tarde llena de emoción y arte.",
-      fullContent: "La plaza de Las Ventas fue testigo de una extraordinaria novillada que puso de manifiesto la excelente salud de la cantera taurina española. Los tres novilleros que atuaron demostraron técnica, valor y arte, ingredientes fundamentales para el futuro del toreo. La tarde comenzó con gran expectación y se desarrolló con un nivel artístico muy alto. Los jóvenes diestros supieron aprovechar las oportunidades que les brindaron los novillos, ofreciendo faenas llenas de emoción y momentos de gran belleza. El público madrileño, siempre exigente, supo reconocer la calidad de lo visto y premió con generosidad a estos valores emergentes del toreo."
-    },
-    {
-      id: 7,
-      title: "Feria de Sevilla 2025: Confirmados los primeros carteles",
-      image: "/images/feriadesevilla.jpg",
-      category: "Ferias",
-      date: "12 Enero 2025",
-      excerpt: "Los aficionados ya pueden conocer los primeros nombres que pisarán el albero de la Maestranza.",
-      fullContent: "La Real Maestranza de Caballería de Sevilla ha hecho públicos los primeros carteles de la Feria de Abril 2025, generando gran expectación entre los aficionados. Los nombres confirmados incluyen a las principales figuras del toreo actual, garantizando tardes de gran nivel artístico. La programación combina experiencia y juventud, con carteles que prometen emociones fuertes y momentos memorables. Las ganaderías seleccionadas son de reconocido prestigio, lo que augura corridas de gran calidad. Los abonos ya están disponibles y la demanda está siendo muy alta, como es habitual en una de las ferias más importantes del calendario taurino mundial."
-    },
-    {
-      id: 8,
-      title: "Ganadería de Miura: Tradición y bravura en 2025",
-      image: "/images/ganaderiademiura.jpeg",
-      category: "Ganaderías",
-      date: "11 Enero 2025",
-      excerpt: "Un recorrido por una de las ganaderías más prestigiosas del panorama taurino español.",
-      fullContent: "La ganadería de Miura continúa siendo una referencia en el mundo taurino, manteniendo la tradición y la bravura que la han caracterizado durante generaciones. En 2025, la divisa sevillana seguirá presente en las principales plazas de España, ofreciendo toros de gran calidad y trapío. Los responsables de la ganadería han trabajado intensamente en la selección y mejora del ganado, manteniendo las características que han hecho famosos a los toros de Miura en todo el mundo. Su presencia en los carteles siempre genera expectación, tanto entre los toreros como entre los aficionados, que saben que se enfrentarán a reses de gran nobleza y bravura."
-    },
-    {
-      id: 9,
-      title: "Escuela Taurina de Madrid: Formando a las futuras figuras",
-      image: "/images/escuelataurinademadrid.jpg",
-      category: "Formación",
-      date: "10 Enero 2025",
-      excerpt: "La cantera madrileña trabaja intensamente para preparar a los toreros del futuro.",
-      fullContent: "La Escuela Taurina de Madrid continúa su labor formativa, preparando a las futuras figuras del toreo con un programa integral que combina técnica, teoría y práctica. Los jóvenes aspirantes reciben formación de maestros experimentados que transmiten los conocimientos fundamentales del arte del toreo. Las instalaciones de la escuela permiten un aprendizaje progresivo y seguro, con especial atención a los aspectos técnicos y de seguridad. Muchos de los toreros que actualmente triunfan en las principales plazas han pasado por esta institución, que se ha convertido en un referente en la formación taurina. El compromiso con la excelencia y la tradición garantiza la continuidad del arte del toreo."
-    },
-    {
-      id: 10,
-      title: "Temporada americana: El toreo español conquista México",
-      image: "/images/temporadaamericana.jpg",
-      category: "Internacional",
-      date: "9 Enero 2025",
-      excerpt: "Las principales figuras españolas confirman su participación en la temporada mexicana.",
-      fullContent: "La temporada taurina mexicana 2025 contará con la presencia de las principales figuras del toreo español, consolidando los lazos entre ambos países en el arte del toreo. Plazas emblemáticas como la México y la Monumental de Aguascalientes recibirán a toreros de la talla de Morante de la Puebla, El Juli y José María Manzanares. Esta colaboración internacional fortalece la tradición taurina y permite el intercambio cultural entre España y México. Los aficionados mexicanos podrán disfrutar del más alto nivel artístico, mientras que los toreros españoles tendrán la oportunidad de demostrar su arte ante públicos conocedores y exigentes."
-    },
-    {
-      id: 11,
-      title: "Revolución en Las Ventas: Nuevas medidas de seguridad",
-      image: "/images/revolucionenlasventas.jpg",
-      category: "Actualidad",
-      date: "8 Enero 2025",
-      excerpt: "La plaza madrileña implementa innovadores sistemas para garantizar la seguridad de toreros y público.",
-      fullContent: "La plaza de toros de Las Ventas ha anunciado la implementación de nuevas medidas de seguridad que revolucionarán la experiencia taurina sin comprometer la esencia del espectáculo. Estas innovaciones incluyen sistemas de monitoreo avanzado, protocolos de emergencia mejorados y tecnología de última generación para garantizar la seguridad tanto de los toreros como del público asistente. La dirección de la plaza ha trabajado en colaboración con expertos en seguridad y veterinarios especializados para desarrollar estos protocolos. Estas medidas sitúan a Las Ventas a la vanguardia en materia de seguridad taurina a nivel mundial."
-    },
-    {
-      id: 12,
-      title: "El arte del capote: Masterclass con figuras consagradas",
-      image: "/images/elartedelcapote.jpeg",
-      category: "Formación",
-      date: "7 Enero 2025",
-      excerpt: "Maestros del toreo comparten sus secretos en una jornada única de enseñanza.",
-      fullContent: "Una jornada excepcional reunió a algunas de las figuras más respetadas del toreo para compartir sus conocimientos sobre el arte del capote. Esta masterclass, dirigida tanto a jóvenes aspirantes como a aficionados, abordó desde los fundamentos básicos hasta las técnicas más avanzadas del manejo del capote. Los maestros explicaron la importancia del temple, la colocación y el timing en cada lance, transmitiendo décadas de experiencia acumulada en los mejores ruedos del mundo. Esta iniciativa forma parte de un programa más amplio destinado a preservar y transmitir los conocimientos tradicionales del arte del toreo."
+      id: 5,
+      title: "",
+      image: "",
+      category: "",
+      date: "",
+      excerpt: "",
+      fullContent: ""
     }
   ];
 
@@ -395,83 +341,31 @@ export default function Home() {
   const chronicles: Chronicle[] = [
     {
       id: 101,
-      title: "Plaza de toros de Arnedo (La Rioja) || Tercera del Zapato de Oro 2025",
-      plaza: "Arnedo (La Rioja)",
-      date: "15 Enero 2025",
-      toreros: ["Emiliano Osornio", "Cristiano Torres", "Gonzalo Capdevila"],
-      ganaderia: "El Montecillo",
+      title: "",
+      plaza: "",
+      date: "",
+      toreros: [""],
+      ganaderia: "",
       resultado: [
-        "Oreja tras aviso y Dos orejas tras aviso",
-        "Silencio tras aviso y Dos orejas tras aviso", 
-        "Palmas y Silencio"
+        ""
       ],
-      image: "/images/rioja.jpeg",
-      resumen: "Un tercio de plaza. Se lidian novillos de El Montecillo. Emiliano Osornio (Blanco y Plata), Oreja tras aviso y Dos orejas tras aviso; Cristiano Torres (Canela y Oro), Silencio tras aviso y Dos orejas tras aviso; Gonzalo Capdevila que sustituyó a Julio Norte (Ciruela y Oro), Palmas y Silencio.",
-      detalles: "Tras la muerte del segundo, Cristiano Torres salió por la enfermería y volvió por la puerta grande tras la muerte del quinto. Una tarde que comenzó con dificultades pero que terminó con el triunfo del arte y la valentía en el coso riojano."
+      image: "",
+      resumen: "",
+      detalles: ""
     },
     {
       id: 102,
-      title: "Plaza de toros de Sevilla || Corrida de la Maestranza",
-      plaza: "Real Maestranza de Sevilla",
-      date: "14 Enero 2025",
-      toreros: ["Morante de la Puebla", "El Juli", "José María Manzanares"],
-      ganaderia: "Miura",
+      title: "",
+      plaza: "",
+      date: "",
+      toreros: [""],
+      ganaderia: "",
       resultado: [
-        "Dos orejas y vuelta al ruedo",
-        "Oreja y ovación",
-        "Ovación y oreja"
+        ""
       ],
-      image: "/images/plazasevilla.jpeg",
-      resumen: "Corrida de toros en la Real Maestranza de Sevilla con reses de Miura. Morante de la Puebla, Dos orejas y vuelta al ruedo; El Juli, Oreja y ovación; José María Manzanares, Ovación y oreja.",
-      detalles: "Una tarde histórica en la catedral del toreo sevillano. Morante demostró una vez más su maestría con el capote y la muleta, especialmente brillante en su segundo toro. El Juli ofreció técnica y temple, mientras que Manzanares cerró la tarde con una faena de gran mérito ante un toro complicado."
-    },
-    {
-      id: 103,
-      title: "Plaza de toros de Las Ventas || Novillada sin picadores",
-      plaza: "Las Ventas (Madrid)",
-      date: "13 Enero 2025",
-      toreros: ["Manuel Perera", "Tomás Rufo", "Diego San Román"],
-      ganaderia: "Los Chospes",
-      resultado: [
-        "Oreja y dos orejas",
-        "Ovación y oreja",
-        "Silencio y ovación"
-      ],
-      image: "/images/novilladasinpicadores.jpeg",
-      resumen: "Novillada sin picadores en Las Ventas con erales de Los Chospes. Manuel Perera, Oreja y dos orejas; Tomás Rufo, Ovación y oreja; Diego San Román, Silencio y ovación.",
-      detalles: "La cantera taurina española brilló en Las Ventas con una novillada que puso de manifiesto el buen momento de los jóvenes valores. Manuel Perera se alzó como el triunfador de la tarde con un toque de temple y arte que emocionó al respetable madrileño."
-    },
-    {
-      id: 104,
-      title: "Plaza de toros de Valencia || Fallas 2025",
-      plaza: "Valencia",
-      date: "12 Enero 2025",
-      toreros: ["Enrique Pince", "Cayetano Rivera", "Roca Rey"],
-      ganaderia: "Victoriano del Río",
-      resultado: [
-        "Ovación y dos orejas",
-        "Oreja y ovación",
-        "Dos orejas y oreja"
-      ],
-      image: "/images/fallas.jpeg",
-      resumen: "Corrida de toros en Valencia con motivo de las Fallas, con reses de Victoriano del Río. Enrique Pince, Ovación y dos orejas; Cayetano Rivera, Oreja y ovación; Roca Rey, Dos orejas y oreja.",
-      detalles: "Una tarde espectacular en la plaza valenciana donde el arte y la emoción se dieron cita. Roca Rey se alzó como el gran triunfador de la tarde con dos faenas memorables que emocionaron al público fallero."
-    },
-    {
-      id: 106,
-      title: "Plaza de toros las ventas",
-      plaza: "Las ventas",
-      date: "9 Octubre 2025",
-      toreros: ["Enrique Pince", "Cayetano Rivera", "Roca Rey"],
-      ganaderia: "Victoriano del Río",
-      resultado: [
-        "Ovación y dos orejas",
-        "Oreja y ovación",
-        "Dos orejas y oreja"
-      ],
-      image: "/images/lasventas.jpg",
-      resumen: "Corrida de toros en Valencia con motivo de las Fallas, con reses de Victoriano del Río. Enrique Pince, Ovación y dos orejas; Cayetano Rivera, Oreja y ovación; Roca Rey, Dos orejas y oreja.",
-      detalles: "Una tarde espectacular en la plaza valenciana donde el arte y la emoción se dieron cita. Roca Rey se alzó como el gran triunfador de la tarde con dos faenas memorables que emocionaron al público fallero."
+      image: "",
+      resumen: "",
+      detalles: ""
     }
   ];
 
