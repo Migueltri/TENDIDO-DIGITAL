@@ -289,42 +289,42 @@ export default function Home() {
   const featuredNews: NewsItem[] = [
     {
       id: 1,
-      title: "Morante de la Puebla triunfa en Las Ventas con una faena histórica",
-      image: "/images/morante.jpg",
-      category: "Actualidad",
-      date: "15 Enero 2025",
-      excerpt: "Una tarde inolvidable en la catedral del toreo donde Morante demostró su maestría",
-      fullContent: "El maestro Morante de la Puebla protagonizó una tarde histórica en Las Ventas, demostrando una vez más por qué es considerado uno de los toreros más importantes de la actualidad. Con una faena llena de temple y arte, el diestro de La Puebla del Río logró conectar con el público madrileño de una manera extraordinaria. La corrida, que contó con toros de la ganadería de Victorino Martín, fue el escenario perfecto para que Morante desplegara todo su repertorio artístico. Desde los primeros pases con el capote hasta la faena de muleta, el torero demostró una técnica depurada y una comprensión profunda del arte del toreo. El público, entregado desde el primer momento, premió su actuación con una ovación que se prolongó durante varios minutos."
+      title: "",
+      image: "",
+      category: "",
+      date: "",
+      excerpt: "",
+      fullContent: ""
     },
     {
       id: 2,
-      title: "Temporada 2025: Las figuras del toreo se preparan para la Feria de San Isidro",
-      image: "/images/temporada.jpg",
-      category: "Agenda",
-      date: "14 Enero 2025",
-      excerpt: "Los mejores toreros del mundo confirman su presencia en la feria más importante",
-      fullContent: "La Feria de San Isidro 2025 promete ser una de las más emocionantes de los últimos años. Las principales figuras del toreo han confirmado ya su participación en la cita más importante del calendario taurino español. Entre los nombres confirmados destacan Morante de la Puebla, El Juli, José María Manzanares, Roca Rey y Cayetano Rivera, quienes se alternarán en los carteles más esperados. La empresa Las Ventas ha trabajado intensamente para ofrecer una programación variada que incluye corridas de toros, novilladas picadas y festivales benéficos. Los aficionados ya pueden adquirir sus localidades a través de la página web oficial, donde se espera una gran demanda como cada año."
+      title: "",
+      image: "",
+      category: "",
+      date: "",
+      excerpt: "",
+      fullContent: ""
     },
     {
       id: 3,
-      title: "Entrevista exclusiva: José Tomás habla sobre su regreso a los ruedos",
-      image: "/images/josetomas.jpeg",
-      category: "Entrevistas",
-      date: "13 Enero 2025",
-      excerpt: "El torero de Galapagar revela sus planes para esta temporada",
-      fullContent: "En una entrevista exclusiva para Tendido Digital, José Tomás ha revelado sus planes para la temporada 2025. El torero de Galapagar, conocido por su estilo único y su capacidad para emocionar al público, ha confirmado que está preparando su regreso a los ruedos después de un período de reflexión. 'El toreo es mi vida y siento que aún tengo mucho que dar', declaró el diestro durante la conversación. José Tomás también habló sobre la importancia de mantener viva la tradición taurina y su compromiso con las nuevas generaciones de aficionados. Sus apariciones serán limitadas pero prometedoras, con especial atención a las plazas más importantes de España y América."
+      title: "",
+      image: "",
+      category: "",
+      date: "",
+      excerpt: "",
+      fullContent: ""
     }
   ];
 
   const latestNews: NewsItem[] = [
     {
       id: 4,
-      title: "El Cid corta dos orejas en la plaza de toros de Sevilla",
-      image: "/images/elcid.jpg",
-      category: "Crónicas",
-      date: "15 Enero 2025",
-      excerpt: "Una tarde memorable en la Maestranza sevillana donde El Cid demostró su arte y valentía ante un público entregado.",
-      fullContent: "El Cid protagonizó una tarde triunfal en la Real Maestranza de Caballería de Sevilla, cortando dos orejas en una actuación que quedará grabada en la memoria de los aficionados. El diestro demostró una vez más su capacidad para emocionar y su dominio técnico ante toros de la ganadería de Miura. La faena al quinto toro fue especialmente brillante, con una serie de naturales que arrancaron los olés del respetable sevillano. El público, conocedor y exigente, premió su actuación con una ovación cerrada que se prolongó durante varios minutos. Esta actuación consolida a El Cid como una de las figuras más sólidas del panorama taurino actual."
+      title: "",
+      image: "",
+      category: "",
+      date: "",
+      excerpt: "",
+      fullContent: ""
     },
     {
       id: 5,
