@@ -328,11 +328,11 @@ export default function Home() {
       ],
       image: "images/lasventascronica.jpg",
       resumen: "NOVILLOS",
-     detalles: [
-  "PRIMER NOVILLO: Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.",
-  "SEGUNDO NOVILLO: Sale el segundo de Fuente Ymbro para el Mene, quien recibió con unas pocas verónicas bien dadas, complicado para colocarlo en el caballo. (Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas). Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en buen sitio. 1 Aviso. Palmas.",
-  "TERCER NOVILLO: Sale el tercero de la tarde, sin llegar a estar fijo en el capote del joven Pedro Luis, le costó coger celo en el peto, dos puyazos buenos en buen sitio. Brindis al público, recibe en largo al novillo por el derecho, difícil en el quite, pero con algunos pases buenos por ambos pitones. Espadazo en buen sitio. 2 Avisos. Palmas en el arrastre. Silencio."
-],
+      detalles: [
+  "PRIMER NOVILLO: Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos y largos. A lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.",
+  "SEGUNDO NOVILLO: Sale el segundo de Fuente Ymbro para el Mene, quien recibió con unas pocas verónicas bien dadas. Complicado para colocarlo en el caballo. (Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas). Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros... Mató al volapié con una estocada entera y en buen sitio. 1 Aviso. Palmas.",
+  "TERCER NOVILLO: Sale el tercero de la tarde, sin llegar a estar fijo en el capote del joven Pedro Luis. Le costó coger celo en el peto, dos puyazos buenos en buen sitio. Brindis al público, recibe en largo al novillo por el derecho. Espadazo en buen sitio. 2 Avisos. Palmas en el arrastre. Silencio."
+  ],  
     },
     {
       id: 5,
@@ -366,7 +366,7 @@ export default function Home() {
       resultado: [ "Silencio"],
       image: "images/lasventascronica.jpg",
       resumen: "NOVILLOS",
-      detalles: detalles: [
+      detalles: [
   "PRIMER NOVILLO: Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos y largos. A lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.",
   "SEGUNDO NOVILLO: Sale el segundo de Fuente Ymbro para el Mene, quien recibió con unas pocas verónicas bien dadas. Complicado para colocarlo en el caballo. (Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas). Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros... Mató al volapié con una estocada entera y en buen sitio. 1 Aviso. Palmas.",
   "TERCER NOVILLO: Sale el tercero de la tarde, sin llegar a estar fijo en el capote del joven Pedro Luis. Le costó coger celo en el peto, dos puyazos buenos en buen sitio. Brindis al público, recibe en largo al novillo por el derecho. Espadazo en buen sitio. 2 Avisos. Palmas en el arrastre. Silencio."
