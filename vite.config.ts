@@ -10,6 +10,7 @@ export default defineConfig({
   define: {
     __BASE_PATH__: JSON.stringify(base),
     __IS_PREVIEW__: JSON.stringify(isPreview),
+    esbuild: { drop: ['console', 'debugger'] },
   },
   plugins: [
     react(),
@@ -40,7 +41,7 @@ export default defineConfig({
   base,
   build: {
     sourcemap: true,
-    outDir: 'dist', // 👈 IMPORTANTE: carpeta final
+    outDir: 'dist',
   },
   resolve: { alias: { '@': resolve(__dirname, './src') } },
   server: { port: 3000, host: '0.0.0.0' },
