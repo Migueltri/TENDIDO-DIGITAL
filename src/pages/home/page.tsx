@@ -361,12 +361,16 @@ export default function Home() {
       date: "10 de Octubre de 2025",
       toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
       ganaderia: "Fuente Ymbro",
-      resultado: [ 
+      resultado: [ "Silencio"
        
     
       ],
       image: "images/lasventascronica.jpg",
-      resumen: "",
+      resumen: "PRIMER NOVILLO
+
+Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio
+
+Silencio"
       detalles: ""
     },
     {
