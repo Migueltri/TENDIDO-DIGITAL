@@ -541,7 +541,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full mx-auto mb-6"></div>
             <p className="text-gray-600 text-lg">
-              Las reseñas más completas de las corridas de toros
+              Las reseñas completas de los festejos taurinos
             </p>
           </div>
           
