@@ -366,7 +366,7 @@ export default function Home() {
     
       ],
       image: "images/lasventascronica.jpg",
-      resumen: "PRIMER NOVILLO"
+      resumen: "PRIMER NOVILLO",
       detalles: ""
     },
     {
