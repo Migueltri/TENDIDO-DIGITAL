@@ -324,7 +324,7 @@ export default function Home() {
       date: "10 de Octubre de 2025",
       toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
       ganaderia: "Fuente Ymbro",
-      resultado: [ 
+      resultado: [ "Palmas Tras Aviso
        
     
       ],
