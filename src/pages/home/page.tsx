@@ -290,7 +290,7 @@ export default function Home() {
     {
       id: 1,
       title: "",
-      image: "",
+      image: "g",
       category: "",
       date: "",
       excerpt: "",
@@ -341,15 +341,16 @@ export default function Home() {
   const chronicles: Chronicle[] = [
     {
       id: 101,
-      title: "",
-      plaza: "",
-      date: "",
-      toreros: [""],
-      ganaderia: "",
-      resultado: [
-        ""
+      title: "Toro a Toro: Novillada Madrid",
+      plaza: "Plaza de Toros Madrid",
+      date: "10 de Octubre de 2025",
+      toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
+      ganaderia: "Fuente Ymbro",
+      resultado: [ 
+       
+    
       ],
-      image: "",
+      image: "images/lasventascronica.jpg",
       resumen: "",
       detalles: ""
     },
