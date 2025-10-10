@@ -327,15 +327,6 @@ export default function Home() {
       fullContent: ""
     },
     {
-      id: 5,
-      title: "Análisis: Las claves del éxito en la temporada taurina 2025",
-      image: "/images/analisis.jpg",
-      category: "Opinión",
-      date: "14 Enero 2025",
-      excerpt: "Expertos analizan las tendencias y figuras que marcarán el año taurino en España y América.",
-      fullContent: "La temporada taurina 2025 se presenta con grandes expectativas y varios factores que determinarán su éxito. Según los expertos consultados, la renovación generacional será uno de los aspectos más destacados, con jóvenes figuras que buscan consolidarse junto a los maestros consagrados. La programación de las principales plazas muestra una apuesta decidida por la calidad, tanto en los carteles como en las ganaderías seleccionadas. América Latina también jugará un papel importante, con un creciente interés por el toreo español y la organización de eventos de gran nivel. Los aficionados esperan una temporada rica en emociones y momentos memorables."
-    },
-    {
       id: 6,
       title: "Novillada en Madrid: Triunfo de los jóvenes valores",
       image: "/images/novilladaenmadrid.jpg",
