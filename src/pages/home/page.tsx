@@ -324,10 +324,8 @@ export default function Home() {
       date: "10 de Octubre de 2025",
       toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
       ganaderia: "Fuente Ymbro",
-      resultado: [ "Palmas Tras Aviso
-       
-    
-      ],
+      resultado: [ "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio"
+       ],
       image: "images/lasventascronica.jpg",
       resumen: "",
       detalles: ""
