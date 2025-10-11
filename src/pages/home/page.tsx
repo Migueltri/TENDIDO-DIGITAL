@@ -96,7 +96,7 @@ const schemaData = {
 "@type": "SearchAction",
 "target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
 }
-};
+}
 
 text
 
