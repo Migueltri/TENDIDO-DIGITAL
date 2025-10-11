@@ -809,8 +809,10 @@ const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300 leading-tight">
                     {chronicle.title.split('||')[1]?.trim() || chronicle.title}
                   </h3>
+                  
                 {/* Grid con imagen y contenido */}
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">       
+                  
                     {/* Imagen */}
                     <div className="lg:col-span-1">
                       <div className="relative overflow-hidden rounded-xl aspect-[4/3]">
@@ -922,9 +924,6 @@ const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
       );
     }
 
-    // Contenido principal (inicio)
-    return (
-      <>
         {/* Hero Carousel */}
         <section id="inicio" className="relative h-[400px] md:h-[600px] overflow-hidden">
           {featuredNews.map((news, index) => (
@@ -1012,124 +1011,81 @@ const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
             {/* Main News Section */}
             <div id="actualidad" className="lg:col-span-2">
               {/* Section Header */}
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 md:mb-12">
-                <div className="mb-6 md:mb-0">
-                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-900 to-red-600 bg-clip-text text-transparent mb-3 tracking-tight">
-                    Últimas Noticias
-                  </h2>
-                  <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full"></div>
-                  <p className="text-gray-600 mt-3 text-lg">Mantente al día con la actualidad taurina</p>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  <button 
-                    onClick={() => setNewsFilter('todas')}
-                    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-                      newsFilter === 'todas' 
-                        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-                        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-                    }`}
-                  >
-                    Todas
-                  </button>
-                  <button 
-                    onClick={() => setNewsFilter('redaccion')}
-                    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-                      newsFilter === 'redaccion' 
-                        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-                        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-                    }`}
-                  >
-                    Redacción
-                  </button>
-                  <button 
-                    onClick={() => setNewsFilter('cronicas')}
-                    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-                      newsFilter === 'cronicas' 
-                        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-                        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-                    }`}
-                  >
-                    Crónicas
-                  </button>
-                  <button 
-                    onClick={() => setNewsFilter('opinion')}
-                    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-                      newsFilter === 'opinion' 
-                        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-                        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-                    }`}
-                  >
-                    Opinión
-                  </button>
-                </div>
-              </div>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {getFilteredNews().slice(0, visibleNewsCount).map((news) => (
-                  <article 
-                    key={news.id} 
-                    className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-                    onClick={() => openNewsModal(news)}
-                  >
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={news.image}
-                        alt={news.title}
-                        className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                          {news.category}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-gray-500 text-sm">{news.date}</span>
-                        <div className="flex items-center text-gray-400">
-                          <i className="ri-time-line mr-1"></i>
-                          <span className="text-xs">3 min</span>
-                        </div>
-                      </div>
-                      <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
-                        {news.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
-                      
-                      <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                        <div className="flex items-center space-x-4">
-                          <button 
-                            onClick={(e) => toggleSave(news.id, e)}
-                            className={`transition-all duration-300 ${
-                              savedPosts.has(news.id) 
-                                ? 'text-yellow-600' 
-                                : 'text-gray-500 hover:text-yellow-600'
-                            }`}
-                            aria-label={savedPosts.has(news.id) ? 'Quitar de guardados' : 'Guardar noticia'}
-                          >
-                            <i className={`${savedPosts.has(news.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-lg`}></i>
-                          </button>
-                          
-                          <button 
-                            onClick={(e) => openShareModal(news, e)}
-                            className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
-                            aria-label="Compartir noticia"
-                          >
-                            <i className="ri-share-line text-lg"></i>
-                          </button>
-                        </div>
-                        
-                        <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
-                          Leer más 
-                          <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </article>
-                ))}
+  {getFilteredNews().slice(0, visibleNewsCount).map((news) => (
+    <article 
+      key={news.id} 
+      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+      onClick={() => openNewsModal(news)}
+    >
+      <div className="relative overflow-hidden">
+        <img
+          src={news.image}
+          alt={news.title}
+          className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute top-4 left-4">
+          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+            {news.category}
+          </span>
+        </div>
+      </div>
+
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-4">
+          <span className="text-gray-500 text-sm">{news.date}</span>
+          <div className="flex items-center text-gray-400">
+            <i className="ri-time-line mr-1"></i>
+            <span className="text-xs">3 min</span>
+          </div>
+        </div>
+
+        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
+          {news.title}
+        </h3>
+
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          {news.excerpt || "Haz clic para leer la crónica completa."}
+        </p>
+
+        <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+          <div className="flex items-center space-x-4">
+            <button 
+              onClick={(e) => toggleSave(news.id, e)}
+              className={`transition-all duration-300 ${
+                savedPosts.has(news.id) 
+                  ? 'text-yellow-600' 
+                  : 'text-gray-500 hover:text-yellow-600'
+              }`}
+              aria-label={savedPosts.has(news.id) ? 'Quitar de guardados' : 'Guardar noticia'}
+            >
+              <i className={`${savedPosts.has(news.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-lg`}></i>
+            </button>
+
+            <button 
+              onClick={(e) => openShareModal(news, e)}
+              className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
+              aria-label="Compartir noticia"
+            >
+              <i className="ri-share-line text-lg"></i>
+            </button>
+          </div>
+
+          <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
+            Leer más 
+            <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+               </button>
               </div>
+            </div>
+          </article>
+          ))}
+          </div>
+        </div>
+         </div> 
+         );
+        }
 
               {/* Load More Button */}
               {visibleNewsCount < getFilteredNews().length && (
