@@ -809,9 +809,8 @@ const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300 leading-tight">
                     {chronicle.title.split('||')[1]?.trim() || chronicle.title}
                   </h3>
-                  
-                  {/* Grid con imagen y contenido */}
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Grid con imagen y contenido */}
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">       
                     {/* Imagen */}
                     <div className="lg:col-span-1">
                       <div className="relative overflow-hidden rounded-xl aspect-[4/3]">
