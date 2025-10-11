@@ -94,8 +94,7 @@ const schemaData = {
 "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
 "potentialAction": {
 "@type": "SearchAction",
-"target": $ { typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string},
-"query-input": "required name=search_term_string"
+"target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
 }
 };
 
@@ -303,8 +302,8 @@ image: "images/frascuelo.jpg",
 category: "actualidad",
 date: "11 de Octubre de 2025",
 excerpt: "",
-fullContent: "El torero Carlos Escolar Frascuelo hara el paseillo este domingo en el festival en homenaje a Antoñete.Sustituira al matador de toros Julio Aparicio,que no podra participar en este evento.
-  El cartel queda de diferente manera:Pablo Hermoso de Mendoza,Curro Vazquez,Carlos Escolar Frascuelo,Cesar Rincon,Enrique Ponce,Morante de la Puebla y Olga Casado-Novillos de diferentes ganaderias"
+fullContent: "El torero Carlos Escolar Frascuelo hara el paseillo este domingo en el festival en homenaje a Antoñete.Sustituira al matador de toros Julio Aparicio,que no podra participar en este evento."
+  "El cartel queda de diferente manera:Pablo Hermoso de Mendoza,Curro Vazquez,Carlos Escolar Frascuelo,Cesar Rincon,Enrique Ponce,Morante de la Puebla y Olga Casado-Novillos de diferentes ganaderias."
 },
 {
 id: 2,
