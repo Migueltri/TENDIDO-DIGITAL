@@ -918,10 +918,10 @@ const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
                   </div>
                 </div>
               </article>
-            ))}
+            ))
           </div>
         </div>
-      );
+      )
     }
 
         {/* Hero Carousel */}
