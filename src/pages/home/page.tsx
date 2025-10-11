@@ -334,15 +334,123 @@ plaza: "Plaza de Toros Madrid",
 date: "10 de Octubre de 2025",
 toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
 ganaderia: "Fuente Ymbro",
-resultado: [ "Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejo toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en el la tierra que de pie, estocada entera y en buen sitio"
-],
+resultado: [ "Silencio y Silencio","Ovación y Ovación","Silencio y Silencio"],
 image: "images/lasventascronica.jpg",
-resumen: "NOVILLOS",
-detalles: [
-"PRIMER NOVILLO: Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos y largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.",
-"SEGUNDO NOVILLO: Sale el segundo de Fuente Ymbro para el Mene, quien recibió con unas pocas verónicas bien dadas, complicado para colocarlo en el caballo. (Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas). Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en buen sitio. 1 Aviso. Palmas.",
-"TERCER NOVILLO: Sale el tercero de la tarde, sin llegar a estar fijo en el capote del joven Pedro Luis, le costó coger celo en el peto, dos puyazos buenos en buen sitio. Brindis al público, recibe en largo al novillo por el derecho, difícil en el quite, pero con algunos pases buenos por ambos pitones. Espadazo en buen sitio. 2 Avisos. Palmas en el arrastre. Silencio."
-],
+resumen: `RESUMEN:
+
+PRIMER NOVILLO
+
+Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
+
+Silencio en el arrastre.
+
+SEGUNDO NOVILLO
+
+Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
+
+Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
+
+Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
+
+Silencio en el arrastre.
+
+TERCER NOVILLO
+
+Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
+
+Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
+
+Espadazo en buen sitio.
+
+Palmas en el arrastre.
+
+CUARTO NOVILLO
+
+Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
+
+En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
+Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
+
+Silencio en el arrastre.
+
+QUINTO NOVILLO
+
+Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
+
+Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
+Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
+
+Pinchazo y media estocada, rematada con golpe de verduguillo.
+
+Palmas en el arrastre.
+
+SEXTO NOVILLO
+
+Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
+Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
+
+Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
+
+Doble pinchazo y golpe de verduguillo.
+
+Palmas en el arrastre., detalles: RESUMEN:
+
+PRIMER NOVILLO
+
+Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
+
+Silencio en el arrastre.
+
+SEGUNDO NOVILLO
+
+Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
+
+Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
+
+Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
+
+Silencio en el arrastre.
+
+TERCER NOVILLO
+
+Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
+
+Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
+
+Espadazo en buen sitio.
+
+Palmas en el arrastre.
+
+CUARTO NOVILLO
+
+Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
+
+En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
+Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
+
+Silencio en el arrastre.
+
+QUINTO NOVILLO
+
+Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
+
+Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
+Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
+
+Pinchazo y media estocada, rematada con golpe de verduguillo.
+
+Palmas en el arrastre.
+
+SEXTO NOVILLO
+
+Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
+Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
+
+Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
+
+Doble pinchazo y golpe de verduguillo.
+
+Palmas en el arrastre.`,
 },
 {
 id: 5,
@@ -373,14 +481,125 @@ plaza: "Plaza de Toros Madrid",
 date: "10 de Octubre de 2025",
 toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
 ganaderia: "Fuente Ymbro",
-resultado: [ "Silencio"],
+resultado: [ "Silencio y Silencio","Ovación y Ovación","Silencio y Silencio"],
 image: "images/lasventascronica.jpg",
-resumen: "NOVILLOS",
-detalles: detalles: [
-"PRIMER NOVILLO: Salía el primer NOVILLO de fuente justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos y largos. A lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.",
-"SEGUNDO NOVILLO: Sale el segundo de Fuente Ymbro para el Mene, quien recibió con unas pocas verónicas bien dadas. Complicado para colocarlo en el caballo. (Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas). Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros... Mató al volapié con una estocada entera y en buen sitio. 1 Aviso. Palmas.",
-"TERCER NOVILLO: Sale el tercero de la tarde, sin llegar a estar fijo en el capote del joven Pedro Luis. Le costó coger celo en el peto, dos puyazos buenos en buen sitio. Brindis al público, recibe en largo al novillo por el derecho. Espadazo en buen sitio. 2 Avisos. Palmas en el arrastre. Silencio."
-],
+resumen: `RESUMEN:
+
+PRIMER NOVILLO
+
+Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
+
+Silencio en el arrastre.
+
+SEGUNDO NOVILLO
+
+Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
+
+Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
+
+Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
+
+Silencio en el arrastre.
+
+TERCER NOVILLO
+
+Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
+
+Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
+
+Espadazo en buen sitio.
+
+Palmas en el arrastre.
+
+CUARTO NOVILLO
+
+Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
+
+En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
+Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
+
+Silencio en el arrastre.
+
+QUINTO NOVILLO
+
+Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
+
+Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
+Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
+
+Pinchazo y media estocada, rematada con golpe de verduguillo.
+
+Palmas en el arrastre.
+
+SEXTO NOVILLO
+
+Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
+Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
+
+Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
+
+Doble pinchazo y golpe de verduguillo.
+
+Palmas en el arrastre.`,
+
+detalles: `RESUMEN:
+
+PRIMER NOVILLO
+
+Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
+
+Silencio en el arrastre.
+
+SEGUNDO NOVILLO
+
+Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
+
+Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
+
+Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
+
+Silencio en el arrastre.
+
+TERCER NOVILLO
+
+Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
+
+Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
+
+Espadazo en buen sitio.
+
+Palmas en el arrastre.
+
+CUARTO NOVILLO
+
+Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
+
+En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
+Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
+
+Silencio en el arrastre.
+
+QUINTO NOVILLO
+
+Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
+
+Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
+Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
+
+Pinchazo y media estocada, rematada con golpe de verduguillo.
+
+Palmas en el arrastre.
+
+SEXTO NOVILLO
+
+Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
+Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
+
+Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
+
+Doble pinchazo y golpe de verduguillo.
+
+Palmas en el arrastre.`,
 },
 {
 id: 102,
