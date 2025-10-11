@@ -631,11 +631,17 @@ Palmas en el arrastre.`,
   };
 
   // Función para abrir modal de noticia
-  const openNewsModal = (news: NewsItem | OpinionArticle) => {
-    setSelectedNews(news);
-    setIsNewsModalOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
+const openNewsModal = (news: NewsItem | OpinionArticle | Chronicle) => {
+  // Si el contenido tiene toreros o ganaderia, es una crónica
+  if ("toreros" in news || "ganaderia" in news) {
+    openChronicleModal(news as Chronicle);
+    return;
+  }
+
+  setSelectedNews(news);
+  setIsNewsModalOpen(true);
+  document.body.style.overflow = 'hidden';
+};
 
   // Función para cerrar modal de noticia
   const closeNewsModal = () => {
@@ -850,17 +856,35 @@ Palmas en el arrastre.`,
                       </div>
                       
                       {/* Resumen */}
-                      <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
-                        <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
-                          <i className="ri-file-text-line mr-2 text-red-600"></i>
-                          Resumen de la corrida
-                        </h4>
-                        <p className="text-gray-700 text-sm leading-relaxed">
-                          {chronicle.detalles}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+  <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+  <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+    <i className="ri-file-text-line mr-2 text-red-600"></i>
+    Resumen de la corrida
+  </h4>
+
+  <div className="space-y-2 text-sm leading-relaxed">
+    {chronicle.resumen.split("\n").map((line, index) => {
+      if (!line.trim()) return <br key={index} />;
+
+      if (line.match(/RESUMEN|NOVILLO/i)) {
+        return (
+          <p
+            key={index}
+            className="font-bold text-gray-900 uppercase tracking-wide mt-4 mb-1"
+          >
+            {line.trim()}
+          </p>
+        );
+      }
+
+      return (
+        <p key={index} className="text-gray-700">
+          {line.trim()}
+        </p>
+      );
+    })}
+  </div>
+</div>
                   
                   {/* Footer con acciones */}
                   <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
@@ -941,7 +965,7 @@ Palmas en el arrastre.`,
                         onClick={() => scrollToSection('actualidad')}
                         className="bg-white/20 backdrop-blur-sm text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/20"
                       >
-                        Ver más noticias
+                        Ver más noticias taurinas
                       </button>
                     </div>
                   </div>
