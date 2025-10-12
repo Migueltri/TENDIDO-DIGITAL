@@ -308,13 +308,11 @@ const featuredNews: NewsItem[] = [
 {
 id: 1,
 title: "Frascuelo por Julio Aparicio en el Festival en homenaje a Antoñete",
-image: "images/frascuelo.jpg",
+image: "",
 category: "actualidad",
 date: "11 de Octubre de 2025",
 excerpt: "",
-fullContent: `El torero Carlos Escolar Frascuelo hará el paseíllo este domingo en el festival en homenaje a Antoñete. 
-Sustituirá al matador de toros Julio Aparicio, que no podrá participar en este evento. 
-El cartel queda de la siguiente manera: Pablo Hermoso de Mendoza, Curro Vázquez, Carlos Escolar Frascuelo, César Rincón, Enrique Ponce, Morante de la Puebla y Olga Casado.`,
+fullContent: ``,
 },
 {
 id: 2,
@@ -1478,8 +1476,6 @@ return (
 TENDIDO DIGITAL
 </span>
 </div>
-
-text
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
