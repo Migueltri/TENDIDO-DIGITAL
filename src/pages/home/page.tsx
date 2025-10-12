@@ -307,9 +307,9 @@ news.category.toLowerCase() === newsFilter
 const featuredNews: NewsItem[] = [
 {
 id: 1,
-title: "Frascuelo por Julio Aparicio en el Festival en homenaje a Antoñete",
+title: "",
 image: "",
-category: "actualidad",
+category: "",
 date: "11 de Octubre de 2025",
 excerpt: "",
 fullContent: ``,
@@ -335,7 +335,7 @@ fullContent: ""
 ];
 
 const latestNews: OpinionArticle[] = [
-{
+{    
 id: 4,
 title: "Toro a Toro: Novillada Madrid",
 plaza: "Plaza de Toros Madrid",
