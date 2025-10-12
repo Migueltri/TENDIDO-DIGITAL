@@ -10,6 +10,7 @@ date: string;
 excerpt: string;
 fullContent: string;
 author?: string;
+resumen: string;
 }
 
 interface OpinionArticle {
@@ -89,16 +90,15 @@ const schemaData = {
 "https://instagram.com/tendidodigital",
 "https://youtube.com/tendidodigital"
 ],
-"mainEntity": {
-"@type": "WebSite",
-"url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
-"potentialAction": {
-"@type": "SearchAction",
-"target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
-}
-}
-
-text
+    "mainEntity": {
+      "@type": "WebSite",
+      "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
+      }
+    }
+  };
 
 const scriptId = 'tendido-schema-org';
 const existingScript = document.getElementById(scriptId);
@@ -124,8 +124,6 @@ return () => {
 const handleNewsletterSubmit = async (e: React.FormEvent) => {
 e.preventDefault();
 if (!newsletterEmail.trim()) return;
-
-text
 
 setIsNewsletterSubmitting(true);
 setNewsletterMessage('');
@@ -159,8 +157,6 @@ if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.messag
 setContactMessage('Por favor, completa todos los campos obligatorios.');
 return;
 }
-
-text
 
 setIsContactSubmitting(true);
 setContactMessage('');
@@ -196,8 +192,6 @@ if (e) {
 e.stopPropagation();
 }
 
-text
-
 setSavedPosts(prev => {
   const newSaved = new Set(prev);
   if (newSaved.has(postId)) {
@@ -223,29 +217,29 @@ setSharePost(null);
 };
 
 const shareToWhatsApp = () => {
-if (sharePost) {
-const text = ¡Mira esta noticia taurina! ${sharePost.title} - ${window.location.origin};
-const url = https://wa.me/?text=${encodeURIComponent(text)};
-window.open(url, '_blank', 'noopener,noreferrer');
-closeShareModal();
-}
+  if (sharePost) {
+    const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${window.location.origin}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
 };
 
 const shareToTwitter = () => {
-if (sharePost) {
-const text = ${sharePost.title} - vía @tendidodigital;
-const url = https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)};
-window.open(url, '_blank', 'noopener,noreferrer');
-closeShareModal();
-}
+  if (sharePost) {
+    const text = `${sharePost.title} - vía @tendidodigital`;
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
 };
 
 const shareToFacebook = () => {
-if (sharePost) {
-const url = https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)};
-window.open(url, '_blank', 'noopener,noreferrer');
-closeShareModal();
-}
+  if (sharePost) {
+    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
 };
 
 const copyLink = async () => {
@@ -262,8 +256,6 @@ console.error('Error al copiar enlace:', error);
 // Obtener posts filtrados según la pestaña activa
 const getFilteredPosts = () => {
 const allPosts = [...featuredNews, ...latestNews];
-
-text
 
 switch (activeTab) {
   case 'guardados':
@@ -302,8 +294,9 @@ image: "images/frascuelo.jpg",
 category: "actualidad",
 date: "11 de Octubre de 2025",
 excerpt: "",
-fullContent: "El torero Carlos Escolar Frascuelo hara el paseillo este domingo en el festival en homenaje a Antoñete.Sustituira al matador de toros Julio Aparicio,que no podra participar en este evento."
-  "El cartel queda de diferente manera:Pablo Hermoso de Mendoza,Curro Vazquez,Carlos Escolar Frascuelo,Cesar Rincon,Enrique Ponce,Morante de la Puebla y Olga Casado-Novillos de diferentes ganaderias."
+fullContent: `El torero Carlos Escolar Frascuelo hará el paseíllo este domingo en el festival en homenaje a Antoñete. 
+Sustituirá al matador de toros Julio Aparicio, que no podrá participar en este evento. 
+El cartel queda de la siguiente manera: Pablo Hermoso de Mendoza, Curro Vázquez, Carlos Escolar Frascuelo, César Rincón, Enrique Ponce, Morante de la Puebla y Olga Casado.`,
 },
 {
 id: 2,
@@ -325,7 +318,7 @@ fullContent: ""
 }
 ];
 
-const latestNews: NewsItem[] = [
+const latestNews: Chronicle[] = [
 {
 id: 4,
 title: "Toro a Toro: Novillada Madrid",
@@ -620,8 +613,6 @@ detalles: ""
 const loadMoreNews = () => {
 setIsLoadingMore(true);
 
-text
-
 setTimeout(() => {
   setVisibleNewsCount(prev => Math.min(prev + 6, getFilteredNews().length));
   setIsLoadingMore(false);
@@ -700,11 +691,11 @@ Noticias Guardadas
 </h2>
 <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full mx-auto mb-6"></div>
 <p className="text-gray-600 text-lg">
-{savedPostsList.length > 0 ? Tienes ${savedPostsList.length} noticias guardadas : 'No tienes noticias guardadas aún'}
+{savedPostsList.length > 0
+  ? `Tienes ${savedPostsList.length} noticias guardadas`
+  : 'No tienes noticias guardadas aún'}
 </p>
 </div>
-
-text
 
       {savedPostsList.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
