@@ -305,24 +305,24 @@ news.category.toLowerCase() === newsFilter
 };
 
 const featuredNews: NewsItem[] = [
-{
-id: 1,
-title: "",
-image: "",
-category: "",
-date: "11 de Octubre de 2025",
-excerpt: "",
-fullContent: ``,
-},
-{
-id: 2,
-title: "",
-image: "",
-category: "",
-date: "",
-excerpt: "",
-fullContent: ""
-},
+  {
+    id: 101,
+    title: "Toro a Toro: Novillada Madrid",
+    image: "images/lasventascronica.jpg",
+    category: "Crónicas",
+    date: "10 de Octubre de 2025",
+    excerpt: "Resumen completo de la novillada en Madrid con Bruno Aloi, El Mene y Pedro Luis.",
+    fullContent: `Resumen toro a toro de la novillada celebrada en Madrid. Con toros de Fuente Ymbro y actuaciones destacadas.`,
+  },
+  {
+    id: 102,
+    title: "Román sufre una recaída y no podrá actuar en Zaragoza",
+    image: "images/ultimacronica.jpg",
+    category: "Crónicas",
+    date: "12 de Octubre de 2025",
+    excerpt: "El torero valenciano Román vuelve a lesionarse el hombro y cancela su compromiso en Zaragoza.",
+    fullContent: `El matador de toros Román no podrá realizar el paseíllo en Zaragoza tras sufrir una recaída en su lesión del hombro.`,
+  },
 {
 id: 3,
 title: "",
