@@ -4,22 +4,36 @@ import { useState, useEffect } from 'react';
 interface NewsItem {
 id: number;
 title: string;
-image: string;
-category: string;
+plaza: string;
 date: string;
-excerpt: string;
+category: string;
+toreros: string[];
+ganaderia: string;
+resultado: string[];
+image: string;
+resumen: string;
+detalles: string;
 fullContent: string;
 author?: string;
 resumen: string;
+excerpt: string;
 }
 
 interface OpinionArticle {
+id: number;
 title: string;
-author: string;
-excerpt: string;
+plaza: string;
 date: string;
+toreros: string[];
+ganaderia: string;
+resultado: string[];
 image: string;
+resumen: string;
+detalles: string;
 fullContent: string;
+author?: string;
+resumen: string;
+excerpt: string;
 }
 
 interface Chronicle {
@@ -33,6 +47,10 @@ resultado: string[];
 image: string;
 resumen: string;
 detalles: string;
+fullContent: string;
+author?: string;
+resumen: string;
+excerpt: string;
 }
 
 export default function Home() {
