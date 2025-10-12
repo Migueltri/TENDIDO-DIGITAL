@@ -36,22 +36,6 @@ resumen: string;
 excerpt: string;
 }
 
-interface Chronicle {
-id: number;
-title: string;
-plaza: string;
-date: string;
-toreros: string[];
-ganaderia: string;
-resultado: string[];
-image: string;
-resumen: string;
-detalles: string;
-fullContent: string;
-author?: string;
-resumen: string;
-excerpt: string;
-}
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
