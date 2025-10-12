@@ -336,7 +336,7 @@ fullContent: ""
 }
 ];
 
-const latestNews: Chronicle[] = [
+const latestNews: OpinionArticle[] = [
 {
 id: 4,
 title: "Toro a Toro: Novillada Madrid",
