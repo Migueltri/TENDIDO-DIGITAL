@@ -462,12 +462,18 @@ Palmas en el arrastre.`,
 },
 {
 id: 5,
-title: "",
-image: "",
-category: "",
-date: "",
-excerpt: "",
-fullContent: ""
+title: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
+image: "images/ultimacronica.jpg",
+category: "Crónicas",
+date: "12/10/2025",
+excerpt: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
+fullContent: `El matador de toros Román no podrá realizar el paseíllo previsto para la tarde de hoy en la plaza de toros de Zaragoza, tras sufrir una recaída en la fractura de la articulación del hombro que arrastra desde la paliza sufrida en Santoña.
+
+Román había regresado a los ruedos ayer en Madrid, donde protagonizó una gran tarde que pudo haber terminado en puerta grande de no ser por el uso de las espadas. Sin embargo, al finalizar la corrida tuvo que entrar en la enfermería de la plaza de toros de Las Ventas debido a molestias y dolor en la zona afectada, que le impedían continuar su actividad. Tras la exploración, los médicos le han recomendado reposo inmediato para evitar un agravamiento y un posible desplazamiento de la fractura en el hombro.
+
+Por este motivo, el torero no podrá cumplir su compromiso en Zaragoza. La evolución será valorada en los próximos días, sin una fecha fija de regreso, con el objetivo de recuperarse al cien por cien antes de volver a los ruedos.
+
+Román ha expresado su agradecimiento a la afición por las muestras de apoyo y comprensión, y espera reencontrarse con la plaza de Zaragoza lo antes posible.`
 },
 {
 id: 6,
@@ -611,17 +617,21 @@ Palmas en el arrastre.`,
 },
 {
 id: 102,
-title: "",
-plaza: "",
-date: "",
-toreros: [""],
-ganaderia: "",
-resultado: [
-""
-],
-image: "",
-resumen: "",
-detalles: ""
+title: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
+image: "images/ultimacronica.jpg",
+category: "Crónicas",
+date: "12/10/2025",
+excerpt: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
+fullContent: `El matador de toros Román no podrá realizar el paseíllo previsto para la tarde de hoy en la plaza de toros de Zaragoza, tras sufrir una recaída en la fractura de la articulación del hombro que arrastra desde la paliza sufrida en Santoña.
+
+Román había regresado a los ruedos ayer en Madrid, donde protagonizó una gran tarde que pudo haber terminado en puerta grande de no ser por el uso de las espadas. Sin embargo, al finalizar la corrida tuvo que entrar en la enfermería de la plaza de toros de Las Ventas debido a molestias y dolor en la zona afectada, que le impedían continuar su actividad. Tras la exploración, los médicos le han recomendado reposo inmediato para evitar un agravamiento y un posible desplazamiento de la fractura en el hombro.
+
+Por este motivo, el torero no podrá cumplir su compromiso en Zaragoza. La evolución será valorada en los próximos días, sin una fecha fija de regreso, con el objetivo de recuperarse al cien por cien antes de volver a los ruedos.
+
+Román ha expresado su agradecimiento a la afición por las muestras de apoyo y comprensión, y espera reencontrarse con la plaza de Zaragoza lo antes posible.`,
+plaza: "Las Ventas",
+toreros: ["Román"],
+resumen: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
 }
 ];
 
