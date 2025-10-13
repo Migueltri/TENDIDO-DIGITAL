@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-// Interfaces para tipado seguro
+// Interfaces unificadas para evitar duplicados y errores
 interface BaseArticle {
   id: number;
   title: string;
@@ -460,152 +460,33 @@ fullContent: ""
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
-{
-id: 101,
-title: "Toro a Toro: Novillada Madrid",
-plaza: "Plaza de Toros Madrid",
-date: "10 de Octubre de 2025",
-toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
-ganaderia: "Fuente Ymbro",
-resultado: [ "Silencio y Silencio","Ovación y Ovación","Silencio y Silencio"],
-image: "images/lasventascronica.jpg",
-video: "/videos/morante.mp4",
-resumen: `RESUMEN:
-
-PRIMER NOVILLO
-
-Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
-
-Silencio en el arrastre.
-
-SEGUNDO NOVILLO
-
-Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
-
-Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
-
-Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
-
-Silencio en el arrastre.
-
-TERCER NOVILLO
-
-Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
-
-Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
-
-Espadazo en buen sitio.
-
-Palmas en el arrastre.
-
-CUARTO NOVILLO
-
-Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
-
-En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
-Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
-
-Silencio en el arrastre.
-
-QUINTO NOVILLO
-
-Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
-
-Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
-Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
-
-Pinchazo y media estocada, rematada con golpe de verduguillo.
-
-Palmas en el arrastre.
-
-SEXTO NOVILLO
-
-Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
-Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
-
-Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
-
-Doble pinchazo y golpe de verduguillo.
-
-Palmas en el arrastre.`,
-
-detalles: `RESUMEN:
-
-PRIMER NOVILLO
-
-Salía el primer novillo de Fuente Ymbro justo de fuerzas, en el caballo dejó toda la fuerza tras dos puyazos largos, a lo largo de la corta faena, el novillo estuvo más en la tierra que de pie, estocada entera y en buen sitio.
-
-Silencio en el arrastre.
-
-SEGUNDO NOVILLO
-
-Salió el segundo de Fuente Ymbro para “El Mene”, quien recibió con unas verónicas bien dadas, complicado para colocarlo en el caballo.
-
-Quite de Pedro Luis por unas muy buenas chicuelinas ajustadas.
-
-Con la muleta dejó algunos pases por ambos pitones, tendía a meterse por los adentros, algunas tandas llenas de enganchones. Mató al volapié con una estocada entera y en muy buen sitio.
-
-Silencio en el arrastre.
-
-TERCER NOVILLO
-
-Salió el tercero de la tarde, sin llegar a estar fijo en el capote del joven novillero peruano, le costó coger celo en el peto, dos puyazos buenos en buen sitio.
-
-Brindis al público, recibió en largo al novillo por el derecho, difícil en el cité, pero con algún pase bueno por ambos pitones.
-
-Espadazo en buen sitio.
-
-Palmas en el arrastre.
-
-CUARTO NOVILLO
-
-Salió el cuarto, correton y sin fijeza, en su encuentro con el caballo, entró y salió sin acometer en el caballo.
-
-En la muleta sin fijeza alguna, Bruno Aloi intentó pegarle algún que otro pase sin encontrar la embestida buena.
-Voltereta fea sin consecuencias visibles. Espadazo en buen sitio.
-
-Silencio en el arrastre.
-
-QUINTO NOVILLO
-
-Muy buen recibo capotero de El Mene. Primer encuentro, quien tira al caballo.
-
-Comienza la faena por estatuarios y trincherillas que hacen rugir a Madrid.
-Por el pitón derecho tenía clase el nº 92 de Fuente Ymbro, por el izquierdo no tanto. Manoletinas ajustadas para cerrar faena.
-
-Pinchazo y media estocada, rematada con golpe de verduguillo.
-
-Palmas en el arrastre.
-
-SEXTO NOVILLO
-
-Recibió Pedro Luis a portagayola. Chicuelinas ajustadas y con arte, aplaudidas por Madrid.
-Primer puyazo: el novillo derriba al caballo, el segundo en buen sitio.
-
-Faena de muleta con tanda corta de estatuarios. Por el derecho respondió medianamente bien; al natural, fue perdiendo clase. Finalizó con manoletinas.
-
-Doble pinchazo y golpe de verduguillo.
-
-Palmas en el arrastre.`,
-},
-{
-id: 102,
-title: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
-image: "images/ultimacronica.jpg",
-category: "Crónicas",
-date: "12/10/2025",
-excerpt: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
-fullContent: `El matador de toros Román no podrá realizar el paseíllo previsto para la tarde de hoy en la plaza de toros de Zaragoza, tras sufrir una recaída en la fractura de la articulación del hombro que arrastra desde la paliza sufrida en Santoña.
-
-Román había regresado a los ruedos ayer en Madrid, donde protagonizó una gran tarde que pudo haber terminado en puerta grande de no ser por el uso de las espadas. Sin embargo, al finalizar la corrida tuvo que entrar en la enfermería de la plaza de toros de Las Ventas debido a molestias y dolor en la zona afectada, que le impedían continuar su actividad. Tras la exploración, los médicos le han recomendado reposo inmediato para evitar un agravamiento y un posible desplazamiento de la fractura en el hombro.
-
-Por este motivo, el torero no podrá cumplir su compromiso en Zaragoza. La evolución será valorada en los próximos días, sin una fecha fija de regreso, con el objetivo de recuperarse al cien por cien antes de volver a los ruedos.
-
-Román ha expresado su agradecimiento a la afición por las muestras de apoyo y comprensión, y espera reencontrarse con la plaza de Zaragoza lo antes posible.`,
-plaza: "Las Ventas",
-toreros: ["Román"],
-resumen: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
-}
+  {
+    id: 101,
+    title: "Toro a Toro: Novillada Madrid",
+    plaza: "Plaza de Toros Madrid",
+    date: "10 de Octubre de 2025",
+    toreros: ["Bruno Aloi", "El Mene", "Pedro Luis"],
+    ganaderia: "Fuente Ymbro",
+    resultado: ["Silencio y Silencio", "Ovación y Ovación", "Silencio y Silencio"],
+    image: "images/lasventascronica.jpg",
+    video: "/videos/morante.mp4",
+    detalles: `Resumen toro a toro de la novillada celebrada en Madrid.`,
+    fullContent: "Amplia reseña completa de la novillada, toro a toro, con Fuente Ymbro y gran ambiente en los tendidos.",
+    excerpt: "Resumen completo de la novillada en Madrid con Bruno Aloi, El Mene y Pedro Luis."
+  },
+  {
+    id: 102,
+    title: "Román sufre una recaída y no podrá actuar en Zaragoza",
+    plaza: "Zaragoza",
+    date: "12 de Octubre de 2025",
+    toreros: ["Román"],
+    ganaderia: "—",
+    resultado: ["No actuó por lesión"],
+    image: "images/ultimacronica.jpg",
+    fullContent: "El matador de toros Román no podrá hacer el paseíllo tras resentirse del hombro en su actuación anterior en Madrid.",
+    excerpt: "Román se resiente del hombro y cancela su compromiso en Zaragoza.",
+    detalles: "Recaída de su lesión de hombro, recomendado reposo inmediato."
+  }
 ];
 
 // Función para cargar más noticias
@@ -796,7 +677,7 @@ if (activeTab === 'cronicas') {
               {/* Header con categoría */}
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm uppercase tracking-wide">
-                  {chronicle.plaza.split('(')[0].trim()}
+                  {chronicle.plaza?.split('(')[0].trim() || 'Plaza no especificada'}
                 </span>
                 <span className="text-gray-500 text-sm font-medium">{chronicle.date}</span>
               </div>
@@ -852,15 +733,15 @@ if (activeTab === 'cronicas') {
                   {/* Resultados de los toreros */}
                   <div className="space-y-3">
                     <h4 className="font-bold text-gray-900 text-lg mb-3">Resultados:</h4>
-                    {chronicle.toreros.map((torero, index) => (
-                      <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                        <div className="flex-1">
-                          <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-                          <p className="text-gray-700 text-sm">{chronicle.resultado[index]}</p>
-                        </div>
-                      </div>
-                    ))}
+{(chronicle.toreros || []).map((torero, index) => (
+  <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
+    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+    <div className="flex-1">
+      <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
+      <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ''}</p>
+    </div>
+  </div>
+))}
                   </div>
                   
                   {/* Resumen */}
