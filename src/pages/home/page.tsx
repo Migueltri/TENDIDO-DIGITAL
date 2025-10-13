@@ -1,60 +1,26 @@
 import { useState, useEffect } from 'react';
 
 // Interfaces para tipado seguro
-interface NewsItem {
-id: number;
-title: string;
-plaza: string;
-date: string;
-category: string;
-toreros: string[];
-ganaderia: string;
-resultado: string[];
-image: string;
-video?: string;
-resumen: string;
-detalles: string;
-fullContent: string;
-author?: string;
-resumen: string;
-excerpt: string;
+interface BaseArticle {
+  id: number;
+  title: string;
+  plaza?: string;
+  date: string;
+  category?: string;
+  toreros?: string[];
+  ganaderia?: string;
+  resultado?: string[];
+  image: string;
+  video?: string;
+  resumen?: string;
+  detalles?: string;
+  fullContent?: string;
+  author?: string;
+  excerpt?: string;
 }
-
-interface OpinionArticle {
-id: number;
-title: string;
-plaza: string;
-date: string;
-toreros: string[];
-ganaderia: string;
-resultado: string[];
-image: string;
-video?: string;
-resumen: string;
-detalles: string;
-fullContent: string;
-author?: string;
-resumen: string;
-excerpt: string;
-}
-
-interface Chronicle {
-id: number;
-title: string;
-plaza: string;
-date: string;
-toreros: string[];
-ganaderia: string;
-resultado: string[];
-image: string;
-video?: string;
-resumen: string;
-detalles: string;
-fullContent: string;
-author?: string;
-resumen: string;
-excerpt: string;
-}
+type NewsItem = BaseArticle;
+type OpinionArticle = BaseArticle;
+type Chronicle = BaseArticle;
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
@@ -309,7 +275,7 @@ news.category.toLowerCase() === newsFilter
 
 const featuredNews: NewsItem[] = [
   {
-    id: 101,
+    id: 1,
     title: "Toro a Toro: Novillada Madrid",
     image: "images/lasventascronica.jpg",
     category: "Crónicas",
@@ -318,7 +284,7 @@ const featuredNews: NewsItem[] = [
     fullContent: `Resumen toro a toro de la novillada celebrada en Madrid. Con toros de Fuente Ymbro y actuaciones destacadas.`,
   },
   {
-    id: 102,
+    id: 2,
     title: "Román sufre una recaída y no podrá actuar en Zaragoza",
     image: "images/ultimacronica.jpg",
     category: "Crónicas",
@@ -1251,23 +1217,12 @@ return (
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
             <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
             <div className="grid grid-cols-2 gap-4">
-              <a href="https://facebook.com/tendidodigital" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20">
-                <i className="ri-facebook-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Facebook</span>
-              </a>
-              <a href="https://twitter.com/tendidodigital" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-sky-400/20">
-                <i className="ri-twitter-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Twitter</span>
               </a>
               <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
                 <i className="ri-instagram-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Instagram</span>
               </a>
-              <a href="https://youtube.com/tendidodigital" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-red-500/20">
-                <i className="ri-youtube-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">YouTube</span>
-              </a>
-            </div>
+           </div>
           </div>
         </div>
       </div>
