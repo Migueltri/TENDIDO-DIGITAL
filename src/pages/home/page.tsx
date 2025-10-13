@@ -841,35 +841,28 @@ if (activeTab === 'cronicas') {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Imagen */}
                 <div className="lg:col-span-1">
-                  <div className="relative overflow-hidden rounded-xl aspect-[4/3]">
-                   {chronicle.video ? (
-  <video
-    controls
-    playsInline
-    className="w-full h-full object-cover rounded-xl shadow-sm"
-    poster={chronicle.image} // opcional: miniatura de sugerencia
-  >
-    <source src={chronicle.video} type="video/mp4" />
-    Tu navegador no soporta la reproducción de vídeo.
-  </video>
-) : (
-  <img
-    src={chronicle.image}
-    alt={chronicle.title}
-    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
-    loading="lazy"
-  />
-)}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                </div>
-                  <video
-  controls
-  playsInline
-  muted
-  preload="metadata"
-  className="rounded-2xl shadow-lg w-full h-auto max-h-[500px] object-cover"
-/>
+  <div className="relative overflow-hidden rounded-xl shadow-sm">
+    {chronicle.video ? (
+      <video
+        controls
+        playsInline
+        preload="metadata"
+        poster={chronicle.image}
+        className="rounded-xl w-full h-auto max-h-[500px] object-cover shadow-sm"
+      >
+        <source src={chronicle.video} type="video/mp4" />
+        Tu navegador no soporta la reproducción de vídeo.
+      </video>
+    ) : (
+      <img
+        src={chronicle.image}
+        alt={chronicle.title}
+        className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+        loading="lazy"
+      />
+    )}
+  </div>
+</div>
                 
                 {/* Contenido de la crónica */}
                 <div className="lg:col-span-2 space-y-4">
