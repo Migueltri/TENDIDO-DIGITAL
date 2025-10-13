@@ -63,7 +63,7 @@ const schemaData = {
 "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
 "logo": {
 "@type": "ImageObject",
-"url": "tendidodigitallogosimple.jpg"
+"url": "public/images/tendidodigitallogosimple.jpg"
 },
 "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
 "foundingDate": "2010",
@@ -930,7 +930,7 @@ return (
           {/* Social Media */}
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
             <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-1">
               <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
                 <i className="ri-instagram-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Instagram</span>
@@ -1050,7 +1050,7 @@ return (
           <div className="md:col-span-2">
             <div className="flex items-center mb-6 group">
               <img 
-                src="tendidodigitallogosimple.jpg" 
+                src="public/images/tendidodigitallogosimple.jpg" 
                 alt="Tendido Digital" 
                 className="h-12 w-auto group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
               />
@@ -1242,7 +1242,7 @@ TENDIDO DIGITAL
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/55c94eda702705e59cc93222640b4a72.jfif" 
+                  src="public/images/tendidodigitallogosimple.jpg" 
                   alt="Tendido Digital" 
                   className="h-8 w-auto"
                 />
@@ -1347,7 +1347,7 @@ TENDIDO DIGITAL
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="tendidodigitallogosimple.jpg" 
+                  src="public/images/tendidodigitallogosimple.jpg" 
                   alt="Tendido Digital" 
                   className="h-8 w-auto"
                 />
