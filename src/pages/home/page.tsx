@@ -63,7 +63,7 @@ const schemaData = {
 "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
 "logo": {
 "@type": "ImageObject",
-"url": "https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/55c94eda702705e59cc93222640b4a72.jfif"
+"url": "tendidodigitallogosimple.jpg"
 },
 "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
 "foundingDate": "2010",
@@ -1050,7 +1050,7 @@ return (
           <div className="md:col-span-2">
             <div className="flex items-center mb-6 group">
               <img 
-                src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/55c94eda702705e59cc93222640b4a72.jfif" 
+                src="tendidodigitallogosimple.jpg" 
                 alt="Tendido Digital" 
                 className="h-12 w-auto group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
               />
@@ -1063,10 +1063,7 @@ return (
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: 'ri-facebook-fill', color: 'hover:text-blue-400', url: 'https://facebook.com/tendidodigital' },
-                { icon: 'ri-twitter-fill', color: 'hover:text-sky-400', url: 'https://twitter.com/tendidodigital' },
-                { icon: 'ri-instagram-fill', color: 'hover:text-pink-400', url: 'https://instagram.com/tendidodigital' },
-                { icon: 'ri-youtube-fill', color: 'hover:text-red-400', url: 'https://youtube.com/tendidodigital' }
+                { icon: 'ri-instagram-fill', color: 'hover:text-pink-400', url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==' }
               ].map((social, index) => (
                 <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}>
                   <i className={`${social.icon} text-2xl`}></i>
@@ -1350,7 +1347,7 @@ TENDIDO DIGITAL
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/55c94eda702705e59cc93222640b4a72.jfif" 
+                  src="tendidodigitallogosimple.jpg" 
                   alt="Tendido Digital" 
                   className="h-8 w-auto"
                 />
