@@ -72,10 +72,7 @@ const schemaData = {
 "addressCountry": "ES"
 },
 "sameAs": [
-"https://facebook.com/tendidodigital",
-"https://twitter.com/tendidodigital",
-"https://instagram.com/tendidodigital",
-"https://youtube.com/tendidodigital"
+"https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
 ],
     "mainEntity": {
       "@type": "WebSite",
