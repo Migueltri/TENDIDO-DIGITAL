@@ -1098,7 +1098,6 @@ return (
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
             <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
             <div className="grid grid-cols-2 gap-4">
-              </a>
               <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
                 <i className="ri-instagram-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Instagram</span>
