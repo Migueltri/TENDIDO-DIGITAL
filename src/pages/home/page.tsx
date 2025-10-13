@@ -1247,39 +1247,6 @@ return (
             </form>
           </div>
 
-          {/* Multimedia destacado */}
-          <div id="multimedia" className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-100">
-            <div className="relative">
-              <img
-                src="https://readdy.ai/api/search-image?query=Spanish%20bullfighting%20multimedia%20gallery%2C%20professional%20photography%20collection%2C%20traditional%20bullring%20scenes%2C%20artistic%20composition%2C%20high%20quality%20images%2C%20clean%20background&width=400&height=200&seq=7&orientation=landscape"
-                alt="Galería multimedia"
-                className="w-full h-40 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white px-3 py-2 rounded-full text-xs font-bold border border-white/20">
-                +500 fotos
-              </div>
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="bg-white/20 backdrop-blur-sm text-white p-4 rounded-full border border-white/20">
-                  <i className="ri-play-fill text-2xl"></i>
-                </div>
-              </button>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300 tracking-tight">
-                Galería Multimedia
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Las mejores imágenes y vídeos de la actualidad taurina en alta calidad.
-              </p>
-              <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer flex items-center group">
-                Explorar galería 
-                <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-              </button>
-            </div>
-          </div>
-
           {/* Social Media */}
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
             <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
@@ -1292,7 +1259,7 @@ return (
                 <i className="ri-twitter-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Twitter</span>
               </a>
-              <a href="https://instagram.com/tendidodigital" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
+              <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
                 <i className="ri-instagram-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Instagram</span>
               </a>
