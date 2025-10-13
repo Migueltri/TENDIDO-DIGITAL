@@ -347,6 +347,7 @@ toreros: ["Bruno Aloi","El Mene","Pedro Luis"],
 ganaderia: "Fuente Ymbro",
 resultado: [ "Silencio y Silencio","Ovación y Ovación","Silencio y Silencio"],
 image: "images/lasventascronica.jpg",
+video: "/videos/morante.mp4",
 resumen: `RESUMEN:
 
 PRIMER NOVILLO
