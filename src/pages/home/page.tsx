@@ -276,12 +276,17 @@ news.category.toLowerCase() === newsFilter
 const featuredNews: NewsItem[] = [
   {
     id: 1,
-    title: "",
-    image: "",
-    category: "",
-    date: "",
-    excerpt: "",
-    fullContent: ``,
+    title: "Morante de la Puebla; El adiós a una sublime carrera",
+    image: "images/moranteretirada.jpg",
+    category: "Actualidad",
+    date: "12 de Octubre de 2025",
+    excerpt: "Morante de la Puebla se corta la coleta en Madrid tras una faena para la historia",
+    fullContent: `Morante de la Puebla, con las dos orejas en las manos y una faena para el recuerdo , anuncio su adios de los ruedos en el centro de Las Ventas de Madrid , cortandose la coleta por sorpresa.
+
+El torero Sevillano de La Puebla del Rio , finalizando una temporada que quedara en las memorias de muchos aficionados , firmo asi una de las escenas mas emotivas que se recuerdan en el coso venteño.
+
+Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torero".
+Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
     id: 2,
