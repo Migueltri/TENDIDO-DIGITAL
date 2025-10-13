@@ -471,6 +471,7 @@ image: "images/ultimacronica.jpg",
 category: "Crónicas",
 date: "12/10/2025",
 excerpt: "Román sufre una recaída de su lesión en el hombro y no podrá actuar este domingo en Zaragoza",
+video: "/videos/morante.mp4",
 fullContent: `El matador de toros Román no podrá realizar el paseíllo previsto para la tarde de hoy en la plaza de toros de Zaragoza, tras sufrir una recaída en la fractura de la articulación del hombro que arrastra desde la paliza sufrida en Santoña.
 
 Román había regresado a los ruedos ayer en Madrid, donde protagonizó una gran tarde que pudo haber terminado en puerta grande de no ser por el uso de las espadas. Sin embargo, al finalizar la corrida tuvo que entrar en la enfermería de la plaza de toros de Las Ventas debido a molestias y dolor en la zona afectada, que le impedían continuar su actividad. Tras la exploración, los médicos le han recomendado reposo inmediato para evitar un agravamiento y un posible desplazamiento de la fractura en el hombro.
@@ -486,6 +487,7 @@ image: "",
 category: "",
 date: "",
 excerpt: "",
+video: "/videos/morante.mp4",
 fullContent: ""
 }
 ];
