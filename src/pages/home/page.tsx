@@ -1402,7 +1402,21 @@ TENDIDO DIGITAL
             <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
             
             <div className="prose prose-xl max-w-none">
-              <p className="text-gray-700 leading-relaxed text-lg">{selectedNews.fullContent}</p>
+             <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+  {selectedNews.fullContent
+    ?.split("\n\n") // divide el texto en párrafos usando doble salto de línea
+    .map((paragraph, i) => (
+      <p
+        key={i}
+        className="whitespace-pre-line"
+        dangerouslySetInnerHTML={{
+          __html: paragraph
+            .replace(/\*{2}([^*]+)\*{2}/g, '<strong>$1</strong>') // convierte **texto** en <strong>texto</strong>
+            .trim(),
+        }}
+      />
+    ))}
+</div>
             </div>
 
             {/* Acciones del artículo */}
