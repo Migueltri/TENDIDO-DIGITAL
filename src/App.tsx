@@ -1,13 +1,15 @@
-import { BrowserRouter } from 'react-router-dom'
-import { AppRoutes } from './router'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/page";
+import Noticia from "./pages/noticia/Noticia";
 
-
-function App() {
+export default function App() {
   return (
-    <BrowserRouter basename={__BASE_PATH__}>
-      <AppRoutes />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/noticia/:id" element={<Noticia />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
-
-export default App
+}
