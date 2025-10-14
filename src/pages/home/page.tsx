@@ -63,7 +63,7 @@ const schemaData = {
 "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
 "logo": {
 "@type": "ImageObject",
-"url": "public/images/tendidodigitallogosimple.jpg"
+"url": "images/tendidodigitallogosimple.jpg"
 },
 "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
 "foundingDate": "2010",
@@ -284,7 +284,61 @@ El torero Sevillano de La Puebla del Rio , finalizando una temporada que quedara
 
 Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torero".
 Una despedida a la altura del mito que ha marcado este torero.`,
-  }
+  },
+  {
+    id: 2,
+    title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
+    image: "images/florito.jpg",
+    category: "Actualidad",
+    date: "14 de Octubre de 2025",
+    excerpt: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
+    fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
+
+Nacido en la plaza de toros de Talavera de la Reina, donde su padre trabajaba como conserje, Florito vivió el toro desde la cuna. Fue novillero en su juventud con el apodo de “El Niño de la Plaza”, hasta que en 1981 decidió abandonar los ruedos. En febrero de 1986.
+
+Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Madrid, Florito deja tras de sí un legado de profesionalidad y cariño hacia el toro y la afición. Ahora, el testigo pasa a su hijo Álvaro Fernández, ingeniero aeroespacial, quien decidió dejar lo que estudiaba será el que asumirá el cargo de mayoral del coso venteño, aunque sin desempeñar la función de veedor que también ejercía su padre.
+
+Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
+  },
+  {
+id: 3,
+title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+image: "images/tomasgonzalez.jpg",
+category: "Actualidad",
+date: "14 de Octubre de 202",
+excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+fullContent:  `
+La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
+
+Cuenta con buenas actuaciones a lo largo de la temporada Vinaroz, Burgo de Osma, Mojados, Azuqueca de Henares, Zaragoza…
+
+En esta entrevista repasa su evolución, sus momentos más señalados del año y las metas que lo motivan a seguir avanzando de cara a la temporada que viene.
+
+1. ¿Qué balances haces de tu temporada con importantes triunfos?
+
+Ha sido una temporada muy importante, he crecido mucho como torero, que es lo más importante para mí. Hemos avanzado mucho, he encontrado la base de lo que quiero que sea mi toreo, que es algo fundamental.
+
+2. ¿Si tuvieras que señalar una faena y una plaza de este año, dónde sería y por qué?
+
+Me quedaría por diferentes razones con la faena de mi primer novillo de Zaragoza. Un pinchazo previo a la estocada se llevó el doble trofeo; me queda esa espina, pero sentí cosas muy bonitas e importantes en esa faena, me entregué y expresé. Aunque ha habido faenas muy especiales, como las de Mojados, Marchamalo, Azuqueca etc…
+
+3. ¿Qué te ha enseñado esta temporada como torero y como persona?
+
+He aprendido muchas cosas: que cada paso lleva un proceso muy largo detrás y que todo cuesta mucho de conseguir; por eso hay que apreciar y saborear el proceso en el que te encuentras. Ser torero y poder materializarlo es un privilegio grandioso al que no le damos la relevancia que verdaderamente tiene. También me ha ayudado a conocerme a mí mismo; esta temporada se han vivido momentos realmente duros que han hecho reafirmarme en mi vocación torera como nunca.
+
+4. ¿Cuál es tu estilo o qué estilo buscas?
+
+No me gusta hablar de estilos, más bien de conceptos. Mi intención es torear como siento: encajado, relajado, lo más despacio posible. Al final creo que es lo que más lleva arriba, siendo siempre fiel a la personalidad de uno.
+
+5. ¿Cómo fue tu paso por Zaragoza tras una gran faena a un novillo de Pincha? ¿Qué sentiste?
+
+La tarde de Zaragoza fue muy especial; es la plaza en la que más veces he estado en mi vida, me sentí realmente a gusto, disfruté. Eso en una plaza de esa relevancia es complicado, y creo que lo transmití arriba.
+
+6. ¿Cómo planteas tu próxima temporada?
+
+Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo durante la temporada, y utilizarlo para mejorar en el invierno. Aunque desde ya esperando la temporada venidera y que venga cargada de tardes importantes.
+`
+}
 ];
 
 const latestNews: NewsItem[] = [
@@ -301,7 +355,61 @@ El torero Sevillano de La Puebla del Rio , finalizando una temporada que quedara
 
 Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torero".
 Una despedida a la altura del mito que ha marcado este torero.`,
-  }
+  },
+  {
+    id: 2,
+    title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
+    image: "images/florito.jpg",
+    category: "Actualidad",
+    date: "14 de Octubre de 2025",
+    excerpt: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
+    fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
+
+Nacido en la plaza de toros de Talavera de la Reina, donde su padre trabajaba como conserje, Florito vivió el toro desde la cuna. Fue novillero en su juventud con el apodo de “El Niño de la Plaza”, hasta que en 1981 decidió abandonar los ruedos. En febrero de 1986.
+
+Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Madrid, Florito deja tras de sí un legado de profesionalidad y cariño hacia el toro y la afición. Ahora, el testigo pasa a su hijo Álvaro Fernández, ingeniero aeroespacial, quien decidió dejar lo que estudiaba será el que asumirá el cargo de mayoral del coso venteño, aunque sin desempeñar la función de veedor que también ejercía su padre.
+
+Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
+  },
+    {
+id: 5,
+title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+image: "images/tomasgonzalez.jpg",
+category: "Actualidad",
+date: "14 de Octubre de 202",
+excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+fullContent:  `
+La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
+
+Cuenta con buenas actuaciones a lo largo de la temporada Vinaroz, Burgo de Osma, Mojados, Azuqueca de Henares, Zaragoza…
+
+En esta entrevista repasa su evolución, sus momentos más señalados del año y las metas que lo motivan a seguir avanzando de cara a la temporada que viene.
+
+1. ¿Qué balances haces de tu temporada con importantes triunfos?
+
+Ha sido una temporada muy importante, he crecido mucho como torero, que es lo más importante para mí. Hemos avanzado mucho, he encontrado la base de lo que quiero que sea mi toreo, que es algo fundamental.
+
+2. ¿Si tuvieras que señalar una faena y una plaza de este año, dónde sería y por qué?
+
+Me quedaría por diferentes razones con la faena de mi primer novillo de Zaragoza. Un pinchazo previo a la estocada se llevó el doble trofeo; me queda esa espina, pero sentí cosas muy bonitas e importantes en esa faena, me entregué y expresé. Aunque ha habido faenas muy especiales, como las de Mojados, Marchamalo, Azuqueca etc…
+
+3. ¿Qué te ha enseñado esta temporada como torero y como persona?
+
+He aprendido muchas cosas: que cada paso lleva un proceso muy largo detrás y que todo cuesta mucho de conseguir; por eso hay que apreciar y saborear el proceso en el que te encuentras. Ser torero y poder materializarlo es un privilegio grandioso al que no le damos la relevancia que verdaderamente tiene. También me ha ayudado a conocerme a mí mismo; esta temporada se han vivido momentos realmente duros que han hecho reafirmarme en mi vocación torera como nunca.
+
+4. ¿Cuál es tu estilo o qué estilo buscas?
+
+No me gusta hablar de estilos, más bien de conceptos. Mi intención es torear como siento: encajado, relajado, lo más despacio posible. Al final creo que es lo que más lleva arriba, siendo siempre fiel a la personalidad de uno.
+
+5. ¿Cómo fue tu paso por Zaragoza tras una gran faena a un novillo de Pincha? ¿Qué sentiste?
+
+La tarde de Zaragoza fue muy especial; es la plaza en la que más veces he estado en mi vida, me sentí realmente a gusto, disfruté. Eso en una plaza de esa relevancia es complicado, y creo que lo transmití arriba.
+
+6. ¿Cómo planteas tu próxima temporada?
+
+Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo durante la temporada, y utilizarlo para mejorar en el invierno. Aunque desde ya esperando la temporada venidera y que venga cargada de tardes importantes.
+`
+}
 ];
 
 // Crónicas taurinas
