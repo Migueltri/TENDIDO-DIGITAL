@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { featuredNews, latestNews } from "../home/page";
+import { featuredNews, latestNews } from "../../data/newsData";
 
 export default function Noticia() {
   const { id } = useParams();
