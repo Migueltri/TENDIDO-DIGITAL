@@ -306,7 +306,6 @@ title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás Go
 image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
 date: "14 de Octubre de 202",
-excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
@@ -357,12 +356,11 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 2,
+    id: 5,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
     date: "14 de Octubre de 2025",
-    excerpt: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
 
 Nacido en la plaza de toros de Talavera de la Reina, donde su padre trabajaba como conserje, Florito vivió el toro desde la cuna. Fue novillero en su juventud con el apodo de “El Niño de la Plaza”, hasta que en 1981 decidió abandonar los ruedos. En febrero de 1986.
@@ -372,12 +370,11 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 5,
+id: 6,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
-date: "14 de Octubre de 202",
-excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+date: "14 de Octubre de 2025",
 fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
