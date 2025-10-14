@@ -229,6 +229,7 @@ const shareToFacebook = () => {
 const copyLink = async () => {
 try {
 await navigator.clipboard.writeText(window.location.origin);
+const link = `${window.location.origin}/noticia/${sharePost.id}`;
 setContactMessage('¡Enlace copiado al portapapeles!');
 closeShareModal();
 setTimeout(() => setContactMessage(''), 3000);
