@@ -307,7 +307,7 @@ image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
 date: "14 de Octubre de 202",
 excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
-fullContent:  fullContent: `
+fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
 Cuenta con buenas actuaciones a lo largo de la temporada Vinaroz, Burgo de Osma, Mojados, Azuqueca de Henares, Zaragoza…
@@ -378,7 +378,7 @@ image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
 date: "14 de Octubre de 202",
 excerpt: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
-fullContent: fullContent: `
+fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
 Cuenta con buenas actuaciones a lo largo de la temporada Vinaroz, Burgo de Osma, Mojados, Azuqueca de Henares, Zaragoza…
