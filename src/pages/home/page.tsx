@@ -274,6 +274,31 @@ news.category.toLowerCase() === newsFilter
 const featuredNews: NewsItem[] = [
   {
     id: 1,
+    title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
+    image: "images/emiliodejusto.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    excerpt: "De BMF toros",
+    fullContent: `El matador de toros extremeño *Emilio de Justo* afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
+
+Ambos profesionales quedarán, por el momento, libres para la temporada 2026.
+
+Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego de sufrir la fractura de dos costillas en el costado izquierdo, consecuencia de una cogida en la Plaza de Toros de Las Ventas, en Madrid.
+
+Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
+  },
+  {
+    id: 2,
+    title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
+    image: "images/bmftoros.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `El matador de toros Jorge Martínez y su apoderado Ruiz Manuel han decidido dar por finalizada su relación profesional de apoderamiento. Ambos han coincidido en destacar que la ruptura se ha producido de manera totalmente amistosa y en los mejores términos.
+
+Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
+  },
+  {
+    id: 3,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -287,7 +312,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 2,
+    id: 4,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -302,11 +327,11 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
   {
-id: 3,
+id: 5,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
-date: "14 de Octubre de 202",
+date: "14 de Octubre de 2025",
 fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
@@ -342,8 +367,33 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 ];
 
 const latestNews: NewsItem[] = [
+  {
+    id: 6,
+    title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
+    image: "images/emiliodejusto.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    excerpt: "De BMF toros",
+    fullContent: `El matador de toros extremeño *Emilio de Justo* afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
+
+Ambos profesionales quedarán, por el momento, libres para la temporada 2026.
+
+Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego de sufrir la fractura de dos costillas en el costado izquierdo, consecuencia de una cogida en la Plaza de Toros de Las Ventas, en Madrid.
+
+Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
+  },
  {
-    id: 4,
+    id: 7,
+    title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
+    image: "images/bmftoros.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `El matador de toros Jorge Martínez y su apoderado Ruiz Manuel han decidido dar por finalizada su relación profesional de apoderamiento. Ambos han coincidido en destacar que la ruptura se ha producido de manera totalmente amistosa y en los mejores términos.
+
+Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
+  },
+  {
+    id: 8,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -357,7 +407,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 5,
+    id: 9,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -371,7 +421,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 6,
+id: 10,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
