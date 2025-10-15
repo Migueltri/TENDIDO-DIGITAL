@@ -256,24 +256,23 @@ switch (activeTab) {
   
 // Obtener noticias filtradas por categoría
 const getFilteredNews = () => {
-if (newsFilter === 'todas') {
-return latestNews;
-}
-if (newsFilter === 'cronicas') {
-return latestNews.filter(news => news.category === 'Crónicas');
-}
-  if (newsFilter === 'entrevistas') {
-return latestNews.filter(news => news.category === 'entrevistas');
-}
-if (newsFilter === 'opinion') {
-return latestNews.filter(news => news.category === 'Opinión');
-}
-if (newsFilter === 'redaccion') {
-return latestNews.filter(news => news.category === 'Actualidad');
-}
-return latestNews.filter(news =>
-news.category.toLowerCase() === newsFilter
-);
+  if (newsFilter === 'todas') return latestNews;
+
+  return latestNews.filter(news => {
+    const cat = news.category?.toLowerCase() || '';
+    switch (newsFilter) {
+      case 'cronicas':
+        return cat.includes('crónica');
+      case 'entrevistas':
+        return cat.includes('entrevista');
+      case 'opinion':
+        return cat.includes('opinión');
+      case 'redaccion':
+        return cat.includes('actualidad');
+      default:
+        return true;
+    }
+  });
 };
 
 const featuredNews: NewsItem[] = [
@@ -320,7 +319,7 @@ Una despedida a la altura del mito que ha marcado este torero.`,
     id: 4,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
-    category: "Actualidad",
+    category: "Entrevistas",
     date: "14 de Octubre de 2025",
     excerpt: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
