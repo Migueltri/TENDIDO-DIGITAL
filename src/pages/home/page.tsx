@@ -271,7 +271,7 @@ news.category.toLowerCase() === newsFilter
 );
 };
 
-import { featuredNews} from "../../data/newsData";
+const featuredNews: NewsItem[] = [
   {
     id: 1,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
@@ -341,7 +341,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 }
 ];
 
-import { latestNews } from "../../data/newsData";
+const latestNews: NewsItem[] = [
  {
     id: 4,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
