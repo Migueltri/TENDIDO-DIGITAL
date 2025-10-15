@@ -253,7 +253,7 @@ switch (activeTab) {
     return allPosts;
 }
 };
-
+  
 // Obtener noticias filtradas por categoría
 const getFilteredNews = () => {
 if (newsFilter === 'todas') {
@@ -1024,6 +1024,16 @@ return (
               >
                 Crónicas
               </button>
+                <button 
+    onClick={() => setNewsFilter('entrevistas')}
+    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
+      newsFilter === 'entrevistas' 
+        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
+        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
+    }`}
+  >
+    Entrevistas
+  </button>
               <button 
                 onClick={() => setNewsFilter('opinion')}
                 className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
