@@ -1629,11 +1629,12 @@ TENDIDO DIGITAL
       <p
         key={i}
         className="whitespace-pre-line"
-        dangerouslySetInnerHTML={{
-          __html: paragraph
-           .replace(/\*{1,2}([^*]+)\*{1,2}/g, '<strong>$1</strong>') // convierte **texto** en <strong>texto</strong>
-            .trim(),
-        }}
+dangerouslySetInnerHTML={{
+  __html: paragraph
+    // Convierte *texto* o **texto** en <strong>texto</strong>
+    .replace(/(\*{1,2})(.*?)\1/g, '<strong>$2</strong>')
+    .trim(),
+}}
       />
     ))}
 </div>
