@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';
 
 // Interfaces unificadas para evitar duplicados y errores
 interface BaseArticle {
