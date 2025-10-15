@@ -267,7 +267,7 @@ const getFilteredNews = () => {
         return cat.includes('entrevista');
       case 'opinion':
         return cat.includes('opinión');
-      case 'redaccion':
+      case 'actualidad':
         return cat.includes('actualidad');
       default:
         return true;
@@ -414,7 +414,7 @@ Una despedida a la altura del mito que ha marcado este torero.`,
     id: 9,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
-    category: "Entrevistas",
+    category: "Actualidad",
     date: "14 de Octubre de 2025",
     fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
 
@@ -428,7 +428,7 @@ Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará graba
 id: 10,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
-category: "Actualidad",
+category: "Entrevistas",
 date: "14 de Octubre de 2025",
 fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
