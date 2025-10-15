@@ -262,6 +262,9 @@ return latestNews;
 if (newsFilter === 'cronicas') {
 return latestNews.filter(news => news.category === 'Crónicas');
 }
+  if (newsFilter === 'entrevistas') {
+return latestNews.filter(news => news.category === 'entrevistas');
+}
 if (newsFilter === 'opinion') {
 return latestNews.filter(news => news.category === 'Opinión');
 }
