@@ -291,21 +291,6 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
-   {
-    id: 1,
-    title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
-    image: "images/emiliodejusto.jpg",
-    category: "Actualidad",
-    date: "15 de Octubre de 2025",
-    excerpt: "De BMF toros",
-    fullContent: `El matador de toros extremeño **Emilio de Justo** afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
-
-Ambos profesionales quedarán, por el momento, libres para la temporada 2026.
-
-Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego de sufrir la fractura de dos costillas en el costado izquierdo, consecuencia de una cogida en la Plaza de Toros de Las Ventas, en Madrid.
-
-Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
-  },
   {
     id: 2,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
@@ -316,8 +301,36 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
-  {
+   {
     id: 3,
+    title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
+    image: "images/romanyedu.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `El matador de toros Román y su hasta ahora apoderado, Eduardo Martínez, han decidido poner fin, de mutuo acuerdo, a la relación profesional que les ha vinculado durante esta etapa.
+
+La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y reconocimiento mutuo tanto en lo personal como en lo profesional. Ambas partes agradecen sinceramente el trabajo compartido, la confianza depositada y los logros alcanzados a lo largo del camino recorrido juntos.
+
+Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
+  },
+   {
+    id: 4,
+    title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
+    image: "images/davidgalvan.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `Tan solo cuatro días después de la aparatosa cogida sufrida el pasado 11 de octubre en la plaza de toros de Las Ventas, el diestro gaditano David Galván ha confirmado su reaparición este sábado en la Feria de San Lucas de Jaén. 
+
+Lo hará ante una corrida del hierro de Victorino Martín, el mismo hierro ante el que resultó herido en Madrid, en un gesto de firme compromiso y valentía.
+
+Este regreso adquiere además un valor simbólico muy especial: Galván volverá al Coso de la Alameda 12 años después de la grave cornada sufrida en 2013 en esa misma plaza, que le ocasionó una severa lesión en el antebrazo derecho y lo mantuvo apartado de los ruedos durante una prolongada recuperación.
+
+El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Galván, quienes lidiarán una exigente corrida de Victorino Martín.
+
+Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
+  },
+  {
+    id: 5,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -331,7 +344,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 4,
+    id: 6,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Entrevistas",
@@ -346,7 +359,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
   {
-id: 5,
+id: 7,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Actualidad",
@@ -387,7 +400,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 const latestNews: NewsItem[] = [
   {
-    id: 6,
+    id: 8,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -402,7 +415,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
  {
-    id: 7,
+    id: 9,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -411,8 +424,36 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
+     {
+    id: 10,
+    title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
+    image: "images/romanyedu.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `El matador de toros Román y su hasta ahora apoderado, Eduardo Martínez, han decidido poner fin, de mutuo acuerdo, a la relación profesional que les ha vinculado durante esta etapa.
+
+La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y reconocimiento mutuo tanto en lo personal como en lo profesional. Ambas partes agradecen sinceramente el trabajo compartido, la confianza depositada y los logros alcanzados a lo largo del camino recorrido juntos.
+
+Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
+  },
+     {
+    id: 11,
+    title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
+    image: "images/davidgalvan.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    fullContent: `Tan solo cuatro días después de la aparatosa cogida sufrida el pasado 11 de octubre en la plaza de toros de Las Ventas, el diestro gaditano David Galván ha confirmado su reaparición este sábado en la Feria de San Lucas de Jaén. 
+
+Lo hará ante una corrida del hierro de Victorino Martín, el mismo hierro ante el que resultó herido en Madrid, en un gesto de firme compromiso y valentía.
+
+Este regreso adquiere además un valor simbólico muy especial: Galván volverá al Coso de la Alameda 12 años después de la grave cornada sufrida en 2013 en esa misma plaza, que le ocasionó una severa lesión en el antebrazo derecho y lo mantuvo apartado de los ruedos durante una prolongada recuperación.
+
+El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Galván, quienes lidiarán una exigente corrida de Victorino Martín.
+
+Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
+  },
   {
-    id: 8,
+    id: 12,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -426,7 +467,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 9,
+    id: 13,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -440,7 +481,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 10,
+id: 14,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Entrevistas",
