@@ -291,6 +291,21 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
+   {
+    id: 1,
+    title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
+    image: "images/emiliodejusto.jpg",
+    category: "Actualidad",
+    date: "15 de Octubre de 2025",
+    excerpt: "De BMF toros",
+    fullContent: `El matador de toros extremeño **Emilio de Justo** afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
+
+Ambos profesionales quedarán, por el momento, libres para la temporada 2026.
+
+Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego de sufrir la fractura de dos costillas en el costado izquierdo, consecuencia de una cogida en la Plaza de Toros de Las Ventas, en Madrid.
+
+Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
+  },
   {
     id: 2,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
