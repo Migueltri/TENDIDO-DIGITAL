@@ -480,6 +480,48 @@ const chronicles: Chronicle[] = [
   }
 ];
 
+  // Entrevistas taurinas
+const entrevistas: NewsItem[] = [
+  {
+    id: 201,
+    title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
+    image: "images/tomasgonzalez.jpg",
+    category: "Entrevistas",
+    date: "14 de Octubre de 2025",
+    fullContent: `
+La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
+
+Cuenta con buenas actuaciones a lo largo de la temporada Vinaroz, Burgo de Osma, Mojados, Azuqueca de Henares, Zaragoza…
+
+En esta entrevista repasa su evolución, sus momentos más señalados del año y las metas que lo motivan a seguir avanzando de cara a la temporada que viene.
+
+1. ¿Qué balances haces de tu temporada con importantes triunfos?
+
+Ha sido una temporada muy importante, he crecido mucho como torero, que es lo más importante para mí. Hemos avanzado mucho, he encontrado la base de lo que quiero que sea mi toreo, que es algo fundamental.
+
+2. ¿Si tuvieras que señalar una faena y una plaza de este año, dónde sería y por qué?
+
+Me quedaría por diferentes razones con la faena de mi primer novillo de Zaragoza. Un pinchazo previo a la estocada se llevó el doble trofeo; me queda esa espina pero sentí cosas muy bonitas e importantes en esa faena, me entregué y expresé. Aunque ha habido faenas muy especiales, como las de Mojados, Marchamalo, Azuqueca, etc…
+
+3. ¿Qué te ha enseñado esta temporada como torero y como persona?
+
+He aprendido muchas cosas: que cada paso lleva un proceso muy largo detrás y que todo cuesta mucho de conseguir; por eso hay que apreciar y saborear el proceso en el que te encuentras. Ser torero y poder materializarlo es un privilegio grandioso al que no le damos la relevancia que verdaderamente tiene. También me ha ayudado a conocerme a mí mismo; esta temporada se han vivido momentos realmente duros, que han hecho reafirmarme en mi vocación torera como nunca.
+
+4. ¿Cuál es tu estilo o qué estilo buscas?
+
+No me gusta hablar de estilos, más bien de conceptos. Mi intención es la de torear como siento: encajado, relajado, lo más despacio posible. Al final creo que es lo que más lleva arriba, siendo siempre fiel a la personalidad de uno.
+
+5. ¿Cómo fue tu paso por Zaragoza tras una gran faena a un novillo de Pincha? ¿Qué sentiste?
+
+La tarde de Zaragoza fue muy especial; es la plaza en la que más veces he estado en mi vida. Me sentí realmente a gusto, disfruté, y eso en una plaza de esa relevancia es complicado. Creo que lo transmití arriba.
+
+6. ¿Cómo planteas tu próxima temporada?
+
+Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo durante la temporada y utilizarlo para mejorar en el invierno. Aunque desde ya, esperando la temporada venidera y que venga cargada de tardes importantes.
+`
+  }
+];
+
 // Función para cargar más noticias
 const loadMoreNews = () => {
 setIsLoadingMore(true);
@@ -550,6 +592,71 @@ document.body.style.overflow = 'unset';
 }
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
+
+  if (activeTab === 'entrevistas') {
+  const entrevistas = latestNews.filter(item => 
+    item.title.toLowerCase().includes('entrevista')
+  );
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-900 to-red-600 bg-clip-text text-transparent mb-4 tracking-tight">
+          Entrevistas
+        </h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full mx-auto mb-6"></div>
+        <p className="text-gray-600 text-lg">
+          Conversaciones exclusivas con protagonistas del mundo taurino
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {entrevistas.length > 0 ? (
+          entrevistas.map((news) => (
+            <article 
+              key={news.id} 
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+              onClick={() => openNewsModal(news)}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={news.image}
+                  alt={news.title}
+                  className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+                    {news.category}
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-gray-500 text-sm">{news.date}</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
+                  {news.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
+                <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
+                  Leer entrevista
+                  <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                </button>
+              </div>
+            </article>
+          ))
+        ) : (
+          <div className="text-center py-16">
+            <div className="bg-gray-50 rounded-2xl p-12 max-w-md mx-auto">
+              <i className="ri-chat-smile-line text-6xl text-gray-300 mb-4"></i>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">No hay entrevistas disponibles</h3>
+              <p className="text-gray-600 mb-6">Pronto publicaremos nuevas entrevistas exclusivas</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 const renderContent = () => {
 if (activeTab === 'guardados') {
@@ -1288,7 +1395,7 @@ return (
 <div className="flex justify-between items-center h-16 md:h-20">
 <div className="flex items-center group">
 <div className="relative">
-<img src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/55c94eda702705e59cc93222640b4a72.jfif" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
+<img src="images/tendidodigitallogosimple.jpg" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
 <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 </div>
 <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
@@ -1331,6 +1438,17 @@ TENDIDO DIGITAL
               activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
             }`}></span>
           </button>
+          <button 
+  onClick={() => setActiveTab('entrevistas')} 
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Entrevistas
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
           <button 
             onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
             className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
@@ -1376,6 +1494,12 @@ TENDIDO DIGITAL
           >
             Crónicas
           </button>
+          <button 
+  onClick={() => setActiveTab('entrevistas')} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Entrevistas
+</button>
           <button 
             onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
             className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
