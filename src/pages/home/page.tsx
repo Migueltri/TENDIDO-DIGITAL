@@ -414,7 +414,7 @@ Una despedida a la altura del mito que ha marcado este torero.`,
     id: 9,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
-    category: "Actualidad",
+    category: "Entrevistas",
     date: "14 de Octubre de 2025",
     fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
 
