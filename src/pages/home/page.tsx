@@ -283,7 +283,7 @@ const featuredNews: NewsItem[] = [
     category: "Actualidad",
     date: "15 de Octubre de 2025",
     excerpt: "De BMF toros",
-    fullContent: `El matador de toros extremeño *Emilio de Justo* afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
+    fullContent: `El matador de toros extremeño **Emilio de Justo** afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador **Germán González** pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
 
 Ambos profesionales quedarán, por el momento, libres para la temporada 2026.
 
