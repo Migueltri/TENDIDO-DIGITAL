@@ -1003,16 +1003,16 @@ return (
               >
                 Todas
               </button>
-              <button 
-                onClick={() => setNewsFilter('redaccion')}
-                className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-                  newsFilter === 'redaccion' 
-                    ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-                    : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-                }`}
-              >
-                Redacción
-              </button>
+<button 
+  onClick={() => setNewsFilter('actualidad')}
+  className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
+    newsFilter === 'actualidad' 
+      ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
+      : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
+  }`}
+>
+  Actualidad
+</button>
               <button 
                 onClick={() => setNewsFilter('cronicas')}
                 className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
@@ -1429,6 +1429,17 @@ TENDIDO DIGITAL
             }`}></span>
           </button>
           <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Todas
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
+          <button 
             onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
             className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
               activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
@@ -1459,6 +1470,17 @@ TENDIDO DIGITAL
   Entrevistas
   <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
     activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Opinión
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
   }`}></span>
 </button>
           <button 
@@ -1495,6 +1517,12 @@ TENDIDO DIGITAL
             Inicio
           </button>
           <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Todas
+</button>
+          <button 
             onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
             className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
           >
@@ -1511,6 +1539,12 @@ TENDIDO DIGITAL
   className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
 >
   Entrevistas
+</button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Opinión
 </button>
           <button 
             onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
