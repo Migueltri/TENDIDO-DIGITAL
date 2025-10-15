@@ -227,15 +227,17 @@ const shareToFacebook = () => {
 };
 
 const copyLink = async () => {
-try {
-await navigator.clipboard.writeText(window.location.origin);
-const link = `${window.location.origin}/noticia/${sharePost.id}`;
-setContactMessage('¡Enlace copiado al portapapeles!');
-closeShareModal();
-setTimeout(() => setContactMessage(''), 3000);
-} catch (error) {
-console.error('Error al copiar enlace:', error);
-}
+  try {
+    if (sharePost) {
+      const link = `${window.location.origin}/noticia/${sharePost.id}`;
+      await navigator.clipboard.writeText(link);
+      setContactMessage("¡Enlace copiado al portapapeles!");
+      closeShareModal();
+      setTimeout(() => setContactMessage(""), 3000);
+    }
+  } catch (error) {
+    console.error("Error al copiar enlace:", error);
+  }
 };
 
 // Obtener posts filtrados según la pestaña activa
