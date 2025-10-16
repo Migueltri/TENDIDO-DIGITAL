@@ -283,6 +283,31 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1,
+    title: "Alberto Álvarez se retira después de su paso por la Misericordia",
+    image: "images/albertoalvarez.jpg",
+    category: "Actualidad",
+    date: "16 de Octubre de 2025",
+    fullContent: `La temporada taurina 2025 ha concluido con un tono especialmente emotivo, marcado por la retirada de destacadas figuras del toreo. 
+
+El mundo del toro ha sido 
+testigo de varias despedidas significativas, tanto de matadores como de hombres de plata y del castoreño, que han puesto fin a sus respectivas trayectorias profesionales.
+
+Sin duda, la retirada más impactante y conmovedora ha sido la de Morante de la Puebla, una figura indiscutible que ha dejado una huella imborrable en la historia reciente de la tauromaquia. 
+
+Junto a él, también dijo adiós a los ruedos Fernando Robleño, torero de gran dignidad y autenticidad, que eligió el pasado 12 de octubre para cerrar su carrera, una fecha simbólica en la que compartió la emoción del adiós con la afición.
+
+A estas despedidas se sumó la del también matador Cayetano Rivera, quien se retiró en el mes de septiembre, poniendo fin a una trayectoria marcada por el peso del legado familiar y una constante evolución artística.
+
+La afición también vio la retirada del picador Salvador Núñez y del banderillero Agustín Serrano, dos profesionales muy respetados en sus filas, que han contribuido durante años al festejo taurino con entrega, conocimiento y seriedad.
+
+Asimismo, el torero aragonés Alberto Álvarez puso punto final a su carrera el pasado 12 de octubre en la plaza de toros de Zaragoza, durante la tradicional corrida del Día del Pilar en La Misericordia. Con una trayectoria larga y honesta, marcada por el esfuerzo.
+
+Álvarez no tuvo el cierre soñado. Su lote, perteneciente a la ganadería de Salvador Gavira, no ofreció opciones de lucimiento, obligándole a abreviar en sus dos toros y dejando un sabor agridulce en una tarde que merecía haber sido más redonda para despedirse ante su afición.
+
+Con estas despedidas, la temporada 2025 pasará a la historia como un punto de inflexión, no solo por el adiós de grandes nombres, sino también por el reflejo de una generación que cierra su ciclo, dejando paso a nuevos valores que habrán de tomar el testigo en los años venideros.`
+  },
+  {
+    id: 2,
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
@@ -294,7 +319,7 @@ Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en pla
 Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los mejores deseos para sus respectivas trayectorias profesionales.`
   },
   {
-    id: 2,
+    id: 3,
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
@@ -310,7 +335,7 @@ La reaparición de César Jiménez, aunque puntual, tiene el sabor de las grande
 Arenas de San Pedro se convierte así en el escenario de una tarde de especial interés.`,
   },
   {
-    id: 3,
+    id: 4,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -325,7 +350,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
   {
-    id: 4,
+    id: 5,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -335,7 +360,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
    {
-    id: 5,
+    id: 6,
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
@@ -347,7 +372,7 @@ La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y rec
 Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
   },
    {
-    id: 6,
+    id: 7,
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
@@ -363,7 +388,7 @@ El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Gal
 Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
   },
   {
-    id: 7,
+    id: 8,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -379,8 +404,33 @@ Una despedida a la altura del mito que ha marcado este torero.`,
 ];
 
 const latestNews: NewsItem[] = [
-    {
+  {
     id: 10,
+    title: "Alberto Álvarez se retira después de su paso por la Misericordia",
+    image: "images/albertoalvarez.jpg",
+    category: "Actualidad",
+    date: "16 de Octubre de 2025",
+    fullContent: `La temporada taurina 2025 ha concluido con un tono especialmente emotivo, marcado por la retirada de destacadas figuras del toreo. 
+
+El mundo del toro ha sido 
+testigo de varias despedidas significativas, tanto de matadores como de hombres de plata y del castoreño, que han puesto fin a sus respectivas trayectorias profesionales.
+
+Sin duda, la retirada más impactante y conmovedora ha sido la de Morante de la Puebla, una figura indiscutible que ha dejado una huella imborrable en la historia reciente de la tauromaquia. 
+
+Junto a él, también dijo adiós a los ruedos Fernando Robleño, torero de gran dignidad y autenticidad, que eligió el pasado 12 de octubre para cerrar su carrera, una fecha simbólica en la que compartió la emoción del adiós con la afición.
+
+A estas despedidas se sumó la del también matador Cayetano Rivera, quien se retiró en el mes de septiembre, poniendo fin a una trayectoria marcada por el peso del legado familiar y una constante evolución artística.
+
+La afición también vio la retirada del picador Salvador Núñez y del banderillero Agustín Serrano, dos profesionales muy respetados en sus filas, que han contribuido durante años al festejo taurino con entrega, conocimiento y seriedad.
+
+Asimismo, el torero aragonés Alberto Álvarez puso punto final a su carrera el pasado 12 de octubre en la plaza de toros de Zaragoza, durante la tradicional corrida del Día del Pilar en La Misericordia. Con una trayectoria larga y honesta, marcada por el esfuerzo.
+
+Álvarez no tuvo el cierre soñado. Su lote, perteneciente a la ganadería de Salvador Gavira, no ofreció opciones de lucimiento, obligándole a abreviar en sus dos toros y dejando un sabor agridulce en una tarde que merecía haber sido más redonda para despedirse ante su afición.
+
+Con estas despedidas, la temporada 2025 pasará a la historia como un punto de inflexión, no solo por el adiós de grandes nombres, sino también por el reflejo de una generación que cierra su ciclo, dejando paso a nuevos valores que habrán de tomar el testigo en los años venideros.`
+  },
+  {
+    id: 11,
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
@@ -392,7 +442,7 @@ Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en pla
 Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los mejores deseos para sus respectivas trayectorias profesionales.`
   },
   {
-    id: 11,
+    id: 12,
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
@@ -408,7 +458,7 @@ La reaparición de César Jiménez, aunque puntual, tiene el sabor de las grande
 Arenas de San Pedro se convierte así en el escenario de una tarde de especial interés.`,
   },
   {
-    id: 12,
+    id: 13,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -423,7 +473,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
  {
-    id: 13,
+    id: 14,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -433,7 +483,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
      {
-    id: 14,
+    id: 15,
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
@@ -445,7 +495,7 @@ La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y rec
 Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
   },
      {
-    id: 15,
+    id: 16,
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
@@ -461,7 +511,7 @@ El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Gal
 Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
   },
   {
-    id: 16,
+    id: 17,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -475,7 +525,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 17,
+    id: 18,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -489,7 +539,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 18,
+id: 19,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Entrevistas",
