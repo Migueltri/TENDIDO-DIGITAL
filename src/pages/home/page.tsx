@@ -660,7 +660,14 @@ useEffect(() => {
     }
   }
 }, []);
-
+  
+// Función para abrir modal de noticia
+const openNewsModal = (news: NewsItem | OpinionArticle) => {
+  setSelectedNews(news);
+  setIsNewsModalOpen(true);
+  document.body.style.overflow = 'hidden';
+};
+  
 // Función para cerrar modal de noticia
 const closeNewsModal = () => {
 setIsNewsModalOpen(false);
