@@ -283,6 +283,46 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1,
+    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia”",
+    image: "images/valencia.jpg",
+    category: "Actualidad",
+    date: "17 de Octubre de 2025",
+    fullContent: `presidente de la Diputación de Valencia, Vicent Mompó, anunció durante la gala de entrega de los Premios Taurinos de Valencia que la Plaza de Toros reabrirá sus puertas con motivo de la Feria de Fallas de 2026, una vez finalicen los trabajos de renovación integral del sistema de iluminación, iniciados el pasado mes de junio.
+
+La empresa Nautalia continuará al frente de la gestión del coso taurino durante una temporada más, mientras la Diputación trabaja en la elaboración de un nuevo pliego de condiciones. 
+
+El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y turístico de referencia en la ciudad.
+
+Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
+  },
+    {
+    id: 2,
+    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título”",
+    image: "images/lasventas1.jpg",
+    category: "Actualidad",
+    date: "17 de Octubre de 2025",
+    fullContent: `La Plaza de Toros de Las Ventas concluyó el pasado domingo 12 de octubre una temporada histórica al superar, por primera vez, la simbólica barrera del millón de espectadores. 
+
+A lo largo de los 62 espectáculos celebrados este año, el coso madrileño ha congregado a un total de 1.008.226 asistentes, con una media de 16.261 personas por festejo, consolidando su posición como epicentro de la tauromaquia mundial.
+
+El impacto de esta campaña se refleja también en los 18 llenos absolutos con el cartel de “No hay billetes”, una cifra que triplica la registrada en 2024, y en las 30 tardes que superaron los 18.000 espectadores, prácticamente la mitad del total. En ese contexto de auge, la Feria de Otoño cerró con 19.428 abonados, el mejor dato de los últimos quince años.
+
+Éxitos artísticos y consolidación de nuevos nombres
+En lo artístico, el público venteño ha presenciado cinco salidas a hombros por la Puerta Grande, protagonizadas por Alejandro Talavante (9 de mayo), Morante de la Puebla (8 de junio y 12 de octubre), Borja Jiménez (15 de junio) y Emilio de Justo (3 de octubre). La temporada se salda además con cuatro faenas premiadas con dos orejas y veintiocho con un trofeo.
+
+El coso madrileño ha reafirmado su papel como escenario clave para la proyección de nuevas figuras: veinte matadores confirmaron su alternativa en Las Ventas y dieciocho novilleros hicieron su presentación en el coso madrileño. 
+
+En total, se lidiaron 384 reses, de las cuales 18 fueron sobreros, pertenecientes a 21 encastes distintos, lo que confirma el compromiso de la programación venteña con la variedad de encastes. 
+
+Dos toros fueron premiados con la vuelta al ruedo: “Brigadier”, de Pedraza de Yeltes, lidiado por Isaac Fonseca el 14 de mayo; y “Milhijas”, de Victorino Martín, lidiado por Borja Jiménez el 15 de junio.
+
+Una temporada para el recuerdo
+La temporada 2025 quedará marcada como un año de cifras récord, consolidación de figuras, descubrimiento de jóvenes promesas y reivindicación del toro en su plenitud. 
+
+La afición respondió con una entrega pocas veces vista en las últimas décadas, situando a Las Ventas —una vez más— como el eje indiscutible del toreo contemporáneo.`
+  },
+    {
+    id: 3,
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
@@ -313,7 +353,7 @@ Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido
 Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
   },
   {
-    id: 2,
+    id: 4,
     title: "Antonio Chacón queda libre tras salir de la cuadrilla de Roca Rey",
     image: "images/antoniochacon.jpg",
     category: "Actualidad",
@@ -327,7 +367,7 @@ Durante la presente campaña, Chacón ha estado a las órdenes del torero limeñ
 Esta noticia se suma a los movimientos que comienzan a producirse en las cuadrillas con vistas a la próxima temporada, algunos de ellos, como este, totalmente inesperados.`
   },
   {
-    id: 3,
+    id: 5,
     title: "Alberto Álvarez se retira después de su paso por la Misericordia",
     image: "images/albertoalvarez.jpg",
     category: "Actualidad",
@@ -352,7 +392,7 @@ Asimismo, el torero aragonés Alberto Álvarez puso punto final a su carrera el 
 Con estas despedidas, la temporada 2025 pasará a la historia como un punto de inflexión, no solo por el adiós de grandes nombres, sino también por el reflejo de una generación que cierra su ciclo, dejando paso a nuevos valores que habrán de tomar el testigo en los años venideros.`
   },
   {
-    id: 4,
+    id: 6,
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
@@ -364,7 +404,7 @@ Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en pla
 Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los mejores deseos para sus respectivas trayectorias profesionales.`
   },
   {
-    id: 5,
+    id: 7,
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
@@ -380,7 +420,7 @@ La reaparición de César Jiménez, aunque puntual, tiene el sabor de las grande
 Arenas de San Pedro se convierte así en el escenario de una tarde de especial interés.`,
   },
   {
-    id: 6,
+    id: 8,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -395,7 +435,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
   {
-    id: 7,
+    id: 9,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -405,7 +445,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
    {
-    id: 8,
+    id: 10,
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
@@ -417,7 +457,7 @@ La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y rec
 Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
   },
    {
-    id: 9,
+    id: 11,
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
@@ -433,7 +473,7 @@ El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Gal
 Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
   },
   {
-    id: 10,
+    id: 12,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -449,8 +489,48 @@ Una despedida a la altura del mito que ha marcado este torero.`,
 ];
 
 const latestNews: NewsItem[] = [
+   {
+    id: 200,
+    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia”",
+    image: "images/valencia.jpg",
+    category: "Actualidad",
+    date: "17 de Octubre de 2025",
+    fullContent: `presidente de la Diputación de Valencia, Vicent Mompó, anunció durante la gala de entrega de los Premios Taurinos de Valencia que la Plaza de Toros reabrirá sus puertas con motivo de la Feria de Fallas de 2026, una vez finalicen los trabajos de renovación integral del sistema de iluminación, iniciados el pasado mes de junio.
+
+La empresa Nautalia continuará al frente de la gestión del coso taurino durante una temporada más, mientras la Diputación trabaja en la elaboración de un nuevo pliego de condiciones. 
+
+El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y turístico de referencia en la ciudad.
+
+Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
+  },
     {
-    id: 11,
+    id: 201,
+    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título”",
+    image: "images/lasventas1.jpg",
+    category: "Actualidad",
+    date: "17 de Octubre de 2025",
+    fullContent: `La Plaza de Toros de Las Ventas concluyó el pasado domingo 12 de octubre una temporada histórica al superar, por primera vez, la simbólica barrera del millón de espectadores. 
+
+A lo largo de los 62 espectáculos celebrados este año, el coso madrileño ha congregado a un total de 1.008.226 asistentes, con una media de 16.261 personas por festejo, consolidando su posición como epicentro de la tauromaquia mundial.
+
+El impacto de esta campaña se refleja también en los 18 llenos absolutos con el cartel de “No hay billetes”, una cifra que triplica la registrada en 2024, y en las 30 tardes que superaron los 18.000 espectadores, prácticamente la mitad del total. En ese contexto de auge, la Feria de Otoño cerró con 19.428 abonados, el mejor dato de los últimos quince años.
+
+Éxitos artísticos y consolidación de nuevos nombres
+En lo artístico, el público venteño ha presenciado cinco salidas a hombros por la Puerta Grande, protagonizadas por Alejandro Talavante (9 de mayo), Morante de la Puebla (8 de junio y 12 de octubre), Borja Jiménez (15 de junio) y Emilio de Justo (3 de octubre). La temporada se salda además con cuatro faenas premiadas con dos orejas y veintiocho con un trofeo.
+
+El coso madrileño ha reafirmado su papel como escenario clave para la proyección de nuevas figuras: veinte matadores confirmaron su alternativa en Las Ventas y dieciocho novilleros hicieron su presentación en el coso madrileño. 
+
+En total, se lidiaron 384 reses, de las cuales 18 fueron sobreros, pertenecientes a 21 encastes distintos, lo que confirma el compromiso de la programación venteña con la variedad de encastes. 
+
+Dos toros fueron premiados con la vuelta al ruedo: “Brigadier”, de Pedraza de Yeltes, lidiado por Isaac Fonseca el 14 de mayo; y “Milhijas”, de Victorino Martín, lidiado por Borja Jiménez el 15 de junio.
+
+Una temporada para el recuerdo
+La temporada 2025 quedará marcada como un año de cifras récord, consolidación de figuras, descubrimiento de jóvenes promesas y reivindicación del toro en su plenitud. 
+
+La afición respondió con una entrega pocas veces vista en las últimas décadas, situando a Las Ventas —una vez más— como el eje indiscutible del toreo contemporáneo.`
+  }, 
+  {
+    id: 202,
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
@@ -481,7 +561,7 @@ Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido
 Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
   },
   {
-    id: 12,
+    id: 203,
     title: "Antonio Chacón queda libre tras salir de la cuadrilla de Roca Rey",
     image: "images/antoniochacon.jpg",
     category: "Actualidad",
@@ -495,7 +575,7 @@ Durante la presente campaña, Chacón ha estado a las órdenes del torero limeñ
 Esta noticia se suma a los movimientos que comienzan a producirse en las cuadrillas con vistas a la próxima temporada, algunos de ellos, como este, totalmente inesperados.`
   },
   {
-    id: 13,
+    id: 204,
     title: "Alberto Álvarez se retira después de su paso por la Misericordia",
     image: "images/albertoalvarez.jpg",
     category: "Actualidad",
@@ -520,7 +600,7 @@ Asimismo, el torero aragonés Alberto Álvarez puso punto final a su carrera el 
 Con estas despedidas, la temporada 2025 pasará a la historia como un punto de inflexión, no solo por el adiós de grandes nombres, sino también por el reflejo de una generación que cierra su ciclo, dejando paso a nuevos valores que habrán de tomar el testigo en los años venideros.`
   },
   {
-    id: 14,
+    id: 205,
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
@@ -532,7 +612,7 @@ Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en pla
 Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los mejores deseos para sus respectivas trayectorias profesionales.`
   },
   {
-    id: 15,
+    id: 206,
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
@@ -548,7 +628,7 @@ La reaparición de César Jiménez, aunque puntual, tiene el sabor de las grande
 Arenas de San Pedro se convierte así en el escenario de una tarde de especial interés.`,
   },
   {
-    id: 16,
+    id: 207,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -563,7 +643,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
  {
-    id: 17,
+    id: 208,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -573,7 +653,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
      {
-    id: 18,
+    id: 209,
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
@@ -585,7 +665,7 @@ La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y rec
 Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
   },
      {
-    id: 19,
+    id: 210,
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
@@ -601,7 +681,7 @@ El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Gal
 Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
   },
   {
-    id: 20,
+    id: 211,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -615,7 +695,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 21,
+    id: 212,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -629,7 +709,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 22,
+id: 213,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Entrevistas",
@@ -671,7 +751,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
   {
-    id: 101,
+    id: 400,
     title: "",
     plaza: "",
     date: "",
@@ -689,7 +769,7 @@ const chronicles: Chronicle[] = [
   // Entrevistas taurinas
 const entrevistas: NewsItem[] = [
     {
-    id: 1,
+    id: 500,
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
@@ -720,7 +800,7 @@ Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido
 Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
   },
   {
-    id: 201,
+    id: 501,
     title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
     image: "images/tomasgonzalez.jpg",
     category: "Entrevistas",
