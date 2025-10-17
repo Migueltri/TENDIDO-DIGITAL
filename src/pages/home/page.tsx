@@ -283,7 +283,7 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1,
-    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia”",
+    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
     date: "17 de Octubre de 2025",
@@ -297,7 +297,7 @@ Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo 
   },
     {
     id: 2,
-    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título”",
+    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
     date: "17 de Octubre de 2025",
@@ -326,7 +326,7 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 const latestNews: NewsItem[] = [
    {
     id: 200,
-    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia”",
+    title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
     date: "17 de Octubre de 2025",
@@ -340,7 +340,7 @@ Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo 
   },
     {
     id: 201,
-    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título”",
+    title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
     date: "17 de Octubre de 2025",
