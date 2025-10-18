@@ -283,6 +283,18 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1,
+    title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
+    image: "images/franciscoydiego.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    fullContent: `El diestro madrileño Francisco de Manuel y su hasta ahora apoderado, Diego Robles, han decidido dar por finalizada, de mutuo acuerdo, la relación de apoderamiento que les ha unido durante las tres últimas temporadas.
+
+La ruptura se ha producido en términos cordiales, con el mayor respeto y reconocimiento mutuo. Tanto el torero como su apoderado han expresado su agradecimiento por la confianza compartida, la colaboración mantenida y las experiencias vividas durante esta etapa conjunta, que ambos valoran como un periodo de importante crecimiento profesional y personal.
+
+Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
+  },
+  {
+    id: 2,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -296,7 +308,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 2,
+    id: 3,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -324,8 +336,20 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 ];
 
 const latestNews: NewsItem[] = [
-   {
+  {
     id: 200,
+    title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
+    image: "images/franciscoydiego.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    fullContent: `El diestro madrileño Francisco de Manuel y su hasta ahora apoderado, Diego Robles, han decidido dar por finalizada, de mutuo acuerdo, la relación de apoderamiento que les ha unido durante las tres últimas temporadas.
+
+La ruptura se ha producido en términos cordiales, con el mayor respeto y reconocimiento mutuo. Tanto el torero como su apoderado han expresado su agradecimiento por la confianza compartida, la colaboración mantenida y las experiencias vividas durante esta etapa conjunta, que ambos valoran como un periodo de importante crecimiento profesional y personal.
+
+Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
+  },
+  {
+    id: 201,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -339,7 +363,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 201,
+    id: 202,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -365,7 +389,7 @@ La temporada 2025 quedará marcada como un año de cifras récord, consolidació
 La afición respondió con una entrega pocas veces vista en las últimas décadas, situando a Las Ventas —una vez más— como el eje indiscutible del toreo contemporáneo.`
   }, 
   {
-    id: 202,
+    id: 203,
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
@@ -396,7 +420,7 @@ Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido
 Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
   },
   {
-    id: 203,
+    id: 204,
     title: "Antonio Chacón queda libre tras salir de la cuadrilla de Roca Rey",
     image: "images/antoniochacon.jpg",
     category: "Actualidad",
@@ -410,7 +434,7 @@ Durante la presente campaña, Chacón ha estado a las órdenes del torero limeñ
 Esta noticia se suma a los movimientos que comienzan a producirse en las cuadrillas con vistas a la próxima temporada, algunos de ellos, como este, totalmente inesperados.`
   },
   {
-    id: 204,
+    id: 205,
     title: "Alberto Álvarez se retira después de su paso por la Misericordia",
     image: "images/albertoalvarez.jpg",
     category: "Actualidad",
@@ -435,7 +459,7 @@ Asimismo, el torero aragonés Alberto Álvarez puso punto final a su carrera el 
 Con estas despedidas, la temporada 2025 pasará a la historia como un punto de inflexión, no solo por el adiós de grandes nombres, sino también por el reflejo de una generación que cierra su ciclo, dejando paso a nuevos valores que habrán de tomar el testigo en los años venideros.`
   },
   {
-    id: 205,
+    id: 206,
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
@@ -447,7 +471,7 @@ Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en pla
 Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los mejores deseos para sus respectivas trayectorias profesionales.`
   },
   {
-    id: 206,
+    id: 207,
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
@@ -463,7 +487,7 @@ La reaparición de César Jiménez, aunque puntual, tiene el sabor de las grande
 Arenas de San Pedro se convierte así en el escenario de una tarde de especial interés.`,
   },
   {
-    id: 207,
+    id: 208,
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
@@ -478,7 +502,7 @@ Cabe recordar que Emilio de Justo ha dado por concluida su campaña 2025 luego d
 Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunfadores de la temporada, cosechando importantes éxitos en distintas plazas de España y Francia.`,
   },
  {
-    id: 208,
+    id: 209,
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
@@ -488,7 +512,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
   },
      {
-    id: 209,
+    id: 210,
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
@@ -500,7 +524,7 @@ La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y rec
 Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos futuros, manteniendo intacto el respeto y la cordialidad.`,
   },
      {
-    id: 210,
+    id: 211,
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
@@ -516,7 +540,7 @@ El cartel del sábado 18 de octubre lo completan El Cid, Curro Díaz y David Gal
 Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su compromiso con la afición, que ha seguido con atención su evolución tras el reciente percance.`,
   },
   {
-    id: 211,
+    id: 212,
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
@@ -530,7 +554,7 @@ Los tendidos , puestos en pie rompieron de forma unanime clamor de "torero torer
 Una despedida a la altura del mito que ha marcado este torero.`,
   },
   {
-    id: 212,
+    id: 213,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
@@ -544,7 +568,7 @@ Condecorado en 2012 con la Cruz de la Orden del 2 de Mayo de la Comunidad de Mad
 Una nueva etapa comienza en Las Ventas, pero el nombre de Florito quedará grabado para siempre entre los aficionados.`
   },
     {
-id: 213,
+id: 214,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Entrevistas",
