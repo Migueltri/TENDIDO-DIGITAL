@@ -287,7 +287,7 @@ const featuredNews: NewsItem[] = [
     image: "images/elfandi.jpg",
     category: "Actualidad",
     date: "18 de Octubre de 2025",
-    excerpt: "Después de veinte años de relación profesional subtítulo",
+    excerpt: "Después de veinte años de relación profesional",
     fullContent: `David Fandila “El Fandi” y la Casa Matilla han decidido dar por finalizada su relación de apoderamiento, una vinculación profesional que se ha mantenido de forma ininterrumpida durante los últimos 20 años.
 
 Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el futuro les depare nuevos éxitos. La relación entre el torero granadino y la reconocida casa taurina ha sido una de las más estables y duraderas del toreo reciente, marcada por la confianza, el respeto y una sólida trayectoria conjunta.
@@ -355,7 +355,7 @@ const latestNews: NewsItem[] = [
     image: "images/elfandi.jpg",
     category: "Actualidad",
     date: "18 de Octubre de 2025",
-    excerpt: "Después de veinte años de relación profesional subtítulo",
+    excerpt: "Después de veinte años de relación profesional",
     fullContent: `David Fandila “El Fandi” y la Casa Matilla han decidido dar por finalizada su relación de apoderamiento, una vinculación profesional que se ha mantenido de forma ininterrumpida durante los últimos 20 años.
 
 Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el futuro les depare nuevos éxitos. La relación entre el torero granadino y la reconocida casa taurina ha sido una de las más estables y duraderas del toreo reciente, marcada por la confianza, el respeto y una sólida trayectoria conjunta.
