@@ -283,6 +283,26 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
  {
     id: 1,
+    title: "Borja Jiménez redondea una temporada para enmarcar",
+    image: "images/borjajimenez.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    excerpt: "El torero de Espartinas paseó una oreja de cada toro de su lote en un triunfal cierre de temporada en España",
+    fullContent: `Borja Jiménez brindó su primer toro a César Jiménez, tras un episodio de alta tensión en el que Fernando Sánchez protagonizó un quite milagroso a José Luis Barrero, luego de una comprometida salida en un arriesgado par de banderillas. 
+
+Fue clave el juego de Ideólogo-80, del hierro de La Ventana del Puerto, un toro con movilidad y codicia, que repitió con entrega en la muleta. El sevillano supo entenderlo desde el inicio: muleta baja, toques firmes y siempre colocada. 
+
+La respuesta del astado fue de nobleza y acometividad.
+Destacó un soberbio cambio de mano y, especialmente, un pase de pecho amplio y templado, que describió una circunferencia plena de compás y torería. 
+
+La faena, de notable pulso y conexión, concluyó con un pinchazo hondo que obligó a recurrir al verduguillo en dos ocasiones.
+
+En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió decidido a no quedarse atrás en el marcador artístico. Recibió al toro con una larga cambiada de rodillas, declaración clara de intenciones. Ante un animal de escasa entrega, al que hubo que buscar y exigir, el diestro compuso una faena de gran entrega que caló en los tendidos. 
+
+La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
+  },
+  {
+    id: 2,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
@@ -295,7 +315,7 @@ Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el fu
 Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su respeto y reconocimiento por todos estos años de trabajo compartido.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
     image: "images/franciscoydiego.jpg",
     category: "Actualidad",
@@ -307,7 +327,7 @@ La ruptura se ha producido en términos cordiales, con el mayor respeto y recono
 Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
   },
   {
-    id: 3,
+    id: 4,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -321,7 +341,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 4,
+    id: 5,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -351,6 +371,26 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 const latestNews: NewsItem[] = [
   {
     id: 1,
+    title: "Borja Jiménez redondea una temporada para enmarcar",
+    image: "images/borjajimenez.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    excerpt: "El torero de Espartinas paseó una oreja de cada toro de su lote en un triunfal cierre de temporada en España",
+    fullContent: `Borja Jiménez brindó su primer toro a César Jiménez, tras un episodio de alta tensión en el que Fernando Sánchez protagonizó un quite milagroso a José Luis Barrero, luego de una comprometida salida en un arriesgado par de banderillas. 
+
+Fue clave el juego de Ideólogo-80, del hierro de La Ventana del Puerto, un toro con movilidad y codicia, que repitió con entrega en la muleta. El sevillano supo entenderlo desde el inicio: muleta baja, toques firmes y siempre colocada. 
+
+La respuesta del astado fue de nobleza y acometividad.
+Destacó un soberbio cambio de mano y, especialmente, un pase de pecho amplio y templado, que describió una circunferencia plena de compás y torería. 
+
+La faena, de notable pulso y conexión, concluyó con un pinchazo hondo que obligó a recurrir al verduguillo en dos ocasiones.
+
+En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió decidido a no quedarse atrás en el marcador artístico. Recibió al toro con una larga cambiada de rodillas, declaración clara de intenciones. Ante un animal de escasa entrega, al que hubo que buscar y exigir, el diestro compuso una faena de gran entrega que caló en los tendidos. 
+
+La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
+  },
+  {
+    id: 2,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
