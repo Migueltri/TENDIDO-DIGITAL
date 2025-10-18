@@ -281,8 +281,21 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-  {
+ {
     id: 1,
+    title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
+    image: "images/elfandi.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    excerpt: "Después de veinte años de relación profesional subtítulo",
+    fullContent: `David Fandila “El Fandi” y la Casa Matilla han decidido dar por finalizada su relación de apoderamiento, una vinculación profesional que se ha mantenido de forma ininterrumpida durante los últimos 20 años.
+
+Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el futuro les depare nuevos éxitos. La relación entre el torero granadino y la reconocida casa taurina ha sido una de las más estables y duraderas del toreo reciente, marcada por la confianza, el respeto y una sólida trayectoria conjunta.
+
+Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su respeto y reconocimiento por todos estos años de trabajo compartido.`
+  },
+  {
+    id: 2,
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
     image: "images/franciscoydiego.jpg",
     category: "Actualidad",
@@ -294,7 +307,7 @@ La ruptura se ha producido en términos cordiales, con el mayor respeto y recono
 Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -308,7 +321,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 3,
+    id: 4,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -336,6 +349,19 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 ];
 
 const latestNews: NewsItem[] = [
+  {
+    id: 1,
+    title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
+    image: "images/elfandi.jpg",
+    category: "Actualidad",
+    date: "18 de Octubre de 2025",
+    excerpt: "Después de veinte años de relación profesional subtítulo",
+    fullContent: `David Fandila “El Fandi” y la Casa Matilla han decidido dar por finalizada su relación de apoderamiento, una vinculación profesional que se ha mantenido de forma ininterrumpida durante los últimos 20 años.
+
+Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el futuro les depare nuevos éxitos. La relación entre el torero granadino y la reconocida casa taurina ha sido una de las más estables y duraderas del toreo reciente, marcada por la confianza, el respeto y una sólida trayectoria conjunta.
+
+Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su respeto y reconocimiento por todos estos años de trabajo compartido.`
+  },
   {
     id: 200,
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
