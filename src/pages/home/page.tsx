@@ -283,6 +283,19 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 {
     id: 1,
+    title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
+    image: "images/mariovilau.jpg",
+    category: "Actualidad",
+    date: "19 de Octubre de 2025",
+    excerpt: "El catalán conquista la final con “Guardes” de Fuente Ymbro, logrando dos orejas, rabo y la vuelta al ruedo del novillo",
+    fullContent: `Sanlúcar de Barrameda fue escenario de la Final de la Liga Nacional de Novilladas 2025, donde el catalán Mario Vilau, natural de L’Hospitalet de Llobregat (Barcelona), se proclamó ganador de la competición gracias a una actuación magistral frente al novillo “Guardes”, de Fuente Ymbro, que fue premiado con la vuelta al ruedo.
+
+A la puerta de chiqueros, Vilau recibió al cuarto novillo, salvando el trance con autoridad antes de un gran saludo a la verónica de rodillas, templando y vaciando la embestida del de Fuente Ymbro. En los medios, y de rodillas nuevamente, comenzó su actuación aprovechando la noble y cadenciosa embestida del animal para construir la mejor faena de la tarde. Al natural, la faena subió un tono, logrando varias tandas de muchísima suavidad. La cumbre de la actuación llegó con unas milimétricas bernadinas. A pesar de que el público pidió el indulto, Vilau entró a matar, dejando una gran estocada a la segunda, logrando dos orejas y rabo y la vuelta al ruedo del novillo.
+
+La ovación del público cerró una final que será recordada por la calidad del novillo y la actuación del novillero catalán, coronándolo como ganador de la Liga Nacional de Novilladas 2025.`
+  },
+  {
+    id: 2,
     title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
     image: "images/fandiycid.jpg",
     category: "Actualidad",
@@ -296,7 +309,7 @@ El galardón a la mejor faena ha recaído en Manuel Jesús ‘El Cid’ por la l
 En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la cuadrilla de Curro Díaz, ha sido designado mejor banderillero del serial, mientras que Manuel Jesús Ruiz ‘Espartaco’, de la cuadrilla de El Cid, ha sido reconocido como mejor picador.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
@@ -316,7 +329,7 @@ En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió d
 La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
   },
   {
-    id: 3,
+    id: 4,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
@@ -329,7 +342,7 @@ Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el fu
 Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su respeto y reconocimiento por todos estos años de trabajo compartido.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
     image: "images/franciscoydiego.jpg",
     category: "Actualidad",
@@ -341,7 +354,7 @@ La ruptura se ha producido en términos cordiales, con el mayor respeto y recono
 Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
   },
   {
-    id: 5,
+    id: 6,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -355,7 +368,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 6,
+    id: 7,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -385,6 +398,19 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 const latestNews: NewsItem[] = [
   {
     id: 1,
+    title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
+    image: "images/mariovilau.jpg",
+    category: "Actualidad",
+    date: "19 de Octubre de 2025",
+    excerpt: "El catalán conquista la final con “Guardes” de Fuente Ymbro, logrando dos orejas, rabo y la vuelta al ruedo del novillo",
+    fullContent: `Sanlúcar de Barrameda fue escenario de la Final de la Liga Nacional de Novilladas 2025, donde el catalán Mario Vilau, natural de L’Hospitalet de Llobregat (Barcelona), se proclamó ganador de la competición gracias a una actuación magistral frente al novillo “Guardes”, de Fuente Ymbro, que fue premiado con la vuelta al ruedo.
+
+A la puerta de chiqueros, Vilau recibió al cuarto novillo, salvando el trance con autoridad antes de un gran saludo a la verónica de rodillas, templando y vaciando la embestida del de Fuente Ymbro. En los medios, y de rodillas nuevamente, comenzó su actuación aprovechando la noble y cadenciosa embestida del animal para construir la mejor faena de la tarde. Al natural, la faena subió un tono, logrando varias tandas de muchísima suavidad. La cumbre de la actuación llegó con unas milimétricas bernadinas. A pesar de que el público pidió el indulto, Vilau entró a matar, dejando una gran estocada a la segunda, logrando dos orejas y rabo y la vuelta al ruedo del novillo.
+
+La ovación del público cerró una final que será recordada por la calidad del novillo y la actuación del novillero catalán, coronándolo como ganador de la Liga Nacional de Novilladas 2025.`
+  },
+  {
+    id: 2,
     title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
     image: "images/fandiycid.jpg",
     category: "Actualidad",
@@ -398,7 +424,7 @@ El galardón a la mejor faena ha recaído en Manuel Jesús ‘El Cid’ por la l
 En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la cuadrilla de Curro Díaz, ha sido designado mejor banderillero del serial, mientras que Manuel Jesús Ruiz ‘Espartaco’, de la cuadrilla de El Cid, ha sido reconocido como mejor picador.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
@@ -418,7 +444,7 @@ En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió d
 La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
   },
   {
-    id: 3,
+    id: 4,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
