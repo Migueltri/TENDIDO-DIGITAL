@@ -281,12 +281,26 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
- {
+{
     id: 1,
+    title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
+    image: "images/fandiycid.jpg",
+    category: "Actualidad",
+    date: "19 de Octubre de 2025",
+    fullContent: `Una vez concluida la Feria de San Lucas de Jaén 2025, se han fallado los premios que reconocen lo más destacado del ciclo taurino. 
+
+El gran triunfador ha sido El Fandi, quien se alzó con el máximo reconocimiento tras cortar tres orejas y un rabo en el festejo inaugural, celebrado el pasado 12 de octubre.
+
+El galardón a la mejor faena ha recaído en Manuel Jesús ‘El Cid’ por la labor realizada al toro Mercenario, de la ganadería de Victorino Martín, lidiado en segundo lugar durante la corrida del sábado. Este ejemplar ha sido distinguido, además, como el mejor toro de la feria.
+
+En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la cuadrilla de Curro Díaz, ha sido designado mejor banderillero del serial, mientras que Manuel Jesús Ruiz ‘Espartaco’, de la cuadrilla de El Cid, ha sido reconocido como mejor picador.`
+  },
+  {
+    id: 2,
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
-    date: "18 de Octubre de 2025",
+    date: "19 de Octubre de 2025",
     excerpt: "El torero de Espartinas paseó una oreja de cada toro de su lote en un triunfal cierre de temporada en España",
     fullContent: `Borja Jiménez brindó su primer toro a César Jiménez, tras un episodio de alta tensión en el que Fernando Sánchez protagonizó un quite milagroso a José Luis Barrero, luego de una comprometida salida en un arriesgado par de banderillas. 
 
@@ -302,7 +316,7 @@ En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió d
 La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
   },
   {
-    id: 2,
+    id: 3,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
@@ -315,7 +329,7 @@ Ambas partes cierran esta etapa con agradecimiento mutuo y el deseo de que el fu
 Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su respeto y reconocimiento por todos estos años de trabajo compartido.`
   },
   {
-    id: 3,
+    id: 4,
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
     image: "images/franciscoydiego.jpg",
     category: "Actualidad",
@@ -327,7 +341,7 @@ La ruptura se ha producido en términos cordiales, con el mayor respeto y recono
 Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éxitos en sus respectivos proyectos futuros.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
@@ -341,7 +355,7 @@ El objetivo es revalorizar la Plaza de Toros como un espacio cultural, social y 
 Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo de la ciudad y del mundo taurino”, y aseguró que se está trabajando intensamente para que la plaza recupere "todo su esplendor" de cara a su reapertura en marzo de 2026.`
   },
     {
-    id: 5,
+    id: 6,
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
@@ -371,6 +385,20 @@ La afición respondió con una entrega pocas veces vista en las últimas década
 const latestNews: NewsItem[] = [
   {
     id: 1,
+    title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
+    image: "images/fandiycid.jpg",
+    category: "Actualidad",
+    date: "19 de Octubre de 2025",
+    fullContent: `Una vez concluida la Feria de San Lucas de Jaén 2025, se han fallado los premios que reconocen lo más destacado del ciclo taurino. 
+
+El gran triunfador ha sido El Fandi, quien se alzó con el máximo reconocimiento tras cortar tres orejas y un rabo en el festejo inaugural, celebrado el pasado 12 de octubre.
+
+El galardón a la mejor faena ha recaído en Manuel Jesús ‘El Cid’ por la labor realizada al toro Mercenario, de la ganadería de Victorino Martín, lidiado en segundo lugar durante la corrida del sábado. Este ejemplar ha sido distinguido, además, como el mejor toro de la feria.
+
+En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la cuadrilla de Curro Díaz, ha sido designado mejor banderillero del serial, mientras que Manuel Jesús Ruiz ‘Espartaco’, de la cuadrilla de El Cid, ha sido reconocido como mejor picador.`
+  },
+  {
+    id: 2,
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
@@ -390,7 +418,7 @@ En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió d
 La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
   },
   {
-    id: 2,
+    id: 3,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
