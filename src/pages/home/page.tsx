@@ -229,10 +229,9 @@ const shareToFacebook = () => {
 const copyLink = async () => {
   try {
     if (sharePost) {
-      // Generamos un código corto tipo "p/abc123"
-      // Idealmente podrías usar el id, pero añadimos algo estilo hash para parecer “social”
-      const shortCode = btoa(`news-${sharePost.id}`).substring(0, 8); 
-      const link = `${window.location.origin}/?p=${shortCode}&utm_source=ig_web_copy_link`;
+      // Creamos un enlace único por ID
+      const encoded = btoa(`news-${sharePost.id}`); // Cada id produce un string único
+      const link = `${window.location.origin}/?p=${encoded}&utm_source=ig_web_copy_link`;
 
       await navigator.clipboard.writeText(link);
       setContactMessage("¡Enlace copiado al portapapeles!");
@@ -806,20 +805,27 @@ setIsMenuOpen(false);
 useEffect(() => {
   const params = new URLSearchParams(window.location.search);
   const p = params.get('p');
-  
+
   if (p) {
-    // recuperamos el id de la noticia
-   const decoded = atob(p.padEnd(p.length + (4 - (p.length % 4)) % 4, '=')); // añadimos padding
-    const idString = decoded.replace('news-', '');
-    const id = parseInt(idString, 10);
+    try {
+      // Rellenar base64 solo si hace falta
+      let padded = p;
+      while (padded.length % 4 !== 0) padded += "=";
 
-    const allPosts = [...featuredNews, ...latestNews];
-    const selected = allPosts.find(n => n.id === id);
+      const decoded = atob(padded);
+      const idString = decoded.replace("news-", "");
+      const id = parseInt(idString, 10);
 
-    if (selected) {
-      setSelectedNews(selected);
-      setIsNewsModalOpen(true);
-      document.body.style.overflow = 'hidden';
+      const allPosts = [...featuredNews, ...latestNews];
+      const selected = allPosts.find((n) => n.id === id);
+
+      if (selected) {
+        setSelectedNews(selected);
+        setIsNewsModalOpen(true);
+        document.body.style.overflow = "hidden";
+      }
+    } catch (error) {
+      console.error("Error decodificando parámetro p:", error);
     }
   }
 }, []);
