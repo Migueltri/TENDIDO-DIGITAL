@@ -283,6 +283,34 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 {
     id: 1,
+    title: "Tomás González por Miguel Serrano en Viraco",
+    image: "images/tomasgonzalez1.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El alcorisano Tomás González será el encargado de sustituir a Miguel Serrano en la Feria en Honor a Santa Úrsula en Viraco (Perú).
+
+Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
+  },
+  {
+    id: 2,
+    title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
+    image: "images/namesiomatias.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El apoderado taurino Nemesio Matías ha decidido poner fin a su relación profesional con el torero Samuel Navalón, tras dejar sin efecto el contrato que los unía por dos temporadas más. 
+
+La decisión, según ha confirmado el propio Matías a este medio, responde al cumplimiento de los objetivos marcados al inicio de su colaboración.
+
+Matías apostó por Navalón cuando este aún era novillero sin picadores, y en apenas 13 meses, ambos completaron una etapa de notable progresión: la evolución como novillero con picadores, la triunfal alternativa en Albacete en septiembre de 2024 y la posterior confirmación en Las Ventas, donde el joven torero cortó una oreja.
+
+Durante su primera temporada completa como matador de toros, Samuel Navalón ha sumado 16 festejos en plazas de relevancia, logrando importantes triunfos en escenarios de la talla de Sevilla, Madrid, Alicante, Ciudad Real, Albacete y Arlés, entre otros.
+
+Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesional y ha optado por cerrar esta etapa, al tiempo que ha querido expresar públicamente su reconocimiento al torero: «Estoy contrariado por dejar a un gran torero y a una gran persona, pero entiendo que este es el momento adecuado para cerrar una etapa que ha sido muy positiva», señala el comunicado.
+
+La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
+  },
+  {
+    id: 3,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
@@ -296,7 +324,7 @@ Los miembros del jurado han subrayado el rotundo triunfo de Emilio de Justo y su
 La entrega del galardón tendrá lugar el próximo 19 de noviembre durante la Gala Cultural Taurina, organizada por el Ayuntamiento de Salamanca en colaboración con la Federación de Peñas Taurinas ‘Helmántica’, y se celebrará en el Teatro Liceo de la capital salmantina.`
   },
   {
-    id: 2,
+    id: 4,
     title: "Emilio de Justo define una cuadrilla de categoría para 2026 con dos nuevas incorporaciones",
     image: "images/emilio.jpg",
     category: "Actualidad",
@@ -310,7 +338,7 @@ Con estas incorporaciones, la cuadrilla queda conformada de la siguiente manera:
 De esta forma, Emilio de Justo refuerza su cuadrilla con profesionales de primer nivel, en un momento especialmente relevante de su carrera. Tras protagonizar una temporada 2025 marcada por el éxito, el diestro logró su quinta Puerta Grande en Las Ventas durante la pasada Feria de Otoño, en una tarde épica que lo ha confirmado como uno de los nombres imprescindibles del escalafón de cara a las grandes ferias del próximo año.`
   },
   {
-    id: 3,
+    id: 5,
     title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
     image: "images/mariovilau.jpg",
     category: "Actualidad",
@@ -325,8 +353,36 @@ La ovación del público cerró una final que será recordada por la calidad del
 ];
 
 const latestNews: NewsItem[] = [
- {
+{
     id: 1,
+    title: "Tomás González por Miguel Serrano en Viraco",
+    image: "images/tomasgonzalez1.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El alcorisano Tomás González será el encargado de sustituir a Miguel Serrano en la Feria en Honor a Santa Úrsula en Viraco (Perú).
+
+Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
+  },
+  {
+    id: 2,
+    title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
+    image: "images/namesiomatias.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El apoderado taurino Nemesio Matías ha decidido poner fin a su relación profesional con el torero Samuel Navalón, tras dejar sin efecto el contrato que los unía por dos temporadas más. 
+
+La decisión, según ha confirmado el propio Matías a este medio, responde al cumplimiento de los objetivos marcados al inicio de su colaboración.
+
+Matías apostó por Navalón cuando este aún era novillero sin picadores, y en apenas 13 meses, ambos completaron una etapa de notable progresión: la evolución como novillero con picadores, la triunfal alternativa en Albacete en septiembre de 2024 y la posterior confirmación en Las Ventas, donde el joven torero cortó una oreja.
+
+Durante su primera temporada completa como matador de toros, Samuel Navalón ha sumado 16 festejos en plazas de relevancia, logrando importantes triunfos en escenarios de la talla de Sevilla, Madrid, Alicante, Ciudad Real, Albacete y Arlés, entre otros.
+
+Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesional y ha optado por cerrar esta etapa, al tiempo que ha querido expresar públicamente su reconocimiento al torero: «Estoy contrariado por dejar a un gran torero y a una gran persona, pero entiendo que este es el momento adecuado para cerrar una etapa que ha sido muy positiva», señala el comunicado.
+
+La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
+  },
+  {
+    id: 3,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
