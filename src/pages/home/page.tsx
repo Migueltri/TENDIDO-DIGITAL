@@ -283,6 +283,20 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 {
     id: 1,
+    title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
+    image: "images/emiliodejusto1.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El torero extremeño Emilio de Justo ha sido distinguido por unanimidad con el premio a la ‘Mejor Faena’ de la pasada Feria Taurina de Salamanca, un prestigioso reconocimiento que otorga el Ayuntamiento de la ciudad desde 1998.
+
+El jurado, presidido por el alcalde Carlos García Carbayo, ha valorado especialmente la lidia realizada por el diestro el pasado 14 de septiembre en la plaza de toros de La Glorieta, frente al toro ‘Buenasuerte’, de la ganadería Garcigrande, que fue indultado tras una actuación memorable.
+
+Los miembros del jurado han subrayado el rotundo triunfo de Emilio de Justo y su "faena apasionada", ejecutada con temple y dominio, aprovechando la bravura y la clase excepcionales del astado. Cabe destacar que el toro ‘Buenasuerte’ fue también reconocido con el premio ‘Toro de Oro’ que concede la Junta de Castilla y León, lo que refuerza la relevancia del momento vivido en el ruedo.
+
+La entrega del galardón tendrá lugar el próximo 19 de noviembre durante la Gala Cultural Taurina, organizada por el Ayuntamiento de Salamanca en colaboración con la Federación de Peñas Taurinas ‘Helmántica’, y se celebrará en el Teatro Liceo de la capital salmantina.`
+  },
+  {
+    id: 2,
     title: "Emilio de Justo define una cuadrilla de categoría para 2026 con dos nuevas incorporaciones",
     image: "images/emilio.jpg",
     category: "Actualidad",
@@ -296,7 +310,7 @@ Con estas incorporaciones, la cuadrilla queda conformada de la siguiente manera:
 De esta forma, Emilio de Justo refuerza su cuadrilla con profesionales de primer nivel, en un momento especialmente relevante de su carrera. Tras protagonizar una temporada 2025 marcada por el éxito, el diestro logró su quinta Puerta Grande en Las Ventas durante la pasada Feria de Otoño, en una tarde épica que lo ha confirmado como uno de los nombres imprescindibles del escalafón de cara a las grandes ferias del próximo año.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
     image: "images/mariovilau.jpg",
     category: "Actualidad",
@@ -311,8 +325,22 @@ La ovación del público cerró una final que será recordada por la calidad del
 ];
 
 const latestNews: NewsItem[] = [
-  {
+ {
     id: 1,
+    title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
+    image: "images/emiliodejusto1.jpg",
+    category: "Actualidad",
+    date: "21 de Octubre de 2025",
+    fullContent: `El torero extremeño Emilio de Justo ha sido distinguido por unanimidad con el premio a la ‘Mejor Faena’ de la pasada Feria Taurina de Salamanca, un prestigioso reconocimiento que otorga el Ayuntamiento de la ciudad desde 1998.
+
+El jurado, presidido por el alcalde Carlos García Carbayo, ha valorado especialmente la lidia realizada por el diestro el pasado 14 de septiembre en la plaza de toros de La Glorieta, frente al toro ‘Buenasuerte’, de la ganadería Garcigrande, que fue indultado tras una actuación memorable.
+
+Los miembros del jurado han subrayado el rotundo triunfo de Emilio de Justo y su "faena apasionada", ejecutada con temple y dominio, aprovechando la bravura y la clase excepcionales del astado. Cabe destacar que el toro ‘Buenasuerte’ fue también reconocido con el premio ‘Toro de Oro’ que concede la Junta de Castilla y León, lo que refuerza la relevancia del momento vivido en el ruedo.
+
+La entrega del galardón tendrá lugar el próximo 19 de noviembre durante la Gala Cultural Taurina, organizada por el Ayuntamiento de Salamanca en colaboración con la Federación de Peñas Taurinas ‘Helmántica’, y se celebrará en el Teatro Liceo de la capital salmantina.`
+  },
+  {
+    id: 10,
     title: "Emilio de Justo define una cuadrilla de categoría para 2026 con dos nuevas incorporaciones",
     image: "images/emilio.jpg",
     category: "Actualidad",
@@ -326,7 +354,7 @@ Con estas incorporaciones, la cuadrilla queda conformada de la siguiente manera:
 De esta forma, Emilio de Justo refuerza su cuadrilla con profesionales de primer nivel, en un momento especialmente relevante de su carrera. Tras protagonizar una temporada 2025 marcada por el éxito, el diestro logró su quinta Puerta Grande en Las Ventas durante la pasada Feria de Otoño, en una tarde épica que lo ha confirmado como uno de los nombres imprescindibles del escalafón de cara a las grandes ferias del próximo año.`
   },
   {
-    id: 2,
+    id: 11,
     title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
     image: "images/mariovilau.jpg",
     category: "Actualidad",
@@ -339,7 +367,7 @@ A la puerta de chiqueros, Vilau recibió al cuarto novillo, salvando el trance c
 La ovación del público cerró una final que será recordada por la calidad del novillo y la actuación del novillero catalán, coronándolo como ganador de la Liga Nacional de Novilladas 2025.`
   },
   {
-    id: 3,
+    id: 12,
     title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
     image: "images/fandiycid.jpg",
     category: "Actualidad",
@@ -353,7 +381,7 @@ El galardón a la mejor faena ha recaído en Manuel Jesús ‘El Cid’ por la l
 En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la cuadrilla de Curro Díaz, ha sido designado mejor banderillero del serial, mientras que Manuel Jesús Ruiz ‘Espartaco’, de la cuadrilla de El Cid, ha sido reconocido como mejor picador.`
   },
   {
-    id: 4,
+    id: 13,
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
@@ -373,7 +401,7 @@ En el quinto, con el hierro de El Puerto de San Lorenzo, Borja Jiménez salió d
 La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La oreja conquistada le abrió, con justicia, la Puerta Grande.`
   },
   {
-    id: 5,
+    id: 14,
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
