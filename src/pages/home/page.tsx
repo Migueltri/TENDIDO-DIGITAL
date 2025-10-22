@@ -1915,22 +1915,21 @@ TENDIDO DIGITAL
         </div>
 
 {/* Imagen principal */}
-<div className="bg-black flex flex-col items-center overflow-hidden">
+<div className="relative flex justify-center bg-black">
+  {/* Imagen */}
   <img
     src={selectedNews.image}
     alt={selectedNews.title}
-    className="max-h-[60vh] w-full object-contain bg-black"
+    className="max-h-[70vh] w-auto object-contain"
   />
-</div>
 
-{/* Pie de foto fuera de la imagen */}
-{selectedNews.imageCaption && (
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <p className="text-gray-500 text-xs italic text-right mt-3 mb-6">
-  {selectedNews.imageCaption}
-</p>
-  </div>
-)}
+  {/* Pie de foto alineado abajo a la derecha, fuera de la foto, sobre el fondo negro */}
+  {selectedNews.imageCaption && (
+    <p className="absolute bottom-3 right-2 text-gray-400 text-xs italic">
+      {selectedNews.imageCaption}
+    </p>
+  )}
+</div>
 
         {/* Contenido del artículo */}
         <div className="bg-white">
