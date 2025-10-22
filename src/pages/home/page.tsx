@@ -1088,12 +1088,13 @@ if (activeTab === 'cronicas') {
         Tu navegador no soporta la reproducción de vídeo.
       </video>
     ) : (
-      <img
-        src={chronicle.image}
-        alt={chronicle.title}
-        className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
-        loading="lazy"
-      />
+     <div className="bg-black flex items-center justify-center h-48 md:h-56 overflow-hidden">
+  <img
+    src={news.image}
+    alt={news.title}
+    className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+  />
+</div>
     )}
   </div>
 </div>
@@ -1182,7 +1183,7 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-    <section id="inicio" className="relative h-[400px] md:h-[600px] overflow-hidden">
+    <section id="inicio" className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center bg-black overflow-hidden">
       {featuredNews.map((news, index) => (
         <div
           key={news.id}
@@ -1190,11 +1191,10 @@ return (
             index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           }`}
         >
-          <img
-            src={news.image}
-            alt={news.title}
-            className="w-full h-full object-cover object-top"
-            loading={index === 0 ? "eager" : "lazy"}
+        <img
+          src={news.image}
+          alt={news.title}
+          className="w-full h-full object-contain bg-black"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
           <div className="absolute inset-0 flex items-center">
@@ -1875,12 +1875,12 @@ TENDIDO DIGITAL
 
         {/* Imagen principal */}
         <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
-          <img
-            src={selectedNews.image}
-            alt={selectedNews.title}
-            className="w-full h-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<img
+  src={selectedNews.image}
+  alt={selectedNews.title}
+  className="w-full h-auto max-h-[80vh] object-contain bg-black mx-auto"
+/>
+          <div className="w-full h-full object-cover sm:object-contain bg-black"></div>
           <div className="absolute bottom-8 left-8">
             <span className="bg-gradient-to-r from-red-600 to-red-5 0 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
               {'category' in selectedNews ? selectedNews.category : 'Opinión'}
