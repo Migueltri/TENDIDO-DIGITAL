@@ -1955,22 +1955,22 @@ TENDIDO DIGITAL
         </div>
 
 {/* Imagen principal */}
-<div className="flex flex-col items-center bg-black">
-  <img
-    src={selectedNews.image}
-    alt={selectedNews.title}
-    className="max-h-[70vh] w-auto object-contain"
-  />
-</div>
+<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+  <div className="flex flex-col items-center">
+    <img
+      src={selectedNews.image}
+      alt={selectedNews.title}
+      className="w-full h-auto rounded-md"
+    />
 
-{/* Pie de foto justo debajo, en el bloque blanco */}
-{selectedNews.imageCaption && (
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white -mt-2">
-    <p className="text-gray-500 text-xs italic text-right">
-      {selectedNews.imageCaption}
-    </p>
+    {/* Pie de foto, estilo Cultoro */}
+    {selectedNews.imageCaption && (
+      <p className="text-gray-500 text-xs italic text-right w-full mt-1">
+        {selectedNews.imageCaption}
+      </p>
+    )}
   </div>
-)}
+</div>
         {/* Contenido del artículo */}
         <div className="bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
