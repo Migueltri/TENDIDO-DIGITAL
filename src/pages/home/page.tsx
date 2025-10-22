@@ -285,7 +285,6 @@ const featuredNews: NewsItem[] = [
     id: 1000,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
-    imageCaption: "Coso de La Malagueta",
     category: "Actualidad",
     date: "22 de Octubre de 2025",
     fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
@@ -326,7 +325,6 @@ const latestNews: NewsItem[] = [
     id: 1,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
-    imageCaption: "Coso de La Malagueta",
     category: "Actualidad",
     date: "22 de Octubre de 2025",
     fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
@@ -1915,20 +1913,22 @@ TENDIDO DIGITAL
         </div>
 
 {/* Imagen principal */}
-<div className="relative h-[40vh] md:h-[60vh] flex flex-col items-center justify-center bg-black overflow-hidden">
+<div className="bg-black flex flex-col items-center overflow-hidden">
   <img
     src={selectedNews.image}
     alt={selectedNews.title}
-    className="max-h-[60vh] w-auto object-contain"
+    className="max-h-[60vh] w-full object-contain bg-black"
   />
-
-  {/* Pie de foto (subtítulo de imagen) */}
-  {selectedNews.imageCaption && (
-    <p className="absolute bottom-4 right-4 text-gray-400 text-xs italic bg-black/50 px-3 py-1 rounded-lg backdrop-blur-sm">
-      {selectedNews.imageCaption}
-    </p>
-  )}
 </div>
+
+{/* Pie de foto fuera de la imagen */}
+{selectedNews.imageCaption && (
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p className="text-gray-500 text-xs italic text-right mt-3 mb-6">
+  {selectedNews.imageCaption}
+</p>
+  </div>
+)}
 
         {/* Contenido del artículo */}
         <div className="bg-white">
