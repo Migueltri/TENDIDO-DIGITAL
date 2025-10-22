@@ -1916,18 +1916,21 @@ TENDIDO DIGITAL
 
         {/* Imagen principal */}
         <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
-<img
-  src={selectedNews.image}
-  alt={selectedNews.title}
-  className="w-full h-auto max-h-[80vh] object-contain bg-black mx-auto"
-/>
-          <div className="w-full h-full object-cover sm:object-contain bg-black"></div>
-          <div className="absolute bottom-8 left-8">
-            <span className="bg-gradient-to-r from-red-600 to-red-5 0 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
-              {'category' in selectedNews ? selectedNews.category : 'Opinión'}
-            </span>
-          </div>
-        </div>
+{/* Imagen principal */}
+<div className="relative h-[40vh] md:h-[60vh] flex flex-col items-center justify-center bg-black overflow-hidden">
+  <img
+    src={selectedNews.image}
+    alt={selectedNews.title}
+    className="max-h-[60vh] w-auto object-contain"
+  />
+
+  {/* Pie de foto (subtítulo de imagen) */}
+  {selectedNews.imageCaption && (
+    <p className="absolute bottom-4 right-4 text-gray-400 text-xs italic bg-black/50 px-3 py-1 rounded-lg backdrop-blur-sm">
+      {selectedNews.imageCaption}
+    </p>
+  )}
+</div>
 
         {/* Contenido del artículo */}
         <div className="bg-white">
