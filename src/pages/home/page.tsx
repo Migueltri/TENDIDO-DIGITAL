@@ -11,6 +11,7 @@ interface BaseArticle {
   ganaderia?: string;
   resultado?: string[];
   image: string;
+  imageCaption?: string;
   video?: string;
   resumen?: string;
   detalles?: string;
@@ -284,6 +285,7 @@ const featuredNews: NewsItem[] = [
     id: 1000,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
+    imageCaption: "Coso de La Malagueta",
     category: "Actualidad",
     date: "22 de Octubre de 2025",
     fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
