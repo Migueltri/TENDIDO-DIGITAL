@@ -282,6 +282,25 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1,
+    title: "Nautalia impugna el pliego de licitación de La Malagueta",
+    image: "images/nautalia.jpg",
+    category: "Actualidad",
+    date: "22 de Octubre de 2025",
+    fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
+
+La información fue adelantada este miércoles por el periodista Vicente Zabala de la Serna a través de su cuenta en X (anteriormente Twitter).
+La impugnación se centra en los criterios de solvencia técnica y profesional exigidos en el pliego, que, según Nautalia, restringen injustificadamente el acceso a empresas del sector con trayectoria contrastada. 
+
+En concreto, el documento licitatorio establece que únicamente podrán participar aquellas sociedades que hayan gestionado, durante al menos tres temporadas recientes, tres plazas de toros de primera o segunda categoría, con un mínimo de quince festejos anuales en cada una.
+
+Este umbral ha dejado fuera a operadores relevantes del ámbito taurino como la propia Nautalia o la Empresa Pagés, responsable de la gestión de la Real Maestranza de Caballería de Sevilla, una de las plazas de mayor prestigio del país.
+
+De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones de concurrir al proceso de licitación: el productor francés Simón Casas —que lo haría en alianza con el torero Javier Conde—, la empresa Tauroemoción, el empresario Carlos Zúñiga, la UTE BMF, Lances de Futuro y la Casa Matilla. Todas ellas cuentan con experiencia reciente en la gestión de recintos taurinos del nivel exigido.
+
+Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
+  }, 
+  {
+    id: 2,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -301,8 +320,27 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
 ];
 
 const latestNews: NewsItem[] = [
-{
+  {
     id: 1,
+    title: "Nautalia impugna el pliego de licitación de La Malagueta",
+    image: "images/nautalia.jpg",
+    category: "Actualidad",
+    date: "22 de Octubre de 2025",
+    fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
+
+La información fue adelantada este miércoles por el periodista Vicente Zabala de la Serna a través de su cuenta en X (anteriormente Twitter).
+La impugnación se centra en los criterios de solvencia técnica y profesional exigidos en el pliego, que, según Nautalia, restringen injustificadamente el acceso a empresas del sector con trayectoria contrastada. 
+
+En concreto, el documento licitatorio establece que únicamente podrán participar aquellas sociedades que hayan gestionado, durante al menos tres temporadas recientes, tres plazas de toros de primera o segunda categoría, con un mínimo de quince festejos anuales en cada una.
+
+Este umbral ha dejado fuera a operadores relevantes del ámbito taurino como la propia Nautalia o la Empresa Pagés, responsable de la gestión de la Real Maestranza de Caballería de Sevilla, una de las plazas de mayor prestigio del país.
+
+De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones de concurrir al proceso de licitación: el productor francés Simón Casas —que lo haría en alianza con el torero Javier Conde—, la empresa Tauroemoción, el empresario Carlos Zúñiga, la UTE BMF, Lances de Futuro y la Casa Matilla. Todas ellas cuentan con experiencia reciente en la gestión de recintos taurinos del nivel exigido.
+
+Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
+  }, 
+  {
+    id: 2,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -312,7 +350,7 @@ const latestNews: NewsItem[] = [
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -330,7 +368,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 3,
+    id: 4,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
