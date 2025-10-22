@@ -1,4 +1,6 @@
 import { StrictMode } from "react";
+import { inject } from '@vercel/analytics';
+inject();
 import { createRoot } from "react-dom/client";
 import "./i18n";
 import "./index.css";
