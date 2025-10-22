@@ -283,6 +283,26 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   {
     id: 1000,
+    title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
+    image: "images/andresyfernando.jpg",
+    category: "Actualidad",
+    date: "22 de Octubre de 2025",
+    fullContent: `"Ambos crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida", señala el torero en un comunicado.
+
+Andrés Roca Rey y su hermano Fernando han dado por finalizada la relación de apoderamiento , cumpliendo así una promesa que se hicieron hace años, toda vez que la temporada europea 2025 ha echado el cierre. 
+
+En un comunicado remitido a esta redacción por parte del equipo de comunicación del torero, señalan que "lo que comenzó como un sueño compartido se convirtió en una experiencia que los ha unido más allá del ruedo y que deja una huella imborrable en la trayectoria del torero".
+
+Roca Rey continuará ahora su temporada americana, con su próxima cita el 2 de noviembre en Lima (Perú), donde estoqueará seis toros en solitario, cumpliendo así otro de los hitos más esperados de su carrera.
+
+"Este año ha tenido un sentido muy especial para mí. Fernando y yo crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida. 
+
+Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo que nos debíamos desde hace tiempo. 
+
+Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
+  },
+  {
+    id: 1001,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     imageCaption: "Coso de La Malagueta",
@@ -302,7 +322,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 1001,
+    id: 1002,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -322,8 +342,28 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
 ];
 
 const latestNews: NewsItem[] = [
-  {
+ {
     id: 1,
+    title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
+    image: "images/andresyfernando.jpg",
+    category: "Actualidad",
+    date: "22 de Octubre de 2025",
+    fullContent: `"Ambos crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida", señala el torero en un comunicado.
+
+Andrés Roca Rey y su hermano Fernando han dado por finalizada la relación de apoderamiento , cumpliendo así una promesa que se hicieron hace años, toda vez que la temporada europea 2025 ha echado el cierre. 
+
+En un comunicado remitido a esta redacción por parte del equipo de comunicación del torero, señalan que "lo que comenzó como un sueño compartido se convirtió en una experiencia que los ha unido más allá del ruedo y que deja una huella imborrable en la trayectoria del torero".
+
+Roca Rey continuará ahora su temporada americana, con su próxima cita el 2 de noviembre en Lima (Perú), donde estoqueará seis toros en solitario, cumpliendo así otro de los hitos más esperados de su carrera.
+
+"Este año ha tenido un sentido muy especial para mí. Fernando y yo crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida. 
+
+Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo que nos debíamos desde hace tiempo. 
+
+Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
+  },
+  {
+    id: 2,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     imageCaption: "Coso de La Malagueta",
@@ -343,7 +383,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 2,
+    id: 3,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -353,7 +393,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 3,
+    id: 4,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -371,7 +411,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
@@ -1915,22 +1955,22 @@ TENDIDO DIGITAL
         </div>
 
 {/* Imagen principal */}
-<div className="relative flex justify-center bg-black">
-  {/* Imagen */}
+<div className="flex flex-col items-center bg-white">
   <img
     src={selectedNews.image}
     alt={selectedNews.title}
-    className="max-h-[70vh] w-auto object-contain"
+    className="max-h-[70vh] w-auto object-contain bg-black"
   />
-
-  {/* Pie de foto alineado abajo a la derecha, fuera de la foto, sobre el fondo negro */}
-  {selectedNews.imageCaption && (
-    <p className="absolute bottom-3 right-2 text-gray-400 text-xs italic">
-      {selectedNews.imageCaption}
-    </p>
-  )}
 </div>
 
+{/* Pie de foto en el bloque blanco, alineado a la derecha */}
+{selectedNews.imageCaption && (
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+    <p className="text-gray-500 text-xs italic text-right mt-2 mb-6">
+      {selectedNews.imageCaption}
+    </p>
+  </div>
+)}
         {/* Contenido del artículo */}
         <div className="bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
