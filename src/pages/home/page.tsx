@@ -1914,8 +1914,6 @@ TENDIDO DIGITAL
           </div>
         </div>
 
-        {/* Imagen principal */}
-        <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
 {/* Imagen principal */}
 <div className="relative h-[40vh] md:h-[60vh] flex flex-col items-center justify-center bg-black overflow-hidden">
   <img
