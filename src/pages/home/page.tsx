@@ -281,13 +281,31 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-  {
+    {
     id: 1000,
+    title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
+    image: "images/danielyluis.jpg",
+    category: "Actualidad",
+    date: "23 de Octubre de 2025",
+    fullContent: `El torero sevillano Daniel Luque y el apoderado Luis Manuel Lozano han decidido poner fin a la relación profesional que les ha unido durante la temporada 2025. 
+
+La noticia, adelantada el día de ayer por la periodista Rosario Pérez en el diario ABC, marca el cierre de una etapa que ambas partes emprendieron en octubre de 2024.
+
+Durante esta campaña, Luque ha vuelto a ser protagonista en plazas de máxima exigencia. La colaboración con Luis Manuel Lozano —miembro de una de las casas empresariales más influyentes del toreo— supuso un paso importante en la planificación y desarrollo de su temporada, especialmente tras las importantes actuaciones que el de Gerena venía firmando en años anteriores.
+
+Este es el comunicado oficial del diestro de Gerena:
+
+El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la relación de apoderamiento que les ha unido durante la temporada 2025. Un año en el que Daniel Luque ha toreado 33 corridas de toros, cortando 56 orejas y sumando 19 Puertas Grandes.
+
+Ambas partes se desean suerte en un futuro.`
+  },
+  {
+    id: 1001,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
     date: "22 de Octubre de 2025",
-    fullContent: `"Ambos crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida", señala el torero en un comunicado.
+    fullContent: `Ambos crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida", señala el torero en un comunicado.
 
 Andrés Roca Rey y su hermano Fernando han dado por finalizada la relación de apoderamiento , cumpliendo así una promesa que se hicieron hace años, toda vez que la temporada europea 2025 ha echado el cierre. 
 
@@ -302,7 +320,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 1001,
+    id: 1002,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -321,7 +339,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 1002,
+    id: 1003,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -341,8 +359,26 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
 ];
 
 const latestNews: NewsItem[] = [
- {
+  {
     id: 1,
+    title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
+    image: "images/danielyluis.jpg",
+    category: "Actualidad",
+    date: "23 de Octubre de 2025",
+    fullContent: `El torero sevillano Daniel Luque y el apoderado Luis Manuel Lozano han decidido poner fin a la relación profesional que les ha unido durante la temporada 2025. 
+
+La noticia, adelantada el día de ayer por la periodista Rosario Pérez en el diario ABC, marca el cierre de una etapa que ambas partes emprendieron en octubre de 2024.
+
+Durante esta campaña, Luque ha vuelto a ser protagonista en plazas de máxima exigencia. La colaboración con Luis Manuel Lozano —miembro de una de las casas empresariales más influyentes del toreo— supuso un paso importante en la planificación y desarrollo de su temporada, especialmente tras las importantes actuaciones que el de Gerena venía firmando en años anteriores.
+
+Este es el comunicado oficial del diestro de Gerena:
+
+El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la relación de apoderamiento que les ha unido durante la temporada 2025. Un año en el que Daniel Luque ha toreado 33 corridas de toros, cortando 56 orejas y sumando 19 Puertas Grandes.
+
+Ambas partes se desean suerte en un futuro.`
+  },
+  {
+    id: 2,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -362,7 +398,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -381,7 +417,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 3,
+    id: 4,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -391,7 +427,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -409,7 +445,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 5,
+    id: 6,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
