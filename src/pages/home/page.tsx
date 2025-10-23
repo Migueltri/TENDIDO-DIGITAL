@@ -806,7 +806,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
   {
-    id: 1,
+    id: 400,
     title: "",
     plaza: "",
     date: "",
