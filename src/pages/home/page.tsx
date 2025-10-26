@@ -1416,7 +1416,6 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-// En la sección del Hero Carousel, reemplaza completamente por esto:
 <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
   {featuredNews.map((news, index) => (
     <div
@@ -1426,18 +1425,14 @@ return (
       }`}
     >
       {/* Contenedor de imagen con estrategias diferentes para móvil y desktop */}
-<div className="relative w-full h-full">
-  <img
-    src={news.image}
-    alt={news.title}
-    className="w-full h-full object-cover md:object-cover"
-    style={{ 
-      objectPosition: 'center center',
-      // Fuerza que en móvil se comporte mejor
-      '@media (max-width: 768px)': { objectFit: 'cover' }
-    }}
-  />
-</div>
+      <div className="relative w-full h-full">
+        {/* En móvil: object-contain para ver imagen completa */}
+        <img
+          src={news.image}
+          alt={news.title}
+          className="md:hidden w-full h-full object-contain bg-black"
+        />
+        
         {/* En desktop: object-cover para llenar sin espacios */}
         <img
           src={news.image}
