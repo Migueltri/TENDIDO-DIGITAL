@@ -1416,20 +1416,21 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-    <section id="inicio" className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center bg-black overflow-hidden">
-      {featuredNews.map((news, index) => (
-        <div
-          key={news.id}
-          className={`absolute inset-0 transition-all duration-1000 ${
-            index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-          }`}
-        >
-<img
-  src={news.image}
-  alt={news.title}
-  className="w-full h-full object-cover md:object-contain bg-black"
-/>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+<section id="inicio" className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+  {featuredNews.map((news, index) => (
+    <div
+      key={news.id}
+      className={`absolute inset-0 transition-all duration-1000 ${
+        index === currentSlide ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      <div className="flex items-center justify-center w-full h-full">
+        <img
+          src={news.image}
+          alt={news.title}
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
       <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="max-w-3xl">
