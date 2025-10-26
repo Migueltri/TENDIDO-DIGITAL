@@ -1416,6 +1416,7 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
+// En la sección del Hero Carousel, reemplaza completamente por esto:
 <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
   {featuredNews.map((news, index) => (
     <div
@@ -1424,16 +1425,32 @@ return (
         index === currentSlide ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      <div className="flex items-center justify-center w-full h-full">
-      <img
-        src={news.image}
-        alt={news.title}
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center center' }}
-      />
+      {/* Contenedor de imagen con estrategias diferentes para móvil y desktop */}
+<div className="relative w-full h-full">
+  <img
+    src={news.image}
+    alt={news.title}
+    className="w-full h-full object-cover md:object-cover"
+    style={{ 
+      objectPosition: 'center center',
+      // Fuerza que en móvil se comporte mejor
+      '@media (max-width: 768px)': { objectFit: 'cover' }
+    }}
+  />
+</div>
+        {/* En desktop: object-cover para llenar sin espacios */}
+        <img
+          src={news.image}
+          alt={news.title}
+          className="hidden md:block absolute inset-0 w-full h-full object-cover"
+        />
       </div>
+      
+      {/* Overlay para mejor legibilidad */}
       <div className="absolute inset-0 bg-black/40"></div>
-                  <div className="absolute inset-0 flex items-center">
+      
+      {/* Contenido del texto */}
+      <div className="absolute inset-0 flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
             <div className="flex items-center mb-4">
@@ -1450,7 +1467,7 @@ return (
                 onClick={() => openNewsModal(news)}
                 className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
               >
-              Leer noticia completa
+                Leer noticia completa
               </button>
               <button
                 onClick={() => scrollToSection('actualidad')}
@@ -1465,8 +1482,8 @@ return (
     </div>
   ))}
   
-      {/* Carousel controls */}
-<div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
+  {/* Carousel controls */}
+  <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
     {featuredNews.map((_, index) => (
       <button
         key={index}
@@ -1481,8 +1498,8 @@ return (
     ))}
   </div>
 
-      {/* Navigation arrows */}
-<button 
+  {/* Navigation arrows */}
+  <button 
     className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
     onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
     aria-label="Noticia anterior"
