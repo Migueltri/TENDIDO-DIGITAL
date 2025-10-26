@@ -1424,13 +1424,13 @@ return (
             index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           }`}
         >
-        <img
-          src={news.image}
-          alt={news.title}
-          className="w-full h-full object-contain bg-black"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
-          <div className="absolute inset-0 flex items-center">
+<img
+  src={news.image}
+  alt={news.title}
+  className="w-full h-full object-cover md:object-contain bg-black"
+/>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+      <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="max-w-3xl">
                 <div className="flex items-center mb-4">
