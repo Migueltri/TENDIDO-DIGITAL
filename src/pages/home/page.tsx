@@ -1416,7 +1416,7 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-<section id="inicio" className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+<section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
   {featuredNews.map((news, index) => (
     <div
       key={news.id}
@@ -1425,76 +1425,78 @@ return (
       }`}
     >
       <div className="flex items-center justify-center w-full h-full">
-        <img
-          src={news.image}
-          alt={news.title}
-          className="max-w-full max-h-full object-contain"
-        />
+      <img
+        src={news.image}
+        alt={news.title}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: 'center center' }}
+      />
       </div>
-      <div className="absolute inset-0 flex items-center">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-3xl">
-                <div className="flex items-center mb-4">
-                  <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 md:px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                    <i className="ri-fire-line mr-2"></i>
-                    {news.category}
-                  </span>
-                  <span className="ml-4 text-white/90 text-xs md:text-sm font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">{news.date}</span>
-                </div>
-                <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">{news.title}</h1>
-                <p className="text-sm md:text-xl text-gray-200 mb-8 leading-relaxed">{news.excerpt}</p>
-                <div className="flex flex-wrap gap-4">
-                  <button
-                    onClick={() => openNewsModal(news)}
-                    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-                  >
-                    Leer noticia completa
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('actualidad')}
-                    className="bg-white/20 backdrop-blur-sm text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/20"
-                  >
-                    Ver más noticias
-                  </button>
-                </div>
-              </div>
+      <div className="absolute inset-0 bg-black/40"></div>
+                  <div className="absolute inset-0 flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-3xl">
+            <div className="flex items-center mb-4">
+              <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 md:px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+                <i className="ri-fire-line mr-2"></i>
+                {news.category}
+              </span>
+              <span className="ml-4 text-white/90 text-xs md:text-sm font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">{news.date}</span>
+            </div>
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">{news.title}</h1>
+            <p className="text-sm md:text-xl text-gray-200 mb-8 leading-relaxed">{news.excerpt}</p>
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() => openNewsModal(news)}
+                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+              >
+              Leer noticia completa
+              </button>
+              <button
+                onClick={() => scrollToSection('actualidad')}
+                className="bg-white/20 backdrop-blur-sm text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/20"
+              >
+                Ver más noticias
+              </button>
             </div>
           </div>
         </div>
-      ))}
-      
-      {/* Carousel controls */}
-      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
-        {featuredNews.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 cursor-pointer ${
-              index === currentSlide 
-                ? 'bg-white scale-125 shadow-lg' 
-                : 'bg-white/50 hover:bg-white/80'
-            }`}
-            onClick={() => setCurrentSlide(index)}
-            aria-label={`Ir a noticia ${index + 1}`}
-          />
-        ))}
       </div>
+    </div>
+  ))}
+  
+      {/* Carousel controls */}
+<div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
+    {featuredNews.map((_, index) => (
+      <button
+        key={index}
+        className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 cursor-pointer ${
+          index === currentSlide 
+            ? 'bg-white scale-125 shadow-lg' 
+            : 'bg-white/50 hover:bg-white/80'
+        }`}
+        onClick={() => setCurrentSlide(index)}
+        aria-label={`Ir a noticia ${index + 1}`}
+      />
+    ))}
+  </div>
 
       {/* Navigation arrows */}
-      <button 
-        className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
-        onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
-        aria-label="Noticia anterior"
-      >
-        <i className="ri-arrow-left-line text-xl md:text-2xl"></i>
-      </button>
-      <button 
-        className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
-        onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
-        aria-label="Siguiente noticia"
-      >
-        <i className="ri-arrow-right-line text-xl md:text-2xl"></i>
-      </button>
-    </section>
+<button 
+    className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
+    onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
+    aria-label="Noticia anterior"
+  >
+    <i className="ri-arrow-left-line text-xl md:text-2xl"></i>
+  </button>
+  <button 
+    className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
+    onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
+    aria-label="Siguiente noticia"
+  >
+    <i className="ri-arrow-right-line text-xl md:text-2xl"></i>
+  </button>
+</section>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
