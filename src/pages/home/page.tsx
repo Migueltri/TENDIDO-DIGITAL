@@ -281,8 +281,35 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-  {
+   {
     id: 1000,
+    title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
+    image: "images/victorhernandez.jpg",
+    category: "Opinión",
+    date: "26 de Octubre de 2025",
+    fullContent: `El nombre de Víctor Hernández empieza a pronunciarse con fuerza en los mentideros taurinos. No es casualidad. En un momento en que el toreo busca hueco en el escalafón, el madrileño ha demostrado que posee el oficio, la cabeza y la sensibilidad necesarios para abrirse camino en un escalafón cada vez más exigente.
+
+Su temporada 2025 ha sido un ejercicio de crecimiento constante. Desde los primeros compromisos hasta sus tardes estelares en plazas de primera, Víctor Hernández ha dejado una impronta de torero puro, con un concepto clásico y una actitud que honra la profesión. No hay en él gestos impostados ni necesidad de ruido: su toreo habla por sí solo.
+
+En la Feria de San Isidro en Plaza de Toros de Las Ventas, el 10 de mayo de 2025, Victor cortó una oreja de mucho peso al tercer toro de la tarde, de la ganadería El Pilar, en una actuación cargada de firmeza y valor ante un encierro complicado.  Ese triunfo le valió además el título de “torero revelación” del ciclo isidril.
+
+Tiempo después, también en Madrid, en la misma plaza pero en otro momento, Victor volvió a mostrar argumento serio: ante un toro de la ganadería Fuente Ymbro logró una oreja tras faena completa, donde Madrid rugió con la mano izquierda. 
+
+En La Malagueta, donde reaparecía tras ese grave percance en Torrejón de Ardoz ,  que le tuvo fuera un tiempo , se presentó con intención: ante un excelente toro de la ganadería Juan Manuel Criado cortó una oreja que dejó huella. Otra faena completa , que por el mal uso de los aceros se llevó los triunfos. 
+
+Este cúmulo de actuaciones confirma que este torero no es un torero más de los que vienen, sino uno que reclama su sitio.  En una época en la que abunda el efectismo y el cambio de cromos, este torero reivindica la pureza. Y eso, en el toreo actual, es un valor en alza.
+
+Quienes le han visto en plazas coinciden en lo mismo: hay torero. Lo hay por forma y por fondo. Tiene colocación, valor seco y un concepto asentado sobre la naturalidad. Pero, sobre todo, tiene algo que no se enseña: verdad. Esa verdad que no se grita, pero que se siente desde el tendido.
+
+El sistema, tan dado a las prisas y a los nombres de siempre, debería detenerse en su caso. Porque mientras algunos despachan compromisos con oficio frío, Hernández torea de verdad. 
+
+El toreo necesita figuras, sí, pero también necesita cimientos. Y en toreros como Víctor Hernández está la base sobre la que se puede construir el futuro. La juventud no debería ser excusa para relegarlo, sino motivo para apostar por él. Su toreo , su entrega y su pureza merecen sitio en las ferias que presumen de categoría.
+
+Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva para abrir puertas y no para cerrarlas. Porque mientras haya toreros que quieran decir algo desde la verdad, el toreo seguirá teniendo futuro.
+Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
+  },
+  {
+    id: 1001,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -296,7 +323,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 1001,
+    id: 1002,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -314,7 +341,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 1002,
+    id: 1003,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -332,7 +359,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 1003,
+    id: 1004,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -352,7 +379,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 1004,
+    id: 1005,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -371,7 +398,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 1005,
+    id: 1006,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -393,6 +420,33 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
 const latestNews: NewsItem[] = [
   {
     id: 1,
+    title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
+    image: "images/victorhernandez.jpg",
+    category: "Opinión",
+    date: "26 de Octubre de 2025",
+    fullContent: `El nombre de Víctor Hernández empieza a pronunciarse con fuerza en los mentideros taurinos. No es casualidad. En un momento en que el toreo busca hueco en el escalafón, el madrileño ha demostrado que posee el oficio, la cabeza y la sensibilidad necesarios para abrirse camino en un escalafón cada vez más exigente.
+
+Su temporada 2025 ha sido un ejercicio de crecimiento constante. Desde los primeros compromisos hasta sus tardes estelares en plazas de primera, Víctor Hernández ha dejado una impronta de torero puro, con un concepto clásico y una actitud que honra la profesión. No hay en él gestos impostados ni necesidad de ruido: su toreo habla por sí solo.
+
+En la Feria de San Isidro en Plaza de Toros de Las Ventas, el 10 de mayo de 2025, Victor cortó una oreja de mucho peso al tercer toro de la tarde, de la ganadería El Pilar, en una actuación cargada de firmeza y valor ante un encierro complicado.  Ese triunfo le valió además el título de “torero revelación” del ciclo isidril.
+
+Tiempo después, también en Madrid, en la misma plaza pero en otro momento, Victor volvió a mostrar argumento serio: ante un toro de la ganadería Fuente Ymbro logró una oreja tras faena completa, donde Madrid rugió con la mano izquierda. 
+
+En La Malagueta, donde reaparecía tras ese grave percance en Torrejón de Ardoz ,  que le tuvo fuera un tiempo , se presentó con intención: ante un excelente toro de la ganadería Juan Manuel Criado cortó una oreja que dejó huella. Otra faena completa , que por el mal uso de los aceros se llevó los triunfos. 
+
+Este cúmulo de actuaciones confirma que este torero no es un torero más de los que vienen, sino uno que reclama su sitio.  En una época en la que abunda el efectismo y el cambio de cromos, este torero reivindica la pureza. Y eso, en el toreo actual, es un valor en alza.
+
+Quienes le han visto en plazas coinciden en lo mismo: hay torero. Lo hay por forma y por fondo. Tiene colocación, valor seco y un concepto asentado sobre la naturalidad. Pero, sobre todo, tiene algo que no se enseña: verdad. Esa verdad que no se grita, pero que se siente desde el tendido.
+
+El sistema, tan dado a las prisas y a los nombres de siempre, debería detenerse en su caso. Porque mientras algunos despachan compromisos con oficio frío, Hernández torea de verdad. 
+
+El toreo necesita figuras, sí, pero también necesita cimientos. Y en toreros como Víctor Hernández está la base sobre la que se puede construir el futuro. La juventud no debería ser excusa para relegarlo, sino motivo para apostar por él. Su toreo , su entrega y su pureza merecen sitio en las ferias que presumen de categoría.
+
+Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva para abrir puertas y no para cerrarlas. Porque mientras haya toreros que quieran decir algo desde la verdad, el toreo seguirá teniendo futuro.
+Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
+  },
+  {
+    id: 2,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -406,7 +460,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 2,
+    id: 3,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -424,7 +478,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 3,
+    id: 4,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -442,7 +496,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -462,7 +516,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 5,
+    id: 6,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -481,7 +535,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 6,
+    id: 7,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -491,7 +545,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 7,
+    id: 8,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -509,7 +563,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 8,
+    id: 9,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
