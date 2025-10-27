@@ -1365,7 +1365,10 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-<section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
+<section 
+  id="inicio" 
+  className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-white"
+>
   {featuredNews.map((news, index) => (
     <div
       key={news.id}
@@ -1376,11 +1379,11 @@ return (
       {/* Contenedor de imagen con estrategias diferentes para móvil y desktop */}
       <div className="relative w-full h-full">
         {/* En móvil: object-contain para ver imagen completa */}
-        <img
-          src={news.image}
-          alt={news.title}
-          className="md:hidden w-full h-full object-contain bg-black"
-        />
+<img
+  src={news.image}
+  alt={news.title}
+  className="md:hidden w-full h-auto max-h-screen object-scale-down bg-transparent"
+/>
         
         {/* En desktop: object-cover para llenar sin espacios */}
         <img
