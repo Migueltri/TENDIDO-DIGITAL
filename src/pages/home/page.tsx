@@ -281,8 +281,22 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-   {
+  {
     id: 1000,
+    title: "Alberto García, nuevo apoderado de El Fandi",
+    image: "images/albertogarcia.jpg",
+    category: "Actualidad",
+    date: "27 de Octubre de 2025",
+    fullContent: `El matador de toros David Fandila ‘El Fandi’ será apoderado por el empresario Alberto García, CEO de Tauroemocion, durante la temporada 2026. Un acuerdo de apoderamiento que el diestro granadino ha anunciado a través de un comunicado.
+
+En el mismo, El Fandi anuncia una nueva etapa profesional de la mano de Alberto García ‘cargada de ilusión y compromiso, basada en la entrega por ambas partes’.
+
+Cabe recordar que este cambio en la carrera de El Fandi llega después de estar más de 20 años ligado a la Casa Matilla.
+
+El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
+  }, 
+  {
+    id: 1001,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -296,7 +310,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   },
   {
-    id: 1001,
+    id: 1002,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -323,7 +337,7 @@ Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva p
 Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
   },
   {
-    id: 1002,
+    id: 1003,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -337,7 +351,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 1003,
+    id: 1004,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -355,7 +369,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 1004,
+    id: 1005,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -373,7 +387,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 1005,
+    id: 1006,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -393,7 +407,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 1006,
+    id: 1007,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -412,7 +426,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 1007,
+    id: 1008,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -432,8 +446,22 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
 ];
 
 const latestNews: NewsItem[] = [
- {
+   {
     id: 1,
+    title: "Alberto García, nuevo apoderado de El Fandi",
+    image: "images/albertogarcia.jpg",
+    category: "Actualidad",
+    date: "27 de Octubre de 2025",
+    fullContent: `El matador de toros David Fandila ‘El Fandi’ será apoderado por el empresario Alberto García, CEO de Tauroemocion, durante la temporada 2026. Un acuerdo de apoderamiento que el diestro granadino ha anunciado a través de un comunicado.
+
+En el mismo, El Fandi anuncia una nueva etapa profesional de la mano de Alberto García ‘cargada de ilusión y compromiso, basada en la entrega por ambas partes’.
+
+Cabe recordar que este cambio en la carrera de El Fandi llega después de estar más de 20 años ligado a la Casa Matilla.
+
+El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
+  }, 
+  {
+    id: 2,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -447,7 +475,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   }, 
   {
-    id: 2,
+    id: 3,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -474,7 +502,7 @@ Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva p
 Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
   },
   {
-    id: 3,
+    id: 4,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -488,7 +516,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -506,7 +534,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 5,
+    id: 6,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -524,7 +552,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 6,
+    id: 7,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -544,7 +572,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 7,
+    id: 8,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -563,7 +591,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 8,
+    id: 9,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -573,7 +601,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 9,
+    id: 10,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -591,7 +619,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 10,
+    id: 11,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
