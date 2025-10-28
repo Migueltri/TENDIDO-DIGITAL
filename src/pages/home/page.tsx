@@ -333,7 +333,7 @@ Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre 
   }, 
   {
     id: 1003,
-    title: "El matador de toros Juanito deja la profesión",
+    title: "El matador de toros 'Juanito' deja la profesión",
     image: "images/juanito.jpg",
     category: "Actualidad",
     date: "28 de Octubre de 2025",
@@ -354,87 +354,6 @@ Muy agradecido eternamente a mi familia, a todas esas personas y amigos que me h
 Agradecerle sobretodo al toro, a ese animal bello que me ha hecho ser la persona que soy y a sentir, pensar y hacerme vivir diferente al resto de los mortales. 
 
 Juanito.`
-  }, 
-  {
-    id: 1004,
-    title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
-    image: "images/premiosnicanor.jpg",
-    category: "Actualidad",
-    date: "28 de Octubre de 2025",
-    fullContent: `La segunda edición de los Premios Nicanor Villalta, impulsados por el Gobierno de Aragón, reconoció este lunes a Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres como protagonistas de la temporada taurina 2025.
-La ceremonia, celebrada en la Sala de la Corona del Edificio Pignatelli, reunió a autoridades y profesionales del mundo del toro en un acto que sirvió también para reivindicar el valor cultural y social de la tauromaquia.
-
-El presidente aragonés, Jorge Azcón, definió a los galardonados como “cuatro toreros que han emocionado a los aficionados aragoneses esta temporada”, y subrayó que “la fiesta de los toros —por mucho que a algunos les pese— es arte, historia, cultura, tradición, economía y defensa de la España rural”.
-
-Por segundo año consecutivo, el jurado distinguió a Tomás Rufo por su extraordinaria faena al sexto toro de la tarde del 13 de agosto en la Feria de la Albahaca de Huesca. En la Feria del Pilar de Zaragoza, el reconocimiento recayó en Daniel Luque, premiado por su actuación ante el quinto toro del 11 de octubre.
-
-Asimismo, el jurado otorgó ex aequo el galardón a la nueva generación de toreros aragoneses a Aarón Palacio y Cristiano Torres, quienes tomaron la alternativa durante la temporada 2025.
-
-Durante su intervención, Azcón felicitó a los premiados y destacó su contribución al toreo aragonés. “Tomás, el año que viene tienes que ir a por la mejor faena en Teruel y ser el primer torero que logra este premio en las tres provincias”, señaló. Sobre Luque, afirmó que “su compromiso con Zaragoza es innegable; es un torero de esta tierra y tiene a la afición entregada”. 
-
-En cuanto a los jóvenes premiados, aseguró que “Aarón y Cristiano representan la ilusión de una nueva etapa dorada para el toreo aragonés”.
-
-El presidente aprovechó la gala para reafirmar el apoyo institucional del Ejecutivo autonómico a la tauromaquia, recordando la recuperación de las retransmisiones taurinas en Aragón TV, con 53 festejos emitidos y una cuota media de audiencia del 19,1%, casi el doble de la media de la cadena autonómica, que cerró 2024 con un récord histórico del 11,6%.
-
-Azcón evocó también la figura de Nicanor Villalta, considerado “el torero aragonés más ilustre”, y propuso organizar una corrida goyesca especial en 2027 para conmemorar el bicentenario de la muerte de Francisco de Goya.
-Además, dedicó unas palabras de reconocimiento a Morante de la Puebla, recientemente retirado tras más de tres décadas de trayectoria, a quien definió como “uno de los grandes toreros de la historia”.
-
-Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón otorgó la Pluma de Oro al Gobierno de Aragón por la creación de estos galardones, en reconocimiento a su impulso y compromiso con la fiesta. El premio fue recogido por Jorge Azcón y la vicepresidenta Mar Vaquero, en una jornada que reafirmó la vigencia y el orgullo de la tradición taurina en Aragón.`
-  }, 
-  {
-    id: 1005,
-    title: "Alberto García, nuevo apoderado de El Fandi",
-    image: "images/albertogarcia.jpg",
-    category: "Actualidad",
-    date: "27 de Octubre de 2025",
-    fullContent: `El matador de toros David Fandila ‘El Fandi’ será apoderado por el empresario Alberto García, CEO de Tauroemocion, durante la temporada 2026. Un acuerdo de apoderamiento que el diestro granadino ha anunciado a través de un comunicado.
-
-En el mismo, El Fandi anuncia una nueva etapa profesional de la mano de Alberto García ‘cargada de ilusión y compromiso, basada en la entrega por ambas partes’.
-
-Cabe recordar que este cambio en la carrera de El Fandi llega después de estar más de 20 años ligado a la Casa Matilla.
-
-El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
-  }, 
-  {
-    id: 1006,
-    title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
-    image: "images/lamalagueta.jpg",
-    category: "Actualidad",
-    date: "27 de Octubre de 2025",
-    fullContent: `La Diputación de Málaga ha decidido anular el concurso público para la gestión de la plaza de toros de La Malagueta tras detectar un error técnico en la configuración de los sobres del procedimiento, según adelantó la periodista Patricia Navarro en La Razón. Este defecto de forma afectó al sistema de carga de la documentación requerida, lo que impidió que los licitadores pudieran completar correctamente sus solicitudes.
-
-Como consecuencia, el anuncio publicado el pasado 7 de octubre de 2025 ha quedado sin efecto, y la institución provincial abrirá una nueva convocatoria en el plazo de 30 días, con el fin de garantizar un proceso limpio y transparente.
-
-No obstante, esta decisión no resuelve la impugnación presentada por la empresa Nautalia, actual gestora de las plazas de Valencia y Las Ventas, que había cuestionado los requisitos de solvencia técnica del pliego por considerarlos restrictivos y contrarios a la libre competencia. En concreto, el documento exigía haber gestionado durante los tres últimos años tres plazas de primera o segunda categoría con un mínimo de quince festejos por temporada, una condición que excluía a importantes operadores del sector.
-
-El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
-  },
-  {
-    id: 1007,
-    title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
-    image: "images/victorhernandez.jpg",
-    category: "Opinión",
-    date: "26 de Octubre de 2025",
-    fullContent: `El nombre de Víctor Hernández empieza a pronunciarse con fuerza en los mentideros taurinos. No es casualidad. En un momento en que el toreo busca hueco en el escalafón, el madrileño ha demostrado que posee el oficio, la cabeza y la sensibilidad necesarios para abrirse camino en un escalafón cada vez más exigente.
-
-Su temporada 2025 ha sido un ejercicio de crecimiento constante. Desde los primeros compromisos hasta sus tardes estelares en plazas de primera, Víctor Hernández ha dejado una impronta de torero puro, con un concepto clásico y una actitud que honra la profesión. No hay en él gestos impostados ni necesidad de ruido: su toreo habla por sí solo.
-
-En la Feria de San Isidro en Plaza de Toros de Las Ventas, el 10 de mayo de 2025, Victor cortó una oreja de mucho peso al tercer toro de la tarde, de la ganadería El Pilar, en una actuación cargada de firmeza y valor ante un encierro complicado.  Ese triunfo le valió además el título de “torero revelación” del ciclo isidril.
-
-Tiempo después, también en Madrid, en la misma plaza pero en otro momento, Victor volvió a mostrar argumento serio: ante un toro de la ganadería Fuente Ymbro logró una oreja tras faena completa, donde Madrid rugió con la mano izquierda. 
-
-En La Malagueta, donde reaparecía tras ese grave percance en Torrejón de Ardoz ,  que le tuvo fuera un tiempo , se presentó con intención: ante un excelente toro de la ganadería Juan Manuel Criado cortó una oreja que dejó huella. Otra faena completa , que por el mal uso de los aceros se llevó los triunfos. 
-
-Este cúmulo de actuaciones confirma que este torero no es un torero más de los que vienen, sino uno que reclama su sitio.  En una época en la que abunda el efectismo y el cambio de cromos, este torero reivindica la pureza. Y eso, en el toreo actual, es un valor en alza.
-
-Quienes le han visto en plazas coinciden en lo mismo: hay torero. Lo hay por forma y por fondo. Tiene colocación, valor seco y un concepto asentado sobre la naturalidad. Pero, sobre todo, tiene algo que no se enseña: verdad. Esa verdad que no se grita, pero que se siente desde el tendido.
-
-El sistema, tan dado a las prisas y a los nombres de siempre, debería detenerse en su caso. Porque mientras algunos despachan compromisos con oficio frío, Hernández torea de verdad. 
-
-El toreo necesita figuras, sí, pero también necesita cimientos. Y en toreros como Víctor Hernández está la base sobre la que se puede construir el futuro. La juventud no debería ser excusa para relegarlo, sino motivo para apostar por él. Su toreo , su entrega y su pureza merecen sitio en las ferias que presumen de categoría.
-
-Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva para abrir puertas y no para cerrarlas. Porque mientras haya toreros que quieran decir algo desde la verdad, el toreo seguirá teniendo futuro.
-Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
   }
 ];
 
@@ -1565,38 +1484,29 @@ if (activeTab === 'cronicas') {
 return (
   <>
     {/* Hero Carousel */}
-<section 
-  id="inicio" 
-  className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-white"
+<section
+  id="inicio"
+  className="relative w-full h-[100vh] overflow-hidden flex items-center justify-center"
 >
   {featuredNews.map((news, index) => (
     <div
       key={news.id}
-      className={`absolute inset-0 transition-all duration-1000 ${
-        index === currentSlide ? 'opacity-100' : 'opacity-0'
+      className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+        index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
       }`}
     >
-      {/* Contenedor de imagen con estrategias diferentes para móvil y desktop */}
-      <div className="relative w-full h-full">
-        {/* En móvil: object-contain para ver imagen completa */}
-<img
-  src={news.image}
-  alt={news.title}
-  className="md:hidden w-full h-auto max-h-screen object-scale-down bg-transparent"
-/>
-        
-        {/* En desktop: object-cover para llenar sin espacios */}
-        <img
-          src={news.image}
-          alt={news.title}
-          className="hidden md:block absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-      
-      {/* Overlay para mejor legibilidad */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      {/* Contenido del texto */}
+      {/* Imagen responsive: misma lógica para todos los tamaños */}
+      <img
+        src={news.image}
+        alt={news.title}
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+      />
+
+      {/* Oscurecedor para legibilidad del texto */}
+      <div className="absolute inset-0 bg-black/40 md:bg-black/40"></div>
+
+      {/* Contenido del slide */}
       <div className="absolute inset-0 flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
@@ -1605,20 +1515,32 @@ return (
                 <i className="ri-fire-line mr-2"></i>
                 {news.category}
               </span>
-              <span className="ml-4 text-white/90 text-xs md:text-sm font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">{news.date}</span>
+              <span className="ml-4 text-white/90 text-xs md:text-sm font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">
+                {news.date}
+              </span>
             </div>
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">{news.title}</h1>
-            <p className="text-sm md:text-xl text-gray-200 mb-8 leading-relaxed">{news.excerpt}</p>
-            <div className="flex flex-wrap gap-4">
+
+            <h1 className="text-2xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight">
+              {news.title}
+            </h1>
+
+            {news.excerpt && (
+              <p className="text-base md:text-xl text-gray-100 mb-8 leading-relaxed">
+                {news.excerpt}
+              </p>
+            )}
+
+            <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => openNewsModal(news)}
-                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base"
               >
                 Leer noticia completa
               </button>
+
               <button
                 onClick={() => scrollToSection('actualidad')}
-                className="bg-white/20 backdrop-blur-sm text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/20"
+                className="bg-white/20 backdrop-blur-md text-white px-6 md:px-8 py-3 rounded-full font-bold hover:bg-white/30 transition duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/30"
               >
                 Ver más noticias
               </button>
@@ -1628,37 +1550,39 @@ return (
       </div>
     </div>
   ))}
-  
-  {/* Carousel controls */}
-  <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
+
+  {/* Indicadores */}
+  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-2 rounded-full">
     {featuredNews.map((_, index) => (
       <button
         key={index}
-        className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 cursor-pointer ${
-          index === currentSlide 
-            ? 'bg-white scale-125 shadow-lg' 
+        onClick={() => setCurrentSlide(index)}
+        className={`w-3 h-3 rounded-full transition-all ${
+          index === currentSlide
+            ? 'bg-white scale-125 shadow-lg'
             : 'bg-white/50 hover:bg-white/80'
         }`}
-        onClick={() => setCurrentSlide(index)}
-        aria-label={`Ir a noticia ${index + 1}`}
       />
     ))}
   </div>
 
-  {/* Navigation arrows */}
-  <button 
-    className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
-    onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
-    aria-label="Noticia anterior"
+  {/* Flechas */}
+  <button
+    onClick={() =>
+      setCurrentSlide(
+        currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+      )
+    }
+    className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/30 text-white backdrop-blur-sm hover:bg-white/50 transition"
   >
-    <i className="ri-arrow-left-line text-xl md:text-2xl"></i>
+    <i className="ri-arrow-left-line text-xl"></i>
   </button>
-  <button 
-    className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
+
+  <button
     onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
-    aria-label="Siguiente noticia"
+    className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/30 text-white backdrop-blur-sm hover:bg-white/50 transition"
   >
-    <i className="ri-arrow-right-line text-xl md:text-2xl"></i>
+    <i className="ri-arrow-right-line text-xl"></i>
   </button>
 </section>
 
