@@ -1400,20 +1400,21 @@ if (activeTab === 'cronicas') {
     )}
   </div>
 </div>
-                {/* Imagen principal y pie de foto */}
-<figure className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+                {/* Imagen principal con formato unificado al hero */}
+<div className="relative w-full overflow-hidden rounded-none sm:rounded-md">
   <img
     src={selectedNews.image}
     alt={selectedNews.title}
-    className="w-full h-auto rounded-lg mb-2"
+    className="w-full h-[60vh] sm:h-[70vh] object-cover object-center"
   />
 
+  {/* Pie de foto (si existe) */}
   {selectedNews.imageCaption && (
-    <figcaption className="text-gray-500 text-xs italic text-left leading-snug">
+    <p className="text-gray-500 text-xs italic text-center mt-2 px-4">
       {selectedNews.imageCaption}
-    </figcaption>
+    </p>
   )}
-</figure>
+</div>
                 
                 {/* Contenido de la crónica */}
                 <div className="lg:col-span-2 space-y-4">
@@ -1511,12 +1512,11 @@ return (
       }`}
     >
       {/* Imagen optimizada */}
-      <img
-        src={news.image}
-        alt={news.title}
-        className="w-full h-full object-cover object-center sm:object-top"
-        loading="eager"
-      />
+<img
+  src={news.image}
+  alt={news.title}
+  className="w-full h-full object-cover object-center"
+/>
 
       {/* Sombra suave para el texto */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/50 sm:from-black/50"></div>
