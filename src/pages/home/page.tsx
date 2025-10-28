@@ -1516,9 +1516,8 @@ return (
         <img
           src={news.image}
           alt={news.title}
-          className="max-h-[80vh] w-auto object-contain bg-black mx-auto"
-          loading="eager"
-        />
+          className="w-full h-full object-contain bg-black"
+          />
       </div>
 
       {/* Capa de sombra suave para texto (sin tapar demasiado) */}
