@@ -281,8 +281,34 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-  {
+ {
     id: 1000,
+    title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
+    image: "images/premiosnicanor.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+    fullContent: `La segunda edición de los Premios Nicanor Villalta, impulsados por el Gobierno de Aragón, reconoció este lunes a Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres como protagonistas de la temporada taurina 2025.
+La ceremonia, celebrada en la Sala de la Corona del Edificio Pignatelli, reunió a autoridades y profesionales del mundo del toro en un acto que sirvió también para reivindicar el valor cultural y social de la tauromaquia.
+
+El presidente aragonés, Jorge Azcón, definió a los galardonados como “cuatro toreros que han emocionado a los aficionados aragoneses esta temporada”, y subrayó que “la fiesta de los toros —por mucho que a algunos les pese— es arte, historia, cultura, tradición, economía y defensa de la España rural”.
+
+Por segundo año consecutivo, el jurado distinguió a Tomás Rufo por su extraordinaria faena al sexto toro de la tarde del 13 de agosto en la Feria de la Albahaca de Huesca. En la Feria del Pilar de Zaragoza, el reconocimiento recayó en Daniel Luque, premiado por su actuación ante el quinto toro del 11 de octubre.
+
+Asimismo, el jurado otorgó ex aequo el galardón a la nueva generación de toreros aragoneses a Aarón Palacio y Cristiano Torres, quienes tomaron la alternativa durante la temporada 2025.
+
+Durante su intervención, Azcón felicitó a los premiados y destacó su contribución al toreo aragonés. “Tomás, el año que viene tienes que ir a por la mejor faena en Teruel y ser el primer torero que logra este premio en las tres provincias”, señaló. Sobre Luque, afirmó que “su compromiso con Zaragoza es innegable; es un torero de esta tierra y tiene a la afición entregada”. 
+
+En cuanto a los jóvenes premiados, aseguró que “Aarón y Cristiano representan la ilusión de una nueva etapa dorada para el toreo aragonés”.
+
+El presidente aprovechó la gala para reafirmar el apoyo institucional del Ejecutivo autonómico a la tauromaquia, recordando la recuperación de las retransmisiones taurinas en Aragón TV, con 53 festejos emitidos y una cuota media de audiencia del 19,1%, casi el doble de la media de la cadena autonómica, que cerró 2024 con un récord histórico del 11,6%.
+
+Azcón evocó también la figura de Nicanor Villalta, considerado “el torero aragonés más ilustre”, y propuso organizar una corrida goyesca especial en 2027 para conmemorar el bicentenario de la muerte de Francisco de Goya.
+Además, dedicó unas palabras de reconocimiento a Morante de la Puebla, recientemente retirado tras más de tres décadas de trayectoria, a quien definió como “uno de los grandes toreros de la historia”.
+
+Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón otorgó la Pluma de Oro al Gobierno de Aragón por la creación de estos galardones, en reconocimiento a su impulso y compromiso con la fiesta. El premio fue recogido por Jorge Azcón y la vicepresidenta Mar Vaquero, en una jornada que reafirmó la vigencia y el orgullo de la tradición taurina en Aragón.`
+  }, 
+  {
+    id: 1001,
     title: "Alberto García, nuevo apoderado de El Fandi",
     image: "images/albertogarcia.jpg",
     category: "Actualidad",
@@ -296,7 +322,7 @@ Cabe recordar que este cambio en la carrera de El Fandi llega después de estar 
 El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
   }, 
   {
-    id: 1001,
+    id: 1002,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -310,7 +336,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   },
   {
-    id: 1002,
+    id: 1003,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -341,6 +367,32 @@ Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Bas
 const latestNews: NewsItem[] = [
    {
     id: 1,
+    title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
+    image: "images/premiosnicanor.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+    fullContent: `La segunda edición de los Premios Nicanor Villalta, impulsados por el Gobierno de Aragón, reconoció este lunes a Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres como protagonistas de la temporada taurina 2025.
+La ceremonia, celebrada en la Sala de la Corona del Edificio Pignatelli, reunió a autoridades y profesionales del mundo del toro en un acto que sirvió también para reivindicar el valor cultural y social de la tauromaquia.
+
+El presidente aragonés, Jorge Azcón, definió a los galardonados como “cuatro toreros que han emocionado a los aficionados aragoneses esta temporada”, y subrayó que “la fiesta de los toros —por mucho que a algunos les pese— es arte, historia, cultura, tradición, economía y defensa de la España rural”.
+
+Por segundo año consecutivo, el jurado distinguió a Tomás Rufo por su extraordinaria faena al sexto toro de la tarde del 13 de agosto en la Feria de la Albahaca de Huesca. En la Feria del Pilar de Zaragoza, el reconocimiento recayó en Daniel Luque, premiado por su actuación ante el quinto toro del 11 de octubre.
+
+Asimismo, el jurado otorgó ex aequo el galardón a la nueva generación de toreros aragoneses a Aarón Palacio y Cristiano Torres, quienes tomaron la alternativa durante la temporada 2025.
+
+Durante su intervención, Azcón felicitó a los premiados y destacó su contribución al toreo aragonés. “Tomás, el año que viene tienes que ir a por la mejor faena en Teruel y ser el primer torero que logra este premio en las tres provincias”, señaló. Sobre Luque, afirmó que “su compromiso con Zaragoza es innegable; es un torero de esta tierra y tiene a la afición entregada”. 
+
+En cuanto a los jóvenes premiados, aseguró que “Aarón y Cristiano representan la ilusión de una nueva etapa dorada para el toreo aragonés”.
+
+El presidente aprovechó la gala para reafirmar el apoyo institucional del Ejecutivo autonómico a la tauromaquia, recordando la recuperación de las retransmisiones taurinas en Aragón TV, con 53 festejos emitidos y una cuota media de audiencia del 19,1%, casi el doble de la media de la cadena autonómica, que cerró 2024 con un récord histórico del 11,6%.
+
+Azcón evocó también la figura de Nicanor Villalta, considerado “el torero aragonés más ilustre”, y propuso organizar una corrida goyesca especial en 2027 para conmemorar el bicentenario de la muerte de Francisco de Goya.
+Además, dedicó unas palabras de reconocimiento a Morante de la Puebla, recientemente retirado tras más de tres décadas de trayectoria, a quien definió como “uno de los grandes toreros de la historia”.
+
+Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón otorgó la Pluma de Oro al Gobierno de Aragón por la creación de estos galardones, en reconocimiento a su impulso y compromiso con la fiesta. El premio fue recogido por Jorge Azcón y la vicepresidenta Mar Vaquero, en una jornada que reafirmó la vigencia y el orgullo de la tradición taurina en Aragón.`
+  }, 
+  {
+    id: 2,
     title: "Alberto García, nuevo apoderado de El Fandi",
     image: "images/albertogarcia.jpg",
     category: "Actualidad",
@@ -354,7 +406,7 @@ Cabe recordar que este cambio en la carrera de El Fandi llega después de estar 
 El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
   }, 
   {
-    id: 2,
+    id: 3,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -368,7 +420,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   }, 
   {
-    id: 3,
+    id: 4,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -395,7 +447,7 @@ Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva p
 Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
   },
   {
-    id: 4,
+    id: 5,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -409,7 +461,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 5,
+    id: 6,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -427,7 +479,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 6,
+    id: 7,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -445,7 +497,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 7,
+    id: 8,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -465,7 +517,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 8,
+    id: 9,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -484,7 +536,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 9,
+    id: 10,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
@@ -494,7 +546,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
   },
   {
-    id: 10,
+    id: 20,
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
@@ -512,7 +564,7 @@ Con estos hitos alcanzados, Nemesio Matías considera cumplido un ciclo profesio
 La decisión se produce mientras Samuel Navalón continúa con su proceso de recuperación del percance sufrido el pasado 28 de septiembre en la plaza de toros de Algemesí.`
   },
   {
-    id: 11,
+    id: 21,
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
