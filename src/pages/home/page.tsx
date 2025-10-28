@@ -283,6 +283,80 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
  {
     id: 1000,
+    title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
+    image: "images/danielluque.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+   excerpt: "El torero de Gerena confía su carrera a la FIT a través del exmatador sevillano, tras cerrar su relación con la Casa Lozano.",
+    fullContent: `El torero sevillano Daniel Luque ha hecho oficial este martes, a través de un comunicado publicado en sus redes sociales, su nueva relación de apoderamiento con Antonio Barrera, quien dirigirá su carrera dentro de la estructura de la Fusión Internacional por la Tauromaquia (FIT).
+
+El anuncio llega tras la reciente finalización de su vínculo profesional con Luis Manuel Lozano, con quien había trabajado durante la última temporada.
+
+Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de reforzar su proyección internacional y consolidar su posición en las principales ferias de la temporada 2026.
+
+Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
+  }, 
+  {
+    id: 1001,
+    title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
+    image: "images/adrianhenche.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+    fullContent: `El novillero con picadores Adrián Henche ha sido sometido recientemente a un tratamiento de ozonoterapia cervicolumbálgica, después de que diversas pruebas médicas confirmaran una lesión que lleva arrastrando desde hace años y que venía mermando su preparación. 
+
+Según el parte médico difundido por el propio torero, los estudios realizados muestran cambios degenerativos en la zona cervical y lumbar de la columna vertebral, con signos de deshidratación discal y abombamientos en varios niveles cervicales —principalmente C3-C4, C4-C5 y C5-C6—, además de una hernia discal en el nivel L5-S1 que condiciona una leve estenosis foraminal izquierda. Afortunadamente, no se observan imágenes de estenosis de canal lumbar.
+
+El tratamiento al que ha sido sometido el novillero tiene como objetivo reducir el dolor y las limitaciones físicas que estas lesiones le ocasionan desde hace tiempo. 
+La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxigenación y regeneración de los tejidos, aliviando la inflamación y facilitando la recuperación funcional.
+
+Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
+  }, 
+  {
+    id: 1002,
+    title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
+    image: "images/moranteretirada.jpg",
+    category: "Opinión",
+    date: "28 de Octubre de 2025",
+    fullContent: `La retirada de Morante de la Puebla no es solo la noticia del adiós de un torero; es el cierre de un capítulo en la historia de la tauromaquia que marcó a toda una generación. 
+
+Su decisión, anunciada tras cortar dos orejas en Las Ventas y simbolizada con el gesto de cortarse la coleta, es un acto de valentía. Todos aquellos 12 de Octubre pensábamos ¿Qué haremos sin Morante?
+
+Morante no fue un torero al uso. Desde su debut en Madrid en 1995 hasta su consagración en los ruedos más importantes, su sello fue la búsqueda de la belleza, la plasticidad del gesto y la conexión emocional con el público. 
+
+Cada muletazo suyo parecía una pincelada, un diálogo silencioso entre el hombre y el toro. En un mundo del toreo donde muchas veces prima el espectáculo sobre el arte, Morante recordó que la esencia de esta tradición radica en la armonía, la estética y la torería. 
+
+Su retirada también nos recuerda la fragilidad del artista. Enfrentarse a problemas de salud mental, pausar su carrera y luego regresar a los ruedos es un testimonio de resiliencia. Pero el paso final de decir “basta” demuestra que incluso los más grandes saben reconocer sus límites, y que la dignidad reside en marcharse en el punto más alto, en lugar de prolongar lo inevitable.
+
+El legado de Morante de la Puebla va más allá de los trofeos y los aplausos. Su influencia perdurará en jóvenes toreros, aficionados y críticos que aprenderán que el toreo no es solo técnica, sino expresión, sensibilidad y autenticidad. En un mundo donde todo se mide en números y récords, Morante enseñó que la verdadera grandeza se encuentra en la pasión que se imprime en cada faena.
+
+Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre que convirtió su toreo en algo diferente  y que, al despedirse, nos recuerda que la belleza no siempre necesita prolongarse, sino brillar con intensidad mientras dura.`
+  }, 
+  {
+    id: 1003,
+    title: "El matador de toros Juanito deja la profesión",
+    image: "images/juanito.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+   excerpt: "El portugués así lo ha comunicado a través de una publicación en su perfil de Instagram",
+    fullContent: `El matador de toros portugués João Silva ‘Juanito’, ha tomado la decisión de retirarse y dejar la profesión tras toda una vida dedicada al toro. 
+
+A través de un emotivo comunicado en su perfil de Instragram, el luso ha querido poner fin a esta etapa de su vida y agradecer a su familia, a todos lo que le han acompañado en este viaje y al toro bravo como eje de su vida. Este es el comunicado
+íntegro de Juanito en redes:
+
+Hoy, 27 de Octubre de 2025, he tomado la decisión de dejar lo que hasta ahora ha sido mi vida y a la que he dedicado desde los 6 años cada gota de sudor, cada sangre, cada lágrima. 
+
+Ha sido una etapa muy bonita que concluye y pone su fin, la de torear como matador de toros, porque torero es y siempre serálo que seré. 
+
+En cada tarde he dado lo mejor de mí y toda mí alma lo cual me reconforta y hace que esta decisión sea tomada tranquilo con uno mismo. 
+
+Muy agradecido eternamente a mi familia, a todas esas personas y amigos que me han llevado a ser mejor y a la vida y al destino por haberme hecho matador de toros y haber podido competir con todas las máximas figuras del toreo y con casi todos los toreros. 
+
+Agradecerle sobretodo al toro, a ese animal bello que me ha hecho ser la persona que soy y a sentir, pensar y hacerme vivir diferente al resto de los mortales. 
+
+Juanito.`
+  }, 
+  {
+    id: 1004,
     title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
     image: "images/premiosnicanor.jpg",
     category: "Actualidad",
@@ -308,7 +382,7 @@ Además, dedicó unas palabras de reconocimiento a Morante de la Puebla, recient
 Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón otorgó la Pluma de Oro al Gobierno de Aragón por la creación de estos galardones, en reconocimiento a su impulso y compromiso con la fiesta. El premio fue recogido por Jorge Azcón y la vicepresidenta Mar Vaquero, en una jornada que reafirmó la vigencia y el orgullo de la tradición taurina en Aragón.`
   }, 
   {
-    id: 1001,
+    id: 1005,
     title: "Alberto García, nuevo apoderado de El Fandi",
     image: "images/albertogarcia.jpg",
     category: "Actualidad",
@@ -322,7 +396,7 @@ Cabe recordar que este cambio en la carrera de El Fandi llega después de estar 
 El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
   }, 
   {
-    id: 1002,
+    id: 1006,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -336,7 +410,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   },
   {
-    id: 1003,
+    id: 1007,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -365,8 +439,82 @@ Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Bas
 ];
 
 const latestNews: NewsItem[] = [
-   {
+    {
     id: 1,
+    title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
+    image: "images/danielluque.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+   excerpt: "El torero de Gerena confía su carrera a la FIT a través del exmatador sevillano, tras cerrar su relación con la Casa Lozano.",
+    fullContent: `El torero sevillano Daniel Luque ha hecho oficial este martes, a través de un comunicado publicado en sus redes sociales, su nueva relación de apoderamiento con Antonio Barrera, quien dirigirá su carrera dentro de la estructura de la Fusión Internacional por la Tauromaquia (FIT).
+
+El anuncio llega tras la reciente finalización de su vínculo profesional con Luis Manuel Lozano, con quien había trabajado durante la última temporada.
+
+Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de reforzar su proyección internacional y consolidar su posición en las principales ferias de la temporada 2026.
+
+Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
+  }, 
+  {
+    id: 2,
+    title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
+    image: "images/adrianhenche.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+    fullContent: `El novillero con picadores Adrián Henche ha sido sometido recientemente a un tratamiento de ozonoterapia cervicolumbálgica, después de que diversas pruebas médicas confirmaran una lesión que lleva arrastrando desde hace años y que venía mermando su preparación. 
+
+Según el parte médico difundido por el propio torero, los estudios realizados muestran cambios degenerativos en la zona cervical y lumbar de la columna vertebral, con signos de deshidratación discal y abombamientos en varios niveles cervicales —principalmente C3-C4, C4-C5 y C5-C6—, además de una hernia discal en el nivel L5-S1 que condiciona una leve estenosis foraminal izquierda. Afortunadamente, no se observan imágenes de estenosis de canal lumbar.
+
+El tratamiento al que ha sido sometido el novillero tiene como objetivo reducir el dolor y las limitaciones físicas que estas lesiones le ocasionan desde hace tiempo. 
+La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxigenación y regeneración de los tejidos, aliviando la inflamación y facilitando la recuperación funcional.
+
+Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
+  }, 
+  {
+    id: 3,
+    title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
+    image: "images/moranteretirada.jpg",
+    category: "Opinión",
+    date: "28 de Octubre de 2025",
+    fullContent: `La retirada de Morante de la Puebla no es solo la noticia del adiós de un torero; es el cierre de un capítulo en la historia de la tauromaquia que marcó a toda una generación. 
+
+Su decisión, anunciada tras cortar dos orejas en Las Ventas y simbolizada con el gesto de cortarse la coleta, es un acto de valentía. Todos aquellos 12 de Octubre pensábamos ¿Qué haremos sin Morante?
+
+Morante no fue un torero al uso. Desde su debut en Madrid en 1995 hasta su consagración en los ruedos más importantes, su sello fue la búsqueda de la belleza, la plasticidad del gesto y la conexión emocional con el público. 
+
+Cada muletazo suyo parecía una pincelada, un diálogo silencioso entre el hombre y el toro. En un mundo del toreo donde muchas veces prima el espectáculo sobre el arte, Morante recordó que la esencia de esta tradición radica en la armonía, la estética y la torería. 
+
+Su retirada también nos recuerda la fragilidad del artista. Enfrentarse a problemas de salud mental, pausar su carrera y luego regresar a los ruedos es un testimonio de resiliencia. Pero el paso final de decir “basta” demuestra que incluso los más grandes saben reconocer sus límites, y que la dignidad reside en marcharse en el punto más alto, en lugar de prolongar lo inevitable.
+
+El legado de Morante de la Puebla va más allá de los trofeos y los aplausos. Su influencia perdurará en jóvenes toreros, aficionados y críticos que aprenderán que el toreo no es solo técnica, sino expresión, sensibilidad y autenticidad. En un mundo donde todo se mide en números y récords, Morante enseñó que la verdadera grandeza se encuentra en la pasión que se imprime en cada faena.
+
+Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre que convirtió su toreo en algo diferente  y que, al despedirse, nos recuerda que la belleza no siempre necesita prolongarse, sino brillar con intensidad mientras dura.`
+  }, 
+  {
+    id: 4,
+    title: "El matador de toros Juanito deja la profesión",
+    image: "images/juanito.jpg",
+    category: "Actualidad",
+    date: "28 de Octubre de 2025",
+   excerpt: "El portugués así lo ha comunicado a través de una publicación en su perfil de Instagram",
+    fullContent: `El matador de toros portugués João Silva ‘Juanito’, ha tomado la decisión de retirarse y dejar la profesión tras toda una vida dedicada al toro. 
+
+A través de un emotivo comunicado en su perfil de Instragram, el luso ha querido poner fin a esta etapa de su vida y agradecer a su familia, a todos lo que le han acompañado en este viaje y al toro bravo como eje de su vida. Este es el comunicado
+íntegro de Juanito en redes:
+
+Hoy, 27 de Octubre de 2025, he tomado la decisión de dejar lo que hasta ahora ha sido mi vida y a la que he dedicado desde los 6 años cada gota de sudor, cada sangre, cada lágrima. 
+
+Ha sido una etapa muy bonita que concluye y pone su fin, la de torear como matador de toros, porque torero es y siempre serálo que seré. 
+
+En cada tarde he dado lo mejor de mí y toda mí alma lo cual me reconforta y hace que esta decisión sea tomada tranquilo con uno mismo. 
+
+Muy agradecido eternamente a mi familia, a todas esas personas y amigos que me han llevado a ser mejor y a la vida y al destino por haberme hecho matador de toros y haber podido competir con todas las máximas figuras del toreo y con casi todos los toreros. 
+
+Agradecerle sobretodo al toro, a ese animal bello que me ha hecho ser la persona que soy y a sentir, pensar y hacerme vivir diferente al resto de los mortales. 
+
+Juanito.`
+  }, 
+  {
+    id: 5,
     title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
     image: "images/premiosnicanor.jpg",
     category: "Actualidad",
@@ -392,7 +540,7 @@ Además, dedicó unas palabras de reconocimiento a Morante de la Puebla, recient
 Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón otorgó la Pluma de Oro al Gobierno de Aragón por la creación de estos galardones, en reconocimiento a su impulso y compromiso con la fiesta. El premio fue recogido por Jorge Azcón y la vicepresidenta Mar Vaquero, en una jornada que reafirmó la vigencia y el orgullo de la tradición taurina en Aragón.`
   }, 
   {
-    id: 2,
+    id: 6,
     title: "Alberto García, nuevo apoderado de El Fandi",
     image: "images/albertogarcia.jpg",
     category: "Actualidad",
@@ -406,7 +554,7 @@ Cabe recordar que este cambio en la carrera de El Fandi llega después de estar 
 El diestro granadino ha sido el triunfador esta temporada en ferias de la importancia de Burgos, Valladolid o Jaén.`
   }, 
   {
-    id: 3,
+    id: 7,
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
@@ -420,7 +568,7 @@ No obstante, esta decisión no resuelve la impugnación presentada por la empres
 El criterio dejaba fuera, entre otras, a la propia Nautalia y a la Empresa Pagés, responsable de la plaza de toros de Sevilla, generando un debate en el sector sobre la proporcionalidad de las condiciones impuestas. Con la anulación del concurso, el futuro de la gestión de La Malagueta queda en suspenso a la espera de la publicación del nuevo pliego.`
   }, 
   {
-    id: 4,
+    id: 8,
     title: "El silencio que suena a triunfo: la verdad de Víctor Hernández",
     image: "images/victorhernandez.jpg",
     category: "Opinión",
@@ -447,7 +595,7 @@ Ojalá empresarios y apoderados entiendan el mensaje. Ojalá el invierno sirva p
 Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Basta con torear bien.`
   },
   {
-    id: 5,
+    id: 9,
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
@@ -461,7 +609,7 @@ Con este galardón, Borja Jiménez se consolida como una de las figuras más fir
 Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Premios de ProGuadaTauro 2025 en el Teatro Auditorio Buero Vallejo.`
   },
   {
-    id: 6,
+    id: 10,
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
@@ -479,7 +627,7 @@ El objetivo común es continuar escribiendo páginas importantes en la historia 
 El torero peruano encara con renovada motivación los próximos compromisos de su temporada americana, que continuará el próximo 2 de noviembre en Lima, en una cita muy especial en la que estoqueará seis toros en solitario, uno de los hitos más esperados de su carrera’.`
   }, 
   {
-    id: 7,
+    id: 11,
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
@@ -497,7 +645,7 @@ El matador de toros Daniel Luque y Luis Manuel Lozano han decidido romper la rel
 Ambas partes se desean suerte en un futuro.`
   },
   {
-    id: 8,
+    id: 12,
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
@@ -517,7 +665,7 @@ Compartir la temporada de mi décimo aniversario con mi hermano fue un regalo qu
 Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el camino recorrido. Hoy cierro esta etapa con gratitud, con orgullo y con un profundo respeto por todo lo que juntos hemos construido", afirma el torero en el comunicado.`
   },
   {
-    id: 9,
+    id: 13,
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
@@ -536,7 +684,7 @@ De acuerdo con estos requisitos, tan solo seis empresas estarían en condiciones
 Este panorama reduce notablemente la competencia en uno de los concursos más codiciados del circuito taurino nacional, perfilando una pugna empresarial que se anticipa como una de las más reñidas e influyentes de los últimos años en el sector.`
   }, 
   {
-    id: 10,
+    id: 14,
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
