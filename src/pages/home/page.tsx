@@ -1499,85 +1499,108 @@ if (activeTab === 'cronicas') {
 // Contenido principal (inicio)
 return (
   <>
-    {/* Hero Carousel */}
-    <section id="inicio" className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center bg-black overflow-hidden">
-      {featuredNews.map((news, index) => (
-        <div
-          key={news.id}
-          className={`absolute inset-0 transition-all duration-1000 ${
-            index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-          }`}
-        >
+    
+{/* Hero Carousel */}
+<section
+  id="inicio"
+  className="relative w-full min-h-[70vh] sm:min-h-[80vh] overflow-hidden flex items-center justify-center bg-black"
+>
+  {featuredNews.map((news, index) => (
+    <div
+      key={news.id}
+      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+        index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+      }`}
+    >
+      {/* Imagen visible completa (sin recorte) */}
+      <div className="w-full flex items-center justify-center">
         <img
           src={news.image}
           alt={news.title}
           className="w-full h-full object-contain bg-black"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
-          <div className="absolute inset-0 flex items-center">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-3xl">
-                <div className="flex items-center mb-4">
-                  <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 md:px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                    <i className="ri-fire-line mr-2"></i>
-                    {news.category}
-                  </span>
-                  <span className="ml-4 text-white/90 text-xs md:text-sm font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">{news.date}</span>
-                </div>
-                <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">{news.title}</h1>
-                <p className="text-sm md:text-xl text-gray-200 mb-8 leading-relaxed">{news.excerpt}</p>
-                <div className="flex flex-wrap gap-4">
-                  <button
-                    onClick={() => openNewsModal(news)}
-                    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-                  >
-                    Leer noticia completa
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('actualidad')}
-                    className="bg-white/20 backdrop-blur-sm text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 cursor-pointer whitespace-nowrap text-sm md:text-base border border-white/20"
-                  >
-                    Ver más noticias
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-      
-      {/* Carousel controls */}
-      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
-        {featuredNews.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 cursor-pointer ${
-              index === currentSlide 
-                ? 'bg-white scale-125 shadow-lg' 
-                : 'bg-white/50 hover:bg-white/80'
-            }`}
-            onClick={() => setCurrentSlide(index)}
-            aria-label={`Ir a noticia ${index + 1}`}
-          />
-        ))}
       </div>
 
-      {/* Navigation arrows */}
-      <button 
-        className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
-        onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
-        aria-label="Noticia anterior"
-      >
-        <i className="ri-arrow-left-line text-xl md:text-2xl"></i>
-      </button>
-      <button 
-        className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
-        onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
-        aria-label="Siguiente noticia"
-      >
-        <i className="ri-arrow-right-line text-xl md:text-2xl"></i>
-      </button>
-    </section>
+
+      {/* Capa de sombra suave para texto (sin tapar demasiado) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
+
+      {/* Texto y botones del hero */}
+      <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
+        <div className="max-w-3xl">
+          <div className="flex items-center justify-center mb-4 space-x-3">
+            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+              <i className="ri-fire-line mr-2"></i>
+              {news.category}
+            </span>
+            <span className="text-white/90 text-xs sm:text-sm bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">
+              {news.date}
+            </span>
+          </div>
+
+          <h1 className="text-2xl sm:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
+            {news.title}
+          </h1>
+
+          {news.excerpt && (
+            <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
+              {news.excerpt}
+            </p>
+          )}
+
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
+            <button
+              onClick={() => openNewsModal(news)}
+              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
+            >
+              Leer noticia completa
+            </button>
+            <button
+              onClick={() => scrollToSection('actualidad')}
+              className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
+            >
+              Ver más noticias
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+
+  {/* Indicadores */}
+  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
+    {featuredNews.map((_, index) => (
+      <button
+        key={index}
+        onClick={() => setCurrentSlide(index)}
+        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+          index === currentSlide
+            ? "bg-white scale-125 shadow-lg"
+            : "bg-white/50 hover:bg-white/80"
+        }`}
+      />
+    ))}
+  </div>
+
+  {/* Flechas */}
+  <button
+    onClick={() =>
+      setCurrentSlide(
+        currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+      )
+    }
+    className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
+  >
+    <i className="ri-arrow-left-line text-xl"></i>
+  </button>
+
+  <button
+    onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
+    className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
+  >
+    <i className="ri-arrow-right-line text-xl"></i>
+  </button>
+</section>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
