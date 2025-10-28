@@ -1512,14 +1512,12 @@ return (
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <div className="w-full flex items-center justify-center">
-<img
+      <img
   src={news.image}
   alt={news.title}
-  className="w-full h-full object-cover sm:object-contain"
+  className="absolute inset-0 w-full h-full object-cover sm:object-contain"
   loading="lazy"
 />
-      </div>
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
 
