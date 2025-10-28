@@ -1602,6 +1602,40 @@ return (
   </button>
 </section>
 
+     {/* Carousel controls */}
+      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/30 p-3 rounded-full backdrop-blur-sm">
+        {featuredNews.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 cursor-pointer ${
+              index === currentSlide 
+                ? 'bg-white scale-125 shadow-lg' 
+                : 'bg-white/50 hover:bg-white/80'
+            }`}
+            onClick={() => setCurrentSlide(index)}
+            aria-label={`Ir a noticia ${index + 1}`}
+          />
+        ))}
+      </div>
+    
+ {/* Navigation arrows */}
+      <button 
+        className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
+        onClick={() => setCurrentSlide(currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1)}
+        aria-label="Noticia anterior"
+      >
+        <i className="ri-arrow-left-line text-xl md:text-2xl"></i>
+      </button>
+      <button 
+        className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 md:p-4 rounded-full hover:bg-white/30 transition-all duration-300 cursor-pointer border border-white/20"
+        onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
+        aria-label="Siguiente noticia"
+      >
+        <i className="ri-arrow-right-line text-xl md:text-2xl"></i>
+      </button>
+    </section>
+
+
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
