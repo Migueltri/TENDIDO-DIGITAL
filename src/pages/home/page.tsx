@@ -1495,13 +1495,13 @@ return (
         index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
       }`}
     >
-{/* En móvil: ocupa toda la pantalla sin recortes ni franjas */}
-<img
-  src={news.image}
-  alt={news.title}
-  className="md:hidden w-full h-full object-cover object-center"
-  loading="eager"
-/>
+      {/* Imagen responsive: misma lógica para todos los tamaños */}
+      <img
+        src={news.image}
+        alt={news.title}
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+      />
 
       {/* Oscurecedor para legibilidad del texto */}
       <div className="absolute inset-0 bg-black/40 md:bg-black/40"></div>
