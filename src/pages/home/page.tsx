@@ -1513,13 +1513,12 @@ return (
           }`}
         >
           <div className="w-full flex items-center justify-center">
-            <img
-              src={news.image}
-              alt={news.title}
-              className="max-h-[80vh] w-auto object-contain bg-black mx-auto"
-              loading="eager"
-            />
-          </div>
+         <img
+          src={news.image}
+          alt={news.title}
+          className="w-full h-full object-contain bg-black"
+          />
+      </div>
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
 
