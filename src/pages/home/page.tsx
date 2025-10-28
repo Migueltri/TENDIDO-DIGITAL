@@ -362,7 +362,7 @@ const latestNews: NewsItem[] = [
     id: 1,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
-    imageCaption: "Daniel Luque en una tarde triunfal en Bilbao. © Tendido Digital",
+    imageCaption: "Daniel Luque a hombros. © Tendido Digital",
     category: "Actualidad",
     date: "28 de Octubre de 2025",
    excerpt: "El torero de Gerena confía su carrera a la FIT a través del exmatador sevillano, tras cerrar su relación con la Casa Lozano.",
