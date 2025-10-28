@@ -1499,10 +1499,10 @@ if (activeTab === 'cronicas') {
 // Contenido principal (inicio)
 return (
   <>
- {/* Hero Carousel */}
+{/* Hero Carousel */}
 <section
   id="inicio"
-  className="relative w-full overflow-hidden flex items-center justify-center bg-black"
+  className="relative w-full min-h-[70vh] sm:min-h-[80vh] overflow-hidden flex items-center justify-center bg-black"
 >
   {featuredNews.map((news, index) => (
     <div
@@ -1511,28 +1511,28 @@ return (
         index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
       }`}
     >
-      <div className="w-full h-screen sm:h-[90vh] flex items-center justify-center bg-black">
-        {/* Imagen escalada sin recortes */}
+      {/* Imagen visible completa (sin recorte) */}
+      <div className="w-full flex items-center justify-center">
         <img
           src={news.image}
           alt={news.title}
-          className="w-full h-auto max-h-screen object-contain bg-black"
+          className="max-h-[80vh] w-auto object-contain bg-black mx-auto"
           loading="eager"
         />
       </div>
 
-      {/* Overlay sutil (mejor legibilidad sin tapar demasiado) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>
+      {/* Capa de sombra suave para texto (sin tapar demasiado) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
 
-      {/* Contenido textual */}
-      <div className="absolute inset-0 flex items-end sm:items-center justify-start px-6 sm:px-12 pb-24 sm:pb-0">
-        <div className="max-w-3xl text-left">
-          <div className="flex items-center mb-4">
+      {/* Texto y botones del hero */}
+      <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
+        <div className="max-w-3xl">
+          <div className="flex items-center justify-center mb-4 space-x-3">
             <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
               <i className="ri-fire-line mr-2"></i>
               {news.category}
             </span>
-            <span className="ml-3 text-white/90 text-xs sm:text-sm bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">
+            <span className="text-white/90 text-xs sm:text-sm bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">
               {news.date}
             </span>
           </div>
@@ -1542,21 +1542,21 @@ return (
           </h1>
 
           {news.excerpt && (
-            <p className="text-base sm:text-xl text-gray-200 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
               {news.excerpt}
             </p>
           )}
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
             <button
               onClick={() => openNewsModal(news)}
-              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 sm:px-8 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer text-sm sm:text-base"
+              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
             >
               Leer noticia completa
             </button>
             <button
               onClick={() => scrollToSection('actualidad')}
-              className="bg-white/30 backdrop-blur-md text-white px-6 sm:px-8 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 cursor-pointer text-sm sm:text-base"
+              className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
             >
               Ver más noticias
             </button>
@@ -1581,7 +1581,7 @@ return (
     ))}
   </div>
 
-  {/* Navegación (flechas) */}
+  {/* Flechas */}
   <button
     onClick={() =>
       setCurrentSlide(
@@ -1592,6 +1592,7 @@ return (
   >
     <i className="ri-arrow-left-line text-xl"></i>
   </button>
+
   <button
     onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
     className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
