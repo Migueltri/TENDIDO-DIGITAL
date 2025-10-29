@@ -1531,7 +1531,7 @@ return (
 {/* Hero Carousel */}
  <section
       id="inicio"
-      className="relative w-full min-h-[70vh] sm:min-h-[80vh] overflow-hidden flex items-center justify-center bg-black"
+      className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
     >
       {featuredNews.map((news, index) => (
         <div
@@ -1540,10 +1540,10 @@ return (
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-      <img
+<img
   src={news.image}
   alt={news.title}
-  className="absolute inset-0 w-full h-full object-cover sm:object-contain"
+  className="absolute inset-0 w-full h-full object-cover"
   loading="lazy"
 />
 
@@ -1561,9 +1561,9 @@ return (
                 </span>
               </div>
 
-              <h1 className="text-2xl sm:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
-                {news.title}
-              </h1>
+             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
+             {news.title}
+             </h1>
 
               {news.excerpt && (
                 <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
@@ -1622,6 +1622,34 @@ return (
         <i className="ri-arrow-right-line text-xl"></i>
       </button>
     </section>
+
+    {/* Flecha izquierda */}
+<button
+  onClick={() =>
+    setCurrentSlide(
+      currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+    )
+  }
+  className="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 z-20 
+             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+             text-white transition-all duration-300 backdrop-blur-sm 
+             focus:outline-none focus:ring-2 focus:ring-white/70"
+>
+  <i className="ri-arrow-left-line text-lg sm:text-2xl"></i>
+</button>
+
+{/* Flecha derecha */}
+<button
+  onClick={() =>
+    setCurrentSlide((currentSlide + 1) % featuredNews.length)
+  }
+  className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 z-20 
+             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+             text-white transition-all duration-300 backdrop-blur-sm 
+             focus:outline-none focus:ring-2 focus:ring-white/70"
+>
+  <i className="ri-arrow-right-line text-lg sm:text-2xl"></i>
+</button>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
