@@ -1603,24 +1603,6 @@ return (
           />
         ))}
       </div>
-
-      <button
-        onClick={() =>
-          setCurrentSlide(
-            currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
-          )
-        }
-        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
-      >
-        <i className="ri-arrow-left-line text-xl"></i>
-      </button>
-
-      <button
-        onClick={() => setCurrentSlide((currentSlide + 1) % featuredNews.length)}
-        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
-      >
-        <i className="ri-arrow-right-line text-xl"></i>
-      </button>
     </section>
 
     {/* Flecha izquierda */}
