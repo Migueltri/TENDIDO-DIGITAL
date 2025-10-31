@@ -283,6 +283,79 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
  { 
     id: 1000,
+    title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
+    image: "images/varios.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `El salón de actos del Campus Universitario CEU Andalucía acogió una nueva sesión del ciclo Vida CEU, protagonizada por dos referentes de la tauromaquia actual: Pablo Aguado y Miguel Ángel Perera. Los diestros compartieron con los estudiantes su experiencia profesional y reflexionaron sobre temas como la preparación física, la salud mental, la fe y los valores del mundo del toro.
+
+El encuentro estuvo presentado por Santiago López, responsable de Vida Universitaria, y moderado por José Enrique Moreno, director de Comunicación de la Empresa Pagés. El acto reunió a numerosos jóvenes procedentes de todos los centros CEU en Andalucía, evidenciando el interés que despierta la tauromaquia entre las nuevas generaciones.
+
+Durante la jornada se presentó, además, el Club Taurino de la Universidad CEU Fernando III, impulsado por el alumno Fernando Pascual, con el propósito de fomentar la afición y abrir un espacio de diálogo y participación en torno al toreo a lo largo del curso académico.
+
+Aguado: “El mejor psicólogo para un torero es otro torero”
+
+El torero sevillano Pablo Aguado expresó su satisfacción al ver el auditorio lleno de jóvenes, subrayando que “es muy motivador ver a tantos niños y jóvenes en las plazas”. Sobre la preparación física, destacó que “cada torero tiene su propia rutina; lo importante es mantener la mente en el toreo. La preparación física ayuda mucho, sobre todo, en lo mental”.
+
+Interpelado por el moderador acerca del miedo y la preparación psicológica, Aguado explicó que “la confianza en uno mismo es fundamental, y eso se trabaja día a día. Los toreros somos muy perfeccionistas y, a veces, no valoramos lo bueno que hacemos”. En relación con la salud mental, apuntó que “el mejor psicólogo para un torero es otro torero, porque ha vivido la misma situación y sabe cómo ayudarte a superarla”.
+
+El sevillano también reflexionó sobre la fe y su conexión con la tauromaquia: “Soy una persona católica y practicante. Muchas veces me santiguo veinte veces antes de que salga el toro, y luego pienso que debería dar más gracias a Dios y no pedirle tanto”. Finalmente, defendió que “es fundamental que el mundo del toro se dé a conocer en entornos como las universidades”.
+
+Perera: “La exigencia y el perfeccionismo te pueden llevar a la negatividad”
+
+Por su parte, Miguel Ángel Perera manifestó su satisfacción por la iniciativa y por la numerosa presencia de jóvenes, felicitando a la Universidad CEU Fernando III por acercar el toreo al ámbito universitario. El diestro extremeño destacó la evolución en la preparación física desde sus inicios: “Hoy se ha profesionalizado mucho; antes era todo más básico. Yo necesito ser muy perfeccionista en mi rutina, porque eso me da confianza”.
+
+Perera confesó que, pese a su amplia trayectoria, “por muchos años que lleves delante de un toro, siempre tienes nervios y la sensación de que podrías haberte preparado mejor”. En ese sentido, reflexionó: “La exigencia y el perfeccionismo te pueden llevar a la negatividad; yo trabajo cada día para quedarme con lo positivo”.
+
+Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a mi gente cerca y con salud; lo tengo muy presente cada día”. Para concluir, reivindicó la dimensión cultural del toreo: “El toro sigue siendo un icono de la cultura española, una seña de identidad de muchos de nuestros pueblos. Debemos seguir trabajando para que se conozca y se valore más”.`
+  }, 
+  { 
+    id: 1001,
+    title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
+    image: "images/borjajimenez2.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `El nombre de Borja Jiménez resuena con fuerza en el epílogo de la temporada taurina 2025. El torero de Espartinas ha firmado un año de plenitud y madurez, consolidándose como una de las grandes figuras del escalafón y alcanzando la segunda posición del escalafón, solo por detrás de Morante de la Puebla. Su concepto clásico, la pureza de su toreo y la autenticidad de su expresión artística han calado profundamente en la afición y en las empresas, que lo han convertido en un torero de temporada completa.
+
+A lo largo de 58 corridas en Europa, Jiménez ha cosechado 102 orejas y 7 rabos, un balance que refleja su regularidad, entrega y capacidad de adaptación en todo tipo de escenarios: 19 plazas de primera, 16 de segunda y 23 de tercera categoría. Su campaña ha dejado una huella indeleble en ferias de máxima relevancia. Triunfó en Sevilla, donde cortó dos orejas a un toro de Jandilla en la Feria de Abril; en Bilbao, donde indultó un ejemplar de La Quinta durante las Corridas Generales; y en Madrid, donde rubricó su tercera Puerta Grande en Las Ventas con una faena memorable al toro “Milhijas”, de Victorino Martín, ya considerada una de las páginas más brillantes de la tauromaquia reciente.
+
+Con la temporada europea cerrada, el sevillano ha iniciado su periplo americano con una primera actuación en Latacunga (Ecuador), y en las próximas semanas afrontará compromisos en las plazas mexicanas de Aguascalientes, Guadalajara y Tlaxcala. Antes de cruzar definitivamente el Atlántico, Jiménez ha comenzado una intensa gira de actos para recoger los 17 reconocimientos que avalan su condición de triunfador absoluto de 2025.
+
+Los 17 galardones de Borja Jiménez en 2025
+	•	Real Casino de Madrid: Triunfador de la temporada en Madrid.
+	•	Premio Chenel y Oro (Madrid): Faena más destacada del año al toro “Milhijas” de Victorino Martín.
+	•	Soria: Triunfador de la Feria de San Juan.
+	•	Manzanares: Triunfador de la Feria Taurina.
+	•	Roquetas de Mar: Triunfador de la Feria.
+	•	Azpeitia: Triunfador de la Feria.
+	•	Santander (Palacio del Mar): Mejor faena de la Feria de Santiago.
+	•	Santander: Mejor toreo a la verónica de la Feria.
+	•	Bilbao: Mejor faena de la Feria.
+	•	Béziers (Francia): Mejor faena de la Feria, por su labor ante un toro de Pedraza de Yeltes.
+	•	Priego de Córdoba: Triunfador de la Feria.
+	•	Club Taurino de Londres: Homenaje a su temporada 2025.
+	•	Villafranca de los Barros: Triunfador de la temporada.
+	•	Calasparra: Triunfador de la temporada.
+	•	Cieza: Triunfador de la temporada.
+	•	Herrera del Duque: Triunfador de la temporada.
+	•	Guadalajara: Triunfador y autor de la mejor faena de la Feria de la Antigua.
+
+Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de su consagración definitiva, un curso en el que ha unido arte, verdad y regularidad, y que lo consolida como uno de los nombres imprescindibles del presente y futuro de la tauromaquia.`
+  }, 
+  { 
+    id: 1002,
+    title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
+    image: "images/aragon.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `La Comunidad de Aragón ha suspendido todos los festejos taurinos populares a consecuencia de la Dermatosis Nodular Contagiosa. Tal y como recoge la cuenta de Instagram Torosocialgestión en un comunicado, queda suspendida toda la presencia de animales en ferias, concursos y cualquier evento en el que tomen participación salvo perros, gatos y animales de compañía.
+
+Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025 de la Dirección General de Calidad y Seguridad Alimentaria del Gobierno de Aragón, publicada en el Boletín Oficial de Aragón (BOA n° 210, de 30 de octubre de 2025) por la que se han adoptado medidas cautelares ante esta enfermedad que afecta a los festejos taurinos.
+
+Ante esta decisión, todos los festejos ya autorizados pendientes de celebración serán suspendidos, al igual que las solicitudes pendientes y las nuevas no serán tramitadas hasta que se levante la prohibición`
+  }, 
+  { 
+    id: 1003,
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
@@ -294,7 +367,7 @@ Emiliano Osornio se ha consolidado como uno de los nombres más destacados del e
 Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decidida por el futuro del toreo y una muestra de confianza en la nueva generación de toreros mexicanos.`
   }, 
   { 
-    id: 1001,
+    id: 1004,
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
@@ -308,7 +381,7 @@ Por su parte, Carlos Sánchez “Zapaterito” destacó la importancia de esta i
 Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de trabajo: “Me siento muy ilusionado con la incorporación de Clément . Con Carlos y con él formamos un grupo unido, con muchas ganas y una gran fe en este proyecto. Afrontamos  la próxima temporada con ambición y compromiso con la afición”.`
   }, 
   {
-    id: 1002,
+    id: 1005,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     category: "Actualidad",
@@ -323,7 +396,7 @@ Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de refo
 Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
   }, 
   {
-    id: 1003,
+    id: 1006,
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
@@ -338,7 +411,7 @@ La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxig
 Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
   }, 
   {
-    id: 1004,
+    id: 1007,
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
@@ -358,7 +431,7 @@ El legado de Morante de la Puebla va más allá de los trofeos y los aplausos. S
 Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre que convirtió su toreo en algo diferente  y que, al despedirse, nos recuerda que la belleza no siempre necesita prolongarse, sino brillar con intensidad mientras dura.`
   }, 
   {
-    id: 1005,
+    id: 1008,
     title: "El matador de toros 'Juanito' deja la profesión",
     image: "images/juanito.jpg",
     category: "Actualidad",
@@ -384,8 +457,81 @@ Juanito.`
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+   { 
     id: 1,
+    title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
+    image: "images/varios.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `El salón de actos del Campus Universitario CEU Andalucía acogió una nueva sesión del ciclo Vida CEU, protagonizada por dos referentes de la tauromaquia actual: Pablo Aguado y Miguel Ángel Perera. Los diestros compartieron con los estudiantes su experiencia profesional y reflexionaron sobre temas como la preparación física, la salud mental, la fe y los valores del mundo del toro.
+
+El encuentro estuvo presentado por Santiago López, responsable de Vida Universitaria, y moderado por José Enrique Moreno, director de Comunicación de la Empresa Pagés. El acto reunió a numerosos jóvenes procedentes de todos los centros CEU en Andalucía, evidenciando el interés que despierta la tauromaquia entre las nuevas generaciones.
+
+Durante la jornada se presentó, además, el Club Taurino de la Universidad CEU Fernando III, impulsado por el alumno Fernando Pascual, con el propósito de fomentar la afición y abrir un espacio de diálogo y participación en torno al toreo a lo largo del curso académico.
+
+Aguado: “El mejor psicólogo para un torero es otro torero”
+
+El torero sevillano Pablo Aguado expresó su satisfacción al ver el auditorio lleno de jóvenes, subrayando que “es muy motivador ver a tantos niños y jóvenes en las plazas”. Sobre la preparación física, destacó que “cada torero tiene su propia rutina; lo importante es mantener la mente en el toreo. La preparación física ayuda mucho, sobre todo, en lo mental”.
+
+Interpelado por el moderador acerca del miedo y la preparación psicológica, Aguado explicó que “la confianza en uno mismo es fundamental, y eso se trabaja día a día. Los toreros somos muy perfeccionistas y, a veces, no valoramos lo bueno que hacemos”. En relación con la salud mental, apuntó que “el mejor psicólogo para un torero es otro torero, porque ha vivido la misma situación y sabe cómo ayudarte a superarla”.
+
+El sevillano también reflexionó sobre la fe y su conexión con la tauromaquia: “Soy una persona católica y practicante. Muchas veces me santiguo veinte veces antes de que salga el toro, y luego pienso que debería dar más gracias a Dios y no pedirle tanto”. Finalmente, defendió que “es fundamental que el mundo del toro se dé a conocer en entornos como las universidades”.
+
+Perera: “La exigencia y el perfeccionismo te pueden llevar a la negatividad”
+
+Por su parte, Miguel Ángel Perera manifestó su satisfacción por la iniciativa y por la numerosa presencia de jóvenes, felicitando a la Universidad CEU Fernando III por acercar el toreo al ámbito universitario. El diestro extremeño destacó la evolución en la preparación física desde sus inicios: “Hoy se ha profesionalizado mucho; antes era todo más básico. Yo necesito ser muy perfeccionista en mi rutina, porque eso me da confianza”.
+
+Perera confesó que, pese a su amplia trayectoria, “por muchos años que lleves delante de un toro, siempre tienes nervios y la sensación de que podrías haberte preparado mejor”. En ese sentido, reflexionó: “La exigencia y el perfeccionismo te pueden llevar a la negatividad; yo trabajo cada día para quedarme con lo positivo”.
+
+Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a mi gente cerca y con salud; lo tengo muy presente cada día”. Para concluir, reivindicó la dimensión cultural del toreo: “El toro sigue siendo un icono de la cultura española, una seña de identidad de muchos de nuestros pueblos. Debemos seguir trabajando para que se conozca y se valore más”.`
+  }, 
+  { 
+    id: 2,
+    title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
+    image: "images/borjajimenez2.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `El nombre de Borja Jiménez resuena con fuerza en el epílogo de la temporada taurina 2025. El torero de Espartinas ha firmado un año de plenitud y madurez, consolidándose como una de las grandes figuras del escalafón y alcanzando la segunda posición del escalafón, solo por detrás de Morante de la Puebla. Su concepto clásico, la pureza de su toreo y la autenticidad de su expresión artística han calado profundamente en la afición y en las empresas, que lo han convertido en un torero de temporada completa.
+
+A lo largo de 58 corridas en Europa, Jiménez ha cosechado 102 orejas y 7 rabos, un balance que refleja su regularidad, entrega y capacidad de adaptación en todo tipo de escenarios: 19 plazas de primera, 16 de segunda y 23 de tercera categoría. Su campaña ha dejado una huella indeleble en ferias de máxima relevancia. Triunfó en Sevilla, donde cortó dos orejas a un toro de Jandilla en la Feria de Abril; en Bilbao, donde indultó un ejemplar de La Quinta durante las Corridas Generales; y en Madrid, donde rubricó su tercera Puerta Grande en Las Ventas con una faena memorable al toro “Milhijas”, de Victorino Martín, ya considerada una de las páginas más brillantes de la tauromaquia reciente.
+
+Con la temporada europea cerrada, el sevillano ha iniciado su periplo americano con una primera actuación en Latacunga (Ecuador), y en las próximas semanas afrontará compromisos en las plazas mexicanas de Aguascalientes, Guadalajara y Tlaxcala. Antes de cruzar definitivamente el Atlántico, Jiménez ha comenzado una intensa gira de actos para recoger los 17 reconocimientos que avalan su condición de triunfador absoluto de 2025.
+
+Los 17 galardones de Borja Jiménez en 2025
+	•	Real Casino de Madrid: Triunfador de la temporada en Madrid.
+	•	Premio Chenel y Oro (Madrid): Faena más destacada del año al toro “Milhijas” de Victorino Martín.
+	•	Soria: Triunfador de la Feria de San Juan.
+	•	Manzanares: Triunfador de la Feria Taurina.
+	•	Roquetas de Mar: Triunfador de la Feria.
+	•	Azpeitia: Triunfador de la Feria.
+	•	Santander (Palacio del Mar): Mejor faena de la Feria de Santiago.
+	•	Santander: Mejor toreo a la verónica de la Feria.
+	•	Bilbao: Mejor faena de la Feria.
+	•	Béziers (Francia): Mejor faena de la Feria, por su labor ante un toro de Pedraza de Yeltes.
+	•	Priego de Córdoba: Triunfador de la Feria.
+	•	Club Taurino de Londres: Homenaje a su temporada 2025.
+	•	Villafranca de los Barros: Triunfador de la temporada.
+	•	Calasparra: Triunfador de la temporada.
+	•	Cieza: Triunfador de la temporada.
+	•	Herrera del Duque: Triunfador de la temporada.
+	•	Guadalajara: Triunfador y autor de la mejor faena de la Feria de la Antigua.
+
+Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de su consagración definitiva, un curso en el que ha unido arte, verdad y regularidad, y que lo consolida como uno de los nombres imprescindibles del presente y futuro de la tauromaquia.`
+  }, 
+  { 
+    id: 3,
+    title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
+    image: "images/aragon.jpg",
+    category: "Actualidad",
+    date: "31 de Octubre de 2025",
+    fullContent: `La Comunidad de Aragón ha suspendido todos los festejos taurinos populares a consecuencia de la Dermatosis Nodular Contagiosa. Tal y como recoge la cuenta de Instagram Torosocialgestión en un comunicado, queda suspendida toda la presencia de animales en ferias, concursos y cualquier evento en el que tomen participación salvo perros, gatos y animales de compañía.
+
+Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025 de la Dirección General de Calidad y Seguridad Alimentaria del Gobierno de Aragón, publicada en el Boletín Oficial de Aragón (BOA n° 210, de 30 de octubre de 2025) por la que se han adoptado medidas cautelares ante esta enfermedad que afecta a los festejos taurinos.
+
+Ante esta decisión, todos los festejos ya autorizados pendientes de celebración serán suspendidos, al igual que las solicitudes pendientes y las nuevas no serán tramitadas hasta que se levante la prohibición`
+  }, 
+  { 
+    id: 4,
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
@@ -397,7 +543,7 @@ Emiliano Osornio se ha consolidado como uno de los nombres más destacados del e
 Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decidida por el futuro del toreo y una muestra de confianza en la nueva generación de toreros mexicanos.`
   }, 
   { 
-    id: 2,
+    id: 5,
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
@@ -411,7 +557,7 @@ Por su parte, Carlos Sánchez “Zapaterito” destacó la importancia de esta i
 Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de trabajo: “Me siento muy ilusionado con la incorporación de Clément . Con Carlos y con él formamos un grupo unido, con muchas ganas y una gran fe en este proyecto. Afrontamos  la próxima temporada con ambición y compromiso con la afición”.`
   },  
   {
-    id: 3,
+    id: 6,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     imageCaption: "Daniel Luque a hombros. © Tendido Digital",
@@ -427,7 +573,7 @@ Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de refo
 Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
   }, 
   {
-    id: 4,
+    id: 7,
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
@@ -442,7 +588,7 @@ La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxig
 Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
   }, 
   {
-    id: 5,
+    id: 8,
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
