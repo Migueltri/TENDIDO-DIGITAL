@@ -281,8 +281,20 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
- { 
+{ 
     id: 1000,
+    title: "El Gobierno de Aragón rectifica y permitirá la celebración de festejos taurinos bajo una serie de normas",
+    image: "images/gobiernoaragon.jpg",
+    category: "Actualidad",
+    date: "1 de Noviembre de 2025",
+    fullContent: `El departamento de Agricultura, Ganadería y Alimentación del Gobierno de Aragón ha decidido a última hora de la tarde de este viernes que los festejos taurinos sí podrán celebrarse finalmente en todo este territorio tras haber modificado la citada resolución por la que habían sido suspendidos de forma cautelar en la mañana de este viernes. 
+
+La nueva normativa establece que los espectáculos taurinos populares podrán celebrarse en todo el territorio aragonés siempre y cuando se cumplan varias rigurosas medidas sanitarias. De esta forma, para los espectáculos que se desarrollen en un único día o en varios consecutivos dentro de una misma localidad, todos los animales deberán proceder de la misma ganadería, garantizando así un mayor control sanitario, además de desinsectar las instalaciones donde se hayan ubicado las reses bravas una vez concluido el espectáculo taurino.
+
+En cuanto a corridas de toros y novilladas con picadores, la nueva normativa establece que podrán efectuarse sin restricciones adicionales, manteniendo únicamente las medidas de desinsectación esenciales para evitar la difusión del virus.`
+  }, 
+	{ 
+    id: 1001,
     title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
     image: "images/varios.jpg",
     category: "Actualidad",
@@ -310,7 +322,7 @@ Perera confesó que, pese a su amplia trayectoria, “por muchos años que lleve
 Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a mi gente cerca y con salud; lo tengo muy presente cada día”. Para concluir, reivindicó la dimensión cultural del toreo: “El toro sigue siendo un icono de la cultura española, una seña de identidad de muchos de nuestros pueblos. Debemos seguir trabajando para que se conozca y se valore más”.`
   }, 
   { 
-    id: 1001,
+    id: 1002,
     title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
     image: "images/borjajimenez2.jpg",
     category: "Actualidad",
@@ -343,7 +355,7 @@ Los 17 galardones de Borja Jiménez en 2025
 Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de su consagración definitiva, un curso en el que ha unido arte, verdad y regularidad, y que lo consolida como uno de los nombres imprescindibles del presente y futuro de la tauromaquia.`
   }, 
   { 
-    id: 1002,
+    id: 1003,
     title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
     image: "images/aragon.jpg",
     category: "Actualidad",
@@ -355,7 +367,7 @@ Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025
 Ante esta decisión, todos los festejos ya autorizados pendientes de celebración serán suspendidos, al igual que las solicitudes pendientes y las nuevas no serán tramitadas hasta que se levante la prohibición`
   }, 
   { 
-    id: 1003,
+    id: 1004,
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
@@ -367,7 +379,7 @@ Emiliano Osornio se ha consolidado como uno de los nombres más destacados del e
 Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decidida por el futuro del toreo y una muestra de confianza en la nueva generación de toreros mexicanos.`
   }, 
   { 
-    id: 1004,
+    id: 1005,
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
@@ -381,7 +393,7 @@ Por su parte, Carlos Sánchez “Zapaterito” destacó la importancia de esta i
 Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de trabajo: “Me siento muy ilusionado con la incorporación de Clément . Con Carlos y con él formamos un grupo unido, con muchas ganas y una gran fe en este proyecto. Afrontamos  la próxima temporada con ambición y compromiso con la afición”.`
   }, 
   {
-    id: 1005,
+    id: 1006,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     category: "Actualidad",
@@ -396,7 +408,7 @@ Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de refo
 Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
   }, 
   {
-    id: 1006,
+    id: 1007,
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
@@ -411,7 +423,7 @@ La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxig
 Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
   }, 
   {
-    id: 1007,
+    id: 1008,
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
@@ -431,7 +443,7 @@ El legado de Morante de la Puebla va más allá de los trofeos y los aplausos. S
 Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre que convirtió su toreo en algo diferente  y que, al despedirse, nos recuerda que la belleza no siempre necesita prolongarse, sino brillar con intensidad mientras dura.`
   }, 
   {
-    id: 1008,
+    id: 1009,
     title: "El matador de toros 'Juanito' deja la profesión",
     image: "images/juanito.jpg",
     category: "Actualidad",
@@ -459,6 +471,18 @@ Juanito.`
 const latestNews: NewsItem[] = [
    { 
     id: 1,
+    title: "El Gobierno de Aragón rectifica y permitirá la celebración de festejos taurinos bajo una serie de normas",
+    image: "images/gobiernoaragon.jpg",
+    category: "Actualidad",
+    date: "1 de Noviembre de 2025",
+    fullContent: `El departamento de Agricultura, Ganadería y Alimentación del Gobierno de Aragón ha decidido a última hora de la tarde de este viernes que los festejos taurinos sí podrán celebrarse finalmente en todo este territorio tras haber modificado la citada resolución por la que habían sido suspendidos de forma cautelar en la mañana de este viernes. 
+
+La nueva normativa establece que los espectáculos taurinos populares podrán celebrarse en todo el territorio aragonés siempre y cuando se cumplan varias rigurosas medidas sanitarias. De esta forma, para los espectáculos que se desarrollen en un único día o en varios consecutivos dentro de una misma localidad, todos los animales deberán proceder de la misma ganadería, garantizando así un mayor control sanitario, además de desinsectar las instalaciones donde se hayan ubicado las reses bravas una vez concluido el espectáculo taurino.
+
+En cuanto a corridas de toros y novilladas con picadores, la nueva normativa establece que podrán efectuarse sin restricciones adicionales, manteniendo únicamente las medidas de desinsectación esenciales para evitar la difusión del virus.`
+  }, 
+	{ 
+    id: 2,
     title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
     image: "images/varios.jpg",
     category: "Actualidad",
@@ -486,7 +510,7 @@ Perera confesó que, pese a su amplia trayectoria, “por muchos años que lleve
 Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a mi gente cerca y con salud; lo tengo muy presente cada día”. Para concluir, reivindicó la dimensión cultural del toreo: “El toro sigue siendo un icono de la cultura española, una seña de identidad de muchos de nuestros pueblos. Debemos seguir trabajando para que se conozca y se valore más”.`
   }, 
   { 
-    id: 2,
+    id: 3,
     title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
     image: "images/borjajimenez2.jpg",
     category: "Actualidad",
@@ -519,7 +543,7 @@ Los 17 galardones de Borja Jiménez en 2025
 Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de su consagración definitiva, un curso en el que ha unido arte, verdad y regularidad, y que lo consolida como uno de los nombres imprescindibles del presente y futuro de la tauromaquia.`
   }, 
   { 
-    id: 3,
+    id: 4,
     title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
     image: "images/aragon.jpg",
     category: "Actualidad",
@@ -531,7 +555,7 @@ Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025
 Ante esta decisión, todos los festejos ya autorizados pendientes de celebración serán suspendidos, al igual que las solicitudes pendientes y las nuevas no serán tramitadas hasta que se levante la prohibición`
   }, 
   { 
-    id: 4,
+    id: 5,
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
@@ -543,7 +567,7 @@ Emiliano Osornio se ha consolidado como uno de los nombres más destacados del e
 Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decidida por el futuro del toreo y una muestra de confianza en la nueva generación de toreros mexicanos.`
   }, 
   { 
-    id: 5,
+    id: 6,
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
@@ -557,7 +581,7 @@ Por su parte, Carlos Sánchez “Zapaterito” destacó la importancia de esta i
 Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de trabajo: “Me siento muy ilusionado con la incorporación de Clément . Con Carlos y con él formamos un grupo unido, con muchas ganas y una gran fe en este proyecto. Afrontamos  la próxima temporada con ambición y compromiso con la afición”.`
   },  
   {
-    id: 6,
+    id: 7,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     imageCaption: "Daniel Luque a hombros. © Tendido Digital",
@@ -573,7 +597,7 @@ Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de refo
 Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
   }, 
   {
-    id: 7,
+    id: 8,
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
@@ -588,7 +612,7 @@ La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxig
 Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
   }, 
   {
-    id: 8,
+    id: 9,
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
