@@ -57,10 +57,6 @@ function formatTimeAgo(dateString: string): string {
   return `hace ${Math.floor(diff / 31536000)} a`;
 }
 
-// Función para convertir una fecha en "hace X tiempo"
-function formatTimeAgo(dateString: string): string {
-  if (!dateString) return "";
-
   // Intenta parsear la fecha
   const months = [
     "enero","febrero","marzo","abril","mayo","junio",
