@@ -57,44 +57,6 @@ function formatTimeAgo(dateString: string): string {
   return `hace ${Math.floor(diff / 31536000)} a`;
 }
 
-  // Intenta parsear la fecha
-  const months = [
-    "enero","febrero","marzo","abril","mayo","junio",
-    "julio","agosto","septiembre","octubre","noviembre","diciembre"
-  ];
-
-  let date = new Date(dateString);
-
-  // Si no es válida, intenta convertir "2 de Noviembre de 2025" a Date
-  if (isNaN(date.getTime())) {
-    const match = dateString.match(/(\d{1,2}) de (\w+) de (\d{4})/);
-    if (match) {
-      const [, dia, mes, año] = match;
-      const mesIndex = months.findIndex(m => m.toLowerCase() === mes.toLowerCase());
-      if (mesIndex >= 0) date = new Date(parseInt(año), mesIndex, parseInt(dia));
-    }
-  }
-
-  if (isNaN(date.getTime())) return dateString; // no se puede parsear
-
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - date.getTime()) / 1000);
-
-  const seconds = diff;
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-  const days = Math.floor(hours / 24);
-  const monthsDiff = Math.floor(days / 30);
-  const years = Math.floor(monthsDiff / 12);
-
-  if (seconds < 60) return "hace unos segundos";
-  if (minutes < 60) return `hace ${minutes} min`;
-  if (hours < 24) return `hace ${hours} h`;
-  if (days < 30) return `hace ${days} d`;
-  if (monthsDiff < 12) return `hace ${monthsDiff} m`;
-  return `hace ${years} a`;
-}
-
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
