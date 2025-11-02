@@ -21,6 +21,42 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
+// Función utilitaria para mostrar fechas relativas en español
+function formatTimeAgo(dateString: string): string {
+  const date = new Date(dateString);
+
+  // manejar formatos tipo "2 de Noviembre de 2025"
+  if (isNaN(date.getTime())) {
+    const parts = dateString.split(" ");
+    if (parts.length >= 5) {
+      const day = parseInt(parts[0]);
+      const monthNames = [
+        "Enero","Febrero","Marzo","Abril","Mayo","Junio",
+        "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+      ];
+      const monthIndex = monthNames.findIndex(
+        (m) => m.toLowerCase() === parts[2].toLowerCase()
+      );
+      const year = parseInt(parts[4]);
+      if (!isNaN(day) && monthIndex >= 0 && !isNaN(year)) {
+        const d = new Date(year, monthIndex, day);
+        if (!isNaN(d.getTime())) return formatTimeAgo(d.toISOString());
+      }
+    }
+    return dateString; // si no puede parsear, devolvemos el original
+  }
+
+  const now = new Date();
+  const diff = (now.getTime() - date.getTime()) / 1000; // diferencia en segundos
+
+  if (diff < 60) return "hace unos segundos";
+  if (diff < 3600) return `hace ${Math.floor(diff / 60)} min`;
+  if (diff < 86400) return `hace ${Math.floor(diff / 3600)} h`;
+  if (diff < 2592000) return `hace ${Math.floor(diff / 86400)} d`;
+  if (diff < 31536000) return `hace ${Math.floor(diff / 2592000)} m`;
+  return `hace ${Math.floor(diff / 31536000)} a`;
+}
+
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +69,15 @@ const [visibleNewsCount, setVisibleNewsCount] = useState(6);
 const [isLoadingMore, setIsLoadingMore] = useState(false);
 const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
+	
+	  // Estado del tiempo actual (para actualizar las etiquetas de "hace X")
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  // Actualiza el tiempo cada minuto para recalcular el formato relativo
+  useEffect(() => {
+    const interval = setInterval(() => setCurrentTime(new Date()), 60000);
+    return () => clearInterval(interval);
+  }, []);
 
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
@@ -1526,7 +1571,9 @@ document.body.style.overflow = 'unset';
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-gray-500 text-sm">{news.date}</span>
+               <span className="text-gray-500 text-sm">
+               {formatTimeAgo(news.date)}
+                  </span>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
                   {news.title}
                 </h3>
