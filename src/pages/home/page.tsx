@@ -118,15 +118,6 @@ useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
   return () => clearInterval(interval);
 }, []);
-	
-	  // Estado del tiempo actual (para actualizar las etiquetas de "hace X")
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  // Actualiza el tiempo cada minuto para recalcular el formato relativo
-  useEffect(() => {
-    const interval = setInterval(() => setCurrentTime(new Date()), 60000);
-    return () => clearInterval(interval);
-  }, []);
 
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
@@ -1622,7 +1613,6 @@ document.body.style.overflow = 'unset';
               <div className="p-6">
               <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
                {formatTimeAgo(news.date)}
-                  </span>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
                   {news.title}
                 </h3>
@@ -2099,7 +2089,7 @@ return (
                     <span className="text-gray-500 text-sm">{news.date}</span>
                     <div className="flex items-center text-gray-400">
                       <i className="ri-time-line mr-1"></i>
-                      <span className="text-xs">3 min</span>
+                      <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
                     </div>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
