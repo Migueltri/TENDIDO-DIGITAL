@@ -1620,7 +1620,7 @@ document.body.style.overflow = 'unset';
                 </div>
               </div>
               <div className="p-6">
-               <span className="text-gray-500 text-sm">
+              <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
                {formatTimeAgo(news.date)}
                   </span>
                 <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
@@ -1930,9 +1930,7 @@ return (
                   <i className="ri-fire-line mr-2"></i>
                   {news.category}
                 </span>
-                <span className="text-white/90 text-xs sm:text-sm bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">
-                  {news.date}
-                </span>
+                <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
               </div>
 
              <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
