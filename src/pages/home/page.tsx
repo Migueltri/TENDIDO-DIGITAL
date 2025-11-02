@@ -324,6 +324,36 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 { 
     id: 1000,
+    title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
+    image: "images/varios2.jpg",
+    category: "Actualidad",
+    date: "2 de Noviembre de 2025",
+    fullContent: `El novillero con picadores Iván Rejas ha anunciado a través de su perfil de Instagram su nuevo acuerdo de apoderamiento con Rafa Camino Jr. y Óscar de la Faya, con quienes comienza una nueva etapa en su carrera profesional.
+
+En su comunicado, el torero definió esta unión como “un proyecto joven, nacido de la confianza, la ilusión y la convicción de que el trabajo, el esfuerzo y la verdad son la base para crecer”. Además, destacó que los tres comparten una misma forma de entender la profesión y un objetivo común: “avanzar, aprender y seguir construyendo futuro dentro del toreo”.
+
+Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus propias palabras, “motiva y une” a este nuevo equipo de trabajo.`
+  }, 
+	{ 
+    id: 1001,
+    title: "Fallece Rafael de Paula a los 85 años",
+    image: "images/rafaeldepaula.jpg",
+    category: "Actualidad",
+    date: "2 de Noviembre de 2025",
+    fullContent: `El maestro jerezano Rafael Soto Moreno, conocido universalmente como Rafael de Paula, ha fallecido a los 85 años de edad. Nacido en el Barrio de Santiago de Jerez de la Frontera el 11 de febrero de 1940, el torero se convirtió en una de las figuras más carismáticas y singulares de la historia del toreo. Su arte, elegancia y personalidad le granjearon un lugar de culto entre varias generaciones de aficionados.
+
+Rafael de Paula debutó en público en Ronda, en mayo de 1957, en una plaza que años más tarde volvería a marcar su trayectoria. En ese mismo coso rondeño tomó la alternativa en 1960, de manos de Julio Robles y con Antonio Ordóñez como testigo. Su confirmación en Las Ventas llegó en mayo de 1974, con José Luis Galloso como padrino y el toro Andadoso, de José Luis Osborne, como testigo de aquella tarde.
+
+Su carrera, marcada por los altibajos y por una relación casi mística con el arte, trascendió las estadísticas y las orejas. Paula fue, por encima de todo, un símbolo de pureza y autenticidad, un torero que hizo del temple y la hondura una forma de expresión.
+
+Su despedida de los ruedos tuvo lugar el 18 de mayo del año 2000, en su querida Jerez, en una corrida cargada de emoción en la que, fiel a su esencia, no llegó a matar a sus toros y se cortó la coleta entre lágrimas y ovaciones. Fue su adiós a los ruedos, pero no al mito.
+
+En 2002, el Ministerio de Cultura le concedió la Medalla de Oro al Mérito en las Bellas Artes, en reconocimiento a su excepcional aportación a la cultura española y a la tauromaquia.
+
+Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, amigos y aficionados por la pérdida de un torero irrepetible. Se va un mito, pero su arte quedará para siempre en la memoria del toreo.`
+  }, 
+	{ 
+    id: 1002,
     title: "Carla Otero, nuevo nombre que se incorpora al profesorado de la Escuela taurina de Madrid",
     image: "images/carla.jpg",
     category: "Actualidad",
@@ -555,6 +585,36 @@ Juanito.`
 const latestNews: NewsItem[] = [
    { 
     id: 1,
+    title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
+    image: "images/varios2.jpg",
+    category: "Actualidad",
+    date: "2 de Noviembre de 2025",
+    fullContent: `El novillero con picadores Iván Rejas ha anunciado a través de su perfil de Instagram su nuevo acuerdo de apoderamiento con Rafa Camino Jr. y Óscar de la Faya, con quienes comienza una nueva etapa en su carrera profesional.
+
+En su comunicado, el torero definió esta unión como “un proyecto joven, nacido de la confianza, la ilusión y la convicción de que el trabajo, el esfuerzo y la verdad son la base para crecer”. Además, destacó que los tres comparten una misma forma de entender la profesión y un objetivo común: “avanzar, aprender y seguir construyendo futuro dentro del toreo”.
+
+Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus propias palabras, “motiva y une” a este nuevo equipo de trabajo.`
+  }, 
+	{ 
+    id: 10,
+    title: "Fallece Rafael de Paula a los 85 años",
+    image: "images/rafaeldepaula.jpg",
+    category: "Actualidad",
+    date: "2 de Noviembre de 2025",
+    fullContent: `El maestro jerezano Rafael Soto Moreno, conocido universalmente como Rafael de Paula, ha fallecido a los 85 años de edad. Nacido en el Barrio de Santiago de Jerez de la Frontera el 11 de febrero de 1940, el torero se convirtió en una de las figuras más carismáticas y singulares de la historia del toreo. Su arte, elegancia y personalidad le granjearon un lugar de culto entre varias generaciones de aficionados.
+
+Rafael de Paula debutó en público en Ronda, en mayo de 1957, en una plaza que años más tarde volvería a marcar su trayectoria. En ese mismo coso rondeño tomó la alternativa en 1960, de manos de Julio Robles y con Antonio Ordóñez como testigo. Su confirmación en Las Ventas llegó en mayo de 1974, con José Luis Galloso como padrino y el toro Andadoso, de José Luis Osborne, como testigo de aquella tarde.
+
+Su carrera, marcada por los altibajos y por una relación casi mística con el arte, trascendió las estadísticas y las orejas. Paula fue, por encima de todo, un símbolo de pureza y autenticidad, un torero que hizo del temple y la hondura una forma de expresión.
+
+Su despedida de los ruedos tuvo lugar el 18 de mayo del año 2000, en su querida Jerez, en una corrida cargada de emoción en la que, fiel a su esencia, no llegó a matar a sus toros y se cortó la coleta entre lágrimas y ovaciones. Fue su adiós a los ruedos, pero no al mito.
+
+En 2002, el Ministerio de Cultura le concedió la Medalla de Oro al Mérito en las Bellas Artes, en reconocimiento a su excepcional aportación a la cultura española y a la tauromaquia.
+
+Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, amigos y aficionados por la pérdida de un torero irrepetible. Se va un mito, pero su arte quedará para siempre en la memoria del toreo.`
+  }, 
+	{ 
+    id: 13,
     title: "Carla Otero, nuevo nombre que se incorpora al profesorado de la Escuela taurina de Madrid",
     image: "images/carla.jpg",
     category: "Actualidad",
@@ -571,7 +631,7 @@ La carrera de Otero ha estado marcada por constantes pruebas y obstáculos. En s
 Esta resiliencia demuestra no solo su capacidad física, sino también su fortaleza mental y su amor por la tauromaquia.`
   },
 	{ 
-    id: 2,
+    id: 14,
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
     image: "images/enriquez.jpg",
     category: "Entrevistas",
@@ -597,7 +657,7 @@ Esta resiliencia demuestra no solo su capacidad física, sino también su fortal
 —Mi objetivo es seguir en mi profesión mientras las fuerzas y la ilusión me acompañen. Que venga lo que el destino quiera, pero yo lo único que quiero es ser feliz, y así lo soy con lo que hago.`
   },
 	{ 
-    id: 3,
+    id: 15,
     title: "El Gobierno de Aragón rectifica y permitirá la celebración de festejos taurinos bajo una serie de normas",
     image: "images/gobiernoaragon.jpg",
     category: "Actualidad",
@@ -609,7 +669,7 @@ La nueva normativa establece que los espectáculos taurinos populares podrán ce
 En cuanto a corridas de toros y novilladas con picadores, la nueva normativa establece que podrán efectuarse sin restricciones adicionales, manteniendo únicamente las medidas de desinsectación esenciales para evitar la difusión del virus.`
   }, 
 	{ 
-    id: 4,
+    id: 16,
     title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
     image: "images/varios.jpg",
     category: "Actualidad",
@@ -637,7 +697,7 @@ Perera confesó que, pese a su amplia trayectoria, “por muchos años que lleve
 Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a mi gente cerca y con salud; lo tengo muy presente cada día”. Para concluir, reivindicó la dimensión cultural del toreo: “El toro sigue siendo un icono de la cultura española, una seña de identidad de muchos de nuestros pueblos. Debemos seguir trabajando para que se conozca y se valore más”.`
   }, 
   { 
-    id: 5,
+    id: 17,
     title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
     image: "images/borjajimenez2.jpg",
     category: "Actualidad",
@@ -670,7 +730,7 @@ Los 17 galardones de Borja Jiménez en 2025
 Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de su consagración definitiva, un curso en el que ha unido arte, verdad y regularidad, y que lo consolida como uno de los nombres imprescindibles del presente y futuro de la tauromaquia.`
   }, 
   { 
-    id: 6,
+    id: 18,
     title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
     image: "images/aragon.jpg",
     category: "Actualidad",
@@ -682,7 +742,7 @@ Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025
 Ante esta decisión, todos los festejos ya autorizados pendientes de celebración serán suspendidos, al igual que las solicitudes pendientes y las nuevas no serán tramitadas hasta que se levante la prohibición`
   }, 
   { 
-    id: 7,
+    id: 19,
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
@@ -694,7 +754,7 @@ Emiliano Osornio se ha consolidado como uno de los nombres más destacados del e
 Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decidida por el futuro del toreo y una muestra de confianza en la nueva generación de toreros mexicanos.`
   }, 
   { 
-    id: 10,
+    id: 30,
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
@@ -708,7 +768,7 @@ Por su parte, Carlos Sánchez “Zapaterito” destacó la importancia de esta i
 Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de trabajo: “Me siento muy ilusionado con la incorporación de Clément . Con Carlos y con él formamos un grupo unido, con muchas ganas y una gran fe en este proyecto. Afrontamos  la próxima temporada con ambición y compromiso con la afición”.`
   },  
   {
-    id: 11,
+    id: 31,
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     imageCaption: "Daniel Luque a hombros. © Tendido Digital",
@@ -724,7 +784,7 @@ Con esta alianza, Luque abre una nueva etapa profesional con el objetivo de refo
 Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo directivo de la FIT, empresa que gestiona plazas de primer nivel como Olivenza, Badajoz, Salamanca, San Sebastián y Bilbao, entre otras. Su incorporación supone para Luque el respaldo de una estructura con gran influencia en el panorama taurino.`
   }, 
   {
-    id: 12,
+    id: 32,
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
@@ -739,7 +799,7 @@ La ozonoterapia, aplicada en el ámbito médico-deportivo, busca mejorar la oxig
 Desde su entorno confían en que esta intervención permita a Henche retomar pronto su preparación física y taurina con total normalidad, tras una etapa marcada por molestias que dificultaban su día a día.`
   }, 
   {
-    id: 13,
+    id: 33,
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
