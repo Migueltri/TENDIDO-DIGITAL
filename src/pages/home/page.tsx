@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-
-// Interfaces unificadas para evitar duplicados y errores
 interface BaseArticle {
   id: number;
   title: string;
@@ -284,7 +282,7 @@ const featuredNews: NewsItem[] = [
 { 
     id: 1000,
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
-    image: "images/enrique.jpg",
+    image: "images/enriquez.jpg",
     category: "Entrevistas",
     date: "2 de Noviembre de 2025",
     fullContent: `Matador de toros desde 2003, natural de Andújar, ha encabezado durante años el escalafón de sobresalientes en plazas tan destacadas como Las Ventas, Vistalegre o Morón de la Frontera. A pesar de una carrera marcada por la dureza y las lesiones, sigue fiel a su pasión y a su forma de entender la vida: con afición, entrega y verdad.
@@ -498,7 +496,7 @@ const latestNews: NewsItem[] = [
    { 
     id: 1,
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
-    image: "images/enrique.jpg",
+    image: "images/enriquez.jpg",
     category: "Entrevistas",
     date: "2 de Noviembre de 2025",
     fullContent: `Matador de toros desde 2003, natural de Andújar, ha encabezado durante años el escalafón de sobresalientes en plazas tan destacadas como Las Ventas, Vistalegre o Morón de la Frontera. A pesar de una carrera marcada por la dureza y las lesiones, sigue fiel a su pasión y a su forma de entender la vida: con afición, entrega y verdad.
