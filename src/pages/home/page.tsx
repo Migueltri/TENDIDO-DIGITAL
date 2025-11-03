@@ -1317,7 +1317,9 @@ useEffect(() => {
       if (selected) {
         setSelectedNews(selected);
         setIsNewsModalOpen(true);
-        document.body.style.overflow = "hidden";
+       document.body.style.overflow = "hidden";
+       document.body.style.position = "fixed";
+       document.body.style.width = "100%";
       }
     } catch (error) {
       console.error("Error decodificando parámetro p:", error);
@@ -1329,28 +1331,36 @@ useEffect(() => {
 const openNewsModal = (news: NewsItem | OpinionArticle) => {
   setSelectedNews(news);
   setIsNewsModalOpen(true);
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
 };
   
 // Función para cerrar modal de noticia
 const closeNewsModal = () => {
 setIsNewsModalOpen(false);
 setSelectedNews(null);
-document.body.style.overflow = 'unset';
+document.body.style.overflow = "auto";
+document.body.style.position = "";
+document.body.style.width = "";
 };
 
 // Función para abrir modal de crónica
 const openChronicleModal = (chronicle: Chronicle) => {
 setSelectedChronicle(chronicle);
 setIsChronicleModalOpen(true);
-document.body.style.overflow = 'hidden';
+document.body.style.overflow = "hidden";
+document.body.style.position = "fixed";
+document.body.style.width = "100%";
 };
 
 // Función para cerrar modal de crónica
 const closeChronicleModal = () => {
 setIsChronicleModalOpen(false);
 setSelectedChronicle(null);
-document.body.style.overflow = 'unset';
+document.body.style.overflow = "auto";
+document.body.style.position = "";
+document.body.style.width = "";
 };
 
 useEffect(() => {
