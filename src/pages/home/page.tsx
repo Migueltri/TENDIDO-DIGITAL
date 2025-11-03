@@ -503,7 +503,7 @@ Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decid
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
-    date: "29 de Octubre de 2025, 09:07",
+    date: "29 de Octubre de 2025",
     fullContent: `El taurino Clément Albiol se incorpora al equipo de apoderamiento del matador de toros Sánchez Vara, asumiendo la gestión en la zona de Francia. Junto con Carlos Sánchez “Zapaterito”, conformarán un equipo sólido con el objetivo de afrontar una temporada de gran proyección y relevancia para el torero alcarreño.
 
 Clément ha mostrado su satisfacción por esta nueva etapa profesional: “Sánchez Vara es un torero con una trayectoria admirable y una gran autenticidad en el ruedo. Afronto esta nueva responsabilidad con ilusión y compromiso para contribuir a una temporada importante”.
@@ -517,7 +517,7 @@ Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
    excerpt: "El torero de Gerena confía su carrera a la FIT a través del exmatador sevillano, tras cerrar su relación con la Casa Lozano.",
     fullContent: `El torero sevillano Daniel Luque ha hecho oficial este martes, a través de un comunicado publicado en sus redes sociales, su nueva relación de apoderamiento con Antonio Barrera, quien dirigirá su carrera dentro de la estructura de la Fusión Internacional por la Tauromaquia (FIT).
 
@@ -532,7 +532,7 @@ Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo direc
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
     fullContent: `El novillero con picadores Adrián Henche ha sido sometido recientemente a un tratamiento de ozonoterapia cervicolumbálgica, después de que diversas pruebas médicas confirmaran una lesión que lleva arrastrando desde hace años y que venía mermando su preparación. 
 
 Según el parte médico difundido por el propio torero, los estudios realizados muestran cambios degenerativos en la zona cervical y lumbar de la columna vertebral, con signos de deshidratación discal y abombamientos en varios niveles cervicales —principalmente C3-C4, C4-C5 y C5-C6—, además de una hernia discal en el nivel L5-S1 que condiciona una leve estenosis foraminal izquierda. Afortunadamente, no se observan imágenes de estenosis de canal lumbar.
@@ -547,7 +547,7 @@ Desde su entorno confían en que esta intervención permita a Henche retomar pro
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
     fullContent: `La retirada de Morante de la Puebla no es solo la noticia del adiós de un torero; es el cierre de un capítulo en la historia de la tauromaquia que marcó a toda una generación. 
 
 Su decisión, anunciada tras cortar dos orejas en Las Ventas y simbolizada con el gesto de cortarse la coleta, es un acto de valentía. Todos aquellos 12 de Octubre pensábamos ¿Qué haremos sin Morante?
@@ -567,7 +567,7 @@ Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre 
     title: "El matador de toros 'Juanito' deja la profesión",
     image: "images/juanito.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
    excerpt: "El portugués así lo ha comunicado a través de una publicación en su perfil de Instagram",
     fullContent: `El matador de toros portugués João Silva ‘Juanito’, ha tomado la decisión de retirarse y dejar la profesión tras toda una vida dedicada al toro. 
 
@@ -764,7 +764,7 @@ Esta unión entre Curro Vázquez y Emiliano Osornio representa una apuesta decid
     title: "Clément Albiol se suma al equipo de apoderamiento de Sánchez Vara",
     image: "images/albiol.jpg",
     category: "Actualidad",
-    date: "29 de Octubre de 2025, 09:07",
+    date: "29 de Octubre de 2025",
     fullContent: `El taurino Clément Albiol se incorpora al equipo de apoderamiento del matador de toros Sánchez Vara, asumiendo la gestión en la zona de Francia. Junto con Carlos Sánchez “Zapaterito”, conformarán un equipo sólido con el objetivo de afrontar una temporada de gran proyección y relevancia para el torero alcarreño.
 
 Clément ha mostrado su satisfacción por esta nueva etapa profesional: “Sánchez Vara es un torero con una trayectoria admirable y una gran autenticidad en el ruedo. Afronto esta nueva responsabilidad con ilusión y compromiso para contribuir a una temporada importante”.
@@ -778,7 +778,7 @@ Finalmente, Sánchez Vara expresó su agradecimiento y confianza en su equipo de
     title: "Daniel Luque inicia una nueva etapa de apoderamiento con Antonio Barrera como apoderado",
     image: "images/danielluque.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
    excerpt: "El torero de Gerena confía su carrera a la FIT a través del exmatador sevillano, tras cerrar su relación con la Casa Lozano.",
     fullContent: `El torero sevillano Daniel Luque ha hecho oficial este martes, a través de un comunicado publicado en sus redes sociales, su nueva relación de apoderamiento con Antonio Barrera, quien dirigirá su carrera dentro de la estructura de la Fusión Internacional por la Tauromaquia (FIT).
 
@@ -793,7 +793,7 @@ Antonio Barrera, exmatador y actual gestor taurino, forma parte del equipo direc
     title: "Adrián Henche se somete a un tratamiento de ozonoterapia cervicolumbálgica",
     image: "images/adrianhenche.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
     fullContent: `El novillero con picadores Adrián Henche ha sido sometido recientemente a un tratamiento de ozonoterapia cervicolumbálgica, después de que diversas pruebas médicas confirmaran una lesión que lleva arrastrando desde hace años y que venía mermando su preparación. 
 
 Según el parte médico difundido por el propio torero, los estudios realizados muestran cambios degenerativos en la zona cervical y lumbar de la columna vertebral, con signos de deshidratación discal y abombamientos en varios niveles cervicales —principalmente C3-C4, C4-C5 y C5-C6—, además de una hernia discal en el nivel L5-S1 que condiciona una leve estenosis foraminal izquierda. Afortunadamente, no se observan imágenes de estenosis de canal lumbar.
@@ -808,7 +808,7 @@ Desde su entorno confían en que esta intervención permita a Henche retomar pro
     title: "Morante de la Puebla: el adiós de un genio que transformó el toreo",
     image: "images/moranteretirada.jpg",
     category: "Opinión",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
     fullContent: `La retirada de Morante de la Puebla no es solo la noticia del adiós de un torero; es el cierre de un capítulo en la historia de la tauromaquia que marcó a toda una generación. 
 
 Su decisión, anunciada tras cortar dos orejas en Las Ventas y simbolizada con el gesto de cortarse la coleta, es un acto de valentía. Todos aquellos 12 de Octubre pensábamos ¿Qué haremos sin Morante?
@@ -828,7 +828,7 @@ Su adiós deja un vacío, pero también un recuerdo imborrable: el de un hombre 
     title: "El matador de toros 'Juanito' deja la profesión",
     image: "images/juanito.jpg",
     category: "Actualidad",
-    date: "27 de Octubre de 2025, 09:07",
+    date: "27 de Octubre de 2025",
    excerpt: "El portugués así lo ha comunicado a través de una publicación en su perfil de Instagram",
     fullContent: `El matador de toros portugués João Silva ‘Juanito’, ha tomado la decisión de retirarse y dejar la profesión tras toda una vida dedicada al toro. 
 
@@ -852,7 +852,7 @@ Juanito.`
     title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
     image: "images/premiosnicanor.jpg",
     category: "Actualidad",
-    date: "28 de Octubre de 2025, 09:07",
+    date: "28 de Octubre de 2025",
     fullContent: `La segunda edición de los Premios Nicanor Villalta, impulsados por el Gobierno de Aragón, reconoció este lunes a Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres como protagonistas de la temporada taurina 2025.
 La ceremonia, celebrada en la Sala de la Corona del Edificio Pignatelli, reunió a autoridades y profesionales del mundo del toro en un acto que sirvió también para reivindicar el valor cultural y social de la tauromaquia.
 
@@ -878,7 +878,7 @@ Como cierre de la velada, la Asociación de Informadores Taurinos de Aragón oto
     title: "Alberto García, nuevo apoderado de El Fandi",
     image: "images/albertogarcia.jpg",
     category: "Actualidad",
-    date: "27 de Octubre de 2025, 09:07",
+    date: "27 de Octubre de 2025",
     fullContent: `El matador de toros David Fandila ‘El Fandi’ será apoderado por el empresario Alberto García, CEO de Tauroemocion, durante la temporada 2026. Un acuerdo de apoderamiento que el diestro granadino ha anunciado a través de un comunicado.
 
 En el mismo, El Fandi anuncia una nueva etapa profesional de la mano de Alberto García ‘cargada de ilusión y compromiso, basada en la entrega por ambas partes’.
@@ -892,7 +892,7 @@ El diestro granadino ha sido el triunfador esta temporada en ferias de la import
     title: "La Diputación de Málaga anula el concurso de La Malagueta por un error técnico y convocará un nuevo proceso en 30 días",
     image: "images/lamalagueta.jpg",
     category: "Actualidad",
-    date: "27 de Octubre de 2025, 09:07",
+    date: "27 de Octubre de 2025",
     fullContent: `La Diputación de Málaga ha decidido anular el concurso público para la gestión de la plaza de toros de La Malagueta tras detectar un error técnico en la configuración de los sobres del procedimiento, según adelantó la periodista Patricia Navarro en La Razón. Este defecto de forma afectó al sistema de carga de la documentación requerida, lo que impidió que los licitadores pudieran completar correctamente sus solicitudes.
 
 Como consecuencia, el anuncio publicado el pasado 7 de octubre de 2025 ha quedado sin efecto, y la institución provincial abrirá una nueva convocatoria en el plazo de 30 días, con el fin de garantizar un proceso limpio y transparente.
@@ -933,7 +933,7 @@ Víctor Hernández lo ha demostrado: no hace falta ruido para hacerse notar. Bas
     title: "Borja Jiménez Triunfador de la Feria de la Antigua de Guadalajara y Premio a la Mejor Faena",
     image: "images/borjajimenez1.jpg",
     category: "Actualidad",
-    date: "24 de Octubre de 2025, 09:07",
+    date: "24 de Octubre de 2025",
     fullContent: `La Feria de la Antigua de Guadalajara 2025 ya tiene triunfador. Según ha podido saber este medio , el jurado ha proclamado a Borja Jiménez como triunfador de la feria, además de reconocerle la mejor faena de la misma, premiando la labor realizada al toro n.º 32, “Jabalí”, de la ganadería de El Capea.
 
 El torero de Espartinas ha dejado en el coso alcarreño una de las actuaciones más destacadas de la temporada, demostrando el gran momento  profesional por el que atraviesa. 
@@ -947,7 +947,7 @@ Los premios se entregarán el próximo 24 de Enero de 2026 en la IV Gala de Prem
     title: "Roca Rey inicia una nueva etapa profesional de la mano de Luis Manuel Lozano",
     image: "images/rocarey.jpg",
     category: "Actualidad",
-    date: "24 de Octubre de 2025, 09:07",
+    date: "24 de Octubre de 2025",
     excerpt: "El torero peruano inicia un nuevo proyecto profesional tras cerrar su etapa de apoderamiento junto a su hermano Fernando Roca Rey",
     fullContent: `El matador de toros Andrés Roca Rey ha hecho oficial la relación de apoderamiento con Luis Manuel Lozano a través de un comunicado remitido a los medios de comunicación.
 
@@ -965,7 +965,7 @@ El torero peruano encara con renovada motivación los próximos compromisos de s
     title: "Daniel Luque y Luis Manuel Lozano finalizan el apoderamiento",
     image: "images/danielyluis.jpg",
     category: "Actualidad",
-    date: "23 de Octubre de 2025, 09:07",
+    date: "23 de Octubre de 2025",
     fullContent: `El torero sevillano Daniel Luque y el apoderado Luis Manuel Lozano han decidido poner fin a la relación profesional que les ha unido durante la temporada 2025. 
 
 La noticia, adelantada el día de ayer por la periodista Rosario Pérez en el diario ABC, marca el cierre de una etapa que ambas partes emprendieron en octubre de 2024.
@@ -983,7 +983,7 @@ Ambas partes se desean suerte en un futuro.`
     title: "Andrés Roca Rey y Fernando Roca Rey dan por finalizada su relación de apoderamiento",
     image: "images/andresyfernando.jpg",
     category: "Actualidad",
-    date: "22 de Octubre de 2025, 09:07",
+    date: "22 de Octubre de 2025",
     fullContent: `"Ambos crecimos soñando con llegar juntos hasta aquí, y poder hacerlo realidad ha sido una de las mayores satisfacciones de mi vida", señala el torero en un comunicado.
 
 Andrés Roca Rey y su hermano Fernando han dado por finalizada la relación de apoderamiento , cumpliendo así una promesa que se hicieron hace años, toda vez que la temporada europea 2025 ha echado el cierre. 
@@ -1003,7 +1003,7 @@ Vivimos cada tarde con la ilusión de los comienzos y con la serenidad que da el
     title: "Nautalia impugna el pliego de licitación de La Malagueta",
     image: "images/nautalia.jpg",
     category: "Actualidad",
-    date: "22 de Octubre de 2025, 09:07",
+    date: "22 de Octubre de 2025",
     fullContent: `La empresa Nautalia, accionista mayoritario de la sociedad Plaza 1 —gestora de la Plaza de Toros de Las Ventas—, ha presentado una impugnación formal contra el pliego de condiciones del concurso público para la gestión de la plaza de toros de Málaga. 
 
 La información fue adelantada este miércoles por el periodista Vicente Zabala de la Serna a través de su cuenta en X (anteriormente Twitter).
@@ -1022,7 +1022,7 @@ Este panorama reduce notablemente la competencia en uno de los concursos más co
     title: "Tomás González por Miguel Serrano en Viraco",
     image: "images/tomasgonzalez1.jpg",
     category: "Actualidad",
-    date: "21 de Octubre de 2025, 09:07",
+    date: "21 de Octubre de 2025",
     fullContent: `El alcorisano Tomás González será el encargado de sustituir a Miguel Serrano en la Feria en Honor a Santa Úrsula en Viraco (Perú).
 
 Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de Octubre junto a los mexicanos César Ruiz y Joaquín Caro , lidiando un encierro de diferentes ganaderías.`
@@ -1032,7 +1032,7 @@ Tomás González hará el paseíllo en el coso peruano el próximo jueves 23 de 
     title: "Nemesio Matías da por concluida su etapa junto a Samuel Navalón",
     image: "images/namesiomatias.jpg",
     category: "Actualidad",
-    date: "21 de Octubre de 2025, 09:07",
+    date: "21 de Octubre de 2025",
     fullContent: `El apoderado taurino Nemesio Matías ha decidido poner fin a su relación profesional con el torero Samuel Navalón, tras dejar sin efecto el contrato que los unía por dos temporadas más. 
 
 La decisión, según ha confirmado el propio Matías a este medio, responde al cumplimiento de los objetivos marcados al inicio de su colaboración.
@@ -1050,7 +1050,7 @@ La decisión se produce mientras Samuel Navalón continúa con su proceso de rec
     title: "Emilio de Justo se alza con el premio a la mejor faena de la Feria de Salamanca",
     image: "images/emiliodejusto1.jpg",
     category: "Actualidad",
-    date: "21 de Octubre de 2025, 09:07",
+    date: "21 de Octubre de 2025",
     fullContent: `El torero extremeño Emilio de Justo ha sido distinguido por unanimidad con el premio a la ‘Mejor Faena’ de la pasada Feria Taurina de Salamanca, un prestigioso reconocimiento que otorga el Ayuntamiento de la ciudad desde 1998.
 
 El jurado, presidido por el alcalde Carlos García Carbayo, ha valorado especialmente la lidia realizada por el diestro el pasado 14 de septiembre en la plaza de toros de La Glorieta, frente al toro ‘Buenasuerte’, de la ganadería Garcigrande, que fue indultado tras una actuación memorable.
@@ -1064,7 +1064,7 @@ La entrega del galardón tendrá lugar el próximo 19 de noviembre durante la Ga
     title: "Emilio de Justo define una cuadrilla de categoría para 2026 con dos nuevas incorporaciones",
     image: "images/emilio.jpg",
     category: "Actualidad",
-    date: "20 de Octubre de 2025, 09:07",
+    date: "20 de Octubre de 2025",
     fullContent: `El matador de toros Emilio de Justo ha definido ya la composición de su cuadrilla para la temporada 2026, apostando por la solidez, la experiencia y la calidad contrastada. 
 
 El torero extremeño incorpora a su equipo dos nombres de peso: el banderillero Antonio Chacón, considerado uno de los subalternos más completos del escalafón y que en los últimos años formó parte de la cuadrilla de Roca Rey; y el picador José Antonio Barroso, que se suma al equipo de varilargueros.
@@ -1078,7 +1078,7 @@ De esta forma, Emilio de Justo refuerza su cuadrilla con profesionales de primer
     title: "Mario Vilau se alza como triunfador de la Liga Nacional de Novilladas",
     image: "images/mariovilau.jpg",
     category: "Actualidad",
-    date: "19 de Octubre de 2025, 09:07",
+    date: "19 de Octubre de 2025",
     excerpt: "El catalán conquista la final con “Guardes” de Fuente Ymbro, logrando dos orejas, rabo y la vuelta al ruedo del novillo",
     fullContent: `Sanlúcar de Barrameda fue escenario de la Final de la Liga Nacional de Novilladas 2025, donde el catalán Mario Vilau, natural de L’Hospitalet de Llobregat (Barcelona), se proclamó ganador de la competición gracias a una actuación magistral frente al novillo “Guardes”, de Fuente Ymbro, que fue premiado con la vuelta al ruedo.
 
@@ -1091,7 +1091,7 @@ La ovación del público cerró una final que será recordada por la calidad del
     title: "El Fandi, El Cid y Victorino Martín, premiados en la feria de Jaén",
     image: "images/fandiycid.jpg",
     category: "Actualidad",
-    date: "19 de Octubre de 2025, 09:07",
+    date: "19 de Octubre de 2025",
     fullContent: `Una vez concluida la Feria de San Lucas de Jaén 2025, se han fallado los premios que reconocen lo más destacado del ciclo taurino. 
 
 El gran triunfador ha sido El Fandi, quien se alzó con el máximo reconocimiento tras cortar tres orejas y un rabo en el festejo inaugural, celebrado el pasado 12 de octubre.
@@ -1105,7 +1105,7 @@ En cuanto a los premios destinados a las cuadrillas, Juan Carlos García, de la 
     title: "Borja Jiménez redondea una temporada para enmarcar",
     image: "images/borjajimenez.jpg",
     category: "Actualidad",
-    date: "18 de Octubre de 2025, 09:07",
+    date: "18 de Octubre de 2025",
     excerpt: "El torero de Espartinas paseó una oreja de cada toro de su lote en un triunfal cierre de temporada en España",
     fullContent: `Borja Jiménez brindó su primer toro a César Jiménez, tras un episodio de alta tensión en el que Fernando Sánchez protagonizó un quite milagroso a José Luis Barrero, luego de una comprometida salida en un arriesgado par de banderillas. 
 
@@ -1125,7 +1125,7 @@ La estocada, certera y efectiva, llegó en los mismos terrenos de chiqueros. La 
     title: "El Fandi y la Casa Matilla rompen su relación de apoderamiento",
     image: "images/elfandi.jpg",
     category: "Actualidad",
-    date: "18 de Octubre de 2025, 09:07",
+    date: "18 de Octubre de 2025",
     excerpt: "Después de veinte años de relación profesional",
     fullContent: `David Fandila “El Fandi” y la Casa Matilla han decidido dar por finalizada su relación de apoderamiento, una vinculación profesional que se ha mantenido de forma ininterrumpida durante los últimos 20 años.
 
@@ -1138,7 +1138,7 @@ Tanto “El Fandi” como la Casa Matilla han querido expresar públicamente su 
     title: "Francisco de Manuel y Diego Robles ponen fin a su relación de apoderamiento",
     image: "images/franciscoydiego.jpg",
     category: "Actualidad",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `El diestro madrileño Francisco de Manuel y su hasta ahora apoderado, Diego Robles, han decidido dar por finalizada, de mutuo acuerdo, la relación de apoderamiento que les ha unido durante las tres últimas temporadas.
 
 La ruptura se ha producido en términos cordiales, con el mayor respeto y reconocimiento mutuo. Tanto el torero como su apoderado han expresado su agradecimiento por la confianza compartida, la colaboración mantenida y las experiencias vividas durante esta etapa conjunta, que ambos valoran como un periodo de importante crecimiento profesional y personal.
@@ -1150,7 +1150,7 @@ Francisco de Manuel y Diego Robles se desean recíprocamente el mayor de los éx
     title: "Valencia reabrirá su plaza de toros para las Fallas 2026 bajo gestión de Nautalia",
     image: "images/valencia.jpg",
     category: "Actualidad",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `presidente de la Diputación de Valencia, Vicent Mompó, anunció durante la gala de entrega de los Premios Taurinos de Valencia que la Plaza de Toros reabrirá sus puertas con motivo de la Feria de Fallas de 2026, una vez finalicen los trabajos de renovación integral del sistema de iluminación, iniciados el pasado mes de junio.
 
 La empresa Nautalia continuará al frente de la gestión del coso taurino durante una temporada más, mientras la Diputación trabaja en la elaboración de un nuevo pliego de condiciones. 
@@ -1164,7 +1164,7 @@ Mompó subrayó la relevancia del inmueble, al que definió como “un símbolo 
     title: "Las Ventas cierra la temporada 2025 superando el millón de espectadores título",
     image: "images/lasventas1.jpg",
     category: "Actualidad",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `La Plaza de Toros de Las Ventas concluyó el pasado domingo 12 de octubre una temporada histórica al superar, por primera vez, la simbólica barrera del millón de espectadores. 
 
 A lo largo de los 62 espectáculos celebrados este año, el coso madrileño ha congregado a un total de 1.008.226 asistentes, con una media de 16.261 personas por festejo, consolidando su posición como epicentro de la tauromaquia mundial.
@@ -1190,7 +1190,7 @@ La afición respondió con una entrega pocas veces vista en las últimas década
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `Carlos, en un momento donde la tauromaquia enfrenta tantos desafíos sociales y políticos, ¿qué significa para usted seguir apostando por este sector como empresario? 
 
 Para mi es una forma de vida, una vocación. Yo no sé hacer otra cosa. Vivo 24 h para por y para el toro en su máxima expresión y no concibo el día a día sin ilusionarme y pensar en la confección de una feria. Creo que a veces puedo ser demasiado cansino en el día a día pero hasta ahora, esa "fórmula" no me ha ido mal. Seguiré peleando por y para el toreo y espero no desfallecer.
@@ -1221,7 +1221,7 @@ Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pe
     title: "Antonio Chacón queda libre tras salir de la cuadrilla de Roca Rey",
     image: "images/antoniochacon.jpg",
     category: "Actualidad",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `Uno de los banderilleros más destacados de las últimas temporadas, Antonio Chacón, ha quedado sorpresivamente libre tras su salida de la cuadrilla del matador peruano Andrés Roca Rey.
 
 El propio Chacón ha confirmado de forma oficial que, por el momento, no tiene compromisos de cara a la temporada 2026.
@@ -1235,7 +1235,7 @@ Esta noticia se suma a los movimientos que comienzan a producirse en las cuadril
     title: "Alberto Álvarez se retira después de su paso por la Misericordia",
     image: "images/albertoalvarez.jpg",
     category: "Actualidad",
-    date: "16 de Octubre de 2025, 09:07",
+    date: "16 de Octubre de 2025",
     fullContent: `La temporada taurina 2025 ha concluido con un tono especialmente emotivo, marcado por la retirada de destacadas figuras del toreo. 
 
 El mundo del toro ha sido 
@@ -1260,7 +1260,7 @@ Con estas despedidas, la temporada 2025 pasará a la historia como un punto de i
     title: "Sergio Sánchez rompe con su hasta ahora apoderado Jacinto Ortiz",
     image: "images/sergiosanchez.jpg",
     category: "Actualidad",
-    date: "16 de Octubre de 2025, 09:07",
+    date: "16 de Octubre de 2025",
     fullContent: `El novillero con picadores Sergio Sánchez y su hasta ahora apoderado Jacinto Ortiz han decidido, de mutuo acuerdo, dar por finalizada la relación de apoderamiento que comenzaron al inicio de la temporada 2025.
 
 Durante esta campaña, Sergio Sánchez ha tenido una destacada actuación en plazas de gran relevancia, entre las que destaca su paso por la plaza de toros de Las Ventas, donde ha hecho el paseíllo en tres ocasiones. Asimismo, ha actuado en otros cosos de primera categoría como Bilbao, Olivenza, Almería, así como en diversas ferias de importancia del circuito taurino nacional.
@@ -1272,7 +1272,7 @@ Ambas partes han querido expresarse públicamente el agradecimiento mutuo y los 
     title: "César Jiménez reaparece por un día en Arenas de San Pedro",
     image: "images/cesarjimenez.jpg",
     category: "Actualidad",
-    date: "15 de Octubre de 2025, 09:07",
+    date: "15 de Octubre de 2025",
     fullContent: `La plaza de toros de Arenas de San Pedro vivirá este sábado 18 de octubre a las 17:30 horas una tarde de gran atractivo con la reaparición por un día del maestro César Jiménez, figura clave del toreo en los años 2000. El torero madrileño, vuelve a los ruedos en una cita muy especial que ha despertado gran interés entre los aficionados.
 
 El cartel lo completan dos nombres de peso en el escalafón actual. Por un lado, el sevillano Borja Jiménez, uno de los triunfadores de la temporada 2025, que ha dejado importantes actuaciones en plazas de primera. Por otro, Tomás Rufo, joven figura consagrada, que continúa consolidando su sitio entre los toreros más destacados del momento.
@@ -1288,7 +1288,7 @@ Arenas de San Pedro se convierte así en el escenario de una tarde de especial i
     title: "Emilio de Justo, dos cambios en su cuadrilla para 2026",
     image: "images/emiliodejusto.jpg",
     category: "Actualidad",
-    date: "16 de Octubre de 2025, 09:07",
+    date: "16 de Octubre de 2025",
     excerpt: "De BMF toros",
     fullContent: `El matador de toros extremeño **Emilio de Justo** afrontará la próxima temporada con cambios significativos en su cuadrilla. Tras una larga trayectoria junto al diestro, el picador *Germán González* pone fin a una etapa de nueve años de colaboración, mientras que el banderillero *Morenito de Arlés* también se desvincula del equipo tras siete temporadas de trabajo conjunto.
 
@@ -1303,7 +1303,7 @@ Pese a este desafortunado incidente, el torero ha sido uno de los grandes triunf
     title: "Jorge Martínez y Ruiz Manuel rompen la relación de apoderamiento",
     image: "images/bmftoros.jpg",
     category: "Actualidad",
-    date: "15 de Octubre de 2025, 09:07",
+    date: "15 de Octubre de 2025",
     fullContent: `El matador de toros Jorge Martínez y su apoderado Ruiz Manuel han decidido dar por finalizada su relación profesional de apoderamiento. Ambos han coincidido en destacar que la ruptura se ha producido de manera totalmente amistosa y en los mejores términos.
 
 Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la mayor parte de su carrera en Almería, bajo la dirección de Ruiz Manuel. Debutó con picadores en Galapagar (Jaén) y tomó la alternativa en la Plaza de Toros de Almería en el año 2023, confirmando su doctorado en Madrid al año siguiente. Su vínculo profesional se remonta a 2021, año en que iniciaron este proyecto conjunto.`,
@@ -1313,7 +1313,7 @@ Natural de la localidad murciana de Totana, Jorge Martínez ha desarrollado la m
     title: "Román y Eduardo Martínez ponen fin a su relación de apoderamiento",
     image: "images/romanyedu.jpg",
     category: "Actualidad",
-    date: "15 de Octubre de 2025, 09:07",
+    date: "15 de Octubre de 2025",
     fullContent: `El matador de toros Román y su hasta ahora apoderado, Eduardo Martínez, han decidido poner fin, de mutuo acuerdo, a la relación profesional que les ha vinculado durante esta etapa.
 
 La decisión se ha tomado en un clima de cordialidad, con absoluto respeto y reconocimiento mutuo tanto en lo personal como en lo profesional. Ambas partes agradecen sinceramente el trabajo compartido, la confianza depositada y los logros alcanzados a lo largo del camino recorrido juntos.
@@ -1325,7 +1325,7 @@ Román y Eduardo se desean el mayor de los éxitos en sus respectivos proyectos 
     title: "David Galván reaparecerá este sábado en Jaén tras su percance en Las Ventas",
     image: "images/davidgalvan.jpg",
     category: "Actualidad",
-    date: "15 de Octubre de 2025, 09:07",
+    date: "15 de Octubre de 2025",
     fullContent: `Tan solo cuatro días después de la aparatosa cogida sufrida el pasado 11 de octubre en la plaza de toros de Las Ventas, el diestro gaditano David Galván ha confirmado su reaparición este sábado en la Feria de San Lucas de Jaén. 
 
 Lo hará ante una corrida del hierro de Victorino Martín, el mismo hierro ante el que resultó herido en Madrid, en un gesto de firme compromiso y valentía.
@@ -1341,7 +1341,7 @@ Con esta reaparición, Galván reafirma su entrega a la tauromaquia y su comprom
     title: "Morante de la Puebla; El adiós a una sublime carrera",
     image: "images/moranteretirada.jpg",
     category: "Actualidad",
-    date: "15 de Octubre de 2025, 09:07",
+    date: "15 de Octubre de 2025",
     excerpt: "Morante de la Puebla se corta la coleta en Madrid tras una faena para la historia",
     fullContent: `Morante de la Puebla, con las dos orejas en las manos y una faena para el recuerdo , anuncio su adios de los ruedos en el centro de Las Ventas de Madrid , cortandose la coleta por sorpresa.
 
@@ -1355,7 +1355,7 @@ Una despedida a la altura del mito que ha marcado este torero.`,
     title: "Florito el mayoral de Las Ventas dice adiós: El adiós a una leyenda de los corrales",
     image: "images/florito.jpg",
     category: "Actualidad",
-    date: "14 de Octubre de 2025, 09:07",
+    date: "14 de Octubre de 2025",
     fullContent: `El 12 de Octubre quedará grabado en la memoria taurina no solo por lo sucedido en el ruedo, sino también por lo ocurrido en los corrales. Aquel día, mientras la emoción inundaba la plaza de Madrid, Florencio Fernández Castillo, ‘Florito’, ponía fin a casi cuatro décadas de dedicación como mayoral de Las Ventas, cerrando una etapa importante. 
 
 Nacido en la plaza de toros de Talavera de la Reina, donde su padre trabajaba como conserje, Florito vivió el toro desde la cuna. Fue novillero en su juventud con el apodo de “El Niño de la Plaza”, hasta que en 1981 decidió abandonar los ruedos. En febrero de 1986.
@@ -1369,7 +1369,7 @@ id: 214,
 title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
 image: "images/tomasgonzalez.jpg",
 category: "Entrevistas",
-date: "14 de Octubre de 2025, 09:07",
+date: "14 de Octubre de 2025",
 fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
@@ -1429,7 +1429,7 @@ const entrevistas: NewsItem[] = [
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
-    date: "17 de Octubre de 2025, 09:07",
+    date: "17 de Octubre de 2025",
     fullContent: `Carlos, en un momento donde la tauromaquia enfrenta tantos desafíos sociales y políticos, ¿qué significa para usted seguir apostando por este sector como empresario? 
 
 Para mi es una forma de vida, una vocación. Yo no sé hacer otra cosa. Vivo 24 h para por y para el toro en su máxima expresión y no concibo el día a día sin ilusionarme y pensar en la confección de una feria. Creo que a veces puedo ser demasiado cansino en el día a día pero hasta ahora, esa "fórmula" no me ha ido mal. Seguiré peleando por y para el toreo y espero no desfallecer.
@@ -1460,7 +1460,7 @@ Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pe
     title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
     image: "images/tomasgonzalez.jpg",
     category: "Entrevistas",
-    date: "14 de Octubre de 2025, 09:07",
+    date: "14 de Octubre de 2025",
     fullContent: `
 La temporada del joven novillero alcorisano Tomás González ha sido un punto de inflexión, uno de los novilleros que ha demostrado con argumentos que puede estar en las ferias.
 
