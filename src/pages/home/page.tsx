@@ -2468,10 +2468,10 @@ TENDIDO DIGITAL
                       key={i}
                       className="whitespace-pre-line"
                       dangerouslySetInnerHTML={{
- 					  __html: paragraph
-    				  .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
-   					  .trim(),
-					 }}
+  					  __html: paragraph
+   					  .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
+  					  .trim(),
+					}}
                     />
                   ))}
               </div>
@@ -2518,7 +2518,7 @@ TENDIDO DIGITAL
   </div>
 )}
 
-  {/* Modal de Crónica - Pantalla Completa */}
+ {/* Modal de Crónica - Pantalla Completa */}
 {isChronicleModalOpen && selectedChronicle && (
   <div
     className="fixed inset-0 bg-black z-50"
@@ -2529,7 +2529,27 @@ TENDIDO DIGITAL
   >
     {/* Header fixed */}
     <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
-      {/* ... mismo header que el modal de noticias ... */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img 
+              src="/images/tendidodigitallogosimple.jpg" 
+              alt="Tendido Digital" 
+              className="h-8 w-auto"
+            />
+            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
+            </span>
+          </div>
+          <button
+            onClick={closeChronicleModal}
+            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+            aria-label="Cerrar modal"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
     </div>
 
     {/* Contenido scrollable */}
@@ -2544,11 +2564,7 @@ TENDIDO DIGITAL
         paddingBottom: "32px"
       }}
     >
-      {/* ... contenido de la crónica ... */}
-    </div>
-  </div>
-)}
-
+      <div className="bg-white min-h-full">
         {/* Imagen principal */}
         <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
           <img
@@ -2618,7 +2634,8 @@ TENDIDO DIGITAL
         </div>
       </div>
     </div>
-  )}
+  </div>
+)}
 
   {/* Modal de Compartir */}
   {isShareModalOpen && sharePost && (
