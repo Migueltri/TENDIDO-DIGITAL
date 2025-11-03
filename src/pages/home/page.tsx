@@ -1714,7 +1714,7 @@ return (
         <img
           src={news.image}
           alt={news.title}
-          className="w-full h-full object-contain"  {/* Cambiado de object-cover a object-contain */}
+          className="w-full h-full object-contain"
           loading="lazy"
         />
         {/* Overlay para mejor legibilidad del texto */}
