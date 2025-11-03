@@ -2134,7 +2134,6 @@ return (
                 </div>
               </article>
             ))}
-          </div>
 
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
