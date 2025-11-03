@@ -2583,7 +2583,7 @@ TENDIDO DIGITAL
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="images/tendidodigitallogosimple.jpg" 
+                  src="/images/tendidodigitallogosimple.jpg" 
                   alt="Tendido Digital" 
                   className="h-8 w-auto"
                 />
@@ -2705,7 +2705,7 @@ dangerouslySetInnerHTML={{
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="images/tendidodigitallogosimple.jpg" 
+                  src="/images/tendidodigitallogosimple.jpg" 
                   alt="Tendido Digital" 
                   className="h-8 w-auto"
                 />
