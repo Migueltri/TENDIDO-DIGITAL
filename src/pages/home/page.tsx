@@ -21,46 +21,37 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
+// Muestra la hora tal como la escribiste en tus datos
 function formatExactDate(dateString: string): string {
-  const date = new Date(dateString);
-
-  return date.toLocaleString("es-ES", {
-    day: "2-digit",
-    month: "short",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  // Si es un formato ISO, conviértelo; si no, devuélvelo limpio
+  const parsed = new Date(dateString);
+  if (!isNaN(parsed.getTime())) {
+    return parsed.toLocaleString("es-ES", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  }
+  // 🟢 No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
+  return dateString;
 }
 
 function formatTimeAgo(dateString: string): string {
-  const date = new Date(dateString);
-
-  // Si no se puede interpretar, devolvemos directamente la cadena original
-  if (isNaN(date.getTime())) {
-    console.warn("Fecha inválida detectada en formatTimeAgo:", dateString);
-    return dateString;
-  }
+  const parsed = new Date(dateString);
+  if (isNaN(parsed.getTime())) return ""; // 🚫 no mostrar “Invalid Date”
 
   const now = new Date();
-  const diffSeconds = (now.getTime() - date.getTime()) / 1000;
-
-  // Evitar RangeError si diffSeconds es infinito o NaN
-  if (!isFinite(diffSeconds)) {
-    return dateString;
-  }
-
+  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
   const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
 
-  if (diffSeconds < 60) return "hace unos segundos";
-  if (diffSeconds < 3600)
-    return rtf.format(-Math.floor(diffSeconds / 60), "minute");
-  if (diffSeconds < 86400)
-    return rtf.format(-Math.floor(diffSeconds / 3600), "hour");
-  if (diffSeconds < 2592000)
-    return rtf.format(-Math.floor(diffSeconds / 86400), "day");
-  if (diffSeconds < 31536000)
-    return rtf.format(-Math.floor(diffSeconds / 2592000), "month");
-  return rtf.format(-Math.floor(diffSeconds / 31536000), "year");
+  if (diff < 60) return "hace unos segundos";
+  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
+  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
+  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
+  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
+  return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
 export default function Home() {
