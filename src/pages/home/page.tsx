@@ -1327,7 +1327,7 @@ useEffect(() => {
   }
 }, []);
   
-// Función para abrir modal de noticia
+// Abrir modal de noticia
 const openNewsModal = (news: NewsItem | OpinionArticle) => {
   setSelectedNews(news);
   setIsNewsModalOpen(true);
@@ -1335,16 +1335,24 @@ const openNewsModal = (news: NewsItem | OpinionArticle) => {
   document.body.style.position = "fixed";
   document.body.style.width = "100%";
 };
-  
-// Función para cerrar modal de noticia
+
+// Cerrar modal de noticia
 const closeNewsModal = () => {
-setIsNewsModalOpen(false);
-setSelectedNews(null);
-document.body.style.overflow = "auto";
-document.body.style.position = "";
-document.body.style.width = "";
+  setIsNewsModalOpen(false);
+  setSelectedNews(null);
+  document.body.style.overflow = "auto";
+  document.body.style.position = "";
+  document.body.style.width = "";
 };
 
+// En tu componente del modal, asegúrate de que tenga estos estilos:
+const modalStyles = {
+  overflowY: "auto", // Habilita desplazamiento vertical
+  overflowX: "hidden", // Deshabilita desplazamiento horizontal
+  maxHeight: "100vh", // O la altura que prefieras
+  WebkitOverflowScrolling: "touch", // Para scroll suave en dispositivos táctiles
+};
+	
 // Función para abrir modal de crónica
 const openChronicleModal = (chronicle: Chronicle) => {
 setSelectedChronicle(chronicle);
