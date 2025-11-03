@@ -2204,9 +2204,10 @@ return (
           </p>
         </div>
       </div>
-    </footer>
-</div>
-);
+</footer>
+-  </div>
++  </>
+  );
 };
 
 return (
