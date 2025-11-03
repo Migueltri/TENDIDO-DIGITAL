@@ -1687,7 +1687,9 @@ if (activeTab === 'cronicas') {
 
 // Contenido principal (inicio)
 return (
-  <>
+  <div 
+  className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50 overflow-x-hidden"
+>
     
 {/* Hero Carousel */}
  <section
@@ -2372,9 +2374,14 @@ TENDIDO DIGITAL
   {renderContent()}
 
   {/* Modal de Noticia - Pantalla Completa */}
-  {isNewsModalOpen && selectedNews && (
-    <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
-      <div className="min-h-screen">
+ {isNewsModalOpen && selectedNews && (
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto"
+    style={{
+      touchAction: "none",      // evita scroll lateral en móviles
+      overscrollBehavior: "contain", // bloquea rebote de scroll
+    }}
+  >
         {/* Header del modal */}
         <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
