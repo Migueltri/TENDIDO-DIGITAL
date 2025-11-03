@@ -1687,13 +1687,9 @@ if (activeTab === 'cronicas') {
 
 // Contenido principal (inicio)
 return (
-  <div
-  className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50 overflow-x-hidden"
-  >
-  </div>
-    
-{/* Hero Carousel */}
- <section
+  <>
+    {/* Hero Carousel */}
+    <section
       id="inicio"
       className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
     >
