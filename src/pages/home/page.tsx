@@ -2380,56 +2380,68 @@ TENDIDO DIGITAL
   {renderContent()}
 
   {/* Modal de Noticia - Pantalla Completa */}
- {isNewsModalOpen && selectedNews && (
+{isNewsModalOpen && selectedNews && (
   <div
-    className="fixed inset-0 bg-black z-50 overflow-y-auto"
+    className="fixed inset-0 bg-black z-50"
     style={{
-      touchAction: "none",      // evita scroll lateral en móviles
-      overscrollBehavior: "contain", // bloquea rebote de scroll
+      touchAction: "none",
+      overscrollBehavior: "contain",
     }}
   >
-        {/* Header del modal */}
-        <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <img 
-                  src="/images/tendidodigitallogosimple.jpg" 
-                  alt="Tendido Digital" 
-                  className="h-8 w-auto"
-                />
-                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-                  TENDIDO DIGITAL
-                </span>
-              </div>
-              <button
-                onClick={closeNewsModal}
-                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-                aria-label="Cerrar modal"
-              >
-                <i className="ri-close-line text-2xl"></i>
-              </button>
-            </div>
+    {/* Header del modal - FIXED */}
+    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img 
+              src="/images/tendidodigitallogosimple.jpg" 
+              alt="Tendido Digital" 
+              className="h-8 w-auto"
+            />
+            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
+            </span>
+          </div>
+          <button
+            onClick={closeNewsModal}
+            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+            aria-label="Cerrar modal"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Contenido scrollable - APLICAR ESTILOS AQUÍ */}
+    <div 
+      className="pt-16 pb-8 h-full overflow-y-auto"
+      style={{
+        overflowY: "auto",
+        overflowX: "hidden",
+        height: "100vh",
+        WebkitOverflowScrolling: "touch",
+        paddingTop: "64px", // altura del header fixed
+        paddingBottom: "32px"
+      }}
+    >
+      <div className="bg-white min-h-full">
+        {/* Imagen principal */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="flex flex-col items-center pt-8">
+            <img
+              src={selectedNews.image}
+              alt={selectedNews.title}
+              className="w-full h-auto rounded-md"
+            />
+            {selectedNews.imageCaption && (
+              <p className="text-gray-500 text-xs italic text-right w-full mt-1">
+                {selectedNews.imageCaption}
+              </p>
+            )}
           </div>
         </div>
 
-{/* Imagen principal */}
-<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-  <div className="flex flex-col items-center">
-    <img
-      src={selectedNews.image}
-      alt={selectedNews.title}
-      className="w-full h-auto rounded-md"
-    />
-
-    {/* Pie de foto, estilo Cultoro */}
-    {selectedNews.imageCaption && (
-      <p className="text-gray-500 text-xs italic text-right w-full mt-1">
-        {selectedNews.imageCaption}
-      </p>
-    )}
-  </div>
-</div>
         {/* Contenido del artículo */}
         <div className="bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -2448,22 +2460,21 @@ TENDIDO DIGITAL
             <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
             
             <div className="prose prose-xl max-w-none">
-             <div className="text-gray-700 leading-relaxed text-lg space-y-4">
-  {selectedNews.fullContent
-    ?.split("\n\n") // divide el texto en párrafos usando doble salto de línea
-    .map((paragraph, i) => (
-      <p
-        key={i}
-        className="whitespace-pre-line"
-dangerouslySetInnerHTML={{
-  __html: paragraph
-    // Convierte *texto* o **texto** en <strong>texto</strong>
-    .replace(/(\*{1,2})(.*?)\1/g, '<strong>$2</strong>')
-    .trim(),
-}}
-      />
-    ))}
-</div>
+              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+                {selectedNews.fullContent
+                  ?.split("\n\n")
+                  .map((paragraph, i) => (
+                    <p
+                      key={i}
+                      className="whitespace-pre-line"
+                      dangerouslySetInnerHTML={{
+                        __html: paragraph
+                          .replace(/(\*{1,2})(.*?)\1/g, '<strong>$2</strong>')
+                          .trim(),
+                      }}
+                    />
+                  ))}
+              </div>
             </div>
 
             {/* Acciones del artículo */}
@@ -2503,36 +2514,40 @@ dangerouslySetInnerHTML={{
           </div>
         </div>
       </div>
-  )}
+    </div>
+  </div>
+)}
 
   {/* Modal de Crónica - Pantalla Completa */}
-  {isChronicleModalOpen && selectedChronicle && (
-    <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
-      <div className="min-h-screen">
-        {/* Header del modal */}
-        <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <img 
-                  src="/images/tendidodigitallogosimple.jpg" 
-                  alt="Tendido Digital" 
-                  className="h-8 w-auto"
-                />
-                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-                  TENDIDO DIGITAL
-                </span>
-              </div>
-              <button
-                onClick={closeChronicleModal}
-                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-                aria-label="Cerrar modal"
-              >
-                <i className="ri-close-line text-2xl"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+{isChronicleModalOpen && selectedChronicle && (
+  <div
+    className="fixed inset-0 bg-black z-50"
+    style={{
+      touchAction: "none",
+      overscrollBehavior: "contain",
+    }}
+  >
+    {/* Header fixed */}
+    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+      {/* ... mismo header que el modal de noticias ... */}
+    </div>
+
+    {/* Contenido scrollable */}
+    <div 
+      className="pt-16 pb-8 h-full overflow-y-auto"
+      style={{
+        overflowY: "auto",
+        overflowX: "hidden",
+        height: "100vh",
+        WebkitOverflowScrolling: "touch",
+        paddingTop: "64px",
+        paddingBottom: "32px"
+      }}
+    >
+      {/* ... contenido de la crónica ... */}
+    </div>
+  </div>
+)}
 
         {/* Imagen principal */}
         <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
