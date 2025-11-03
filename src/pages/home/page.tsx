@@ -1697,10 +1697,10 @@ if (activeTab === 'cronicas') {
 return (
   <>
 	  
-    {/* Hero Carousel */}
+    {/* Hero Carousel - Pantalla completa sin espacios */}
 <section
   id="inicio"
-  className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
+  className="relative w-full h-screen overflow-hidden bg-black"
 >
   {featuredNews.map((news, index) => (
     <div
@@ -1709,51 +1709,51 @@ return (
         index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
       }`}
     >
-      {/* Imagen ajustada para verse completa */}
-      <div className="relative w-full h-full flex items-center justify-center">
+      {/* Imagen que ocupa toda la pantalla sin espacios */}
+      <div className="relative w-full h-full">
         <img
           src={news.image}
           alt={news.title}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
           loading="lazy"
         />
-        {/* Overlay para mejor legibilidad del texto */}
-        <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+        {/* Overlay oscuro para mejor legibilidad del texto */}
+        <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
       </div>
 
-      {/* Contenido del hero */}
-      <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
-        <div className="max-w-3xl">
-          <div className="flex items-center justify-center mb-4 space-x-3">
-            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+      {/* Contenido centrado vertical y horizontalmente */}
+      <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-8">
+        <div className="max-w-4xl w-full text-center">
+          <div className="flex items-center justify-center mb-6 space-x-3">
+            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm sm:text-base font-bold shadow-lg">
               <i className="ri-fire-line mr-2"></i>
               {news.category}
             </span>
-            <span className="text-gray-300 text-sm bg-black/50 px-3 py-1 rounded-full">
+            <span className="text-gray-200 text-sm bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm">
               {formatTimeAgo(news.date)}
             </span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
             {news.title}
           </h1>
 
           {news.excerpt && (
-            <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
               {news.excerpt}
             </p>
           )}
 
-          <div className="flex flex-wrap justify-center gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <button
               onClick={() => openNewsModal(news)}
-              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
+              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-2xl cursor-pointer text-base sm:text-lg transform hover:scale-105"
             >
               Leer noticia completa
             </button>
             <button
               onClick={() => scrollToSection('actualidad')}
-              className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
+              className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 border border-white/30 cursor-pointer text-base sm:text-lg transform hover:scale-105"
             >
               Ver más noticias
             </button>
@@ -1763,8 +1763,8 @@ return (
     </div>
   ))}
 
-  {/* Controles del carousel */}
-  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
+  {/* Indicadores del carousel - Solo puntos */}
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
     {featuredNews.map((_, index) => (
       <button
         key={index}
@@ -1778,31 +1778,33 @@ return (
     ))}
   </div>
 
-  {/* Flechas de navegación */}
+  {/* Flechas de navegación - Solo estas */}
   <button
     onClick={() =>
       setCurrentSlide(
         currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
       )
     }
-    className="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 z-20 
+    className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 
                p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
                text-white transition-all duration-300 backdrop-blur-sm 
                focus:outline-none focus:ring-2 focus:ring-white/70"
+    aria-label="Imagen anterior"
   >
-    <i className="ri-arrow-left-line text-lg sm:text-2xl"></i>
+    <i className="ri-arrow-left-line text-xl sm:text-2xl"></i>
   </button>
 
   <button
     onClick={() =>
       setCurrentSlide((currentSlide + 1) % featuredNews.length)
     }
-    className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 z-20 
+    className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 
                p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
                text-white transition-all duration-300 backdrop-blur-sm 
                focus:outline-none focus:ring-2 focus:ring-white/70"
+    aria-label="Imagen siguiente"
   >
-    <i className="ri-arrow-right-line text-lg sm:text-2xl"></i>
+    <i className="ri-arrow-right-line text-xl sm:text-2xl"></i>
   </button>
 </section>
 
