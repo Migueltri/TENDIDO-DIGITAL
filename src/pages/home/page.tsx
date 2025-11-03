@@ -21,6 +21,17 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
+function formatExactDate(dateString: string): string {
+  const date = new Date(dateString);
+
+  return date.toLocaleString("es-ES", {
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
 function formatTimeAgo(dateString: string): string {
   const date = new Date(dateString);
   const now = new Date();
@@ -2082,14 +2093,11 @@ return (
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-500 text-sm">{news.date}</span>
-                    <div className="flex items-center text-gray-400">
-                      <i className="ri-time-line mr-1"></i>
-                      <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
-                    </div>
-                  </div>
+<div className="flex items-center text-gray-500 text-sm space-x-2">
+  <span>{formatExactDate(news.date)}</span>
+  <span>•</span>
+  <span>{formatTimeAgo(news.date)}</span>
+</div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
                     {news.title}
                   </h3>
