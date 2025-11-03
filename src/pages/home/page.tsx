@@ -34,7 +34,7 @@ function formatExactDate(dateString: string): string {
       minute: "2-digit",
     });
   }
-  // 🟢 No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
+  // No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
   return dateString;
 }
 
@@ -321,6 +321,20 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 { 
     id: 1000,
+    title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
+    image: "/images/varios3.jpg",
+    category: "Actualidad",
+    date: "3 de noviembre de 2025",
+    fullContent: `El ganadero Polo Saiz y los novilleros Félix San Román y Joel Ramírez recibieron el pasado viernes los galardones que los distinguen como triunfadores del ciclo taurino celebrado en Trillo a lo largo de 2025. El acto, que contó con un interesante coloquio moderado por la periodista Vanesa Santos, estuvo presidido por el concejal de Festejos del Ayuntamiento de Trillo, Sergio Recuero, encargado de entregar los premios.
+
+El novillero Joel Ramírez fue distinguido con el trofeo a la Mejor Faena por su brillante labor frente al novillo “Orca”, de la ganadería Polo Saiz, al que cortó los máximos trofeos.
+
+Por su parte, Félix San Román fue proclamado Triunfador del Ciclo tras cortar un total de cuatro orejas a ejemplares de Polo Saiz y Hermanos Cambronell, rubricando así una destacada actuación.
+
+Asimismo, el premio al Mejor Novillo recayó en “Orca”, número 12, de Polo Saiz, en reconocimiento a su bravura, clase y excelente juego durante la lidia.`
+  }, 
+	{ 
+    id: 1001,
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
     image: "/images/varios2.jpg",
     category: "Actualidad",
@@ -332,7 +346,7 @@ En su comunicado, el torero definió esta unión como “un proyecto joven, naci
 Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus propias palabras, “motiva y une” a este nuevo equipo de trabajo.`
   }, 
 	{ 
-    id: 1001,
+    id: 1002,
     title: "Fallece Rafael de Paula a los 85 años",
     image: "images/rafaeldepaula.jpg",
     category: "Actualidad",
@@ -350,7 +364,7 @@ En 2002, el Ministerio de Cultura le concedió la Medalla de Oro al Mérito en l
 Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, amigos y aficionados por la pérdida de un torero irrepetible. Se va un mito, pero su arte quedará para siempre en la memoria del toreo.`
   }, 
 	{ 
-    id: 1002,
+    id: 1003,
     title: "Carla Otero, nuevo nombre que se incorpora al profesorado de la Escuela taurina de Madrid",
     image: "images/carla.jpg",
     category: "Actualidad",
@@ -582,6 +596,20 @@ Juanito.`
 const latestNews: NewsItem[] = [
   { 
     id: 1,
+    title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
+    image: "/images/varios3.jpg",
+    category: "Actualidad",
+    date: "3 de noviembre de 2025",
+    fullContent: `El ganadero Polo Saiz y los novilleros Félix San Román y Joel Ramírez recibieron el pasado viernes los galardones que los distinguen como triunfadores del ciclo taurino celebrado en Trillo a lo largo de 2025. El acto, que contó con un interesante coloquio moderado por la periodista Vanesa Santos, estuvo presidido por el concejal de Festejos del Ayuntamiento de Trillo, Sergio Recuero, encargado de entregar los premios.
+
+El novillero Joel Ramírez fue distinguido con el trofeo a la Mejor Faena por su brillante labor frente al novillo “Orca”, de la ganadería Polo Saiz, al que cortó los máximos trofeos.
+
+Por su parte, Félix San Román fue proclamado Triunfador del Ciclo tras cortar un total de cuatro orejas a ejemplares de Polo Saiz y Hermanos Cambronell, rubricando así una destacada actuación.
+
+Asimismo, el premio al Mejor Novillo recayó en “Orca”, número 12, de Polo Saiz, en reconocimiento a su bravura, clase y excelente juego durante la lidia.`
+  }, 
+	{ 
+    id: 9,
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
     image: "images/varios2.jpg",
     category: "Actualidad",
