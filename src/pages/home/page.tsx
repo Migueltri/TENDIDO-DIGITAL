@@ -2468,10 +2468,10 @@ TENDIDO DIGITAL
                       key={i}
                       className="whitespace-pre-line"
                       dangerouslySetInnerHTML={{
-                        __html: paragraph
-                          .replace(/(\*{1,2})(.*?)\1/g, '<strong>$2</strong>')
-                          .trim(),
-                      }}
+ 					  __html: paragraph
+    				  .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
+   					  .trim(),
+					 }}
                     />
                   ))}
               </div>
