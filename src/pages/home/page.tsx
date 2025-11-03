@@ -333,7 +333,7 @@ const featuredNews: NewsItem[] = [
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
     image: "images/varios2.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `El novillero con picadores Iván Rejas ha anunciado a través de su perfil de Instagram su nuevo acuerdo de apoderamiento con Rafa Camino Jr. y Óscar de la Faya, con quienes comienza una nueva etapa en su carrera profesional.
 
 En su comunicado, el torero definió esta unión como “un proyecto joven, nacido de la confianza, la ilusión y la convicción de que el trabajo, el esfuerzo y la verdad son la base para crecer”. Además, destacó que los tres comparten una misma forma de entender la profesión y un objetivo común: “avanzar, aprender y seguir construyendo futuro dentro del toreo”.
@@ -345,7 +345,7 @@ Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus 
     title: "Fallece Rafael de Paula a los 85 años",
     image: "images/rafaeldepaula.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `El maestro jerezano Rafael Soto Moreno, conocido universalmente como Rafael de Paula, ha fallecido a los 85 años de edad. Nacido en el Barrio de Santiago de Jerez de la Frontera el 11 de febrero de 1940, el torero se convirtió en una de las figuras más carismáticas y singulares de la historia del toreo. Su arte, elegancia y personalidad le granjearon un lugar de culto entre varias generaciones de aficionados.
 
 Rafael de Paula debutó en público en Ronda, en mayo de 1957, en una plaza que años más tarde volvería a marcar su trayectoria. En ese mismo coso rondeño tomó la alternativa en 1960, de manos de Julio Robles y con Antonio Ordóñez como testigo. Su confirmación en Las Ventas llegó en mayo de 1974, con José Luis Galloso como padrino y el toro Andadoso, de José Luis Osborne, como testigo de aquella tarde.
@@ -363,7 +363,7 @@ Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, a
     title: "Carla Otero, nuevo nombre que se incorpora al profesorado de la Escuela taurina de Madrid",
     image: "images/carla.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `La novillera Carla Otero, novillera de Guadalajara con un recorrido marcado por la superación de numerosas adversidades,se ha incorporado recientemente a la Escuela Taurina de Madrid José Cubero “Yiyo”, según se comunicó el pasado 20 de octubre con el comienzo
  del nuevo curso. 
 
@@ -380,7 +380,7 @@ Esta resiliencia demuestra no solo su capacidad física, sino también su fortal
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
     image: "images/enriquez.jpg",
     category: "Entrevistas",
-    date: "1 de noviembre de 2025, 09:07",
+    date: "1 de noviembre de 2025",
     fullContent: `Matador de toros desde 2003, natural de Andújar, ha encabezado durante años el escalafón de sobresalientes en plazas tan destacadas como Las Ventas, Vistalegre o Morón de la Frontera. A pesar de una carrera marcada por la dureza y las lesiones, sigue fiel a su pasión y a su forma de entender la vida: con afición, entrega y verdad.
 
 —¿Qué significa para ti haber encabezado durante varios años el escalafón de sobresalientes en plazas tan importantes?
@@ -406,7 +406,7 @@ Esta resiliencia demuestra no solo su capacidad física, sino también su fortal
     title: "El Gobierno de Aragón rectifica y permitirá la celebración de festejos taurinos bajo una serie de normas",
     image: "images/gobiernoaragon.jpg",
     category: "Actualidad",
-    date: "1 de noviembre de 2025, 09:07",
+    date: "1 de noviembre de 2025",
     fullContent: `El departamento de Agricultura, Ganadería y Alimentación del Gobierno de Aragón ha decidido a última hora de la tarde de este viernes que los festejos taurinos sí podrán celebrarse finalmente en todo este territorio tras haber modificado la citada resolución por la que habían sido suspendidos de forma cautelar en la mañana de este viernes. 
 
 La nueva normativa establece que los espectáculos taurinos populares podrán celebrarse en todo el territorio aragonés siempre y cuando se cumplan varias rigurosas medidas sanitarias. De esta forma, para los espectáculos que se desarrollen en un único día o en varios consecutivos dentro de una misma localidad, todos los animales deberán proceder de la misma ganadería, garantizando así un mayor control sanitario, además de desinsectar las instalaciones donde se hayan ubicado las reses bravas una vez concluido el espectáculo taurino.
@@ -418,7 +418,7 @@ En cuanto a corridas de toros y novilladas con picadores, la nueva normativa est
     title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
     image: "images/varios.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `El salón de actos del Campus Universitario CEU Andalucía acogió una nueva sesión del ciclo Vida CEU, protagonizada por dos referentes de la tauromaquia actual: Pablo Aguado y Miguel Ángel Perera. Los diestros compartieron con los estudiantes su experiencia profesional y reflexionaron sobre temas como la preparación física, la salud mental, la fe y los valores del mundo del toro.
 
 El encuentro estuvo presentado por Santiago López, responsable de Vida Universitaria, y moderado por José Enrique Moreno, director de Comunicación de la Empresa Pagés. El acto reunió a numerosos jóvenes procedentes de todos los centros CEU en Andalucía, evidenciando el interés que despierta la tauromaquia entre las nuevas generaciones.
@@ -446,7 +446,7 @@ Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a
     title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
     image: "images/borjajimenez2.jpg",
     category: "Actualidad",
-    date: "31 de Octubre de 2025, 09:07",
+    date: "31 de Octubre de 2025",
     fullContent: `El nombre de Borja Jiménez resuena con fuerza en el epílogo de la temporada taurina 2025. El torero de Espartinas ha firmado un año de plenitud y madurez, consolidándose como una de las grandes figuras del escalafón y alcanzando la segunda posición del escalafón, solo por detrás de Morante de la Puebla. Su concepto clásico, la pureza de su toreo y la autenticidad de su expresión artística han calado profundamente en la afición y en las empresas, que lo han convertido en un torero de temporada completa.
 
 A lo largo de 58 corridas en Europa, Jiménez ha cosechado 102 orejas y 7 rabos, un balance que refleja su regularidad, entrega y capacidad de adaptación en todo tipo de escenarios: 19 plazas de primera, 16 de segunda y 23 de tercera categoría. Su campaña ha dejado una huella indeleble en ferias de máxima relevancia. Triunfó en Sevilla, donde cortó dos orejas a un toro de Jandilla en la Feria de Abril; en Bilbao, donde indultó un ejemplar de La Quinta durante las Corridas Generales; y en Madrid, donde rubricó su tercera Puerta Grande en Las Ventas con una faena memorable al toro “Milhijas”, de Victorino Martín, ya considerada una de las páginas más brillantes de la tauromaquia reciente.
@@ -479,7 +479,7 @@ Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de s
     title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
     image: "images/aragon.jpg",
     category: "Actualidad",
-    date: "31 de Octubre de 2025, 09:07",
+    date: "31 de Octubre de 2025",
     fullContent: `La Comunidad de Aragón ha suspendido todos los festejos taurinos populares a consecuencia de la Dermatosis Nodular Contagiosa. Tal y como recoge la cuenta de Instagram Torosocialgestión en un comunicado, queda suspendida toda la presencia de animales en ferias, concursos y cualquier evento en el que tomen participación salvo perros, gatos y animales de compañía.
 
 Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025 de la Dirección General de Calidad y Seguridad Alimentaria del Gobierno de Aragón, publicada en el Boletín Oficial de Aragón (BOA n° 210, de 30 de octubre de 2025) por la que se han adoptado medidas cautelares ante esta enfermedad que afecta a los festejos taurinos.
@@ -491,7 +491,7 @@ Ante esta decisión, todos los festejos ya autorizados pendientes de celebració
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
-    date: "30 de Octubre de 2025, 09:07",
+    date: "30 de Octubre de 2025",
     fullContent: `El reconocido maestro Curro Vázquez ha decidido apoderar al novillero mexicano Emiliano Osornio, una decisión motivada por su compromiso con la necesaria aparición de nuevos valores y su deseo de respaldar el mundo de las novilladas y el toreo de México, que actualmente atraviesan por una situación complicada.
 
 Emiliano Osornio se ha consolidado como uno de los nombres más destacados del escalafón de novilleros. Durante esta temporada ha dejado una grata impresión por la pureza y la personalidad de su toreo en plazas de importancia como Las Ventas, además de hacerse con los trofeos al Triunfador de las Ferias de Arnedo y Arganda del Rey.
@@ -594,7 +594,7 @@ const latestNews: NewsItem[] = [
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
     image: "images/varios2.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `El novillero con picadores Iván Rejas ha anunciado a través de su perfil de Instagram su nuevo acuerdo de apoderamiento con Rafa Camino Jr. y Óscar de la Faya, con quienes comienza una nueva etapa en su carrera profesional.
 
 En su comunicado, el torero definió esta unión como “un proyecto joven, nacido de la confianza, la ilusión y la convicción de que el trabajo, el esfuerzo y la verdad son la base para crecer”. Además, destacó que los tres comparten una misma forma de entender la profesión y un objetivo común: “avanzar, aprender y seguir construyendo futuro dentro del toreo”.
@@ -606,7 +606,7 @@ Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus 
     title: "Fallece Rafael de Paula a los 85 años",
     image: "images/rafaeldepaula.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `El maestro jerezano Rafael Soto Moreno, conocido universalmente como Rafael de Paula, ha fallecido a los 85 años de edad. Nacido en el Barrio de Santiago de Jerez de la Frontera el 11 de febrero de 1940, el torero se convirtió en una de las figuras más carismáticas y singulares de la historia del toreo. Su arte, elegancia y personalidad le granjearon un lugar de culto entre varias generaciones de aficionados.
 
 Rafael de Paula debutó en público en Ronda, en mayo de 1957, en una plaza que años más tarde volvería a marcar su trayectoria. En ese mismo coso rondeño tomó la alternativa en 1960, de manos de Julio Robles y con Antonio Ordóñez como testigo. Su confirmación en Las Ventas llegó en mayo de 1974, con José Luis Galloso como padrino y el toro Andadoso, de José Luis Osborne, como testigo de aquella tarde.
@@ -624,7 +624,7 @@ Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, a
     title: "Carla Otero, nuevo nombre que se incorpora al profesorado de la Escuela taurina de Madrid",
     image: "images/carla.jpg",
     category: "Actualidad",
-    date: "2 de noviembre de 2025, 09:07",
+    date: "2 de noviembre de 2025",
     fullContent: `La novillera Carla Otero, novillera de Guadalajara con un recorrido marcado por la superación de numerosas adversidades,se ha incorporado recientemente a la Escuela Taurina de Madrid José Cubero “Yiyo”, según se comunicó el pasado 20 de octubre con el comienzo
  del nuevo curso. 
 
@@ -641,7 +641,7 @@ Esta resiliencia demuestra no solo su capacidad física, sino también su fortal
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
     image: "images/enriquez.jpg",
     category: "Entrevistas",
-    date: "1 de noviembre de 2025, 09:07",
+    date: "1 de noviembre de 2025",
     fullContent: `Matador de toros desde 2003, natural de Andújar, ha encabezado durante años el escalafón de sobresalientes en plazas tan destacadas como Las Ventas, Vistalegre o Morón de la Frontera. A pesar de una carrera marcada por la dureza y las lesiones, sigue fiel a su pasión y a su forma de entender la vida: con afición, entrega y verdad.
 
 —¿Qué significa para ti haber encabezado durante varios años el escalafón de sobresalientes en plazas tan importantes?
@@ -667,7 +667,7 @@ Esta resiliencia demuestra no solo su capacidad física, sino también su fortal
     title: "El Gobierno de Aragón rectifica y permitirá la celebración de festejos taurinos bajo una serie de normas",
     image: "images/gobiernoaragon.jpg",
     category: "Actualidad",
-    date: "1 de noviembre de 2025, 09:07",
+    date: "1 de noviembre de 2025",
     fullContent: `El departamento de Agricultura, Ganadería y Alimentación del Gobierno de Aragón ha decidido a última hora de la tarde de este viernes que los festejos taurinos sí podrán celebrarse finalmente en todo este territorio tras haber modificado la citada resolución por la que habían sido suspendidos de forma cautelar en la mañana de este viernes. 
 
 La nueva normativa establece que los espectáculos taurinos populares podrán celebrarse en todo el territorio aragonés siempre y cuando se cumplan varias rigurosas medidas sanitarias. De esta forma, para los espectáculos que se desarrollen en un único día o en varios consecutivos dentro de una misma localidad, todos los animales deberán proceder de la misma ganadería, garantizando así un mayor control sanitario, además de desinsectar las instalaciones donde se hayan ubicado las reses bravas una vez concluido el espectáculo taurino.
@@ -679,7 +679,7 @@ En cuanto a corridas de toros y novilladas con picadores, la nueva normativa est
     title: "Pablo Aguado y Miguel Ángel Perera llevan la tauromaquia, la salud mental y la fe a los jóvenes de la CEU",
     image: "images/varios.jpg",
     category: "Actualidad",
-    date: "31 de Octubre de 2025, 09:07",
+    date: "31 de Octubre de 2025",
     fullContent: `El salón de actos del Campus Universitario CEU Andalucía acogió una nueva sesión del ciclo Vida CEU, protagonizada por dos referentes de la tauromaquia actual: Pablo Aguado y Miguel Ángel Perera. Los diestros compartieron con los estudiantes su experiencia profesional y reflexionaron sobre temas como la preparación física, la salud mental, la fe y los valores del mundo del toro.
 
 El encuentro estuvo presentado por Santiago López, responsable de Vida Universitaria, y moderado por José Enrique Moreno, director de Comunicación de la Empresa Pagés. El acto reunió a numerosos jóvenes procedentes de todos los centros CEU en Andalucía, evidenciando el interés que despierta la tauromaquia entre las nuevas generaciones.
@@ -707,7 +707,7 @@ Sobre la fe, señaló que “soy practicante y le doy gracias a Dios por tener a
     title: "Borja Jiménez culmina una temporada histórica con 102 orejas, 7 rabos y 17 reconocimientos",
     image: "images/borjajimenez2.jpg",
     category: "Actualidad",
-    date: "31 de Octubre de 2025, 09:07",
+    date: "31 de Octubre de 2025",
     fullContent: `El nombre de Borja Jiménez resuena con fuerza en el epílogo de la temporada taurina 2025. El torero de Espartinas ha firmado un año de plenitud y madurez, consolidándose como una de las grandes figuras del escalafón y alcanzando la segunda posición del escalafón, solo por detrás de Morante de la Puebla. Su concepto clásico, la pureza de su toreo y la autenticidad de su expresión artística han calado profundamente en la afición y en las empresas, que lo han convertido en un torero de temporada completa.
 
 A lo largo de 58 corridas en Europa, Jiménez ha cosechado 102 orejas y 7 rabos, un balance que refleja su regularidad, entrega y capacidad de adaptación en todo tipo de escenarios: 19 plazas de primera, 16 de segunda y 23 de tercera categoría. Su campaña ha dejado una huella indeleble en ferias de máxima relevancia. Triunfó en Sevilla, donde cortó dos orejas a un toro de Jandilla en la Feria de Abril; en Bilbao, donde indultó un ejemplar de La Quinta durante las Corridas Generales; y en Madrid, donde rubricó su tercera Puerta Grande en Las Ventas con una faena memorable al toro “Milhijas”, de Victorino Martín, ya considerada una de las páginas más brillantes de la tauromaquia reciente.
@@ -740,7 +740,7 @@ Con estos reconocimientos, Borja Jiménez confirma que 2025 ha sido el año de s
     title: "Aragón suspende los festejos taurinos a consecuencia de la Dermatosis Nodular Contagiosa",
     image: "images/aragon.jpg",
     category: "Actualidad",
-    date: "31 de Octubre de 2025, 09:07",
+    date: "31 de Octubre de 2025",
     fullContent: `La Comunidad de Aragón ha suspendido todos los festejos taurinos populares a consecuencia de la Dermatosis Nodular Contagiosa. Tal y como recoge la cuenta de Instagram Torosocialgestión en un comunicado, queda suspendida toda la presencia de animales en ferias, concursos y cualquier evento en el que tomen participación salvo perros, gatos y animales de compañía.
 
 Una decisión que atiende directamente a la Resolución de 27 de octubre de 2025 de la Dirección General de Calidad y Seguridad Alimentaria del Gobierno de Aragón, publicada en el Boletín Oficial de Aragón (BOA n° 210, de 30 de octubre de 2025) por la que se han adoptado medidas cautelares ante esta enfermedad que afecta a los festejos taurinos.
@@ -752,7 +752,7 @@ Ante esta decisión, todos los festejos ya autorizados pendientes de celebració
     title: "Curro Vázquez, nuevo apoderado del novillero Emiliano Osornio",
     image: "images/currovazquez.jpg",
     category: "Actualidad",
-    date: "30 de Octubre de 2025, 09:07",
+    date: "30 de Octubre de 2025",
     fullContent: `El reconocido maestro Curro Vázquez ha decidido apoderar al novillero mexicano Emiliano Osornio, una decisión motivada por su compromiso con la necesaria aparición de nuevos valores y su deseo de respaldar el mundo de las novilladas y el toreo de México, que actualmente atraviesan por una situación complicada.
 
 Emiliano Osornio se ha consolidado como uno de los nombres más destacados del escalafón de novilleros. Durante esta temporada ha dejado una grata impresión por la pureza y la personalidad de su toreo en plazas de importancia como Las Ventas, además de hacerse con los trofeos al Triunfador de las Ferias de Arnedo y Arganda del Rey.
