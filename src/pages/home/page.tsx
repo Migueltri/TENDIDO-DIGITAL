@@ -2495,7 +2495,6 @@ dangerouslySetInnerHTML={{
           </div>
         </div>
       </div>
-    </div>
   )}
 
   {/* Modal de Crónica - Pantalla Completa */}
