@@ -1687,9 +1687,10 @@ if (activeTab === 'cronicas') {
 
 // Contenido principal (inicio)
 return (
-  <div 
+  <div
   className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50 overflow-x-hidden"
->
+  >
+  </div>
     
 {/* Hero Carousel */}
  <section
@@ -2208,7 +2209,7 @@ return (
         </div>
       </div>
     </footer>
-  </>
+</div>
 );
 };
 
