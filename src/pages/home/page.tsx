@@ -1698,79 +1698,113 @@ return (
   <>
 	  
     {/* Hero Carousel */}
-    <section
-      id="inicio"
-      className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
+<section
+  id="inicio"
+  className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
+>
+  {featuredNews.map((news, index) => (
+    <div
+      key={news.id}
+      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+        index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+      }`}
     >
-      {featuredNews.map((news, index) => (
-        <div
-          key={news.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        >
-<img
-  src={news.image}
-  alt={news.title}
-  className="absolute inset-0 w-full h-full object-cover"
-  loading="lazy"
-/>
+      {/* Imagen ajustada para verse completa */}
+      <div className="relative w-full h-full flex items-center justify-center">
+        <img
+          src={news.image}
+          alt={news.title}
+          className="w-full h-full object-contain"  {/* Cambiado de object-cover a object-contain */}
+          loading="lazy"
+        />
+        {/* Overlay para mejor legibilidad del texto */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+      </div>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
+      {/* Contenido del hero */}
+      <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
+        <div className="max-w-3xl">
+          <div className="flex items-center justify-center mb-4 space-x-3">
+            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+              <i className="ri-fire-line mr-2"></i>
+              {news.category}
+            </span>
+            <span className="text-gray-300 text-sm bg-black/50 px-3 py-1 rounded-full">
+              {formatTimeAgo(news.date)}
+            </span>
+          </div>
 
-          <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
-            <div className="max-w-3xl">
-              <div className="flex items-center justify-center mb-4 space-x-3">
-                <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
-                  <i className="ri-fire-line mr-2"></i>
-                  {news.category}
-                </span>
-                <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
-              </div>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
+            {news.title}
+          </h1>
 
-             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
-             {news.title}
-             </h1>
+          {news.excerpt && (
+            <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md max-w-2xl mx-auto">
+              {news.excerpt}
+            </p>
+          )}
 
-              {news.excerpt && (
-                <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
-                  {news.excerpt}
-                </p>
-              )}
-
-              <div className="flex flex-wrap justify-center gap-4 mt-4">
-                <button
-                  onClick={() => openNewsModal(news)}
-                  className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
-                >
-                  Leer noticia completa
-                </button>
-                <button
-                  onClick={() => scrollToSection('actualidad')}
-                  className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
-                >
-                  Ver más noticias
-                </button>
-              </div>
-            </div>
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
+            <button
+              onClick={() => openNewsModal(news)}
+              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
+            >
+              Leer noticia completa
+            </button>
+            <button
+              onClick={() => scrollToSection('actualidad')}
+              className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
+            >
+              Ver más noticias
+            </button>
           </div>
         </div>
-      ))}
-
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
-        {featuredNews.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide
-                ? "bg-white scale-125 shadow-lg"
-                : "bg-white/50 hover:bg-white/80"
-            }`}
-          />
-        ))}
       </div>
-    </section>
+    </div>
+  ))}
+
+  {/* Controles del carousel */}
+  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
+    {featuredNews.map((_, index) => (
+      <button
+        key={index}
+        onClick={() => setCurrentSlide(index)}
+        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+          index === currentSlide
+            ? "bg-white scale-125 shadow-lg"
+            : "bg-white/50 hover:bg-white/80"
+        }`}
+      />
+    ))}
+  </div>
+
+  {/* Flechas de navegación */}
+  <button
+    onClick={() =>
+      setCurrentSlide(
+        currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+      )
+    }
+    className="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 z-20 
+               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+               text-white transition-all duration-300 backdrop-blur-sm 
+               focus:outline-none focus:ring-2 focus:ring-white/70"
+  >
+    <i className="ri-arrow-left-line text-lg sm:text-2xl"></i>
+  </button>
+
+  <button
+    onClick={() =>
+      setCurrentSlide((currentSlide + 1) % featuredNews.length)
+    }
+    className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 z-20 
+               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+               text-white transition-all duration-300 backdrop-blur-sm 
+               focus:outline-none focus:ring-2 focus:ring-white/70"
+  >
+    <i className="ri-arrow-right-line text-lg sm:text-2xl"></i>
+  </button>
+</section>
 
     {/* Flecha izquierda */}
 <button
