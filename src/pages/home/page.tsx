@@ -322,7 +322,7 @@ const featuredNews: NewsItem[] = [
 { 
     id: 1000,
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
-    image: "images/varios2.jpg",
+    image: "/images/varios2.jpg",
     category: "Actualidad",
     date: "2 de noviembre de 2025",
     fullContent: `El novillero con picadores Iván Rejas ha anunciado a través de su perfil de Instagram su nuevo acuerdo de apoderamiento con Rafa Camino Jr. y Óscar de la Faya, con quienes comienza una nueva etapa en su carrera profesional.
