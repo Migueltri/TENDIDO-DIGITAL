@@ -1800,21 +1800,6 @@ if (activeTab === 'cronicas') {
     )}
   </div>
 </div>
-                {/* Imagen principal con formato unificado al hero */}
-<div className="relative w-full overflow-hidden rounded-none sm:rounded-md">
-  <img
-    src={selectedNews.image}
-    alt={selectedNews.title}
-    className="w-full h-[60vh] sm:h-[70vh] object-cover object-center"
-  />
-
-  {/* Pie de foto (si existe) */}
-  {selectedNews.imageCaption && (
-    <p className="text-gray-500 text-xs italic text-center mt-2 px-4">
-      {selectedNews.imageCaption}
-    </p>
-  )}
-</div>
                 
                 {/* Contenido de la crónica */}
                 <div className="lg:col-span-2 space-y-4">
