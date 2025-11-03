@@ -850,7 +850,7 @@ Juanito.`
   {
     id: 52,
     title: "Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres, protagonistas de la segunda edición de los Premios Nicanor Villalta",
-    image: "images/varioas.jpg",
+    image: "images/premiosnicanor.jpg",
     category: "Actualidad",
     date: "28 de Octubre de 2025, 09:07",
     fullContent: `La segunda edición de los Premios Nicanor Villalta, impulsados por el Gobierno de Aragón, reconoció este lunes a Tomás Rufo, Daniel Luque, Aarón Palacio y Cristiano Torres como protagonistas de la temporada taurina 2025.
