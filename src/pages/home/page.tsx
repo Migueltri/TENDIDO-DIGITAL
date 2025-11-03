@@ -1808,34 +1808,6 @@ return (
   </button>
 </section>
 
-    {/* Flecha izquierda */}
-<button
-  onClick={() =>
-    setCurrentSlide(
-      currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
-    )
-  }
-  className="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 z-20 
-             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-             text-white transition-all duration-300 backdrop-blur-sm 
-             focus:outline-none focus:ring-2 focus:ring-white/70"
->
-  <i className="ri-arrow-left-line text-lg sm:text-2xl"></i>
-</button>
-
-{/* Flecha derecha */}
-<button
-  onClick={() =>
-    setCurrentSlide((currentSlide + 1) % featuredNews.length)
-  }
-  className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 z-20 
-             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-             text-white transition-all duration-300 backdrop-blur-sm 
-             focus:outline-none focus:ring-2 focus:ring-white/70"
->
-  <i className="ri-arrow-right-line text-lg sm:text-2xl"></i>
-</button>
-
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
