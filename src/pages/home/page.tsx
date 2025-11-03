@@ -2131,10 +2131,11 @@ return (
                       <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
                     </button>
                   </div>
-                </div>
               </article>
             ))}
 
+			  </div>
+			
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
             <div className="text-center mt-12">
