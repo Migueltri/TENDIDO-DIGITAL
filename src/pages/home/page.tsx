@@ -2249,7 +2249,6 @@ return (
           </p>
         </div>
 	    </div>  
-       </footer>
 	</div>
   </>
 
@@ -2734,8 +2733,9 @@ TENDIDO DIGITAL
     </div>
   )}
 
-    </footer>
-  </>          
-  );
+    </footer> 
+  </>       
+);
 }
+
 export default Home;
