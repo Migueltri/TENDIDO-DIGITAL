@@ -2113,5 +2113,3 @@ return (
     </>
   );
 }
-
-export default Home;
