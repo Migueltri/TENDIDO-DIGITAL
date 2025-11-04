@@ -2248,9 +2248,8 @@ return (
             © 2025 TENDIDO DIGITAL. Todos los derechos reservados.
           </p>
         </div>
-      </div>
+	    </div>  
        </footer>
-  </div>
   </>
 
 
