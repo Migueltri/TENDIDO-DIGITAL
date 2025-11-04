@@ -2733,6 +2733,7 @@ TENDIDO DIGITAL
     </div>
   )}
 
-</div>
-);
+    </footer>
+  </div>
+  );
 }
