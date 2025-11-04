@@ -2023,19 +2023,47 @@ return (
             </form>
           </div>
 
-          {/* Social Media */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
-            <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-            <div className="grid grid-cols-1 gap-1">
-              <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
-                <i className="ri-instagram-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Instagram</span>
-              </a>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
+         {/* Social Media */}
+<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-xl border border-gray-700">
+  <h3 className="text-2xl font-bold mb-8 text-center tracking-tight">Síguenos</h3>
+  
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    
+    {/* Instagram */}
+    <a 
+      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="bg-gradient-to-br from-pink-600 to-red-500 hover:from-pink-500 hover:to-orange-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 border border-pink-400/30"
+    >
+      <i className="ri-instagram-fill text-3xl mb-2"></i>
+      <span className="text-sm font-medium tracking-wide">Instagram</span>
+    </a>
+
+    {/* Twitter (X) */}
+    <a 
+      href="https://x.com/ptendidodigital?s=21" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-400/30"
+    >
+      <i className="ri-twitter-fill text-3xl mb-2"></i>
+      <span className="text-sm font-medium tracking-wide">Twitter</span>
+    </a>
+
+    {/* TikTok */}
+    <a 
+      href="https://www.tiktok.com/@portaltendidodigital" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/10 border border-gray-500/30"
+    >
+      <i className="ri-tiktok-fill text-3xl mb-2"></i>
+      <span className="text-sm font-medium tracking-wide">TikTok</span>
+    </a>
+
+  </div>
+</div>
 
     {/* Sección de Contacto */}
     <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
