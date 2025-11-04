@@ -2254,7 +2254,6 @@ return (
   );
 }
 
-return (
 <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
 {/* Header */}
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
