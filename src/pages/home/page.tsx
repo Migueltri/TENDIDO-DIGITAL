@@ -319,7 +319,18 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-{ 
+	{ 
+    id: 1000,
+    title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
+    image: "/images/ignacio.jpg",
+	imageCaption: "Foto Plaza 1 ©",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El novillero con picadores Ignacio Candelas y su mentor Juan Manuel Moreno “Trebu” han decidido poner fin a su relación de apoderamiento, que se extendió entre las temporadas 2023 y 2025.
+
+Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
+  }, 
+	{ 
     id: 1000,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
@@ -2029,7 +2040,6 @@ return (
     Síguenos
   </h3>
 
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
     {/* Instagram */}
     <a
       href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
@@ -2041,29 +2051,6 @@ return (
       <span className="text-sm font-medium tracking-wide">Instagram</span>
     </a>
 
-    {/* Twitter (X) */}
-    <a
-      href="https://x.com/ptendidodigital?s=21"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-400/30"
-    >
-      <i className="ri-twitter-fill text-3xl mb-2" />
-      <span className="text-sm font-medium tracking-wide">Twitter</span>
-    </a>
-
-    {/* TikTok */}
-    <a
-      href="https://www.tiktok.com/@portaltendidodigital"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 shadow-lg hover:shadow-white/10 border border-gray-500/30"
-    >
-      <i className="ri-tiktok-fill text-3xl mb-2" />
-      <span className="text-sm font-medium tracking-wide">TikTok</span>
-    </a>
-  </div>
-</div>
 
     {/* Sección de Contacto */}
     <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
