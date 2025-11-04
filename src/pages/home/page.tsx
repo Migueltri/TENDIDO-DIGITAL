@@ -2734,7 +2734,6 @@ TENDIDO DIGITAL
     </div>
   )}
 
-    </footer>
   </div>           
   </>              
 );
