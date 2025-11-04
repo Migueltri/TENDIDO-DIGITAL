@@ -2738,4 +2738,3 @@ TENDIDO DIGITAL
 );
 }
 
-export default Home;
