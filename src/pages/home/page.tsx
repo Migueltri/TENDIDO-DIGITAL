@@ -2893,8 +2893,8 @@ TENDIDO DIGITAL
     </div>
   )}
 
-            </footer>
-    </div>
   </>
 );
 }
+
+export default Home;
