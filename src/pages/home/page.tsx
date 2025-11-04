@@ -321,6 +321,25 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
+    image: "/images/banderillero.jpg",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El banderillero José Luis Barrero afrontará libre la próxima temporada taurina de 2026, tras haber puesto fin a su etapa en las filas del matador Borja Jiménez, con quien ha compartido una gran campaña en 2025.
+
+Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
+  }, 
+	{ 
+    id: 1001,
+    title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
+    image: "/images/feriasanisidro.jpg",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+	excerpt: "Una información adelantada en el programa Buenos Días Madrid de Onda Madrid, presentado por el periodista Javier Mardomingo",
+    fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
+  }, 
+	{ 
+    id: 1002,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -331,7 +350,7 @@ const featuredNews: NewsItem[] = [
 Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
   }, 
 	{ 
-    id: 1000,
+    id: 1003,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
     category: "Actualidad",
@@ -345,7 +364,7 @@ Por su parte, Félix San Román fue proclamado Triunfador del Ciclo tras cortar 
 Asimismo, el premio al Mejor Novillo recayó en “Orca”, número 12, de Polo Saiz, en reconocimiento a su bravura, clase y excelente juego durante la lidia.`
   }, 
 	{ 
-    id: 1001,
+    id: 1004,
     title: "Fallece Rafael de Paula a los 85 años",
     image: "images/rafaeldepaula.jpg",
     category: "Actualidad",
@@ -367,6 +386,36 @@ Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, a
 const latestNews: NewsItem[] = [
   { 
     id: 1,
+    title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
+    image: "/images/banderillero.jpg",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El banderillero José Luis Barrero afrontará libre la próxima temporada taurina de 2026, tras haber puesto fin a su etapa en las filas del matador Borja Jiménez, con quien ha compartido una gran campaña en 2025.
+
+Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
+  }, 
+	{ 
+    id: 2,
+    title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
+    image: "/images/feriasanisidro.jpg",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+	excerpt: "Una información adelantada en el programa Buenos Días Madrid de Onda Madrid, presentado por el periodista Javier Mardomingo",
+    fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
+  }, 
+	{ 
+    id: 3,
+    title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
+    image: "/images/ignacio.jpg",
+	imageCaption: "Foto Plaza 1 ©",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El novillero con picadores Ignacio Candelas y su mentor Juan Manuel Moreno “Trebu” han decidido poner fin a su relación de apoderamiento, que se extendió entre las temporadas 2023 y 2025.
+
+Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
+  }, 
+	{ 
+    id: 4,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
     category: "Actualidad",
