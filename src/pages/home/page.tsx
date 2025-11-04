@@ -2252,7 +2252,6 @@ return (
    </footer>
   </div>
   );
-}
 
 {/* Header */}
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
@@ -2734,6 +2733,6 @@ TENDIDO DIGITAL
     </div>
   )}
 
-</>
+</div>
 );
 }
