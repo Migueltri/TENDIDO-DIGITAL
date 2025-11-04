@@ -1603,9 +1603,9 @@ if (activeTab === 'cronicas') {
       </video>
     ) : (
      <div className="bg-black flex items-center justify-center h-48 md:h-56 overflow-hidden">
-  <img
-    src={news.image}
-    alt={news.title}
+ <img
+  src={chronicle.image}
+  alt={chronicle.title}
     className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105"
   />
 </div>
@@ -2733,9 +2733,7 @@ TENDIDO DIGITAL
     </div>
   )}
 
-     </footer>
-  </div>
-  </>
-);
+      </footer>
+    </div>
+  );
 }
-export default Home;
