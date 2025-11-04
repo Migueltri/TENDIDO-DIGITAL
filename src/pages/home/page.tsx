@@ -2734,6 +2734,5 @@ TENDIDO DIGITAL
   )}
 
   </div>
-  </>
-);
+  );
 }
