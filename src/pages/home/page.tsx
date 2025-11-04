@@ -1696,117 +1696,275 @@ if (activeTab === 'cronicas') {
 // Contenido principal (inicio)
 return (
   <>
-	  
-    {/* Hero Carousel - Pantalla completa sin espacios */}
-<section
-  id="inicio"
-  className="relative w-full h-screen overflow-hidden bg-black"
->
-  {featuredNews.map((news, index) => (
-    <div
-      key={news.id}
-      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-        index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-      }`}
-    >
-      {/* Imagen que ocupa toda la pantalla sin espacios */}
-      <div className="relative w-full h-full">
-        <img
-          src={news.image}
-          alt={news.title}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-        {/* Overlay oscuro para mejor legibilidad del texto */}
-        <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
-      </div>
-
-      {/* Contenido centrado vertical y horizontalmente */}
-      <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-8">
-        <div className="max-w-4xl w-full text-center">
-          <div className="flex items-center justify-center mb-6 space-x-3">
-            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm sm:text-base font-bold shadow-lg">
-              <i className="ri-fire-line mr-2"></i>
-              {news.category}
-            </span>
-            <span className="text-gray-200 text-sm bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm">
-              {formatTimeAgo(news.date)}
+    {/* Header */}
+    <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 md:h-20">
+          <div className="flex items-center group">
+            <div className="relative">
+              <img src="images/tendidodigitallogosimple.jpg" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
+              <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            </div>
+            <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+              TENDIDO DIGITAL
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
-            {news.title}
-          </h1>
-
-          {news.excerpt && (
-            <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
-              {news.excerpt}
-            </p>
-          )}
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-            <button
-              onClick={() => openNewsModal(news)}
-              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-2xl cursor-pointer text-base sm:text-lg transform hover:scale-105"
+          {/* Navigation */}
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
             >
-              Leer noticia completa
+              Inicio
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
             </button>
-            <button
-              onClick={() => scrollToSection('actualidad')}
-              className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 border border-white/30 cursor-pointer text-base sm:text-lg transform hover:scale-105"
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
             >
-              Ver más noticias
+              Todas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Actualidad
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Crónicas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Entrevistas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Opinión
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Contacto
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+          </nav>
+
+          <button 
+            className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Abrir menú"
+          >
+            <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Todas
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Actualidad
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Crónicas
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Entrevistas
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Opinión
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Contacto
             </button>
           </div>
         </div>
+      )}
+    </header>
+
+    {/* Contenido principal */}
+    {renderContent()}
+	  
+    {/* Hero Carousel - Pantalla completa sin espacios */}
+    <section
+      id="inicio"
+      className="relative w-full h-screen overflow-hidden bg-black"
+    >
+      {featuredNews.map((news, index) => (
+        <div
+          key={news.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        >
+          {/* Imagen que ocupa toda la pantalla sin espacios */}
+          <div className="relative w-full h-full">
+            <img
+              src={news.image}
+              alt={news.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            {/* Overlay oscuro para mejor legibilidad del texto */}
+            <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
+          </div>
+
+          {/* Contenido centrado vertical y horizontalmente */}
+          <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-8">
+            <div className="max-w-4xl w-full text-center">
+              <div className="flex items-center justify-center mb-6 space-x-3">
+                <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm sm:text-base font-bold shadow-lg">
+                  <i className="ri-fire-line mr-2"></i>
+                  {news.category}
+                </span>
+                <span className="text-gray-200 text-sm bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm">
+                  {formatTimeAgo(news.date)}
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
+                {news.title}
+              </h1>
+
+              {news.excerpt && (
+                <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
+                  {news.excerpt}
+                </p>
+              )}
+
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <button
+                  onClick={() => openNewsModal(news)}
+                  className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-2xl cursor-pointer text-base sm:text-lg transform hover:scale-105"
+                >
+                  Leer noticia completa
+                </button>
+                <button
+                  onClick={() => scrollToSection('actualidad')}
+                  className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 border border-white/30 cursor-pointer text-base sm:text-lg transform hover:scale-105"
+                >
+                  Ver más noticias
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+
+      {/* Indicadores del carousel - Solo puntos */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
+        {featuredNews.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? "bg-white scale-125 shadow-lg"
+                : "bg-white/50 hover:bg-white/80"
+            }`}
+          />
+        ))}
       </div>
-    </div>
-  ))}
 
-  {/* Indicadores del carousel - Solo puntos */}
-  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
-    {featuredNews.map((_, index) => (
+      {/* Flechas de navegación - Solo estas */}
       <button
-        key={index}
-        onClick={() => setCurrentSlide(index)}
-        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-          index === currentSlide
-            ? "bg-white scale-125 shadow-lg"
-            : "bg-white/50 hover:bg-white/80"
-        }`}
-      />
-    ))}
-  </div>
+        onClick={() =>
+          setCurrentSlide(
+            currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+          )
+        }
+        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 
+                   p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+                   text-white transition-all duration-300 backdrop-blur-sm 
+                   focus:outline-none focus:ring-2 focus:ring-white/70"
+        aria-label="Imagen anterior"
+      >
+        <i className="ri-arrow-left-line text-xl sm:text-2xl"></i>
+      </button>
 
-  {/* Flechas de navegación - Solo estas */}
-  <button
-    onClick={() =>
-      setCurrentSlide(
-        currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
-      )
-    }
-    className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 
-               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-               text-white transition-all duration-300 backdrop-blur-sm 
-               focus:outline-none focus:ring-2 focus:ring-white/70"
-    aria-label="Imagen anterior"
-  >
-    <i className="ri-arrow-left-line text-xl sm:text-2xl"></i>
-  </button>
-
-  <button
-    onClick={() =>
-      setCurrentSlide((currentSlide + 1) % featuredNews.length)
-    }
-    className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 
-               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-               text-white transition-all duration-300 backdrop-blur-sm 
-               focus:outline-none focus:ring-2 focus:ring-white/70"
-    aria-label="Imagen siguiente"
-  >
-    <i className="ri-arrow-right-line text-xl sm:text-2xl"></i>
-  </button>
-</section>
+      <button
+        onClick={() =>
+          setCurrentSlide((currentSlide + 1) % featuredNews.length)
+        }
+        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 
+                   p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+                   text-white transition-all duration-300 backdrop-blur-sm 
+                   focus:outline-none focus:ring-2 focus:ring-white/70"
+        aria-label="Imagen siguiente"
+      >
+        <i className="ri-arrow-right-line text-xl sm:text-2xl"></i>
+      </button>
+    </section>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -1833,16 +1991,16 @@ return (
               >
                 Todas
               </button>
-<button 
-  onClick={() => setNewsFilter('actualidad')}
-  className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-    newsFilter === 'actualidad' 
-      ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-      : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-  }`}
->
-  Actualidad
-</button>
+              <button 
+                onClick={() => setNewsFilter('actualidad')}
+                className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
+                  newsFilter === 'actualidad' 
+                    ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
+                    : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
+                }`}
+              >
+                Actualidad
+              </button>
               <button 
                 onClick={() => setNewsFilter('cronicas')}
                 className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
@@ -1853,16 +2011,16 @@ return (
               >
                 Crónicas
               </button>
-                <button 
-    onClick={() => setNewsFilter('entrevistas')}
-    className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
-      newsFilter === 'entrevistas' 
-        ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
-        : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
-    }`}
-  >
-    Entrevistas
-  </button>
+              <button 
+                onClick={() => setNewsFilter('entrevistas')}
+                className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
+                  newsFilter === 'entrevistas' 
+                    ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' 
+                    : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'
+                }`}
+              >
+                Entrevistas
+              </button>
               <button 
                 onClick={() => setNewsFilter('opinion')}
                 className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${
@@ -1897,11 +2055,12 @@ return (
                     </span>
                   </div>
                 </div>
-<div className="flex items-center text-gray-500 text-sm space-x-2">
-  <span>{formatExactDate(news.date)}</span>
-  <span>•</span>
-  <span>{formatTimeAgo(news.date)}</span>
-</div>
+                <div className="p-6">
+                  <div className="flex items-center text-gray-500 text-sm space-x-2 mb-4">
+                    <span>{formatExactDate(news.date)}</span>
+                    <span>•</span>
+                    <span>{formatTimeAgo(news.date)}</span>
+                  </div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
                     {news.title}
                   </h3>
@@ -1935,10 +2094,10 @@ return (
                       <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
                     </button>
                   </div>
+                </div>
               </article>
             ))}
-
-			  </div>
+          </div>
 			
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
@@ -2032,46 +2191,48 @@ return (
           </div>
 
           {/* Social Media */}
-<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-xl border border-gray-700">
-  <h3 className="text-2xl font-bold mb-8 text-center tracking-tight">Síguenos</h3>
-  
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    
-    {/* Instagram */}
-    <a 
-      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-pink-600 to-red-500 hover:from-pink-500 hover:to-orange-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 border border-pink-400/30"
-    >
-      <i className="ri-instagram-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">Instagram</span>
-    </a>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-xl border border-gray-700">
+            <h3 className="text-2xl font-bold mb-8 text-center tracking-tight">Síguenos</h3>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gradient-to-br from-pink-600 to-red-500 hover:from-pink-500 hover:to-orange-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 border border-pink-400/30"
+              >
+                <i className="ri-instagram-fill text-3xl mb-2"></i>
+                <span className="text-sm font-medium tracking-wide">Instagram</span>
+              </a>
 
-    {/* Twitter (X) */}
-    <a 
-      href="https://x.com/ptendidodigital?s=21" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-400/30"
-    >
-      <i className="ri-twitter-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">Twitter</span>
-    </a>
+              {/* Twitter (X) */}
+              <a 
+                href="https://x.com/ptendidodigital?s=21" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-400/30"
+              >
+                <i className="ri-twitter-fill text-3xl mb-2"></i>
+                <span className="text-sm font-medium tracking-wide">Twitter</span>
+              </a>
 
-    {/* TikTok */}
-    <a 
-      href="https://www.tiktok.com/@portaltendidodigital" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/10 border border-gray-500/30"
-    >
-      <i className="ri-tiktok-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">TikTok</span>
-    </a>
-
-  </div>
-</div>
+              {/* TikTok */}
+              <a 
+                href="https://www.tiktok.com/@portaltendidodigital" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/10 border border-gray-500/30"
+              >
+                <i className="ri-tiktok-fill text-3xl mb-2"></i>
+                <span className="text-sm font-medium tracking-wide">TikTok</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     {/* Sección de Contacto */}
     <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
@@ -2249,9 +2410,8 @@ return (
           </p>
         </div>
       </div>
-   </footer>
-  </div>
-  );
+    </footer>
+
 
 {/* Header */}
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
