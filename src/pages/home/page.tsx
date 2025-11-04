@@ -2039,9 +2039,13 @@ return (
                 <i className="ri-instagram-fill text-2xl mb-2 block"></i>
                 <span className="text-sm font-medium">Instagram</span>
               </a>
-			   <a href="https://x.com/ptendidodigital?s=21" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20">
+			   <a href="https://x.com/ptendidodigital?s=21" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20">
                 <i className="ri-twitter-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Instagram</span>
+                <span className="text-sm font-medium">Twitter</span>
+              </a>
+			  <a href="https://www.tiktok.com/@portaltendidodigital" target="_blank" rel="noopener noreferrer" className="bg-black-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-black-500/20">
+                <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
+                <span className="text-sm font-medium">TikTok</span>
               </a>
            </div>
           </div>
