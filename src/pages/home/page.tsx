@@ -2734,10 +2734,10 @@ TENDIDO DIGITAL
     </div>
   )}
 
-            </footer>
-    </div>
-  </>
-);
-}
-
+    </footer>
+  </div>              {/* cierre del contenedor principal */}
+</>                   {/* cierra el fragmento abierto al principio del return */}
+);                    {/* cierra el return */}
+}                     {/* cierra la función */}
+export default Home;   // EXPORTACIÓN FINAL
 
