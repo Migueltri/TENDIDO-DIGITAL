@@ -2734,9 +2734,10 @@ TENDIDO DIGITAL
     </div>
   )}
 
-        </footer> {/* cierre del footer principal */}
-  </>          {/* Cierra el fragmento abierto en return (solo si abriste <>) */}
-);              // Cierra el return del componente
+    </footer>
+  </div>           
+  </>              
+);
+}
 
-}               // Cierra la función Home
 export default Home;
