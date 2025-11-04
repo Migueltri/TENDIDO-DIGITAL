@@ -321,6 +321,32 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: "Tomás González, una temporada de crecimiento y firmeza en 2025",
+    image: "/images/tomasgonzalez2.jpg",
+	imageCaption: "Tomás González en Yunquera de Henares",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El novillero Tomás González ha completado en 2025 una temporada que marca un punto de inflexión en su trayectoria. Con 21 novilladas toreadas, el joven alcorisano ha demostrado regularidad, capacidad y un concepto de toreo muy definido, que ha llamado la atención tanto de la afición como de los profesionales.
+
+A mitad de temporada, el novillero  sufrió una cornada en Marchamalo que le provocó un neumotórax y lo obligó a detener su ritmo. Sin embargo, su vuelta a los ruedos mostró a un torero más firme , evidenciando que la experiencia lo fortaleció en su toreo. 
+
+Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó una actuaciones de peso. 
+
+La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
+  }, 
+	{ 
+    id: 1001,
+    title: "Diego Urdiales y Luis Miguel Villalpando terminan su relación de apoderamiento",
+    image: "/images/dos.jpg",
+	imageCaption: "Diego Urdiales en Zaragoza",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El matador de toros Diego Urdiales y su apoderado Luis Miguel Villalpando han decidido dar por concluida su relación de apoderamiento tras varias temporadas de colaboración. Ambas partes han expresado agradecimiento y respeto mutuo, destacando el trabajo realizado y los objetivos alcanzados durante este tiempo.
+
+La ruptura, según se ha señalado, se produce de manera amistosa y responde a la evolución natural de sus respectivas trayectorias. Urdiales, referente del toreo clásico, afronta ahora una nueva etapa en la gestión de su carrera, mientras Villalpando continuará con sus proyectos en el ámbito taurino.`
+  }, 
+	{ 
+    id: 1002,
     title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
     image: "/images/banderillero.jpg",
     category: "Actualidad",
@@ -330,7 +356,7 @@ const featuredNews: NewsItem[] = [
 Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
   }, 
 	{ 
-    id: 1001,
+    id: 1003,
     title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
     image: "/images/feriasanisidro.jpg",
     category: "Actualidad",
@@ -339,7 +365,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
   }, 
 	{ 
-    id: 1002,
+    id: 1004,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -348,44 +374,38 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `El novillero con picadores Ignacio Candelas y su mentor Juan Manuel Moreno “Trebu” han decidido poner fin a su relación de apoderamiento, que se extendió entre las temporadas 2023 y 2025.
 
 Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
-  }, 
-	{ 
-    id: 1003,
-    title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
-    image: "/images/varios3.jpg",
-    category: "Actualidad",
-    date: "3 de noviembre de 2025",
-    fullContent: `El ganadero Polo Saiz y los novilleros Félix San Román y Joel Ramírez recibieron el pasado viernes los galardones que los distinguen como triunfadores del ciclo taurino celebrado en Trillo a lo largo de 2025. El acto, que contó con un interesante coloquio moderado por la periodista Vanesa Santos, estuvo presidido por el concejal de Festejos del Ayuntamiento de Trillo, Sergio Recuero, encargado de entregar los premios.
-
-El novillero Joel Ramírez fue distinguido con el trofeo a la Mejor Faena por su brillante labor frente al novillo “Orca”, de la ganadería Polo Saiz, al que cortó los máximos trofeos.
-
-Por su parte, Félix San Román fue proclamado Triunfador del Ciclo tras cortar un total de cuatro orejas a ejemplares de Polo Saiz y Hermanos Cambronell, rubricando así una destacada actuación.
-
-Asimismo, el premio al Mejor Novillo recayó en “Orca”, número 12, de Polo Saiz, en reconocimiento a su bravura, clase y excelente juego durante la lidia.`
-  }, 
-	{ 
-    id: 1004,
-    title: "Fallece Rafael de Paula a los 85 años",
-    image: "images/rafaeldepaula.jpg",
-    category: "Actualidad",
-    date: "2 de noviembre de 2025",
-    fullContent: `El maestro jerezano Rafael Soto Moreno, conocido universalmente como Rafael de Paula, ha fallecido a los 85 años de edad. Nacido en el Barrio de Santiago de Jerez de la Frontera el 11 de febrero de 1940, el torero se convirtió en una de las figuras más carismáticas y singulares de la historia del toreo. Su arte, elegancia y personalidad le granjearon un lugar de culto entre varias generaciones de aficionados.
-
-Rafael de Paula debutó en público en Ronda, en mayo de 1957, en una plaza que años más tarde volvería a marcar su trayectoria. En ese mismo coso rondeño tomó la alternativa en 1960, de manos de Julio Robles y con Antonio Ordóñez como testigo. Su confirmación en Las Ventas llegó en mayo de 1974, con José Luis Galloso como padrino y el toro Andadoso, de José Luis Osborne, como testigo de aquella tarde.
-
-Su carrera, marcada por los altibajos y por una relación casi mística con el arte, trascendió las estadísticas y las orejas. Paula fue, por encima de todo, un símbolo de pureza y autenticidad, un torero que hizo del temple y la hondura una forma de expresión.
-
-Su despedida de los ruedos tuvo lugar el 18 de mayo del año 2000, en su querida Jerez, en una corrida cargada de emoción en la que, fiel a su esencia, no llegó a matar a sus toros y se cortó la coleta entre lágrimas y ovaciones. Fue su adiós a los ruedos, pero no al mito.
-
-En 2002, el Ministerio de Cultura le concedió la Medalla de Oro al Mérito en las Bellas Artes, en reconocimiento a su excepcional aportación a la cultura española y a la tauromaquia.
-
-Desde Tendido Digital, enviamos nuestro más sentido pésame a sus familiares, amigos y aficionados por la pérdida de un torero irrepetible. Se va un mito, pero su arte quedará para siempre en la memoria del toreo.`
   }
 ];
 
 const latestNews: NewsItem[] = [
   { 
     id: 1,
+    title: "Tomás González, una temporada de crecimiento y firmeza en 2025",
+    image: "/images/tomasgonzalez2.jpg",
+	imageCaption: "Tomás González en Yunquera de Henares",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El novillero Tomás González ha completado en 2025 una temporada que marca un punto de inflexión en su trayectoria. Con 21 novilladas toreadas, el joven alcorisano ha demostrado regularidad, capacidad y un concepto de toreo muy definido, que ha llamado la atención tanto de la afición como de los profesionales.
+
+A mitad de temporada, el novillero  sufrió una cornada en Marchamalo que le provocó un neumotórax y lo obligó a detener su ritmo. Sin embargo, su vuelta a los ruedos mostró a un torero más firme , evidenciando que la experiencia lo fortaleció en su toreo. 
+
+Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó una actuaciones de peso. 
+
+La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
+  }, 
+	{ 
+    id: 2,
+    title: "Diego Urdiales y Luis Miguel Villalpando terminan su relación de apoderamiento",
+    image: "/images/dos.jpg",
+	imageCaption: "Diego Urdiales en Zaragoza",
+    category: "Actualidad",
+    date: "4 de noviembre de 2025",
+    fullContent: `El matador de toros Diego Urdiales y su apoderado Luis Miguel Villalpando han decidido dar por concluida su relación de apoderamiento tras varias temporadas de colaboración. Ambas partes han expresado agradecimiento y respeto mutuo, destacando el trabajo realizado y los objetivos alcanzados durante este tiempo.
+
+La ruptura, según se ha señalado, se produce de manera amistosa y responde a la evolución natural de sus respectivas trayectorias. Urdiales, referente del toreo clásico, afronta ahora una nueva etapa en la gestión de su carrera, mientras Villalpando continuará con sus proyectos en el ámbito taurino.`
+  },
+	{ 
+    id: 3,
     title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
     image: "/images/banderillero.jpg",
     category: "Actualidad",
@@ -395,7 +415,7 @@ const latestNews: NewsItem[] = [
 Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
   }, 
 	{ 
-    id: 2,
+    id: 4,
     title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
     image: "/images/feriasanisidro.jpg",
     category: "Actualidad",
@@ -404,7 +424,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
   }, 
 	{ 
-    id: 3,
+    id: 5,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -415,7 +435,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
 Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
   }, 
 	{ 
-    id: 4,
+    id: 6,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
     category: "Actualidad",
