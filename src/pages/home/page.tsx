@@ -2113,3 +2113,5 @@ return (
     </>
   );
 }
+
+export default Home;
