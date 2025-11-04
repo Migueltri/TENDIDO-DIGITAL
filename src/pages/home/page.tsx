@@ -2114,4 +2114,4 @@ return (
   );
 }
 
-export { useState, useEffect } from 'react';
+export default Home;
