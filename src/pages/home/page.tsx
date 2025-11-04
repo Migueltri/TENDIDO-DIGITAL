@@ -1697,116 +1697,108 @@ if (activeTab === 'cronicas') {
 return (
   <>
 	  
-    {/* Hero Carousel - Pantalla completa sin espacios */}
-<section
-  id="inicio"
-  className="relative w-full h-screen overflow-hidden bg-black"
->
-  {featuredNews.map((news, index) => (
-    <div
-      key={news.id}
-      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-        index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-      }`}
+    {/* Hero Carousel */}
+    <section
+      id="inicio"
+      className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
     >
-      {/* Imagen que ocupa toda la pantalla sin espacios */}
-      <div className="relative w-full h-full">
-        <img
-          src={news.image}
-          alt={news.title}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-        {/* Overlay oscuro para mejor legibilidad del texto */}
-        <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
-      </div>
+      {featuredNews.map((news, index) => (
+        <div
+          key={news.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        >
+<img
+  src={news.image}
+  alt={news.title}
+  className="absolute inset-0 w-full h-full object-cover"
+  loading="lazy"
+/>
 
-      {/* Contenido centrado vertical y horizontalmente */}
-      <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-8">
-        <div className="max-w-4xl w-full text-center">
-          <div className="flex items-center justify-center mb-6 space-x-3">
-            <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm sm:text-base font-bold shadow-lg">
-              <i className="ri-fire-line mr-2"></i>
-              {news.category}
-            </span>
-            <span className="text-gray-200 text-sm bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm">
-              {formatTimeAgo(news.date)}
-            </span>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
-            {news.title}
-          </h1>
+          <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
+            <div className="max-w-3xl">
+              <div className="flex items-center justify-center mb-4 space-x-3">
+                <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+                  <i className="ri-fire-line mr-2"></i>
+                  {news.category}
+                </span>
+                <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
+              </div>
 
-          {news.excerpt && (
-            <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
-              {news.excerpt}
-            </p>
-          )}
+             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
+             {news.title}
+             </h1>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-            <button
-              onClick={() => openNewsModal(news)}
-              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-2xl cursor-pointer text-base sm:text-lg transform hover:scale-105"
-            >
-              Leer noticia completa
-            </button>
-            <button
-              onClick={() => scrollToSection('actualidad')}
-              className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold hover:bg-white/30 transition-all duration-300 border border-white/30 cursor-pointer text-base sm:text-lg transform hover:scale-105"
-            >
-              Ver más noticias
-            </button>
+              {news.excerpt && (
+                <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
+                  {news.excerpt}
+                </p>
+              )}
+
+              <div className="flex flex-wrap justify-center gap-4 mt-4">
+                <button
+                  onClick={() => openNewsModal(news)}
+                  className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
+                >
+                  Leer noticia completa
+                </button>
+                <button
+                  onClick={() => scrollToSection('actualidad')}
+                  className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
+                >
+                  Ver más noticias
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+      ))}
+
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
+        {featuredNews.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? "bg-white scale-125 shadow-lg"
+                : "bg-white/50 hover:bg-white/80"
+            }`}
+          />
+        ))}
       </div>
-    </div>
-  ))}
+    </section>
 
-  {/* Indicadores del carousel - Solo puntos */}
-  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
-    {featuredNews.map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrentSlide(index)}
-        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-          index === currentSlide
-            ? "bg-white scale-125 shadow-lg"
-            : "bg-white/50 hover:bg-white/80"
-        }`}
-      />
-    ))}
-  </div>
+    {/* Flecha izquierda */}
+<button
+  onClick={() =>
+    setCurrentSlide(
+      currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
+    )
+  }
+  className="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 z-20 
+             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+             text-white transition-all duration-300 backdrop-blur-sm 
+             focus:outline-none focus:ring-2 focus:ring-white/70"
+>
+  <i className="ri-arrow-left-line text-lg sm:text-2xl"></i>
+</button>
 
-  {/* Flechas de navegación - Solo estas */}
-  <button
-    onClick={() =>
-      setCurrentSlide(
-        currentSlide === 0 ? featuredNews.length - 1 : currentSlide - 1
-      )
-    }
-    className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 
-               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-               text-white transition-all duration-300 backdrop-blur-sm 
-               focus:outline-none focus:ring-2 focus:ring-white/70"
-    aria-label="Imagen anterior"
-  >
-    <i className="ri-arrow-left-line text-xl sm:text-2xl"></i>
-  </button>
-
-  <button
-    onClick={() =>
-      setCurrentSlide((currentSlide + 1) % featuredNews.length)
-    }
-    className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 
-               p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
-               text-white transition-all duration-300 backdrop-blur-sm 
-               focus:outline-none focus:ring-2 focus:ring-white/70"
-    aria-label="Imagen siguiente"
-  >
-    <i className="ri-arrow-right-line text-xl sm:text-2xl"></i>
-  </button>
-</section>
+{/* Flecha derecha */}
+<button
+  onClick={() =>
+    setCurrentSlide((currentSlide + 1) % featuredNews.length)
+  }
+  className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 z-20 
+             p-3 sm:p-4 rounded-full bg-black/40 hover:bg-black/70 
+             text-white transition-all duration-300 backdrop-blur-sm 
+             focus:outline-none focus:ring-2 focus:ring-white/70"
+>
+  <i className="ri-arrow-right-line text-lg sm:text-2xl"></i>
+</button>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -2032,46 +2024,18 @@ return (
           </div>
 
           {/* Social Media */}
-<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-xl border border-gray-700">
-  <h3 className="text-2xl font-bold mb-8 text-center tracking-tight">Síguenos</h3>
-  
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    
-    {/* Instagram */}
-    <a 
-      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-pink-600 to-red-500 hover:from-pink-500 hover:to-orange-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 border border-pink-400/30"
-    >
-      <i className="ri-instagram-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">Instagram</span>
-    </a>
-
-    {/* Twitter (X) */}
-    <a 
-      href="https://x.com/ptendidodigital?s=21" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 border border-blue-400/30"
-    >
-      <i className="ri-twitter-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">Twitter</span>
-    </a>
-
-    {/* TikTok */}
-    <a 
-      href="https://www.tiktok.com/@portaltendidodigital" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 p-6 rounded-2xl flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/10 border border-gray-500/30"
-    >
-      <i className="ri-tiktok-fill text-3xl mb-2"></i>
-      <span className="text-sm font-medium tracking-wide">TikTok</span>
-    </a>
-
-  </div>
-</div>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
+            <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
+            <div className="grid grid-cols-1 gap-1">
+              <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
+                <i className="ri-instagram-fill text-2xl mb-2 block"></i>
+                <span className="text-sm font-medium">Instagram</span>
+              </a>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     {/* Sección de Contacto */}
     <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
@@ -2248,12 +2212,14 @@ return (
             © 2025 TENDIDO DIGITAL. Todos los derechos reservados.
           </p>
         </div>
-	    </div>  
-	<footer/>
-	</div>
+      </div>
+   </footer>
   </>
+  );
+}
 
-
+return (
+<div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
 {/* Header */}
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2413,7 +2379,7 @@ TENDIDO DIGITAL
   {/* Contenido principal */}
   {renderContent()}
 
- {/* Modal de Noticia - Pantalla Completa */}
+  {/* Modal de Noticia - Pantalla Completa */}
 {isNewsModalOpen && selectedNews && (
   <div
     className="fixed inset-0 bg-black z-50"
@@ -2422,6 +2388,198 @@ TENDIDO DIGITAL
       overscrollBehavior: "contain",
     }}
   >
+    {/* Header del modal - FIXED */}
+    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img 
+              src="/images/tendidodigitallogosimple.jpg" 
+              alt="Tendido Digital" 
+              className="h-8 w-auto"
+            />
+            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
+            </span>
+          </div>
+          <button
+            onClick={closeNewsModal}
+            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+            aria-label="Cerrar modal"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Contenido scrollable - APLICAR ESTILOS AQUÍ */}
+    <div 
+      className="pt-16 pb-8 h-full overflow-y-auto"
+      style={{
+        overflowY: "auto",
+        overflowX: "hidden",
+        height: "100vh",
+        WebkitOverflowScrolling: "touch",
+        paddingTop: "64px", // altura del header fixed
+        paddingBottom: "32px"
+      }}
+    >
+      <div className="bg-white min-h-full">
+        {/* Imagen principal */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="flex flex-col items-center pt-8">
+            <img
+              src={selectedNews.image}
+              alt={selectedNews.title}
+              className="w-full h-auto rounded-md"
+            />
+            {selectedNews.imageCaption && (
+              <p className="text-gray-500 text-xs italic text-right w-full mt-1">
+                {selectedNews.imageCaption}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Contenido del artículo */}
+        <div className="bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="flex items-center mb-6">
+              <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
+              {selectedNews.author && (
+                <>
+                  <span className="mx-2 text-gray-300">•</span>
+                  <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
+                </>
+              )}
+            </div>
+            
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">{selectedNews.title}</h1>
+            
+            <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
+            
+            <div className="prose prose-xl max-w-none">
+              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+                {selectedNews.fullContent
+                  ?.split("\n\n")
+                  .map((paragraph, i) => (
+                    <p
+                      key={i}
+                      className="whitespace-pre-line"
+                      dangerouslySetInnerHTML={{
+  					  __html: paragraph
+   					  .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
+  					  .trim(),
+					}}
+                    />
+                  ))}
+              </div>
+            </div>
+
+            {/* Acciones del artículo */}
+            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
+              <div className="flex items-center space-x-6">
+                {'id' in selectedNews && (
+                  <button 
+                    onClick={() => toggleSave(selectedNews.id)}
+                    className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+                      savedPosts.has(selectedNews.id) 
+                        ? 'text-yellow-600 bg-yellow-50' 
+                        : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
+                    }`}
+                    aria-label={savedPosts.has(selectedNews.id) ? 'Quitar de guardados' : 'Guardar noticia'}
+                  >
+                    <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
+                    <span className="font-medium">{savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}</span>
+                  </button>
+                )}
+                
+                <button 
+                  onClick={() => openShareModal(selectedNews)}
+                  className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+                  aria-label="Compartir noticia"
+                >
+                  <i className="ri-share-line text-xl"></i>
+                  <span className="font-medium">Compartir</span>
+                </button>
+              </div>
+              <button
+                onClick={closeNewsModal}
+                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+              >
+                Volver a noticias
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+ {/* Modal de Crónica - Pantalla Completa */}
+{isChronicleModalOpen && selectedChronicle && (
+  <div
+    className="fixed inset-0 bg-black z-50"
+    style={{
+      touchAction: "none",
+      overscrollBehavior: "contain",
+    }}
+  >
+    {/* Header fixed */}
+    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img 
+              src="/images/tendidodigitallogosimple.jpg" 
+              alt="Tendido Digital" 
+              className="h-8 w-auto"
+            />
+            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
+            </span>
+          </div>
+          <button
+            onClick={closeChronicleModal}
+            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+            aria-label="Cerrar modal"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Contenido scrollable */}
+    <div 
+      className="pt-16 pb-8 h-full overflow-y-auto"
+      style={{
+        overflowY: "auto",
+        overflowX: "hidden",
+        height: "100vh",
+        WebkitOverflowScrolling: "touch",
+        paddingTop: "64px",
+        paddingBottom: "32px"
+      }}
+    >
+      <div className="bg-white min-h-full">
+        {/* Imagen principal */}
+        <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
+          <img
+            src={selectedChronicle.image}
+            alt={selectedChronicle.title}
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div className="absolute bottom-8 left-8">
+            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
+              LA RESEÑA
+            </span>
+          </div>
+        </div>
+
         {/* Contenido de la crónica */}
         <div className="bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -2535,9 +2693,6 @@ TENDIDO DIGITAL
     </div>
   )}
 
-    </footer> 
-  </>       
+</div>
 );
 }
-
-export default Home;
