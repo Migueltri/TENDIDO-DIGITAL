@@ -2104,18 +2104,23 @@ return (
           </div>
 
 {/* Social Media */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
-            <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-            <div className="grid grid-cols-1 gap-1">
-              <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
-                <i className="ri-instagram-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Instagram</span>
-              </a>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
+  <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
+  <div className="grid grid-cols-1 gap-1">
+    <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
+      <i className="ri-instagram-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">Instagram</span>
+    </a>
+    <a href="https://www.tiktok.com/@portaltendidodigital" target="_blank" rel="noopener noreferrer" className="bg-black hover:bg-gray-900 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-gray-600">
+      <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">TikTok</span>
+    </a>
+    <a href="https://x.com/ptendidodigital?s=21" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-sky-400/20">
+      <i className="ri-twitter-x-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">Twitter</span>
+    </a>
+  </div>
+</div>
 
 
     {/* Sección de Contacto */}
@@ -2238,15 +2243,17 @@ return (
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
               Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con rigor periodístico y pasión por la tradición.
             </p>
-            <div className="flex space-x-4">
-              {[
-                { icon: 'ri-instagram-fill', color: 'hover:text-pink-400', url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==' }
-              ].map((social, index) => (
-                <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}>
-                  <i className={`${social.icon} text-2xl`}></i>
-                </a>
-              ))}
-            </div>
+<div className="flex space-x-4">
+  {[
+    { icon: 'ri-instagram-fill', color: 'hover:text-pink-400', url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==' },
+    { icon: 'ri-tiktok-fill', color: 'hover:text-gray-300', url: 'https://www.tiktok.com/@portaltendidodigital' },
+    { icon: 'ri-twitter-x-fill', color: 'hover:text-sky-400', url: 'https://x.com/ptendidodigital?s=21' }
+  ].map((social, index) => (
+    <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}>
+      <i className={`${social.icon} text-2xl`}></i>
+    </a>
+  ))}
+</div>
           </div>
           
           <div>
