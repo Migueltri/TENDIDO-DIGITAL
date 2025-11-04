@@ -1265,20 +1265,6 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
-  {
-    id: 400,
-    title: "",
-    plaza: "",
-    date: "",
-    toreros: ["", "", ""],
-    ganaderia: "",
-    resultado: ["", "", ""],
-    image: "",
-    video: "",
-    detalles: ``,
-    fullContent: "",
-    excerpt: ""
-  }
 ];
 
   // Entrevistas taurinas
@@ -2307,480 +2293,479 @@ return (
 }
 		  
 return (		  
-<div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-{/* Header */}
-<header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div className="flex justify-between items-center h-16 md:h-20">
-<div className="flex items-center group">
-<div className="relative">
-<img src="images/tendidodigitallogosimple.jpg" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
-<div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-</div>
-<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
-TENDIDO DIGITAL
-</span>
-</div>
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
+    {/* Header */}
+    <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 md:h-20">
+          <div className="flex items-center group">
+            <div className="relative">
+              <img src="/images/tendidodigitallogosimple.jpg" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
+              <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            </div>
+            <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+              TENDIDO DIGITAL
+            </span>
+          </div>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex space-x-4 lg:space-x-8">
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Inicio
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Todas
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Actualidad
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-            onClick={() => setActiveTab('cronicas')} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Crónicas
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-  onClick={() => setActiveTab('entrevistas')} 
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Entrevistas
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Opinión
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Contacto
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-        </nav>
+          {/* Navigation */}
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Inicio
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Todas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Actualidad
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Crónicas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Entrevistas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Opinión
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Contacto
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+          </nav>
 
-        <button 
-          className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Abrir menú"
-        >
-          <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
-        </button>
+          <button 
+            className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Abrir menú"
+          >
+            <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
+          </button>
+        </div>
       </div>
-    </div>
 
-    {/* Mobile menu */}
-    {isMenuOpen && (
-      <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
-        <div className="px-4 pt-4 pb-6 space-y-2">
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Todas
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Actualidad
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Crónicas
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Entrevistas
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Opinión
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Contacto
+            </button>
+          </div>
+        </div>
+      )}
+    </header>
+
+    {/* Contenido principal */}
+    {renderContent()}
+
+    {/* Modal de Noticia - Pantalla Completa */}
+    {isNewsModalOpen && selectedNews && (
+      <div
+        className="fixed inset-0 bg-black z-50"
+        style={{
+          touchAction: "none",
+          overscrollBehavior: "contain",
+        }}
+      >
+        {/* Header del modal - FIXED */}
+        <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <img 
+                  src="/images/tendidodigitallogosimple.jpg" 
+                  alt="Tendido Digital" 
+                  className="h-8 w-auto"
+                />
+                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+                  TENDIDO DIGITAL
+                </span>
+              </div>
+              <button
+                onClick={closeNewsModal}
+                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+                aria-label="Cerrar modal"
+              >
+                <i className="ri-close-line text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Contenido scrollable */}
+        <div 
+          className="pt-16 pb-8 h-full overflow-y-auto"
+          style={{
+            overflowY: "auto",
+            overflowX: "hidden",
+            height: "100vh",
+            WebkitOverflowScrolling: "touch",
+            paddingTop: "64px",
+            paddingBottom: "32px"
+          }}
+        >
+          <div className="bg-white min-h-full">
+            {/* Imagen principal */}
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+              <div className="flex flex-col items-center pt-8">
+                <img
+                  src={selectedNews.image}
+                  alt={selectedNews.title}
+                  className="w-full h-auto rounded-md"
+                />
+                {selectedNews.imageCaption && (
+                  <p className="text-gray-500 text-xs italic text-right w-full mt-1">
+                    {selectedNews.imageCaption}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Contenido del artículo */}
+            <div className="bg-white">
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className="flex items-center mb-6">
+                  <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
+                  {selectedNews.author && (
+                    <>
+                      <span className="mx-2 text-gray-300">•</span>
+                      <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
+                    </>
+                  )}
+                </div>
+                
+                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">{selectedNews.title}</h1>
+                
+                <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
+                
+                <div className="prose prose-xl max-w-none">
+                  <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+                    {selectedNews.fullContent
+                      ?.split("\n\n")
+                      .map((paragraph, i) => (
+                        <p
+                          key={i}
+                          className="whitespace-pre-line"
+                          dangerouslySetInnerHTML={{
+                            __html: paragraph
+                              .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
+                              .trim(),
+                          }}
+                        />
+                      ))}
+                  </div>
+                </div>
+
+                {/* Acciones del artículo */}
+                <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
+                  <div className="flex items-center space-x-6">
+                    {'id' in selectedNews && (
+                      <button 
+                        onClick={() => toggleSave(selectedNews.id)}
+                        className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+                          savedPosts.has(selectedNews.id) 
+                            ? 'text-yellow-600 bg-yellow-50' 
+                            : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
+                        }`}
+                        aria-label={savedPosts.has(selectedNews.id) ? 'Quitar de guardados' : 'Guardar noticia'}
+                      >
+                        <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
+                        <span className="font-medium">{savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}</span>
+                      </button>
+                    )}
+                    
+                    <button 
+                      onClick={() => openShareModal(selectedNews)}
+                      className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+                      aria-label="Compartir noticia"
+                    >
+                      <i className="ri-share-line text-xl"></i>
+                      <span className="font-medium">Compartir</span>
+                    </button>
+                  </div>
+                  <button
+                    onClick={closeNewsModal}
+                    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+                  >
+                    Volver a noticias
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Modal de Crónica - Pantalla Completa */}
+    {isChronicleModalOpen && selectedChronicle && (
+      <div
+        className="fixed inset-0 bg-black z-50"
+        style={{
+          touchAction: "none",
+          overscrollBehavior: "contain",
+        }}
+      >
+        {/* Header fixed */}
+        <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <img 
+                  src="/images/tendidodigitallogosimple.jpg" 
+                  alt="Tendido Digital" 
+                  className="h-8 w-auto"
+                />
+                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+                  TENDIDO DIGITAL
+                </span>
+              </div>
+              <button
+                onClick={closeChronicleModal}
+                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+                aria-label="Cerrar modal"
+              >
+                <i className="ri-close-line text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Contenido scrollable */}
+        <div 
+          className="pt-16 pb-8 h-full overflow-y-auto"
+          style={{
+            overflowY: "auto",
+            overflowX: "hidden",
+            height: "100vh",
+            WebkitOverflowScrolling: "touch",
+            paddingTop: "64px",
+            paddingBottom: "32px"
+          }}
+        >
+          <div className="bg-white min-h-full">
+            {/* Imagen principal */}
+            <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
+              <img
+                src={selectedChronicle.image}
+                alt={selectedChronicle.title}
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-8 left-8">
+                <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
+                  LA RESEÑA
+                </span>
+              </div>
+            </div>
+
+            {/* Contenido de la crónica */}
+            <div className="bg-white">
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className="flex items-center mb-6">
+                  <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
+                  <span className="mx-2 text-gray-300">•</span>
+                  <span className="text-red-600 text-sm font-medium">{selectedChronicle.plaza}</span>
+                </div>
+                
+                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
+                  {selectedChronicle.title}
+                </h1>
+                
+                <div className="bg-gray-50 rounded-2xl p-8 mb-8">
+                  <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
+                  <p className="text-gray-700">{selectedChronicle.detalles}</p>
+                </div>
+
+                {/* Acciones de la crónica */}
+                <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
+                  <div className="flex items-center space-x-6">
+                    <button 
+                      onClick={() => toggleSave(selectedChronicle.id)}
+                      className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+                        savedPosts.has(selectedChronicle.id) 
+                          ? 'text-yellow-600 bg-yellow-50' 
+                          : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
+                      }`}
+                      aria-label={savedPosts.has(selectedChronicle.id) ? 'Quitar de guardados' : 'Guardar crónica'}
+                    >
+                      <i className={`${savedPosts.has(selectedChronicle.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
+                      <span className="font-medium">{savedPosts.has(selectedChronicle.id) ? 'Guardado' : 'Guardar'}</span>
+                    </button>
+                    
+                    <button 
+                      onClick={() => openShareModal(selectedChronicle)}
+                      className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+                      aria-label="Compartir crónica"
+                    >
+                      <i className="ri-share-line text-xl"></i>
+                      <span className="font-medium">Compartir</span>
+                    </button>
+                  </div>
+                  <button
+                    onClick={closeChronicleModal}
+                    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+                  >
+                    Volver a crónicas
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Modal de Compartir */}
+    {isShareModalOpen && sharePost && (
+      <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+          <div className="text-center mb-6">
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <i className="ri-share-line text-white text-2xl"></i>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
+            <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+          </div>
+          
+          <div className="space-y-3 mb-6">
+            <button
+              onClick={shareToWhatsApp}
+              className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <i className="ri-whatsapp-line text-xl"></i>
+              <span className="font-medium">Compartir en WhatsApp</span>
+            </button>
+            
+            <button
+              onClick={shareToTwitter}
+              className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <i className="ri-twitter-fill text-xl"></i>
+              <span className="font-medium">Compartir en Twitter</span>
+            </button>
+            
+            <button
+              onClick={shareToFacebook}
+              className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <i className="ri-facebook-fill text-xl"></i>
+              <span className="font-medium">Compartir en Facebook</span>
+            </button>
+            
+            <button
+              onClick={copyLink}
+              className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <i className="ri-link text-xl"></i>
+              <span className="font-medium">Copiar enlace</span>
+            </button>
+          </div>
+          
+          <button
+            onClick={closeShareModal}
+            className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
           >
-            Inicio
-          </button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Todas
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Actualidad
-          </button>
-          <button 
-            onClick={() => setActiveTab('cronicas')} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Crónicas
-          </button>
-          <button 
-  onClick={() => setActiveTab('entrevistas')} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Entrevistas
-</button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Opinión
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Contacto
+            Cancelar
           </button>
         </div>
       </div>
     )}
-  </header>
-
-  {/* Contenido principal */}
-  {renderContent()}
-
-  {/* Modal de Noticia - Pantalla Completa */}
-{isNewsModalOpen && selectedNews && (
-  <div
-    className="fixed inset-0 bg-black z-50"
-    style={{
-      touchAction: "none",
-      overscrollBehavior: "contain",
-    }}
-  >
-    {/* Header del modal - FIXED */}
-    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <img 
-              src="/images/tendidodigitallogosimple.jpg" 
-              alt="Tendido Digital" 
-              className="h-8 w-auto"
-            />
-            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-              TENDIDO DIGITAL
-            </span>
-          </div>
-          <button
-            onClick={closeNewsModal}
-            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-            aria-label="Cerrar modal"
-          >
-            <i className="ri-close-line text-2xl"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    {/* Contenido scrollable - APLICAR ESTILOS AQUÍ */}
-    <div 
-      className="pt-16 pb-8 h-full overflow-y-auto"
-      style={{
-        overflowY: "auto",
-        overflowX: "hidden",
-        height: "100vh",
-        WebkitOverflowScrolling: "touch",
-        paddingTop: "64px", // altura del header fixed
-        paddingBottom: "32px"
-      }}
-    >
-      <div className="bg-white min-h-full">
-        {/* Imagen principal */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="flex flex-col items-center pt-8">
-            <img
-              src={selectedNews.image}
-              alt={selectedNews.title}
-              className="w-full h-auto rounded-md"
-            />
-            {selectedNews.imageCaption && (
-              <p className="text-gray-500 text-xs italic text-right w-full mt-1">
-                {selectedNews.imageCaption}
-              </p>
-            )}
-          </div>
-        </div>
-
-        {/* Contenido del artículo */}
-        <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="flex items-center mb-6">
-              <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
-              {selectedNews.author && (
-                <>
-                  <span className="mx-2 text-gray-300">•</span>
-                  <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
-                </>
-              )}
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">{selectedNews.title}</h1>
-            
-            <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
-            
-            <div className="prose prose-xl max-w-none">
-              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
-                {selectedNews.fullContent
-                  ?.split("\n\n")
-                  .map((paragraph, i) => (
-                    <p
-                      key={i}
-                      className="whitespace-pre-line"
-                      dangerouslySetInnerHTML={{
-  					  __html: paragraph
-   					  .replace(/(\*\*?)([^*]+)\1/g, '<strong>$2</strong>')
-  					  .trim(),
-					}}
-                    />
-                  ))}
-              </div>
-            </div>
-
-            {/* Acciones del artículo */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center space-x-6">
-                {'id' in selectedNews && (
-                  <button 
-                    onClick={() => toggleSave(selectedNews.id)}
-                    className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-                      savedPosts.has(selectedNews.id) 
-                        ? 'text-yellow-600 bg-yellow-50' 
-                        : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-                    }`}
-                    aria-label={savedPosts.has(selectedNews.id) ? 'Quitar de guardados' : 'Guardar noticia'}
-                  >
-                    <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-                    <span className="font-medium">{savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}</span>
-                  </button>
-                )}
-                
-                <button 
-                  onClick={() => openShareModal(selectedNews)}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-                  aria-label="Compartir noticia"
-                >
-                  <i className="ri-share-line text-xl"></i>
-                  <span className="font-medium">Compartir</span>
-                </button>
-              </div>
-              <button
-                onClick={closeNewsModal}
-                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-              >
-                Volver a noticias
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-)}
-
- {/* Modal de Crónica - Pantalla Completa */}
-{isChronicleModalOpen && selectedChronicle && (
-  <div
-    className="fixed inset-0 bg-black z-50"
-    style={{
-      touchAction: "none",
-      overscrollBehavior: "contain",
-    }}
-  >
-    {/* Header fixed */}
-    <div className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-md z-20 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <img 
-              src="/images/tendidodigitallogosimple.jpg" 
-              alt="Tendido Digital" 
-              className="h-8 w-auto"
-            />
-            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-              TENDIDO DIGITAL
-            </span>
-          </div>
-          <button
-            onClick={closeChronicleModal}
-            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-            aria-label="Cerrar modal"
-          >
-            <i className="ri-close-line text-2xl"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    {/* Contenido scrollable */}
-    <div 
-      className="pt-16 pb-8 h-full overflow-y-auto"
-      style={{
-        overflowY: "auto",
-        overflowX: "hidden",
-        height: "100vh",
-        WebkitOverflowScrolling: "touch",
-        paddingTop: "64px",
-        paddingBottom: "32px"
-      }}
-    >
-      <div className="bg-white min-h-full">
-        {/* Imagen principal */}
-        <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
-          <img
-            src={selectedChronicle.image}
-            alt={selectedChronicle.title}
-            className="w-full h-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          <div className="absolute bottom-8 left-8">
-            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
-              LA RESEÑA
-            </span>
-          </div>
-        </div>
-
-        {/* Contenido de la crónica */}
-        <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="flex items-center mb-6">
-              <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
-              <span className="mx-2 text-gray-300">•</span>
-              <span className="text-red-600 text-sm font-medium">{selectedChronicle.plaza}</span>
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
-              {selectedChronicle.title}
-            </h1>
-            
-            <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-              <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
-              <p className="text-gray-700">{selectedChronicle.detalles}</p>
-            </div>
-
-            {/* Acciones de la crónica */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center space-x-6">
-                <button 
-                  onClick={() => toggleSave(selectedChronicle.id)}
-                  className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-                    savedPosts.has(selectedChronicle.id) 
-                      ? 'text-yellow-600 bg-yellow-50' 
-                      : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-                  }`}
-                  aria-label={savedPosts.has(selectedChronicle.id) ? 'Quitar de guardados' : 'Guardar crónica'}
-                >
-                  <i className={`${savedPosts.has(selectedChronicle.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-                  <span className="font-medium">{savedPosts.has(selectedChronicle.id) ? 'Guardado' : 'Guardar'}</span>
-                </button>
-                
-                <button 
-                  onClick={() => openShareModal(selectedChronicle)}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-                  aria-label="Compartir crónica"
-                >
-                  <i className="ri-share-line text-xl"></i>
-                  <span className="font-medium">Compartir</span>
-                </button>
-              </div>
-              <button
-                onClick={closeChronicleModal}
-                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-              >
-                Volver a crónicas
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
-  {/* Modal de Compartir */}
-  {isShareModalOpen && sharePost && (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
-        <div className="text-center mb-6">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <i className="ri-share-line text-white text-2xl"></i>
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
-          <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
-        </div>
-        
-        <div className="space-y-3 mb-6">
-          <button
-            onClick={shareToWhatsApp}
-            className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-whatsapp-line text-xl"></i>
-            <span className="font-medium">Compartir en WhatsApp</span>
-          </button>
-          
-          <button
-            onClick={shareToTwitter}
-            className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-twitter-fill text-xl"></i>
-            <span className="font-medium">Compartir en Twitter</span>
-          </button>
-          
-          <button
-            onClick={shareToFacebook}
-            className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-facebook-fill text-xl"></i>
-            <span className="font-medium">Compartir en Facebook</span>
-          </button>
-          
-          <button
-            onClick={copyLink}
-            className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-link text-xl"></i>
-            <span className="font-medium">Copiar enlace</span>
-          </button>
-        </div>
-        
-        <button
-          onClick={closeShareModal}
-          className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
-        >
-          Cancelar
-        </button>
-      </div>
-    </div>
-  )}
-
-</div>
 );
 }
