@@ -2561,13 +2561,14 @@ TENDIDO DIGITAL
 
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
-  <div
-    className="fixed inset-0 bg-black z-50 overflow-y-auto"
-    style={{
-      touchAction: "none",      // evita scroll lateral en móviles
-      overscrollBehavior: "contain", // bloquea rebote de scroll
-    }}
-  >
+<div
+  className="fixed inset-0 bg-black z-50 overflow-y-auto"
+  style={{
+    touchAction: "none",  // Evita scroll lateral en móviles
+    overscrollBehavior: "contain", // Bloquea rebote de scroll
+  }}
+>
+
         {/* Header del modal */}
         <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2613,7 +2614,7 @@ TENDIDO DIGITAL
 </div>
         {/* Contenido del artículo */}
         <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-y-auto">
             <div className="flex items-center mb-6">
               <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
               {selectedNews.author && (
@@ -2732,7 +2733,7 @@ dangerouslySetInnerHTML={{
 
         {/* Contenido de la crónica */}
         <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-y-auto">
             <div className="flex items-center mb-6">
               <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
               <span className="mx-2 text-gray-300">•</span>
