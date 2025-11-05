@@ -1484,12 +1484,11 @@ document.body.style.overflow = 'unset';
               onClick={() => openNewsModal(news)}
             >
               <div className="relative overflow-hidden">
-                <img
-                  src={news.image}
-                  alt={news.title}
-                  className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
+                <img 
+  src="/images/tendidodigitallogosimple.jpg" 
+  alt="Tendido Digital" 
+  className="h-12 w-auto opacity-80 hover:opacity-100 transition-all duration-300 group-hover:scale-110 mix-blend-multiply"
+/>
                 <div className="absolute top-4 left-4">
                   <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
                     {news.category}
@@ -2348,7 +2347,11 @@ return (
 <div className="flex justify-between items-center h-16 md:h-20">
 <div className="flex items-center group">
 <div className="relative">
-<img src="images/tendidodigitallogosimple.jpg" alt="Tendido Digital" className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-sm" />
+<img 
+  src="/images/tendidodigitallogosimple.jpg" 
+  alt="Tendido Digital" 
+  className="h-12 w-auto opacity-80 hover:opacity-100 transition-all duration-300 group-hover:scale-110 mix-blend-multiply"
+/>
 <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 </div>
 <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
