@@ -1,4 +1,7 @@
+"use client";
+
 import { useState, useEffect } from 'react';
+
 interface BaseArticle {
   id: number;
   title: string;
@@ -101,8 +104,8 @@ const schemaData = {
 "name": "TENDIDO DIGITAL",
 "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
 "logo": {
-"@type": "ImageObject",
-"url": "images/tendidodigitallogosimple.jpg"
+  "@type": "ImageObject",
+  "url": "/images/tendidodigitallogosimple.jpg"
 },
 "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
 "foundingDate": "2010",
@@ -1775,12 +1778,13 @@ return (
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-<div className="card-image">
+{/* Hero image: imagen completa sin recortar */}
+<div className="card-image w-full h-full flex items-center justify-center bg-black">
   <img
     src={news.image}
     alt={news.title}
-    className="w-full h-auto object-contain mx-auto"
-    style={{ maxHeight: '30vh' }}
+    className="w-full h-auto object-contain"
+    style={{ maxHeight: '80vh', display: 'block', margin: '0 auto' }}
   />
 </div>
 
