@@ -2674,44 +2674,43 @@ dangerouslySetInnerHTML={{
             </div>
 
             {/* Acciones del artículo */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center space-x-6">
-                {'id' in selectedNews && (
-                  <button 
-                    onClick={() => toggleSave(selectedNews.id)}
-                    className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-                      savedPosts.has(selectedNews.id) 
-                        ? 'text-yellow-600 bg-yellow-50' 
-                        : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-                    }`}
-                    aria-label={savedPosts.has(selectedNews.id) ? 'Quitar de guardados' : 'Guardar noticia'}
-                  >
-                    <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-                    <span className="font-medium">{savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}</span>
-                  </button>
-                )}
-                
-                <button 
-                  onClick={() => openShareModal(selectedNews)}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-                  aria-label="Compartir noticia"
-                >
-                  <i className="ri-share-line text-xl"></i>
-                  <span className="font-medium">Compartir</span>
-                </button>
-              </div>
-  <button
-    onClick={closeNewsModal}
-    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 w-full sm:w-auto"
-  >
-    <i className="ri-arrow-left-line"></i>
-    <span className="ml-2">Volver a noticias</span>
-  </button>
-            </div>
-          </div>
-        </div>
-      </div>
-  )}
+           <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
+  {/* Grupo de acciones (Guardar / Compartir) */}
+  <div className="flex items-center space-x-6">
+    <button 
+      onClick={() => toggleSave(selectedNews.id)}
+      className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+        savedPosts.has(selectedNews.id) 
+          ? 'text-yellow-600 bg-yellow-50' 
+          : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
+      }`}
+    >
+      <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
+      <span className="font-medium hidden sm:block">
+        {savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}
+      </span>
+    </button>
+
+    <button 
+      onClick={() => openShareModal(selectedNews)}
+      className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+    >
+      <i className="ri-share-line text-xl"></i>
+      <span className="font-medium hidden sm:block">Compartir</span>
+    </button>
+  </div>
+
+  {/* Botón debajo en móvil */}
+  <div className="w-full sm:w-auto text-center">
+    <button
+      onClick={closeNewsModal}
+      className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 flex justify-center items-center"
+    >
+      <i className="ri-arrow-left-line mr-2"></i>
+      <span>Volver a noticias</span>
+    </button>
+  </div>
+</div>
 
   {/* Modal de Crónica - Pantalla Completa */}
   {isChronicleModalOpen && selectedChronicle && (
