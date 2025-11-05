@@ -2566,7 +2566,6 @@ TENDIDO DIGITAL
     touchAction: "none",  // Evita scroll lateral en móviles
     overscrollBehavior: "contain", // Bloquea rebote de scroll
   }}
->
 
         {/* Header del modal */}
         <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
