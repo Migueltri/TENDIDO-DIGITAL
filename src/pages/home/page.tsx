@@ -2881,5 +2881,3 @@ dangerouslySetInnerHTML={{
     </div>
   );
 }
-
-export default Home;
