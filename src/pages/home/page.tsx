@@ -2585,287 +2585,282 @@ TENDIDO DIGITAL
 
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
-<div
-  className="fixed inset-0 bg-black z-50 overflow-y-auto"
-  style={{
-    overflowX: "hidden",        // no scroll horizontal
-    overflowY: "auto",          // scroll vertical habilitado
-    maxHeight: "100vh",
-    WebkitOverflowScrolling: "touch", // scroll suave en móvil
-  }}
->
-        {/* Header del modal */}
-        <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <img 
-  src="/images/tendidodigitallogosimple.jpg" 
-  alt="Tendido Digital" 
-  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
-/>
-
-                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-                  TENDIDO DIGITAL
-                </span>
-              </div>
-              <button
-                onClick={closeNewsModal}
-                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-                aria-label="Cerrar modal"
-              >
-                <i className="ri-close-line text-2xl"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-{/* Imagen principal */}
-<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-  <div className="flex flex-col items-center">
-    <img
-      src={selectedNews.image}
-      alt={selectedNews.title}
-      className="w-full h-auto rounded-md"
-    />
-
-    {/* Pie de foto, estilo Cultoro */}
-    {selectedNews.imageCaption && (
-      <p className="text-gray-500 text-xs italic text-right w-full mt-1">
-        {selectedNews.imageCaption}
-      </p>
-    )}
-  </div>
-</div>
-        {/* Contenido del artículo */}
-        <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="flex items-center mb-6">
-              <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
-              {selectedNews.author && (
-                <>
-                  <span className="mx-2 text-gray-300">•</span>
-                  <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
-                </>
-              )}
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">{selectedNews.title}</h1>
-            
-            <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">{selectedNews.excerpt}</p>
-            
-            <div className="prose prose-xl max-w-none">
-             <div className="text-gray-700 leading-relaxed text-lg space-y-4">
-  {selectedNews.fullContent
-    ?.split("\n\n") // divide el texto en párrafos usando doble salto de línea
-    .map((paragraph, i) => (
-      <p
-        key={i}
-        className="whitespace-pre-line"
-dangerouslySetInnerHTML={{
-  __html: paragraph
-    // Convierte *texto* o **texto** en <strong>texto</strong>
-    .replace(/(\*{1,2})(.*?)\1/g, '<strong>$2</strong>')
-    .trim(),
-}}
-      />
-    ))}
-</div>
-            </div>
-
-            {/* Acciones del artículo */}
-           <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
-  {/* Grupo de acciones (Guardar / Compartir) */}
-  <div className="flex items-center space-x-6">
-    <button 
-      onClick={() => toggleSave(selectedNews.id)}
-      className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-        savedPosts.has(selectedNews.id) 
-          ? 'text-yellow-600 bg-yellow-50' 
-          : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-      }`}
-    >
-      <i className={`${savedPosts.has(selectedNews.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-      <span className="font-medium hidden sm:block">
-        {savedPosts.has(selectedNews.id) ? 'Guardado' : 'Guardar'}
-      </span>
-    </button>
-
-    <button 
-      onClick={() => openShareModal(selectedNews)}
-      className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-    >
-      <i className="ri-share-line text-xl"></i>
-      <span className="font-medium hidden sm:block">Compartir</span>
-    </button>
-  </div>
-
-  {/* Botón debajo en móvil */}
-  <div className="w-full sm:w-auto text-center">
-    <button
-      onClick={closeNewsModal}
-      className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 flex justify-center items-center"
-    >
-      <i className="ri-arrow-left-line mr-2"></i>
-      <span>Volver a noticias</span>
-    </button>
-  </div>
-</div>
-
-  {/* Modal de Crónica - Pantalla Completa */}
-  {isChronicleModalOpen && selectedChronicle && (
-    <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
-      <div className="min-h-screen">
-        {/* Header del modal */}
-        <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <img 
-  src="/images/tendidodigitallogosimple.jpg" 
-  alt="Tendido Digital" 
-  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
-/>
-                <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-                  TENDIDO DIGITAL
-                </span>
-              </div>
-              <button
-                onClick={closeChronicleModal}
-                className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-                aria-label="Cerrar modal"
-              >
-                <i className="ri-close-line text-2xl"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Imagen principal */}
-        <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
-          <img
-            src={selectedChronicle.image}
-            alt={selectedChronicle.title}
-            className="w-full h-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          <div className="absolute bottom-8 left-8">
-            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
-              LA RESEÑA
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto"
+    style={{
+      overflowX: "hidden",
+      overflowY: "auto",
+      maxHeight: "100vh",
+      WebkitOverflowScrolling: "touch",
+    }}
+  >
+    {/* Header del modal */}
+    <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <img
+              src="/images/tendidodigitallogosimple.jpg"
+              alt="Tendido Digital"
+              className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+            />
+            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
             </span>
           </div>
+          <button
+            onClick={closeNewsModal}
+            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+            aria-label="Cerrar modal"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Imagen principal */}
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="flex flex-col items-center">
+        <img
+          src={selectedNews.image}
+          alt={selectedNews.title}
+          className="w-full h-auto rounded-md"
+        />
+        {selectedNews.imageCaption && (
+          <p className="text-gray-500 text-xs italic text-right w-full mt-1">
+            {selectedNews.imageCaption}
+          </p>
+        )}
+      </div>
+    </div>
+
+    {/* Contenido del artículo */}
+    <div className="bg-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex items-center mb-6">
+          <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
+          {selectedNews.author && (
+            <>
+              <span className="mx-2 text-gray-300">•</span>
+              <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
+            </>
+          )}
         </div>
 
-        {/* Contenido de la crónica */}
-        <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="flex items-center mb-6">
-              <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
-              <span className="mx-2 text-gray-300">•</span>
-              <span className="text-red-600 text-sm font-medium">{selectedChronicle.plaza}</span>
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
-              {selectedChronicle.title}
-            </h1>
-            
-            <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-              <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
-              <p className="text-gray-700">{selectedChronicle.detalles}</p>
-            </div>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
+          {selectedNews.title}
+        </h1>
 
-            {/* Acciones de la crónica */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center space-x-6">
-                <button 
-                  onClick={() => toggleSave(selectedChronicle.id)}
-                  className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-                    savedPosts.has(selectedChronicle.id) 
-                      ? 'text-yellow-600 bg-yellow-50' 
-                      : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-                  }`}
-                  aria-label={savedPosts.has(selectedChronicle.id) ? 'Quitar de guardados' : 'Guardar crónica'}
-                >
-                  <i className={`${savedPosts.has(selectedChronicle.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-                  <span className="font-medium">{savedPosts.has(selectedChronicle.id) ? 'Guardado' : 'Guardar'}</span>
-                </button>
-                
-                <button 
-                  onClick={() => openShareModal(selectedChronicle)}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-                  aria-label="Compartir crónica"
-                >
-                  <i className="ri-share-line text-xl"></i>
-                  <span className="font-medium">Compartir</span>
-                </button>
-              </div>
+        {selectedNews.excerpt && (
+          <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">
+            {selectedNews.excerpt}
+          </p>
+        )}
+
+        <div className="prose prose-xl max-w-none">
+          <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+            {selectedNews.fullContent
+              ?.split("\n\n")
+              .map((paragraph, i) => (
+                <p
+                  key={i}
+                  className="whitespace-pre-line"
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>").trim(),
+                  }}
+                />
+              ))}
+          </div>
+        </div>
+
+        {/* Acciones del artículo */}
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
+          <div className="flex items-center space-x-6">
+            <button
+              onClick={() => toggleSave(selectedNews.id)}
+              className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+                savedPosts.has(selectedNews.id)
+                  ? "text-yellow-600 bg-yellow-50"
+                  : "text-gray-600 hover:text-yellow-600 hover:bg-yellow-50"
+              }`}
+            >
+              <i className={`${savedPosts.has(selectedNews.id) ? "ri-bookmark-fill" : "ri-bookmark-line"} text-xl`}></i>
+              <span className="font-medium hidden sm:block">
+                {savedPosts.has(selectedNews.id) ? "Guardado" : "Guardar"}
+              </span>
+            </button>
+
+            <button
+              onClick={() => openShareModal(selectedNews)}
+              className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+            >
+              <i className="ri-share-line text-xl"></i>
+              <span className="font-medium hidden sm:block">Compartir</span>
+            </button>
+          </div>
+
+          <div className="w-full sm:w-auto text-center">
+            <button
+              onClick={closeNewsModal}
+              className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 flex justify-center items-center"
+            >
+              <i className="ri-arrow-left-line mr-2"></i>
+              <span>Volver a noticias</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+{/* Modal de Crónica - Pantalla Completa */}
+{isChronicleModalOpen && selectedChronicle && (
+  <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
+    <div className="min-h-screen">
+      {/* Header */}
+      <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <img
+                src="/images/tendidodigitallogosimple.jpg"
+                alt="Tendido Digital"
+                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+              />
+              <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
+                TENDIDO DIGITAL
+              </span>
+            </div>
+            <button
+              onClick={closeChronicleModal}
+              className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+              aria-label="Cerrar modal"
+            >
+              <i className="ri-close-line text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Imagen principal */}
+      <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
+        <img
+          src={selectedChronicle.image}
+          alt={selectedChronicle.title}
+          className="w-full h-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <div className="absolute bottom-8 left-8">
+          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
+            LA RESEÑA
+          </span>
+        </div>
+      </div>
+
+      {/* Contenido */}
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="flex items-center mb-6">
+            <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
+            <span className="mx-2 text-gray-300">•</span>
+            <span className="text-red-600 text-sm font-medium">{selectedChronicle.plaza}</span>
+          </div>
+
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
+            {selectedChronicle.title}
+          </h1>
+
+          <div className="bg-gray-50 rounded-2xl p-8 mb-8">
+            <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
+            <p className="text-gray-700">{selectedChronicle.detalles}</p>
+          </div>
+
+          <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
+            <div className="flex items-center space-x-6">
               <button
-                onClick={closeChronicleModal}
-                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+                onClick={() => toggleSave(selectedChronicle.id)}
+                className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+                  savedPosts.has(selectedChronicle.id)
+                    ? "text-yellow-600 bg-yellow-50"
+                    : "text-gray-600 hover:text-yellow-600 hover:bg-yellow-50"
+                }`}
+                aria-label={savedPosts.has(selectedChronicle.id) ? "Quitar de guardados" : "Guardar crónica"}
               >
-                Volver a crónicas
+                <i className={`${savedPosts.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"} text-xl`}></i>
+                <span className="font-medium">
+                  {savedPosts.has(selectedChronicle.id) ? "Guardado" : "Guardar"}
+                </span>
+              </button>
+
+              <button
+                onClick={() => openShareModal(selectedChronicle)}
+                className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+                aria-label="Compartir crónica"
+              >
+                <i className="ri-share-line text-xl"></i>
+                <span className="font-medium">Compartir</span>
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )}
 
-  {/* Modal de Compartir */}
-  {isShareModalOpen && sharePost && (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
-        <div className="text-center mb-6">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <i className="ri-share-line text-white text-2xl"></i>
+            <button
+              onClick={closeChronicleModal}
+              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
+            >
+              Volver a crónicas
+            </button>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
-          <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
         </div>
-        
-        <div className="space-y-3 mb-6">
-          <button
-            onClick={shareToWhatsApp}
-            className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-whatsapp-line text-xl"></i>
-            <span className="font-medium">Compartir en WhatsApp</span>
-          </button>
-          
-          <button
-            onClick={shareToTwitter}
-            className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-twitter-fill text-xl"></i>
-            <span className="font-medium">Compartir en Twitter</span>
-          </button>
-          
-          <button
-            onClick={shareToFacebook}
-            className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-facebook-fill text-xl"></i>
-            <span className="font-medium">Compartir en Facebook</span>
-          </button>
-          
-          <button
-            onClick={copyLink}
-            className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-link text-xl"></i>
-            <span className="font-medium">Copiar enlace</span>
-          </button>
-        </div>
-        
-        <button
-          onClick={closeShareModal}
-          className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
-        >
-          Cancelar
-     </button>
       </div>
     </div>
-  )}
-			  
+  </div>
+)}
+
+{/* Modal de Compartir */}
+{isShareModalOpen && sharePost && (
+  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+    <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+      <div className="text-center mb-6">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <i className="ri-share-line text-white text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
+        <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+      </div>
+
+      <div className="space-y-3 mb-6">
+        <button onClick={shareToWhatsApp} className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+          <i className="ri-whatsapp-line text-xl"></i>
+          <span className="font-medium">Compartir en WhatsApp</span>
+        </button>
+
+        <button onClick={shareToTwitter} className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+          <i className="ri-twitter-fill text-xl"></i>
+          <span className="font-medium">Compartir en Twitter</span>
+        </button>
+
+        <button onClick={shareToFacebook} className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+          <i className="ri-facebook-fill text-xl"></i>
+          <span className="font-medium">Compartir en Facebook</span>
+        </button>
+
+        <button onClick={copyLink} className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+          <i className="ri-link text-xl"></i>
+          <span className="font-medium">Copiar enlace</span>
+        </button>
+      </div>
+
+      <button
+        onClick={closeShareModal}
+        className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
+      >
+        Cancelar
+      </button>
+    </div>
+  </div>
+)}
+
 </div>
+);
+}
