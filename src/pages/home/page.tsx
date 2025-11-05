@@ -2867,7 +2867,5 @@ dangerouslySetInnerHTML={{
       </div>
     </div>
   )}
-
+			  
 </div>
-);
-}
