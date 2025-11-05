@@ -330,7 +330,7 @@ const featuredNews: NewsItem[] = [
 
 A mitad de temporada, el novillero  sufrió una cornada en Marchamalo que le provocó un neumotórax y lo obligó a detener su ritmo. Sin embargo, su vuelta a los ruedos mostró a un torero más firme , evidenciando que la experiencia lo fortaleció en su toreo. 
 
-Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó una actuaciones de peso. 
+Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó unas actuaciones de peso. 
 
 La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
   }, 
@@ -389,7 +389,7 @@ const latestNews: NewsItem[] = [
 
 A mitad de temporada, el novillero  sufrió una cornada en Marchamalo que le provocó un neumotórax y lo obligó a detener su ritmo. Sin embargo, su vuelta a los ruedos mostró a un torero más firme , evidenciando que la experiencia lo fortaleció en su toreo. 
 
-Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó una actuaciones de peso. 
+Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, ha dejado momentos de notable expresión en plazas como Azuqueca de Henares , Zaragoza , Mojados… , donde rubricó unas actuaciones de peso. 
 
 La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
   }, 
