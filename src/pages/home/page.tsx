@@ -319,7 +319,7 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
- { 
+ {
     id: 1000,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
