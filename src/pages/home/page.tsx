@@ -2812,98 +2812,63 @@ dangerouslySetInnerHTML={{
     </div>
   )}
 
-          {/* Modal de Compartir */}
-          {isShareModalOpen && sharePost && (
-            <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-              <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
-                <div className="text-center mb-6">
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <i className="ri-share-line text-white text-2xl"></i>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
-                  <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  <button
-                    onClick={shareToWhatsApp}
-                    className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <i className="ri-whatsapp-line text-xl"></i>
-                    <span className="font-medium">Compartir en WhatsApp</span>
-                  </button>
-                  
-                  <button
-                    onClick={shareToTwitter}
-                    className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <i className="ri-twitter-fill text-xl"></i>
-                    <span className="font-medium">Compartir en Twitter</span>
-                  </button>
-                  
-                  <button
-                    onClick={shareToFacebook}
-                    className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <i className="ri-facebook-fill text-xl"></i>
-                    <span className="font-medium">Compartir en Facebook</span>
-                  </button>
-                  
-                  <button
-                    onClick={copyLink}
-                    className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <i className="ri-link text-xl"></i>
-                    <span className="font-medium">Copiar enlace</span>
-                  </button>
-                </div>
-                
-                <button
-                  onClick={closeShareModal}
-                  className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
-                >
-                  Cancelar
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      );
-    }
+{/* Modal de Compartir */}
+{isShareModalOpen && sharePost && (
+<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+<div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+<div className="text-center mb-6">
+<div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i className="ri-share-line text-white text-2xl"> </i>
+</div>
+<h3 className="text-2xl font-bold text-gray-900 mb-2"> Compartir Noticia </h3>
+<p className="text-gray-600 text-sm"> Comparte esta noticia con tus amigos </p>
+</div>
 
-    return renderContent();
-  }
+texto
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-      {/* Header */}
-      <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 md:h-20">
-            <div className="flex items-center group">
-              <div className="relative">
-                <img 
-                  src="/images/tendidodigitallogosimple.jpg" 
-                  alt="Tendido Digital" 
-                  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
-                />
-                <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              </div>
-              <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
-                TENDIDO DIGITAL
-              </span>
-            </div>
-
-            {/* Navigation y resto del header... */}
-            {/* ... (tu código del header existente) ... */}
-          </div>
-        </div>
-      </header>
-
-      {/* Renderizar contenido principal */}
-      {renderContent()}
+    <div className="space-y-3 mb-6">
+      <button
+        onClick={shareToWhatsApp}
+        className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <i className="ri-whatsapp-line text-xl"></i>
+        <span className="font-medium">Compartir en WhatsApp</span>
+      </button>
+      
+      <button
+        onClick={shareToTwitter}
+        className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <i className="ri-twitter-fill text-xl"></i>
+        <span className="font-medium">Compartir en Twitter</span>
+      </button>
+      
+      <button
+        onClick={shareToFacebook}
+        className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <i className="ri-facebook-fill text-xl"></i>
+        <span className="font-medium">Compartir en Facebook</span>
+      </button>
+      
+      <button
+        onClick={copyLink}
+        className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <i className="ri-link text-xl"></i>
+        <span className="font-medium">Copiar enlace</span>
+      </button>
     </div>
-  );
-}
+    
+    <button
+      onClick={closeShareModal}
+      className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
+    >
+      Cancelar
+    </button>
+  </div>
+</div>
+)}
 
-export default Home;
+</div>
+);
