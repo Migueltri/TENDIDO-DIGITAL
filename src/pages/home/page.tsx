@@ -1456,11 +1456,11 @@ const openNewsModal = (news: NewsItem | OpinionArticle) => {
   document.body.style.width = "100%";
 };
 
-// Cerrar modal de noticia
+// Cerrar modal y restaurar el scroll
 const closeNewsModal = () => {
   setIsNewsModalOpen(false);
   setSelectedNews(null);
-  document.body.style.overflow = "auto";
+  document.body.style.overflow = "auto"; // Se restablece el scroll
   document.body.style.position = "";
   document.body.style.width = "";
 };
