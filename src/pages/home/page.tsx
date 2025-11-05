@@ -2923,8 +2923,7 @@ texto
             </div>
           )}
         </div>
-      );
-    }
+      )}
 
     return renderContent();
   }
