@@ -1456,11 +1456,11 @@ const openNewsModal = (news: NewsItem | OpinionArticle) => {
   document.body.style.width = "100%";
 };
 
-// Cerrar modal y restaurar el scroll
+// Cerrar modal de noticia
 const closeNewsModal = () => {
   setIsNewsModalOpen(false);
   setSelectedNews(null);
-  document.body.style.overflow = "auto"; // Se restablece el scroll
+  document.body.style.overflow = "auto";
   document.body.style.position = "";
   document.body.style.width = "";
 };
@@ -2561,12 +2561,13 @@ TENDIDO DIGITAL
 
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
-<div className="min-h-[100vh] max-h-screen overflow-y-auto bg-white">
-  style={{
-    touchAction: "none",  // Evita scroll lateral en móviles
-    overscrollBehavior: "contain", // Bloquea rebote de scroll
-  }}
-
+  <div
+    className="fixed inset-0 bg-black z-50 overflow-y-auto"
+    style={{
+      touchAction: "none",      // evita scroll lateral en móviles
+      overscrollBehavior: "contain", // bloquea rebote de scroll
+    }}
+  >
         {/* Header del modal */}
         <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2596,13 +2597,11 @@ TENDIDO DIGITAL
 {/* Imagen principal */}
 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
   <div className="flex flex-col items-center">
-<img
-  src={selectedNews.image}
-  alt={selectedNews.title}
-  className="w-full h-auto max-h-[80vh] object-contain mx-auto"
-  loading="lazy"
-/>
-
+    <img
+      src={selectedNews.image}
+      alt={selectedNews.title}
+      className="w-full h-auto rounded-md"
+    />
 
     {/* Pie de foto, estilo Cultoro */}
     {selectedNews.imageCaption && (
@@ -2614,7 +2613,7 @@ TENDIDO DIGITAL
 </div>
         {/* Contenido del artículo */}
         <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-y-auto">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="flex items-center mb-6">
               <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
               {selectedNews.author && (
@@ -2733,7 +2732,7 @@ dangerouslySetInnerHTML={{
 
         {/* Contenido de la crónica */}
         <div className="bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-y-auto">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="flex items-center mb-6">
               <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
               <span className="mx-2 text-gray-300">•</span>
@@ -2846,3 +2845,5 @@ dangerouslySetInnerHTML={{
 </div>
 );
 }
+
+
