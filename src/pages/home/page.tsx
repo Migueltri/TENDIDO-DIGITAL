@@ -2585,13 +2585,15 @@ TENDIDO DIGITAL
 
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
-  <div
-    className="fixed inset-0 bg-black z-50 overflow-y-auto"
-    style={{
-      touchAction: "none",      // evita scroll lateral en móviles
-      overscrollBehavior: "contain", // bloquea rebote de scroll
-    }}
-  >
+<div
+  className="fixed inset-0 bg-black z-50 overflow-y-auto"
+  style={{
+    overflowX: "hidden",        // no scroll horizontal
+    overflowY: "auto",          // scroll vertical habilitado
+    maxHeight: "100vh",
+    WebkitOverflowScrolling: "touch", // scroll suave en móvil
+  }}
+>
         {/* Header del modal */}
         <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2698,12 +2700,13 @@ dangerouslySetInnerHTML={{
                   <span className="font-medium">Compartir</span>
                 </button>
               </div>
-              <button
-                onClick={closeNewsModal}
-                className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-              >
-                Volver a noticias
-              </button>
+  <button
+    onClick={closeNewsModal}
+    className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 w-full sm:w-auto"
+  >
+    <i className="ri-arrow-left-line"></i>
+    <span className="ml-2">Volver a noticias</span>
+  </button>
             </div>
           </div>
         </div>
