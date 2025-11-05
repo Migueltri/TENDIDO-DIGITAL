@@ -1487,7 +1487,7 @@ document.body.style.overflow = 'unset';
 <img 
   src="/images/tendidodigitallogosimple.jpg" 
   alt="Tendido Digital" 
-  className="h-12 w-auto opacity-40 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter grayscale contrast-90"
+  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
 />
 
                 <div className="absolute top-4 left-4">
@@ -2351,7 +2351,7 @@ return (
 <img 
   src="/images/tendidodigitallogosimple.jpg" 
   alt="Tendido Digital" 
-  className="h-12 w-auto opacity-40 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter grayscale contrast-90"
+  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
 />
 <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 </div>
@@ -2522,7 +2522,7 @@ TENDIDO DIGITAL
                 <img 
   src="/images/tendidodigitallogosimple.jpg" 
   alt="Tendido Digital" 
-  className="h-12 w-auto opacity-40 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter grayscale contrast-90"
+  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
 />
 
                 <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
@@ -2642,10 +2642,10 @@ dangerouslySetInnerHTML={{
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <img 
-                  src="/images/tendidodigitallogosimple.jpg" 
-                  alt="Tendido Digital" 
-                  className="h-8 w-auto"
-                />
+  src="/images/tendidodigitallogosimple.jpg" 
+  alt="Tendido Digital" 
+  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+/>
                 <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
                   TENDIDO DIGITAL
                 </span>
