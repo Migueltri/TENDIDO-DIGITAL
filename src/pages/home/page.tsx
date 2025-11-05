@@ -2089,19 +2089,49 @@ return (
             </form>
           </div>
 
-          {/* Social Media */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
-            <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-            <div className="grid grid-cols-1 gap-1">
-              <a href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20">
-                <i className="ri-instagram-fill text-2xl mb-2 block"></i>
-                <span className="text-sm font-medium">Instagram</span>
-              </a>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
+{/* Social Media */}
+<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
+  <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20"
+    >
+      <i className="ri-instagram-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">Instagram</span>
+    </a>
+
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com/@portaltendidodigital"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black hover:bg-gray-900 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-gray-700"
+    >
+      <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">TikTok</span>
+    </a>
+
+    {/* X (Twitter) */}
+    <a
+      href="https://x.com/ptendidodigital"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20"
+    >
+      <i className="ri-twitter-x-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">X (Twitter)</span>
+    </a>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
 
     {/* Sección de Contacto */}
     <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
