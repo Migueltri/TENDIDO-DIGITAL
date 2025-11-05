@@ -2924,12 +2924,4 @@ texto
           )}
         </div>
       )}
-
-    return renderContent();
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-      {/* Header y resto del contenido */}
-      {renderContent()}
-    </div>
   );
