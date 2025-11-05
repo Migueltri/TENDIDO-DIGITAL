@@ -40,7 +40,7 @@ function formatExactDate(dateString: string): string {
 
 function formatTimeAgo(dateString: string): string {
   const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; // 🚫 no mostrar “Invalid Date”
+  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
 
   const now = new Date();
   const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
@@ -321,6 +321,18 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
  { 
     id: 1000,
+    title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
+    image: "/images/fin.jpg",
+    category: "Actualidad",
+    date: "5 de noviembre de 2025",
+    fullContent: `El empresario taurino Maximino Pérez y el matador de toros Fernando Adrián han anunciado la conclusión de su relación de apoderamiento, que se venía manteniendo desde hace dos temporadas. Ambas partes han llegado a esta decisión de mutuo acuerdo, según han comunicado públicamente.
+
+Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más destacados de su carrera. Entre sus logros sobresalen tres Puertas Grandes consecutivas en la plaza de Las Ventas y un total de 25 Puertas Grandes encadenadas entre las temporadas 2023 y 2024, cifras que lo han situado como uno de los nombres más relevantes del toreo contemporáneo.
+
+El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
+  },
+	{ 
+    id: 1001,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -406,7 +418,19 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 
 const latestNews: NewsItem[] = [
  { 
-    id: 1,
+    id: 2,
+    title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
+    image: "/images/fin.jpg",
+    category: "Actualidad",
+    date: "5 de noviembre de 2025",
+    fullContent: `El empresario taurino Maximino Pérez y el matador de toros Fernando Adrián han anunciado la conclusión de su relación de apoderamiento, que se venía manteniendo desde hace dos temporadas. Ambas partes han llegado a esta decisión de mutuo acuerdo, según han comunicado públicamente.
+
+Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más destacados de su carrera. Entre sus logros sobresalen tres Puertas Grandes consecutivas en la plaza de Las Ventas y un total de 25 Puertas Grandes encadenadas entre las temporadas 2023 y 2024, cifras que lo han situado como uno de los nombres más relevantes del toreo contemporáneo.
+
+El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
+  },
+	{ 
+    id: 3,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -418,7 +442,7 @@ El percance tuvo lugar cuando un toro lo sorprendió durante el manejo cotidiano
 El torero fue atendido de urgencia y trasladado para recibir tratamiento quirúrgico. A pesar de la gravedad inicial de la cornada, se encuentra fuera de peligro y evoluciona satisfactoriamente dentro de la normalidad prevista en este tipo de lesiones.`
   }, 
 	{ 
-    id: 2,
+    id: 4,
     title: "Juan Carlos Rey entra en la cuadrilla de Borja Jiménez",
     image: "/images/juancarlosrey.jpg",
     category: "Actualidad",
