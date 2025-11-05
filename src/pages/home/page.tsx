@@ -2234,54 +2234,108 @@ return (
       </div>
     </section>
 
-    {/* Footer */}
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-yellow-500/10"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <div className="flex items-center mb-6 group">
-              <img 
-                src="public/images/tendidodigitallogosimple.jpg" 
-                alt="Tendido Digital" 
-                className="h-12 w-auto group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
-              />
-              <span className="ml-4 text-2xl font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent tracking-tight">
-                TENDIDO DIGITAL
-              </span>
-            </div>
-            <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con rigor periodístico y pasión por la tradición.
-            </p>
-            <div className="flex space-x-4">
-              {[
-                { icon: 'ri-instagram-fill', color: 'hover:text-pink-400', url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==' }
-              ].map((social, index) => (
-                <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}>
-                  <i className={`${social.icon} text-2xl`}></i>
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-white">Secciones</h4>
-            <ul className="space-y-3">
-              {[
-                { name: 'Actualidad', action: () => scrollToSection('actualidad') },
-                { name: 'Crónicas', action: () => setActiveTab('cronicas') },
-                { name: 'Entrevistas', action: () => scrollToSection('actualidad') },
-                { name: 'Multimedia', action: () => scrollToSection('multimedia') }
-              ].map((item) => (
-                <li key={item.name}>
-                  <button onClick={item.action} className="text-gray-300 hover:text-red-400 transition-colors duration-300 cursor-pointer flex items-center group">
-                    <i className="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform duration-300"></i>
-                    {item.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+{/* Footer */}
+<footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-yellow-500/10"></div>
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="md:col-span-2">
+        <div className="flex items-center mb-6 group">
+          <img
+            src="/images/tendidodigitallogosimple.jpg"
+            alt="Tendido Digital"
+            className="h-12 w-auto group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
+          />
+          <span className="ml-4 text-2xl font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent tracking-tight">
+            TENDIDO DIGITAL
+          </span>
+        </div>
+        <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
+          Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con rigor periodístico y pasión por la tradición.
+        </p>
+
+        {/* Social icons */}
+        <div className="flex space-x-4">
+          {[
+            {
+              key: 'instagram',
+              url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==',
+              title: 'Instagram - Portal Tendido Digital',
+              element: (
+                <i className="ri-instagram-fill text-2xl" aria-hidden="true"></i>
+              ),
+              hover: 'hover:text-pink-400'
+            },
+            {
+              key: 'tiktok',
+              url: 'https://www.tiktok.com/@portaltendidodigital',
+              title: 'TikTok - Portal Tendido Digital',
+              element: (
+                // SVG TikTok (inline) — accesible y ligero
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M12.5 2v8.3A4.2 4.2 0 0 1 8.3 14 4.3 4.3 0 1 1 12.5 9.4V6.8a7.2 7.2 0 0 0 4.9 1.9V4.5A9.3 9.3 0 0 1 12.5 2z"/>
+                </svg>
+              ),
+              hover: 'hover:text-white'
+            },
+            {
+              key: 'x',
+              url: 'https://x.com/ptendidodigital',
+              title: 'X (Twitter) - Portal Tendido Digital',
+              element: (
+                // SVG X (simple X mark / bird alternative) — accesible
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M21.36 5.64a1 1 0 0 0-1.41 0L13 12.59 8.05 7.64a1 1 0 0 0-1.41 1.41L11.59 14l-4.95 4.95a1 1 0 1 0 1.41 1.41L13 15.41l6.95 6.95a1 1 0 0 0 1.41-1.41L14.41 14l6.95-6.95a1 1 0 0 0 0-1.41z"/>
+                </svg>
+              ),
+              hover: 'hover:text-blue-400'
+            }
+          ].map((social) => (
+            <a
+              key={social.key}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.title}
+              title={social.title}
+              className={`text-gray-400 ${social.hover} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}
+            >
+              {social.element}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h4 className="text-lg font-bold mb-6 text-white">Secciones</h4>
+        <ul className="space-y-3">
+          {[
+            { name: 'Actualidad', action: () => scrollToSection('actualidad') },
+            { name: 'Crónicas', action: () => setActiveTab('cronicas') },
+            { name: 'Entrevistas', action: () => scrollToSection('actualidad') },
+            { name: 'Multimedia', action: () => scrollToSection('multimedia') }
+          ].map((item) => (
+            <li key={item.name}>
+              <button onClick={item.action} className="text-gray-300 hover:text-red-400 transition-colors duration-300 cursor-pointer flex items-center group">
+                <i className="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform duration-300"></i>
+                {item.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
           
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Información</h4>
