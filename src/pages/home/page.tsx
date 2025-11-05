@@ -319,8 +319,20 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-{ 
+ { 
     id: 1000,
+    title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
+    image: "/images/venegas.jpg",
+    category: "Actualidad",
+    date: "5 de noviembre de 2025",
+    fullContent: `El matador de toros José Carlos Venegas resultó herido este martes durante labores de campo en la ganadería de Moragón, en un accidente que le ocasionó una cornada de consideración. Según el parte médico, el diestro jienense sufrió una herida por asta en la cara posterior del muslo derecho, con trayectoria ascendente y salida por la cara externa del tercio distal, lo que provocó un importante sangrado.
+
+El percance tuvo lugar cuando un toro lo sorprendió durante el manejo cotidiano del ganado. El animal lo embistió de manera súbita, ocasionándole no solo la herida penetrante, sino también diversos traumatismos por la violencia del golpe. En el momento del suceso, Venegas se encontraba solo; pese a ello, mantuvo la calma y la consciencia, y logró practicarse un torniquete para contener la hemorragia hasta la llegada de la ayuda.
+
+El torero fue atendido de urgencia y trasladado para recibir tratamiento quirúrgico. A pesar de la gravedad inicial de la cornada, se encuentra fuera de peligro y evoluciona satisfactoriamente dentro de la normalidad prevista en este tipo de lesiones.`
+  }, 
+	{ 
+    id: 1005,
     title: "Juan Carlos Rey entra en la cuadrilla de Borja Jiménez",
     image: "/images/juancarlosrey.jpg",
     category: "Actualidad",
@@ -335,7 +347,7 @@ El torero de Espartinas iniciará la nueva campaña tras firmar una sobresalient
 Sus triunfos en Sevilla, Madrid y Bilbao constituyeron los hitos fundamentales de una temporada memorable. En la Feria de Abril, cortó dos orejas a un toro de Jandilla; en las Corridas Generales de Bilbao, logró el indulto de un ejemplar de La Quinta; y en Las Ventas, firmó su tercera Puerta Grande con una faena histórica al toro “Milhijas”, de Victorino Martín, considerada ya una de las más destacadas de la tauromaquia reciente.`
   }, 
 	{ 
-    id: 1001,
+    id: 1006,
     title: "Tomás González, una temporada de crecimiento y firmeza en 2025",
     image: "/images/tomasgonzalez2.jpg",
 	imageCaption: "Tomás González en Yunquera de Henares",
@@ -350,7 +362,7 @@ Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, h
 La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
   }, 
 	{ 
-    id: 1002,
+    id: 1007,
     title: "Diego Urdiales y Luis Miguel Villalpando terminan su relación de apoderamiento",
     image: "/images/dos.jpg",
 	imageCaption: "Diego Urdiales en Zaragoza",
@@ -361,7 +373,7 @@ La temporada de Tomás González no se mide solo en cifras, sino en evolución, 
 La ruptura, según se ha señalado, se produce de manera amistosa y responde a la evolución natural de sus respectivas trayectorias. Urdiales, referente del toreo clásico, afronta ahora una nueva etapa en la gestión de su carrera, mientras Villalpando continuará con sus proyectos en el ámbito taurino.`
   }, 
 	{ 
-    id: 1003,
+    id: 1008,
     title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
     image: "/images/banderillero.jpg",
     category: "Actualidad",
@@ -371,7 +383,7 @@ La ruptura, según se ha señalado, se produce de manera amistosa y responde a l
 Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
   }, 
 	{ 
-    id: 1004,
+    id: 1009,
     title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
     image: "/images/feriasanisidro.jpg",
     category: "Actualidad",
@@ -380,7 +392,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
   }, 
 	{ 
-    id: 1005,
+    id: 1010,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -393,8 +405,20 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+ { 
     id: 1,
+    title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
+    image: "/images/venegas.jpg",
+    category: "Actualidad",
+    date: "5 de noviembre de 2025",
+    fullContent: `El matador de toros José Carlos Venegas resultó herido este martes durante labores de campo en la ganadería de Moragón, en un accidente que le ocasionó una cornada de consideración. Según el parte médico, el diestro jienense sufrió una herida por asta en la cara posterior del muslo derecho, con trayectoria ascendente y salida por la cara externa del tercio distal, lo que provocó un importante sangrado.
+
+El percance tuvo lugar cuando un toro lo sorprendió durante el manejo cotidiano del ganado. El animal lo embistió de manera súbita, ocasionándole no solo la herida penetrante, sino también diversos traumatismos por la violencia del golpe. En el momento del suceso, Venegas se encontraba solo; pese a ello, mantuvo la calma y la consciencia, y logró practicarse un torniquete para contener la hemorragia hasta la llegada de la ayuda.
+
+El torero fue atendido de urgencia y trasladado para recibir tratamiento quirúrgico. A pesar de la gravedad inicial de la cornada, se encuentra fuera de peligro y evoluciona satisfactoriamente dentro de la normalidad prevista en este tipo de lesiones.`
+  }, 
+	{ 
+    id: 2,
     title: "Juan Carlos Rey entra en la cuadrilla de Borja Jiménez",
     image: "/images/juancarlosrey.jpg",
     category: "Actualidad",
