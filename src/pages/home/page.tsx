@@ -2876,8 +2876,34 @@ dangerouslySetInnerHTML={{
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-      {/* Header y resto del contenido */}
+      {/* Header */}
+      <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 md:h-20">
+            <div className="flex items-center group">
+              <div className="relative">
+                <img 
+                  src="/images/tendidodigitallogosimple.jpg" 
+                  alt="Tendido Digital" 
+                  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+                />
+                <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              </div>
+              <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+                TENDIDO DIGITAL
+              </span>
+            </div>
+
+            {/* Navigation y resto del header... */}
+            {/* ... (tu código del header existente) ... */}
+          </div>
+        </div>
+      </header>
+
+      {/* Renderizar contenido principal */}
       {renderContent()}
     </div>
   );
 }
+
+export default Home;
