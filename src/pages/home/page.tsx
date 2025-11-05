@@ -2561,8 +2561,7 @@ TENDIDO DIGITAL
 
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
-<div
-  className="fixed inset-0 bg-black z-50 overflow-y-auto"
+<div className="min-h-[100vh] max-h-screen overflow-y-auto bg-white">
   style={{
     touchAction: "none",  // Evita scroll lateral en móviles
     overscrollBehavior: "contain", // Bloquea rebote de scroll
@@ -2598,11 +2597,13 @@ TENDIDO DIGITAL
 {/* Imagen principal */}
 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
   <div className="flex flex-col items-center">
-    <img
-      src={selectedNews.image}
-      alt={selectedNews.title}
-      className="w-full h-auto rounded-md"
-    />
+<img
+  src={selectedNews.image}
+  alt={selectedNews.title}
+  className="w-full h-auto max-h-[80vh] object-contain mx-auto"
+  loading="lazy"
+/>
+
 
     {/* Pie de foto, estilo Cultoro */}
     {selectedNews.imageCaption && (
