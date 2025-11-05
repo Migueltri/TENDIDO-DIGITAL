@@ -2863,19 +2863,11 @@ dangerouslySetInnerHTML={{
           className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
         >
           Cancelar
-        </button>
+     </button>
       </div>
     </div>
   )}
-</div>
-  );
-}
 
-return (
-  <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-    {renderContent()}
-  </div>
+</div>
 );
 }
-
-export default Home;
