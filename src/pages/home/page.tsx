@@ -2867,8 +2867,6 @@ texto
       Cancelar
     </button>
   </div>
-</div>
 )}
-
 </div>
 );
