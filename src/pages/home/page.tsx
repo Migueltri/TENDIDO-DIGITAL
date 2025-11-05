@@ -2635,6 +2635,5 @@ dangerouslySetInnerHTML={{
     </div>
   )}
 
-</div>
 );
 }
