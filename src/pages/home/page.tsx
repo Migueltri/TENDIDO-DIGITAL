@@ -2870,6 +2870,3 @@ dangerouslySetInnerHTML={{
 
 </div>
 );
-}
-
-
