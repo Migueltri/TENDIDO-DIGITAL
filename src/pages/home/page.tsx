@@ -43,7 +43,7 @@ function formatExactDate(dateString: string): string {
 
 function formatTimeAgo(dateString: string): string {
   const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; // 🚫 no mostrar “Invalid Date”
+  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
 
   const now = new Date();
   const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
@@ -1779,12 +1779,12 @@ return (
           }`}
         >
 {/* Hero image: imagen completa sin recortar */}
-<div className="card-image w-full h-full flex items-center justify-center bg-black">
+<div className="carousel-slide w-full">
   <img
-    src={news.image}
-    alt={news.title}
-    className="w-full h-auto object-contain"
-    style={{ maxHeight: '80vh', display: 'block', margin: '0 auto' }}
+    src={slide.image}
+    alt={slide.title}
+    className="w-full h-auto object-contain mx-auto"
+    style={{ maxHeight: '60vh', display: 'block' }}
   />
 </div>
 
@@ -1950,11 +1950,13 @@ return (
               >
                 <div className="relative overflow-hidden">
                   <img
-                    src={news.image}
-                    alt={news.title}
-                    className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                  />
+  src={news.image}
+  alt={news.title}
+  className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+  loading="lazy"
+  style={{ maxHeight: '40vh' }}
+/>
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
@@ -2526,12 +2528,13 @@ TENDIDO DIGITAL
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
-                <img 
-  src="/images/tendidodigitallogosimple.jpg" 
-  alt="Tendido Digital" 
-  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+                <img
+  src={selectedNews.image}
+  alt={selectedNews.title}
+  className="w-full h-auto rounded-md object-contain"
+  style={{ maxHeight: '80vh', display: 'block', margin: '0 auto' }}
 />
-
+				  
                 <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
                   TENDIDO DIGITAL
                 </span>
@@ -2648,11 +2651,12 @@ dangerouslySetInnerHTML={{
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
-                <img 
-  src="/images/tendidodigitallogosimple.jpg" 
-  alt="Tendido Digital" 
-  className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
+                <img
+  src={selectedChronicle.image}
+  alt={selectedChronicle.title}
+  className="w-full h-full object-contain object-top"
 />
+
                 <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
                   TENDIDO DIGITAL
                 </span>
