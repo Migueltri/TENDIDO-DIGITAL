@@ -2812,61 +2812,74 @@ dangerouslySetInnerHTML={{
     </div>
   )}
 
-  {/* Modal de Compartir */}
-  {isShareModalOpen && sharePost && (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
-        <div className="text-center mb-6">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <i className="ri-share-line text-white text-2xl"></i>
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
-          <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+          {/* Modal de Compartir */}
+          {isShareModalOpen && sharePost && (
+            <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+              <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+                <div className="text-center mb-6">
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <i className="ri-share-line text-white text-2xl"></i>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
+                  <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+                </div>
+                
+                <div className="space-y-3 mb-6">
+                  <button
+                    onClick={shareToWhatsApp}
+                    className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <i className="ri-whatsapp-line text-xl"></i>
+                    <span className="font-medium">Compartir en WhatsApp</span>
+                  </button>
+                  
+                  <button
+                    onClick={shareToTwitter}
+                    className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <i className="ri-twitter-fill text-xl"></i>
+                    <span className="font-medium">Compartir en Twitter</span>
+                  </button>
+                  
+                  <button
+                    onClick={shareToFacebook}
+                    className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <i className="ri-facebook-fill text-xl"></i>
+                    <span className="font-medium">Compartir en Facebook</span>
+                  </button>
+                  
+                  <button
+                    onClick={copyLink}
+                    className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <i className="ri-link text-xl"></i>
+                    <span className="font-medium">Copiar enlace</span>
+                  </button>
+                </div>
+                
+                <button
+                  onClick={closeShareModal}
+                  className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
+                >
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          )}
         </div>
-        
-        <div className="space-y-3 mb-6">
-          <button
-            onClick={shareToWhatsApp}
-            className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-whatsapp-line text-xl"></i>
-            <span className="font-medium">Compartir en WhatsApp</span>
-          </button>
-          
-          <button
-            onClick={shareToTwitter}
-            className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-twitter-fill text-xl"></i>
-            <span className="font-medium">Compartir en Twitter</span>
-          </button>
-          
-          <button
-            onClick={shareToFacebook}
-            className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-facebook-fill text-xl"></i>
-            <span className="font-medium">Compartir en Facebook</span>
-          </button>
-          
-          <button
-            onClick={copyLink}
-            className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105"
-          >
-            <i className="ri-link text-xl"></i>
-            <span className="font-medium">Copiar enlace</span>
-          </button>
-        </div>
-        
-        <button
-          onClick={closeShareModal}
-          className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
-        >
-          Cancelar
-        </button>
-      </div>
-    </div>
-  )}
+      );
+    }
 
-</div>
-);
+    return renderContent();
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
+      {/* Header y resto del contenido */}
+      {renderContent()}
+    </div>
+  );
+}
+
+export default Home;
