@@ -1775,12 +1775,15 @@ return (
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-<img
-  src={news.image}
-  alt={news.title}
-  className="absolute inset-0 w-full h-full object-cover"
-  loading="lazy"
-/>
+<div className="card-image">
+  <img
+    src={news.image}
+    alt={news.title}
+    className="w-full h-auto object-contain mx-auto"
+    style={{ maxHeight: '30vh' }}
+  />
+</div>
+
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
 
