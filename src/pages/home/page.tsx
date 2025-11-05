@@ -23,7 +23,7 @@ type Chronicle = BaseArticle;
 
 // Muestra la hora tal como la escribiste en tus datos
 function formatExactDate(dateString: string): string {
-  // Si es un formato ISO, conviértelo; si no, devuélvelo limpio
+  // Si es un formato tiktokISO, conviértelo; si no, devuélvelo limpio
   const parsed = new Date(dateString);
   if (!isNaN(parsed.getTime())) {
     return parsed.toLocaleString("es-ES", {
@@ -2255,67 +2255,39 @@ return (
         </p>
 
         {/* Social icons */}
-        <div className="flex space-x-4">
-          {[
-            {
-              key: 'instagram',
-              url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==',
-              title: 'Instagram - Portal Tendido Digital',
-              element: (
-                <i className="ri-instagram-fill text-2xl" aria-hidden="true"></i>
-              ),
-              hover: 'hover:text-pink-400'
-            },
-            {
-              key: 'tiktok',
-              url: 'https://www.tiktok.com/@portaltendidodigital',
-              title: 'TikTok - Portal Tendido Digital',
-              element: (
-                // SVG TikTok (inline) — accesible y ligero
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M12.5 2v8.3A4.2 4.2 0 0 1 8.3 14 4.3 4.3 0 1 1 12.5 9.4V6.8a7.2 7.2 0 0 0 4.9 1.9V4.5A9.3 9.3 0 0 1 12.5 2z"/>
-                </svg>
-              ),
-              hover: 'hover:text-white'
-            },
-            {
-              key: 'x',
-              url: 'https://x.com/ptendidodigital',
-              title: 'X (Twitter) - Portal Tendido Digital',
-              element: (
-                // SVG X (simple X mark / bird alternative) — accesible
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M21.36 5.64a1 1 0 0 0-1.41 0L13 12.59 8.05 7.64a1 1 0 0 0-1.41 1.41L11.59 14l-4.95 4.95a1 1 0 1 0 1.41 1.41L13 15.41l6.95 6.95a1 1 0 0 0 1.41-1.41L14.41 14l6.95-6.95a1 1 0 0 0 0-1.41z"/>
-                </svg>
-              ),
-              hover: 'hover:text-blue-400'
-            }
-          ].map((social) => (
-            <a
-              key={social.key}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.title}
-              title={social.title}
-              className={`text-gray-400 ${social.hover} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800`}
-            >
-              {social.element}
-            </a>
-          ))}
-        </div>
+<div className="flex space-x-4">
+  {[
+    {
+      key: 'instagram',
+      url: 'https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==',
+      icon: 'ri-instagram-fill',
+      color: 'hover:text-pink-400'
+    },
+    {
+      key: 'tiktok',
+      url: 'https://www.tiktok.com/@portaltendidodigital',
+      icon: 'ri-tiktok-fill',
+      color: 'hover:text-gray-100'
+    },
+    {
+      key: 'x',
+      url: 'https://x.com/ptendidodigital',
+      icon: 'ri-twitter-x-fill',
+      color: 'hover:text-blue-400'
+    }
+  ].map((social) => (
+    <a
+      key={social.key}
+      href={social.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={social.key}
+      className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 cursor-pointer p-2 rounded-full hover:bg-gray-800 flex items-center justify-center`}
+    >
+      <i className={`${social.icon} text-[1.6rem]`} />
+    </a>
+  ))}
+</div>
       </div>
 
       <div>
