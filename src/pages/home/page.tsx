@@ -1563,7 +1563,7 @@ document.body.style.overflow = 'unset';
             >
               <div className="relative overflow-hidden">
 <img
-  src="/images/tendidodigitallogosimple.png"
+  src="/images/tendidodigitallogosimple.jpg"
   alt="Tendido Digital"
   className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
   style={{ mixBlendMode: "multiply" }}
@@ -2428,7 +2428,7 @@ return (
 <div className="flex items-center group">
 <div className="relative">
 <img
-  src="/images/tendidodigitallogosimple.png"
+  src="/images/tendidodigitallogosimple.jpg"
   alt="Tendido Digital"
   className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
   style={{ mixBlendMode: "multiply" }}
