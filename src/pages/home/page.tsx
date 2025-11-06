@@ -321,6 +321,18 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
+    image: "/images/anoet.jpg",
+    category: "Actualidad",
+    date: "6 de noviembre de 2025",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ha llevado a cabo una reestructuración de su Junta Directiva con el objetivo de adaptarse a las nuevas necesidades del sector y dotar a la organización de una mayor agilidad y eficiencia en la toma de decisiones. La nueva dirección será más reducida y operativa, orientada a dinamizar la gestión interna y reforzar la capacidad ejecutiva de la asociación.
+
+La Junta Directiva queda ahora conformada por Rafael Garrido, que asume la presidencia, acompañado por Ramón Valencia y Óscar Martínez Labiano como vicepresidentes. Completan el órgano directivo los vocales Nacho Lloret, Alberto García, Carmelo García y el empresario José María Garzón, quien se incorpora a ANOET en esta nueva etapa.
+
+Con esta reorganización, ANOET establece una estructura integrada por un presidente, dos vicepresidentes y cuatro vocales. La asociación subraya que este modelo busca fortalecer el liderazgo interno, promover una participación más activa de sus socios y reforzar la cohesión dentro de la entidad, con el propósito de afrontar con mayor solidez los retos presentes y futuros del sector.`
+  },
+	{ 
+    id: 1001,
     title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
     image: "/images/osuna.jpg",
 	imageCaption: "Plaza de Toros de Osuna",
@@ -336,7 +348,7 @@ Por su parte, Carmelo García ha expresado su satisfacción por la confianza ren
 Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
   }, 
 	{
-    id: 1001,
+    id: 1002,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
     category: "Actualidad",
@@ -348,7 +360,7 @@ Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más
 El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -433,8 +445,20 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
- 	{ 
+ { 
     id: 1,
+    title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
+    image: "/images/anoet.jpg",
+    category: "Actualidad",
+    date: "6 de noviembre de 2025",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ha llevado a cabo una reestructuración de su Junta Directiva con el objetivo de adaptarse a las nuevas necesidades del sector y dotar a la organización de una mayor agilidad y eficiencia en la toma de decisiones. La nueva dirección será más reducida y operativa, orientada a dinamizar la gestión interna y reforzar la capacidad ejecutiva de la asociación.
+
+La Junta Directiva queda ahora conformada por Rafael Garrido, que asume la presidencia, acompañado por Ramón Valencia y Óscar Martínez Labiano como vicepresidentes. Completan el órgano directivo los vocales Nacho Lloret, Alberto García, Carmelo García y el empresario José María Garzón, quien se incorpora a ANOET en esta nueva etapa.
+
+Con esta reorganización, ANOET establece una estructura integrada por un presidente, dos vicepresidentes y cuatro vocales. La asociación subraya que este modelo busca fortalecer el liderazgo interno, promover una participación más activa de sus socios y reforzar la cohesión dentro de la entidad, con el propósito de afrontar con mayor solidez los retos presentes y futuros del sector.`
+  },
+	{ 
+    id: 11,
     title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
     image: "/images/osuna.jpg",
 	imageCaption: "Plaza de Toros de Osuna",
@@ -450,7 +474,7 @@ Por su parte, Carmelo García ha expresado su satisfacción por la confianza ren
 Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
   }, 
 	{ 
-    id: 2,
+    id: 12,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
     category: "Actualidad",
@@ -462,7 +486,7 @@ Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más
 El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 3,
+    id: 13,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -474,7 +498,7 @@ El percance tuvo lugar cuando un toro lo sorprendió durante el manejo cotidiano
 El torero fue atendido de urgencia y trasladado para recibir tratamiento quirúrgico. A pesar de la gravedad inicial de la cornada, se encuentra fuera de peligro y evoluciona satisfactoriamente dentro de la normalidad prevista en este tipo de lesiones.`
   }, 
 	{ 
-    id: 4,
+    id: 14,
     title: "Juan Carlos Rey entra en la cuadrilla de Borja Jiménez",
     image: "/images/juancarlosrey.jpg",
     category: "Actualidad",
@@ -489,7 +513,7 @@ El torero de Espartinas iniciará la nueva campaña tras firmar una sobresalient
 Sus triunfos en Sevilla, Madrid y Bilbao constituyeron los hitos fundamentales de una temporada memorable. En la Feria de Abril, cortó dos orejas a un toro de Jandilla; en las Corridas Generales de Bilbao, logró el indulto de un ejemplar de La Quinta; y en Las Ventas, firmó su tercera Puerta Grande con una faena histórica al toro “Milhijas”, de Victorino Martín, considerada ya una de las más destacadas de la tauromaquia reciente.`
   }, 
 	{ 
-    id: 5,
+    id: 15,
     title: "Tomás González, una temporada de crecimiento y firmeza en 2025",
     image: "/images/tomasgonzalez2.jpg",
 	imageCaption: "Tomás González en Yunquera de Henares",
@@ -504,7 +528,7 @@ Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, h
 La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
   }, 
 	{ 
-    id: 6,
+    id: 16,
     title: "Diego Urdiales y Luis Miguel Villalpando terminan su relación de apoderamiento",
     image: "/images/dos.jpg",
 	imageCaption: "Diego Urdiales en Zaragoza",
@@ -515,7 +539,7 @@ La temporada de Tomás González no se mide solo en cifras, sino en evolución, 
 La ruptura, según se ha señalado, se produce de manera amistosa y responde a la evolución natural de sus respectivas trayectorias. Urdiales, referente del toreo clásico, afronta ahora una nueva etapa en la gestión de su carrera, mientras Villalpando continuará con sus proyectos en el ámbito taurino.`
   },
 	{ 
-    id: 7,
+    id: 17,
     title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
     image: "/images/banderillero.jpg",
     category: "Actualidad",
@@ -525,7 +549,7 @@ La ruptura, según se ha señalado, se produce de manera amistosa y responde a l
 Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
   }, 
 	{ 
-    id: 8,
+    id: 18,
     title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
     image: "/images/feriasanisidro.jpg",
     category: "Actualidad",
@@ -534,7 +558,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
   }, 
 	{ 
-    id: 9,
+    id: 19,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -545,7 +569,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
 Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
   }, 
 	{ 
-    id: 10,
+    id: 20,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
     category: "Actualidad",
