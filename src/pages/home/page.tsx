@@ -319,8 +319,24 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
- {
+	{ 
     id: 1000,
+    title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
+    image: "/images/osuna.jpg",
+	imageCaption: "Plaza de Toros de Osuna",
+    category: "Actualidad",
+    date: "6 de noviembre de 2025",
+	excerpt: "Una corrida de toros y otra de rejones que se celebrarán el 16 y 17 de mayo",
+    fullContent: `Junta de Gobierno del Excmo. Ayuntamiento de Osuna ha aprobado la prórroga del contrato con la empresa Espectáculos Carmelo García para la gestión de la plaza de toros de Osuna durante un año más, tal y como se establecía en el acuerdo de adjudicación. De este modo, la empresa que dirige el empresario sanluqueño Carmelo García continuará organizando la Feria Taurina de Mayo 2026, consolidando así el trabajo iniciado en la pasada edición, en la que se recuperó el esplendor del histórico Coso de San Arcadio con carteles de gran atractivo y la presencia de destacadas figuras del toreo.
+
+El Ayuntamiento ha valorado positivamente la gestión realizada por Espectáculos Carmelo García, ‘destacando la capacidad del empresario, para devolver al coso ursaonense el prestigio y la categoría que tradicionalmente han distinguido a su feria taurina’.
+
+Por su parte, Carmelo García ha expresado su satisfacción por la confianza renovada: ‘Agradecemos a los responsables del Ayuntamiento la concesión de esta prórroga por un año. Es una enorme satisfacción que se haya valorado de forma positiva el trabajo realizado en la pasada feria. Esta nueva aprobación nos llena de ilusión de cara al futuro, con una Feria de Mayo 2026 que ya tiene fechas: el sábado 16 de mayo se celebrará una gran corrida de toros a pie, y el domingo 17 tendrá lugar un festejo de rejones de máximo nivel’, manifestó el empresario.
+
+Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
+  }, 
+	{
+    id: 1001,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
     category: "Actualidad",
@@ -332,7 +348,7 @@ Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más
 El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -417,7 +433,23 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
- { 
+ 	{ 
+    id: 1,
+    title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
+    image: "/images/osuna.jpg",
+	imageCaption: "Plaza de Toros de Osuna",
+    category: "Actualidad",
+    date: "6 de noviembre de 2025",
+	excerpt: "Una corrida de toros y otra de rejones que se celebrarán el 16 y 17 de mayo",
+    fullContent: `Junta de Gobierno del Excmo. Ayuntamiento de Osuna ha aprobado la prórroga del contrato con la empresa Espectáculos Carmelo García para la gestión de la plaza de toros de Osuna durante un año más, tal y como se establecía en el acuerdo de adjudicación. De este modo, la empresa que dirige el empresario sanluqueño Carmelo García continuará organizando la Feria Taurina de Mayo 2026, consolidando así el trabajo iniciado en la pasada edición, en la que se recuperó el esplendor del histórico Coso de San Arcadio con carteles de gran atractivo y la presencia de destacadas figuras del toreo.
+
+El Ayuntamiento ha valorado positivamente la gestión realizada por Espectáculos Carmelo García, ‘destacando la capacidad del empresario, para devolver al coso ursaonense el prestigio y la categoría que tradicionalmente han distinguido a su feria taurina’.
+
+Por su parte, Carmelo García ha expresado su satisfacción por la confianza renovada: ‘Agradecemos a los responsables del Ayuntamiento la concesión de esta prórroga por un año. Es una enorme satisfacción que se haya valorado de forma positiva el trabajo realizado en la pasada feria. Esta nueva aprobación nos llena de ilusión de cara al futuro, con una Feria de Mayo 2026 que ya tiene fechas: el sábado 16 de mayo se celebrará una gran corrida de toros a pie, y el domingo 17 tendrá lugar un festejo de rejones de máximo nivel’, manifestó el empresario.
+
+Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
+  }, 
+	{ 
     id: 2,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
