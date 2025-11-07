@@ -321,6 +321,22 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: "La UTE Circuitos Taurinos-Pueblos del Toreo solicita tres años de prórroga en Palencia",
+    image: "/images/ute.jpg",
+    category: "Actualidad",
+    date: "7 de noviembre de 2025",
+    fullContent: `La UTE Circuitos Taurinos – Pueblos del Toreo, integrada por los empresarios Carlos Zúñiga (hijo) y Víctor Zabala, ha solicitado a la Diputación de Palencia la prórroga del contrato de gestión de la plaza de toros de Campos Góticos por tres años más, según informa Diario Palentino.
+
+De aprobarse dicha prórroga, Zúñiga y Zabala continuarían al frente del coso palentino durante las tres próximas ferias de San Antolín, correspondientes a los años 2026, 2027 y 2028.
+
+La diputada de Cultura y responsable de la plaza, Carolina Valbuena, ha valorado positivamente la labor de la actual empresa gestora:
+
+«Estamos muy satisfechos con la gestión realizada en estos años. Han apostado por consolidar la afición, cuidar al abonado y reforzar la identidad de la plaza, además de prestar especial atención al diseño de los carteles y promover iniciativas como las corridas goyescas. Su continuidad sería beneficiosa para la provincia».
+
+Según establece el pliego vigente, la empresa deberá programar durante la Feria de San Antolín un mínimo de tres corridas de toros y una de rejones.`
+  },
+	{ 
+    id: 1001,
     title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
     image: "/images/anoet.jpg",
     category: "Actualidad",
@@ -332,7 +348,7 @@ La Junta Directiva queda ahora conformada por Rafael Garrido, que asume la presi
 Con esta reorganización, ANOET establece una estructura integrada por un presidente, dos vicepresidentes y cuatro vocales. La asociación subraya que este modelo busca fortalecer el liderazgo interno, promover una participación más activa de sus socios y reforzar la cohesión dentro de la entidad, con el propósito de afrontar con mayor solidez los retos presentes y futuros del sector.`
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
     image: "/images/osuna.jpg",
 	imageCaption: "Plaza de Toros de Osuna",
@@ -348,7 +364,7 @@ Por su parte, Carmelo García ha expresado su satisfacción por la confianza ren
 Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
   }, 
 	{
-    id: 1002,
+    id: 1003,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
     category: "Actualidad",
@@ -360,7 +376,7 @@ Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más
 El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 1003,
+    id: 1004,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -447,6 +463,22 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 const latestNews: NewsItem[] = [
  { 
     id: 1,
+    title: "La UTE Circuitos Taurinos-Pueblos del Toreo solicita tres años de prórroga en Palencia",
+    image: "/images/ute.jpg",
+    category: "Actualidad",
+    date: "7 de noviembre de 2025",
+    fullContent: `La UTE Circuitos Taurinos – Pueblos del Toreo, integrada por los empresarios Carlos Zúñiga (hijo) y Víctor Zabala, ha solicitado a la Diputación de Palencia la prórroga del contrato de gestión de la plaza de toros de Campos Góticos por tres años más, según informa Diario Palentino.
+
+De aprobarse dicha prórroga, Zúñiga y Zabala continuarían al frente del coso palentino durante las tres próximas ferias de San Antolín, correspondientes a los años 2026, 2027 y 2028.
+
+La diputada de Cultura y responsable de la plaza, Carolina Valbuena, ha valorado positivamente la labor de la actual empresa gestora:
+
+«Estamos muy satisfechos con la gestión realizada en estos años. Han apostado por consolidar la afición, cuidar al abonado y reforzar la identidad de la plaza, además de prestar especial atención al diseño de los carteles y promover iniciativas como las corridas goyescas. Su continuidad sería beneficiosa para la provincia».
+
+Según establece el pliego vigente, la empresa deberá programar durante la Feria de San Antolín un mínimo de tres corridas de toros y una de rejones.`
+  },
+	{ 
+    id: 2,
     title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
     image: "/images/anoet.jpg",
     category: "Actualidad",
