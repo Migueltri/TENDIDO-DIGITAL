@@ -319,8 +319,29 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-   { 
+  { 
     id: 1000,
+    title: "Ginés Marín : el rumor afianzado del toreo bueno ",
+    image: "/images/gines.jpg",
+	imageCaption: "Gines Marin - Foto Javier Navarro",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El extremeño cierra una temporada de madurez y evolución que lo reafirma entre los nombres a seguir en 2026",
+    fullContent: `
+El torero extremeño Ginés Marín afronta el invierno con la determinación de seguir escalando posiciones tras una temporada 2025 marcada por el reencuentro y la madurez. Sin grandes triunfos numéricos, pero con una evolución evidente, el diestro ha recuperado sensaciones y ha reafirmado su sitio entre los nombres destacados del escalafón.
+
+Desde su salida por la Puerta Grande de Las Ventas en el Día de la Hispanidad de 2022, su carrera atravesó altibajos por la falta de éxitos en plazas de primera, pese a su depurada técnica, su elegante mano izquierda y una forma de matar digna de las grandes figuras. La mala fortuna en los sorteos también le pasó factura.
+
+El punto de inflexión llegó con la incorporación del empresario y ganadero Álvaro Polo como nuevo apoderado, un cambio que marcó el inicio de una etapa más sólida. En San Isidro mostró mayor serenidad y profundidad; en Albacete y la Feria de Otoño de Madrid volvió a medir su toreo con toros de Victorino, dejando una impresión de madurez.
+
+El punto álgido de la temporada se vivió en San Sebastián de los Reyes, donde cortó dos orejas y salió a hombros tras una faena de temple y entrega. También brilló en la Feria de la Antigua de Guadalajara, en un mano a mano con Víctor Hernández, que dejó buen sabor entre los aficionados.
+
+Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostrado ambición, verdad y una evolución artística que lo sitúan nuevamente en la primera línea. Su temporada no ha sido de cantidad, sino de calidad. De cara a 2026, el objetivo está claro: consolidarse en las grandes ferias y mantener la línea de pureza y valor que ha recuperado.
+
+Mario Ruiz Ruiz - 9/11/2025`
+  },
+	{ 
+    id: 1001,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -331,7 +352,7 @@ const featuredNews: NewsItem[] = [
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -348,7 +369,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -362,7 +383,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1003,
+    id: 1004,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -517,8 +538,29 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+   { 
     id: 1,
+    title: "Ginés Marín : el rumor afianzado del toreo bueno ",
+    image: "/images/gines.jpg",
+	imageCaption: "Gines Marin - Foto Javier Navarro",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El extremeño cierra una temporada de madurez y evolución que lo reafirma entre los nombres a seguir en 2026",
+    fullContent: `
+El torero extremeño Ginés Marín afronta el invierno con la determinación de seguir escalando posiciones tras una temporada 2025 marcada por el reencuentro y la madurez. Sin grandes triunfos numéricos, pero con una evolución evidente, el diestro ha recuperado sensaciones y ha reafirmado su sitio entre los nombres destacados del escalafón.
+
+Desde su salida por la Puerta Grande de Las Ventas en el Día de la Hispanidad de 2022, su carrera atravesó altibajos por la falta de éxitos en plazas de primera, pese a su depurada técnica, su elegante mano izquierda y una forma de matar digna de las grandes figuras. La mala fortuna en los sorteos también le pasó factura.
+
+El punto de inflexión llegó con la incorporación del empresario y ganadero Álvaro Polo como nuevo apoderado, un cambio que marcó el inicio de una etapa más sólida. En San Isidro mostró mayor serenidad y profundidad; en Albacete y la Feria de Otoño de Madrid volvió a medir su toreo con toros de Victorino, dejando una impresión de madurez.
+
+El punto álgido de la temporada se vivió en San Sebastián de los Reyes, donde cortó dos orejas y salió a hombros tras una faena de temple y entrega. También brilló en la Feria de la Antigua de Guadalajara, en un mano a mano con Víctor Hernández, que dejó buen sabor entre los aficionados.
+
+Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostrado ambición, verdad y una evolución artística que lo sitúan nuevamente en la primera línea. Su temporada no ha sido de cantidad, sino de calidad. De cara a 2026, el objetivo está claro: consolidarse en las grandes ferias y mantener la línea de pureza y valor que ha recuperado.
+
+Mario Ruiz Ruiz - 9/11/2025`
+  },
+	{ 
+    id: 2,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -529,7 +571,7 @@ const latestNews: NewsItem[] = [
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 2,
+    id: 5,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -546,7 +588,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 3,
+    id: 6,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -560,7 +602,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 4,
+    id: 7,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -574,7 +616,7 @@ José Carlos Venegas ha explicado que: ‘Afortunadamente he tenido suerte de qu
 ‘Ahora toca volver a casa y comenzar cuanto antes la rehabilitación para estar de nuevo frente al toro y prepararme a fondo para la bonita temporada que se me presenta de la mano de mis apoderados Juan Carlos Campillo y Lidia Rodríguez Bermejo’, asegura el diestro jienense.`
   },
 	{ 
-    id: 5,
+    id: 8,
     title: "La UTE Circuitos Taurinos-Pueblos del Toreo solicita tres años de prórroga en Palencia",
     image: "/images/ute.jpg",
     category: "Actualidad",
@@ -590,7 +632,7 @@ La diputada de Cultura y responsable de la plaza, Carolina Valbuena, ha valorado
 Según establece el pliego vigente, la empresa deberá programar durante la Feria de San Antolín un mínimo de tres corridas de toros y una de rejones.`
   },
 	{ 
-    id: 6,
+    id: 9,
     title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
     image: "/images/anoet.jpg",
     category: "Actualidad",
