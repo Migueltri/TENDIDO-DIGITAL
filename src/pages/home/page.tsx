@@ -321,7 +321,7 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
-    title: "Ginés Marín : el rumor afianzado del toreo bueno ",
+    title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
     category: "Actualidad",
@@ -540,7 +540,7 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 const latestNews: NewsItem[] = [
    { 
     id: 1,
-    title: "Ginés Marín : el rumor afianzado del toreo bueno ",
+    title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
     category: "Actualidad",
