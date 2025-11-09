@@ -319,8 +319,50 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-	{ 
+   { 
     id: 1000,
+    title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
+    image: "/images/luisblazquez.jpg",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El subalterno ha sido operado esta misma mañana de una lesión que arrastraba desde el mes de agosto",
+    fullContent: `El banderilleros valenciano Luis Blázquez ha sido operado esta mañana de una rotura de peroné que arrastraba desde el pasado mes de agosto en las Corridas Generales de Bilbao, además de ser también operado del menisco de la pierna izquierda.
+
+Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
+  },
+	{ 
+    id: 1001,
+    title: "La temporada en Las Ventas arrancará el 22 de marzo",
+    image: "/images/lasventas.jpg",
+	imagecaption: "Plaza de Toros de Las Ventas",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+    fullContent: `La temporada en Las Ventas echará a andar el próximo domingo 22 de marzo y, salvo cambios de última hora, Madrid alzará el telón con una novillada. Posteriormente, se celebrarán dos corridas de toros con motivo del Domingo de Ramos y el Domingo de Resurrección, siguiendo la tradición de la plaza más importante del mundo.
+
+El mes de abril volverá a estar marcado por la celebración de novilladas que servirán de antesala a la Feria de San Isidro. Todo este calendario fue adelantado por Rafael García Garrido, empresario de Plaza 1 junto a Simón Casas, a través de una publicación en su cuenta de Instagram.
+
+La Feria de San Isidro comenzará el viernes 8 de mayo y se desarrollará de manera continuada -a excepción de los lunes de descanso- hasta el 7 de junio, día en el que se celebrará la emblemática corrida de la Beneficencia.
+
+La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otra corrida de toros el 21, antes del inicio de las nocturnas el 25.
+
+La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
+  },
+	{ 
+    id: 1002,
+    title: "La Feria de San Isidro comenzará el 8 de mayo",
+    image: "/images/feriasanisidro2.jpg",
+	imagecaption: "Plaza de Toros de Las Ventas",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El 7 de junio se celebrará la corrida de la Beneficencia, mientras que el 14 será turno de la corrida In Memoriam",
+    fullContent: `La Feria de San Isidro ya tiene fechas. El serial más importante del toreo comenzará el viernes 8 de mayo y se desarrollará de manera continuada -a excepción de los lunes de descanso- hasta el 7 de junio, día en el que se celebrará la emblemática corrida de la Beneficencia. Así lo confirmó Rafael García Garrido, empresario junto a Simón Casas de Plaza 1, a través de una foto en su cuenta de Instagram.
+
+La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otra corrida de toros el 21, antes del inicio de las nocturnas el 25.
+
+La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
+  },
+	{ 
+    id: 1003,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -475,8 +517,50 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
- { 
+    { 
     id: 1,
+    title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
+    image: "/images/luisblazquez.jpg",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El subalterno ha sido operado esta misma mañana de una lesión que arrastraba desde el mes de agosto",
+    fullContent: `El banderilleros valenciano Luis Blázquez ha sido operado esta mañana de una rotura de peroné que arrastraba desde el pasado mes de agosto en las Corridas Generales de Bilbao, además de ser también operado del menisco de la pierna izquierda.
+
+Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
+  },
+	{ 
+    id: 2,
+    title: "La temporada en Las Ventas arrancará el 22 de marzo",
+    image: "/images/lasventas.jpg",
+	imagecaption: "Plaza de Toros de Las Ventas",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+    fullContent: `La temporada en Las Ventas echará a andar el próximo domingo 22 de marzo y, salvo cambios de última hora, Madrid alzará el telón con una novillada. Posteriormente, se celebrarán dos corridas de toros con motivo del Domingo de Ramos y el Domingo de Resurrección, siguiendo la tradición de la plaza más importante del mundo.
+
+El mes de abril volverá a estar marcado por la celebración de novilladas que servirán de antesala a la Feria de San Isidro. Todo este calendario fue adelantado por Rafael García Garrido, empresario de Plaza 1 junto a Simón Casas, a través de una publicación en su cuenta de Instagram.
+
+La Feria de San Isidro comenzará el viernes 8 de mayo y se desarrollará de manera continuada -a excepción de los lunes de descanso- hasta el 7 de junio, día en el que se celebrará la emblemática corrida de la Beneficencia.
+
+La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otra corrida de toros el 21, antes del inicio de las nocturnas el 25.
+
+La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
+  },
+	{ 
+    id: 3,
+    title: "La Feria de San Isidro comenzará el 8 de mayo",
+    image: "/images/feriasanisidro2.jpg",
+	imagecaption: "Plaza de Toros de Las Ventas",
+    category: "Actualidad",
+    date: "9 de noviembre de 2025",
+	excerpt: "El 7 de junio se celebrará la corrida de la Beneficencia, mientras que el 14 será turno de la corrida In Memoriam",
+    fullContent: `La Feria de San Isidro ya tiene fechas. El serial más importante del toreo comenzará el viernes 8 de mayo y se desarrollará de manera continuada -a excepción de los lunes de descanso- hasta el 7 de junio, día en el que se celebrará la emblemática corrida de la Beneficencia. Así lo confirmó Rafael García Garrido, empresario junto a Simón Casas de Plaza 1, a través de una foto en su cuenta de Instagram.
+
+La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otra corrida de toros el 21, antes del inicio de las nocturnas el 25.
+
+La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
+  },
+	{ 
+    id: 4,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -490,7 +574,7 @@ José Carlos Venegas ha explicado que: ‘Afortunadamente he tenido suerte de qu
 ‘Ahora toca volver a casa y comenzar cuanto antes la rehabilitación para estar de nuevo frente al toro y prepararme a fondo para la bonita temporada que se me presenta de la mano de mis apoderados Juan Carlos Campillo y Lidia Rodríguez Bermejo’, asegura el diestro jienense.`
   },
 	{ 
-    id: 2,
+    id: 5,
     title: "La UTE Circuitos Taurinos-Pueblos del Toreo solicita tres años de prórroga en Palencia",
     image: "/images/ute.jpg",
     category: "Actualidad",
@@ -506,7 +590,7 @@ La diputada de Cultura y responsable de la plaza, Carolina Valbuena, ha valorado
 Según establece el pliego vigente, la empresa deberá programar durante la Feria de San Antolín un mínimo de tres corridas de toros y una de rejones.`
   },
 	{ 
-    id: 3,
+    id: 6,
     title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
     image: "/images/anoet.jpg",
     category: "Actualidad",
