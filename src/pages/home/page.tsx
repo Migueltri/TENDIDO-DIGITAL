@@ -583,8 +583,21 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+    { 
     id: 1,
+    title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
+    image: "/images/andres.jpg",
+	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+    fullContent: `El taurino salmantino Andrés Sánchez ha alcanzado un acuerdo de apoderamiento con el novillero cordobés Joselito de Córdoba, convirtiéndose en su nuevo representante. A partir de la próxima temporada, Sánchez asumirá la gestión de su carrera y compromisos profesionales, acompañando al joven espada en su proyección dentro del escalafón menor.
+
+Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como una de las promesas más firmes de la novillería actual, mientras que Andrés Sánchez aportará su experiencia, criterio y conocimiento del sector para orientar la evolución del torero de cara a los retos de la campaña 2026.
+
+El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
+  },
+	{ 
+    id: 2,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -600,7 +613,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 2,
+    id: 3,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
