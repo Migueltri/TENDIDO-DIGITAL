@@ -319,8 +319,40 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-  { 
+    { 
     id: 1000,
+    title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
+    image: "/images/calasparra.jpg",
+	imageCaption: "Plaza de Toros Calasparra",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+	excerpt: "El Ayuntamiento destinará más de dos millones de euros para el proyecto",
+    fullContent: `El Ayuntamiento de Calasparra ha puesto en marcha el proceso de licitación para las obras de restauración y mejora de la plaza de toros de La Caverina, un proyecto que contará con un presupuesto superior a los dos millones de euros y un plazo de ejecución estimado de diez meses.
+
+La actuación permitirá recuperar la actividad taurina en el histórico coso calasparreño, que en los últimos años había visto interrumpidos sus festejos debido al deterioro de las instalaciones, circunstancia que obligó a trasladar los espectáculos a una plaza portátil.
+
+Con la remodelación, La Caverina se transformará en un espacio polivalente, preparado no solo para albergar festejos taurinos, sino también eventos culturales, educativos y de ocio, con una capacidad aproximada para 2.500 espectadores.
+
+El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
+  },
+	{ 
+    id: 1001,
+    title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
+    image: "/images/illescas.jpg",
+	imageCaption: "Plaza de Toros Illescas",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+	excerpt: "El serial estará compuesto por corrida de toros y una de rejones",
+    fullContent: `La Feria del Milagro de Illescas, uno de los seriales taurinos más esperados y de mayor relevancia en el arranque de la temporada europea, ya tiene fechas confirmadas. El ciclo se celebrará el fin de semana del 7 y 8 de marzo de 2026 y estará compuesto, como marca la tradición, por una corrida de toros y una corrida de rejones.
+
+La empresa MaxiToro, gestora del coso toledano, trabaja ya en la confección de los carteles, que volverán a contar con la presencia de las principales figuras del toreo y las revelaciones más destacadas del escalafón. El objetivo, según fuentes de la organización, es mantener el alto nivel artístico y de repercusión que ha consolidado a Illescas como una cita de referencia en el inicio de la temporada.
+
+En los últimos años, la Feria del Milagro se ha convertido en uno de los grandes atractivos del calendario taurino, tanto por la calidad de sus combinaciones como por el ambiente social y cultural que la rodea. La Corrida del Milagro, en particular, ha adquirido una aureola especial, reuniendo cada año en los tendidos del moderno coso toledano a personalidades del mundo de la cultura, la política y la sociedad.
+
+La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
+  },
+	{ 
+    id: 1002,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -341,7 +373,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 1001,
+    id: 1003,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -352,7 +384,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 1002,
+    id: 1004,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -369,7 +401,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1003,
+    id: 1005,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -383,7 +415,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1004,
+    id: 1006,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -540,6 +572,38 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 const latestNews: NewsItem[] = [
    { 
     id: 1,
+    title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
+    image: "/images/calasparra.jpg",
+	imageCaption: "Plaza de Toros Calasparra",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+	excerpt: "El Ayuntamiento destinará más de dos millones de euros para el proyecto",
+    fullContent: `El Ayuntamiento de Calasparra ha puesto en marcha el proceso de licitación para las obras de restauración y mejora de la plaza de toros de La Caverina, un proyecto que contará con un presupuesto superior a los dos millones de euros y un plazo de ejecución estimado de diez meses.
+
+La actuación permitirá recuperar la actividad taurina en el histórico coso calasparreño, que en los últimos años había visto interrumpidos sus festejos debido al deterioro de las instalaciones, circunstancia que obligó a trasladar los espectáculos a una plaza portátil.
+
+Con la remodelación, La Caverina se transformará en un espacio polivalente, preparado no solo para albergar festejos taurinos, sino también eventos culturales, educativos y de ocio, con una capacidad aproximada para 2.500 espectadores.
+
+El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
+  },
+	{ 
+    id: 2,
+    title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
+    image: "/images/illescas.jpg",
+	imageCaption: "Plaza de Toros Illescas",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+	excerpt: "El serial estará compuesto por corrida de toros y una de rejones",
+    fullContent: `La Feria del Milagro de Illescas, uno de los seriales taurinos más esperados y de mayor relevancia en el arranque de la temporada europea, ya tiene fechas confirmadas. El ciclo se celebrará el fin de semana del 7 y 8 de marzo de 2026 y estará compuesto, como marca la tradición, por una corrida de toros y una corrida de rejones.
+
+La empresa MaxiToro, gestora del coso toledano, trabaja ya en la confección de los carteles, que volverán a contar con la presencia de las principales figuras del toreo y las revelaciones más destacadas del escalafón. El objetivo, según fuentes de la organización, es mantener el alto nivel artístico y de repercusión que ha consolidado a Illescas como una cita de referencia en el inicio de la temporada.
+
+En los últimos años, la Feria del Milagro se ha convertido en uno de los grandes atractivos del calendario taurino, tanto por la calidad de sus combinaciones como por el ambiente social y cultural que la rodea. La Corrida del Milagro, en particular, ha adquirido una aureola especial, reuniendo cada año en los tendidos del moderno coso toledano a personalidades del mundo de la cultura, la política y la sociedad.
+
+La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
+  },
+	{ 
+    id: 5,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -560,7 +624,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 2,
+    id: 6,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -571,7 +635,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 5,
+    id: 10,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -588,7 +652,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 6,
+    id: 16,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -602,7 +666,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 7,
+    id: 17,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -616,7 +680,7 @@ José Carlos Venegas ha explicado que: ‘Afortunadamente he tenido suerte de qu
 ‘Ahora toca volver a casa y comenzar cuanto antes la rehabilitación para estar de nuevo frente al toro y prepararme a fondo para la bonita temporada que se me presenta de la mano de mis apoderados Juan Carlos Campillo y Lidia Rodríguez Bermejo’, asegura el diestro jienense.`
   },
 	{ 
-    id: 8,
+    id: 18,
     title: "La UTE Circuitos Taurinos-Pueblos del Toreo solicita tres años de prórroga en Palencia",
     image: "/images/ute.jpg",
     category: "Actualidad",
@@ -632,7 +696,7 @@ La diputada de Cultura y responsable de la plaza, Carolina Valbuena, ha valorado
 Según establece el pliego vigente, la empresa deberá programar durante la Feria de San Antolín un mínimo de tres corridas de toros y una de rejones.`
   },
 	{ 
-    id: 9,
+    id: 19,
     title: "Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) impulsa una renovación operativa: su nueva junta directiva.",
     image: "/images/anoet.jpg",
     category: "Actualidad",
@@ -644,7 +708,7 @@ La Junta Directiva queda ahora conformada por Rafael Garrido, que asume la presi
 Con esta reorganización, ANOET establece una estructura integrada por un presidente, dos vicepresidentes y cuatro vocales. La asociación subraya que este modelo busca fortalecer el liderazgo interno, promover una participación más activa de sus socios y reforzar la cohesión dentro de la entidad, con el propósito de afrontar con mayor solidez los retos presentes y futuros del sector.`
   },
 	{ 
-    id: 11,
+    id: 21,
     title: "Carmelo García, un año más al frente de la plaza de toros de Osuna",
     image: "/images/osuna.jpg",
 	imageCaption: "Plaza de Toros de Osuna",
@@ -660,7 +724,7 @@ Por su parte, Carmelo García ha expresado su satisfacción por la confianza ren
 Con esta continuidad, Osuna reafirma su compromiso con la tradición taurina y con una programación que cada año atrae a numerosos aficionados, consolidando su Feria de Mayo como una de las citas más relevantes del calendario andaluz.`
   }, 
 	{ 
-    id: 12,
+    id: 22,
     title: "Fernando Adrián y Maximino Pérez ponen fin a su relación profesional",
     image: "/images/fin.jpg",
     category: "Actualidad",
@@ -672,7 +736,7 @@ Durante este periodo, Fernando Adrián ha experimentado uno de los momentos más
 El comunicado oficial expresa un agradecimiento recíproco por el trabajo conjunto, así como los buenos deseos para el futuro profesional de ambas partes. Tanto el diestro como el empresario han subrayado la calidad de los logros alcanzados durante esta etapa y han manifestado su confianza en continuar cosechando éxitos y reconocimientos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 13,
+    id: 23,
     title: "José Carlos Venegas sufre una grave cornada mientras realizaba labores de campo en su ganadería",
     image: "/images/venegas.jpg",
     category: "Actualidad",
@@ -684,7 +748,7 @@ El percance tuvo lugar cuando un toro lo sorprendió durante el manejo cotidiano
 El torero fue atendido de urgencia y trasladado para recibir tratamiento quirúrgico. A pesar de la gravedad inicial de la cornada, se encuentra fuera de peligro y evoluciona satisfactoriamente dentro de la normalidad prevista en este tipo de lesiones.`
   }, 
 	{ 
-    id: 14,
+    id: 24,
     title: "Juan Carlos Rey entra en la cuadrilla de Borja Jiménez",
     image: "/images/juancarlosrey.jpg",
     category: "Actualidad",
@@ -699,7 +763,7 @@ El torero de Espartinas iniciará la nueva campaña tras firmar una sobresalient
 Sus triunfos en Sevilla, Madrid y Bilbao constituyeron los hitos fundamentales de una temporada memorable. En la Feria de Abril, cortó dos orejas a un toro de Jandilla; en las Corridas Generales de Bilbao, logró el indulto de un ejemplar de La Quinta; y en Las Ventas, firmó su tercera Puerta Grande con una faena histórica al toro “Milhijas”, de Victorino Martín, considerada ya una de las más destacadas de la tauromaquia reciente.`
   }, 
 	{ 
-    id: 15,
+    id: 25,
     title: "Tomás González, una temporada de crecimiento y firmeza en 2025",
     image: "/images/tomasgonzalez2.jpg",
 	imageCaption: "Tomás González en Yunquera de Henares",
@@ -714,7 +778,7 @@ Su toreo, caracterizado por la verticalidad, la serenidad y el trazo profundo, h
 La temporada de Tomás González no se mide solo en cifras, sino en evolución, entrega y verdad, ingredientes que hoy lo sitúan como uno de los proyectos más serios del escalafón de cara a la temporada 2026.`
   }, 
 	{ 
-    id: 16,
+    id: 26,
     title: "Diego Urdiales y Luis Miguel Villalpando terminan su relación de apoderamiento",
     image: "/images/dos.jpg",
 	imageCaption: "Diego Urdiales en Zaragoza",
@@ -725,7 +789,7 @@ La temporada de Tomás González no se mide solo en cifras, sino en evolución, 
 La ruptura, según se ha señalado, se produce de manera amistosa y responde a la evolución natural de sus respectivas trayectorias. Urdiales, referente del toreo clásico, afronta ahora una nueva etapa en la gestión de su carrera, mientras Villalpando continuará con sus proyectos en el ámbito taurino.`
   },
 	{ 
-    id: 17,
+    id: 27,
     title: "El banderillero José Luis Barrero queda libre de cara a la próxima temporada",
     image: "/images/banderillero.jpg",
     category: "Actualidad",
@@ -735,7 +799,7 @@ La ruptura, según se ha señalado, se produce de manera amistosa y responde a l
 Después de una temporada llena de actuaciones destacadas, el torero de plata inicia una nueva etapa profesional, con la mirada puesta en seguir ejerciendo su profesión y continuar creciendo dentro del escalafón durante el próximo año taurino`
   }, 
 	{ 
-    id: 18,
+    id: 28,
     title: "La Feria de San Isidro 2026 se presentará el 5 de febrero y la corrida ‘In Memoriam’ será en memoria de Rafael de Paula",
     image: "/images/feriasanisidro.jpg",
     category: "Actualidad",
@@ -744,7 +808,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
     fullContent: `La temporada taurina 2026 de la plaza de toros de Las Ventas va dando sus primeros pasos. Según ha adelantado el programa de radio Buenos Días Madrid de Onda Madrid, dirigido por el periodista Javier Mardomingo, la gala de presentación de la Feria de San Isidro se celebrará el próximo jueves 5 de febrero a las 19:30 horas. El acto de presentación de los carteles dará a conocer las combinaciones de la feria más importante del mundo taurino.`
   }, 
 	{ 
-    id: 19,
+    id: 29,
     title: "Ignacio Candelas y Juan Manuel Moreno “Trebu” fin a la relación de apoderamiento",
     image: "/images/ignacio.jpg",
 	imageCaption: "Foto Plaza 1 ©",
@@ -755,7 +819,7 @@ Después de una temporada llena de actuaciones destacadas, el torero de plata in
 Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compartidos, deseándose lo mejor en sus próximos compromisos. Con esta decisión, Candelas inicia una nueva etapa en su carrera taurina.`
   }, 
 	{ 
-    id: 20,
+    id: 30,
     title: "Polo Saiz, Félix San Román y Joel Ramírez, premiados en Trillo",
     image: "/images/varios3.jpg",
     category: "Actualidad",
@@ -769,7 +833,7 @@ Por su parte, Félix San Román fue proclamado Triunfador del Ciclo tras cortar 
 Asimismo, el premio al Mejor Novillo recayó en “Orca”, número 12, de Polo Saiz, en reconocimiento a su bravura, clase y excelente juego durante la lidia.`
   }, 
 	{ 
-    id: 29,
+    id: 31,
     title: "Rafael Camino JR y Oscar de la Faya , nuevo equipo de apoderamiento del novillero Iván Rejas",
     image: "images/varios2.jpg",
     category: "Actualidad",
@@ -781,7 +845,7 @@ En su comunicado, el torero definió esta unión como “un proyecto joven, naci
 Con “compromiso y afición”, Rejas afronta esta nueva etapa que, según sus propias palabras, “motiva y une” a este nuevo equipo de trabajo.`
   }, 
 	{ 
-    id: 30,
+    id: 32,
     title: "Fallece Rafael de Paula a los 85 años",
     image: "images/rafaeldepaula.jpg",
     category: "Actualidad",
