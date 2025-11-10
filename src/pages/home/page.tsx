@@ -319,8 +319,21 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-    { 
+ { 
     id: 1000,
+    title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
+    image: "/images/andres.jpg",
+	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
+    category: "Actualidad",
+    date: "10 de noviembre de 2025",
+    fullContent: `El taurino salmantino Andrés Sánchez ha alcanzado un acuerdo de apoderamiento con el novillero cordobés Joselito de Córdoba, convirtiéndose en su nuevo representante. A partir de la próxima temporada, Sánchez asumirá la gestión de su carrera y compromisos profesionales, acompañando al joven espada en su proyección dentro del escalafón menor.
+
+Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como una de las promesas más firmes de la novillería actual, mientras que Andrés Sánchez aportará su experiencia, criterio y conocimiento del sector para orientar la evolución del torero de cara a los retos de la campaña 2026.
+
+El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
+  },
+	{ 
+    id: 1001,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -336,7 +349,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -352,11 +365,11 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
-    category: "Actualidad",
+    category: "Opinión",
     date: "9 de noviembre de 2025",
 	excerpt: "El extremeño cierra una temporada de madurez y evolución que lo reafirma entre los nombres a seguir en 2026",
     fullContent: `
@@ -373,7 +386,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 1003,
+    id: 1004,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -384,7 +397,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 1004,
+    id: 1005,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -401,7 +414,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1005,
+    id: 1006,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -415,7 +428,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1006,
+    id: 1007,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -607,7 +620,7 @@ La expectación ya empieza a crecer entre los aficionados, pendientes de conocer
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
-    category: "Actualidad",
+    category: "Opinión",
     date: "9 de noviembre de 2025",
 	excerpt: "El extremeño cierra una temporada de madurez y evolución que lo reafirma entre los nombres a seguir en 2026",
     fullContent: `
