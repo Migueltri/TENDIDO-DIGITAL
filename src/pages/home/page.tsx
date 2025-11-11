@@ -319,8 +319,129 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
- { 
+  { 
     id: 1000,
+    title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
+    image: "/images/premiados.jpg",
+    category: "Actualidad",
+    date: "11 de noviembre de 2025",
+    fullContent: `Málaga celebró este lunes la Gala de la Tauromaquia en un abarrotado auditorio Edgar Neville. El acto, presidido por Francisco Salado, presidente de la Diputación de Málaga, contó con la mayoría de los toreros y profesionales taurinos que han sido premiados este año en esta ceremonia con la que se cierra la temporada taurina en la provincia.
+
+Salado puso de manifiesto que este año se han celebrado casi medio centenar de festejos en la provincia de Málaga, entre corridas de toros y rejones, novilladas, clases prácticas y festejos populares; se han reabierto plazas tan importantes como la de Fuengirola y se han retomado los festejos populares en pueblos como Arenas. ‘Seguiremos trabajando en esa dirección con la ayuda de los ayuntamientos y de la Junta de Andalucía en otros municipios que se vayan sumando a la gran familia del toro en Málaga‘, aseguró.
+
+Javier Conde recibió un reconocimiento por su trayectoria profesional y artística, mientras que David de Miranda logró el Estoque de Plata Antonio Ordóñez a la mejor faena de la Feria de Agosto.
+
+Diego Urdiales obtuvo el trofeo Paco Madrid a la mejor estocada y una mención especial por el quite providencial realizado al banderillero Javier Gómez Pascual. El trofeo Málaga Taurina al triunfador en las plazas de la provincia de Málaga recayó en Morante de la Puebla y el trofeo al mejor toreo de capote fue para Pablo Aguado, quien también fue premiado con el trofeo «Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga» a la singularidad. Por su parte, Diego Ventura se alzó con el trofeo Francisco Mancebo al mejor rejoneador de la feria.
+
+El resto de premiados fueron los siguientes: Ignacio Garibay, trofeo al triunfador del Certamen Internacional de Escuela Taurinas; Julio Méndez, trofeo al mejor novillero de la feria; Daniel Duarte, trofeo Manolo Ortiz a la mejor brega de la feria; Juan Francisco Peña, trofeo suerte de varas al mejor puyazo Pepillo de Málaga; y Juan Contreras, trofeo Alfonso Ordóñez al mejor torero de plata de la feria. Además, recibieron sendos reconocimientos el alumno de la Escuela de Tauromaquia de Valencia, Daniel Artazos, y la Real Unión de Criadores de Toros de Lidia.
+
+El listado de premios fue el siguiente:
+
+Estoque de Plata ‘Antonio Ordóñez’ a la mejor faena de la Feria Taurina de Málaga
+
+Entrega: Presidente Diputación Provincial de Málaga.
+
+Recibe: David de Miranda.
+
+Trofeo al triunfador del Certamen Internacional de Escuela Taurinas
+
+Entrega: Escuela Taurina Diputación de Málaga.
+
+Recibe: Ignacio Garibay.
+
+Trofeo al mejor novillero de la Feria Taurina de Málaga
+
+Entrega: Diputación de Málaga.
+
+Recibe: Julio Méndez.
+
+Trofeo ‘Manolo Ortiz’ a la mejor brega de la Feria Taurina de Málaga
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Daniel Duarte.
+
+Trofeo suerte de varas al mejor puyazo ‘Pepillo de Málaga’
+
+Entrega: Peña Taurina de Cártama.
+
+Reciben: Juan Francisco Peña.
+
+Trofeo ‘Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga’ a la singularidad
+
+Entrega: Representante Toros con la Luna y Hermanitas de los Pobres.
+
+Recibe: Pablo Aguado
+
+Trofeo ‘Alfonso Ordóñez’ al mejor torero de plata de la Feria Taurina de Málaga
+
+Entrega: Asociación Cultural Taurina «La Torería».
+
+Recibe: Juan Contreras
+
+Trofeo ‘Málaga Taurina’ al triunfador en las plazas de la provincia de Málaga
+
+Entrega: Málaga Taurina.
+
+Recibe: Morante de la Puebla
+
+Trofeo al Mejor toreo de capote
+
+Entrega: Toroshopping.
+
+Recibe: Pablo Aguado.
+
+Trofeo ‘Francisco Mancebo’ al mejor rejoneador de la Feria Taurina de Málaga
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Ventura
+
+Trofeo ‘Paco Madrid’ a la mejor estocada
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Urdiales.
+
+Reconocimiento al alumno de la Escuela Taurina de Valencia Daniel Artazos
+
+Entrega: Diputación de Málaga.
+
+Recibe: Daniel Artazos.
+
+Reconocimiento a la Real Unión de Criadores de Toros de Lidia
+
+Entrega: Diputación de Málaga.
+
+Recibe: Antonio Bañuelos, presidente de la RUCTL.
+
+Mención especial al ‘Quite providencial’ realizado al banderillero Javier Gómez Pascual
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Urdiales.
+
+Reconocimiento ‘Diputación de Málaga’ a la trayectoria profesional y artística en el arte de torear
+
+Entrega: Diputación de Málaga.
+
+Recibe: Javier Conde.`
+  },
+	{ 
+    id: 1001,
+    title: "Sergio Pérez de Gregoria fin al apoderamiento junto a Alberto García y Rafael Peralta",
+    image: "/images/gregoria.jpg",
+    category: "Actualidad",
+    date: "11 de noviembre de 2025",
+	excerpt: "Alberto García y Rafael Peralta dejan de gestionar la carrera del rejoneador charro tras dos años de trabajo",
+    fullContent: `El rejoneador Sergio Pérez de Gregorio y los profesionales Alberto García y Rafael Peralta han puesto fin, de mutuo acuerdo, a la relación profesional que les ha unido durante las dos últimas temporadas. La decisión se ha tomado en un clima de cordialidad, manteniendo intacta la amistad y el respeto que ha caracterizado su colaboración.
+
+Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los carteles de las principales ferias de segunda categoría, como Huesca, Valladolid, Burgos, Soria, Jaén o Zamora, consolidándose como uno de los rejoneadores jóvenes revelación por su proyección, capacidad y triunfos.
+
+Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
+  },
+	{ 
+    id: 1002,
     title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
     image: "/images/andres.jpg",
 	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
@@ -333,7 +454,7 @@ Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como un
 El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
   },
 	{ 
-    id: 1001,
+    id: 1003,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -349,7 +470,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 1002,
+    id: 1004,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -365,7 +486,7 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 1003,
+    id: 1005,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -386,7 +507,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 1004,
+    id: 1006,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -397,7 +518,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 1005,
+    id: 1007,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -414,7 +535,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1006,
+    id: 1008,
     title: "La Feria de San Isidro comenzará el 8 de mayo",
     image: "/images/feriasanisidro2.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
@@ -428,7 +549,7 @@ La corrida de In Memoriam será el 14 de junio, mientras que ese mes tendrá otr
 La primera corrida de toros de la temporada será, como viene siendo habitual, la del Domingo de Ramos y una semana antes -22 de marzo- dará comienzo la temporada con una novillada. Un calendario que, de no moverse, fija la Feria de Otoño del 1 al 4 de octubre y del 9 al 12, Día de la Hispanidad.`
   },
 	{ 
-    id: 1007,
+    id: 1009,
     title: "José Carlos Venegas recibe el alta hospitalaria tras la grave cornada sufrida este martes en el campo",
     image: "/images/venegas2.jpg",
     category: "Actualidad",
@@ -585,6 +706,127 @@ Ambos expresaron su agradecimiento mutuo por el trabajo y la dedicación compart
 const latestNews: NewsItem[] = [
     { 
     id: 1,
+    title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
+    image: "/images/premiados.jpg",
+    category: "Actualidad",
+    date: "11 de noviembre de 2025",
+    fullContent: `Málaga celebró este lunes la Gala de la Tauromaquia en un abarrotado auditorio Edgar Neville. El acto, presidido por Francisco Salado, presidente de la Diputación de Málaga, contó con la mayoría de los toreros y profesionales taurinos que han sido premiados este año en esta ceremonia con la que se cierra la temporada taurina en la provincia.
+
+Salado puso de manifiesto que este año se han celebrado casi medio centenar de festejos en la provincia de Málaga, entre corridas de toros y rejones, novilladas, clases prácticas y festejos populares; se han reabierto plazas tan importantes como la de Fuengirola y se han retomado los festejos populares en pueblos como Arenas. ‘Seguiremos trabajando en esa dirección con la ayuda de los ayuntamientos y de la Junta de Andalucía en otros municipios que se vayan sumando a la gran familia del toro en Málaga‘, aseguró.
+
+Javier Conde recibió un reconocimiento por su trayectoria profesional y artística, mientras que David de Miranda logró el Estoque de Plata Antonio Ordóñez a la mejor faena de la Feria de Agosto.
+
+Diego Urdiales obtuvo el trofeo Paco Madrid a la mejor estocada y una mención especial por el quite providencial realizado al banderillero Javier Gómez Pascual. El trofeo Málaga Taurina al triunfador en las plazas de la provincia de Málaga recayó en Morante de la Puebla y el trofeo al mejor toreo de capote fue para Pablo Aguado, quien también fue premiado con el trofeo «Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga» a la singularidad. Por su parte, Diego Ventura se alzó con el trofeo Francisco Mancebo al mejor rejoneador de la feria.
+
+El resto de premiados fueron los siguientes: Ignacio Garibay, trofeo al triunfador del Certamen Internacional de Escuela Taurinas; Julio Méndez, trofeo al mejor novillero de la feria; Daniel Duarte, trofeo Manolo Ortiz a la mejor brega de la feria; Juan Francisco Peña, trofeo suerte de varas al mejor puyazo Pepillo de Málaga; y Juan Contreras, trofeo Alfonso Ordóñez al mejor torero de plata de la feria. Además, recibieron sendos reconocimientos el alumno de la Escuela de Tauromaquia de Valencia, Daniel Artazos, y la Real Unión de Criadores de Toros de Lidia.
+
+El listado de premios fue el siguiente:
+
+Estoque de Plata ‘Antonio Ordóñez’ a la mejor faena de la Feria Taurina de Málaga
+
+Entrega: Presidente Diputación Provincial de Málaga.
+
+Recibe: David de Miranda.
+
+Trofeo al triunfador del Certamen Internacional de Escuela Taurinas
+
+Entrega: Escuela Taurina Diputación de Málaga.
+
+Recibe: Ignacio Garibay.
+
+Trofeo al mejor novillero de la Feria Taurina de Málaga
+
+Entrega: Diputación de Málaga.
+
+Recibe: Julio Méndez.
+
+Trofeo ‘Manolo Ortiz’ a la mejor brega de la Feria Taurina de Málaga
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Daniel Duarte.
+
+Trofeo suerte de varas al mejor puyazo ‘Pepillo de Málaga’
+
+Entrega: Peña Taurina de Cártama.
+
+Reciben: Juan Francisco Peña.
+
+Trofeo ‘Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga’ a la singularidad
+
+Entrega: Representante Toros con la Luna y Hermanitas de los Pobres.
+
+Recibe: Pablo Aguado
+
+Trofeo ‘Alfonso Ordóñez’ al mejor torero de plata de la Feria Taurina de Málaga
+
+Entrega: Asociación Cultural Taurina «La Torería».
+
+Recibe: Juan Contreras
+
+Trofeo ‘Málaga Taurina’ al triunfador en las plazas de la provincia de Málaga
+
+Entrega: Málaga Taurina.
+
+Recibe: Morante de la Puebla
+
+Trofeo al Mejor toreo de capote
+
+Entrega: Toroshopping.
+
+Recibe: Pablo Aguado.
+
+Trofeo ‘Francisco Mancebo’ al mejor rejoneador de la Feria Taurina de Málaga
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Ventura
+
+Trofeo ‘Paco Madrid’ a la mejor estocada
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Urdiales.
+
+Reconocimiento al alumno de la Escuela Taurina de Valencia Daniel Artazos
+
+Entrega: Diputación de Málaga.
+
+Recibe: Daniel Artazos.
+
+Reconocimiento a la Real Unión de Criadores de Toros de Lidia
+
+Entrega: Diputación de Málaga.
+
+Recibe: Antonio Bañuelos, presidente de la RUCTL.
+
+Mención especial al ‘Quite providencial’ realizado al banderillero Javier Gómez Pascual
+
+Entrega: Peña Taurina de Cártama.
+
+Recibe: Diego Urdiales.
+
+Reconocimiento ‘Diputación de Málaga’ a la trayectoria profesional y artística en el arte de torear
+
+Entrega: Diputación de Málaga.
+
+Recibe: Javier Conde.`
+  },
+	{ 
+    id: 2,
+    title: "Sergio Pérez de Gregoria fin al apoderamiento junto a Alberto García y Rafael Peralta",
+    image: "/images/gregoria.jpg",
+    category: "Actualidad",
+    date: "11 de noviembre de 2025",
+	excerpt: "Alberto García y Rafael Peralta dejan de gestionar la carrera del rejoneador charro tras dos años de trabajo",
+    fullContent: `El rejoneador Sergio Pérez de Gregorio y los profesionales Alberto García y Rafael Peralta han puesto fin, de mutuo acuerdo, a la relación profesional que les ha unido durante las dos últimas temporadas. La decisión se ha tomado en un clima de cordialidad, manteniendo intacta la amistad y el respeto que ha caracterizado su colaboración.
+
+Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los carteles de las principales ferias de segunda categoría, como Huesca, Valladolid, Burgos, Soria, Jaén o Zamora, consolidándose como uno de los rejoneadores jóvenes revelación por su proyección, capacidad y triunfos.
+
+Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
+  },
+	{ 
+    id: 3,
     title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
     image: "/images/andres.jpg",
 	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
@@ -597,7 +839,7 @@ Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como un
 El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
   },
 	{ 
-    id: 2,
+    id: 4,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -613,7 +855,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 3,
+    id: 5,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -629,7 +871,7 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 5,
+    id: 6,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -650,7 +892,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 6,
+    id: 9,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
