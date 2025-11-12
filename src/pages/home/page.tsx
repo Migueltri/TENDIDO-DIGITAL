@@ -319,8 +319,19 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-{ 
+	{ 
     id: 1000,
+    title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
+    image: "/images/blazquez.jpg",
+    category: "Actualidad",
+    date: "12 de noviembre de 2025",
+	excerpt: "El banderillero valenciano sufrió una rotura de peroné y del menisco de la rodilla izquierda",
+    fullContent: `banderillero valenciano Luis Blázquez ha recibido el alta hospitalaria tras someterse el pasado sábado a una intervención quirúrgica para tratar una lesión que arrastraba desde el mes de agosto. El torero sufrió en Bilbao una rotura de peroné y del menisco de la rodilla izquierda, una dolencia que, pese a su gravedad, no le impidió continuar actuando durante la temporada, aunque mermado físicamente.
+
+Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
+  },
+	{ 
+    id: 1001,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -332,7 +343,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
@@ -473,8 +484,19 @@ Tanto el jinete como sus hasta ahora representantes han expresado su agradecimie
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+{ 
     id: 1,
+    title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
+    image: "/images/blazquez.jpg",
+    category: "Actualidad",
+    date: "12 de noviembre de 2025",
+	excerpt: "El banderillero valenciano sufrió una rotura de peroné y del menisco de la rodilla izquierda",
+    fullContent: `banderillero valenciano Luis Blázquez ha recibido el alta hospitalaria tras someterse el pasado sábado a una intervención quirúrgica para tratar una lesión que arrastraba desde el mes de agosto. El torero sufrió en Bilbao una rotura de peroné y del menisco de la rodilla izquierda, una dolencia que, pese a su gravedad, no le impidió continuar actuando durante la temporada, aunque mermado físicamente.
+
+Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
+  },
+	{ 
+    id: 2,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -486,7 +508,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 2,
+    id: 3,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
