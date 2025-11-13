@@ -323,7 +323,7 @@ const featuredNews: NewsItem[] = [
     id: 1000,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
-	imagecaption: "Foto BMF Toros",
+	imageCaption: "Foto BMF Toros",
     category: "Opinión",
     date: "13 de noviembre de 2025",
     fullContent: `El torero sevillano Pablo Aguado ha cumplido esta pasada temporada ocho años de alternativa, aquella que tomó en la Feria de San Miguel de Sevilla, donde nació un artista del toreo. Uno de esos elegidos a los que, según el recordado Rafael de Paula, les caen del cielo esas “bolitas de duende”. Toreros que poseen un compás distinto, un arte que no se puede explicar con palabras, solo sentir con la emoción profunda que llevamos dentro los aficionados y que nos hace vivir esta pasión de forma tan peculiar.
@@ -359,7 +359,7 @@ Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la con
     id: 1002,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
-	imagecaption: "Foto Plaza 1",
+	imageCaption: "Foto Plaza 1",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
     fullContent: `El jurado encargado de conceder los Premios de la Feria Taurina de Murcia se reunió este miércoles, coincidiendo con la convocatoria de la Mesa Municipal del Toro, para fallar las distinciones correspondientes a la feria celebrada el pasado mes de septiembre en la plaza de toros de La Condomina.
@@ -452,7 +452,7 @@ const latestNews: NewsItem[] = [
     id: 1,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
-	imagecaption: "Foto BMF Toros",
+	imageCaption: "Foto BMF Toros",
     category: "Opinión",
     date: "13 de noviembre de 2025",
     fullContent: `El torero sevillano Pablo Aguado ha cumplido esta pasada temporada ocho años de alternativa, aquella que tomó en la Feria de San Miguel de Sevilla, donde nació un artista del toreo. Uno de esos elegidos a los que, según el recordado Rafael de Paula, les caen del cielo esas “bolitas de duende”. Toreros que poseen un compás distinto, un arte que no se puede explicar con palabras, solo sentir con la emoción profunda que llevamos dentro los aficionados y que nos hace vivir esta pasión de forma tan peculiar.
