@@ -488,7 +488,7 @@ Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la con
     id: 5,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
-	imagecaption: "Foto Plaza 1",
+	imageCaption: "Foto Plaza 1",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
     fullContent: `El jurado encargado de conceder los Premios de la Feria Taurina de Murcia se reunió este miércoles, coincidiendo con la convocatoria de la Mesa Municipal del Toro, para fallar las distinciones correspondientes a la feria celebrada el pasado mes de septiembre en la plaza de toros de La Condomina.
@@ -531,7 +531,7 @@ Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que bu
     id: 11,
     title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
     image: "/images/banderillero2.jpg",
-	imagecaption: "Foto Plaza 1",
+	imageCaption: "Foto Plaza 1",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
 	excerpt: "El madrileño, uno de los más destacados entre los de plata, queda libre para la temporada 2026",
@@ -553,7 +553,7 @@ El torero madrileño llega a este nuevo proyecto tras una temporada destacada, e
     id: 13,
     title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
     image: "/images/maestrantes.jpg",
-	imagecaption: "Foto ABC",
+	imageCaption: "Foto ABC",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
     fullContent: `La Real Maestranza de Caballería de Sevilla, propietaria de la emblemática plaza de toros, estaría analizando la redacción de un nuevo modelo de contrato para la gestión del coso durante los próximos años. Los maestrantes mantienen, sin embargo, su tradicional silencio institucional, sin confirmar ni desmentir los rumores que circulan sobre el futuro empresarial del ruedo sevillano.
