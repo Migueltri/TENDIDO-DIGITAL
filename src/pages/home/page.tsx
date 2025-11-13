@@ -319,8 +319,44 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-   	{ 
+	{ 
     id: 1000,
+    title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
+    image: "/images/pabloaguado.jpg",
+	imagecaption: "Foto BMF Toros",
+    category: "Opinión",
+    date: "13 de noviembre de 2025",
+    fullContent: `El torero sevillano Pablo Aguado ha cumplido esta pasada temporada ocho años de alternativa, aquella que tomó en la Feria de San Miguel de Sevilla, donde nació un artista del toreo. Uno de esos elegidos a los que, según el recordado Rafael de Paula, les caen del cielo esas “bolitas de duende”. Toreros que poseen un compás distinto, un arte que no se puede explicar con palabras, solo sentir con la emoción profunda que llevamos dentro los aficionados y que nos hace vivir esta pasión de forma tan peculiar.
+
+Aguado ha firmado una temporada 2025 de gran evolución y madurez. Ya no es solo ese torero artista al que hay que ver con el toro ideal, sino un torero completo, con recursos, capacidad y una personalidad asentada. A lo largo del año ha demostrado su concepto tan puro, tan torero y elegante frente a todo tipo de encastes.
+Dejó momentos memorables, como aquella gran faena en el coso del Baratillo, los naturales eternos en Madrid con los que remontó la tarde del 24 de mayo y cortó una oreja, o las actuaciones de peso en Aranjuez, Colmenar Viejo y Pozoblanco, entre otras.
+
+Su temporada también ha estado marcada por la comentada dupla artística junto a Juan Ortega, una pareja que muchos comparan con las históricas de Rafael y Curro o de Joselito y Belmonte. Ortega representa la hondura y la profundidad del toreo; Aguado, la naturalidad y la rectitud. Ambos comparten, sin embargo, el mismo lenguaje: el arte y el duende. Por eso, más que rivales, son dos almas complementarias dentro del mismo compás.
+
+Todo ello ha sido posible gracias al trabajo discreto y eficaz de su equipo, encabezado por sus apoderados Antonio y Francisco Vázquez, que están sabiendo llevar con temple y acierto la carrera de un torero destinado a ocupar un lugar entre las figuras. También ha sido clave la orientación de Curro Vázquez, cuya experiencia y sabiduría taurina se han convertido en un pilar fundamental en su madurez profesional.
+
+Con todo esto, se reafirma que Pablo Aguado es un torero distinto, de esos que parecen haber sido tocados por la gracia del arte, como los genios de la música, la poesía o la pintura. Un torero que hace soñar al aficionado cada vez que se pone delante del toro, y que mantiene viva esa llama del toreo clásico, eterno y puro.
+
+Por eso, de cara a la próxima temporada, la afición espera con ilusión un triunfo grande del maestro, ese que consolide definitivamente su nombre entre los elegidos del toreo contemporáneo.
+
+Mario Ruiz Ruiz 13/11/2025`
+  },
+	{ 
+    id: 1001,
+    title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
+    image: "/images/algeciras.jpg",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+    fullContent: `El Ayuntamiento de Algeciras ha sacado a licitación la gestión del coso de Las Palomas para los próximos tres años (2026, 2027 y 2028), con la posibilidad de prórroga por un año adicional. La nueva empresa adjudicataria será la encargada de organizar los espectáculos taurinos tras la finalización de la actual concesión, en manos del empresario Carmelo García desde 2021.
+
+Según informa el diario Europa Sur, el nuevo pliego de condiciones introduce una novedad significativa respecto a licitaciones anteriores: se reduce la puntuación asignada al canon económico, fijado en un mínimo de 6.000 euros anuales, y se refuerzan los criterios artísticos y culturales. Con ello, el consistorio busca priorizar la calidad de los carteles y la diversidad ganadera frente a la mera oferta económica.
+
+Las propuestas serán evaluadas por un comité de expertos integrado por tres empleados municipales. El contrato establece la obligatoriedad de programar al menos tres corridas de toros durante la Feria Real, aunque se valorará positivamente la organización de más festejos taurinos a lo largo del año.
+
+Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la continuidad y el nivel artístico de una de las ferias más destacadas del calendario andaluz.`
+  },
+	{ 
+    id: 1002,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
 	imagecaption: "Foto Plaza 1",
@@ -347,7 +383,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
   },
 	{ 
-    id: 1001,
+    id: 1003,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
     image: "/images/carlostirado.jpg",
     category: "Actualidad",
@@ -363,7 +399,7 @@ destacó el joven novillero ayamontino.
 Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
   },
 	{ 
-    id: 1002,
+    id: 1004,
     title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
     image: "/images/banderillero2.jpg",
 	imagecaption: "Foto Plaza 1",
@@ -375,7 +411,7 @@ Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que bu
 Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
   },
 	{ 
-    id: 1003,
+    id: 1005,
     title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
     image: "/images/apoderamiento.jpg",
     category: "Actualidad",
@@ -385,7 +421,7 @@ Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor 
 El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 1004,
+    id: 1006,
     title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
     image: "/images/maestrantes.jpg",
 	imagecaption: "Foto ABC",
@@ -414,6 +450,42 @@ El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional
 const latestNews: NewsItem[] = [
    	{ 
     id: 1,
+    title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
+    image: "/images/pabloaguado.jpg",
+	imagecaption: "Foto BMF Toros",
+    category: "Opinión",
+    date: "13 de noviembre de 2025",
+    fullContent: `El torero sevillano Pablo Aguado ha cumplido esta pasada temporada ocho años de alternativa, aquella que tomó en la Feria de San Miguel de Sevilla, donde nació un artista del toreo. Uno de esos elegidos a los que, según el recordado Rafael de Paula, les caen del cielo esas “bolitas de duende”. Toreros que poseen un compás distinto, un arte que no se puede explicar con palabras, solo sentir con la emoción profunda que llevamos dentro los aficionados y que nos hace vivir esta pasión de forma tan peculiar.
+
+Aguado ha firmado una temporada 2025 de gran evolución y madurez. Ya no es solo ese torero artista al que hay que ver con el toro ideal, sino un torero completo, con recursos, capacidad y una personalidad asentada. A lo largo del año ha demostrado su concepto tan puro, tan torero y elegante frente a todo tipo de encastes.
+Dejó momentos memorables, como aquella gran faena en el coso del Baratillo, los naturales eternos en Madrid con los que remontó la tarde del 24 de mayo y cortó una oreja, o las actuaciones de peso en Aranjuez, Colmenar Viejo y Pozoblanco, entre otras.
+
+Su temporada también ha estado marcada por la comentada dupla artística junto a Juan Ortega, una pareja que muchos comparan con las históricas de Rafael y Curro o de Joselito y Belmonte. Ortega representa la hondura y la profundidad del toreo; Aguado, la naturalidad y la rectitud. Ambos comparten, sin embargo, el mismo lenguaje: el arte y el duende. Por eso, más que rivales, son dos almas complementarias dentro del mismo compás.
+
+Todo ello ha sido posible gracias al trabajo discreto y eficaz de su equipo, encabezado por sus apoderados Antonio y Francisco Vázquez, que están sabiendo llevar con temple y acierto la carrera de un torero destinado a ocupar un lugar entre las figuras. También ha sido clave la orientación de Curro Vázquez, cuya experiencia y sabiduría taurina se han convertido en un pilar fundamental en su madurez profesional.
+
+Con todo esto, se reafirma que Pablo Aguado es un torero distinto, de esos que parecen haber sido tocados por la gracia del arte, como los genios de la música, la poesía o la pintura. Un torero que hace soñar al aficionado cada vez que se pone delante del toro, y que mantiene viva esa llama del toreo clásico, eterno y puro.
+
+Por eso, de cara a la próxima temporada, la afición espera con ilusión un triunfo grande del maestro, ese que consolide definitivamente su nombre entre los elegidos del toreo contemporáneo.
+
+Mario Ruiz Ruiz 13/11/2025`
+  },
+	{ 
+    id: 2,
+    title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
+    image: "/images/algeciras.jpg",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+    fullContent: `El Ayuntamiento de Algeciras ha sacado a licitación la gestión del coso de Las Palomas para los próximos tres años (2026, 2027 y 2028), con la posibilidad de prórroga por un año adicional. La nueva empresa adjudicataria será la encargada de organizar los espectáculos taurinos tras la finalización de la actual concesión, en manos del empresario Carmelo García desde 2021.
+
+Según informa el diario Europa Sur, el nuevo pliego de condiciones introduce una novedad significativa respecto a licitaciones anteriores: se reduce la puntuación asignada al canon económico, fijado en un mínimo de 6.000 euros anuales, y se refuerzan los criterios artísticos y culturales. Con ello, el consistorio busca priorizar la calidad de los carteles y la diversidad ganadera frente a la mera oferta económica.
+
+Las propuestas serán evaluadas por un comité de expertos integrado por tres empleados municipales. El contrato establece la obligatoriedad de programar al menos tres corridas de toros durante la Feria Real, aunque se valorará positivamente la organización de más festejos taurinos a lo largo del año.
+
+Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la continuidad y el nivel artístico de una de las ferias más destacadas del calendario andaluz.`
+  },
+	{ 
+    id: 5,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
 	imagecaption: "Foto Plaza 1",
@@ -440,7 +512,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
   },
 	{ 
-    id: 2,
+    id: 10,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
     image: "/images/carlostirado.jpg",
     category: "Actualidad",
@@ -456,7 +528,7 @@ destacó el joven novillero ayamontino.
 Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
   },
 	{ 
-    id: 3,
+    id: 11,
     title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
     image: "/images/banderillero2.jpg",
 	imagecaption: "Foto Plaza 1",
@@ -468,7 +540,7 @@ Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que bu
 Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
   },
 	{ 
-    id: 4,
+    id: 12,
     title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
     image: "/images/apoderamiento.jpg",
     category: "Actualidad",
@@ -478,7 +550,7 @@ Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor 
 El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 5,
+    id: 13,
     title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
     image: "/images/maestrantes.jpg",
 	imagecaption: "Foto ABC",
@@ -503,7 +575,7 @@ La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus
 El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
   },
 	{ 
-    id: 6,
+    id: 14,
     title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
     image: "/images/blazquez.jpg",
     category: "Actualidad",
@@ -514,7 +586,7 @@ El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional
 Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
   },
 	{ 
-    id: 7,
+    id: 15,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -526,7 +598,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 8,
+    id: 16,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
@@ -544,7 +616,7 @@ Los trabajos para la renovación integral del sistema de iluminación de la Plaz
 El proyecto contempla la sustitución de los equipos de iluminación en pasillos y escaleras, así como del sistema de proyectores del ruedo, que contará con cinco niveles lumínicos prestablecidos. Esta mejora permitirá alcanzar los estándares requeridos para la retransmisión televisiva en alta definición, reforzando al mismo tiempo la seguridad y el confort de los asistentes.`
   },
 	{ 
-    id: 10,
+    id: 17,
     title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
     image: "/images/premiados.jpg",
     category: "Actualidad",
@@ -652,7 +724,7 @@ Entrega: Diputación de Málaga.
 Recibe: Javier Conde.`
   },
 	{ 
-    id: 12,
+    id: 18,
     title: "Sergio Pérez de Gregorio fin al apoderamiento junto a Alberto García y Rafael Peralta",
     image: "/images/gregoria.jpg",
     category: "Actualidad",
@@ -665,7 +737,7 @@ Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los cartel
 Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 13,
+    id: 19,
     title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
     image: "/images/andres.jpg",
 	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
@@ -678,7 +750,7 @@ Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como un
 El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
   },
 	{ 
-    id: 14,
+    id: 20,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -694,7 +766,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 15,
+    id: 21,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -710,7 +782,7 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 16,
+    id: 22,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -731,7 +803,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 19,
+    id: 23,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -742,7 +814,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 20,
+    id: 25,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
