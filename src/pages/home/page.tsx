@@ -349,7 +349,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	{ 
     id: 1001,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
-    image: "/images/apoderamiento.jpg",
+    image: "/images/carlostirado.jpg",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
 	excerpt: "El onubense fue el triunfador del VI Circuito de Novilladas de Andalucía",
@@ -442,7 +442,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	{ 
     id: 2,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
-    image: "/images/apoderamiento.jpg",
+    image: "/images/carlostirado.jpg",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
 	excerpt: "El onubense fue el triunfador del VI Circuito de Novilladas de Andalucía",
