@@ -319,173 +319,191 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-	{ 
+   	{ 
     id: 1000,
-    title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
-    image: "/images/blazquez.jpg",
+    title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
+    image: "/images/guillen.jpg",
+	imagecaption: "Foto Plaza 1",
     category: "Actualidad",
-    date: "12 de noviembre de 2025",
-	excerpt: "El banderillero valenciano sufrió una rotura de peroné y del menisco de la rodilla izquierda",
-    fullContent: `banderillero valenciano Luis Blázquez ha recibido el alta hospitalaria tras someterse el pasado sábado a una intervención quirúrgica para tratar una lesión que arrastraba desde el mes de agosto. El torero sufrió en Bilbao una rotura de peroné y del menisco de la rodilla izquierda, una dolencia que, pese a su gravedad, no le impidió continuar actuando durante la temporada, aunque mermado físicamente.
+    date: "13 de noviembre de 2025",
+    fullContent: `El jurado encargado de conceder los Premios de la Feria Taurina de Murcia se reunió este miércoles, coincidiendo con la convocatoria de la Mesa Municipal del Toro, para fallar las distinciones correspondientes a la feria celebrada el pasado mes de septiembre en la plaza de toros de La Condomina.
 
-Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
+El matador murciano Paco Ureña ha sido designado Triunfador de la Feria, mientras que Borja Jiménez ha obtenido el galardón a la mejor faena y Marco Pérez ha sido distinguido con el premio a la faena más artística.
+El trofeo a la mejor estocada recayó en Emilio de Justo, y el de mejor rejoneador fue para Diego Ventura.
+Completan el palmarés El Parralejo, Javier Zulueta, Juan Contreras, Juan Ortega y Cristian Romero, entre otros premiados.
+
+Relación completa de premios de la Feria Taurina de Murcia 2025
+	•	Premio del Ayuntamiento de Murcia al Triunfador de la Feria: Paco Ureña.
+	•	Premio del Ayuntamiento de Murcia a la Faena más artística: Marco Pérez, por la realizada al 6.º toro de Juan Pedro Domecq.
+	•	Premio Mariano Molina a la Mejor faena: Borja Jiménez, por la realizada al 3.º toro de Daniel Ruiz.
+	•	Premio de la Comunidad Autónoma de la Región de Murcia al Mejor toreo de capote: Juan Ortega.
+	•	Premio “Ángel Bernal Romero” a la Mejor estocada: Emilio de Justo, por la recetada al 5.º toro de Juan Pedro Domecq.
+	•	Premio de la Agrupación Sardinera de Murcia al Mejor par de banderillas: Juan Contreras, de la cuadrilla de Daniel Luque.
+	•	Premio del Colegio Oficial de Periodistas de Murcia al Triunfador de la Corrida de la Prensa: Marco Pérez.
+	•	Premio “Ángel Bernal Manzanera” al Mejor rejoneador: Diego Ventura.
+	•	Premio del Colegio Oficial de Periodistas de Murcia al Mejor novillero: Javier Zulueta.
+	•	Premio del Real Club Taurino de Murcia al Mejor puyazo: Cristian Romero, de la cuadrilla de Paco Ureña.
+	•	Premio del Real Club Taurino de Murcia a la Mejor corrida: El Parralejo.
+	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
   },
 	{ 
     id: 1001,
-    title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
-    image: "/images/valdemorillo.jpg",
+    title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
+    image: "/images/apoderamiento.jpg",
     category: "Actualidad",
-    date: "11 de noviembre de 2025",
-    fullContent: `La temporada 2026 comienza a tomar forma, y Valdemorillo volverá a ser la primera gran cita del calendario taurino. La esperada Feria de San Blas y la Candelaria ya tiene fechas definidas y estructura cerrada: se celebrará los días 6, 7 y 8 de febrero y contará, como viene siendo habitual, con una novillada con picadores para abrir el abono y dos corridas de toros durante el fin de semana. A estos festejos se sumarán los tradicionales encierros y capeas, que mantienen viva la esencia popular y el espíritu taurino del municipio serrano.
+    date: "13 de noviembre de 2025",
+	excerpt: "El onubense fue el triunfador del VI Circuito de Novilladas de Andalucía",
+    fullContent: `El novillero onubense Carlos Tirado, natural de Ayamonte, ha alcanzado un acuerdo de apoderamiento con el matador de toros Enrique Peña. El compromiso, sellado a la antigua usanza con el clásico apretón de manos, se cerró este miércoles en Sevilla, tras una reunión en la que ambas partes mostraron su ilusión por afrontar un proyecto común.
 
-El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigida por Carlos Zúñiga y Víctor Zabala, que han logrado situar a Valdemorillo en una posición de privilegio dentro del arranque de la temporada europea. En los últimos años, su gestión ha revitalizado la Feria, atrayendo a figuras de primer nivel y convirtiéndola en una referencia obligada para los aficionados.
+La temporada 2024 ha sido especialmente significativa para Tirado, que se proclamó triunfador del VI Circuito de Novilladas de Andalucía, cuya final se celebró en la Real Maestranza de Caballería de Sevilla. Además, sumó otro importante éxito en las Colombinas de Huelva, consolidándose como uno de los nombres más prometedores del escalafón.
 
-Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
+“Me llena de ilusión estar de la mano de un profesional de la talla de Enrique Peña y mantener esos diálogos para ir creciendo poco a poco desde el prisma de un matador de toros. Estoy contento y convencido de que vamos a dar mucho que hablar en una temporada con paso firme y muy importante para mí”,
+destacó el joven novillero ayamontino.
+
+Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
   },
 	{ 
     id: 1002,
-    title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
-    image: "/images/nautalia2.jpg",
+    title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
+    image: "/images/banderillero2.jpg",
+	imagecaption: "Foto Plaza 1",
     category: "Actualidad",
-    date: "11 de noviembre de 2025",
-    fullContent: `La Diputació de València y la empresa Nautalia han firmado este martes la prórroga anual del contrato de arrendamiento la Plaza de Toros de la capital, por lo que la compañía continuará gestionando el recinto de la Calle Xàtiva durante todo el 2026. El presidente de la corporación provincial, Vicent Mompó, y el CEO de Nautalia, Rafael Gª Garrido, han sido los encargados de suscribir el acuerdo en un acto celebrado en la sede central de la institución.
+    date: "13 de noviembre de 2025",
+	excerpt: "El madrileño, uno de los más destacados entre los de plata, queda libre para la temporada 2026",
+    fullContent: `El banderillero Raúl Ruiz abandona la cuadrilla del matador de toros malagueño Fortes para la temporada 2026. El madrileño, uno de los más destacados entre los de plata, queda libre para la siguiente temporada después de estar a la órdenes del malagueño desde el año 2018. 
 
-El contrato de arrendamiento de la Plaza de Toros para la celebración de corridas de toros y demás espectáculos o festejos taurinos con la empresa Nautalia, que se firmó en noviembre de 2021, finalizaba el día 31 de diciembre de 2025, aunque contemplaba la posibilidad de acordar prórrogas anuales, hasta un máximo de tres, por lo que se hace uso de la primera de ellas. A ello hay que añadir que el contrato se vio interrumpido desde el pasado 1 de junio, y hasta la finalización de las obras de renovación de la plaza prevista para el primer trimestre de 2026, por lo que la vigencia del mismo se extiende durante el mismo periodo de duración de las obras.
-
-El presidente de la Diputación, Vicent Mompó, ha destacado “que la prórroga asegura la gestión de la plaza durante todo el 2026, lo cual garantiza que cuando regrese la actividad al recinto, después de la rehabilitación que estamos acometiendo, lo hará con la grandeza y esplendor que merece esta joya arquitectónica”. Mompó ha añadido que “estamos trabajando ya en la redacción de los nuevos pliegos de condiciones de arrendamiento, que irán en la dirección que nos hemos marcado desde el principio: convertir la Plaza de Toros de Valencia en un referente nacional, tanto a nivel de infraestructura como a nivel de gestión”.
-
-Renovación de la Plaza de Toros
-
-Los trabajos para la renovación integral del sistema de iluminación de la Plaza de Toros de Valencia, que comenzaron el pasado mes de junio, avanzan según lo previsto con el objetivo de poder abrir el recinto propiedad de la Diputació de València antes de la próxima Feria de Fallas. Se trata de unas obras que han supuesto una inversión de casi 1 millón de euros, y que modernizarán uno de los espacios culturales más emblemáticos del Cap i Casal.
-
-El proyecto contempla la sustitución de los equipos de iluminación en pasillos y escaleras, así como del sistema de proyectores del ruedo, que contará con cinco niveles lumínicos prestablecidos. Esta mejora permitirá alcanzar los estándares requeridos para la retransmisión televisiva en alta definición, reforzando al mismo tiempo la seguridad y el confort de los asistentes.`
+Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
   },
 	{ 
-    id: 1010,
-    title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
-    image: "/images/premiados.jpg",
+    id: 1003,
+    title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
+    image: "/images/apoderamiento.jpg",
     category: "Actualidad",
-    date: "11 de noviembre de 2025",
-    fullContent: `Málaga celebró este lunes la Gala de la Tauromaquia en un abarrotado auditorio Edgar Neville. El acto, presidido por Francisco Salado, presidente de la Diputación de Málaga, contó con la mayoría de los toreros y profesionales taurinos que han sido premiados este año en esta ceremonia con la que se cierra la temporada taurina en la provincia.
+    date: "13 de noviembre de 2025",
+    fullContent: `El torero Fernando Adrián y el taurino sevillano Santiago Ellauri han cerrado un acuerdo de apoderamiento para la temporada 2026.  Ellauri, con una trayectoria consolidada como apoderado en el mundo del toro, será el encargado de coordinar las actuaciones, contratos y proyectos de Adrián, gestionando sus compromisos tanto en plazas nacionales como internacionales.
 
-Salado puso de manifiesto que este año se han celebrado casi medio centenar de festejos en la provincia de Málaga, entre corridas de toros y rejones, novilladas, clases prácticas y festejos populares; se han reabierto plazas tan importantes como la de Fuengirola y se han retomado los festejos populares en pueblos como Arenas. ‘Seguiremos trabajando en esa dirección con la ayuda de los ayuntamientos y de la Junta de Andalucía en otros municipios que se vayan sumando a la gran familia del toro en Málaga‘, aseguró.
-
-Javier Conde recibió un reconocimiento por su trayectoria profesional y artística, mientras que David de Miranda logró el Estoque de Plata Antonio Ordóñez a la mejor faena de la Feria de Agosto.
-
-Diego Urdiales obtuvo el trofeo Paco Madrid a la mejor estocada y una mención especial por el quite providencial realizado al banderillero Javier Gómez Pascual. El trofeo Málaga Taurina al triunfador en las plazas de la provincia de Málaga recayó en Morante de la Puebla y el trofeo al mejor toreo de capote fue para Pablo Aguado, quien también fue premiado con el trofeo «Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga» a la singularidad. Por su parte, Diego Ventura se alzó con el trofeo Francisco Mancebo al mejor rejoneador de la feria.
-
-El resto de premiados fueron los siguientes: Ignacio Garibay, trofeo al triunfador del Certamen Internacional de Escuela Taurinas; Julio Méndez, trofeo al mejor novillero de la feria; Daniel Duarte, trofeo Manolo Ortiz a la mejor brega de la feria; Juan Francisco Peña, trofeo suerte de varas al mejor puyazo Pepillo de Málaga; y Juan Contreras, trofeo Alfonso Ordóñez al mejor torero de plata de la feria. Además, recibieron sendos reconocimientos el alumno de la Escuela de Tauromaquia de Valencia, Daniel Artazos, y la Real Unión de Criadores de Toros de Lidia.
-
-El listado de premios fue el siguiente:
-
-Estoque de Plata ‘Antonio Ordóñez’ a la mejor faena de la Feria Taurina de Málaga
-
-Entrega: Presidente Diputación Provincial de Málaga.
-
-Recibe: David de Miranda.
-
-Trofeo al triunfador del Certamen Internacional de Escuela Taurinas
-
-Entrega: Escuela Taurina Diputación de Málaga.
-
-Recibe: Ignacio Garibay.
-
-Trofeo al mejor novillero de la Feria Taurina de Málaga
-
-Entrega: Diputación de Málaga.
-
-Recibe: Julio Méndez.
-
-Trofeo ‘Manolo Ortiz’ a la mejor brega de la Feria Taurina de Málaga
-
-Entrega: Peña Taurina de Cártama.
-
-Recibe: Daniel Duarte.
-
-Trofeo suerte de varas al mejor puyazo ‘Pepillo de Málaga’
-
-Entrega: Peña Taurina de Cártama.
-
-Reciben: Juan Francisco Peña.
-
-Trofeo ‘Toros con la Luna Asociación Benéfica Hermanitas de los Pobres de Málaga’ a la singularidad
-
-Entrega: Representante Toros con la Luna y Hermanitas de los Pobres.
-
-Recibe: Pablo Aguado
-
-Trofeo ‘Alfonso Ordóñez’ al mejor torero de plata de la Feria Taurina de Málaga
-
-Entrega: Asociación Cultural Taurina «La Torería».
-
-Recibe: Juan Contreras
-
-Trofeo ‘Málaga Taurina’ al triunfador en las plazas de la provincia de Málaga
-
-Entrega: Málaga Taurina.
-
-Recibe: Morante de la Puebla
-
-Trofeo al Mejor toreo de capote
-
-Entrega: Toroshopping.
-
-Recibe: Pablo Aguado.
-
-Trofeo ‘Francisco Mancebo’ al mejor rejoneador de la Feria Taurina de Málaga
-
-Entrega: Peña Taurina de Cártama.
-
-Recibe: Diego Ventura
-
-Trofeo ‘Paco Madrid’ a la mejor estocada
-
-Entrega: Peña Taurina de Cártama.
-
-Recibe: Diego Urdiales.
-
-Reconocimiento al alumno de la Escuela Taurina de Valencia Daniel Artazos
-
-Entrega: Diputación de Málaga.
-
-Recibe: Daniel Artazos.
-
-Reconocimiento a la Real Unión de Criadores de Toros de Lidia
-
-Entrega: Diputación de Málaga.
-
-Recibe: Antonio Bañuelos, presidente de la RUCTL.
-
-Mención especial al ‘Quite providencial’ realizado al banderillero Javier Gómez Pascual
-
-Entrega: Peña Taurina de Cártama.
-
-Recibe: Diego Urdiales.
-
-Reconocimiento ‘Diputación de Málaga’ a la trayectoria profesional y artística en el arte de torear
-
-Entrega: Diputación de Málaga.
-
-Recibe: Javier Conde.`
+El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 1011,
-    title: "Sergio Pérez de Gregorio fin al apoderamiento junto a Alberto García y Rafael Peralta",
-    image: "/images/gregoria.jpg",
+    id: 1004,
+    title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
+    image: "/images/maestrantes.jpg",
+	imagecaption: "Foto ABC",
     category: "Actualidad",
-    date: "11 de noviembre de 2025",
-	excerpt: "Alberto García y Rafael Peralta dejan de gestionar la carrera del rejoneador charro tras dos años de trabajo",
-    fullContent: `El rejoneador Sergio Pérez de Gregorio y los profesionales Alberto García y Rafael Peralta han puesto fin, de mutuo acuerdo, a la relación profesional que les ha unido durante las dos últimas temporadas. La decisión se ha tomado en un clima de cordialidad, manteniendo intacta la amistad y el respeto que ha caracterizado su colaboración.
+    date: "13 de noviembre de 2025",
+    fullContent: `La Real Maestranza de Caballería de Sevilla, propietaria de la emblemática plaza de toros, estaría analizando la redacción de un nuevo modelo de contrato para la gestión del coso durante los próximos años. Los maestrantes mantienen, sin embargo, su tradicional silencio institucional, sin confirmar ni desmentir los rumores que circulan sobre el futuro empresarial del ruedo sevillano.
 
-Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los carteles de las principales ferias de segunda categoría, como Huesca, Valladolid, Burgos, Soria, Jaén o Zamora, consolidándose como uno de los rejoneadores jóvenes revelación por su proyección, capacidad y triunfos.
+La decisión, que deberá adoptar la Junta de Gobierno en los próximos días, llega justo cuando expira en 2025 el contrato con la empresa Pagés, dirigida por Ramón Valencia, actual gestora del coso del Baratillo.
 
-Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
+Silencio y especulaciones
+El hermetismo de la Real Maestranza —una de sus señas de identidad históricas— ha alimentado todo tipo de especulaciones en los mentideros taurinos. Aunque abundan los nombres y proyectos hipotéticos, ninguno cuenta con una base sólida. La única certeza es que, si Pagés continúa al frente, lo hará mediante un nuevo contrato ajustado a las condiciones que establezca la corporación nobiliaria.
+
+Un contrato con cambios
+De las escasas filtraciones conocidas, sí se desprende que el nuevo modelo incluirá cláusulas distintas a las vigentes, tanto en lo económico como en la duración del acuerdo. La empresa Pagés gestiona la plaza desde 1932, con sucesivos contratos, prórrogas y modificaciones, por lo que no existen precedentes claros sobre el modo en que la Maestranza elige o renueva a su arrendatario.
+
+Decisión inminente
+El tiempo juega en contra. La Junta prevista para el próximo día 22 de noviembre debería, al menos, definir el modelo contractual o las condiciones del nuevo arrendamiento. Todo apunta a que no se convocará un concurso público, dado que la plaza es de propiedad privada, por lo que la decisión podría tomarse de manera directa y discreta.
+
+Sevilla, epicentro del toreo
+La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus dinámicas de trabajo, ganaderos y apoderados reclaman veedores y reseñas tempranas para planificar la próxima temporada. Sevilla, como referente mundial del toreo, debería estar ya construyendo los cimientos de su temporada 2026 y las siguientes.
+
+El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
   }
 ];
 
 const latestNews: NewsItem[] = [
-{ 
+   	{ 
     id: 1,
+    title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
+    image: "/images/guillen.jpg",
+	imagecaption: "Foto Plaza 1",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+    fullContent: `El jurado encargado de conceder los Premios de la Feria Taurina de Murcia se reunió este miércoles, coincidiendo con la convocatoria de la Mesa Municipal del Toro, para fallar las distinciones correspondientes a la feria celebrada el pasado mes de septiembre en la plaza de toros de La Condomina.
+
+El matador murciano Paco Ureña ha sido designado Triunfador de la Feria, mientras que Borja Jiménez ha obtenido el galardón a la mejor faena y Marco Pérez ha sido distinguido con el premio a la faena más artística.
+El trofeo a la mejor estocada recayó en Emilio de Justo, y el de mejor rejoneador fue para Diego Ventura.
+Completan el palmarés El Parralejo, Javier Zulueta, Juan Contreras, Juan Ortega y Cristian Romero, entre otros premiados.
+
+Relación completa de premios de la Feria Taurina de Murcia 2025
+	•	Premio del Ayuntamiento de Murcia al Triunfador de la Feria: Paco Ureña.
+	•	Premio del Ayuntamiento de Murcia a la Faena más artística: Marco Pérez, por la realizada al 6.º toro de Juan Pedro Domecq.
+	•	Premio Mariano Molina a la Mejor faena: Borja Jiménez, por la realizada al 3.º toro de Daniel Ruiz.
+	•	Premio de la Comunidad Autónoma de la Región de Murcia al Mejor toreo de capote: Juan Ortega.
+	•	Premio “Ángel Bernal Romero” a la Mejor estocada: Emilio de Justo, por la recetada al 5.º toro de Juan Pedro Domecq.
+	•	Premio de la Agrupación Sardinera de Murcia al Mejor par de banderillas: Juan Contreras, de la cuadrilla de Daniel Luque.
+	•	Premio del Colegio Oficial de Periodistas de Murcia al Triunfador de la Corrida de la Prensa: Marco Pérez.
+	•	Premio “Ángel Bernal Manzanera” al Mejor rejoneador: Diego Ventura.
+	•	Premio del Colegio Oficial de Periodistas de Murcia al Mejor novillero: Javier Zulueta.
+	•	Premio del Real Club Taurino de Murcia al Mejor puyazo: Cristian Romero, de la cuadrilla de Paco Ureña.
+	•	Premio del Real Club Taurino de Murcia a la Mejor corrida: El Parralejo.
+	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
+  },
+	{ 
+    id: 2,
+    title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
+    image: "/images/apoderamiento.jpg",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+	excerpt: "El onubense fue el triunfador del VI Circuito de Novilladas de Andalucía",
+    fullContent: `El novillero onubense Carlos Tirado, natural de Ayamonte, ha alcanzado un acuerdo de apoderamiento con el matador de toros Enrique Peña. El compromiso, sellado a la antigua usanza con el clásico apretón de manos, se cerró este miércoles en Sevilla, tras una reunión en la que ambas partes mostraron su ilusión por afrontar un proyecto común.
+
+La temporada 2024 ha sido especialmente significativa para Tirado, que se proclamó triunfador del VI Circuito de Novilladas de Andalucía, cuya final se celebró en la Real Maestranza de Caballería de Sevilla. Además, sumó otro importante éxito en las Colombinas de Huelva, consolidándose como uno de los nombres más prometedores del escalafón.
+
+“Me llena de ilusión estar de la mano de un profesional de la talla de Enrique Peña y mantener esos diálogos para ir creciendo poco a poco desde el prisma de un matador de toros. Estoy contento y convencido de que vamos a dar mucho que hablar en una temporada con paso firme y muy importante para mí”,
+destacó el joven novillero ayamontino.
+
+Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
+  },
+	{ 
+    id: 3,
+    title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
+    image: "/images/banderillero2.jpg",
+	imagecaption: "Foto Plaza 1",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+	excerpt: "El madrileño, uno de los más destacados entre los de plata, queda libre para la temporada 2026",
+    fullContent: `El banderillero Raúl Ruiz abandona la cuadrilla del matador de toros malagueño Fortes para la temporada 2026. El madrileño, uno de los más destacados entre los de plata, queda libre para la siguiente temporada después de estar a la órdenes del malagueño desde el año 2018. 
+
+Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
+  },
+	{ 
+    id: 4,
+    title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
+    image: "/images/apoderamiento.jpg",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+    fullContent: `El torero Fernando Adrián y el taurino sevillano Santiago Ellauri han cerrado un acuerdo de apoderamiento para la temporada 2026.  Ellauri, con una trayectoria consolidada como apoderado en el mundo del toro, será el encargado de coordinar las actuaciones, contratos y proyectos de Adrián, gestionando sus compromisos tanto en plazas nacionales como internacionales.
+
+El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
+  },
+	{ 
+    id: 5,
+    title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
+    image: "/images/maestrantes.jpg",
+	imagecaption: "Foto ABC",
+    category: "Actualidad",
+    date: "13 de noviembre de 2025",
+    fullContent: `La Real Maestranza de Caballería de Sevilla, propietaria de la emblemática plaza de toros, estaría analizando la redacción de un nuevo modelo de contrato para la gestión del coso durante los próximos años. Los maestrantes mantienen, sin embargo, su tradicional silencio institucional, sin confirmar ni desmentir los rumores que circulan sobre el futuro empresarial del ruedo sevillano.
+
+La decisión, que deberá adoptar la Junta de Gobierno en los próximos días, llega justo cuando expira en 2025 el contrato con la empresa Pagés, dirigida por Ramón Valencia, actual gestora del coso del Baratillo.
+
+Silencio y especulaciones
+El hermetismo de la Real Maestranza —una de sus señas de identidad históricas— ha alimentado todo tipo de especulaciones en los mentideros taurinos. Aunque abundan los nombres y proyectos hipotéticos, ninguno cuenta con una base sólida. La única certeza es que, si Pagés continúa al frente, lo hará mediante un nuevo contrato ajustado a las condiciones que establezca la corporación nobiliaria.
+
+Un contrato con cambios
+De las escasas filtraciones conocidas, sí se desprende que el nuevo modelo incluirá cláusulas distintas a las vigentes, tanto en lo económico como en la duración del acuerdo. La empresa Pagés gestiona la plaza desde 1932, con sucesivos contratos, prórrogas y modificaciones, por lo que no existen precedentes claros sobre el modo en que la Maestranza elige o renueva a su arrendatario.
+
+Decisión inminente
+El tiempo juega en contra. La Junta prevista para el próximo día 22 de noviembre debería, al menos, definir el modelo contractual o las condiciones del nuevo arrendamiento. Todo apunta a que no se convocará un concurso público, dado que la plaza es de propiedad privada, por lo que la decisión podría tomarse de manera directa y discreta.
+
+Sevilla, epicentro del toreo
+La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus dinámicas de trabajo, ganaderos y apoderados reclaman veedores y reseñas tempranas para planificar la próxima temporada. Sevilla, como referente mundial del toreo, debería estar ya construyendo los cimientos de su temporada 2026 y las siguientes.
+
+El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
+  },
+	{ 
+    id: 6,
     title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
     image: "/images/blazquez.jpg",
     category: "Actualidad",
@@ -496,7 +514,7 @@ const latestNews: NewsItem[] = [
 Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
   },
 	{ 
-    id: 2,
+    id: 7,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -508,7 +526,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 3,
+    id: 8,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
