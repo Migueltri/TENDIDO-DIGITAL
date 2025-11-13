@@ -344,7 +344,7 @@ Mario Ruiz Ruiz 13/11/2025`
 	{ 
     id: 1001,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
-    image: "/images/algeciras.jpg",
+    image: "/images/1.jpg",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
     fullContent: `El Ayuntamiento de Algeciras ha sacado a licitación la gestión del coso de Las Palomas para los próximos tres años (2026, 2027 y 2028), con la posibilidad de prórroga por un año adicional. La nueva empresa adjudicataria será la encargada de organizar los espectáculos taurinos tras la finalización de la actual concesión, en manos del empresario Carmelo García desde 2021.
@@ -473,7 +473,7 @@ Mario Ruiz Ruiz 13/11/2025`
 	{ 
     id: 2,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
-    image: "/images/algeciras.jpg",
+    image: "/images/1.jpg",
     category: "Actualidad",
     date: "13 de noviembre de 2025",
     fullContent: `El Ayuntamiento de Algeciras ha sacado a licitación la gestión del coso de Las Palomas para los próximos tres años (2026, 2027 y 2028), con la posibilidad de prórroga por un año adicional. La nueva empresa adjudicataria será la encargada de organizar los espectáculos taurinos tras la finalización de la actual concesión, en manos del empresario Carmelo García desde 2021.
