@@ -321,135 +321,49 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
-    image: "/images/pabloaguado.jpg",
-	imageCaption: "Foto BMF Toros",
-    category: "Opinión",
-    date: "13 de noviembre de 2025",
-    fullContent: `El torero sevillano Pablo Aguado ha cumplido esta pasada temporada ocho años de alternativa, aquella que tomó en la Feria de San Miguel de Sevilla, donde nació un artista del toreo. Uno de esos elegidos a los que, según el recordado Rafael de Paula, les caen del cielo esas “bolitas de duende”. Toreros que poseen un compás distinto, un arte que no se puede explicar con palabras, solo sentir con la emoción profunda que llevamos dentro los aficionados y que nos hace vivir esta pasión de forma tan peculiar.
+    title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
+    image: "/images/alvarolorenzo.jpg",
+    category: "Actualidad",
+    date: "14 de noviembre de 2025",
+    fullContent: `El toledano Álvaro Lorenzo ha llegado a un acuerdo de apoderamiento con el taurino francés Jean François Piles que hará equipo con Manolo Campuzano, ligado al toledano desde 2024. En 2025 ha toreado 11 corridas de toros en las que ha cortado 21 orejas con el hito de la tarde del dos de mayo en Madrid, donde cortó una oreja y dio una vuelta al ruedo rozando la puerta grande de Las Ventas. Lorenzo afronta con ilusión la próxima temporada en la que cumple diez años de alternativa.
 
-Aguado ha firmado una temporada 2025 de gran evolución y madurez. Ya no es solo ese torero artista al que hay que ver con el toro ideal, sino un torero completo, con recursos, capacidad y una personalidad asentada. A lo largo del año ha demostrado su concepto tan puro, tan torero y elegante frente a todo tipo de encastes.
-Dejó momentos memorables, como aquella gran faena en el coso del Baratillo, los naturales eternos en Madrid con los que remontó la tarde del 24 de mayo y cortó una oreja, o las actuaciones de peso en Aranjuez, Colmenar Viejo y Pozoblanco, entre otras.
-
-Su temporada también ha estado marcada por la comentada dupla artística junto a Juan Ortega, una pareja que muchos comparan con las históricas de Rafael y Curro o de Joselito y Belmonte. Ortega representa la hondura y la profundidad del toreo; Aguado, la naturalidad y la rectitud. Ambos comparten, sin embargo, el mismo lenguaje: el arte y el duende. Por eso, más que rivales, son dos almas complementarias dentro del mismo compás.
-
-Todo ello ha sido posible gracias al trabajo discreto y eficaz de su equipo, encabezado por sus apoderados Antonio y Francisco Vázquez, que están sabiendo llevar con temple y acierto la carrera de un torero destinado a ocupar un lugar entre las figuras. También ha sido clave la orientación de Curro Vázquez, cuya experiencia y sabiduría taurina se han convertido en un pilar fundamental en su madurez profesional.
-
-Con todo esto, se reafirma que Pablo Aguado es un torero distinto, de esos que parecen haber sido tocados por la gracia del arte, como los genios de la música, la poesía o la pintura. Un torero que hace soñar al aficionado cada vez que se pone delante del toro, y que mantiene viva esa llama del toreo clásico, eterno y puro.
-
-Por eso, de cara a la próxima temporada, la afición espera con ilusión un triunfo grande del maestro, ese que consolide definitivamente su nombre entre los elegidos del toreo contemporáneo.
-
-Mario Ruiz Ruiz 13/11/2025`
+Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
     id: 1001,
-    title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
-    image: "/images/1.jpg",
+    title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
+    image: "/images/urdiales.jpg",
     category: "Actualidad",
-    date: "13 de noviembre de 2025",
-    fullContent: `El Ayuntamiento de Algeciras ha sacado a licitación la gestión del coso de Las Palomas para los próximos tres años (2026, 2027 y 2028), con la posibilidad de prórroga por un año adicional. La nueva empresa adjudicataria será la encargada de organizar los espectáculos taurinos tras la finalización de la actual concesión, en manos del empresario Carmelo García desde 2021.
+    date: "14 de noviembre de 2025",
+    fullContent: `El matador de toros Diego Urdiales ha decidido que Israel Vicente sea su nuevo apoderado. Hijo del primer apoderado de Urdiales durante su etapa como novillero y primeros años de matador, David Vicente Iglesias, será el encargado de dirigir la carrera del diestro riojano a partir de esta temporada 2026.
 
-Según informa el diario Europa Sur, el nuevo pliego de condiciones introduce una novedad significativa respecto a licitaciones anteriores: se reduce la puntuación asignada al canon económico, fijado en un mínimo de 6.000 euros anuales, y se refuerzan los criterios artísticos y culturales. Con ello, el consistorio busca priorizar la calidad de los carteles y la diversidad ganadera frente a la mera oferta económica.
-
-Las propuestas serán evaluadas por un comité de expertos integrado por tres empleados municipales. El contrato establece la obligatoriedad de programar al menos tres corridas de toros durante la Feria Real, aunque se valorará positivamente la organización de más festejos taurinos a lo largo del año.
-
-Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la continuidad y el nivel artístico de una de las ferias más destacadas del calendario andaluz.`
-  },
-	{ 
-    id: 1002,
-    title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
-    image: "/images/guillen.jpg",
-	imageCaption: "Foto Plaza 1",
-    category: "Actualidad",
-    date: "13 de noviembre de 2025",
-    fullContent: `El jurado encargado de conceder los Premios de la Feria Taurina de Murcia se reunió este miércoles, coincidiendo con la convocatoria de la Mesa Municipal del Toro, para fallar las distinciones correspondientes a la feria celebrada el pasado mes de septiembre en la plaza de toros de La Condomina.
-
-El matador murciano Paco Ureña ha sido designado Triunfador de la Feria, mientras que Borja Jiménez ha obtenido el galardón a la mejor faena y Marco Pérez ha sido distinguido con el premio a la faena más artística.
-El trofeo a la mejor estocada recayó en Emilio de Justo, y el de mejor rejoneador fue para Diego Ventura.
-Completan el palmarés El Parralejo, Javier Zulueta, Juan Contreras, Juan Ortega y Cristian Romero, entre otros premiados.
-
-Relación completa de premios de la Feria Taurina de Murcia 2025
-	•	Premio del Ayuntamiento de Murcia al Triunfador de la Feria: Paco Ureña.
-	•	Premio del Ayuntamiento de Murcia a la Faena más artística: Marco Pérez, por la realizada al 6.º toro de Juan Pedro Domecq.
-	•	Premio Mariano Molina a la Mejor faena: Borja Jiménez, por la realizada al 3.º toro de Daniel Ruiz.
-	•	Premio de la Comunidad Autónoma de la Región de Murcia al Mejor toreo de capote: Juan Ortega.
-	•	Premio “Ángel Bernal Romero” a la Mejor estocada: Emilio de Justo, por la recetada al 5.º toro de Juan Pedro Domecq.
-	•	Premio de la Agrupación Sardinera de Murcia al Mejor par de banderillas: Juan Contreras, de la cuadrilla de Daniel Luque.
-	•	Premio del Colegio Oficial de Periodistas de Murcia al Triunfador de la Corrida de la Prensa: Marco Pérez.
-	•	Premio “Ángel Bernal Manzanera” al Mejor rejoneador: Diego Ventura.
-	•	Premio del Colegio Oficial de Periodistas de Murcia al Mejor novillero: Javier Zulueta.
-	•	Premio del Real Club Taurino de Murcia al Mejor puyazo: Cristian Romero, de la cuadrilla de Paco Ureña.
-	•	Premio del Real Club Taurino de Murcia a la Mejor corrida: El Parralejo.
-	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
-  },
-	{ 
-    id: 1003,
-    title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
-    image: "/images/carlostirado.jpg",
-    category: "Actualidad",
-    date: "13 de noviembre de 2025",
-	excerpt: "El onubense fue el triunfador del VI Circuito de Novilladas de Andalucía",
-    fullContent: `El novillero onubense Carlos Tirado, natural de Ayamonte, ha alcanzado un acuerdo de apoderamiento con el matador de toros Enrique Peña. El compromiso, sellado a la antigua usanza con el clásico apretón de manos, se cerró este miércoles en Sevilla, tras una reunión en la que ambas partes mostraron su ilusión por afrontar un proyecto común.
-
-La temporada 2024 ha sido especialmente significativa para Tirado, que se proclamó triunfador del VI Circuito de Novilladas de Andalucía, cuya final se celebró en la Real Maestranza de Caballería de Sevilla. Además, sumó otro importante éxito en las Colombinas de Huelva, consolidándose como uno de los nombres más prometedores del escalafón.
-
-“Me llena de ilusión estar de la mano de un profesional de la talla de Enrique Peña y mantener esos diálogos para ir creciendo poco a poco desde el prisma de un matador de toros. Estoy contento y convencido de que vamos a dar mucho que hablar en una temporada con paso firme y muy importante para mí”,
-destacó el joven novillero ayamontino.
-
-Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
-  },
-	{ 
-    id: 1004,
-    title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
-    image: "/images/banderillero2.jpg",
-	imagecaption: "Foto Plaza 1",
-    category: "Actualidad",
-    date: "13 de noviembre de 2025",
-	excerpt: "El madrileño, uno de los más destacados entre los de plata, queda libre para la temporada 2026",
-    fullContent: `El banderillero Raúl Ruiz abandona la cuadrilla del matador de toros malagueño Fortes para la temporada 2026. El madrileño, uno de los más destacados entre los de plata, queda libre para la siguiente temporada después de estar a la órdenes del malagueño desde el año 2018. 
-
-Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
-  },
-	{ 
-    id: 1005,
-    title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
-    image: "/images/apoderamiento.jpg",
-    category: "Actualidad",
-    date: "13 de noviembre de 2025",
-    fullContent: `El torero Fernando Adrián y el taurino sevillano Santiago Ellauri han cerrado un acuerdo de apoderamiento para la temporada 2026.  Ellauri, con una trayectoria consolidada como apoderado en el mundo del toro, será el encargado de coordinar las actuaciones, contratos y proyectos de Adrián, gestionando sus compromisos tanto en plazas nacionales como internacionales.
-
-El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
-  },
-	{ 
-    id: 1006,
-    title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
-    image: "/images/maestrantes.jpg",
-	imagecaption: "Foto ABC",
-    category: "Actualidad",
-    date: "13 de noviembre de 2025",
-    fullContent: `La Real Maestranza de Caballería de Sevilla, propietaria de la emblemática plaza de toros, estaría analizando la redacción de un nuevo modelo de contrato para la gestión del coso durante los próximos años. Los maestrantes mantienen, sin embargo, su tradicional silencio institucional, sin confirmar ni desmentir los rumores que circulan sobre el futuro empresarial del ruedo sevillano.
-
-La decisión, que deberá adoptar la Junta de Gobierno en los próximos días, llega justo cuando expira en 2025 el contrato con la empresa Pagés, dirigida por Ramón Valencia, actual gestora del coso del Baratillo.
-
-Silencio y especulaciones
-El hermetismo de la Real Maestranza —una de sus señas de identidad históricas— ha alimentado todo tipo de especulaciones en los mentideros taurinos. Aunque abundan los nombres y proyectos hipotéticos, ninguno cuenta con una base sólida. La única certeza es que, si Pagés continúa al frente, lo hará mediante un nuevo contrato ajustado a las condiciones que establezca la corporación nobiliaria.
-
-Un contrato con cambios
-De las escasas filtraciones conocidas, sí se desprende que el nuevo modelo incluirá cláusulas distintas a las vigentes, tanto en lo económico como en la duración del acuerdo. La empresa Pagés gestiona la plaza desde 1932, con sucesivos contratos, prórrogas y modificaciones, por lo que no existen precedentes claros sobre el modo en que la Maestranza elige o renueva a su arrendatario.
-
-Decisión inminente
-El tiempo juega en contra. La Junta prevista para el próximo día 22 de noviembre debería, al menos, definir el modelo contractual o las condiciones del nuevo arrendamiento. Todo apunta a que no se convocará un concurso público, dado que la plaza es de propiedad privada, por lo que la decisión podría tomarse de manera directa y discreta.
-
-Sevilla, epicentro del toreo
-La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus dinámicas de trabajo, ganaderos y apoderados reclaman veedores y reseñas tempranas para planificar la próxima temporada. Sevilla, como referente mundial del toreo, debería estar ya construyendo los cimientos de su temporada 2026 y las siguientes.
-
-El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
+Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
   }
 ];
 
 const latestNews: NewsItem[] = [
    	{ 
     id: 1,
+    title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
+    image: "/images/alvarolorenzo.jpg",
+    category: "Actualidad",
+    date: "14 de noviembre de 2025",
+    fullContent: `El toledano Álvaro Lorenzo ha llegado a un acuerdo de apoderamiento con el taurino francés Jean François Piles que hará equipo con Manolo Campuzano, ligado al toledano desde 2024. En 2025 ha toreado 11 corridas de toros en las que ha cortado 21 orejas con el hito de la tarde del dos de mayo en Madrid, donde cortó una oreja y dio una vuelta al ruedo rozando la puerta grande de Las Ventas. Lorenzo afronta con ilusión la próxima temporada en la que cumple diez años de alternativa.
+
+Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
+  },
+	{ 
+    id: 2,
+    title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
+    image: "/images/urdiales.jpg",
+    category: "Actualidad",
+    date: "14 de noviembre de 2025",
+    fullContent: `El matador de toros Diego Urdiales ha decidido que Israel Vicente sea su nuevo apoderado. Hijo del primer apoderado de Urdiales durante su etapa como novillero y primeros años de matador, David Vicente Iglesias, será el encargado de dirigir la carrera del diestro riojano a partir de esta temporada 2026.
+
+Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
+  },
+	{ 
+    id: 3,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
 	imageCaption: "Foto BMF Toros",
@@ -471,7 +385,7 @@ Por eso, de cara a la próxima temporada, la afición espera con ilusión un tri
 Mario Ruiz Ruiz 13/11/2025`
   },
 	{ 
-    id: 2,
+    id: 4,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
     image: "/images/1.jpg",
     category: "Actualidad",
