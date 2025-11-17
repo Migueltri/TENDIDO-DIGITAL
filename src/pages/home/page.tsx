@@ -321,38 +321,97 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: "Tomás González: el paso firme de un novillero diferente",
-    image: "/images/tomas.jpg",
+    title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
+    image: "/images/escolar.jpg",
+	imageCaption: "Foto Philippe Gil Mir",
     category: "Actualidad",
-    date: "15 de noviembre de 2025",
-	excerpt: "El novillero aragonés ha concluido la temporada con 22 novilladas lidiadas y un balance de 29 orejas y un rabo",
-    fullContent: `Tomás González ha dejado una marcada impronta en la temporada 2025, completando su primer año íntegro como novillero con picadores y consolidándose como un diestro de personalidad propia dentro de los cánones clásicos del toreo.
-El novillero de Alcorisa ha sumado 22 novilladas con caballos, en las que ha obtenido un balance de 29 orejas y un rabo. Desde su primera actuación en Vinaroz —que anticipó la línea ascendente de su campaña— hasta las últimas comparecencias, como la realizada en la Feria del Pilar de Zaragoza, donde dio una vuelta al ruedo tras una faena de sello inconfundible, González ha mostrado evolución y madurez.
+    date: "17 de noviembre de 2025",
+	excerpt: "La comisión organizadora del serial ha presentado los hierros que estarán presentes en su feria del próximo año, así como la estructura de los festejos",
+    fullContent: `El Club Taurino 3 Puyazos ha hecho públicas las ganaderías que conformarán la Feria del Aficionado 2026, un ciclo que volverá a celebrarse en la localidad madrileña de San Agustín del Guadalix y que reunirá a algunos de los hierros más representativos del campo bravo, especialmente del ámbito torista. La feria, integrada por tres festejos, se desarrollará los días 25 y 26 de abril y contará con una novillada con picadores y dos corridas de toros, todas ellas en formato de desafío ganadero.
 
-A lo largo de la temporada ha lidiado 23 ganaderías pertenecientes a 10 encastes distintos, dato que subraya la amplitud y versatilidad de su concepto del toreo.
+La programación arrancará el sábado 25, a las 12:00 horas, con utreros de Salvador Guardiola e Isaías y Tulio Vázquez. Ese mismo día, a las 18:30 horas, será el turno de los astados de Prieto de la Cal y Reta de Casta Navarra, protagonistas de la primera corrida del ciclo.
 
-Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada del Campo, Ayllón, Mojados, Azuqueca de Henares o El Burgo de Osma, entre otras. Una campaña de rodaje sólido que culminó con su presentación en Zaragoza y su debut americano como novillero, celebrado en la plaza de Viraco (Perú) el pasado mes de octubre.
+El domingo 26, también a las 12:00 horas, se celebrará el último desafío ganadero, que enfrentará a las divisas de Dolores Aguirre y José Escolar.
 
-Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
+La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
     id: 1001,
-    title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
-    image: "/images/tribunal.jpg",
-	imageCaption: "Plaza de Toros de Málaga",
+    title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
+    image: "/images/alarcon.jpg",
     category: "Actualidad",
-    date: "15 de noviembre de 2025",
-    fullContent: `El Tribunal Administrativo de Recursos Contractuales de la Diputación de Málaga ha hecho caso a las alegaciones presentadas por la empresa Nautalia en relación a la licitación y el pliego para la organización de festejos taurinos en la plaza de toros de La Malagueta.
+    date: "17 de noviembre de 2025",
+    fullContent: `El matador de toros Álvaro Alarcón y su hasta ahora apoderado, Carlos De la Rosa, han decidido de común acuerdo dar por concluida la relación profesional que les unía desde hace varias temporadas. La separación se produce en un clima de plena cordialidad, desde la amistad y el profundo respeto que ambos mantienen, una relación personal que —subrayan— permanece intacta pese al cierre de esta etapa.
 
-Según informa el medio Málaga Taurina, la impugnación del pliego actual ha sido relativa al Anexo 4.1.2 del Pliego de Cláusulas Administrativas Particulares, lo que afectaba a los requisitos de solvencia técnica y profesional de la empresa candidata. Esto ha obligado a anular la especificación de que la empresa candidata debía haber gestionado ‘en cada uno de los tres últimos años de al menos tres plazas de primera o segunda categoría’.
+El objetivo de este paso es que Álvaro Alarcón pueda encontrar a la persona idónea para impulsar su carrera y situarla en el lugar que, por méritos, consideran que merece. No hay que olvidar que sus dos primeras temporadas completas como matador han estado condicionadas por las lesiones.
 
-Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
+Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevantes como el que protagonizó en la Feria de San Isidro de 2022, donde cortó tres orejas, además de sus salidas en hombros en plazas como Valencia, Mont-de-Marsan, El Puerto de Santa María y Dax. Estos éxitos le condujeron a tomar la alternativa en un cartel de máximo nivel en la Feria de San Isidro de 2023, apadrinado por Julián López “El Juli” y con Andrés Roca Rey como testigo, ante toros de La Quinta.
+
+Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
+  },
+  { 
+    id: 1002,
+    title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
+    image: "/images/davidgalvan1.jpg",
+    category: "Actualidad",
+    date: "17 de noviembre de 2025",
+    fullContent: `El matador gaditano David Galván ha cerrado la composición de su cuadrilla para la temporada 2026, un curso que afronta con gran ilusión y con la incorporación de tres nuevos profesionales que se suman a su equipo.
+
+En el tercio de varas, se incorpora el picador Daniel López, quien ya acompañó al diestro en varios compromisos esta temporada y dejó muy buenas sensaciones, motivo por el que pasará a formar pareja con Juan Pablo Molina, que continuará un año más en la cuadrilla.
+
+La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz y Manuel Larios, dos toreros de acreditada solvencia que afrontan este nuevo reto con responsabilidad y el entusiasmo propio de una temporada de máxima exigencia. El tercero David Pacheco seguirá formando parte del equipo.
+
+Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   }
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+  { 
     id: 1,
+    title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
+    image: "/images/escolar.jpg",
+	imageCaption: "Foto Philippe Gil Mir",
+    category: "Actualidad",
+    date: "17 de noviembre de 2025",
+	excerpt: "La comisión organizadora del serial ha presentado los hierros que estarán presentes en su feria del próximo año, así como la estructura de los festejos",
+    fullContent: `El Club Taurino 3 Puyazos ha hecho públicas las ganaderías que conformarán la Feria del Aficionado 2026, un ciclo que volverá a celebrarse en la localidad madrileña de San Agustín del Guadalix y que reunirá a algunos de los hierros más representativos del campo bravo, especialmente del ámbito torista. La feria, integrada por tres festejos, se desarrollará los días 25 y 26 de abril y contará con una novillada con picadores y dos corridas de toros, todas ellas en formato de desafío ganadero.
+
+La programación arrancará el sábado 25, a las 12:00 horas, con utreros de Salvador Guardiola e Isaías y Tulio Vázquez. Ese mismo día, a las 18:30 horas, será el turno de los astados de Prieto de la Cal y Reta de Casta Navarra, protagonistas de la primera corrida del ciclo.
+
+El domingo 26, también a las 12:00 horas, se celebrará el último desafío ganadero, que enfrentará a las divisas de Dolores Aguirre y José Escolar.
+
+La organización anunciará los carteles definitivos en próximas fechas.`
+  },
+	{ 
+    id: 2,
+    title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
+    image: "/images/alarcon.jpg",
+    category: "Actualidad",
+    date: "17 de noviembre de 2025",
+    fullContent: `El matador de toros Álvaro Alarcón y su hasta ahora apoderado, Carlos De la Rosa, han decidido de común acuerdo dar por concluida la relación profesional que les unía desde hace varias temporadas. La separación se produce en un clima de plena cordialidad, desde la amistad y el profundo respeto que ambos mantienen, una relación personal que —subrayan— permanece intacta pese al cierre de esta etapa.
+
+El objetivo de este paso es que Álvaro Alarcón pueda encontrar a la persona idónea para impulsar su carrera y situarla en el lugar que, por méritos, consideran que merece. No hay que olvidar que sus dos primeras temporadas completas como matador han estado condicionadas por las lesiones.
+
+Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevantes como el que protagonizó en la Feria de San Isidro de 2022, donde cortó tres orejas, además de sus salidas en hombros en plazas como Valencia, Mont-de-Marsan, El Puerto de Santa María y Dax. Estos éxitos le condujeron a tomar la alternativa en un cartel de máximo nivel en la Feria de San Isidro de 2023, apadrinado por Julián López “El Juli” y con Andrés Roca Rey como testigo, ante toros de La Quinta.
+
+Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
+  },
+  { 
+    id: 3,
+    title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
+    image: "/images/davidgalvan1.jpg",
+    category: "Actualidad",
+    date: "17 de noviembre de 2025",
+    fullContent: `El matador gaditano David Galván ha cerrado la composición de su cuadrilla para la temporada 2026, un curso que afronta con gran ilusión y con la incorporación de tres nuevos profesionales que se suman a su equipo.
+
+En el tercio de varas, se incorpora el picador Daniel López, quien ya acompañó al diestro en varios compromisos esta temporada y dejó muy buenas sensaciones, motivo por el que pasará a formar pareja con Juan Pablo Molina, que continuará un año más en la cuadrilla.
+
+La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz y Manuel Larios, dos toreros de acreditada solvencia que afrontan este nuevo reto con responsabilidad y el entusiasmo propio de una temporada de máxima exigencia. El tercero David Pacheco seguirá formando parte del equipo.
+
+Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
+  },
+	{ 
+    id: 4,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
