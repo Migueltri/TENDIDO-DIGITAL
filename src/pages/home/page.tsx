@@ -403,6 +403,7 @@ Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
     id: 3,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
+    footerImage: "/images/davidgalvan2.jpg",
     category: "Actualidad",
     date: "17 de noviembre de 2025",
     fullContent: `El matador gaditano David Galván ha cerrado la composición de su cuadrilla para la temporada 2026, un curso que afronta con gran ilusión y con la incorporación de tres nuevos profesionales que se suman a su equipo.
