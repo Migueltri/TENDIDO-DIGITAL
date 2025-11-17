@@ -3175,6 +3175,22 @@ TENDIDO DIGITAL
           </div>
         </div>
 
+        {/* Imagen final tipo portada */}
+{selectedNews.footerImage && (
+  <div className="mt-12 flex flex-col items-center">
+    <img
+      src={selectedNews.footerImage}
+      alt={selectedNews.footerImageCaption || selectedNews.title}
+      className="w-full max-w-4xl rounded-md"
+    />
+    {selectedNews.footerImageCaption && (
+      <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+        {selectedNews.footerImageCaption}
+      </p>
+    )}
+  </div>
+)}
+		  
         {/* Acciones del artículo */}
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
           <div className="flex items-center space-x-6">
