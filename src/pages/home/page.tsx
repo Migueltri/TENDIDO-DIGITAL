@@ -323,54 +323,123 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
-    image: "/images/escolar.jpg",
-	imageCaption: "Foto Philippe Gil Mir",
+       title: "El banderillero Juan Rojas queda libre para la próxima temporada",
+    image: "/images/juanrojas.jpg",
     category: "Actualidad",
-    date: "17 de noviembre de 2025",
-	excerpt: "La comisión organizadora del serial ha presentado los hierros que estarán presentes en su feria del próximo año, así como la estructura de los festejos",
-    fullContent: `El Club Taurino 3 Puyazos ha hecho públicas las ganaderías que conformarán la Feria del Aficionado 2026, un ciclo que volverá a celebrarse en la localidad madrileña de San Agustín del Guadalix y que reunirá a algunos de los hierros más representativos del campo bravo, especialmente del ámbito torista. La feria, integrada por tres festejos, se desarrollará los días 25 y 26 de abril y contará con una novillada con picadores y dos corridas de toros, todas ellas en formato de desafío ganadero.
+    date: "18 de noviembre de 2025",
+    fullContent: `El banderillero Juan Rojas ha quedado libre de cara a la próxima temporada taurina. El torero de plata ha salido de las filas del matador gaditano David Galván, a cuyas órdenes ha permanecido durante varias campañas.
 
-La programación arrancará el sábado 25, a las 12:00 horas, con utreros de Salvador Guardiola e Isaías y Tulio Vázquez. Ese mismo día, a las 18:30 horas, será el turno de los astados de Prieto de la Cal y Reta de Casta Navarra, protagonistas de la primera corrida del ciclo.
-
-El domingo 26, también a las 12:00 horas, se celebrará el último desafío ganadero, que enfrentará a las divisas de Dolores Aguirre y José Escolar.
-
-La organización anunciará los carteles definitivos en próximas fechas.`
+Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
     id: 1001,
-    title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
-    image: "/images/alarcon.jpg",
+    title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
+    image: "/images/graveaccidente.jpg",
     category: "Actualidad",
-    date: "17 de noviembre de 2025",
-    fullContent: `El matador de toros Álvaro Alarcón y su hasta ahora apoderado, Carlos De la Rosa, han decidido de común acuerdo dar por concluida la relación profesional que les unía desde hace varias temporadas. La separación se produce en un clima de plena cordialidad, desde la amistad y el profundo respeto que ambos mantienen, una relación personal que —subrayan— permanece intacta pese al cierre de esta etapa.
+    date: "18 de noviembre de 2025",
+    fullContent: `El campo bravo ha vuelto a vivir un episodio de crudeza con un nuevo accidente, tal como ocurriera hace apenas unas semanas con el ganadero Julio de la Puerta. En esta ocasión, la ganadería de Partido de Resina ha sido el escenario de un serio percance en el que el mayoral de la casa, Julián Ruiz Quinta, resultó herido tras caer de su caballo y recibir una violenta patada en la cabeza.
 
-El objetivo de este paso es que Álvaro Alarcón pueda encontrar a la persona idónea para impulsar su carrera y situarla en el lugar que, por méritos, consideran que merece. No hay que olvidar que sus dos primeras temporadas completas como matador han estado condicionadas por las lesiones.
+“Gracias a Dios se encuentra estable y está ingresado en el Hospital Virgen del Rocío, donde ya le están realizando todas las pruebas necesarias. Es un milagro que no haya afectado al cráneo; parece que se centra únicamente en la reconstrucción de la mandíbula y del cuello”, señalan fuentes cercanas a la ganadería.
 
-Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevantes como el que protagonizó en la Feria de San Isidro de 2022, donde cortó tres orejas, además de sus salidas en hombros en plazas como Valencia, Mont-de-Marsan, El Puerto de Santa María y Dax. Estos éxitos le condujeron a tomar la alternativa en un cartel de máximo nivel en la Feria de San Isidro de 2023, apadrinado por Julián López “El Juli” y con Andrés Roca Rey como testigo, ante toros de La Quinta.
+Según ha podido conocer este medio a través de Tico Morales hijo, los hechos ocurrieron durante las labores de apartado de unos utreros de la divisa sevillana. Uno de los ejemplares se arrancó de forma inesperada, sorprendiendo al caballo del mayoral y provocando una reacción brusca del animal. En pleno rebrinco, Julián perdió la montura y cayó al suelo, momento en el que recibió el impacto en la mandíbula.
 
-Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
+Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que evitó un desenlace aún más grave. Aunque logró incorporarse por su propio pie, uno de sus compañeros intervino de inmediato para trasladarlo en un todoterreno hasta el cortijo, donde recibió una primera asistencia antes de su evacuación a la UCI del Hospital Virgen del Rocío, en Sevilla, donde continúa ingresado.
+
+“Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
     id: 1002,
-    title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
-    image: "/images/davidgalvan1.jpg",
-	footerImage: "/images/davidgalvan2.jpg",
+    title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
+    image: "/images/domecq.jpg",
     category: "Actualidad",
-    date: "17 de noviembre de 2025",
-    fullContent: `El matador gaditano David Galván ha cerrado la composición de su cuadrilla para la temporada 2026, un curso que afronta con gran ilusión y con la incorporación de tres nuevos profesionales que se suman a su equipo.
+    date: "18 de noviembre de 2025",
+	excerpt: "A los 85 años de edad",
+    fullContent: `Álvaro Domecq Romero, figura histórica del rejoneo y ganadero al frente de la emblemática divisa de Torrestrella, ha fallecido esta madrugada a los 85 años de edad. Nacido en Jerez de la Frontera el 8 de abril de 1940, fue hijo del también mítico rejoneador y ganadero Álvaro Domecq Díez, de quien heredó no solo el nombre, sino también una profunda vocación por el toro bravo y el arte ecuestre.
 
-En el tercio de varas, se incorpora el picador Daniel López, quien ya acompañó al diestro en varios compromisos esta temporada y dejó muy buenas sensaciones, motivo por el que pasará a formar pareja con Juan Pablo Molina, que continuará un año más en la cuadrilla.
+Debutó en público el 13 de septiembre de 1959 en la plaza de toros de Ronda y tomó la alternativa el 1 de septiembre de 1960 en El Puerto de Santa María, apadrinado por su propio padre. Su despedida de los ruedos tuvo lugar el 12 de octubre de 1985 en Jerez de la Frontera, culminando una trayectoria extraordinaria en la que llegó a participar en más de 2.000 corridas, consolidándose como una de las figuras indiscutibles del toreo a caballo. Formó parte del célebre grupo de los “cuatro jinetes del Apoteosis”, junto a Ángel y Rafael Peralta y José Samuel Lupi, un conjunto que marcó una época dorada en el rejoneo.
 
-La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz y Manuel Larios, dos toreros de acreditada solvencia que afrontan este nuevo reto con responsabilidad y el entusiasmo propio de una temporada de máxima exigencia. El tercero David Pacheco seguirá formando parte del equipo.
+Como ganadero, tomó las riendas de Torrestrella, una de las divisas más prestigiosas del campo bravo. Desde la finca de Los Alburejos, en Medina Sidonia —luego trasladada a El Carrascal—, Domecq mantuvo y potenció el concepto de bravura que convirtió a esta ganadería en referencia obligada de las principales ferias taurinas. Su labor se caracterizó por una visión moderna de la selección y la crianza del toro, uniendo tradición y rigor técnico.
 
-Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
+En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 1975 fundó la Real Escuela Andaluza del Arte Ecuestre, hoy considerada una institución de prestigio internacional. Asimismo, ideó espectáculos como Cómo Bailan los Caballos Andaluces y A Campo Abierto, que contribuyeron a difundir la excelencia del caballo andaluz y la tradición ecuestre de Jerez en los cinco continentes.
+
+A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
+  },
+   { 
+    id: 1003,
+    title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
+    image: "/images/picador.jpg",
+    category: "Actualidad",
+    date: "18 de noviembre de 2025",
+    fullContent: `Fernando Adrián, uno de los nombres propios de la temporada 2025, ya ha cerrado la composición de la cuadrilla que le acompañará durante la campaña taurina de 2026.
+
+El torero estrenará como picador a Pedro Iturralde, quien compartirá filas con el joven guadalajareño Javier Díaz-Manrique. Como lidiadores continuarán el salmantino Roberto Blanco y Marcos Prieto, mientras que el puesto de tercero seguirá en manos del madrileño Diego Valladar.
+
+La estructura de su equipo se completa con Francisco Javier Villalba como mozo de espadas; la gestión profesional del diestro será dirigida por su nuevo apoderado, Santiago Ellauri.
+
+Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   }
 ];
 
 const latestNews: NewsItem[] = [
   { 
     id: 1,
+       title: "El banderillero Juan Rojas queda libre para la próxima temporada",
+    image: "/images/juanrojas.jpg",
+    category: "Actualidad",
+    date: "18 de noviembre de 2025",
+    fullContent: `El banderillero Juan Rojas ha quedado libre de cara a la próxima temporada taurina. El torero de plata ha salido de las filas del matador gaditano David Galván, a cuyas órdenes ha permanecido durante varias campañas.
+
+Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
+  },
+	{ 
+    id: 2,
+    title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
+    image: "/images/graveaccidente.jpg",
+    category: "Actualidad",
+    date: "18 de noviembre de 2025",
+    fullContent: `El campo bravo ha vuelto a vivir un episodio de crudeza con un nuevo accidente, tal como ocurriera hace apenas unas semanas con el ganadero Julio de la Puerta. En esta ocasión, la ganadería de Partido de Resina ha sido el escenario de un serio percance en el que el mayoral de la casa, Julián Ruiz Quinta, resultó herido tras caer de su caballo y recibir una violenta patada en la cabeza.
+
+“Gracias a Dios se encuentra estable y está ingresado en el Hospital Virgen del Rocío, donde ya le están realizando todas las pruebas necesarias. Es un milagro que no haya afectado al cráneo; parece que se centra únicamente en la reconstrucción de la mandíbula y del cuello”, señalan fuentes cercanas a la ganadería.
+
+Según ha podido conocer este medio a través de Tico Morales hijo, los hechos ocurrieron durante las labores de apartado de unos utreros de la divisa sevillana. Uno de los ejemplares se arrancó de forma inesperada, sorprendiendo al caballo del mayoral y provocando una reacción brusca del animal. En pleno rebrinco, Julián perdió la montura y cayó al suelo, momento en el que recibió el impacto en la mandíbula.
+
+Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que evitó un desenlace aún más grave. Aunque logró incorporarse por su propio pie, uno de sus compañeros intervino de inmediato para trasladarlo en un todoterreno hasta el cortijo, donde recibió una primera asistencia antes de su evacuación a la UCI del Hospital Virgen del Rocío, en Sevilla, donde continúa ingresado.
+
+“Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
+  },
+  { 
+    id: 3,
+    title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
+    image: "/images/domecq.jpg",
+    category: "Actualidad",
+    date: "18 de noviembre de 2025",
+	excerpt: "A los 85 años de edad",
+    fullContent: `Álvaro Domecq Romero, figura histórica del rejoneo y ganadero al frente de la emblemática divisa de Torrestrella, ha fallecido esta madrugada a los 85 años de edad. Nacido en Jerez de la Frontera el 8 de abril de 1940, fue hijo del también mítico rejoneador y ganadero Álvaro Domecq Díez, de quien heredó no solo el nombre, sino también una profunda vocación por el toro bravo y el arte ecuestre.
+
+Debutó en público el 13 de septiembre de 1959 en la plaza de toros de Ronda y tomó la alternativa el 1 de septiembre de 1960 en El Puerto de Santa María, apadrinado por su propio padre. Su despedida de los ruedos tuvo lugar el 12 de octubre de 1985 en Jerez de la Frontera, culminando una trayectoria extraordinaria en la que llegó a participar en más de 2.000 corridas, consolidándose como una de las figuras indiscutibles del toreo a caballo. Formó parte del célebre grupo de los “cuatro jinetes del Apoteosis”, junto a Ángel y Rafael Peralta y José Samuel Lupi, un conjunto que marcó una época dorada en el rejoneo.
+
+Como ganadero, tomó las riendas de Torrestrella, una de las divisas más prestigiosas del campo bravo. Desde la finca de Los Alburejos, en Medina Sidonia —luego trasladada a El Carrascal—, Domecq mantuvo y potenció el concepto de bravura que convirtió a esta ganadería en referencia obligada de las principales ferias taurinas. Su labor se caracterizó por una visión moderna de la selección y la crianza del toro, uniendo tradición y rigor técnico.
+
+En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 1975 fundó la Real Escuela Andaluza del Arte Ecuestre, hoy considerada una institución de prestigio internacional. Asimismo, ideó espectáculos como Cómo Bailan los Caballos Andaluces y A Campo Abierto, que contribuyeron a difundir la excelencia del caballo andaluz y la tradición ecuestre de Jerez en los cinco continentes.
+
+A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
+  },
+   { 
+    id: 4,
+    title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
+    image: "/images/picador.jpg",
+    category: "Actualidad",
+    date: "18 de noviembre de 2025",
+    fullContent: `Fernando Adrián, uno de los nombres propios de la temporada 2025, ya ha cerrado la composición de la cuadrilla que le acompañará durante la campaña taurina de 2026.
+
+El torero estrenará como picador a Pedro Iturralde, quien compartirá filas con el joven guadalajareño Javier Díaz-Manrique. Como lidiadores continuarán el salmantino Roberto Blanco y Marcos Prieto, mientras que el puesto de tercero seguirá en manos del madrileño Diego Valladar.
+
+La estructura de su equipo se completa con Francisco Javier Villalba como mozo de espadas; la gestión profesional del diestro será dirigida por su nuevo apoderado, Santiago Ellauri.
+
+Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
+  },
+	{ 
+    id: 5,
     title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
     image: "/images/escolar.jpg",
 	imageCaption: "Foto Philippe Gil Mir",
@@ -386,7 +455,7 @@ El domingo 26, también a las 12:00 horas, se celebrará el último desafío gan
 La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
-    id: 2,
+    id: 6,
     title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
     image: "/images/alarcon.jpg",
     category: "Actualidad",
@@ -400,7 +469,7 @@ Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevant
 Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
   },
   { 
-    id: 3,
+    id: 7,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
     footerImage: "/images/davidgalvan2.jpg",
@@ -415,7 +484,7 @@ La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz
 Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   },
 	{ 
-    id: 4,
+    id: 8,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
@@ -431,7 +500,7 @@ Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada 
 Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
   },
 	{ 
-    id: 5,
+    id: 9,
     title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
     image: "/images/tribunal.jpg",
 	imageCaption: "Plaza de Toros de Málaga",
@@ -444,7 +513,7 @@ Según informa el medio Málaga Taurina, la impugnación del pliego actual ha si
 Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
   },
 	{ 
-    id: 6,
+    id: 10,
     title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
     image: "/images/alvarolorenzo.jpg",
     category: "Actualidad",
@@ -454,7 +523,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
-    id: 7,
+    id: 11,
     title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
     image: "/images/urdiales.jpg",
     category: "Actualidad",
@@ -464,7 +533,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
   },
 	{ 
-    id: 8,
+    id: 12,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
 	imageCaption: "Foto BMF Toros",
@@ -486,7 +555,7 @@ Por eso, de cara a la próxima temporada, la afición espera con ilusión un tri
 Mario Ruiz Ruiz 13/11/2025`
   },
 	{ 
-    id: 9,
+    id: 13,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
     image: "/images/1.jpg",
     category: "Actualidad",
