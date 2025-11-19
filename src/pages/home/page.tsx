@@ -323,66 +323,89 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "El banderillero Juan Rojas queda libre para la próxima temporada",
-    image: "/images/juanrojas.jpg",
+       title: "Abierta la inscripción para la Copa Chenel 2026",
+    image: "/images/copachenel.jpg",
+	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
     category: "Actualidad",
-    date: "18 de noviembre de 2025",
-    fullContent: `El banderillero Juan Rojas ha quedado libre de cara a la próxima temporada taurina. El torero de plata ha salido de las filas del matador gaditano David Galván, a cuyas órdenes ha permanecido durante varias campañas.
+    date: "19 de noviembre de 2025",
+    fullContent: `La Fiesta del Toro de la Comunidad de Madrid ha comenzado a preparar la temporada 2026 y, con ella, la nueva edición del certamen más destacado que organiza la Fundación Toro de Lidia en colaboración con la Comunidad de Madrid: la Copa Chenel.
 
-Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
+En este contexto, la Fundación Toro de Lidia ha abierto oficialmente el plazo de inscripción para los matadores de toros interesados en participar en la Copa Chenel 2026.
+
+Podrá presentar su candidatura cualquier matador que cumpla los siguientes requisitos: haber tomado la alternativa después del 1 de enero de 2013; no haber finalizado la temporada 2025 entre los 20 primeros del escalafón; y no haber toreado en 2025 en cuatro o más plazas de primera categoría en España o Francia.
+
+Una de las principales novedades respecto a ediciones anteriores es la eliminación de la restricción que impedía repetir participación. A partir de esta edición, tal y como recoge la licitación oficial, «podrán ser elegibles matadores que ya hubieran participado en ediciones anteriores de la Copa Chenel».
+
+Asimismo, tendrán acceso directo al certamen aquellos matadores que, cumpliendo los requisitos previos, hayan resultado triunfadores en alguno de los circuitos de novilladas pertenecientes a la Liga Nacional de Novilladas.
+
+De forma excepcional, el certamen podrá reservar hasta tres plazas para candidatos que no cumplan alguno de los requisitos establecidos. Estos casos deberán estar debidamente justificados y contarán con la valoración del Centro de Asuntos Taurinos de la Comunidad de Madrid.
+
+El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La información detallada y los requisitos completos pueden consultarse en la web oficial de la Fundación Toro de Lidia.
+
+Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
     id: 1001,
-    title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
-    image: "/images/graveaccidente.jpg",
-    category: "Actualidad",
-    date: "18 de noviembre de 2025",
-    fullContent: `El campo bravo ha vuelto a vivir un episodio de crudeza con un nuevo accidente, tal como ocurriera hace apenas unas semanas con el ganadero Julio de la Puerta. En esta ocasión, la ganadería de Partido de Resina ha sido el escenario de un serio percance en el que el mayoral de la casa, Julián Ruiz Quinta, resultó herido tras caer de su caballo y recibir una violenta patada en la cabeza.
+    title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
+    image: "/images/lances.jpg",
+	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
+    category: "Opinión",
+    date: "19 de noviembre de 2025",
+    fullContent: `Lances de Futuro se ha conseguido consolidar como una de las empresas gestoras de plazas más importantes del momento, actualmente, tiene en su propiedad plazas como Torrejón de Ardoz, Córdoba, Cáceres y Santander. Todas ellas, en diferente medida, han marcado la temporada taurina de 2025, como en aquella tarde de David De Miranda con ese toro de Victoriano del Río .
 
-“Gracias a Dios se encuentra estable y está ingresado en el Hospital Virgen del Rocío, donde ya le están realizando todas las pruebas necesarias. Es un milagro que no haya afectado al cráneo; parece que se centra únicamente en la reconstrucción de la mandíbula y del cuello”, señalan fuentes cercanas a la ganadería.
+Esta empresa es liderada por el célebre empresario sevillano José María Garzón, que también ejerce su función como apoderado gestionando temporadas a toreros como Juan Ortega con el que tiene una relación profesional ya de tres años. Su propósito principal en estos últimos años ha sido la renovación de sus plazas a través de la imagen de la juventud en todos los ámbitos posibles, en el ámbit  lo o del público, implantó ventajas económicas en el coste de las entradas, como abonos con precios especiales para jóvenes o esos famosos tendidos jóvenes, con la función de intentar atraer ese público joven tan necesitado para la fiesta.
 
-Según ha podido conocer este medio a través de Tico Morales hijo, los hechos ocurrieron durante las labores de apartado de unos utreros de la divisa sevillana. Uno de los ejemplares se arrancó de forma inesperada, sorprendiendo al caballo del mayoral y provocando una reacción brusca del animal. En pleno rebrinco, Julián perdió la montura y cayó al suelo, momento en el que recibió el impacto en la mandíbula.
+Por otra parte, esta empresa fomenta la introducción de toreros emergentes en sus ferias como los casos de Víctor Hernández en Torrejón o en Málaga. En esta última pudimos contemplar uno de los acontecimientos de la temporada con esa faena valiente de David de Miranda, que le ayudó a abrirse las puertas de nuevo en el mundillo, o la actuación de Jarocho en Santander y Manuel Román en Córdoba, todos ellos acompañados de toreros como Borja Jiménez y Fortes, claros protagonistas de esta temporada. Al fin de al cabo, estos son los toreros que el aficionado solicita en este momento y que se encargarán de dar un paso al frente para la renovación del escalafón en los siguientes años.
 
-Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que evitó un desenlace aún más grave. Aunque logró incorporarse por su propio pie, uno de sus compañeros intervino de inmediato para trasladarlo en un todoterreno hasta el cortijo, donde recibió una primera asistencia antes de su evacuación a la UCI del Hospital Virgen del Rocío, en Sevilla, donde continúa ingresado.
+Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la plaza de toros de Sevilla y a la polémica por el concurso en la Malagueta, ya que la diputación no decidió renovar a esta empresa, pese al buen trabajo realizado, y que se rumorea que Simón Casas y Javier Conde podrían estar detrás de ella, pone a Lances de Futuro en boca de todos los aficionados como una empresa interesada por la salud de la fiesta y de el interés del aficionado. Por eso desde aquí les felicitamos y les apelamos a que continúen con el buen trabajo que están realizando.
 
-“Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
-  },
-  { 
-    id: 1002,
-    title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
-    image: "/images/domecq.jpg",
-    category: "Actualidad",
-    date: "18 de noviembre de 2025",
-	excerpt: "A los 85 años de edad",
-    fullContent: `Álvaro Domecq Romero, figura histórica del rejoneo y ganadero al frente de la emblemática divisa de Torrestrella, ha fallecido esta madrugada a los 85 años de edad. Nacido en Jerez de la Frontera el 8 de abril de 1940, fue hijo del también mítico rejoneador y ganadero Álvaro Domecq Díez, de quien heredó no solo el nombre, sino también una profunda vocación por el toro bravo y el arte ecuestre.
-
-Debutó en público el 13 de septiembre de 1959 en la plaza de toros de Ronda y tomó la alternativa el 1 de septiembre de 1960 en El Puerto de Santa María, apadrinado por su propio padre. Su despedida de los ruedos tuvo lugar el 12 de octubre de 1985 en Jerez de la Frontera, culminando una trayectoria extraordinaria en la que llegó a participar en más de 2.000 corridas, consolidándose como una de las figuras indiscutibles del toreo a caballo. Formó parte del célebre grupo de los “cuatro jinetes del Apoteosis”, junto a Ángel y Rafael Peralta y José Samuel Lupi, un conjunto que marcó una época dorada en el rejoneo.
-
-Como ganadero, tomó las riendas de Torrestrella, una de las divisas más prestigiosas del campo bravo. Desde la finca de Los Alburejos, en Medina Sidonia —luego trasladada a El Carrascal—, Domecq mantuvo y potenció el concepto de bravura que convirtió a esta ganadería en referencia obligada de las principales ferias taurinas. Su labor se caracterizó por una visión moderna de la selección y la crianza del toro, uniendo tradición y rigor técnico.
-
-En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 1975 fundó la Real Escuela Andaluza del Arte Ecuestre, hoy considerada una institución de prestigio internacional. Asimismo, ideó espectáculos como Cómo Bailan los Caballos Andaluces y A Campo Abierto, que contribuyeron a difundir la excelencia del caballo andaluz y la tradición ecuestre de Jerez en los cinco continentes.
-
-A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
-  },
-   { 
-    id: 1003,
-    title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
-    image: "/images/picador.jpg",
-    category: "Actualidad",
-    date: "18 de noviembre de 2025",
-    fullContent: `Fernando Adrián, uno de los nombres propios de la temporada 2025, ya ha cerrado la composición de la cuadrilla que le acompañará durante la campaña taurina de 2026.
-
-El torero estrenará como picador a Pedro Iturralde, quien compartirá filas con el joven guadalajareño Javier Díaz-Manrique. Como lidiadores continuarán el salmantino Roberto Blanco y Marcos Prieto, mientras que el puesto de tercero seguirá en manos del madrileño Diego Valladar.
-
-La estructura de su equipo se completa con Francisco Javier Villalba como mozo de espadas; la gestión profesional del diestro será dirigida por su nuevo apoderado, Santiago Ellauri.
-
-Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
+Mario Ruiz 19/11/2025`
   }
 ];
 
 const latestNews: NewsItem[] = [
   { 
     id: 1,
+       title: "Abierta la inscripción para la Copa Chenel 2026",
+    image: "/images/copachenel.jpg",
+	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
+    category: "Actualidad",
+    date: "19 de noviembre de 2025",
+    fullContent: `La Fiesta del Toro de la Comunidad de Madrid ha comenzado a preparar la temporada 2026 y, con ella, la nueva edición del certamen más destacado que organiza la Fundación Toro de Lidia en colaboración con la Comunidad de Madrid: la Copa Chenel.
+
+En este contexto, la Fundación Toro de Lidia ha abierto oficialmente el plazo de inscripción para los matadores de toros interesados en participar en la Copa Chenel 2026.
+
+Podrá presentar su candidatura cualquier matador que cumpla los siguientes requisitos: haber tomado la alternativa después del 1 de enero de 2013; no haber finalizado la temporada 2025 entre los 20 primeros del escalafón; y no haber toreado en 2025 en cuatro o más plazas de primera categoría en España o Francia.
+
+Una de las principales novedades respecto a ediciones anteriores es la eliminación de la restricción que impedía repetir participación. A partir de esta edición, tal y como recoge la licitación oficial, «podrán ser elegibles matadores que ya hubieran participado en ediciones anteriores de la Copa Chenel».
+
+Asimismo, tendrán acceso directo al certamen aquellos matadores que, cumpliendo los requisitos previos, hayan resultado triunfadores en alguno de los circuitos de novilladas pertenecientes a la Liga Nacional de Novilladas.
+
+De forma excepcional, el certamen podrá reservar hasta tres plazas para candidatos que no cumplan alguno de los requisitos establecidos. Estos casos deberán estar debidamente justificados y contarán con la valoración del Centro de Asuntos Taurinos de la Comunidad de Madrid.
+
+El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La información detallada y los requisitos completos pueden consultarse en la web oficial de la Fundación Toro de Lidia.
+
+Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
+  },
+	{ 
+    id: 2,
+    title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
+    image: "/images/lances.jpg",
+	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
+    category: "Opinión",
+    date: "19 de noviembre de 2025",
+    fullContent: `Lances de Futuro se ha conseguido consolidar como una de las empresas gestoras de plazas más importantes del momento, actualmente, tiene en su propiedad plazas como Torrejón de Ardoz, Córdoba, Cáceres y Santander. Todas ellas, en diferente medida, han marcado la temporada taurina de 2025, como en aquella tarde de David De Miranda con ese toro de Victoriano del Río .
+
+Esta empresa es liderada por el célebre empresario sevillano José María Garzón, que también ejerce su función como apoderado gestionando temporadas a toreros como Juan Ortega con el que tiene una relación profesional ya de tres años. Su propósito principal en estos últimos años ha sido la renovación de sus plazas a través de la imagen de la juventud en todos los ámbitos posibles, en el ámbit  lo o del público, implantó ventajas económicas en el coste de las entradas, como abonos con precios especiales para jóvenes o esos famosos tendidos jóvenes, con la función de intentar atraer ese público joven tan necesitado para la fiesta.
+
+Por otra parte, esta empresa fomenta la introducción de toreros emergentes en sus ferias como los casos de Víctor Hernández en Torrejón o en Málaga. En esta última pudimos contemplar uno de los acontecimientos de la temporada con esa faena valiente de David de Miranda, que le ayudó a abrirse las puertas de nuevo en el mundillo, o la actuación de Jarocho en Santander y Manuel Román en Córdoba, todos ellos acompañados de toreros como Borja Jiménez y Fortes, claros protagonistas de esta temporada. Al fin de al cabo, estos son los toreros que el aficionado solicita en este momento y que se encargarán de dar un paso al frente para la renovación del escalafón en los siguientes años.
+
+Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la plaza de toros de Sevilla y a la polémica por el concurso en la Malagueta, ya que la diputación no decidió renovar a esta empresa, pese al buen trabajo realizado, y que se rumorea que Simón Casas y Javier Conde podrían estar detrás de ella, pone a Lances de Futuro en boca de todos los aficionados como una empresa interesada por la salud de la fiesta y de el interés del aficionado. Por eso desde aquí les felicitamos y les apelamos a que continúen con el buen trabajo que están realizando.
+
+Mario Ruiz 19/11/2025`
+  },
+	{ 
+    id: 3,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -392,7 +415,7 @@ const latestNews: NewsItem[] = [
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 2,
+    id: 4,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -408,7 +431,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 3,
+    id: 5,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
@@ -425,7 +448,7 @@ En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 197
 A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
   },
    { 
-    id: 4,
+    id: 10,
     title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
     image: "/images/picador.jpg",
     category: "Actualidad",
@@ -439,7 +462,7 @@ La estructura de su equipo se completa con Francisco Javier Villalba como mozo d
 Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 5,
+    id: 11,
     title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
     image: "/images/escolar.jpg",
 	imageCaption: "Foto Philippe Gil Mir",
@@ -455,7 +478,7 @@ El domingo 26, también a las 12:00 horas, se celebrará el último desafío gan
 La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
-    id: 6,
+    id: 12,
     title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
     image: "/images/alarcon.jpg",
     category: "Actualidad",
@@ -469,7 +492,7 @@ Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevant
 Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
   },
   { 
-    id: 7,
+    id: 13,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
     footerImage: "/images/davidgalvan2.jpg",
@@ -484,7 +507,7 @@ La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz
 Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   },
 	{ 
-    id: 8,
+    id: 14,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
@@ -500,7 +523,7 @@ Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada 
 Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
   },
 	{ 
-    id: 9,
+    id: 15,
     title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
     image: "/images/tribunal.jpg",
 	imageCaption: "Plaza de Toros de Málaga",
@@ -513,7 +536,7 @@ Según informa el medio Málaga Taurina, la impugnación del pliego actual ha si
 Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
   },
 	{ 
-    id: 10,
+    id: 16,
     title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
     image: "/images/alvarolorenzo.jpg",
     category: "Actualidad",
@@ -523,7 +546,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
-    id: 11,
+    id: 17,
     title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
     image: "/images/urdiales.jpg",
     category: "Actualidad",
@@ -533,7 +556,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
   },
 	{ 
-    id: 12,
+    id: 18,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
 	imageCaption: "Foto BMF Toros",
@@ -555,7 +578,7 @@ Por eso, de cara a la próxima temporada, la afición espera con ilusión un tri
 Mario Ruiz Ruiz 13/11/2025`
   },
 	{ 
-    id: 13,
+    id: 19,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
     image: "/images/1.jpg",
     category: "Actualidad",
@@ -569,7 +592,7 @@ Las propuestas serán evaluadas por un comité de expertos integrado por tres em
 Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la continuidad y el nivel artístico de una de las ferias más destacadas del calendario andaluz.`
   },
 	{ 
-    id: 15,
+    id: 20,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -596,7 +619,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
   },
 	{ 
-    id: 16,
+    id: 21,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
     image: "/images/carlostirado.jpg",
     category: "Actualidad",
@@ -612,7 +635,7 @@ destacó el joven novillero ayamontino.
 Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
   },
 	{ 
-    id: 17,
+    id: 22,
     title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
     image: "/images/banderillero2.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -624,7 +647,7 @@ Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que bu
 Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
   },
 	{ 
-    id: 18,
+    id: 23,
     title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
     image: "/images/apoderamiento.jpg",
     category: "Actualidad",
@@ -634,7 +657,7 @@ Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor 
 El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 19,
+    id: 24,
     title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
     image: "/images/maestrantes.jpg",
 	imageCaption: "Foto ABC",
@@ -659,7 +682,7 @@ La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus
 El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
   },
 	{ 
-    id: 20,
+    id: 25,
     title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
     image: "/images/blazquez.jpg",
     category: "Actualidad",
@@ -670,7 +693,7 @@ El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional
 Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
   },
 	{ 
-    id: 21,
+    id: 26,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -682,7 +705,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 22,
+    id: 27,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
@@ -700,7 +723,7 @@ Los trabajos para la renovación integral del sistema de iluminación de la Plaz
 El proyecto contempla la sustitución de los equipos de iluminación en pasillos y escaleras, así como del sistema de proyectores del ruedo, que contará con cinco niveles lumínicos prestablecidos. Esta mejora permitirá alcanzar los estándares requeridos para la retransmisión televisiva en alta definición, reforzando al mismo tiempo la seguridad y el confort de los asistentes.`
   },
 	{ 
-    id: 23,
+    id: 28,
     title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
     image: "/images/premiados.jpg",
     category: "Actualidad",
@@ -808,7 +831,7 @@ Entrega: Diputación de Málaga.
 Recibe: Javier Conde.`
   },
 	{ 
-    id: 25,
+    id: 29,
     title: "Sergio Pérez de Gregorio fin al apoderamiento junto a Alberto García y Rafael Peralta",
     image: "/images/gregoria.jpg",
     category: "Actualidad",
@@ -821,7 +844,7 @@ Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los cartel
 Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 26,
+    id: 30,
     title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
     image: "/images/andres.jpg",
 	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
@@ -834,7 +857,7 @@ Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como un
 El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
   },
 	{ 
-    id: 30,
+    id: 31,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -850,7 +873,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 31,
+    id: 32,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -866,7 +889,7 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 32,
+    id: 33,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -887,7 +910,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 33,
+    id: 34,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
