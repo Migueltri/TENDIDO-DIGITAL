@@ -323,49 +323,31 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "Abierta la inscripción para la Copa Chenel 2026",
-    image: "/images/copachenel.jpg",
-	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
+       title: "Ginés Marín amplía su equipo de apoderamiento",
+    image: "/images/amplia.jpg",
+	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
     category: "Actualidad",
-    date: "19 de noviembre de 2025",
-    fullContent: `La Fiesta del Toro de la Comunidad de Madrid ha comenzado a preparar la temporada 2026 y, con ella, la nueva edición del certamen más destacado que organiza la Fundación Toro de Lidia en colaboración con la Comunidad de Madrid: la Copa Chenel.
+    date: "20 de noviembre de 2025",
+    fullContent: `El matador de toros Ginés Marín amplía su equipo de apoderamiento para la temporada 2026. De esta manera, los empresarios Joaquín Domínguez y Carlos Domínguez se unirán a Álvaro Polo para gestionar la carrera del matador de toros extremeño.
 
-En este contexto, la Fundación Toro de Lidia ha abierto oficialmente el plazo de inscripción para los matadores de toros interesados en participar en la Copa Chenel 2026.
-
-Podrá presentar su candidatura cualquier matador que cumpla los siguientes requisitos: haber tomado la alternativa después del 1 de enero de 2013; no haber finalizado la temporada 2025 entre los 20 primeros del escalafón; y no haber toreado en 2025 en cuatro o más plazas de primera categoría en España o Francia.
-
-Una de las principales novedades respecto a ediciones anteriores es la eliminación de la restricción que impedía repetir participación. A partir de esta edición, tal y como recoge la licitación oficial, «podrán ser elegibles matadores que ya hubieran participado en ediciones anteriores de la Copa Chenel».
-
-Asimismo, tendrán acceso directo al certamen aquellos matadores que, cumpliendo los requisitos previos, hayan resultado triunfadores en alguno de los circuitos de novilladas pertenecientes a la Liga Nacional de Novilladas.
-
-De forma excepcional, el certamen podrá reservar hasta tres plazas para candidatos que no cumplan alguno de los requisitos establecidos. Estos casos deberán estar debidamente justificados y contarán con la valoración del Centro de Asuntos Taurinos de la Comunidad de Madrid.
-
-El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La información detallada y los requisitos completos pueden consultarse en la web oficial de la Fundación Toro de Lidia.
-
-Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
-  },
-	{ 
-    id: 1001,
-    title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
-    image: "/images/lances.jpg",
-	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
-    category: "Opinión",
-    date: "19 de noviembre de 2025",
-    fullContent: `Lances de Futuro se ha conseguido consolidar como una de las empresas gestoras de plazas más importantes del momento, actualmente, tiene en su propiedad plazas como Torrejón de Ardoz, Córdoba, Cáceres y Santander. Todas ellas, en diferente medida, han marcado la temporada taurina de 2025, como en aquella tarde de David De Miranda con ese toro de Victoriano del Río .
-
-Esta empresa es liderada por el célebre empresario sevillano José María Garzón, que también ejerce su función como apoderado gestionando temporadas a toreros como Juan Ortega con el que tiene una relación profesional ya de tres años. Su propósito principal en estos últimos años ha sido la renovación de sus plazas a través de la imagen de la juventud en todos los ámbitos posibles, en el ámbit  lo o del público, implantó ventajas económicas en el coste de las entradas, como abonos con precios especiales para jóvenes o esos famosos tendidos jóvenes, con la función de intentar atraer ese público joven tan necesitado para la fiesta.
-
-Por otra parte, esta empresa fomenta la introducción de toreros emergentes en sus ferias como los casos de Víctor Hernández en Torrejón o en Málaga. En esta última pudimos contemplar uno de los acontecimientos de la temporada con esa faena valiente de David de Miranda, que le ayudó a abrirse las puertas de nuevo en el mundillo, o la actuación de Jarocho en Santander y Manuel Román en Córdoba, todos ellos acompañados de toreros como Borja Jiménez y Fortes, claros protagonistas de esta temporada. Al fin de al cabo, estos son los toreros que el aficionado solicita en este momento y que se encargarán de dar un paso al frente para la renovación del escalafón en los siguientes años.
-
-Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la plaza de toros de Sevilla y a la polémica por el concurso en la Malagueta, ya que la diputación no decidió renovar a esta empresa, pese al buen trabajo realizado, y que se rumorea que Simón Casas y Javier Conde podrían estar detrás de ella, pone a Lances de Futuro en boca de todos los aficionados como una empresa interesada por la salud de la fiesta y de el interés del aficionado. Por eso desde aquí les felicitamos y les apelamos a que continúen con el buen trabajo que están realizando.
-
-Mario Ruiz 19/11/2025`
+Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   }
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+  	{ 
     id: 1,
+       title: "Ginés Marín amplía su equipo de apoderamiento",
+    image: "/images/amplia.jpg",
+	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
+    category: "Actualidad",
+    date: "20 de noviembre de 2025",
+    fullContent: `El matador de toros Ginés Marín amplía su equipo de apoderamiento para la temporada 2026. De esta manera, los empresarios Joaquín Domínguez y Carlos Domínguez se unirán a Álvaro Polo para gestionar la carrera del matador de toros extremeño.
+
+Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
+  },
+	{ 
+    id: 2,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -388,7 +370,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 2,
+    id: 3,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -405,7 +387,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -415,7 +397,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 4,
+    id: 5,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -431,7 +413,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 5,
+    id: 6,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
