@@ -323,20 +323,29 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "Ginés Marín amplía su equipo de apoderamiento",
-    image: "/images/amplia.jpg",
-	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
+       title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
+    image: "/images/morenito.jpg",
     category: "Actualidad",
-    date: "20 de noviembre de 2025",
-    fullContent: `El matador de toros Ginés Marín amplía su equipo de apoderamiento para la temporada 2026. De esta manera, los empresarios Joaquín Domínguez y Carlos Domínguez se unirán a Álvaro Polo para gestionar la carrera del matador de toros extremeño.
+    date: "21 de noviembre de 2025",
+    fullContent: `Jesús Martínez ‘Morenito de Aranda’ y Tito Fernández han sellado a través de un apretón de manos una vinculación profesional que parte de la relación personal y humana ya existente entre ellos. En un comunicado emitido a esta redacción, ambos señalan que esta unión ‘nace con el objetivo de fortalecer la carrera del torero arandino, uno de los nombres propios de la temporada 2025 donde ha firmado obras importantes en plazas de primer rango, siendo un torero que goza del respaldo y el crédito de los aficionados’.
 
-Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
+Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
   }
 ];
 
 const latestNews: NewsItem[] = [
-  	{ 
+  		{ 
     id: 1,
+       title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
+    image: "/images/morenito.jpg",
+    category: "Actualidad",
+    date: "21 de noviembre de 2025",
+    fullContent: `Jesús Martínez ‘Morenito de Aranda’ y Tito Fernández han sellado a través de un apretón de manos una vinculación profesional que parte de la relación personal y humana ya existente entre ellos. En un comunicado emitido a esta redacción, ambos señalan que esta unión ‘nace con el objetivo de fortalecer la carrera del torero arandino, uno de los nombres propios de la temporada 2025 donde ha firmado obras importantes en plazas de primer rango, siendo un torero que goza del respaldo y el crédito de los aficionados’.
+
+Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
+  },
+	{ 
+    id: 2,
        title: "Ginés Marín amplía su equipo de apoderamiento",
     image: "/images/amplia.jpg",
 	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
@@ -347,7 +356,7 @@ const latestNews: NewsItem[] = [
 Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -370,7 +379,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 3,
+    id: 4,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -387,7 +396,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -397,7 +406,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 5,
+    id: 6,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -413,7 +422,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 6,
+    id: 7,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
