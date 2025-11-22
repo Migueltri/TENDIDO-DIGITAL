@@ -323,7 +323,31 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 { 
     id: 1000,
-       title: "Borja Jiménez, Premio a la Mejor Faena en los Taurinos 2025 del Real Casino de Madrid",
+       title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
+    image: "/images/garzon.jpg",
+    category: "Actualidad",
+    date: "22 de noviembre de 2025",
+    fullContent: `La Real Maestranza de Caballería de Sevilla ha anunciado oficialmente el nombramiento de José María Garzón como nuevo empresario de la Plaza de Toros de Sevilla para los próximos cinco años.
+La designación, aprobada por la Junta General de la institución, supone el inicio de una nueva etapa en la gestión del coso sevillano y el cierre de una era histórica: la salida de la empresa Pagés tras más de 90 años al frente de la plaza.
+
+Garzón asumirá el control bajo la estructura empresarial de Lances de Futuro, una empresa que en los últimos años se ha convertido en una de las gestoras taurinas más activas del país. La empresa, caracterizada por un enfoque moderno y una apuesta firme por la tauromaquia y con una buena política de precios como este medio ya dijo , ha dirigido plazas como Almería, Málaga o Algeciras, consolidando un modelo de gestión que combina el bien para el aficionado y el bien para el toreo. 
+
+Una empresa en expansión
+Fundada en 2006 , Lances de Futuro ha destacado por su estrategia de programación anual en las plazas que administra, integrando no solo festejos taurinos, sino también actividades divulgativas, conferencias y propuestas orientadas a la participación de jóvenes y aficionados.
+
+Su presencia se reparte entre Andalucía , donde mantiene equipos especializados en administración, comunicación, producción y coordinación de eventos. Este perfil profesionalizado ha sido uno de los factores clave en la adjudicación de diferentes plazas de importancia en los últimos años.
+
+La adjudicación de la plaza sevillana representa el mayor desafío en la trayectoria empresarial de Garzón. La Maestranza, considerada uno de los escenarios taurinos más prestigiosos del mundo, exige una programación de máxima calidad, estabilidad financiera y una gestión respetuosa, pero también abierta a la evolución del espectáculo.
+
+Fuentes cercanas al sector apuntan a que la nueva dirección impulsará iniciativas para atraer a nuevos públicos, ajustar precios en determinados festejos y reforzar la presencia cultural de la tauromaquia en la ciudad.
+
+Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, con el objetivo de combinar figuras consagradas con talentos emergentes.
+
+ La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
+  },
+	{ 
+    id: 1001,
+       title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
     date: "22 de noviembre de 2025",
@@ -348,7 +372,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 1001,
+    id: 1002,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -377,7 +401,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 1000,
+    id: 1003,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage: "/images/rafael2.jpg",
@@ -399,7 +423,31 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
-       title: "Borja Jiménez, Premio a la Mejor Faena en los Taurinos 2025 del Real Casino de Madrid",
+       title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
+    image: "/images/garzon.jpg",
+    category: "Actualidad",
+    date: "22 de noviembre de 2025",
+    fullContent: `La Real Maestranza de Caballería de Sevilla ha anunciado oficialmente el nombramiento de José María Garzón como nuevo empresario de la Plaza de Toros de Sevilla para los próximos cinco años.
+La designación, aprobada por la Junta General de la institución, supone el inicio de una nueva etapa en la gestión del coso sevillano y el cierre de una era histórica: la salida de la empresa Pagés tras más de 90 años al frente de la plaza.
+
+Garzón asumirá el control bajo la estructura empresarial de Lances de Futuro, una empresa que en los últimos años se ha convertido en una de las gestoras taurinas más activas del país. La empresa, caracterizada por un enfoque moderno y una apuesta firme por la tauromaquia y con una buena política de precios como este medio ya dijo , ha dirigido plazas como Almería, Málaga o Algeciras, consolidando un modelo de gestión que combina el bien para el aficionado y el bien para el toreo. 
+
+Una empresa en expansión
+Fundada en 2006 , Lances de Futuro ha destacado por su estrategia de programación anual en las plazas que administra, integrando no solo festejos taurinos, sino también actividades divulgativas, conferencias y propuestas orientadas a la participación de jóvenes y aficionados.
+
+Su presencia se reparte entre Andalucía , donde mantiene equipos especializados en administración, comunicación, producción y coordinación de eventos. Este perfil profesionalizado ha sido uno de los factores clave en la adjudicación de diferentes plazas de importancia en los últimos años.
+
+La adjudicación de la plaza sevillana representa el mayor desafío en la trayectoria empresarial de Garzón. La Maestranza, considerada uno de los escenarios taurinos más prestigiosos del mundo, exige una programación de máxima calidad, estabilidad financiera y una gestión respetuosa, pero también abierta a la evolución del espectáculo.
+
+Fuentes cercanas al sector apuntan a que la nueva dirección impulsará iniciativas para atraer a nuevos públicos, ajustar precios en determinados festejos y reforzar la presencia cultural de la tauromaquia en la ciudad.
+
+Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, con el objetivo de combinar figuras consagradas con talentos emergentes.
+
+ La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
+  },
+	{ 
+    id: 2,
+       title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
     date: "22 de noviembre de 2025",
@@ -424,7 +472,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 2,
+    id: 3,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -453,7 +501,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage: "/images/rafael2.jpg",
