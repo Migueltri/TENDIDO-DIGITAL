@@ -323,23 +323,58 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 { 
     id: 1000,
-       title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
-    image: "/images/morenito.jpg",
+       title: "Borja Jiménez, Premio a la Mejor Faena en los Taurinos 2025 del Real Casino de Madrid",
+    image: "/images/premio.jpg",
     category: "Actualidad",
-    date: "21 de noviembre de 2025",
-    fullContent: `Jesús Martínez ‘Morenito de Aranda’ y Tito Fernández han sellado a través de un apretón de manos una vinculación profesional que parte de la relación personal y humana ya existente entre ellos. En un comunicado emitido a esta redacción, ambos señalan que esta unión ‘nace con el objetivo de fortalecer la carrera del torero arandino, uno de los nombres propios de la temporada 2025 donde ha firmado obras importantes en plazas de primer rango, siendo un torero que goza del respaldo y el crédito de los aficionados’.
+    date: "22 de noviembre de 2025",
+    fullContent: `Borja Jiménez, uno de los grandes nombres de la pasada Feria de San Isidro, fue protagonista este viernes en el Real Casino de Madrid con motivo de la entrega de los Premios Taurinos 2025 de la institución. El diestro sevillano recibió el galardón a la Mejor Faena, un reconocimiento que premia su histórica obra ante Milhijas, de Victorino Martín, al que desorejó en la corrida In Memoriam del 15 de junio. Aquella actuación, ya inscrita en la memoria reciente de Las Ventas, consolidó su figura en la temporada.
 
-Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
+En su vigésimo novena edición, el Real Casino proclamó como Triunfador de la Feria a José Antonio Morante Camacho, Morante de la Puebla, que sucede en el palmarés a Borja Jiménez (2024) y a otras figuras de primer nivel galardonadas en años anteriores: Sebastián Castella (2023, 2015 y 2007), Tomás Rufo (2022), Antonio Ferrera (2019), Alejandro Talavante (2018 y 2013), Ginés Marín (2017), Paco Ureña (2016), Miguel Ángel Perera (2014), José María Manzanares (2011), El Cid (2008, 2006 y 2005), Matías Tejela (2004), José Pacheco El Califa (2003 y 2000), Enrique Ponce (2002), Rafael de Julia (2001), José Tomás (1999 y 1997), Eugenio de Mora (1998), Víctor Puerto (1996) y César Rincón (1995), entre otros. En 2010 y 2012 el premio quedó desierto.
+
+Los Premios Taurinos Real Casino de Madrid nacieron con el objetivo de reconocer las actuaciones más destacadas de la Feria de San Isidro y de contribuir, desde una entidad histórica y de profunda tradición, a la defensa y promoción de la tauromaquia. La entrega de galardones se celebró en una cena de gala en el Salón Real del emblemático edificio madrileño.
+
+Premiados en los Premios Taurinos Real Casino de Madrid 2025
+	•	Triunfador de la Feria: José Antonio Morante Camacho, Morante de la Puebla, por sus actuaciones del 28 de mayo (Prensa) y 8 de junio (Beneficencia).
+	•	Mejor faena: Borja Jiménez, por su labor ante Milhijas, nº 104, de Victorino Martín (15 de junio, 6º).
+	•	Torero revelación: Víctor Hernández, por su actuación del 10 de mayo frente a Busca-Oro, nº 961, de El Pilar.
+	•	Ganadería más completa: Jandilla, por la corrida del 5 de junio.
+	•	Toro más bravo: Milhijas, nº 104, de Victorino Martín (15 de junio).
+	•	Mejor estocada: Emilio de Justo, por su estocada a Milhebras, nº 40, de Victorino Martín (15 de junio).
+	•	Mejor par de banderillas: Víctor del Pozo, ante Calentito, nº 18, de José Escolar (3 de junio).
+	•	Mejor novillero: Aarón Palacio, por su actuación del 13 de mayo con novillos de Alcurrucén.
+	•	Mención especial “Una tarde para el recuerdo”: Saúl Jiménez Fortes (21 de mayo, Arauz de Robles).
+	•	Mención especial al coraje y valor: Noé Gómez del Pilar (3 de junio, José Escolar).
+	•	Mención especial al quite de riesgo: Morante de la Puebla, por su célebre “quite del vaso” del 28 de mayo, realizado a cuerpo limpio a su banderillero José María Amores ante Seminarista, nº 7, de Garcigrande.
+	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
     id: 1001,
-       title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
-    image: "/images/morenito.jpg",
+       title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
+    image: "/images/feriafallas.jpg",
     category: "Actualidad",
-    date: "21 de noviembre de 2025",
-    fullContent: `Jesús Martínez ‘Morenito de Aranda’ y Tito Fernández han sellado a través de un apretón de manos una vinculación profesional que parte de la relación personal y humana ya existente entre ellos. En un comunicado emitido a esta redacción, ambos señalan que esta unión ‘nace con el objetivo de fortalecer la carrera del torero arandino, uno de los nombres propios de la temporada 2025 donde ha firmado obras importantes en plazas de primer rango, siendo un torero que goza del respaldo y el crédito de los aficionados’.
+    date: "22 de noviembre de 2025",
+    fullContent: `El engranaje de la próxima Feria de Fallas 2026 de Valencia ha comenzado ya a tomar forma. Aunque aún estamos a finales de noviembre, este es el momento clave: la empresa gestora, Espacios Nautalia 360, debe tener perfilado el grueso de los carteles antes de Navidad, ya que está obligada a entregar la propuesta a la Diputación Provincial a comienzos del próximo año para su aprobación, tal y como exige el pliego de condiciones —recientemente prorrogado—.
 
-Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
+Para la Feria de Fallas y la de Julio, la empresa tiene reseñadas, por el momento, corridas de Núñez del Cuvillo, Fuente Ymbro, Juan Pedro Domecq, La Quinta, Santiago Domecq, Jandilla, Victoriano del Río y El Puerto de San Lorenzo. A medida que se encajen las piezas del abono, se determinará en qué fechas irá cada encierro. En cuanto al festejo de rejones, está prevista una corrida de María Guiomar Cortés de Moura.
+
+Un abono con nombres propios
+
+En el capítulo de toreros, Alejandro Talavante apunta a ser el único matador que hará doblete. Tras encabezar el escalafón en 2025, recaerá sobre él el privilegio —y la responsabilidad— de abrir la temporada en una plaza de primera categoría actuando dos tardes.
+Por su parte, Roca Rey, inicialmente presente una sola tarde, debe elegir todavía hierro: Jandilla, con el que mantiene una sólida trayectoria, o Victoriano del Río, con el que su vínculo histórico es aún mayor.
+
+El día grande, San José (19 de marzo), ya tiene cerrado su cartel: Alejandro Talavante, Emilio de Justo y Juan Ortega lidiarán una corrida de Núñez del Cuvillo.
+
+A partir de estas bases se perfilará un abono en el que también estarán, en los carteles de máxima categoría, Sebastián Castella, José María Manzanares, Pablo Aguado y Tomás Rufo. Asimismo, debe figurar en una de las combinaciones estelares Borja Jiménez, el gran nombre de la temporada 2025 junto a Morante.
+
+La presencia valenciana
+
+En cuanto al elenco local, destaca el nombre de Samuel Navalón, cuya inclusión en un cartel de figuras se considera un acto de justicia taurina. Además, el pliego de condiciones obliga a la empresa a garantizar un número mínimo de puestos para toreros valencianos a lo largo de la temporada.
+
+Pendientes de compensación
+
+Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la suspensión por lluvia de la corrida de El Parralejo, prevista el viernes de Fallas con Miguel Ángel Perera, Paco Ureña y Fernando Adrián. Los tres deberían tener una nueva oportunidad en el serial de 2026, al igual que Víctor Hernández y David de Miranda, que también han hecho méritos para estar presentes.
+
+En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
     id: 1000,
@@ -363,6 +398,61 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 
 const latestNews: NewsItem[] = [
   	{ 
+    id: 1,
+       title: "Borja Jiménez, Premio a la Mejor Faena en los Taurinos 2025 del Real Casino de Madrid",
+    image: "/images/premio.jpg",
+    category: "Actualidad",
+    date: "22 de noviembre de 2025",
+    fullContent: `Borja Jiménez, uno de los grandes nombres de la pasada Feria de San Isidro, fue protagonista este viernes en el Real Casino de Madrid con motivo de la entrega de los Premios Taurinos 2025 de la institución. El diestro sevillano recibió el galardón a la Mejor Faena, un reconocimiento que premia su histórica obra ante Milhijas, de Victorino Martín, al que desorejó en la corrida In Memoriam del 15 de junio. Aquella actuación, ya inscrita en la memoria reciente de Las Ventas, consolidó su figura en la temporada.
+
+En su vigésimo novena edición, el Real Casino proclamó como Triunfador de la Feria a José Antonio Morante Camacho, Morante de la Puebla, que sucede en el palmarés a Borja Jiménez (2024) y a otras figuras de primer nivel galardonadas en años anteriores: Sebastián Castella (2023, 2015 y 2007), Tomás Rufo (2022), Antonio Ferrera (2019), Alejandro Talavante (2018 y 2013), Ginés Marín (2017), Paco Ureña (2016), Miguel Ángel Perera (2014), José María Manzanares (2011), El Cid (2008, 2006 y 2005), Matías Tejela (2004), José Pacheco El Califa (2003 y 2000), Enrique Ponce (2002), Rafael de Julia (2001), José Tomás (1999 y 1997), Eugenio de Mora (1998), Víctor Puerto (1996) y César Rincón (1995), entre otros. En 2010 y 2012 el premio quedó desierto.
+
+Los Premios Taurinos Real Casino de Madrid nacieron con el objetivo de reconocer las actuaciones más destacadas de la Feria de San Isidro y de contribuir, desde una entidad histórica y de profunda tradición, a la defensa y promoción de la tauromaquia. La entrega de galardones se celebró en una cena de gala en el Salón Real del emblemático edificio madrileño.
+
+Premiados en los Premios Taurinos Real Casino de Madrid 2025
+	•	Triunfador de la Feria: José Antonio Morante Camacho, Morante de la Puebla, por sus actuaciones del 28 de mayo (Prensa) y 8 de junio (Beneficencia).
+	•	Mejor faena: Borja Jiménez, por su labor ante Milhijas, nº 104, de Victorino Martín (15 de junio, 6º).
+	•	Torero revelación: Víctor Hernández, por su actuación del 10 de mayo frente a Busca-Oro, nº 961, de El Pilar.
+	•	Ganadería más completa: Jandilla, por la corrida del 5 de junio.
+	•	Toro más bravo: Milhijas, nº 104, de Victorino Martín (15 de junio).
+	•	Mejor estocada: Emilio de Justo, por su estocada a Milhebras, nº 40, de Victorino Martín (15 de junio).
+	•	Mejor par de banderillas: Víctor del Pozo, ante Calentito, nº 18, de José Escolar (3 de junio).
+	•	Mejor novillero: Aarón Palacio, por su actuación del 13 de mayo con novillos de Alcurrucén.
+	•	Mención especial “Una tarde para el recuerdo”: Saúl Jiménez Fortes (21 de mayo, Arauz de Robles).
+	•	Mención especial al coraje y valor: Noé Gómez del Pilar (3 de junio, José Escolar).
+	•	Mención especial al quite de riesgo: Morante de la Puebla, por su célebre “quite del vaso” del 28 de mayo, realizado a cuerpo limpio a su banderillero José María Amores ante Seminarista, nº 7, de Garcigrande.
+	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
+  },
+{ 
+    id: 2,
+       title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
+    image: "/images/feriafallas.jpg",
+    category: "Actualidad",
+    date: "22 de noviembre de 2025",
+    fullContent: `El engranaje de la próxima Feria de Fallas 2026 de Valencia ha comenzado ya a tomar forma. Aunque aún estamos a finales de noviembre, este es el momento clave: la empresa gestora, Espacios Nautalia 360, debe tener perfilado el grueso de los carteles antes de Navidad, ya que está obligada a entregar la propuesta a la Diputación Provincial a comienzos del próximo año para su aprobación, tal y como exige el pliego de condiciones —recientemente prorrogado—.
+
+Para la Feria de Fallas y la de Julio, la empresa tiene reseñadas, por el momento, corridas de Núñez del Cuvillo, Fuente Ymbro, Juan Pedro Domecq, La Quinta, Santiago Domecq, Jandilla, Victoriano del Río y El Puerto de San Lorenzo. A medida que se encajen las piezas del abono, se determinará en qué fechas irá cada encierro. En cuanto al festejo de rejones, está prevista una corrida de María Guiomar Cortés de Moura.
+
+Un abono con nombres propios
+
+En el capítulo de toreros, Alejandro Talavante apunta a ser el único matador que hará doblete. Tras encabezar el escalafón en 2025, recaerá sobre él el privilegio —y la responsabilidad— de abrir la temporada en una plaza de primera categoría actuando dos tardes.
+Por su parte, Roca Rey, inicialmente presente una sola tarde, debe elegir todavía hierro: Jandilla, con el que mantiene una sólida trayectoria, o Victoriano del Río, con el que su vínculo histórico es aún mayor.
+
+El día grande, San José (19 de marzo), ya tiene cerrado su cartel: Alejandro Talavante, Emilio de Justo y Juan Ortega lidiarán una corrida de Núñez del Cuvillo.
+
+A partir de estas bases se perfilará un abono en el que también estarán, en los carteles de máxima categoría, Sebastián Castella, José María Manzanares, Pablo Aguado y Tomás Rufo. Asimismo, debe figurar en una de las combinaciones estelares Borja Jiménez, el gran nombre de la temporada 2025 junto a Morante.
+
+La presencia valenciana
+
+En cuanto al elenco local, destaca el nombre de Samuel Navalón, cuya inclusión en un cartel de figuras se considera un acto de justicia taurina. Además, el pliego de condiciones obliga a la empresa a garantizar un número mínimo de puestos para toreros valencianos a lo largo de la temporada.
+
+Pendientes de compensación
+
+Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la suspensión por lluvia de la corrida de El Parralejo, prevista el viernes de Fallas con Miguel Ángel Perera, Paco Ureña y Fernando Adrián. Los tres deberían tener una nueva oportunidad en el serial de 2026, al igual que Víctor Hernández y David de Miranda, que también han hecho méritos para estar presentes.
+
+En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
+  },
+	{ 
     id: 3,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
