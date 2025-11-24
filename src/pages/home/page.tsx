@@ -3446,19 +3446,24 @@ TENDIDO DIGITAL
           </p>
         )}
 
-<div className="prose prose-xl max-w-none">
-  <div className="text-gray-700 leading-relaxed text-lg space-y-4 font-bold">
-    {selectedNews.fullContent
-      ?.split("\n\n")
-      .map((paragraph, i) => (
-        <p dangerouslySetInnerHTML={{ __html: 'texto' }}
-  __html: paragraph
-    .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-    .trim(),
-/>
-}}
-  </div>
-</div>
+{/* Texto de la noticia */}
+    <div className="prose prose-xl max-w-none">
+      <div className="text-gray-700 leading-relaxed text-lg space-y-4 font-bold">
+        {selectedNews.fullContent
+          ?.split("\n\n")
+          .map((paragraph, i) => (
+            <p
+              key={i}
+              className="whitespace-pre-line"
+              dangerouslySetInnerHTML={{
+                __html: paragraph
+                  .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+                  .trim(),
+              }}
+            />
+          ))}
+      </div>
+    </div>
 
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
