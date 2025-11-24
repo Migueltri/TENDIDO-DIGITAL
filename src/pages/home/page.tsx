@@ -3451,7 +3451,7 @@ TENDIDO DIGITAL
     {selectedNews.fullContent
       ?.split("\n\n")
       .map((paragraph, i) => (
-        <dangerouslySetInnerHTML={{
+        <p dangerouslySetInnerHTML={{ __html: 'texto' }}
   __html: paragraph
     .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
     .trim(),
