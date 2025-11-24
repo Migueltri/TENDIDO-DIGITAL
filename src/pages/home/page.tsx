@@ -20,6 +20,7 @@ interface BaseArticle {
   footerImage1Caption?: string;
   footerImage2?: string;
   footerImage2Caption?: string;
+  boldContent?: boolean;
 }
 type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
@@ -333,7 +334,7 @@ const featuredNews: NewsItem[] = [
 	footerImage2: "/images/sergior2.jpg",
     category: "Entrevistas",
     date: "24 de noviembre de 2025",
-    fullContent: `**A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
 Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
@@ -378,7 +379,8 @@ Me encantaría volver a Madrid, me encantaría que la afición de Madrid me vies
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.**”`
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`,
+boldContent: true
   }
 ];
 
@@ -393,7 +395,7 @@ const latestNews: NewsItem[] = [
 	footerImage2: "/images/sergior2.jpg",
     category: "Entrevistas",
     date: "24 de noviembre de 2025",
-    fullContent: `**A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
 Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
@@ -438,7 +440,8 @@ Me encantaría volver a Madrid, me encantaría que la afición de Madrid me vies
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.**”`
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`,
+boldContent: true
   },
 	{ 
     id: 2,
@@ -3447,23 +3450,27 @@ TENDIDO DIGITAL
         )}
 
 {/* Texto de la noticia */}
-    <div className="prose prose-xl max-w-none">
-      <div className="text-gray-700 leading-relaxed text-lg space-y-4">
-        {selectedNews.fullContent
-          ?.split("\n\n")
-          .map((paragraph, i) => (
-            <p
-              key={i}
-              className="whitespace-pre-line"
-              dangerouslySetInnerHTML={{
-                __html: paragraph
-                  .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-                  .trim(),
-              }}
-            />
-          ))}
-      </div>
-    </div>
+<div className="prose prose-xl max-w-none">
+  <div
+    className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
+      selectedNews.boldContent ? "font-bold" : ""
+    }`}
+  >
+    {selectedNews.fullContent
+      ?.split("\n\n")
+      .map((paragraph, i) => (
+        <p
+          key={i}
+          className="whitespace-pre-line"
+          dangerouslySetInnerHTML={{
+            __html: paragraph
+              .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+              .trim(),
+          }}
+        />
+      ))}
+  </div>
+</div>
 
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
