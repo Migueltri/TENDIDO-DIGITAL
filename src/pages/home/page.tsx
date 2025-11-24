@@ -336,9 +336,9 @@ const featuredNews: NewsItem[] = [
     date: "24 de noviembre de 2025",
     fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
-Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
+**Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
-¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?
+**¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?**
 
 “Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
  tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
@@ -347,7 +347,7 @@ Fue un antes y un después, sin duda.
 Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
 Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
 
-¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?
+**¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?**
 
 “Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
 De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
@@ -355,32 +355,31 @@ La verdad que las extraño.
 Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
 Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
 
-¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?
+**¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?**
 
 “Considero que soy un torero que tiene personalidad.
 Interpreto el toreo de una manera muy personal.
 Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
 Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
 
-	¿Qué te gustaría que la afición recordara de ti dentro de unos años?
+	**¿Qué te gustaría que la afición recordara de ti dentro de unos años?**
 
 “Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
 Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
 Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
 
-¿Cómo planteas la temporada que viene después de los triunfos logrados este año?
+**¿Cómo planteas la temporada que viene después de los triunfos logrados este año?**
 
 “Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
 Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
 
-¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?
+**¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?**
 
 “Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`,
-boldContent: true
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   }
 ];
 
@@ -397,9 +396,9 @@ const latestNews: NewsItem[] = [
     date: "24 de noviembre de 2025",
     fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
-Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
+**Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
-¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?
+**¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?**
 
 “Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
  tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
@@ -408,7 +407,7 @@ Fue un antes y un después, sin duda.
 Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
 Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
 
-¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?
+**¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?**
 
 “Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
 De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
@@ -416,32 +415,31 @@ La verdad que las extraño.
 Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
 Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
 
-¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?
+**¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?**
 
 “Considero que soy un torero que tiene personalidad.
 Interpreto el toreo de una manera muy personal.
 Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
 Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
 
-	¿Qué te gustaría que la afición recordara de ti dentro de unos años?
+	**¿Qué te gustaría que la afición recordara de ti dentro de unos años?**
 
 “Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
 Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
 Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
 
-¿Cómo planteas la temporada que viene después de los triunfos logrados este año?
+**¿Cómo planteas la temporada que viene después de los triunfos logrados este año?**
 
 “Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
 Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
 
-¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?
+**¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?**
 
 “Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`,
-boldContent: true
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
     id: 2,
