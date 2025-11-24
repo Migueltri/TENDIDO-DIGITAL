@@ -384,12 +384,12 @@ Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo q
 
 const latestNews: NewsItem[] = [
   	{ 
-    id: 1000,
+    id: 1,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
 	footerImage1: "/images/sergior1.jpg",
-	footerImageCaption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
+	footerImage1Caption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
 	footerImage2: "/images/sergior2.jpg",
     category: "Entrevistas",
     date: "24 de noviembre de 2025",
