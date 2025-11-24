@@ -326,6 +326,36 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+       title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
+    image: "/images/copachenel1.jpg",
+    category: "Actualidad",
+    date: "24 de noviembre de 2025",
+    fullContent: `**La Comunidad de Madrid, la Fundación Toro de Lidia y Plaza 1** han anunciado que la gran final de la **Copa Chenel 2026** se celebrará en la **Plaza de Toros de Las Ventas**, un paso decisivo que afianza al certamen como uno de los proyectos taurinos más relevantes del panorama nacional.
+
+Plaza 1 reservará una fecha del calendario de la temporada 2026 para la celebración de esta final, **cuya jornada exacta se comunicará próximamente**. Como viene siendo habitual, el matador triunfador obtendrá un puesto en la tradicional corrida del Día de la Hispanidad.
+
+El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderías de reconocido prestigio, culminará este año en el escenario más emblemático de la tauromaquia, **ofreciendo a los finalistas una oportunidad de máximo nivel y exigencia profesional.**
+
+Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
+  },
+	{ 
+    id: 1001,
+       title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
+    image: "/images/rufo.jpg",
+    category: "Actualidad",
+    date: "24 de noviembre de 2025",
+    fullContent: `El matador de toros **Tomás Rufo** ha completado su cuadrilla para la temporada **2026**, sumando a sus filas al picador **José María González**, profesional de amplia trayectoria y reconocido por su destacada etapa junto al maestro Antonio Ferrera, entre otros toreros de primera línea.
+
+Con esta incorporación, el equipo del diestro de Pepino queda configurado de la siguiente manera:
+	•	**Picadores:** José María González y Rubén Sánchez
+	•	**Banderilleros:** Sergio Blasco, Andrés Revuelta y Fernando Sánchez
+	•	**Mozo de espadas:** Álvaro Santos
+	•	**Apoderado:** Víctor Zabala
+
+De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
+  },
+	{ 
+    id: 1002,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -386,6 +416,36 @@ Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo q
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
+    image: "/images/copachenel1.jpg",
+    category: "Actualidad",
+    date: "24 de noviembre de 2025",
+    fullContent: `**La Comunidad de Madrid, la Fundación Toro de Lidia y Plaza 1** han anunciado que la gran final de la **Copa Chenel 2026** se celebrará en la **Plaza de Toros de Las Ventas**, un paso decisivo que afianza al certamen como uno de los proyectos taurinos más relevantes del panorama nacional.
+
+Plaza 1 reservará una fecha del calendario de la temporada 2026 para la celebración de esta final, **cuya jornada exacta se comunicará próximamente**. Como viene siendo habitual, el matador triunfador obtendrá un puesto en la tradicional corrida del Día de la Hispanidad.
+
+El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderías de reconocido prestigio, culminará este año en el escenario más emblemático de la tauromaquia, **ofreciendo a los finalistas una oportunidad de máximo nivel y exigencia profesional.**
+
+Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
+  },
+	{ 
+    id: 2,
+       title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
+    image: "/images/rufo.jpg",
+    category: "Actualidad",
+    date: "24 de noviembre de 2025",
+    fullContent: `El matador de toros **Tomás Rufo** ha completado su cuadrilla para la temporada **2026**, sumando a sus filas al picador **José María González**, profesional de amplia trayectoria y reconocido por su destacada etapa junto al maestro Antonio Ferrera, entre otros toreros de primera línea.
+
+Con esta incorporación, el equipo del diestro de Pepino queda configurado de la siguiente manera:
+	•	**Picadores:** José María González y Rubén Sánchez
+	•	**Banderilleros:** Sergio Blasco, Andrés Revuelta y Fernando Sánchez
+	•	**Mozo de espadas:** Álvaro Santos
+	•	**Apoderado:** Víctor Zabala
+
+De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
+  },
+	{ 
+    id: 3,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -442,7 +502,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 2,
+    id: 5,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -466,7 +526,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 3,
+    id: 6,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -492,7 +552,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 4,
+    id: 8,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -521,7 +581,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 5,
+    id: 10,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage: "/images/rafael2.jpg",
@@ -539,7 +599,7 @@ El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 
 Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
   },
 	{ 
-    id: 10,
+    id: 11,
        title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
     image: "/images/morenito.jpg",
     category: "Actualidad",
