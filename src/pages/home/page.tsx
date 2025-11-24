@@ -378,7 +378,7 @@ Me encantaría volver a Madrid, me encantaría que la afición de Madrid me vies
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”**`
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.**”`
   }
 ];
 
@@ -438,7 +438,7 @@ Me encantaría volver a Madrid, me encantaría que la afición de Madrid me vies
 Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”**`
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.**”`
   },
 	{ 
     id: 2,
