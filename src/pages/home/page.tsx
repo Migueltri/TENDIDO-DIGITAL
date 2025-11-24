@@ -3448,7 +3448,7 @@ TENDIDO DIGITAL
 
 {/* Texto de la noticia */}
     <div className="prose prose-xl max-w-none">
-      <div className="text-gray-700 leading-relaxed text-lg space-y-4 font-bold">
+      <div className="text-gray-700 leading-relaxed text-lg space-y-4">
         {selectedNews.fullContent
           ?.split("\n\n")
           .map((paragraph, i) => (
