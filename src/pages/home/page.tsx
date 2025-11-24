@@ -3455,6 +3455,7 @@ TENDIDO DIGITAL
   __html: paragraph
     .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
     .trim(),
+/>
 }}
   </div>
 </div>
