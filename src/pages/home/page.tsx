@@ -3462,21 +3462,38 @@ TENDIDO DIGITAL
           </div>
         </div>
 
-        {/* Imagen final tipo portada */}
-{selectedNews.footerImage && (
-  <div className="mt-12 flex flex-col items-center">
-    <img
-      src={selectedNews.footerImage}
-      alt={selectedNews.footerImageCaption || selectedNews.title}
-      className="w-full max-w-4xl rounded-md"
-    />
-    {selectedNews.footerImageCaption && (
-      <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-        {selectedNews.footerImageCaption}
-      </p>
-    )}
-  </div>
-)}
+        {/* Imágenes finales tipo portada */}
+<div className="mt-12 space-y-10 flex flex-col items-center">
+  {selectedNews.footerImage1 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage1}
+        alt={selectedNews.footerImage1Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage1Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage1Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+  {selectedNews.footerImage2 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage2}
+        alt={selectedNews.footerImage2Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage2Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage2Caption}
+        </p>
+      )}
+    </div>
+  )}
+</div>
 		  
         {/* Acciones del artículo */}
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
