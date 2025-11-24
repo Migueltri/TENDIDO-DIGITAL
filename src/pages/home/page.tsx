@@ -334,7 +334,7 @@ const featuredNews: NewsItem[] = [
 	footerImage2: "/images/sergior2.jpg",
     category: "Entrevistas",
     date: "24 de noviembre de 2025",
-    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+    fullContent: `A las puertas de una nueva campaña taurina, **Sergio Rodríguez** encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
 **Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
@@ -394,7 +394,7 @@ const latestNews: NewsItem[] = [
 	footerImage2: "/images/sergior2.jpg",
     category: "Entrevistas",
     date: "24 de noviembre de 2025",
-    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+    fullContent: `A las puertas de una nueva campaña taurina, **Sergio Rodríguez** encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
 **Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
