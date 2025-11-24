@@ -16,8 +16,10 @@ interface BaseArticle {
   fullContent?: string;
   author?: string;
   excerpt?: string;
-  footerImage?: string;      
-  footerImageCaption?: string;
+  footerImage1?: string;
+  footerImage1Caption?: string;
+  footerImage2?: string;
+  footerImage2Caption?: string;
 }
 type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
@@ -321,108 +323,125 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-{ 
+	{ 
     id: 1000,
-       title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
-    image: "/images/garzon.jpg",
-    category: "Actualidad",
-    date: "22 de noviembre de 2025",
-    fullContent: `La Real Maestranza de Caballería de Sevilla ha anunciado oficialmente el nombramiento de José María Garzón como nuevo empresario de la Plaza de Toros de Sevilla para los próximos cinco años.
-La designación, aprobada por la Junta General de la institución, supone el inicio de una nueva etapa en la gestión del coso sevillano y el cierre de una era histórica: la salida de la empresa Pagés tras más de 90 años al frente de la plaza.
+       title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
+    image: "/images/sergior.jpg",
+	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
+	footerImage1: "/images/sergior1.jpg",
+	footerImageCaption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
+	footerImage2: "/images/sergior2.jpg",
+    category: "Entrevistas",
+    date: "24 de noviembre de 2025",
+    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
 
-Garzón asumirá el control bajo la estructura empresarial de Lances de Futuro, una empresa que en los últimos años se ha convertido en una de las gestoras taurinas más activas del país. La empresa, caracterizada por un enfoque moderno y una apuesta firme por la tauromaquia y con una buena política de precios como este medio ya dijo , ha dirigido plazas como Almería, Málaga o Algeciras, consolidando un modelo de gestión que combina el bien para el aficionado y el bien para el toreo. 
+Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
 
-Una empresa en expansión
-Fundada en 2006 , Lances de Futuro ha destacado por su estrategia de programación anual en las plazas que administra, integrando no solo festejos taurinos, sino también actividades divulgativas, conferencias y propuestas orientadas a la participación de jóvenes y aficionados.
+¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?
 
-Su presencia se reparte entre Andalucía , donde mantiene equipos especializados en administración, comunicación, producción y coordinación de eventos. Este perfil profesionalizado ha sido uno de los factores clave en la adjudicación de diferentes plazas de importancia en los últimos años.
+“Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
+ tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
+Entonces, pues bueno, significó mucho, tanto como parami torero como para la persona que soy.
+Fue un antes y un después, sin duda.
+Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
+Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
 
-La adjudicación de la plaza sevillana representa el mayor desafío en la trayectoria empresarial de Garzón. La Maestranza, considerada uno de los escenarios taurinos más prestigiosos del mundo, exige una programación de máxima calidad, estabilidad financiera y una gestión respetuosa, pero también abierta a la evolución del espectáculo.
+¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?
 
-Fuentes cercanas al sector apuntan a que la nueva dirección impulsará iniciativas para atraer a nuevos públicos, ajustar precios en determinados festejos y reforzar la presencia cultural de la tauromaquia en la ciudad.
+“Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
+De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
+La verdad que las extraño.
+Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
+Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
 
-Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, con el objetivo de combinar figuras consagradas con talentos emergentes.
+¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?
 
- La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
-  },
-	{ 
-    id: 1001,
-       title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
-    image: "/images/premio.jpg",
-    category: "Actualidad",
-    date: "22 de noviembre de 2025",
-    fullContent: `Borja Jiménez, uno de los grandes nombres de la pasada Feria de San Isidro, fue protagonista este viernes en el Real Casino de Madrid con motivo de la entrega de los Premios Taurinos 2025 de la institución. El diestro sevillano recibió el galardón a la Mejor Faena, un reconocimiento que premia su histórica obra ante Milhijas, de Victorino Martín, al que desorejó en la corrida In Memoriam del 15 de junio. Aquella actuación, ya inscrita en la memoria reciente de Las Ventas, consolidó su figura en la temporada.
+“Considero que soy un torero que tiene personalidad.
+Interpreto el toreo de una manera muy personal.
+Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
+Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
 
-En su vigésimo novena edición, el Real Casino proclamó como Triunfador de la Feria a José Antonio Morante Camacho, Morante de la Puebla, que sucede en el palmarés a Borja Jiménez (2024) y a otras figuras de primer nivel galardonadas en años anteriores: Sebastián Castella (2023, 2015 y 2007), Tomás Rufo (2022), Antonio Ferrera (2019), Alejandro Talavante (2018 y 2013), Ginés Marín (2017), Paco Ureña (2016), Miguel Ángel Perera (2014), José María Manzanares (2011), El Cid (2008, 2006 y 2005), Matías Tejela (2004), José Pacheco El Califa (2003 y 2000), Enrique Ponce (2002), Rafael de Julia (2001), José Tomás (1999 y 1997), Eugenio de Mora (1998), Víctor Puerto (1996) y César Rincón (1995), entre otros. En 2010 y 2012 el premio quedó desierto.
+	¿Qué te gustaría que la afición recordara de ti dentro de unos años?
 
-Los Premios Taurinos Real Casino de Madrid nacieron con el objetivo de reconocer las actuaciones más destacadas de la Feria de San Isidro y de contribuir, desde una entidad histórica y de profunda tradición, a la defensa y promoción de la tauromaquia. La entrega de galardones se celebró en una cena de gala en el Salón Real del emblemático edificio madrileño.
+“Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
+Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
+Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
 
-Premiados en los Premios Taurinos Real Casino de Madrid 2025
-	•	Triunfador de la Feria: José Antonio Morante Camacho, Morante de la Puebla, por sus actuaciones del 28 de mayo (Prensa) y 8 de junio (Beneficencia).
-	•	Mejor faena: Borja Jiménez, por su labor ante Milhijas, nº 104, de Victorino Martín (15 de junio, 6º).
-	•	Torero revelación: Víctor Hernández, por su actuación del 10 de mayo frente a Busca-Oro, nº 961, de El Pilar.
-	•	Ganadería más completa: Jandilla, por la corrida del 5 de junio.
-	•	Toro más bravo: Milhijas, nº 104, de Victorino Martín (15 de junio).
-	•	Mejor estocada: Emilio de Justo, por su estocada a Milhebras, nº 40, de Victorino Martín (15 de junio).
-	•	Mejor par de banderillas: Víctor del Pozo, ante Calentito, nº 18, de José Escolar (3 de junio).
-	•	Mejor novillero: Aarón Palacio, por su actuación del 13 de mayo con novillos de Alcurrucén.
-	•	Mención especial “Una tarde para el recuerdo”: Saúl Jiménez Fortes (21 de mayo, Arauz de Robles).
-	•	Mención especial al coraje y valor: Noé Gómez del Pilar (3 de junio, José Escolar).
-	•	Mención especial al quite de riesgo: Morante de la Puebla, por su célebre “quite del vaso” del 28 de mayo, realizado a cuerpo limpio a su banderillero José María Amores ante Seminarista, nº 7, de Garcigrande.
-	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
-  },
-{ 
-    id: 1002,
-       title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
-    image: "/images/feriafallas.jpg",
-    category: "Actualidad",
-    date: "22 de noviembre de 2025",
-    fullContent: `El engranaje de la próxima Feria de Fallas 2026 de Valencia ha comenzado ya a tomar forma. Aunque aún estamos a finales de noviembre, este es el momento clave: la empresa gestora, Espacios Nautalia 360, debe tener perfilado el grueso de los carteles antes de Navidad, ya que está obligada a entregar la propuesta a la Diputación Provincial a comienzos del próximo año para su aprobación, tal y como exige el pliego de condiciones —recientemente prorrogado—.
+¿Cómo planteas la temporada que viene después de los triunfos logrados este año?
 
-Para la Feria de Fallas y la de Julio, la empresa tiene reseñadas, por el momento, corridas de Núñez del Cuvillo, Fuente Ymbro, Juan Pedro Domecq, La Quinta, Santiago Domecq, Jandilla, Victoriano del Río y El Puerto de San Lorenzo. A medida que se encajen las piezas del abono, se determinará en qué fechas irá cada encierro. En cuanto al festejo de rejones, está prevista una corrida de María Guiomar Cortés de Moura.
+“Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
+Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
 
-Un abono con nombres propios
+¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?
 
-En el capítulo de toreros, Alejandro Talavante apunta a ser el único matador que hará doblete. Tras encabezar el escalafón en 2025, recaerá sobre él el privilegio —y la responsabilidad— de abrir la temporada en una plaza de primera categoría actuando dos tardes.
-Por su parte, Roca Rey, inicialmente presente una sola tarde, debe elegir todavía hierro: Jandilla, con el que mantiene una sólida trayectoria, o Victoriano del Río, con el que su vínculo histórico es aún mayor.
-
-El día grande, San José (19 de marzo), ya tiene cerrado su cartel: Alejandro Talavante, Emilio de Justo y Juan Ortega lidiarán una corrida de Núñez del Cuvillo.
-
-A partir de estas bases se perfilará un abono en el que también estarán, en los carteles de máxima categoría, Sebastián Castella, José María Manzanares, Pablo Aguado y Tomás Rufo. Asimismo, debe figurar en una de las combinaciones estelares Borja Jiménez, el gran nombre de la temporada 2025 junto a Morante.
-
-La presencia valenciana
-
-En cuanto al elenco local, destaca el nombre de Samuel Navalón, cuya inclusión en un cartel de figuras se considera un acto de justicia taurina. Además, el pliego de condiciones obliga a la empresa a garantizar un número mínimo de puestos para toreros valencianos a lo largo de la temporada.
-
-Pendientes de compensación
-
-Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la suspensión por lluvia de la corrida de El Parralejo, prevista el viernes de Fallas con Miguel Ángel Perera, Paco Ureña y Fernando Adrián. Los tres deberían tener una nueva oportunidad en el serial de 2026, al igual que Víctor Hernández y David de Miranda, que también han hecho méritos para estar presentes.
-
-En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
-  },
-	{ 
-    id: 1003,
-       title: "Rafael de Julia reaparecerá en 2026",
-    image: "/images/rafael1.jpg",
-	footerImage: "/images/rafael2.jpg",
-	footerImageCaption: "Foto de Luis Miguel Sierra",
-    category: "Actualidad",
-    date: "22 de noviembre de 2025",
-    fullContent: `Rafael de Julia ha confirmado en una entrevista a MundoToro que volverá a los ruedos en la temporada 2026, un año después de aquella tarde de marzo en Madrid que supuso un antes y un después en su carrera y en su vida. Lo que entonces pocos podían imaginar es que detrás de aquel bajón en su rendimiento se escondía una enfermedad silenciosa —la anorexia nerviosa— que fue debilitando, día a día, su cuerpo y su mente hasta obligarle a detenerse. Nueve meses más tarde, el torero madrileño ha vuelto a realizar tentaderos y asegura sentirse “fuerte y capaz delante de los animales”, un avance que él mismo valora como especialmente significativo en su recuperación.
-
-En su conversación con MundoToro, De Julia reconoce que este periodo ha sido extremadamente complejo. Habla de “momentos de todo tipo”, de semanas especialmente duras, pero también del impulso que le ha supuesto marcar una fecha para su reaparición. Su regreso al campo, admite, ha superado sus propias expectativas: tras tantos meses sin poder entrenar con normalidad, ha vuelto a experimentar sensaciones que creía haber perdido. “De unas semanas a esta parte todo ha mejorado”, resume.
-
-El matador insiste en que la clave del proceso ha estado en el ámbito psicológico. Define la anorexia como un deterioro profundo, visible en lo físico pero devastador en lo emocional. Explica que este tiempo le ha obligado a conocerse más, a moderar una autoexigencia que, reconoce, le condujo a situaciones límite. Aunque no se considera “curado”, asegura haber encontrado un equilibrio que considera esencial tanto para su día a día como para su forma de torear. Lo expresa con contundencia: le inquietaría más afirmar que está totalmente bien que reconocer que convive con la enfermedad, porque es precisamente esa consciencia la que le permite avanzar sin temor a recaídas.
-
-El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 23 de marzo, en la corrida de Adolfo Martín en Las Ventas. Aquel día fue un aviso, pero lo más duro llegó después, cuando comprendió que no podía presentarse a la corrida del 2 de mayo. Renunciar a esa fecha —por la que llevaba tiempo luchando para situarse de nuevo en los carteles importantes— fue un golpe especialmente doloroso. Ver tan cerca los puestos altos del escalafón y tener que apartarse por un problema de salud, admite, resulta difícil de asumir. Aun así, mantiene la convicción de que, recuperado, podrá volver a ocupar el espacio que ya tenía ganado.
-
-Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
+“Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
+Al final ha sido una inyección de moral.
+Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
+Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   }
 ];
 
 const latestNews: NewsItem[] = [
   	{ 
-    id: 1,
+    id: 1000,
+       title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
+    image: "/images/sergior.jpg",
+	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
+	footerImage1: "/images/sergior1.jpg",
+	footerImageCaption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
+	footerImage2: "/images/sergior2.jpg",
+    category: "Entrevistas",
+    date: "24 de noviembre de 2025",
+    fullContent: `A las puertas de una nueva campaña taurina, Sergio Rodríguez encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+
+Tras una temporada marcada por la regularidad, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
+
+¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?
+
+“Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
+ tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
+Entonces, pues bueno, significó mucho, tanto como parami torero como para la persona que soy.
+Fue un antes y un después, sin duda.
+Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
+Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
+
+¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?
+
+“Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
+De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
+La verdad que las extraño.
+Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
+Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
+
+¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?
+
+“Considero que soy un torero que tiene personalidad.
+Interpreto el toreo de una manera muy personal.
+Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
+Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
+
+	¿Qué te gustaría que la afición recordara de ti dentro de unos años?
+
+“Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
+Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
+Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
+
+¿Cómo planteas la temporada que viene después de los triunfos logrados este año?
+
+“Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
+Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
+
+¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?
+
+“Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
+Al final ha sido una inyección de moral.
+Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
+Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
+  },
+	{ 
+    id: 2,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -446,7 +465,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -472,7 +491,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 3,
+    id: 4,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -501,7 +520,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage: "/images/rafael2.jpg",
