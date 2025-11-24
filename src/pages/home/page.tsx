@@ -328,6 +328,7 @@ const featuredNews: NewsItem[] = [
     id: 1000,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
+    imageCaption: "Plaza de Toros de las Ventas",
     category: "Actualidad",
     date: "24 de noviembre de 2025",
     fullContent: `**La Comunidad de Madrid, la Fundación Toro de Lidia y Plaza 1** han anunciado que la gran final de la **Copa Chenel 2026** se celebrará en la **Plaza de Toros de Las Ventas**, un paso decisivo que afianza al certamen como uno de los proyectos taurinos más relevantes del panorama nacional.
@@ -418,6 +419,7 @@ const latestNews: NewsItem[] = [
     id: 1,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
+	imageCaption: "Plaza de Toros de las Ventas",
     category: "Actualidad",
     date: "24 de noviembre de 2025",
     fullContent: `**La Comunidad de Madrid, la Fundación Toro de Lidia y Plaza 1** han anunciado que la gran final de la **Copa Chenel 2026** se celebrará en la **Plaza de Toros de Las Ventas**, un paso decisivo que afianza al certamen como uno de los proyectos taurinos más relevantes del panorama nacional.
