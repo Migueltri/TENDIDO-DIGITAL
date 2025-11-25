@@ -3460,23 +3460,27 @@ TENDIDO DIGITAL
     <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <img
-              src="/images/tendidodigitallogosimple.jpg"
-              alt="Tendido Digital"
-              className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
-            />
-            <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-              TENDIDO DIGITAL
-            </span>
-          </div>
-          <button
-            onClick={closeNewsModal}
-            className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-            aria-label="Cerrar modal"
-          >
-            <i className="ri-close-line text-2xl"></i>
-          </button>
+          <a
+  href="/"
+  className="flex items-center group cursor-pointer"
+  onClick={() => {
+    // Por si estás en un modal, lo cerramos también
+    setIsNewsModalOpen(false);
+    setSelectedNews(null);
+    document.body.style.overflow = "auto";
+    document.body.style.position = "";
+    document.body.style.width = "";
+  }}
+>
+  <img
+    src="/images/tendidodigitallogosimple.jpg"
+    alt="Tendido Digital"
+    className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-transform duration-300 group-hover:scale-110"
+  />
+  <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent group-hover:brightness-125">
+    TENDIDO DIGITAL
+  </span>
+</a>
         </div>
       </div>
     </div>
