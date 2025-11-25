@@ -360,7 +360,7 @@ La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el f
 El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
   author: "Por Manolo Herrera",
   authorLogo: "/images/manoloherrera.png",
-  showAuthorHeader: true
+  showAuthorHeader: false
   }
 ];
 
@@ -399,7 +399,7 @@ La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el f
 El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
   author: "Por Manolo Herrera",
   authorLogo: "/images/manoloherrera.png",
-  showAuthorHeader: true
+  showAuthorHeader: false
   },
 	{ 
     id: 2,
