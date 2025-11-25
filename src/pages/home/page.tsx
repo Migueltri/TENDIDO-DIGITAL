@@ -3606,7 +3606,7 @@ TENDIDO DIGITAL
           </div>
 
           <div className="w-full sm:w-auto text-center">
-            <<button
+            <button
   onClick={closeNewsModal}
   className="text-gray-800 hover:text-red-500 p-2 rounded-full hover:bg-gray-100 transition-all duration-300"
   aria-label="Cerrar modal"
