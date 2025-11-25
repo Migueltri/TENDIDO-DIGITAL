@@ -329,8 +329,8 @@ const featuredNews: NewsItem[] = [
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
     imageCaption: "Plaza de Toros de las Ventas",
-	footerImage: "/images/cartel.jpg",
-	footerImageCaption: "Imagen del Cartel",
+	footerImage1: "/images/cartel.jpg",
+	footerImage11Caption: "Imagen del Cartel",
     category: "Actualidad",
     date: "25 de noviembre de 2025",
     fullContent: `Un festejo organizado a tres bandas por: la Escuela de Sevilla, la  Escuela de Ubrique y el propio consistorio de Almadén
@@ -366,8 +366,8 @@ const latestNews: NewsItem[] = [
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
     imageCaption: "Plaza de Toros de las Ventas",
-	footerImage: "/images/cartel.jpg",
-	footerImageCaption: "Imagen del Cartel",
+	footerImage1: "/images/cartel.jpg",
+	footerImage1Caption: "Imagen del Cartel",
     category: "Actualidad",
     date: "25 de noviembre de 2025",
     fullContent: `Un festejo organizado a tres bandas por: la Escuela de Sevilla, la  Escuela de Ubrique y el propio consistorio de Almadén
@@ -566,8 +566,8 @@ En los próximos días, la composición definitiva del abono comenzará a desvel
     id: 10,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
-	footerImage: "/images/rafael2.jpg",
-	footerImageCaption: "Foto de Luis Miguel Sierra",
+	footerImage1: "/images/rafael2.jpg",
+	footerImage1Caption: "Foto de Luis Miguel Sierra",
     category: "Actualidad",
     date: "22 de noviembre de 2025",
     fullContent: `Rafael de Julia ha confirmado en una entrevista a MundoToro que volverá a los ruedos en la temporada 2026, un año después de aquella tarde de marzo en Madrid que supuso un antes y un después en su carrera y en su vida. Lo que entonces pocos podían imaginar es que detrás de aquel bajón en su rendimiento se escondía una enfermedad silenciosa —la anorexia nerviosa— que fue debilitando, día a día, su cuerpo y su mente hasta obligarle a detenerse. Nueve meses más tarde, el torero madrileño ha vuelto a realizar tentaderos y asegura sentirse “fuerte y capaz delante de los animales”, un avance que él mismo valora como especialmente significativo en su recuperación.
@@ -732,7 +732,7 @@ Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
     id: 24,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
-    footerImage: "/images/davidgalvan2.jpg",
+    footerImage1: "/images/davidgalvan2.jpg",
     category: "Actualidad",
     date: "17 de noviembre de 2025",
     fullContent: `El matador gaditano David Galván ha cerrado la composición de su cuadrilla para la temporada 2026, un curso que afronta con gran ilusión y con la incorporación de tres nuevos profesionales que se suman a su equipo.
