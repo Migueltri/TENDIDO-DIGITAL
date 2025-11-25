@@ -326,97 +326,77 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
-    image: "/images/copachenel1.jpg",
+       title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
+    image: "/images/almaden.jpg",
     imageCaption: "Plaza de Toros de las Ventas",
+	footerImage: "/images/cartel.jpg",
+	footerImageCaption: "Imagen del Cartel",
     category: "Actualidad",
-    date: "24 de noviembre de 2025",
-    fullContent: `**La Comunidad de Madrid, la Fundación Toro de Lidia y Plaza 1** han anunciado que la gran final de la **Copa Chenel 2026** se celebrará en la **Plaza de Toros de Las Ventas**, un paso decisivo que afianza al certamen como uno de los proyectos taurinos más relevantes del panorama nacional.
-
-Plaza 1 reservará una fecha del calendario de la temporada 2026 para la celebración de esta final, **cuya jornada exacta se comunicará próximamente**. Como viene siendo habitual, el matador triunfador obtendrá un puesto en la tradicional corrida del Día de la Hispanidad.
-
-El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderías de reconocido prestigio, culminará este año en el escenario más emblemático de la tauromaquia, **ofreciendo a los finalistas una oportunidad de máximo nivel y exigencia profesional.**
-
-Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
-  },
-	{ 
-    id: 1001,
-       title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
-    image: "/images/rufo.jpg",
-    category: "Actualidad",
-    date: "24 de noviembre de 2025",
-    fullContent: `El matador de toros **Tomás Rufo** ha completado su cuadrilla para la temporada **2026**, sumando a sus filas al picador **José María González**, profesional de amplia trayectoria y reconocido por su destacada etapa junto al maestro Antonio Ferrera, entre otros toreros de primera línea.
-
-Con esta incorporación, el equipo del diestro de Pepino queda configurado de la siguiente manera:
-	•	**Picadores:** José María González y Rubén Sánchez
-	•	**Banderilleros:** Sergio Blasco, Andrés Revuelta y Fernando Sánchez
-	•	**Mozo de espadas:** Álvaro Santos
-	•	**Apoderado:** Víctor Zabala
-
-De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
-  },
-	{ 
-    id: 1002,
-       title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
-    image: "/images/sergior.jpg",
-	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
-	footerImage1: "/images/sergior1.jpg",
-	footerImage1Caption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
-	footerImage2: "/images/sergior2.jpg",
-    category: "Entrevistas",
-    date: "24 de noviembre de 2025",
-    fullContent: `A las puertas de una nueva campaña taurina, **Sergio Rodríguez** encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
-
-**Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
-
-**¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?**
-
-“Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
- tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
-Entonces, pues bueno, significó mucho, tanto como parami torero como para la persona que soy.
-Fue un antes y un después, sin duda.
-Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
-Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
-
-**¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?**
-
-“Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
-De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
-La verdad que las extraño.
-Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
-Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
-
-**¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?**
-
-“Considero que soy un torero que tiene personalidad.
-Interpreto el toreo de una manera muy personal.
-Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
-Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
-
-	**¿Qué te gustaría que la afición recordara de ti dentro de unos años?**
-
-“Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
-Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
-Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
-
-**¿Cómo planteas la temporada que viene después de los triunfos logrados este año?**
-
-“Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
-Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
-
-**¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?**
-
-“Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
-Al final ha sido una inyección de moral.
-Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
-Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
-Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
+    date: "25 de noviembre de 2025",
+    fullContent: `Un festejo organizado a tres bandas por: la Escuela de Sevilla, la  Escuela de Ubrique y el propio consistorio de Almadén
+ 
+La Torre del Reloj del municipio sevillano se convirtió en escenario de la presentación oficial del cartel de la novillada en clase práctica que tendrá lugar el próximo sábado 29 de noviembre, uno de los actos principales de la VIII edición del Día del Jamón, que se celebrará los días 28, 29 y 30 de este mes. El alcalde, Carlos Raigada, y el delegado del Gobierno de la Junta de Andalucía en Sevilla, Ricardo Sánchez, presidieron el acto, arropados por numerosas autoridades y vecinos.
+ 
+Durante la presentación, que reunió a aficionados y representantes del mundo del toro, destacó la presencia del maestro Tomás Campuzano, encargado de apadrinar el evento. Junto a él se encontraba Eduardo Ordóñez, director de la Escuela Taurina de Ubrique y presidente de la Asociación Andaluza de Escuelas Taurinas ‘Pedro Romero’.
+ 
+Raigada y Sánchez desvelaron oficialmente el cartel de la novillada sin picadores, programada para el sábado 29 de noviembre a las 17:30 horas en la plaza de toros municipal. El alcalde puso en valor la integración de la tauromaquia en la programación de este año, subrayando que la feria constituye “una apuesta por la gastronomía, la cultura, la naturaleza y la música, reforzada en esta edición con el impulso del toreo”.
+ 
+Por su parte, el Delegado del Gobierno elogió la labor del ayuntamiento y la firme apuesta del equipo municipal por la promoción del turismo rural, destacando “el gran esfuerzo organizativo que ha permitido consolidar un evento que cada año atrae a más visitantes”.
+ 
+El cartel: seis novilleros y una ganadería sevillana
+ 
+La novillada contará con seis reses de la ganadería de Albarreal, que serán lidiadas por alumnos de distintas escuelas taurinas andaluzas y nacionales. Los jóvenes actuantes son:
+ 
+Agustín de Antonio y Armando Rojo, de la Escuela de Tauromaquia de Sevilla.
+Candela “La Piyaya”, de la Escuela Taurina de Madrid José Cubero “Yiyo”.
+Fernando Lovera, de la Escuela Taurina de Camas.
+Mario Torres y Juan Manuel Viruez, de la Escuela Taurina Comarcal de Ubrique.
+ 
+Los seis novilleros estuvieron presentes en la presentación, donde pudieron compartir impresiones con las autoridades y con numerosos aficionados que se acercaron a la Torre del Reloj. Además del festejo del sábado, la organización ha previsto para el domingo 30 de noviembre a las 11:30 horas una clase de toreo de salón, protagonizada por alumnos de la escuela taurina del maestro Tomás Campuzano-Triana. Esta actividad tendrá lugar en el centro del pueblo y busca acercar el aprendizaje y la técnica taurina al público general.
+ 
+La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
+ 
+El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`
   }
 ];
 
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
+    image: "/images/almaden.jpg",
+    imageCaption: "Plaza de Toros de las Ventas",
+	footerImage: "/images/cartel.jpg",
+	footerImageCaption: "Imagen del Cartel",
+    category: "Actualidad",
+    date: "25 de noviembre de 2025",
+    fullContent: `Un festejo organizado a tres bandas por: la Escuela de Sevilla, la  Escuela de Ubrique y el propio consistorio de Almadén
+ 
+La Torre del Reloj del municipio sevillano se convirtió en escenario de la presentación oficial del cartel de la novillada en clase práctica que tendrá lugar el próximo sábado 29 de noviembre, uno de los actos principales de la VIII edición del Día del Jamón, que se celebrará los días 28, 29 y 30 de este mes. El alcalde, Carlos Raigada, y el delegado del Gobierno de la Junta de Andalucía en Sevilla, Ricardo Sánchez, presidieron el acto, arropados por numerosas autoridades y vecinos.
+ 
+Durante la presentación, que reunió a aficionados y representantes del mundo del toro, destacó la presencia del maestro Tomás Campuzano, encargado de apadrinar el evento. Junto a él se encontraba Eduardo Ordóñez, director de la Escuela Taurina de Ubrique y presidente de la Asociación Andaluza de Escuelas Taurinas ‘Pedro Romero’.
+ 
+Raigada y Sánchez desvelaron oficialmente el cartel de la novillada sin picadores, programada para el sábado 29 de noviembre a las 17:30 horas en la plaza de toros municipal. El alcalde puso en valor la integración de la tauromaquia en la programación de este año, subrayando que la feria constituye “una apuesta por la gastronomía, la cultura, la naturaleza y la música, reforzada en esta edición con el impulso del toreo”.
+ 
+Por su parte, el Delegado del Gobierno elogió la labor del ayuntamiento y la firme apuesta del equipo municipal por la promoción del turismo rural, destacando “el gran esfuerzo organizativo que ha permitido consolidar un evento que cada año atrae a más visitantes”.
+ 
+El cartel: seis novilleros y una ganadería sevillana
+ 
+La novillada contará con seis reses de la ganadería de Albarreal, que serán lidiadas por alumnos de distintas escuelas taurinas andaluzas y nacionales. Los jóvenes actuantes son:
+ 
+Agustín de Antonio y Armando Rojo, de la Escuela de Tauromaquia de Sevilla.
+Candela “La Piyaya”, de la Escuela Taurina de Madrid José Cubero “Yiyo”.
+Fernando Lovera, de la Escuela Taurina de Camas.
+Mario Torres y Juan Manuel Viruez, de la Escuela Taurina Comarcal de Ubrique.
+ 
+Los seis novilleros estuvieron presentes en la presentación, donde pudieron compartir impresiones con las autoridades y con numerosos aficionados que se acercaron a la Torre del Reloj. Además del festejo del sábado, la organización ha previsto para el domingo 30 de noviembre a las 11:30 horas una clase de toreo de salón, protagonizada por alumnos de la escuela taurina del maestro Tomás Campuzano-Triana. Esta actividad tendrá lugar en el centro del pueblo y busca acercar el aprendizaje y la técnica taurina al público general.
+ 
+La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
+ 
+El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`
+  },
+	{ 
+    id: 2,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
@@ -431,7 +411,7 @@ El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderí
 Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
   },
 	{ 
-    id: 2,
+    id: 5,
        title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
     image: "/images/rufo.jpg",
     category: "Actualidad",
@@ -447,7 +427,7 @@ Con esta incorporación, el equipo del diestro de Pepino queda configurado de la
 De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
   },
 	{ 
-    id: 3,
+    id: 6,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -504,7 +484,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 5,
+    id: 7,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -528,7 +508,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 6,
+    id: 8,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -554,7 +534,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 8,
+    id: 9,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
