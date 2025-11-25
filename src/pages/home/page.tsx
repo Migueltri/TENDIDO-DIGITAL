@@ -2679,9 +2679,9 @@ return (
 	  
     {/* Hero Carousel */}
     <section
-      id="inicio"
-      className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-black"
-    >
+  id="inicio"
+  className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-white"
+>
       {featuredNews.map((news, index) => (
         <div
           key={news.id}
