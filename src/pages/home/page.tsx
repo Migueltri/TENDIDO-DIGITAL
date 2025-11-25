@@ -3622,7 +3622,7 @@ TENDIDO DIGITAL
 
 {/* Modal de Crónica - Pantalla Completa */}
 {isChronicleModalOpen && selectedChronicle && (
-  <div className="fixed inset-0 bg-black z-50 overflow-y-auto">
+  <div className="fixed inset-0 bg-white z-50 overflow-y-auto">
     <div className="min-h-screen">
       {/* Header */}
       <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
