@@ -3443,7 +3443,7 @@ TENDIDO DIGITAL
     }}
   >
     {/* Header del modal */}
-    <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
+    <div className="sticky top-0 bg-white backdrop-blur-md z-10 border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <a
@@ -3606,13 +3606,13 @@ TENDIDO DIGITAL
           </div>
 
           <div className="w-full sm:w-auto text-center">
-            <button
-              onClick={closeNewsModal}
-              className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm border border-red-400/20 flex justify-center items-center"
-            >
-              <i className="ri-arrow-left-line mr-2"></i>
-              <span>Volver a noticias</span>
-            </button>
+            <<button
+  onClick={closeNewsModal}
+  className="text-gray-800 hover:text-red-500 p-2 rounded-full hover:bg-gray-100 transition-all duration-300"
+  aria-label="Cerrar modal"
+>
+  <i className="ri-close-line text-2xl"></i>
+</button>
           </div>
         </div>
       </div>
