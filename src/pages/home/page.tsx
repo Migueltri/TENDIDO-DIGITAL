@@ -3149,33 +3149,33 @@ return (
     </section>
 
 {/* Footer */}
-<footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-yellow-500/10"></div>
+<footer className="bg-white text-gray-800 relative overflow-hidden border-t border-gray-200 shadow-inner">
+  <div className="absolute inset-0 bg-gradient-to-r from-red-50/30 to-yellow-50/30"></div>
   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div className="md:col-span-2">
         <div
-  onClick={() => {
-    // Cierra el modal y vuelve a la portada
-    setIsNewsModalOpen(false);
-    setSelectedNews(null);
-    document.body.style.overflow = "auto";
-    document.body.style.position = "";
-    document.body.style.width = "";
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }}
-  className="flex items-center cursor-pointer group"
->
-  <img
-    src="/images/tendidodigitallogosimple.png"
-    alt="Tendido Digital"
-    className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
-  />
-  <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent group-hover:brightness-125">
-    TENDIDO DIGITAL
-  </span>
-</div>
-        <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
+          onClick={() => {
+            setIsNewsModalOpen(false);
+            setSelectedNews(null);
+            document.body.style.overflow = "auto";
+            document.body.style.position = "";
+            document.body.style.width = "";
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="flex items-center cursor-pointer group"
+        >
+          <img
+            src="/images/tendidodigitallogosimple.png"
+            alt="Tendido Digital"
+            className="h-12 w-auto opacity-90 group-hover:opacity-100 transition-transform duration-300 group-hover:scale-105"
+          />
+          <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent group-hover:brightness-125">
+            TENDIDO DIGITAL
+          </span>
+        </div>
+
+        <p className="text-gray-600 mb-6 max-w-md leading-relaxed">
           Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con rigor periodístico y pasión por la tradición.
         </p>
 
