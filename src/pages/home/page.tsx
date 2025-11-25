@@ -2398,7 +2398,7 @@ document.body.style.overflow = 'unset';
             >
               <div className="relative overflow-hidden">
 <img
-  src="/images/tendidodigitallogosimple.jpg"
+  src="/images/tendidodigitallogosimple.png"
   alt="Tendido Digital"
   className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
   style={{ mixBlendMode: "multiply" }}
@@ -3167,7 +3167,7 @@ return (
   className="flex items-center cursor-pointer group"
 >
   <img
-    src="/images/tendidodigitallogosimple.jpg"
+    src="/images/tendidodigitallogosimple.png"
     alt="Tendido Digital"
     className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
   />
@@ -3274,7 +3274,7 @@ return (
 <div className="flex items-center group">
 <div className="relative">
 <img
-  src="/images/tendidodigitallogosimple.jpg"
+  src="/images/tendidodigitallogosimple.png"
   alt="Tendido Digital"
   className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
   style={{ mixBlendMode: "multiply" }}
@@ -3459,7 +3459,7 @@ TENDIDO DIGITAL
   }}
 >
   <img
-    src="/images/tendidodigitallogosimple.jpg"
+    src="/images/tendidodigitallogosimple.png"
     alt="Tendido Digital"
     className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-transform duration-300 group-hover:scale-110"
   />
@@ -3630,7 +3630,7 @@ TENDIDO DIGITAL
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img
-                src="/images/tendidodigitallogosimple.jpg"
+                src="/images/tendidodigitallogosimple.png"
                 alt="Tendido Digital"
                 className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
               />
