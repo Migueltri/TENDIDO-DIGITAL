@@ -14,13 +14,15 @@ interface BaseArticle {
   resumen?: string;
   detalles?: string;
   fullContent?: string;
-  author?: string;
   excerpt?: string;
   footerImage1?: string;
   footerImage1Caption?: string;
   footerImage2?: string;
   footerImage2Caption?: string;
   boldContent?: boolean;
+  author?: string;
+  authorLogo?: string;
+  showAuthorHeader?: boolean;
 }
 type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
