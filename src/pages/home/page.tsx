@@ -358,7 +358,7 @@ Los seis novilleros estuvieron presentes en la presentación, donde pudieron com
 La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
  
 El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
-  author: "Por Manolo Herrera",
+  author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   }
@@ -397,7 +397,7 @@ Los seis novilleros estuvieron presentes en la presentación, donde pudieron com
 La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
  
 El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
-  author: "Por Manolo Herrera",
+  author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
