@@ -3168,16 +3168,27 @@ return (
   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div className="md:col-span-2">
-        <div className="flex items-center mb-6 group">
-          <img
-            src="/images/tendidodigitallogosimple.jpg"
-            alt="Tendido Digital"
-            className="h-12 w-auto group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
-          />
-          <span className="ml-4 text-2xl font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent tracking-tight">
-            TENDIDO DIGITAL
-          </span>
-        </div>
+        <div
+  onClick={() => {
+    // Cierra el modal y vuelve a la portada
+    setIsNewsModalOpen(false);
+    setSelectedNews(null);
+    document.body.style.overflow = "auto";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+  className="flex items-center cursor-pointer group"
+>
+  <img
+    src="/images/tendidodigitallogosimple.jpg"
+    alt="Tendido Digital"
+    className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
+  />
+  <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent group-hover:brightness-125">
+    TENDIDO DIGITAL
+  </span>
+</div>
         <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
           Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con rigor periodístico y pasión por la tradición.
         </p>
