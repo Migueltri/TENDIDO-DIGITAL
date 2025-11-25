@@ -3434,14 +3434,14 @@ TENDIDO DIGITAL
   {/* Modal de Noticia - Pantalla Completa */}
  {isNewsModalOpen && selectedNews && (
   <div
-    className="fixed inset-0 bg-black z-50 overflow-y-auto"
-    style={{
-      overflowX: "hidden",
-      overflowY: "auto",
-      maxHeight: "100vh",
-      WebkitOverflowScrolling: "touch",
-    }}
-  >
+  className="fixed inset-0 bg-white z-50 overflow-y-auto"
+  style={{
+    overflowX: "hidden",
+    overflowY: "auto",
+    maxHeight: "100vh",
+    WebkitOverflowScrolling: "touch",
+  }}
+>
     {/* Header del modal */}
     <div className="sticky top-0 bg-black/90 backdrop-blur-md z-10 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
