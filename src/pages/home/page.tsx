@@ -357,7 +357,10 @@ Los seis novilleros estuvieron presentes en la presentación, donde pudieron com
  
 La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
  
-El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`
+El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
+  author: "Por Manolo Herrera",
+  authorLogo: "/images/manoloherrera.png",
+  showAuthorHeader: true
   }
 ];
 
@@ -393,7 +396,10 @@ Los seis novilleros estuvieron presentes en la presentación, donde pudieron com
  
 La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
  
-El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`
+El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
+  author: "Por Manolo Herrera",
+  authorLogo: "/images/manoloherrera.png",
+  showAuthorHeader: true
   },
 	{ 
     id: 2,
@@ -3484,16 +3490,29 @@ TENDIDO DIGITAL
     {/* Contenido del artículo */}
     <div className="bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex items-center mb-6">
-          <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
-          {selectedNews.author && (
-            <>
-              <span className="mx-2 text-gray-300">•</span>
-              <span className="text-red-600 text-sm font-medium">{selectedNews.author}</span>
-            </>
-          )}
-        </div>
-
+        {selectedNews.showAuthorHeader ? (
+  <div className="flex items-center mb-8 space-x-3">
+    {selectedNews.authorLogo && (
+      <img
+        src={selectedNews.authorLogo}
+        alt={selectedNews.author}
+        className="h-8 w-8 rounded-full object-cover"
+      />
+    )}
+    <p className="text-gray-500 text-sm flex items-center flex-wrap">
+      <span className="mr-1">por</span>
+      <span className="text-red-600 font-bold mr-2">
+        {selectedNews.author || "Tendido Digital"}
+      </span>
+      <span className="text-gray-400">— {selectedNews.date}</span>
+    </p>
+  </div>
+) : (
+  // Por si no se activa showAuthorHeader, se mantiene el pequeño bloque original con la fecha
+  <div className="flex items-center mb-6">
+    <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
+  </div>
+)}
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
           {selectedNews.title}
         </h1>
