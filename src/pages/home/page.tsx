@@ -2696,7 +2696,7 @@ return (
   loading="lazy"
 />
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-white/90"></div>
 
           <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
             <div className="max-w-3xl">
