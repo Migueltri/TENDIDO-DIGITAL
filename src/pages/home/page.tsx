@@ -328,6 +328,30 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+       title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
+    image: "/images/novillero.jpg",
+    category: "Actualidad",
+    date: "26 de noviembre de 2025",
+	excerpt: "El novillero natural de valencia ha cambiado el oro por la plata para la temporada 2026",
+    fullContent: `En un comunicado difundido por sus rrss el novillero Miguel Senent “Miguelito” ha querido comunicar la decisión de cambiar el traje de oro por el de plata y hacerse banderillero de cara a la próxima temporada
+
+ 
+
+Comunicado íntegro de Miguel Senent “Miguelito”
+
+Hoy me dirijo a todos vosotros con el corazón lleno de sentimientos encontrados. Después de mucho pensarlo, he tomado la decisión de poner fin a mi etapa como novillero con picadores. Han sido años de entrega absoluta, de sueños y de lucha constante por abrirme camino en este mundo tan grande y tan exigente como es el toreo. He dado todo lo que tenía dentro, pero a veces las cosas no salen como uno desea.
+
+Quiero despedirme de toda mi gente: de quienes me han acompañado desde el principio, de los que han creído en mí incluso en los momentos más difíciles. A mi familia, mis amigos, mi cuadrilla, mi peña taurina y a todos los aficionados que me han regalado una palabra de ánimo, un abrazo o simplemente su presencia en la plaza… gracias. Sin vosotros este camino habría sido imposible.
+
+El toreo me ha enseñado a caer, a levantarme y a seguir adelante. Y por eso, aunque cierro una etapa, no me marcho del mundo que me ha dado todo. A partir de ahora emprendo un nuevo rumbo: dejo el oro para vestir la plata. Empiezo una nueva vida como banderillero, con la misma ilusión, la misma entrega y el mismo respeto por esta profesión que siempre me ha guiado.
+
+Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el mismo compromiso y la misma pasión`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -342,7 +366,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -365,6 +389,30 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
+    image: "/images/novillero.jpg",
+    category: "Actualidad",
+    date: "26 de noviembre de 2025",
+	excerpt: "El novillero natural de valencia ha cambiado el oro por la plata para la temporada 2026",
+    fullContent: `En un comunicado difundido por sus rrss el novillero Miguel Senent “Miguelito” ha querido comunicar la decisión de cambiar el traje de oro por el de plata y hacerse banderillero de cara a la próxima temporada
+
+ 
+
+Comunicado íntegro de Miguel Senent “Miguelito”
+
+Hoy me dirijo a todos vosotros con el corazón lleno de sentimientos encontrados. Después de mucho pensarlo, he tomado la decisión de poner fin a mi etapa como novillero con picadores. Han sido años de entrega absoluta, de sueños y de lucha constante por abrirme camino en este mundo tan grande y tan exigente como es el toreo. He dado todo lo que tenía dentro, pero a veces las cosas no salen como uno desea.
+
+Quiero despedirme de toda mi gente: de quienes me han acompañado desde el principio, de los que han creído en mí incluso en los momentos más difíciles. A mi familia, mis amigos, mi cuadrilla, mi peña taurina y a todos los aficionados que me han regalado una palabra de ánimo, un abrazo o simplemente su presencia en la plaza… gracias. Sin vosotros este camino habría sido imposible.
+
+El toreo me ha enseñado a caer, a levantarme y a seguir adelante. Y por eso, aunque cierro una etapa, no me marcho del mundo que me ha dado todo. A partir de ahora emprendo un nuevo rumbo: dejo el oro para vestir la plata. Empiezo una nueva vida como banderillero, con la misma ilusión, la misma entrega y el mismo respeto por esta profesión que siempre me ha guiado.
+
+Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el mismo compromiso y la misma pasión`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -379,7 +427,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -398,7 +446,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
