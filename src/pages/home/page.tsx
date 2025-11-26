@@ -328,38 +328,36 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
-    image: "/images/almaden.jpg",
-	footerImage1: "/images/cartel.jpg",
-	footerImage11Caption: "Imagen del Cartel",
+       title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
+    image: "/images/victor.jpg",
     category: "Actualidad",
-    date: "25 de noviembre de 2025",
-    fullContent: `Un festejo organizado a tres bandas por: la Escuela de Sevilla, la  Escuela de Ubrique y el propio consistorio de Almadén
- 
-La Torre del Reloj del municipio sevillano se convirtió en escenario de la presentación oficial del cartel de la novillada en clase práctica que tendrá lugar el próximo sábado 29 de noviembre, uno de los actos principales de la VIII edición del Día del Jamón, que se celebrará los días 28, 29 y 30 de este mes. El alcalde, Carlos Raigada, y el delegado del Gobierno de la Junta de Andalucía en Sevilla, Ricardo Sánchez, presidieron el acto, arropados por numerosas autoridades y vecinos.
- 
-Durante la presentación, que reunió a aficionados y representantes del mundo del toro, destacó la presencia del maestro Tomás Campuzano, encargado de apadrinar el evento. Junto a él se encontraba Eduardo Ordóñez, director de la Escuela Taurina de Ubrique y presidente de la Asociación Andaluza de Escuelas Taurinas ‘Pedro Romero’.
- 
-Raigada y Sánchez desvelaron oficialmente el cartel de la novillada sin picadores, programada para el sábado 29 de noviembre a las 17:30 horas en la plaza de toros municipal. El alcalde puso en valor la integración de la tauromaquia en la programación de este año, subrayando que la feria constituye “una apuesta por la gastronomía, la cultura, la naturaleza y la música, reforzada en esta edición con el impulso del toreo”.
- 
-Por su parte, el Delegado del Gobierno elogió la labor del ayuntamiento y la firme apuesta del equipo municipal por la promoción del turismo rural, destacando “el gran esfuerzo organizativo que ha permitido consolidar un evento que cada año atrae a más visitantes”.
- 
-El cartel: seis novilleros y una ganadería sevillana
- 
-La novillada contará con seis reses de la ganadería de Albarreal, que serán lidiadas por alumnos de distintas escuelas taurinas andaluzas y nacionales. Los jóvenes actuantes son:
- 
-Agustín de Antonio y Armando Rojo, de la Escuela de Tauromaquia de Sevilla.
-Candela “La Piyaya”, de la Escuela Taurina de Madrid José Cubero “Yiyo”.
-Fernando Lovera, de la Escuela Taurina de Camas.
-Mario Torres y Juan Manuel Viruez, de la Escuela Taurina Comarcal de Ubrique.
- 
-Los seis novilleros estuvieron presentes en la presentación, donde pudieron compartir impresiones con las autoridades y con numerosos aficionados que se acercaron a la Torre del Reloj. Además del festejo del sábado, la organización ha previsto para el domingo 30 de noviembre a las 11:30 horas una clase de toreo de salón, protagonizada por alumnos de la escuela taurina del maestro Tomás Campuzano-Triana. Esta actividad tendrá lugar en el centro del pueblo y busca acercar el aprendizaje y la técnica taurina al público general.
- 
-La novillada será retransmitida por Canal Sur TV, lo que permitirá llevar el festejo a espectadores de toda Andalucía y aumentar la proyección del evento más allá del ámbito local. En el acto de presentación también participaron vecinos del municipio, entre los que el alcalde delegó la representación en el palco presidencial: Francisco Alonso y Antonio Suárez, acompañados por miembros del equipo de gobierno del Ayuntamiento de Almadén de la Plata.
- 
-El Día del Jamón, ya consolidado como uno de los principales referentes gastronómicos y culturales de la comarca, volverá a reunir durante tres jornadas degustaciones, música, naturaleza y demostraciones culinarias junto a esta apuesta renovada por la tauromaquia. Con la presentación del cartel taurino, Almadén de la Plata reafirma su voluntad de convertir esta celebración en una cita ineludible dentro del calendario festivo provincial.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+    date: "26 de noviembre de 2025",
+    fullContent: `Víctor Hernández ya cuenta con nuevo apoderado para la temporada 2026: **Miguel Abellán**. El matador de toros madrileño y exgerente del Centro de Asuntos Taurinos de la Comunidad de Madrid asumirá la gestión de la carrera del torero de Los Santos de la Humosa, según adelanta el periodista Vicente Zabala de la Serna.
+
+Víctor Hernández se ha revelado como una de las grandes sorpresas de la temporada 2025, tras firmar dos destacadas actuaciones en Madrid que le han situado entre los diestros con mayor proyección de cara a 2026.
+
+El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
+  author: "Tendido Digital",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
+       title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
+    image: "/images/paseillo.jpg",
+    category: "Actualidad",
+    date: "26 de noviembre de 2025",
+    fullContent: `**La Comisión Taurina de la Casa de Misericordia** de Pamplona ha dado a conocer los hierros que participarán en la **Feria del Toro 2026**, certamen que repetirá íntegramente el elenco ganadero de la pasada edición.
+
+Regresarán a los Sanfermines los toros de **José Escolar**, cuya corrida fue distinguida con el premio Feria del Toro 2025. Asimismo, volverán a lidiarse los astados de **Cebada Gago, ganadores del premio Carriquiri con el toro Lioso**, galardón que compartieron ex aequo con Histórico, ejemplar del hierro de Jandilla, considerado también el mejor toro de la feria 2025.
+
+Completan la nómina de ganaderías de lidia a pie **Fuente Ymbro, Miura, La Palmosilla, Victoriano del Río y Álvaro Núñez**, esta última repetirá presencia tras su debut en 2025, consolidándose como habitual en el ciclo sanferminero.
+
+Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea – Carmen Lorenzo**, mientras que la novillada contará nuevamente con reses de la ganadería navarra de Pincha.
+
+Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
+  author: "Tendido Digital",
+  authorLogo: "/images/.tendidodigitallogosimple.png",
   showAuthorHeader: true
   }
 ];
