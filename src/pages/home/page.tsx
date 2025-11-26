@@ -338,7 +338,7 @@ Víctor Hernández se ha revelado como una de las grandes sorpresas de la tempor
 
 El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.jpg",
+  authorLogo: "/images/tendidodigitallogosimple.png",
   showAuthorHeader: true
   },
 	{ 
@@ -357,7 +357,7 @@ Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea �
 
 Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
   author: "Tendido Digital",
-  authorLogo: "/images/.tendidodigitallogosimple.jpg",
+  authorLogo: "/images/tendidodigitallogosimple.png",
   showAuthorHeader: true
   }
 ];
@@ -375,7 +375,7 @@ Víctor Hernández se ha revelado como una de las grandes sorpresas de la tempor
 
 El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.jpg",
+  authorLogo: "/images/tendidodigitallogosimple.png",
   showAuthorHeader: true
   },
 	{ 
@@ -394,7 +394,7 @@ Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea �
 
 Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
   author: "Tendido Digital",
-  authorLogo: "/images/.tendidodigitallogosimple.jpg",
+  authorLogo: "/images/tendidodigitallogosimple.png",
   showAuthorHeader: true
   },
 	{ 
