@@ -365,6 +365,40 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
+    image: "/images/victor.jpg",
+    category: "Actualidad",
+    date: "26 de noviembre de 2025",
+    fullContent: `Víctor Hernández ya cuenta con nuevo apoderado para la temporada 2026: **Miguel Abellán**. El matador de toros madrileño y exgerente del Centro de Asuntos Taurinos de la Comunidad de Madrid asumirá la gestión de la carrera del torero de Los Santos de la Humosa, según adelanta el periodista Vicente Zabala de la Serna.
+
+Víctor Hernández se ha revelado como una de las grandes sorpresas de la temporada 2025, tras firmar dos destacadas actuaciones en Madrid que le han situado entre los diestros con mayor proyección de cara a 2026.
+
+El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
+  author: "Tendido Digital",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+       title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
+    image: "/images/paseillo.jpg",
+    category: "Actualidad",
+    date: "26 de noviembre de 2025",
+    fullContent: `**La Comisión Taurina de la Casa de Misericordia** de Pamplona ha dado a conocer los hierros que participarán en la **Feria del Toro 2026**, certamen que repetirá íntegramente el elenco ganadero de la pasada edición.
+
+Regresarán a los Sanfermines los toros de **José Escolar**, cuya corrida fue distinguida con el premio Feria del Toro 2025. Asimismo, volverán a lidiarse los astados de **Cebada Gago, ganadores del premio Carriquiri con el toro Lioso**, galardón que compartieron ex aequo con Histórico, ejemplar del hierro de Jandilla, considerado también el mejor toro de la feria 2025.
+
+Completan la nómina de ganaderías de lidia a pie **Fuente Ymbro, Miura, La Palmosilla, Victoriano del Río y Álvaro Núñez**, esta última repetirá presencia tras su debut en 2025, consolidándose como habitual en el ciclo sanferminero.
+
+Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea – Carmen Lorenzo**, mientras que la novillada contará nuevamente con reses de la ganadería navarra de Pincha.
+
+Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
+  author: "Tendido Digital",
+  authorLogo: "/images/.tendidodigitallogosimple.png",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -400,7 +434,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 5,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
@@ -415,7 +449,7 @@ El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderí
 Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
   },
 	{ 
-    id: 5,
+    id: 9,
        title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
     image: "/images/rufo.jpg",
     category: "Actualidad",
@@ -431,7 +465,7 @@ Con esta incorporación, el equipo del diestro de Pepino queda configurado de la
 De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
   },
 	{ 
-    id: 6,
+    id: 10,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -488,7 +522,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 7,
+    id: 11,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -512,7 +546,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 8,
+    id: 12,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -538,7 +572,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 9,
+    id: 13,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -567,7 +601,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 10,
+    id: 14,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage1: "/images/rafael2.jpg",
@@ -585,7 +619,7 @@ El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 
 Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
   },
 	{ 
-    id: 11,
+    id: 15,
        title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
     image: "/images/morenito.jpg",
     category: "Actualidad",
@@ -595,7 +629,7 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
   },
 	{ 
-    id: 15,
+    id: 16,
        title: "Ginés Marín amplía su equipo de apoderamiento",
     image: "/images/amplia.jpg",
 	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
@@ -606,7 +640,7 @@ Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26
 Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   },
 	{ 
-    id: 16,
+    id: 17,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -629,7 +663,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 17,
+    id: 18,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -646,7 +680,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 18,
+    id: 19,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -656,7 +690,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 19,
+    id: 20,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -672,7 +706,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 20,
+    id: 21,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
@@ -689,7 +723,7 @@ En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 197
 A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
   },
    { 
-    id: 21,
+    id: 22,
     title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
     image: "/images/picador.jpg",
     category: "Actualidad",
@@ -703,7 +737,7 @@ La estructura de su equipo se completa con Francisco Javier Villalba como mozo d
 Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 22,
+    id: 23,
     title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
     image: "/images/escolar.jpg",
 	imageCaption: "Foto Philippe Gil Mir",
@@ -719,7 +753,7 @@ El domingo 26, también a las 12:00 horas, se celebrará el último desafío gan
 La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
-    id: 23,
+    id: 24,
     title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
     image: "/images/alarcon.jpg",
     category: "Actualidad",
@@ -733,7 +767,7 @@ Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevant
 Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
   },
   { 
-    id: 24,
+    id: 25,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
     footerImage1: "/images/davidgalvan2.jpg",
@@ -748,7 +782,7 @@ La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz
 Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   },
 	{ 
-    id: 25,
+    id: 26,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
@@ -764,7 +798,7 @@ Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada 
 Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
   },
 	{ 
-    id: 26,
+    id: 27,
     title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
     image: "/images/tribunal.jpg",
 	imageCaption: "Plaza de Toros de Málaga",
@@ -777,7 +811,7 @@ Según informa el medio Málaga Taurina, la impugnación del pliego actual ha si
 Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
   },
 	{ 
-    id: 27,
+    id: 28,
     title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
     image: "/images/alvarolorenzo.jpg",
     category: "Actualidad",
@@ -787,7 +821,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
-    id: 28,
+    id: 29,
     title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
     image: "/images/urdiales.jpg",
     category: "Actualidad",
@@ -797,7 +831,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
   },
 	{ 
-    id: 29,
+    id: 30,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
 	imageCaption: "Foto BMF Toros",
@@ -819,7 +853,7 @@ Por eso, de cara a la próxima temporada, la afición espera con ilusión un tri
 Mario Ruiz Ruiz 13/11/2025`
   },
 	{ 
-    id: 30,
+    id: 31,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
     image: "/images/1.jpg",
     category: "Actualidad",
