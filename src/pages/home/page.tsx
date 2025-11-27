@@ -328,60 +328,94 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
+       title: "La renovación del toreo ha llegado",
     image: "/images/novillero.jpg",
-    category: "Actualidad",
-    date: "26 de noviembre de 2025",
-	excerpt: "El novillero natural de valencia ha cambiado el oro por la plata para la temporada 2026",
-    fullContent: `En un comunicado difundido por sus rrss el novillero Miguel Senent “Miguelito” ha querido comunicar la decisión de cambiar el traje de oro por el de plata y hacerse banderillero de cara a la próxima temporada
+    category: "Opinión",
+    date: "27 de noviembre de 2025",
+    fullContent: `En los últimos años la tauromaquia está sufriendo una transición en todos los aspectos, pero uno de los más notables está siendo la renovación notaria del escalafón, por el retiro de algunas de las figuras de las últimas décadas como El Juli en el 2023, Enrique Ponce en el 2024 y finalmente el acontecimiento de la pasada temporada, el retiro por sorpresa de José Antonio Morante de la Puebla.
 
- 
+Estas retiradas es verdad que han dejado un hueco importante en el escalafón, pero esta claro que este vacío ya se está empezando a cubrir con toreros jóvenes y muy prometedores que mantendrán la salud de la fiesta en los próximos años. Los ejemplos más claros de esta temporada han sido los nombres de Borja Jiménez y Víctor Hernández , Borja se ha conseguido consolidar como una de las figuras  consagradas con sus triunfos principales en las plazas más importantes como Madrid o Bilbao, mientras tanto Víctor ha sido la gran sorpresa de este año con esa buena imagen que dio en la feria de San Isidro y “poniendo la guinda” en esa tarde otoñal en la que inmortalizó algunos de los mejores naturales de la temporada, con los que consiguió que su nombre volviera a relucir en todas las tertulias de  aficionados y profesionales.
+Todo esto sumado a otros toreros muy interesantes como Mario Navas con un estilo clásico, Jarocho con su renombre en Madrid y Aaron Palacio que, aunque hace poco que tomó la alternativa ya ha conseguido triunfar con las figuras en plazas de mucha importancia como en San Sebastián, a estos se suman otros como Samuel Navalón, Fernando Adrián, Javier Zulueta y Marco Pérez. Los novilleros en los cuales también recae el peso de la fiesta están dando un gran nivel, dentro del escalafón novilleril encontramos nombres como El Mene, Bruno Aloi y Tomás González, todos ellos están dando un muy buen nivel general y con la sensación de absoluto preparamiento para tomar una futura alternativa.
 
-Comunicado íntegro de Miguel Senent “Miguelito”
-
-Hoy me dirijo a todos vosotros con el corazón lleno de sentimientos encontrados. Después de mucho pensarlo, he tomado la decisión de poner fin a mi etapa como novillero con picadores. Han sido años de entrega absoluta, de sueños y de lucha constante por abrirme camino en este mundo tan grande y tan exigente como es el toreo. He dado todo lo que tenía dentro, pero a veces las cosas no salen como uno desea.
-
-Quiero despedirme de toda mi gente: de quienes me han acompañado desde el principio, de los que han creído en mí incluso en los momentos más difíciles. A mi familia, mis amigos, mi cuadrilla, mi peña taurina y a todos los aficionados que me han regalado una palabra de ánimo, un abrazo o simplemente su presencia en la plaza… gracias. Sin vosotros este camino habría sido imposible.
-
-El toreo me ha enseñado a caer, a levantarme y a seguir adelante. Y por eso, aunque cierro una etapa, no me marcho del mundo que me ha dado todo. A partir de ahora emprendo un nuevo rumbo: dejo el oro para vestir la plata. Empiezo una nueva vida como banderillero, con la misma ilusión, la misma entrega y el mismo respeto por esta profesión que siempre me ha guiado.
-
-Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el mismo compromiso y la misma pasión`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de los toros en los que tendremos un panorama taurino muy interesante en los que todos los profesionales deberán “echar la pata palante” para que el aficionado pueda disfrutar de la tauromaquia en todo su esplendor .`,
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1001,
-       title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
-    image: "/images/victor.jpg",
+       title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
+    image: "/images/david.jpg",
     category: "Actualidad",
-    date: "26 de noviembre de 2025",
-    fullContent: `Víctor Hernández ya cuenta con nuevo apoderado para la temporada 2026: **Miguel Abellán**. El matador de toros madrileño y exgerente del Centro de Asuntos Taurinos de la Comunidad de Madrid asumirá la gestión de la carrera del torero de Los Santos de la Humosa, según adelanta el periodista Vicente Zabala de la Serna.
+    date: "27 de noviembre de 2025",
+    fullContent: `La localidad gaditana vivió anoche -miércoles 26 de noviembre- una
+de sus veladas más intensas y emotivas con la presencia del matador
+onubense David de Miranda, protagonista del coloquio “El Resurgir de
+un Torero”, celebrado en el emblemático espacio cultural La Embajada.
 
-Víctor Hernández se ha revelado como una de las grandes sorpresas de la temporada 2025, tras firmar dos destacadas actuaciones en Madrid que le han situado entre los diestros con mayor proyección de cara a 2026.
+El encuentro, conducido magistralmente por el periodista jerezano Javier
+Bocanegra, reunió a un aforo “de no hay localidades” y se convirtió en un
+recorrido íntimo por la trayectoria humana y profesional de uno de los
+grandes nombres de la tauromaquia actual.
+Bocanegra destacó a De Miranda como “uno de los triunfadores de
+la temporada”, recordando su histórica apertura de la Puerta del Príncipe
+de Sevilla, la única lograda en la Real Maestranza durante todo el año 2025,
+así como su brillante actuación en la Feria de Málaga. 
 
-El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
-  author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-       title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
-    image: "/images/paseillo.jpg",
-    category: "Actualidad",
-    date: "26 de noviembre de 2025",
-    fullContent: `**La Comisión Taurina de la Casa de Misericordia** de Pamplona ha dado a conocer los hierros que participarán en la **Feria del Toro 2026**, certamen que repetirá íntegramente el elenco ganadero de la pasada edición.
+El público asistió a
+un relato honesto y conmovedor donde el torero desgranó una carrera
+marcada por la entrega, la superación y la verdad.
+Tras la proyección de un vídeo que recogía sus mejores faenas en
+Málaga y Sevilla, De Miranda confesó vivir aún con sorpresa sus propios
+hitos: “A veces me cuesta creer en mí mismo, pero cuando veo estas
+imágenes pienso en lo que he sido capaz de hacer”. Esta reflexión abrió
+paso a una conversación sobre su futuro profesional y la elección de un
+nuevo apoderado: “Antes no tenía nada, nadie llamaba. Ahora el teléfono
+no deja de sonar. La decisión será difícil, pero siempre con todas las cartas
+boca arriba”.
 
-Regresarán a los Sanfermines los toros de **José Escolar**, cuya corrida fue distinguida con el premio Feria del Toro 2025. Asimismo, volverán a lidiarse los astados de **Cebada Gago, ganadores del premio Carriquiri con el toro Lioso**, galardón que compartieron ex aequo con Histórico, ejemplar del hierro de Jandilla, considerado también el mejor toro de la feria 2025.
+Uno de los momentos más sobrecogedores llegó al recordar la
+gravísima cogida sufrida en Toro (Zamora), que lo dejó paralizado: “No
+podía respirar y solo pensaba: ‘Por Dios, que no me vuelva a coger’”.
 
-Completan la nómina de ganaderías de lidia a pie **Fuente Ymbro, Miura, La Palmosilla, Victoriano del Río y Álvaro Núñez**, esta última repetirá presencia tras su debut en 2025, consolidándose como habitual en el ciclo sanferminero.
+También evocó el frenazo que supuso la pandemia tras abrir la Puerta
+Grande de Las Ventas en 2019, un golpe que interrumpió su ascenso y
+obligó a reconstruirse desde dentro.
+El coloquio permitió revivir la faena de 2024 en la Maestranza al toro
+‘Tabarro’, de Santiago Domecq, que le devolvió la confianza, y su
+consagración en Sevilla el 10 de mayo de 2025, cuando volvió a conquistar
+el Coso del Baratillo. Sin embargo, lamentó la escasez de contratos
+posteriores: “Abres la Puerta del Príncipe y solo te sale Málaga. Te
+planteas muchas cosas, pero siempre he confiado en mí y sabía que tenía
+que llegar”.
 
-Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea – Carmen Lorenzo**, mientras que la novillada contará nuevamente con reses de la ganadería navarra de Pincha.
+Precisamente en La Malagueta, el 19 de agosto, firmó una de las
+actuaciones que ya forman parte de la memoria taurina contemporánea ante
+‘Enamorado’, de Victoriano del Río. “Le vi en la mirada que, si le
+aguantaba, tendría nobleza. Aposté por él”, confesó. Solo después, al ver
+las imágenes, comprendió que aquel toro había marcado un antes y un
+después en su vida.
+La noche concluyó entre aplausos prolongados y emociones
+compartidas. 
 
-Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
-  author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+La presidenta de la Escuela Taurina Francisco Montes
+“Paquiro”, Rocío Oliva, anfitriona del acto, afirmó que De Miranda “Será
+una figura que marcará una gran época del toreo”. Sus palabras fueron
+refrendadas por todos los alumnos de la escuela, que arroparon al diestro
+onubense con admiración y máximo respeto.
+El diálogo repasó también su alternativa de manos de José Tomás,
+símbolo de confianza y destino. Desde entonces, David de Miranda ha
+forjado una carrera “fiel a su tierra y a su afición”, especialmente en
+Huelva, donde se le siente como un hijo que honra su origen a través del
+toreo.
+La velada en Chiclana de la Frontera quedó en la memoria colectiva
+como una auténtica cátedra de vida y de tauromaquia, pronunciada por un
+torero que ha sabido rehacerse a sí mismo desde la fe, la entrega y el amor
+más absoluto a su profesión.`,
+  footerImage1: "/images/david1.jpg",
+  footerImage2: "/images/david2.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   }
 ];
@@ -389,6 +423,98 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "La renovación del toreo ha llegado",
+    image: "/images/novillero.jpg",
+    category: "Opinión",
+    date: "27 de noviembre de 2025",
+    fullContent: `En los últimos años la tauromaquia está sufriendo una transición en todos los aspectos, pero uno de los más notables está siendo la renovación notaria del escalafón, por el retiro de algunas de las figuras de las últimas décadas como El Juli en el 2023, Enrique Ponce en el 2024 y finalmente el acontecimiento de la pasada temporada, el retiro por sorpresa de José Antonio Morante de la Puebla.
+
+Estas retiradas es verdad que han dejado un hueco importante en el escalafón, pero esta claro que este vacío ya se está empezando a cubrir con toreros jóvenes y muy prometedores que mantendrán la salud de la fiesta en los próximos años. Los ejemplos más claros de esta temporada han sido los nombres de Borja Jiménez y Víctor Hernández , Borja se ha conseguido consolidar como una de las figuras  consagradas con sus triunfos principales en las plazas más importantes como Madrid o Bilbao, mientras tanto Víctor ha sido la gran sorpresa de este año con esa buena imagen que dio en la feria de San Isidro y “poniendo la guinda” en esa tarde otoñal en la que inmortalizó algunos de los mejores naturales de la temporada, con los que consiguió que su nombre volviera a relucir en todas las tertulias de  aficionados y profesionales.
+Todo esto sumado a otros toreros muy interesantes como Mario Navas con un estilo clásico, Jarocho con su renombre en Madrid y Aaron Palacio que, aunque hace poco que tomó la alternativa ya ha conseguido triunfar con las figuras en plazas de mucha importancia como en San Sebastián, a estos se suman otros como Samuel Navalón, Fernando Adrián, Javier Zulueta y Marco Pérez. Los novilleros en los cuales también recae el peso de la fiesta están dando un gran nivel, dentro del escalafón novilleril encontramos nombres como El Mene, Bruno Aloi y Tomás González, todos ellos están dando un muy buen nivel general y con la sensación de absoluto preparamiento para tomar una futura alternativa.
+
+Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de los toros en los que tendremos un panorama taurino muy interesante en los que todos los profesionales deberán “echar la pata palante” para que el aficionado pueda disfrutar de la tauromaquia en todo su esplendor .`,
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+       title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
+    image: "/images/david.jpg",
+    category: "Actualidad",
+    date: "27 de noviembre de 2025",
+    fullContent: `La localidad gaditana vivió anoche -miércoles 26 de noviembre- una
+de sus veladas más intensas y emotivas con la presencia del matador
+onubense David de Miranda, protagonista del coloquio “El Resurgir de
+un Torero”, celebrado en el emblemático espacio cultural La Embajada.
+
+El encuentro, conducido magistralmente por el periodista jerezano Javier
+Bocanegra, reunió a un aforo “de no hay localidades” y se convirtió en un
+recorrido íntimo por la trayectoria humana y profesional de uno de los
+grandes nombres de la tauromaquia actual.
+Bocanegra destacó a De Miranda como “uno de los triunfadores de
+la temporada”, recordando su histórica apertura de la Puerta del Príncipe
+de Sevilla, la única lograda en la Real Maestranza durante todo el año 2025,
+así como su brillante actuación en la Feria de Málaga. 
+
+El público asistió a
+un relato honesto y conmovedor donde el torero desgranó una carrera
+marcada por la entrega, la superación y la verdad.
+Tras la proyección de un vídeo que recogía sus mejores faenas en
+Málaga y Sevilla, De Miranda confesó vivir aún con sorpresa sus propios
+hitos: “A veces me cuesta creer en mí mismo, pero cuando veo estas
+imágenes pienso en lo que he sido capaz de hacer”. Esta reflexión abrió
+paso a una conversación sobre su futuro profesional y la elección de un
+nuevo apoderado: “Antes no tenía nada, nadie llamaba. Ahora el teléfono
+no deja de sonar. La decisión será difícil, pero siempre con todas las cartas
+boca arriba”.
+
+Uno de los momentos más sobrecogedores llegó al recordar la
+gravísima cogida sufrida en Toro (Zamora), que lo dejó paralizado: “No
+podía respirar y solo pensaba: ‘Por Dios, que no me vuelva a coger’”.
+
+También evocó el frenazo que supuso la pandemia tras abrir la Puerta
+Grande de Las Ventas en 2019, un golpe que interrumpió su ascenso y
+obligó a reconstruirse desde dentro.
+El coloquio permitió revivir la faena de 2024 en la Maestranza al toro
+‘Tabarro’, de Santiago Domecq, que le devolvió la confianza, y su
+consagración en Sevilla el 10 de mayo de 2025, cuando volvió a conquistar
+el Coso del Baratillo. Sin embargo, lamentó la escasez de contratos
+posteriores: “Abres la Puerta del Príncipe y solo te sale Málaga. Te
+planteas muchas cosas, pero siempre he confiado en mí y sabía que tenía
+que llegar”.
+
+Precisamente en La Malagueta, el 19 de agosto, firmó una de las
+actuaciones que ya forman parte de la memoria taurina contemporánea ante
+‘Enamorado’, de Victoriano del Río. “Le vi en la mirada que, si le
+aguantaba, tendría nobleza. Aposté por él”, confesó. Solo después, al ver
+las imágenes, comprendió que aquel toro había marcado un antes y un
+después en su vida.
+La noche concluyó entre aplausos prolongados y emociones
+compartidas. 
+
+La presidenta de la Escuela Taurina Francisco Montes
+“Paquiro”, Rocío Oliva, anfitriona del acto, afirmó que De Miranda “Será
+una figura que marcará una gran época del toreo”. Sus palabras fueron
+refrendadas por todos los alumnos de la escuela, que arroparon al diestro
+onubense con admiración y máximo respeto.
+El diálogo repasó también su alternativa de manos de José Tomás,
+símbolo de confianza y destino. Desde entonces, David de Miranda ha
+forjado una carrera “fiel a su tierra y a su afición”, especialmente en
+Huelva, donde se le siente como un hijo que honra su origen a través del
+toreo.
+La velada en Chiclana de la Frontera quedó en la memoria colectiva
+como una auténtica cátedra de vida y de tauromaquia, pronunciada por un
+torero que ha sabido rehacerse a sí mismo desde la fe, la entrega y el amor
+más absoluto a su profesión.`,
+  footerImage1: "/images/david1.jpg",
+  footerImage2: "/images/david2.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -412,7 +538,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 4,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -427,7 +553,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 5,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -446,7 +572,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 6,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -482,7 +608,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 7,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
