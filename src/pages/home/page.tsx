@@ -326,8 +326,29 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-	{ 
+{ 
     id: 1000,
+       title: "Enrique Ponce , nuevo apoderado de David de Miranda",
+    image: "/images/enriqueponce.jpg",
+    category: "Actualidad",
+    date: "27 de noviembre de 2025",
+    fullContent: `Los movimientos en el ámbito del apoderamiento taurino continúan. El matador de toros **David de Miranda y Enrique Ponce** han decidido unir sus caminos profesionales. 
+
+El maestro de Chiva inicia así una nueva etapa al asumir el apoderamiento del diestro onubense, considerado uno de los nombres más destacados de la temporada 2025.
+
+El acuerdo se cerró en el día de hoy tras una reunión mantenida entre todas las partes, quedando sellado con el tradicional apretón de manos y con carácter indefinido. El equipo de apoderamiento se completa con la participación de **Juan Ruiz Palomares “Hijo”**, quien seguirá desempeñando un papel fundamental en el desarrollo de la carrera de David de Miranda.
+
+David de Miranda se ha consolidado como uno de los toreros más relevantes de la temporada 2025. 
+
+Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sitúan entre los principales **protagonistas de la próxima campaña**. 
+
+Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: false
+  },
+	{ 
+    id: 1001,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -343,7 +364,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -423,6 +444,27 @@ más absoluto a su profesión.`,
 const latestNews: NewsItem[] = [
   	{ 
     id: 1,
+       title: "Enrique Ponce , nuevo apoderado de David de Miranda",
+    image: "/images/enriqueponce.jpg",
+    category: "Actualidad",
+    date: "27 de noviembre de 2025",
+    fullContent: `Los movimientos en el ámbito del apoderamiento taurino continúan. El matador de toros **David de Miranda y Enrique Ponce** han decidido unir sus caminos profesionales. 
+
+El maestro de Chiva inicia así una nueva etapa al asumir el apoderamiento del diestro onubense, considerado uno de los nombres más destacados de la temporada 2025.
+
+El acuerdo se cerró en el día de hoy tras una reunión mantenida entre todas las partes, quedando sellado con el tradicional apretón de manos y con carácter indefinido. El equipo de apoderamiento se completa con la participación de **Juan Ruiz Palomares “Hijo”**, quien seguirá desempeñando un papel fundamental en el desarrollo de la carrera de David de Miranda.
+
+David de Miranda se ha consolidado como uno de los toreros más relevantes de la temporada 2025. 
+
+Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sitúan entre los principales **protagonistas de la próxima campaña**. 
+
+Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: false
+  },
+	{ 
+    id: 2,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -438,7 +480,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -514,7 +556,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -538,7 +580,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -553,7 +595,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 6,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -572,7 +614,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 7,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -608,7 +650,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
