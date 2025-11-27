@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-interface BaseArticle {
   id: number;
   title: string;
   plaza?: string;
