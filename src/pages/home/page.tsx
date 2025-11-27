@@ -329,7 +329,7 @@ const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
        title: "La renovación del toreo ha llegado",
-    image: "/images/renovacion.jpg",
+    image: "/images/renovacion1.jpg",
     category: "Opinión",
     date: "27 de noviembre de 2025",
     fullContent: `En los últimos años la tauromaquia está sufriendo una transición en todos los aspectos, pero uno de los más notables está siendo la renovación notaria del escalafón, por el retiro de algunas de las figuras de las últimas décadas como El Juli en el 2023, Enrique Ponce en el 2024 y finalmente el acontecimiento de la pasada temporada, el retiro por sorpresa de José Antonio Morante de la Puebla.
@@ -424,7 +424,7 @@ const latestNews: NewsItem[] = [
   	{ 
     id: 1,
        title: "La renovación del toreo ha llegado",
-    image: "/images/novillero.jpg",
+    image: "/images/renovacion1.jpg",
     category: "Opinión",
     date: "27 de noviembre de 2025",
     fullContent: `En los últimos años la tauromaquia está sufriendo una transición en todos los aspectos, pero uno de los más notables está siendo la renovación notaria del escalafón, por el retiro de algunas de las figuras de las últimas décadas como El Juli en el 2023, Enrique Ponce en el 2024 y finalmente el acontecimiento de la pasada temporada, el retiro por sorpresa de José Antonio Morante de la Puebla.
