@@ -326,115 +326,31 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-{ 
+	{ 
     id: 1000,
-       title: "Enrique Ponce , nuevo apoderado de David de Miranda",
-    image: "/images/enriqueponce.jpg",
+       title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
+    image: "/images/documental.jpg",
     category: "Actualidad",
-    date: "27 de noviembre de 2025",
-    fullContent: `Los movimientos en el ámbito del apoderamiento taurino continúan. El matador de toros **David de Miranda y Enrique Ponce** han decidido unir sus caminos profesionales. 
+    date: "28 de noviembre de 2025",
+    fullContent: `Tras la emisión del documental en el mismo teatro se celebrará una mesa redonda en la que participarán el periodista Juan Belmonte, el poeta y compositor **José León, Ralf Bunger y el torero David de Miranda**.
+ 
+El documental ‘Mondeño, el torero místico’ será presentado el próximo miércoles 3 de diciembre en el **centro municipal de cultura de Sanlúcar La Mayor a las 19,30 horas.**
+ 
+Tras su estreno en Sevilla y su presentación en la Peña Francisco Montes ‘Paquiro’ de Chiclana, la elección de esta localidad no es casual. El torero descansa para siempre en este pueblo, donde pasó largas temporadas en su finca ubicada en el citado municipio junto a Ralf Bunger, su pareja sentimental hasta su muerte e hilo conductor del documental.
 
-El maestro de Chiva inicia así una nueva etapa al asumir el apoderamiento del diestro onubense, considerado uno de los nombres más destacados de la temporada 2025.
-
-El acuerdo se cerró en el día de hoy tras una reunión mantenida entre todas las partes, quedando sellado con el tradicional apretón de manos y con carácter indefinido. El equipo de apoderamiento se completa con la participación de **Juan Ruiz Palomares “Hijo”**, quien seguirá desempeñando un papel fundamental en el desarrollo de la carrera de David de Miranda.
-
-David de Miranda se ha consolidado como uno de los toreros más relevantes de la temporada 2025. 
-
-Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sitúan entre los principales **protagonistas de la próxima campaña**. 
-
-Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
-  author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1001,
-       title: "La renovación del toreo ha llegado",
-    image: "/images/renovacion1.jpg",
-    category: "Opinión",
-    date: "27 de noviembre de 2025",
-    fullContent: `En los últimos años la tauromaquia está sufriendo una transición en todos los aspectos, pero uno de los más notables está siendo la renovación notaria del escalafón, por el retiro de algunas de las figuras de las últimas décadas como El Juli en el 2023, Enrique Ponce en el 2024 y finalmente el acontecimiento de la pasada temporada, el retiro por sorpresa de José Antonio Morante de la Puebla.
-
-Estas retiradas es verdad que han dejado un hueco importante en el escalafón, pero esta claro que este vacío ya se está empezando a cubrir con toreros jóvenes y muy prometedores que mantendrán la salud de la fiesta en los próximos años. Los ejemplos más claros de esta temporada han sido los nombres de Borja Jiménez y Víctor Hernández , Borja se ha conseguido consolidar como una de las figuras  consagradas con sus triunfos principales en las plazas más importantes como Madrid o Bilbao, mientras tanto Víctor ha sido la gran sorpresa de este año con esa buena imagen que dio en la feria de San Isidro y “poniendo la guinda” en esa tarde otoñal en la que inmortalizó algunos de los mejores naturales de la temporada, con los que consiguió que su nombre volviera a relucir en todas las tertulias de  aficionados y profesionales.
-Todo esto sumado a otros toreros muy interesantes como Mario Navas con un estilo clásico, Jarocho con su renombre en Madrid y Aaron Palacio que, aunque hace poco que tomó la alternativa ya ha conseguido triunfar con las figuras en plazas de mucha importancia como en San Sebastián, a estos se suman otros como Samuel Navalón, Fernando Adrián, Javier Zulueta y Marco Pérez. Los novilleros en los cuales también recae el peso de la fiesta están dando un gran nivel, dentro del escalafón novilleril encontramos nombres como El Mene, Bruno Aloi y Tomás González, todos ellos están dando un muy buen nivel general y con la sensación de absoluto preparamiento para tomar una futura alternativa.
-
-Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de los toros en los que tendremos un panorama taurino muy interesante en los que todos los profesionales deberán “echar la pata palante” para que el aficionado pueda disfrutar de la tauromaquia en todo su esplendor .`,
-  author: "Mario Ruiz Ruiz",
-  authorLogo: "/images/mariorr.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-       title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
-    image: "/images/david.jpg",
-    category: "Actualidad",
-    date: "27 de noviembre de 2025",
-    fullContent: `La localidad gaditana vivió anoche -miércoles 26 de noviembre- una
-de sus veladas más intensas y emotivas con la presencia del matador
-onubense David de Miranda, protagonista del coloquio “El Resurgir de
-un Torero”, celebrado en el emblemático espacio cultural La Embajada.
-
-El encuentro, conducido magistralmente por el periodista jerezano Javier
-Bocanegra, reunió a un aforo “de no hay localidades” y se convirtió en un
-recorrido íntimo por la trayectoria humana y profesional de uno de los
-grandes nombres de la tauromaquia actual.
-Bocanegra destacó a De Miranda como “uno de los triunfadores de
-la temporada”, recordando su histórica apertura de la Puerta del Príncipe
-de Sevilla, la única lograda en la Real Maestranza durante todo el año 2025,
-así como su brillante actuación en la Feria de Málaga. 
-
-El público asistió a
-un relato honesto y conmovedor donde el torero desgranó una carrera
-marcada por la entrega, la superación y la verdad.
-Tras la proyección de un vídeo que recogía sus mejores faenas en
-Málaga y Sevilla, De Miranda confesó vivir aún con sorpresa sus propios
-hitos: “A veces me cuesta creer en mí mismo, pero cuando veo estas
-imágenes pienso en lo que he sido capaz de hacer”. Esta reflexión abrió
-paso a una conversación sobre su futuro profesional y la elección de un
-nuevo apoderado: “Antes no tenía nada, nadie llamaba. Ahora el teléfono
-no deja de sonar. La decisión será difícil, pero siempre con todas las cartas
-boca arriba”.
-
-Uno de los momentos más sobrecogedores llegó al recordar la
-gravísima cogida sufrida en Toro (Zamora), que lo dejó paralizado: “No
-podía respirar y solo pensaba: ‘Por Dios, que no me vuelva a coger’”.
-
-También evocó el frenazo que supuso la pandemia tras abrir la Puerta
-Grande de Las Ventas en 2019, un golpe que interrumpió su ascenso y
-obligó a reconstruirse desde dentro.
-El coloquio permitió revivir la faena de 2024 en la Maestranza al toro
-‘Tabarro’, de Santiago Domecq, que le devolvió la confianza, y su
-consagración en Sevilla el 10 de mayo de 2025, cuando volvió a conquistar
-el Coso del Baratillo. Sin embargo, lamentó la escasez de contratos
-posteriores: “Abres la Puerta del Príncipe y solo te sale Málaga. Te
-planteas muchas cosas, pero siempre he confiado en mí y sabía que tenía
-que llegar”.
-
-Precisamente en La Malagueta, el 19 de agosto, firmó una de las
-actuaciones que ya forman parte de la memoria taurina contemporánea ante
-‘Enamorado’, de Victoriano del Río. “Le vi en la mirada que, si le
-aguantaba, tendría nobleza. Aposté por él”, confesó. Solo después, al ver
-las imágenes, comprendió que aquel toro había marcado un antes y un
-después en su vida.
-La noche concluyó entre aplausos prolongados y emociones
-compartidas. 
-
-La presidenta de la Escuela Taurina Francisco Montes
-“Paquiro”, Rocío Oliva, anfitriona del acto, afirmó que De Miranda “Será
-una figura que marcará una gran época del toreo”. Sus palabras fueron
-refrendadas por todos los alumnos de la escuela, que arroparon al diestro
-onubense con admiración y máximo respeto.
-El diálogo repasó también su alternativa de manos de José Tomás,
-símbolo de confianza y destino. Desde entonces, David de Miranda ha
-forjado una carrera “fiel a su tierra y a su afición”, especialmente en
-Huelva, donde se le siente como un hijo que honra su origen a través del
-toreo.
-La velada en Chiclana de la Frontera quedó en la memoria colectiva
-como una auténtica cátedra de vida y de tauromaquia, pronunciada por un
-torero que ha sabido rehacerse a sí mismo desde la fe, la entrega y el amor
-más absoluto a su profesión.`,
-  footerImage1: "/images/david1.jpg",
-  footerImage2: "/images/david2.jpg",
+El proyecto, dirigido por Juan Belmonte y Rogelio M.Gordo, quiere ahora recalar en la que también consideraba su tierra con el fin de acercarle su vida a los que fueron sus vecinos. En concreto, sus últimos años los pasó entre Sanlúcar y París.
+ 
+Juan García 'Modeño' no fue un torero al uso. Ni en el ruedo, ni en su día a día en la España franquista de los años 60. Sobre el albero fue considerado el eslabón entre la tauromaquia de Manolete con la de José Tomás.
+ 
+Y fuera también tuvo una singular trayectoria pues cuando estaba en la cima del toreo sintió la llamada de Dios y se metió a monje. Su toma de hábitos se convirtió en un auténtico acontecimiento nacional aireada incluso por el Nodo.
+ 
+En la obra, el propio Mondeño cuenta los pormenores de su vida, su relación con el mundo del toro, su decisión de entrar en una congregación dominica y su vida junto al que fuera su amor: Ralf Bunger.
+ 
+A su vez, el documental recoge su faceta más familiar y la profesional, a través de numerosas fotografías, reportajes de sus actuaciones en diversas plazas y testimonios de toreros de la época como Curro Romero.
+ 
+Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que participarán el periodista Juan Belmonte, el poeta y compositor José León, el propio Ralf y el torero David de Miranda.
+ 
+**En las próximas fechas este documental será emitido por Canal Sur Televisión, cadena que ha participado en la producción.**`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
@@ -442,8 +358,37 @@ más absoluto a su profesión.`,
 ];
 
 const latestNews: NewsItem[] = [
-  	{ 
+ 	{ 
     id: 1,
+       title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
+    image: "/images/documental.jpg",
+    category: "Actualidad",
+    date: "28 de noviembre de 2025",
+    fullContent: `Tras la emisión del documental en el mismo teatro se celebrará una mesa redonda en la que participarán el periodista Juan Belmonte, el poeta y compositor **José León, Ralf Bunger y el torero David de Miranda**.
+ 
+El documental ‘Mondeño, el torero místico’ será presentado el próximo miércoles 3 de diciembre en el **centro municipal de cultura de Sanlúcar La Mayor a las 19,30 horas.**
+ 
+Tras su estreno en Sevilla y su presentación en la Peña Francisco Montes ‘Paquiro’ de Chiclana, la elección de esta localidad no es casual. El torero descansa para siempre en este pueblo, donde pasó largas temporadas en su finca ubicada en el citado municipio junto a Ralf Bunger, su pareja sentimental hasta su muerte e hilo conductor del documental.
+
+El proyecto, dirigido por Juan Belmonte y Rogelio M.Gordo, quiere ahora recalar en la que también consideraba su tierra con el fin de acercarle su vida a los que fueron sus vecinos. En concreto, sus últimos años los pasó entre Sanlúcar y París.
+ 
+Juan García 'Modeño' no fue un torero al uso. Ni en el ruedo, ni en su día a día en la España franquista de los años 60. Sobre el albero fue considerado el eslabón entre la tauromaquia de Manolete con la de José Tomás.
+ 
+Y fuera también tuvo una singular trayectoria pues cuando estaba en la cima del toreo sintió la llamada de Dios y se metió a monje. Su toma de hábitos se convirtió en un auténtico acontecimiento nacional aireada incluso por el Nodo.
+ 
+En la obra, el propio Mondeño cuenta los pormenores de su vida, su relación con el mundo del toro, su decisión de entrar en una congregación dominica y su vida junto al que fuera su amor: Ralf Bunger.
+ 
+A su vez, el documental recoge su faceta más familiar y la profesional, a través de numerosas fotografías, reportajes de sus actuaciones en diversas plazas y testimonios de toreros de la época como Curro Romero.
+ 
+Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que participarán el periodista Juan Belmonte, el poeta y compositor José León, el propio Ralf y el torero David de Miranda.
+ 
+**En las próximas fechas este documental será emitido por Canal Sur Televisión, cadena que ha participado en la producción.**`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -464,7 +409,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -480,7 +425,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -556,7 +501,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -580,7 +525,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 6,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -595,7 +540,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 7,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -614,7 +559,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -650,7 +595,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 9,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
@@ -665,7 +610,7 @@ El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderí
 Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
   },
 	{ 
-    id: 9,
+    id: 10,
        title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
     image: "/images/rufo.jpg",
     category: "Actualidad",
@@ -681,7 +626,7 @@ Con esta incorporación, el equipo del diestro de Pepino queda configurado de la
 De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
   },
 	{ 
-    id: 10,
+    id: 11,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -738,7 +683,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 11,
+    id: 12,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -762,7 +707,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 12,
+    id: 13,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -788,7 +733,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 13,
+    id: 14,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -817,7 +762,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 14,
+    id: 15,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage1: "/images/rafael2.jpg",
@@ -835,7 +780,7 @@ El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 
 Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
   },
 	{ 
-    id: 15,
+    id: 16,
        title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
     image: "/images/morenito.jpg",
     category: "Actualidad",
@@ -845,7 +790,7 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
   },
 	{ 
-    id: 16,
+    id: 17,
        title: "Ginés Marín amplía su equipo de apoderamiento",
     image: "/images/amplia.jpg",
 	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
@@ -856,7 +801,7 @@ Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26
 Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   },
 	{ 
-    id: 17,
+    id: 18,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -879,7 +824,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 18,
+    id: 19,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -896,7 +841,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 19,
+    id: 20,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -906,7 +851,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 20,
+    id: 21,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -922,7 +867,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 21,
+    id: 22,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
@@ -939,7 +884,7 @@ En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 197
 A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
   },
    { 
-    id: 22,
+    id: 23,
     title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
     image: "/images/picador.jpg",
     category: "Actualidad",
@@ -952,7 +897,7 @@ La estructura de su equipo se completa con Francisco Javier Villalba como mozo d
 
 Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
-	{ 
+	{4
     id: 23,
     title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
     image: "/images/escolar.jpg",
@@ -969,7 +914,7 @@ El domingo 26, también a las 12:00 horas, se celebrará el último desafío gan
 La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
-    id: 24,
+    id: 25,
     title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
     image: "/images/alarcon.jpg",
     category: "Actualidad",
@@ -983,7 +928,7 @@ Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevant
 Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
   },
   { 
-    id: 25,
+    id: 26,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
     footerImage1: "/images/davidgalvan2.jpg",
@@ -998,7 +943,7 @@ La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz
 Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   },
 	{ 
-    id: 26,
+    id: 27,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
@@ -1014,7 +959,7 @@ Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada 
 Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
   },
 	{ 
-    id: 27,
+    id: 28,
     title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
     image: "/images/tribunal.jpg",
 	imageCaption: "Plaza de Toros de Málaga",
@@ -1027,7 +972,7 @@ Según informa el medio Málaga Taurina, la impugnación del pliego actual ha si
 Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
   },
 	{ 
-    id: 28,
+    id: 29,
     title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
     image: "/images/alvarolorenzo.jpg",
     category: "Actualidad",
@@ -1037,7 +982,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
-    id: 29,
+    id: 30,
     title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
     image: "/images/urdiales.jpg",
     category: "Actualidad",
