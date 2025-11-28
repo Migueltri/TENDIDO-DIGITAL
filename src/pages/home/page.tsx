@@ -343,9 +343,9 @@ David de Miranda se ha consolidado como uno de los toreros más relevantes de la
 Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sitúan entre los principales **protagonistas de la próxima campaña**. 
 
 Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: false
+  author: "Tendido Digital",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
   },
 	{ 
     id: 1001,
@@ -459,9 +459,9 @@ David de Miranda se ha consolidado como uno de los toreros más relevantes de la
 Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sitúan entre los principales **protagonistas de la próxima campaña**. 
 
 Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: false
+  author: "Tendido Digital",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
   },
 	{ 
     id: 2,
