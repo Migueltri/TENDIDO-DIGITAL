@@ -385,7 +385,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
 	{ 
     id: 1002,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
-    image: "/images/entrevistadavid.jpg",
+    image: "/images/entrevista.jpg",
     category: "Actualidad",
     date: "29 de noviembre de 2025",
     fullContent: `**David Galván**
@@ -455,7 +455,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
 	{ 
     id: 1004,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
-    image: "/images/davidmiranda.jpg",
+    image: "/images/reemplazo.jpg",
     category: "Actualidad",
     date: "29 de noviembre de 2025",
     fullContent: `En la mañana de ayer , viernes 28 de noviembre, el claustro mudéjar el Colegio Montaigne Compañía de María, en Jerez de la Frontera, se convirtió en el escenario de una jornada cargada de emoción, tradición y aprendizaje. En este histórico espacio, el torero David de Miranda ofreció una interesante charla a los estudiantes, compartiendo sus experiencias y reflexiones sobre el toreo, su vida y su carrera. El evento, que contó con la moderación del periodista Óscar Torres, de Onda Jerez, estuvo dirigido a niños y jóvenes de entre 3 y 17 años, quienes mostraron un notable interés por el mundo taurino.
@@ -541,7 +541,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
 	{ 
     id: 3,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
-    image: "/images/entrevistadavid.jpg",
+    image: "/images/entrevista.jpg",
     category: "Actualidad",
     date: "29 de noviembre de 2025",
     fullContent: `**David Galván**
@@ -611,7 +611,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
 	{ 
     id: 5,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
-    image: "/images/davidmiranda.jpg",
+    image: "/images/reemplazo.jpg",
     category: "Actualidad",
     date: "29 de noviembre de 2025",
     fullContent: `En la mañana de ayer , viernes 28 de noviembre, el claustro mudéjar el Colegio Montaigne Compañía de María, en Jerez de la Frontera, se convirtió en el escenario de una jornada cargada de emoción, tradición y aprendizaje. En este histórico espacio, el torero David de Miranda ofreció una interesante charla a los estudiantes, compartiendo sus experiencias y reflexiones sobre el toreo, su vida y su carrera. El evento, que contó con la moderación del periodista Óscar Torres, de Onda Jerez, estuvo dirigido a niños y jóvenes de entre 3 y 17 años, quienes mostraron un notable interés por el mundo taurino.
