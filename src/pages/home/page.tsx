@@ -434,7 +434,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   footerImageCaption1: "Fotos de Víctor Luengo",
   footerImage2: "/images/davidgalvan3.jpg",
   author: "Eduardo Elvira",
-  authorLogo: "/images/edu.jpg",
+  authorLogo: "/images/edu2.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -590,7 +590,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   footerImageCaption1: "Fotos de Víctor Luengo",
   footerImage2: "/images/davidgalvan3.jpg",
   author: "Eduardo Elvira",
-  authorLogo: "/images/edu.jpg",
+  authorLogo: "/images/edu2.jpg",
   showAuthorHeader: true
   },
 	{ 
