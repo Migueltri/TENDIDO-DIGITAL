@@ -431,10 +431,10 @@ Que persigan su sueño con fe, sin complejos y sintiéndose libres.
 El nivel de las ganaderías, cada una en su contexto y personalidad, en la actualidad es muy alto. Los ganaderos están haciendo una gran labor. 
 Para el aficionado considero que causa mayor interés la variedad que la monotonía. Me preparo diariamente para tener registros suficientes para expresar mi toreo a todo tipo de toros independientemente de su condición o ganaderia, siempre fiel a mi sello personal.`,
   footerImage1: "/images/victorluengo.jpg",
-  footerImageCaption1: "Fotos de Víctor Luengo",
+  footerImage1Caption: "Fotos de Víctor Luengo",
   footerImage2: "/images/davidgalvan3.jpg",
   author: "Eduardo Elvira",
-  authorLogo: "/images/edu2.jpg",
+  authorLogo: "/images/edu1.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -587,10 +587,10 @@ Que persigan su sueño con fe, sin complejos y sintiéndose libres.
 El nivel de las ganaderías, cada una en su contexto y personalidad, en la actualidad es muy alto. Los ganaderos están haciendo una gran labor. 
 Para el aficionado considero que causa mayor interés la variedad que la monotonía. Me preparo diariamente para tener registros suficientes para expresar mi toreo a todo tipo de toros independientemente de su condición o ganaderia, siempre fiel a mi sello personal.`,
   footerImage1: "/images/victorluengo.jpg",
-  footerImageCaption1: "Fotos de Víctor Luengo",
+  footerImage1Caption: "Fotos de Víctor Luengo",
   footerImage2: "/images/davidgalvan3.jpg",
   author: "Eduardo Elvira",
-  authorLogo: "/images/edu2.jpg",
+  authorLogo: "/images/edu1.jpg",
   showAuthorHeader: true
   },
 	{ 
