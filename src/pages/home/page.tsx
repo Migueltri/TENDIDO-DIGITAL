@@ -328,155 +328,22 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-       title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
-    image: "/images/varios4.jpg",
+    title: "Domingo López - Chaves se incorpora al equipo de El "Fandi" para la temporada 2026",
+	"El diestro será el encargado de acompañar al granadino en cada compromiso",
+    image: "/images/domingo.jpg",
     category: "Actualidad",
-    date: "29 de noviembre de 2025",
-    fullContent: `El jurado de los **Premios Taurinos de la Delegación del Gobierno de la Junta de Andalucía en Cádiz** ha concedido los premios correspondientes a la temporada  2025.
+    date: "30 de noviembre de 2025",
+    fullContent: `El diestro, Domingo López - Chaves, se incorpora al equipo de David Fandila “El Fandi” para la temporada 2026, convirtiéndose en su hombre de confianza para acompañarle en cada compromiso.
 
-Desde su creación en 2021, esta es ya la quinta edición de estos galardones, instaurados con el propósito de distinguir las actuaciones más destacadas de la temporada taurina en la provincia y con ello el respaldo de la Junta de Andalucía a la tauromaquia.
+López - Chaves ejercerá labores de campo y será su principal apoyo mientras que las tareas de despacho corresponderán a Alberto García, reciente apoderado del torero granadino.
 
-Los ganadores de los V Premios Taurinos de la Delegación del Gobierno de la Junta de Andalucía en Cádiz.
- 
--**Morante de la Puebla**, por su faena al 4º toro de la tarde en la Plaza de Toros de Jerez de la Frontera el pasado 23 de mayo
- 
--**La Ganadería de Núñez del Cuvillo**
- 
--**Ignacio Candelas**, mejor novillero con picadores de la temporada en la provincia
- 
--**Manuel Rodríguez «Mambrú»**, mejor subalterno
- 
--**La Peña Taurina Francisco Montes «Paquiro»** , de Chiclana de la Frontera, Premio a la Promoción, Difusión y Defensa de la Tauromaquia
- 
-Además, el jurado ha concedido la mención especial por unanimidad al diestro gaditano **David Galván**, como reconocimiento a la extraordinaria temporada realizada
+“Me veo cerca de una figura del toreo y todo lo que pueda ofrecer y aportar de mi a David, lo tendrá”, ha asegurado López - Chaves.
 
-Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor la entrega y compromiso de la **Junta de Andalucía** con la tauromaquia`,
+Amigos desde hace años, ahora se convierten en un tándem profesional de éxito para seguir avanzando en sus trayectorias en el mundo del toro.
+
+“Siempre has estado a mi lado por ser un ejemplo dentro y fuera de la plaza. Y ahora no puedo estar más feliz e ilusionado de que formes parte de este nuevo proyecto”, ha asegurado “El Fandi” en su cuenta de Instagram haciendo oficial la incorporación.`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },
-   { 
-    id: 1001,
-       title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
-    image: "/images/club.jpg",
-    category: "Actualidad",
-    date: "29 de noviembre de 2025",
-    fullContent: `El Club Taurino El Rabo, de El Puerto de Santa María, cerró el pasado jueves su Ciclo de Tertulias 2025 con un emotivo homenaje a Antonio González Sabio, coincidiendo además con los 25 años de estas charlas que se han convertido en auténticas “corridas de invierno”, llenando de vida y conversación taurina los meses de parón de la temporada.
- 
-El concejal de la Plaza de Toros del Ayuntamiento de El Puerto, Carmelo Navarro, acompañó a la entidad, encabezada por su presidente Jesús Domínguez, en un acto que reunió al completo a toda la afición de El Puerto en la sede del Club en la calle Luis Mazzantini.
- 
-Junto a González Sabio, el ex presidente de la Plaza Real, Rafael Sestelo, repasando su trayectoria profesional y su papel como hombre de máxima confianza del maestro José Luis Galloso, al que acompañó durante toda su carrera.
- 
-El homenaje sirvió para reconocer no solo la trayectoria de un maestro de plata, sino también la nobleza, generosidad y cercanía humana de un portuense querido por todos. La cita contó con la presencia de sus hijos, profesionales y de numerosos aficionados que quisieron acompañarle en un momento tan especial.
- 
-Nacido el 31 de mayo de 1940, hijo de Don Francisco González, gran conocedor de la ganadería de José Luis Osborne Vázquez, Antonio reconoció que, si no hubiera sido por Galloso, probablemente habría sido mayoral como su padre.
- 
-Siendo niño con apenas 8 o 9 años, se puso por primera vez ante una becerra mansa y cuando Rafael Ortega lo vio no dudó en presentarlo ante todos los ganaderos de Andalucía. Su aventura torera comenzó en 1958 y debutó con picadores el 21 de septiembre de 1961 en Villamartín, logrando importantes triunfos que le llevaron a plazas importantes como Las Ventas de Madrid y la Monumental de Barcelona, así como a alcanzar grandes éxitos en El Puerto de Santa María.
- 
-En 1969 ingresó en las filas de subalterno y, poco después, se unió a la cuadrilla de José Luis Galloso, con quien compartió toda su carrera y a quien considera como un hermano: el octavo en una familia de siete hijos. Acompañó también en los paseíllos a los hermanos Emilio y Abel Oliva, a los novilleros Víctor Manuel y Marcos Cruz -también presente ayer, y a matadores como Rafael de Paula o Eduardo Dávila Miura. Gran conocedor del comportamiento del toro, exigente consigo mismo y con los demás, Antonio se mantuvo siempre fiel a Galloso, con quien compartió y comparte lazos afectivos profundos. Ayer recordaron juntos multitud de anécdotas y con especial emoción aquel festival celebrado el 15 de febrero de 1998 en la Plaza de El Puerto, que marcó el cierre de su carrera activa y en el que no faltaron Galloso, Celso Ortega -cuyo hijo y becerrista promesa de El Puerto también estaba ayer en primera fila-, Finito de Córdoba, El Litri, Rafael Camino, el Niño de la Capea, Victor Janeiro y Jesulín de Ubrique.
- 
- Ya retirado, continúa cada temporada en su plaza, ocupando su mismo abono. Una noche cargada de recuerdos, de risas y de interpelación con Galloso, donde rememoraron juntos también su temporada en América, donde no era como ahora, sino que se convivía con la cuadrilla durante seis meses, compartiendo la vida como una auténtica familia. Reconoció ser mejor con el capote que con las banderillas, pero lo que está claro es que es ha sido un excelente maestro de plata con corazón de oro.
- 
-Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimiento a toda una vida dedicada al mundo del toro, y al Club Taurino El Rabo por mantener viva la tradición taurina y por promover el reconocimiento a quienes han hecho grande nuestra historia taurina.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-       title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
-    image: "/images/entrevista.jpg",
-    category: "Actualidad",
-    date: "29 de noviembre de 2025",
-    fullContent: `**David Galván**
-encara uno de los momentos más determinantes de su carrera. El matador gaditano, que con constancia, sensibilidad y una evolución silenciosa ha pasado de ser una promesa a convertirse en un nombre respetado dentro del escalafón, atraviesa un proceso de madurez profesional que despierta ilusión entre la afición.
-
-Tras una temporada marcada por la solidez, actuaciones de gran calado y tardes en las que dejó patente la profundidad de su concepto, Galván ha logrado situarse como uno de los toreros con mayor poso y proyección. Su expresión clásica, su temple y una ambición cada vez más nítida lo consolidan como un perfil que merece ser escuchado.
-
-**¿Cómo afronta usted la temporada que viene, teniendo en cuenta lo importante que ha sido esta?**
-
-La temporada 2026 la afronto con la ilusión de dar mi mejor versión en cada actuación, mostrar mi personalidad en su máxima dimensión y seguir sintiendo a la afición ilusionada por ver a David Galván. 
-
-**Se ha creado un movimiento “galvanista” ya que el buen publico, admira que un concepto tan puro como el suyo, no cambie con corridas duras. ¿Le gusta a usted que le encasillen con ese tipo de ganaderias o encastes? o preferiria torear corridas mas “comodas” y en otro tipo de carteles.**
-
-Es muy bonito sentir ese movimiento “Galvanista” que he vivido este año y sigo viviendo. Recibo el entusiasmo constante de aficionados de todas las edades de la geografía europea y americana, lo que supone una gran felicidad para mí. 
-Considero que no estoy encasillado en nada, no me pongo limitaciones, y es por este motivo que he conseguido desarrollar mi toreo y triunfar con todo tipo de ganaderías y encantes. 
-
-**Perú y México, son dos paises con los que mantiene un idilio constante, y en los que se le espera con gran entusiasmo; ¿que opina de estos dos paises? ¿Y de los constantes ataques antitaurinos en mexico? ( se han vuelto a prohibir los toros en Ciudad Juarez)**
-
-Tanto Perú como México son dos países que llevo en mi corazón. Me encanta torear en ellos y sentir el calor de sus aficiones. Siempre tendrán mi apoyo incondicional. 
-
-**¿Como quiere que se le recuerde, cuales son sus mayores aspiraciones en este mundo?**
-
-Como artista y como persona lo que más me llena es sentir que la gente se emociona y es feliz a través de mi expresión, esta es la mayor satisfacción y aspiración. 
-
- **Su concepto del toreo ha sido definido muchas veces como “clásico y eterno”. ¿Cree usted que en la actualidad, donde abundan estilos más efectistas, sigue habiendo espacio para ese clasicismo? ¿Qué mensaje quiere transmitir cada vez que se pone delante de un toro?**
-
-Particularmente siento que los públicos si se identifican con mi toreo. Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal. Me gusta la originalidad en el ruedo y que no haya nada previsible ni encorsetado.
-
-**En España, la temporada pasada dejó tardes memorables en plazas de primera. ¿Qué importancia le da a triunfar en Madrid o Sevilla frente a otras plazas más pequeñas? ¿Considera que el público de cada ciudad entiende y valora de manera distinta su tauromaquia?**
-
-Mi filosofía como torero pasa por expresar mi toreo con la misma entrega y compromiso independientemente de la categoría reglamentaria de la plaza. El público acude a la plaza y merece ver la mejor versión de uno mismo. 
-
-En plazas de primera es cierto que ha habido faenas importantes en este año 2025, en las que he sentido el reconocimientos de aficiones que son exigentes y dan crédito. Inolvidables han sido las faenas en Sevilla y Málaga, el San Isidro de esta temporada o las tardes de capacidad en Dax y Albacete. 
-
-
-
-**La juventud se acerca cada vez más al toreo, pero también se enfrenta a críticas sociales. ¿Qué consejo daría usted a los jóvenes que sueñan con ser toreros, y cómo cree que deberían afrontar las presiones externas que cuestionan la fiesta?**
-
-Que persigan su sueño con fe, sin complejos y sintiéndose libres. 
-
-**El toro bravo es el eje de todo este mundo. ¿Qué opinión tiene usted sobre la evolución de las ganaderías actuales? ¿Prefiere enfrentarse a hierros de máxima exigencia que ponen a prueba al torero, o cree que también es necesario buscar variedad para mostrar diferentes matices de su arte?**
-
-El nivel de las ganaderías, cada una en su contexto y personalidad, en la actualidad es muy alto. Los ganaderos están haciendo una gran labor. 
-Para el aficionado considero que causa mayor interés la variedad que la monotonía. Me preparo diariamente para tener registros suficientes para expresar mi toreo a todo tipo de toros independientemente de su condición o ganaderia, siempre fiel a mi sello personal.`,
-  footerImage1: "/images/victorluengo.jpg",
-  footerImage1Caption: "Fotos de Víctor Luengo",
-  footerImage2: "/images/davidgalvan3.jpg",
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1003,
-       title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
-    image: "/images/torismo.jpg",
-    category: "Actualidad",
-    date: "29 de noviembre de 2025",
-    fullContent: `La comparecencia de Rafael García Garrido, presidente de Plaza 1, en el ciclo de tertulias invernales de la Asociación El Toro de Madrid dejó varios titulares relevantes. Entre ellos destacó el anuncio de algunas de las ganaderías que pisarán el ruedo de Las Ventas durante la próxima temporada, con una clara apuesta por el perfil más torista del campo bravo español.
-
-Ganaderías como Cuadri, Saltillo, Palha, Partido de Resina o Dolores Aguirre figuran entre los hierros que formarán parte de la programación venteña en 2026, consolidando así un bloque ganadero de marcado carácter torista dentro de la estructura de la temporada.
-
-García Garrido también confirmó la ausencia de algunos hierros emblemáticos debido a la falta de reses disponibles, entre ellos Miura, Santiago Domecq y Baltasar Ibán. En cuanto a Valdellán —cuya presencia generó interés durante la tertulia—, el empresario señaló que su participación continúa siendo una incógnita de cara al próximo año.`,
-  author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1004,
-       title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
-    image: "/images/reemplazo.jpg",
-    category: "Actualidad",
-    date: "29 de noviembre de 2025",
-    fullContent: `En la mañana de ayer , viernes 28 de noviembre, el claustro mudéjar el Colegio Montaigne Compañía de María, en Jerez de la Frontera, se convirtió en el escenario de una jornada cargada de emoción, tradición y aprendizaje. En este histórico espacio, el torero David de Miranda ofreció una interesante charla a los estudiantes, compartiendo sus experiencias y reflexiones sobre el toreo, su vida y su carrera. El evento, que contó con la moderación del periodista Óscar Torres, de Onda Jerez, estuvo dirigido a niños y jóvenes de entre 3 y 17 años, quienes mostraron un notable interés por el mundo taurino.
- 
-La jornada se inició con la intervención de la profesora y aficionada taurina Elena Aguilar Valderas, quien, además de ser jurado del circuito de novilladas de las escuelas andaluzas, es docente en el colegio. Aguilar Valderas introdujo a los alumnos al mundo del toreo, destacando la
-importancia de la cultura taurina en la ciudad de Jerez, considerada la Cuna del Toro Bravo. A continuación, Francisco Marín, director del colegio, expresó su satisfacción por poder contar con la presencia de un torero de la talla de David de Miranda, cuya historia inspira tanto a los jóvenes como a los adultos.
- 
-La charla, moderada por Óscar Torres, se centró en el universo del toreo y las vivencias de David de Miranda, quien se mostró cercano y sincero con los estudiantes. Durante su intervención, el torero de Trigueros destacó la importancia de la soledad en el ruedo, señalando que "el torero está solo frente al toro, pero esa soledad, aunque inquietante, es parte del rito, del sacrificio y del desafío". Con una mirada profunda, añadió que el miedo y la incertidumbre son inseparables del oficio, pero que "los sueños y las ilusiones son más fuertes y superan cualquier temor".
- 
-David repasó algunos de los momentos más destacados de su carrera, como su impresionante debut en la Plaza de Las Ventas, -Puerta Grande en su confirmación de Alternativa-, la Puerta de Príncipe de Sevilla, la histórica tarde de Málaga, así como otras tardes memorables como Linares, Almería, Soria, Pozoblanco...También compartió con los estudiantes la dura experiencia de la grave lesión que sufrió en Toro (Zamora), un accidente que marcó un antes y un después en su carrera. Sin embargo, el diestro destacó la resiliencia que le permitió superar ese difícil momento, y cómo el apoyo de su familia y de la afición le ayudó a recuperarse y seguir adelante.
- 
-El torero también habló con entusiasmo de su futuro en el toreo, mencionando su colaboración con el maestro Enrique Ponce, uno de los grandes referentes del toreo mundial. "Nadie me ha regalado nada", afirmó, "y eso es lo que me impulsa a seguir adelante con la misma mentalidad y actitud, tanto en lo profesional como en lo personal". Para David, el toreo es un arte único, al igual que la infancia, y en ese sentido, instó a los jóvenes a luchar por sus sueños para ser felices con las profesiones que elijan, sin rendirse ante las dificultades.
- 
-La jornada culminó con un emotivo acto en la Capilla de La Niña María, donde David de Miranda recibió la bendición de una medalla de la compañía de la Virgen, un regalo que le hicieron los alumnos del colegio. Después, el torero firmó numerosos capotes y muletas, y tuvo la oportunidad de torear "in situ" con los jóvenes de la escuela taurina del colegio, quienes demostraron una gran pericia en el manejo de los hábitos de torear. El onubense compartió esta experiencia con su hombre de plata Fernando Pereira que también aleccionó a varios jóvenes.
- 
-El Colegio Montaigne Compañía de María, con su escuela taurina en el patio-recreo, sigue cultivando el amor y respeto por la tradición taurina y esta jornada con David de Miranda fue una oportunidad única para que los niños y jóvenes del centro se acercaran de primera mano a la vida de un torero.
- 
-Al final, todos compartieron la sensación de que el toreo, más allá de ser un arte, es una pasión que se lleva en el corazón desde la infancia y que, como los sueños, nunca se debe dejar de perseguir.`,
-  footerImage1: "/images/davidmiranda2.jpg",
-  author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
   showAuthorHeader: true
   }
 ];
