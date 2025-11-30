@@ -328,11 +328,39 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026
-    El diestro será el encargado de acompañar al granadino en cada compromiso`,
+   title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "30 de noviembre de 2025",
+    fullContent: `La empresa **Espacio Nautalia 360** se encuentra en la fase definitiva de preparación de los carteles de la Feria de Fallas, el primer gran compromiso taurino del calendario. El ciclo, que se celebrará del **8 al 19 de marzo**, volverá a reunir a grandes nombres de la tauromaquia, entre ellos **Alejandro Talavante**, que hará doble presencia en el abono.
+
+Uno de los focos principales del serial será la reaparición en Valencia de **Roca Rey**, prevista para el sábado **14 de marzo**, en uno de los carteles con más tirón de la feria. Compartirá paseíllo con Talavante y con **Samuel Navalón**, que volverá al coso valenciano ahora como matador de toros, después de la grave lesión sufrida en Algemesí.
+
+El Día de **San José, 19 de marzo**, también presenta una de las combinaciones más atractivas. Los toros de **Núñez del Cuvillo** están reservados para **Talavante, Juan Ortega y Emilio de Justo**, una terna que despierta gran expectación. Por su parte, el domingo 15 será el turno de los astados de **Jandilla**, para un cartel formado por **Sebastián Castella, José María Manzanares y Pablo Aguado.**
+
+Entre las novedades más comentadas figura el mano a mano entre **Borja Jiménez y Tomás Rufo**, que se anunciará casi con total seguridad con la corrida de **Santiago Domecq**, hierro que dejó una gran impresión en Valencia durante la Feria de Julio de 2024. El elenco ganadero se completará con **Puerto de San Lorenzo**, para los que suenan nombres como **Miguel Ángel Perera o Víctor Hernández**, y con la corrida de La Quinta, encargada de abrir el ciclo taurino fuerte el próximo 13 de marzo.
+
+Salvo cambios derivados de las últimas negociaciones, la feria quedaría configurada así:
+
+– **S 08/03**: Novillada con picadores
+– **V 13/03**: Corrida de toros (La Quinta)
+– **S 14/03**: Alejandro Talavante, Roca Rey y Samuel Navalón (Victoriano del Río)
+– **D 15/03**: Sebastián Castella, José María Manzanares y Pablo Aguado (Jandilla)
+– **L 16/03**: Novillada con picadores
+– **M 17/03**: Corrida de toros
+– **X 18/03**: Corrida de toros
+– **J 19/03**: Alejandro Talavante, Emilio de Justo y Juan Ortega (Núñez del Cuvillo)`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
+   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
+	excerpt: " El diestro será el encargado de acompañar al granadino en cada compromiso",
     fullContent: `El diestro, Domingo López - Chaves, se incorpora al equipo de David Fandila “El Fandi” para la temporada 2026, convirtiéndose en su hombre de confianza para acompañarle en cada compromiso.
 
 López - Chaves ejercerá labores de campo y será su principal apoyo mientras que las tareas de despacho corresponderán a Alberto García, reciente apoderado del torero granadino.
@@ -351,11 +379,39 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
 const latestNews: NewsItem[] = [
 	{ 
     id: 1,
-   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026
-    El diestro será el encargado de acompañar al granadino en cada compromiso`,
+   title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "30 de noviembre de 2025",
+    fullContent: `La empresa **Espacio Nautalia 360** se encuentra en la fase definitiva de preparación de los carteles de la Feria de Fallas, el primer gran compromiso taurino del calendario. El ciclo, que se celebrará del **8 al 19 de marzo**, volverá a reunir a grandes nombres de la tauromaquia, entre ellos **Alejandro Talavante**, que hará doble presencia en el abono.
+
+Uno de los focos principales del serial será la reaparición en Valencia de **Roca Rey**, prevista para el sábado **14 de marzo**, en uno de los carteles con más tirón de la feria. Compartirá paseíllo con Talavante y con **Samuel Navalón**, que volverá al coso valenciano ahora como matador de toros, después de la grave lesión sufrida en Algemesí.
+
+El Día de **San José, 19 de marzo**, también presenta una de las combinaciones más atractivas. Los toros de **Núñez del Cuvillo** están reservados para **Talavante, Juan Ortega y Emilio de Justo**, una terna que despierta gran expectación. Por su parte, el domingo 15 será el turno de los astados de **Jandilla**, para un cartel formado por **Sebastián Castella, José María Manzanares y Pablo Aguado.**
+
+Entre las novedades más comentadas figura el mano a mano entre **Borja Jiménez y Tomás Rufo**, que se anunciará casi con total seguridad con la corrida de **Santiago Domecq**, hierro que dejó una gran impresión en Valencia durante la Feria de Julio de 2024. El elenco ganadero se completará con **Puerto de San Lorenzo**, para los que suenan nombres como **Miguel Ángel Perera o Víctor Hernández**, y con la corrida de La Quinta, encargada de abrir el ciclo taurino fuerte el próximo 13 de marzo.
+
+Salvo cambios derivados de las últimas negociaciones, la feria quedaría configurada así:
+
+– **S 08/03**: Novillada con picadores
+– **V 13/03**: Corrida de toros (La Quinta)
+– **S 14/03**: Alejandro Talavante, Roca Rey y Samuel Navalón (Victoriano del Río)
+– **D 15/03**: Sebastián Castella, José María Manzanares y Pablo Aguado (Jandilla)
+– **L 16/03**: Novillada con picadores
+– **M 17/03**: Corrida de toros
+– **X 18/03**: Corrida de toros
+– **J 19/03**: Alejandro Talavante, Emilio de Justo y Juan Ortega (Núñez del Cuvillo)`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
+	excerpt: " El diestro será el encargado de acompañar al granadino en cada compromiso",
     fullContent: `El diestro, Domingo López - Chaves, se incorpora al equipo de David Fandila “El Fandi” para la temporada 2026, convirtiéndose en su hombre de confianza para acompañarle en cada compromiso.
 
 López - Chaves ejercerá labores de campo y será su principal apoyo mientras que las tareas de despacho corresponderán a Alberto García, reciente apoderado del torero granadino.
@@ -370,7 +426,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -399,7 +455,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 3,
+    id: 4,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -426,7 +482,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Actualidad",
@@ -477,11 +533,11 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   footerImage1Caption: "Fotos de Víctor Luengo",
   footerImage2: "/images/davidgalvan3.jpg",
   author: "Eduardo Elvira",
-  authorLogo: "/images/edu.jpg",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 6,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -496,7 +552,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 7,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -523,7 +579,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -552,7 +608,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 9,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -573,7 +629,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 10,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -589,7 +645,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 11,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -665,7 +721,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: 12,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -689,7 +745,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 12,
+    id: 13,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
