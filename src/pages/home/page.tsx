@@ -350,8 +350,8 @@ Salvo cambios derivados de las últimas negociaciones, la feria quedaría config
 – **M 17/03**: Corrida de toros
 – **X 18/03**: Corrida de toros
 – **J 19/03**: Alejandro Talavante, Emilio de Justo y Juan Ortega (Núñez del Cuvillo)`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
