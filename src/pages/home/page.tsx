@@ -485,7 +485,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
     id: 5,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
-    category: "Actualidad",
+    category: "Entrevistas",
     date: "29 de noviembre de 2025",
     fullContent: `**David Galván**
 encara uno de los momentos más determinantes de su carrera. El matador gaditano, que con constancia, sensibilidad y una evolución silenciosa ha pasado de ser una promesa a convertirse en un nombre respetado dentro del escalafón, atraviesa un proceso de madurez profesional que despierta ilusión entre la afición.
