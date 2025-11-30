@@ -329,7 +329,7 @@ const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
-    image: "/images/.jpg",
+    image: "/images/espacio.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
     fullContent: `La empresa **Espacio Nautalia 360** se encuentra en la fase definitiva de preparación de los carteles de la Feria de Fallas, el primer gran compromiso taurino del calendario. El ciclo, que se celebrará del **8 al 19 de marzo**, volverá a reunir a grandes nombres de la tauromaquia, entre ellos **Alejandro Talavante**, que hará doble presencia en el abono.
@@ -380,7 +380,7 @@ const latestNews: NewsItem[] = [
 	{ 
     id: 1,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
-    image: "/images/.jpg",
+    image: "/images/espacio.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
     fullContent: `La empresa **Espacio Nautalia 360** se encuentra en la fase definitiva de preparación de los carteles de la Feria de Fallas, el primer gran compromiso taurino del calendario. El ciclo, que se celebrará del **8 al 19 de marzo**, volverá a reunir a grandes nombres de la tauromaquia, entre ellos **Alejandro Talavante**, que hará doble presencia en el abono.
