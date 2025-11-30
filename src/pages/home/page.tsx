@@ -351,6 +351,26 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
 const latestNews: NewsItem[] = [
  	{ 
     id: 1,
+    title: "Domingo López - Chaves se incorpora al equipo de El "Fandi" para la temporada 2026",
+	"El diestro será el encargado de acompañar al granadino en cada compromiso",
+    image: "/images/domingo.jpg",
+    category: "Actualidad",
+    date: "30 de noviembre de 2025",
+    fullContent: `El diestro, Domingo López - Chaves, se incorpora al equipo de David Fandila “El Fandi” para la temporada 2026, convirtiéndose en su hombre de confianza para acompañarle en cada compromiso.
+
+López - Chaves ejercerá labores de campo y será su principal apoyo mientras que las tareas de despacho corresponderán a Alberto García, reciente apoderado del torero granadino.
+
+“Me veo cerca de una figura del toreo y todo lo que pueda ofrecer y aportar de mi a David, lo tendrá”, ha asegurado López - Chaves.
+
+Amigos desde hace años, ahora se convierten en un tándem profesional de éxito para seguir avanzando en sus trayectorias en el mundo del toro.
+
+“Siempre has estado a mi lado por ser un ejemplo dentro y fuera de la plaza. Y ahora no puedo estar más feliz e ilusionado de que formes parte de este nuevo proyecto”, ha asegurado “El Fandi” en su cuenta de Instagram haciendo oficial la incorporación.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -379,7 +399,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 2,
+    id: 3,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -406,7 +426,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Actualidad",
@@ -461,7 +481,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -476,7 +496,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 6,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -503,7 +523,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 7,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -532,7 +552,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -553,7 +573,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 9,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -569,7 +589,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 10,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -645,7 +665,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 11,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -669,7 +689,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: 12,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
