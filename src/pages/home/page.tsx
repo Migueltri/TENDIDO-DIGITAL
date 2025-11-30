@@ -368,7 +368,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
-  }
+  },
 	{ 
     id: 2,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
