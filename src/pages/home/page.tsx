@@ -328,8 +328,8 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: "Domingo López - Chaves se incorpora al equipo de El "Fandi" para la temporada 2026",
-	"El diestro será el encargado de acompañar al granadino en cada compromiso",
+   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026
+    El diestro será el encargado de acompañar al granadino en cada compromiso`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
@@ -349,10 +349,10 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
 ];
 
 const latestNews: NewsItem[] = [
- 	{ 
+	{ 
     id: 1,
-    title: "Domingo López - Chaves se incorpora al equipo de El "Fandi" para la temporada 2026",
-	"El diestro será el encargado de acompañar al granadino en cada compromiso",
+   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026
+    El diestro será el encargado de acompañar al granadino en cada compromiso`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
     date: "30 de noviembre de 2025",
@@ -368,7 +368,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
-  },
+  }
 	{ 
     id: 2,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
