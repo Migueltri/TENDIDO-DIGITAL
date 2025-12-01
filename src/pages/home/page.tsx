@@ -2889,6 +2889,26 @@ document.body.style.overflow = 'unset';
     item.title.toLowerCase().includes('entrevista')
   );
 
+const SponsorBanner = () => (
+  <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+    <a
+      href="https://tauromania.es"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center justify-center space-y-3"
+    >
+      <img
+        src="/images/tauromania.png"
+        alt="TauroManía logo"
+        className="w-52 md:w-64 object-contain"
+      />
+      <p className="text-gray-700 font-medium text-sm text-center">
+        Colaboración especial con <span className="font-bold text-yellow-600">TauroManía</span> — moda taurina.
+      </p>
+    </a>
+  </div>
+);
+	  
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="text-center mb-12">
@@ -3362,12 +3382,15 @@ return (
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {getFilteredNews().slice(0, visibleNewsCount).map((news) => (
-              <article 
-                key={news.id} 
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-                onClick={() => openNewsModal(news)}
-              >
+           {getFilteredNews()
+  .slice(0, visibleNewsCount)
+  .map((news, index) => (
+    <>
+      <article
+        key={news.id}
+        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+        onClick={() => openNewsModal(news)}
+      >
                 <div className="relative overflow-hidden">
                   <img
                     src={news.image}
@@ -3421,8 +3444,10 @@ return (
                     </button>
                   </div>
               </article>
-            ))}
-
+               {/* Inserta el banner cada 3 noticias */}
+      {(index + 1) % 3 === 0 && <SponsorBanner />}
+    </>
+  ))}
 			  </div>
 			
           {/* Load More Button */}
