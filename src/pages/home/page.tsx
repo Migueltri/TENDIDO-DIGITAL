@@ -375,9 +375,9 @@ Los premios entregados durante la gala fueron los siguientes:
 – Detalle para el recuerdo de la temporada: **Saúl Jiménez Fortes**
 
 La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la tradición taurina en **Arganda del Rey**, consolidándose como un evento de referencia que reconoce la excelencia y el esfuerzo de todos los profesionales y participantes que forman parte de su feria.`,
-    author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
   },
 	{ 
     id: 1002,
@@ -452,9 +452,9 @@ Los premios entregados durante la gala fueron los siguientes:
 – Detalle para el recuerdo de la temporada: **Saúl Jiménez Fortes**
 
 La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la tradición taurina en **Arganda del Rey**, consolidándose como un evento de referencia que reconoce la excelencia y el esfuerzo de todos los profesionales y participantes que forman parte de su feria.`,
-    author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
   },
 	{ 
     id: 3,
