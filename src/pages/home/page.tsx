@@ -2884,11 +2884,6 @@ document.body.style.overflow = 'unset';
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
 
-  if (activeTab === 'entrevistas') {
-  const entrevistas = latestNews.filter(item => 
-    item.title.toLowerCase().includes('entrevista')
-  );
-
 const SponsorBanner = () => (
   <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
     <a
@@ -2908,6 +2903,11 @@ const SponsorBanner = () => (
     </a>
   </div>
 );
+	
+  if (activeTab === 'entrevistas') {
+  const entrevistas = latestNews.filter(item => 
+    item.title.toLowerCase().includes('entrevista')
+  );
 	  
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
