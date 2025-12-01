@@ -2898,7 +2898,7 @@ const SponsorBanner = () => (
         className="w-52 md:w-64 object-contain"
       />
       <p className="text-gray-700 font-medium text-sm text-center">
-        Colaboración especial con <span className="font-bold text-yellow-600">TauroManía</span> — moda taurina.
+        Colaboración <span className="font-bold text-yellow-600">- TauroManía</span>
       </p>
     </a>
   </div>
