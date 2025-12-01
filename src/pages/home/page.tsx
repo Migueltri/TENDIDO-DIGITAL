@@ -326,8 +326,67 @@ const getFilteredNews = () => {
 };
 
 const featuredNews: NewsItem[] = [
-	{ 
+  { 
     id: 1000,
+    title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
+    image: "/images/manuelamador.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `El empresario y matador de toros **Manuel Amador** es el nuevo apoderado de **Samuel Navalón** tras llegar a un acuerdo de apoderamiento con el clásico apretón de manos y por tiempo indefinido. Una nueva etapa entre ambos con el objetivo de estar presentes en las ferias más importantes de la temporada.
+
+Navalón se encuentra en el **proceso de recuperación** de la gravísima cornada que sufrió el pasado mes de septiembre en Algemesí después de una temporada 2025 con importantes triunfos. El valenciano destacó en plazas como **Madrid, Sevilla, Arles, Alicante, Albacete o Ciudad Real**, entre otras.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },	
+	{ 
+    id: 1001,
+    title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
+    image: "/images/tauromania.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `Tauro Manía nació de una tarde inolvidable en Las Ventas. El 8 de junio, durante la corrida de la Hispanidad en la que Morante abrió la Puerta Grande, uno de los actuales fundadores quiso comprar una camiseta de José Antonio Morante de la Puebla , pero no encontró ninguna con buen diseño ni a un precio razonable. De esa decepción surgió una idea que, dos meses después, en agosto, comenzó a tomar forma hasta lanzar su primer modelo a principios de septiembre.
+
+Detrás de la marca están dos chicos que acaban de cumplir la mayoría de edad y que han querido unir dos pilares importantes en su vida: la fe cristiana y la tauromaquia. Su objetivo es claro: dar visibilidad al toreo, acercarlo a más gente y ofrecer diseños significativos sin precios elevados. “Preferimos el reconocimiento antes que el dinero”, aseguran.
+
+Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web https://tauromania.es/ y hacerse con sus camisetas.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+   { 
+    id: 1002,
+    title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
+    image: "/images/varios5.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `La plaza de Toros de las Ventas acogerá 2 carteles importantes para la temporada 2026.
+
+Según a podido saber Tendido Digital, la empresa Plaza 1 tendría ya concretados dos carteles de máxima importancia en el serial taurino de San isidro 2026.
+Los festejos tendrán lugar los días **7 y 14 de Junio**.
+El primero de ellos: día de la beneficencia. Albergará un cartel que combina temple, taquilla y juventud con **Talavante, Roca Rey y Víctor Hernández** que lidiarán toros de **Victoriano del Río**, una de las grandes triunfadoras de la temporada pasada.
+
+Por otra parte el coso madrileño se prepara para acoger una gesta histórica en la corrida **In Memorian a Rafael de Paula**, Borja Jiménez se encerrara en solitario con 6 toros de **Victoriano del Río y Garcigrande**.
+
+A falta de confirmación oficial y cerca de dos meses antes del anuncio de las fechas, los carteles quedan de la siguiente manera:
+
+Domingo, 7 de junio:
+Toros de Victoriano del Río
+– Talavante
+– Roca Rey
+– Víctor Hernández
+
+Domingo, 14 de junio:
+Corrida In Memorian Rafael de Paula
+Toros de Victoriano del Río y Garcigrande
+
+–Borja Jiménez como único espada`,
+  author: "Arnau Argulló",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1003,
     title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
     image: "/images/cabañito.jpg",
 	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
@@ -345,7 +404,7 @@ Los buenos resultados no se limitaron a Madrid: este año también firmaron actu
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1004,
    title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
     image: "/images/premios.jpg",
     category: "Actualidad",
@@ -380,7 +439,7 @@ La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la trad
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+    id: 1005,
    title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
     image: "/images/danielluque1.jpg",
     category: "Actualidad",
@@ -403,8 +462,67 @@ Apoderado **Antonio Barrera**`,
 ];
 
 const latestNews: NewsItem[] = [
-	{ 
+   { 
     id: 1,
+    title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
+    image: "/images/manuelamador.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `El empresario y matador de toros **Manuel Amador** es el nuevo apoderado de **Samuel Navalón** tras llegar a un acuerdo de apoderamiento con el clásico apretón de manos y por tiempo indefinido. Una nueva etapa entre ambos con el objetivo de estar presentes en las ferias más importantes de la temporada.
+
+Navalón se encuentra en el **proceso de recuperación** de la gravísima cornada que sufrió el pasado mes de septiembre en Algemesí después de una temporada 2025 con importantes triunfos. El valenciano destacó en plazas como **Madrid, Sevilla, Arles, Alicante, Albacete o Ciudad Real**, entre otras.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },	
+	{ 
+    id: 2,
+    title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
+    image: "/images/tauromania.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `Tauro Manía nació de una tarde inolvidable en Las Ventas. El 8 de junio, durante la corrida de la Hispanidad en la que Morante abrió la Puerta Grande, uno de los actuales fundadores quiso comprar una camiseta de José Antonio Morante de la Puebla , pero no encontró ninguna con buen diseño ni a un precio razonable. De esa decepción surgió una idea que, dos meses después, en agosto, comenzó a tomar forma hasta lanzar su primer modelo a principios de septiembre.
+
+Detrás de la marca están dos chicos que acaban de cumplir la mayoría de edad y que han querido unir dos pilares importantes en su vida: la fe cristiana y la tauromaquia. Su objetivo es claro: dar visibilidad al toreo, acercarlo a más gente y ofrecer diseños significativos sin precios elevados. “Preferimos el reconocimiento antes que el dinero”, aseguran.
+
+Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web https://tauromania.es/ y hacerse con sus camisetas.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+   { 
+    id: 3,
+    title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
+    image: "/images/varios5.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `La plaza de Toros de las Ventas acogerá 2 carteles importantes para la temporada 2026.
+
+Según a podido saber Tendido Digital, la empresa Plaza 1 tendría ya concretados dos carteles de máxima importancia en el serial taurino de San isidro 2026.
+Los festejos tendrán lugar los días **7 y 14 de Junio**.
+El primero de ellos: día de la beneficencia. Albergará un cartel que combina temple, taquilla y juventud con **Talavante, Roca Rey y Víctor Hernández** que lidiarán toros de **Victoriano del Río**, una de las grandes triunfadoras de la temporada pasada.
+
+Por otra parte el coso madrileño se prepara para acoger una gesta histórica en la corrida **In Memorian a Rafael de Paula**, Borja Jiménez se encerrara en solitario con 6 toros de **Victoriano del Río y Garcigrande**.
+
+A falta de confirmación oficial y cerca de dos meses antes del anuncio de las fechas, los carteles quedan de la siguiente manera:
+
+Domingo, 7 de junio:
+Toros de Victoriano del Río
+– Talavante
+– Roca Rey
+– Víctor Hernández
+
+Domingo, 14 de junio:
+Corrida In Memorian Rafael de Paula
+Toros de Victoriano del Río y Garcigrande
+
+–Borja Jiménez como único espada`,
+  author: "Arnau Argulló",
+  authorLogo: "/images/tendidodigitallogosimple.png",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 4,
     title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
     image: "/images/cabañito.jpg",
 	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
@@ -422,7 +540,7 @@ Los buenos resultados no se limitaron a Madrid: este año también firmaron actu
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 5,
    title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
     image: "/images/premios.jpg",
     category: "Actualidad",
@@ -457,7 +575,7 @@ La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la trad
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 6,
    title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
     image: "/images/danielluque1.jpg",
     category: "Actualidad",
@@ -478,7 +596,7 @@ Apoderado **Antonio Barrera**`,
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 7,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
     image: "/images/espacio.jpg",
     category: "Actualidad",
@@ -506,7 +624,7 @@ Salvo cambios derivados de las últimas negociaciones, la feria quedaría config
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 8,
    title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
@@ -526,7 +644,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 9,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -555,7 +673,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 7,
+    id: 10,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -582,7 +700,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 11,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Entrevistas",
@@ -637,7 +755,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 12,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -652,7 +770,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 13,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -679,7 +797,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: 14,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -708,7 +826,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 12,
+    id: 15,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -729,7 +847,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 13,
+    id: 16,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -745,7 +863,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 14,
+    id: 17,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -821,7 +939,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: 18,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -845,7 +963,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 16,
+    id: 19,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -860,7 +978,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 17,
+    id: 20,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -879,7 +997,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 20,
+    id: 21,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
