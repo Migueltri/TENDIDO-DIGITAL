@@ -349,7 +349,7 @@ Navalón se encuentra en el **proceso de recuperación** de la gravísima cornad
 
 Detrás de la marca están dos chicos que acaban de cumplir la mayoría de edad y que han querido unir dos pilares importantes en su vida: la fe cristiana y la tauromaquia. Su objetivo es claro: dar visibilidad al toreo, acercarlo a más gente y ofrecer diseños significativos sin precios elevados. “Preferimos el reconocimiento antes que el dinero”, aseguran.
 
-Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web https://tauromania.es/ y hacerse con sus camisetas.`,
+Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web <a href="https://tauromania.es" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:underline">https://tauromania.es</a> y hacerse con sus camisetas.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -485,7 +485,7 @@ Navalón se encuentra en el **proceso de recuperación** de la gravísima cornad
 
 Detrás de la marca están dos chicos que acaban de cumplir la mayoría de edad y que han querido unir dos pilares importantes en su vida: la fe cristiana y la tauromaquia. Su objetivo es claro: dar visibilidad al toreo, acercarlo a más gente y ofrecer diseños significativos sin precios elevados. “Preferimos el reconocimiento antes que el dinero”, aseguran.
 
-Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web https://tauromania.es/ y hacerse con sus camisetas.`,
+Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web <a href="https://tauromania.es" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:underline">https://tauromania.es</a> y hacerse con sus camisetas.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
