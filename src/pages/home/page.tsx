@@ -328,48 +328,74 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-   title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
-    image: "/images/espacio.jpg",
+    title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
+    image: "/images/cabañito.jpg",
+	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
     category: "Actualidad",
-    date: "30 de noviembre de 2025",
-    fullContent: `La empresa **Espacio Nautalia 360** se encuentra en la fase definitiva de preparación de los carteles de la Feria de Fallas, el primer gran compromiso taurino del calendario. El ciclo, que se celebrará del **8 al 19 de marzo**, volverá a reunir a grandes nombres de la tauromaquia, entre ellos **Alejandro Talavante**, que hará doble presencia en el abono.
+    date: "1 de Diciembre de 2025",
+    fullContent: `La ganadería de **Partido de Resina**, una de las grandes revelaciones de la temporada 2025 en **Las Ventas**, volverá al coso madrileño el próximo año con **una corrida de toros y una novillada ya reseñadas por el veedor de la plaza**, Antonio Cutiño. La corrida se anunciaría en la Feria de San Isidro, mientras que el lote de utreros se lidiaría a lo largo de la temporada.
 
-Uno de los focos principales del serial será la reaparición en Valencia de **Roca Rey**, prevista para el sábado **14 de marzo**, en uno de los carteles con más tirón de la feria. Compartirá paseíllo con Talavante y con **Samuel Navalón**, que volverá al coso valenciano ahora como matador de toros, después de la grave lesión sufrida en Algemesí.
+El regreso de la histórica divisa supone una firme apuesta tras los éxitos alcanzados el **pasado septiembre, tanto en el desafío ganadero frente a Monteviejo como en la Corrida Concurso de Ganaderías**. En el desafío destacaron toros como “**Rosalero**”, de imponente presencia, con el que Luis Gerpe dio la vuelta al ruedo, y “**Higuerito**”, también muy comentado por su juego. En la corrida concurso, el jurado premió a “**Excitado**” como el toro más bravo del festejo, lidiado por Gómez del Pilar, que igualmente dio una vuelta al ruedo.
 
-El Día de **San José, 19 de marzo**, también presenta una de las combinaciones más atractivas. Los toros de **Núñez del Cuvillo** están reservados para **Talavante, Juan Ortega y Emilio de Justo**, una terna que despierta gran expectación. Por su parte, el domingo 15 será el turno de los astados de **Jandilla**, para un cartel formado por **Sebastián Castella, José María Manzanares y Pablo Aguado.**
+Partido de Resina mantiene la esencia del mítico encaste Pablo Romero: toros de morfología muy definida —el llamado “toro guapo”— y un comportamiento fogoso que transmite emoción. Tras décadas de altibajos, la ganadería vive una etapa de recuperación sustentada en un riguroso trabajo genético y sanitario.
 
-Entre las novedades más comentadas figura el mano a mano entre **Borja Jiménez y Tomás Rufo**, que se anunciará casi con total seguridad con la corrida de **Santiago Domecq**, hierro que dejó una gran impresión en Valencia durante la Feria de Julio de 2024. El elenco ganadero se completará con **Puerto de San Lorenzo**, para los que suenan nombres como **Miguel Ángel Perera o Víctor Hernández**, y con la corrida de La Quinta, encargada de abrir el ciclo taurino fuerte el próximo 13 de marzo.
-
-Salvo cambios derivados de las últimas negociaciones, la feria quedaría configurada así:
-
-– **S 08/03**: Novillada con picadores
-– **V 13/03**: Corrida de toros (La Quinta)
-– **S 14/03**: Alejandro Talavante, Roca Rey y Samuel Navalón (Victoriano del Río)
-– **D 15/03**: Sebastián Castella, José María Manzanares y Pablo Aguado (Jandilla)
-– **L 16/03**: Novillada con picadores
-– **M 17/03**: Corrida de toros
-– **X 18/03**: Corrida de toros
-– **J 19/03**: Alejandro Talavante, Emilio de Justo y Juan Ortega (Núñez del Cuvillo)`,
+Los buenos resultados no se limitaron a Madrid: este año también firmaron actuaciones destacadas en Cuéllar, con triunfos de Juan de Castilla y Jesús Enrique Colombo, y en Estella, donde Javier Castaño salió a hombros.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1001,
-   title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
-    image: "/images/domingo.jpg",
+   title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
+    image: "/images/premios.jpg",
     category: "Actualidad",
-    date: "30 de noviembre de 2025",
-	excerpt: " El diestro será el encargado de acompañar al granadino en cada compromiso",
-    fullContent: `El diestro, Domingo López - Chaves, se incorpora al equipo de David Fandila “El Fandi” para la temporada 2026, convirtiéndose en su hombre de confianza para acompañarle en cada compromiso.
+    date: "1 de Diciembre de 2025",
+    fullContent: `**Arganda del Rey** puso el broche de oro a la temporada taurina **2025** con la gala de entrega de los premios de la **XXXVI Vid de Oro**, celebrada en el Auditorio Montserrat Caballé, que volvió a llenarse para la ocasión. El acto, presentado por el periodista Javier Fernández-Mardomingo, se ha consolidado como una de las citas imprescindibles del circuito taurino nacional.
 
-López - Chaves ejercerá labores de campo y será su principal apoyo mientras que las tareas de despacho corresponderán a Alberto García, reciente apoderado del torero granadino.
+Durante la velada se reconocieron las actuaciones más destacadas de la feria del pasado mes de septiembre.
+**Julio Norte recibió el premio al triunfador de la Feria de la Vid de Oro 2025**, mientras que **Emiliano Osornio fue distinguido con la faena más artística tras su importante actuación en la feria madrileña**.
+**Saúl Jiménez Fortes** obtuvo el galardón **Detalle para el recuerdo de la temporada**.
+También fueron premiados el banderillero **Marcos Prieto**, **Jesús Romero**, **Álvaro de Faranda**, la ganadería **El Retamar** y **Cristian Restrepo**, entre otros protagonistas que dejaron su sello en la plaza argandeña.
 
-“Me veo cerca de una figura del toreo y todo lo que pueda ofrecer y aportar de mi a David, lo tendrá”, ha asegurado López - Chaves.
+Los premios entregados durante la gala fueron los siguientes:
+– Triunfador de la feria: **Julio Norte**
+– Faena más artística: **Emiliano Osornio**
+– Mejor par de banderillas: **Marcos Prieto**
+– Mejor estocada: **Jesús Romero**
+– Mejor brega: **Álvaro de Faranda**
+– Mejor novillada: **Ganadería El Retamar**
+– Novillo más bravo: **Nº 5 “General”, de El Retamar**
+– Triunfador de la Novillada de Promoción “Vid de Plata”: **Cristian Restrepo**
+– Mejor recortador: **Gonzalo Hernández “Guajiro”**
+– Mejor corredor: **Manuel Martín Carmona**
+– Corredor más arriesgado: **Javier Julián Alcázar**
+– Mejor recortador joven: **Aitor Moreno Ortiz**
+– Corredor revelación: **Rubén Vaquerizo**
+– Personaje más significativo: **Nicolás Madrid**
+– Detalle para el recuerdo de la temporada: **Saúl Jiménez Fortes**
 
-Amigos desde hace años, ahora se convierten en un tándem profesional de éxito para seguir avanzando en sus trayectorias en el mundo del toro.
+La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la tradición taurina en **Arganda del Rey**, consolidándose como un evento de referencia que reconoce la excelencia y el esfuerzo de todos los profesionales y participantes que forman parte de su feria.`,
+    author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+  },
+	{ 
+    id: 1002,
+   title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
+    image: "/images/danielluque1.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `El torero de Gerena Daniel Luque ya tiene cerrada su cuadrilla para la próxima temporada 2026. En ella se incorpora el banderillero sevillano Antonio Manuel Punta.
 
-“Siempre has estado a mi lado por ser un ejemplo dentro y fuera de la plaza. Y ahora no puedo estar más feliz e ilusionado de que formes parte de este nuevo proyecto”, ha asegurado “El Fandi” en su cuenta de Instagram haciendo oficial la incorporación.`,
+Así queda la cuadrilla de Daniel Luque de cara a la temporada 2026:
+
+Banderilleros, **Antonio Manuel Punta, Juan Contreras y ⁠Jesús Arruga.**
+
+Picadores, **José Manuel García "El Patilla" y ⁠Javier García "Jabato hijo".**
+
+Mozo de espadas, **Sergio Durán Luque**
+
+Apoderado **Antonio Barrera**`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
@@ -379,6 +405,80 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
 const latestNews: NewsItem[] = [
 	{ 
     id: 1,
+    title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
+    image: "/images/cabañito.jpg",
+	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `La ganadería de **Partido de Resina**, una de las grandes revelaciones de la temporada 2025 en **Las Ventas**, volverá al coso madrileño el próximo año con **una corrida de toros y una novillada ya reseñadas por el veedor de la plaza**, Antonio Cutiño. La corrida se anunciaría en la Feria de San Isidro, mientras que el lote de utreros se lidiaría a lo largo de la temporada.
+
+El regreso de la histórica divisa supone una firme apuesta tras los éxitos alcanzados el **pasado septiembre, tanto en el desafío ganadero frente a Monteviejo como en la Corrida Concurso de Ganaderías**. En el desafío destacaron toros como “**Rosalero**”, de imponente presencia, con el que Luis Gerpe dio la vuelta al ruedo, y “**Higuerito**”, también muy comentado por su juego. En la corrida concurso, el jurado premió a “**Excitado**” como el toro más bravo del festejo, lidiado por Gómez del Pilar, que igualmente dio una vuelta al ruedo.
+
+Partido de Resina mantiene la esencia del mítico encaste Pablo Romero: toros de morfología muy definida —el llamado “toro guapo”— y un comportamiento fogoso que transmite emoción. Tras décadas de altibajos, la ganadería vive una etapa de recuperación sustentada en un riguroso trabajo genético y sanitario.
+
+Los buenos resultados no se limitaron a Madrid: este año también firmaron actuaciones destacadas en Cuéllar, con triunfos de Juan de Castilla y Jesús Enrique Colombo, y en Estella, donde Javier Castaño salió a hombros.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+   title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
+    image: "/images/premios.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `**Arganda del Rey** puso el broche de oro a la temporada taurina **2025** con la gala de entrega de los premios de la **XXXVI Vid de Oro**, celebrada en el Auditorio Montserrat Caballé, que volvió a llenarse para la ocasión. El acto, presentado por el periodista Javier Fernández-Mardomingo, se ha consolidado como una de las citas imprescindibles del circuito taurino nacional.
+
+Durante la velada se reconocieron las actuaciones más destacadas de la feria del pasado mes de septiembre.
+**Julio Norte recibió el premio al triunfador de la Feria de la Vid de Oro 2025**, mientras que **Emiliano Osornio fue distinguido con la faena más artística tras su importante actuación en la feria madrileña**.
+**Saúl Jiménez Fortes** obtuvo el galardón **Detalle para el recuerdo de la temporada**.
+También fueron premiados el banderillero **Marcos Prieto**, **Jesús Romero**, **Álvaro de Faranda**, la ganadería **El Retamar** y **Cristian Restrepo**, entre otros protagonistas que dejaron su sello en la plaza argandeña.
+
+Los premios entregados durante la gala fueron los siguientes:
+– Triunfador de la feria: **Julio Norte**
+– Faena más artística: **Emiliano Osornio**
+– Mejor par de banderillas: **Marcos Prieto**
+– Mejor estocada: **Jesús Romero**
+– Mejor brega: **Álvaro de Faranda**
+– Mejor novillada: **Ganadería El Retamar**
+– Novillo más bravo: **Nº 5 “General”, de El Retamar**
+– Triunfador de la Novillada de Promoción “Vid de Plata”: **Cristian Restrepo**
+– Mejor recortador: **Gonzalo Hernández “Guajiro”**
+– Mejor corredor: **Manuel Martín Carmona**
+– Corredor más arriesgado: **Javier Julián Alcázar**
+– Mejor recortador joven: **Aitor Moreno Ortiz**
+– Corredor revelación: **Rubén Vaquerizo**
+– Personaje más significativo: **Nicolás Madrid**
+– Detalle para el recuerdo de la temporada: **Saúl Jiménez Fortes**
+
+La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la tradición taurina en **Arganda del Rey**, consolidándose como un evento de referencia que reconoce la excelencia y el esfuerzo de todos los profesionales y participantes que forman parte de su feria.`,
+    author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+  },
+	{ 
+    id: 3,
+   title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
+    image: "/images/danielluque1.jpg",
+    category: "Actualidad",
+    date: "1 de Diciembre de 2025",
+    fullContent: `El torero de Gerena Daniel Luque ya tiene cerrada su cuadrilla para la próxima temporada 2026. En ella se incorpora el banderillero sevillano Antonio Manuel Punta.
+
+Así queda la cuadrilla de Daniel Luque de cara a la temporada 2026:
+
+Banderilleros, **Antonio Manuel Punta, Juan Contreras y ⁠Jesús Arruga.**
+
+Picadores, **José Manuel García "El Patilla" y ⁠Javier García "Jabato hijo".**
+
+Mozo de espadas, **Sergio Durán Luque**
+
+Apoderado **Antonio Barrera**`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 4,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
     image: "/images/espacio.jpg",
     category: "Actualidad",
@@ -406,7 +506,7 @@ Salvo cambios derivados de las últimas negociaciones, la feria quedaría config
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 5,
    title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
@@ -426,7 +526,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 6,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -455,7 +555,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 4,
+    id: 7,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -482,7 +582,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 8,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Entrevistas",
@@ -537,7 +637,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 9,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -552,7 +652,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 10,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -579,7 +679,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 11,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -608,7 +708,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 12,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -629,7 +729,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 13,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -645,7 +745,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: 14,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -721,7 +821,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 12,
+    id: 15,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -745,7 +845,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 13,
+    id: 16,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -760,7 +860,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: 17,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
