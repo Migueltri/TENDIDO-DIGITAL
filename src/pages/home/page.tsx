@@ -4579,29 +4579,63 @@ TENDIDO DIGITAL
             {selectedNews.excerpt}
           </p>
         )}
+{/* Contenido de la crónica o noticia */}
+{selectedNews.category === "Crónicas" ? (
+  <>
+    {/* Datos principales */}
+    <div className="bg-gray-50 rounded-xl p-6 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base">
+        <p>
+          <span className="font-semibold text-gray-900">Plaza: </span>
+          <span className="text-gray-800">{selectedNews.plaza || "No especificada"}</span>
+        </p>
+        <p>
+          <span className="font-semibold text-gray-900">Ganadería: </span>
+          <span className="text-red-600 font-semibold">{selectedNews.ganaderia || "No indicada"}</span>
+        </p>
+      </div>
+    </div>
 
-{/* Texto de la noticia */}
-<div className="prose prose-xl max-w-none">
-  <div
-    className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
-      selectedNews.boldContent ? "font-bold" : ""
-    }`}
-  >
-    {selectedNews.fullContent
-      ?.split("\n\n")
-      .map((paragraph, i) => (
-        <p
-          key={i}
-          className="whitespace-pre-line"
-          dangerouslySetInnerHTML={{
-            __html: paragraph
-              .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-              .trim(),
-          }}
-        />
-      ))}
+    {/* Resumen o cuerpo */}
+    <div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
+      <h3 className="font-bold text-gray-900 flex items-center mb-3">
+        <i className="ri-file-text-line text-red-600 mr-2"></i>
+        Resumen de la corrida
+      </h3>
+      <div
+        className="text-gray-700 text-lg leading-relaxed space-y-4"
+        dangerouslySetInnerHTML={{
+          __html: selectedNews.fullContent
+            ?.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+            .trim(),
+        }}
+      />
+    </div>
+  </>
+) : (
+  /* Formato normal para noticias */
+  <div className="prose prose-xl max-w-none">
+    <div
+      className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
+        selectedNews.boldContent ? "font-bold" : ""
+      }`}
+    >
+      {selectedNews.fullContent
+        ?.split("\n\n")
+        .map((paragraph, i) => (
+          <p
+            key={i}
+            className="whitespace-pre-line"
+            dangerouslySetInnerHTML={{
+              __html: paragraph
+                .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+                .trim(),
+            }}
+          />
+        ))}
+    </div>
   </div>
-</div>
+)}
 
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
