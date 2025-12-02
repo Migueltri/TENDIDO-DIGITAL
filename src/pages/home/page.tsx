@@ -19,6 +19,10 @@
   footerImage1Caption?: string;
   footerImage2?: string;
   footerImage2Caption?: string;
+  footerImage3?: string;
+  footerImage3Caption?: string;
+  footerImage4?: string;
+  footerImage4Caption?: string;
   boldContent?: boolean;
   author?: string;
   authorLogo?: string;
@@ -328,142 +332,381 @@ const getFilteredNews = () => {
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
-    title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
-    image: "/images/manuelamador.jpg",
+    title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
+    image: "/images/borjajimenez3.jpg",
+	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
     category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `El empresario y matador de toros **Manuel Amador** es el nuevo apoderado de **Samuel Navalón** tras llegar a un acuerdo de apoderamiento con el clásico apretón de manos y por tiempo indefinido. Una nueva etapa entre ambos con el objetivo de estar presentes en las ferias más importantes de la temporada.
+    date: "2 de Diciembre de 2025",
+    fullContent: `Borja Jiménez será una de las figuras destacadas en las Fiestas de San Ignacio 2026. El torero de Espartinas estará presente en dos de las tardes programadas en la próxima edición del ciclo taurino de Azpeitia, tal y como ha anunciado la Comisión Taurina presidida por Joxin Iriarte.
 
-Navalón se encuentra en el **proceso de recuperación** de la gravísima cornada que sufrió el pasado mes de septiembre en Algemesí después de una temporada 2025 con importantes triunfos. El valenciano destacó en plazas como **Madrid, Sevilla, Arles, Alicante, Albacete o Ciudad Real**, entre otras.`,
+El diestro sevillano, uno de los protagonistas de la temporada actual y triunfador absoluto de la última edición del ciclo guipuzcoano, realizará dos paseíllos en un abono que la Comisión Taurina ya está perfilando y que volverá a ofrecer numerosos alicientes.
+
+Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de toros de Azpeitia, escenario en el que debutó en 2026. Con estas dos nuevas actuaciones, alcanzará un total de seis comparecencias en el coso situado a orillas del río Urola.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },	
 	{ 
     id: 1001,
-    title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
-    image: "/images/tauromania.jpg",
+    title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
+    image: "/images/alumnos.jpg",
     category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `Tauro Manía nació de una tarde inolvidable en Las Ventas. El 8 de junio, durante la corrida de la Hispanidad en la que Morante abrió la Puerta Grande, uno de los actuales fundadores quiso comprar una camiseta de José Antonio Morante de la Puebla , pero no encontró ninguna con buen diseño ni a un precio razonable. De esa decepción surgió una idea que, dos meses después, en agosto, comenzó a tomar forma hasta lanzar su primer modelo a principios de septiembre.
+    date: "2 de Diciembre de 2025",
+    footerImage1?: "/images/alumnos1.jpg",
+    fullContent: `La alcaldesa **Yolanda Fernández** reafirma el compromiso del municipio con la tauromaquia y su cantera en un acto promovido por la **Plataforma de Novilleros de Andalucía**.
 
-Detrás de la marca están dos chicos que acaban de cumplir la mayoría de edad y que han querido unir dos pilares importantes en su vida: la fe cristiana y la tauromaquia. Su objetivo es claro: dar visibilidad al toreo, acercarlo a más gente y ofrecer diseños significativos sin precios elevados. “Preferimos el reconocimiento antes que el dinero”, aseguran.
+En la tarde de ayer tuvo lugar un emotivo acto en el salón de plenos del Ayuntamiento de Atarfe, donde la alcaldesa Yolanda Fernández recibió a los alumnos de la Escuela Taurina de Atarfe como cierre a una exitosa temporada 2025. La recepción, cargada de cercanía y simbolismo, permitió a los jóvenes toreros compartir sus experiencias y aspiraciones con la máxima representante municipal.
 
-Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y llegar a plazas de todo el mundo con ropa que represente valores taurinos y religiosos, soñando con marcar un antes y un después en la moda taurina juvenil. Los interesados ya pueden visitar su página web <a href="https://tauromania.es" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:underline">https://tauromania.es</a> y hacerse con sus camisetas.`,
+La alcaldesa expresó con claridad el apoyo del Ayuntamiento al presente y futuro de la tauromaquia en la localidad: “Es un placer escuchar cómo sueñan con ser toreros los niños de la Escuela Taurina de Atarfe. Para mí, como alcaldesa, es un orgullo poder facilitar para que lleguen a cumplir ese sueño. Además, creo que tenemos unas de las instalaciones más bonitas y mejor cuidadas, que son el sitio idóneo para que los alumnos se puedan formar, siempre bien atendidos y con buenos profesionales. Desde el Ayuntamiento siempre les animaremos a que cumplan su sueño”.
+
+En el encuentro también estuvo presente **Víctor Almoha­no**, concejal de Festejos del Ayuntamiento, quien acompañó a los alumnos en esta jornada tan especial.
+
+Durante la visita institucional, la alcaldesa compartió anécdotas con los más jóvenes, les habló de la riqueza cultural de la ciudad y les reiteró el firme compromiso del consistorio con la fiesta y con el futuro de la misma. Los alumnos, por su parte, explicaron cómo es su día a día en la Escuela Taurina, reflexionaron sobre su aprendizaje y realizaron un balance de la temporada 2025, además de comentar cómo compatibilizan su formación taurina con sus estudios académicos.
+Una tarde que servirá para reconocer talento, afición y futuro, con Atarfe y Granada mostrando firmeza en su apuesta por la cantera taurina.
+
+El acto culminó con una exhibición de toreo de salón por parte de los propios alumnos en el salón de plenos, bajo la atenta mirada de la alcaldesa y del concejal. Como broche final, ambos se animaron a tomar los trastos y lancear, generando uno de los momentos más especiales de la tarde.
+
+Esta actividad ha sido impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía** de la Fundación Toro de Lidia, contando con la colaboración y el respaldo fundamental de la **Diputación de Granada**, institución clave en el fortalecimiento y promoción de la cantera taurina de la provincia.
+
+La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la **Junta de Andalucía**, **Fundación Caja Rural del Sur**, **Fundación Cajasol**, **Instituto Andaluz de la Juventud**, **Real Maestranza de Caballería de Sevilla**, **Diputación de Málaga**, **Diputación de Huelva**, **Diputación de Córdoba**, **Diputación de Granada** y **Diputación de Cádiz**.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
    { 
     id: 1002,
-    title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
-    image: "/images/varios5.jpg",
-    category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `La plaza de Toros de las Ventas acogerá 2 carteles importantes para la temporada 2026.
+    title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
+    image: "/images/almaden1.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
+La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
 
-Según a podido saber Tendido Digital, la empresa Plaza 1 tendría ya concretados dos carteles de máxima importancia en el serial taurino de San isidro 2026.
-Los festejos tendrán lugar los días **7 y 14 de Junio**.
-El primero de ellos: día de la beneficencia. Albergará un cartel que combina temple, taquilla y juventud con **Talavante, Roca Rey y Víctor Hernández** que lidiarán toros de **Victoriano del Río**, una de las grandes triunfadoras de la temporada pasada.
+**Agustín de Antonio** abrió la tarde con una faena templada y expresiva ante un novillo noble, logrando dos orejas tras aviso.
+**Candela “La Piyaya”** resolvió con firmeza ante un astado áspero, aprovechando los momentos que permitió el lucimiento y cortando dos orejas.
+El tercer triunfador fue **Fernando Lovera**, que brilló con una actuación muy templada y de gran profundidad, premiada igualmente con dos orejas tras aviso.
+**Armando Rojo** se impuso a un novillo complicado con firmeza y buenos detalles, obteniendo una oreja con petición de segunda.
+**Mario Torres**, muy seguro ante un quinto exigente, dejó los mejores momentos por la derecha y cortó una oreja tras dos avisos.
+Cerró la tarde **Juan Manuel Viruez**, que mostró buen concepto y una importante personalidad para pasear una oreja tras aviso.
 
-Por otra parte el coso madrileño se prepara para acoger una gesta histórica en la corrida **In Memorian a Rafael de Paula**, Borja Jiménez se encerrara en solitario con 6 toros de **Victoriano del Río y Garcigrande**.
+**FICHA DEL FESTEJO:**
+Sábado, 29 de noviembre de 2025
 
-A falta de confirmación oficial y cerca de dos meses antes del anuncio de las fechas, los carteles quedan de la siguiente manera:
+Plaza de Toros El Coso – Almadén de la Plata (Sevilla)
 
-Domingo, 7 de junio:
-Toros de Victoriano del Río
-– Talavante
-– Roca Rey
-– Víctor Hernández
+Novillada Extraordinaria con motivo de la “**VIII Edición del Día del Jamón**”
 
-Domingo, 14 de junio:
-Corrida In Memorian Rafael de Paula
-Toros de Victoriano del Río y Garcigrande
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
 
-–Borja Jiménez como único espada`,
-  author: "Arnau Argulló",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+Entrada: Lleno en tarde muy gélida.
+
+Se lidiaron reses de **Albarreal**. Bien presentadas y de juego variado de Albarreal, destacando el primero y el tercero.
+
+**AGUSTÍN DE ANTONIO**, (E.T. Sevilla); Dos orejas tras aviso.
+**CANDELA ‘LA PIYAYA’**, (E.T.J.C. ‘Yiyo’-Madrid); Dos orejas.
+**FERNANDO LOVERA**, (E.T. Camas); Dos orejas tras aviso.
+**ARMANDO ROJO**, (E.T. Sevilla); Oreja con petición de segunda tras aviso.
+**MARIO TORRES**, (E.T. Ubrique); Oreja tras dos avisos.
+**JUAN MANUEL VIRUEZ**, (E.T. Ubrique); Oreja tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Presidió: D. Francisco Alonso, asesorado por Dña. Mª del Pilar Portillo, perteneciente a la UPTE (Unión de Presidentes de Plazas de Toros de España).
+Asistió al festejo el Delegado del Gobierno de la Junta de Andalucía en Sevilla, D. Ricardo Sánchez Antúnez y el Alcalde de la localidad, D. Carlos Raigada Barrero.
+Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el propio Ayuntamiento de Almadén de la Plata.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1003,
-    title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
-    image: "/images/cabañito.jpg",
-	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
+    title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
+    image: "/images/granjornada.jpg",
+	imageCaption: "Foto Juan Antonio Caro",
     category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `La ganadería de **Partido de Resina**, una de las grandes revelaciones de la temporada 2025 en **Las Ventas**, volverá al coso madrileño el próximo año con **una corrida de toros y una novillada ya reseñadas por el veedor de la plaza**, Antonio Cutiño. La corrida se anunciaría en la Feria de San Isidro, mientras que el lote de utreros se lidiaría a lo largo de la temporada.
+    date: "2 de Diciembre de 2025",
+    footerImage1?: "/images/jornada1.jpg",
+    footerImage2?: "/images/jornada2.jpg",
+    footerImage3?: "/images/jornada3.jpg",
+    footerImage4?: "/images/jornada4.jpg",
+    footerImage4Caption?: "Fotos Juan Antonio Caro",
+    fullContent: `Al filo de las 12:00 horas del pasado –sábado, 29 de noviembre–, dio comienzo en la Finca Herdade do Barroso –propiedad de D. José Luis Pereda López y situada en la comarca portuguesa del Alentejo– una destacada jornada de disciplina hípica deportiva. Esta actividad, denominada actualmente ‘Faena y Doma de Campo’ y conocida tradicionalmente como ‘Acoso y Derribo’, congregó a un nutrido y cualificado grupo de participantes, subrayando el carácter histórico y señero de esta labor ganadera.
 
-El regreso de la histórica divisa supone una firme apuesta tras los éxitos alcanzados el **pasado septiembre, tanto en el desafío ganadero frente a Monteviejo como en la Corrida Concurso de Ganaderías**. En el desafío destacaron toros como “**Rosalero**”, de imponente presencia, con el que Luis Gerpe dio la vuelta al ruedo, y “**Higuerito**”, también muy comentado por su juego. En la corrida concurso, el jurado premió a “**Excitado**” como el toro más bravo del festejo, lidiado por Gómez del Pilar, que igualmente dio una vuelta al ruedo.
+La cita reunió a **50 colleras de garrochistas, organizadas en 10 grupos**, que protagonizaron una intensa y coordinada faena campera.
+Para el desarrollo de esta práctica ancestral de manejo de reses en el campo, el anfitrión, D. José Luis Pereda, dispuso **55 reses herradas con el hierro de su casa y con el hierro de Doña Clotilde López, madre del ganadero**.
+A ello se sumaron **19 reses también corridas y derribadas procedentes de la ganadería invitada de D. Silvestre Macías**.
+Todas las reses participantes fueron becerras y/o vacas cruzadas, conforme marca la tradición en este tipo de labores.
 
-Partido de Resina mantiene la esencia del mítico encaste Pablo Romero: toros de morfología muy definida —el llamado “toro guapo”— y un comportamiento fogoso que transmite emoción. Tras décadas de altibajos, la ganadería vive una etapa de recuperación sustentada en un riguroso trabajo genético y sanitario.
+Entre los aproximadamente **100 garrochistas** asistentes se dieron cita reconocidos especialistas y una amplia nómina de Campeones de España, entre ellos: **Josele Cañaveral, José Luis Díez de la Cortina, Alfonso Carlos Fernández González, José María Fernández Fernández, Alfonso Martín García “El Pory”, Manuel Carrera Butrón “Carca”, entre otros destacados nombres de la disciplina**.
 
-Los buenos resultados no se limitaron a Madrid: este año también firmaron actuaciones destacadas en Cuéllar, con triunfos de Juan de Castilla y Jesús Enrique Colombo, y en Estella, donde Javier Castaño salió a hombros.`,
+Asimismo, el encuentro contó con la presencia de personalidades que representan la fusión entre la cultura taurina y la hípica deportiva. Entre ellos destacaron la figura del matador de toros **Daniel Luque**; **los representantes de la familia Campos Peña, Ernesto y Manolo Campos Moreno**; **Javier Buendía**, hijo del gran maestro del rejoneo; **Manolo González**, hijo del reconocido ganadero; el **Campeón de España de Doma Vaquera José Ramón García “Chamo”**; **los picadores Diego Peña y Juan Francisco Peña**; así como el novillero con picadores **Sergio Domínguez “El Mella”**.
+
+La jornada transcurrió en un ambiente de excelencia técnica y deportividad, en la que todos los intervinientes demostraron su pericia y habilidad. La supervisión técnica corrió a cargo de **D. Carlos Cid**, juez nacional de acoso y derribo, cuya labor garantizó el correcto desarrollo de la actividad en cada una de sus fases.
+
+Finalmente, merece una mención especial el impecable trabajo organizativo del anfitrión D. José Luis Pereda y de Manuel Sevillano Torres, actual mayoral de la ganadería de Pereda, cuya dedicación resultó clave para el éxito de esta jornada que reafirma el valor cultural, deportivo y tradicional de la Faena y Doma de Campo.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1004,
-   title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
-    image: "/images/premios.jpg",
-    category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `**Arganda del Rey** puso el broche de oro a la temporada taurina **2025** con la gala de entrega de los premios de la **XXXVI Vid de Oro**, celebrada en el Auditorio Montserrat Caballé, que volvió a llenarse para la ocasión. El acto, presentado por el periodista Javier Fernández-Mardomingo, se ha consolidado como una de las citas imprescindibles del circuito taurino nacional.
+   title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
+    image: "/images/algar.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
+La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
+Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
+Entre los noveles actuantes brillaron **Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’**, quienes lograron cortar dos orejas cada uno y, con ello, abrir la ‘Puerta Grande’, culminando así una tarde cargada de emociones y evidentes muestras de futuro.
 
-Durante la velada se reconocieron las actuaciones más destacadas de la feria del pasado mes de septiembre.
-**Julio Norte recibió el premio al triunfador de la Feria de la Vid de Oro 2025**, mientras que **Emiliano Osornio fue distinguido con la faena más artística tras su importante actuación en la feria madrileña**.
-**Saúl Jiménez Fortes** obtuvo el galardón **Detalle para el recuerdo de la temporada**.
-También fueron premiados el banderillero **Marcos Prieto**, **Jesús Romero**, **Álvaro de Faranda**, la ganadería **El Retamar** y **Cristian Restrepo**, entre otros protagonistas que dejaron su sello en la plaza argandeña.
+Abrió plaza **Martín Marengo**, de la Escuela Taurina Francisco Montes ‘Paquiro’ de Chiclana de la Frontera, que dejó detalles de buena colocación y temple, siendo premiado con una oreja con petición de segunda.
+Le siguió **Adrián Olmedo**, de la Escuela Taurina Linense, que mostró firmeza y decisión pese a un complicado oponente; escuchó palmas tras tres avisos.
+El tercer turno correspondió a **Mario Torres**, de la Escuela Taurina Comarcal de Ubrique, quien cuajó una actuación llena de oficio y serenidad. Su faena, rematada con una estocada tras aviso, fue reconocida con dos orejas.
 
-Los premios entregados durante la gala fueron los siguientes:
-– Triunfador de la feria: **Julio Norte**
-– Faena más artística: **Emiliano Osornio**
-– Mejor par de banderillas: **Marcos Prieto**
-– Mejor estocada: **Jesús Romero**
-– Mejor brega: **Álvaro de Faranda**
-– Mejor novillada: **Ganadería El Retamar**
-– Novillo más bravo: **Nº 5 “General”, de El Retamar**
-– Triunfador de la Novillada de Promoción “Vid de Plata”: **Cristian Restrepo**
-– Mejor recortador: **Gonzalo Hernández “Guajiro”**
-– Mejor corredor: **Manuel Martín Carmona**
-– Corredor más arriesgado: **Javier Julián Alcázar**
-– Mejor recortador joven: **Aitor Moreno Ortiz**
-– Corredor revelación: **Rubén Vaquerizo**
-– Personaje más significativo: **Nicolás Madrid**
-– Detalle para el recuerdo de la temporada: **Saúl Jiménez Fortes**
+El francés **Remy Lucas**, de la Escuela Taurina ‘Rafael Ortega’ de San Fernando, mostró elegancia y personalidad. A pesar del aviso, cortó una oreja.
+Uno de los momentos más destacados llegó de la mano de **Celso Ortega**, representante de la Escuela de Tauromaquia ‘La Gallosina’ de El Puerto de Santa María. Su conexión con los tendidos y el buen entendimiento de la embestida del quinto, premiado con la vuelta al ruedo, le valieron dos orejas.
+Posteriormente, **Javier Mena**, de la Escuela Municipal de Tauromaquia Miguel Mateo ‘Migue­lín’ de Algeciras, dejó pasajes de voluntad y buenas maneras, siendo ovacionado tras escuchar tres avisos.
+Cerró el festejo **Gabriel Moreno ‘El Calé’**, de la Escuela Taurina ‘El Volapié’ de Sanlúcar de Barrameda, que hizo vibrar al público con una faena de entrega y prestancia gitana. Cortó dos orejas, también tras aviso, lo que le permitió acompañar a Torres y Ortega en la salida a hombros.
 
-La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la tradición taurina en **Arganda del Rey**, consolidándose como un evento de referencia que reconoce la excelencia y el esfuerzo de todos los profesionales y participantes que forman parte de su feria.`,
+**FICHA DEL FESTEJO:**
+Domingo, 30 de noviembre de 2025
+Plaza de Toros de Algar – (Cádiz)
+
+**Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz**
+
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
+
+Entrada: Lleno en tarde desapacible, amenazante y fría.
+
+Se lidiaron reses de **El Torero**. Desiguales de presentación y juego.
+Destacó especialmente el 5º, premiado con la vuelta al ruedo por su calidad y bravura.
+
+**MARTÍN MAREN­GO**, (E.T.‘Paquiro’-Chiclana Ftra); Oreja con petición de segunda.
+**ADRIÁN OLMEDO**, (E.T. Linense); Palmas tras tres avisos.
+**MARIO TORRES**, (E.T. Ubrique); Dos orejas tras aviso.
+**REMY LUCAS**, (E.T. ‘Rafael Ortega’ - S. Fdo.); Oreja tras aviso.
+**CELSO ORTEGA**, (E.T. ‘La Gallosina’-Pto. Sta. Mª); Dos orejas y vuelta al novillo.
+**JAVIER MENA**, (E.T. ‘Miguelín’-Algeciras); Palmas tras tres avisos.
+**GABRIEL MORENO ‘EL CALÉ’**, (E.T. ‘El Volapié’ Sanlúcar Bdra.); Dos orejas tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Asistió al festejo el Primer Teniente de Alcalde de la localidad, D. Juan Manuel Guerra.
+La XIII Competición Provincial de las Escuelas Taurinas de Cádiz ha contado con el patrocinio de la Excma. Diputación de Cádiz.
+
+**PALCO:**
+Presidió el Alcalde de Algar, D. José Carlos Sánchez.
+Asesores: D. Juan Pedro Sánchez.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1005,
-   title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
-    image: "/images/danielluque1.jpg",
+   title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
+    image: "/images/matilla.jpg",
     category: "Actualidad",
-    date: "1 de Diciembre de 2025",
-    fullContent: `El torero de Gerena Daniel Luque ya tiene cerrada su cuadrilla para la próxima temporada 2026. En ella se incorpora el banderillero sevillano Antonio Manuel Punta.
+    date: "2 de Diciembre de 2025",
+    fullContent: `La **Casa Matilla** avanza en la confección de la **Feria de la Magdalena**, uno de los seriales taurinos de referencia en el inicio de la temporada. Este año, las dos grandes ferias del Levante —**Castellón y Valencia**— coincidirán **durante el fin de semana del 13, 14 y 15 de marzo, debido a la celebración de la Semana Santa, que comenzará el 29 de marzo**.
 
-Así queda la cuadrilla de Daniel Luque de cara a la temporada 2026:
+La empresa **Funtausa**, dirigida por Toño y Jorge Matilla prepara para esas fechas los principales alicientes de un ciclo que ya tiene prácticamente definido su elenco ganadero y que incluirá varias novedades. Entre ellas destaca el regreso de la divisa de **Hermanos García Jiménez**, que volverá a Castellón tras obtener todos los premios en 2024 gracias a una corrida de notable éxito, ganadería que pertenece a la familia Matilla.
 
-Banderilleros, **Antonio Manuel Punta, Juan Contreras y ⁠Jesús Arruga.**
-
-Picadores, **José Manuel García "El Patilla" y ⁠Javier García "Jabato hijo".**
-
-Mozo de espadas, **Sergio Durán Luque**
-
-Apoderado **Antonio Barrera**`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+Como segunda novedad, la ganadería de **Zalduendo** también estará presente en un plantel en el que figurarán, igualmente, los hierros de **Domingo Hernández y La Quinta**, esta última tras el indulto conseguido el pasado año. Son las primeras líneas maestras de una feria que se celebrará del **8 al 15 de marzo**.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   }
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+     { 
     id: 1,
+    title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
+    image: "/images/borjajimenez3.jpg",
+	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
+    category: "Actualidad",
+    date: "2 de Diciembre de 2025",
+    fullContent: `Borja Jiménez será una de las figuras destacadas en las Fiestas de San Ignacio 2026. El torero de Espartinas estará presente en dos de las tardes programadas en la próxima edición del ciclo taurino de Azpeitia, tal y como ha anunciado la Comisión Taurina presidida por Joxin Iriarte.
+
+El diestro sevillano, uno de los protagonistas de la temporada actual y triunfador absoluto de la última edición del ciclo guipuzcoano, realizará dos paseíllos en un abono que la Comisión Taurina ya está perfilando y que volverá a ofrecer numerosos alicientes.
+
+Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de toros de Azpeitia, escenario en el que debutó en 2026. Con estas dos nuevas actuaciones, alcanzará un total de seis comparecencias en el coso situado a orillas del río Urola.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },	
+	{ 
+    id: 2,
+    title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
+    image: "/images/alumnos.jpg",
+    category: "Actualidad",
+    date: "2 de Diciembre de 2025",
+    footerImage1?: "/images/alumnos1.jpg",
+    fullContent: `La alcaldesa **Yolanda Fernández** reafirma el compromiso del municipio con la tauromaquia y su cantera en un acto promovido por la **Plataforma de Novilleros de Andalucía**.
+
+En la tarde de ayer tuvo lugar un emotivo acto en el salón de plenos del Ayuntamiento de Atarfe, donde la alcaldesa Yolanda Fernández recibió a los alumnos de la Escuela Taurina de Atarfe como cierre a una exitosa temporada 2025. La recepción, cargada de cercanía y simbolismo, permitió a los jóvenes toreros compartir sus experiencias y aspiraciones con la máxima representante municipal.
+
+La alcaldesa expresó con claridad el apoyo del Ayuntamiento al presente y futuro de la tauromaquia en la localidad: “Es un placer escuchar cómo sueñan con ser toreros los niños de la Escuela Taurina de Atarfe. Para mí, como alcaldesa, es un orgullo poder facilitar para que lleguen a cumplir ese sueño. Además, creo que tenemos unas de las instalaciones más bonitas y mejor cuidadas, que son el sitio idóneo para que los alumnos se puedan formar, siempre bien atendidos y con buenos profesionales. Desde el Ayuntamiento siempre les animaremos a que cumplan su sueño”.
+
+En el encuentro también estuvo presente **Víctor Almoha­no**, concejal de Festejos del Ayuntamiento, quien acompañó a los alumnos en esta jornada tan especial.
+
+Durante la visita institucional, la alcaldesa compartió anécdotas con los más jóvenes, les habló de la riqueza cultural de la ciudad y les reiteró el firme compromiso del consistorio con la fiesta y con el futuro de la misma. Los alumnos, por su parte, explicaron cómo es su día a día en la Escuela Taurina, reflexionaron sobre su aprendizaje y realizaron un balance de la temporada 2025, además de comentar cómo compatibilizan su formación taurina con sus estudios académicos.
+Una tarde que servirá para reconocer talento, afición y futuro, con Atarfe y Granada mostrando firmeza en su apuesta por la cantera taurina.
+
+El acto culminó con una exhibición de toreo de salón por parte de los propios alumnos en el salón de plenos, bajo la atenta mirada de la alcaldesa y del concejal. Como broche final, ambos se animaron a tomar los trastos y lancear, generando uno de los momentos más especiales de la tarde.
+
+Esta actividad ha sido impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía** de la Fundación Toro de Lidia, contando con la colaboración y el respaldo fundamental de la **Diputación de Granada**, institución clave en el fortalecimiento y promoción de la cantera taurina de la provincia.
+
+La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la **Junta de Andalucía**, **Fundación Caja Rural del Sur**, **Fundación Cajasol**, **Instituto Andaluz de la Juventud**, **Real Maestranza de Caballería de Sevilla**, **Diputación de Málaga**, **Diputación de Huelva**, **Diputación de Córdoba**, **Diputación de Granada** y **Diputación de Cádiz**.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+   { 
+    id: 3,
+    title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
+    image: "/images/almaden1.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
+La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
+
+**Agustín de Antonio** abrió la tarde con una faena templada y expresiva ante un novillo noble, logrando dos orejas tras aviso.
+**Candela “La Piyaya”** resolvió con firmeza ante un astado áspero, aprovechando los momentos que permitió el lucimiento y cortando dos orejas.
+El tercer triunfador fue **Fernando Lovera**, que brilló con una actuación muy templada y de gran profundidad, premiada igualmente con dos orejas tras aviso.
+**Armando Rojo** se impuso a un novillo complicado con firmeza y buenos detalles, obteniendo una oreja con petición de segunda.
+**Mario Torres**, muy seguro ante un quinto exigente, dejó los mejores momentos por la derecha y cortó una oreja tras dos avisos.
+Cerró la tarde **Juan Manuel Viruez**, que mostró buen concepto y una importante personalidad para pasear una oreja tras aviso.
+
+**FICHA DEL FESTEJO:**
+Sábado, 29 de noviembre de 2025
+
+Plaza de Toros El Coso – Almadén de la Plata (Sevilla)
+
+Novillada Extraordinaria con motivo de la “**VIII Edición del Día del Jamón**”
+
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
+
+Entrada: Lleno en tarde muy gélida.
+
+Se lidiaron reses de **Albarreal**. Bien presentadas y de juego variado de Albarreal, destacando el primero y el tercero.
+
+**AGUSTÍN DE ANTONIO**, (E.T. Sevilla); Dos orejas tras aviso.
+**CANDELA ‘LA PIYAYA’**, (E.T.J.C. ‘Yiyo’-Madrid); Dos orejas.
+**FERNANDO LOVERA**, (E.T. Camas); Dos orejas tras aviso.
+**ARMANDO ROJO**, (E.T. Sevilla); Oreja con petición de segunda tras aviso.
+**MARIO TORRES**, (E.T. Ubrique); Oreja tras dos avisos.
+**JUAN MANUEL VIRUEZ**, (E.T. Ubrique); Oreja tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Presidió: D. Francisco Alonso, asesorado por Dña. Mª del Pilar Portillo, perteneciente a la UPTE (Unión de Presidentes de Plazas de Toros de España).
+Asistió al festejo el Delegado del Gobierno de la Junta de Andalucía en Sevilla, D. Ricardo Sánchez Antúnez y el Alcalde de la localidad, D. Carlos Raigada Barrero.
+Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el propio Ayuntamiento de Almadén de la Plata.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 4,
+    title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
+    image: "/images/granjornada.jpg",
+	imageCaption: "Foto Juan Antonio Caro",
+    category: "Actualidad",
+    date: "2 de Diciembre de 2025",
+    footerImage1?: "/images/jornada1.jpg",
+    footerImage2?: "/images/jornada2.jpg",
+    footerImage3?: "/images/jornada3.jpg",
+    footerImage4?: "/images/jornada4.jpg",
+    footerImage4Caption?: "Fotos Juan Antonio Caro",
+    fullContent: `Al filo de las 12:00 horas del pasado –sábado, 29 de noviembre–, dio comienzo en la Finca Herdade do Barroso –propiedad de D. José Luis Pereda López y situada en la comarca portuguesa del Alentejo– una destacada jornada de disciplina hípica deportiva. Esta actividad, denominada actualmente ‘Faena y Doma de Campo’ y conocida tradicionalmente como ‘Acoso y Derribo’, congregó a un nutrido y cualificado grupo de participantes, subrayando el carácter histórico y señero de esta labor ganadera.
+
+La cita reunió a **50 colleras de garrochistas, organizadas en 10 grupos**, que protagonizaron una intensa y coordinada faena campera.
+Para el desarrollo de esta práctica ancestral de manejo de reses en el campo, el anfitrión, D. José Luis Pereda, dispuso **55 reses herradas con el hierro de su casa y con el hierro de Doña Clotilde López, madre del ganadero**.
+A ello se sumaron **19 reses también corridas y derribadas procedentes de la ganadería invitada de D. Silvestre Macías**.
+Todas las reses participantes fueron becerras y/o vacas cruzadas, conforme marca la tradición en este tipo de labores.
+
+Entre los aproximadamente **100 garrochistas** asistentes se dieron cita reconocidos especialistas y una amplia nómina de Campeones de España, entre ellos: **Josele Cañaveral, José Luis Díez de la Cortina, Alfonso Carlos Fernández González, José María Fernández Fernández, Alfonso Martín García “El Pory”, Manuel Carrera Butrón “Carca”, entre otros destacados nombres de la disciplina**.
+
+Asimismo, el encuentro contó con la presencia de personalidades que representan la fusión entre la cultura taurina y la hípica deportiva. Entre ellos destacaron la figura del matador de toros **Daniel Luque**; **los representantes de la familia Campos Peña, Ernesto y Manolo Campos Moreno**; **Javier Buendía**, hijo del gran maestro del rejoneo; **Manolo González**, hijo del reconocido ganadero; el **Campeón de España de Doma Vaquera José Ramón García “Chamo”**; **los picadores Diego Peña y Juan Francisco Peña**; así como el novillero con picadores **Sergio Domínguez “El Mella”**.
+
+La jornada transcurrió en un ambiente de excelencia técnica y deportividad, en la que todos los intervinientes demostraron su pericia y habilidad. La supervisión técnica corrió a cargo de **D. Carlos Cid**, juez nacional de acoso y derribo, cuya labor garantizó el correcto desarrollo de la actividad en cada una de sus fases.
+
+Finalmente, merece una mención especial el impecable trabajo organizativo del anfitrión D. José Luis Pereda y de Manuel Sevillano Torres, actual mayoral de la ganadería de Pereda, cuya dedicación resultó clave para el éxito de esta jornada que reafirma el valor cultural, deportivo y tradicional de la Faena y Doma de Campo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 5,
+   title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
+    image: "/images/algar.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
+La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
+Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
+Entre los noveles actuantes brillaron **Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’**, quienes lograron cortar dos orejas cada uno y, con ello, abrir la ‘Puerta Grande’, culminando así una tarde cargada de emociones y evidentes muestras de futuro.
+
+Abrió plaza **Martín Marengo**, de la Escuela Taurina Francisco Montes ‘Paquiro’ de Chiclana de la Frontera, que dejó detalles de buena colocación y temple, siendo premiado con una oreja con petición de segunda.
+Le siguió **Adrián Olmedo**, de la Escuela Taurina Linense, que mostró firmeza y decisión pese a un complicado oponente; escuchó palmas tras tres avisos.
+El tercer turno correspondió a **Mario Torres**, de la Escuela Taurina Comarcal de Ubrique, quien cuajó una actuación llena de oficio y serenidad. Su faena, rematada con una estocada tras aviso, fue reconocida con dos orejas.
+
+El francés **Remy Lucas**, de la Escuela Taurina ‘Rafael Ortega’ de San Fernando, mostró elegancia y personalidad. A pesar del aviso, cortó una oreja.
+Uno de los momentos más destacados llegó de la mano de **Celso Ortega**, representante de la Escuela de Tauromaquia ‘La Gallosina’ de El Puerto de Santa María. Su conexión con los tendidos y el buen entendimiento de la embestida del quinto, premiado con la vuelta al ruedo, le valieron dos orejas.
+Posteriormente, **Javier Mena**, de la Escuela Municipal de Tauromaquia Miguel Mateo ‘Migue­lín’ de Algeciras, dejó pasajes de voluntad y buenas maneras, siendo ovacionado tras escuchar tres avisos.
+Cerró el festejo **Gabriel Moreno ‘El Calé’**, de la Escuela Taurina ‘El Volapié’ de Sanlúcar de Barrameda, que hizo vibrar al público con una faena de entrega y prestancia gitana. Cortó dos orejas, también tras aviso, lo que le permitió acompañar a Torres y Ortega en la salida a hombros.
+
+**FICHA DEL FESTEJO:**
+Domingo, 30 de noviembre de 2025
+Plaza de Toros de Algar – (Cádiz)
+
+**Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz**
+
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
+
+Entrada: Lleno en tarde desapacible, amenazante y fría.
+
+Se lidiaron reses de **El Torero**. Desiguales de presentación y juego.
+Destacó especialmente el 5º, premiado con la vuelta al ruedo por su calidad y bravura.
+
+**MARTÍN MAREN­GO**, (E.T.‘Paquiro’-Chiclana Ftra); Oreja con petición de segunda.
+**ADRIÁN OLMEDO**, (E.T. Linense); Palmas tras tres avisos.
+**MARIO TORRES**, (E.T. Ubrique); Dos orejas tras aviso.
+**REMY LUCAS**, (E.T. ‘Rafael Ortega’ - S. Fdo.); Oreja tras aviso.
+**CELSO ORTEGA**, (E.T. ‘La Gallosina’-Pto. Sta. Mª); Dos orejas y vuelta al novillo.
+**JAVIER MENA**, (E.T. ‘Miguelín’-Algeciras); Palmas tras tres avisos.
+**GABRIEL MORENO ‘EL CALÉ’**, (E.T. ‘El Volapié’ Sanlúcar Bdra.); Dos orejas tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Asistió al festejo el Primer Teniente de Alcalde de la localidad, D. Juan Manuel Guerra.
+La XIII Competición Provincial de las Escuelas Taurinas de Cádiz ha contado con el patrocinio de la Excma. Diputación de Cádiz.
+
+**PALCO:**
+Presidió el Alcalde de Algar, D. José Carlos Sánchez.
+Asesores: D. Juan Pedro Sánchez.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 6,
+   title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
+    image: "/images/matilla.jpg",
+    category: "Actualidad",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La **Casa Matilla** avanza en la confección de la **Feria de la Magdalena**, uno de los seriales taurinos de referencia en el inicio de la temporada. Este año, las dos grandes ferias del Levante —**Castellón y Valencia**— coincidirán **durante el fin de semana del 13, 14 y 15 de marzo, debido a la celebración de la Semana Santa, que comenzará el 29 de marzo**.
+
+La empresa **Funtausa**, dirigida por Toño y Jorge Matilla prepara para esas fechas los principales alicientes de un ciclo que ya tiene prácticamente definido su elenco ganadero y que incluirá varias novedades. Entre ellas destaca el regreso de la divisa de **Hermanos García Jiménez**, que volverá a Castellón tras obtener todos los premios en 2024 gracias a una corrida de notable éxito, ganadería que pertenece a la familia Matilla.
+
+Como segunda novedad, la ganadería de **Zalduendo** también estará presente en un plantel en el que figurarán, igualmente, los hierros de **Domingo Hernández y La Quinta**, esta última tras el indulto conseguido el pasado año. Son las primeras líneas maestras de una feria que se celebrará del **8 al 15 de marzo**.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 7,
     title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
     image: "/images/manuelamador.jpg",
     category: "Actualidad",
@@ -476,7 +719,7 @@ Navalón se encuentra en el **proceso de recuperación** de la gravísima cornad
   showAuthorHeader: true
   },	
 	{ 
-    id: 2,
+    id: 8,
     title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
     image: "/images/tauromania.jpg",
     category: "Actualidad",
@@ -491,7 +734,7 @@ Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y lle
   showAuthorHeader: true
   },
    { 
-    id: 3,
+    id: 9,
     title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
     image: "/images/varios5.jpg",
     category: "Actualidad",
@@ -522,7 +765,7 @@ Toros de Victoriano del Río y Garcigrande
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 10,
     title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
     image: "/images/cabañito.jpg",
 	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
@@ -540,7 +783,7 @@ Los buenos resultados no se limitaron a Madrid: este año también firmaron actu
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 11,
    title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
     image: "/images/premios.jpg",
     category: "Actualidad",
@@ -575,7 +818,7 @@ La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la trad
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 12,
    title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
     image: "/images/danielluque1.jpg",
     category: "Actualidad",
@@ -596,7 +839,7 @@ Apoderado **Antonio Barrera**`,
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 15,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
     image: "/images/espacio.jpg",
     category: "Actualidad",
@@ -624,7 +867,7 @@ Salvo cambios derivados de las últimas negociaciones, la feria quedaría config
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 16,
    title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
@@ -644,7 +887,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 17,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -673,7 +916,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 10,
+    id: 18,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -700,7 +943,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: 19,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Entrevistas",
@@ -755,7 +998,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	{ 
-    id: 12,
+    id: 20,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -770,7 +1013,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 13,
+    id: 21,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -797,7 +1040,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 14,
+    id: 22,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -826,7 +1069,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: 23,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -847,7 +1090,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 16,
+    id: 24,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -863,7 +1106,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 17,
+    id: 25,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -939,7 +1182,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 18,
+    id: 26,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -963,7 +1206,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 19,
+    id: 27,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -978,7 +1221,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 20,
+    id: 28,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -997,7 +1240,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 21,
+    id: 29,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -1033,7 +1276,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 25,
+    id: 30,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
@@ -1048,7 +1291,7 @@ El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderí
 Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
   },
 	{ 
-    id: 30,
+    id: 31,
        title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
     image: "/images/rufo.jpg",
     category: "Actualidad",
@@ -1064,7 +1307,7 @@ Con esta incorporación, el equipo del diestro de Pepino queda configurado de la
 De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
   },
 	{ 
-    id: 31,
+    id: 32,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -1121,7 +1364,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 32,
+    id: 33,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -1145,7 +1388,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 33,
+    id: 34,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -1171,7 +1414,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 34,
+    id: 35,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -1200,7 +1443,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 35,
+    id: 36,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage1: "/images/rafael2.jpg",
@@ -1218,7 +1461,7 @@ El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 
 Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
   },
 	{ 
-    id: 36,
+    id: 37,
        title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
     image: "/images/morenito.jpg",
     category: "Actualidad",
@@ -1228,7 +1471,7 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
   },
 	{ 
-    id: 37,
+    id: 38,
        title: "Ginés Marín amplía su equipo de apoderamiento",
     image: "/images/amplia.jpg",
 	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
@@ -1239,7 +1482,7 @@ Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26
 Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   },
 	{ 
-    id: 38,
+    id: 39,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -1262,7 +1505,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 39,
+    id: 40,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -1279,7 +1522,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 40,
+    id: 41,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -1289,7 +1532,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 41,
+    id: 42,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -2809,6 +3052,104 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
+	{ 
+    id: 5000,
+   title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
+    image: "/images/algar.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
+La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
+Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
+Entre los noveles actuantes brillaron **Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’**, quienes lograron cortar dos orejas cada uno y, con ello, abrir la ‘Puerta Grande’, culminando así una tarde cargada de emociones y evidentes muestras de futuro.
+
+Abrió plaza **Martín Marengo**, de la Escuela Taurina Francisco Montes ‘Paquiro’ de Chiclana de la Frontera, que dejó detalles de buena colocación y temple, siendo premiado con una oreja con petición de segunda.
+Le siguió **Adrián Olmedo**, de la Escuela Taurina Linense, que mostró firmeza y decisión pese a un complicado oponente; escuchó palmas tras tres avisos.
+El tercer turno correspondió a **Mario Torres**, de la Escuela Taurina Comarcal de Ubrique, quien cuajó una actuación llena de oficio y serenidad. Su faena, rematada con una estocada tras aviso, fue reconocida con dos orejas.
+
+El francés **Remy Lucas**, de la Escuela Taurina ‘Rafael Ortega’ de San Fernando, mostró elegancia y personalidad. A pesar del aviso, cortó una oreja.
+Uno de los momentos más destacados llegó de la mano de **Celso Ortega**, representante de la Escuela de Tauromaquia ‘La Gallosina’ de El Puerto de Santa María. Su conexión con los tendidos y el buen entendimiento de la embestida del quinto, premiado con la vuelta al ruedo, le valieron dos orejas.
+Posteriormente, **Javier Mena**, de la Escuela Municipal de Tauromaquia Miguel Mateo ‘Migue­lín’ de Algeciras, dejó pasajes de voluntad y buenas maneras, siendo ovacionado tras escuchar tres avisos.
+Cerró el festejo **Gabriel Moreno ‘El Calé’**, de la Escuela Taurina ‘El Volapié’ de Sanlúcar de Barrameda, que hizo vibrar al público con una faena de entrega y prestancia gitana. Cortó dos orejas, también tras aviso, lo que le permitió acompañar a Torres y Ortega en la salida a hombros.
+
+**FICHA DEL FESTEJO:**
+Domingo, 30 de noviembre de 2025
+Plaza de Toros de Algar – (Cádiz)
+
+**Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz**
+
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
+
+Entrada: Lleno en tarde desapacible, amenazante y fría.
+
+Se lidiaron reses de **El Torero**. Desiguales de presentación y juego.
+Destacó especialmente el 5º, premiado con la vuelta al ruedo por su calidad y bravura.
+
+**MARTÍN MAREN­GO**, (E.T.‘Paquiro’-Chiclana Ftra); Oreja con petición de segunda.
+**ADRIÁN OLMEDO**, (E.T. Linense); Palmas tras tres avisos.
+**MARIO TORRES**, (E.T. Ubrique); Dos orejas tras aviso.
+**REMY LUCAS**, (E.T. ‘Rafael Ortega’ - S. Fdo.); Oreja tras aviso.
+**CELSO ORTEGA**, (E.T. ‘La Gallosina’-Pto. Sta. Mª); Dos orejas y vuelta al novillo.
+**JAVIER MENA**, (E.T. ‘Miguelín’-Algeciras); Palmas tras tres avisos.
+**GABRIEL MORENO ‘EL CALÉ’**, (E.T. ‘El Volapié’ Sanlúcar Bdra.); Dos orejas tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Asistió al festejo el Primer Teniente de Alcalde de la localidad, D. Juan Manuel Guerra.
+La XIII Competición Provincial de las Escuelas Taurinas de Cádiz ha contado con el patrocinio de la Excma. Diputación de Cádiz.
+
+**PALCO:**
+Presidió el Alcalde de Algar, D. José Carlos Sánchez.
+Asesores: D. Juan Pedro Sánchez.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+{ 
+    id: 5001,
+    title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
+    image: "/images/almaden1.jpg",
+    category: "Crónicas",
+    date: "2 de Diciembre de 2025",
+    fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
+La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
+
+**Agustín de Antonio** abrió la tarde con una faena templada y expresiva ante un novillo noble, logrando dos orejas tras aviso.
+**Candela “La Piyaya”** resolvió con firmeza ante un astado áspero, aprovechando los momentos que permitió el lucimiento y cortando dos orejas.
+El tercer triunfador fue **Fernando Lovera**, que brilló con una actuación muy templada y de gran profundidad, premiada igualmente con dos orejas tras aviso.
+**Armando Rojo** se impuso a un novillo complicado con firmeza y buenos detalles, obteniendo una oreja con petición de segunda.
+**Mario Torres**, muy seguro ante un quinto exigente, dejó los mejores momentos por la derecha y cortó una oreja tras dos avisos.
+Cerró la tarde **Juan Manuel Viruez**, que mostró buen concepto y una importante personalidad para pasear una oreja tras aviso.
+
+**FICHA DEL FESTEJO:**
+Sábado, 29 de noviembre de 2025
+
+Plaza de Toros El Coso – Almadén de la Plata (Sevilla)
+
+Novillada Extraordinaria con motivo de la “**VIII Edición del Día del Jamón**”
+
+Proyecto de Fomento de la Cultura Taurina de Andalucía 2025
+
+Entrada: Lleno en tarde muy gélida.
+
+Se lidiaron reses de **Albarreal**. Bien presentadas y de juego variado de Albarreal, destacando el primero y el tercero.
+
+**AGUSTÍN DE ANTONIO**, (E.T. Sevilla); Dos orejas tras aviso.
+**CANDELA ‘LA PIYAYA’**, (E.T.J.C. ‘Yiyo’-Madrid); Dos orejas.
+**FERNANDO LOVERA**, (E.T. Camas); Dos orejas tras aviso.
+**ARMANDO ROJO**, (E.T. Sevilla); Oreja con petición de segunda tras aviso.
+**MARIO TORRES**, (E.T. Ubrique); Oreja tras dos avisos.
+**JUAN MANUEL VIRUEZ**, (E.T. Ubrique); Oreja tras aviso.
+
+**Observaciones:**
+Tras el paseíllo sonó el Himno de España.
+Presidió: D. Francisco Alonso, asesorado por Dña. Mª del Pilar Portillo, perteneciente a la UPTE (Unión de Presidentes de Plazas de Toros de España).
+Asistió al festejo el Delegado del Gobierno de la Junta de Andalucía en Sevilla, D. Ricardo Sánchez Antúnez y el Alcalde de la localidad, D. Carlos Raigada Barrero.
+Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el propio Ayuntamiento de Almadén de la Plata.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
 ];
 
   // Entrevistas taurinas
