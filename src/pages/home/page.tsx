@@ -568,6 +568,8 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     image: "/images/almaden1.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	plaza: "Almadén de la Plata",
+    ganaderia: "El Torero",
     fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
 La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
 
@@ -603,8 +605,8 @@ Tras el paseíllo sonó el Himno de España.
 Presidió: D. Francisco Alonso, asesorado por Dña. Mª del Pilar Portillo, perteneciente a la UPTE (Unión de Presidentes de Plazas de Toros de España).
 Asistió al festejo el Delegado del Gobierno de la Junta de Andalucía en Sevilla, D. Ricardo Sánchez Antúnez y el Alcalde de la localidad, D. Carlos Raigada Barrero.
 Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el propio Ayuntamiento de Almadén de la Plata.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -643,6 +645,8 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
     image: "/images/algar.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	plaza: "Algar",
+    ganaderia: "El Torero",
     fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
 La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
 Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
@@ -686,8 +690,8 @@ La XIII Competición Provincial de las Escuelas Taurinas de Cádiz ha contado co
 **PALCO:**
 Presidió el Alcalde de Algar, D. José Carlos Sánchez.
 Asesores: D. Juan Pedro Sánchez.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -3058,6 +3062,8 @@ const chronicles: Chronicle[] = [
     image: "/images/algar.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	plaza: "Algar",
+    ganaderia: "El Torero",
     fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
 La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
 Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
@@ -3111,6 +3117,8 @@ Asesores: D. Juan Pedro Sánchez.`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	plaza: "Almadén de la Plata",
+    ganaderia: "El Torero",
     fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
 La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
 
