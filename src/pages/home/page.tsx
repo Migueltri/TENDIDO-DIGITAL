@@ -3903,13 +3903,10 @@ return (
   .slice(0, visibleNewsCount)
   .map((news, index) => (
     <React.Fragment key={news.id}>
-      {news.category === "Crónicas" ? (
-        <CrónicaLayout news={news} />
-      ) : (
-        <article
-          className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-          onClick={() => openNewsModal(news)}
-        >
+      <article
+        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+        onClick={() => openNewsModal(news)}
+      >
                 <div className="relative overflow-hidden">
                   <img
                     src={news.image}
@@ -3917,53 +3914,24 @@ return (
                     className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                      {news.category}
-                    </span>
-                  </div>
-                </div>
-<div className="flex items-center text-gray-500 text-sm space-x-2">
-  <span>{formatExactDate(news.date)}</span>
-  <span>•</span>
-  <span>{formatTimeAgo(news.date)}</span>
-</div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
-                    {news.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="flex items-center space-x-4">
-                      <button 
-                        onClick={(e) => toggleSave(news.id, e)}
-                        className={`transition-all duration-300 ${
-                          savedPosts.has(news.id) 
-                            ? 'text-yellow-600' 
-                            : 'text-gray-500 hover:text-yellow-600'
-                        }`}
-                        aria-label={savedPosts.has(news.id) ? 'Quitar de guardados' : 'Guardar noticia'}
-                      >
-                        <i className={`${savedPosts.has(news.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-lg`}></i>
-                      </button>
-                      
-                      <button 
-                        onClick={(e) => openShareModal(news, e)}
-                        className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
-                        aria-label="Compartir noticia"
-                      >
-                        <i className="ri-share-line text-lg"></i>
-                      </button>
-                    </div>
-                    
-                    <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
-                      Leer más 
-                      <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                    </button>
-                  </div>
-        </article>
-      )}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute top-4 left-4">
+            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+              {news.category}
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <span className="text-gray-500 text-sm">{formatExactDate(news.date)}</span>
+          <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
+            {news.title}
+          </h3>
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
+          <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
+            Leer más <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+          </button>
+        </div>
+      </article>
       {(index + 1) % 3 === 0 && <SponsorBanner />}
     </React.Fragment>
   ))}
