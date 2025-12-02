@@ -3531,7 +3531,6 @@ const SponsorBanner = () => (
       </div>
     </div>
   );
-}
 
 const renderContent = () => {
 if (activeTab === 'guardados') {
