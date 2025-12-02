@@ -330,6 +330,33 @@ const getFilteredNews = () => {
   });
 };
 
+// convierte el contenido en párrafos y transforma **bold** a <strong>
+// mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
+const renderArticleContent = (text?: string) => {
+  if (!text) return null;
+
+  // 1) Normaliza saltos de línea CRLF/CR a LF
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+
+  // 2) Separa por doble salto de línea => párrafos
+  const paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  // 3) Reemplaza sintaxis **bold** por <strong>
+  const toHtml = (p: string) =>
+    p
+      // mantener saltos simples dentro del párrafo como espacios
+      .replace(/\n+/g, ' ')
+      // **negrita**
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      // comillas inteligentes -> normales (opcional)
+      .replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+
+  return paragraphs.map((p, i) => (
+    <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+  ));
+};
+
+
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
     key={news.id}
@@ -371,9 +398,10 @@ const CrónicaLayout = ({ news }: { news: any }) => (
               <i className="ri-file-text-line mr-2 text-red-600"></i>
               Resumen de la corrida
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed line-clamp-5">
-              {news.excerpt || "Haz clic para leer la crónica completa."}
-            </p>
+            <div className="text-gray-700 text-sm leading-relaxed">
+ 			 { renderArticleContent(news.fullContent || news.excerpt) }
+			</div>
+
           </div>
           <div className="text-right mt-6">
             <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center gap-2 bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300 inline-flex">
