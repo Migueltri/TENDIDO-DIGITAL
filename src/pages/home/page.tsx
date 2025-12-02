@@ -350,9 +350,9 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
     id: 1001,
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
+    footerImage1?: "/images/alumnos1.jpg",
     category: "Actualidad",
     date: "2 de Diciembre de 2025",
-    footerImage1?: "/images/alumnos1.jpg",
     fullContent: `La alcaldesa **Yolanda Fernández** reafirma el compromiso del municipio con la tauromaquia y su cantera en un acto promovido por la **Plataforma de Novilleros de Andalucía**.
 
 En la tarde de ayer tuvo lugar un emotivo acto en el salón de plenos del Ayuntamiento de Atarfe, donde la alcaldesa Yolanda Fernández recibió a los alumnos de la Escuela Taurina de Atarfe como cierre a una exitosa temporada 2025. La recepción, cargada de cercanía y simbolismo, permitió a los jóvenes toreros compartir sus experiencias y aspiraciones con la máxima representante municipal.
