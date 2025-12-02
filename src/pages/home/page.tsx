@@ -356,6 +356,59 @@ const renderArticleContent = (text?: string) => {
   ));
 };
 
+// utils/renderContent.tsx  (puedes copiarlo directamente en page.tsx si quieres)
+import React from "react";
+
+/**
+ * Renderiza texto con párrafos y respetando HTML/Markdown simple.
+ * - Convierte dobles saltos en <p>
+ * - Mantiene simples etiquetas <a> si existen
+ * - Escapa lo necesario excepto las etiquetas básicas permitidas
+ */
+export const renderArticleContent = (text?: string) => {
+  if (!text) return null;
+
+  // Normaliza saltos de línea
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+
+  // Si el texto contiene etiquetas HTML (<a>, <strong>, etc.), las conservamos.
+  // Para evitar XSS simples, escapamos todo y luego "desescapamos" solo algunas etiquetas seguras.
+  const escapeHtml = (s: string) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  // etiquetas permitidas (añade si necesitas más)
+  const ALLOWED_TAGS = ["a", "strong", "em", "b", "i", "br"];
+
+  // Función que reintroduce solo etiquetas permitidas en el párrafo
+  const allowTags = (s: string) =>
+    s.replace(/&lt;(\/?)([a-zA-Z0-9\-]+)([^&]*)&gt;/g, (m, slash, tag, rest) => {
+      tag = tag.toLowerCase();
+      if (ALLOWED_TAGS.includes(tag)) {
+        // reconstruye la etiqueta con sus atributos si las hubiera (simple)
+        return `<${slash}${tag}${rest.replace(/"/g, '&quot;')}>`;
+      }
+      return m; // deja escapada si no está permitida
+    });
+
+  // Separa por dobles saltos y transforma **bold** a <strong>
+  const paragraphs = normalized
+    .split(/\n\s*\n/)
+    .map(p => p.trim())
+    .filter(Boolean)
+    .map(p => {
+      // reemplaza sintaxis **bold** (poco costoso)
+      let processed = p.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      // escape general y luego permitir etiquetas seguras
+      processed = allowTags(escapeHtml(processed));
+      // mantener saltos simples dentro del párrafo como espacios
+      processed = processed.replace(/\n+/g, " ");
+      return processed;
+    });
+
+  return paragraphs.map((p, i) => (
+    <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: p }} />
+  ));
+};
 
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
