@@ -425,11 +425,11 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
 	imageCaption: "Foto Juan Antonio Caro",
     category: "Actualidad",
     date: "2 de Diciembre de 2025",
-    footerImage1?: "/images/jornada1.jpg",
-    footerImage2?: "/images/jornada2.jpg",
-    footerImage3?: "/images/jornada3.jpg",
-    footerImage4?: "/images/jornada4.jpg",
-    footerImage4Caption?: "Fotos Juan Antonio Caro",
+    footerImage1: "/images/jornada1.jpg",
+    footerImage2: "/images/jornada2.jpg",
+    footerImage3: "/images/jornada3.jpg",
+    footerImage4: "/images/jornada4.jpg",
+    footerImage4Caption: "Fotos Juan Antonio Caro",
     fullContent: `Al filo de las 12:00 horas del pasado –sábado, 29 de noviembre–, dio comienzo en la Finca Herdade do Barroso –propiedad de D. José Luis Pereda López y situada en la comarca portuguesa del Alentejo– una destacada jornada de disciplina hípica deportiva. Esta actividad, denominada actualmente ‘Faena y Doma de Campo’ y conocida tradicionalmente como ‘Acoso y Derribo’, congregó a un nutrido y cualificado grupo de participantes, subrayando el carácter histórico y señero de esta labor ganadera.
 
 La cita reunió a **50 colleras de garrochistas, organizadas en 10 grupos**, que protagonizaron una intensa y coordinada faena campera.
@@ -614,11 +614,11 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
 	imageCaption: "Foto Juan Antonio Caro",
     category: "Actualidad",
     date: "2 de Diciembre de 2025",
-    footerImage1?: "/images/jornada1.jpg",
-    footerImage2?: "/images/jornada2.jpg",
-    footerImage3?: "/images/jornada3.jpg",
-    footerImage4?: "/images/jornada4.jpg",
-    footerImage4Caption?: "Fotos Juan Antonio Caro",
+    footerImage1: "/images/jornada1.jpg",
+    footerImage2: "/images/jornada2.jpg",
+    footerImage3: "/images/jornada3.jpg",
+    footerImage4: "/images/jornada4.jpg",
+    footerImage4Caption: "Fotos Juan Antonio Caro",
     fullContent: `Al filo de las 12:00 horas del pasado –sábado, 29 de noviembre–, dio comienzo en la Finca Herdade do Barroso –propiedad de D. José Luis Pereda López y situada en la comarca portuguesa del Alentejo– una destacada jornada de disciplina hípica deportiva. Esta actividad, denominada actualmente ‘Faena y Doma de Campo’ y conocida tradicionalmente como ‘Acoso y Derribo’, congregó a un nutrido y cualificado grupo de participantes, subrayando el carácter histórico y señero de esta labor ganadera.
 
 La cita reunió a **50 colleras de garrochistas, organizadas en 10 grupos**, que protagonizaron una intensa y coordinada faena campera.
