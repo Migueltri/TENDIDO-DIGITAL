@@ -3544,13 +3544,6 @@ if (activeTab === 'cronicas') {
             onClick={() => openChronicleModal(chronicle)}
           >
             <div className="p-6">
-              {/* Header con categoría */}
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm uppercase tracking-wide">
-                  {chronicle.plaza?.split('(')[0].trim() || 'Plaza no especificada'}
-                </span>
-                <span className="text-gray-500 text-sm font-medium">{chronicle.date}</span>
-              </div>
               
               {/* Título principal */}
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300 leading-tight">
