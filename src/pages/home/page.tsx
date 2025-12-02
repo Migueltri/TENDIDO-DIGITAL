@@ -28,6 +28,7 @@
   authorLogo?: string;
   showAuthorHeader?: boolean;
 }
+
 type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
@@ -329,6 +330,62 @@ const getFilteredNews = () => {
   });
 };
 
+const CrónicaLayout = ({ news }: { news: any }) => (
+  <article
+    key={news.id}
+    className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 cursor-pointer"
+    onClick={() => openNewsModal(news)}
+  >
+    <div className="p-6">
+      <h3 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 leading-tight">
+        {news.title}
+      </h3>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-1">
+          <div className="relative overflow-hidden rounded-xl">
+            <img
+              src={news.image}
+              alt={news.title}
+              className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+          <div className="bg-gray-50 rounded-xl p-4 mb-6">
+            <div className="flex flex-wrap justify-between text-sm md:text-base">
+              <p>
+                <span className="font-semibold text-gray-900">Plaza:</span>{" "}
+                <span className="text-gray-700">{news.plaza || "No especificada"}</span>
+              </p>
+              <p>
+                <span className="font-semibold text-gray-900">Ganadería:</span>{" "}
+                <span className="text-red-600 font-medium">{news.ganaderia || "No indicada"}</span>
+              </p>
+            </div>
+          </div>
+          <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+            <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+              <i className="ri-file-text-line mr-2 text-red-600"></i>
+              Resumen de la corrida
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed line-clamp-5">
+              {news.excerpt || "Haz clic para leer la crónica completa."}
+            </p>
+          </div>
+          <div className="text-right mt-6">
+            <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center gap-2 bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300 inline-flex">
+              Leer crónica completa <i className="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+);
+	
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
@@ -3842,15 +3899,17 @@ return (
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-           {getFilteredNews()
+{getFilteredNews()
   .slice(0, visibleNewsCount)
   .map((news, index) => (
-    <>
-      <article
-        key={news.id}
-        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-        onClick={() => openNewsModal(news)}
-      >
+    <React.Fragment key={news.id}>
+      {news.category === "Crónicas" ? (
+        <CrónicaLayout news={news} />
+      ) : (
+        <article
+          className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+          onClick={() => openNewsModal(news)}
+        >
                 <div className="relative overflow-hidden">
                   <img
                     src={news.image}
@@ -3903,10 +3962,10 @@ return (
                       <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
                     </button>
                   </div>
-              </article>
-               {/* Inserta el banner cada 3 noticias */}
+        </article>
+      )}
       {(index + 1) % 3 === 0 && <SponsorBanner />}
-    </>
+    </React.Fragment>
   ))}
 			  </div>
 			
