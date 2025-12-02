@@ -1,4 +1,5 @@
   import React, { useState, useEffect } from "react";
+  import type { FC } from "react";
   interface BaseArticle {
   id: number;
   title: string;
@@ -334,61 +335,17 @@ const getFilteredNews = () => {
 // mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
 const renderArticleContent = (text?: string) => {
   if (!text) return null;
-
-  // 1) Normaliza saltos de línea CRLF/CR a LF
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-
-  // 2) Separa por doble salto de línea => párrafos
   const paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-  // 3) Reemplaza sintaxis **bold** por <strong>
   const toHtml = (p: string) =>
     p
-      // mantener saltos simples dentro del párrafo como espacios
       .replace(/\n+/g, ' ')
-      // **negrita**
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      // comillas inteligentes -> normales (opcional)
       .replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
-
   return paragraphs.map((p, i) => (
     <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
   ));
 };
-
-// utils/renderContent.tsx  (puedes copiarlo directamente en page.tsx si quieres)
-import React from "react";
-
-/**
- * Renderiza texto con párrafos y respetando HTML/Markdown simple.
- * - Convierte dobles saltos en <p>
- * - Mantiene simples etiquetas <a> si existen
- * - Escapa lo necesario excepto las etiquetas básicas permitidas
- */
-export const renderArticleContent = (text?: string) => {
-  if (!text) return null;
-
-  // Normaliza saltos de línea
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-
-  // Si el texto contiene etiquetas HTML (<a>, <strong>, etc.), las conservamos.
-  // Para evitar XSS simples, escapamos todo y luego "desescapamos" solo algunas etiquetas seguras.
-  const escapeHtml = (s: string) =>
-    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-
-  // etiquetas permitidas (añade si necesitas más)
-  const ALLOWED_TAGS = ["a", "strong", "em", "b", "i", "br"];
-
-  // Función que reintroduce solo etiquetas permitidas en el párrafo
-  const allowTags = (s: string) =>
-    s.replace(/&lt;(\/?)([a-zA-Z0-9\-]+)([^&]*)&gt;/g, (m, slash, tag, rest) => {
-      tag = tag.toLowerCase();
-      if (ALLOWED_TAGS.includes(tag)) {
-        // reconstruye la etiqueta con sus atributos si las hubiera (simple)
-        return `<${slash}${tag}${rest.replace(/"/g, '&quot;')}>`;
-      }
-      return m; // deja escapada si no está permitida
-    });
 
   // Separa por dobles saltos y transforma **bold** a <strong>
   const paragraphs = normalized
