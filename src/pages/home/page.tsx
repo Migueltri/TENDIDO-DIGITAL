@@ -558,8 +558,8 @@ El acto culminó con una exhibición de toreo de salón por parte de los propios
 Esta actividad ha sido impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía** de la Fundación Toro de Lidia, contando con la colaboración y el respaldo fundamental de la **Diputación de Granada**, institución clave en el fortalecimiento y promoción de la cantera taurina de la provincia.
 
 La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la **Junta de Andalucía**, **Fundación Caja Rural del Sur**, **Fundación Cajasol**, **Instituto Andaluz de la Juventud**, **Real Maestranza de Caballería de Sevilla**, **Diputación de Málaga**, **Diputación de Huelva**, **Diputación de Córdoba**, **Diputación de Granada** y **Diputación de Cádiz**.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
    { 
@@ -603,8 +603,8 @@ Tras el paseíllo sonó el Himno de España.
 Presidió: D. Francisco Alonso, asesorado por Dña. Mª del Pilar Portillo, perteneciente a la UPTE (Unión de Presidentes de Plazas de Toros de España).
 Asistió al festejo el Delegado del Gobierno de la Junta de Andalucía en Sevilla, D. Ricardo Sánchez Antúnez y el Alcalde de la localidad, D. Carlos Raigada Barrero.
 Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el propio Ayuntamiento de Almadén de la Plata.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -633,8 +633,8 @@ Asimismo, el encuentro contó con la presencia de personalidades que representan
 La jornada transcurrió en un ambiente de excelencia técnica y deportividad, en la que todos los intervinientes demostraron su pericia y habilidad. La supervisión técnica corrió a cargo de **D. Carlos Cid**, juez nacional de acoso y derribo, cuya labor garantizó el correcto desarrollo de la actividad en cada una de sus fases.
 
 Finalmente, merece una mención especial el impecable trabajo organizativo del anfitrión D. José Luis Pereda y de Manuel Sevillano Torres, actual mayoral de la ganadería de Pereda, cuya dedicación resultó clave para el éxito de esta jornada que reafirma el valor cultural, deportivo y tradicional de la Faena y Doma de Campo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -686,8 +686,8 @@ La XIII Competición Provincial de las Escuelas Taurinas de Cádiz ha contado co
 **PALCO:**
 Presidió el Alcalde de Algar, D. José Carlos Sánchez.
 Asesores: D. Juan Pedro Sánchez.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
