@@ -8,6 +8,7 @@
   toreros?: string[];
   ganaderia?: string;
   resultado?: string[];
+  torerosRaw?: string[];
   image: string;
   imageCaption?: string;
   video?: string;
@@ -486,9 +487,16 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     image: "/images/almaden1.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	torerosRaw: `
+Agustín de Antonio: Dos Orejas Tras Aviso
+Candela "La Piyaya": Dos Orejas
+Fernando Lovera: Dos Orejas Tras Aviso
+Armando Rojo: Oreja Con Petición de la Segunda Tras Aviso
+Mario Torres: Oreja Tras Dos Avisos
+Juan Manuel Viruez: Oreja Tras Aviso
+`,
     fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
 La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
-
 
 **Agustín de Antonio** abrió la tarde con una faena templada y expresiva ante un novillo noble, logrando dos orejas tras aviso.
 **Candela “La Piyaya”** resolvió con firmeza ante un astado áspero, aprovechando los momentos que permitió el lucimiento y cortando dos orejas.
@@ -562,6 +570,15 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
     image: "/images/algar.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
+	torerosRaw: `
+Martín Marengo: Oreja Con Petición de Segunda
+Adrián Olmedo: Palmas Tras Tres Avisos
+Mario Torres: Dos Orejas Tras Aviso
+Remy Lucas: Oreja Tras Aviso
+Celso Ortega: Dos Orejas y Vuelta al Novillo
+Javier Mena: Palmas Tras Tres Avisos
+Gabriel Moreno 'El Calé': Dos Orejas Tras Aviso
+`,
     fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
 La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
 Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
@@ -763,6 +780,15 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
     date: "2 de Diciembre de 2025",
 	plaza: "Algar",
     ganaderia: "El Torero",
+	torerosRaw: `
+Martín Marengo: Oreja Con Petición de Segunda
+Adrián Olmedo: Palmas Tras Tres Avisos
+Mario Torres: Dos Orejas Tras Aviso
+Remy Lucas: Oreja Tras Aviso
+Celso Ortega: Dos Orejas y Vuelta al Novillo
+Javier Mena: Palmas Tras Tres Avisos
+Gabriel Moreno 'El Calé': Dos Orejas Tras Aviso
+`,
     fullContent: `La plaza de toros de Algar (Cádiz) se convirtió este fin de semana en el escenario de la **Gran Final de las Becerradas de la XIII Competición Provincial de las Escuelas Taurinas de Cádiz** —bajo el patrocinio de la Excma. Diputación de Cádiz— un festejo que, pese a la tarde desapacible y fría, registró un lleno absoluto en los tendidos del centenario coso gaditano.
 La cita reunió a los jóvenes valores del toreo provincial, que demostraron capacidad, entrega y ambición ante un encierro variado de la ganadería de **El Torero**, cuyos astados ofrecieron desigual presentación y juego.
 Destacó especialmente el quinto becerro, premiado con la vuelta al ruedo por su calidad y bravura.
@@ -3243,6 +3269,14 @@ Asesores: D. Juan Pedro Sánchez.`,
     date: "2 de Diciembre de 2025",
 	plaza: "Almadén de la Plata",
     ganaderia: "El Torero",
+	torerosRaw: `
+Agustín de Antonio: Dos Orejas Tras Aviso
+Candela "La Piyaya": Dos Orejas
+Fernando Lovera: Dos Orejas Tras Aviso
+Armando Rojo: Oreja Con Petición de la Segunda Tras Aviso
+Mario Torres: Oreja Tras Dos Avisos
+Juan Manuel Viruez: Oreja Tras Aviso
+`,
     fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
 La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
 
@@ -4801,32 +4835,34 @@ TENDIDO DIGITAL
         </div>
       </div>
 
-		{selectedNews.torerosRaw && (
-  <div className="mb-6">
-    <h3 className="font-bold text-gray-900 flex items-center mb-3">
+		{/* TOREROS + RESULTADO */}
+{selectedNews.torerosRaw && (
+  <div className="bg-white border border-gray-200 rounded-xl p-5 mb-8 shadow-sm">
+    <h3 className="font-bold text-gray-900 mb-4 flex items-center">
       <i className="ri-user-star-line text-red-600 mr-2"></i>
       Resultados
     </h3>
 
-    {selectedNews.torerosRaw
-      .trim()
-      .split("\n")
-      .filter(Boolean)
-      .map((line, i) => {
-        const [nombre, resultado] = line.split(":").map(s => s.trim());
-        return (
-          <div key={i} className="flex items-start bg-white border border-gray-200 rounded-lg p-3 mb-2">
-            <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
-            <div>
-              <p className="font-bold text-gray-900">{nombre}</p>
-              <p className="text-gray-700 text-sm">{resultado}</p>
+    <div className="space-y-3">
+      {selectedNews.torerosRaw
+        .trim()
+        .split("\n")
+        .filter(Boolean)
+        .map((line, i) => {
+          const [nombre, resultado] = line.split(":").map(s => s.trim());
+          return (
+            <div key={i} className="flex items-start bg-red-50 border border-red-200 p-4 rounded-lg">
+              <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
+              <div>
+                <p className="font-bold text-gray-900">{nombre}</p>
+                <p className="text-gray-700 text-sm">{resultado}</p>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+    </div>
   </div>
 )}
-
 
       {/* Contenido */}
       <div className="bg-white">
