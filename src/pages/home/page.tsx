@@ -487,7 +487,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     image: "/images/almaden1.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
-	torerosRaw: `
+	toreros: `
 Agustín de Antonio: Dos Orejas Tras Aviso
 Candela "La Piyaya": Dos Orejas
 Fernando Lovera: Dos Orejas Tras Aviso
@@ -570,7 +570,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
     image: "/images/algar.jpg",
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
-	torerosRaw: `
+	toreros: `
 Martín Marengo: Oreja Con Petición de Segunda
 Adrián Olmedo: Palmas Tras Tres Avisos
 Mario Torres: Dos Orejas Tras Aviso
@@ -695,7 +695,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     date: "2 de Diciembre de 2025",
 	plaza: "Almadén de la Plata",
     ganaderia: "El Torero",
-	torerosRaw: `
+	toreros: `
 Agustín de Antonio: Dos Orejas Tras Aviso
 Candela "La Piyaya": Dos Orejas
 Fernando Lovera: Dos Orejas Tras Aviso
@@ -780,7 +780,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
     date: "2 de Diciembre de 2025",
 	plaza: "Algar",
     ganaderia: "El Torero",
-	torerosRaw: `
+	toreros: `
 Martín Marengo: Oreja Con Petición de Segunda
 Adrián Olmedo: Palmas Tras Tres Avisos
 Mario Torres: Dos Orejas Tras Aviso
@@ -3206,7 +3206,7 @@ const chronicles: Chronicle[] = [
     date: "2 de Diciembre de 2025",
 	plaza: "Algar",
     ganaderia: "El Torero",
-	torerosRaw: `
+	toreros: `
 Agustín de Antonio: Dos Orejas Tras Aviso
 Candela "La Piyaya": Dos Orejas
 Fernando Lovera: Dos Orejas Tras Aviso
@@ -3269,7 +3269,7 @@ Asesores: D. Juan Pedro Sánchez.`,
     date: "2 de Diciembre de 2025",
 	plaza: "Almadén de la Plata",
     ganaderia: "El Torero",
-	torerosRaw: `
+	toreros: `
 Agustín de Antonio: Dos Orejas Tras Aviso
 Candela "La Piyaya": Dos Orejas
 Fernando Lovera: Dos Orejas Tras Aviso
