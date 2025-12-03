@@ -335,19 +335,38 @@ const getFilteredNews = () => {
 const renderArticleContent = (text?: string | null) => {
   if (!text) return null;
 
-  // Normaliza saltos de línea
+  // Normaliza saltos y recorta
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
 
-  // Divide por dobles saltos en párrafos y filtra vacíos
-  const paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+  // 1) Intento normal: dividir por dobles saltos de línea
+  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
 
-  // Convierte **bold** y mantiene comillas normales
+  // 2) Si no hay dobles saltos y el texto es largo, dividir por párrafos cada 2-3 oraciones
+  if (paragraphs.length === 1 && normalized.length > 200) {
+    // separación por oraciones (aprox usando punto+símbolo)
+    const sentences = normalized.split(/(?<=[.?!])\s+/);
+    const groupSize = 2; // agrupar 2 oraciones por párrafo (ajusta si quieres)
+    paragraphs = [];
+    for (let i = 0; i < sentences.length; i += groupSize) {
+      paragraphs.push(sentences.slice(i, i + groupSize).join(' ').trim());
+    }
+  }
+
+  // 3) Si sigue siendo uno y hay comas largas, romper por comas con sentido (fallback)
+  if (paragraphs.length === 1 && normalized.length > 1000) {
+    const parts = normalized.split(/, /);
+    paragraphs = [];
+    for (let i = 0; i < parts.length; i += 4) {
+      paragraphs.push(parts.slice(i, i + 4).join(', ').trim());
+    }
+  }
+
+  // Función que convierte **bold** y limita HTML esperado
   const toHtml = (p: string) =>
     p
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/[“”]/g, '"')
       .replace(/[‘’]/g, "'")
-      // reemplaza saltos simples dentro de párrafo por espacio
       .replace(/\n+/g, ' ');
 
   return paragraphs.map((p, i) => (
@@ -4756,11 +4775,11 @@ TENDIDO DIGITAL
           </h1>
 
           <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-		  <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
- 		 <div className="text-gray-700">
- 	     {renderArticleContent(selectedChronicle.detalles)}
-	 	 </div>
-    	</div>
+ 		  <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
+		  <div className="text-gray-700">
+		  {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
+		  </div>
+		  </div>
 	
           <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center space-x-6">
