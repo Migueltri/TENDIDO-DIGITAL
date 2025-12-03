@@ -353,6 +353,17 @@ const renderArticleContent = (text?: string | null) => {
     }
   }
 
+const splitToreros = (raw?: string | string[]) => {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw.filter(Boolean).map(r => r.trim());
+  return String(raw)
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .split('\n')
+    .map(l => l.trim())
+    .filter(Boolean);
+};
+
   // 3) Si sigue siendo uno y hay comas largas, romper por comas con sentido (fallback)
   if (paragraphs.length === 1 && normalized.length > 1000) {
     const parts = normalized.split(/, /);
@@ -3967,6 +3978,21 @@ return (
     </React.Fragment>
   ))}
 			  </div>
+
+			{/* Mostrar lista breve de toreros si existe */}
+{splitToreros(news.toreros || (news as any).torerosRaw).length > 0 && (
+  <div className="mt-3 text-sm">
+    {splitToreros(news.toreros || (news as any).torerosRaw).slice(0, 3).map((line, idx) => (
+      <p key={idx} className="text-gray-700 leading-snug">
+        {line}
+      </p>
+    ))}
+    {splitToreros(news.toreros || (news as any).torerosRaw).length > 3 && (
+      <p className="text-gray-500 text-xs mt-1">+{splitToreros(news.toreros || (news as any).torerosRaw).length - 3} más</p>
+    )}
+  </div>
+)}
+
 			
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
