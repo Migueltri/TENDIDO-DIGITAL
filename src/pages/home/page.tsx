@@ -332,27 +332,30 @@ const getFilteredNews = () => {
 
 // convierte el contenido en párrafos y transforma **bold** a <strong>
 // mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
-const renderArticleContent = (text?: string) => {
+const renderArticleContent = (text?: string | null) => {
   if (!text) return null;
 
-  // 1) Normaliza saltos de línea CRLF/CR a LF
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  // Normaliza saltos de línea
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
 
-  // 2) Separa por doble salto de línea => párrafos
+  // Divide por dobles saltos en párrafos y filtra vacíos
   const paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
 
-  // 3) Reemplaza sintaxis **bold** por <strong>
+  // Convierte **bold** y mantiene comillas normales
   const toHtml = (p: string) =>
     p
-      // mantener saltos simples dentro del párrafo como espacios
-      .replace(/\n+/g, ' ')
-      // **negrita**
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      // comillas inteligentes -> normales (opcional)
-      .replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+      // reemplaza saltos simples dentro de párrafo por espacio
+      .replace(/\n+/g, ' ');
 
   return paragraphs.map((p, i) => (
-    <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+    <p
+      key={i}
+      className="text-gray-700 text-sm leading-relaxed mb-4"
+      dangerouslySetInnerHTML={{ __html: toHtml(p) }}
+    />
   ));
 };
 
@@ -4765,10 +4768,12 @@ TENDIDO DIGITAL
           </h1>
 
           <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-            <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
-            <p className="text-gray-700">{selectedChronicle.detalles}</p>
-          </div>
-
+		  <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
+ 		 <div className="text-gray-700">
+ 	     {renderArticleContent(selectedChronicle.detalles)}
+	 	 </div>
+    	</div>
+	
           <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center space-x-6">
               <button
