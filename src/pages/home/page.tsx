@@ -634,7 +634,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     category: "Crónicas",
     date: "2 de Diciembre de 2025",
 	plaza: "Almadén de la Plata",
-    ganaderia: "El Torero",
+    ganaderia: "Albarreal",
 	 torerosRaw: `
 Agustín de Antonio: Dos Orejas Tras Aviso
 Candela "La Piyaya": Dos Orejas
