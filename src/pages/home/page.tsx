@@ -1,5 +1,4 @@
   import React, { useState, useEffect } from "react";
-  import type { FC } from "react";
   interface BaseArticle {
   id: number;
   title: string;
@@ -335,37 +334,28 @@ const getFilteredNews = () => {
 // mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
 const renderArticleContent = (text?: string) => {
   if (!text) return null;
+
+  // 1) Normaliza saltos de línea CRLF/CR a LF
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+
+  // 2) Separa por doble salto de línea => párrafos
   const paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  // 3) Reemplaza sintaxis **bold** por <strong>
   const toHtml = (p: string) =>
     p
+      // mantener saltos simples dentro del párrafo como espacios
       .replace(/\n+/g, ' ')
+      // **negrita**
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      // comillas inteligentes -> normales (opcional)
       .replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+
   return paragraphs.map((p, i) => (
     <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
   ));
 };
 
-  // Separa por dobles saltos y transforma **bold** a <strong>
-  const paragraphs = normalized
-    .split(/\n\s*\n/)
-    .map(p => p.trim())
-    .filter(Boolean)
-    .map(p => {
-      // reemplaza sintaxis **bold** (poco costoso)
-      let processed = p.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-      // escape general y luego permitir etiquetas seguras
-      processed = allowTags(escapeHtml(processed));
-      // mantener saltos simples dentro del párrafo como espacios
-      processed = processed.replace(/\n+/g, " ");
-      return processed;
-    });
-
-  return paragraphs.map((p, i) => (
-    <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: p }} />
-  ));
-};
 
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
@@ -3328,6 +3318,16 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
   }
 ];
 
+// Función para cargar más noticias
+const loadMoreNews = () => {
+setIsLoadingMore(true);
+
+setTimeout(() => {
+  setVisibleNewsCount(prev => Math.min(prev + 6, getFilteredNews().length));
+  setIsLoadingMore(false);
+}, 800);
+};
+
 // Función para hacer scroll suave a las secciones
 const scrollToSection = (sectionId: string) => {
 const element = document.getElementById(sectionId);
@@ -3436,11 +3436,31 @@ document.body.style.overflow = 'unset';
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
 
+const SponsorBanner = () => (
+  <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+    <a
+      href="https://tauromania.es"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center justify-center space-y-3"
+    >
+      <img
+        src="/images/tauromania.png"
+        alt="TauroManía logo"
+        className="w-52 md:w-64 object-contain"
+      />
+      <p className="text-gray-700 font-medium text-sm text-center">
+        Colaboración <span className="font-bold text-yellow-600">- TauroManía</span>
+      </p>
+    </a>
+  </div>
+);
+	
   if (activeTab === 'entrevistas') {
   const entrevistas = latestNews.filter(item => 
     item.title.toLowerCase().includes('entrevista')
   );
-
+	  
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="text-center mb-12">
@@ -3617,13 +3637,6 @@ if (activeTab === 'cronicas') {
             onClick={() => openChronicleModal(chronicle)}
           >
             <div className="p-6">
-              {/* Header con categoría */}
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm uppercase tracking-wide">
-                  {chronicle.plaza?.split('(')[0].trim() || 'Plaza no especificada'}
-                </span>
-                <span className="text-gray-500 text-sm font-medium">{chronicle.date}</span>
-              </div>
               
               {/* Título principal */}
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300 leading-tight">
@@ -3701,7 +3714,7 @@ if (activeTab === 'cronicas') {
                 </div>
               </div>
               
-                 {/* Footer con acciones */}
+              {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                 <div className="flex items-center space-x-4">
                   <button 
@@ -3914,12 +3927,14 @@ return (
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {getFilteredNews().slice(0, visibleNewsCount).map((news) => (
-              <article 
-                key={news.id} 
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-                onClick={() => openNewsModal(news)}
-              >
+{getFilteredNews()
+  .slice(0, visibleNewsCount)
+  .map((news, index) => (
+    <React.Fragment key={news.id}>
+      <article
+        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
+        onClick={() => openNewsModal(news)}
+      >
                 <div className="relative overflow-hidden">
                   <img
                     src={news.image}
@@ -3927,54 +3942,27 @@ return (
                     className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                      {news.category}
-                    </span>
-                  </div>
-                </div>
-<div className="flex items-center text-gray-500 text-sm space-x-2">
-  <span>{formatExactDate(news.date)}</span>
-  <span>•</span>
-  <span>{formatTimeAgo(news.date)}</span>
-</div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
-                    {news.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="flex items-center space-x-4">
-                      <button 
-                        onClick={(e) => toggleSave(news.id, e)}
-                        className={`transition-all duration-300 ${
-                          savedPosts.has(news.id) 
-                            ? 'text-yellow-600' 
-                            : 'text-gray-500 hover:text-yellow-600'
-                        }`}
-                        aria-label={savedPosts.has(news.id) ? 'Quitar de guardados' : 'Guardar noticia'}
-                      >
-                        <i className={`${savedPosts.has(news.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-lg`}></i>
-                      </button>
-                      
-                      <button 
-                        onClick={(e) => openShareModal(news, e)}
-                        className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
-                        aria-label="Compartir noticia"
-                      >
-                        <i className="ri-share-line text-lg"></i>
-                      </button>
-                    </div>
-                    
-                    <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
-                      Leer más 
-                      <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                    </button>
-                  </div>
-              </article>
-            ))}
-
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute top-4 left-4">
+            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+              {news.category}
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <span className="text-gray-500 text-sm">{formatExactDate(news.date)}</span>
+          <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
+            {news.title}
+          </h3>
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
+          <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
+            Leer más <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+          </button>
+        </div>
+      </article>
+      {(index + 1) % 3 === 0 && <SponsorBanner />}
+    </React.Fragment>
+  ))}
 			  </div>
 			
           {/* Load More Button */}
@@ -4587,29 +4575,63 @@ TENDIDO DIGITAL
             {selectedNews.excerpt}
           </p>
         )}
+{/* Contenido de la crónica o noticia */}
+{selectedNews.category === "Crónicas" ? (
+  <>
+    {/* Datos principales */}
+    <div className="bg-gray-50 rounded-xl p-6 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base">
+        <p>
+          <span className="font-semibold text-gray-900">Plaza: </span>
+          <span className="text-gray-800">{selectedNews.plaza || "No especificada"}</span>
+        </p>
+        <p>
+          <span className="font-semibold text-gray-900">Ganadería: </span>
+          <span className="text-red-600 font-semibold">{selectedNews.ganaderia || "No indicada"}</span>
+        </p>
+      </div>
+    </div>
 
-{/* Texto de la noticia */}
-<div className="prose prose-xl max-w-none">
-  <div
-    className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
-      selectedNews.boldContent ? "font-bold" : ""
-    }`}
-  >
-    {selectedNews.fullContent
-      ?.split("\n\n")
-      .map((paragraph, i) => (
-        <p
-          key={i}
-          className="whitespace-pre-line"
-          dangerouslySetInnerHTML={{
-            __html: paragraph
-              .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-              .trim(),
-          }}
-        />
-      ))}
+    {/* Resumen o cuerpo */}
+    <div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
+      <h3 className="font-bold text-gray-900 flex items-center mb-3">
+        <i className="ri-file-text-line text-red-600 mr-2"></i>
+        Resumen de la corrida
+      </h3>
+      <div
+        className="text-gray-700 text-lg leading-relaxed space-y-4"
+        dangerouslySetInnerHTML={{
+          __html: selectedNews.fullContent
+            ?.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+            .trim(),
+        }}
+      />
+    </div>
+  </>
+) : (
+  /* Formato normal para noticias */
+  <div className="prose prose-xl max-w-none">
+    <div
+      className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
+        selectedNews.boldContent ? "font-bold" : ""
+      }`}
+    >
+      {selectedNews.fullContent
+        ?.split("\n\n")
+        .map((paragraph, i) => (
+          <p
+            key={i}
+            className="whitespace-pre-line"
+            dangerouslySetInnerHTML={{
+              __html: paragraph
+                .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
+                .trim(),
+            }}
+          />
+        ))}
+    </div>
   </div>
-</div>
+)}
 
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
