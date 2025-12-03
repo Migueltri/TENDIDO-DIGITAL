@@ -4619,19 +4619,7 @@ TENDIDO DIGITAL
         selectedNews.boldContent ? "font-bold" : ""
       }`}
     >
-      {selectedNews.fullContent
-        ?.split("\n\n")
-        .map((paragraph, i) => (
-          <p
-            key={i}
-            className="whitespace-pre-line"
-            dangerouslySetInnerHTML={{
-              __html: paragraph
-                .replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-                .trim(),
-            }}
-          />
-        ))}
+{renderArticleContent(selectedNews.fullContent)}
     </div>
   </div>
 )}
