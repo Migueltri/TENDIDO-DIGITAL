@@ -4700,6 +4700,30 @@ TENDIDO DIGITAL
   </div>
 )}
 
+{/* Lista de toreros (para noticias normales) */}
+{splitToreros(selectedNews.toreros || (selectedNews as any).torerosRaw).length > 0 && (
+  <div className="bg-white rounded-xl p-6 mb-6 border border-gray-100 shadow-sm">
+    <h4 className="font-semibold text-gray-900 mb-2">Toreros / Resultados</h4>
+    <div className="space-y-2 text-gray-700">
+      {splitToreros(selectedNews.toreros || (selectedNews as any).torerosRaw).map((line, i) => (
+        <div key={i} className="flex items-start">
+          <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+          <div>
+            {line.includes(':') ? (
+              <>
+                <p className="font-bold text-gray-900">{line.split(':')[0].trim()}</p>
+                <p className="text-sm text-gray-700">{line.split(':').slice(1).join(':').trim()}</p>
+              </>
+            ) : (
+              <p className="text-gray-700">{line}</p>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+		  
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
   {selectedNews.footerImage1 && (
