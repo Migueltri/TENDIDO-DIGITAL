@@ -67,6 +67,63 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
+/**
+ * Parsea un bloque de texto tipo:
+ * "Agustín de Antonio: Dos Orejas Tras Aviso\nCandela 'La Piyaya': Dos Orejas\n..."
+ * o acepta un array ya separado o un array de objetos {name,result}.
+ */
+const parseToreros = (raw?: string | string[]) =>
+{
+  if (!raw) return [];
+  if (Array.isArray(raw) && raw.length && typeof raw[0] === 'string') {
+    return (raw as string[]).map((line) => {
+      const [name, ...rest] = line.split(':');
+      return { name: (name || '').trim(), result: rest.join(':').trim() };
+    }).filter(Boolean);
+  }
+
+  if (Array.isArray(raw) && raw.length && typeof raw[0] === 'object') {
+    // ya es [{name,result}, ...]
+    return raw as {name:string,result:string}[];
+  }
+
+  // normalizar saltos y líneas vacías
+  const normalized = (raw as string).replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  const lines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
+
+  return lines.map(line => {
+    const parts = line.split(':');
+    const name = parts.shift() || '';
+    const result = parts.join(':') || '';
+    return { name: name.trim(), result: result.trim() };
+  }).filter(Boolean);
+};
+
+const TorerosList = ({ data }: { data?: string | string[] | {name:string,result:string}[] }) => {
+  const parsed = Array.isArray(data) && data.length && typeof (data as any)[0] === 'object'
+    ? (data as {name:string,result:string}[])
+    : parseToreros(data as any);
+
+  if (!parsed || parsed.length === 0) return null;
+
+  return (
+    <div className="mt-8">
+      <h4 className="font-bold text-gray-900 text-lg mb-4">Resultados:</h4>
+      <div className="space-y-4">
+        {parsed.map((t, i) => (
+          <div key={i} className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-4">
+            <div className="w-3 h-3 rounded-full bg-red-600 mt-1 flex-shrink-0" />
+            <div>
+              <p className="font-bold text-gray-900">{t.name}</p>
+              {t.result && <p className="text-gray-600 text-sm mt-1">{t.result}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -3728,37 +3785,6 @@ if (activeTab === 'cronicas') {
                 </div>
               </div>
 
-// Parsea un bloque de texto tipo:
-// "Agustín de Antonio: Dos Orejas Tras Aviso\nCandela 'La Piyaya': Dos Orejas\n..."
-const parseToreros = (raw?: string | string[]) => {
-  if (!raw) return [];
-  if (Array.isArray(raw)) {
-    // si ya es array de strings "Nombre: Resultado"
-    return raw.map((line) => {
-      const [name, ...rest] = line.split(':');
-      return { name: (name || '').trim(), result: rest.join(':').trim() };
-    }).filter(Boolean);
-  }
-
-  // normaliza saltos y borra líneas vacías
-  const normalized = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-  const lines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
-
-  return lines.map(line => {
-    const parts = line.split(':');
-    const name = parts.shift() || '';
-    const result = parts.join(':') || '';
-    return { name: name.trim(), result: result.trim() };
-  }).filter(Boolean);
-};
-
-const TorerosList = ({ data }: { data?: string | string[] | {name:string,result:string}[] }) => {
-  const parsed = Array.isArray(data) && data.length && typeof data[0] === 'object'
-    ? (data as {name:string,result:string}[])
-    : parseToreros(data as any);
-
-  if (!parsed || parsed.length === 0) return null;
-
   return (
     <div className="mt-8">
       <h4 className="font-bold text-gray-900 text-lg mb-4">Resultados:</h4>
@@ -4706,8 +4732,6 @@ TENDIDO DIGITAL
     }}
   />
 </div>
-	{/* Resultados (al final, parseando torerosRaw o toreros) */}
-<TorerosList data={selectedNews.toreros || selectedNews.torerosRaw} />
 
 
   {/* Lista de toreros + resultados (si vienen) */}
@@ -4924,9 +4948,6 @@ TENDIDO DIGITAL
 		  </div>
 		  </div>
 
-			{/* Resultados al final */}
-<TorerosList data={selectedChronicle.toreros || selectedChronicle.torerosRaw} />
-	
           <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center space-x-6">
               <button
