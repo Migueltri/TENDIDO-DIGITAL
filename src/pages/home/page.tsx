@@ -3726,14 +3726,15 @@ if (activeTab === 'cronicas') {
                   
                   {/* Resumen */}
                   <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
-                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
-                      <i className="ri-file-text-line mr-2 text-red-600"></i>
-                      Resumen de la corrida
-                    </h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      {chronicle.detalles}
-                    </p>
-                  </div>
+ 				 <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+ 			   <i className="ri-file-text-line mr-2 text-red-600"></i>
+			    Resumen de la corrida
+			  </h4>
+			  <div className="text-gray-700 text-sm leading-relaxed">
+			 {renderArticleContent(chronicle.detalles || chronicle.fullContent || chronicle.excerpt)}
+ 				</div>
+			</div>
+
                 </div>
               </div>
               
@@ -4621,14 +4622,18 @@ TENDIDO DIGITAL
         <i className="ri-file-text-line text-red-600 mr-2"></i>
         Resumen de la corrida
       </h3>
-      <div
-        className="text-gray-700 text-lg leading-relaxed space-y-4"
-        dangerouslySetInnerHTML={{
-          __html: selectedNews.fullContent
-            ?.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-            .trim(),
-        }}
-      />
+      {/* Convierte saltos en <p> y aplica **bold** */}
+{(() => {
+  const raw = (selectedNews.fullContent || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  if (!raw) return null;
+  const paras = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+  const html = paras
+    .map(p => `<p>${p.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>").replace(/\n+/g, ' ')}</p>`)
+    .join('');
+  return (
+    <div className="text-gray-700 text-lg leading-relaxed space-y-4" dangerouslySetInnerHTML={{ __html: html }} />
+  );
+})()}
     </div>
   </>
 ) : (
