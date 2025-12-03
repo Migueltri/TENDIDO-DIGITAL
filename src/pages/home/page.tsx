@@ -4616,25 +4616,43 @@ TENDIDO DIGITAL
       </div>
     </div>
 
-    {/* Resumen o cuerpo */}
-    <div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
-      <h3 className="font-bold text-gray-900 flex items-center mb-3">
-        <i className="ri-file-text-line text-red-600 mr-2"></i>
-        Resumen de la corrida
-      </h3>
-      {/* Convierte saltos en <p> y aplica **bold** */}
-{(() => {
-  const raw = (selectedNews.fullContent || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-  if (!raw) return null;
-  const paras = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-  const html = paras
-    .map(p => `<p>${p.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>").replace(/\n+/g, ' ')}</p>`)
-    .join('');
-  return (
-    <div className="text-gray-700 text-lg leading-relaxed space-y-4" dangerouslySetInnerHTML={{ __html: html }} />
-  );
-})()}
+{/* Resumen o cuerpo (separado en párrafos) */}
+<div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
+  <h3 className="font-bold text-gray-900 flex items-center mb-3">
+    <i className="ri-file-text-line text-red-600 mr-2"></i>
+    Resumen de la corrida
+  </h3>
+
+  {/* Lista de toreros + resultados (si vienen) */}
+  {selectedNews.toreros && selectedNews.toreros.length > 0 && (
+    <div className="mb-4">
+      <h4 className="font-semibold text-gray-800 mb-2">Resultados:</h4>
+      <div className="space-y-2">
+        {selectedNews.toreros.map((t: string, idx: number) => (
+          <div key={idx} className="flex items-start bg-white border border-gray-200 rounded-lg p-3">
+            <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+            <div className="flex-1">
+              <p className="font-bold text-gray-900">{t}</p>
+              {selectedNews.resultado?.[idx] && (
+                <p className="text-gray-700 text-sm">{selectedNews.resultado[idx]}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  )}
+
+  {/* Cuerpo separado en párrafos y con **bold** convertido */}
+  <div className="text-gray-700 text-lg leading-relaxed">
+    {renderArticleContent(
+      // si hay fullContent lo usamos, si no usamos excerpt o detalles
+      (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "")
+        .replace ? (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**") : (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "")
+    )}
+  </div>
+</div>
+
   </>
 ) : (
   /* Formato normal para noticias */
@@ -4766,18 +4784,6 @@ TENDIDO DIGITAL
           </span>
         </div>
       </div>
-
-		{/* DEBUG: muestra texto crudo con símbolos (elimina esto cuando esté OK) */}
-<div className="bg-gray-100 rounded p-4 mb-4 text-xs text-gray-500">
-  <strong>DEBUG: raw detalles:</strong>
-  <pre style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word', marginTop: 8 }}>
-{(selectedChronicle.fullContent || selectedChronicle.detalles) || '— vacío —'}
-  </pre>
-  <div style={{ marginTop: 8 }}>
-    <em>Nota:</em> Si ves todo junto sin líneas en blanco, el texto carece de dobles saltos; el render automático agrupará por 2 oraciones.
-  </div>
-</div>
-
 
       {/* Contenido */}
       <div className="bg-white">
