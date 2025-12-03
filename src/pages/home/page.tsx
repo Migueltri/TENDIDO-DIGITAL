@@ -3979,20 +3979,6 @@ return (
   ))}
 			  </div>
 
-			{/* Mostrar lista breve de toreros si existe */}
-{splitToreros(news.toreros || (news as any).torerosRaw).length > 0 && (
-  <div className="mt-3 text-sm">
-    {splitToreros(news.toreros || (news as any).torerosRaw).slice(0, 3).map((line, idx) => (
-      <p key={idx} className="text-gray-700 leading-snug">
-        {line}
-      </p>
-    ))}
-    {splitToreros(news.toreros || (news as any).torerosRaw).length > 3 && (
-      <p className="text-gray-500 text-xs mt-1">+{splitToreros(news.toreros || (news as any).torerosRaw).length - 3} más</p>
-    )}
-  </div>
-)}
-
 			
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
@@ -4696,30 +4682,6 @@ TENDIDO DIGITAL
       }`}
     >
 {renderArticleContent(selectedNews.fullContent)}
-    </div>
-  </div>
-)}
-
-{/* Lista de toreros (para noticias normales) */}
-{splitToreros(selectedNews.toreros || (selectedNews as any).torerosRaw).length > 0 && (
-  <div className="bg-white rounded-xl p-6 mb-6 border border-gray-100 shadow-sm">
-    <h4 className="font-semibold text-gray-900 mb-2">Toreros / Resultados</h4>
-    <div className="space-y-2 text-gray-700">
-      {splitToreros(selectedNews.toreros || (selectedNews as any).torerosRaw).map((line, i) => (
-        <div key={i} className="flex items-start">
-          <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-          <div>
-            {line.includes(':') ? (
-              <>
-                <p className="font-bold text-gray-900">{line.split(':')[0].trim()}</p>
-                <p className="text-sm text-gray-700">{line.split(':').slice(1).join(':').trim()}</p>
-              </>
-            ) : (
-              <p className="text-gray-700">{line}</p>
-            )}
-          </div>
-        </div>
-      ))}
     </div>
   </div>
 )}
