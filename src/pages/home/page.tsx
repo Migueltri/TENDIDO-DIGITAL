@@ -67,30 +67,21 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-/**
- * Parsea un bloque de texto tipo:
- * "Agustín de Antonio: Dos Orejas Tras Aviso\nCandela 'La Piyaya': Dos Orejas\n..."
- * o acepta un array ya separado o un array de objetos {name,result}.
- */
-const parseToreros = (raw?: string | string[]) =>
-{
+// --- colocar ANTES de `export default function Home()` ---
+
+const parseToreros = (raw?: string | string[]) => {
   if (!raw) return [];
   if (Array.isArray(raw) && raw.length && typeof raw[0] === 'string') {
-    return (raw as string[]).map((line) => {
+    return (raw as string[]).map(line => {
       const [name, ...rest] = line.split(':');
       return { name: (name || '').trim(), result: rest.join(':').trim() };
     }).filter(Boolean);
   }
-
   if (Array.isArray(raw) && raw.length && typeof raw[0] === 'object') {
-    // ya es [{name,result}, ...]
     return raw as {name:string,result:string}[];
   }
-
-  // normalizar saltos y líneas vacías
   const normalized = (raw as string).replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
   const lines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
-
   return lines.map(line => {
     const parts = line.split(':');
     const name = parts.shift() || '';
@@ -4753,7 +4744,7 @@ TENDIDO DIGITAL
       </div>
     </div>
   )}
-
+	
   {/* Cuerpo separado en párrafos y con **bold** convertido */}
   <div className="text-gray-700 text-lg leading-relaxed">
     {renderArticleContent(
