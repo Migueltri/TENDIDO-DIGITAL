@@ -67,54 +67,6 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-// --- colocar ANTES de `export default function Home()` ---
-
-const parseToreros = (raw?: string | string[]) => {
-  if (!raw) return [];
-  if (Array.isArray(raw) && raw.length && typeof raw[0] === 'string') {
-    return (raw as string[]).map(line => {
-      const [name, ...rest] = line.split(':');
-      return { name: (name || '').trim(), result: rest.join(':').trim() };
-    }).filter(Boolean);
-  }
-  if (Array.isArray(raw) && raw.length && typeof raw[0] === 'object') {
-    return raw as {name:string,result:string}[];
-  }
-  const normalized = (raw as string).replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-  const lines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
-  return lines.map(line => {
-    const parts = line.split(':');
-    const name = parts.shift() || '';
-    const result = parts.join(':') || '';
-    return { name: name.trim(), result: result.trim() };
-  }).filter(Boolean);
-};
-
-const TorerosList = ({ data }: { data?: string | string[] | {name:string,result:string}[] }) => {
-  const parsed = Array.isArray(data) && data.length && typeof (data as any)[0] === 'object'
-    ? (data as {name:string,result:string}[])
-    : parseToreros(data as any);
-
-  if (!parsed || parsed.length === 0) return null;
-
-  return (
-    <div className="mt-8">
-      <h4 className="font-bold text-gray-900 text-lg mb-4">Resultados:</h4>
-      <div className="space-y-4">
-        {parsed.map((t, i) => (
-          <div key={i} className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-4">
-            <div className="w-3 h-3 rounded-full bg-red-600 mt-1 flex-shrink-0" />
-            <div>
-              <p className="font-bold text-gray-900">{t.name}</p>
-              {t.result && <p className="text-gray-600 text-sm mt-1">{t.result}</p>}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -3775,24 +3727,7 @@ if (activeTab === 'cronicas') {
 
                 </div>
               </div>
-
-  return (
-    <div className="mt-8">
-      <h4 className="font-bold text-gray-900 text-lg mb-4">Resultados:</h4>
-      <div className="space-y-4">
-        {parsed.map((t, i) => (
-          <div key={i} className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-4">
-            <div className="w-3 h-3 rounded-full bg-red-600 mt-1 flex-shrink-0" />
-            <div>
-              <p className="font-bold text-gray-900">{t.name}</p>
-              {t.result && <p className="text-gray-600 text-sm mt-1">{t.result}</p>}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-				
+              
               {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                 <div className="flex items-center space-x-4">
@@ -4707,23 +4642,6 @@ TENDIDO DIGITAL
     Resumen de la corrida
   </h3>
 
-	{/* Resumen o cuerpo */}
-<div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
-  <h3 className="font-bold text-gray-900 flex items-center mb-3">
-    <i className="ri-file-text-line text-red-600 mr-2"></i>
-    Resumen de la corrida
-  </h3>
-  <div
-    className="text-gray-700 text-lg leading-relaxed space-y-4"
-    dangerouslySetInnerHTML={{
-      __html: selectedNews.fullContent
-        ?.replace(/(\*{1,2})(.*?)\1/g, "<strong>$2</strong>")
-        .trim(),
-    }}
-  />
-</div>
-
-
   {/* Lista de toreros + resultados (si vienen) */}
   {selectedNews.toreros && selectedNews.toreros.length > 0 && (
     <div className="mb-4">
@@ -4743,7 +4661,7 @@ TENDIDO DIGITAL
       </div>
     </div>
   )}
-	
+
   {/* Cuerpo separado en párrafos y con **bold** convertido */}
   <div className="text-gray-700 text-lg leading-relaxed">
     {renderArticleContent(
@@ -4937,7 +4855,7 @@ TENDIDO DIGITAL
 		  {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
 		  </div>
 		  </div>
-
+	
           <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center space-x-6">
               <button
