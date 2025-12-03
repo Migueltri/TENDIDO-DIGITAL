@@ -489,6 +489,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     fullContent: `La plaza de toros de **Almadén de la Plata** registró un lleno absoluto en la novillada sin picadores organizada con motivo de la **VIII Edición del Día del Jamón**, en la que se lidiaron reses bien presentadas y de juego variado de **Albarreal**, destacando el primero y el tercero.
 La novillada dejó tres ‘Puertas Grandes’ y un notable nivel de las jóvenes promesas, confirmando a Almadén de la Plata como una cita clave para seguir la evolución de los nuevos valores del toreo. Tras el paseíllo sonó el Himno de España, antes de dar paso a una tarde en la que los seis actuantes mostraron oficio, entrega y personalidad.
 
+
 **Agustín de Antonio** abrió la tarde con una faena templada y expresiva ante un novillo noble, logrando dos orejas tras aviso.
 **Candela “La Piyaya”** resolvió con firmeza ante un astado áspero, aprovechando los momentos que permitió el lucimiento y cortando dos orejas.
 El tercer triunfador fue **Fernando Lovera**, que brilló con una actuación muy templada y de gran profundidad, premiada igualmente con dos orejas tras aviso.
@@ -4760,6 +4761,18 @@ TENDIDO DIGITAL
           </span>
         </div>
       </div>
+
+		{/* DEBUG: muestra texto crudo con símbolos (elimina esto cuando esté OK) */}
+<div className="bg-gray-100 rounded p-4 mb-4 text-xs text-gray-500">
+  <strong>DEBUG: raw detalles:</strong>
+  <pre style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word', marginTop: 8 }}>
+{(selectedChronicle.fullContent || selectedChronicle.detalles) || '— vacío —'}
+  </pre>
+  <div style={{ marginTop: 8 }}>
+    <em>Nota:</em> Si ves todo junto sin líneas en blanco, el texto carece de dobles saltos; el render automático agrupará por 2 oraciones.
+  </div>
+</div>
+
 
       {/* Contenido */}
       <div className="bg-white">
