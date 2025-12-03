@@ -3328,16 +3328,6 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
   }
 ];
 
-// Función para cargar más noticias
-const loadMoreNews = () => {
-setIsLoadingMore(true);
-
-setTimeout(() => {
-  setVisibleNewsCount(prev => Math.min(prev + 6, getFilteredNews().length));
-  setIsLoadingMore(false);
-}, 800);
-};
-
 // Función para hacer scroll suave a las secciones
 const scrollToSection = (sectionId: string) => {
 const element = document.getElementById(sectionId);
@@ -3446,25 +3436,10 @@ document.body.style.overflow = 'unset';
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
 
-const SponsorBanner = () => (
-  <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-    <a
-      href="https://tauromania.es"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center space-y-3"
-    >
-      <img
-        src="/images/tauromania.png"
-        alt="TauroManía logo"
-        className="w-52 md:w-64 object-contain"
-      />
-      <p className="text-gray-700 font-medium text-sm text-center">
-        Colaboración <span className="font-bold text-yellow-600">- TauroManía</span>
-      </p>
-    </a>
-  </div>
-);
+  if (activeTab === 'entrevistas') {
+  const entrevistas = latestNews.filter(item => 
+    item.title.toLowerCase().includes('entrevista')
+  );
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -3526,11 +3501,7 @@ const SponsorBanner = () => (
       </div>
     </div>
   );
-	
-  if (activeTab === 'entrevistas') {
-  const entrevistas = latestNews.filter(item => 
-    item.title.toLowerCase().includes('entrevista')
-  );
+}
 
 const renderContent = () => {
 if (activeTab === 'guardados') {
@@ -3646,6 +3617,13 @@ if (activeTab === 'cronicas') {
             onClick={() => openChronicleModal(chronicle)}
           >
             <div className="p-6">
+              {/* Header con categoría */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm uppercase tracking-wide">
+                  {chronicle.plaza?.split('(')[0].trim() || 'Plaza no especificada'}
+                </span>
+                <span className="text-gray-500 text-sm font-medium">{chronicle.date}</span>
+              </div>
               
               {/* Título principal */}
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300 leading-tight">
