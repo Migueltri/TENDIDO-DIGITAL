@@ -464,16 +464,26 @@ Considerado uno de los grandes acontecimientos de la campaña europea, este even
 
 El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
 
-La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.
-Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
-
-Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
-	{ 
+		{ 
     id: 1001,
+    title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
+    image: "/images/goyesca.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+    fullContent: `Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1002,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -519,7 +529,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -557,16 +567,26 @@ Considerado uno de los grandes acontecimientos de la campaña europea, este even
 
 El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
 
-La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.
-Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
-
-Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 2,
+    title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
+    image: "/images/goyesca.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+    fullContent: `Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -612,7 +632,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -633,7 +653,7 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
@@ -699,7 +719,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 10,
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -715,7 +735,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: 6,
+    id: 11,
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -742,7 +762,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: 7,
+    id: 12,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -797,7 +817,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 13,
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -827,7 +847,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 14,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -891,7 +911,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 15,
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
