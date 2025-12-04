@@ -67,15 +67,31 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
+// utilidad: convertir "4 de Diciembre de 2025" a Date
 function parseCustomDate(dateStr: string) {
   const months: any = {
     Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
     Julio: 6, Agosto: 7, Septiembre: 8, Octubre: 9, Noviembre: 10, Diciembre: 11
   };
-  
   const [day, , month, year] = dateStr.split(" ");
   return new Date(Number(year), months[month], Number(day));
 }
+
+// tu array original `news` debe estar aquí (antes del componente)
+const news = [
+  /* ...tu lista de objetos... */
+];
+
+// ordenar por fecha (más reciente primero) y asignar id automáticos
+const sortedNews = news.slice().sort((a, b) =>
+  parseCustomDate(b.date).getTime() - parseCustomDate(a.date).getTime()
+);
+
+const newsWithIds = sortedNews.map((item, index) => ({ ...item, id: index + 1 }));
+
+// USAR const (NO export) dentro del page.tsx
+const finalNews = newsWithIds;
+
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
