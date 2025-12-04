@@ -276,9 +276,6 @@ const newsWithIds = sortedNews.map((item, index) => ({
   id: index + 1
 }));
 
-// 3. Exportar la versión final
-export const finalNews = newsWithIds;
-
 
 const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
 if (e) {
