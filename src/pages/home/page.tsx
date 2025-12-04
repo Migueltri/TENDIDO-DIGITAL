@@ -451,75 +451,143 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
-    title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
-    image: "/images/temporada.jpg",
+    title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
+    image: "/images/anoet1.jpg",
     category: "Actualidad",
-    date: "3 de Diciembre de 2025",
-    fullContent: `Un año más, **Las Ventas** se consolidará como el gran escaparate del toro bravo, acogiendo **toros y novillos procedentes de 21 encastes y líneas de sangre distintas**. Este extenso abanico ganadero constituye un auténtico “fondo de armario” capaz de cubrir todas las necesidades de la plaza más exigente del mundo.
+    date: "4 de Diciembre de 2025",
+	excerpt: "Muestra la evolución de los festejos en esta comunidad entre 2017 y 2024",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ha participado en el Consejo Asesor Taurino de Extremadura, que se reunió el pasado lunes en la finca Las Tiesas de Santa María, propiedad del ganadero Victorino Martin. En este encuentro, ANOET ha dado a conocer un completo estudio estadístico sobre la presencia del hecho taurino en esta Comunidad, que se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra y Madrid. 
 
-Gracias al trabajo adelantado en el campo, **Plaza 1 tiene ya reseñados los lotes de toros, novillos y sobreros no sólo para la Feria de San Isidro, sino para toda la temporada 2026**, una labor minuciosa que a menudo no recibe el reconocimiento que merece.
+Con estos estudios, ANOET pretende dar a conocer la presencia de la Tauromaquia en nuestro país aportando numerosos datos sobre la celebración de festejos en las distintas comunidades autónomas. Estos trabajos por comunidades ofrecen además la posibilidad de estudiar la evolución de la Fiesta de los toros en las últimas décadas en cada una de ellas. 
 
-El dato del pasado año es significativo: en Las Ventas se lidiaron **384 reses —272 toros, 100 novillos y 12 erales— procedentes de 21 ganaderías distintas**. Sin la plaza de Madrid, muchas divisas de encastes no mayoritarios carecerían de una plataforma donde mostrar su trabajo. Por ello, Las Ventas es un auténtico pulmón para el campo bravo y un apoyo esencial para la preservación de encastes minoritarios.
+De este modo, ANOET y la Junta de Extremadura han elaborado un informe estadístico de los festejos y reses lidiadas en esta comunidad que abarca un periodo de 8 años, en concreto de 2017 a 2024, que ofrece una interesante visión de la presencia y la evolución de la Tauromaquia en esta zona.
+ 
+Con la colaboración de la Junta de Extremadura, el informe ha sido realizado por ANOET en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
+ 
+Estadística
 
-Entre las ganaderías reseñadas, **Fuente Ymbro y Victoriano del Río** encabezan la nómina con mayor presencia: la primera aportará dos corridas de toros y dos novilladas, mientras que la segunda tendrá tres corridas reseñadas para distintos momentos del año. Con dos corridas de toros figuran también **Victorino Martín, Juan Pedro Domecq, Adolfo Martín, Alcurrucén, Pedraza de Yeltes y Puerto de San Lorenzo**.
+Este informe sobre los toros en Extremadura se abre con un mapa que localiza la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. Como primer dato relevante aparece la cifra total de festejos celebrados, 4.103, repartidos del siguiente modo: 3.059 en la provincia de Cáceres y 1.044 en la de Badajoz. Por categoría, en este periodo de 8 años se celebraron 113 corridas de toros, 50 de rejones, 58 novilladas picadas y 35 sin picar, predominando muy por encima de estos, los festejos populares, de los que se celebraron 3.555 en total.  
 
-La temporada ofrecerá además grandes novedades, como el regreso de la ganadería de **Cuadri**, adelantado por Rafael Garrido en las tertulias de la Asociación del Toro de Madrid, y la presencia de un encierro de **Ana Romero**, previsto para el tramo final del año siempre que la evolución del ganado sea la adecuada.
+Como ya hizo ANOET en el análisis de otras comunicades, el informe localiza estos festejos en el mapa de Extremadura y ofrece posibilidad de consulta por ciudades y municipios. La localidad que más festejos ha celebrado en este periodo ha sido Coria por su gran afición al festejo popular, mientras que el mayor número de corridas de toros lo tiene Badajoz con 21, seguida muy de cerca por Olivenza con 20.
 
-A cierre de la campaña actual, y como base para la confección de la temporada 2026, estas son las ganaderías vistas y consideradas por Las Ventas:
+De los festejos en plaza, fueron mayoría los celebrados en cosos portátiles, 702, seguidos de los de plazas de tercera con 473 y segunda con 114. En otros recintos se celebraron más de 2.800 festejos.
+ 
+Evolución por años
 
-——
+Este trabajo estadístico permite ver la evolución a través de los años, en la que se observa una bajada en 2019 que lógicamente se acrecienta en pandemia y un repunte constante una vez superada ésta hasta 2024. El año que más festejos registró fue 2018 con 685, seguido de 2024 con 684, por lo que se puede afirmar que la recuperación es notable y Extremadura vive uno de sus mejores momentos taurinos.
 
-**CORRIDAS DE TOROS**
-• Victoriano del Río
-• Fuente Ymbro
-• Alcurrucén
-• Puerto de San Lorenzo
-• Juan Pedro Domecq
-• Pedraza de Yeltes
-• Victorino Martín
-• Adolfo Martín
-• Garcigrande
-• Conde de Mayalde
-• Palha
-• Dolores Aguirre
-• José Escolar
-• Saltillo
-• Valdellán
-• El Pilar
-• Valdefresno
-• José Enrique Fraile de Valdefresno
-• La Quinta
-• Araúz de Robles
-• Jandilla
-• Domingo Hernández
-• El Parralejo
-• Lagunajanda
-• Cuadri
-• Partido de Resina
-• Juan Luis Fraile
-• Montalvo
-• Ana Romero
+Por provincias, fue Cáceres la que más festejos dio, alcanzando su cifra máxima en la temporada 2024 con 516 festejos seguidos de los 507 de 2023. Por su parte, Badajoz logró 186 festejos en 2018 seguidos de los 168 de 2024.
 
-——
+Atendiendo a la actividad taurina por meses en la Comunidad de Extremadura, agosto es el mes más taurino con 1.591 festejos, seguido de septiembre con 1.122. Por provincias, Badajoz da más festejos en septiembre mientras que Cáceres lo hace en agosto. 
+ 
+Curva de evolución
 
-**NOVILLADAS CON PICADORES**
-• Fuente Ymbro
-• Montealto
-• Conde de Mayalde
-• El Retamar
-• Partido de Resina
-• Saltillo
-• Los Maños
-• Hermanos Sánchez Herrero`,
+En la pantalla 7 del informe aparece una curva de evolución de festejos en todos estos años. Colocando el cursor sobre ella, la cantidad de festejos aparece desglosada por su tipología sobre cada uno de los años, lo que permite una rápida consulta para ver cuándo se celebraron más corridas de toros, novilladas, rejones, etc.
+
+Reses lidiadas
+
+Este estudio presenta incluso una curva con la evolución por años en el número de reses lidiadas que muestra una uniformidad bastante notable, excepción hecha de los años de pandemia. El total de reses lidiada fue de 14.957, siendo 2022 el año que sobresale con 2.438.
+
+Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
+
+Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
-  }
+  },
+	{ 
+    id: 1001,
+    title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
+    image: "/images/sanlucar.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+    fullContent: `El empresario de la Plaza de Toros de Sanlúcar de Barrameda, Carmelo García, ha dado a conocer las fechas que marcarán los “grandes acontecimientos de la temporada 2026”, tres citas que -según afirmó- volverán a situar al histórico Coso de El Pino en el centro de atención del mundo taurino por la calidad de sus carteles y ganaderías.
+
+La temporada arrancará el sábado 11 de abril, cuando el ruedo sanluqueño acogerá la tradicional Corrida de la Primavera, que este año se celebrará en formato de Arte del Toreo a Caballo, una gran corrida de rejones llamada a reunir a los máximos exponentes de la disciplina.
+
+Poco después, en pleno ambiente festivo, llegará la corrida de la Feria de la Manzanilla, programada para el domingo 7 de junio. Esta cita, integrada como cada año en la programación oficial de la feria sanluqueña, promete convertirse en uno de los momentos más esperados por la afición local y visitante.
+
+La temporada alcanzará su punto culminante el domingo 16 de agosto con la celebración de la VIII Corrida Magallánica, un festejo que se ha consolidado como uno de los eventos taurinos más singulares y emblemáticos de la ciudad.
+
+Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
+
+Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },	
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+    { 
     id: 1,
+    title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
+    image: "/images/anoet1.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+	excerpt: "Muestra la evolución de los festejos en esta comunidad entre 2017 y 2024",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ha participado en el Consejo Asesor Taurino de Extremadura, que se reunió el pasado lunes en la finca Las Tiesas de Santa María, propiedad del ganadero Victorino Martin. En este encuentro, ANOET ha dado a conocer un completo estudio estadístico sobre la presencia del hecho taurino en esta Comunidad, que se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra y Madrid. 
+
+Con estos estudios, ANOET pretende dar a conocer la presencia de la Tauromaquia en nuestro país aportando numerosos datos sobre la celebración de festejos en las distintas comunidades autónomas. Estos trabajos por comunidades ofrecen además la posibilidad de estudiar la evolución de la Fiesta de los toros en las últimas décadas en cada una de ellas. 
+
+De este modo, ANOET y la Junta de Extremadura han elaborado un informe estadístico de los festejos y reses lidiadas en esta comunidad que abarca un periodo de 8 años, en concreto de 2017 a 2024, que ofrece una interesante visión de la presencia y la evolución de la Tauromaquia en esta zona.
+ 
+Con la colaboración de la Junta de Extremadura, el informe ha sido realizado por ANOET en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
+ 
+Estadística
+
+Este informe sobre los toros en Extremadura se abre con un mapa que localiza la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. Como primer dato relevante aparece la cifra total de festejos celebrados, 4.103, repartidos del siguiente modo: 3.059 en la provincia de Cáceres y 1.044 en la de Badajoz. Por categoría, en este periodo de 8 años se celebraron 113 corridas de toros, 50 de rejones, 58 novilladas picadas y 35 sin picar, predominando muy por encima de estos, los festejos populares, de los que se celebraron 3.555 en total.  
+
+Como ya hizo ANOET en el análisis de otras comunicades, el informe localiza estos festejos en el mapa de Extremadura y ofrece posibilidad de consulta por ciudades y municipios. La localidad que más festejos ha celebrado en este periodo ha sido Coria por su gran afición al festejo popular, mientras que el mayor número de corridas de toros lo tiene Badajoz con 21, seguida muy de cerca por Olivenza con 20.
+
+De los festejos en plaza, fueron mayoría los celebrados en cosos portátiles, 702, seguidos de los de plazas de tercera con 473 y segunda con 114. En otros recintos se celebraron más de 2.800 festejos.
+ 
+Evolución por años
+
+Este trabajo estadístico permite ver la evolución a través de los años, en la que se observa una bajada en 2019 que lógicamente se acrecienta en pandemia y un repunte constante una vez superada ésta hasta 2024. El año que más festejos registró fue 2018 con 685, seguido de 2024 con 684, por lo que se puede afirmar que la recuperación es notable y Extremadura vive uno de sus mejores momentos taurinos.
+
+Por provincias, fue Cáceres la que más festejos dio, alcanzando su cifra máxima en la temporada 2024 con 516 festejos seguidos de los 507 de 2023. Por su parte, Badajoz logró 186 festejos en 2018 seguidos de los 168 de 2024.
+
+Atendiendo a la actividad taurina por meses en la Comunidad de Extremadura, agosto es el mes más taurino con 1.591 festejos, seguido de septiembre con 1.122. Por provincias, Badajoz da más festejos en septiembre mientras que Cáceres lo hace en agosto. 
+ 
+Curva de evolución
+
+En la pantalla 7 del informe aparece una curva de evolución de festejos en todos estos años. Colocando el cursor sobre ella, la cantidad de festejos aparece desglosada por su tipología sobre cada uno de los años, lo que permite una rápida consulta para ver cuándo se celebraron más corridas de toros, novilladas, rejones, etc.
+
+Reses lidiadas
+
+Este estudio presenta incluso una curva con la evolución por años en el número de reses lidiadas que muestra una uniformidad bastante notable, excepción hecha de los años de pandemia. El total de reses lidiada fue de 14.957, siendo 2022 el año que sobresale con 2.438.
+
+Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
+
+Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+    title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
+    image: "/images/sanlucar.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+    fullContent: `El empresario de la Plaza de Toros de Sanlúcar de Barrameda, Carmelo García, ha dado a conocer las fechas que marcarán los “grandes acontecimientos de la temporada 2026”, tres citas que -según afirmó- volverán a situar al histórico Coso de El Pino en el centro de atención del mundo taurino por la calidad de sus carteles y ganaderías.
+
+La temporada arrancará el sábado 11 de abril, cuando el ruedo sanluqueño acogerá la tradicional Corrida de la Primavera, que este año se celebrará en formato de Arte del Toreo a Caballo, una gran corrida de rejones llamada a reunir a los máximos exponentes de la disciplina.
+
+Poco después, en pleno ambiente festivo, llegará la corrida de la Feria de la Manzanilla, programada para el domingo 7 de junio. Esta cita, integrada como cada año en la programación oficial de la feria sanluqueña, promete convertirse en uno de los momentos más esperados por la afición local y visitante.
+
+La temporada alcanzará su punto culminante el domingo 16 de agosto con la celebración de la VIII Corrida Magallánica, un festejo que se ha consolidado como uno de los eventos taurinos más singulares y emblemáticos de la ciudad.
+
+Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
+
+Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
@@ -585,7 +653,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 4,
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -601,7 +669,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: 3,
+    id: 5,
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -628,7 +696,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: 4,
+    id: 6,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -683,7 +751,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 7,
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -713,7 +781,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 8,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -777,7 +845,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 9,
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
