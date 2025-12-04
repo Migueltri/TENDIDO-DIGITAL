@@ -456,7 +456,7 @@ const featuredNews: NewsItem[] = [
     category: "Actualidad",
     date: "4 de Diciembre de 2025",
 	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será José María Manzanares , el diestro alicantino. 
+    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será **José María Manzanares** , el diestro alicantino. 
 
 El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
 
@@ -478,8 +478,8 @@ La cita briocense se ha consolidado también como un importante escaparate socia
     fullContent: `Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
 
 Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -559,7 +559,7 @@ const latestNews: NewsItem[] = [
     category: "Actualidad",
     date: "4 de Diciembre de 2025",
 	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será José María Manzanares , el diestro alicantino. 
+    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será **José María Manzanares** , el diestro alicantino. 
 
 El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
 
@@ -581,8 +581,8 @@ La cita briocense se ha consolidado también como un importante escaparate socia
     fullContent: `Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
 
 Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
   showAuthorHeader: true
   },
 	{ 
