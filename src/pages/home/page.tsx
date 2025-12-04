@@ -456,10 +456,18 @@ const featuredNews: NewsItem[] = [
     category: "Actualidad",
     date: "4 de Diciembre de 2025",
 	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `Ronda tendrá la tradicional Corrida Goyesca en 2026
-	Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será José María Manzanares , el diestro alicantino. 
 
-Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
+
+Considerado uno de los grandes acontecimientos de la campaña europea, este evento sitúa cada año a Brihuega y a la provincia de Guadalajara como un referente para aficionados y visitantes, reforzando su atractivo cultural y taurino.
+
+El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
+
+La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.
+Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -534,17 +542,25 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
 ];
 
 const latestNews: NewsItem[] = [
-     { 
+  { 
     id: 1,
     title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
     image: "/images/brihuega.jpg",
     category: "Actualidad",
     date: "4 de Diciembre de 2025",
 	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `Ronda tendrá la tradicional Corrida Goyesca en 2026
-	Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será José María Manzanares , el diestro alicantino. 
 
-Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
+
+Considerado uno de los grandes acontecimientos de la campaña europea, este evento sitúa cada año a Brihuega y a la provincia de Guadalajara como un referente para aficionados y visitantes, reforzando su atractivo cultural y taurino.
+
+El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
+
+La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.
+Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
