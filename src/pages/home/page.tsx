@@ -451,6 +451,21 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
+    title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
+    image: "/images/brihuega.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
+    fullContent: `Ronda tendrá la tradicional Corrida Goyesca en 2026
+	Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -491,12 +506,12 @@ Este estudio presenta incluso una curva con la evolución por años en el númer
 Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
 
 Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -512,15 +527,30 @@ La temporada alcanzará su punto culminante el domingo 16 de agosto con la celeb
 Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
 
 Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },	
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+     { 
     id: 1,
+    title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
+    image: "/images/brihuega.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
+    fullContent: `Ronda tendrá la tradicional Corrida Goyesca en 2026
+	Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
+
+Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -561,12 +591,12 @@ Este estudio presenta incluso una curva con la evolución por años en el númer
 Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
 
 Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -582,12 +612,12 @@ La temporada alcanzará su punto culminante el domingo 16 de agosto con la celeb
 Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
 
 Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
@@ -653,7 +683,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -669,7 +699,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: 5,
+    id: 6,
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -696,7 +726,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: 6,
+    id: 7,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -751,7 +781,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -781,7 +811,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 9,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -845,7 +875,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 10,
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
@@ -860,7 +890,7 @@ Como segunda novedad, la ganadería de **Zalduendo** también estará presente e
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 20,
     title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
     image: "/images/manuelamador.jpg",
     category: "Actualidad",
@@ -873,7 +903,7 @@ Navalón se encuentra en el **proceso de recuperación** de la gravísima cornad
   showAuthorHeader: true
   },	
 	{ 
-    id: 11,
+    id: 21,
     title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
     image: "/images/tauromania.jpg",
     category: "Actualidad",
@@ -888,7 +918,7 @@ Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y lle
   showAuthorHeader: true
   },
    { 
-    id: 12,
+    id: 22,
     title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
     image: "/images/varios5.jpg",
     category: "Actualidad",
@@ -919,7 +949,7 @@ Toros de Victoriano del Río y Garcigrande
   showAuthorHeader: true
   },
 	{ 
-    id: 13,
+    id: 23,
     title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
     image: "/images/cabañito.jpg",
 	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
@@ -937,7 +967,7 @@ Los buenos resultados no se limitaron a Madrid: este año también firmaron actu
   showAuthorHeader: true
   },
 	{ 
-    id: 14,
+    id: 24,
    title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
     image: "/images/premios.jpg",
     category: "Actualidad",
@@ -972,7 +1002,7 @@ La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la trad
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: 25,
    title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
     image: "/images/danielluque1.jpg",
     category: "Actualidad",
@@ -993,7 +1023,7 @@ Apoderado **Antonio Barrera**`,
   showAuthorHeader: true
   },
 	{ 
-    id: 16,
+    id: 26,
    title: `Espacio Nautalia 360 perfila los últimos detalles de los carteles de la Feria de Fallas`,
     image: "/images/espacio.jpg",
     category: "Actualidad",
@@ -1021,7 +1051,7 @@ Salvo cambios derivados de las últimas negociaciones, la feria quedaría config
   showAuthorHeader: true
   },
 	{ 
-    id: 17,
+    id: 27,
    title: `Domingo López‑Chaves se incorpora al equipo de "El Fandi" para la temporada 2026`,
     image: "/images/domingo.jpg",
     category: "Actualidad",
@@ -1041,7 +1071,7 @@ Amigos desde hace años, ahora se convierten en un tándem profesional de éxito
   showAuthorHeader: true
   },
 	{ 
-    id: 18,
+    id: 28,
        title: "Morante, Ignacio Candela, David Galván y Núñez del Cuvillo entre los premiados por la Junta de Andalucía en Cádiz",
     image: "/images/varios4.jpg",
     category: "Actualidad",
@@ -1070,7 +1100,7 @@ Con este reconocimiento, la **Delegación del Gobierno en Cádiz** pone en valor
   showAuthorHeader: true
   },
    { 
-    id: 19,
+    id: 29,
        title: "El Club Taurino El Rabo rinde homenaje a Antonio González Sabio en su última tertulia del 2025",
     image: "/images/club.jpg",
     category: "Actualidad",
@@ -1097,7 +1127,7 @@ Carmelo Navarro felicitó a Antonio González Sabio por este merecido reconocimi
   showAuthorHeader: true
   },
 	{ 
-    id: 20,
+    id: 30,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Entrevistas",
@@ -1152,7 +1182,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	{ 
-    id: 21,
+    id: 31,
        title: "El torismo toma parte de la temporada 2026 en Las Ventas: Cuadri, Saltillo, Palha, Partido de Resina, Dolores Aguirre…",
     image: "/images/torismo.jpg",
     category: "Actualidad",
@@ -1167,7 +1197,7 @@ García Garrido también confirmó la ausencia de algunos hierros emblemáticos 
   showAuthorHeader: true
   },
 	{ 
-    id: 22,
+    id: 32,
        title: "David de Miranda, un torero con alma de niño en el Colegio Montaigne Compañía de María de Jerez",
     image: "/images/reemplazo.jpg",
     category: "Actualidad",
@@ -1194,7 +1224,7 @@ Al final, todos compartieron la sensación de que el toreo, más allá de ser un
   showAuthorHeader: true
   },
 	{ 
-    id: 23,
+    id: 33,
        title: "El documental dedicado a la figura de ‘Mondeño’ se presenta el 3 de diciembre en Sanlúcar la Mayor, su ‘segundo’ pueblo",
     image: "/images/documental.jpg",
     category: "Actualidad",
@@ -1223,7 +1253,7 @@ Tras su emisión, en el mismo teatro, se celebrará una mesa redonda en la que p
   showAuthorHeader: true
   },
 	{ 
-    id: 24,
+    id: 34,
        title: "Enrique Ponce , nuevo apoderado de David de Miranda",
     image: "/images/enriqueponce.jpg",
     category: "Actualidad",
@@ -1244,7 +1274,7 @@ Tras finalizar su relación profesional con José Luis Pereda a finales de septi
   showAuthorHeader: true
   },
 	{ 
-    id: 25,
+    id: 35,
        title: "La renovación del toreo ha llegado",
     image: "/images/renovacion1.jpg",
     category: "Opinión",
@@ -1260,7 +1290,7 @@ Esto nos lleva a poder decir que nos vienen años apasionantes para la fiesta de
   showAuthorHeader: true
   },
 	{ 
-    id: 26,
+    id: 36,
        title: "David de Miranda emociona a Chiclana con una lección magistral de toreo y vida",
     image: "/images/david.jpg",
     category: "Actualidad",
@@ -1336,7 +1366,7 @@ más absoluto a su profesión.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 27,
+    id: 37,
        title: "El novillero Miguel Senent “Miguelito” cambia el oro por la plata",
     image: "/images/novillero.jpg",
     category: "Actualidad",
@@ -1360,7 +1390,7 @@ Ojalá nos sigamos encontrando en las plazas, desde otra posición, pero con el 
   showAuthorHeader: true
   },
 	{ 
-    id: 28,
+    id: 38,
        title: "Miguel Abellan y Víctor Hernández nueva relación de apoderamiento",
     image: "/images/victor.jpg",
     category: "Actualidad",
@@ -1375,7 +1405,7 @@ El equipo de apoderamiento se completará con **Roberto Ortega** , quien continu
   showAuthorHeader: true
   },
 	{ 
-    id: 29,
+    id: 39,
        title: "La Casa de Misericordia anuncia el elenco ganadero de la Feria del Toro 2026",
     image: "/images/paseillo.jpg",
     category: "Actualidad",
@@ -1394,7 +1424,7 @@ Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito orga
   showAuthorHeader: true
   },
 	{ 
-    id: 30,
+    id: 40,
        title: "Almadén de la Plata (Sevilla) refuerza el 'Día del Jamón' con una novillada televisada por Canal Sur",
     image: "/images/almaden.jpg",
 	footerImage1: "/images/cartel.jpg",
@@ -1430,7 +1460,7 @@ El Día del Jamón, ya consolidado como uno de los principales referentes gastro
   showAuthorHeader: true
   },
 	{ 
-    id: 31,
+    id: 41,
        title: "Las Ventas acogerá la final de la Copa Chenel 2026, consolidando el certamen como referente taurino nacional",
     image: "/images/copachenel1.jpg",
 	imageCaption: "Plaza de Toros de las Ventas",
@@ -1445,7 +1475,7 @@ El ciclo, que reúne a toreros emergentes con matadores consolidados y ganaderí
 Con la designación de Las Ventas como sede de la final, la Copa Chenel reitera su compromiso con la promoción de los toreros, la diversidad ganadera y la difusión de la tauromaquia en toda la Comunidad de Madrid.`
   },
 	{ 
-    id: 32,
+    id: 42,
        title: "Tomás Rufo cierra su cuadrilla para 2026 con la incorporación del picador José María González",
     image: "/images/rufo.jpg",
     category: "Actualidad",
@@ -1461,7 +1491,7 @@ Con esta incorporación, el equipo del diestro de Pepino queda configurado de la
 De este modo, Tomás Rufo encara la próxima campaña con una cuadrilla plenamente definida y reforzada para los compromisos taurinos del año venidero.`
   },
 	{ 
-    id: 33,
+    id: 43,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -1518,7 +1548,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
 	{ 
-    id: 34,
+    id: 44,
        title: "José María Garzón dirigirá la Real Maestranza de Sevilla durante los próximos cinco años",
     image: "/images/garzon.jpg",
     category: "Actualidad",
@@ -1542,7 +1572,7 @@ Asimismo, se prevé una revisión de la estructura de ferias como la de Abril, c
  La llegada de Lances de Futuro podría representar una renovación en la forma de concebir la temporada taurina, aunque el sector coincide en que el margen de maniobra requerirá equilibrio entre innovación y respeto por las formas sevillanas.`
   },
 	{ 
-    id: 35,
+    id: 45,
        title: "Borja Jiménez , Víctor Hernández , Fortes , Aaron Palacio , Jandilla… Premiados por el Real Casino de Madrid",
     image: "/images/premio.jpg",
     category: "Actualidad",
@@ -1568,7 +1598,7 @@ Premiados en los Premios Taurinos Real Casino de Madrid 2025
 	•	Mención especial al medio de comunicación: Radio Televisión Madrid, por su amplia cobertura y apoyo a la tauromaquia.`
   },
 { 
-    id: 36,
+    id: 46,
        title: "La Feria de Fallas 2026 comienza a tomar forma con Talavante como eje del abono",
     image: "/images/feriafallas.jpg",
     category: "Actualidad",
@@ -1597,7 +1627,7 @@ Tampoco conviene olvidar uno de los episodios negativos de la Feria de 2025: la 
 En los próximos días, la composición definitiva del abono comenzará a desvelarse conforme avancen las negociaciones entre Espacios Nautalia 360 y los distintos apoderados.`
   },
 	{ 
-    id: 37,
+    id: 47,
        title: "Rafael de Julia reaparecerá en 2026",
     image: "/images/rafael1.jpg",
 	footerImage1: "/images/rafael2.jpg",
@@ -1615,7 +1645,7 @@ El relato de De Julia impresiona por su sinceridad. Confiesa que tocó fondo el 
 Con la mirada puesta en 2026, el torero afronta su regreso con una motivación renovada: superar lo vivido y demostrar que es capaz no solo de volver, sino de hacerlo al máximo nivel. Sabe que el paso decisivo será regresar a Madrid y ofrecer a la afición —y también a sí mismo— una imagen distinta, la de un profesional que ha sido capaz de enfrentarse a una situación límite y salir fortalecido. “Devolver a la gente esa ilusión”, concluye, es hoy para él tan importante como cualquier triunfo en el ruedo.`
   },
 	{ 
-    id: 38,
+    id: 48,
        title: "Morenito de Aranda y Tito Fernández nueva relación de apoderamiento",
     image: "/images/morenito.jpg",
     category: "Actualidad",
@@ -1625,7 +1655,7 @@ Con la mirada puesta en 2026, el torero afronta su regreso con una motivación r
 Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26 orejas. El burgalés destacó en plazas como Madrid, Dax, Bayona, Mont de Marsan, Vic, Burgos o Talavera de la Reina, entre otras.`
   },
 	{ 
-    id: 39,
+    id: 49,
        title: "Ginés Marín amplía su equipo de apoderamiento",
     image: "/images/amplia.jpg",
 	imageCaption: "Gines Marín con Carlos y Joaquín Domínguez",
@@ -1636,7 +1666,7 @@ Morenito de Aranda toreó 21 corridas de toros en la temporada 2025, cortando 26
 Una temporada, la del 2026, en la que se conmemora el 10º aniversario de la alternativa de Ginés Marín. El extremeño toreó en 2025 17 corridas de toros en las que cortó 28 orejas y un rabo.`
   },
 	{ 
-    id: 40,
+    id: 50,
        title: "Abierta la inscripción para la Copa Chenel 2026",
     image: "/images/copachenel.jpg",
 	imageCaption: "Sergio Rodríguez actual ganador de la Copa Chenel 2025",
@@ -1659,7 +1689,7 @@ El plazo de inscripción permanecerá abierto hasta el 10 de diciembre. La infor
 Desde su creación en 2021, la Copa Chenel se ha afianzado como el gran circuito de oportunidades para matadores de toros. Sus triunfadores —Fernando Adrián, Francisco de Manuel, Isaac Fonseca, Víctor Hernández o Sergio Rodríguez— representan el impacto real del proyecto. En apenas cinco ediciones se han celebrado 58 corridas, con la participación de 91 matadores y 60 ganaderías, consolidándose como una plataforma imprescindible para el impulso de nuevas figuras del toreo.`
   },
 	{ 
-    id: 41,
+    id: 51,
     title: "Lances de Futuro, el impulso joven que sacude los cimientos de la fiesta y renueva el pulso del toreo",
     image: "/images/lances.jpg",
 	imageCaption: "Plaza de Toros Santander - Foto Lances de Futuro",
@@ -1676,7 +1706,7 @@ Todo esto sumado a el rumor que pone a esta empresa como nueva gestora de la pla
 Mario Ruiz 19/11/2025`
   },
 	{ 
-    id: 42,
+    id: 52,
        title: "El banderillero Juan Rojas queda libre para la próxima temporada",
     image: "/images/juanrojas.jpg",
     category: "Actualidad",
@@ -1686,7 +1716,7 @@ Mario Ruiz 19/11/2025`
 Por tanto, Juan Rojas, se encuentra disponible y abre su futuro profesional a nuevas cuadrillas, en búsqueda de un nuevo jefe de filas con el que afrontar la temporada venidera. Rojas encara con ilusión los proyectos que puedan surgir en esta nueva etapa.`
   },
 	{ 
-    id: 43,
+    id: 53,
     title: "Grave accidente del mayoral de Partido de Resina durante las labores en el campo",
     image: "/images/graveaccidente.jpg",
     category: "Actualidad",
@@ -1702,7 +1732,7 @@ Afortunadamente, cayó fuera del cercado donde se encontraba el utrero, lo que e
 “Julián es un hombre muy fuerte y le queremos mucho; estoy convencido de que en nada volverá a estar con nosotros en las faenas de campo”, añade Tico Morales hijo.`
   },
   { 
-    id: 45,
+    id: 55,
     title: "Fallece Álvaro Domecq Romero, figura del rejoneo y ganadero de Torrestrella",
     image: "/images/domecq.jpg",
     category: "Actualidad",
@@ -1719,7 +1749,7 @@ En paralelo, su compromiso con la cultura ecuestre trascendió fronteras. En 197
 A lo largo de su vida recibió numerosos reconocimientos. En 2024 fue distinguido con la Medalla de Andalucía, galardón que se sumó al Caballo de Oro otorgado por la ciudad de Jerez —uno de los mayores reconocimientos ecuestres del país— y al título de Hijo Predilecto de su ciudad natal. Su figura deja una huella imborrable en el mundo del toro, la equitación y la cultura andaluza.`
   },
    { 
-    id: 46,
+    id: 56,
     title: "El picador Pedro Iturralde se incorpora a la cuadrilla de Fernando Adrián",
     image: "/images/picador.jpg",
     category: "Actualidad",
@@ -1733,7 +1763,7 @@ La estructura de su equipo se completa con Francisco Javier Villalba como mozo d
 Fernando Adrián ha rubricado una temporada especialmente destacada, dejando actuaciones de gran repercusión en plazas de máxima categoría. Entre ellas, sobresalen Madrid —donde firmó una faena muy recordada al toro ‘Frenoso’, de Victoriano del Río, además de cortar una oreja en la Corrida de Beneficencia—, así como sus actuaciones en Pamplona, Arles, Bilbao, Zaragoza (en dos tardes), Albacete, Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{
-    id: 47,
+    id: 57,
     title: "Escolar, Dolores Aguirre, Reta, Guardiola... las ganaderías de la Feria del Aficionado",
     image: "/images/escolar.jpg",
 	imageCaption: "Foto Philippe Gil Mir",
@@ -1749,7 +1779,7 @@ El domingo 26, también a las 12:00 horas, se celebrará el último desafío gan
 La organización anunciará los carteles definitivos en próximas fechas.`
   },
 	{ 
-    id: 48,
+    id: 58,
     title: "Álvaro Alarcón y Carlos De la Rosa fin a la relación de apoderamiento",
     image: "/images/alarcon.jpg",
     category: "Actualidad",
@@ -1763,7 +1793,7 @@ Como novillero, Alarcón firmó una trayectoria destacada, con triunfos relevant
 Ambas partes se desean la mayor de las suertes en sus respectivos caminos.`
   },
   { 
-    id: 49,
+    id: 59,
     title: "David Galván refuerza su cuadrilla con tres nuevas incorporaciones para 2026",
     image: "/images/davidgalvan1.jpg",
     footerImage1: "/images/davidgalvan2.jpg",
@@ -1778,7 +1808,7 @@ La lidia a pie experimenta una renovación profunda con la llegada de Raúl Ruiz
 Con estas incorporaciones, David Galván consolida una cuadrilla sólida y preparada para encarar con garantías una temporada que se presenta clave en su carrera.`
   },
 	{ 
-    id: 50,
+    id: 60,
     title: "Tomás González: el paso firme de un novillero diferente",
     image: "/images/tomas.jpg",
     category: "Actualidad",
@@ -1794,7 +1824,7 @@ Sus triunfos más destacados se han registrado en plazas como Vinaroz, Mejorada 
 Con la mirada puesta ya en 2026, Tomás González afronta un año clave, con el objetivo de dar un salto cualitativo y comparecer en plazas de mayor responsabilidad, donde espera refrendar la proyección mostrada durante este 2025.`
   },
 	{ 
-    id: 51,
+    id: 61,
     title: "El tribunal de recursos contractuales de la diputación de Málaga acepta la impugnación de Nautalia sobre la solvencia técnica",
     image: "/images/tribunal.jpg",
 	imageCaption: "Plaza de Toros de Málaga",
@@ -1807,7 +1837,7 @@ Según informa el medio Málaga Taurina, la impugnación del pliego actual ha si
 Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y por la que el Tribunal Administrativo ha decidido la impugnación del pliego, además de la reformulación del mismo y de este apartado para que pueda ser nuevamente aprobado por el Pleno de la Diputación de Málaga y puesto en trámite administrativo nuevamente a partir del mes de noviembre o diciembre según su fecha de inclusión en pleno.`
   },
 	{ 
-    id: 52,
+    id: 62,
     title: "Álvaro Lorenzo y Jean François Piles nueva relación de apoderamiento",
     image: "/images/alvarolorenzo.jpg",
     category: "Actualidad",
@@ -1817,7 +1847,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Álvaro Lorenzo en estos años ha logrado puntuar con fuerza en las principales plazas de primera categoría como Madrid (con seis orejas y cinco vueltas al ruedo), Sevilla, Pamplona, entre otras. El matador toledano quiere aprovechar este comunicado para agradecer a la empresa Puerta Grande Gestión su trabajo durante la pasada temporada al haber concluido su relación de apoderamiento de manera amistosa.`
   },
 	{ 
-    id: 53,
+    id: 63,
     title: "Israel Vicente y Diego Urdiales nueva relación de apoderamiento",
     image: "/images/urdiales.jpg",
     category: "Actualidad",
@@ -1827,7 +1857,7 @@ Una exigencia que no se correspondía con la capacidad empresarial de Nautalia y
 Una noticia que ha saltado esta mañana tras las informaciones sobre su ruptura con Luis Miguel Villalpando anunciada la semana pasada.`
   },
 	{ 
-    id: 54,
+    id: 64,
     title: "El arte hecho torero: Pablo Aguado y la elegancia de un estilo propio",
     image: "/images/pabloaguado.jpg",
 	imageCaption: "Foto BMF Toros",
@@ -1849,7 +1879,7 @@ Por eso, de cara a la próxima temporada, la afición espera con ilusión un tri
 Mario Ruiz Ruiz 13/11/2025`
   },
 	{ 
-    id: 55,
+    id: 65,
     title: "El Ayuntamiento de Algeciras saca a licitación la gestión de la plaza de toros de Las Palomas",
     image: "/images/1.jpg",
     category: "Actualidad",
@@ -1863,7 +1893,7 @@ Las propuestas serán evaluadas por un comité de expertos integrado por tres em
 Con este nuevo modelo de licitación, el Ayuntamiento pretende garantizar la continuidad y el nivel artístico de una de las ferias más destacadas del calendario andaluz.`
   },
 	{ 
-    id: 60,
+    id: 66,
     title: "Paco Ureña, Borja Jiménez, Marco Pérez, Emilio de Justo, El Parralejo…, premiados por el Real Club Taurino de Murcia",
     image: "/images/guillen.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -1890,7 +1920,7 @@ Relación completa de premios de la Feria Taurina de Murcia 2025
 	•	Premio del Real Club Taurino de Murcia al Mejor toro: Maestro, de El Parralejo.`
   },
 	{ 
-    id: 61,
+    id: 67,
     title: "Carlos Tirado y Enrique Peña nuevo acuerdo de apoderamiento",
     image: "/images/carlostirado.jpg",
     category: "Actualidad",
@@ -1906,7 +1936,7 @@ destacó el joven novillero ayamontino.
 Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que buscará afianzar su proyección y seguir dando pasos firmes hacia su alternativa.`
   },
 	{ 
-    id: 62,
+    id: 68,
     title: "El banderillero Raúl Ruiz sale de la cuadrilla de Fortes",
     image: "/images/banderillero2.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -1918,7 +1948,7 @@ Con este acuerdo, Carlos Tirado afronta una nueva etapa profesional en la que bu
 Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor de las suertes a Fortes en su carrera.`
   },
 	{ 
-    id: 63,
+    id: 69,
     title: "Fernando Adrián y Santiago Ellauri nuevo acuerdo de apoderamiento",
     image: "/images/apoderamiento.jpg",
     category: "Actualidad",
@@ -1928,7 +1958,7 @@ Raúl Ruiz ha querido, en un mensaje enviado a esta redacción, desear la mejor 
 El torero madrileño llega a este nuevo proyecto tras una temporada destacada, en la que ha dejado su sello en plazas de primer nivel como Madrid —con la recordada faena al toro Frenoso, de Victoriano del Río, y la oreja paseada en la Corrida de Beneficencia—, Pamplona, Arles, Bilbao, Zaragoza (dos tardes), Cuenca, Pontevedra, Guadalajara o Teruel, entre otras.`
   },
 	{ 
-    id: 64,
+    id: 70,
     title: "Los maestrantes estudian un nuevo modelo de contrato de cara a la futura gestión de la Real Maestranza de Sevilla",
     image: "/images/maestrantes.jpg",
 	imageCaption: "Foto ABC",
@@ -1953,7 +1983,7 @@ La incertidumbre preocupa en el sector. Con un mundo taurino que ha cambiado sus
 El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional de la casa, se enfrentan ahora al desafío de compatibilizar la discreción con las exigencias del toreo moderno.`
   },
 	{ 
-    id: 65,
+    id: 71,
     title: "Luis Blázquez recibe el alta hospitalaria tras ser operado de una lesión que arrastraba durante la temporada",
     image: "/images/blazquez.jpg",
     category: "Actualidad",
@@ -1964,7 +1994,7 @@ El perfil bajo y la prudencia institucional de la Maestranza, virtud tradicional
 Durante la operación, a Blázquez se le ha colocado una placa con siete tornillos en el peroné. El torero continuará ahora el proceso de recuperación desde su domicilio. Si la evolución es favorable, los médicos prevén retirar las grapas la próxima semana y, aproximadamente dentro de 20 días, iniciar la fase de rehabilitación.`
   },
 	{ 
-    id: 67,
+    id: 72,
     title: "Valdemorillo define sus fechas y la estructura de la feria de San Blas 2026",
     image: "/images/valdemorillo.jpg",
     category: "Actualidad",
@@ -1976,7 +2006,7 @@ El ciclo estará nuevamente organizado por la empresa Pueblos del Toreo, dirigid
 Fue precisamente en 2022 cuando la Feria dio un salto cualitativo con la presencia de Morante de la Puebla, en su primera actuación del año en España dentro de la temporada de las 100 corridas, compartiendo cartel con Diego Urdiales y Daniel Luque en un lleno histórico. Desde entonces, el serial no ha dejado de crecer: en 2023, el arte de Urdiales y Juan Ortega protagonizó un duelo con mucho eco, mientras que Perera, Cayetano y Ginés Marín completaron el ciclo. En 2025, nombres como Manzanares, Diego Ventura, Sebastián Castella, Emilio de Justo o Juan Ortega confirmaron el prestigio de una Feria que ya es sinónimo de calidad y expectación al inicio de cada temporada.`
   },
 	{ 
-    id: 68,
+    id: 73,
     title: "Nautalia y la Diputación de Valencia firman la prórroga del contrato de la plaza para 2026",
     image: "/images/nautalia2.jpg",
     category: "Actualidad",
@@ -1994,7 +2024,7 @@ Los trabajos para la renovación integral del sistema de iluminación de la Plaz
 El proyecto contempla la sustitución de los equipos de iluminación en pasillos y escaleras, así como del sistema de proyectores del ruedo, que contará con cinco niveles lumínicos prestablecidos. Esta mejora permitirá alcanzar los estándares requeridos para la retransmisión televisiva en alta definición, reforzando al mismo tiempo la seguridad y el confort de los asistentes.`
   },
 	{ 
-    id: 69,
+    id: 74,
     title: "David de Miranda, Aguado, Urdiales, Ventura, Morante, Javier Conde…, premiados en la Gala de la Tauromaquia de Málaga",
     image: "/images/premiados.jpg",
     category: "Actualidad",
@@ -2102,7 +2132,7 @@ Entrega: Diputación de Málaga.
 Recibe: Javier Conde.`
   },
 	{ 
-    id: 70,
+    id: 75,
     title: "Sergio Pérez de Gregorio fin al apoderamiento junto a Alberto García y Rafael Peralta",
     image: "/images/gregoria.jpg",
     category: "Actualidad",
@@ -2115,7 +2145,7 @@ Durante los años 2024 y 2025, Pérez de Gregorio ha formado parte de los cartel
 Tanto el jinete como sus hasta ahora representantes han expresado su agradecimiento mutuo por el trabajo compartido dentro y fuera de los ruedos, deseándose los mayores éxitos en sus respectivas trayectorias.`
   },
 	{ 
-    id: 75,
+    id: 76,
     title: "Andrés Sánchez, nuevo apoderado de Joselito de Córdoba",
     image: "/images/andres.jpg",
 	imageCaption: "Joselito de Córdoba y Andrés Sánchez",
@@ -2128,7 +2158,7 @@ Con esta unión, Joselito de Córdoba refuerza su objetivo de afianzarse como un
 El acuerdo se ha cerrado en un ambiente de plena sintonía y confianza mutua, con la intención de consolidar una trayectoria ascendente basada en la regularidad artística y la presencia en ferias de referencia.`
   },
 	{ 
-    id: 76,
+    id: 77,
     title: "Calasparra licita las obras de rehabilitación de su plaza de toros de La Caverina",
     image: "/images/calasparra.jpg",
 	imageCaption: "Plaza de Toros Calasparra",
@@ -2144,7 +2174,7 @@ Con la remodelación, La Caverina se transformará en un espacio polivalente, pr
 El proyecto supone un paso decisivo para la revitalización del patrimonio y la vida cultural de Calasparra, recuperando uno de los enclaves más emblemáticos de la localidad y de su tradición taurina.`
   },
 	{ 
-    id: 77,
+    id: 78,
     title: "Illescas define las fechas y la estructura de su Feria del Milagro 2026",
     image: "/images/illescas.jpg",
 	imageCaption: "Plaza de Toros Illescas",
@@ -2160,7 +2190,7 @@ En los últimos años, la Feria del Milagro se ha convertido en uno de los grand
 La expectación ya empieza a crecer entre los aficionados, pendientes de conocer unos carteles que, un año más, reunirán en Illescas a los nombres más destacados del toreo a pie y a caballo.`
   },
 	{ 
-    id: 78,
+    id: 79,
     title: "Gines Marín: El rumor afianzando el toreo bueno",
     image: "/images/gines.jpg",
 	imageCaption: "Gines Marin - Foto Javier Navarro",
@@ -2181,7 +2211,7 @@ Aunque la suerte no le acompañó en Sevilla ni Madrid, Ginés Marín ha demostr
 Mario Ruiz Ruiz - 9/11/2025`
   },
 	{ 
-    id: 79,
+    id: 80,
     title: "Luis Blázquez, intervenido de una rotura de peroné y menisco de la rodilla izquierda",
     image: "/images/luisblazquez.jpg",
     category: "Actualidad",
@@ -2192,7 +2222,7 @@ Mario Ruiz Ruiz - 9/11/2025`
 Tras la intervención, se le ha sido colocada una placa con siete tornillos en la zona del peroné. Dicha operación ha sido llevaba a cabo por el Doctor José Luis López Peris en el Hospital Quirón de Valencia.`
   },
 	{ 
-    id: 80,
+    id: 81,
     title: "La temporada en Las Ventas arrancará el 22 de marzo",
     image: "/images/lasventas.jpg",
 	imageCaption: "Plaza de Toros de Las Ventas",
