@@ -451,129 +451,73 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
   { 
     id: 1000,
-    title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
-    image: "/images/brihuega.jpg",
+    title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
+    image: "/images/pedro.jpg",
     category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será **José María Manzanares** , el diestro alicantino. 
+    date: "5 de Diciembre de 2025",
+    fullContent: `La **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** ha presentado ante la **Junta de Andalucía** las bases de su proyecto anual de **Fomento de Nuevos Valores del Toreo**, iniciativa que se integra en el **Programa de Fomento de la Cultura Taurina de Andalucía 2026**.
+Con esta planificación, las escuelas andaluzas buscan consolidar su labor formativa y fortalecer el relevo generacional dentro del toreo.
 
-El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
+El encuentro tuvo lugar el pasado **miércoles 3 de diciembre** en la sede de la **Consejería de la Secretaría de Interior de la Junta de Andalucía**, ubicada en la **Isla de la Cartuja de Sevilla**. Durante la reunión, los representantes de la **Asociación** expusieron al Secretario General de Interior, **David Gil**, **las líneas maestras que marcarán el desarrollo de la temporada 2026**, desde la programación de actividades formativas hasta el diseño de los ciclos y certámenes destinados a los jóvenes aspirantes.
 
-Considerado uno de los grandes acontecimientos de la campaña europea, este evento sitúa cada año a Brihuega y a la provincia de Guadalajara como un referente para aficionados y visitantes, reforzando su atractivo cultural y taurino.
+Además de la presentación del proyecto, la sesión permitió realizar un **análisis detallado del curso 2025**, recién concluido.
+Los responsables de la **A.A.E.T. “Pedro Romero”** subrayaron la **buena salud de las Escuelas Andaluzas**, reflejada en la participación creciente y en la consolidación de sus programas formativos.
+También se abordó el marco organizativo de la **Asamblea General de la Asociación**, prevista para los primeros días de 2026, donde se ratificarán los objetivos y directrices del nuevo ejercicio.
 
-El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
+La reunión estuvo presidida por el Secretario General de Interior, **David Gil**, y contó con la participación del Coordinador General de la Secretaría de Interior, **Juan Manuel Pérez Alarcón**; el Jefe de Servicio de Espectáculos Públicos, **José Antonio Delgado**; el Presidente de la A.A.E.T. “Pedro Romero”, **Eduardo Ordóñez**; los vicepresidentes, **Francisco Ruiz Miguel** y **Miguel Serrano**; así como los miembros de la junta directiva **José Luis Galloso** y **Juan Carlos Landrove**.
 
-La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-		{ 
-    id: 1001,
-    title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
-    image: "/images/goyesca.jpg",
-    category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-    fullContent: `Después de un año en blanco respecto a los toros en Ronda el propio Francisco Rivera Ordóñez, empresario de esta plaza ha confirmado en entrevista en un podcast llamado “La Tasca” , sobre el posible cartel y las labores de restauración comentaba lo siguiente; “La Maestranza está haciendo una labor increíble, con prisa y con ganas para que la plaza esté perfecta para la reinauguración. A ver si somos capaces de estar a la altura, estamos en ello”.
-
-Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goyesca una de esas fechas marcadas por todos los aficionados y por la que han pasado figuras como Rafael de Paula , Morante de la Puebla o Antonio Ardoñez y que ha pasado unos años de vacío por las labores de restauración que se han estado realizando y que parece que van en muy buen camino.`,
-  author: "Mario Ruiz Ruiz",
-  authorLogo: "/images/mariorr.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-    title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
-    image: "/images/anoet1.jpg",
-    category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-	excerpt: "Muestra la evolución de los festejos en esta comunidad entre 2017 y 2024",
-    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ha participado en el Consejo Asesor Taurino de Extremadura, que se reunió el pasado lunes en la finca Las Tiesas de Santa María, propiedad del ganadero Victorino Martin. En este encuentro, ANOET ha dado a conocer un completo estudio estadístico sobre la presencia del hecho taurino en esta Comunidad, que se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra y Madrid. 
-
-Con estos estudios, ANOET pretende dar a conocer la presencia de la Tauromaquia en nuestro país aportando numerosos datos sobre la celebración de festejos en las distintas comunidades autónomas. Estos trabajos por comunidades ofrecen además la posibilidad de estudiar la evolución de la Fiesta de los toros en las últimas décadas en cada una de ellas. 
-
-De este modo, ANOET y la Junta de Extremadura han elaborado un informe estadístico de los festejos y reses lidiadas en esta comunidad que abarca un periodo de 8 años, en concreto de 2017 a 2024, que ofrece una interesante visión de la presencia y la evolución de la Tauromaquia en esta zona.
- 
-Con la colaboración de la Junta de Extremadura, el informe ha sido realizado por ANOET en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
- 
-Estadística
-
-Este informe sobre los toros en Extremadura se abre con un mapa que localiza la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. Como primer dato relevante aparece la cifra total de festejos celebrados, 4.103, repartidos del siguiente modo: 3.059 en la provincia de Cáceres y 1.044 en la de Badajoz. Por categoría, en este periodo de 8 años se celebraron 113 corridas de toros, 50 de rejones, 58 novilladas picadas y 35 sin picar, predominando muy por encima de estos, los festejos populares, de los que se celebraron 3.555 en total.  
-
-Como ya hizo ANOET en el análisis de otras comunicades, el informe localiza estos festejos en el mapa de Extremadura y ofrece posibilidad de consulta por ciudades y municipios. La localidad que más festejos ha celebrado en este periodo ha sido Coria por su gran afición al festejo popular, mientras que el mayor número de corridas de toros lo tiene Badajoz con 21, seguida muy de cerca por Olivenza con 20.
-
-De los festejos en plaza, fueron mayoría los celebrados en cosos portátiles, 702, seguidos de los de plazas de tercera con 473 y segunda con 114. En otros recintos se celebraron más de 2.800 festejos.
- 
-Evolución por años
-
-Este trabajo estadístico permite ver la evolución a través de los años, en la que se observa una bajada en 2019 que lógicamente se acrecienta en pandemia y un repunte constante una vez superada ésta hasta 2024. El año que más festejos registró fue 2018 con 685, seguido de 2024 con 684, por lo que se puede afirmar que la recuperación es notable y Extremadura vive uno de sus mejores momentos taurinos.
-
-Por provincias, fue Cáceres la que más festejos dio, alcanzando su cifra máxima en la temporada 2024 con 516 festejos seguidos de los 507 de 2023. Por su parte, Badajoz logró 186 festejos en 2018 seguidos de los 168 de 2024.
-
-Atendiendo a la actividad taurina por meses en la Comunidad de Extremadura, agosto es el mes más taurino con 1.591 festejos, seguido de septiembre con 1.122. Por provincias, Badajoz da más festejos en septiembre mientras que Cáceres lo hace en agosto. 
- 
-Curva de evolución
-
-En la pantalla 7 del informe aparece una curva de evolución de festejos en todos estos años. Colocando el cursor sobre ella, la cantidad de festejos aparece desglosada por su tipología sobre cada uno de los años, lo que permite una rápida consulta para ver cuándo se celebraron más corridas de toros, novilladas, rejones, etc.
-
-Reses lidiadas
-
-Este estudio presenta incluso una curva con la evolución por años en el número de reses lidiadas que muestra una uniformidad bastante notable, excepción hecha de los años de pandemia. El total de reses lidiada fue de 14.957, siendo 2022 el año que sobresale con 2.438.
-
-Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
-
-Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
+La jornada concluyó con un compromiso compartido entre la administración autonómica y el colectivo de escuelas: **continuar promoviendo la formación, la excelencia y el talento joven, pilares esenciales para el futuro de la tauromaquia en Andalucía**.`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
-	{ 
-    id: 1003,
-    title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
-    image: "/images/sanlucar.jpg",
-    category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-    fullContent: `El empresario de la Plaza de Toros de Sanlúcar de Barrameda, Carmelo García, ha dado a conocer las fechas que marcarán los “grandes acontecimientos de la temporada 2026”, tres citas que -según afirmó- volverán a situar al histórico Coso de El Pino en el centro de atención del mundo taurino por la calidad de sus carteles y ganaderías.
-
-La temporada arrancará el sábado 11 de abril, cuando el ruedo sanluqueño acogerá la tradicional Corrida de la Primavera, que este año se celebrará en formato de Arte del Toreo a Caballo, una gran corrida de rejones llamada a reunir a los máximos exponentes de la disciplina.
-
-Poco después, en pleno ambiente festivo, llegará la corrida de la Feria de la Manzanilla, programada para el domingo 7 de junio. Esta cita, integrada como cada año en la programación oficial de la feria sanluqueña, promete convertirse en uno de los momentos más esperados por la afición local y visitante.
-
-La temporada alcanzará su punto culminante el domingo 16 de agosto con la celebración de la VIII Corrida Magallánica, un festejo que se ha consolidado como uno de los eventos taurinos más singulares y emblemáticos de la ciudad.
-
-Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
-
-Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },	
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+    { 
     id: 1,
-    title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
-    image: "/images/brihuega.jpg",
+    title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
+    image: "/images/pedro.jpg",
     category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
-    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será **José María Manzanares** , el diestro alicantino. 
+    date: "5 de Diciembre de 2025",
+    fullContent: `La **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** ha presentado ante la **Junta de Andalucía** las bases de su proyecto anual de **Fomento de Nuevos Valores del Toreo**, iniciativa que se integra en el **Programa de Fomento de la Cultura Taurina de Andalucía 2026**.
+Con esta planificación, las escuelas andaluzas buscan consolidar su labor formativa y fortalecer el relevo generacional dentro del toreo.
 
-El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
+El encuentro tuvo lugar el pasado **miércoles 3 de diciembre** en la sede de la **Consejería de la Secretaría de Interior de la Junta de Andalucía**, ubicada en la **Isla de la Cartuja de Sevilla**. Durante la reunión, los representantes de la **Asociación** expusieron al Secretario General de Interior, **David Gil**, **las líneas maestras que marcarán el desarrollo de la temporada 2026**, desde la programación de actividades formativas hasta el diseño de los ciclos y certámenes destinados a los jóvenes aspirantes.
 
-Considerado uno de los grandes acontecimientos de la campaña europea, este evento sitúa cada año a Brihuega y a la provincia de Guadalajara como un referente para aficionados y visitantes, reforzando su atractivo cultural y taurino.
+Además de la presentación del proyecto, la sesión permitió realizar un **análisis detallado del curso 2025**, recién concluido.
+Los responsables de la **A.A.E.T. “Pedro Romero”** subrayaron la **buena salud de las Escuelas Andaluzas**, reflejada en la participación creciente y en la consolidación de sus programas formativos.
+También se abordó el marco organizativo de la **Asamblea General de la Asociación**, prevista para los primeros días de 2026, donde se ratificarán los objetivos y directrices del nuevo ejercicio.
 
-El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
+La reunión estuvo presidida por el Secretario General de Interior, **David Gil**, y contó con la participación del Coordinador General de la Secretaría de Interior, **Juan Manuel Pérez Alarcón**; el Jefe de Servicio de Espectáculos Públicos, **José Antonio Delgado**; el Presidente de la A.A.E.T. “Pedro Romero”, **Eduardo Ordóñez**; los vicepresidentes, **Francisco Ruiz Miguel** y **Miguel Serrano**; así como los miembros de la junta directiva **José Luis Galloso** y **Juan Carlos Landrove**.
 
-La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+La jornada concluyó con un compromiso compartido entre la administración autonómica y el colectivo de escuelas: **continuar promoviendo la formación, la excelencia y el talento joven, pilares esenciales para el futuro de la tauromaquia en Andalucía**.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 2,
+    title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
+    image: "/images/brihuega.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+	excerpt: "El cartel se presentará el próximo 12 de Diciembre",
+    fullContent: `La tradicional corrida de toros de primavera de Brihuega ya tiene fecha para su próxima edición, prevista para el mes de abril, en la que volverá a reunirse un cartel de primer nivel con tres de los toreros más destacados de la temporada , según ha podido saber este medio uno de ellos será **José María Manzanares** , el diestro alicantino. 
+
+El festejo se celebrará el sábado 11 de abril, según ha anunciado la empresa Funtausa, consolidándose un año más como uno de los pilares fundamentales del calendario taurino en la provincia de Guadalajara.
+
+Considerado uno de los grandes acontecimientos de la campaña europea, este evento sitúa cada año a Brihuega y a la provincia de Guadalajara como un referente para aficionados y visitantes, reforzando su atractivo cultural y taurino.
+
+El cartel completo se dará a conocer oficialmente, salvo cambios de última hora, el próximo 12 de diciembre. Ese día, la empresa dirigida por Toño Matilla presentará la terna encargada de hacer el paseíllo y la ganadería protagonista en el coso de La Muralla.
+
+La cita briocense se ha consolidado también como un importante escaparate social, reuniendo a numerosas personalidades del ámbito televisivo, deportivo y cultural, y aportando un notable brillo a uno de los eventos más esperados del calendario taurino en Guadalajara.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
     title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
     image: "/images/goyesca.jpg",
     category: "Actualidad",
@@ -586,7 +530,7 @@ Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goy
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -627,33 +571,33 @@ Este estudio presenta incluso una curva con la evolución por años en el númer
 Por último, este repaso estadístico a Extremadura permite conocer la población extremeña que ha tenido acceso a los toros en esta comunidad, ofreciendo datos también año por año. El mayor porcentaje de festejos se celebró en municipios de entre 1.000 y 5.000 habitantes, en concreto el 44,09 por ciento. 
 
 Por provincias, en Cáceres el número de habitantes en municipios donde se celebran toros representa el 84,72% de la población. En más del 50% de los municipios de esta provincia se celebran toros. En Badajoz, por su parte, el número de habitantes a los que llegan los toros representa el 74,56%, celebrándose toros en el 37,58% de las localidades.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 4,
-    title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
-    image: "/images/sanlucar.jpg",
-    category: "Actualidad",
-    date: "4 de Diciembre de 2025",
-    fullContent: `El empresario de la Plaza de Toros de Sanlúcar de Barrameda, Carmelo García, ha dado a conocer las fechas que marcarán los “grandes acontecimientos de la temporada 2026”, tres citas que -según afirmó- volverán a situar al histórico Coso de El Pino en el centro de atención del mundo taurino por la calidad de sus carteles y ganaderías.
-
-La temporada arrancará el sábado 11 de abril, cuando el ruedo sanluqueño acogerá la tradicional Corrida de la Primavera, que este año se celebrará en formato de Arte del Toreo a Caballo, una gran corrida de rejones llamada a reunir a los máximos exponentes de la disciplina.
-
-Poco después, en pleno ambiente festivo, llegará la corrida de la Feria de la Manzanilla, programada para el domingo 7 de junio. Esta cita, integrada como cada año en la programación oficial de la feria sanluqueña, promete convertirse en uno de los momentos más esperados por la afición local y visitante.
-
-La temporada alcanzará su punto culminante el domingo 16 de agosto con la celebración de la VIII Corrida Magallánica, un festejo que se ha consolidado como uno de los eventos taurinos más singulares y emblemáticos de la ciudad.
-
-Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
-
-Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 5,
+    title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
+    image: "/images/sanlucar.jpg",
+    category: "Actualidad",
+    date: "4 de Diciembre de 2025",
+    fullContent: `El empresario de la Plaza de Toros de Sanlúcar de Barrameda, Carmelo García, ha dado a conocer las fechas que marcarán los “grandes acontecimientos de la temporada 2026”, tres citas que -según afirmó- volverán a situar al histórico Coso de El Pino en el centro de atención del mundo taurino por la calidad de sus carteles y ganaderías.
+
+La temporada arrancará el sábado 11 de abril, cuando el ruedo sanluqueño acogerá la tradicional Corrida de la Primavera, que este año se celebrará en formato de Arte del Toreo a Caballo, una gran corrida de rejones llamada a reunir a los máximos exponentes de la disciplina.
+
+Poco después, en pleno ambiente festivo, llegará la corrida de la Feria de la Manzanilla, programada para el domingo 7 de junio. Esta cita, integrada como cada año en la programación oficial de la feria sanluqueña, promete convertirse en uno de los momentos más esperados por la afición local y visitante.
+
+La temporada alcanzará su punto culminante el domingo 16 de agosto con la celebración de la VIII Corrida Magallánica, un festejo que se ha consolidado como uno de los eventos taurinos más singulares y emblemáticos de la ciudad.
+
+Al anunciar el calendario, Carmelo García subrayó el compromiso de la empresa gestora con la excelencia: “Estas tres citas que hemos definido serán carteles de máxima categoría, como es lo habitual en Sanlúcar. Nuestra prioridad es siempre buscar la máxima calidad en nuestras combinaciones”, afirmó el empresario.
+
+Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una oferta taurina de primer nivel, reforzando su posición como uno de los enclaves más destacados del calendario nacional.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 6,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
