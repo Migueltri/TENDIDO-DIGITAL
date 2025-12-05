@@ -89,17 +89,21 @@ const sortedNews = news.slice().sort((a, b) =>
 
 const newsWithIds = sortedNews.map((item, index) => ({ ...item, id: index + 1 }));
 
-// USAR const (NO export) dentro del page.tsx
-const finalNews = newsWithIds;
+// finalNews ya viene ordenado y con IDs (si no, usa newsWithIds)
+const latestNews = Array.isArray(finalNews) ? finalNews : (Array.isArray(newsWithIds) ? newsWithIds : []);
 
-// --- Parche seguro para evitar ReferenceError ---
-const safeNews = Array.isArray(newsWithIds) ? newsWithIds : (Array.isArray(finalNews) ? finalNews : []);
+// featuredNews: por defecto las 3 primeras (más recientes) de latestNews
+// Si quieres que sean sólo "Crónicas", usa .filter(n => n.category === 'Crónicas')
+const featuredNews = latestNews.slice(0, 3);
 
-// Si antes tenías una sección "featured" y la variable se llamaba featuredfinalNews,
-// la recreamos con las 3 primeras noticias (ajusta slice si quieres otro número).
-const featuredfinalNews = safeNews.filter(n => n.category === "Crónicas").slice(0, 3);
+// chronicles (si tu código usa `chronicles` o `chronicles` ya existe más abajo, ignora)
+// Si ya tienes un array 'chronicles' definido fuera, no sobrescribas.
+// const chronicles = existingChroniclesArray || []; // sólo si hace falta
+// En tu caso parece que ya tienes `chronicles` declarado más abajo — no lo toques.
 
-// Ahora featuredfinalNews siempre existe y es un array.
+// Guardas defensivas donde uses .map/.filter en render:
+const SAFE_featuredNews = Array.isArray(featuredNews) ? featuredNews : [];
+const SAFE_latestNews = Array.isArray(latestNews) ? latestNews : [];
 
 
 export default function Home() {
