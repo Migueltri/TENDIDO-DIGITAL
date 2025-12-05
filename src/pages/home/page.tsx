@@ -82,8 +82,7 @@ const news = [
   /* ...tu lista de objetos... */
 ];
 
-// ---------------------- INICIO: Normalización única de noticias ----------------------
-// (Pegar justo después de `const news = [ ... ]` y eliminar otros bloques duplicados)
+// ---------------------- Normalización única de noticias (mantener UNA sola vez) ----------------------
 function parseCustomDateSafe(dateStr: any) {
   const months: Record<string, number> = {
     Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
@@ -91,7 +90,6 @@ function parseCustomDateSafe(dateStr: any) {
   };
   if (!dateStr || typeof dateStr !== 'string') return new Date(0);
   const s = dateStr.trim();
-  // Soporta "4 de Diciembre de 2025" y formatos ISO
   const parts = s.split(/\s+/);
   if (parts.length >= 4 && parts[1] === 'de') {
     const day = Number(parts[0]) || 1;
@@ -102,6 +100,25 @@ function parseCustomDateSafe(dateStr: any) {
   const parsed = new Date(s);
   return isNaN(parsed.getTime()) ? new Date(0) : parsed;
 }
+
+const _rawNews = Array.isArray(news) ? news.slice() : [];
+
+const _sortedByDate = _rawNews.slice().sort((a, b) =>
+  parseCustomDateSafe(b?.date).getTime() - parseCustomDateSafe(a?.date).getTime()
+);
+
+const _newsWithIds = _sortedByDate.map((item, index) => ({ ...item, id: index + 1 }));
+
+const finalNews = _newsWithIds;
+const latestNews = finalNews;
+const featuredNews = latestNews
+  .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
+  .slice(0, 3);
+
+const featuredfinalNews = featuredNews;
+const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
+const safeNews = latestNews;
+// ---------------------- FIN normalización única ----------------------
 
 // Copia defensiva del array original
 const _rawNews = Array.isArray(news) ? news.slice() : [];
@@ -126,25 +143,6 @@ const featuredfinalNews = featuredNews;
 const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
 const safeNews = latestNews;
 // ---------------------- FIN: Normalización única de noticias ----------------------
-
-// --- Normalización y control único de fuentes (Pegar aquí) ---
-function parseCustomDateSafe(dateStr: string) {
-  const months: Record<string, number> = {
-    Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
-    Julio: 6, Agosto: 7, Septiembre: 8, Octubre: 9, Noviembre: 10, Diciembre: 11
-  };
-  if (!dateStr || typeof dateStr !== 'string') return new Date(0);
-  const parts = dateStr.trim().split(/\s+/);
-  // intenta soportar formatos "4 de Diciembre de 2025" y "2025-12-04"
-  if (parts.length >= 4 && parts[1] === 'de') {
-    const day = Number(parts[0]);
-    const monthName = parts[2];
-    const year = Number(parts[4] ?? parts[3]);
-    return new Date(isNaN(year) ? 0 : year, months[monthName] ?? 0, isNaN(day) ? 1 : day);
-  }
-  const parsed = new Date(dateStr);
-  return isNaN(parsed.getTime()) ? new Date(0) : parsed;
-}
 
 // Seguridad: copias limpias y defensivas
 const _rawNews = Array.isArray(news) ? news.slice() : [];
@@ -347,18 +345,6 @@ setSavedPosts(prev => {
   return newSaved;
 });
 };
-
-// 1. Ordenar por fecha (más reciente primero)
-const sortedNews = news.sort((a, b) => {
-  return parseCustomDate(b.date).getTime() - parseCustomDate(a.date).getTime();
-});
-
-// 2. Asignar IDs automáticamente según el orden
-const newsWithIds = sortedNews.map((item, index) => ({
-  ...item,
-  id: index + 1
-}));
-
 
 const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
 if (e) {
