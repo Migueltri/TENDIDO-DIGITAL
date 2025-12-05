@@ -452,7 +452,7 @@ const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
-    image: "/images/curro.jpg",
+    image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
     category: "Actualidad",
     date: "5 de Diciembre de 2025",
@@ -522,7 +522,7 @@ const latestNews: NewsItem[] = [
     { 
     id: 1,
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
-    image: "/images/curro.jpg",
+    image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
     category: "Actualidad",
     date: "5 de Diciembre de 2025",
