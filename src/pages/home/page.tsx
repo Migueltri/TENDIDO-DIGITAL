@@ -122,6 +122,8 @@ const latestNews = Array.isArray(finalNews) ? finalNews : [];
 const featuredNews = latestNews
   .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
   .slice(0, 3);
+// Compatibilidad rápida para código antiguo que todavía usa "featuredfinalNews"
+const featuredfinalNews = featuredNews;
 
 // 6) chronicles (listado completo de crónicas)
 const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
