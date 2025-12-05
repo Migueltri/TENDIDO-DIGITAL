@@ -92,19 +92,18 @@ const newsWithIds = sortedNews.map((item, index) => ({ ...item, id: index + 1 })
 // finalNews ya viene ordenado y con IDs (si no, usa newsWithIds)
 const latestNews = Array.isArray(finalNews) ? finalNews : (Array.isArray(newsWithIds) ? newsWithIds : []);
 
-// featuredNews: por defecto las 3 primeras (más recientes) de latestNews
-// Si quieres que sean sólo "Crónicas", usa .filter(n => n.category === 'Crónicas')
-const featuredNews = latestNews.slice(0, 3);
+// --- Garantiza que FINAL collections existan (pegar justo tras newsWithIds) ---
+const finalNews = typeof newsWithIds !== 'undefined' ? newsWithIds : (Array.isArray(news) ? news : []);
 
-// chronicles (si tu código usa `chronicles` o `chronicles` ya existe más abajo, ignora)
-// Si ya tienes un array 'chronicles' definido fuera, no sobrescribas.
-// const chronicles = existingChroniclesArray || []; // sólo si hace falta
-// En tu caso parece que ya tienes `chronicles` declarado más abajo — no lo toques.
+// Latest / featured usados por el resto de la app
+const latestNews = Array.isArray(finalNews) ? finalNews : [];
+// Si quieres featured por categoría "Crónicas" (como en tu UI), usa esto.
+// Si prefieres las primeras 3 noticias recientes, cambia a latestNews.slice(0,3)
+const featuredNews = latestNews.filter(n => String(n.category).toLowerCase().includes('crónica')).slice(0, 3);
 
-// Guardas defensivas donde uses .map/.filter en render:
+// Fallbacks defensivos (evitan que la app petarde si algo no está definido)
 const SAFE_featuredNews = Array.isArray(featuredNews) ? featuredNews : [];
 const SAFE_latestNews = Array.isArray(latestNews) ? latestNews : [];
-
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
