@@ -122,7 +122,7 @@ const latestNews = Array.isArray(finalNews) ? finalNews : [];
 const featuredNews = latestNews
   .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
   .slice(0, 3);
-// Compatibilidad rápida para código antiguo que todavía usa "featuredfinalNews"
+// Compatibilidad rápida para código antiguo que todavía usa "featuredNews"
 const featuredfinalNews = featuredNews;
 
 // 6) chronicles (listado completo de crónicas)
@@ -3784,7 +3784,7 @@ return (
   id="inicio"
   className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-white"
 >
-      {featuredfinalNews.map((news, index) => (
+      {featuredNews.map((news, index) => (
         <div
           key={news.id}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
