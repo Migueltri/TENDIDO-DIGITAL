@@ -94,9 +94,6 @@ const latestNews = Array.isArray(finalNews) ? finalNews : (Array.isArray(newsWit
 
 // --- Garantiza que FINAL collections existan (pegar justo tras newsWithIds) ---
 const finalNews = typeof newsWithIds !== 'undefined' ? newsWithIds : (Array.isArray(news) ? news : []);
-
-// Latest / featured usados por el resto de la app
-const latestNews = Array.isArray(finalNews) ? finalNews : [];
 // Si quieres featured por categoría "Crónicas" (como en tu UI), usa esto.
 // Si prefieres las primeras 3 noticias recientes, cambia a latestNews.slice(0,3)
 const featuredNews = latestNews.filter(n => String(n.category).toLowerCase().includes('crónica')).slice(0, 3);
