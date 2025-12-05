@@ -89,60 +89,6 @@ const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase()
 const safeNews = latestNews;
 // ---------------------- FIN normalización única ----------------------
 
-// Copia defensiva del array original
-const _rawNews = Array.isArray(news) ? news.slice() : [];
-
-// Orden único por fecha (más reciente primero)
-const _sortedByDate = _rawNews.slice().sort((a, b) =>
-  parseCustomDateSafe(b?.date).getTime() - parseCustomDateSafe(a?.date).getTime()
-);
-
-// Asignar ids automáticos (según orden actual)
-const _newsWithIds = _sortedByDate.map((item, index) => ({ ...item, id: index + 1 }));
-
-// Fuente canonical y alias
-const finalNews = _newsWithIds;               // canonical
-const latestNews = finalNews;                 // alias usado por la UI
-const featuredNews = latestNews              // noticias destacadas por categoría
-  .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
-  .slice(0, 3);
-
-// Backwards compatibility: si alguna parte del código usa nombres antiguos
-const featuredfinalNews = featuredNews;
-const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
-const safeNews = latestNews;
-// ---------------------- FIN: Normalización única de noticias ----------------------
-
-// Seguridad: copias limpias y defensivas
-const _rawNews = Array.isArray(news) ? news.slice() : [];
-
-// 1) ordenar por fecha (más recientes primero)
-const _sortedByDate = _rawNews.slice().sort((a, b) =>
-  parseCustomDateSafe(b.date).getTime() - parseCustomDateSafe(a.date).getTime()
-);
-
-// 2) asignar ids automáticos (según orden actual)
-const _newsWithIds = _sortedByDate.map((item, index) => ({ ...item, id: index + 1 }));
-
-// 3) finalNews (única fuente canonical que usa la app)
-const finalNews = _newsWithIds;
-
-// 4) latestNews — alias seguro para UI (evita redeclaraciones)
-const latestNews = Array.isArray(finalNews) ? finalNews : [];
-
-// 5) featuredNews — por categoría "Crónicas" (ajusta si quieres otra lógica)
-const featuredNews = latestNews
-  .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
-  .slice(0, 3);
-// Compatibilidad rápida para código antiguo que todavía usa "featuredNews"
-const featuredfinalNews = featuredNews;
-
-// 6) chronicles (listado completo de crónicas)
-const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
-
-// 7) fallback seguro para cualquier uso antiguo
-const safeNews = latestNews;
-
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
