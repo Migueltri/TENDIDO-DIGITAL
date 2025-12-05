@@ -30,6 +30,8 @@
   showAuthorHeader?: boolean;
 }
 
+const news: NewsItem[] = [];
+
 type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
