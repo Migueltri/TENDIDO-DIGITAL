@@ -92,6 +92,15 @@ const newsWithIds = sortedNews.map((item, index) => ({ ...item, id: index + 1 })
 // USAR const (NO export) dentro del page.tsx
 const finalNews = newsWithIds;
 
+// --- Parche seguro para evitar ReferenceError ---
+const safeNews = Array.isArray(newsWithIds) ? newsWithIds : (Array.isArray(finalNews) ? finalNews : []);
+
+// Si antes tenías una sección "featured" y la variable se llamaba featuredfinalNews,
+// la recreamos con las 3 primeras noticias (ajusta slice si quieres otro número).
+const featuredfinalNews = safeNews.filter(n => n.category === "Crónicas").slice(0, 3);
+
+// Ahora featuredfinalNews siempre existe y es un array.
+
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
