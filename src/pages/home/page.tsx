@@ -82,6 +82,51 @@ const news = [
   /* ...tu lista de objetos... */
 ];
 
+// ---------------------- INICIO: Normalización única de noticias ----------------------
+// (Pegar justo después de `const news = [ ... ]` y eliminar otros bloques duplicados)
+function parseCustomDateSafe(dateStr: any) {
+  const months: Record<string, number> = {
+    Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
+    Julio: 6, Agosto: 7, Septiembre: 8, Octubre: 9, Noviembre: 10, Diciembre: 11
+  };
+  if (!dateStr || typeof dateStr !== 'string') return new Date(0);
+  const s = dateStr.trim();
+  // Soporta "4 de Diciembre de 2025" y formatos ISO
+  const parts = s.split(/\s+/);
+  if (parts.length >= 4 && parts[1] === 'de') {
+    const day = Number(parts[0]) || 1;
+    const monthName = parts[2];
+    const year = Number(parts[4] ?? parts[3]) || 1970;
+    return new Date(year, months[monthName] ?? 0, day);
+  }
+  const parsed = new Date(s);
+  return isNaN(parsed.getTime()) ? new Date(0) : parsed;
+}
+
+// Copia defensiva del array original
+const _rawNews = Array.isArray(news) ? news.slice() : [];
+
+// Orden único por fecha (más reciente primero)
+const _sortedByDate = _rawNews.slice().sort((a, b) =>
+  parseCustomDateSafe(b?.date).getTime() - parseCustomDateSafe(a?.date).getTime()
+);
+
+// Asignar ids automáticos (según orden actual)
+const _newsWithIds = _sortedByDate.map((item, index) => ({ ...item, id: index + 1 }));
+
+// Fuente canonical y alias
+const finalNews = _newsWithIds;               // canonical
+const latestNews = finalNews;                 // alias usado por la UI
+const featuredNews = latestNews              // noticias destacadas por categoría
+  .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
+  .slice(0, 3);
+
+// Backwards compatibility: si alguna parte del código usa nombres antiguos
+const featuredfinalNews = featuredNews;
+const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
+const safeNews = latestNews;
+// ---------------------- FIN: Normalización única de noticias ----------------------
+
 // --- Normalización y control único de fuentes (Pegar aquí) ---
 function parseCustomDateSafe(dateStr: string) {
   const months: Record<string, number> = {
