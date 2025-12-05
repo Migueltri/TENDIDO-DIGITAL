@@ -449,8 +449,53 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-  { 
+	{ 
     id: 1000,
+    title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
+    image: "/images/curro.jpg",
+	imageCaption: "Foto ABC",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El matador sevillano Rafael Serna ha alcanzado un acuerdo verbal de apoderamiento con el diestro retirado Francisco José Porras para las próximas temporadas. Serna, considerado una de las mayores promesas del toreo sevillano, llega a este acuerdo tras su importante triunfo en Las Ventas durante la pasada Feria de San Isidro.
+
+El torero se ha mostrado ilusionado con esta nueva etapa y asegura encontrarse en el mejor momento de su carrera. Porras, con experiencia como empresario y acompañante de otros toreros, afirma que Serna posee cualidades suficientes para hacerse un hueco destacado en el escalafón.
+
+La alianza marca un paso clave para la proyección del matador de cara a la temporada 2026.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
+    title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
+    image: "/images/curro.jpg",
+	imageCaption: "Foto Plaza 1",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El matador de toros Curro Díaz y el empresario Jorge Buendía han decidido poner punto y final a la relación de apoderamiento que les mantenía unidos durante los últimos tres años. En un comunicado emitido a este medio, aseguran que ‘siempre guardarán los mejores recuerdos’.
+
+El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a la Feria de San Isidro de Madrid y a la Feria de Abril de Sevilla, así como sus triunfos en Jaén, Linares o Úbeda.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1002,
+    title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
+    image: "/images/aguilar.jpg",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El torero francés Yon Lamothe y el maestro madrileño Alberto Aguilar han llegado a un acuerdo de apoderamiento a partir de la temporada 2026 y por tiempo indefinido.
+
+Alberto Aguilar decidió apostar por el joven torero francés que tomó la alternativa en Mont de Marsan en la temporada 2023 después de una importante etapa de novillero en Francia como en España.
+
+Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para potenciar la carrera del matador de toros galo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1003,
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -476,6 +521,51 @@ La jornada concluyó con un compromiso compartido entre la administración auton
 const latestNews: NewsItem[] = [
     { 
     id: 1,
+    title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
+    image: "/images/curro.jpg",
+	imageCaption: "Foto ABC",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El matador sevillano Rafael Serna ha alcanzado un acuerdo verbal de apoderamiento con el diestro retirado Francisco José Porras para las próximas temporadas. Serna, considerado una de las mayores promesas del toreo sevillano, llega a este acuerdo tras su importante triunfo en Las Ventas durante la pasada Feria de San Isidro.
+
+El torero se ha mostrado ilusionado con esta nueva etapa y asegura encontrarse en el mejor momento de su carrera. Porras, con experiencia como empresario y acompañante de otros toreros, afirma que Serna posee cualidades suficientes para hacerse un hueco destacado en el escalafón.
+
+La alianza marca un paso clave para la proyección del matador de cara a la temporada 2026.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
+    title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
+    image: "/images/curro.jpg",
+	imageCaption: "Foto Plaza 1",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El matador de toros Curro Díaz y el empresario Jorge Buendía han decidido poner punto y final a la relación de apoderamiento que les mantenía unidos durante los últimos tres años. En un comunicado emitido a este medio, aseguran que ‘siempre guardarán los mejores recuerdos’.
+
+El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a la Feria de San Isidro de Madrid y a la Feria de Abril de Sevilla, así como sus triunfos en Jaén, Linares o Úbeda.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
+    title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
+    image: "/images/aguilar.jpg",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `El torero francés Yon Lamothe y el maestro madrileño Alberto Aguilar han llegado a un acuerdo de apoderamiento a partir de la temporada 2026 y por tiempo indefinido.
+
+Alberto Aguilar decidió apostar por el joven torero francés que tomó la alternativa en Mont de Marsan en la temporada 2023 después de una importante etapa de novillero en Francia como en España.
+
+Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para potenciar la carrera del matador de toros galo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 4,
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -497,7 +587,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 4,
     title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
     image: "/images/brihuega.jpg",
     category: "Actualidad",
@@ -517,7 +607,7 @@ La cita briocense se ha consolidado también como un importante escaparate socia
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 6,
     title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
     image: "/images/goyesca.jpg",
     category: "Actualidad",
@@ -530,7 +620,7 @@ Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goy
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 7,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -576,7 +666,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: 8,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -597,7 +687,7 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 9,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
