@@ -451,6 +451,28 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
+    image: "/images/castellon.jpg",
+	imageCaption: "Plaza de Toros de Castellón",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `La **Casa Matilla** tiene muy avanzados —aunque aún sujetos a posibles ajustes fruto de las negociaciones— los carteles de la Feria de la Magdalena de Castellón, uno de los ciclos marcados en rojo en el arranque de la temporada taurina. Entre sus grandes atractivos, **destaca el mano a mano entre Alejandro Talavante y Juan Ortega, triunfador de la pasada edición**. Esta cita está prevista para el **domingo 16 de marzo** y contará con reses de **Domingo Hernández**, como ya avanzó este medio.
+
+El mano a mano actuará como traca final de una feria cuya “mascletà” taurina se concentra entre el **14 y el 16 de marzo**.
+Para el viernes, la empresa Funtasa prepara otro de los platos fuertes del abono con la presencia de **Roca Rey, que compartirá paseíllo con José María Manzanares y Pablo Aguado, en el regreso a Castellón de los toros de Hermanos García Jiménez**.
+
+Según ha avanzado el periodista **Zabala de la Serna**, el **sábado 15** tomaría forma una combinación compuesta por **Sebastián Castella, Daniel Luque y Emilio de Justo, quienes lidiarían la corrida de Zalduendo**.
+Por su parte, **Miguel Ángel Perera, Tomás Rufo y Marco Pérez harían lo propio con un encierro de Montalvo**, completando así un serial que, de confirmarse, supondría también la ausencia de la ganadería de **La Quinta**, protagonista en 2024 del indulto más recordado en esta plaza.
+
+Más allá del atractivo de los carteles, el borrador de la feria deja tres ausencias especialmente llamativas: **Víctor Hernández, David de Miranda y Fernando Adrián no estarían anunciados en la Magdalena**. Tres nombres que llegan a este inicio de temporada con méritos más que suficientes para ocupar un hueco en una feria de esta categoría, tanto por sus triunfos recientes como por la proyección demostrada en los últimos meses.
+
+Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que ya despierta gran expectación entre la afición.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -466,7 +488,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -480,7 +502,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -495,7 +517,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -521,6 +543,28 @@ La jornada concluyó con un compromiso compartido entre la administración auton
 const latestNews: NewsItem[] = [
     { 
     id: 1,
+    title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
+    image: "/images/castellon.jpg",
+	imageCaption: "Plaza de Toros de Castellón",
+    category: "Actualidad",
+    date: "5 de Diciembre de 2025",
+    fullContent: `La **Casa Matilla** tiene muy avanzados —aunque aún sujetos a posibles ajustes fruto de las negociaciones— los carteles de la Feria de la Magdalena de Castellón, uno de los ciclos marcados en rojo en el arranque de la temporada taurina. Entre sus grandes atractivos, **destaca el mano a mano entre Alejandro Talavante y Juan Ortega, triunfador de la pasada edición**. Esta cita está prevista para el **domingo 16 de marzo** y contará con reses de **Domingo Hernández**, como ya avanzó este medio.
+
+El mano a mano actuará como traca final de una feria cuya “mascletà” taurina se concentra entre el **14 y el 16 de marzo**.
+Para el viernes, la empresa Funtasa prepara otro de los platos fuertes del abono con la presencia de **Roca Rey, que compartirá paseíllo con José María Manzanares y Pablo Aguado, en el regreso a Castellón de los toros de Hermanos García Jiménez**.
+
+Según ha avanzado el periodista **Zabala de la Serna**, el **sábado 15** tomaría forma una combinación compuesta por **Sebastián Castella, Daniel Luque y Emilio de Justo, quienes lidiarían la corrida de Zalduendo**.
+Por su parte, **Miguel Ángel Perera, Tomás Rufo y Marco Pérez harían lo propio con un encierro de Montalvo**, completando así un serial que, de confirmarse, supondría también la ausencia de la ganadería de **La Quinta**, protagonista en 2024 del indulto más recordado en esta plaza.
+
+Más allá del atractivo de los carteles, el borrador de la feria deja tres ausencias especialmente llamativas: **Víctor Hernández, David de Miranda y Fernando Adrián no estarían anunciados en la Magdalena**. Tres nombres que llegan a este inicio de temporada con méritos más que suficientes para ocupar un hueco en una feria de esta categoría, tanto por sus triunfos recientes como por la proyección demostrada en los últimos meses.
+
+Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que ya despierta gran expectación entre la afición.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -536,7 +580,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 3,
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -550,7 +594,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 4,
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -565,7 +609,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 5,
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -587,7 +631,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 6,
     title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
     image: "/images/brihuega.jpg",
     category: "Actualidad",
@@ -607,7 +651,7 @@ La cita briocense se ha consolidado también como un importante escaparate socia
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: 7,
     title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
     image: "/images/goyesca.jpg",
     category: "Actualidad",
@@ -620,7 +664,7 @@ Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goy
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: 8,
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -666,7 +710,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: 9,
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -687,7 +731,7 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: 10,
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
@@ -753,7 +797,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: 11,
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -769,7 +813,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: 11,
+    id: 12,
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -796,7 +840,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: 12,
+    id: 13,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -851,7 +895,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: 13,
+    id: 14,
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -881,7 +925,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: 14,
+    id: 15,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -945,7 +989,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: 16,
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
