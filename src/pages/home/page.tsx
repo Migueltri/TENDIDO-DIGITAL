@@ -82,25 +82,52 @@ const news = [
   /* ...tu lista de objetos... */
 ];
 
-// ordenar por fecha (más reciente primero) y asignar id automáticos
-const sortedNews = news.slice().sort((a, b) =>
-  parseCustomDate(b.date).getTime() - parseCustomDate(a.date).getTime()
+// --- Normalización y control único de fuentes (Pegar aquí) ---
+function parseCustomDateSafe(dateStr: string) {
+  const months: Record<string, number> = {
+    Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
+    Julio: 6, Agosto: 7, Septiembre: 8, Octubre: 9, Noviembre: 10, Diciembre: 11
+  };
+  if (!dateStr || typeof dateStr !== 'string') return new Date(0);
+  const parts = dateStr.trim().split(/\s+/);
+  // intenta soportar formatos "4 de Diciembre de 2025" y "2025-12-04"
+  if (parts.length >= 4 && parts[1] === 'de') {
+    const day = Number(parts[0]);
+    const monthName = parts[2];
+    const year = Number(parts[4] ?? parts[3]);
+    return new Date(isNaN(year) ? 0 : year, months[monthName] ?? 0, isNaN(day) ? 1 : day);
+  }
+  const parsed = new Date(dateStr);
+  return isNaN(parsed.getTime()) ? new Date(0) : parsed;
+}
+
+// Seguridad: copias limpias y defensivas
+const _rawNews = Array.isArray(news) ? news.slice() : [];
+
+// 1) ordenar por fecha (más recientes primero)
+const _sortedByDate = _rawNews.slice().sort((a, b) =>
+  parseCustomDateSafe(b.date).getTime() - parseCustomDateSafe(a.date).getTime()
 );
 
-const newsWithIds = sortedNews.map((item, index) => ({ ...item, id: index + 1 }));
+// 2) asignar ids automáticos (según orden actual)
+const _newsWithIds = _sortedByDate.map((item, index) => ({ ...item, id: index + 1 }));
 
-// finalNews ya viene ordenado y con IDs (si no, usa newsWithIds)
-const latestNews = Array.isArray(finalNews) ? finalNews : (Array.isArray(newsWithIds) ? newsWithIds : []);
+// 3) finalNews (única fuente canonical que usa la app)
+const finalNews = _newsWithIds;
 
-// --- Garantiza que FINAL collections existan (pegar justo tras newsWithIds) ---
-const finalNews = typeof newsWithIds !== 'undefined' ? newsWithIds : (Array.isArray(news) ? news : []);
-// Si quieres featured por categoría "Crónicas" (como en tu UI), usa esto.
-// Si prefieres las primeras 3 noticias recientes, cambia a latestNews.slice(0,3)
-const featuredNews = latestNews.filter(n => String(n.category).toLowerCase().includes('crónica')).slice(0, 3);
+// 4) latestNews — alias seguro para UI (evita redeclaraciones)
+const latestNews = Array.isArray(finalNews) ? finalNews : [];
 
-// Fallbacks defensivos (evitan que la app petarde si algo no está definido)
-const SAFE_featuredNews = Array.isArray(featuredNews) ? featuredNews : [];
-const SAFE_latestNews = Array.isArray(latestNews) ? latestNews : [];
+// 5) featuredNews — por categoría "Crónicas" (ajusta si quieres otra lógica)
+const featuredNews = latestNews
+  .filter(n => String(n.category || '').toLowerCase().includes('crónica'))
+  .slice(0, 3);
+
+// 6) chronicles (listado completo de crónicas)
+const chronicles = latestNews.filter(n => String(n.category || '').toLowerCase().includes('crónica'));
+
+// 7) fallback seguro para cualquier uso antiguo
+const safeNews = latestNews;
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
