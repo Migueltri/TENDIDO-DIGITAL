@@ -51,37 +51,6 @@ function formatExactDate(dateString: string): string {
   return dateString;
 }
 
-function formatTimeAgo(dateString: string): string {
-  const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
-
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
-  const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
-
-  if (diff < 60) return "hace unos segundos";
-  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
-  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
-  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
-  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
-  return rtf.format(-Math.floor(diff / 31536000), "year");
-}
-
-// utilidad: convertir "4 de Diciembre de 2025" a Date
-function parseCustomDate(dateStr: string) {
-  const months: any = {
-    Enero: 0, Febrero: 1, Marzo: 2, Abril: 3, Mayo: 4, Junio: 5,
-    Julio: 6, Agosto: 7, Septiembre: 8, Octubre: 9, Noviembre: 10, Diciembre: 11
-  };
-  const [day, , month, year] = dateStr.split(" ");
-  return new Date(Number(year), months[month], Number(day));
-}
-
-// tu array original `news` debe estar aquí (antes del componente)
-const news = [
-  /* ...tu lista de objetos... */
-];
-
 // ---------------------- Normalización única de noticias (mantener UNA sola vez) ----------------------
 function parseCustomDateSafe(dateStr: any) {
   const months: Record<string, number> = {
