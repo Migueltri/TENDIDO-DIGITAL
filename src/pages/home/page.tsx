@@ -451,6 +451,113 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
+    image: "/images/linares.jpg",
+    category: "Crónicas",
+    date: "6 de Diciembre de 2025",
+	plaza: "Santa Margarita- Linares (Jaén)",
+	ganaderia: "Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales.",
+    torerosRaw: `MARTÍN MENDOZA, E.T. Camas; Ovación.
+
+BLAS MÁRQUEZ, E.T. Linares; Oreja.
+
+JAIME PADILLA, E.T. Málaga; Dos orejas y vuelta al ruedo al novillo.
+
+JESÚS MOLINA, E.T. Linares; Oreja tras aviso.
+
+DANIEL RIVAS, E.T. Linares; Oreja.
+
+ISRAEL GUIRAO, E.T. Valencia; Dos orejas y rabo.
+
+LISARES, E.T. Arles; Oreja.`,
+fullContent: `El alumno de la escuela de Valencia cortó un rabo y el de Málaga dos orejas, ambos a hombros por la ‘Puerta Grande’
+
+
+
+El emblemático Coso de Santa Margarita volvió a abrir sus puertas en plena festividad navideña, el sábado 6 de diciembre, para albergar el I Certamen Taurino “Linares, Cuna de Toreros”, un nuevo ciclo que nace con vocación de permanencia y que rinde tributo a dos figuras indispensables de la tauromaquia linarense: Apolinar Soriano y Pepe Luis Díaz. La ciudad, reconocida históricamente como auténtico semillero de toreros, reafirma así su compromiso con una tradición profundamente arraigada en su identidad cultural.
+
+El certamen se concibe como un homenaje al legado taurino de Linares y, al mismo tiempo, como una apuesta decidida por el futuro del toreo. En esta primera edición, la plaza se convirtió en un escenario formativo de primer nivel, brindando una plataforma de proyección a 
+
+jóvenes valores procedentes de distintas escuelas taurinas de España y del extranjero. La diversidad de procedencias y estilos enriqueció un encuentro en el que la cantera mostró solvencia, entrega y un notable nivel artístico.
+
+
+
+Los alumnos participantes fueron: Martín Mendoza (Escuela Taurina de Camas); Blas Márquez, Jesús Molina y Daniel Rivas (Escuela Taurina de Linares); Jaime Padilla (Escuela Taurina de Málaga); Israel Guirao (Escuela Taurina de Valencia); y Lisares (Escuela Taurina de Arles). Se enfrentaron a un concurso de ganaderías compuesto por siete ejemplares de hierros 
+
+de reconocido prestigio: Sorando, El Cotillo, Apolinar Soriano, Los Ronceles, Collado Ruiz, Sancho Dávila y El Añadío.
+
+
+
+La jornada dejó una amplia variedad de matices y evoluciones artísticas
+
+
+
+1º Martín Mendoza, ante “Urcola”, de Apolinar Soriano, abrió plaza con decisión, recibiendo a portagayola y cuajando un toreo al natural lleno de personalidad. La espada le privó de premio y recibió una ovación.
+
+2º El linarense Blas Márquez, con “Presidiario”, también de Apolinar Soriano, firmó una faena clásica y cargada de gusto, destacando un luminoso toreo de capa. Cortó una oreja.
+
+3º Jaime Padilla, con “Feroz”, de Collado Ruiz, protagonizó una de las actuaciones de mayor 
+
+rotundidad. Su entrega, su expresividad y un espadazo perfecto le valieron dos orejas, mientras que el novillo fue premiado con la vuelta al ruedo.
+
+4º Jesús Molina, ante “Lancito”, de Sancho Dávila, dejó una labor templada y armoniosa, iniciada de rodillas y construida con suavidad y expresión. Cortó una oreja, y el novillo fue premiado con vuelta al ruedo.
+
+5º Daniel Rivas, con “Gobernante”, de Los Ronceles, demostró evolución y oficio ante un ejemplar que mejoró durante la lidia. Su faena, reposada y de buen trazo, fue premiada con unaoreja.
+
+6º Israel Guirao, con “Labriego”, de Sorando, deslumbró por su madurez y firmeza. Su actuación, intensa y muy personal, culminó con un estoconazo que le abrió la puerta grande al cortar dos orejas y rabo.
+
+7º Cerró la tarde Lisares, que recibió a portagayola a “Cabeza Loca”, de El Añadío. Pese a las complicaciones de su oponente, que buscó tablas con insistencia, el francés mostró raza, limpieza y capacidad, obteniendo una oreja.
+
+
+
+El I Certamen Taurino “Linares, Cuna de Toreros” concluyó así con un balance altamente positivo, tanto por el nivel artístico de los participantes como por el ambiente de apoyo a la juventud taurina. Con esta iniciativa, Linares reafirma su papel fundamental en la historia del toreo y renueva su compromiso con la promoción y el impulso de nuevas generaciones que 
+
+mantienen viva su tradición.
+
+FICHA DEL FESTEJO:
+
+Sábado 06 de diciembre de 2025
+
+Plaza de Toros de Santa Margarita- Linares (Jaén)
+
+I Certamen “Linares, cuna de toreros”
+
+Entrada: Algo más de media plaza en tarde gris y fría.
+
+Erales de varias ganaderías (por orden): Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales. Destacaron el 3º 
+
+“Feroz” de Collado Ruiz, y el 4º “Lancito” de Sancho Dávila, premiados con la vuelta al ruedo. 
+OBSERVACIONES: 
+
+ Un evento que sirvió como homenaje póstumo a Apolinar Soriano y Pepe Luis Díaz,
+
+figuras reconocidas del ámbito taurino local.
+
+ Festejo en modalidad de ‘Clase Práctica’ y además Concurso de Ganaderías.
+
+ Antes de romper sonó el Himno Nacional.
+
+ Antes de comenzar el festejo se entregaron varios reconocimientos a los Ganaderos, 
+
+Propiedad de la Plaza, Escuela Taurina de Linares y Canal Sur Tv. Todos recibieron 
+
+una placa conmemorativa en presencia de la alcaldesa de Linares, Dña. María 
+
+Auxiliadora del Olmo Ruiz. 
+
+ Último festejo de la Temporada 2025 de las Escuelas y último también de las 
+
+retransmisiones de Canal Sur Tv.
+
+ El piso plaza se encontraba muy húmedo y con algunas zonas algo resbaladizas.
+
+ Presidió el festejo en el palco D. José Luis Martín López`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
     image: "/images/morenito1.jpg",
     category: "Actualidad",
@@ -481,7 +588,7 @@ De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguien
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Confirmada: La Goyesca de Madrid 2026`,
     image: "/images/goyesca1.jpg",
     category: "Actualidad",
@@ -494,7 +601,7 @@ Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `El Museo Taurino Antonio Ortega homenajea a David Galván y presenta su nueva muestra sobre “Bohonero”`,
     image: "/images/museo.jpg",
     category: "Actualidad",
@@ -513,8 +620,115 @@ Entre aplausos y palabras de reconocimiento, el homenaje se convirtió en un mom
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+   	{ 
     id: 1,
+    title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
+    image: "/images/linares.jpg",
+    category: "Crónicas",
+    date: "6 de Diciembre de 2025",
+	plaza: "Santa Margarita- Linares (Jaén)",
+	ganaderia: "Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales.",
+    torerosRaw: `MARTÍN MENDOZA, E.T. Camas; Ovación.
+
+BLAS MÁRQUEZ, E.T. Linares; Oreja.
+
+JAIME PADILLA, E.T. Málaga; Dos orejas y vuelta al ruedo al novillo.
+
+JESÚS MOLINA, E.T. Linares; Oreja tras aviso.
+
+DANIEL RIVAS, E.T. Linares; Oreja.
+
+ISRAEL GUIRAO, E.T. Valencia; Dos orejas y rabo.
+
+LISARES, E.T. Arles; Oreja.`,
+fullContent: `El alumno de la escuela de Valencia cortó un rabo y el de Málaga dos orejas, ambos a hombros por la ‘Puerta Grande’
+
+
+
+El emblemático Coso de Santa Margarita volvió a abrir sus puertas en plena festividad navideña, el sábado 6 de diciembre, para albergar el I Certamen Taurino “Linares, Cuna de Toreros”, un nuevo ciclo que nace con vocación de permanencia y que rinde tributo a dos figuras indispensables de la tauromaquia linarense: Apolinar Soriano y Pepe Luis Díaz. La ciudad, reconocida históricamente como auténtico semillero de toreros, reafirma así su compromiso con una tradición profundamente arraigada en su identidad cultural.
+
+El certamen se concibe como un homenaje al legado taurino de Linares y, al mismo tiempo, como una apuesta decidida por el futuro del toreo. En esta primera edición, la plaza se convirtió en un escenario formativo de primer nivel, brindando una plataforma de proyección a 
+
+jóvenes valores procedentes de distintas escuelas taurinas de España y del extranjero. La diversidad de procedencias y estilos enriqueció un encuentro en el que la cantera mostró solvencia, entrega y un notable nivel artístico.
+
+
+
+Los alumnos participantes fueron: Martín Mendoza (Escuela Taurina de Camas); Blas Márquez, Jesús Molina y Daniel Rivas (Escuela Taurina de Linares); Jaime Padilla (Escuela Taurina de Málaga); Israel Guirao (Escuela Taurina de Valencia); y Lisares (Escuela Taurina de Arles). Se enfrentaron a un concurso de ganaderías compuesto por siete ejemplares de hierros 
+
+de reconocido prestigio: Sorando, El Cotillo, Apolinar Soriano, Los Ronceles, Collado Ruiz, Sancho Dávila y El Añadío.
+
+
+
+La jornada dejó una amplia variedad de matices y evoluciones artísticas
+
+
+
+1º Martín Mendoza, ante “Urcola”, de Apolinar Soriano, abrió plaza con decisión, recibiendo a portagayola y cuajando un toreo al natural lleno de personalidad. La espada le privó de premio y recibió una ovación.
+
+2º El linarense Blas Márquez, con “Presidiario”, también de Apolinar Soriano, firmó una faena clásica y cargada de gusto, destacando un luminoso toreo de capa. Cortó una oreja.
+
+3º Jaime Padilla, con “Feroz”, de Collado Ruiz, protagonizó una de las actuaciones de mayor 
+
+rotundidad. Su entrega, su expresividad y un espadazo perfecto le valieron dos orejas, mientras que el novillo fue premiado con la vuelta al ruedo.
+
+4º Jesús Molina, ante “Lancito”, de Sancho Dávila, dejó una labor templada y armoniosa, iniciada de rodillas y construida con suavidad y expresión. Cortó una oreja, y el novillo fue premiado con vuelta al ruedo.
+
+5º Daniel Rivas, con “Gobernante”, de Los Ronceles, demostró evolución y oficio ante un ejemplar que mejoró durante la lidia. Su faena, reposada y de buen trazo, fue premiada con unaoreja.
+
+6º Israel Guirao, con “Labriego”, de Sorando, deslumbró por su madurez y firmeza. Su actuación, intensa y muy personal, culminó con un estoconazo que le abrió la puerta grande al cortar dos orejas y rabo.
+
+7º Cerró la tarde Lisares, que recibió a portagayola a “Cabeza Loca”, de El Añadío. Pese a las complicaciones de su oponente, que buscó tablas con insistencia, el francés mostró raza, limpieza y capacidad, obteniendo una oreja.
+
+
+
+El I Certamen Taurino “Linares, Cuna de Toreros” concluyó así con un balance altamente positivo, tanto por el nivel artístico de los participantes como por el ambiente de apoyo a la juventud taurina. Con esta iniciativa, Linares reafirma su papel fundamental en la historia del toreo y renueva su compromiso con la promoción y el impulso de nuevas generaciones que 
+
+mantienen viva su tradición.
+
+FICHA DEL FESTEJO:
+
+Sábado 06 de diciembre de 2025
+
+Plaza de Toros de Santa Margarita- Linares (Jaén)
+
+I Certamen “Linares, cuna de toreros”
+
+Entrada: Algo más de media plaza en tarde gris y fría.
+
+Erales de varias ganaderías (por orden): Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales. Destacaron el 3º 
+
+“Feroz” de Collado Ruiz, y el 4º “Lancito” de Sancho Dávila, premiados con la vuelta al ruedo. 
+OBSERVACIONES: 
+
+ Un evento que sirvió como homenaje póstumo a Apolinar Soriano y Pepe Luis Díaz,
+
+figuras reconocidas del ámbito taurino local.
+
+ Festejo en modalidad de ‘Clase Práctica’ y además Concurso de Ganaderías.
+
+ Antes de romper sonó el Himno Nacional.
+
+ Antes de comenzar el festejo se entregaron varios reconocimientos a los Ganaderos, 
+
+Propiedad de la Plaza, Escuela Taurina de Linares y Canal Sur Tv. Todos recibieron 
+
+una placa conmemorativa en presencia de la alcaldesa de Linares, Dña. María 
+
+Auxiliadora del Olmo Ruiz. 
+
+ Último festejo de la Temporada 2025 de las Escuelas y último también de las 
+
+retransmisiones de Canal Sur Tv.
+
+ El piso plaza se encontraba muy húmedo y con algunas zonas algo resbaladizas.
+
+ Presidió el festejo en el palco D. José Luis Martín López`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 2,
     title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
     image: "/images/morenito1.jpg",
     category: "Actualidad",
@@ -3385,6 +3599,113 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 const chronicles: Chronicle[] = [
 	{ 
     id: 5000,
+    title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
+    image: "/images/linares.jpg",
+    category: "Crónicas",
+    date: "6 de Diciembre de 2025",
+	plaza: "Santa Margarita- Linares (Jaén)",
+	ganaderia: "Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales.",
+    torerosRaw: `MARTÍN MENDOZA, E.T. Camas; Ovación.
+
+BLAS MÁRQUEZ, E.T. Linares; Oreja.
+
+JAIME PADILLA, E.T. Málaga; Dos orejas y vuelta al ruedo al novillo.
+
+JESÚS MOLINA, E.T. Linares; Oreja tras aviso.
+
+DANIEL RIVAS, E.T. Linares; Oreja.
+
+ISRAEL GUIRAO, E.T. Valencia; Dos orejas y rabo.
+
+LISARES, E.T. Arles; Oreja.`,
+fullContent: `El alumno de la escuela de Valencia cortó un rabo y el de Málaga dos orejas, ambos a hombros por la ‘Puerta Grande’
+
+
+
+El emblemático Coso de Santa Margarita volvió a abrir sus puertas en plena festividad navideña, el sábado 6 de diciembre, para albergar el I Certamen Taurino “Linares, Cuna de Toreros”, un nuevo ciclo que nace con vocación de permanencia y que rinde tributo a dos figuras indispensables de la tauromaquia linarense: Apolinar Soriano y Pepe Luis Díaz. La ciudad, reconocida históricamente como auténtico semillero de toreros, reafirma así su compromiso con una tradición profundamente arraigada en su identidad cultural.
+
+El certamen se concibe como un homenaje al legado taurino de Linares y, al mismo tiempo, como una apuesta decidida por el futuro del toreo. En esta primera edición, la plaza se convirtió en un escenario formativo de primer nivel, brindando una plataforma de proyección a 
+
+jóvenes valores procedentes de distintas escuelas taurinas de España y del extranjero. La diversidad de procedencias y estilos enriqueció un encuentro en el que la cantera mostró solvencia, entrega y un notable nivel artístico.
+
+
+
+Los alumnos participantes fueron: Martín Mendoza (Escuela Taurina de Camas); Blas Márquez, Jesús Molina y Daniel Rivas (Escuela Taurina de Linares); Jaime Padilla (Escuela Taurina de Málaga); Israel Guirao (Escuela Taurina de Valencia); y Lisares (Escuela Taurina de Arles). Se enfrentaron a un concurso de ganaderías compuesto por siete ejemplares de hierros 
+
+de reconocido prestigio: Sorando, El Cotillo, Apolinar Soriano, Los Ronceles, Collado Ruiz, Sancho Dávila y El Añadío.
+
+
+
+La jornada dejó una amplia variedad de matices y evoluciones artísticas
+
+
+
+1º Martín Mendoza, ante “Urcola”, de Apolinar Soriano, abrió plaza con decisión, recibiendo a portagayola y cuajando un toreo al natural lleno de personalidad. La espada le privó de premio y recibió una ovación.
+
+2º El linarense Blas Márquez, con “Presidiario”, también de Apolinar Soriano, firmó una faena clásica y cargada de gusto, destacando un luminoso toreo de capa. Cortó una oreja.
+
+3º Jaime Padilla, con “Feroz”, de Collado Ruiz, protagonizó una de las actuaciones de mayor 
+
+rotundidad. Su entrega, su expresividad y un espadazo perfecto le valieron dos orejas, mientras que el novillo fue premiado con la vuelta al ruedo.
+
+4º Jesús Molina, ante “Lancito”, de Sancho Dávila, dejó una labor templada y armoniosa, iniciada de rodillas y construida con suavidad y expresión. Cortó una oreja, y el novillo fue premiado con vuelta al ruedo.
+
+5º Daniel Rivas, con “Gobernante”, de Los Ronceles, demostró evolución y oficio ante un ejemplar que mejoró durante la lidia. Su faena, reposada y de buen trazo, fue premiada con unaoreja.
+
+6º Israel Guirao, con “Labriego”, de Sorando, deslumbró por su madurez y firmeza. Su actuación, intensa y muy personal, culminó con un estoconazo que le abrió la puerta grande al cortar dos orejas y rabo.
+
+7º Cerró la tarde Lisares, que recibió a portagayola a “Cabeza Loca”, de El Añadío. Pese a las complicaciones de su oponente, que buscó tablas con insistencia, el francés mostró raza, limpieza y capacidad, obteniendo una oreja.
+
+
+
+El I Certamen Taurino “Linares, Cuna de Toreros” concluyó así con un balance altamente positivo, tanto por el nivel artístico de los participantes como por el ambiente de apoyo a la juventud taurina. Con esta iniciativa, Linares reafirma su papel fundamental en la historia del toreo y renueva su compromiso con la promoción y el impulso de nuevas generaciones que 
+
+mantienen viva su tradición.
+
+FICHA DEL FESTEJO:
+
+Sábado 06 de diciembre de 2025
+
+Plaza de Toros de Santa Margarita- Linares (Jaén)
+
+I Certamen “Linares, cuna de toreros”
+
+Entrada: Algo más de media plaza en tarde gris y fría.
+
+Erales de varias ganaderías (por orden): Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales. Destacaron el 3º 
+
+“Feroz” de Collado Ruiz, y el 4º “Lancito” de Sancho Dávila, premiados con la vuelta al ruedo. 
+OBSERVACIONES: 
+
+ Un evento que sirvió como homenaje póstumo a Apolinar Soriano y Pepe Luis Díaz,
+
+figuras reconocidas del ámbito taurino local.
+
+ Festejo en modalidad de ‘Clase Práctica’ y además Concurso de Ganaderías.
+
+ Antes de romper sonó el Himno Nacional.
+
+ Antes de comenzar el festejo se entregaron varios reconocimientos a los Ganaderos, 
+
+Propiedad de la Plaza, Escuela Taurina de Linares y Canal Sur Tv. Todos recibieron 
+
+una placa conmemorativa en presencia de la alcaldesa de Linares, Dña. María 
+
+Auxiliadora del Olmo Ruiz. 
+
+ Último festejo de la Temporada 2025 de las Escuelas y último también de las 
+
+retransmisiones de Canal Sur Tv.
+
+ El piso plaza se encontraba muy húmedo y con algunas zonas algo resbaladizas.
+
+ Presidió el festejo en el palco D. José Luis Martín López`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 5001,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -3447,7 +3768,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 { 
-    id: 5001,
+    id: 5002,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
