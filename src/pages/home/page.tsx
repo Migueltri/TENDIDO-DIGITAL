@@ -450,7 +450,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: date,
+    id: {date},
     title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
     image: "/images/castellon.jpg",
 	imageCaption: "Plaza de Toros de Castellón",
@@ -472,7 +472,7 @@ Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que 
   showAuthorHeader: true
   },
 	{ 
-id: date,
+id: {date},
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -488,7 +488,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-id: date,
+id: {date},
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -502,7 +502,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-id: date,
+id: {date},
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -517,7 +517,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-id: date,
+id: {date},
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -564,7 +564,7 @@ Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que 
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -580,7 +580,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -594,7 +594,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -609,7 +609,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -631,7 +631,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
     image: "/images/brihuega.jpg",
     category: "Actualidad",
@@ -651,7 +651,7 @@ La cita briocense se ha consolidado también como un importante escaparate socia
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
     image: "/images/goyesca.jpg",
     category: "Actualidad",
@@ -664,7 +664,7 @@ Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goy
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -710,7 +710,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -731,7 +731,7 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
@@ -797,7 +797,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -813,7 +813,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: date,
+    id: {date},
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -840,7 +840,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: date,
+    id: {date},
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -895,7 +895,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -925,7 +925,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -989,7 +989,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
@@ -1004,7 +1004,7 @@ Como segunda novedad, la ganadería de **Zalduendo** también estará presente e
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
     image: "/images/manuelamador.jpg",
     category: "Actualidad",
@@ -1017,7 +1017,7 @@ Navalón se encuentra en el **proceso de recuperación** de la gravísima cornad
   showAuthorHeader: true
   },	
 	{ 
-    id: date,
+    id: {date},
     title: `Tauro Manía: la joven marca que une fe y la Tauromaquia`,
     image: "/images/tauromania.jpg",
     category: "Actualidad",
@@ -1032,7 +1032,7 @@ Con poco más de tres meses de recorrido, Tauro Manía quiere consolidarse y lle
   showAuthorHeader: true
   },
    { 
-    id: date,
+    id: {date},
     title: `Talavante, Roca Rey y Víctor Hernández encabezan la Beneficencia; Borja Jiménez, solo ante seis toros en la corrida In Memoriam`,
     image: "/images/varios5.jpg",
     category: "Actualidad",
@@ -1063,7 +1063,7 @@ Toros de Victoriano del Río y Garcigrande
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Partido de Resina regresará por partida doble a Las Ventas en 2026 tras su rotundo triunfo en Madrid`,
     image: "/images/cabañito.jpg",
 	imageCaption: "“Cabañito” de Partido de Resina lidiado el pasado 2023 en Las Ventas",
@@ -1081,7 +1081,7 @@ Los buenos resultados no se limitaron a Madrid: este año también firmaron actu
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
    title: `Julio Norte y Emiliano Osornio, los grandes protagonistas de el Vid de Oro en la entrega de premios de Arganda del Rey`,
     image: "/images/premios.jpg",
     category: "Actualidad",
@@ -1116,7 +1116,7 @@ La **XXXVI Vid de Oro** volvió a demostrar el arraigo y la vitalidad de la trad
   showAuthorHeader: true
   },
 	{ 
-    id: date,
+    id: {date},
     title: `Daniel Luque perfila su cuadrilla para la próxima temporada`,
     image: "/images/danielluque1.jpg",
     category: "Actualidad",
