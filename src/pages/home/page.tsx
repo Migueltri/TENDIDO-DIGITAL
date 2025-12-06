@@ -451,97 +451,130 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
-    image: "/images/castellon.jpg",
-	imageCaption: "Plaza de Toros de Castellón",
+    title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
+    image: "/images/morenito1.jpg",
     category: "Actualidad",
-    date: "5 de Diciembre de 2025",
-    fullContent: `La **Casa Matilla** tiene muy avanzados —aunque aún sujetos a posibles ajustes fruto de las negociaciones— los carteles de la Feria de la Magdalena de Castellón, uno de los ciclos marcados en rojo en el arranque de la temporada taurina. Entre sus grandes atractivos, **destaca el mano a mano entre Alejandro Talavante y Juan Ortega, triunfador de la pasada edición**. Esta cita está prevista para el **domingo 16 de marzo** y contará con reses de **Domingo Hernández**, como ya avanzó este medio.
+    date: "6 de Diciembre de 2025",
+    fullContent: `**Jesús Martínez “Morenito de Aranda”** ha cerrado definitivamente la composición de su cuadrilla para la próxima temporada, un año en el que el diestro burgalés inicia además una nueva etapa profesional bajo el apoderamiento de **Tito Fernández**, uno de los empresarios taurinos más relevantes de América y actual gestor del histórico Coso de Acho, en Lima.
 
-El mano a mano actuará como traca final de una feria cuya “mascletà” taurina se concentra entre el **14 y el 16 de marzo**.
-Para el viernes, la empresa Funtasa prepara otro de los platos fuertes del abono con la presencia de **Roca Rey, que compartirá paseíllo con José María Manzanares y Pablo Aguado, en el regreso a Castellón de los toros de Hermanos García Jiménez**.
+En el apartado de picadores, Morenito de Aranda incorpora a **Adrián Majada**, quien formará tándem a caballo con **Héctor Piña**. En cuanto a los hombres de a pie, se mantiene el equipo habitual, aunque se suma **Jairo Pavón**, que actuará a las órdenes del torero burgalés en aquellas ocasiones en las que el madrileño **Iván García** no pueda hacerlo por la coincidencia de otros compromisos profesionales.
 
-Según ha avanzado el periodista **Zabala de la Serna**, el **sábado 15** tomaría forma una combinación compuesta por **Sebastián Castella, Daniel Luque y Emilio de Justo, quienes lidiarían la corrida de Zalduendo**.
-Por su parte, **Miguel Ángel Perera, Tomás Rufo y Marco Pérez harían lo propio con un encierro de Montalvo**, completando así un serial que, de confirmarse, supondría también la ausencia de la ganadería de **La Quinta**, protagonista en 2024 del indulto más recordado en esta plaza.
+De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguiente forma:
 
-Más allá del atractivo de los carteles, el borrador de la feria deja tres ausencias especialmente llamativas: **Víctor Hernández, David de Miranda y Fernando Adrián no estarían anunciados en la Magdalena**. Tres nombres que llegan a este inicio de temporada con méritos más que suficientes para ocupar un hueco en una feria de esta categoría, tanto por sus triunfos recientes como por la proyección demostrada en los últimos meses.
+**Picadores**
+• Adrián Majada
+• Héctor Piña
 
-Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que ya despierta gran expectación entre la afición.`,
+**Banderilleros**
+• José Luis Triviño
+• Iván García
+• Pascual Mellinas
+• Lidiador suplente: Jairo Pavón (intervendrá cuando no pueda actuar Iván García)
+
+**Mozo de espadas**
+• Antonio Pavón
+
+**Apoderado**
+• Tito Fernández`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1001,
-    title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
-    image: "/images/porras.jpg",
-	imageCaption: "Foto ABC",
+    title: `Confirmada: La Goyesca de Madrid 2026`,
+    image: "/images/goyesca1.jpg",
     category: "Actualidad",
-    date: "5 de Diciembre de 2025",
-    fullContent: `El matador sevillano Rafael Serna ha alcanzado un acuerdo verbal de apoderamiento con el diestro retirado Francisco José Porras para las próximas temporadas. Serna, considerado una de las mayores promesas del toreo sevillano, llega a este acuerdo tras su importante triunfo en Las Ventas durante la pasada Feria de San Isidro.
+    date: "6 de Diciembre de 2025",
+    fullContent: `La temporada madrileña está a empezando a destapándose , la última notica que hemos conocido es el anuncio de otro de los carteles señaladas del inicio de temporada; la corrida Goyesca. 
 
-El torero se ha mostrado ilusionado con esta nueva etapa y asegura encontrarse en el mejor momento de su carrera. Porras, con experiencia como empresario y acompañante de otros toreros, afirma que Serna posee cualidades suficientes para hacerse un hueco destacado en el escalafón.
-
-La alianza marca un paso clave para la proyección del matador de cara a la temporada 2026.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá de los toreros Curro Díaz , El Cid y Javier Cortés y la ganadería estaría todavía por definir. Un cartel muy propio para la afición madrileña y que se se propone como uno de los carteles de postín del inicio de la temporada .`,
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
   showAuthorHeader: true
   },
 	{ 
     id: 1002,
-    title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
-    image: "/images/curro.jpg",
-	imageCaption: "Foto Plaza 1",
+    title: `El Museo Taurino Antonio Ortega homenajea a David Galván y presenta su nueva muestra sobre “Bohonero”`,
+    image: "/images/museo.jpg",
     category: "Actualidad",
-    date: "5 de Diciembre de 2025",
-    fullContent: `El matador de toros Curro Díaz y el empresario Jorge Buendía han decidido poner punto y final a la relación de apoderamiento que les mantenía unidos durante los últimos tres años. En un comunicado emitido a este medio, aseguran que ‘siempre guardarán los mejores recuerdos’.
+    date: "6 de Diciembre de 2025",
+    fullContent: `El **Museo Taurino Antonio Ortega** celebró en la tarde de ayer, 5 de diciembre, un bonito homenaje al diestro gaditano **David Galván**, acto en el que además se presentó oficialmente la cabeza del toro “**Bohonero**”, ejemplar de **Victorino Martín**, al que el torero cuajó una gran faena en La Línea de la Concepción el pasado 20 de julio, logrando los máximos trofeos en la plaza de toros de El Arenal.
 
-El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a la Feria de San Isidro de Madrid y a la Feria de Abril de Sevilla, así como sus triunfos en Jaén, Linares o Úbeda.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1003,
-    title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
-    image: "/images/aguilar.jpg",
-    category: "Actualidad",
-    date: "5 de Diciembre de 2025",
-    fullContent: `El torero francés Yon Lamothe y el maestro madrileño Alberto Aguilar han llegado a un acuerdo de apoderamiento a partir de la temporada 2026 y por tiempo indefinido.
+La obra que desde ayer pasa a formar parte de manera permanente de la colección del museo supone un testimonio de aquella tarde histórica, en la que Galván firmó una gran obra.
 
-Alberto Aguilar decidió apostar por el joven torero francés que tomó la alternativa en Mont de Marsan en la temporada 2023 después de una importante etapa de novillero en Francia como en España.
+El acto reunió a destacadas personalidades del mundo taurino e institucional. Arropando al torero, estuvieron presentes el Maestro **Francisco Ruiz Miguel**; el también matador de toros y empresario del Coso del Arenal, **Curro Duarte**; el alcalde de La Línea, **Juan Franco**; el teniente alcalde y vicepresidente de Mancomunidad, **Juan Macías**; además de numerosos profesionales taurinos, aficionados y representantes de los medios de comunicación de la ciudad y la comarca.
 
-Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para potenciar la carrera del matador de toros galo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1004,
-    title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
-    image: "/images/pedro.jpg",
-    category: "Actualidad",
-    date: "5 de Diciembre de 2025",
-    fullContent: `La **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** ha presentado ante la **Junta de Andalucía** las bases de su proyecto anual de **Fomento de Nuevos Valores del Toreo**, iniciativa que se integra en el **Programa de Fomento de la Cultura Taurina de Andalucía 2026**.
-Con esta planificación, las escuelas andaluzas buscan consolidar su labor formativa y fortalecer el relevo generacional dentro del toreo.
-
-El encuentro tuvo lugar el pasado **miércoles 3 de diciembre** en la sede de la **Consejería de la Secretaría de Interior de la Junta de Andalucía**, ubicada en la **Isla de la Cartuja de Sevilla**. Durante la reunión, los representantes de la **Asociación** expusieron al Secretario General de Interior, **David Gil**, **las líneas maestras que marcarán el desarrollo de la temporada 2026**, desde la programación de actividades formativas hasta el diseño de los ciclos y certámenes destinados a los jóvenes aspirantes.
-
-Además de la presentación del proyecto, la sesión permitió realizar un **análisis detallado del curso 2025**, recién concluido.
-Los responsables de la **A.A.E.T. “Pedro Romero”** subrayaron la **buena salud de las Escuelas Andaluzas**, reflejada en la participación creciente y en la consolidación de sus programas formativos.
-También se abordó el marco organizativo de la **Asamblea General de la Asociación**, prevista para los primeros días de 2026, donde se ratificarán los objetivos y directrices del nuevo ejercicio.
-
-La reunión estuvo presidida por el Secretario General de Interior, **David Gil**, y contó con la participación del Coordinador General de la Secretaría de Interior, **Juan Manuel Pérez Alarcón**; el Jefe de Servicio de Espectáculos Públicos, **José Antonio Delgado**; el Presidente de la A.A.E.T. “Pedro Romero”, **Eduardo Ordóñez**; los vicepresidentes, **Francisco Ruiz Miguel** y **Miguel Serrano**; así como los miembros de la junta directiva **José Luis Galloso** y **Juan Carlos Landrove**.
-
-La jornada concluyó con un compromiso compartido entre la administración autonómica y el colectivo de escuelas: **continuar promoviendo la formación, la excelencia y el talento joven, pilares esenciales para el futuro de la tauromaquia en Andalucía**.`,
+Entre aplausos y palabras de reconocimiento, el homenaje se convirtió en un momento de especial significado para el torero, quien expresó su sincero agradecimiento por el cariño recibido. Y en un gesto torero, David Galván quiso donar al museo la muleta con la que lidió a “Bohonero”, una pieza que enriquece aún más el patrimonio cultural del Museo Antonio Ortega.`,
   author: "Manolo Herrera",
   authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
-  },
+  }
 ];
 
 const latestNews: NewsItem[] = [
     { 
+    id: 1,
+    title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
+    image: "/images/morenito1.jpg",
+    category: "Actualidad",
+    date: "6 de Diciembre de 2025",
+    fullContent: `**Jesús Martínez “Morenito de Aranda”** ha cerrado definitivamente la composición de su cuadrilla para la próxima temporada, un año en el que el diestro burgalés inicia además una nueva etapa profesional bajo el apoderamiento de **Tito Fernández**, uno de los empresarios taurinos más relevantes de América y actual gestor del histórico Coso de Acho, en Lima.
+
+En el apartado de picadores, Morenito de Aranda incorpora a **Adrián Majada**, quien formará tándem a caballo con **Héctor Piña**. En cuanto a los hombres de a pie, se mantiene el equipo habitual, aunque se suma **Jairo Pavón**, que actuará a las órdenes del torero burgalés en aquellas ocasiones en las que el madrileño **Iván García** no pueda hacerlo por la coincidencia de otros compromisos profesionales.
+
+De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguiente forma:
+
+**Picadores**
+• Adrián Majada
+• Héctor Piña
+
+**Banderilleros**
+• José Luis Triviño
+• Iván García
+• Pascual Mellinas
+• Lidiador suplente: Jairo Pavón (intervendrá cuando no pueda actuar Iván García)
+
+**Mozo de espadas**
+• Antonio Pavón
+
+**Apoderado**
+• Tito Fernández`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 4,
+    title: `Confirmada: La Goyesca de Madrid 2026`,
+    image: "/images/goyesca1.jpg",
+    category: "Actualidad",
+    date: "6 de Diciembre de 2025",
+    fullContent: `La temporada madrileña está a empezando a destapándose , la última notica que hemos conocido es el anuncio de otro de los carteles señaladas del inicio de temporada; la corrida Goyesca. 
+
+Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá de los toreros Curro Díaz , El Cid y Javier Cortés y la ganadería estaría todavía por definir. Un cartel muy propio para la afición madrileña y que se se propone como uno de los carteles de postín del inicio de la temporada .`,
+  author: "Mario Ruiz Ruiz",
+  authorLogo: "/images/mariorr.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 3,
+    title: `El Museo Taurino Antonio Ortega homenajea a David Galván y presenta su nueva muestra sobre “Bohonero”`,
+    image: "/images/museo.jpg",
+    category: "Actualidad",
+    date: "6 de Diciembre de 2025",
+    fullContent: `El **Museo Taurino Antonio Ortega** celebró en la tarde de ayer, 5 de diciembre, un bonito homenaje al diestro gaditano **David Galván**, acto en el que además se presentó oficialmente la cabeza del toro “**Bohonero**”, ejemplar de **Victorino Martín**, al que el torero cuajó una gran faena en La Línea de la Concepción el pasado 20 de julio, logrando los máximos trofeos en la plaza de toros de El Arenal.
+
+La obra que desde ayer pasa a formar parte de manera permanente de la colección del museo supone un testimonio de aquella tarde histórica, en la que Galván firmó una gran obra.
+
+El acto reunió a destacadas personalidades del mundo taurino e institucional. Arropando al torero, estuvieron presentes el Maestro **Francisco Ruiz Miguel**; el también matador de toros y empresario del Coso del Arenal, **Curro Duarte**; el alcalde de La Línea, **Juan Franco**; el teniente alcalde y vicepresidente de Mancomunidad, **Juan Macías**; además de numerosos profesionales taurinos, aficionados y representantes de los medios de comunicación de la ciudad y la comarca.
+
+Entre aplausos y palabras de reconocimiento, el homenaje se convirtió en un momento de especial significado para el torero, quien expresó su sincero agradecimiento por el cariño recibido. Y en un gesto torero, David Galván quiso donar al museo la muleta con la que lidió a “Bohonero”, una pieza que enriquece aún más el patrimonio cultural del Museo Antonio Ortega.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 50,
     title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
     image: "/images/castellon.jpg",
