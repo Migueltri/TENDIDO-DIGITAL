@@ -542,7 +542,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
 
 const latestNews: NewsItem[] = [
     { 
-    id: date,
+    id: {date},
     title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
     image: "/images/castellon.jpg",
 	imageCaption: "Plaza de Toros de Castellón",
