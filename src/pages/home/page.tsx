@@ -450,7 +450,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1000,
+        id: Date.now(),
     title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
     image: "/images/castellon.jpg",
 	imageCaption: "Plaza de Toros de Castellón",
@@ -472,7 +472,7 @@ Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que 
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+        id: Date.now(),
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -488,7 +488,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+        id: Date.now(),
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -502,7 +502,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-    id: 1003,
+        id: Date.now(),
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -517,7 +517,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-    id: 1004,
+        id: Date.now(),
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -797,7 +797,7 @@ A cierre de la campaña actual, y como base para la confección de la temporada 
   showAuthorHeader: true
   },
 	{ 
-    id: 11,
+    id: Date.now(),
     title: `Borja Jiménez volverá a ser protagonista en Azpeitia con dos paseíllos en 2026`,
     image: "/images/borjajimenez3.jpg",
 	imageCamption: "Borja Jiménez en Guadalajara - Foto Firma Riofrio",
@@ -813,7 +813,7 @@ Hasta la fecha, Borja Jiménez ha actuado en cuatro ocasiones en la plaza de tor
   showAuthorHeader: true
   },	
 	{ 
-    id: 12,
+    id: Date.now(),
     title: `Recepción institucional a los alumnos de la Escuela Taurina de Atarfe en el Ayuntamiento`,
     image: "/images/alumnos.jpg",
     category: "Actualidad",
@@ -840,7 +840,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
   showAuthorHeader: true
   },
    { 
-    id: 13,
+    id: Date.now(),
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
@@ -895,7 +895,7 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
   showAuthorHeader: true
   },
 	{ 
-    id: 14,
+    id: Date.now(),
     title: `Gran jornada de “Faena y Doma de Campo” en la Finca Heredade do Barroso, propiredad de D. José Luis Pereda López`,
     image: "/images/granjornada.jpg",
 	imageCaption: "Foto Juan Antonio Caro",
@@ -925,7 +925,7 @@ Finalmente, merece una mención especial el impecable trabajo organizativo del a
   showAuthorHeader: true
   },
 	{ 
-    id: 15,
+    id: Date.now(),
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -989,7 +989,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 	{ 
-    id: 16,
+    id: Date.now(),
    title: `La Casa Matilla avanza en el elenco ganadero de la Magdalena 2025 marcada por coincidencias con Valencia`,
     image: "/images/matilla.jpg",
     category: "Actualidad",
@@ -1004,7 +1004,7 @@ Como segunda novedad, la ganadería de **Zalduendo** también estará presente e
   showAuthorHeader: true
   },
 	{ 
-    id: 20,
+    id: Date.now(),
     title: `Manuel Amador , nuevo apoderado de Samuel Navalon`,
     image: "/images/manuelamador.jpg",
     category: "Actualidad",
