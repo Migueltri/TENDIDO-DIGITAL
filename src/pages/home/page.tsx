@@ -1,6 +1,6 @@
   import React, { useState, useEffect } from "react";
   interface BaseArticle {
-  id: number;
+  id: string;
   title: string;
   plaza?: string;
   date: string;
@@ -542,7 +542,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
 
 const latestNews: NewsItem[] = [
     { 
-    id: 1,
+    id: Date.now(),
     title: `Avance de Carteles de La Magdalena 2026; Un mano a mano como eje de la feria y ausencias importantes`,
     image: "/images/castellon.jpg",
 	imageCaption: "Plaza de Toros de Castellón",
@@ -564,7 +564,7 @@ Sus ausencias, de confirmarse, añadirían un punto de polémica a un ciclo que 
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: Date.now(),
     title: `Francisco José Porras , nuevo apoderado de Rafael Serna`,
     image: "/images/porras.jpg",
 	imageCaption: "Foto ABC",
@@ -580,7 +580,7 @@ La alianza marca un paso clave para la proyección del matador de cara a la temp
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: Date.now(),
     title: `Curro Díaz y el empresario Jorge Buendía fin de apoderamiento`,
     image: "/images/curro.jpg",
 	imageCaption: "Foto Plaza 1",
@@ -594,7 +594,7 @@ El de Linares terminó 2025 con 16 festejos, entre los que destacó su regreso a
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: Date.now(),
     title: `Alberto Aguilar , nuevo apoderado del francés Yon Lamothe`,
     image: "/images/aguilar.jpg",
     category: "Actualidad",
@@ -609,7 +609,7 @@ Ambas partes se muestran muy ilusionadas por este nuevo proyecto común para pot
   showAuthorHeader: true
   },
 	{ 
-    id: 5,
+    id: Date.now(),
     title: `La A.A.E.T. “Pedro Romero” presenta a la Junta de Andalucía su ‘Proyecto de Nuevos Valores del Toreo’ para la temporada 2026`,
     image: "/images/pedro.jpg",
     category: "Actualidad",
@@ -631,7 +631,7 @@ La jornada concluyó con un compromiso compartido entre la administración auton
   showAuthorHeader: true
   },
 	{ 
-    id: 6,
+    id: Date.now(),
     title: `Brihuega ya tiene fecha para la tradicional corrida de Primavera de 2026`,
     image: "/images/brihuega.jpg",
     category: "Actualidad",
@@ -651,7 +651,7 @@ La cita briocense se ha consolidado también como un importante escaparate socia
   showAuthorHeader: true
   },
 	{ 
-    id: 7,
+    id: Date.now(),
     title: `Ronda tendrá la tradicional Corrida Goyesca en 2026`,
     image: "/images/goyesca.jpg",
     category: "Actualidad",
@@ -664,7 +664,7 @@ Ronda es una plaza de toros más emblemáticas de nuestro país y su corrida Goy
   showAuthorHeader: true
   },
 	{ 
-    id: 8,
+    id: Date.now(),
     title: `ANOET presenta un completo estudio estadístico sobre los toros en Extremadura`,
     image: "/images/anoet1.jpg",
     category: "Actualidad",
@@ -710,7 +710,7 @@ Por provincias, en Cáceres el número de habitantes en municipios donde se cele
   showAuthorHeader: true
   },
 	{ 
-    id: 9,
+    id: Date.now(),
     title: `Sanlúcar de Barrameda fija las fechas de sus grandes citas taurinas para 2026`,
     image: "/images/sanlucar.jpg",
     category: "Actualidad",
@@ -731,7 +731,7 @@ Con esta planificación, Sanlúcar de Barrameda apuesta una vez más por una ofe
   showAuthorHeader: true
   },
 	{ 
-    id: 10,
+    id: Date.now(),
     title: `Madrid configura su temporada 2026 con más de 20 ganaderías y la vuelta de Cuadri`,
     image: "/images/temporada.jpg",
     category: "Actualidad",
