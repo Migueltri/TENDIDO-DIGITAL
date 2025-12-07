@@ -5224,6 +5224,36 @@ TENDIDO DIGITAL
       )}
     </div>
   )}
+
+	  {selectedNews.footerImage3 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage3}
+        alt={selectedNews.footerImage3Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage3Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage3Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+	  {selectedNews.footerImage4 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage4}
+        alt={selectedNews.footerImage4Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage4Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage4Caption}
+        </p>
+      )}
+    </div>
+  )}
 </div>
 		  
         {/* Acciones del artículo */}
@@ -5402,34 +5432,6 @@ TENDIDO DIGITAL
     </div>
   </div>
 )}
-
-	{/* Imágenes de crónica (footerImage1..4) */}
-<div className="mt-8 space-y-8 flex flex-col items-center">
-  {[
-    selectedChronicle.footerImage1,
-    selectedChronicle.footerImage2,
-    selectedChronicle.footerImage3,
-    selectedChronicle.footerImage4
-  ].filter(Boolean).map((src, i) => {
-    const caption = selectedChronicle[(`footerImage${i+1}Caption`) as keyof typeof selectedChronicle] as string | undefined;
-    const normalizedSrc = typeof src === 'string' && !src.startsWith('/') ? `/${src}` : src;
-    return (
-      <div key={i} className="flex flex-col items-center w-full">
-        <img
-          src={normalizedSrc}
-          alt={caption || selectedChronicle.title || `Imagen ${i+1}`}
-          className="w-full max-w-4xl rounded-md object-cover"
-          loading="lazy"
-        />
-        {caption && (
-          <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-            {caption}
-          </p>
-        )}
-      </div>
-    );
-  })}
-</div>
 
 {/* Modal de Compartir */}
 {isShareModalOpen && sharePost && (
