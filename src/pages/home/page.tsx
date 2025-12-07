@@ -451,177 +451,81 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
-    image: "/images/linares.jpg",
+    title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
+    image: "/images/triunfo.jpg",
     category: "Crónicas",
-    date: "6 de Diciembre de 2025",
-	plaza: "Santa Margarita- Linares (Jaén)",
-	ganaderia: "Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales.",
-    torerosRaw: `MARTÍN MENDOZA, E.T. Camas; Ovación.
+    date: "7 de Diciembre de 2025",
+	footerImage1: "/images/foto1.jpg",
+  footerImage1Caption: "Fotos de Luis Muñoz",
+  footerImage2: "/images/foto2.jpg",
+  footerImage3: "/images/foto3.jpg",
+  footerImage4: "/images/foto4.jpg",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Alcurrucen",
+    torerosRaw: `Jesús Navalucillos (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas 
 
-BLAS MÁRQUEZ, E.T. Linares; Oreja.
+Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
 
-JAIME PADILLA, E.T. Málaga; Dos orejas y vuelta al ruedo al novillo.
+Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
 
-JESÚS MOLINA, E.T. Linares; Oreja tras aviso.
+Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
 
-DANIEL RIVAS, E.T. Linares; Oreja.
+Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
+**Su actuación fue una de las más celebradas del festejo y abrió un horizonte ilusionante.**
 
-ISRAEL GUIRAO, E.T. Valencia; Dos orejas y rabo.
+**Plaza de toros de Alcaudete de La Jara (Toledo)**. Clase práctica.
+**Novillos de Alcurrucén**, de buen juego en su conjunto. Lleno en los tendidos.
 
-LISARES, E.T. Arles; Oreja.`,
-fullContent: `El alumno de la escuela de Valencia cortó un rabo y el de Málaga dos orejas, ambos a hombros por la ‘Puerta Grande’
-
-
-
-El emblemático Coso de Santa Margarita volvió a abrir sus puertas en plena festividad navideña, el sábado 6 de diciembre, para albergar el I Certamen Taurino “Linares, Cuna de Toreros”, un nuevo ciclo que nace con vocación de permanencia y que rinde tributo a dos figuras indispensables de la tauromaquia linarense: Apolinar Soriano y Pepe Luis Díaz. La ciudad, reconocida históricamente como auténtico semillero de toreros, reafirma así su compromiso con una tradición profundamente arraigada en su identidad cultural.
-
-El certamen se concibe como un homenaje al legado taurino de Linares y, al mismo tiempo, como una apuesta decidida por el futuro del toreo. En esta primera edición, la plaza se convirtió en un escenario formativo de primer nivel, brindando una plataforma de proyección a 
-
-jóvenes valores procedentes de distintas escuelas taurinas de España y del extranjero. La diversidad de procedencias y estilos enriqueció un encuentro en el que la cantera mostró solvencia, entrega y un notable nivel artístico.
-
-
-
-Los alumnos participantes fueron: Martín Mendoza (Escuela Taurina de Camas); Blas Márquez, Jesús Molina y Daniel Rivas (Escuela Taurina de Linares); Jaime Padilla (Escuela Taurina de Málaga); Israel Guirao (Escuela Taurina de Valencia); y Lisares (Escuela Taurina de Arles). Se enfrentaron a un concurso de ganaderías compuesto por siete ejemplares de hierros 
-
-de reconocido prestigio: Sorando, El Cotillo, Apolinar Soriano, Los Ronceles, Collado Ruiz, Sancho Dávila y El Añadío.
-
-
-
-La jornada dejó una amplia variedad de matices y evoluciones artísticas
-
-
-
-1º Martín Mendoza, ante “Urcola”, de Apolinar Soriano, abrió plaza con decisión, recibiendo a portagayola y cuajando un toreo al natural lleno de personalidad. La espada le privó de premio y recibió una ovación.
-
-2º El linarense Blas Márquez, con “Presidiario”, también de Apolinar Soriano, firmó una faena clásica y cargada de gusto, destacando un luminoso toreo de capa. Cortó una oreja.
-
-3º Jaime Padilla, con “Feroz”, de Collado Ruiz, protagonizó una de las actuaciones de mayor 
-
-rotundidad. Su entrega, su expresividad y un espadazo perfecto le valieron dos orejas, mientras que el novillo fue premiado con la vuelta al ruedo.
-
-4º Jesús Molina, ante “Lancito”, de Sancho Dávila, dejó una labor templada y armoniosa, iniciada de rodillas y construida con suavidad y expresión. Cortó una oreja, y el novillo fue premiado con vuelta al ruedo.
-
-5º Daniel Rivas, con “Gobernante”, de Los Ronceles, demostró evolución y oficio ante un ejemplar que mejoró durante la lidia. Su faena, reposada y de buen trazo, fue premiada con unaoreja.
-
-6º Israel Guirao, con “Labriego”, de Sorando, deslumbró por su madurez y firmeza. Su actuación, intensa y muy personal, culminó con un estoconazo que le abrió la puerta grande al cortar dos orejas y rabo.
-
-7º Cerró la tarde Lisares, que recibió a portagayola a “Cabeza Loca”, de El Añadío. Pese a las complicaciones de su oponente, que buscó tablas con insistencia, el francés mostró raza, limpieza y capacidad, obteniendo una oreja.
-
-
-
-El I Certamen Taurino “Linares, Cuna de Toreros” concluyó así con un balance altamente positivo, tanto por el nivel artístico de los participantes como por el ambiente de apoyo a la juventud taurina. Con esta iniciativa, Linares reafirma su papel fundamental en la historia del toreo y renueva su compromiso con la promoción y el impulso de nuevas generaciones que 
-
-mantienen viva su tradición.
-
-FICHA DEL FESTEJO:
-
-Sábado 06 de diciembre de 2025
-
-Plaza de Toros de Santa Margarita- Linares (Jaén)
-
-I Certamen “Linares, cuna de toreros”
-
-Entrada: Algo más de media plaza en tarde gris y fría.
-
-Erales de varias ganaderías (por orden): Apolinar Soriano (1º y 2º), Collado Ruiz, Sancho Dávila, Los Ronceles, Paco Sorando y El Añadio. Un encierro variado e importante por su comportamiento que resultó exigente y muy toreable en líneas generales. Destacaron el 3º 
-
-“Feroz” de Collado Ruiz, y el 4º “Lancito” de Sancho Dávila, premiados con la vuelta al ruedo. 
-OBSERVACIONES: 
-
- Un evento que sirvió como homenaje póstumo a Apolinar Soriano y Pepe Luis Díaz,
-
-figuras reconocidas del ámbito taurino local.
-
- Festejo en modalidad de ‘Clase Práctica’ y además Concurso de Ganaderías.
-
- Antes de romper sonó el Himno Nacional.
-
- Antes de comenzar el festejo se entregaron varios reconocimientos a los Ganaderos, 
-
-Propiedad de la Plaza, Escuela Taurina de Linares y Canal Sur Tv. Todos recibieron 
-
-una placa conmemorativa en presencia de la alcaldesa de Linares, Dña. María 
-
-Auxiliadora del Olmo Ruiz. 
-
- Último festejo de la Temporada 2025 de las Escuelas y último también de las 
-
-retransmisiones de Canal Sur Tv.
-
- El piso plaza se encontraba muy húmedo y con algunas zonas algo resbaladizas.
-
- Presidió el festejo en el palco D. José Luis Martín López`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1001,
-    title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
-    image: "/images/morenito1.jpg",
-    category: "Actualidad",
-    date: "6 de Diciembre de 2025",
-    fullContent: `**Jesús Martínez “Morenito de Aranda”** ha cerrado definitivamente la composición de su cuadrilla para la próxima temporada, un año en el que el diestro burgalés inicia además una nueva etapa profesional bajo el apoderamiento de **Tito Fernández**, uno de los empresarios taurinos más relevantes de América y actual gestor del histórico Coso de Acho, en Lima.
-
-En el apartado de picadores, Morenito de Aranda incorpora a **Adrián Majada**, quien formará tándem a caballo con **Héctor Piña**. En cuanto a los hombres de a pie, se mantiene el equipo habitual, aunque se suma **Jairo Pavón**, que actuará a las órdenes del torero burgalés en aquellas ocasiones en las que el madrileño **Iván García** no pueda hacerlo por la coincidencia de otros compromisos profesionales.
-
-De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguiente forma:
-
-**Picadores**
-• Adrián Majada
-• Héctor Piña
-
-**Banderilleros**
-• José Luis Triviño
-• Iván García
-• Pascual Mellinas
-• Lidiador suplente: Jairo Pavón (intervendrá cuando no pueda actuar Iván García)
-
-**Mozo de espadas**
-• Antonio Pavón
-
-**Apoderado**
-• Tito Fernández`,
+**Jesús Navalcillos** (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas
+**Pablo Méndez** (Escuela Taurina de Guadalajara)*Dos Orejas
+**Álvaro Sánchez** (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo
+**Manuel de María** (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-    title: `Confirmada: La Goyesca de Madrid 2026`,
-    image: "/images/goyesca1.jpg",
-    category: "Actualidad",
-    date: "6 de Diciembre de 2025",
-    fullContent: `La temporada madrileña está a empezando a destapándose , la última notica que hemos conocido es el anuncio de otro de los carteles señaladas del inicio de temporada; la corrida Goyesca. 
-
-Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá de los toreros Curro Díaz , El Cid y Javier Cortés y la ganadería estaría todavía por definir. Un cartel muy propio para la afición madrileña y que se se propone como uno de los carteles de postín del inicio de la temporada .`,
-  author: "Mario Ruiz Ruiz",
-  authorLogo: "/images/mariorr.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1003,
-    title: `El Museo Taurino Antonio Ortega homenajea a David Galván y presenta su nueva muestra sobre “Bohonero”`,
-    image: "/images/museo.jpg",
-    category: "Actualidad",
-    date: "6 de Diciembre de 2025",
-    fullContent: `El **Museo Taurino Antonio Ortega** celebró en la tarde de ayer, 5 de diciembre, un bonito homenaje al diestro gaditano **David Galván**, acto en el que además se presentó oficialmente la cabeza del toro “**Bohonero**”, ejemplar de **Victorino Martín**, al que el torero cuajó una gran faena en La Línea de la Concepción el pasado 20 de julio, logrando los máximos trofeos en la plaza de toros de El Arenal.
-
-La obra que desde ayer pasa a formar parte de manera permanente de la colección del museo supone un testimonio de aquella tarde histórica, en la que Galván firmó una gran obra.
-
-El acto reunió a destacadas personalidades del mundo taurino e institucional. Arropando al torero, estuvieron presentes el Maestro **Francisco Ruiz Miguel**; el también matador de toros y empresario del Coso del Arenal, **Curro Duarte**; el alcalde de La Línea, **Juan Franco**; el teniente alcalde y vicepresidente de Mancomunidad, **Juan Macías**; además de numerosos profesionales taurinos, aficionados y representantes de los medios de comunicación de la ciudad y la comarca.
-
-Entre aplausos y palabras de reconocimiento, el homenaje se convirtió en un momento de especial significado para el torero, quien expresó su sincero agradecimiento por el cariño recibido. Y en un gesto torero, David Galván quiso donar al museo la muleta con la que lidió a “Bohonero”, una pieza que enriquece aún más el patrimonio cultural del Museo Antonio Ortega.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   }
 ];
 
 const latestNews: NewsItem[] = [
-   	{ 
-    id: 1,
+   { 
+    id: 45,
+    title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
+    image: "/images/triunfo.jpg",
+    category: "Crónicas",
+    date: "7 de Diciembre de 2025",
+	footerImage1: "/images/foto1.jpg",
+  footerImage1Caption: "Fotos de Luis Muñoz",
+  footerImage2: "/images/foto2.jpg",
+  footerImage3: "/images/foto3.jpg",
+  footerImage4: "/images/foto4.jpg",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Alcurrucen",
+    torerosRaw: `Jesús Navalucillos (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas 
+
+Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
+
+Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
+
+Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
+
+Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
+**Su actuación fue una de las más celebradas del festejo y abrió un horizonte ilusionante.**
+
+**Plaza de toros de Alcaudete de La Jara (Toledo)**. Clase práctica.
+**Novillos de Alcurrucén**, de buen juego en su conjunto. Lleno en los tendidos.
+
+**Jesús Navalcillos** (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas
+**Pablo Méndez** (Escuela Taurina de Guadalajara)*Dos Orejas
+**Álvaro Sánchez** (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo
+**Manuel de María** (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 46,
     title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
     image: "/images/linares.jpg",
     category: "Crónicas",
@@ -728,7 +632,7 @@ retransmisiones de Canal Sur Tv.
   showAuthorHeader: true
   },
 	{ 
-    id: 2,
+    id: 47,
     title: `Morenito de Aranda incorpora nuevas caras y consolida su cuadrilla de cara a la próxima temporada`,
     image: "/images/morenito1.jpg",
     category: "Actualidad",
@@ -759,7 +663,7 @@ De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguien
   showAuthorHeader: true
   },
 	{ 
-    id: 4,
+    id: 48,
     title: `Confirmada: La Goyesca de Madrid 2026`,
     image: "/images/goyesca1.jpg",
     category: "Actualidad",
@@ -772,7 +676,7 @@ Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá
   showAuthorHeader: true
   },
 	{ 
-    id: 3,
+    id: 49,
     title: `El Museo Taurino Antonio Ortega homenajea a David Galván y presenta su nueva muestra sobre “Bohonero”`,
     image: "/images/museo.jpg",
     category: "Actualidad",
@@ -3599,6 +3503,42 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 const chronicles: Chronicle[] = [
 	{ 
     id: 5000,
+    title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
+    image: "/images/triunfo.jpg",
+    category: "Crónicas",
+    date: "7 de Diciembre de 2025",
+	footerImage1: "/images/foto1.jpg",
+  footerImage1Caption: "Fotos de Luis Muñoz",
+  footerImage2: "/images/foto2.jpg",
+  footerImage3: "/images/foto3.jpg",
+  footerImage4: "/images/foto4.jpg",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Alcurrucen",
+    torerosRaw: `Jesús Navalucillos (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas 
+
+Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
+
+Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
+
+Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
+
+Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
+**Su actuación fue una de las más celebradas del festejo y abrió un horizonte ilusionante.**
+
+**Plaza de toros de Alcaudete de La Jara (Toledo)**. Clase práctica.
+**Novillos de Alcurrucén**, de buen juego en su conjunto. Lleno en los tendidos.
+
+**Jesús Navalcillos** (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas
+**Pablo Méndez** (Escuela Taurina de Guadalajara)*Dos Orejas
+**Álvaro Sánchez** (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo
+**Manuel de María** (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 6000,
     title: `Israel Guirao y Jaime Padilla, grandes triunfadores en el I Certamen Taurino “Linares, Cuna de Toreros”`,
     image: "/images/linares.jpg",
     category: "Crónicas",
@@ -3705,7 +3645,7 @@ retransmisiones de Canal Sur Tv.
   showAuthorHeader: true
   },
 	{ 
-    id: 5001,
+    id: 6001,
    title: `Algar: Mario Torres, Celso Ortega y Gabriel Moreno ‘El Calé’, abren la ‘Puerta Grande’ con dos orejas cada uno`,
     image: "/images/algar.jpg",
     category: "Crónicas",
@@ -3768,7 +3708,7 @@ Asesores: D. Juan Pedro Sánchez.`,
   showAuthorHeader: true
   },
 { 
-    id: 5002,
+    id: 6002,
     title: `Almadén de la Plata: Agustín de Antonio, 'La Piyaya' y Fernando Lovera, a hombros tras desorejar a sus respectivos novillos`,
     image: "/images/almaden1.jpg",
     category: "Crónicas",
