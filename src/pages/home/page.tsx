@@ -5016,34 +5016,34 @@ TENDIDO DIGITAL
       WebkitOverflowScrolling: "touch"
     }}
   >
-	  {/* TOREROS - SI LA NOTICIA TAMBIÉN LOS TIENE */}
-{selectedNews?.torerosRaw && (
-  <div className="bg-white border border-gray-200 rounded-xl p-5 mb-8 shadow-sm">
-    <h3 className="font-bold text-gray-900 mb-4 flex items-center">
-      <i className="ri-user-star-line text-red-600 mr-2"></i>
-      Resultados
-    </h3>
-
-    <div className="space-y-3">
-      {selectedNews.torerosRaw
-        .trim()
-        .split("\n")
-        .filter(Boolean)
-        .map((line, i) => {
-          const [nombre, resultado] = line.split(":").map(s => s.trim());
-          return (
-            <div key={i} className="flex items-start bg-red-50 border border-red-200 p-4 rounded-lg">
-              <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
-              <div>
-                <p className="font-bold text-gray-900">{nombre}</p>
-                <p className="text-gray-700 text-sm">{resultado}</p>
-              </div>
-            </div>
-          );
-        })}
-    </div>
-  </div>
-)}
+	{/* Imágenes finales tipo portada (robusto: mapea 0..4 imágenes) */}
+<div className="mt-12 space-y-10 flex flex-col items-center">
+  {[
+    selectedNews.footerImage1,
+    selectedNews.footerImage2,
+    selectedNews.footerImage3,
+    selectedNews.footerImage4
+  ].filter(Boolean).map((src, i) => {
+    const caption = selectedNews[(`footerImage${i+1}Caption`) as keyof typeof selectedNews] as string | undefined;
+    const normalizedSrc = typeof src === 'string' && !src.startsWith('/') ? `/${src}` : src;
+    return (
+      <div key={i} className="flex flex-col items-center w-full">
+        <img
+          src={normalizedSrc}
+          alt={caption || selectedNews.title || `Imagen ${i+1}`}
+          className="w-full max-w-4xl rounded-md"
+          loading="lazy"
+        />
+        {caption && (
+          <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+            {caption}
+          </p>
+        )}
+      </div>
+    );
+  })}
+</div>
+	  
     {/* Header del modal */}
     <div className="sticky top-0 bg-white backdrop-blur-md z-10 border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -5401,6 +5401,34 @@ TENDIDO DIGITAL
     </div>
   </div>
 )}
+
+	{/* Imágenes de crónica (footerImage1..4) */}
+<div className="mt-8 space-y-8 flex flex-col items-center">
+  {[
+    selectedChronicle.footerImage1,
+    selectedChronicle.footerImage2,
+    selectedChronicle.footerImage3,
+    selectedChronicle.footerImage4
+  ].filter(Boolean).map((src, i) => {
+    const caption = selectedChronicle[(`footerImage${i+1}Caption`) as keyof typeof selectedChronicle] as string | undefined;
+    const normalizedSrc = typeof src === 'string' && !src.startsWith('/') ? `/${src}` : src;
+    return (
+      <div key={i} className="flex flex-col items-center w-full">
+        <img
+          src={normalizedSrc}
+          alt={caption || selectedChronicle.title || `Imagen ${i+1}`}
+          className="w-full max-w-4xl rounded-md object-cover"
+          loading="lazy"
+        />
+        {caption && (
+          <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+            {caption}
+          </p>
+        )}
+      </div>
+    );
+  })}
+</div>
 
 {/* Modal de Compartir */}
 {isShareModalOpen && sharePost && (
