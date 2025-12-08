@@ -451,6 +451,24 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `La Feria de San Blas de Valdemorillo 2025 comienza a definirse con tres festejos y un mano a mano de alto interés`,
+    image: "/images/sanblas.jpg",
+	imageCaption: "Plaza de Toros Valdemorillo",
+    category: "Actualidad",
+    date: "8 de Diciembre de 2025",
+fullContent: `La Feria de **San Blas de Valdemorillo, que se celebrará del 6 al 8 de febrero**, comienza a definir su estructura. El ciclo abrirá con **una novillada con picadores para seis novilleros**, recuperando el carácter de oportunidad que distingue a este inicio de temporada.
+
+El segundo festejo será una corrida de **Torrealta con un cartel de corte clásico compuesto por Uceda Leal, Juan Ortega y Pablo Aguado**, combinación de estilos que apunta a una tarde de gran atractivo artístico.
+
+Como cierre del abono, está previsto un mano a mano entre **Borja Jiménez y Tomás Rufo**, que lidiarán tres hierros distintos especialmente reseñados para la ocasión, en lo que se perfila como el plato fuerte de la feria.
+
+Aunque la configuración aún es provisional, estos primeros avances muestran una programación equilibrada que volverá a situar a Valdemorillo en el centro del arranque taurino del año.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `La FIT apuesta por Olivenza; 
 Avance carteles 2026 `,
     image: "/images/fit.jpg",
@@ -475,6 +493,24 @@ Aunque la estructura general de la feria parece encarrilada, el avance de los ca
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 43,
+    title: `La Feria de San Blas de Valdemorillo 2025 comienza a definirse con tres festejos y un mano a mano de alto interés`,
+    image: "/images/sanblas.jpg",
+	imageCaption: "Plaza de Toros Valdemorillo",
+    category: "Actualidad",
+    date: "8 de Diciembre de 2025",
+fullContent: `La Feria de **San Blas de Valdemorillo, que se celebrará del 6 al 8 de febrero**, comienza a definir su estructura. El ciclo abrirá con **una novillada con picadores para seis novilleros**, recuperando el carácter de oportunidad que distingue a este inicio de temporada.
+
+El segundo festejo será una corrida de **Torrealta con un cartel de corte clásico compuesto por Uceda Leal, Juan Ortega y Pablo Aguado**, combinación de estilos que apunta a una tarde de gran atractivo artístico.
+
+Como cierre del abono, está previsto un mano a mano entre **Borja Jiménez y Tomás Rufo**, que lidiarán tres hierros distintos especialmente reseñados para la ocasión, en lo que se perfila como el plato fuerte de la feria.
+
+Aunque la configuración aún es provisional, estos primeros avances muestran una programación equilibrada que volverá a situar a Valdemorillo en el centro del arranque taurino del año.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 44,
     title: `La FIT apuesta por Olivenza; 
 Avance carteles 2026 `,
