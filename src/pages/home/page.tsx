@@ -490,7 +490,45 @@ Alejandro Talavante, Andrés Roca Rey y Pablo Aguado.`,
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+  { 
+    id: 44,
+    title: `Olivenza con los carteles casi cerrados `,
+    image: "/images/olivenza.jpg",
+    category: "Actualidad",
+    date: "8 de Diciembre de 2025",
+fullContent: `La plaza extremeña de Olivenza, tiene casi cerrada su feria a falta de algunos flecos.
+
+ La información  adelantada hoy por  el periodista Zabala de la Serna da un importe avance de los posibles carteles para la Feria de Olivenza 2026, a falta de confirmación oficial por parte de la empresa.
+
+
+Según la citada información, el serial del 35º aniversario de Olivenza tendrá los siguientes carteles:
+
+
+Viernes
+
+Novillada con picadores.
+
+
+Sábado
+
+Primera corrida de toros. José María Manzanares, Daniel Luque y Juan Ortega.
+
+
+Domingo
+
+Mañana
+
+Borja Jiménez, David de Miranda y Víctor Hernández.
+
+
+Tarde
+
+Alejandro Talavante, Andrés Roca Rey y Pablo Aguado.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 45,
     title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
     image: "/images/triunfo.jpg",
