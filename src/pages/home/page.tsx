@@ -451,46 +451,52 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Olivenza con los carteles casi cerrados `,
-    image: "/images/olivenza.jpg",
+    title: `La FIT apuesta por Olivenza; 
+Avance carteles 2026 `,
+    image: "/images/fit.jpg",
     category: "Actualidad",
     date: "8 de Diciembre de 2025",
-fullContent: `La plaza extremeña de Olivenza, tiene casi cerrada su feria a falta de algunos flecos.
+fullContent: `Los primeros rumores sobre los carteles de la **Feria Taurina de Olivenza 2026** empiezan a tomar forma, y todo apunta a que el ciclo experimentará un giro respecto al formato del año que termina. La empresa apostará por tres corridas de toros y una novillada con picadores, manteniendo la tradición del festejo inaugural del viernes, que en esta ocasión llevará el sello ganadero de **Alejandro Talavante**.
 
- La información  adelantada hoy por  el periodista Zabala de la Serna da un importe avance de los posibles carteles para la Feria de Olivenza 2026, a falta de confirmación oficial por parte de la empresa.
+Según la información adelantada por el periodista **Vicente Zabala de la Serna**, la feria reforzará su apuesta por los jóvenes matadores, configurando un cartel matinal el domingo con **Borja Jiménez, David de Miranda y Víctor Hernández**, nombres que ya sonaban en los primeros esbozos de la programación.
 
+La presencia del peruano **Roca Rey**, ausente en la última edición, será una de las grandes novedades. El torero está contratado en firme y encabezará el cartel estrella del **domingo 8 de marzo**, compartiendo paseíllo con **Alejandro Talavante y Emilio de Justo** ante toros de **Victoriano del Río**, en una cita que promete ser uno de los platos fuertes del serial.
 
-Según la citada información, el serial del 35º aniversario de Olivenza tendrá los siguientes carteles:
+Para el sábado, se anunciará una terna compuesta por **José María Manzanares, Daniel Luque y Juan Ortega**, quienes lidiarán un encierro de **Puerto de San Lorenzo**. El nombre de Daniel Luque también resalta por su continuidad en el ciclo, consolidándose como uno de los pilares del fin de semana.
 
+En la matinal del domingo, todo indica que se lidiará una corrida de la prestigiosa divisa salmantina de **Domingo Hernández**, completando así un programa variado, equilibrado y con presencia de las ganaderías más destacadas del momento.
 
-Viernes
-
-Novillada con picadores.
-
-
-Sábado
-
-Primera corrida de toros. José María Manzanares, Daniel Luque y Juan Ortega.
-
-
-Domingo
-
-Mañana
-
-Borja Jiménez, David de Miranda y Víctor Hernández.
-
-
-Tarde
-
-Alejandro Talavante, Andrés Roca Rey y Pablo Aguado.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
+Aunque la estructura general de la feria parece encarrilada, el avance de los carteles sigue siendo provisional y susceptible de modificaciones. Sin embargo, todo apunta a que la línea definitiva de la edición 2026 ya está marcada: una feria que combina figuras, jóvenes emergentes y la recuperación de nombres esenciales para el aficionado, reforzando el peso de Olivenza como una de las plazas de referencia en el arranque de la temporada taurina.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
   }
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+ 	{ 
+    id: 43,
+    title: `La FIT apuesta por Olivenza; 
+Avance carteles 2026 `,
+    image: "/images/fit.jpg",
+    category: "Actualidad",
+    date: "8 de Diciembre de 2025",
+fullContent: `Los primeros rumores sobre los carteles de la **Feria Taurina de Olivenza 2026** empiezan a tomar forma, y todo apunta a que el ciclo experimentará un giro respecto al formato del año que termina. La empresa apostará por tres corridas de toros y una novillada con picadores, manteniendo la tradición del festejo inaugural del viernes, que en esta ocasión llevará el sello ganadero de **Alejandro Talavante**.
+
+Según la información adelantada por el periodista **Vicente Zabala de la Serna**, la feria reforzará su apuesta por los jóvenes matadores, configurando un cartel matinal el domingo con **Borja Jiménez, David de Miranda y Víctor Hernández**, nombres que ya sonaban en los primeros esbozos de la programación.
+
+La presencia del peruano **Roca Rey**, ausente en la última edición, será una de las grandes novedades. El torero está contratado en firme y encabezará el cartel estrella del **domingo 8 de marzo**, compartiendo paseíllo con **Alejandro Talavante y Emilio de Justo** ante toros de **Victoriano del Río**, en una cita que promete ser uno de los platos fuertes del serial.
+
+Para el sábado, se anunciará una terna compuesta por **José María Manzanares, Daniel Luque y Juan Ortega**, quienes lidiarán un encierro de **Puerto de San Lorenzo**. El nombre de Daniel Luque también resalta por su continuidad en el ciclo, consolidándose como uno de los pilares del fin de semana.
+
+En la matinal del domingo, todo indica que se lidiará una corrida de la prestigiosa divisa salmantina de **Domingo Hernández**, completando así un programa variado, equilibrado y con presencia de las ganaderías más destacadas del momento.
+
+Aunque la estructura general de la feria parece encarrilada, el avance de los carteles sigue siendo provisional y susceptible de modificaciones. Sin embargo, todo apunta a que la línea definitiva de la edición 2026 ya está marcada: una feria que combina figuras, jóvenes emergentes y la recuperación de nombres esenciales para el aficionado, reforzando el peso de Olivenza como una de las plazas de referencia en el arranque de la temporada taurina.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 44,
     title: `Olivenza con los carteles casi cerrados `,
     image: "/images/olivenza.jpg",
