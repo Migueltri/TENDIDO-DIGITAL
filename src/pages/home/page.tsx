@@ -475,7 +475,7 @@ Aunque la estructura general de la feria parece encarrilada, el avance de los ca
 
 const latestNews: NewsItem[] = [
  	{ 
-    id: 43,
+    id: 44,
     title: `La FIT apuesta por Olivenza; 
 Avance carteles 2026 `,
     image: "/images/fit.jpg",
@@ -494,44 +494,6 @@ En la matinal del domingo, todo indica que se lidiará una corrida de la prestig
 Aunque la estructura general de la feria parece encarrilada, el avance de los carteles sigue siendo provisional y susceptible de modificaciones. Sin embargo, todo apunta a que la línea definitiva de la edición 2026 ya está marcada: una feria que combina figuras, jóvenes emergentes y la recuperación de nombres esenciales para el aficionado, reforzando el peso de Olivenza como una de las plazas de referencia en el arranque de la temporada taurina.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 44,
-    title: `Olivenza con los carteles casi cerrados `,
-    image: "/images/olivenza.jpg",
-    category: "Actualidad",
-    date: "8 de Diciembre de 2025",
-fullContent: `La plaza extremeña de Olivenza, tiene casi cerrada su feria a falta de algunos flecos.
-
- La información  adelantada hoy por  el periodista Zabala de la Serna da un importe avance de los posibles carteles para la Feria de Olivenza 2026, a falta de confirmación oficial por parte de la empresa.
-
-
-Según la citada información, el serial del 35º aniversario de Olivenza tendrá los siguientes carteles:
-
-
-Viernes
-
-Novillada con picadores.
-
-
-Sábado
-
-Primera corrida de toros. José María Manzanares, Daniel Luque y Juan Ortega.
-
-
-Domingo
-
-Mañana
-
-Borja Jiménez, David de Miranda y Víctor Hernández.
-
-
-Tarde
-
-Alejandro Talavante, Andrés Roca Rey y Pablo Aguado.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   },
 	{ 
