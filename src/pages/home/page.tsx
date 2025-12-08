@@ -451,38 +451,40 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
-    image: "/images/triunfo.jpg",
-    category: "Crónicas",
-    date: "7 de Diciembre de 2025",
-	footerImage1: "/images/foto1.jpg",
-    footerImage1Caption: "Fotos de Luis Muñoz",
-    footerImage2: "/images/foto2.jpg",
-    footerImage3: "/images/foto3.jpg",
-    footerImage4: "/images/foto4.jpg",
-	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
-	ganaderia: "Alcurrucen",
-    torerosRaw: `Jesús Navalucillos (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas 
+    title: `Olivenza con los carteles casi cerrados `,
+    image: "/images/olivenza.jpg",
+    category: "Actualidad",
+    date: "8 de Diciembre de 2025",
+fullContent: `La plaza extremeña de Olivenza, tiene casi cerrada su feria a falta de algunos flecos.
 
-Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
+ La información  adelantada hoy por  el periodista Zabala de la Serna da un importe avance de los posibles carteles para la Feria de Olivenza 2026, a falta de confirmación oficial por parte de la empresa.
 
-Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
 
-Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
-fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
+Según la citada información, el serial del 35º aniversario de Olivenza tendrá los siguientes carteles:
 
-Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
-**Su actuación fue una de las más celebradas del festejo y abrió un horizonte ilusionante.**
 
-**Plaza de toros de Alcaudete de La Jara (Toledo)**. Clase práctica.
-**Novillos de Alcurrucén**, de buen juego en su conjunto. Lleno en los tendidos.
+Viernes
 
-**Jesús Navalcillos** (Escuela Taurina Domingo Ortega de Toledo) Dos Orejas
-**Pablo Méndez** (Escuela Taurina de Guadalajara)*Dos Orejas
-**Álvaro Sánchez** (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo
-**Manuel de María** (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
+Novillada con picadores.
+
+
+Sábado
+
+Primera corrida de toros. José María Manzanares, Daniel Luque y Juan Ortega.
+
+
+Domingo
+
+Mañana
+
+Borja Jiménez, David de Miranda y Víctor Hernández.
+
+
+Tarde
+
+Alejandro Talavante, Andrés Roca Rey y Pablo Aguado.`,
+  author: "Manolo Herrera",
+  authorLogo: "/images/manoloherrera.jpg",
   showAuthorHeader: true
   }
 ];
