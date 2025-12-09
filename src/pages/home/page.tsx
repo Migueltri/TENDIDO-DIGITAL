@@ -3836,38 +3836,62 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
 
   // Entrevistas taurinas
 const entrevistas: NewsItem[] = [
-    {
+	{ 
     id: 500,
-    title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
-    image: "images/carloszuñiga.jpg",
+       title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
+    image: "/images/entrevista.jpg",
     category: "Entrevistas",
-    date: "17 de Octubre de 2025",
-    fullContent: `Carlos, en un momento donde la tauromaquia enfrenta tantos desafíos sociales y políticos, ¿qué significa para usted seguir apostando por este sector como empresario? 
+    date: "29 de noviembre de 2025",
+    fullContent: `**David Galván**
+encara uno de los momentos más determinantes de su carrera. El matador gaditano, que con constancia, sensibilidad y una evolución silenciosa ha pasado de ser una promesa a convertirse en un nombre respetado dentro del escalafón, atraviesa un proceso de madurez profesional que despierta ilusión entre la afición.
 
-Para mi es una forma de vida, una vocación. Yo no sé hacer otra cosa. Vivo 24 h para por y para el toro en su máxima expresión y no concibo el día a día sin ilusionarme y pensar en la confección de una feria. Creo que a veces puedo ser demasiado cansino en el día a día pero hasta ahora, esa "fórmula" no me ha ido mal. Seguiré peleando por y para el toreo y espero no desfallecer.
+Tras una temporada marcada por la solidez, actuaciones de gran calado y tardes en las que dejó patente la profundidad de su concepto, Galván ha logrado situarse como uno de los toreros con mayor poso y proyección. Su expresión clásica, su temple y una ambición cada vez más nítida lo consolidan como un perfil que merece ser escuchado.
 
-Gestiona plazas tan emblemáticas como El Puerto, Gijón o Aranjuez. ¿Qué criterios considera esenciales para que una feria taurina sea rentable y atractiva para el público? 
+**¿Cómo afronta usted la temporada que viene, teniendo en cuenta lo importante que ha sido esta?**
 
-Creo que el secreto es dar al público de cada lugar lo que busca. Yo no me considero ni un Séneca ni un salvador del toreo, pero intento tener mi sello de calidad buscando la excelencia en el espectáculo. Me gusta un determinado tipo de toro e intento no perder nunca el rigor y el trapío acorde a cada plaza. En Gijón, por ejemplo, llevo casi 25 años con esa fórmula y la Feria de Begoña está más consolidada que nunca.
+La temporada 2026 la afronto con la ilusión de dar mi mejor versión en cada actuación, mostrar mi personalidad en su máxima dimensión y seguir sintiendo a la afición ilusionada por ver a David Galván. 
 
-¿Qué le diría hoy a los políticos que impulsan prohibiciones o trabas a la celebración de festejos taurinos en España?
+**Se ha creado un movimiento “galvanista” ya que el buen publico, admira que un concepto tan puro como el suyo, no cambie con corridas duras. ¿Le gusta a usted que le encasillen con ese tipo de ganaderias o encastes? o preferiria torear corridas mas “comodas” y en otro tipo de carteles.**
 
-Simple y llanamente que respeten nuestras traiciones y las salvaguarden como garantes de un Bien declarado Patrimonio Cultural Inmaterial, por mucho que partidos radicales hayan tratado de boicotear.
+Es muy bonito sentir ese movimiento “Galvanista” que he vivido este año y sigo viviendo. Recibo el entusiasmo constante de aficionados de todas las edades de la geografía europea y americana, lo que supone una gran felicidad para mí. 
+Considero que no estoy encasillado en nada, no me pongo limitaciones, y es por este motivo que he conseguido desarrollar mi toreo y triunfar con todo tipo de ganaderías y encantes. 
 
-¿Qué plaza sueña con gestionar algún día, y qué aportaría usted como empresario para devolverle o mantenerle su prestigio?
+**Perú y México, son dos paises con los que mantiene un idilio constante, y en los que se le espera con gran entusiasmo; ¿que opina de estos dos paises? ¿Y de los constantes ataques antitaurinos en mexico? ( se han vuelto a prohibir los toros en Ciudad Juarez)**
 
-Bueno, imagínese, uno siempre sueña con volar lo más alto posible y en ese horizonte como no están Sevilla y Madrid. Quien sabe si el futuro me deparará algún día algo bonito. Lo que aportaría, me lo guardo para entonces.
+Tanto Perú como México son dos países que llevo en mi corazón. Me encanta torear en ellos y sentir el calor de sus aficiones. Siempre tendrán mi apoyo incondicional. 
 
-La retirada de Morante de la Puebla marca un punto de inflexión en la tauromaquia actual. También porque usted siempre lo ha contratado siempre que ha podido este año en plazas como El Puerto de Santa María , Aranjuez….
-Desde el punto de vista empresarial, ¿cómo afecta la ausencia de una figura así en la confección de carteles y en la atracción del público?
+**¿Como quiere que se le recuerde, cuales son sus mayores aspiraciones en este mundo?**
 
-Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido el toreo más grandioso que mis ojos han tenido la oportunidad de ver y que seguramente vayan a ver. Ha sido muy generoso con la Fiesta y especialmente con los empresarios. Con su apoyo y el de El Juli, he crecido profesionalmente y sus faenas históricas en mis plazas me han aportado un plus de calidad que nunca olvidaré. Le echaremos mucho de menos como lo hemos hecho estos 2 años con Julián.
+Como artista y como persona lo que más me llena es sentir que la gente se emociona y es feliz a través de mi expresión, esta es la mayor satisfacción y aspiración. 
 
-¿Como plantea la temporada que viene de cara a nuevas plazas? ¿Tiene en mente alguna? 
+ **Su concepto del toreo ha sido definido muchas veces como “clásico y eterno”. ¿Cree usted que en la actualidad, donde abundan estilos más efectistas, sigue habiendo espacio para ese clasicismo? ¿Qué mensaje quiere transmitir cada vez que se pone delante de un toro?**
 
-Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
+Particularmente siento que los públicos si se identifican con mi toreo. Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal. Me gusta la originalidad en el ruedo y que no haya nada previsible ni encorsetado.
+
+**En España, la temporada pasada dejó tardes memorables en plazas de primera. ¿Qué importancia le da a triunfar en Madrid o Sevilla frente a otras plazas más pequeñas? ¿Considera que el público de cada ciudad entiende y valora de manera distinta su tauromaquia?**
+
+Mi filosofía como torero pasa por expresar mi toreo con la misma entrega y compromiso independientemente de la categoría reglamentaria de la plaza. El público acude a la plaza y merece ver la mejor versión de uno mismo. 
+
+En plazas de primera es cierto que ha habido faenas importantes en este año 2025, en las que he sentido el reconocimientos de aficiones que son exigentes y dan crédito. Inolvidables han sido las faenas en Sevilla y Málaga, el San Isidro de esta temporada o las tardes de capacidad en Dax y Albacete. 
+
+
+
+**La juventud se acerca cada vez más al toreo, pero también se enfrenta a críticas sociales. ¿Qué consejo daría usted a los jóvenes que sueñan con ser toreros, y cómo cree que deberían afrontar las presiones externas que cuestionan la fiesta?**
+
+Que persigan su sueño con fe, sin complejos y sintiéndose libres. 
+
+**El toro bravo es el eje de todo este mundo. ¿Qué opinión tiene usted sobre la evolución de las ganaderías actuales? ¿Prefiere enfrentarse a hierros de máxima exigencia que ponen a prueba al torero, o cree que también es necesario buscar variedad para mostrar diferentes matices de su arte?**
+
+El nivel de las ganaderías, cada una en su contexto y personalidad, en la actualidad es muy alto. Los ganaderos están haciendo una gran labor. 
+Para el aficionado considero que causa mayor interés la variedad que la monotonía. Me preparo diariamente para tener registros suficientes para expresar mi toreo a todo tipo de toros independientemente de su condición o ganaderia, siempre fiel a mi sello personal.`,
+  footerImage1: "/images/victorluengo.jpg",
+  footerImage1Caption: "Fotos de Víctor Luengo",
+  footerImage2: "/images/davidgalvan3.jpg",
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
   },
-  {
+	 {
     id: 501,
     title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
     image: "images/tomasgonzalez.jpg",
@@ -3904,7 +3928,121 @@ La tarde de Zaragoza fue muy especial; es la plaza en la que más veces he estad
 
 Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo durante la temporada y utilizarlo para mejorar en el invierno. Aunque desde ya, esperando la temporada venidera y que venga cargada de tardes importantes.
 `
-  }
+  },
+	{
+    id: 502,
+    title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
+    image: "images/carloszuñiga.jpg",
+    category: "Entrevistas",
+    date: "17 de Octubre de 2025",
+    fullContent: `Carlos, en un momento donde la tauromaquia enfrenta tantos desafíos sociales y políticos, ¿qué significa para usted seguir apostando por este sector como empresario? 
+
+Para mi es una forma de vida, una vocación. Yo no sé hacer otra cosa. Vivo 24 h para por y para el toro en su máxima expresión y no concibo el día a día sin ilusionarme y pensar en la confección de una feria. Creo que a veces puedo ser demasiado cansino en el día a día pero hasta ahora, esa "fórmula" no me ha ido mal. Seguiré peleando por y para el toreo y espero no desfallecer.
+
+Gestiona plazas tan emblemáticas como El Puerto, Gijón o Aranjuez. ¿Qué criterios considera esenciales para que una feria taurina sea rentable y atractiva para el público? 
+
+Creo que el secreto es dar al público de cada lugar lo que busca. Yo no me considero ni un Séneca ni un salvador del toreo, pero intento tener mi sello de calidad buscando la excelencia en el espectáculo. Me gusta un determinado tipo de toro e intento no perder nunca el rigor y el trapío acorde a cada plaza. En Gijón, por ejemplo, llevo casi 25 años con esa fórmula y la Feria de Begoña está más consolidada que nunca.
+
+¿Qué le diría hoy a los políticos que impulsan prohibiciones o trabas a la celebración de festejos taurinos en España?
+
+Simple y llanamente que respeten nuestras traiciones y las salvaguarden como garantes de un Bien declarado Patrimonio Cultural Inmaterial, por mucho que partidos radicales hayan tratado de boicotear.
+
+¿Qué plaza sueña con gestionar algún día, y qué aportaría usted como empresario para devolverle o mantenerle su prestigio?
+
+Bueno, imagínese, uno siempre sueña con volar lo más alto posible y en ese horizonte como no están Sevilla y Madrid. Quien sabe si el futuro me deparará algún día algo bonito. Lo que aportaría, me lo guardo para entonces.
+
+La retirada de Morante de la Puebla marca un punto de inflexión en la tauromaquia actual. También porque usted siempre lo ha contratado siempre que ha podido este año en plazas como El Puerto de Santa María , Aranjuez….
+Desde el punto de vista empresarial, ¿cómo afecta la ausencia de una figura así en la confección de carteles y en la atracción del público?
+
+Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido el toreo más grandioso que mis ojos han tenido la oportunidad de ver y que seguramente vayan a ver. Ha sido muy generoso con la Fiesta y especialmente con los empresarios. Con su apoyo y el de El Juli, he crecido profesionalmente y sus faenas históricas en mis plazas me han aportado un plus de calidad que nunca olvidaré. Le echaremos mucho de menos como lo hemos hecho estos 2 años con Julián.
+
+¿Como plantea la temporada que viene de cara a nuevas plazas? ¿Tiene en mente alguna? 
+
+Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
+  },
+{ 
+    id: 503,
+    title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
+    image: "images/enriquez.jpg",
+    category: "Entrevistas",
+    date: "1 de noviembre de 2025",
+    fullContent: `Matador de toros desde 2003, natural de Andújar, ha encabezado durante años el escalafón de sobresalientes en plazas tan destacadas como Las Ventas, Vistalegre o Morón de la Frontera. A pesar de una carrera marcada por la dureza y las lesiones, sigue fiel a su pasión y a su forma de entender la vida: con afición, entrega y verdad.
+
+—¿Qué significa para ti haber encabezado durante varios años el escalafón de sobresalientes en plazas tan importantes?
+—Bueno, no tiene mucha importancia el torear más o menos de sobresaliente. Yo considero que lo importante es poder vivir de torero y poder vivir de tu profesión. Dado que esto está muy complicado, poder vivir del toreo no es tarea fácil, y me siento un privilegiado de poder seguir disfrutando de mi profesión. Siempre pienso que esto es un trampolín hacia una oportunidad que me pueda cambiar la vida.
+
+—Tomaste la alternativa en 2003 en Andújar, pero no has logrado consolidarte como matador principal. ¿Cómo has vivido esa transición?
+—Tomé la alternativa en mi pueblo hace bastante tiempo, y al principio no me gustaba torear de sobresaliente, pero vi que era una de las pocas posibilidades que tenía para seguir vistiéndome de torero y seguir luchando. Me lo tomé como si toreara cincuenta corridas por temporada, porque nunca he dejado de entrenar como al principio. A día de hoy sigo con la misma ilusión que cuando era un chaval.
+
+—En 2022 sufriste una grave cornada en Estella. ¿Cómo fue esa experiencia?
+—Sí, fue una cornada extremadamente grave. Al final tuve mucha suerte, porque si el pitón llega a profundizar un poco más —ya fueron 25 centímetros— estaríamos hablando de una tragedia gorda, porque me habría partido el hígado. Así que me considero un afortunado. Mi carrera ha sido muy dura: desde novillero tuve una cornada gravísima en el ano que me destrozó intestino delgado y grueso, con rotura de peritoneo, y estuve a punto de morir. Luego vinieron más: una en Ondara en 2005, otra lesión muy dura en 2019 con la rotura del tendón de Aquiles… Pero aquí sigo. Mi carrera ha sido muy dura, sí, pero también muy vivida.
+
+—Eres conocido por tu afición y entrega. ¿Cuál es tu filosofía personal para mantenerte motivado?
+—Mi filosofía en el toreo y en la vida es ir siempre recto. En el toreo hay que tener mucha afición y vivir para ello. A mí nunca me ha costado sacrificarme por mi profesión, porque me gusta y es mi pasión.
+
+—¿Qué opinas sobre el papel de los sobresalientes en los festejos taurinos?
+—La opinión que tengo es que uno no es sobresaliente: uno es torero. Me toca esto y es lo que me contratan, pero ante todo soy matador de toros, y sobre todo, soy torero.
+
+—¿Cuáles son tus proyectos y objetivos para el futuro?
+—Mi objetivo es seguir en mi profesión mientras las fuerzas y la ilusión me acompañen. Que venga lo que el destino quiera, pero yo lo único que quiero es ser feliz, y así lo soy con lo que hago.`
+  }, 
+ { 
+    id: 504,
+       title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
+    image: "/images/sergior.jpg",
+	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
+	footerImage1: "/images/sergior1.jpg",
+	footerImage1Caption: "Sergio Rodríguez el pasado 12 de Octubre en Las Ventas - Foto Plaza 1",
+	footerImage2: "/images/sergior2.jpg",
+    category: "Entrevistas",
+    date: "24 de noviembre de 2025",
+    fullContent: `A las puertas de una nueva campaña taurina, **Sergio Rodríguez** encara uno de los momentos más determinantes de su carrera. El matador abulense, que en apenas unos años ha pasado de promesa a nombre imprescindible del escalafón joven, vive un proceso de madurez profesional que ilusiona tanto al aficionado. 
+
+**Tras una temporada marcada por la regularidad**, triunfos de peso y tardes en las que dejó constancia de su personalidad en la plaza, Sergio ha logrado posicionarse como uno de los toreros con mayor proyección del momento. Su concepto clásico, su valor sereno y una ambición cada vez más evidente lo convierten en un perfil que despierta interés.
+
+**¿Qué significó para ti proclamarte triunfador de la Copa Chenel 2025 y cómo crees que ese triunfo puede cambiar tu carrera?**
+
+“Bueno, pues aparte de la satisfacción que a uno le da triunfar y ganar, certámenes 
+ tan importantes como puede ser la Copa Chenel, fue un poco la recompensa a muchos meses de entrenamiento, de disciplina, de entrega.
+Entonces, pues bueno, significó mucho, tanto como parami torero como para la persona que soy.
+Fue un antes y un después, sin duda.
+Y bueno, pues espero que el año que viene me den un poco las oportunidades que este año no se me han dado y creo que merecía por los motivos que había dado en la plaza.
+Creo que eso es un poco lo que más puedo esperar de cara al año que viene.”
+
+**¿Cómo recuerdas tus primeros pasos en la tauromaquia, empezando desde que tenías 12 años en la escuela taurina de Las Navas del Marqués?**
+
+“Pues son recuerdos muy bonitos, todos los recuerdo de una manera muy gratificante y muy feliz.
+De hecho, hay muchos que los añoro, hay cosas que ya no van a volver por la inocencia de un niño que empieza, por un montón de cosas que se tienen cuando uno está empezando.
+La verdad que las extraño.
+Y bueno, fue una etapa muy bonita donde di mis primeros pasos en una escuela de aficionados.
+Ni siquiera yo quería ser torero, pero bueno, ahí fue donde me entró ese veneno que decimos los toreros para querer dedicarme ya de una manera profesional al torero.”
+
+**¿Cómo definirías tu estilo dentro del ruedo y qué toreros han influido en tu forma de torear?**
+
+“Considero que soy un torero que tiene personalidad.
+Interpreto el toreo de una manera muy personal.
+Es cierto que siempre me he fijado mucho en el maestro José Tomás, en el maestro Morante, en el maestro Rafael de Paula , pero nunca he intentado copiar nada.
+Siempre he buscado las cosas que más me han gustado de estos maestros y he intentado trasladarlo a mis formas y a mi concepto.”
+
+	**¿Qué te gustaría que la afición recordara de ti dentro de unos años?**
+
+“Bueno, pues me gustaría que me recordasen como un torero de época, un torero especial, con un concepto propio del toreo.
+Y me encantaría intentar marcar la época en el torero y sobre todo ser torero de torero.
+Creo que es lo más grande que hay y creo que es la mejor forma que se le pueda recordar a un torero, siendo torero de torero.”
+
+**¿Cómo planteas la temporada que viene después de los triunfos logrados este año?**
+
+“Pues la verdad que, bueno, la temporada del año que viene es un poco incógnita, no sé muy bien el que puede pararme, pero sí tengo claro lo que yo quiero y lo que me encantaría conseguir, por supuesto.
+Me encantaría volver a Madrid, me encantaría que la afición de Madrid me viese como yo soy, aprovechar esa oportunidad que ahora mismo tanto necesito para hacerme un hueco dentro del escalafón.”
+
+**¿Como afrontas tu compromiso en Perú , donde este próximo mes de diciembre torearás allí?**
+
+“Bueno, pues la verdad que el compromiso de Perú lo afrontó con mucha ilusión.
+Al final ha sido una inyección de moral.
+Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
+Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
+Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
+  },
 ];
 
 // Función para cargar más noticias
