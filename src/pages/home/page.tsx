@@ -451,6 +451,52 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
+    image: "/images/nicolas.jpg",
+    category: "Entrevistas",
+    date: "9 de Diciembre de 2025",
+    fullContent: `Con apenas unos años de presencia en redes sociales, **Nicolás Grande** se ha convertido en una de las voces jóvenes más visibles en defensa de la tauromaquia. Estudiante de veterinaria y apasionado del toro, su discurso rompe clichés: no viene de una familia taurina ni creció rodeado de corridas, pero encontró en los sanfermines el inicio de una fascinación que marcaría su camino.
+
+Por eso, desde Portal Tendido Digital hemos querido entrevistarle para conocerle algo más.
+
+**Nicolás, estudias veterinaria. ¿Qué te llevó a interesarte por la tauromaquia, y cómo concilias ese amor por los animales con la defensa del espectáculo taurino?**
+
+Mi verdadera pasión son los animales. El toro de lidia fue, desde el principio, lo que despertó mi interés por este espectáculo. Yo no vengo de una familia especialmente taurina, pero ver cada 7 de julio en las calles de Pamplona a esos animales majestuosos correr fue lo que me generó una fascinación enorme.
+Respecto a la defensa de la tauromaquia, desde fuera puede parecer algo muy complejo. Sin embargo, cuando uno entiende la fiesta brava y se dedica a estudiarla, descubre un mar infinito de argumentos que la sustentan. Solo hace falta acercarse con la mente abierta.
+
+**Has ganado visibilidad en Instagram/TikTok como joven defensor de la tauromaquia. ¿Cómo usas tus redes para comunicar tu visión? ¿Crees que las redes pueden cambiar la percepción de los toros entre la gente joven?**
+
+Desde que empecé en redes no he parado de aprender. Me adentré en un mundo que desconocía por completo; de hecho, ni siquiera tenía TikTok: me lo descargué exclusivamente para empezar a crear contenido.
+En un inicio quería hablar del mundo ganadero en general, ya que había trabajado en una ganadería de carne en Cantabria y me apasionaba la defensa del medio rural. Pero un día decidí subir un vídeo con argumentos a favor de la tauromaquia, y tuvo tanto éxito que me replanteó mi vocación.
+Me di cuenta de que en redes faltaban creadores taurinos adaptados a los nuevos tiempos, capaces de llegar a un público joven. Ahí decidí enfocar mi contenido hacia una especie de “evangelización” de la tauromaquia desde un formato moderno.
+Creo que antes era más fácil consumir tauromaquia, y que durante un tiempo se dejó de difundir este arte; pero gracias a las redes sociales puede volver a conectar con un público amplio.
+Muchos asocian la tauromaquia con generaciones mayores.
+
+**Tú representas una generación joven a favor del toreo. ¿Qué crees que puede aportar tu generación a la tauromaquia? ¿Qué interés ves hoy en jóvenes por este mundo?**
+
+Mi generación es el futuro de todo. De nosotros depende la continuidad de nuestra cultura. Si no somos nosotros quienes ocupamos los tendidos, ¿quién lo hará?
+Tenemos la responsabilidad de escuchar y aprender de nuestros mayores, de los toreros, de los escritores taurinos y de toda la sabiduría que ellos han acumulado, para en un futuro poder transmitirlo.
+Aun así, hay un aspecto que me tranquiliza: los jóvenes empezamos a buscar referentes en una sociedad que muchas veces se percibe como vacía o sin héroes. En la tauromaquia muchos encuentran figuras valientes, personas que se juegan la vida por aquello que aman, mientras vemos a nuestros representantes políticos esconderse ante todo lo que no les beneficia.
+
+**La tauromaquia está muy politizada, con defensores y detractores apasionados. ¿Cómo valoras ese contexto? ¿Piensas que hay una politización excesiva? ¿Qué espacio crees que ha de tener la tradición del toro en la sociedad actual? (Sobre todo por la zona de Barcelona)**
+
+Es una pena que la cultura se politice. No ocurre solo con los toros: hoy en día prácticamente todo se usa para generar tensión y confrontación.
+Existen numerosos ejemplos de personajes públicos que, independientemente de su ideología, acuden a las plazas. Por mencionar algunos, tanto Isabel Díaz Ayuso (del Partido Popular) como Joaquín Sabina (abiertamente socialista) disfrutan de la tauromaquia.
+La fiesta no entiende de colores ni de partidos: es del pueblo y para el pueblo.
+En cuanto a Barcelona, es triste ver cómo la familia Balañá sigue con su juego cobarde de mantener cerradas las plazas. Cataluña es taurina, y eso se refleja en los muchos pueblos de la comunidad donde se celebran festejos con más libertad que en la propia ciudad.
+Aun así, tengo esperanza de que, con la ayuda de mi amigo Mario Vilau, logremos reabrir la Monumental.
+
+**Si tuvieras que explicar a alguien que nunca ha visto un toro de lidia por qué te gusta la tauromaquia, ¿qué argumentos darías apelando a lo emocional, cultural o artístico?**
+
+Le diría que es algo que, hasta que no lo vives, no lo puedes entender. Y aun viviéndolo, sigue siendo difícil de explicar.
+Me gusta compararla con un cuadro abstracto: o tienes la sensibilidad para apreciar el arte que encierra, o simplemente no lo ves. No hay término medio. Puede hacerte vibrar en un buen natural, o puede parecerte solo un hombre con una capa roja.
+Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez para construirse una opinión real sobre los toros.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `Sergio Rodríguez , sin apoderado`,
     image: "/images/abulense.jpg",
     category: "Actualidad",
@@ -463,7 +509,7 @@ Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
     image: "/images/tortola.jpg",
 	imageCaption: "Por Eduardo Elvira",
@@ -486,6 +532,52 @@ Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 40,
+    title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
+    image: "/images/nicolas.jpg",
+    category: "Entrevistas",
+    date: "9 de Diciembre de 2025",
+    fullContent: `Con apenas unos años de presencia en redes sociales, **Nicolás Grande** se ha convertido en una de las voces jóvenes más visibles en defensa de la tauromaquia. Estudiante de veterinaria y apasionado del toro, su discurso rompe clichés: no viene de una familia taurina ni creció rodeado de corridas, pero encontró en los sanfermines el inicio de una fascinación que marcaría su camino.
+
+Por eso, desde Portal Tendido Digital hemos querido entrevistarle para conocerle algo más.
+
+**Nicolás, estudias veterinaria. ¿Qué te llevó a interesarte por la tauromaquia, y cómo concilias ese amor por los animales con la defensa del espectáculo taurino?**
+
+Mi verdadera pasión son los animales. El toro de lidia fue, desde el principio, lo que despertó mi interés por este espectáculo. Yo no vengo de una familia especialmente taurina, pero ver cada 7 de julio en las calles de Pamplona a esos animales majestuosos correr fue lo que me generó una fascinación enorme.
+Respecto a la defensa de la tauromaquia, desde fuera puede parecer algo muy complejo. Sin embargo, cuando uno entiende la fiesta brava y se dedica a estudiarla, descubre un mar infinito de argumentos que la sustentan. Solo hace falta acercarse con la mente abierta.
+
+**Has ganado visibilidad en Instagram/TikTok como joven defensor de la tauromaquia. ¿Cómo usas tus redes para comunicar tu visión? ¿Crees que las redes pueden cambiar la percepción de los toros entre la gente joven?**
+
+Desde que empecé en redes no he parado de aprender. Me adentré en un mundo que desconocía por completo; de hecho, ni siquiera tenía TikTok: me lo descargué exclusivamente para empezar a crear contenido.
+En un inicio quería hablar del mundo ganadero en general, ya que había trabajado en una ganadería de carne en Cantabria y me apasionaba la defensa del medio rural. Pero un día decidí subir un vídeo con argumentos a favor de la tauromaquia, y tuvo tanto éxito que me replanteó mi vocación.
+Me di cuenta de que en redes faltaban creadores taurinos adaptados a los nuevos tiempos, capaces de llegar a un público joven. Ahí decidí enfocar mi contenido hacia una especie de “evangelización” de la tauromaquia desde un formato moderno.
+Creo que antes era más fácil consumir tauromaquia, y que durante un tiempo se dejó de difundir este arte; pero gracias a las redes sociales puede volver a conectar con un público amplio.
+Muchos asocian la tauromaquia con generaciones mayores.
+
+**Tú representas una generación joven a favor del toreo. ¿Qué crees que puede aportar tu generación a la tauromaquia? ¿Qué interés ves hoy en jóvenes por este mundo?**
+
+Mi generación es el futuro de todo. De nosotros depende la continuidad de nuestra cultura. Si no somos nosotros quienes ocupamos los tendidos, ¿quién lo hará?
+Tenemos la responsabilidad de escuchar y aprender de nuestros mayores, de los toreros, de los escritores taurinos y de toda la sabiduría que ellos han acumulado, para en un futuro poder transmitirlo.
+Aun así, hay un aspecto que me tranquiliza: los jóvenes empezamos a buscar referentes en una sociedad que muchas veces se percibe como vacía o sin héroes. En la tauromaquia muchos encuentran figuras valientes, personas que se juegan la vida por aquello que aman, mientras vemos a nuestros representantes políticos esconderse ante todo lo que no les beneficia.
+
+**La tauromaquia está muy politizada, con defensores y detractores apasionados. ¿Cómo valoras ese contexto? ¿Piensas que hay una politización excesiva? ¿Qué espacio crees que ha de tener la tradición del toro en la sociedad actual? (Sobre todo por la zona de Barcelona)**
+
+Es una pena que la cultura se politice. No ocurre solo con los toros: hoy en día prácticamente todo se usa para generar tensión y confrontación.
+Existen numerosos ejemplos de personajes públicos que, independientemente de su ideología, acuden a las plazas. Por mencionar algunos, tanto Isabel Díaz Ayuso (del Partido Popular) como Joaquín Sabina (abiertamente socialista) disfrutan de la tauromaquia.
+La fiesta no entiende de colores ni de partidos: es del pueblo y para el pueblo.
+En cuanto a Barcelona, es triste ver cómo la familia Balañá sigue con su juego cobarde de mantener cerradas las plazas. Cataluña es taurina, y eso se refleja en los muchos pueblos de la comunidad donde se celebran festejos con más libertad que en la propia ciudad.
+Aun así, tengo esperanza de que, con la ayuda de mi amigo Mario Vilau, logremos reabrir la Monumental.
+
+**Si tuvieras que explicar a alguien que nunca ha visto un toro de lidia por qué te gusta la tauromaquia, ¿qué argumentos darías apelando a lo emocional, cultural o artístico?**
+
+Le diría que es algo que, hasta que no lo vives, no lo puedes entender. Y aun viviéndolo, sigue siendo difícil de explicar.
+Me gusta compararla con un cuadro abstracto: o tienes la sensibilidad para apreciar el arte que encierra, o simplemente no lo ves. No hay término medio. Puede hacerte vibrar en un buen natural, o puede parecerte solo un hombre con una capa roja.
+Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez para construirse una opinión real sobre los toros.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 41,
     title: `Sergio Rodríguez , sin apoderado`,
     image: "/images/abulense.jpg",
@@ -4042,6 +4134,52 @@ Al final ha sido una inyección de moral.
 Cuando uno tiende un poquito a relajarse una vez terminada la temporada, pues que le llamen para viajar a uno de los países que más en auge está en la actualidad en el mundo del toro, pues es muy bonito y también me viene la responsabilidad.
 Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy buena.
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
+  },
+ 	{ 
+    id: 505,
+    title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
+    image: "/images/nicolas.jpg",
+    category: "Entrevistas",
+    date: "9 de Diciembre de 2025",
+    fullContent: `Con apenas unos años de presencia en redes sociales, **Nicolás Grande** se ha convertido en una de las voces jóvenes más visibles en defensa de la tauromaquia. Estudiante de veterinaria y apasionado del toro, su discurso rompe clichés: no viene de una familia taurina ni creció rodeado de corridas, pero encontró en los sanfermines el inicio de una fascinación que marcaría su camino.
+
+Por eso, desde Portal Tendido Digital hemos querido entrevistarle para conocerle algo más.
+
+**Nicolás, estudias veterinaria. ¿Qué te llevó a interesarte por la tauromaquia, y cómo concilias ese amor por los animales con la defensa del espectáculo taurino?**
+
+Mi verdadera pasión son los animales. El toro de lidia fue, desde el principio, lo que despertó mi interés por este espectáculo. Yo no vengo de una familia especialmente taurina, pero ver cada 7 de julio en las calles de Pamplona a esos animales majestuosos correr fue lo que me generó una fascinación enorme.
+Respecto a la defensa de la tauromaquia, desde fuera puede parecer algo muy complejo. Sin embargo, cuando uno entiende la fiesta brava y se dedica a estudiarla, descubre un mar infinito de argumentos que la sustentan. Solo hace falta acercarse con la mente abierta.
+
+**Has ganado visibilidad en Instagram/TikTok como joven defensor de la tauromaquia. ¿Cómo usas tus redes para comunicar tu visión? ¿Crees que las redes pueden cambiar la percepción de los toros entre la gente joven?**
+
+Desde que empecé en redes no he parado de aprender. Me adentré en un mundo que desconocía por completo; de hecho, ni siquiera tenía TikTok: me lo descargué exclusivamente para empezar a crear contenido.
+En un inicio quería hablar del mundo ganadero en general, ya que había trabajado en una ganadería de carne en Cantabria y me apasionaba la defensa del medio rural. Pero un día decidí subir un vídeo con argumentos a favor de la tauromaquia, y tuvo tanto éxito que me replanteó mi vocación.
+Me di cuenta de que en redes faltaban creadores taurinos adaptados a los nuevos tiempos, capaces de llegar a un público joven. Ahí decidí enfocar mi contenido hacia una especie de “evangelización” de la tauromaquia desde un formato moderno.
+Creo que antes era más fácil consumir tauromaquia, y que durante un tiempo se dejó de difundir este arte; pero gracias a las redes sociales puede volver a conectar con un público amplio.
+Muchos asocian la tauromaquia con generaciones mayores.
+
+**Tú representas una generación joven a favor del toreo. ¿Qué crees que puede aportar tu generación a la tauromaquia? ¿Qué interés ves hoy en jóvenes por este mundo?**
+
+Mi generación es el futuro de todo. De nosotros depende la continuidad de nuestra cultura. Si no somos nosotros quienes ocupamos los tendidos, ¿quién lo hará?
+Tenemos la responsabilidad de escuchar y aprender de nuestros mayores, de los toreros, de los escritores taurinos y de toda la sabiduría que ellos han acumulado, para en un futuro poder transmitirlo.
+Aun así, hay un aspecto que me tranquiliza: los jóvenes empezamos a buscar referentes en una sociedad que muchas veces se percibe como vacía o sin héroes. En la tauromaquia muchos encuentran figuras valientes, personas que se juegan la vida por aquello que aman, mientras vemos a nuestros representantes políticos esconderse ante todo lo que no les beneficia.
+
+**La tauromaquia está muy politizada, con defensores y detractores apasionados. ¿Cómo valoras ese contexto? ¿Piensas que hay una politización excesiva? ¿Qué espacio crees que ha de tener la tradición del toro en la sociedad actual? (Sobre todo por la zona de Barcelona)**
+
+Es una pena que la cultura se politice. No ocurre solo con los toros: hoy en día prácticamente todo se usa para generar tensión y confrontación.
+Existen numerosos ejemplos de personajes públicos que, independientemente de su ideología, acuden a las plazas. Por mencionar algunos, tanto Isabel Díaz Ayuso (del Partido Popular) como Joaquín Sabina (abiertamente socialista) disfrutan de la tauromaquia.
+La fiesta no entiende de colores ni de partidos: es del pueblo y para el pueblo.
+En cuanto a Barcelona, es triste ver cómo la familia Balañá sigue con su juego cobarde de mantener cerradas las plazas. Cataluña es taurina, y eso se refleja en los muchos pueblos de la comunidad donde se celebran festejos con más libertad que en la propia ciudad.
+Aun así, tengo esperanza de que, con la ayuda de mi amigo Mario Vilau, logremos reabrir la Monumental.
+
+**Si tuvieras que explicar a alguien que nunca ha visto un toro de lidia por qué te gusta la tauromaquia, ¿qué argumentos darías apelando a lo emocional, cultural o artístico?**
+
+Le diría que es algo que, hasta que no lo vives, no lo puedes entender. Y aun viviéndolo, sigue siendo difícil de explicar.
+Me gusta compararla con un cuadro abstracto: o tienes la sensibilidad para apreciar el arte que encierra, o simplemente no lo ves. No hay término medio. Puede hacerte vibrar en un buen natural, o puede parecerte solo un hombre con una capa roja.
+Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez para construirse una opinión real sobre los toros.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
   },
 ];
 
