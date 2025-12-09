@@ -451,7 +451,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Titular: Sergio Rodríguez , sin apoderado`,
+    title: `Sergio Rodríguez , sin apoderado`,
     image: "/images/abulense.jpg",
     category: "Actualidad",
     date: "9 de Diciembre de 2025",
@@ -487,7 +487,7 @@ Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural 
 const latestNews: NewsItem[] = [
  	{ 
     id: 41,
-    title: `Titular: Sergio Rodríguez , sin apoderado`,
+    title: `Sergio Rodríguez , sin apoderado`,
     image: "/images/abulense.jpg",
     category: "Actualidad",
     date: "9 de Diciembre de 2025",
