@@ -451,6 +451,24 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Castellón presenta una Feria de la Magdalena 2026 de alto nivel`,
+    image: "/images/castellon1.jpg",
+    category: "Actualidad",
+    date: "9 de Diciembre de 2025",
+    fullContent: `La empresa Funtausa, dirigida por la **Casa Matilla**, ha hecho públicos los carteles de la **Feria de la Magdalena 2026**, un ciclo que reúne a figuras del toreo, nuevas promesas y algunas de las ganaderías más destacadas del elenco ganadero.
+
+La feria abrirá el **8 de marzo con toros de La Quinta para Ginés Marín, Aarón Palacios y Javier Zulueta**.
+El **9 de marzo será turno del rejoneo con Rui Fernandes, Diego Ventura y Lea Vicens**, que lidiarán reses de Los Espartales.
+
+El **12 de marzo se celebrará una corrida de Montalvo con Miguel Ángel Perera, Tomás Rufo y Marco Pérez**, mientras que los carteles de máximo atractivo llegarían los próximos días, con combinaciones como **Manzanares, Roca Rey y Pablo Aguado** o **Sebastián Castella, Daniel Luque y Emilio de Justo**.
+
+La feria concluirá el **15 de marzo con un esperado mano a mano entre Talavante y Juan Ortega**, como ya anunció este medio, poniendo el broche a una Magdalena que aspira a consolidarse entre las grandes citas del calendario taurino.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
     image: "/images/nicolas.jpg",
     category: "Entrevistas",
@@ -496,7 +514,7 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   showAuthorHeader: true
   },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Sergio Rodríguez , sin apoderado`,
     image: "/images/abulense.jpg",
     category: "Actualidad",
@@ -509,7 +527,7 @@ Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los
   showAuthorHeader: true
   },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
     image: "/images/tortola.jpg",
 	imageCaption: "Por Eduardo Elvira",
@@ -532,6 +550,24 @@ Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 39,
+    title: `Castellón presenta una Feria de la Magdalena 2026 de alto nivel`,
+    image: "/images/castellon1.jpg",
+    category: "Actualidad",
+    date: "9 de Diciembre de 2025",
+    fullContent: `La empresa Funtausa, dirigida por la **Casa Matilla**, ha hecho públicos los carteles de la **Feria de la Magdalena 2026**, un ciclo que reúne a figuras del toreo, nuevas promesas y algunas de las ganaderías más destacadas del elenco ganadero.
+
+La feria abrirá el **8 de marzo con toros de La Quinta para Ginés Marín, Aarón Palacios y Javier Zulueta**.
+El **9 de marzo será turno del rejoneo con Rui Fernandes, Diego Ventura y Lea Vicens**, que lidiarán reses de Los Espartales.
+
+El **12 de marzo se celebrará una corrida de Montalvo con Miguel Ángel Perera, Tomás Rufo y Marco Pérez**, mientras que los carteles de máximo atractivo llegarían los próximos días, con combinaciones como **Manzanares, Roca Rey y Pablo Aguado** o **Sebastián Castella, Daniel Luque y Emilio de Justo**.
+
+La feria concluirá el **15 de marzo con un esperado mano a mano entre Talavante y Juan Ortega**, como ya anunció este medio, poniendo el broche a una Magdalena que aspira a consolidarse entre las grandes citas del calendario taurino.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 40,
     title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
     image: "/images/nicolas.jpg",
