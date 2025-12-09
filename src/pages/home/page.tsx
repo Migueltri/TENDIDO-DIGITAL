@@ -4044,8 +4044,6 @@ const SponsorBanner = () => (
     </a>
   </div>
 );
-	
-  import Link from "next/link";
 
 if (activeTab === "entrevistas") {
   const entrevistas = latestNews.filter((item) =>
