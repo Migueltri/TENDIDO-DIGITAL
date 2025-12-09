@@ -451,6 +451,19 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Titular: Sergio Rodríguez , sin apoderado`,
+    image: "/images/abulense.jpg",
+    category: "Actualidad",
+    date: "9 de Diciembre de 2025",
+    fullContent: `El matador de toros abulense Sergio Rodríguez se encuentra actualmente sin apoderado. Así lo ha comunicado el propio diestro en un post de Instagram en su cuenta oficial, anunciando así el fin de la relación profesional con Leandro Marcos y Manuel Canorea.
+
+Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los objetivos establecidos al inicio del proyecto del apoderamiento, los cuales eran la base de la relación.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 1001,
     title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
     image: "/images/tortola.jpg",
 	imageCaption: "Por Eduardo Elvira",
@@ -473,6 +486,19 @@ Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 41,
+    title: `Titular: Sergio Rodríguez , sin apoderado`,
+    image: "/images/abulense.jpg",
+    category: "Actualidad",
+    date: "9 de Diciembre de 2025",
+    fullContent: `El matador de toros abulense Sergio Rodríguez se encuentra actualmente sin apoderado. Así lo ha comunicado el propio diestro en un post de Instagram en su cuenta oficial, anunciando así el fin de la relación profesional con Leandro Marcos y Manuel Canorea.
+
+Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los objetivos establecidos al inicio del proyecto del apoderamiento, los cuales eran la base de la relación.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 42,
     title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
     image: "/images/tortola.jpg",
