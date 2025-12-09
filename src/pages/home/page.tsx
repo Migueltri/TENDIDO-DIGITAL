@@ -4183,8 +4183,6 @@ const SponsorBanner = () => (
   </div>
 );
 
-import Link from "next/link";
-
 export default function Page({ activeTab, latestNews }) {
   if (activeTab === "entrevistas") {
     const entrevistas = latestNews.filter((item) =>
@@ -4208,53 +4206,51 @@ export default function Page({ activeTab, latestNews }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {entrevistas.length > 0 ? (
             entrevistas.map((news) => (
-              <Link
+              <a
                 key={news.id}
                 href={`/entrevistas/${news.slug || news.id}`}
-                legacyBehavior
+                className="group block"
               >
-                <a className="group block">
-                  <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border border-gray-100">
-                    {/* Imagen */}
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={news.image}
-                        alt={news.title}
-                        className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-                          {news.category}
-                        </span>
-                      </div>
+                <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border border-gray-100">
+                  {/* Imagen */}
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={news.image}
+                      alt={news.title}
+                      className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
+                        {news.category}
+                      </span>
                     </div>
+                  </div>
 
-                    {/* Contenido */}
-                    <div className="p-6">
-                      <span className="text-gray-500 text-sm block mb-2">
-                        {news.date}
-                      </span>
-                      <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight">
-                        {news.title}
-                      </h3>
-                      {news.excerpt && (
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
-                          {news.excerpt}
-                        </p>
-                      )}
-                      <span className="text-red-600 hover:text-red-700 font-bold text-sm flex items-center">
-                        Leer entrevista
-                        <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                      </span>
-                    </div>
-                  </article>
-                </a>
-              </Link>
+                  {/* Contenido */}
+                  <div className="p-6">
+                    <span className="text-gray-500 text-sm block mb-2">
+                      {news.date}
+                    </span>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight">
+                      {news.title}
+                    </h3>
+                    {news.excerpt && (
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                        {news.excerpt}
+                      </p>
+                    )}
+                    <span className="text-red-600 hover:text-red-700 font-bold text-sm flex items-center">
+                      Leer entrevista
+                      <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                    </span>
+                  </div>
+                </article>
+              </a>
             ))
           ) : (
-            // --------- Si no hay entrevistas ---------
+             // --------- Si no hay entrevistas ---------
             <div className="text-center py-16">
               <div className="bg-gray-50 rounded-2xl p-12 max-w-md mx-auto">
                 <i className="ri-chat-smile-line text-6xl text-gray-300 mb-4"></i>
@@ -4272,7 +4268,7 @@ export default function Page({ activeTab, latestNews }) {
     );
   }
 
-  // Si no está en pestaña “entrevistas”, devuelve algo más (por ejemplo):
+  // Si no se selecciona la pestaña "entrevistas"
   return null;
 }
 	
