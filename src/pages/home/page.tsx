@@ -451,40 +451,20 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `La Feria de San Blas de Valdemorillo 2025 comienza a definirse con tres festejos y un mano a mano de alto interés`,
-    image: "/images/sanblas.jpg",
-	imageCaption: "Plaza de Toros Valdemorillo",
+    title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
+    image: "/images/tortola.jpg",
+	imageCaption: "Por Eduardo Elvira",
     category: "Actualidad",
-    date: "8 de Diciembre de 2025",
-fullContent: `La Feria de **San Blas de Valdemorillo, que se celebrará del 6 al 8 de febrero**, comienza a definir su estructura. El ciclo abrirá con **una novillada con picadores para seis novilleros**, recuperando el carácter de oportunidad que distingue a este inicio de temporada.
+    date: "9 de Diciembre de 2025",
+    fullContent: `**Tórtola de Henares** volverá a convertirse en punto de encuentro para los aficionados al mundo del toro con la celebración del **4º Coloquio Taurino**, que tendrá lugar el **sábado 31 de enero de 2026, a las 19:00 horas, en el Centro Municipal El Horno**, situado en la calle Narciso García Avellano, número 18.
 
-El segundo festejo será una corrida de **Torrealta con un cartel de corte clásico compuesto por Uceda Leal, Juan Ortega y Pablo Aguado**, combinación de estilos que apunta a una tarde de gran atractivo artístico.
+El evento, organizado por **Pablo García Marcos** y con la colaboración del Ayuntamiento de Tórtola de Henares, reunirá a diversas figuras del ámbito taurino, desde matadores hasta novilleros y profesionales. Entre los participantes anunciados se encuentran el matador de toros **Jarocho**, el novillero con caballos **Daniel Moset**, el matador **David Galván**, el banderillero **Jorge Fuentes** y el presidente de la Escuela Taurina de Guadalajara, **José Antonio “Jota”**.
 
-Como cierre del abono, está previsto un mano a mano entre **Borja Jiménez y Tomás Rufo**, que lidiarán tres hierros distintos especialmente reseñados para la ocasión, en lo que se perfila como el plato fuerte de la feria.
+La mesa estará moderada por **Diego Cervera**, quien conducirá el diálogo y las reflexiones sobre la situación actual de la tauromaquia, la formación de nuevos talentos y los retos del sector.
 
-Aunque la configuración aún es provisional, estos primeros avances muestran una programación equilibrada que volverá a situar a Valdemorillo en el centro del arranque taurino del año.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1001,
-    title: `La FIT apuesta por Olivenza; 
-Avance carteles 2026 `,
-    image: "/images/fit.jpg",
-    category: "Actualidad",
-    date: "8 de Diciembre de 2025",
-fullContent: `Los primeros rumores sobre los carteles de la **Feria Taurina de Olivenza 2026** empiezan a tomar forma, y todo apunta a que el ciclo experimentará un giro respecto al formato del año que termina. La empresa apostará por tres corridas de toros y una novillada con picadores, manteniendo la tradición del festejo inaugural del viernes, que en esta ocasión llevará el sello ganadero de **Alejandro Talavante**.
+El coloquio pretende fomentar la cercanía entre profesionales y aficionados, ofreciendo un espacio para el intercambio de opiniones y experiencias. La entrada será libre hasta completar aforo, por lo que se espera una notable asistencia de público.
 
-Según la información adelantada por el periodista **Vicente Zabala de la Serna**, la feria reforzará su apuesta por los jóvenes matadores, configurando un cartel matinal el domingo con **Borja Jiménez, David de Miranda y Víctor Hernández**, nombres que ya sonaban en los primeros esbozos de la programación.
-
-La presencia del peruano **Roca Rey**, ausente en la última edición, será una de las grandes novedades. El torero está contratado en firme y encabezará el cartel estrella del **domingo 8 de marzo**, compartiendo paseíllo con **Alejandro Talavante y Emilio de Justo** ante toros de **Victoriano del Río**, en una cita que promete ser uno de los platos fuertes del serial.
-
-Para el sábado, se anunciará una terna compuesta por **José María Manzanares, Daniel Luque y Juan Ortega**, quienes lidiarán un encierro de **Puerto de San Lorenzo**. El nombre de Daniel Luque también resalta por su continuidad en el ciclo, consolidándose como uno de los pilares del fin de semana.
-
-En la matinal del domingo, todo indica que se lidiará una corrida de la prestigiosa divisa salmantina de **Domingo Hernández**, completando así un programa variado, equilibrado y con presencia de las ganaderías más destacadas del momento.
-
-Aunque la estructura general de la feria parece encarrilada, el avance de los carteles sigue siendo provisional y susceptible de modificaciones. Sin embargo, todo apunta a que la línea definitiva de la edición 2026 ya está marcada: una feria que combina figuras, jóvenes emergentes y la recuperación de nombres esenciales para el aficionado, reforzando el peso de Olivenza como una de las plazas de referencia en el arranque de la temporada taurina.`,
+Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural que ya forma parte del calendario taurino provincial y que cada año atrae a un mayor número de gente.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -493,6 +473,26 @@ Aunque la estructura general de la feria parece encarrilada, el avance de los ca
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 42,
+    title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
+    image: "/images/tortola.jpg",
+	imageCaption: "Por Eduardo Elvira",
+    category: "Actualidad",
+    date: "9 de Diciembre de 2025",
+    fullContent: `**Tórtola de Henares** volverá a convertirse en punto de encuentro para los aficionados al mundo del toro con la celebración del **4º Coloquio Taurino**, que tendrá lugar el **sábado 31 de enero de 2026, a las 19:00 horas, en el Centro Municipal El Horno**, situado en la calle Narciso García Avellano, número 18.
+
+El evento, organizado por **Pablo García Marcos** y con la colaboración del Ayuntamiento de Tórtola de Henares, reunirá a diversas figuras del ámbito taurino, desde matadores hasta novilleros y profesionales. Entre los participantes anunciados se encuentran el matador de toros **Jarocho**, el novillero con caballos **Daniel Moset**, el matador **David Galván**, el banderillero **Jorge Fuentes** y el presidente de la Escuela Taurina de Guadalajara, **José Antonio “Jota”**.
+
+La mesa estará moderada por **Diego Cervera**, quien conducirá el diálogo y las reflexiones sobre la situación actual de la tauromaquia, la formación de nuevos talentos y los retos del sector.
+
+El coloquio pretende fomentar la cercanía entre profesionales y aficionados, ofreciendo un espacio para el intercambio de opiniones y experiencias. La entrada será libre hasta completar aforo, por lo que se espera una notable asistencia de público.
+
+Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural que ya forma parte del calendario taurino provincial y que cada año atrae a un mayor número de gente.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 43,
     title: `La Feria de San Blas de Valdemorillo 2025 comienza a definirse con tres festejos y un mano a mano de alto interés`,
     image: "/images/sanblas.jpg",
