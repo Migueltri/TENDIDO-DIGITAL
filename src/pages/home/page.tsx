@@ -4320,8 +4320,7 @@ const SponsorBanner = () => (
     </a>
   </div>
 );
-
-export default function Page({ activeTab, latestNews }) {
+	
   if (activeTab === "entrevistas") {
     const entrevistas = latestNews.filter((item) =>
       item.title.toLowerCase().includes("entrevista")
@@ -4405,10 +4404,6 @@ export default function Page({ activeTab, latestNews }) {
       </div>
     );
   }
-
-  // Si no se selecciona la pestaña "entrevistas"
-  return null;
-}
 	
 const renderContent = () => {
 if (activeTab === 'guardados') {
