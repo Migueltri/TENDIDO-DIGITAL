@@ -451,97 +451,17 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Castellón presenta una Feria de la Magdalena 2026 de alto nivel`,
-    image: "/images/castellon1.jpg",
+    title: `Garzón avanza novedades ganaderas y mantiene la incertidumbre sobre Morante en Sevilla`,
+    image: "/images/garzon1.jpg",
     category: "Actualidad",
-    date: "9 de Diciembre de 2025",
-    fullContent: `La empresa Funtausa, dirigida por la **Casa Matilla**, ha hecho públicos los carteles de la **Feria de la Magdalena 2026**, un ciclo que reúne a figuras del toreo, nuevas promesas y algunas de las ganaderías más destacadas del elenco ganadero.
+    date: "10 de Diciembre de 2025",
+    fullContent: `El empresario **José María Garzón** anunció que la próxima temporada en la **Plaza de la Maestranza** podría incluir destacadas novedades ganaderas, entre ellas **La Quinta** y, “posiblemente”, **Álvaro Núñez**. Así lo confirmó durante su intervención en el programa Tarde de Toros, de Cope Sevilla, donde aseguró que **“hay ocho o nueve ganaderías básicas que tienen la corrida de Sevilla bien preparada”**.
 
-La feria abrirá el **8 de marzo con toros de La Quinta para Ginés Marín, Aarón Palacios y Javier Zulueta**.
-El **9 de marzo será turno del rejoneo con Rui Fernandes, Diego Ventura y Lea Vicens**, que lidiarán reses de Los Espartales.
+Uno de los temas más esperados de la entrevista fue la situación de **Morante de la Puebla**, cuya presencia en los carteles sevillanos continúa siendo una incógnita. Garzón evitó ofrecer adelantos y explicó que el diestro **“está en un periodo de descanso” y aún no ha decidido si hará temporada en 2026. “La plaza de Sevilla está abierta para cuando quiera”**, subrayó.
 
-El **12 de marzo se celebrará una corrida de Montalvo con Miguel Ángel Perera, Tomás Rufo y Marco Pérez**, mientras que los carteles de máximo atractivo llegarían los próximos días, con combinaciones como **Manzanares, Roca Rey y Pablo Aguado** o **Sebastián Castella, Daniel Luque y Emilio de Justo**.
+Además, el nuevo gestor de la Maestranza reiteró su intención de **ampliar la Feria de San Miguel**, una medida que sigue en fase de estudio, y de poner en marcha un portal de comunicación directa con los abonados. Esta plataforma permitirá a los aficionados expresar opiniones y acceder a ventajas económicas y planes de fidelización.
 
-La feria concluirá el **15 de marzo con un esperado mano a mano entre Talavante y Juan Ortega**, como ya anunció este medio, poniendo el broche a una Magdalena que aspira a consolidarse entre las grandes citas del calendario taurino.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1001,
-    title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
-    image: "/images/nicolas.jpg",
-    category: "Entrevistas",
-    date: "9 de Diciembre de 2025",
-    fullContent: `Con apenas unos años de presencia en redes sociales, **Nicolás Grande** se ha convertido en una de las voces jóvenes más visibles en defensa de la tauromaquia. Estudiante de veterinaria y apasionado del toro, su discurso rompe clichés: no viene de una familia taurina ni creció rodeado de corridas, pero encontró en los sanfermines el inicio de una fascinación que marcaría su camino.
-
-Por eso, desde Portal Tendido Digital hemos querido entrevistarle para conocerle algo más.
-
-**Nicolás, estudias veterinaria. ¿Qué te llevó a interesarte por la tauromaquia, y cómo concilias ese amor por los animales con la defensa del espectáculo taurino?**
-
-Mi verdadera pasión son los animales. El toro de lidia fue, desde el principio, lo que despertó mi interés por este espectáculo. Yo no vengo de una familia especialmente taurina, pero ver cada 7 de julio en las calles de Pamplona a esos animales majestuosos correr fue lo que me generó una fascinación enorme.
-Respecto a la defensa de la tauromaquia, desde fuera puede parecer algo muy complejo. Sin embargo, cuando uno entiende la fiesta brava y se dedica a estudiarla, descubre un mar infinito de argumentos que la sustentan. Solo hace falta acercarse con la mente abierta.
-
-**Has ganado visibilidad en Instagram/TikTok como joven defensor de la tauromaquia. ¿Cómo usas tus redes para comunicar tu visión? ¿Crees que las redes pueden cambiar la percepción de los toros entre la gente joven?**
-
-Desde que empecé en redes no he parado de aprender. Me adentré en un mundo que desconocía por completo; de hecho, ni siquiera tenía TikTok: me lo descargué exclusivamente para empezar a crear contenido.
-En un inicio quería hablar del mundo ganadero en general, ya que había trabajado en una ganadería de carne en Cantabria y me apasionaba la defensa del medio rural. Pero un día decidí subir un vídeo con argumentos a favor de la tauromaquia, y tuvo tanto éxito que me replanteó mi vocación.
-Me di cuenta de que en redes faltaban creadores taurinos adaptados a los nuevos tiempos, capaces de llegar a un público joven. Ahí decidí enfocar mi contenido hacia una especie de “evangelización” de la tauromaquia desde un formato moderno.
-Creo que antes era más fácil consumir tauromaquia, y que durante un tiempo se dejó de difundir este arte; pero gracias a las redes sociales puede volver a conectar con un público amplio.
-Muchos asocian la tauromaquia con generaciones mayores.
-
-**Tú representas una generación joven a favor del toreo. ¿Qué crees que puede aportar tu generación a la tauromaquia? ¿Qué interés ves hoy en jóvenes por este mundo?**
-
-Mi generación es el futuro de todo. De nosotros depende la continuidad de nuestra cultura. Si no somos nosotros quienes ocupamos los tendidos, ¿quién lo hará?
-Tenemos la responsabilidad de escuchar y aprender de nuestros mayores, de los toreros, de los escritores taurinos y de toda la sabiduría que ellos han acumulado, para en un futuro poder transmitirlo.
-Aun así, hay un aspecto que me tranquiliza: los jóvenes empezamos a buscar referentes en una sociedad que muchas veces se percibe como vacía o sin héroes. En la tauromaquia muchos encuentran figuras valientes, personas que se juegan la vida por aquello que aman, mientras vemos a nuestros representantes políticos esconderse ante todo lo que no les beneficia.
-
-**La tauromaquia está muy politizada, con defensores y detractores apasionados. ¿Cómo valoras ese contexto? ¿Piensas que hay una politización excesiva? ¿Qué espacio crees que ha de tener la tradición del toro en la sociedad actual? (Sobre todo por la zona de Barcelona)**
-
-Es una pena que la cultura se politice. No ocurre solo con los toros: hoy en día prácticamente todo se usa para generar tensión y confrontación.
-Existen numerosos ejemplos de personajes públicos que, independientemente de su ideología, acuden a las plazas. Por mencionar algunos, tanto Isabel Díaz Ayuso (del Partido Popular) como Joaquín Sabina (abiertamente socialista) disfrutan de la tauromaquia.
-La fiesta no entiende de colores ni de partidos: es del pueblo y para el pueblo.
-En cuanto a Barcelona, es triste ver cómo la familia Balañá sigue con su juego cobarde de mantener cerradas las plazas. Cataluña es taurina, y eso se refleja en los muchos pueblos de la comunidad donde se celebran festejos con más libertad que en la propia ciudad.
-Aun así, tengo esperanza de que, con la ayuda de mi amigo Mario Vilau, logremos reabrir la Monumental.
-
-**Si tuvieras que explicar a alguien que nunca ha visto un toro de lidia por qué te gusta la tauromaquia, ¿qué argumentos darías apelando a lo emocional, cultural o artístico?**
-
-Le diría que es algo que, hasta que no lo vives, no lo puedes entender. Y aun viviéndolo, sigue siendo difícil de explicar.
-Me gusta compararla con un cuadro abstracto: o tienes la sensibilidad para apreciar el arte que encierra, o simplemente no lo ves. No hay término medio. Puede hacerte vibrar en un buen natural, o puede parecerte solo un hombre con una capa roja.
-Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez para construirse una opinión real sobre los toros.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-    title: `Sergio Rodríguez , sin apoderado`,
-    image: "/images/abulense.jpg",
-    category: "Actualidad",
-    date: "9 de Diciembre de 2025",
-    fullContent: `El matador de toros abulense Sergio Rodríguez se encuentra actualmente sin apoderado. Así lo ha comunicado el propio diestro en un post de Instagram en su cuenta oficial, anunciando así el fin de la relación profesional con Leandro Marcos y Manuel Canorea.
-
-Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los objetivos establecidos al inicio del proyecto del apoderamiento, los cuales eran la base de la relación.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1003,
-    title: `Tórtola de Henares acoge su 4º Coloquio Taurino el próximo 31 de enero`,
-    image: "/images/tortola.jpg",
-	imageCaption: "Por Eduardo Elvira",
-    category: "Actualidad",
-    date: "9 de Diciembre de 2025",
-    fullContent: `**Tórtola de Henares** volverá a convertirse en punto de encuentro para los aficionados al mundo del toro con la celebración del **4º Coloquio Taurino**, que tendrá lugar el **sábado 31 de enero de 2026, a las 19:00 horas, en el Centro Municipal El Horno**, situado en la calle Narciso García Avellano, número 18.
-
-El evento, organizado por **Pablo García Marcos** y con la colaboración del Ayuntamiento de Tórtola de Henares, reunirá a diversas figuras del ámbito taurino, desde matadores hasta novilleros y profesionales. Entre los participantes anunciados se encuentran el matador de toros **Jarocho**, el novillero con caballos **Daniel Moset**, el matador **David Galván**, el banderillero **Jorge Fuentes** y el presidente de la Escuela Taurina de Guadalajara, **José Antonio “Jota”**.
-
-La mesa estará moderada por **Diego Cervera**, quien conducirá el diálogo y las reflexiones sobre la situación actual de la tauromaquia, la formación de nuevos talentos y los retos del sector.
-
-El coloquio pretende fomentar la cercanía entre profesionales y aficionados, ofreciendo un espacio para el intercambio de opiniones y experiencias. La entrada será libre hasta completar aforo, por lo que se espera una notable asistencia de público.
-
-Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural que ya forma parte del calendario taurino provincial y que cada año atrae a un mayor número de gente.`,
+Antes de concluir, Garzón confirmó también su intención de presentarse al próximo **pliego de Málaga**, un movimiento que apunta a reforzar su presencia al frente de algunas de las plazas más relevantes del panorama taurino.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -550,6 +470,23 @@ Con esta cuarta edición, Tórtola de Henares consolida una iniciativa cultural 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 38,
+    title: `Garzón avanza novedades ganaderas y mantiene la incertidumbre sobre Morante en Sevilla`,
+    image: "/images/garzon1.jpg",
+    category: "Actualidad",
+    date: "10 de Diciembre de 2025",
+    fullContent: `El empresario **José María Garzón** anunció que la próxima temporada en la **Plaza de la Maestranza** podría incluir destacadas novedades ganaderas, entre ellas **La Quinta** y, “posiblemente”, **Álvaro Núñez**. Así lo confirmó durante su intervención en el programa Tarde de Toros, de Cope Sevilla, donde aseguró que **“hay ocho o nueve ganaderías básicas que tienen la corrida de Sevilla bien preparada”**.
+
+Uno de los temas más esperados de la entrevista fue la situación de **Morante de la Puebla**, cuya presencia en los carteles sevillanos continúa siendo una incógnita. Garzón evitó ofrecer adelantos y explicó que el diestro **“está en un periodo de descanso” y aún no ha decidido si hará temporada en 2026. “La plaza de Sevilla está abierta para cuando quiera”**, subrayó.
+
+Además, el nuevo gestor de la Maestranza reiteró su intención de **ampliar la Feria de San Miguel**, una medida que sigue en fase de estudio, y de poner en marcha un portal de comunicación directa con los abonados. Esta plataforma permitirá a los aficionados expresar opiniones y acceder a ventajas económicas y planes de fidelización.
+
+Antes de concluir, Garzón confirmó también su intención de presentarse al próximo **pliego de Málaga**, un movimiento que apunta a reforzar su presencia al frente de algunas de las plazas más relevantes del panorama taurino.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 39,
     title: `Castellón presenta una Feria de la Magdalena 2026 de alto nivel`,
     image: "/images/castellon1.jpg",
