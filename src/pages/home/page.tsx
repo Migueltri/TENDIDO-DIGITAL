@@ -451,157 +451,17 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Talavante, Perera y el debut de Borja Jiménez lideran los carteles del Carnaval del Toro 2026 en Ciudad Rodrigo`,
-    image: "/images/talavante.jpg",
+    title: `Luis Bolivar y Román nueva relación de apoderamiento`,
+    image: "/images/luis.jpg",
     category: "Actualidad",
-    date: "10 de Diciembre de 2025",
-    fullContent: `La Comisión del Carnaval del Toro 2026, encabezada por su presidente, Ramón Sastre y con la presencia de Marcos Iglesias, Alcalde de Ciudad Rodrigo, ha presentado durante este mediodía la composición completa de los dos festivales y la novillada con picadores del Carnaval del Toro 2026.
+    date: "11 de Diciembre de 2025",
+    fullContent: `El matador valenciano *Román Collado* ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador *Luis Bolívar*, figura de reconocida experiencia en los ruedos internacionales.
 
-Una lista donde destacan elementos como la celebración de los 20 años de alternativa Alejandro Talavante, pregonero del Carnaval este año, la presencia de toreros formados en la Escuela de Tauromaquia de Salamanca en todos los carteles organizados por el consistorio y el retorno de varios nombres como Diego Urdiales o El Mene, entre otros.
-Así como el debut de Borja Jiménez como matador y el regreso de Miguel Ángel Perera.
+Este acuerdo marca una apuesta estratégica para el futuro de Román, que confía en la sólida trayectoria y el profundo conocimiento del nuevo apoderado para afrontar con mayor proyección y rigor los próximos retos profesionales. Ambas partes han definido esta unión como un proyecto de largo recorrido, basado en la confianza, la ambición y el objetivo común de impulsar la evolución artística del torero.
 
-**SÁBADO 14 DE FEBRERO – Festival Taurino con Picadores**
+Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el *27 de diciembre en la Feria de Cali (Colombia)*, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
 
-4 novillos de Talavante para Diego Urdiales, Alejandro Talavante, Pablo Aguado y El Mene.
-
-**DOMINGO 15 DE FEBRERO – Novillada sin Picadores y Rejones**
-
-4 novillos de Orive para el 2º, 3º, 4º y 5º clasificado del Bolsín Taurino 2026 / 1 astado para el rejoneador Víctor Herrero.
-
-**LUNES 16 DE FEBRERO – Novillada con Picadores**
-
-4 novillos de Sánchez Herrero para Tomas Bastos, Julio Méndez, Felix San Román y Diego Mateos (Debut con picadores)
-
-**MARTES 17 DE FEBRERO – Festival Taurino con Picadores**
-
-3 novillos de Juan Manuel Criado para Miguel Ángel Perera, Borja Jiménez, Manuel Diosleguarde y 1 novillo de Orive para el Triunfador del Bolsín`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1001,
-    title: `La A.A.E.T. “Pedro Romero” cerró una temporada 2025 histórica y recibió un reconocimiento internacional por su labor formativa`,
-    image: "/images/aaet.jpg",
-    category: "Actualidad",
-    date: "10 de Diciembre de 2025",
-    fullContent: `La **Temporada 2025** quedó marcada como una de las más memorables para la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero” (A.A.E.T.)**, que, bajo la presidencia de **Eduardo Ordóñez**, logró cumplir con creces los objetivos previstos del **Proyecto de Fomento de la Cultura Taurina de Andalucía 2025**, que contó con la figura de **Borja Jiménez** como **padrino de lujo** de la temporada de las Escuelas Taurinas de Andalucía.
-La A.A.E.T. “Pedro Romero” consolidó de nuevo su reputación como principal referente formativo de la tauromaquia en **España**. La entidad culminó un año de intensa actividad con un **reconocimiento internacional** que confirmó el peso de su labor en la promoción de nuevos valores y en la defensa de la cultura taurina andaluza.
-
-**Un galardón internacional a más de tres décadas de trabajo**
-
-Durante la temporada, la A.A.E.T. “Pedro Romero” fue distinguida con uno de los premios centrales de la **VI Bienal Internacional de la Tauromaquia**, organizada por la **Asociación Tauromundo** y en colaboración con la **Fundación Cultura Taurina Jerez de la Frontera**, celebrada los días **24, 25 y 26 de octubre de 2025** en el **Alcázar de Jerez de la Frontera**.
-El galardón se concedió como apoyo adicional a la candidatura de la ciudad para ser **Capital Europea de la Cultura 2031**, en un marco cultural de gran relevancia.
-
-El jurado reconoció la trayectoria de “**más de 30 años de continuo Proyecto de Fomento de la Cultura Taurina Andaluza con la permanente promoción de los nuevos valores del toreo**”.
-La asociación, que aglutinó este año a **31 escuelas taurinas** repartidas por toda Andalucía, recibió el **Premio al Fomento y Promoción de la Cultura Taurina** durante la gala celebrada el 25 de octubre. Este reconocimiento subrayó el impacto sostenido de la entidad en la construcción del futuro del toreo.
-
-**Una labor sostenida por la Junta de Andalucía y Canal Sur Tv**
-
-El crecimiento del proyecto formativo durante 2025 no habría sido posible sin el decidido apoyo de la **Junta de Andalucía**, que mantuvo una apuesta firme por el desarrollo de las escuelas taurinas.
-El consejero de la Presidencia, **Antonio Sanz**, destacó durante la temporada que la entidad “**no paraba de crecer y de ayudar a las nuevas generaciones de toreros a cumplir sus sueños**”.
-Sanz recordó también que, en los **últimos 26 años**, más de **10.000 jóvenes** habían pasado por las escuelas, de las cuales surgieron varios centenares de novilleros, banderilleros y hasta **109 matadores de toros**.
-
-La difusión y el éxito del proyecto contaron además con la colaboración determinante de **Canal Sur Televisión**, que volvió a apostar por la emisión íntegra de los ciclos formativos.
-Bajo la dirección de **Juande Mellado** y con el equipo de retransmisiones integrado por **Enrique Romero**, **Ruiz Miguel** y **Noelia López**, la cadena autonómica registró durante el año importantes cuotas de pantalla, alimentadas por el creciente interés del público hacia los jóvenes aspirantes y la calidad de los espectáculos.
-
-**Las Escuelas impulsan los récords de audiencia históricos en las retransmisiones de Canal Sur Tv**
-
-El reciente curso taurino ha vuelto a poner de manifiesto el papel esencial que desempeñan las escuelas taurinas en la promoción y renovación de la fiesta.
-Su trabajo formativo y su capacidad para atraer nuevos talentos han sido decisivos no solo en el éxito del proyecto, sino también en el notable interés generado entre los espectadores.
-
-Prueba de ello es el **récord de audiencia histórico** alcanzado durante la **5ª selección celebrada en Navas de San Juan, el 2 de agosto de 2025**, que registró un **20,00 %** de cuota de pantalla.
-Este seguimiento masivo confirma que los festejos protagonizados por los jóvenes valores formados en las escuelas taurinas mantienen viva la expectativa y la emoción entre la afición.
-
-A lo largo del ciclo, compuesto por **15 festejos emitidos**, la media de audiencia alcanzó un **14,30 %**, consolidando estas retransmisiones como uno de los contenidos más sólidos y seguidos dentro de la programación taurina.
-Aunque Canal Sur Televisión ha sido un canal clave para su difusión, son las **escuelas taurinas** -con su esfuerzo, dedicación y capacidad para descubrir nuevos talentos- las verdaderas impulsoras de estos logros, convirtiéndose en el motor fundamental del creciente interés del público.
-
-**Un año repleto de citas clave y talento emergente**
-
-La **Temporada 2025** se caracterizó por un amplio calendario de actividades en las que se combinaron formación, oportunidad y competitividad.
-Entre los hitos más destacados se encontraron:
-
-**78 Erales** de las siguientes ganaderías: Las Monjas, Toros de El Torero, Martín Lorca, El Añadío, Los Millares, Chamaco, Aquilino Fraile, Condessa de Sobral, Apolinar Soriano.
-
-**59 Becerros** de las siguientes ganaderías: Alvalle, El Rodeo, Isabel Sánchez de Alva, Diego Curiel, Los Millares, Las Monjas, Aquilino Fraile, Martín Lorca, Chamaco, Espartaco y Martín Carrasco.
-
-**XXVI Encuentro Andaluz de Escuelas Taurinas**
-
-El encuentro se desarrolló en Baeza (25 y 26 de octubre) y en Navas de San Juan (1 y 2 de noviembre), reuniendo a **más de 30 alumnos** de distintos centros de Andalucía.
-El evento volvió a consolidarse como una plataforma esencial para la proyección de los jóvenes valores.
-
-**XXVII Ciclo de Becerradas**
-
-El ciclo contó con **seis festejos clasificatorios** celebrados en Ubrique, Castellar, Dos Torres, Algeciras, Sanlúcar de Barrameda y Almadén de la Plata.
-La **gran final**, celebrada el **7 de septiembre** en el Coso de Los Donceles de Lucena, proclamó vencedor al alumno de la Escuela Taurina de Camas, **Manuel Real “Realito”**, que abrió la **Puerta Grande** tras una faena de enorme temple y madurez.
-El segundo y tercer puesto recayeron en **Pablo Sánchez** (E.T. Almería) y **Rogelio Pajuelo** (E.T. Ubrique).
-
-**XXXI Ciclo de Novilladas sin Picadores en Clase Práctica**
-
-Retransmitido al completo por Canal Sur Televisión, el ciclo fue presentado previamente en la **Real Maestranza de Caballería de Sevilla**.
-Se celebraron **11 novilladas**, distribuidas entre junio y septiembre, dentro del Proyecto de Fomento de la Cultura Taurina de Andalucía 2025.
-En total, el programa incluyó **24 festejos en 21 municipios andaluces**, consolidándose como uno de los pilares fundamentales del calendario taurino formativo.
-
-Este ciclo alcanzó su **Gran Final**, el pasado **30 de agosto** en la Plaza de Toros de Villacarrillo (Jaén).
-El alumno de la Escuela Taurina de Ubrique, **Javier Torres “Bombita”**, se alzó como un **triunfador absoluto** y recibió de manos del Sr. Alcalde D. Francisco Miralles y del Secretario General de Interior de la Junta de Andalucía, D. David Gil, el **capote de paseo**.
-Los alumnos **Manuel Quintana** (E.T. Córdoba), **David Gutiérrez** (E.T. Badajoz) e **Isaac Galvín** (E.T. San Fernando) obtuvieron el 2º, 3º y 4º premio respectivamente.
-
-Una gran final que también recordó en la lidia de sus astados a **D. Apolinar Soriano**, fiel amigo de las escuelas al que se homenajeó antes del inicio, con un recuerdo a su familia.
-
-**Una dirección comprometida y un modelo consolidado**
-
-El éxito alcanzado durante 2025 no fue casual, sino fruto de la constancia y el trabajo meticuloso de la junta directiva encabezada por **Eduardo Ordóñez, Francisco Ruiz Miguel, Miguel Serrano Falcón, Juan Repullo Muñoz, Juan Carlos Landrove González, Rafael Osorio Monterroso, Juan Rojas Viruez, José Luis Feria Fernández, Rafael Jiménez González, Manuel Ruiz Valdivia, Francisco Delgado Espino, Francisco Acedo Muñoz, Luis Ortiz Valladares, Antonio Luque Muñoz y Emilio Silvera González**.
-Su dedicación aseguró un modelo educativo sólido, ético y exigente, capaz de transmitir no solo técnica taurina, sino valores y disciplina.
-
-**Una temporada que reafirmó el liderazgo andaluz en la formación taurina**
-
-La suma de logros, reconocimientos, apoyos mediáticos y participación consolidó la Temporada 2025 como una de las más brillantes de la A.A.E.T. “Pedro Romero”.
-La combinación de tradición, pedagogía, institucionalidad y visibilidad mediática volvió a situar a Andalucía como **el principal semillero del toreo en España y un referente internacional**.
-
-El cierre de la temporada dejó claro que el futuro de la tauromaquia seguirá estrechamente vinculado al trabajo profesional y continuado de las **escuelas taurinas andaluzas**.
-Un futuro que ya se construye desde los ruedos menores, desde los valores y desde la firme vocación de quienes se preparan cada día para convertirse en los toreros del mañana.
-
-**Balance del Presidente de la A.A.E.T. “Pedro Romero”, D. Eduardo Ordoñez**
-
-El presidente de la A.A.E.T. “Pedro Romero”, **Eduardo Ordoñez**, ofreció un balance de la temporada 2025, subrayando que el éxito alcanzado no responde a un mérito aislado, sino a la **convergencia de múltiples esfuerzos** que han dado lugar a un año calificado como **histórico** para la Asociación.
-
-Desde el comienzo del proyecto, explicó, se articuló un compromiso firme con los **ayuntamientos, las diputaciones provinciales y las diferentes concejalías**.
-Determinante también ha sido la colaboración de la **Real Maestranza**, los **ganaderos**, los **mayorales**, los **transportistas de ganado** y los **hombres de plata**, cuyo trabajo silencioso, constante y profesional ha garantizado el rigor y la dignidad de cada jornada taurina.
-
-Ordoñez destacó también el papel esencial de los **profesores, directores de las Escuelas Taurinas y colaboradores**, así como la labor de los **presidentes de plazas de toros**.
-A ello se sumó el apoyo institucional de las **Delegaciones del Gobierno Andaluz** y la colaboración de los **medios de comunicación**.
-
-En su intervención, el presidente dedicó un **agradecimiento muy especial a la afición**.
-Su presencia en las plazas y su seguimiento a través de las retransmisiones televisivas evidencian el interés creciente por la tauromaquia de base.
-
-De forma emotiva, Ordoñez reservó un recuerdo para quienes **nos dejaron durante este año**.
-Miembros, colaboradores y amigos que seguirán formando parte del corazón de las Escuelas Andaluzas y permanecerán en nuestra memoria.
-
-En este marco de reconocimientos, Ordoñez destacó la **donación de material taurino personalizado** realizada por **Andrés Roca Rey**, valorada en **30.000 euros**.
-Este gesto demuestra la confianza que las figuras del toreo depositan en la labor de las Escuelas Andaluzas y recuerda que Roca Rey también se formó en ellas en **2013**.
-
-Este reconocimiento puso de relieve cómo los **grandes referentes de la tauromaquia actual** siguen vinculados y agradecidos por su formación en Andalucía.
-
-Finalmente, Ordoñez trasladó la **gratitud** de la Asociación y quiso subrayar el **máximo agradecimiento** a todas las instituciones, profesionales y aficionados cuyo apoyo ha hecho posible una **temporada histórica**.
-
-Con estas palabras, la A.A.E.T. “Pedro Romero” revalida su compromiso con la formación, la cultura y el futuro de la tauromaquia, sustentado en quienes creen en la importancia de esta tradición viva y su transmisión a las nuevas generaciones.`,
-  author: "Manolo Herrera",
-  authorLogo: "/images/manoloherrera.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-    title: `Garzón avanza novedades ganaderas y mantiene la incertidumbre sobre Morante en Sevilla`,
-    image: "/images/garzon1.jpg",
-    category: "Actualidad",
-    date: "10 de Diciembre de 2025",
-    fullContent: `El empresario **José María Garzón** anunció que la próxima temporada en la **Plaza de la Maestranza** podría incluir destacadas novedades ganaderas, entre ellas **La Quinta** y, “posiblemente”, **Álvaro Núñez**. Así lo confirmó durante su intervención en el programa Tarde de Toros, de Cope Sevilla, donde aseguró que **“hay ocho o nueve ganaderías básicas que tienen la corrida de Sevilla bien preparada”**.
-
-Uno de los temas más esperados de la entrevista fue la situación de **Morante de la Puebla**, cuya presencia en los carteles sevillanos continúa siendo una incógnita. Garzón evitó ofrecer adelantos y explicó que el diestro **“está en un periodo de descanso” y aún no ha decidido si hará temporada en 2026. “La plaza de Sevilla está abierta para cuando quiera”**, subrayó.
-
-Además, el nuevo gestor de la Maestranza reiteró su intención de **ampliar la Feria de San Miguel**, una medida que sigue en fase de estudio, y de poner en marcha un portal de comunicación directa con los abonados. Esta plataforma permitirá a los aficionados expresar opiniones y acceder a ventajas económicas y planes de fidelización.
-
-Antes de concluir, Garzón confirmó también su intención de presentarse al próximo **pliego de Málaga**, un movimiento que apunta a reforzar su presencia al frente de algunas de las plazas más relevantes del panorama taurino.`,
+El acuerdo entre Román y Luis Bolívar, de carácter indefinido, nace con la voluntad de fortalecer la proyección del diestro valenciano y encarar con determinación los desafíos de la próxima campaña.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -610,6 +470,23 @@ Antes de concluir, Garzón confirmó también su intención de presentarse al pr
 
 const latestNews: NewsItem[] = [
  { 
+    id: 35,
+    title: `Luis Bolivar y Román nueva relación de apoderamiento`,
+    image: "/images/luis.jpg",
+    category: "Actualidad",
+    date: "11 de Diciembre de 2025",
+    fullContent: `El matador valenciano *Román Collado* ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador *Luis Bolívar*, figura de reconocida experiencia en los ruedos internacionales.
+
+Este acuerdo marca una apuesta estratégica para el futuro de Román, que confía en la sólida trayectoria y el profundo conocimiento del nuevo apoderado para afrontar con mayor proyección y rigor los próximos retos profesionales. Ambas partes han definido esta unión como un proyecto de largo recorrido, basado en la confianza, la ambición y el objetivo común de impulsar la evolución artística del torero.
+
+Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el *27 de diciembre en la Feria de Cali (Colombia)*, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
+
+El acuerdo entre Román y Luis Bolívar, de carácter indefinido, nace con la voluntad de fortalecer la proyección del diestro valenciano y encarar con determinación los desafíos de la próxima campaña.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 36,
     title: `Talavante, Perera y el debut de Borja Jiménez lideran los carteles del Carnaval del Toro 2026 en Ciudad Rodrigo`,
     image: "/images/talavante.jpg",
