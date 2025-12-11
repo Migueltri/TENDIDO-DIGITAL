@@ -455,11 +455,11 @@ const featuredNews: NewsItem[] = [
     image: "/images/luis.jpg",
     category: "Actualidad",
     date: "11 de Diciembre de 2025",
-    fullContent: `El matador valenciano *Román Collado* ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador *Luis Bolívar*, figura de reconocida experiencia en los ruedos internacionales.
+    fullContent: `El matador valenciano **Román Collado** ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador **Luis Bolívar**, figura de reconocida experiencia en los ruedos internacionales.
 
 Este acuerdo marca una apuesta estratégica para el futuro de Román, que confía en la sólida trayectoria y el profundo conocimiento del nuevo apoderado para afrontar con mayor proyección y rigor los próximos retos profesionales. Ambas partes han definido esta unión como un proyecto de largo recorrido, basado en la confianza, la ambición y el objetivo común de impulsar la evolución artística del torero.
 
-Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el *27 de diciembre en la Feria de Cali (Colombia)*, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
+Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el **27 de diciembre en la Feria de Cali (Colombia)**, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
 
 El acuerdo entre Román y Luis Bolívar, de carácter indefinido, nace con la voluntad de fortalecer la proyección del diestro valenciano y encarar con determinación los desafíos de la próxima campaña.`,
   author: "Eduardo Elvira",
@@ -475,11 +475,11 @@ const latestNews: NewsItem[] = [
     image: "/images/luis.jpg",
     category: "Actualidad",
     date: "11 de Diciembre de 2025",
-    fullContent: `El matador valenciano *Román Collado* ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador *Luis Bolívar*, figura de reconocida experiencia en los ruedos internacionales.
+    fullContent: `El matador valenciano **Román Collado** ha dado un paso decisivo en su carrera al anunciar que, a partir de esta temporada, será apoderado por el también matador **Luis Bolívar**, figura de reconocida experiencia en los ruedos internacionales.
 
 Este acuerdo marca una apuesta estratégica para el futuro de Román, que confía en la sólida trayectoria y el profundo conocimiento del nuevo apoderado para afrontar con mayor proyección y rigor los próximos retos profesionales. Ambas partes han definido esta unión como un proyecto de largo recorrido, basado en la confianza, la ambición y el objetivo común de impulsar la evolución artística del torero.
 
-Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el *27 de diciembre en la Feria de Cali (Colombia)*, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
+Con la mirada puesta en la temporada 2026, Román continúa desarrollando su preparación invernal. Su siguiente compromiso será el **27 de diciembre en la Feria de Cali (Colombia)**, uno de los ciclos taurinos más relevantes del continente americano y un escenario idóneo para inaugurar esta nueva etapa.
 
 El acuerdo entre Román y Luis Bolívar, de carácter indefinido, nace con la voluntad de fortalecer la proyección del diestro valenciano y encarar con determinación los desafíos de la próxima campaña.`,
   author: "Eduardo Elvira",
