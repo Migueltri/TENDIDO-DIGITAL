@@ -450,6 +450,39 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1000,
+    title: `Nueva era balear: dos llenos históricos, un indulto y el renacer de la afición`,
+    image: "/images/muro.jpg",
+    category: "Actualidad",
+    date: "12 de Diciembre de 2025",
+    fullContent: `Balears Cambio de Tercio celebra una temporada 2025 histórica en las Islas Baleares, marcada por el renacer de la tauromaquia en toda su autenticidad, dignidad y esencia cultural. La entidad reafirma su objetivo de recuperar la tradición taurina en las islas elevando cada celebración al nivel artístico que merece y garantizando la continuidad de este patrimonio vivo.
+
+ 
+
+La temporada comenzó el 14 de abril en Inca con una cita inolvidable: una corrida de Miura con Lea Vicens, Manuel Escribano y Jesús Enrique Colombo. El festejo registró un lleno absoluto, hasta el punto de colgar el cartel de “no hay billetes”, con numerosos aficionados quedándose fuera de la plaza. La jornada estuvo marcada por un hecho histórico: el debut de la rejoneadora Lea Vicens frente a la legendaria ganadería de Miura. Además, se produjo el esperado regreso de los menores de edad a los toros, con más de 350 entradas vendidas a jóvenes, señal del resurgir generacional de la afición balear. 
+
+ 
+
+El 23 de julio, la agenda cultural impulsada por Balears Cambio de Tercio añadió un nuevo éxito con el concierto acústico de Estrella Morente y el visionado de la premiada película Tardes de Soledad, protagonizada por Roca Rey. El acto reunió a 2.000 personas y alcanzó igualmente el aforo completo, confirmando el interés del público balear por propuestas culturales vinculadas a la tradición taurina.
+
+ 
+
+El 4 de agosto, nuevamente en Inca, se celebró una corrida concurso con reses de Adolfo Martín, Fermín Bohórquez, Partido de Resina y Fuente Ymbro, lidiadas por Andy Cartagena, Antonio Ferrera y Borja Jiménez. La tarde dejó momentos imborrables, entre ellos el indulto de “Calderero”, de Fuente Ymbro, a cargo de Borja Jiménez, un hito por tratarse del último toro indultado en las Islas Baleares. La ganadería recibió además el primer premio Rulero de Oro por la bravura de su ejemplar, mientras los tres toreros lograron los máximos trofeos, ofreciendo una de las jornadas más brillantes de la temporada.
+
+ 
+
+Otro acontecimiento histórico se vivió el 14 de septiembre en Muro, donde la plaza de toros reabrió sus puertas tras ocho años cerrada. El regreso no pudo ser más rotundo: nuevo lleno absoluto y una tarde que concluyó con los tres toreros —Javier Conde, David de Miranda y Marco Pérez— saliendo a hombros. Destacó también la vuelta al ruedo del toro “Potrico”, con una afición que volvió a demostrar su fuerza, su emoción y la enorme vitalidad que la tauromaquia mantiene en las Islas Baleares.
+
+ 
+
+La temporada concluyó el 7 de diciembre en Muro con un festival taurino que reunió a once toreros y ganado de 45.50, Enrique Ponce, Monte la Ermita y Samuel Flores. La jornada se desarrolló con un ambiente de éxito rotundo y una alta participación de aficionados, confirmando nuevamente el interés creciente por las celebraciones taurinas en la isla. 
+Para cerrar esta intensa temporada, Balears Cambio de Tercio ha querido dirigirse a la afición balear con un mensaje firmado por **D. Francisco D’Agostino** y **D. Javier Conde**, quienes expresan su más profundo agradecimiento al público:
+“Gracias a vosotros hemos demostrado al mundo que la tauromaquia balear está más viva que nunca y que goza de una salud espléndida. Nuestro deber y compromiso es seguir trabajando por y para vosotros, con la misma ilusión y entrega que nos habéis regalado. Gracias por hacer historia con nosotros”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1001,
     title: `David de Miranda, Morante, Talavante, Emilio de Justo, Borja Jiménez, y Aguado candidatos a la oreja de oro de RNE`,
     image: "/images/premio oreja.jpg",
@@ -531,7 +564,40 @@ Por su parte, Jesús de Alba vuelve a apostar por otro torero de clase, con un c
 ];
 
 const latestNews: NewsItem[] = [
- { 
+	{ 
+    id: 31,
+    title: `Nueva era balear: dos llenos históricos, un indulto y el renacer de la afición`,
+    image: "/images/muro.jpg",
+    category: "Actualidad",
+    date: "12 de Diciembre de 2025",
+    fullContent: `Balears Cambio de Tercio celebra una temporada 2025 histórica en las Islas Baleares, marcada por el renacer de la tauromaquia en toda su autenticidad, dignidad y esencia cultural. La entidad reafirma su objetivo de recuperar la tradición taurina en las islas elevando cada celebración al nivel artístico que merece y garantizando la continuidad de este patrimonio vivo.
+
+ 
+
+La temporada comenzó el 14 de abril en Inca con una cita inolvidable: una corrida de Miura con Lea Vicens, Manuel Escribano y Jesús Enrique Colombo. El festejo registró un lleno absoluto, hasta el punto de colgar el cartel de “no hay billetes”, con numerosos aficionados quedándose fuera de la plaza. La jornada estuvo marcada por un hecho histórico: el debut de la rejoneadora Lea Vicens frente a la legendaria ganadería de Miura. Además, se produjo el esperado regreso de los menores de edad a los toros, con más de 350 entradas vendidas a jóvenes, señal del resurgir generacional de la afición balear. 
+
+ 
+
+El 23 de julio, la agenda cultural impulsada por Balears Cambio de Tercio añadió un nuevo éxito con el concierto acústico de Estrella Morente y el visionado de la premiada película Tardes de Soledad, protagonizada por Roca Rey. El acto reunió a 2.000 personas y alcanzó igualmente el aforo completo, confirmando el interés del público balear por propuestas culturales vinculadas a la tradición taurina.
+
+ 
+
+El 4 de agosto, nuevamente en Inca, se celebró una corrida concurso con reses de Adolfo Martín, Fermín Bohórquez, Partido de Resina y Fuente Ymbro, lidiadas por Andy Cartagena, Antonio Ferrera y Borja Jiménez. La tarde dejó momentos imborrables, entre ellos el indulto de “Calderero”, de Fuente Ymbro, a cargo de Borja Jiménez, un hito por tratarse del último toro indultado en las Islas Baleares. La ganadería recibió además el primer premio Rulero de Oro por la bravura de su ejemplar, mientras los tres toreros lograron los máximos trofeos, ofreciendo una de las jornadas más brillantes de la temporada.
+
+ 
+
+Otro acontecimiento histórico se vivió el 14 de septiembre en Muro, donde la plaza de toros reabrió sus puertas tras ocho años cerrada. El regreso no pudo ser más rotundo: nuevo lleno absoluto y una tarde que concluyó con los tres toreros —Javier Conde, David de Miranda y Marco Pérez— saliendo a hombros. Destacó también la vuelta al ruedo del toro “Potrico”, con una afición que volvió a demostrar su fuerza, su emoción y la enorme vitalidad que la tauromaquia mantiene en las Islas Baleares.
+
+ 
+
+La temporada concluyó el 7 de diciembre en Muro con un festival taurino que reunió a once toreros y ganado de 45.50, Enrique Ponce, Monte la Ermita y Samuel Flores. La jornada se desarrolló con un ambiente de éxito rotundo y una alta participación de aficionados, confirmando nuevamente el interés creciente por las celebraciones taurinas en la isla. 
+Para cerrar esta intensa temporada, Balears Cambio de Tercio ha querido dirigirse a la afición balear con un mensaje firmado por **D. Francisco D’Agostino** y **D. Javier Conde**, quienes expresan su más profundo agradecimiento al público:
+“Gracias a vosotros hemos demostrado al mundo que la tauromaquia balear está más viva que nunca y que goza de una salud espléndida. Nuestro deber y compromiso es seguir trabajando por y para vosotros, con la misma ilusión y entrega que nos habéis regalado. Gracias por hacer historia con nosotros”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 30,
     title: `David de Miranda, Morante, Talavante, Emilio de Justo, Borja Jiménez, y Aguado candidatos a la oreja de oro de RNE`,
     image: "/images/premio oreja.jpg",
