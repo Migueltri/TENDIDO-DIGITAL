@@ -462,7 +462,7 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{"www.plazadetorosdebrihuega.es"}
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web www.plazadetorosdebrihuega.es
 <a
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
@@ -491,7 +491,7 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{"www.plazadetorosdebrihuega.es"}
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web www.plazadetorosdebrihuega.es
 <a
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
