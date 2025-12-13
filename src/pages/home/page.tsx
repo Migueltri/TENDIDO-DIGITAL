@@ -451,119 +451,43 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Nueva era balear: dos llenos históricos, un indulto y el renacer de la afición`,
-    image: "/images/muro.jpg",
+    title: `Tres figuras para la corrida de Primavera en Brihuega`,
+    image: "/images/figuras.jpg",
     category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `Balears Cambio de Tercio celebra una temporada 2025 histórica en las Islas Baleares, marcada por el renacer de la tauromaquia en toda su autenticidad, dignidad y esencia cultural. La entidad reafirma su objetivo de recuperar la tradición taurina en las islas elevando cada celebración al nivel artístico que merece y garantizando la continuidad de este patrimonio vivo.
+    date: "13 de Diciembre de 2025",
+    fullContent: `Brihuega celebrará el próximo 11 de abril, a las 17:30 horas, su tradicional Corrida de Primavera en la plaza de toros de la localidad alcarreña. El cartel reúne a José María Manzanares, que como ya anunció este medio estará presente , Juan Ortega y Andrés Roca Rey, tres figuras destacadas del escalafón actual.
 
- 
+Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olga Jiménez , ganaderías propietarias de la familia Matilla.
 
-La temporada comenzó el 14 de abril en Inca con una cita inolvidable: una corrida de Miura con Lea Vicens, Manuel Escribano y Jesús Enrique Colombo. El festejo registró un lleno absoluto, hasta el punto de colgar el cartel de “no hay billetes”, con numerosos aficionados quedándose fuera de la plaza. La jornada estuvo marcada por un hecho histórico: el debut de la rejoneadora Lea Vicens frente a la legendaria ganadería de Miura. Además, se produjo el esperado regreso de los menores de edad a los toros, con más de 350 entradas vendidas a jóvenes, señal del resurgir generacional de la afición balear. 
+El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
- 
-
-El 23 de julio, la agenda cultural impulsada por Balears Cambio de Tercio añadió un nuevo éxito con el concierto acústico de Estrella Morente y el visionado de la premiada película Tardes de Soledad, protagonizada por Roca Rey. El acto reunió a 2.000 personas y alcanzó igualmente el aforo completo, confirmando el interés del público balear por propuestas culturales vinculadas a la tradición taurina.
-
- 
-
-El 4 de agosto, nuevamente en Inca, se celebró una corrida concurso con reses de Adolfo Martín, Fermín Bohórquez, Partido de Resina y Fuente Ymbro, lidiadas por Andy Cartagena, Antonio Ferrera y Borja Jiménez. La tarde dejó momentos imborrables, entre ellos el indulto de “Calderero”, de Fuente Ymbro, a cargo de Borja Jiménez, un hito por tratarse del último toro indultado en las Islas Baleares. La ganadería recibió además el primer premio Rulero de Oro por la bravura de su ejemplar, mientras los tres toreros lograron los máximos trofeos, ofreciendo una de las jornadas más brillantes de la temporada.
-
- 
-
-Otro acontecimiento histórico se vivió el 14 de septiembre en Muro, donde la plaza de toros reabrió sus puertas tras ocho años cerrada. El regreso no pudo ser más rotundo: nuevo lleno absoluto y una tarde que concluyó con los tres toreros —Javier Conde, David de Miranda y Marco Pérez— saliendo a hombros. Destacó también la vuelta al ruedo del toro “Potrico”, con una afición que volvió a demostrar su fuerza, su emoción y la enorme vitalidad que la tauromaquia mantiene en las Islas Baleares.
-
- 
-
-La temporada concluyó el 7 de diciembre en Muro con un festival taurino que reunió a once toreros y ganado de 45.50, Enrique Ponce, Monte la Ermita y Samuel Flores. La jornada se desarrolló con un ambiente de éxito rotundo y una alta participación de aficionados, confirmando nuevamente el interés creciente por las celebraciones taurinas en la isla. 
-Para cerrar esta intensa temporada, Balears Cambio de Tercio ha querido dirigirse a la afición balear con un mensaje firmado por **D. Francisco D’Agostino** y **D. Javier Conde**, quienes expresan su más profundo agradecimiento al público:
-“Gracias a vosotros hemos demostrado al mundo que la tauromaquia balear está más viva que nunca y que goza de una salud espléndida. Nuestro deber y compromiso es seguir trabajando por y para vosotros, con la misma ilusión y entrega que nos habéis regalado. Gracias por hacer historia con nosotros”.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `David de Miranda, Morante, Talavante, Emilio de Justo, Borja Jiménez, y Aguado candidatos a la oreja de oro de RNE`,
-    image: "/images/premio oreja.jpg",
-    category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `Un año más, Radio Nacional de España celebrará uno de los reconocimientos más emblemáticos del panorama taurino. Los premios que otorga el veterano programa Clarín, la “Oreja de Oro” al diestro más destacado de la temporada y el “Hierro de Oro” a la ganadería más sobresaliente del curso, se han consolidado como una referencia ineludible en el balance anual de la tauromaquia.
-
-Tras la primera ronda de votaciones en la que participan los colaboradores –30 críticos en la materia tanto nacionales como internacionales– del espacio radiofónico como sus oyentes, ya se ha configurado la lista de seis candidatos que optarán a la prestigiosa “Oreja de Oro”. Entre ellos destaca el nombre del onubense David de Miranda, cuya temporada ha despertado elogios dentro y fuera del circuito taurino. Su inclusión entre los finalistas confirma el respaldo que ha recibido por parte de la afición, que ha seguido con atención su evolución y sus triunfos en plazas de diversa categoría.
-
-“Para mí es una enorme alegría estar entre los seis semifinalistas de la Oreja de Oro. Es la primera vez que opto a un galardón de esta importancia y, sinceramente, me hace muchísima ilusión. Cuando uno ve su nombre junto al de toreros a los que admira y respeta, siente que todo el esfuerzo y los sacrificios de la temporada han merecido la pena.
-
-Me llena de satisfacción que los colaboradores del programa y los oyentes hayan pensado en mí para esta candidatura. Es un impulso muy bonito, un reconocimiento que recibo con humildad y con el compromiso de seguir creciendo como torero y de seguir honrando mi profesión cada tarde. Pase lo que pase, estar en esta lista ya es un premio en sí mismo.” Expresó De Miranda.
-
-Junto a David de Miranda completan la nómina de aspirantes figuras de primera línea como: Morante de la Puebla, Alejandro Talavante, Emilio de Justo, Borja Jiménez y Pablo Aguado. Seis nombres que representan estilos, trayectorias y sensibilidades distintas, y que prometen una competencia reñida en la recta final de las votaciones.
-
-Mientras tanto, el galardón paralelo del “Hierro de Oro” también centra expectativas entre las ganaderías más notables del año, aunque la organización aún no ha revelado las candidaturas oficiales. El anuncio de ambos premios se ha convertido en una tradición esperada por los aficionados y la resolución final se dará a conocer en las próximas semanas, cuando RNE haga público el resultado definitivo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-  },
-	{ 
-    id: 1002,
-    title: `Pablo Aguado llena el Hotel Oriente en un encuentro memorable con la afición catalana organizado por UTYAC`,
-    image: "/images/utyac.jpg",
-    category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `La afición taurina catalana volvió a demostrar su fidelidad en el acto organizado por la siempre activa **UTYAC**, que reunió a un centenar de asistentes en el histórico **Hotel Oriente de Las Ramblas de Barcelona** —el mismo en el que se hospedaba Manolete cuando toreaba en La Monumental— y que pronto colgó el cartel de «no hay billetes».
-
-El encuentro consistió en una conversación cercana y dinámica de más de una hora entre **Pablo Aguado** y Gerard Mas, miembro de UTYAC. El torero sevillano expresó su satisfacción por compartir este espacio con la afición catalana, destacando la capacidad de resistencia y compromiso que mantiene viva la llama del toreo en Barcelona pese a la adversidad. Con un discurso pausado, reflexivo y salpicado, cuando procedía, de ese ingenio sevillano que lo caracteriza, Aguado abordó cuestiones sobre su trayectoria profesional, su concepto del toreo y sus principales referentes. El moderador recordó, a propósito de su naturalidad, la célebre máxima belmontina: «Se torea como se es».
-
-Durante el turno de preguntas, el diestro profundizó en su reciente experiencia cinematográfica con Albert Serra, una pieza derivada de la premiada Tardes de soledad y concebida como instalación museística, ya expuesta en Bruselas hace unas semanas. Asimismo, desmintió cualquier mala relación con Roca Rey y, al ser consultado por su cartel ideal en un hipotético regreso de los toros a Barcelona, citó sin vacilar a **Pepe Luis Vázquez y a Curro Romero como compañeros de terna**.
-
-Con este acto, UTYAC continúa una línea de encuentros que en los últimos meses ha contado con figuras como **Paco Ureña, Albert Serra, Juan Ortega o Uceda Leal**, demostrando una vez más que la afición catalana permanece viva y esperanzada, pese al cierre de La Monumental y en espera del día en que la tauromaquia recupere su espacio natural en la ciudad.`,
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web
+www.plazadetorosdebrihuega.es.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
-  },
-	{ 
-    id: 1003,
-    title: `Rui Bento se incorpora a la empresa FIT y acompañará a Daniel Luque la próxima temporada`,
-    image: "/images/rui.jpg",
-    category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `Fusión Internacional por la Tauromaquia (FIT), empresa perteneciente al Grupo Taurino Internacional (GTI), ha incorporado a sus filas a Rui Bento Vasques, reconocido por su amplia y prestigiosa trayectoria en el ámbito taurino.
-
-Con esta integración, Rui Bento pasará a formar parte del equipo encabezado por Antonio Barrera —representante y director de GTI en España— en las labores de apoderamiento de Daniel Luque, acompañando al torero durante la temporada y reforzando la dirección de su carrera profesional.
-
-Daniel Luque, considerado uno de los diestros más destacados del escalafón y protagonista de numerosas actuaciones de éxito en las últimas temporadas, está apoderado por FIT desde la finalización de su campaña europea. Esta alianza nació con el objetivo de impulsar aún más la carrera del matador de Gerena y situar su nombre en las más altas cotas del toreo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1004,
-    title: `Telemadrid retransmitirá al completo la Feria de San Isidro`,
-    image: "/images/telemadrid.jpg",
-    category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `La Feria de San Isidro de Madrid volverá a ser retransmitida íntegramente por Telemadrid. Así lo ha confirmado el presidente de Plaza 1, Rafael García Garrido, en una entrevista concedida al diario ABC. “Puedo avanzar que Telemadrid emitirá nuevamente la feria al completo y, además, los fines de semana se sumarán otras cadenas autonómicas”, señaló el empresario.
-
-Será el segundo año consecutivo en que la cadena autonómica ofrezca en abierto el ciclo taurino más relevante de la temporada. La Feria de San Isidro dará comienzo el 8 de mayo y se prolongará hasta el 7 de junio, fecha en la que tendrá lugar la corrida In Memoriam en homenaje a Ignacio Sánchez Mejías, y en la que Borja Jiménez lidiará en solitario seis toros. El 14 de junio se celebrará, por su parte, la tradicional Corrida de la Beneficencia.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1005,
-    title: `Mario Navas, apoderado por Jesús de Alba`,
-    image: "/images/navas.jpg",
-    category: "Actualidad",
-    date: "12 de Diciembre de 2025",
-    fullContent: `El matador de toros Mario Navas y Jesús de Alba han sellado un nuevo apoderamiento rubricado con el clásico apretón de manos. En un comunicado emitido a este medio, Mario Navas ha destacado que ‘Jesús de Alba es la persona indicada para poder formar un buen equipo para la consecución de sus objetivos’.
-
-Por su parte, Jesús de Alba vuelve a apostar por otro torero de clase, con un concepto propicio para abrirse paso en el escalafón.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  }
+   }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 30,
+    title: `Tres figuras para la corrida de Primavera en Brihuega`,
+    image: "/images/figuras.jpg",
+    category: "Actualidad",
+    date: "13 de Diciembre de 2025",
+    fullContent: `Brihuega celebrará el próximo 11 de abril, a las 17:30 horas, su tradicional Corrida de Primavera en la plaza de toros de la localidad alcarreña. El cartel reúne a José María Manzanares, que como ya anunció este medio estará presente , Juan Ortega y Andrés Roca Rey, tres figuras destacadas del escalafón actual.
+
+Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olga Jiménez , ganaderías propietarias de la familia Matilla.
+
+El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
+
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web
+www.plazadetorosdebrihuega.es.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
 	{ 
     id: 31,
     title: `Nueva era balear: dos llenos históricos, un indulto y el renacer de la afición`,
