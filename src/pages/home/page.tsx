@@ -467,7 +467,7 @@ Las entradas ya están a la venta, con precios desde 27 euros, a través de la w
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-blue-600 hover:text-blue-800 underline hover:underline-offset-2 transition-colors duration-200"
+  className="font-medium bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent hover:from-blue-600 hover:to-sky-500 underline decoration-sky-400 hover:decoration-blue-600 transition-all duration-300"
 >
   www.plazadetorosdebrihuega.es
 </a>`,
@@ -496,7 +496,7 @@ Las entradas ya están a la venta, con precios desde 27 euros, a través de la w
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-blue-600 hover:text-blue-800 underline hover:underline-offset-2 transition-colors duration-200"
+  className="font-medium bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent hover:from-blue-600 hover:to-sky-500 underline decoration-sky-400 hover:decoration-blue-600 transition-all duration-300"
 >
   www.plazadetorosdebrihuega.es
 </a>`,
