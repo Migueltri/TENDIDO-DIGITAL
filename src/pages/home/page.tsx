@@ -461,8 +461,16 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web
-www.plazadetorosdebrihuega.es.`,
+
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{" "}
+<a
+  href="https://www.plazadetorosdebrihuega.es"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-red-600 hover:underline font-medium"
+>
+  www.plazadetorosdebrihuega.es
+</a>`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -472,7 +480,7 @@ www.plazadetorosdebrihuega.es.`,
 const latestNews: NewsItem[] = [
 	{ 
     id: 30,
-    title: `Tres figuras para la corrida de Primavera en Brihuega`,
+        title: `Tres figuras para la corrida de Primavera en Brihuega`,
     image: "/images/figuras.jpg",
     category: "Actualidad",
     date: "13 de Diciembre de 2025",
@@ -482,8 +490,16 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web
-www.plazadetorosdebrihuega.es.`,
+
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{" "}
+<a
+  href="https://www.plazadetorosdebrihuega.es"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-red-600 hover:underline font-medium"
+>
+  www.plazadetorosdebrihuega.es
+</a>`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
