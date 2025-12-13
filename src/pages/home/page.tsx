@@ -462,7 +462,7 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{" "}
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{"www.plazadetorosdebrihuega.es"}
 <a
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
@@ -479,7 +479,7 @@ Las entradas ya están a la venta, con precios desde 27 euros, a través de la w
 
 const latestNews: NewsItem[] = [
 	{ 
-    id: 30,
+    id: 27,
         title: `Tres figuras para la corrida de Primavera en Brihuega`,
     image: "/images/figuras.jpg",
     category: "Actualidad",
@@ -491,7 +491,7 @@ Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olg
 El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
 
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{" "}
+Las entradas ya están a la venta, con precios desde 27 euros, a través de la web{"www.plazadetorosdebrihuega.es"}
 <a
   href="https://www.plazadetorosdebrihuega.es"
   target="_blank"
@@ -505,7 +505,7 @@ Las entradas ya están a la venta, con precios desde 27 euros, a través de la w
   showAuthorHeader: true
    },
 	{ 
-    id: 31,
+    id: 28,
     title: `Nueva era balear: dos llenos históricos, un indulto y el renacer de la afición`,
     image: "/images/muro.jpg",
     category: "Actualidad",
@@ -538,7 +538,7 @@ Para cerrar esta intensa temporada, Balears Cambio de Tercio ha querido dirigirs
     showAuthorHeader: true
    },
 	{ 
-    id: 30,
+    id: 29,
     title: `David de Miranda, Morante, Talavante, Emilio de Justo, Borja Jiménez, y Aguado candidatos a la oreja de oro de RNE`,
     image: "/images/premio oreja.jpg",
     category: "Actualidad",
