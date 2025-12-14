@@ -692,8 +692,8 @@ Toros de **Victoriano del Río** y **Domingo Hernández** para **Borja Jiménez*
     id: 26,
     title: `David de Miranda recibe en Pozoblanco el Premio 
 “Paquirri” al triunfador de la feria`,
-    image: "/images/paquirri.jpg",
-	footerImage1: "/images/paquirri1.jpg",
+    image: "/images/paquirri1.jpg",
+	footerImage1: "/images/paquirri.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `Pozoblanco acogió en la jornada del viernes 12 de diciembre, la entrega de los Premios “Paquirri” a los triunfadores de la Feria Taurina de Pozoblanco 2025, galardones concedidos por la Asociación Puerta El Gallo, en un acto celebrado en el reconocido Hotel La Noriega y enmarcado dentro de las I Jornadas Taurinas organizadas por la citada entidad.
