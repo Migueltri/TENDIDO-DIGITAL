@@ -451,29 +451,135 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Tres figuras para la corrida de Primavera en Brihuega`,
-    image: "/images/figuras.jpg",
+    title: `Borja Jiménez, protagonista en la II Gala de Premios de la Asociación Cultural Taurina ‘Chenel y Oro’ en Las Ventas`,
+    image: "/images/protagonista.jpg",
     category: "Actualidad",
-    date: "13 de Diciembre de 2025",
-    fullContent: `Brihuega celebrará el próximo 11 de abril, a las 17:30 horas, su tradicional Corrida de Primavera en la plaza de toros de la localidad alcarreña. El cartel reúne a José María Manzanares, que como ya anunció este medio estará presente , Juan Ortega y Andrés Roca Rey, tres figuras destacadas del escalafón actual.
+    date: "14 de Diciembre de 2025",
+    fullContent: `**La Asociación Cultural Taurina ‘Chenel y Oro’** celebró el pasado sábado 13 de diciembre la segunda edición de su Gala de Premios, un acto que tuvo lugar a partir de las 12:00 horas en la Sala Antonio Bienvenida de la Plaza de Toros de **Las Ventas**.
 
-Se lidiarán seis toros de las ganaderías Hermanos García Jiménez y Doña Olga Jiménez , ganaderías propietarias de la familia Matilla.
+El momento más destacado de la jornada fue la entrega del premio a la mejor faena de la temporada, que recayó en **Borja Jiménez** por su histórica actuación frente al toro ‘**Milhijas**’, de la ganadería de **Victorino Martín**, lidiado el pasado mes de junio en el coso venteño.
 
-El festejo está organizado por FUNTAUSA, gestionado por Toño Matilla.
+Durante la gala también se procedió a la entrega de los reconocimientos correspondientes al **II Premio Internacional ‘Joven por la Tauromaquia’**, distinguiendo a jóvenes premiados por su compromiso y defensa de la Fiesta, así como a distintos profesionales que han sobresalido a lo largo de la temporada 2025 en Las Ventas, en un acto que puso en valor a todos los estamentos del toreo.
 
+En las diferentes categorías, los galardones fueron concedidos a:
+• Saltillo, mejor encierro  
+• “Brigadier”, de Pedraza de Yeltes, mejor res lidiada  
+• **Víctor Hernández**, mejor torero  
+• **Borja Lorente**, mejor puyazo  
+• **Iván García**, mejor hombre de plata  
+• **Víctor del Pozo**, mejor par de banderillas  
+• **Raúl Ruiz**, mejor brega  
+• **Morante de la Puebla**, mejor estocada  
+• **Ignacio San Juan**, mejor presidente  
+• **Isaac Fonseca** y su cuadrilla, reconocimiento a la buena lidia  
+• **Borja Jiménez**, mejor faena  
 
-Las entradas ya están a la venta, con precios desde 27 euros, a través de la web
-<a
-  href="https://www.plazadetorosdebrihuega.es"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.plazadetorosdebrihuega.es
-</a>`,
+Asimismo, la asociación hizo entrega del **Premio Gabriel Carvajal** a la mejor fotografía taurina, que fue otorgado al fotógrafo **Aritz Arambarri** por una imagen de Morante de la Puebla captada en Salamanca.
+
+La gala concluyó consolidando, una vez más, a Las Ventas como epicentro del reconocimiento a la excelencia taurina y al trabajo de todos los profesionales que dan forma a la temporada.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
+   },		
+	{ 
+    id: 1001,
+    title: `Plaza 1 avanza en la confección de San Isidro 2026`,
+    image: "/images/`plaza1.jpg",
+    category: "Actualidad",
+    date: "14 de Diciembre de 2025",
+    fullContent: `Plaza 1 avanza de manera firme en la confección de la **Feria de San Isidro 2026**, el abono más relevante de la temporada. Aunque la presentación oficial de los carteles tendrá lugar el **5 de febrero**, en una gala que se celebrará sobre el ruedo de **Las Ventas** y pendiente aún de la aprobación del Consejo de Asuntos Taurinos de la Comunidad de Madrid, las combinaciones quedarán prácticamente definidas antes de Navidad.
+
+El serial estará marcado por un acontecimiento de especial trascendencia: la **Corrida In Memoriam** en homenaje a **Ignacio Sánchez Mejías**, programada para el **domingo 14 de junio**. El festejo contará con seis toros —tres de **Victoriano del Río** y tres de **Domingo Hernández**— que serán lidiados en solitario por **Borja Jiménez**, en una de las apuestas más singulares y simbólicas del abono.
+
+Entre los nombres propios del ciclo, **Alejandro Talavante** será uno de los toreros con mayor protagonismo al actuar en tres tardes: abrirá la feria el **8 de mayo** con **Núñez del Cuvillo**, hará el paseíllo en la **Corrida de Beneficencia** con **Victoriano del Río** y completará su participación con un encierro de **Garcigrande**, junto a **Emilio de Justo** y **Pablo Aguado**.
+
+**Andrés Roca Rey** doblará actuación en San Isidro, interviniendo en la Beneficencia y en una de las dos corridas de **Juan Pedro Domecq** incluidas en el abono. **Juan Ortega**, por su parte, actuará en dos tardes con toros de **Puerto de San Lorenzo** y **Núñez del Cuvillo**, esta última previsiblemente junto a una confirmación de alternativa.
+
+Tras su brillante actuación en la pasada **Feria de Otoño**, **Emilio de Justo** ha optado por una presencia más selectiva, limitándose a dos festejos de máximo relieve, con los hierros de **Victoriano del Río** y **Garcigrande**. Decisión similar ha tomado **Tomás Rufo**, que además apostará por el encierro de **La Quinta**.
+
+Especial protagonismo tendrá **Víctor Hernández**, que se perfila como uno de los nombres fuertes del ciclo con tres tardes junto a figuras, con las ganaderías de **Juan Pedro Domecq**, **Jandilla** y **Victoriano del Río**.
+
+**Fernando Adrián** podría comparecer también en tres festejos, incluyendo las corridas de **Victorino Martín**, **Fuente Ymbro** y el tradicional festejo del **15 de mayo**, junto a **Diego Urdiales** y una confirmación de alternativa.
+
+Entre las ganaderías confirmadas figuran **Victoriano del Río** (dos tardes y media), **Juan Pedro Domecq** (dos), **Garcigrande**, **Jandilla**, **Alcurrucén**, **Victorino Martín**, **José Escolar**, **Conde de Mayalde**, **Puerto de San Lorenzo**, **Fuente Ymbro**, **Adolfo Martín**, **Dolores Aguirre**, **Partido de Resina**, **El Parralejo**, **Laguna Janda**, **Araúz de Robles**, **La Quinta**, **El Pilar** y **Pedraza de Yeltes**, entre otras.
+
+**Avance completo de combinaciones**
+
+• **2 de mayo – Corrida Goyesca**
+Toros por definir para **Uceda Leal**, **Javier Cortés** y un tercer espada por confirmar.
+
+• **8 de mayo – Apertura de feria**
+Toros de **Núñez del Cuvillo** para **Alejandro Talavante**, **Juan Ortega** y una confirmación.
+
+• **15 de mayo – San Isidro**
+Toros de **El Torero** para **Diego Urdiales**, **Fernando Adrián** y una confirmación.
+
+• Toros de **Victoriano del Río** para **Sebastián Castella**, **Emilio de Justo** y **Tomás Rufo**.
+
+• Toros de **Juan Pedro Domecq** para **Diego Urdiales**, **Andrés Roca Rey** y una confirmación.
+
+• Toros de **Juan Pedro Domecq** para **Víctor Hernández** y otros dos toreros por definir.
+
+• Toros de **Garcigrande** para **Alejandro Talavante**, **Emilio de Justo** y **Pablo Aguado**.
+
+• Toros de **Jandilla** para **José María Manzanares**, **Borja Jiménez** y **Víctor Hernández**.
+
+• Toros de **Victorino Martín** para **Fernando Adrián**, **Román** y un tercer espada.
+
+• Toros de **José Escolar** para **Damián Castaño**, **Gómez del Pilar** y un torero más.
+
+• Toros de **Conde de Mayalde** para **Román** y otros dos diestros.
+
+• Toros de **Puerto de San Lorenzo** para **José María Manzanares**, **Juan Ortega** y **Pablo Aguado**.
+
+• Toros de **Fuente Ymbro** para **Miguel Ángel Perera**, **Paco Ureña** (posible) y **David de Miranda**.
+
+• Toros de **Adolfo Martín** para **Antonio Ferrera**, **Manuel Escribano** y un tercero por confirmar.
+
+• Toros de **Partido de Resina** para **Calita**, **Luis Gerpe** y **Jesús Enrique Colombo**.
+
+• Toros de **El Parralejo** para **Sebastián Castella**, **Daniel Luque** y **Samuel Navalón**.
+
+• Toros de **La Quinta** para **Uceda Leal**, **Daniel Luque** y **Tomás Rufo**.
+
+• Toros de **Dolores Aguirre** para **Juan de Castilla** y otros dos toreros.
+
+• **Domingo, 7 de junio – Corrida de Beneficencia**
+Toros de **Victoriano del Río** para **Alejandro Talavante**, **Andrés Roca Rey** y **Víctor Hernández**.
+
+• **Domingo, 14 de junio – Corrida In Memoriam**
+Toros de **Victoriano del Río** y **Domingo Hernández** para **Borja Jiménez**, en solitario.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `David de Miranda recibe en Pozoblanco el Premio 
+“Paquirri” al triunfador de la feria`,
+    image: "/images/paquirri.jpg",
+	footerimage1: "/images/paquirri1.jpg",
+    category: "Actualidad",
+    date: "14 de Diciembre de 2025",
+    fullContent: `Pozoblanco acogió en la jornada del viernes 12 de diciembre, la entrega de los Premios “Paquirri” a los triunfadores de la Feria Taurina de Pozoblanco 2025, galardones concedidos por la Asociación Puerta El Gallo, en un acto celebrado en el reconocido Hotel La Noriega y enmarcado dentro de las I Jornadas Taurinas organizadas por la citada entidad.
+
+El gran protagonista de la noche fue el matador de toros David de Miranda, quien recibió el Premio “Paquirri” al triunfador de la Feria, 
+en reconocimiento a su destacada actuación en el ciclo taurino pozoalbense. 
+
+Asimismo, el diestro onubense fue distinguido con el galardón a la mejor 
+faena, rubricando así una feria de alto nivel artístico y profesional.
+
+El palmarés de la edición se completó con el reconocimiento a Manuel 
+Quintana, distinguido como mejor novillero, y a Cayetano Muñoz, premiado como mejor ganadería, valorándose en ambos casos su aportación decisiva al buen desarrollo y brillantez de la feria. 
+
+El acto contó con la presencia institucional del alcalde de 
+Pozoblanco, Santiago Cabello, y del delegado de la Junta de Andalucía, Eduardo Lucena, quienes respaldaron con su asistencia una iniciativa que 
+pone en valor la tradición taurina de la localidad y el esfuerzo de los profesionales del sector.
+
+La entrega de premios estuvo moderada por el periodista Luis Miguel Parrado y se desarrolló en un ambiente de cordialidad y afición, reafirmando el compromiso de la Asociación Puerta El Gallo con la promoción y defensa de la tauromaquia en Pozoblanco.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
    }
 ];
 
