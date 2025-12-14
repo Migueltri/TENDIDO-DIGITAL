@@ -452,7 +452,7 @@ const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
     title: `Borja Jiménez, protagonista en la II Gala de Premios de la Asociación Cultural Taurina ‘Chenel y Oro’ en Las Ventas`,
-    image: "/images/protagonista.jpg",
+    image: "/images/protagonista1.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `**La Asociación Cultural Taurina ‘Chenel y Oro’** celebró el pasado sábado 13 de diciembre la segunda edición de su Gala de Premios, un acto que tuvo lugar a partir de las 12:00 horas en la Sala Antonio Bienvenida de la Plaza de Toros de **Las Ventas**.
@@ -587,7 +587,7 @@ const latestNews: NewsItem[] = [
 	{ 
     id: 24,
     title: `Borja Jiménez, protagonista en la II Gala de Premios de la Asociación Cultural Taurina ‘Chenel y Oro’ en Las Ventas`,
-    image: "/images/protagonista.jpg",
+    image: "/images/protagonista1.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `**La Asociación Cultural Taurina ‘Chenel y Oro’** celebró el pasado sábado 13 de diciembre la segunda edición de su Gala de Premios, un acto que tuvo lugar a partir de las 12:00 horas en la Sala Antonio Bienvenida de la Plaza de Toros de **Las Ventas**.
