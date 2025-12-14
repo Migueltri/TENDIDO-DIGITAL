@@ -484,7 +484,7 @@ La gala concluyó consolidando, una vez más, a Las Ventas como epicentro del re
 	{ 
     id: 1001,
     title: `Plaza 1 avanza en la confección de San Isidro 2026`,
-    image: "/images/`plaza1.jpg",
+    image: "/images/plaza1.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `Plaza 1 avanza de manera firme en la confección de la **Feria de San Isidro 2026**, el abono más relevante de la temporada. Aunque la presentación oficial de los carteles tendrá lugar el **5 de febrero**, en una gala que se celebrará sobre el ruedo de **Las Ventas** y pendiente aún de la aprobación del Consejo de Asuntos Taurinos de la Comunidad de Madrid, las combinaciones quedarán prácticamente definidas antes de Navidad.
@@ -557,8 +557,8 @@ Toros de **Victoriano del Río** y **Domingo Hernández** para **Borja Jiménez*
     id: 1002,
     title: `David de Miranda recibe en Pozoblanco el Premio 
 “Paquirri” al triunfador de la feria`,
-    image: "/images/paquirri.jpg",
-	footerImage1: "/images/paquirri1.jpg",
+    image: "/images/paquirri1.jpg",
+	footerImage1: "/images/paquirri.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `Pozoblanco acogió en la jornada del viernes 12 de diciembre, la entrega de los Premios “Paquirri” a los triunfadores de la Feria Taurina de Pozoblanco 2025, galardones concedidos por la Asociación Puerta El Gallo, en un acto celebrado en el reconocido Hotel La Noriega y enmarcado dentro de las I Jornadas Taurinas organizadas por la citada entidad.
@@ -619,7 +619,7 @@ La gala concluyó consolidando, una vez más, a Las Ventas como epicentro del re
 	{ 
     id: 25,
     title: `Plaza 1 avanza en la confección de San Isidro 2026`,
-    image: "/images/`plaza1.jpg",
+    image: "/images/plaza1.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
     fullContent: `Plaza 1 avanza de manera firme en la confección de la **Feria de San Isidro 2026**, el abono más relevante de la temporada. Aunque la presentación oficial de los carteles tendrá lugar el **5 de febrero**, en una gala que se celebrará sobre el ruedo de **Las Ventas** y pendiente aún de la aprobación del Consejo de Asuntos Taurinos de la Comunidad de Madrid, las combinaciones quedarán prácticamente definidas antes de Navidad.
