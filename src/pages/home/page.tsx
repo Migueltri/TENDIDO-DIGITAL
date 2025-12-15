@@ -451,132 +451,49 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Borja Jiménez, protagonista en la II Gala de Premios de la Asociación Cultural Taurina ‘Chenel y Oro’ en Las Ventas`,
-    image: "/images/protagonista1.jpg",
+    title: `ANOET estudia los festejos de los últimos 15 años en Castilla-La Mancha`,
+    image: "/images/ANOET1nueva.jpg",
+	footerImage1: "/images/ANOET2.jpg",
+	footerImage2: "/images/ANOET3.jpg",
+	footerImage3: "/images/ANOET4.jpg",
     category: "Actualidad",
     date: "14 de Diciembre de 2025",
-    fullContent: `**La Asociación Cultural Taurina ‘Chenel y Oro’** celebró el pasado sábado 13 de diciembre la segunda edición de su Gala de Premios, un acto que tuvo lugar a partir de las 12:00 horas en la Sala Antonio Bienvenida de la Plaza de Toros de **Las Ventas**.
+	excerpt: "Completo informe estadístico sobre la presencia taurina en esta comunidad entre 2010 y 2024",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) sigue trabajando en el estudio estadístico de la Tauromaquia por comunidades y en esta ocasión centra su atención en Castilla-La Mancha para constatar la amplia presencia del hecho taurino en esta zona de España.
 
-El momento más destacado de la jornada fue la entrega del premio a la mejor faena de la temporada, que recayó en **Borja Jiménez** por su histórica actuación frente al toro ‘**Milhijas**’, de la ganadería de **Victorino Martín**, lidiado el pasado mes de junio en el coso venteño.
+El estudio abarca un periodo de 15 años (de 2010 a 2024), lo que permite comprobar la evolución de los festejos celebrados en esta comunidad, además de conocer el número de asistentes y de reses lidiadas en los mismos. Este informe se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra, Madrid y Extremadura.
 
-Durante la gala también se procedió a la entrega de los reconocimientos correspondientes al **II Premio Internacional ‘Joven por la Tauromaquia’**, distinguiendo a jóvenes premiados por su compromiso y defensa de la Fiesta, así como a distintos profesionales que han sobresalido a lo largo de la temporada 2025 en Las Ventas, en un acto que puso en valor a todos los estamentos del toreo.
+Con este nuevo estudio, realizado en colaboración con la Junta de Comunidades de Castilla-La Mancha, ANOET aporta numerosos datos sobre la celebración de festejos en esta comunidad. Este informe se presenta en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos que se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
 
-En las diferentes categorías, los galardones fueron concedidos a:
-• Saltillo, mejor encierro  
-• “Brigadier”, de Pedraza de Yeltes, mejor res lidiada  
-• **Víctor Hernández**, mejor torero  
-• **Borja Lorente**, mejor puyazo  
-• **Iván García**, mejor hombre de plata  
-• **Víctor del Pozo**, mejor par de banderillas  
-• **Raúl Ruiz**, mejor brega  
-• **Morante de la Puebla**, mejor estocada  
-• **Ignacio San Juan**, mejor presidente  
-• **Isaac Fonseca** y su cuadrilla, reconocimiento a la buena lidia  
-• **Borja Jiménez**, mejor faena  
+**Mapa**
 
-Asimismo, la asociación hizo entrega del **Premio Gabriel Carvajal** a la mejor fotografía taurina, que fue otorgado al fotógrafo **Aritz Arambarri** por una imagen de Morante de la Puebla captada en Salamanca.
+Este informe sobre los toros en Castilla-La Mancha comienza con un mapa que permite visualizar la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. La cifra total de festejos celebrados en los 15 años objeto de análisis es de 22.221, de los cuales 883 son corridas de toros, 592 novilladas picadas y 553 festejos de rejones. Las novilladas sin picar ascienden a 1.066, predominando muy por encima de todos ellos los festejos populares, de los que se celebraron 16.750 en total.
 
-La gala concluyó consolidando, una vez más, a Las Ventas como epicentro del reconocimiento a la excelencia taurina y al trabajo de todos los profesionales que dan forma a la temporada.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-   },		
-	{ 
-    id: 1001,
-    title: `Plaza 1 avanza en la confección de San Isidro 2026`,
-    image: "/images/plaza1.jpg",
-    category: "Actualidad",
-    date: "14 de Diciembre de 2025",
-    fullContent: `Plaza 1 avanza de manera firme en la confección de la **Feria de San Isidro 2026**, el abono más relevante de la temporada. Aunque la presentación oficial de los carteles tendrá lugar el **5 de febrero**, en una gala que se celebrará sobre el ruedo de **Las Ventas** y pendiente aún de la aprobación del Consejo de Asuntos Taurinos de la Comunidad de Madrid, las combinaciones quedarán prácticamente definidas antes de Navidad.
+De los festejos en plaza, fueron mayoría los celebrados en cosos de tercera, 7.536, seguidos de los de plazas portátiles con 4.800 y segunda con 656. En otros recintos se celebraron más de 9.229 festejos.
 
-El serial estará marcado por un acontecimiento de especial trascendencia: la **Corrida In Memoriam** en homenaje a **Ignacio Sánchez Mejías**, programada para el **domingo 14 de junio**. El festejo contará con seis toros —tres de **Victoriano del Río** y tres de **Domingo Hernández**— que serán lidiados en solitario por **Borja Jiménez**, en una de las apuestas más singulares y simbólicas del abono.
+**Por años**
 
-Entre los nombres propios del ciclo, **Alejandro Talavante** será uno de los toreros con mayor protagonismo al actuar en tres tardes: abrirá la feria el **8 de mayo** con **Núñez del Cuvillo**, hará el paseíllo en la **Corrida de Beneficencia** con **Victoriano del Río** y completará su participación con un encierro de **Garcigrande**, junto a **Emilio de Justo** y **Pablo Aguado**.
+Este trabajo estadístico muestra la evolución de los festejos a través de los años, en la que se observa el pico más alto en 2011 con 2.059 festejos, produciéndose un descenso en los años siguientes, en los que se mantiene entre 1.600 y 1.700 festejos hasta la pandemia. Después de esta vuelve a superar los 1.600 en 2022 y baja ligeramente en 2023 y 2024, pero manteniéndose en esos dos años por encima de los 1.500.
 
-**Andrés Roca Rey** doblará actuación en San Isidro, interviniendo en la Beneficencia y en una de las dos corridas de **Juan Pedro Domecq** incluidas en el abono. **Juan Ortega**, por su parte, actuará en dos tardes con toros de **Puerto de San Lorenzo** y **Núñez del Cuvillo**, esta última previsiblemente junto a una confirmación de alternativa.
+Por tipo de festejo, el año que más corridas de toros presenta es 2010, seguido de 2018 y 2022. Si atendemos a las novilladas, el año que más es 2010 seguido de 2011, bajando desde 2012 a la mitad y manteniendo a partir de ahí esa misma línea. El informe demuestra que septiembre es el mes más taurino en Castilla-La Mancha.
 
-Tras su brillante actuación en la pasada **Feria de Otoño**, **Emilio de Justo** ha optado por una presencia más selectiva, limitándose a dos festejos de máximo relieve, con los hierros de **Victoriano del Río** y **Garcigrande**. Decisión similar ha tomado **Tomás Rufo**, que además apostará por el encierro de **La Quinta**.
+**Número de reses**
 
-Especial protagonismo tendrá **Víctor Hernández**, que se perfila como uno de los nombres fuertes del ciclo con tres tardes junto a figuras, con las ganaderías de **Juan Pedro Domecq**, **Jandilla** y **Victoriano del Río**.
+El total de reses lidiadas fue de 67.846, siendo el año posterior a la pandemia el de mayor número, con 6.160 animales. Destacan los más de 29.000 novillos y las más de 18.000 vacas.
 
-**Fernando Adrián** podría comparecer también en tres festejos, incluyendo las corridas de **Victorino Martín**, **Fuente Ymbro** y el tradicional festejo del **15 de mayo**, junto a **Diego Urdiales** y una confirmación de alternativa.
+**Asistencia**
 
-Entre las ganaderías confirmadas figuran **Victoriano del Río** (dos tardes y media), **Juan Pedro Domecq** (dos), **Garcigrande**, **Jandilla**, **Alcurrucén**, **Victorino Martín**, **José Escolar**, **Conde de Mayalde**, **Puerto de San Lorenzo**, **Fuente Ymbro**, **Adolfo Martín**, **Dolores Aguirre**, **Partido de Resina**, **El Parralejo**, **Laguna Janda**, **Araúz de Robles**, **La Quinta**, **El Pilar** y **Pedraza de Yeltes**, entre otras.
+La asistencia se situó entre 2010 y 2018 por encima de las 800.000 personas, superándose los 900.000 espectadores en 2023 y 2024.
 
-**Avance completo de combinaciones**
-
-• **2 de mayo – Corrida Goyesca**
-Toros por definir para **Uceda Leal**, **Javier Cortés** y un tercer espada por confirmar.
-
-• **8 de mayo – Apertura de feria**
-Toros de **Núñez del Cuvillo** para **Alejandro Talavante**, **Juan Ortega** y una confirmación.
-
-• **15 de mayo – San Isidro**
-Toros de **El Torero** para **Diego Urdiales**, **Fernando Adrián** y una confirmación.
-
-• Toros de **Victoriano del Río** para **Sebastián Castella**, **Emilio de Justo** y **Tomás Rufo**.
-
-• Toros de **Juan Pedro Domecq** para **Diego Urdiales**, **Andrés Roca Rey** y una confirmación.
-
-• Toros de **Juan Pedro Domecq** para **Víctor Hernández** y otros dos toreros por definir.
-
-• Toros de **Garcigrande** para **Alejandro Talavante**, **Emilio de Justo** y **Pablo Aguado**.
-
-• Toros de **Jandilla** para **José María Manzanares**, **Borja Jiménez** y **Víctor Hernández**.
-
-• Toros de **Victorino Martín** para **Fernando Adrián**, **Román** y un tercer espada.
-
-• Toros de **José Escolar** para **Damián Castaño**, **Gómez del Pilar** y un torero más.
-
-• Toros de **Conde de Mayalde** para **Román** y otros dos diestros.
-
-• Toros de **Puerto de San Lorenzo** para **José María Manzanares**, **Juan Ortega** y **Pablo Aguado**.
-
-• Toros de **Fuente Ymbro** para **Miguel Ángel Perera**, **Paco Ureña** (posible) y **David de Miranda**.
-
-• Toros de **Adolfo Martín** para **Antonio Ferrera**, **Manuel Escribano** y un tercero por confirmar.
-
-• Toros de **Partido de Resina** para **Calita**, **Luis Gerpe** y **Jesús Enrique Colombo**.
-
-• Toros de **El Parralejo** para **Sebastián Castella**, **Daniel Luque** y **Samuel Navalón**.
-
-• Toros de **La Quinta** para **Uceda Leal**, **Daniel Luque** y **Tomás Rufo**.
-
-• Toros de **Dolores Aguirre** para **Juan de Castilla** y otros dos toreros.
-
-• **Domingo, 7 de junio – Corrida de Beneficencia**
-Toros de **Victoriano del Río** para **Alejandro Talavante**, **Andrés Roca Rey** y **Víctor Hernández**.
-
-• **Domingo, 14 de junio – Corrida In Memoriam**
-Toros de **Victoriano del Río** y **Domingo Hernández** para **Borja Jiménez**, en solitario.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `David de Miranda recibe en Pozoblanco el Premio 
-“Paquirri” al triunfador de la feria`,
-    image: "/images/paquirri1.jpg",
-	footerImage1: "/images/paquirri.jpg",
-    category: "Actualidad",
-    date: "14 de Diciembre de 2025",
-    fullContent: `Pozoblanco acogió en la jornada del viernes 12 de diciembre, la entrega de los Premios “Paquirri” a los triunfadores de la Feria Taurina de Pozoblanco 2025, galardones concedidos por la Asociación Puerta El Gallo, en un acto celebrado en el reconocido Hotel La Noriega y enmarcado dentro de las I Jornadas Taurinas organizadas por la citada entidad.
-
-El gran protagonista de la noche fue el matador de toros David de Miranda, quien recibió el Premio “Paquirri” al triunfador de la Feria, 
-en reconocimiento a su destacada actuación en el ciclo taurino pozoalbense. 
-
-Asimismo, el diestro onubense fue distinguido con el galardón a la mejor 
-faena, rubricando así una feria de alto nivel artístico y profesional.
-
-El palmarés de la edición se completó con el reconocimiento a Manuel 
-Quintana, distinguido como mejor novillero, y a Cayetano Muñoz, premiado como mejor ganadería, valorándose en ambos casos su aportación decisiva al buen desarrollo y brillantez de la feria. 
-
-El acto contó con la presencia institucional del alcalde de 
-Pozoblanco, Santiago Cabello, y del delegado de la Junta de Andalucía, Eduardo Lucena, quienes respaldaron con su asistencia una iniciativa que 
-pone en valor la tradición taurina de la localidad y el esfuerzo de los profesionales del sector.
-
-La entrega de premios estuvo moderada por el periodista Luis Miguel Parrado y se desarrolló en un ambiente de cordialidad y afición, reafirmando el compromiso de la Asociación Puerta El Gallo con la promoción y defensa de la tauromaquia en Pozoblanco.`,
+**Enlace al informe completo**
+	<a
+  href="https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9
+</a>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -584,6 +501,55 @@ La entrega de premios estuvo moderada por el periodista Luis Miguel Parrado y se
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 23,
+    title: `ANOET estudia los festejos de los últimos 15 años en Castilla-La Mancha`,
+    image: "/images/ANOET1nueva.jpg",
+	footerImage1: "/images/ANOET2.jpg",
+	footerImage2: "/images/ANOET3.jpg",
+	footerImage3: "/images/ANOET4.jpg",
+    category: "Actualidad",
+    date: "14 de Diciembre de 2025",
+	excerpt: "Completo informe estadístico sobre la presencia taurina en esta comunidad entre 2010 y 2024",
+    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) sigue trabajando en el estudio estadístico de la Tauromaquia por comunidades y en esta ocasión centra su atención en Castilla-La Mancha para constatar la amplia presencia del hecho taurino en esta zona de España.
+
+El estudio abarca un periodo de 15 años (de 2010 a 2024), lo que permite comprobar la evolución de los festejos celebrados en esta comunidad, además de conocer el número de asistentes y de reses lidiadas en los mismos. Este informe se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra, Madrid y Extremadura.
+
+Con este nuevo estudio, realizado en colaboración con la Junta de Comunidades de Castilla-La Mancha, ANOET aporta numerosos datos sobre la celebración de festejos en esta comunidad. Este informe se presenta en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos que se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
+
+**Mapa**
+
+Este informe sobre los toros en Castilla-La Mancha comienza con un mapa que permite visualizar la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. La cifra total de festejos celebrados en los 15 años objeto de análisis es de 22.221, de los cuales 883 son corridas de toros, 592 novilladas picadas y 553 festejos de rejones. Las novilladas sin picar ascienden a 1.066, predominando muy por encima de todos ellos los festejos populares, de los que se celebraron 16.750 en total.
+
+De los festejos en plaza, fueron mayoría los celebrados en cosos de tercera, 7.536, seguidos de los de plazas portátiles con 4.800 y segunda con 656. En otros recintos se celebraron más de 9.229 festejos.
+
+**Por años**
+
+Este trabajo estadístico muestra la evolución de los festejos a través de los años, en la que se observa el pico más alto en 2011 con 2.059 festejos, produciéndose un descenso en los años siguientes, en los que se mantiene entre 1.600 y 1.700 festejos hasta la pandemia. Después de esta vuelve a superar los 1.600 en 2022 y baja ligeramente en 2023 y 2024, pero manteniéndose en esos dos años por encima de los 1.500.
+
+Por tipo de festejo, el año que más corridas de toros presenta es 2010, seguido de 2018 y 2022. Si atendemos a las novilladas, el año que más es 2010 seguido de 2011, bajando desde 2012 a la mitad y manteniendo a partir de ahí esa misma línea. El informe demuestra que septiembre es el mes más taurino en Castilla-La Mancha.
+
+**Número de reses**
+
+El total de reses lidiadas fue de 67.846, siendo el año posterior a la pandemia el de mayor número, con 6.160 animales. Destacan los más de 29.000 novillos y las más de 18.000 vacas.
+
+**Asistencia**
+
+La asistencia se situó entre 2010 y 2018 por encima de las 800.000 personas, superándose los 900.000 espectadores en 2023 y 2024.
+
+**Enlace al informe completo**
+	<a
+  href="https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9
+</a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 24,
     title: `Borja Jiménez, protagonista en la II Gala de Premios de la Asociación Cultural Taurina ‘Chenel y Oro’ en Las Ventas`,
