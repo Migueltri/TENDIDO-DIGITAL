@@ -451,49 +451,139 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `ANOET estudia los festejos de los últimos 15 años en Castilla-La Mancha`,
-    image: "/images/ANOET1nueva.jpg",
-	footerImage1: "/images/ANOET2.jpg",
-	footerImage2: "/images/ANOET3.jpg",
-	footerImage3: "/images/ANOET4.jpg",
+    title: `Valdemorillo abre la temporada 2026 con una feria de máximo nivel y figuras del toros`,
+    image: "/images/valdemorillo1.jpg",
     category: "Actualidad",
-    date: "14 de Diciembre de 2025",
-	excerpt: "Completo informe estadístico sobre la presencia taurina en esta comunidad entre 2010 y 2024",
-    fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) sigue trabajando en el estudio estadístico de la Tauromaquia por comunidades y en esta ocasión centra su atención en Castilla-La Mancha para constatar la amplia presencia del hecho taurino en esta zona de España.
+    date: "16 de Diciembre de 2025",
+    fullContent: `La empresa **Pueblos del Toreo**, con **Víctor Zabala** y **Carlos Zúñiga** al frente, ha cerrado los carteles de la **Feria Taurina de Valdemorillo**, primera gran cita del calendario taurino de la temporada 2026. El ciclo, adelantado previamente por el Portal Tendido Digital, con el elenco ganadero y toreros, vuelve a apostar por la presencia de máximas figuras del toreo y por un elenco ganadero de plenas garantías, con el objetivo de mantener la alta expectación y el notable éxito de público cosechado en las últimas ediciones.
 
-El estudio abarca un periodo de 15 años (de 2010 a 2024), lo que permite comprobar la evolución de los festejos celebrados en esta comunidad, además de conocer el número de asistentes y de reses lidiadas en los mismos. Este informe se une a los ya publicados de Andalucía, la Comunidad Foral de Navarra, Madrid y Extremadura.
+La presentación oficial del ciclo tendrá lugar el **viernes 16 de enero**, a las **12:00 horas**, en la **Sala Antonio Bienvenida de la Plaza de Toros de Las Ventas**. El acto contará con un coloquio conducido por el periodista **José Ribagorda**, en el que participarán los matadores **Borja Jiménez** y **Tomás Rufo**, y servirá como puesta de largo de la feria.
 
-Con este nuevo estudio, realizado en colaboración con la Junta de Comunidades de Castilla-La Mancha, ANOET aporta numerosos datos sobre la celebración de festejos en esta comunidad. Este informe se presenta en un formato digital interactivo que permite introducir numerosas variables en las búsquedas. A través de este trabajo, el usuario puede acceder al número de festejos que se celebraron en un año determinado, segmentarlos por localidades y dividirlos por tipología. También aporta tablas comparativas que permiten una visión por años, provincias, categoría de plazas, etc.
+El evento contará asimismo con la presencia de los empresarios **Carlos Zúñiga** y **Víctor Zabala**, así como del alcalde de Valdemorillo, **Santiago Villena**. Durante el acto se dará a conocer la imagen oficial del ciclo, fiel a la estética clásica que ha caracterizado los carteles de la feria en los últimos años.
 
-**Mapa**
+El abono estará compuesto por una **novillada con picadores**, dos **corridas de toros** y una **clase práctica** como prólogo, con el siguiente calendario:
 
-Este informe sobre los toros en Castilla-La Mancha comienza con un mapa que permite visualizar la actividad taurina en esta comunidad, pudiéndose apreciar una amplia presencia. La cifra total de festejos celebrados en los 15 años objeto de análisis es de 22.221, de los cuales 883 son corridas de toros, 592 novilladas picadas y 553 festejos de rejones. Las novilladas sin picar ascienden a 1.066, predominando muy por encima de todos ellos los festejos populares, de los que se celebraron 16.750 en total.
+- **Jueves 5 de febrero**: Clase práctica de la **Escuela Taurina de Madrid**.
 
-De los festejos en plaza, fueron mayoría los celebrados en cosos de tercera, 7.536, seguidos de los de plazas portátiles con 4.800 y segunda con 656. En otros recintos se celebraron más de 9.229 festejos.
+- **Viernes 6 de febrero**: Novillada con picadores.  
+Álvaro Serrano, Mario Vilau, Julio Méndez, Sergio Rollón, Félix San Román y Samuel Castrejón  
+(Ganadería: **Jiménez Pasquau**).
 
-**Por años**
+- **Sábado 7 de febrero**: Corrida de toros, mano a mano.  
+**Borja Jiménez** y **Tomás Rufo**  
+(Ganaderías: **El Capea**, **Fuente Ymbro** y **Hermanos García Jiménez**).
 
-Este trabajo estadístico muestra la evolución de los festejos a través de los años, en la que se observa el pico más alto en 2011 con 2.059 festejos, produciéndose un descenso en los años siguientes, en los que se mantiene entre 1.600 y 1.700 festejos hasta la pandemia. Después de esta vuelve a superar los 1.600 en 2022 y baja ligeramente en 2023 y 2024, pero manteniéndose en esos dos años por encima de los 1.500.
+- **Domingo 8 de febrero**: Corrida de toros.  
+Uceda Leal, Juan Ortega y **Pablo Aguado**  
+(Ganadería: **Torrealta**).
 
-Por tipo de festejo, el año que más corridas de toros presenta es 2010, seguido de 2018 y 2022. Si atendemos a las novilladas, el año que más es 2010 seguido de 2011, bajando desde 2012 a la mitad y manteniendo a partir de ahí esa misma línea. El informe demuestra que septiembre es el mes más taurino en Castilla-La Mancha.
-
-**Número de reses**
-
-El total de reses lidiadas fue de 67.846, siendo el año posterior a la pandemia el de mayor número, con 6.160 animales. Destacan los más de 29.000 novillos y las más de 18.000 vacas.
-
-**Asistencia**
-
-La asistencia se situó entre 2010 y 2018 por encima de las 800.000 personas, superándose los 900.000 espectadores en 2023 y 2024.
-
-**Enlace al informe completo**
-	<a
-  href="https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9"
+Los abonos podrán adquirirse del **26 de enero al 1 de febrero**, tanto en la web <a
+  href="www.torosvaldemorillo.es"
   target="_blank"
   rel="noopener noreferrer"
   style="color:#2563eb; text-decoration:underline; font-weight:500;"
 >
-  https://app.powerbi.com/view?r=eyJrIjoiY2Y1N2NhNmMtMzAyNy00OTQzLWE0N2QtZDA0NDBhNzEyY2Y5IiwidCI6Ijg5MTdiYmExLTMwZmYtNDQyNy1iYTYxLTA0OGNmMGE5ZTc0NyIsImMiOjl9
-</a>`,
+  www.torosvaldemorillo.es
+</a> como en los puntos de venta físicos. Las entradas sueltas se pondrán a la venta a partir del **2 de febrero**. Asimismo, los billetes de autobús que se fletarán el sábado y el domingo desde la **Plaza de Toros de Las Ventas (Puerta de Arrastre)** estarán disponibles a través de la misma plataforma online.
+
+**Puntos de venta físicos**:
+
+- **Ayuntamiento de Valdemorillo**: de 10:00 a 14:00 h y de 16:00 a 19:00 h.
+- **C/ Alejandro González, 5 (Madrid)**: de 11:00 a 14:00 h y de 16:00 a 19:00 h.
+- **Plaza de Toros de Valdemorillo**: los días de festejo, desde las 10:00 h.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Calasparra reafirma su apuesta ‘torista’ con un elenco ganadero de nivel`,
+    image: "/images/colasparra.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `El **Ayuntamiento de Calasparra**, la **Mesa de Trabajo** y la empresa **Chipé Producciones**, dirigida por **Pedro Pérez “Chicote”**, han dado esta tarde el primer paso de cara a la próxima temporada taurina con la presentación oficial del elenco ganadero. El acto tuvo lugar en la Casa de la Cultura de la localidad murciana y despertó una notable expectación entre los aficionados.
+
+La presentación estuvo presidida por la alcaldesa de Calasparra, **Teresa García**, y sirvió también para dar a conocer las ganaderías que compondrán la **XVII edición** del **Certamen Espiga de Plata**, que como principal novedad recupera este año el formato de **dos novilladas sin picadores**.
+
+Una vez más, **Pedro Pérez “Chicote”** ha vuelto a demostrar creatividad y compromiso en la confección de la programación taurina de una plaza con profundo arraigo, manteniéndose fiel a la filosofía que ha consolidado a Calasparra como “la feria de novilladas más torista de España”. Para ello, se ha apostado por ganaderías de primer nivel, con variedad de encastes, reforzando además el serial con la inclusión de dos desafíos ganaderos, fórmula que ya cosechó un notable éxito en la edición de 2025.
+
+Como es tradición, del **3 al 8 de septiembre** se celebrará el **Certamen Espiga de Oro**, compuesto por seis novilladas, con las siguientes ganaderías anunciadas:
+
+- María Cascón  
+- Aldeanueva  
+- Raso de Portillo  
+- Rehuelga  
+- Prieto de la Cal y Partido de Resina (desafío ganadero)  
+- Miura y Fuente Ymbro (desafío ganadero)`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Seleccionados los 18 toreros para la Copa Chenel 2026`,
+    image: "/images/18.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `La **Copa Chenel 2026** ya es una realidad y contará con la participación de 18 toreros en su sexta edición. El certamen de corridas de toros, organizado por la **Fundación Toro de Lidia** y la **Comunidad de Madrid** desde 2021, se enmarca dentro de la Fiesta del Toro y continúa consolidándose año tras año como una de las competiciones de referencia del panorama taurino.
+
+La principal novedad de esta edición es la celebración de la **Gran Final** en la **Plaza de Toros de Las Ventas**, un escenario emblemático que supone un aliciente añadido para los finalistas y un marco especialmente simbólico para el torero que da nombre al certamen, **Antonio Chenel “Antoñete”**.
+
+Los nombres de los 18 participantes fueron desvelados en un programa especial emitido en directo a través del canal de YouTube de la Fundación Toro de Lidia. El espacio, titulado **ChenelReveal**, estuvo dirigido por el periodista **Carmelo López**, acompañado por **Gonzalo Bienvenida** y los aficionados **Iván de la Cruz** y **Daniel de la Morena**.
+
+La Copa Chenel mantiene en esta sexta edición su marcado carácter internacional, con representantes de España, Perú, México y Francia. Los toreros seleccionados para la edición 2026 son:
+
+- Jorge Isiegas  
+- Alejandro Marcos  
+- Guillermo García Pulido  
+- El Rafi  
+- Alejandro Chicharro  
+- Manuel Perera  
+- Fernando Plaza  
+- Manuel Diosleguarde  
+- Fabio Jiménez  
+- Tomás Campos  
+- Tomás Angulo  
+- Héctor Gutiérrez  
+- Juan Carlos Cubas  
+- Álvaro Burdiel  
+- Alberto Durán  
+- Juan Miguel  
+- Javier Cortés  
+- Mario Navas`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `Cristiano Torres y Carlos Aragón Cancela fin a la relación de apoderamiento`,
+    image: "/images/relacion.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `La relación profesional entre el matador de toros **Cristiano Torres** y el ganadero **Carlos Aragón Cancela** ha concluido tras dos años de colaboración. La decisión ha sido adoptada de mutuo acuerdo, manteniendo ambas partes la excelente relación personal que les ha unido durante este tiempo.
+
+A lo largo de las dos últimas temporadas taurinas, **Cristiano Torres** ha estado anunciado en las principales ferias del calendario taurino, como **Madrid**, **Sevilla**, **Pamplona**, **Zaragoza**, **Arganda**, **Arnedo**, **Villaseca o Peralta**, consolidándose como uno de los novilleros revelación de los últimos años gracias a su capacidad, proyección y destacados triunfos.
+
+Tanto **Cristiano Torres** como **Carlos Aragón Cancela** desean expresar su agradecimiento mutuo por el trabajo y el camino compartidos, deseándose los mayores éxitos en sus respectivas trayectorias profesionales y manteniendo la amistad forjada durante estas temporadas de estrecha colaboración.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Roca Rey hará el paseíllo en la Feria de la Manzanilla 2026`,
+    image: "/images/roca.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `Sanlúcar de Barrameda volverá a contar con la presencia de **Andrés Roca Rey**, que hará el paseíllo en el **Coso de El Pino** con motivo de la **Feria de la Manzanilla 2026**.
+
+El diestro peruano, máxima figura del toreo, actuará en la corrida de toros anunciada para el **domingo 7 de junio**, convirtiendo una vez más a la feria sanluqueña en una de las citas de máximo interés en el calendario de los aficionados taurinos.
+
+La presencia de Roca Rey en el cartel de la Feria de la Manzanilla 2026 supone una firme apuesta por la calidad y el atractivo de los festejos taurinos en **Sanlúcar de Barrameda**, consolidando al Coso de El Pino como un escenario de referencia.
+
+Esta confirmación se suma al adelanto de la **temporada taurina sanluqueña 2026** que la empresa **Espectáculos Carmelo García** dio a conocer semanas atrás, que incluye las fechas de la **Corrida de Rejones** en primavera, el **sábado 11 de abril**, y la ya tradicional **Corrida de toros Magallánica**, en su VIII edición, el **domingo 16 de agosto**.
+`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -501,6 +591,145 @@ La asistencia se situó entre 2010 y 2018 por encima de las 800.000 personas, su
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 18,
+    title: `Valdemorillo abre la temporada 2026 con una feria de máximo nivel y figuras del toros`,
+    image: "/images/valdemorillo1.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `La empresa **Pueblos del Toreo**, con **Víctor Zabala** y **Carlos Zúñiga** al frente, ha cerrado los carteles de la **Feria Taurina de Valdemorillo**, primera gran cita del calendario taurino de la temporada 2026. El ciclo, adelantado previamente por el Portal Tendido Digital, con el elenco ganadero y toreros, vuelve a apostar por la presencia de máximas figuras del toreo y por un elenco ganadero de plenas garantías, con el objetivo de mantener la alta expectación y el notable éxito de público cosechado en las últimas ediciones.
+
+La presentación oficial del ciclo tendrá lugar el **viernes 16 de enero**, a las **12:00 horas**, en la **Sala Antonio Bienvenida de la Plaza de Toros de Las Ventas**. El acto contará con un coloquio conducido por el periodista **José Ribagorda**, en el que participarán los matadores **Borja Jiménez** y **Tomás Rufo**, y servirá como puesta de largo de la feria.
+
+El evento contará asimismo con la presencia de los empresarios **Carlos Zúñiga** y **Víctor Zabala**, así como del alcalde de Valdemorillo, **Santiago Villena**. Durante el acto se dará a conocer la imagen oficial del ciclo, fiel a la estética clásica que ha caracterizado los carteles de la feria en los últimos años.
+
+El abono estará compuesto por una **novillada con picadores**, dos **corridas de toros** y una **clase práctica** como prólogo, con el siguiente calendario:
+
+- **Jueves 5 de febrero**: Clase práctica de la **Escuela Taurina de Madrid**.
+
+- **Viernes 6 de febrero**: Novillada con picadores.  
+Álvaro Serrano, Mario Vilau, Julio Méndez, Sergio Rollón, Félix San Román y Samuel Castrejón  
+(Ganadería: **Jiménez Pasquau**).
+
+- **Sábado 7 de febrero**: Corrida de toros, mano a mano.  
+**Borja Jiménez** y **Tomás Rufo**  
+(Ganaderías: **El Capea**, **Fuente Ymbro** y **Hermanos García Jiménez**).
+
+- **Domingo 8 de febrero**: Corrida de toros.  
+Uceda Leal, Juan Ortega y **Pablo Aguado**  
+(Ganadería: **Torrealta**).
+
+Los abonos podrán adquirirse del **26 de enero al 1 de febrero**, tanto en la web <a
+  href="www.torosvaldemorillo.es"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.torosvaldemorillo.es
+</a> como en los puntos de venta físicos. Las entradas sueltas se pondrán a la venta a partir del **2 de febrero**. Asimismo, los billetes de autobús que se fletarán el sábado y el domingo desde la **Plaza de Toros de Las Ventas (Puerta de Arrastre)** estarán disponibles a través de la misma plataforma online.
+
+**Puntos de venta físicos**:
+
+- **Ayuntamiento de Valdemorillo**: de 10:00 a 14:00 h y de 16:00 a 19:00 h.
+- **C/ Alejandro González, 5 (Madrid)**: de 11:00 a 14:00 h y de 16:00 a 19:00 h.
+- **Plaza de Toros de Valdemorillo**: los días de festejo, desde las 10:00 h.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 19,
+    title: `Calasparra reafirma su apuesta ‘torista’ con un elenco ganadero de nivel`,
+    image: "/images/colasparra.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `El **Ayuntamiento de Calasparra**, la **Mesa de Trabajo** y la empresa **Chipé Producciones**, dirigida por **Pedro Pérez “Chicote”**, han dado esta tarde el primer paso de cara a la próxima temporada taurina con la presentación oficial del elenco ganadero. El acto tuvo lugar en la Casa de la Cultura de la localidad murciana y despertó una notable expectación entre los aficionados.
+
+La presentación estuvo presidida por la alcaldesa de Calasparra, **Teresa García**, y sirvió también para dar a conocer las ganaderías que compondrán la **XVII edición** del **Certamen Espiga de Plata**, que como principal novedad recupera este año el formato de **dos novilladas sin picadores**.
+
+Una vez más, **Pedro Pérez “Chicote”** ha vuelto a demostrar creatividad y compromiso en la confección de la programación taurina de una plaza con profundo arraigo, manteniéndose fiel a la filosofía que ha consolidado a Calasparra como “la feria de novilladas más torista de España”. Para ello, se ha apostado por ganaderías de primer nivel, con variedad de encastes, reforzando además el serial con la inclusión de dos desafíos ganaderos, fórmula que ya cosechó un notable éxito en la edición de 2025.
+
+Como es tradición, del **3 al 8 de septiembre** se celebrará el **Certamen Espiga de Oro**, compuesto por seis novilladas, con las siguientes ganaderías anunciadas:
+
+- María Cascón  
+- Aldeanueva  
+- Raso de Portillo  
+- Rehuelga  
+- Prieto de la Cal y Partido de Resina (desafío ganadero)  
+- Miura y Fuente Ymbro (desafío ganadero)`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 20,
+    title: `Seleccionados los 18 toreros para la Copa Chenel 2026`,
+    image: "/images/18.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `La **Copa Chenel 2026** ya es una realidad y contará con la participación de 18 toreros en su sexta edición. El certamen de corridas de toros, organizado por la **Fundación Toro de Lidia** y la **Comunidad de Madrid** desde 2021, se enmarca dentro de la Fiesta del Toro y continúa consolidándose año tras año como una de las competiciones de referencia del panorama taurino.
+
+La principal novedad de esta edición es la celebración de la **Gran Final** en la **Plaza de Toros de Las Ventas**, un escenario emblemático que supone un aliciente añadido para los finalistas y un marco especialmente simbólico para el torero que da nombre al certamen, **Antonio Chenel “Antoñete”**.
+
+Los nombres de los 18 participantes fueron desvelados en un programa especial emitido en directo a través del canal de YouTube de la Fundación Toro de Lidia. El espacio, titulado **ChenelReveal**, estuvo dirigido por el periodista **Carmelo López**, acompañado por **Gonzalo Bienvenida** y los aficionados **Iván de la Cruz** y **Daniel de la Morena**.
+
+La Copa Chenel mantiene en esta sexta edición su marcado carácter internacional, con representantes de España, Perú, México y Francia. Los toreros seleccionados para la edición 2026 son:
+
+- Jorge Isiegas  
+- Alejandro Marcos  
+- Guillermo García Pulido  
+- El Rafi  
+- Alejandro Chicharro  
+- Manuel Perera  
+- Fernando Plaza  
+- Manuel Diosleguarde  
+- Fabio Jiménez  
+- Tomás Campos  
+- Tomás Angulo  
+- Héctor Gutiérrez  
+- Juan Carlos Cubas  
+- Álvaro Burdiel  
+- Alberto Durán  
+- Juan Miguel  
+- Javier Cortés  
+- Mario Navas`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 21,
+    title: `Cristiano Torres y Carlos Aragón Cancela fin a la relación de apoderamiento`,
+    image: "/images/relacion.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `La relación profesional entre el matador de toros **Cristiano Torres** y el ganadero **Carlos Aragón Cancela** ha concluido tras dos años de colaboración. La decisión ha sido adoptada de mutuo acuerdo, manteniendo ambas partes la excelente relación personal que les ha unido durante este tiempo.
+
+A lo largo de las dos últimas temporadas taurinas, **Cristiano Torres** ha estado anunciado en las principales ferias del calendario taurino, como **Madrid**, **Sevilla**, **Pamplona**, **Zaragoza**, **Arganda**, **Arnedo**, **Villaseca o Peralta**, consolidándose como uno de los novilleros revelación de los últimos años gracias a su capacidad, proyección y destacados triunfos.
+
+Tanto **Cristiano Torres** como **Carlos Aragón Cancela** desean expresar su agradecimiento mutuo por el trabajo y el camino compartidos, deseándose los mayores éxitos en sus respectivas trayectorias profesionales y manteniendo la amistad forjada durante estas temporadas de estrecha colaboración.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 22,
+    title: `Roca Rey hará el paseíllo en la Feria de la Manzanilla 2026`,
+    image: "/images/roca.jpg",
+    category: "Actualidad",
+    date: "16 de Diciembre de 2025",
+    fullContent: `Sanlúcar de Barrameda volverá a contar con la presencia de **Andrés Roca Rey**, que hará el paseíllo en el **Coso de El Pino** con motivo de la **Feria de la Manzanilla 2026**.
+
+El diestro peruano, máxima figura del toreo, actuará en la corrida de toros anunciada para el **domingo 7 de junio**, convirtiendo una vez más a la feria sanluqueña en una de las citas de máximo interés en el calendario de los aficionados taurinos.
+
+La presencia de Roca Rey en el cartel de la Feria de la Manzanilla 2026 supone una firme apuesta por la calidad y el atractivo de los festejos taurinos en **Sanlúcar de Barrameda**, consolidando al Coso de El Pino como un escenario de referencia.
+
+Esta confirmación se suma al adelanto de la **temporada taurina sanluqueña 2026** que la empresa **Espectáculos Carmelo García** dio a conocer semanas atrás, que incluye las fechas de la **Corrida de Rejones** en primavera, el **sábado 11 de abril**, y la ya tradicional **Corrida de toros Magallánica**, en su VIII edición, el **domingo 16 de agosto**.
+`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 23,
     title: `ANOET estudia los festejos de los últimos 15 años en Castilla-La Mancha`,
