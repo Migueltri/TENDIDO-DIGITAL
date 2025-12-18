@@ -451,149 +451,91 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Valdemorillo abre la temporada 2026 con una feria de máximo nivel y figuras del toros`,
-    image: "/images/valdemorillo1.jpg",
+    title: `Eventos Mare Nostrum continuará al frente de la Plaza de Toros de Alicante tras ser la única oferta presentada`,
+    image: "/images/eventos.jpg",
     category: "Actualidad",
-    date: "16 de Diciembre de 2025",
-    fullContent: `La empresa **Pueblos del Toreo**, con **Víctor Zabala** y **Carlos Zúñiga** al frente, ha cerrado los carteles de la **Feria Taurina de Valdemorillo**, primera gran cita del calendario taurino de la temporada 2026. El ciclo, adelantado previamente por el Portal Tendido Digital, con el elenco ganadero y toreros, vuelve a apostar por la presencia de máximas figuras del toreo y por un elenco ganadero de plenas garantías, con el objetivo de mantener la alta expectación y el notable éxito de público cosechado en las últimas ediciones.
+    date: "18 de Diciembre de 2025",
+    fullContent: `La **Plaza de Toros de Alicante** continuará siendo gestionada por la empresa **Eventos Mare Nostrum**, al haber sido la única **propuesta presentada al concurso público** convocado para su explotación. Esta circunstancia quedó confirmada en la **Mesa de Contratación** celebrada ayer, lo que deja como único escenario posible la renovación de la actual concesión.
 
-La presentación oficial del ciclo tendrá lugar el **viernes 16 de enero**, a las **12:00 horas**, en la **Sala Antonio Bienvenida de la Plaza de Toros de Las Ventas**. El acto contará con un coloquio conducido por el periodista **José Ribagorda**, en el que participarán los matadores **Borja Jiménez** y **Tomás Rufo**, y servirá como puesta de largo de la feria.
+El nuevo contrato entraría en vigor el próximo mes de abril y **podría extenderse por un periodo máximo de tres años**. De este modo, Eventos Mare Nostrum afrontaría su cuarto ciclo al frente del coso alicantino, tras haber asumido la gestión como empresa heredera de la anterior UTE formada por Simón Casas y Toros del Mediterráneo.
 
-El evento contará asimismo con la presencia de los empresarios **Carlos Zúñiga** y **Víctor Zabala**, así como del alcalde de Valdemorillo, **Santiago Villena**. Durante el acto se dará a conocer la imagen oficial del ciclo, fiel a la estética clásica que ha caracterizado los carteles de la feria en los últimos años.
+La renovación de la concesión se produce en un contexto en el que se persigue reforzar el carácter taurino de la Plaza de Toros de Alicante, al tiempo que se impulsa su apertura a otros tipos de espectáculos con capacidad para generar un impacto económico y cultural positivo en la ciudad.
 
-El abono estará compuesto por una **novillada con picadores**, dos **corridas de toros** y una **clase práctica** como prólogo, con el siguiente calendario:
-
-- **Jueves 5 de febrero**: Clase práctica de la **Escuela Taurina de Madrid**.
-
-- **Viernes 6 de febrero**: Novillada con picadores.  
-Álvaro Serrano, Mario Vilau, Julio Méndez, Sergio Rollón, Félix San Román y Samuel Castrejón  
-(Ganadería: **Jiménez Pasquau**).
-
-- **Sábado 7 de febrero**: Corrida de toros, mano a mano.  
-**Borja Jiménez** y **Tomás Rufo**  
-(Ganaderías: **El Capea**, **Fuente Ymbro** y **Hermanos García Jiménez**).
-
-- **Domingo 8 de febrero**: Corrida de toros.  
-Uceda Leal, Juan Ortega y **Pablo Aguado**  
-(Ganadería: **Torrealta**).
-
-Los abonos podrán adquirirse del **26 de enero al 1 de febrero**, tanto en la web <a
-  href="www.torosvaldemorillo.es"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.torosvaldemorillo.es
-</a> como en los puntos de venta físicos. Las entradas sueltas se pondrán a la venta a partir del **2 de febrero**. Asimismo, los billetes de autobús que se fletarán el sábado y el domingo desde la **Plaza de Toros de Las Ventas (Puerta de Arrastre)** estarán disponibles a través de la misma plataforma online.
-
-**Puntos de venta físicos**:
-
-- **Ayuntamiento de Valdemorillo**: de 10:00 a 14:00 h y de 16:00 a 19:00 h.
-- **C/ Alejandro González, 5 (Madrid)**: de 11:00 a 14:00 h y de 16:00 a 19:00 h.
-- **Plaza de Toros de Valdemorillo**: los días de festejo, desde las 10:00 h.`,
+Con este objetivo, el pliego contempla una rehabilitación integral del inmueble, orientada a la mejora y adaptación de sus instalaciones para nuevos usos. En este sentido, se establece como requisito mínimo la celebración de seis espectáculos no taurinos, cifra que se pretende ampliar hasta diez en el próximo pliego de condiciones.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
    },
-	{ 
-    id: 1001,
-    title: `Calasparra reafirma su apuesta ‘torista’ con un elenco ganadero de nivel`,
-    image: "/images/colasparra.jpg",
-    category: "Actualidad",
-    date: "16 de Diciembre de 2025",
-    fullContent: `El **Ayuntamiento de Calasparra**, la **Mesa de Trabajo** y la empresa **Chipé Producciones**, dirigida por **Pedro Pérez “Chicote”**, han dado esta tarde el primer paso de cara a la próxima temporada taurina con la presentación oficial del elenco ganadero. El acto tuvo lugar en la Casa de la Cultura de la localidad murciana y despertó una notable expectación entre los aficionados.
-
-La presentación estuvo presidida por la alcaldesa de Calasparra, **Teresa García**, y sirvió también para dar a conocer las ganaderías que compondrán la **XVII edición** del **Certamen Espiga de Plata**, que como principal novedad recupera este año el formato de **dos novilladas sin picadores**.
-
-Una vez más, **Pedro Pérez “Chicote”** ha vuelto a demostrar creatividad y compromiso en la confección de la programación taurina de una plaza con profundo arraigo, manteniéndose fiel a la filosofía que ha consolidado a Calasparra como “la feria de novilladas más torista de España”. Para ello, se ha apostado por ganaderías de primer nivel, con variedad de encastes, reforzando además el serial con la inclusión de dos desafíos ganaderos, fórmula que ya cosechó un notable éxito en la edición de 2025.
-
-Como es tradición, del **3 al 8 de septiembre** se celebrará el **Certamen Espiga de Oro**, compuesto por seis novilladas, con las siguientes ganaderías anunciadas:
-
-- María Cascón  
-- Aldeanueva  
-- Raso de Portillo  
-- Rehuelga  
-- Prieto de la Cal y Partido de Resina (desafío ganadero)  
-- Miura y Fuente Ymbro (desafío ganadero)`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Seleccionados los 18 toreros para la Copa Chenel 2026`,
-    image: "/images/18.jpg",
-    category: "Actualidad",
-    date: "16 de Diciembre de 2025",
-    fullContent: `La **Copa Chenel 2026** ya es una realidad y contará con la participación de 18 toreros en su sexta edición. El certamen de corridas de toros, organizado por la **Fundación Toro de Lidia** y la **Comunidad de Madrid** desde 2021, se enmarca dentro de la Fiesta del Toro y continúa consolidándose año tras año como una de las competiciones de referencia del panorama taurino.
-
-La principal novedad de esta edición es la celebración de la **Gran Final** en la **Plaza de Toros de Las Ventas**, un escenario emblemático que supone un aliciente añadido para los finalistas y un marco especialmente simbólico para el torero que da nombre al certamen, **Antonio Chenel “Antoñete”**.
-
-Los nombres de los 18 participantes fueron desvelados en un programa especial emitido en directo a través del canal de YouTube de la Fundación Toro de Lidia. El espacio, titulado **ChenelReveal**, estuvo dirigido por el periodista **Carmelo López**, acompañado por **Gonzalo Bienvenida** y los aficionados **Iván de la Cruz** y **Daniel de la Morena**.
-
-La Copa Chenel mantiene en esta sexta edición su marcado carácter internacional, con representantes de España, Perú, México y Francia. Los toreros seleccionados para la edición 2026 son:
-
-- Jorge Isiegas  
-- Alejandro Marcos  
-- Guillermo García Pulido  
-- El Rafi  
-- Alejandro Chicharro  
-- Manuel Perera  
-- Fernando Plaza  
-- Manuel Diosleguarde  
-- Fabio Jiménez  
-- Tomás Campos  
-- Tomás Angulo  
-- Héctor Gutiérrez  
-- Juan Carlos Cubas  
-- Álvaro Burdiel  
-- Alberto Durán  
-- Juan Miguel  
-- Javier Cortés  
-- Mario Navas`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Cristiano Torres y Carlos Aragón Cancela fin a la relación de apoderamiento`,
-    image: "/images/relacion.jpg",
-    category: "Actualidad",
-    date: "16 de Diciembre de 2025",
-    fullContent: `La relación profesional entre el matador de toros **Cristiano Torres** y el ganadero **Carlos Aragón Cancela** ha concluido tras dos años de colaboración. La decisión ha sido adoptada de mutuo acuerdo, manteniendo ambas partes la excelente relación personal que les ha unido durante este tiempo.
-
-A lo largo de las dos últimas temporadas taurinas, **Cristiano Torres** ha estado anunciado en las principales ferias del calendario taurino, como **Madrid**, **Sevilla**, **Pamplona**, **Zaragoza**, **Arganda**, **Arnedo**, **Villaseca o Peralta**, consolidándose como uno de los novilleros revelación de los últimos años gracias a su capacidad, proyección y destacados triunfos.
-
-Tanto **Cristiano Torres** como **Carlos Aragón Cancela** desean expresar su agradecimiento mutuo por el trabajo y el camino compartidos, deseándose los mayores éxitos en sus respectivas trayectorias profesionales y manteniendo la amistad forjada durante estas temporadas de estrecha colaboración.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Roca Rey hará el paseíllo en la Feria de la Manzanilla 2026`,
-    image: "/images/roca.jpg",
-    category: "Actualidad",
-    date: "16 de Diciembre de 2025",
-    fullContent: `Sanlúcar de Barrameda volverá a contar con la presencia de **Andrés Roca Rey**, que hará el paseíllo en el **Coso de El Pino** con motivo de la **Feria de la Manzanilla 2026**.
-
-El diestro peruano, máxima figura del toreo, actuará en la corrida de toros anunciada para el **domingo 7 de junio**, convirtiendo una vez más a la feria sanluqueña en una de las citas de máximo interés en el calendario de los aficionados taurinos.
-
-La presencia de Roca Rey en el cartel de la Feria de la Manzanilla 2026 supone una firme apuesta por la calidad y el atractivo de los festejos taurinos en **Sanlúcar de Barrameda**, consolidando al Coso de El Pino como un escenario de referencia.
-
-Esta confirmación se suma al adelanto de la **temporada taurina sanluqueña 2026** que la empresa **Espectáculos Carmelo García** dio a conocer semanas atrás, que incluye las fechas de la **Corrida de Rejones** en primavera, el **sábado 11 de abril**, y la ya tradicional **Corrida de toros Magallánica**, en su VIII edición, el **domingo 16 de agosto**.
-`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   }
 ];
 
 const latestNews: NewsItem[] = [
 	{ 
+    id: 14,
+    title: `Eventos Mare Nostrum continuará al frente de la Plaza de Toros de Alicante tras ser la única oferta presentada`,
+    image: "/images/eventos.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `La **Plaza de Toros de Alicante** continuará siendo gestionada por la empresa **Eventos Mare Nostrum**, al haber sido la única **propuesta presentada al concurso público** convocado para su explotación. Esta circunstancia quedó confirmada en la **Mesa de Contratación** celebrada ayer, lo que deja como único escenario posible la renovación de la actual concesión.
+
+El nuevo contrato entraría en vigor el próximo mes de abril y **podría extenderse por un periodo máximo de tres años**. De este modo, Eventos Mare Nostrum afrontaría su cuarto ciclo al frente del coso alicantino, tras haber asumido la gestión como empresa heredera de la anterior UTE formada por Simón Casas y Toros del Mediterráneo.
+
+La renovación de la concesión se produce en un contexto en el que se persigue reforzar el carácter taurino de la Plaza de Toros de Alicante, al tiempo que se impulsa su apertura a otros tipos de espectáculos con capacidad para generar un impacto económico y cultural positivo en la ciudad.
+
+Con este objetivo, el pliego contempla una rehabilitación integral del inmueble, orientada a la mejora y adaptación de sus instalaciones para nuevos usos. En este sentido, se establece como requisito mínimo la celebración de seis espectáculos no taurinos, cifra que se pretende ampliar hasta diez en el próximo pliego de condiciones.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 15,
+    title: `El Premio Nacional de Tauromaquia 2025 se entregará de nuevo en el Senado`,
+    image: "/images/premio2.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `La entrega del **Premio Nacional de Tauromaquia 2025** volverá a celebrarse en el **Senado**, consolidando así el compromiso institucional de reconocer los méritos de los profesionales y figuras más destacadas del mundo del toro, en un contexto marcado por la situación de excepcionalidad generada tras la supresión del galardón por parte del **Ministerio de Cultura**.
+
+En esta segunda edición, el premio será concedido de manera conjunta por el **Senado**, la **Junta de Andalucía**, **Cantabria**, la **Región de Murcia**, la **Comunitat Valenciana**, el **Gobierno de Aragón**, la **Junta de Comunidades de Castilla-La Mancha**, la **Junta de Extremadura**, la **Comunidad de Madrid**, la **Junta de Castilla y León**, la **Ciudad Autónoma de Melilla** y la **Fundación Toro de Lidia**. De este modo, **Melilla** se incorpora a las once instituciones que ya impulsaron el premio en la pasada edición.
+
+Cabe recordar que el **Premio Nacional de Tauromaquia** fue creado en 2013 para reconocer los méritos profesionales en el ámbito de la tauromaquia, hasta que en 2024 fue suprimido por el entonces ministro de Cultura, **Ernest Urtasun**. Esta decisión motivó que la **Fundación Toro de Lidia** y diversas administraciones públicas asumieran la convocatoria del galardón como una iniciativa propia, en defensa y promoción de la tauromaquia.
+
+En la edición de 2024, el **Premio Nacional de Tauromaquia** fue concedido ex aequo a la **Real Unión de Criadores de Toros de Lidia** y al cineasta **Albert Serra**. Con la celebración de la entrega del **Premio Nacional de Tauromaquia 2025** en el **Senado**, la Cámara Alta volverá a acoger a miles de representantes del mundo del toro en un acto que se presenta como un nuevo ejercicio de reconocimiento y libertad cultural.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 16,
+    title: `Valladolid fija la Feria de San Pedro Regalado 2026 para los días 16 y 17 de mayo`,
+    image: "/images/valladolid.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `La temporada taurina en Valladolid ya ha comenzado a tomar forma. La empresa **TauroEmocion**, dirigida por **Alberto García**, ha anunciado oficialmente las fechas de celebración de la **Feria de San Pedro Regalado 2026**, que tendrá lugar los días 16 y 17 de mayo.
+
+Durante esas dos jornadas se celebrarán dos corridas de toros con las que la empresa busca continuar consolidando la plaza del Paseo de Zorrilla como uno de los escenarios más destacados del panorama taurino nacional.
+
+Asimismo, en la mañana de este miércoles 17 de diciembre se ha hecho público el cartel de la tradicional corrida de la oportunidad, integrada dentro de la Feria de San Pedro Regalado. En el festejo están anunciados **Manuel Diosleguarde**, **Sergio Rodríguez**, **Jarocho** y **Mario Navas**, quienes lidiarán toros de la ganadería de **El Pilar**. El triunfador de la tarde obtendrá un puesto en la próxima Feria de la **Virgen de San Lorenzo**, que se celebrará el próximo mes de septiembre.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
+    id: 17,
+    title: `Curro Vázquez tendrá su azulejo en Las Ventas`,
+    image: "/images/curro2.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `Curro Vázquez contará por fin con un azulejo conmemorativo en la plaza de toros de Las Ventas, un reconocimiento largamente reclamado por la afición madrileña. La noticia ha sido adelantada por el periodista Zabala de la Serna en Diario El Mundo.
+
+El torero linarense, una de las grandes figuras de Madrid en la década de los años ochenta y considerado por muchos como el último torero romántico que tuvo la plaza, verá así reconocida su estrecha vinculación con el coso venteño y con su público.
+
+La inauguración oficial del azulejo tendrá lugar el próximo 15 de mayo, festividad de San Isidro, según ha confirmado el Centro de Asuntos Taurinos de la Comunidad de Madrid. Este homenaje pone en valor la trayectoria profesional de Curro Vázquez en la tauromaquia y su especial relevancia en la historia reciente de Las Ventas.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+   },
+	{ 
     id: 18,
-    title: `Valdemorillo abre la temporada 2026 con una feria de máximo nivel y figuras del toros`,
+    title: `Valdemorillo abre la temporada 2026 con una feria de máximo nivel y figuras del toreo`,
     image: "/images/valdemorillo1.jpg",
     category: "Actualidad",
     date: "16 de Diciembre de 2025",
