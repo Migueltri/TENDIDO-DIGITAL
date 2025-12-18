@@ -505,7 +505,7 @@ La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de 
     id: 1002,
     title: `La Escuela Comarcal de Ubrique cerrará el 2025 con un 'Tentadero Público en Clase Práctica Fin de Curso'`,
     image: "/images/ubrique.jpg",
-	imageCaption: "/images/ubriqueb.jpg",
+	footerImage1: "/images/ubriqueb.jpg",
     category: "Actualidad",
     date: "18 de Diciembre de 2025",
     fullContent: `La **Plaza de Toros de Ubrique**, conocida como la 'Capital de la Piel', será escenario el próximo **sábado 20 de diciembre**, a partir de las **12:00 horas**, del tradicional **Tentadero Público en Clase Práctica Fin de Curso** con el que la **Escuela Comarcal Taurina de Ubrique** pondrá el broche final al periodo 2025.
@@ -565,7 +565,7 @@ La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de 
     id: 9,
     title: `La Escuela Comarcal de Ubrique cerrará el 2025 con un 'Tentadero Público en Clase Práctica Fin de Curso'`,
     image: "/images/ubrique.jpg",
-	imageCaption: "/images/ubriqueb.jpg",
+	footerImage1: "/images/ubriqueb.jpg",
     category: "Actualidad",
     date: "18 de Diciembre de 2025",
     fullContent: `La **Plaza de Toros de Ubrique**, conocida como la 'Capital de la Piel', será escenario el próximo **sábado 20 de diciembre**, a partir de las **12:00 horas**, del tradicional **Tentadero Público en Clase Práctica Fin de Curso** con el que la **Escuela Comarcal Taurina de Ubrique** pondrá el broche final al periodo 2025.
@@ -651,7 +651,7 @@ La inauguración oficial del azulejo tendrá lugar el próximo 15 de mayo, festi
     id: 14,
     title: `El Premio Nacional de Tauramaquia 2025 se entregará de nuevo en el Senado`,
     image: "/images/premio3.jpg",
-	imageCaption: "/images/lidia.jpg",
+	footerImage1: "/images/lidia.jpg",
     category: "Actualidad",
     date: "17 de Diciembre de 2025",
     fullContent: `El Premio Nacional de Tauramaquia 2025 se entregará de nuevo en el Senado
@@ -724,7 +724,7 @@ afinidad con la Corona y de forma especial con la figura y la persona de Don Jua
     id: 16,
     title: `El Coso de El Pino acoge un tentadero público fin de curso de las escuelas taurinas de Sanlúcar y Chiclana`,
     image: "/images/coso.jpg",
-	imageCaption: "/images/coso1.jpg",
+	footerImage1: "/images/coso1.jpg",
     category: "Actualidad",
     date: "17 de Diciembre de 2025",
     fullContent: `El histórico **Coso de El Pino** será escenario el próximo **domingo 21 de diciembre**, a partir de las **12:30 horas**, de un **tentadero público de fin de curso** que pondrá el broche a la temporada formativa de la **Escuela Taurina “El Volapié”** de Sanlúcar de Barrameda.
@@ -746,7 +746,7 @@ El tentadero público servirá no solo como evaluación final del curso, sino ta
     id: 17,
     title: `Aula Taurina perteneciente a la Escuela de Tauromaquia de Sevilla, convoca el XXXV Concurso de Creación Artística “La Fiesta de los Toros”`,
     image: "/images/aula.jpg",
-	imageCaption: "/images/aula1.jpg",
+	footerImage1: "/images/aula1.jpg",
     category: "Actualidad",
     date: "17 de Diciembre de 2025",
     fullContent: `**Aula Taurina** perteneciente a la **Escuela de Tauromaquia de Sevilla**, con el patrocinio de la **Real Maestranza de Caballería de Sevilla**, ha convocado el **XXXV Concurso de Creación Artística** sobre el tema **“La Fiesta de los Toros”**, dirigido a jóvenes de **Sevilla** y su **provincia**.
