@@ -466,11 +466,125 @@ Con este objetivo, el pliego contempla una rehabilitación integral del inmueble
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
    },
+	{ 
+    id: 1001,
+    title: `La Plataforma de impulso a los Novilleros de Andalucía presenta su Memoria 2025 a la Fundación Caja Rural del Sur y la Real Maestranza de Caballería de Sevilla`,
+    image: "/images/plataforma.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `El director general de la Fundación Toro de Lidia refuerza el respaldo institucional a un proyecto clave para el futuro de la tauromaquia andaluza
+
+Jueves, 18 de diciembre de 2025
+
+La Plataforma de impulso a los Novilleros de Andalucía continúa afianzando su proyecto tras la presentación de su Memoria 2025 ante algunas de las principales entidades colaboradoras que hacen posible esta iniciativa. En la mañana de hoy, Borja Cardelús, director general de la Fundación Toro de Lidia, ha presentado el balance del primer curso de actividad de la Plataforma en la Fundación Caja Rural del Sur, donde ha sido recibido por Manuel Ruiz Rojas, así como en la Real Maestranza de Caballería de Sevilla, institución en la que el encuentro ha tenido lugar con el Teniente de Hermano Mayor, Marcelo Maestre.
+
+        
+
+Estas presentaciones se suman a la realizada ante la Diputación de Córdoba, donde Cardelús expuso la Memoria 2025 a Andrés Lorite, vicepresidente primero y diputado delegado de Infraestructuras, Sostenibilidad y Agricultura, institución que patrocina activamente este proyecto estratégico para el futuro de la tauromaquia andaluza. Durante dicho encuentro quedó patente el firme respaldo de la Diputación de Córdoba a una iniciativa cuyos ejes fundamentales son la promoción y visibilidad de los novilleros andaluces, la difusión y reconocimiento de los certámenes taurinos celebrados en Andalucía y el impulso al trabajo formativo de las Escuelas Taurinas de la comunidad.
+
+        
+
+Impulsada por la Fundación Toro de Lidia, la Plataforma ha cerrado su primer curso de actividad con resultados altamente positivos, consolidándose como una herramienta de comunicación, proyección y vertebración del sector sin precedentes. En el ámbito digital, el proyecto ha alcanzado 66.000 seguidores en su primer año de vida, acumulando cerca de 40 millones de impresiones, cifras que reflejan el impacto real de la iniciativa y su capacidad para acercar la tauromaquia y a sus jóvenes protagonistas a nuevos públicos.
+
+ 
+
+Más allá de su presencia en redes sociales y en su web oficial, la Plataforma ha desarrollado un amplio calendario de actos y encuentros presenciales, entre los que destacan reuniones institucionales y actividades incluidas en el programa ‘Veteranos y noveles’ de la Fundación Toro de Lidia. Este programa posee una marcada vocación social y divulgativa, llevando la tauromaquia a residencias de mayores, centros sociales, colegios y universidades, y fomentando la transmisión de valores culturales, educativos y humanos ligados al mundo del toro.
+
+ 
+
+Con la presentación de esta Memoria 2025, la Plataforma de impulso a los Novilleros de Andalucía culmina su primer año de trabajo con un balance muy positivo, sentando las bases de un proyecto sólido, moderno y vertebrador, en el que el respaldo institucional —con especial protagonismo de la Diputación de Córdoba— se erige como pilar fundamental para la defensa y promoción de la tauromaquia como expresión cultural y social de Andalucía.
+
+ 
+
+La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `La Escuela Comarcal de Ubrique cerrará el 2025 con un 'Tentadero Público en Clase Práctica Fin de Curso'`,
+    image: "/images/ubrique.jpg",
+	imageCaption: "/images/ubriqueb.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `La **Plaza de Toros de Ubrique**, conocida como la 'Capital de la Piel', será escenario el próximo **sábado 20 de diciembre**, a partir de las **12:00 horas**, del tradicional **Tentadero Público en Clase Práctica Fin de Curso** con el que la **Escuela Comarcal Taurina de Ubrique** pondrá el broche final al periodo 2025.
+
+Este festejo, concebido como un acto abierto al público y de marcado carácter formativo, está organizado por la propia **Escuela Comarcal Taurina de Ubrique** que preside D. **Eduardo Ordóñez** y cuenta con la estrecha colaboración del **Excmo. Ayuntamiento** de la localidad. En la jornada se lidiarán tres reses pertenecientes a la ganadería de **Los Elegidos**, bajo la dirección y magisterio de D. **Juan Rojas**, director de la escuela ubriqueña y reconocido banderillero de 'Plata de Ley'.
+
+El cartel de la clase práctica lo integran los alumnos más avanzados del centro: **Mario Torres**, **Juan Manuel Viruez**, **Javier Torres “Bombita”**, **Tomás Carmelo**, **Javier Caro**, **Francisco de Paula** y **Sheila Berrocal**, quienes tendrán la oportunidad de demostrar sobre el albero los conocimientos y la evolución adquiridos a lo largo del curso.
+
+Finalizadas las labores camperas, el público asistente podrá disfrutar de una **exhibición de toreo** protagonizada por el resto de aprendices de la escuela. En esta demostración participarán **Pablo Román**, **David Flores**, **Álvaro Sánchez**, **Víctor Iván Chacón**, **Franco Juan Rojas**, **Juanjo Domínguez**, **Javier Olmedo**, **Curro Pazo**, **Javier Almendro**, **Gonzalo García**, **Álvaro Ríos**, **Antonio García**, **Juan Rodríguez**, **Azarel Gil**, **Andra García**, **Juan González**, **Héctor García**, **Paula Jiménez**, **Javier Álvarez**, **Alejandro Núñez**, **Juan José Carrera**, **Juan Antonio Olmo**, **Claudio Rubiales**, **Rodrigo Sevillano** y **Lola Rubiales**, reflejando el amplio y diverso alumnado que conforma la cantera taurina ubriqueña.
+
+Como colofón a esta intensa jornada taurina y formativa, se hará entrega de un **Diploma Acreditativo de Fin de Curso** a todos los alumnos de la **Escuela Comarcal Taurina de Ubrique**, reconociendo así su esfuerzo, dedicación y compromiso con el aprendizaje del arte del toreo.
+
+El tentadero supondrá, un año más, una cita destacada en el calendario taurino local y una muestra del firme trabajo que la escuela desarrolla en favor de la formación y promoción de nuevos valores de la tauromaquia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   }
 ];
 
 const latestNews: NewsItem[] = [
 	{ 
-    id: 14,
+    id: 8,
+    title: `La Plataforma de impulso a los Novilleros de Andalucía presenta su Memoria 2025 a la Fundación Caja Rural del Sur y la Real Maestranza de Caballería de Sevilla`,
+    image: "/images/plataforma.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `El director general de la Fundación Toro de Lidia refuerza el respaldo institucional a un proyecto clave para el futuro de la tauromaquia andaluza
+
+Jueves, 18 de diciembre de 2025
+
+La Plataforma de impulso a los Novilleros de Andalucía continúa afianzando su proyecto tras la presentación de su Memoria 2025 ante algunas de las principales entidades colaboradoras que hacen posible esta iniciativa. En la mañana de hoy, Borja Cardelús, director general de la Fundación Toro de Lidia, ha presentado el balance del primer curso de actividad de la Plataforma en la Fundación Caja Rural del Sur, donde ha sido recibido por Manuel Ruiz Rojas, así como en la Real Maestranza de Caballería de Sevilla, institución en la que el encuentro ha tenido lugar con el Teniente de Hermano Mayor, Marcelo Maestre.
+
+        
+
+Estas presentaciones se suman a la realizada ante la Diputación de Córdoba, donde Cardelús expuso la Memoria 2025 a Andrés Lorite, vicepresidente primero y diputado delegado de Infraestructuras, Sostenibilidad y Agricultura, institución que patrocina activamente este proyecto estratégico para el futuro de la tauromaquia andaluza. Durante dicho encuentro quedó patente el firme respaldo de la Diputación de Córdoba a una iniciativa cuyos ejes fundamentales son la promoción y visibilidad de los novilleros andaluces, la difusión y reconocimiento de los certámenes taurinos celebrados en Andalucía y el impulso al trabajo formativo de las Escuelas Taurinas de la comunidad.
+
+        
+
+Impulsada por la Fundación Toro de Lidia, la Plataforma ha cerrado su primer curso de actividad con resultados altamente positivos, consolidándose como una herramienta de comunicación, proyección y vertebración del sector sin precedentes. En el ámbito digital, el proyecto ha alcanzado 66.000 seguidores en su primer año de vida, acumulando cerca de 40 millones de impresiones, cifras que reflejan el impacto real de la iniciativa y su capacidad para acercar la tauromaquia y a sus jóvenes protagonistas a nuevos públicos.
+
+ 
+
+Más allá de su presencia en redes sociales y en su web oficial, la Plataforma ha desarrollado un amplio calendario de actos y encuentros presenciales, entre los que destacan reuniones institucionales y actividades incluidas en el programa ‘Veteranos y noveles’ de la Fundación Toro de Lidia. Este programa posee una marcada vocación social y divulgativa, llevando la tauromaquia a residencias de mayores, centros sociales, colegios y universidades, y fomentando la transmisión de valores culturales, educativos y humanos ligados al mundo del toro.
+
+ 
+
+Con la presentación de esta Memoria 2025, la Plataforma de impulso a los Novilleros de Andalucía culmina su primer año de trabajo con un balance muy positivo, sentando las bases de un proyecto sólido, moderno y vertebrador, en el que el respaldo institucional —con especial protagonismo de la Diputación de Córdoba— se erige como pilar fundamental para la defensa y promoción de la tauromaquia como expresión cultural y social de Andalucía.
+
+ 
+
+La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 9,
+    title: `La Escuela Comarcal de Ubrique cerrará el 2025 con un 'Tentadero Público en Clase Práctica Fin de Curso'`,
+    image: "/images/ubrique.jpg",
+	imageCaption: "/images/ubriqueb.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `La **Plaza de Toros de Ubrique**, conocida como la 'Capital de la Piel', será escenario el próximo **sábado 20 de diciembre**, a partir de las **12:00 horas**, del tradicional **Tentadero Público en Clase Práctica Fin de Curso** con el que la **Escuela Comarcal Taurina de Ubrique** pondrá el broche final al periodo 2025.
+
+Este festejo, concebido como un acto abierto al público y de marcado carácter formativo, está organizado por la propia **Escuela Comarcal Taurina de Ubrique** que preside D. **Eduardo Ordóñez** y cuenta con la estrecha colaboración del **Excmo. Ayuntamiento** de la localidad. En la jornada se lidiarán tres reses pertenecientes a la ganadería de **Los Elegidos**, bajo la dirección y magisterio de D. **Juan Rojas**, director de la escuela ubriqueña y reconocido banderillero de 'Plata de Ley'.
+
+El cartel de la clase práctica lo integran los alumnos más avanzados del centro: **Mario Torres**, **Juan Manuel Viruez**, **Javier Torres “Bombita”**, **Tomás Carmelo**, **Javier Caro**, **Francisco de Paula** y **Sheila Berrocal**, quienes tendrán la oportunidad de demostrar sobre el albero los conocimientos y la evolución adquiridos a lo largo del curso.
+
+Finalizadas las labores camperas, el público asistente podrá disfrutar de una **exhibición de toreo** protagonizada por el resto de aprendices de la escuela. En esta demostración participarán **Pablo Román**, **David Flores**, **Álvaro Sánchez**, **Víctor Iván Chacón**, **Franco Juan Rojas**, **Juanjo Domínguez**, **Javier Olmedo**, **Curro Pazo**, **Javier Almendro**, **Gonzalo García**, **Álvaro Ríos**, **Antonio García**, **Juan Rodríguez**, **Azarel Gil**, **Andra García**, **Juan González**, **Héctor García**, **Paula Jiménez**, **Javier Álvarez**, **Alejandro Núñez**, **Juan José Carrera**, **Juan Antonio Olmo**, **Claudio Rubiales**, **Rodrigo Sevillano** y **Lola Rubiales**, reflejando el amplio y diverso alumnado que conforma la cantera taurina ubriqueña.
+
+Como colofón a esta intensa jornada taurina y formativa, se hará entrega de un **Diploma Acreditativo de Fin de Curso** a todos los alumnos de la **Escuela Comarcal Taurina de Ubrique**, reconociendo así su esfuerzo, dedicación y compromiso con el aprendizaje del arte del toreo.
+
+El tentadero supondrá, un año más, una cita destacada en el calendario taurino local y una muestra del firme trabajo que la escuela desarrolla en favor de la formación y promoción de nuevos valores de la tauromaquia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 10,
     title: `Eventos Mare Nostrum continuará al frente de la Plaza de Toros de Alicante tras ser la única oferta presentada`,
     image: "/images/eventos.jpg",
     category: "Actualidad",
@@ -487,7 +601,7 @@ Con este objetivo, el pliego contempla una rehabilitación integral del inmueble
   showAuthorHeader: true
    },
 	{ 
-    id: 15,
+    id: 11,
     title: `El Premio Nacional de Tauromaquia 2025 se entregará de nuevo en el Senado`,
     image: "/images/premio2.jpg",
     category: "Actualidad",
@@ -504,7 +618,7 @@ En la edición de 2024, el **Premio Nacional de Tauromaquia** fue concedido ex a
   showAuthorHeader: true
    },
 	{ 
-    id: 16,
+    id: 12,
     title: `Valladolid fija la Feria de San Pedro Regalado 2026 para los días 16 y 17 de mayo`,
     image: "/images/valladolid.jpg",
     category: "Actualidad",
@@ -519,7 +633,7 @@ Asimismo, en la mañana de este miércoles 17 de diciembre se ha hecho público 
   showAuthorHeader: true
    },
 	{ 
-    id: 17,
+    id: 13,
     title: `Curro Vázquez tendrá su azulejo en Las Ventas`,
     image: "/images/curro2.jpg",
     category: "Actualidad",
@@ -532,6 +646,126 @@ La inauguración oficial del azulejo tendrá lugar el próximo 15 de mayo, festi
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
+   },
+	{ 
+    id: 14,
+    title: `El Premio Nacional de Tauramaquia 2025 se entregará de nuevo en el Senado`,
+    image: "/images/premio3.jpg",
+	imageCaption: "/images/lidia.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `El Premio Nacional de Tauramaquia 2025 se entregará de nuevo en el Senado
+ 
+El Senado, la Junta de Andalucía, Cantabria, Región de Murcia, Comunitat Valenciana, Gobierno de Aragón, Junta de Comunidades de Castilla-La Mancha, Junta de Extremadura, Comunidad de Madrid, Junta de Castilla y León, la Ciudad Autónoma de Melilla y la Fundación Toro de Lidia convocan de nuevo el Premio Nacional de Tauromaquia suprimido por el Ministerio de Cultura de Ernest Urtasun
+ 
+La convocatoria cuenta este año con la incorporación de la Ciudad Autónoma de Melilla, sumándose a las once instituciones que ya participaron en 2024
+
+La entrega del Premio Nacional de Tauromaquia 2025 tendrá lugar de nuevo en el Senado, galardón que en esta segunda edición mantiene el compromiso institucional de reconocer los méritos de profesionales y figuras destacadas del mundo taurino mientras persiste la situación de excepción censora creada por el Ministerio de Cultura.
+ 
+El premio será otorgado por el Senado, la Junta de Andalucía, Cantabria, la Región de Murcia, la Comunitat Valenciana, el Gobierno de Aragón, la Junta de Comunidades de Castilla-La Mancha, la Junta de Extremadura, la Comunidad de Madrid, la Junta de Castilla y León, la Ciudad Autónoma de Melilla y la Fundación Toro de Lidia. 
+ 
+Así, Melilla se suma a las once instituciones que ya convocaron el Premio Nacional de Tauromaquia el año pasado. 
+
+Sobre el Premio Nacional de Tauromaquia
+El Premio Nacional de Tauromaquia fue otorgado por primera vez en 2013 por el Ministerio de Cultura de España para reconocer los méritos de profesionales de la tauromaquia o de personas e instituciones que destacaran por su labor en favor de la difusión de los valores culturales de esta manifestación artística.
+ 
+En mayo de 2024, el ministro de Cultura, Ernest Urtasun, anunció la supresión del Premio Nacional de Tauromaquia, un ataque ideológico a la libertad y diversidad de la cultura en España que fue inmediatamente contestado por la sociedad y por gran parte de las instituciones públicas.
+ 
+Ante esta situación, la Fundación del Toro de Lidia, entidad que aglutina y representa a todos los profesionales y aficionados que forman el sector taurino, reunió todas las iniciativas promovidas por instituciones públicas en un único gran Premio Nacional de Tauromaquia, en estricto cumplimiento de la obligación de defender y promover la Tauromaquia que la ley 18/2013 impone a todas las administraciones públicas.
+ 
+El Premio Nacional de Tauromaquia 2024 se otorgó ex aequo a la Real Unión de Criadores de Toros de Lidia y a Albert Serra. 
+ 
+Situación legal de la tauromaquia
+La tauromaquia es una expresión cultural característica de España, protegida por la Constitución Española, cuyo artículo 46 establece que los poderes públicos deben garantizar la conservación y promoción del enriquecimiento del patrimonio histórico, cultural y artístico de los pueblos de España y de los bienes que lo integran, reconociendo el artículo 44 que los poderes públicos promoverán y tutelarán el acceso a la cultura, a la que todos tienen derecho.
+ 
+En desarrollo de esta realidad cultural y esta obligación impuesta a los poderes públicos, en 2013 se aprobó la Ley 18/2013, de 12 de noviembre, para la regulación de la Tauromaquia como patrimonio cultural.
+ 
+Tanto el Tribunal Constitucional como el Tribunal Supremo han tenido ocasión de reafirmar en diversas ocasiones el carácter cultural de la tauromaquia y la obligación de los poderes públicos de protegerla, promoverla y divulgarla, sin que quepa discriminarla frente a otras manifestaciones culturales. Y ello, a pesar de que existan detractores de esta. De forma expresa, el Tribunal Constitucional en su sentencia 177/2016, de 20 de octubre de 2016 afirmó “el hecho que la aceptación de ese carácter no sea pacífico, no priva a las corridas de toros (…), de su carácter cultural pues, existiendo en la realidad social española, el Estado contribuye así a su conservación mediante una acción de salvaguarda de una manifestación subyacente que entiende digna de protección en tanto que integrada en el genérico concepto constitucional de cultura, cuya salvaguarda incumbe a todos los poderes públicos en el ejercicio de sus respectivas competencias”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 15,
+    title: `EL REY DON JUAN CARLOS HACE LLEGAR SU AGRADECIMIENTO A LA 
+ASOCIACIÓN INTERNACIONAL DE TAUROMAQUIA`,
+    image: "/images/juancarlos.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `Su Majestad expresa con cariñosas palabras el agradecimiento por las muestras de respeto y 
+admiración de los aficionados
+Los ciudadanos que acuden a las plazas tienen el derecho de disfrutar de Su presencia en los 
+tendidos, un entorno de total afinidad con la Corona y de forma especial con la figura y la persona 
+de Don Juan Carlos
+
+
+Un especial honor ha supuesto recibir las cariñosas palabras del Rey Don Juan Carlos tanto para la junta 
+directiva de la Asociación Internacional de Tauromaquia (AIT), como para los miembros que la componen 
+y las personas y entidades con las que venimos trabajando en proyectos de defensa de La Fiesta de los 
+toros.
+Como gesto de consideración a la nota de prensa emitida días atrás por la AIT felicitando a Su Majestad por 
+el 50 aniversario de su proclamación y expresándole la importancia de Su apoyo a la Tauromaquia, Don 
+Juan Carlos ha enviado cálidas palabras de agradecimiento, que por inesperadas y remitidas desde la Casa 
+de Su Majestad el Rey, han sido recibidas como un hecho privilegiado.
+En un acto de justicia, la AIT. en la referida nota expresó a Su Majestad el sentir de millones de personas 
+que acuden a las plazas o ven correr los toros por sus calles, un hecho sencillo y ordinario que ahora, 
+recibida Su respuesta, lo convierte en extraordinario.
+Es el deseo de esta asociación compartir el saludo que hace extensivo a todos los miembros de la AIT. con 
+cada una de las personas, instituciones y asociaciones que tanto en España como en el resto de países 
+con tradición taurina de Europa y América, venimos desde años atrás intensamente trabajando.
+Una forma feliz para terminar este 2025, seguros de que el nuevo año que pronto comienza, nos consta 
+que va a ser en el que Don Juan Carlos volverá a estar presente en los tendidos, un entorno de total 
+afinidad con la Corona y de forma especial con la figura y la persona de Don Juan Carlos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 16,
+    title: `El Coso de El Pino acoge un tentadero público fin de curso de las escuelas taurinas de Sanlúcar y Chiclana`,
+    image: "/images/coso.jpg",
+	imageCaption: "/images/coso1.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `El histórico **Coso de El Pino** será escenario el próximo **domingo 21 de diciembre**, a partir de las **12:30 horas**, de un **tentadero público de fin de curso** que pondrá el broche a la temporada formativa de la **Escuela Taurina “El Volapié”** de Sanlúcar de Barrameda.
+
+El festejo, organizado por la empresa **Espectáculos Carmelo García**, contará con la participación de alumnos de la escuela sanluqueña y de la **Escuela Taurina “Francisco Montes ‘Paquiro’”** de Chiclana de la Frontera, que ha sido invitada para la ocasión, reforzando así los lazos de convivencia y aprendizaje entre ambas instituciones.
+
+Durante la jornada se lidiarán **tres vacas**, en un marco de especial significado, ya que el **centenario Coso de El Pino** ha celebrado este año su **125 aniversario**, convirtiéndose en un escenario idóneo para que los jóvenes aspirantes a toreros muestren los conocimientos adquiridos a lo largo del curso.
+
+Por parte de la **Escuela de Tauromaquia “El Volapié”**, actuarán los alumnos **Jaime Benítez**, **Manuel Delgado**, **Nacho Mateo**, **Cándido Moreno**, **José M. Márquez**, **Santiago Rodríguez**, **Álvaro Díaz**, **José Núñez**, **Daniel Pacheco**, **Gabriel Moreno “El Calé”**, **Hugo Silva** y **Héctor Camacho**.
+
+En representación de la **Escuela Taurina “Francisco Montes ‘Paquiro’”** de Chiclana de la Frontera, participarán los alumnos **Martín**, **Pancho**, **Bruno**, **Yeray**, **Cayetano**, **Mariano**, **Álvaro** y **Saúl**.
+
+El tentadero público servirá no solo como evaluación final del curso, sino también como una oportunidad para que aficionados y público en general puedan presenciar el progreso y la ilusión de las nuevas generaciones del toreo, en una cita que promete emoción y compromiso con la tradición taurina.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 17,
+    title: `Aula Taurina perteneciente a la Escuela de Tauromaquia de Sevilla, convoca el XXXV Concurso de Creación Artística “La Fiesta de los Toros”`,
+    image: "/images/aula.jpg",
+	imageCaption: "/images/aula1.jpg",
+    category: "Actualidad",
+    date: "17 de Diciembre de 2025",
+    fullContent: `**Aula Taurina** perteneciente a la **Escuela de Tauromaquia de Sevilla**, con el patrocinio de la **Real Maestranza de Caballería de Sevilla**, ha convocado el **XXXV Concurso de Creación Artística** sobre el tema **“La Fiesta de los Toros”**, dirigido a jóvenes de **Sevilla** y su **provincia**.
+
+El certamen establece dos modalidades de participación: **fotografía** y **vídeos cortos**, con el objetivo de fomentar la creatividad artística y la reflexión cultural en torno al mundo del toro entre los jóvenes.
+
+En la **modalidad de fotografía**, las obras deberán presentarse en **formato digital JPEG**, con una resolución mínima recomendada de **1600 x 1200 píxeles** y **formato 3:4 o 9:16**. Cada participante podrá presentar una única fotografía, que deberá enviarse por correo electrónico a **[concursosaulataurina@gmail.com](mailto:concursosaulataurina@gmail.com)**, indicando nombre, domicilio y teléfono de contacto. **El plazo de presentación finalizará el 3 de febrero de 2026**.
+
+Por su parte, **los vídeos** deberán tener **una duración de entre tres y cuatro minutos**, presentarse en **formato MP4**, con **resolución mínima 720p** y **grabación horizontal 16:9**. Los trabajos deberán entregarse en **soporte ‘Pendrive’** en la sede social de la **Asociación**, situada en **C/ Adriano nº 31, bajo (Sevilla)**, los **martes en horario de 10:00 a 13:00 horas**, junto con los datos personales del participante. **El plazo de entrega concluirá el 3 de febrero de 2026 a las 13:00 horas**.
+
+**El jurado** estará presidido por el **Presidente de Aula Taurina** y contará con miembros de su **Junta Directiva** y profesionales de las disciplinas artísticas a concurso. **El fallo del jurado se hará público antes del 13 de febrero de 2026**.
+
+Se concederán **dos premios en cada modalidad**, consistentes en **un abono para la Temporada Taurina 2026** y, en el caso del **primer premio**, la **Medalla de la Orden de la Real Maestranza**. Los trabajos premiados pasarán a ser propiedad de **Aula Taurina**, que se reserva los derechos de publicación y utilización.
+
+La participación en el concurso supone la aceptación íntegra de las bases y de las decisiones del jurado. Para más información, los interesados pueden dirigirse al correo electrónico **[concursosaulataurina@gmail.com](mailto:concursosaulataurina@gmail.com)**.
+`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
    },
 	{ 
     id: 18,
