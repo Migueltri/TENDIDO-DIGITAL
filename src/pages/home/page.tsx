@@ -451,74 +451,93 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Eventos Mare Nostrum continuará al frente de la Plaza de Toros de Alicante tras ser la única oferta presentada`,
-    image: "/images/eventos.jpg",
+    title: `Tres ganaderías de lujo para la Feria del Milagro de Illescas 2026`,
+    image: "/images/tres.jpg",
     category: "Actualidad",
     date: "18 de Diciembre de 2025",
-    fullContent: `La **Plaza de Toros de Alicante** continuará siendo gestionada por la empresa **Eventos Mare Nostrum**, al haber sido la única **propuesta presentada al concurso público** convocado para su explotación. Esta circunstancia quedó confirmada en la **Mesa de Contratación** celebrada ayer, lo que deja como único escenario posible la renovación de la actual concesión.
+    fullContent: `**MAXITORO** volverá a apostar por la categoría y la calidad ganadera en su tradicional **FERIA DEL MILAGRO DE ILLESCAS**. Así, la empresa ha anunciado los nombres del campo bravo que protagonizarán la edición de 2026, con tres hierros de máximo prestigio: **DOMINGO HERNÁNDEZ** y **ROMÁN SORANDO** para la corrida de toros a pie, y **CAPEA** para el festejo de rejones.
 
-El nuevo contrato entraría en vigor el próximo mes de abril y **podría extenderse por un periodo máximo de tres años**. De este modo, Eventos Mare Nostrum afrontaría su cuarto ciclo al frente del coso alicantino, tras haber asumido la gestión como empresa heredera de la anterior UTE formada por Simón Casas y Toros del Mediterráneo.
+Estas ganaderías han sido protagonistas de faenas memorables durante las últimas temporadas, sustento de grandes triunfos de las figuras. Su presencia reafirma la apuesta por hierros de garantías contrastadas y por un nivel ganadero a la altura del cartel de figuras que acostumbra a concentrar la feria.
 
-La renovación de la concesión se produce en un contexto en el que se persigue reforzar el carácter taurino de la Plaza de Toros de Alicante, al tiempo que se impulsa su apertura a otros tipos de espectáculos con capacidad para generar un impacto económico y cultural positivo en la ciudad.
-
-Con este objetivo, el pliego contempla una rehabilitación integral del inmueble, orientada a la mejora y adaptación de sus instalaciones para nuevos usos. En este sentido, se establece como requisito mínimo la celebración de seis espectáculos no taurinos, cifra que se pretende ampliar hasta diez en el próximo pliego de condiciones.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
+En las próximas jornadas, la empresa irá desvelando más detalles de unas combinaciones que buscan seguir consolidando a Illescas como una plaza de referencia en el arranque de la temporada. La Feria del Milagro, marcada por su carácter social y por la presencia habitual de numerosas personalidades, volverá a situarse como uno de los grandes polos de atención taurina tanto para los aficionados como para los principales toreros del escalafón, a pie y a caballo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `La Plataforma de impulso a los Novilleros de Andalucía presenta su Memoria 2025 a la Fundación Caja Rural del Sur y la Real Maestranza de Caballería de Sevilla`,
-    image: "/images/plataforma.jpg",
+    title: `La A.N.V.T. y F.F. entrega su ‘Insignia de Oro’ a la Presidenta de la Excma. Diputación de Cádiz y al Vicepresidente Segundo`,
+    image: "/images/13.jpg",
     category: "Actualidad",
     date: "18 de Diciembre de 2025",
-    fullContent: `El director general de la Fundación Toro de Lidia refuerza el respaldo institucional a un proyecto clave para el futuro de la tauromaquia andaluza
+	excerpt: `Dª. Almudena Martínez del Junco y D. Francisco Javier Vidal, fueron galardonados por la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta (Escuelas de Cádiz) “Por el Fomento de la Tauromaquia y a las Escuelas Taurinas de la Provincia de Cádiz”`,
+    fullContent: `La finca del maestro **Francisco Ruiz Miguel**, conocida como *El Algarrobo* (Los Barrios-Cádiz), fue escenario en la mañana de hoy, **jueves 18 de diciembre**, del acto institucional de entrega de la **Insignia de Oro de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta**, entidad que agrupa a las **Escuelas Taurinas de la provincia de Cádiz**. El reconocimiento recayó en la **Excma. Sra. Presidenta de la Diputación de Cádiz, Dª. Almudena Martínez del Junco**, y en el **Ilmo. Sr. Vicepresidente Segundo, D. Francisco Javier Vidal**, en agradecimiento al firme respaldo que la institución provincial mantiene con la tauromaquia y la formación de nuevos valores del toreo.
 
-Jueves, 18 de diciembre de 2025
+El acto dio comienzo a las 13:45 horas con la recepción oficial de las autoridades, que fueron recibidas por el **Presidente de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, D. Eduardo Ordóñez**, y por el anfitrión de la jornada, el maestro **D. Francisco Ruiz Miguel**, Vicepresidente de la Asociación Andaluza de Escuelas Taurinas “Pedro Romero”.
 
-La Plataforma de impulso a los Novilleros de Andalucía continúa afianzando su proyecto tras la presentación de su Memoria 2025 ante algunas de las principales entidades colaboradoras que hacen posible esta iniciativa. En la mañana de hoy, Borja Cardelús, director general de la Fundación Toro de Lidia, ha presentado el balance del primer curso de actividad de la Plataforma en la Fundación Caja Rural del Sur, donde ha sido recibido por Manuel Ruiz Rojas, así como en la Real Maestranza de Caballería de Sevilla, institución en la que el encuentro ha tenido lugar con el Teniente de Hermano Mayor, Marcelo Maestre.
+La apertura y conducción del evento corrió a cargo de **Emilio Trigo**, Jefe de Gabinete de Prensa, quien ofreció un saludo institucional y dio la bienvenida a los asistentes. Seguidamente, tomó la palabra el maestro **Ruiz Miguel**, quien, en calidad de anfitrión, expresó su satisfacción por acoger el encuentro.
 
-        
+A continuación, intervino el presidente de la Asociación, **Eduardo Ordóñez**, quien explicó el significado del acto y los motivos que han llevado a la concesión de la **Insignia de Oro**, subrayando que el galardón **reconoce el constante fomento de la tauromaquia y el apoyo decidido a las Escuelas Taurinas de la provincia**, destacando la colaboración institucional y personal de la **Diputación de Cádiz** con la formación de los futuros profesionales del toreo.
 
-Estas presentaciones se suman a la realizada ante la Diputación de Córdoba, donde Cardelús expuso la Memoria 2025 a Andrés Lorite, vicepresidente primero y diputado delegado de Infraestructuras, Sostenibilidad y Agricultura, institución que patrocina activamente este proyecto estratégico para el futuro de la tauromaquia andaluza. Durante dicho encuentro quedó patente el firme respaldo de la Diputación de Córdoba a una iniciativa cuyos ejes fundamentales son la promoción y visibilidad de los novilleros andaluces, la difusión y reconocimiento de los certámenes taurinos celebrados en Andalucía y el impulso al trabajo formativo de las Escuelas Taurinas de la comunidad.
+El momento central del acto llegó con la entrega de las distinciones. La **Insignia de Oro** fue impuesta al **Vicepresidente Segundo de la Diputación, D. Francisco Javier Vidal**, de manos del maestro **D. José Luis Galloso**, Vicepresidente de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, y de **D. Eduardo Ordóñez**. Posteriormente, la **Presidenta de la Diputación, Dª. Almudena Martínez del Junco**, recibió el galardón de manos del maestro **D. Francisco Ruiz Miguel** y del Presidente de la Asociación.
 
-        
+Tanto la **Presidenta** como el **Vicepresidente** agradecieron visiblemente emocionados la distinción recibida, **reafirmando su compromiso con la tauromaquia y con las Escuelas Taurinas de Cádiz**, cuya labor formativa y cultural destacaron como esencial para garantizar **el futuro de la Fiesta**.
 
-Impulsada por la Fundación Toro de Lidia, la Plataforma ha cerrado su primer curso de actividad con resultados altamente positivos, consolidándose como una herramienta de comunicación, proyección y vertebración del sector sin precedentes. En el ámbito digital, el proyecto ha alcanzado 66.000 seguidores en su primer año de vida, acumulando cerca de 40 millones de impresiones, cifras que reflejan el impacto real de la iniciativa y su capacidad para acercar la tauromaquia y a sus jóvenes protagonistas a nuevos públicos.
-
- 
-
-Más allá de su presencia en redes sociales y en su web oficial, la Plataforma ha desarrollado un amplio calendario de actos y encuentros presenciales, entre los que destacan reuniones institucionales y actividades incluidas en el programa ‘Veteranos y noveles’ de la Fundación Toro de Lidia. Este programa posee una marcada vocación social y divulgativa, llevando la tauromaquia a residencias de mayores, centros sociales, colegios y universidades, y fomentando la transmisión de valores culturales, educativos y humanos ligados al mundo del toro.
-
- 
-
-Con la presentación de esta Memoria 2025, la Plataforma de impulso a los Novilleros de Andalucía culmina su primer año de trabajo con un balance muy positivo, sentando las bases de un proyecto sólido, moderno y vertebrador, en el que el respaldo institucional —con especial protagonismo de la Diputación de Córdoba— se erige como pilar fundamental para la defensa y promoción de la tauromaquia como expresión cultural y social de Andalucía.
-
- 
-
-La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
+El acto concluyó con una fotografía de familia y un **almuerzo institucional de convivencia**, en el que autoridades, representantes de las Escuelas Taurinas de Cádiz, miembros de la Junta Directiva de la Asociación, ganaderos e invitados compartieron impresiones en un ambiente de cordialidad, hermandad y reconocimiento mutuo.
+`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `La Escuela Comarcal de Ubrique cerrará el 2025 con un 'Tentadero Público en Clase Práctica Fin de Curso'`,
-    image: "/images/ubrique.jpg",
-	footerImage1: "/images/ubriqueb.jpg",
+    title: `La excelencia taurina de El Puerto de Santa María, vuelve a brillar en la histórica Bodega Caballero del Castillo de San Marcos`,
+    image: "/images/excelencia.jpg",
+	footerImage1: "/images/excelencia1.jpg",
     category: "Actualidad",
     date: "18 de Diciembre de 2025",
-    fullContent: `La **Plaza de Toros de Ubrique**, conocida como la 'Capital de la Piel', será escenario el próximo **sábado 20 de diciembre**, a partir de las **12:00 horas**, del tradicional **Tentadero Público en Clase Práctica Fin de Curso** con el que la **Escuela Comarcal Taurina de Ubrique** pondrá el broche final al periodo 2025.
+	excerpt: "Los Premios Taurinos “Toros en El Puerto” organizados por la empresa EVENTIC, se consolidan como el evento social y cultural de referencia para el sector, reafirmando el posicionamiento estratégico de la ciudad en el panorama taurino nacional.",
+    fullContent: `La histórica Bodega Caballero del Castillo de San Marcos, volverá a ser el escenario para reconocer la excelencia de la Temporada Taurina 2025.
 
-Este festejo, concebido como un acto abierto al público y de marcado carácter formativo, está organizado por la propia **Escuela Comarcal Taurina de Ubrique** que preside D. **Eduardo Ordóñez** y cuenta con la estrecha colaboración del **Excmo. Ayuntamiento** de la localidad. En la jornada se lidiarán tres reses pertenecientes a la ganadería de **Los Elegidos**, bajo la dirección y magisterio de D. **Juan Rojas**, director de la escuela ubriqueña y reconocido banderillero de 'Plata de Ley'.
+ 
 
-El cartel de la clase práctica lo integran los alumnos más avanzados del centro: **Mario Torres**, **Juan Manuel Viruez**, **Javier Torres “Bombita”**, **Tomás Carmelo**, **Javier Caro**, **Francisco de Paula** y **Sheila Berrocal**, quienes tendrán la oportunidad de demostrar sobre el albero los conocimientos y la evolución adquiridos a lo largo del curso.
+Tras el rotundo éxito de su primera edición, la emblemática Bodega Caballero del Castillo de San Marcos volverá a abrir sus puertas para acoger la Gala de Entrega de la II edición de los Premios Taurinos “Toros en El Puerto” Temporada 2025, que se celebrará con una nueva gala el próximo viernes 30 de enero de 2026.
 
-Finalizadas las labores camperas, el público asistente podrá disfrutar de una **exhibición de toreo** protagonizada por el resto de aprendices de la escuela. En esta demostración participarán **Pablo Román**, **David Flores**, **Álvaro Sánchez**, **Víctor Iván Chacón**, **Franco Juan Rojas**, **Juanjo Domínguez**, **Javier Olmedo**, **Curro Pazo**, **Javier Almendro**, **Gonzalo García**, **Álvaro Ríos**, **Antonio García**, **Juan Rodríguez**, **Azarel Gil**, **Andra García**, **Juan González**, **Héctor García**, **Paula Jiménez**, **Javier Álvarez**, **Alejandro Núñez**, **Juan José Carrera**, **Juan Antonio Olmo**, **Claudio Rubiales**, **Rodrigo Sevillano** y **Lola Rubiales**, reflejando el amplio y diverso alumnado que conforma la cantera taurina ubriqueña.
+ 
 
-Como colofón a esta intensa jornada taurina y formativa, se hará entrega de un **Diploma Acreditativo de Fin de Curso** a todos los alumnos de la **Escuela Comarcal Taurina de Ubrique**, reconociendo así su esfuerzo, dedicación y compromiso con el aprendizaje del arte del toreo.
+Esta velada distinguirá las actuaciones más destacadas durante la pasada temporada en El Puerto de Santa María. Como ya se anunció en su día, el cartel de galardonados lo encabezan referentes del escalafón como José Antonio Morante de la Puebla y José María Manzanares, compartiendo protagonismo con el torero portuense, Daniel Crespo, entre otros premiados.
 
-El tentadero supondrá, un año más, una cita destacada en el calendario taurino local y una muestra del firme trabajo que la escuela desarrolla en favor de la formación y promoción de nuevos valores de la tauromaquia.`,
+ 
+
+Por otra parte, cabe destacar que en esta edición adquiere un protagonismo muy especial el galardón a la mejor faena de rejones, otorgado a Rui Fernandes, ya que éste se bautizó con el nombre “Premio Álvaro Domecq” y ahora con más fuerza aún si cabe, volvemos a rendir homenaje a. D. Álvaro Domecq Romero, alma de Torrestrella, figura del rejoneo y fundador de la Real Escuela Andaluza del Arte Ecuestre, cuya ausencia el pasado 18 de noviembre, nos dejó un inmenso vacío.
+
+ 
+
+La conducción del acto recaerá nuevamente en Fernando García Mena, actual presentador de los informativos del fin de semana de Canal Sur, T.V., gran profesional de la comunicación andaluza, avalado por una dilatada y prestigiosa trayectoria.
+
+ 
+
+ El evento se perfila como una cita imprescindible que reunirá a figuras del toreo, profesionales taurinos y de la comunicación, autoridades, patrocinadores y empresarios, así como una nutrida representación de la afición de la ciudad y de la propia provincia.
+
+ 
+
+La elección de un escenario con la carga histórica del Castillo de San Marcos, gracias a la inestimable colaboración de Grupo Caballero, subraya el compromiso de la organización con la puesta en valor del patrimonio local.
+
+ 
+
+Esta gala ha sido diseñada con el firme propósito de buscar notoriedad y posicionamiento a El Puerto y a la propia provincia, como referente indiscutible del mundo taurino. Asimismo, busca fortalecer el tejido social creando un espacio de convivencia donde peñas, aficionados y público en general se sientan representados, además de reivindicar la cultura, celebrando la tauromaquia como una manifestación viva que define la tradición y la esencia de El Puerto de Santa María, trascendiendo las fronteras de la propia plaza y contribuyendo a la promoción turística y cultural de la provincia de Cádiz. 
+
+ 
+
+Para Raúl Capdevila, CEO de EVENTIC, empresa impulsora de esta iniciativa, esta segunda edición supone la consolidación de un proyecto de largo recorrido: “Para EVENTIC es un orgullo poder celebrar esta segunda edición, ya que estos premios son el mejor testimonio de nuestra firme apuesta por la excelencia, la promoción y la tradición taurina, un patrimonio que debemos impulsar y reconocer con acciones que refuercen nuestra identidad, no solo durante la temporada de verano sino durante todo el año”.
+
+ 
+
+EVENTIC, quiere expresar su agradecimiento a las empresas patrocinadoras, ya que no son sólo una fuente de financiación, son socios estratégicos que aportan además confianza, credibilidad y alcance, asegurando que esa noche de galardones, adquirirán el protagonismo que sin duda han cosechado. Gracias a: Bodegas Caballero y Gutiérrez Colosía, Balcris Gallery, Puerto Sherry, restaurantes El Faro y Bar Jamón, inmobiliarias GICA y Gilmar, Puerto Taller El Palmar, Postres Pepe Mesa, Catering Momento Andaluz, Geocaminos y Sonido Ojeda, así por supuesto como a los media partners que amplificarán el mensaje a su audiencia: Cadena COPE, 65ymas, Radio Puerto, eventic360 y Onetoro.
+
+ 
+
+Por último, hay que destacar que, la importancia de la colaboración entre administraciones públicas y entidades privadas es un motor esencial para el desarrollo económico y social de la provincia, permitiendo alcanzar objetivos complejos y mejorando la eficiencia en la prestación de servicios. Sirvan estas líneas para extender nuestro agradecimiento a la Diputación Provincial de Cádiz y a la Delegación de Turismo y Promoción de la Ciudad de El Puerto de Santa María por confiar y apoyar públicamente el proyecto “Toros en El Puerto”.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -526,6 +545,99 @@ El tentadero supondrá, un año más, una cita destacada en el calendario taurin
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 5,
+    title: `Tres ganaderías de lujo para la Feria del Milagro de Illescas 2026`,
+    image: "/images/tres.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+    fullContent: `**MAXITORO** volverá a apostar por la categoría y la calidad ganadera en su tradicional **FERIA DEL MILAGRO DE ILLESCAS**. Así, la empresa ha anunciado los nombres del campo bravo que protagonizarán la edición de 2026, con tres hierros de máximo prestigio: **DOMINGO HERNÁNDEZ** y **ROMÁN SORANDO** para la corrida de toros a pie, y **CAPEA** para el festejo de rejones.
+
+Estas ganaderías han sido protagonistas de faenas memorables durante las últimas temporadas, sustento de grandes triunfos de las figuras. Su presencia reafirma la apuesta por hierros de garantías contrastadas y por un nivel ganadero a la altura del cartel de figuras que acostumbra a concentrar la feria.
+
+En las próximas jornadas, la empresa irá desvelando más detalles de unas combinaciones que buscan seguir consolidando a Illescas como una plaza de referencia en el arranque de la temporada. La Feria del Milagro, marcada por su carácter social y por la presencia habitual de numerosas personalidades, volverá a situarse como uno de los grandes polos de atención taurina tanto para los aficionados como para los principales toreros del escalafón, a pie y a caballo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 6,
+    title: `La A.N.V.T. y F.F. entrega su ‘Insignia de Oro’ a la Presidenta de la Excma. Diputación de Cádiz y al Vicepresidente Segundo`,
+    image: "/images/13.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+	excerpt: `Dª. Almudena Martínez del Junco y D. Francisco Javier Vidal, fueron galardonados por la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta (Escuelas de Cádiz) “Por el Fomento de la Tauromaquia y a las Escuelas Taurinas de la Provincia de Cádiz”`,
+    fullContent: `La finca del maestro **Francisco Ruiz Miguel**, conocida como *El Algarrobo* (Los Barrios-Cádiz), fue escenario en la mañana de hoy, **jueves 18 de diciembre**, del acto institucional de entrega de la **Insignia de Oro de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta**, entidad que agrupa a las **Escuelas Taurinas de la provincia de Cádiz**. El reconocimiento recayó en la **Excma. Sra. Presidenta de la Diputación de Cádiz, Dª. Almudena Martínez del Junco**, y en el **Ilmo. Sr. Vicepresidente Segundo, D. Francisco Javier Vidal**, en agradecimiento al firme respaldo que la institución provincial mantiene con la tauromaquia y la formación de nuevos valores del toreo.
+
+El acto dio comienzo a las 13:45 horas con la recepción oficial de las autoridades, que fueron recibidas por el **Presidente de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, D. Eduardo Ordóñez**, y por el anfitrión de la jornada, el maestro **D. Francisco Ruiz Miguel**, Vicepresidente de la Asociación Andaluza de Escuelas Taurinas “Pedro Romero”.
+
+La apertura y conducción del evento corrió a cargo de **Emilio Trigo**, Jefe de Gabinete de Prensa, quien ofreció un saludo institucional y dio la bienvenida a los asistentes. Seguidamente, tomó la palabra el maestro **Ruiz Miguel**, quien, en calidad de anfitrión, expresó su satisfacción por acoger el encuentro.
+
+A continuación, intervino el presidente de la Asociación, **Eduardo Ordóñez**, quien explicó el significado del acto y los motivos que han llevado a la concesión de la **Insignia de Oro**, subrayando que el galardón **reconoce el constante fomento de la tauromaquia y el apoyo decidido a las Escuelas Taurinas de la provincia**, destacando la colaboración institucional y personal de la **Diputación de Cádiz** con la formación de los futuros profesionales del toreo.
+
+El momento central del acto llegó con la entrega de las distinciones. La **Insignia de Oro** fue impuesta al **Vicepresidente Segundo de la Diputación, D. Francisco Javier Vidal**, de manos del maestro **D. José Luis Galloso**, Vicepresidente de la Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, y de **D. Eduardo Ordóñez**. Posteriormente, la **Presidenta de la Diputación, Dª. Almudena Martínez del Junco**, recibió el galardón de manos del maestro **D. Francisco Ruiz Miguel** y del Presidente de la Asociación.
+
+Tanto la **Presidenta** como el **Vicepresidente** agradecieron visiblemente emocionados la distinción recibida, **reafirmando su compromiso con la tauromaquia y con las Escuelas Taurinas de Cádiz**, cuya labor formativa y cultural destacaron como esencial para garantizar **el futuro de la Fiesta**.
+
+El acto concluyó con una fotografía de familia y un **almuerzo institucional de convivencia**, en el que autoridades, representantes de las Escuelas Taurinas de Cádiz, miembros de la Junta Directiva de la Asociación, ganaderos e invitados compartieron impresiones en un ambiente de cordialidad, hermandad y reconocimiento mutuo.
+`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 7,
+    title: `La excelencia taurina de El Puerto de Santa María, vuelve a brillar en la histórica Bodega Caballero del Castillo de San Marcos`,
+    image: "/images/excelencia.jpg",
+	footerImage1: "/images/excelencia1.jpg",
+    category: "Actualidad",
+    date: "18 de Diciembre de 2025",
+	excerpt: "Los Premios Taurinos “Toros en El Puerto” organizados por la empresa EVENTIC, se consolidan como el evento social y cultural de referencia para el sector, reafirmando el posicionamiento estratégico de la ciudad en el panorama taurino nacional.",
+    fullContent: `La histórica Bodega Caballero del Castillo de San Marcos, volverá a ser el escenario para reconocer la excelencia de la Temporada Taurina 2025.
+
+ 
+
+Tras el rotundo éxito de su primera edición, la emblemática Bodega Caballero del Castillo de San Marcos volverá a abrir sus puertas para acoger la Gala de Entrega de la II edición de los Premios Taurinos “Toros en El Puerto” Temporada 2025, que se celebrará con una nueva gala el próximo viernes 30 de enero de 2026.
+
+ 
+
+Esta velada distinguirá las actuaciones más destacadas durante la pasada temporada en El Puerto de Santa María. Como ya se anunció en su día, el cartel de galardonados lo encabezan referentes del escalafón como José Antonio Morante de la Puebla y José María Manzanares, compartiendo protagonismo con el torero portuense, Daniel Crespo, entre otros premiados.
+
+ 
+
+Por otra parte, cabe destacar que en esta edición adquiere un protagonismo muy especial el galardón a la mejor faena de rejones, otorgado a Rui Fernandes, ya que éste se bautizó con el nombre “Premio Álvaro Domecq” y ahora con más fuerza aún si cabe, volvemos a rendir homenaje a. D. Álvaro Domecq Romero, alma de Torrestrella, figura del rejoneo y fundador de la Real Escuela Andaluza del Arte Ecuestre, cuya ausencia el pasado 18 de noviembre, nos dejó un inmenso vacío.
+
+ 
+
+La conducción del acto recaerá nuevamente en Fernando García Mena, actual presentador de los informativos del fin de semana de Canal Sur, T.V., gran profesional de la comunicación andaluza, avalado por una dilatada y prestigiosa trayectoria.
+
+ 
+
+ El evento se perfila como una cita imprescindible que reunirá a figuras del toreo, profesionales taurinos y de la comunicación, autoridades, patrocinadores y empresarios, así como una nutrida representación de la afición de la ciudad y de la propia provincia.
+
+ 
+
+La elección de un escenario con la carga histórica del Castillo de San Marcos, gracias a la inestimable colaboración de Grupo Caballero, subraya el compromiso de la organización con la puesta en valor del patrimonio local.
+
+ 
+
+Esta gala ha sido diseñada con el firme propósito de buscar notoriedad y posicionamiento a El Puerto y a la propia provincia, como referente indiscutible del mundo taurino. Asimismo, busca fortalecer el tejido social creando un espacio de convivencia donde peñas, aficionados y público en general se sientan representados, además de reivindicar la cultura, celebrando la tauromaquia como una manifestación viva que define la tradición y la esencia de El Puerto de Santa María, trascendiendo las fronteras de la propia plaza y contribuyendo a la promoción turística y cultural de la provincia de Cádiz. 
+
+ 
+
+Para Raúl Capdevila, CEO de EVENTIC, empresa impulsora de esta iniciativa, esta segunda edición supone la consolidación de un proyecto de largo recorrido: “Para EVENTIC es un orgullo poder celebrar esta segunda edición, ya que estos premios son el mejor testimonio de nuestra firme apuesta por la excelencia, la promoción y la tradición taurina, un patrimonio que debemos impulsar y reconocer con acciones que refuercen nuestra identidad, no solo durante la temporada de verano sino durante todo el año”.
+
+ 
+
+EVENTIC, quiere expresar su agradecimiento a las empresas patrocinadoras, ya que no son sólo una fuente de financiación, son socios estratégicos que aportan además confianza, credibilidad y alcance, asegurando que esa noche de galardones, adquirirán el protagonismo que sin duda han cosechado. Gracias a: Bodegas Caballero y Gutiérrez Colosía, Balcris Gallery, Puerto Sherry, restaurantes El Faro y Bar Jamón, inmobiliarias GICA y Gilmar, Puerto Taller El Palmar, Postres Pepe Mesa, Catering Momento Andaluz, Geocaminos y Sonido Ojeda, así por supuesto como a los media partners que amplificarán el mensaje a su audiencia: Cadena COPE, 65ymas, Radio Puerto, eventic360 y Onetoro.
+
+ 
+
+Por último, hay que destacar que, la importancia de la colaboración entre administraciones públicas y entidades privadas es un motor esencial para el desarrollo económico y social de la provincia, permitiendo alcanzar objetivos complejos y mejorando la eficiencia en la prestación de servicios. Sirvan estas líneas para extender nuestro agradecimiento a la Diputación Provincial de Cádiz y a la Delegación de Turismo y Promoción de la Ciudad de El Puerto de Santa María por confiar y apoyar públicamente el proyecto “Toros en El Puerto”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 8,
     title: `La Plataforma de impulso a los Novilleros de Andalucía presenta su Memoria 2025 a la Fundación Caja Rural del Sur y la Real Maestranza de Caballería de Sevilla`,
