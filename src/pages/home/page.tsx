@@ -451,6 +451,55 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `FRANCIA: Interesante terna en Gamarde`,
+    image: "/images/garmade.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `A pocos días para que acabe en 2025, la temporada europea 2026 comienza a tomar forma y el país vecino tiene ya una de sus primeras fechas oficiales.
+
+La cita será el próximo **12 de abril de 2026** en la localidad francesa de **Gamarde**, dará una corrida de toros con astados de la ganadería de **Virgen María**.
+
+Para un cartel de los más interesante **David Galván** como triunfador de la pasada temporada en esta plaza, completan el matador de toros de El Puerto de Santa María **Daniel Crespo** y el torero revelación de 2025 **Víctor Hernández**, conformando una terna de gran atractivo para la afición francesa.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `MADRID: Al completo, el calendario de la temporada 2026 en Las Ventas`,
+    image: "/images/calendario.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `La temporada 2026 en la Plaza de Toros de Las Ventas ya tiene definidas, al completo, las fechas de espectáculos. Una temporada en la que el coso venteño va a celebrar 60 festejos taurinos: 41 corridas de toros; 16 novilladas, una de ellas sin picadores, final del 'Camino hacia Las Ventas'; y 3 corridas de rejones.
+
+El inicio de la temporada está fijado con corrida de toros para el 22 de marzo. La Feria de San Isidro se celebrará del viernes 8 de mayo al sábado 7 de junio, con los domingos 8 y 14 de junio marcados en rojo con la celebración de las corridas In Memoriam y Beneficencia. Una corrida de toros más, el domingo 21 de junio, servirá de antesala al Certamen de novilladas nocturnas 'Cénate Las Ventas'.
+
+Cénate Las Ventas, que comenzará el jueves 25 de junio, se prolongará con cinco novilladas hasta el jueves 23 de julio. El resto del verano traerá hasta cuatro corridas de toros (los jueves 30 de julio, 6 y 27 de agosto, junto a la corrida de La Paloma el 15 de agosto) y una corrida de rejones programada para el 20 de agosto.
+
+Durante el mes septiembre volverán los espectáculos a los domingos, con una novillada el primer domingo del mes y tres corridas de toros los domingos 13, 20 y 27 de septiembre. Finalmente, la Feria de Otoño se celebrará como es ya habitual en dos tramos, del 1 al 4 de octubre y del 9 al 11, con el lunes 12 de octubre reservado para la tradicional corrida de la Hispanidad que pondrá punto final a la temporada 2026. `,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Roca Rey cierra su cuadrilla para 2026`,
+    image: "/images/rocarey1.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `**Andrés Roca Rey** ya tiene definida la cuadrilla que le acompañará durante la temporada 2026. La principal novedad es la incorporación del banderillero **Agustín de Espartinas**.
+
+Continuarán dos nombres de absoluta confianza para el torero: **Francisco Durán ‘Viruta’** y **Francisco Gómez ‘Paquito Algaba’**.
+
+También continúan los picadores **José Manuel Quinta** y **Sergio Molina**.
+
+La cuadrilla se completa con **Manuel Lara ‘Larita’** como mozo de espadas, y **Curro Puya** como ayuda.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
     title: `La Venta del Batán acoge el IV Certamen de Invierno de Escuelas Taurinas en homenaje a Tomás Serrano Guío`,
     image: "/images/batan.jpg",
     category: "Actualidad",
@@ -469,7 +518,7 @@ El festejo, de **entrada gratuita hasta completar aforo**, contará además con 
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1004,
     title: `Olivenza presenta una Feria Taurina 2026 de máximo interés y grandes alicientes`,
     image: "/images/olivenza1.jpg",
     category: "Actualidad",
@@ -492,7 +541,56 @@ Con esta cuidada combinación de nombres y ganaderías, Olivenza reafirma su con
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+ { 
+    id: 1,
+    title: `FRANCIA: Interesante terna en Gamarde`,
+    image: "/images/garmade.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `A pocos días para que acabe en 2025, la temporada europea 2026 comienza a tomar forma y el país vecino tiene ya una de sus primeras fechas oficiales.
+
+La cita será el próximo **12 de abril de 2026** en la localidad francesa de **Gamarde**, dará una corrida de toros con astados de la ganadería de **Virgen María**.
+
+Para un cartel de los más interesante **David Galván** como triunfador de la pasada temporada en esta plaza, completan el matador de toros de El Puerto de Santa María **Daniel Crespo** y el torero revelación de 2025 **Víctor Hernández**, conformando una terna de gran atractivo para la afición francesa.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `MADRID: Al completo, el calendario de la temporada 2026 en Las Ventas`,
+    image: "/images/calendario.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `La temporada 2026 en la Plaza de Toros de Las Ventas ya tiene definidas, al completo, las fechas de espectáculos. Una temporada en la que el coso venteño va a celebrar 60 festejos taurinos: 41 corridas de toros; 16 novilladas, una de ellas sin picadores, final del 'Camino hacia Las Ventas'; y 3 corridas de rejones.
+
+El inicio de la temporada está fijado con corrida de toros para el 22 de marzo. La Feria de San Isidro se celebrará del viernes 8 de mayo al sábado 7 de junio, con los domingos 8 y 14 de junio marcados en rojo con la celebración de las corridas In Memoriam y Beneficencia. Una corrida de toros más, el domingo 21 de junio, servirá de antesala al Certamen de novilladas nocturnas 'Cénate Las Ventas'.
+
+Cénate Las Ventas, que comenzará el jueves 25 de junio, se prolongará con cinco novilladas hasta el jueves 23 de julio. El resto del verano traerá hasta cuatro corridas de toros (los jueves 30 de julio, 6 y 27 de agosto, junto a la corrida de La Paloma el 15 de agosto) y una corrida de rejones programada para el 20 de agosto.
+
+Durante el mes septiembre volverán los espectáculos a los domingos, con una novillada el primer domingo del mes y tres corridas de toros los domingos 13, 20 y 27 de septiembre. Finalmente, la Feria de Otoño se celebrará como es ya habitual en dos tramos, del 1 al 4 de octubre y del 9 al 11, con el lunes 12 de octubre reservado para la tradicional corrida de la Hispanidad que pondrá punto final a la temporada 2026. `,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 2,
+    title: `Roca Rey cierra su cuadrilla para 2026`,
+    image: "/images/rocarey1.jpg",
+    category: "Actualidad",
+    date: "20 de Diciembre de 2025",
+    fullContent: `**Andrés Roca Rey** ya tiene definida la cuadrilla que le acompañará durante la temporada 2026. La principal novedad es la incorporación del banderillero **Agustín de Espartinas**.
+
+Continuarán dos nombres de absoluta confianza para el torero: **Francisco Durán ‘Viruta’** y **Francisco Gómez ‘Paquito Algaba’**.
+
+También continúan los picadores **José Manuel Quinta** y **Sergio Molina**.
+
+La cuadrilla se completa con **Manuel Lara ‘Larita’** como mozo de espadas, y **Curro Puya** como ayuda.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 3,
     title: `La Venta del Batán acoge el IV Certamen de Invierno de Escuelas Taurinas en homenaje a Tomás Serrano Guío`,
     image: "/images/batan.jpg",
