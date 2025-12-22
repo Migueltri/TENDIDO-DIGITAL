@@ -451,89 +451,77 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `FRANCIA: Interesante terna en Gamarde`,
-    image: "/images/garmade.jpg",
+    title: `Las Ventas perfila un arranque de temporada 2026 de marcado acento torista y máxima exigencia`,
+    image: "/images/exigencia.jpg",
     category: "Actualidad",
-    date: "20 de Diciembre de 2025",
-    fullContent: `A pocos días para que acabe en 2025, la temporada europea 2026 comienza a tomar forma y el país vecino tiene ya una de sus primeras fechas oficiales.
+    date: "22 de Diciembre de 2025",
+    fullContent: `Una vez encarrilado el grueso de las negociaciones de la **Feria de San Isidro**, **Plaza 1** trabaja ya en la configuración del inicio de la **temporada 2026** en la **Plaza de Toros de Las Ventas**, que se anuncia con un marcado acento torista y carteles de máxima exigencia para el aficionado madrileño.
 
-La cita será el próximo **12 de abril de 2026** en la localidad francesa de **Gamarde**, dará una corrida de toros con astados de la ganadería de **Virgen María**.
+La apertura oficial de la temporada tendrá lugar el **domingo 22 de marzo**, con una corrida de toros de **Hijos de Celestino Cuadri**, uno de los hierros más emblemáticos del campo bravo onubense y auténtica referencia para la afición torista. Para este compromiso inaugural, la empresa maneja una terna integrada por **Damián Castaño**, **Gómez del Pilar** y **Juan de Castilla**, tres matadores sobradamente curtidos en este tipo de encastes.
 
-Para un cartel de los más interesante **David Galván** como triunfador de la pasada temporada en esta plaza, completan el matador de toros de El Puerto de Santa María **Daniel Crespo** y el torero revelación de 2025 **Víctor Hernández**, conformando una terna de gran atractivo para la afición francesa.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `MADRID: Al completo, el calendario de la temporada 2026 en Las Ventas`,
-    image: "/images/calendario.jpg",
-    category: "Actualidad",
-    date: "20 de Diciembre de 2025",
-    fullContent: `La temporada 2026 en la Plaza de Toros de Las Ventas ya tiene definidas, al completo, las fechas de espectáculos. Una temporada en la que el coso venteño va a celebrar 60 festejos taurinos: 41 corridas de toros; 16 novilladas, una de ellas sin picadores, final del 'Camino hacia Las Ventas'; y 3 corridas de rejones.
+El **domingo 29 de marzo**, **Domingo de Ramos**, **Plaza 1** tiene previsto anunciar una corrida del hierro de **Martín Lorca**, habitual en los inicios de temporada venteños. El ganadero malagueño prepara un encierro serio para un cartel que la empresa perfila con **Curro Díaz**, **Rafael Serna** y el mexicano **Diego San Román**, en caso de no entrar finalmente en los carteles isidriles.
 
-El inicio de la temporada está fijado con corrida de toros para el 22 de marzo. La Feria de San Isidro se celebrará del viernes 8 de mayo al sábado 7 de junio, con los domingos 8 y 14 de junio marcados en rojo con la celebración de las corridas In Memoriam y Beneficencia. Una corrida de toros más, el domingo 21 de junio, servirá de antesala al Certamen de novilladas nocturnas 'Cénate Las Ventas'.
+El **domingo 5 de abril**, **Domingo de Resurrección**, llegará el turno del hierro portugués de **Palha**, con un cartel de alto compromiso en el que figuran **Antonio Ferrera** e **Isaac Fonseca**. El tercer actuante será un torero que confirmará su alternativa ese mismo día en el coso de la calle de Alcalá.
 
-Cénate Las Ventas, que comenzará el jueves 25 de junio, se prolongará con cinco novilladas hasta el jueves 23 de julio. El resto del verano traerá hasta cuatro corridas de toros (los jueves 30 de julio, 6 y 27 de agosto, junto a la corrida de La Paloma el 15 de agosto) y una corrida de rejones programada para el 20 de agosto.
+Tras las novilladas picadas programadas para los días **12 y 19 de abril**, **Plaza 1** contempla para el **domingo 26 de abril** la lidia de la corrida de **Dolores Aguirre**, un encierro inicialmente previsto para San Isidro y cuyo lugar ha sido finalmente ocupado por el hierro de **Saltillo**.
 
-Durante el mes septiembre volverán los espectáculos a los domingos, con una novillada el primer domingo del mes y tres corridas de toros los domingos 13, 20 y 27 de septiembre. Finalmente, la Feria de Otoño se celebrará como es ya habitual en dos tramos, del 1 al 4 de octubre y del 9 al 11, con el lunes 12 de octubre reservado para la tradicional corrida de la Hispanidad que pondrá punto final a la temporada 2026. `,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Roca Rey cierra su cuadrilla para 2026`,
-    image: "/images/rocarey1.jpg",
-    category: "Actualidad",
-    date: "20 de Diciembre de 2025",
-    fullContent: `**Andrés Roca Rey** ya tiene definida la cuadrilla que le acompañará durante la temporada 2026. La principal novedad es la incorporación del banderillero **Agustín de Espartinas**.
+Este primer bloque de la temporada madrileña 2026 quedará completado con la ya anunciada **Corrida Goyesca del 2 de mayo**, en la que están anunciados **Uceda Leal**, **El Cid** y **Javier Cortés**.
 
-Continuarán dos nombres de absoluta confianza para el torero: **Francisco Durán ‘Viruta’** y **Francisco Gómez ‘Paquito Algaba’**.
+Así quedarían los carteles del inicio de la temporada 2026 en **Las Ventas**:
 
-También continúan los picadores **José Manuel Quinta** y **Sergio Molina**.
+**Domingo 22 de marzo**  
+Toros de **Hijos de Celestino Cuadri**  
+**Damián Castaño – Gómez del Pilar – Juan de Castilla**
 
-La cuadrilla se completa con **Manuel Lara ‘Larita’** como mozo de espadas, y **Curro Puya** como ayuda.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `La Venta del Batán acoge el IV Certamen de Invierno de Escuelas Taurinas en homenaje a Tomás Serrano Guío`,
-    image: "/images/batan.jpg",
-    category: "Actualidad",
-    date: "20 de Diciembre de 2025",
-    fullContent: `La **Plaza de Tientas de la Venta del Batán** será escenario el próximo **sábado 27 de diciembre**, a partir de las **11:30 horas**, del **IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid**, un festejo que se celebrará en homenaje y recuerdo de **Tomás Serrano Guío**, figura clave en la formación taurina madrileña por su labor como presidente del Patronato de la **Escuela de Tauromaquia de Madrid**.
+**Domingo 29 de marzo (Domingo de Ramos)**  
+Toros de **Martín Lorca**  
+**Curro Díaz – Rafael Serna – Diego San Román**
 
-El certamen, ya consolidado como una cita destacada en el calendario formativo taurino, reunirá a alumnos procedentes de distintas escuelas de la **Comunidad de Madrid**, en una jornada que combina recuerdo, proyección de futuro y compromiso con la tauromaquia desde la base.
+**Domingo 5 de abril (Domingo de Resurrección)**  
+Toros de **Palha**  
+**Antonio Ferrera – Isaac Fonseca – Matador por confirmar**
 
-Para la ocasión se lidiarán dos novillos de la ganadería de **Zacarías Moreno** y cuatro novillos de **Toros de la Plata**, encastes que aportan variedad y exigencia a un festejo pensado para medir la evolución y el concepto de los jóvenes aspirantes.
+**Domingo 12 de abril**  
+Novillada con picadores  
+Cartel por definir
 
-Harán el paseíllo **Andreo Sánchez** (**E.T. Navas del Rey**), **Pablo Jurado** (**E.T.F. El Juli**), **José Huelves** (**E.T. Colmenar Viejo**), **Brahian Osorio “Carrita”** (**E.T. Galapagar**), **Óscar Campos** (**E.T. Yiyo**) y **Kevin Montiel** (**E.T. CITAR-Anchuelo**), representantes del presente y futuro de las escuelas taurinas madrileñas.
+**Domingo 19 de abril**  
+Novillada con picadores  
+Cartel por definir
 
-El festejo, de **entrada gratuita hasta completar aforo**, contará además con un **desayuno gratuito** para los asistentes a partir de las **10:30 horas**, reforzando el carácter abierto y divulgativo del certamen. La organización corre a cargo del **Centro de Asuntos Taurinos de la Comunidad de Madrid**, en colaboración con **Plaza 1** y la **Escuela Taurina Yiyo**.`,
+**Domingo 26 de abril**  
+Toros de **Dolores Aguirre**  
+Terna por definir
+
+**Sábado 2 de mayo – Corrida Goyesca**  
+Toros por anunciar  
+**Uceda Leal – El Cid – Javier Cortés**`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
-    title: `Olivenza presenta una Feria Taurina 2026 de máximo interés y grandes alicientes`,
-    image: "/images/olivenza1.jpg",
+    id: 1001,
+    title: `San Agustín del Guadalix presenta la Feria del Aficionado 2026 con tres desafíos ganaderos de máxima exigencia`,
+    image: "/images/san.jpg",
     category: "Actualidad",
-    date: "20 de Diciembre de 2025",
-    fullContent: `La localidad pacense de Olivenza ha dado a conocer oficialmente los carteles de su **Feria Taurina 2026**, un ciclo que vuelve a erigirse como uno de los grandes referentes del inicio de la temporada taurina y que destaca por su equilibrio entre figuras consagradas, toreros en plenitud y jóvenes valores en proyección, junto a hierros de reconocido prestigio.
+    date: "22 de Diciembre de 2025",
+    fullContent: `La plaza de toros de **San Agustín del Guadalix** volverá a situarse en el centro del interés de la afición torista con la celebración de la **Feria del Aficionado 2026**, cuyos carteles oficiales han sido presentados por el **Club Taurino 3 Puyazos**. El certamen mantiene intacta su filosofía original, apostando por el toro íntegro y por desafíos ganaderos de máxima exigencia, con hierros de marcada personalidad y toreros contrastados frente a encastes minoritarios.
 
-El abono se abrirá el **viernes 6 de marzo** con una novillada con picadores en la que harán el paseíllo **Tomás Bastos**, **Olga Casado** y **David Gutiérrez**, que debutará con picadores. Se lidiarán novillos de **Talavante**, una ganadería que aporta un plus de interés a una tarde marcada por la ilusión, la juventud y las expectativas de futuro.
+El ciclo se desarrollará durante los días **25 y 26 de abril**, articulándose en torno a tres festejos de notable interés ganadero y torero.
 
-El **sábado 7 de marzo** se celebrará la primera corrida de toros del ciclo, con un cartel de máximo atractivo compuesto por **José María Manzanares**, **Daniel Luque** y **Juan Ortega**, quienes se enfrentarán a un encierro de **Puerto de San Lorenzo**. Una terna que conjuga clasicismo, solvencia y estética, llamada a protagonizar una de las citas más destacadas de la feria.
+La feria dará comienzo el sábado **25 de abril**, a las **12:00 horas**, con una novillada en desafío ganadero entre las divisas de **Salvador Guardiola** e **Isaías y Tulio Vázquez**. Para la ocasión están anunciados los novilleros **Joao D’Alva** y **Jesús de la Calzada**, dos nombres en clara proyección dentro del circuito de novilladas de máximo rigor.
 
-La programación continuará el **domingo 8 de marzo** con una corrida matinal en la que actuarán **Borja Jiménez**, **David de Miranda** y **Marco Pérez**, ante toros de **Domingo Hernández** y **La Ventana del Puerto**, en un festejo que apuesta por la ambición, la proyección y el presente más pujante del escalafón.
+Ese mismo sábado, a las **18:30 horas**, se celebrará la primera corrida de toros, también bajo el formato de desafío ganadero, con reses de **Prieto de la Cal** y **Reta de Casta Navarra**. En el cartel figuran **Sánchez Vara**, **Joselillo** y **Francisco Montero**, tres matadores estrechamente vinculados al toro encastado y a las corridas de mayor dificultad.
 
-El ciclo se clausurará esa misma tarde con un cartel de alto voltaje integrado por **Alejandro Talavante**, **Emilio de Justo** y **Roca Rey**, que lidiarán reses de **Victoriano del Río**, garantía de bravura y emoción para un cierre de máximo nivel.
+La **Feria del Aficionado 2026** se cerrará el **domingo 26 de abril**, a las **12:00 horas**, con un desafío ganadero de alto voltaje entre las prestigiosas ganaderías de **Dolores Aguirre** y **José Escolar**. Harán el paseíllo **Damián Castaño**, **Juan de Castilla** y **Maxime Solera**, toreros con acreditada solvencia en este tipo de compromisos.
 
-Con esta cuidada combinación de nombres y ganaderías, Olivenza reafirma su condición de plaza clave del mes de marzo y su papel como punto de partida de la temporada taurina. Una feria rematada, atractiva y con sólidos argumentos para captar tanto al aficionado exigente como al gran público.`,
+En el apartado comercial, la organización ha confirmado las siguientes fechas:
+• Renovación de abonos: a partir del 2 de febrero  
+• Nuevos abonos: desde el 2 de marzo  
+• Entradas sueltas: a la venta a partir del 22 de marzo  
+
+Con esta programación, la **Feria del Aficionado** reafirma su condición de cita imprescindible para los defensores del toro íntegro y consolida a **San Agustín del Guadalix** como uno de los enclaves fundamentales del calendario torista europeo.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -542,6 +530,83 @@ Con esta cuidada combinación de nombres y ganaderías, Olivenza reafirma su con
 
 const latestNews: NewsItem[] = [
  { 
+    id: 1,
+    title: `Las Ventas perfila un arranque de temporada 2026 de marcado acento torista y máxima exigencia`,
+    image: "/images/exigencia.jpg",
+    category: "Actualidad",
+    date: "22 de Diciembre de 2025",
+    fullContent: `Una vez encarrilado el grueso de las negociaciones de la **Feria de San Isidro**, **Plaza 1** trabaja ya en la configuración del inicio de la **temporada 2026** en la **Plaza de Toros de Las Ventas**, que se anuncia con un marcado acento torista y carteles de máxima exigencia para el aficionado madrileño.
+
+La apertura oficial de la temporada tendrá lugar el **domingo 22 de marzo**, con una corrida de toros de **Hijos de Celestino Cuadri**, uno de los hierros más emblemáticos del campo bravo onubense y auténtica referencia para la afición torista. Para este compromiso inaugural, la empresa maneja una terna integrada por **Damián Castaño**, **Gómez del Pilar** y **Juan de Castilla**, tres matadores sobradamente curtidos en este tipo de encastes.
+
+El **domingo 29 de marzo**, **Domingo de Ramos**, **Plaza 1** tiene previsto anunciar una corrida del hierro de **Martín Lorca**, habitual en los inicios de temporada venteños. El ganadero malagueño prepara un encierro serio para un cartel que la empresa perfila con **Curro Díaz**, **Rafael Serna** y el mexicano **Diego San Román**, en caso de no entrar finalmente en los carteles isidriles.
+
+El **domingo 5 de abril**, **Domingo de Resurrección**, llegará el turno del hierro portugués de **Palha**, con un cartel de alto compromiso en el que figuran **Antonio Ferrera** e **Isaac Fonseca**. El tercer actuante será un torero que confirmará su alternativa ese mismo día en el coso de la calle de Alcalá.
+
+Tras las novilladas picadas programadas para los días **12 y 19 de abril**, **Plaza 1** contempla para el **domingo 26 de abril** la lidia de la corrida de **Dolores Aguirre**, un encierro inicialmente previsto para San Isidro y cuyo lugar ha sido finalmente ocupado por el hierro de **Saltillo**.
+
+Este primer bloque de la temporada madrileña 2026 quedará completado con la ya anunciada **Corrida Goyesca del 2 de mayo**, en la que están anunciados **Uceda Leal**, **El Cid** y **Javier Cortés**.
+
+Así quedarían los carteles del inicio de la temporada 2026 en **Las Ventas**:
+
+**Domingo 22 de marzo**  
+Toros de **Hijos de Celestino Cuadri**  
+**Damián Castaño – Gómez del Pilar – Juan de Castilla**
+
+**Domingo 29 de marzo (Domingo de Ramos)**  
+Toros de **Martín Lorca**  
+**Curro Díaz – Rafael Serna – Diego San Román**
+
+**Domingo 5 de abril (Domingo de Resurrección)**  
+Toros de **Palha**  
+**Antonio Ferrera – Isaac Fonseca – Matador por confirmar**
+
+**Domingo 12 de abril**  
+Novillada con picadores  
+Cartel por definir
+
+**Domingo 19 de abril**  
+Novillada con picadores  
+Cartel por definir
+
+**Domingo 26 de abril**  
+Toros de **Dolores Aguirre**  
+Terna por definir
+
+**Sábado 2 de mayo – Corrida Goyesca**  
+Toros por anunciar  
+**Uceda Leal – El Cid – Javier Cortés**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `San Agustín del Guadalix presenta la Feria del Aficionado 2026 con tres desafíos ganaderos de máxima exigencia`,
+    image: "/images/san.jpg",
+    category: "Actualidad",
+    date: "22 de Diciembre de 2025",
+    fullContent: `La plaza de toros de **San Agustín del Guadalix** volverá a situarse en el centro del interés de la afición torista con la celebración de la **Feria del Aficionado 2026**, cuyos carteles oficiales han sido presentados por el **Club Taurino 3 Puyazos**. El certamen mantiene intacta su filosofía original, apostando por el toro íntegro y por desafíos ganaderos de máxima exigencia, con hierros de marcada personalidad y toreros contrastados frente a encastes minoritarios.
+
+El ciclo se desarrollará durante los días **25 y 26 de abril**, articulándose en torno a tres festejos de notable interés ganadero y torero.
+
+La feria dará comienzo el sábado **25 de abril**, a las **12:00 horas**, con una novillada en desafío ganadero entre las divisas de **Salvador Guardiola** e **Isaías y Tulio Vázquez**. Para la ocasión están anunciados los novilleros **Joao D’Alva** y **Jesús de la Calzada**, dos nombres en clara proyección dentro del circuito de novilladas de máximo rigor.
+
+Ese mismo sábado, a las **18:30 horas**, se celebrará la primera corrida de toros, también bajo el formato de desafío ganadero, con reses de **Prieto de la Cal** y **Reta de Casta Navarra**. En el cartel figuran **Sánchez Vara**, **Joselillo** y **Francisco Montero**, tres matadores estrechamente vinculados al toro encastado y a las corridas de mayor dificultad.
+
+La **Feria del Aficionado 2026** se cerrará el **domingo 26 de abril**, a las **12:00 horas**, con un desafío ganadero de alto voltaje entre las prestigiosas ganaderías de **Dolores Aguirre** y **José Escolar**. Harán el paseíllo **Damián Castaño**, **Juan de Castilla** y **Maxime Solera**, toreros con acreditada solvencia en este tipo de compromisos.
+
+En el apartado comercial, la organización ha confirmado las siguientes fechas:
+• Renovación de abonos: a partir del 2 de febrero  
+• Nuevos abonos: desde el 2 de marzo  
+• Entradas sueltas: a la venta a partir del 22 de marzo  
+
+Con esta programación, la **Feria del Aficionado** reafirma su condición de cita imprescindible para los defensores del toro íntegro y consolida a **San Agustín del Guadalix** como uno de los enclaves fundamentales del calendario torista europeo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1,
     title: `FRANCIA: Interesante terna en Gamarde`,
     image: "/images/garmade.jpg",
