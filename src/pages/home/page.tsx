@@ -390,36 +390,6 @@ const splitToreros = (raw?: string | string[]) => {
   ));
 };
 
-	// Ejemplo simplificado para tu page.tsx real
-import { useEffect, useState } from 'react';
-import { db } from './firebase'; // tu archivo de configuración
-import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
-
-export default function Noticias() {
-  const [noticias, setNoticias] = useState([]);
-
-  useEffect(() => {
-    // Esta consulta busca las noticias ordenadas por fecha
-    const q = query(collection(db, "noticias"), orderBy("createdAt", "desc"));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-       setNoticias(snapshot.docs.map(doc => ({id: doc.id, ...doc.data()})));
-    });
-    return () => unsubscribe();
-  }, []);
-
-  return (
-    <div>
-       {noticias.map(noticia => (
-          <div key={noticia.id}>
-             <img src={noticia.imageUrl} />
-             <h2>{noticia.title}</h2>
-             <p>{noticia.body}</p>
-          </div>
-       ))}
-    </div>
-  );
-}
-
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
     key={news.id}
@@ -476,6 +446,36 @@ const CrónicaLayout = ({ news }: { news: any }) => (
     </div>
   </article>
 );
+
+	// Ejemplo simplificado para tu page.tsx real
+import { useEffect, useState } from 'react';
+import { db } from './firebase'; // tu archivo de configuración
+import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
+
+export default function Noticias() {
+  const [noticias, setNoticias] = useState([]);
+
+  useEffect(() => {
+    // Esta consulta busca las noticias ordenadas por fecha
+    const q = query(collection(db, "noticias"), orderBy("createdAt", "desc"));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+       setNoticias(snapshot.docs.map(doc => ({id: doc.id, ...doc.data()})));
+    });
+    return () => unsubscribe();
+  }, []);
+
+  return (
+    <div>
+       {noticias.map(noticia => (
+          <div key={noticia.id}>
+             <img src={noticia.imageUrl} />
+             <h2>{noticia.title}</h2>
+             <p>{noticia.body}</p>
+          </div>
+       ))}
+    </div>
+  );
+}
 	
 const featuredNews: NewsItem[] = [
 	{ 
