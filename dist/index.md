@@ -1,0 +1,90 @@
+---
+title: .pages.yml
+---
+\# .pages.yml (colócalo EN LA RAÍZ del repo)
+
+media:
+
+\- name: uploads
+
+label: "Medios"
+
+input: public/uploads
+
+output: /uploads
+
+content:
+
+\- name: pages
+
+label: "Páginas"
+
+type: file
+
+path: public/[index.md](http://index.md)
+
+fields:
+
+\- name: title
+
+label: "Título"
+
+type: string
+
+\- name: body
+
+label: "Contenido"
+
+type: rich-text
+
+\- name: noticias
+
+label: "Noticias"
+
+type: collection
+
+path: content/news
+
+filename: '{year}-{month}-{day}-{primary}.md'
+
+view:
+
+primary: title
+
+sort: \[ date \]
+
+fields:
+
+\- name: title
+
+label: "Título"
+
+type: string
+
+required: true
+
+\- name: date
+
+label: "Fecha"
+
+type: date
+
+required: true
+
+\- name: description
+
+label: "Extracto"
+
+type: text
+
+\- name: body
+
+label: "Cuerpo"
+
+type: rich-text
+
+\- name: published
+
+label: "Publicado"
+
+type: boolean
