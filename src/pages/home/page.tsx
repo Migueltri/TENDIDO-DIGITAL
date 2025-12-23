@@ -1,6 +1,6 @@
 // Ejemplo simplificado para tu page.tsx real
 import { useEffect, useState } from 'react';
-import { db } from './firebase'; // tu archivo de configuración
+import { db } from './firebase.js'; // tu archivo de configuración
 import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
 
 export default function Noticias() {
