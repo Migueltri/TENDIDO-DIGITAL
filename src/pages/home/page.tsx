@@ -1,33 +1,31 @@
-  import React, { useState, useEffect } from "react";
-  interface BaseArticle {
-  id: number;
-  title: string;
-  plaza?: string;
-  date: string;
-  category?: string;
-  toreros?: string[];
-  ganaderia?: string;
-  resultado?: string[];
-  torerosRaw?: string[];
-  image: string;
-  imageCaption?: string;
-  video?: string;
-  resumen?: string;
-  detalles?: string;
-  fullContent?: string;
-  excerpt?: string;
-  footerImage1?: string;
-  footerImage1Caption?: string;
-  footerImage2?: string;
-  footerImage2Caption?: string;
-  footerImage3?: string;
-  footerImage3Caption?: string;
-  footerImage4?: string;
-  footerImage4Caption?: string;
-  boldContent?: boolean;
-  author?: string;
-  authorLogo?: string;
-  showAuthorHeader?: boolean;
+	// Ejemplo simplificado para tu page.tsx real
+import { useEffect, useState } from 'react';
+import { db } from /firebase.js'; // tu archivo de configuración
+import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
+
+export default function Noticias() {
+  const [noticias, setNoticias] = useState([]);
+
+  useEffect(() => {
+    // Esta consulta busca las noticias ordenadas por fecha
+    const q = query(collection(db, "noticias"), orderBy("createdAt", "desc"));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+       setNoticias(snapshot.docs.map(doc => ({id: doc.id, ...doc.data()})));
+    });
+    return () => unsubscribe();
+  }, []);
+
+  return (
+    <div>
+       {noticias.map(noticia => (
+          <div key={noticia.id}>
+             <img src={noticia.imageUrl} />
+             <h2>{noticia.title}</h2>
+             <p>{noticia.body}</p>
+          </div>
+       ))}
+    </div>
+  );
 }
 
 type NewsItem = BaseArticle;
@@ -446,36 +444,6 @@ const CrónicaLayout = ({ news }: { news: any }) => (
     </div>
   </article>
 );
-
-	// Ejemplo simplificado para tu page.tsx real
-import { useEffect, useState } from 'react';
-import { db } from /firebase.js'; // tu archivo de configuración
-import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
-
-export default function Noticias() {
-  const [noticias, setNoticias] = useState([]);
-
-  useEffect(() => {
-    // Esta consulta busca las noticias ordenadas por fecha
-    const q = query(collection(db, "noticias"), orderBy("createdAt", "desc"));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-       setNoticias(snapshot.docs.map(doc => ({id: doc.id, ...doc.data()})));
-    });
-    return () => unsubscribe();
-  }, []);
-
-  return (
-    <div>
-       {noticias.map(noticia => (
-          <div key={noticia.id}>
-             <img src={noticia.imageUrl} />
-             <h2>{noticia.title}</h2>
-             <p>{noticia.body}</p>
-          </div>
-       ))}
-    </div>
-  );
-}
 	
 const featuredNews: NewsItem[] = [
 	{ 
