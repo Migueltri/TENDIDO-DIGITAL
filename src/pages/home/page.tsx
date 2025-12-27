@@ -450,6 +450,80 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `José Carlos Venegas: “Volver a San Isidro en 2026 es el mejor regalo de Navidad”`,
+    image: "/images/venegas3.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `A falta de la presentación oficial por parte de Plaza 1, con Rafael García Garrido y Simón Casas al frente de la gestión, la Feria de San Isidro 2026 puede darse prácticamente por cerrada. Un hecho histórico, al quedar rematada antes que nunca y en plenas fechas navideñas, anticipando una edición que volverá a situar a Madrid en el epicentro del mundo taurino.
+
+La feria más importante del planeta, cuya presentación oficial —salvo cambios— está prevista para el próximo 5 de febrero de 2026, incluirá entre sus combinaciones el regreso del torero jienense José Carlos Venegas, un nombre propio del toreo contemporáneo por su capacidad para imponerse a todo tipo de encastes y por una tauromaquia marcada por la pureza, el compromiso y la personalidad.
+
+Este esperado retorno a San Isidro no es fruto de la casualidad, sino del trabajo constante, serio y eficaz desarrollado en los despachos por su apoderada, Lidia Rodríguez Bermejo, cuya profesionalidad contrastada ha vuelto a quedar patente. Con discreción, conocimiento del sistema y una firme defensa de los méritos de su torero, ha sabido “lidiar” con solvencia las complejidades de la gestión para que Venegas vuelva a ocupar el lugar que le corresponde, demostrando una vez más que la tauromaquia también se construye fuera del ruedo.
+
+José Carlos Venegas no actúa en San Isidro desde 2018, cuando se enfrentó a una corrida de Dolores Aguirre, una de las ganaderías más exigentes del campo bravo. Posteriormente, el diestro volvió a trenzar el paseíllo en Las Ventas en septiembre de 2022, midiéndose a reses de Pahla y Saltillo, firmando aquella tarde una actuación de alto nivel que culminó con una reconocida vuelta al ruedo tras petición, después de una gran faena a un toro de Pahla que dejó una profunda impresión en los tendidos y que reforzó su crédito ante la afición madrileña.
+
+Según han avanzado los principales medios especializados en tauromaquia, el miércoles 20 de mayo será la fecha señalada para el esperado regreso de José Carlos Venegas al ciclo isidril. Una comparecencia que llegará en el corazón de la feria y en un cartel de máxima responsabilidad, acorde con la trayectoria de un torero que ha cimentado su carrera en el rigor, la autenticidad y el respeto a los encastes.
+
+El acontecimiento tendrá lugar ante toros de la ganadería de Saltillo, en un cartel que completan Juan Leal y Juan de Castilla, dos espadas igualmente caracterizados por su valor y entrega, configurando una terna de alto voltaje y marcada exigencia para la afición de Madrid.
+
+Con tanto fundamento informativo el propio José Carlos Venegas ha expresado sus sensaciones ante este regreso tan esperado:  
+“Me produce una ilusión enorme y, a la vez, una gran responsabilidad, con el máximo deseo de darlo todo y con el único recelo de que la suerte nos acompañe a modo de embestidas. Los toreros soñamos con escenarios así y es como el mejor regalo de Navidad que pueda tener. Quiero disfrutar esa tarde con el deseo de darle la vuelta a la moneda con un triunfo y poder entrar así en otras importantes ferias del circuito”.
+
+De este modo, San Isidro 2026 se presenta como un punto de inflexión en la trayectoria del torero jienense, que vuelve a Madrid dispuesto a reivindicarse en el escenario más exigente del toreo, respaldado por su experiencia, su calidad contrastada y el sólido trabajo de una apoderada que ha sabido estar a la altura del desafío, dentro y fuera de la plaza.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
+    image: "/images/cartelferia1.jpg.jpg",
+	footerImage1: "/images/cartelferia.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `La empresa **AjaToro**, dirigida por **Adrián Padilla**, ha hecho oficiales los carteles del serial taurino del **Carnaval de Jalostotitlán 2026**, uno de los ciclos más arraigados y de mayor prestigio del panorama taurino mexicano. El acto de presentación tuvo lugar en la **Casa de Cultura de Jalostotitlán (Jalisco)** y contó con la presencia de honor de la **Presidenta Municipal, Judith García Ramírez**, respaldando institucionalmente un acontecimiento de gran relevancia cultural y social para la localidad.
+
+El serial se celebrará los días **15, 16 y 17 de febrero de 2026** en la emblemática plaza de toros **Fermín Espinosa “Armillita”**, escenario histórico que volverá a convertirse en epicentro del toreo durante el tradicional Carnaval de Jalostotitlán. Una feria que, fiel a su esencia, conjuga figuras consolidadas, jóvenes valores y atractivos debuts, tanto de toreros mexicanos como europeos.
+
+Entre los grandes alicientes del abono destaca de manera especial el **debut en tierras mexicanas del torero onubense David de Miranda**, reconocido como **Torero Revelación de la Temporada Española**. Su inclusión en este importante ciclo supone un paso decisivo en su proyección internacional y un reconocimiento a una campaña marcada por la regularidad, el triunfo y la madurez artística demostrada en los principales cosos españoles.
+
+Junto a él, el serial contará también con la presentación del joven matador español **Marcos Pérez**, así como con la presencia del rejoneador **Guillermo Hermoso de Mendoza**, uno de los nombres propios del toreo a caballo a nivel mundial. Por parte mexicana, la feria reunirá a una nómina de primer nivel, en la que sobresale la actuación conjunta, por primera vez, de los hermanos **Fauro y Bruno Aloi**.
+
+Además de figuras consolidadas como **Juan Pablo Sánchez**, **Arturo Saldívar**, **Ernesto Javier “Calita”** y **Diego San Román**.
+
+Los carteles del **Carnaval de Jalostotitlán 2026** han quedado configurados de la siguiente manera:
+
+**Domingo 15 de febrero**: Toros de José Garfias para **Juan Pablo Sánchez**, **Arturo Saldívar** y el español **David de Miranda**, en una terna que combina experiencia, solvencia y la expectación del esperado debut del diestro onubense.
+
+**Lunes 16 de febrero**: Toros de Begoña para el rejoneador **Fauro Aloi**, acompañado por los Forcados Amadores de México, junto a los diestros **Marcos Pérez (España)** y **Bruno Aloi**.
+
+**Martes 17 de febrero**: Toros de San Mateo para el rejoneador español **Guillermo Hermoso de Mendoza**, **“Calita”** y **Diego San Román**, cerrando el ciclo con un cartel de gran fuerza y atractivo.
+
+Con esta combinación de figuras, revelaciones y acontecimientos inéditos, el **Carnaval de Jalostotitlán 2026** se perfila como una de las citas imprescindibles del calendario taurino internacional, subrayando especialmente la expectación que genera el debut de **David de Miranda**, llamado a escribir un nuevo capítulo de su carrera ante la afición mexicana en una plaza de referencia.
+`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `CABRA: Un cartel de figuras para una fecha señalada`,
+    image: "/images/cabra.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `Un cartel de figuras para una fecha señalada
+
+En la localidad cordobesa de **Cabra** tendrá lugar el próximo **4 de abril**, **Sábado de Gloria**, el festejo ha sido concebido como un **homenaje a la Semana Santa egabrense**, declarada de Interés Turístico Nacional.
+
+El empresario taurino mexicano **José Luis Alatorre** ha dado un paso decisivo en su consolidación en España con la organización de una corrida de toros de máxima expectación.
+
+El cartel está encabezado por el diestro francés **Sebastián Castella**, junto a él, actuará el extremeño **Miguel Ángel Perera**. La terna la completa **Borja Jiménez**, lidiarán una corrida con el hierro de **El Capea**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
     title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
     image: "/images/soler.jpg",
     category: "Actualidad",
@@ -464,7 +538,7 @@ Con esta incorporación, Paco Ureña refuerza su cuadrilla de cara a un nuevo cu
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1004,
     title: `Borja Jiménez presentará en la finca de Sánchez Mejías su corrida en solitario en Las Ventas`,
     image: "/images/borja.jpg",
     category: "Actualidad",
@@ -483,7 +557,7 @@ La corrida “**In Memoriam**” refuerza la figura de **Ignacio Sánchez Mejía
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1005,
     title: `Tres empresas concurren al concurso para la gestión de la plaza de toros de La Malagueta`,
     image: "/images/empresas.jpg",
     category: "Actualidad",
@@ -498,7 +572,7 @@ Este nuevo proceso de licitación deriva de la impugnación del anterior contrat
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1006,
     title: `Apertura del plazo de renovación de abonos para la temporada taurina en Las Ventas`,
     image: "/images/apertura.jpg",
     category: "Actualidad",
@@ -533,6 +607,80 @@ Asimismo, se recuerda que los titulares del abono joven gratuito deberán asisti
 
 const latestNews: NewsItem[] = [
 { 
+    id: 1,
+    title: `José Carlos Venegas: “Volver a San Isidro en 2026 es el mejor regalo de Navidad”`,
+    image: "/images/venegas3.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `A falta de la presentación oficial por parte de Plaza 1, con Rafael García Garrido y Simón Casas al frente de la gestión, la Feria de San Isidro 2026 puede darse prácticamente por cerrada. Un hecho histórico, al quedar rematada antes que nunca y en plenas fechas navideñas, anticipando una edición que volverá a situar a Madrid en el epicentro del mundo taurino.
+
+La feria más importante del planeta, cuya presentación oficial —salvo cambios— está prevista para el próximo 5 de febrero de 2026, incluirá entre sus combinaciones el regreso del torero jienense José Carlos Venegas, un nombre propio del toreo contemporáneo por su capacidad para imponerse a todo tipo de encastes y por una tauromaquia marcada por la pureza, el compromiso y la personalidad.
+
+Este esperado retorno a San Isidro no es fruto de la casualidad, sino del trabajo constante, serio y eficaz desarrollado en los despachos por su apoderada, Lidia Rodríguez Bermejo, cuya profesionalidad contrastada ha vuelto a quedar patente. Con discreción, conocimiento del sistema y una firme defensa de los méritos de su torero, ha sabido “lidiar” con solvencia las complejidades de la gestión para que Venegas vuelva a ocupar el lugar que le corresponde, demostrando una vez más que la tauromaquia también se construye fuera del ruedo.
+
+José Carlos Venegas no actúa en San Isidro desde 2018, cuando se enfrentó a una corrida de Dolores Aguirre, una de las ganaderías más exigentes del campo bravo. Posteriormente, el diestro volvió a trenzar el paseíllo en Las Ventas en septiembre de 2022, midiéndose a reses de Pahla y Saltillo, firmando aquella tarde una actuación de alto nivel que culminó con una reconocida vuelta al ruedo tras petición, después de una gran faena a un toro de Pahla que dejó una profunda impresión en los tendidos y que reforzó su crédito ante la afición madrileña.
+
+Según han avanzado los principales medios especializados en tauromaquia, el miércoles 20 de mayo será la fecha señalada para el esperado regreso de José Carlos Venegas al ciclo isidril. Una comparecencia que llegará en el corazón de la feria y en un cartel de máxima responsabilidad, acorde con la trayectoria de un torero que ha cimentado su carrera en el rigor, la autenticidad y el respeto a los encastes.
+
+El acontecimiento tendrá lugar ante toros de la ganadería de Saltillo, en un cartel que completan Juan Leal y Juan de Castilla, dos espadas igualmente caracterizados por su valor y entrega, configurando una terna de alto voltaje y marcada exigencia para la afición de Madrid.
+
+Con tanto fundamento informativo el propio José Carlos Venegas ha expresado sus sensaciones ante este regreso tan esperado:  
+“Me produce una ilusión enorme y, a la vez, una gran responsabilidad, con el máximo deseo de darlo todo y con el único recelo de que la suerte nos acompañe a modo de embestidas. Los toreros soñamos con escenarios así y es como el mejor regalo de Navidad que pueda tener. Quiero disfrutar esa tarde con el deseo de darle la vuelta a la moneda con un triunfo y poder entrar así en otras importantes ferias del circuito”.
+
+De este modo, San Isidro 2026 se presenta como un punto de inflexión en la trayectoria del torero jienense, que vuelve a Madrid dispuesto a reivindicarse en el escenario más exigente del toreo, respaldado por su experiencia, su calidad contrastada y el sólido trabajo de una apoderada que ha sabido estar a la altura del desafío, dentro y fuera de la plaza.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
+    image: "/images/cartelferia1.jpg.jpg",
+	footerImage1: "/images/cartelferia.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `La empresa **AjaToro**, dirigida por **Adrián Padilla**, ha hecho oficiales los carteles del serial taurino del **Carnaval de Jalostotitlán 2026**, uno de los ciclos más arraigados y de mayor prestigio del panorama taurino mexicano. El acto de presentación tuvo lugar en la **Casa de Cultura de Jalostotitlán (Jalisco)** y contó con la presencia de honor de la **Presidenta Municipal, Judith García Ramírez**, respaldando institucionalmente un acontecimiento de gran relevancia cultural y social para la localidad.
+
+El serial se celebrará los días **15, 16 y 17 de febrero de 2026** en la emblemática plaza de toros **Fermín Espinosa “Armillita”**, escenario histórico que volverá a convertirse en epicentro del toreo durante el tradicional Carnaval de Jalostotitlán. Una feria que, fiel a su esencia, conjuga figuras consolidadas, jóvenes valores y atractivos debuts, tanto de toreros mexicanos como europeos.
+
+Entre los grandes alicientes del abono destaca de manera especial el **debut en tierras mexicanas del torero onubense David de Miranda**, reconocido como **Torero Revelación de la Temporada Española**. Su inclusión en este importante ciclo supone un paso decisivo en su proyección internacional y un reconocimiento a una campaña marcada por la regularidad, el triunfo y la madurez artística demostrada en los principales cosos españoles.
+
+Junto a él, el serial contará también con la presentación del joven matador español **Marcos Pérez**, así como con la presencia del rejoneador **Guillermo Hermoso de Mendoza**, uno de los nombres propios del toreo a caballo a nivel mundial. Por parte mexicana, la feria reunirá a una nómina de primer nivel, en la que sobresale la actuación conjunta, por primera vez, de los hermanos **Fauro y Bruno Aloi**.
+
+Además de figuras consolidadas como **Juan Pablo Sánchez**, **Arturo Saldívar**, **Ernesto Javier “Calita”** y **Diego San Román**.
+
+Los carteles del **Carnaval de Jalostotitlán 2026** han quedado configurados de la siguiente manera:
+
+**Domingo 15 de febrero**: Toros de José Garfias para **Juan Pablo Sánchez**, **Arturo Saldívar** y el español **David de Miranda**, en una terna que combina experiencia, solvencia y la expectación del esperado debut del diestro onubense.
+
+**Lunes 16 de febrero**: Toros de Begoña para el rejoneador **Fauro Aloi**, acompañado por los Forcados Amadores de México, junto a los diestros **Marcos Pérez (España)** y **Bruno Aloi**.
+
+**Martes 17 de febrero**: Toros de San Mateo para el rejoneador español **Guillermo Hermoso de Mendoza**, **“Calita”** y **Diego San Román**, cerrando el ciclo con un cartel de gran fuerza y atractivo.
+
+Con esta combinación de figuras, revelaciones y acontecimientos inéditos, el **Carnaval de Jalostotitlán 2026** se perfila como una de las citas imprescindibles del calendario taurino internacional, subrayando especialmente la expectación que genera el debut de **David de Miranda**, llamado a escribir un nuevo capítulo de su carrera ante la afición mexicana en una plaza de referencia.
+`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `CABRA: Un cartel de figuras para una fecha señalada`,
+    image: "/images/cabra.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `Un cartel de figuras para una fecha señalada
+
+En la localidad cordobesa de **Cabra** tendrá lugar el próximo **4 de abril**, **Sábado de Gloria**, el festejo ha sido concebido como un **homenaje a la Semana Santa egabrense**, declarada de Interés Turístico Nacional.
+
+El empresario taurino mexicano **José Luis Alatorre** ha dado un paso decisivo en su consolidación en España con la organización de una corrida de toros de máxima expectación.
+
+El cartel está encabezado por el diestro francés **Sebastián Castella**, junto a él, actuará el extremeño **Miguel Ángel Perera**. La terna la completa **Borja Jiménez**, lidiarán una corrida con el hierro de **El Capea**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1,
     title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
     image: "/images/soler.jpg",
