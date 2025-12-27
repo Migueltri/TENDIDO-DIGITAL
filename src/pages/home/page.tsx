@@ -1,31 +1,33 @@
-// Ejemplo simplificado para tu page.tsx real
-import { useEffect, useState } from 'react';
-import { db } from './firebase.js'; // tu archivo de configuración
-import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
-
-export default function Noticias() {
-  const [noticias, setNoticias] = useState([]);
-
-  useEffect(() => {
-    // Esta consulta busca las noticias ordenadas por fecha
-    const q = query(collection(db, "noticias"), orderBy("createdAt", "desc"));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-       setNoticias(snapshot.docs.map(doc => ({id: doc.id, ...doc.data()})));
-    });
-    return () => unsubscribe();
-  }, []);
-
-  return (
-    <div>
-       {noticias.map(noticia => (
-          <div key={noticia.id}>
-             <img src={noticia.imageUrl} />
-             <h2>{noticia.title}</h2>
-             <p>{noticia.body}</p>
-          </div>
-       ))}
-    </div>
-  );
+  import React, { useState, useEffect } from "react";
+  interface BaseArticle {
+  id: number;
+  title: string;
+  plaza?: string;
+  date: string;
+  category?: string;
+  toreros?: string[];
+  ganaderia?: string;
+  resultado?: string[];
+  torerosRaw?: string[];
+  image: string;
+  imageCaption?: string;
+  video?: string;
+  resumen?: string;
+  detalles?: string;
+  fullContent?: string;
+  excerpt?: string;
+  footerImage1?: string;
+  footerImage1Caption?: string;
+  footerImage2?: string;
+  footerImage2Caption?: string;
+  footerImage3?: string;
+  footerImage3Caption?: string;
+  footerImage4?: string;
+  footerImage4Caption?: string;
+  boldContent?: boolean;
+  author?: string;
+  authorLogo?: string;
+  showAuthorHeader?: boolean;
 }
 
 type NewsItem = BaseArticle;
@@ -448,77 +450,81 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Las Ventas perfila un arranque de temporada 2026 de marcado acento torista y máxima exigencia`,
-    image: "/images/exigencia.jpg",
+    title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
+    image: "/images/soler.jpg",
     category: "Actualidad",
-    date: "22 de Diciembre de 2025",
-    fullContent: `Una vez encarrilado el grueso de las negociaciones de la **Feria de San Isidro**, **Plaza 1** trabaja ya en la configuración del inicio de la **temporada 2026** en la **Plaza de Toros de Las Ventas**, que se anuncia con un marcado acento torista y carteles de máxima exigencia para el aficionado madrileño.
+    date: "27 de Diciembre de 2025",
+    fullContent: `José María Soler será la principal novedad en la cuadrilla de **Paco Ureña de cara a la temporada 2026**. El subalterno se incorpora al equipo del diestro murciano para cubrir la vacante dejada por el sevillano Agustín de Espartinas, quien formó parte de la cuadrilla en las últimas temporadas.
 
-La apertura oficial de la temporada tendrá lugar el **domingo 22 de marzo**, con una corrida de toros de **Hijos de Celestino Cuadri**, uno de los hierros más emblemáticos del campo bravo onubense y auténtica referencia para la afición torista. Para este compromiso inaugural, la empresa maneja una terna integrada por **Damián Castaño**, **Gómez del Pilar** y **Juan de Castilla**, tres matadores sobradamente curtidos en este tipo de encastes.
+La llegada de Soler será el único cambio en el equipo de Paco Ureña, que mantiene así la línea de continuidad en su cuadrilla. De este modo, el torero murciano seguirá contando entre los hombres de a pie con Curro Vivas y Azuquita, pilares habituales de su equipo en los últimos años.
 
-El **domingo 29 de marzo**, **Domingo de Ramos**, **Plaza 1** tiene previsto anunciar una corrida del hierro de **Martín Lorca**, habitual en los inicios de temporada venteños. El ganadero malagueño prepara un encierro serio para un cartel que la empresa perfila con **Curro Díaz**, **Rafael Serna** y el mexicano **Diego San Román**, en caso de no entrar finalmente en los carteles isidriles.
-
-El **domingo 5 de abril**, **Domingo de Resurrección**, llegará el turno del hierro portugués de **Palha**, con un cartel de alto compromiso en el que figuran **Antonio Ferrera** e **Isaac Fonseca**. El tercer actuante será un torero que confirmará su alternativa ese mismo día en el coso de la calle de Alcalá.
-
-Tras las novilladas picadas programadas para los días **12 y 19 de abril**, **Plaza 1** contempla para el **domingo 26 de abril** la lidia de la corrida de **Dolores Aguirre**, un encierro inicialmente previsto para San Isidro y cuyo lugar ha sido finalmente ocupado por el hierro de **Saltillo**.
-
-Este primer bloque de la temporada madrileña 2026 quedará completado con la ya anunciada **Corrida Goyesca del 2 de mayo**, en la que están anunciados **Uceda Leal**, **El Cid** y **Javier Cortés**.
-
-Así quedarían los carteles del inicio de la temporada 2026 en **Las Ventas**:
-
-**Domingo 22 de marzo**  
-Toros de **Hijos de Celestino Cuadri**  
-**Damián Castaño – Gómez del Pilar – Juan de Castilla**
-
-**Domingo 29 de marzo (Domingo de Ramos)**  
-Toros de **Martín Lorca**  
-**Curro Díaz – Rafael Serna – Diego San Román**
-
-**Domingo 5 de abril (Domingo de Resurrección)**  
-Toros de **Palha**  
-**Antonio Ferrera – Isaac Fonseca – Matador por confirmar**
-
-**Domingo 12 de abril**  
-Novillada con picadores  
-Cartel por definir
-
-**Domingo 19 de abril**  
-Novillada con picadores  
-Cartel por definir
-
-**Domingo 26 de abril**  
-Toros de **Dolores Aguirre**  
-Terna por definir
-
-**Sábado 2 de mayo – Corrida Goyesca**  
-Toros por anunciar  
-**Uceda Leal – El Cid – Javier Cortés**`,
+Con esta incorporación, Paco Ureña refuerza su cuadrilla de cara a un nuevo curso, apostando por la experiencia y la solidez de un equipo que ha demostrado regularidad y compromiso en las principales plazas del circuito taurino.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `San Agustín del Guadalix presenta la Feria del Aficionado 2026 con tres desafíos ganaderos de máxima exigencia`,
-    image: "/images/san.jpg",
+    title: `Borja Jiménez presentará en la finca de Sánchez Mejías su corrida en solitario en Las Ventas`,
+    image: "/images/borja.jpg",
     category: "Actualidad",
-    date: "22 de Diciembre de 2025",
-    fullContent: `La plaza de toros de **San Agustín del Guadalix** volverá a situarse en el centro del interés de la afición torista con la celebración de la **Feria del Aficionado 2026**, cuyos carteles oficiales han sido presentados por el **Club Taurino 3 Puyazos**. El certamen mantiene intacta su filosofía original, apostando por el toro íntegro y por desafíos ganaderos de máxima exigencia, con hierros de marcada personalidad y toreros contrastados frente a encastes minoritarios.
+    date: "27 de Diciembre de 2025",
+    fullContent: `Borja Jiménez presentará oficialmente su corrida en solitario en Madrid el próximo 12 de febrero, a las 20:15 horas, en la histórica finca de **Ignacio Sánchez Mejías**, situada en Pino Montano. El festejo se celebrará el 7 de junio en la Plaza de Toros de Las Ventas, dentro de la corrida “**In Memoriam**”, con motivo del 92 aniversario del fallecimiento del torero sevillano.
 
-El ciclo se desarrollará durante los días **25 y 26 de abril**, articulándose en torno a tres festejos de notable interés ganadero y torero.
+**Borja Jiménez** afrontará esta gesta en solitario frente a seis toros de las ganaderías **Victoriano del Río**, **Toros de Cortés** y **Domingo Hernández**, en un homenaje que trasciende lo taurino para reconocer también el legado cultural y literario de **Sánchez Mejías**.
 
-La feria dará comienzo el sábado **25 de abril**, a las **12:00 horas**, con una novillada en desafío ganadero entre las divisas de **Salvador Guardiola** e **Isaías y Tulio Vázquez**. Para la ocasión están anunciados los novilleros **Joao D’Alva** y **Jesús de la Calzada**, dos nombres en clara proyección dentro del circuito de novilladas de máximo rigor.
+La finca elegida para la presentación fue propiedad de **Rafael El Gallo**, posteriormente de **José**, y finalmente de **Ignacio Sánchez Mejías**, convirtiéndose durante décadas en un destacado foco de vida social y cultural. En ella se celebraron tertulias y encuentros que reunieron a figuras clave de la Generación del 27, como **Federico García Lorca**, **Rafael Alberti** o **Jorge Guillén**.
 
-Ese mismo sábado, a las **18:30 horas**, se celebrará la primera corrida de toros, también bajo el formato de desafío ganadero, con reses de **Prieto de la Cal** y **Reta de Casta Navarra**. En el cartel figuran **Sánchez Vara**, **Joselillo** y **Francisco Montero**, tres matadores estrechamente vinculados al toro encastado y a las corridas de mayor dificultad.
+El acto contará con la presencia de los ganaderos, así como del director general de **Plaza 1**, **Rafael García Garrido**, quien ha agradecido la colaboración de la familia **Sánchez Mejías** y del propio **Borja Jiménez** para la celebración de este homenaje.
 
-La **Feria del Aficionado 2026** se cerrará el **domingo 26 de abril**, a las **12:00 horas**, con un desafío ganadero de alto voltaje entre las prestigiosas ganaderías de **Dolores Aguirre** y **José Escolar**. Harán el paseíllo **Damián Castaño**, **Juan de Castilla** y **Maxime Solera**, toreros con acreditada solvencia en este tipo de compromisos.
+La corrida “**In Memoriam**” refuerza la figura de **Ignacio Sánchez Mejías**, torero, escritor, dramaturgo y mecenas cultural, cuya muerte en 1934 inspiró a Lorca el célebre “Llanto por Ignacio Sánchez Mejías”. Un personaje que simbolizó como pocos la unión entre el toro y la cultura, y al que Madrid y Las Ventas rinden ahora un merecido tributo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Tres empresas concurren al concurso para la gestión de la plaza de toros de La Malagueta`,
+    image: "/images/empresas.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `Hasta el momento, tres empresas han presentado su candidatura para la gestión de la plaza de toros de La Malagueta, tras el nuevo concurso de adjudicación convocado por la Diputación de Málaga. No obstante, el número de ofertas podría incrementarse hasta las 00:00 horas de esta noche, momento en el que finaliza el plazo oficial para la presentación de propuestas.
 
-En el apartado comercial, la organización ha confirmado las siguientes fechas:
-• Renovación de abonos: a partir del 2 de febrero  
-• Nuevos abonos: desde el 2 de marzo  
-• Entradas sueltas: a la venta a partir del 22 de marzo  
+Las empresas que, según ha informado el medio especializado **Málaga Taurina**, habrían completado correctamente todos los trámites exigidos en el pliego son **Tauroemoción**, encabezada por **Alberto García**; **Lances de Futuro**, dirigida por **José María Garzón**; y **Toreo, Arte y Cultura BM**, una sociedad formada por la unión del **Grupo Bailleres**, **Casa Chopera** y **FIT**.
 
-Con esta programación, la **Feria del Aficionado** reafirma su condición de cita imprescindible para los defensores del toro íntegro y consolida a **San Agustín del Guadalix** como uno de los enclaves fundamentales del calendario torista europeo.`,
+Este nuevo proceso de licitación deriva de la impugnación del anterior contrato por parte de la empresa Nautalia, que detectó una cláusula considerada abusiva en el apartado relativo a la solvencia técnica y profesional del pliego. Tras dicha impugnación, la Diputación de Málaga procedió a rectificar el error, subsanando las condiciones cuestionadas y publicando un nuevo pliego, cuyo plazo de presentación de ofertas concluye en el día de hoy.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `Apertura del plazo de renovación de abonos para la temporada taurina en Las Ventas`,
+    image: "/images/apertura.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `El próximo **12 de enero** se abrirá el plazo de renovación de los abonos de temporada completa para todos los festejos taurinos que se celebrarán en la **Plaza de Toros de Las Ventas**, incluyendo los correspondientes a la **Feria de San Isidro** y la **Feria de Otoño**.
+
+**Plaza 1** mantiene un año más su compromiso con los colectivos sociales, conservando el carácter gratuito de dos cupos de abonos:
+
+• **2.100 abonos** para jubilados, ubicados en localidades de andanada de sombra y sol y sombra.
+
+• **700 abonos** para jóvenes hasta 25 años, en localidades de filas 1 a 7 de las andanadas de los tendidos 5 y 6.
+
+Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas de la plaza, del **12 al 20 de enero**.
+
+Una vez finalizado el periodo de renovación, los abonos gratuitos que queden disponibles se pondrán a la venta el **22 de enero**.
+La adquisición de los abonos para jubilados se realizará en las taquillas de la plaza, mientras que los abonos jóvenes sobrantes se podrán obtener únicamente de forma online, a través de la página web 
+<a
+  href="www.las-ventas.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+ www.las-ventas.com
+</a> .
+
+Asimismo, se recuerda que los titulares del abono joven gratuito deberán asistir al menos al 50 % de los festejos programados durante la temporada 2026 para poder optar a su renovación en 2027.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -526,7 +532,88 @@ Con esta programación, la **Feria del Aficionado** reafirma su condición de ci
 ];
 
 const latestNews: NewsItem[] = [
- { 
+{ 
+    id: 1,
+    title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
+    image: "/images/soler.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `José María Soler será la principal novedad en la cuadrilla de **Paco Ureña de cara a la temporada 2026**. El subalterno se incorpora al equipo del diestro murciano para cubrir la vacante dejada por el sevillano Agustín de Espartinas, quien formó parte de la cuadrilla en las últimas temporadas.
+
+La llegada de Soler será el único cambio en el equipo de Paco Ureña, que mantiene así la línea de continuidad en su cuadrilla. De este modo, el torero murciano seguirá contando entre los hombres de a pie con Curro Vivas y Azuquita, pilares habituales de su equipo en los últimos años.
+
+Con esta incorporación, Paco Ureña refuerza su cuadrilla de cara a un nuevo curso, apostando por la experiencia y la solidez de un equipo que ha demostrado regularidad y compromiso en las principales plazas del circuito taurino.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Borja Jiménez presentará en la finca de Sánchez Mejías su corrida en solitario en Las Ventas`,
+    image: "/images/borja.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `Borja Jiménez presentará oficialmente su corrida en solitario en Madrid el próximo 12 de febrero, a las 20:15 horas, en la histórica finca de **Ignacio Sánchez Mejías**, situada en Pino Montano. El festejo se celebrará el 7 de junio en la Plaza de Toros de Las Ventas, dentro de la corrida “**In Memoriam**”, con motivo del 92 aniversario del fallecimiento del torero sevillano.
+
+**Borja Jiménez** afrontará esta gesta en solitario frente a seis toros de las ganaderías **Victoriano del Río**, **Toros de Cortés** y **Domingo Hernández**, en un homenaje que trasciende lo taurino para reconocer también el legado cultural y literario de **Sánchez Mejías**.
+
+La finca elegida para la presentación fue propiedad de **Rafael El Gallo**, posteriormente de **José**, y finalmente de **Ignacio Sánchez Mejías**, convirtiéndose durante décadas en un destacado foco de vida social y cultural. En ella se celebraron tertulias y encuentros que reunieron a figuras clave de la Generación del 27, como **Federico García Lorca**, **Rafael Alberti** o **Jorge Guillén**.
+
+El acto contará con la presencia de los ganaderos, así como del director general de **Plaza 1**, **Rafael García Garrido**, quien ha agradecido la colaboración de la familia **Sánchez Mejías** y del propio **Borja Jiménez** para la celebración de este homenaje.
+
+La corrida “**In Memoriam**” refuerza la figura de **Ignacio Sánchez Mejías**, torero, escritor, dramaturgo y mecenas cultural, cuya muerte en 1934 inspiró a Lorca el célebre “Llanto por Ignacio Sánchez Mejías”. Un personaje que simbolizó como pocos la unión entre el toro y la cultura, y al que Madrid y Las Ventas rinden ahora un merecido tributo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Tres empresas concurren al concurso para la gestión de la plaza de toros de La Malagueta`,
+    image: "/images/empresas.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `Hasta el momento, tres empresas han presentado su candidatura para la gestión de la plaza de toros de La Malagueta, tras el nuevo concurso de adjudicación convocado por la Diputación de Málaga. No obstante, el número de ofertas podría incrementarse hasta las 00:00 horas de esta noche, momento en el que finaliza el plazo oficial para la presentación de propuestas.
+
+Las empresas que, según ha informado el medio especializado **Málaga Taurina**, habrían completado correctamente todos los trámites exigidos en el pliego son **Tauroemoción**, encabezada por **Alberto García**; **Lances de Futuro**, dirigida por **José María Garzón**; y **Toreo, Arte y Cultura BM**, una sociedad formada por la unión del **Grupo Bailleres**, **Casa Chopera** y **FIT**.
+
+Este nuevo proceso de licitación deriva de la impugnación del anterior contrato por parte de la empresa Nautalia, que detectó una cláusula considerada abusiva en el apartado relativo a la solvencia técnica y profesional del pliego. Tras dicha impugnación, la Diputación de Málaga procedió a rectificar el error, subsanando las condiciones cuestionadas y publicando un nuevo pliego, cuyo plazo de presentación de ofertas concluye en el día de hoy.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Apertura del plazo de renovación de abonos para la temporada taurina en Las Ventas`,
+    image: "/images/apertura.jpg",
+    category: "Actualidad",
+    date: "27 de Diciembre de 2025",
+    fullContent: `El próximo **12 de enero** se abrirá el plazo de renovación de los abonos de temporada completa para todos los festejos taurinos que se celebrarán en la **Plaza de Toros de Las Ventas**, incluyendo los correspondientes a la **Feria de San Isidro** y la **Feria de Otoño**.
+
+**Plaza 1** mantiene un año más su compromiso con los colectivos sociales, conservando el carácter gratuito de dos cupos de abonos:
+
+• **2.100 abonos** para jubilados, ubicados en localidades de andanada de sombra y sol y sombra.
+
+• **700 abonos** para jóvenes hasta 25 años, en localidades de filas 1 a 7 de las andanadas de los tendidos 5 y 6.
+
+Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas de la plaza, del **12 al 20 de enero**.
+
+Una vez finalizado el periodo de renovación, los abonos gratuitos que queden disponibles se pondrán a la venta el **22 de enero**.
+La adquisición de los abonos para jubilados se realizará en las taquillas de la plaza, mientras que los abonos jóvenes sobrantes se podrán obtener únicamente de forma online, a través de la página web 
+<a
+  href="www.las-ventas.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+ www.las-ventas.com
+</a> .
+
+Asimismo, se recuerda que los titulares del abono joven gratuito deberán asistir al menos al 50 % de los festejos programados durante la temporada 2026 para poder optar a su renovación en 2027.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1,
     title: `Las Ventas perfila un arranque de temporada 2026 de marcado acento torista y máxima exigencia`,
     image: "/images/exigencia.jpg",
@@ -1479,7 +1566,7 @@ Será el segundo año consecutivo en que la cadena autonómica ofrezca en abiert
     date: "12 de Diciembre de 2025",
     fullContent: `El matador de toros Mario Navas y Jesús de Alba han sellado un nuevo apoderamiento rubricado con el clásico apretón de manos. En un comunicado emitido a este medio, Mario Navas ha destacado que ‘Jesús de Alba es la persona indicada para poder formar un buen equipo para la consecución de sus objetivos’.
 
-Por su parte, Jesús de Alba vuelve a apostar por otro torero de clase, con un concepto propicio para abrirse paso en el escalafón.`,
+Por su parte, Jesús de Alba vuelve a apostar por otro torero de clase, con un concepto propicio para abrirse paso en el escalafón.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -1503,7 +1590,7 @@ El acuerdo entre Román y Luis Bolívar, de carácter indefinido, nace con la vo
   },
 	{ 
     id: 36,
-    title: `Talavante, Perera y el debut de Borja Jiménez lideran los carteles del Carnaval del Toro 2026 en Ciudad Rodrigo`,
+    title: `Talavante, Perera y el debut de Borja Jiménez lideran los carteles del Carnaval del Toro 2026 en Ciudad Rodrigo`,
     image: "/images/talavante.jpg",
     category: "Actualidad",
     date: "10 de Diciembre de 2025",
@@ -1730,7 +1817,7 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
     date: "9 de Diciembre de 2025",
     fullContent: `El matador de toros abulense Sergio Rodríguez se encuentra actualmente sin apoderado. Así lo ha comunicado el propio diestro en un post de Instagram en su cuenta oficial, anunciando así el fin de la relación profesional con Leandro Marcos y Manuel Canorea.
 
-Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los objetivos establecidos al inicio del proyecto del apoderamiento, los cuales eran la base de la relación.`,
+Una decisión que responde a lo expuesto en el comunicado tras no alcanzarse los objetivos establecidos al inicio del proyecto del apoderamiento, los cuales eran la base de la relación.`,
   author: "Eduardo Elvira",
   authorLogo: "/images/edu4.jpg",
   showAuthorHeader: true
@@ -1814,7 +1901,7 @@ Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
 
 Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
 
-Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
 fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
 
 Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
@@ -1977,7 +2064,7 @@ De este modo, la cuadrilla de Morenito de Aranda queda configurada de la siguien
     date: "6 de Diciembre de 2025",
     fullContent: `La temporada madrileña está a empezando a destapándose , la última notica que hemos conocido es el anuncio de otro de los carteles señaladas del inicio de temporada; la corrida Goyesca. 
 
-Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá de los toreros Curro Díaz , El Cid y Javier Cortés y la ganadería estaría todavía por definir. Un cartel muy propio para la afición madrileña y que se se propone como uno de los carteles de postín del inicio de la temporada .`,
+Según ha confirmado el medio El Toril podemos saber que el cartel se compondrá de los toreros Curro Díaz , El Cid y Javier Cortés y la ganadería estaría todavía por definir. Un cartel muy propio para la afición madrileña y que se se propone como uno de los carteles de postín del inicio de la temporada .`,
   author: "Mario Ruiz Ruiz",
   authorLogo: "/images/mariorr.jpg",
   showAuthorHeader: true
@@ -4827,7 +4914,7 @@ Pablo Méndez (Escuela Taurina de Guadalajara)*Dos Orejas
 
 Álvaro Sánchez (Escuela Taurina Domingo Ortega de Toledo) Dos orejas y rabo 
 
-Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
+Manuel de María (Escuela Taurina José Cubero Yiyo de Madrid) Dos orejas y rabo.`,
 fullContent: `En conjunto, los jóvenes alumnos mostraron su progreso, dejando patente su ilusión, entrega y buenas maneras ante los novillos de Alcurrucén. Cada uno, desde su propio momento de aprendizaje, logró conectar con los tendidos y ofrecer una tarde llena de espontaneidad y torería en formación.
 
 Cerró el festejo **Manuel de María**, convirtiéndose en la sorpresa de la tarde en su debut. Con desparpajo, naturalidad y una serenidad impropia de su edad, conectó rápidamente con el público y dejó instantes de gran emoción.
