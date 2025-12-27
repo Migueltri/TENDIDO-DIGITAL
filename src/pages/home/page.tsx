@@ -477,7 +477,7 @@ De este modo, San Isidro 2026 se presenta como un punto de inflexión en la tray
 	{ 
     id: 1001,
     title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
-    image: "/images/cartelferia1.jpg.jpg",
+    image: "/images/cartelferia1.jpg",
 	footerImage1: "/images/cartelferia.jpg",
     category: "Actualidad",
     date: "27 de Diciembre de 2025",
@@ -635,7 +635,7 @@ De este modo, San Isidro 2026 se presenta como un punto de inflexión en la tray
 	{ 
     id: 1,
     title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
-    image: "/images/cartelferia1.jpg.jpg",
+    image: "/images/cartelferia1.jpg",
 	footerImage1: "/images/cartelferia.jpg",
     category: "Actualidad",
     date: "27 de Diciembre de 2025",
