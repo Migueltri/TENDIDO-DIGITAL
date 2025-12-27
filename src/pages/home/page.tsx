@@ -667,9 +667,7 @@ Con esta combinación de figuras, revelaciones y acontecimientos inéditos, el *
     image: "/images/cabra.jpg",
     category: "Actualidad",
     date: "27 de Diciembre de 2025",
-    fullContent: `Un cartel de figuras para una fecha señalada
-
-En la localidad cordobesa de **Cabra** tendrá lugar el próximo **4 de abril**, **Sábado de Gloria**, el festejo ha sido concebido como un **homenaje a la Semana Santa egabrense**, declarada de Interés Turístico Nacional.
+    fullContent: `**CABRA: Un cartel de figuras para una fecha señalada** en la localidad cordobesa de **Cabra** tendrá lugar el próximo **4 de abril**, **Sábado de Gloria**, el festejo ha sido concebido como un **homenaje a la Semana Santa egabrense**, declarada de Interés Turístico Nacional.
 
 El empresario taurino mexicano **José Luis Alatorre** ha dado un paso decisivo en su consolidación en España con la organización de una corrida de toros de máxima expectación.
 
