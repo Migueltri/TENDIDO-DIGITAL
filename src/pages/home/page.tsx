@@ -450,161 +450,94 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `José Carlos Venegas: “Volver a San Isidro en 2026 es el mejor regalo de Navidad”`,
-    image: "/images/venegas3.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `A falta de la presentación oficial por parte de Plaza 1, con Rafael García Garrido y Simón Casas al frente de la gestión, la Feria de San Isidro 2026 puede darse prácticamente por cerrada. Un hecho histórico, al quedar rematada antes que nunca y en plenas fechas navideñas, anticipando una edición que volverá a situar a Madrid en el epicentro del mundo taurino.
+    title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
+    image: "/images/novillero1.jpg",
+    category: "Crónicas",
+    date: "28 de Diciembre de 2025",
+    imageCaption: "Plaza de Toros Venta del Batán",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Toros de la Plata y Zacarías Moreno",
+	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
 
-La feria más importante del planeta, cuya presentación oficial —salvo cambios— está prevista para el próximo 5 de febrero de 2026, incluirá entre sus combinaciones el regreso del torero jienense José Carlos Venegas, un nombre propio del toreo contemporáneo por su capacidad para imponerse a todo tipo de encastes y por una tauromaquia marcada por la pureza, el compromiso y la personalidad.
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
 
-Este esperado retorno a San Isidro no es fruto de la casualidad, sino del trabajo constante, serio y eficaz desarrollado en los despachos por su apoderada, Lidia Rodríguez Bermejo, cuya profesionalidad contrastada ha vuelto a quedar patente. Con discreción, conocimiento del sistema y una firme defensa de los méritos de su torero, ha sabido “lidiar” con solvencia las complejidades de la gestión para que Venegas vuelva a ocupar el lugar que le corresponde, demostrando una vez más que la tauromaquia también se construye fuera del ruedo.
+José Huelves (E.T. Colmenar Viejo), dos orejas 
 
-José Carlos Venegas no actúa en San Isidro desde 2018, cuando se enfrentó a una corrida de Dolores Aguirre, una de las ganaderías más exigentes del campo bravo. Posteriormente, el diestro volvió a trenzar el paseíllo en Las Ventas en septiembre de 2022, midiéndose a reses de Pahla y Saltillo, firmando aquella tarde una actuación de alto nivel que culminó con una reconocida vuelta al ruedo tras petición, después de una gran faena a un toro de Pahla que dejó una profunda impresión en los tendidos y que reforzó su crédito ante la afición madrileña.
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
 
-Según han avanzado los principales medios especializados en tauromaquia, el miércoles 20 de mayo será la fecha señalada para el esperado regreso de José Carlos Venegas al ciclo isidril. Una comparecencia que llegará en el corazón de la feria y en un cartel de máxima responsabilidad, acorde con la trayectoria de un torero que ha cimentado su carrera en el rigor, la autenticidad y el respeto a los encastes.
+Óscar Campos (E.T. Yiyo), dos orejas 
 
-El acontecimiento tendrá lugar ante toros de la ganadería de Saltillo, en un cartel que completan Juan Leal y Juan de Castilla, dos espadas igualmente caracterizados por su valor y entrega, configurando una terna de alto voltaje y marcada exigencia para la afición de Madrid.
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  fullContent: `El novillero Óscar Campos ha ganado el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid, que como cada Navidad ha tenido lugar este mediodía en la plaza de tientas de la Venta del Batán. El alumno de la Escuela José Cubero Yiyo ha cortado dos orejas simbólicas, igual que José Huelves, de Colmenar Viejo, que también ha dejado momentos muy destacados. 
 
-Con tanto fundamento informativo el propio José Carlos Venegas ha expresado sus sensaciones ante este regreso tan esperado:  
-“Me produce una ilusión enorme y, a la vez, una gran responsabilidad, con el máximo deseo de darlo todo y con el único recelo de que la suerte nos acompañe a modo de embestidas. Los toreros soñamos con escenarios así y es como el mejor regalo de Navidad que pueda tener. Quiero disfrutar esa tarde con el deseo de darle la vuelta a la moneda con un triunfo y poder entrar así en otras importantes ferias del circuito”.
+Campos, que cuajó a su novillo de Toros de la Plata el mejor saludo capotero de la mañana, brilló sobre todo por el modo de componer y de expresarse, así como en los remates, sobre todo en los cambios de mano. Huelves por su parte evidenció quietud, mano baja y buen juego cintura frente a un buen ejemplar de Zacarías Moreno al que extrajo naturales de mucho peso y plomada. 
 
-De este modo, San Isidro 2026 se presenta como un punto de inflexión en la trayectoria del torero jienense, que vuelve a Madrid dispuesto a reivindicarse en el escenario más exigente del toreo, respaldado por su experiencia, su calidad contrastada y el sólido trabajo de una apoderada que ha sabido estar a la altura del desafío, dentro y fuera de la plaza.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
-    image: "/images/cartelferia1.jpg",
-	footerImage1: "/images/cartelferia.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `La empresa **AjaToro**, dirigida por **Adrián Padilla**, ha hecho oficiales los carteles del serial taurino del **Carnaval de Jalostotitlán 2026**, uno de los ciclos más arraigados y de mayor prestigio del panorama taurino mexicano. El acto de presentación tuvo lugar en la **Casa de Cultura de Jalostotitlán (Jalisco)** y contó con la presencia de honor de la **Presidenta Municipal, Judith García Ramírez**, respaldando institucionalmente un acontecimiento de gran relevancia cultural y social para la localidad.
+Más voluntariosos anduvieron el resto de actuantes, que dieron una vuelta al ruedo al concluir su actuación. El festejo sirvió además para rendir homenaje a Tomás Serrano Guío por su labor como Presidente del Patronato de Escuela de Tauromaquia de Madrid.
 
-El serial se celebrará los días **15, 16 y 17 de febrero de 2026** en la emblemática plaza de toros **Fermín Espinosa “Armillita”**, escenario histórico que volverá a convertirse en epicentro del toreo durante el tradicional Carnaval de Jalostotitlán. Una feria que, fiel a su esencia, conjuga figuras consolidadas, jóvenes valores y atractivos debuts, tanto de toreros mexicanos como europeos.
+Con excelente ambiente en una mañana soleada y fría se han lidiado ejemplares de Toros de la Plata y dos (2º y 3º) de Zacarías Moreno, de buen juego en términos generales. El resultado de los novilleros ha sido el siguiente: 
 
-Entre los grandes alicientes del abono destaca de manera especial el **debut en tierras mexicanas del torero onubense David de Miranda**, reconocido como **Torero Revelación de la Temporada Española**. Su inclusión en este importante ciclo supone un paso decisivo en su proyección internacional y un reconocimiento a una campaña marcada por la regularidad, el triunfo y la madurez artística demostrada en los principales cosos españoles.
+Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
 
-Junto a él, el serial contará también con la presentación del joven matador español **Marcos Pérez**, así como con la presencia del rejoneador **Guillermo Hermoso de Mendoza**, uno de los nombres propios del toreo a caballo a nivel mundial. Por parte mexicana, la feria reunirá a una nómina de primer nivel, en la que sobresale la actuación conjunta, por primera vez, de los hermanos **Fauro y Bruno Aloi**.
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
 
-Además de figuras consolidadas como **Juan Pablo Sánchez**, **Arturo Saldívar**, **Ernesto Javier “Calita”** y **Diego San Román**.
+José Huelves (E.T. Colmenar Viejo), dos orejas 
 
-Los carteles del **Carnaval de Jalostotitlán 2026** han quedado configurados de la siguiente manera:
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
 
-**Domingo 15 de febrero**: Toros de José Garfias para **Juan Pablo Sánchez**, **Arturo Saldívar** y el español **David de Miranda**, en una terna que combina experiencia, solvencia y la expectación del esperado debut del diestro onubense.
+Óscar Campos (E.T. Yiyo), dos orejas 
 
-**Lunes 16 de febrero**: Toros de Begoña para el rejoneador **Fauro Aloi**, acompañado por los Forcados Amadores de México, junto a los diestros **Marcos Pérez (España)** y **Bruno Aloi**.
-
-**Martes 17 de febrero**: Toros de San Mateo para el rejoneador español **Guillermo Hermoso de Mendoza**, **“Calita”** y **Diego San Román**, cerrando el ciclo con un cartel de gran fuerza y atractivo.
-
-Con esta combinación de figuras, revelaciones y acontecimientos inéditos, el **Carnaval de Jalostotitlán 2026** se perfila como una de las citas imprescindibles del calendario taurino internacional, subrayando especialmente la expectación que genera el debut de **David de Miranda**, llamado a escribir un nuevo capítulo de su carrera ante la afición mexicana en una plaza de referencia.
-`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `CABRA: Un cartel de figuras para una fecha señalada`,
-    image: "/images/cabra.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `**CABRA: Un cartel de figuras para una fecha señalada** en la localidad cordobesa de **Cabra** tendrá lugar el próximo **4 de abril**, **Sábado de Gloria**, el festejo ha sido concebido como un **homenaje a la Semana Santa egabrense**, declarada de Interés Turístico Nacional.
-
-El empresario taurino mexicano **José Luis Alatorre** ha dado un paso decisivo en su consolidación en España con la organización de una corrida de toros de máxima expectación.
-
-El cartel está encabezado por el diestro francés **Sebastián Castella**, junto a él, actuará el extremeño **Miguel Ángel Perera**. La terna la completa **Borja Jiménez**, lidiarán una corrida con el hierro de **El Capea**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
-    image: "/images/soler.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `José María Soler será la principal novedad en la cuadrilla de **Paco Ureña de cara a la temporada 2026**. El subalterno se incorpora al equipo del diestro murciano para cubrir la vacante dejada por el sevillano Agustín de Espartinas, quien formó parte de la cuadrilla en las últimas temporadas.
-
-La llegada de Soler será el único cambio en el equipo de Paco Ureña, que mantiene así la línea de continuidad en su cuadrilla. De este modo, el torero murciano seguirá contando entre los hombres de a pie con Curro Vivas y Azuquita, pilares habituales de su equipo en los últimos años.
-
-Con esta incorporación, Paco Ureña refuerza su cuadrilla de cara a un nuevo curso, apostando por la experiencia y la solidez de un equipo que ha demostrado regularidad y compromiso en las principales plazas del circuito taurino.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Borja Jiménez presentará en la finca de Sánchez Mejías su corrida en solitario en Las Ventas`,
-    image: "/images/borja.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `Borja Jiménez presentará oficialmente su corrida en solitario en Madrid el próximo 12 de febrero, a las 20:15 horas, en la histórica finca de **Ignacio Sánchez Mejías**, situada en Pino Montano. El festejo se celebrará el 7 de junio en la Plaza de Toros de Las Ventas, dentro de la corrida “**In Memoriam**”, con motivo del 92 aniversario del fallecimiento del torero sevillano.
-
-**Borja Jiménez** afrontará esta gesta en solitario frente a seis toros de las ganaderías **Victoriano del Río**, **Toros de Cortés** y **Domingo Hernández**, en un homenaje que trasciende lo taurino para reconocer también el legado cultural y literario de **Sánchez Mejías**.
-
-La finca elegida para la presentación fue propiedad de **Rafael El Gallo**, posteriormente de **José**, y finalmente de **Ignacio Sánchez Mejías**, convirtiéndose durante décadas en un destacado foco de vida social y cultural. En ella se celebraron tertulias y encuentros que reunieron a figuras clave de la Generación del 27, como **Federico García Lorca**, **Rafael Alberti** o **Jorge Guillén**.
-
-El acto contará con la presencia de los ganaderos, así como del director general de **Plaza 1**, **Rafael García Garrido**, quien ha agradecido la colaboración de la familia **Sánchez Mejías** y del propio **Borja Jiménez** para la celebración de este homenaje.
-
-La corrida “**In Memoriam**” refuerza la figura de **Ignacio Sánchez Mejías**, torero, escritor, dramaturgo y mecenas cultural, cuya muerte en 1934 inspiró a Lorca el célebre “Llanto por Ignacio Sánchez Mejías”. Un personaje que simbolizó como pocos la unión entre el toro y la cultura, y al que Madrid y Las Ventas rinden ahora un merecido tributo.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Tres empresas concurren al concurso para la gestión de la plaza de toros de La Malagueta`,
-    image: "/images/empresas.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `Hasta el momento, tres empresas han presentado su candidatura para la gestión de la plaza de toros de La Malagueta, tras el nuevo concurso de adjudicación convocado por la Diputación de Málaga. No obstante, el número de ofertas podría incrementarse hasta las 00:00 horas de esta noche, momento en el que finaliza el plazo oficial para la presentación de propuestas.
-
-Las empresas que, según ha informado el medio especializado **Málaga Taurina**, habrían completado correctamente todos los trámites exigidos en el pliego son **Tauroemoción**, encabezada por **Alberto García**; **Lances de Futuro**, dirigida por **José María Garzón**; y **Toreo, Arte y Cultura BM**, una sociedad formada por la unión del **Grupo Bailleres**, **Casa Chopera** y **FIT**.
-
-Este nuevo proceso de licitación deriva de la impugnación del anterior contrato por parte de la empresa Nautalia, que detectó una cláusula considerada abusiva en el apartado relativo a la solvencia técnica y profesional del pliego. Tras dicha impugnación, la Diputación de Málaga procedió a rectificar el error, subsanando las condiciones cuestionadas y publicando un nuevo pliego, cuyo plazo de presentación de ofertas concluye en el día de hoy.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Apertura del plazo de renovación de abonos para la temporada taurina en Las Ventas`,
-    image: "/images/apertura.jpg",
-    category: "Actualidad",
-    date: "27 de Diciembre de 2025",
-    fullContent: `El próximo **12 de enero** se abrirá el plazo de renovación de los abonos de temporada completa para todos los festejos taurinos que se celebrarán en la **Plaza de Toros de Las Ventas**, incluyendo los correspondientes a la **Feria de San Isidro** y la **Feria de Otoño**.
-
-**Plaza 1** mantiene un año más su compromiso con los colectivos sociales, conservando el carácter gratuito de dos cupos de abonos:
-
-• **2.100 abonos** para jubilados, ubicados en localidades de andanada de sombra y sol y sombra.
-
-• **700 abonos** para jóvenes hasta 25 años, en localidades de filas 1 a 7 de las andanadas de los tendidos 5 y 6.
-
-Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas de la plaza, del **12 al 20 de enero**.
-
-Una vez finalizado el periodo de renovación, los abonos gratuitos que queden disponibles se pondrán a la venta el **22 de enero**.
-La adquisición de los abonos para jubilados se realizará en las taquillas de la plaza, mientras que los abonos jóvenes sobrantes se podrán obtener únicamente de forma online, a través de la página web 
-<a
-  href="www.las-ventas.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
- www.las-ventas.com
-</a> .
-
-Asimismo, se recuerda que los titulares del abono joven gratuito deberán asistir al menos al 50 % de los festejos programados durante la temporada 2026 para poder optar a su renovación en 2027.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   }
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  }
 ];
 
 const latestNews: NewsItem[] = [
-{ 
+	{ 
+    id: 1,
+    title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
+    image: "/images/novillero1.jpg",
+    category: "Crónicas",
+    date: "28 de Diciembre de 2025",
+    imageCaption: "Plaza de Toros Venta del Batán",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Toros de la Plata y Zacarías Moreno",
+	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+
+José Huelves (E.T. Colmenar Viejo), dos orejas 
+
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
+
+Óscar Campos (E.T. Yiyo), dos orejas 
+
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  fullContent: `El novillero Óscar Campos ha ganado el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid, que como cada Navidad ha tenido lugar este mediodía en la plaza de tientas de la Venta del Batán. El alumno de la Escuela José Cubero Yiyo ha cortado dos orejas simbólicas, igual que José Huelves, de Colmenar Viejo, que también ha dejado momentos muy destacados. 
+
+Campos, que cuajó a su novillo de Toros de la Plata el mejor saludo capotero de la mañana, brilló sobre todo por el modo de componer y de expresarse, así como en los remates, sobre todo en los cambios de mano. Huelves por su parte evidenció quietud, mano baja y buen juego cintura frente a un buen ejemplar de Zacarías Moreno al que extrajo naturales de mucho peso y plomada. 
+
+Más voluntariosos anduvieron el resto de actuantes, que dieron una vuelta al ruedo al concluir su actuación. El festejo sirvió además para rendir homenaje a Tomás Serrano Guío por su labor como Presidente del Patronato de Escuela de Tauromaquia de Madrid.
+
+Con excelente ambiente en una mañana soleada y fría se han lidiado ejemplares de Toros de la Plata y dos (2º y 3º) de Zacarías Moreno, de buen juego en términos generales. El resultado de los novilleros ha sido el siguiente: 
+
+Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+
+José Huelves (E.T. Colmenar Viejo), dos orejas 
+
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
+
+Óscar Campos (E.T. Yiyo), dos orejas 
+
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 1,
     title: `José Carlos Venegas: “Volver a San Isidro en 2026 es el mejor regalo de Navidad”`,
     image: "/images/venegas3.jpg",
@@ -5041,6 +4974,49 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 const chronicles: Chronicle[] = [
 	{ 
     id: 5000,
+    title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
+    image: "/images/novillero1.jpg",
+    category: "Crónicas",
+    date: "28 de Diciembre de 2025",
+    imageCaption: "Plaza de Toros Venta del Batán",
+	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	ganaderia: "Toros de la Plata y Zacarías Moreno",
+	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+
+José Huelves (E.T. Colmenar Viejo), dos orejas 
+
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
+
+Óscar Campos (E.T. Yiyo), dos orejas 
+
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  fullContent: `El novillero Óscar Campos ha ganado el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid, que como cada Navidad ha tenido lugar este mediodía en la plaza de tientas de la Venta del Batán. El alumno de la Escuela José Cubero Yiyo ha cortado dos orejas simbólicas, igual que José Huelves, de Colmenar Viejo, que también ha dejado momentos muy destacados. 
+
+Campos, que cuajó a su novillo de Toros de la Plata el mejor saludo capotero de la mañana, brilló sobre todo por el modo de componer y de expresarse, así como en los remates, sobre todo en los cambios de mano. Huelves por su parte evidenció quietud, mano baja y buen juego cintura frente a un buen ejemplar de Zacarías Moreno al que extrajo naturales de mucho peso y plomada. 
+
+Más voluntariosos anduvieron el resto de actuantes, que dieron una vuelta al ruedo al concluir su actuación. El festejo sirvió además para rendir homenaje a Tomás Serrano Guío por su labor como Presidente del Patronato de Escuela de Tauromaquia de Madrid.
+
+Con excelente ambiente en una mañana soleada y fría se han lidiado ejemplares de Toros de la Plata y dos (2º y 3º) de Zacarías Moreno, de buen juego en términos generales. El resultado de los novilleros ha sido el siguiente: 
+
+Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+
+Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+
+José Huelves (E.T. Colmenar Viejo), dos orejas 
+
+Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
+
+Óscar Campos (E.T. Yiyo), dos orejas 
+
+Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
+    id: 5001,
     title: `Triunfo de la terna y Manuel de María que deslumbra en su debut en Alcaudete de la Jara`,
     image: "/images/triunfo.jpg",
     category: "Crónicas",
