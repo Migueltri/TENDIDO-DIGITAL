@@ -455,7 +455,7 @@ const featuredNews: NewsItem[] = [
     category: "Crónicas",
     date: "28 de Diciembre de 2025",
     imageCaption: "Plaza de Toros Venta del Batán",
-	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	plaza: "Plaza de Toros Venta del Batán.",
 	ganaderia: "Toros de la Plata y Zacarías Moreno",
 	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
 
@@ -501,7 +501,7 @@ const latestNews: NewsItem[] = [
     category: "Crónicas",
     date: "28 de Diciembre de 2025",
     imageCaption: "Plaza de Toros Venta del Batán",
-	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	plaza: "Plaza de Toros Venta del Batán.",
 	ganaderia: "Toros de la Plata y Zacarías Moreno",
 	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
 
@@ -4979,7 +4979,7 @@ const chronicles: Chronicle[] = [
     category: "Crónicas",
     date: "28 de Diciembre de 2025",
     imageCaption: "Plaza de Toros Venta del Batán",
-	plaza: "Plaza de toros de Alcaudete de La Jara (Toledo).",
+	plaza: "Plaza de Toros Venta del Batán.",
 	ganaderia: "Toros de la Plata y Zacarías Moreno",
 	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
 
