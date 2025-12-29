@@ -449,69 +449,120 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1000,
-    title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
-    image: "/images/novillero1.jpg",
-    category: "Crónicas",
-    date: "28 de Diciembre de 2025",
-    imageCaption: "Plaza de Toros Venta del Batán",
-	plaza: "Plaza de Toros Venta del Batán.",
-	ganaderia: "Toros de la Plata y Zacarías Moreno",
-	torerosRaw: `Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+    id: 1,
+    title: `La Plaza de Toros de Valladolid acoge la exposición "Revoleras de Colores" de Mer Fidalgo con cerca de mil visitantes`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "29 de Diciembre de 2025",
+    fullContent: `La Plaza de Toros de Valladolid ha sido el escenario los días **27 y 28 de diciembre**, de la exposición **"Revoleras de Colores"**, una muestra de la artista **Mer Fidalgo** que ha congregado a **cerca de mil aficionados y visitantes** durante su celebración.
 
-Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+La exposición, que combina arte y tauromaquia desde una mirada contemporánea y colorista, ha despertado un notable interés entre el público. **Destacando las imágenes** dedicadas a diestros como **Emilio de Justo**, **Ginés Marín**, **Manuel Escribano** o **José María Manzanares**. Las obras de **Mer Fidalgo** han llenado de vida y expresión uno de los espacios más emblemáticos de la ciudad de Valladolid.
 
-José Huelves (E.T. Colmenar Viejo), dos orejas 
+**"Revoleras de Colores"** se ha desarrollado en el marco del **Ateneo Cultural "Valladolid Ciudad Taurina"**, una iniciativa de **Tauroemoción** impulsada por el **Ayuntamiento de Valladolid** a través de la **Concejalía de Educación y Cultura**, con el objetivo de fomentar la difusión cultural y poner en valor la tauromaquia desde una perspectiva artística y taurina.
 
-Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
+La autora, **Mer Fidalgo**, ha querido mostrar su agradecimiento a las entidades que han hecho posible la exposición: **"Es muy gratificante compartir mi trabajo con el público vallisoletano y sentir tan de cerca su acogida. Gracias a la iniciativa del Ayuntamiento de Valladolid es una referencia taurina nacional."**
 
-Óscar Campos (E.T. Yiyo), dos orejas 
+La excelente acogida por parte del público confirma el interés por propuestas culturales que unen arte, identidad y patrimonio, reforzando el compromiso del **Ayuntamiento de Valladolid** con una programación diversa y de calidad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `El Ayuntamiento de Burgos prorroga el contrato a Tauroemoción para la organización de la feria taurina 2026`,
+    image: "/images/burgos.jpg",
+    category: "Actualidad",
+    date: "29 de Diciembre de 2025",
+	excerpt: "La empresa que encabeza Alberto García lleva las riendas del Coliseum de Burgos desde el año 2018",
+    fullContent: `El Ayuntamiento de Burgos ha aprobado la prórroga del contrato con la empresa taurina Tauroemoción, que será la encargada de organizar los festejos taurinos en torno a la feria de San Pedro y San Pablo en el año 2026.
 
-Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
-  fullContent: `El novillero Óscar Campos ha ganado el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid, que como cada Navidad ha tenido lugar este mediodía en la plaza de tientas de la Venta del Batán. El alumno de la Escuela José Cubero Yiyo ha cortado dos orejas simbólicas, igual que José Huelves, de Colmenar Viejo, que también ha dejado momentos muy destacados. 
+Tauroemoción gestiona el Coliseum de Burgos desde el año 2018, periodo en el que los espectáculos taurinos han cosechado un gran éxito de público aumentando el número de abonados año tras año, consolidando a la capital burgalesa como una de las plazas más destacadas del norte de España.
 
-Campos, que cuajó a su novillo de Toros de la Plata el mejor saludo capotero de la mañana, brilló sobre todo por el modo de componer y de expresarse, así como en los remates, sobre todo en los cambios de mano. Huelves por su parte evidenció quietud, mano baja y buen juego cintura frente a un buen ejemplar de Zacarías Moreno al que extrajo naturales de mucho peso y plomada. 
+Además de Burgos, Tauroemoción gestionó en la temporada pasada 15 plazas de toros en el conjunto del panorama nacional, donde destacan los cosos de segunda categoría como Valladolid, Zamora, Ávila, Soria, Huesca y Jaén, lo que avala su amplia experiencia y solvencia en la organización de festejos taurinos de primer nivel.
 
-Más voluntariosos anduvieron el resto de actuantes, que dieron una vuelta al ruedo al concluir su actuación. El festejo sirvió además para rendir homenaje a Tomás Serrano Guío por su labor como Presidente del Patronato de Escuela de Tauromaquia de Madrid.
+Con esta prórroga, el Ayuntamiento de Burgos reafirma su confianza en un modelo de gestión que ha demostrado eficacia y aceptación entre los aficionados, garantizando la continuidad de los festejos taurinos en 2026 con los estándares de calidad alcanzados en los últimos años. Además vuelve a poner en valor la capacidad de la mercantil para diseñar carteles atractivos y desarrollar una gestión profesional, contribuyendo al impulso cultural, social y económico de la ciudad.
 
-Con excelente ambiente en una mañana soleada y fría se han lidiado ejemplares de Toros de la Plata y dos (2º y 3º) de Zacarías Moreno, de buen juego en términos generales. El resultado de los novilleros ha sido el siguiente: 
+Tauroemoción ya se encuentra trabajando en la temporada 2026 la cual tendrá el pistoletazo de salida en una gran gala de presentación de carteles que tendrá lugar en los primeros meses del año.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Morante de la Puebla y Victorino Martín, Oreja y Hierro de Oro`,
+    image: "/images/clarin.jpg",
+    category: "Actualidad",
+    date: "29 de Diciembre de 2025",
+    fullContent: `En declaraciones exclusivas a Clarín, Morante de la Puebla afirma que está luchando para volver a torear y ganar más Orejas de Oro en el futuro.
 
-Andreo Sánchez (E.T. Navas del Rey), vuelta al ruedo 
+ 
 
-Pablo Jurado (E.T. Fundación El Juli), vuelta al ruedo 
+Morante de la Puebla gana su tercera Oreja de Oro de RNE y Victorino Martín su cuarto Hierro de Oro en la final que ha culminado este domingo en directo con los votos de los 9 corresponsales y colaboradores de Clarín que faltaban por pronunciarse tras el programa del sábado. Morante recibe de forma unánime todos los votos emitidos en esta final, sumando un total de 23 puntos, frente a los 6 del segundo clasificado, David de Miranda, y los 4 del tercero, Borja Jiménez.
 
-José Huelves (E.T. Colmenar Viejo), dos orejas 
+ 
 
-Brahian Osorio ‘Carrita’ (E.T. Galapagar), vuelta al ruedo 
-
-Óscar Campos (E.T. Yiyo), dos orejas 
-
-Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  }
+En el Hierro de Oro, Victorino Martín se impone con 19 puntos frente a los 8 sumados por Santiago Domecq y los 5 de Victoriano del Río. En declaraciones exclusivas a Clarín, Morante afirma que está luchando para recuperarse y no descarta volver a torear e, incluso, ganar más Orejas de Oro en el futuro.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   }
 ];
 
 const latestNews: NewsItem[] = [
 	{ 
     id: 1,
-    title: `ASPROT: Los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual`,
-    image: "/images/TV.jpg",
+    title: `La Plaza de Toros de Valladolid acoge la exposición "Revoleras de Colores" de Mer Fidalgo con cerca de mil visitantes`,
+    image: "/images/.jpg",
     category: "Actualidad",
-    date: "28 de Diciembre de 2025",
-	excerpt: "Nuevo reconocimiento judicial de la obligación de pago de los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual, y el logro judicial más importante de ASPROT al haber corroborado un tribunal superior de justicia, las numerosas sentencias de los juzgados de lo social que le han dado la razón a ASPROT",
-    fullContent: `El Tribunal Superior de Justicia de Castilla y León con sede en Valladolid, ha estimado un Recurso de suplicación de ASPROT, y anula la **Única Sentencia** que era contradictoria, es decir todas las sentencias habían dado la razón a ASPROT, y esta **Única, ha sido anulada por el más alto Tribunal de la Jurisdicción Social de la Comunidad Autónoma**.
+    date: "29 de Diciembre de 2025",
+    fullContent: `La Plaza de Toros de Valladolid ha sido el escenario los días **27 y 28 de diciembre**, de la exposición **"Revoleras de Colores"**, una muestra de la artista **Mer Fidalgo** que ha congregado a **cerca de mil aficionados y visitantes** durante su celebración.
 
-El alto Tribunal crea Doctrina, al haber reconocido y declarado que los Derechos de imagen en festejos taurinos televisados, son **Salarios**, por lo que muy al contrario de lo que han venido sosteniendo UNPBE, ASNAMe, UT y ANOET, a todos los profesionales afiliados a cualquier Entidad profesional, deben serle abonados por igual. Y no solo a UNPBE y ASNAMe, como ilegalmente sostienen las partes firmantes del Convenio estatutario, motivo por el que ASPROT no quiso firmar el Convenio, debido a esta y otras ilegalidades, encontrándose adherida al Convenio Nacional Taurino extraestatutario para defender los Derechos Laborales de todos los profesionales por igual.
+La exposición, que combina arte y tauromaquia desde una mirada contemporánea y colorista, ha despertado un notable interés entre el público. **Destacando las imágenes** dedicadas a diestros como **Emilio de Justo**, **Ginés Marín**, **Manuel Escribano** o **José María Manzanares**. Las obras de **Mer Fidalgo** han llenado de vida y expresión uno de los espacios más emblemáticos de la ciudad de Valladolid.
 
-La citada Sentencia declara, que la Disposición final séptima del mencionado Convenio debe ser interpretada, que los Derechos de imagen no pueden estar condicionados, a que los Empresarios así lo decidan con total discrecionalidad, ni abonando los mismos, a unas entidades y a otras no, ya que los Empresarios no son destinatarios, ni beneficiarios de los Derechos de imagen de los profesionales con los que comercializan con las Entidades de Televisión, ya que son simples intermediarios y los mismos tienen la obligación de abonar los referidos derechos de imagen a todos por igual y **de forma cuantificada, al ser indiscutible que los Derechos de imagen son Salarios**.
+**"Revoleras de Colores"** se ha desarrollado en el marco del **Ateneo Cultural "Valladolid Ciudad Taurina"**, una iniciativa de **Tauroemoción** impulsada por el **Ayuntamiento de Valladolid** a través de la **Concejalía de Educación y Cultura**, con el objetivo de fomentar la difusión cultural y poner en valor la tauromaquia desde una perspectiva artística y taurina.
 
-Desde ASPROT se comunica, a todos los profesionales del sector taurino que a partir de los próximos meses vamos a luchar ante la Administración y los Tribunales, para que todos los profesionales perciban sus legítimos Derechos Salariales de imagen, igual que los Honorarios correspondientes, es decir que igual que cobran los salarios mínimos establecidos en los Convenios Colectivos Nacionales Taurinos, es decir sus sueldos, tienen Derecho a percibir los Derechos de imagen y que los Empresarios coticen además a la Seguridad Social por los mencionados Derechos.
+La autora, **Mer Fidalgo**, ha querido mostrar su agradecimiento a las entidades que han hecho posible la exposición: **"Es muy gratificante compartir mi trabajo con el público vallisoletano y sentir tan de cerca su acogida. Gracias a la iniciativa del Ayuntamiento de Valladolid es una referencia taurina nacional."**
 
-La mencionada Sentencia del alto Tribunal, fija Doctrina y ello unido a las numerosas Sentencias de los Juzgados de lo Social que han dado la razón a ASPROT, es inapelable, y condena a Circuitos Taurinos S.L., representada por D. Carlos Zúñiga (hijo), que se negó a pagar los derechos de imagen de nuestros afiliados, ha sido condenado a pagar los mismos, más los intereses correspondientes.
+La excelente acogida por parte del público confirma el interés por propuestas culturales que unen arte, identidad y patrimonio, reforzando el compromiso del **Ayuntamiento de Valladolid** con una programación diversa y de calidad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `El Ayuntamiento de Burgos prorroga el contrato a Tauroemoción para la organización de la feria taurina 2026`,
+    image: "/images/burgos.jpg",
+    category: "Actualidad",
+    date: "29 de Diciembre de 2025",
+	excerpt: "La empresa que encabeza Alberto García lleva las riendas del Coliseum de Burgos desde el año 2018",
+    fullContent: `El Ayuntamiento de Burgos ha aprobado la prórroga del contrato con la empresa taurina Tauroemoción, que será la encargada de organizar los festejos taurinos en torno a la feria de San Pedro y San Pablo en el año 2026.
 
-Para finalizar se informa, que va a ser comunicado a las diferentes Inspecciones de Trabajo, cualquier incumplimiento de abono de derechos de imagen y su obligatoria Cotización, **y se informa, a todos los Matadores, Novilleros y Rejoneadores, que tienen el mismo derecho que los banderilleros, picadores y mozos de espadas al abono de los derechos de imagen, y la correspondiente Cotización a la Seguridad Social por ser **Derechos Salariales**, por lo que hasta ahora ha sido marginado por las partes firmantes del Convenio Estatutario, es decir, las mencionadas Asociaciones anteriormente, ya que, durante décadas se ha omitido sobretodo, luchar por los Derechos de imagen de los toreros más humildes.**`,
+Tauroemoción gestiona el Coliseum de Burgos desde el año 2018, periodo en el que los espectáculos taurinos han cosechado un gran éxito de público aumentando el número de abonados año tras año, consolidando a la capital burgalesa como una de las plazas más destacadas del norte de España.
+
+Además de Burgos, Tauroemoción gestionó en la temporada pasada 15 plazas de toros en el conjunto del panorama nacional, donde destacan los cosos de segunda categoría como Valladolid, Zamora, Ávila, Soria, Huesca y Jaén, lo que avala su amplia experiencia y solvencia en la organización de festejos taurinos de primer nivel.
+
+Con esta prórroga, el Ayuntamiento de Burgos reafirma su confianza en un modelo de gestión que ha demostrado eficacia y aceptación entre los aficionados, garantizando la continuidad de los festejos taurinos en 2026 con los estándares de calidad alcanzados en los últimos años. Además vuelve a poner en valor la capacidad de la mercantil para diseñar carteles atractivos y desarrollar una gestión profesional, contribuyendo al impulso cultural, social y económico de la ciudad.
+
+Tauroemoción ya se encuentra trabajando en la temporada 2026 la cual tendrá el pistoletazo de salida en una gran gala de presentación de carteles que tendrá lugar en los primeros meses del año.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Morante de la Puebla y Victorino Martín, Oreja y Hierro de Oro`,
+    image: "/images/clarin.jpg",
+    category: "Actualidad",
+    date: "29 de Diciembre de 2025",
+    fullContent: `En declaraciones exclusivas a Clarín, Morante de la Puebla afirma que está luchando para volver a torear y ganar más Orejas de Oro en el futuro.
+
+ 
+
+Morante de la Puebla gana su tercera Oreja de Oro de RNE y Victorino Martín su cuarto Hierro de Oro en la final que ha culminado este domingo en directo con los votos de los 9 corresponsales y colaboradores de Clarín que faltaban por pronunciarse tras el programa del sábado. Morante recibe de forma unánime todos los votos emitidos en esta final, sumando un total de 23 puntos, frente a los 6 del segundo clasificado, David de Miranda, y los 4 del tercero, Borja Jiménez.
+
+ 
+
+En el Hierro de Oro, Victorino Martín se impone con 19 puntos frente a los 8 sumados por Santiago Domecq y los 5 de Victoriano del Río. En declaraciones exclusivas a Clarín, Morante afirma que está luchando para recuperarse y no descarta volver a torear e, incluso, ganar más Orejas de Oro en el futuro.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
