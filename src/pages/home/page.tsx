@@ -496,6 +496,28 @@ Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
 const latestNews: NewsItem[] = [
 	{ 
     id: 1,
+    title: `ASPROT: Los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual`,
+    image: "/images/TV.jpg",
+    category: "Actualidad",
+    date: "28 de Diciembre de 2025",
+	excerpt: "Nuevo reconocimiento judicial de la obligación de pago de los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual, y el logro judicial más importante de ASPROT al haber corroborado un tribunal superior de justicia, las numerosas sentencias de los juzgados de lo social que le han dado la razón a ASPROT",
+    fullContent: `El Tribunal Superior de Justicia de Castilla y León con sede en Valladolid, ha estimado un Recurso de suplicación de ASPROT, y anula la **Única Sentencia** que era contradictoria, es decir todas las sentencias habían dado la razón a ASPROT, y esta **Única, ha sido anulada por el más alto Tribunal de la Jurisdicción Social de la Comunidad Autónoma**.
+
+El alto Tribunal crea Doctrina, al haber reconocido y declarado que los Derechos de imagen en festejos taurinos televisados, son **Salarios**, por lo que muy al contrario de lo que han venido sosteniendo UNPBE, ASNAMe, UT y ANOET, a todos los profesionales afiliados a cualquier Entidad profesional, deben serle abonados por igual. Y no solo a UNPBE y ASNAMe, como ilegalmente sostienen las partes firmantes del Convenio estatutario, motivo por el que ASPROT no quiso firmar el Convenio, debido a esta y otras ilegalidades, encontrándose adherida al Convenio Nacional Taurino extraestatutario para defender los Derechos Laborales de todos los profesionales por igual.
+
+La citada Sentencia declara, que la Disposición final séptima del mencionado Convenio debe ser interpretada, que los Derechos de imagen no pueden estar condicionados, a que los Empresarios así lo decidan con total discrecionalidad, ni abonando los mismos, a unas entidades y a otras no, ya que los Empresarios no son destinatarios, ni beneficiarios de los Derechos de imagen de los profesionales con los que comercializan con las Entidades de Televisión, ya que son simples intermediarios y los mismos tienen la obligación de abonar los referidos derechos de imagen a todos por igual y **de forma cuantificada, al ser indiscutible que los Derechos de imagen son Salarios**.
+
+Desde ASPROT se comunica, a todos los profesionales del sector taurino que a partir de los próximos meses vamos a luchar ante la Administración y los Tribunales, para que todos los profesionales perciban sus legítimos Derechos Salariales de imagen, igual que los Honorarios correspondientes, es decir que igual que cobran los salarios mínimos establecidos en los Convenios Colectivos Nacionales Taurinos, es decir sus sueldos, tienen Derecho a percibir los Derechos de imagen y que los Empresarios coticen además a la Seguridad Social por los mencionados Derechos.
+
+La mencionada Sentencia del alto Tribunal, fija Doctrina y ello unido a las numerosas Sentencias de los Juzgados de lo Social que han dado la razón a ASPROT, es inapelable, y condena a Circuitos Taurinos S.L., representada por D. Carlos Zúñiga (hijo), que se negó a pagar los derechos de imagen de nuestros afiliados, ha sido condenado a pagar los mismos, más los intereses correspondientes.
+
+Para finalizar se informa, que va a ser comunicado a las diferentes Inspecciones de Trabajo, cualquier incumplimiento de abono de derechos de imagen y su obligatoria Cotización, y se informa, a todos los Matadores, Novilleros y Rejoneadores, que tienen el mismo derecho que los banderilleros, picadores y mozos de espadas al abono de los derechos de imagen, y la correspondiente Cotización a la Seguridad Social por ser **Derechos Salariales**, por lo que hasta ahora ha sido marginado por las partes firmantes del Convenio Estatutario, es decir, las mencionadas Asociaciones anteriormente, ya que, durante décadas se ha omitido sobretodo, luchar por los Derechos de imagen de los toreros más humildes.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
     title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
     image: "/images/novillero1.jpg",
     category: "Crónicas",
