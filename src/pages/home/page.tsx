@@ -570,7 +570,7 @@ En el Hierro de Oro, Victorino Martín se impone con 19 puntos frente a los 8 su
 	{ 
     id: 1,
     title: `ASPROT: Los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual`,
-    image: "/images/clarin.jpg",
+    image: "/images/TV.jpg",
     category: "Actualidad",
     date: "29 de Diciembre de 2025",
 	excerpt: "Nuevo reconocimiento judicial de la obligación de pago de los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual, y el logro judicial más importante de ASPROT al haber corroborado un tribunal superior de justicia, las numerosas sentencias de los juzgados de lo social que le han dado la razón a ASPROT",
