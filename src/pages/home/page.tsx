@@ -6016,19 +6016,6 @@ if (activeTab === 'cronicas') {
                     </div>
                   </div>
                   
-                  {/* Resultados de los toreros */}
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-gray-900 text-lg mb-3">Resultados:</h4>
-{(chronicle.toreros || []).map((torero, index) => (
-  <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-    <div className="flex-1">
-      <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-      <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ''}</p>
-    </div>
-  </div>
-))}
-                  </div>
                   
                   {/* Resumen */}
                   <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
@@ -6043,7 +6030,21 @@ if (activeTab === 'cronicas') {
 
                 </div>
               </div>
-              
+
+				                  {/* Resultados de los toreros */}
+                  <div className="space-y-3">
+                    <h4 className="font-bold text-gray-900 text-lg mb-3">Resultados:</h4>
+{(chronicle.toreros || []).map((torero, index) => (
+  <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
+    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+    <div className="flex-1">
+      <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
+      <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ''}</p>
+    </div>
+  </div>
+))}
+                  </div>
+				
               {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                 <div className="flex items-center space-x-4">
