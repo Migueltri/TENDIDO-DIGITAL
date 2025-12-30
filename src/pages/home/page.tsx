@@ -6044,12 +6044,17 @@ if (activeTab === 'cronicas') {
         <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
         <div className="flex-1">
           <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-          <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ""}</p>
+          <p className="text-gray-700 text-sm">
+            {chronicle.resultado?.[index] || ""}
+          </p>
         </div>
       </div>
     ))}
   </div>
 )}
+
+</div>
+</div>
 				
               {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
