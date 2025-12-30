@@ -568,7 +568,7 @@ En el Hierro de Oro, Victorino Martín se impone con 19 puntos frente a los 8 su
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `ASPROT: Los derechos de imagen a todas las asociaciones profesionales del sector taurino por igual`,
     image: "/images/TV.jpg",
     category: "Actualidad",
