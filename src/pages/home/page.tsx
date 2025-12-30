@@ -512,7 +512,7 @@ const latestNews: NewsItem[] = [
 	{ 
     id: 1,
     title: `La Plaza de Toros de Valladolid acoge la exposición "Revoleras de Colores" de Mer Fidalgo con cerca de mil visitantes`,
-    image: "/images/valladolid2.jpg",
+    image: "/images/valladolid1.jpg",
     category: "Actualidad",
     date: "29 de Diciembre de 2025",
     fullContent: `La Plaza de Toros de Valladolid ha sido el escenario los días **27 y 28 de diciembre**, de la exposición **"Revoleras de Colores"**, una muestra de la artista **Mer Fidalgo** que ha congregado a **cerca de mil aficionados y visitantes** durante su celebración.
