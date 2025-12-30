@@ -449,7 +449,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1,
+    id: 1000,
     title: `La Plaza de Toros de Valladolid acoge la exposición "Revoleras de Colores" de Mer Fidalgo con cerca de mil visitantes`,
     image: "/images/valladolid1.jpg",
     category: "Actualidad",
@@ -468,7 +468,7 @@ La excelente acogida por parte del público confirma el interés por propuestas 
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 1001,
     title: `El Ayuntamiento de Burgos prorroga el contrato a Tauroemoción para la organización de la feria taurina 2026`,
     image: "/images/burgos.jpg",
     category: "Actualidad",
@@ -488,7 +488,7 @@ Tauroemoción ya se encuentra trabajando en la temporada 2026 la cual tendrá el
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 1002,
     title: `Morante de la Puebla y Victorino Martín, Oreja y Hierro de Oro`,
     image: "/images/clarin.jpg",
     category: "Actualidad",
@@ -512,7 +512,7 @@ const latestNews: NewsItem[] = [
 	{ 
     id: 1,
     title: `La Plaza de Toros de Valladolid acoge la exposición "Revoleras de Colores" de Mer Fidalgo con cerca de mil visitantes`,
-    image: "/images/valladolid1.jpg",
+    image: "/images/valladolid2.jpg",
     category: "Actualidad",
     date: "29 de Diciembre de 2025",
     fullContent: `La Plaza de Toros de Valladolid ha sido el escenario los días **27 y 28 de diciembre**, de la exposición **"Revoleras de Colores"**, una muestra de la artista **Mer Fidalgo** que ha congregado a **cerca de mil aficionados y visitantes** durante su celebración.
@@ -529,7 +529,7 @@ La excelente acogida por parte del público confirma el interés por propuestas 
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `El Ayuntamiento de Burgos prorroga el contrato a Tauroemoción para la organización de la feria taurina 2026`,
     image: "/images/burgos.jpg",
     category: "Actualidad",
@@ -549,7 +549,7 @@ Tauroemoción ya se encuentra trabajando en la temporada 2026 la cual tendrá el
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Morante de la Puebla y Victorino Martín, Oreja y Hierro de Oro`,
     image: "/images/clarin.jpg",
     category: "Actualidad",
@@ -590,7 +590,7 @@ Para finalizar se informa, que va a ser comunicado a las diferentes Inspecciones
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
     image: "/images/novillero1.jpg",
     category: "Crónicas",
@@ -633,7 +633,7 @@ Kevin Montiel (E.T. CITAR-Anchuelo), silencio`,
   showAuthorHeader: true
   },
 	{ 
-    id: 1,
+    id: 2,
     title: `José Carlos Venegas: “Volver a San Isidro en 2026 es el mejor regalo de Navidad”`,
     image: "/images/venegas3.jpg",
     category: "Actualidad",
@@ -659,7 +659,7 @@ De este modo, San Isidro 2026 se presenta como un punto de inflexión en la tray
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `David de Miranda debutará en el Carnaval de Jalostotitlán 2026, una de las grandes ferias taurinas de México`,
     image: "/images/cartelferia1.jpg",
 	footerImage1: "/images/cartelferia.jpg",
@@ -690,7 +690,7 @@ Con esta combinación de figuras, revelaciones y acontecimientos inéditos, el *
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `CABRA: Un cartel de figuras para una fecha señalada`,
     image: "/images/cabra.jpg",
     category: "Actualidad",
@@ -705,7 +705,7 @@ El cartel está encabezado por el diestro francés **Sebastián Castella**, junt
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `José María Soler, novedad en la cuadrilla de Paco Ureña para 2026`,
     image: "/images/soler.jpg",
     category: "Actualidad",
@@ -720,7 +720,7 @@ Con esta incorporación, Paco Ureña refuerza su cuadrilla de cara a un nuevo cu
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Borja Jiménez presentará en la finca de Sánchez Mejías su corrida en solitario en Las Ventas`,
     image: "/images/borja.jpg",
     category: "Actualidad",
@@ -739,7 +739,7 @@ La corrida “**In Memoriam**” refuerza la figura de **Ignacio Sánchez Mejía
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Tres empresas concurren al concurso para la gestión de la plaza de toros de La Malagueta`,
     image: "/images/empresas.jpg",
     category: "Actualidad",
@@ -754,7 +754,7 @@ Este nuevo proceso de licitación deriva de la impugnación del anterior contrat
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Apertura del plazo de renovación de abonos para la temporada taurina en Las Ventas`,
     image: "/images/apertura.jpg",
     category: "Actualidad",
@@ -786,7 +786,7 @@ Asimismo, se recuerda que los titulares del abono joven gratuito deberán asisti
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `Las Ventas perfila un arranque de temporada 2026 de marcado acento torista y máxima exigencia`,
     image: "/images/exigencia.jpg",
     category: "Actualidad",
@@ -837,7 +837,7 @@ Toros por anunciar
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `San Agustín del Guadalix presenta la Feria del Aficionado 2026 con tres desafíos ganaderos de máxima exigencia`,
     image: "/images/san.jpg",
     category: "Actualidad",
@@ -863,7 +863,7 @@ Con esta programación, la **Feria del Aficionado** reafirma su condición de ci
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `FRANCIA: Interesante terna en Gamarde`,
     image: "/images/garmade.jpg",
     category: "Actualidad",
@@ -878,7 +878,7 @@ Para un cartel de los más interesante **David Galván** como triunfador de la p
     showAuthorHeader: true
    },
 	{ 
-    id: 1,
+    id: 2,
     title: `MADRID: Al completo, el calendario de la temporada 2026 en Las Ventas`,
     image: "/images/calendario.jpg",
     category: "Actualidad",
