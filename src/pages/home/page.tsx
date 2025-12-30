@@ -6016,35 +6016,40 @@ if (activeTab === 'cronicas') {
                     </div>
                   </div>
                   
-                  
                   {/* Resumen */}
-                  <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
- 				 <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
- 			   <i className="ri-file-text-line mr-2 text-red-600"></i>
-			    Resumen de la corrida
-			  </h4>
-			  <div className="text-gray-700 text-sm leading-relaxed">
-			 {renderArticleContent(chronicle.detalles || chronicle.fullContent || chronicle.excerpt)}
- 				</div>
-			</div>
-
-                </div>
-              </div>
-
-				                  {/* Resultados de los toreros */}
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-gray-900 text-lg mb-3">Resultados:</h4>
-{(chronicle.toreros || []).map((torero, index) => (
-  <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-    <div className="flex-1">
-      <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-      <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ''}</p>
-    </div>
+<div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+  <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+    <i className="ri-file-text-line mr-2 text-red-600"></i>
+    Resumen de la corrida
+  </h4>
+  <div className="text-gray-700 text-sm leading-relaxed">
+    {renderArticleContent(chronicle.detalles || chronicle.fullContent || chronicle.excerpt)}
   </div>
-))}
-	  
-                  </div>
+</div>
+
+</div>
+</div>
+
+{/* Resultados de los toreros */}
+{(chronicle.toreros || []).length > 0 && (
+  <div className="space-y-3 mt-6">
+    <h4 className="font-bold text-gray-900 text-lg mb-3 flex items-center">
+      <i className="ri-award-line mr-2 text-red-600"></i> Resultados
+    </h4>
+    {(chronicle.toreros || []).map((torero, index) => (
+      <div
+        key={index}
+        className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200"
+      >
+        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+        <div className="flex-1">
+          <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
+          <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ""}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+)}
 				
               {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
@@ -6961,25 +6966,23 @@ TENDIDO DIGITAL
     Resumen de la corrida
   </h3>
 
-  {/* Lista de toreros + resultados (si vienen) */}
-  {selectedNews.toreros && selectedNews.toreros.length > 0 && (
-    <div className="mb-4">
-      <h4 className="font-semibold text-gray-800 mb-2">Resultados:</h4>
-      <div className="space-y-2">
-        {selectedNews.toreros.map((t: string, idx: number) => (
-          <div key={idx} className="flex items-start bg-white border border-gray-200 rounded-lg p-3">
-            <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-            <div className="flex-1">
-              <p className="font-bold text-gray-900">{t}</p>
-              {selectedNews.resultado?.[idx] && (
-                <p className="text-gray-700 text-sm">{selectedNews.resultado[idx]}</p>
-              )}
-            </div>
-          </div>
-        ))}
+{/* Resultados (ahora sí, después del resumen) */}
+{(chronicle.toreros || []).length > 0 && (
+  <div className="space-y-3 mt-6">
+    <h4 className="font-bold text-gray-900 text-lg mb-3 flex items-center">
+      <i className="ri-award-line mr-2 text-red-600"></i> Resultados
+    </h4>
+    {(chronicle.toreros || []).map((torero, index) => (
+      <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
+        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+        <div className="flex-1">
+          <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
+          <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ""}</p>
+        </div>
       </div>
-    </div>
-  )}
+    ))}
+  </div>
+)}
 
   {/* Cuerpo separado en párrafos y con **bold** convertido */}
   <div className="text-gray-700 text-lg leading-relaxed">
