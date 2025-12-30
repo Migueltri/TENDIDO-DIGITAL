@@ -6023,13 +6023,12 @@ if (activeTab === 'cronicas') {
     Resumen de la corrida
   </h4>
   <div className="text-gray-700 text-sm leading-relaxed">
-    {renderArticleContent(chronicle.detalles || chronicle.fullContent || chronicle.excerpt)}
+    {renderArticleContent(
+      chronicle.detalles || chronicle.fullContent || chronicle.excerpt
+    )}
   </div>
 </div>
-
-</div>
-</div>
-
+					
 {/* Resultados de los toreros */}
 {(chronicle.toreros || []).length > 0 && (
   <div className="space-y-3 mt-6">
@@ -6057,34 +6056,42 @@ if (activeTab === 'cronicas') {
 </div>
 				
               {/* Footer con acciones */}
-              <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
-                <div className="flex items-center space-x-4">
-                  <button 
-                    onClick={(e) => toggleSave(chronicle.id, e)}
-                    className={`transition-all duration-300 p-2 rounded-full ${
-                      savedPosts.has(chronicle.id) 
-                        ? 'text-yellow-600 bg-yellow-50' 
-                        : 'text-gray-500 hover:text-yellow-600 hover:bg-yellow-50'
-                    }`}
-                    aria-label={savedPosts.has(chronicle.id) ? 'Quitar de guardados' : 'Guardar crónica'}
-                  >
-                    <i className={`${savedPosts.has(chronicle.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-xl`}></i>
-                  </button>
-                  
-                  <button 
-                    onClick={(e) => openShareModal(chronicle, e)}
-                    className="text-gray-500 hover:text-blue-600 transition-colors duration-300 p-2 rounded-full hover:bg-blue-50"
-                    aria-label="Compartir crónica"
-                  >
-                    <i className="ri-share-line text-xl"></i>
-                  </button>
-                </div>
-                
-                <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300">
-                  Leer crónica completa
-                  <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                </button>
-              </div>
+<div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+  <div className="flex items-center space-x-4">
+    <button
+      onClick={(e) => toggleSave(chronicle.id, e)}
+      className={`transition-all duration-300 p-2 rounded-full ${
+        savedPosts.has(chronicle.id)
+          ? "text-yellow-600 bg-yellow-50"
+          : "text-gray-500 hover:text-yellow-600 hover:bg-yellow-50"
+      }`}
+      aria-label={
+        savedPosts.has(chronicle.id) ? "Quitar de guardados" : "Guardar crónica"
+      }
+    >
+      <i
+        className={`${
+          savedPosts.has(chronicle.id)
+            ? "ri-bookmark-fill"
+            : "ri-bookmark-line"
+        } text-xl`}
+      ></i>
+    </button>
+
+    <button
+      onClick={(e) => openShareModal(chronicle, e)}
+      className="text-gray-500 hover:text-blue-600 transition-colors duration-300 p-2 rounded-full hover:bg-blue-50"
+      aria-label="Compartir crónica"
+    >
+      <i className="ri-share-line text-xl"></i>
+    </button>
+  </div>
+
+  <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300">
+    Leer crónica completa
+    <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+  </button>
+</div>
             </div>
           </article>
         ))}
