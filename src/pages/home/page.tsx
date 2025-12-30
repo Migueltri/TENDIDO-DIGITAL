@@ -6043,7 +6043,6 @@ if (activeTab === 'cronicas') {
     </div>
   </div>
 ))}
-                  </div>
 				
               {/* Footer con acciones */}
               <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
