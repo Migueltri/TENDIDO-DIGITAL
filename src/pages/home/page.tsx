@@ -510,7 +510,7 @@ La venta de entradas de forma anticipada **será de forma online en la pagina we
   style="color:#2563eb; text-decoration:underline; font-weight:500;"
 >
 www.maxitoro.com
-</a>** a partir de este día 30 de diciembre de 2025, mientras que la venta en taquilla será a partir del día 19 de enero de 2026 ubicada en la Avda. Castilla La Mancha nº 89 de Illescas (junto al restaurante El Bohío) en horario de 10:30 h. a 14:00 h. y de 17:00 h. a 20:00 h. de lunes a domingo. Los domingos tarde permanecerá cerrada.
+</a> a partir de este día 30 de diciembre de 2025, mientras que la venta en taquilla será a partir del día 19 de enero de 2026 ubicada en la Avda. Castilla La Mancha nº 89 de Illescas (junto al restaurante El Bohío) en horario de 10:30 h. a 14:00 h. y de 17:00 h. a 20:00 h. de lunes a domingo. Los domingos tarde permanecerá cerrada.
 
 El día de los festejos, la venta de entradas se realizará en la misma taquilla ubicada en la Avda. Castilla La Mancha nº 89, en horario de 10:30 h. a 14:00 h. y en las Taquillas de la Plaza de toros desde las 10:30 h. ininterrumpidamente hasta la hora del festejo.
 
@@ -588,7 +588,7 @@ La venta de entradas de forma anticipada **será de forma online en la pagina we
   style="color:#2563eb; text-decoration:underline; font-weight:500;"
 >
 www.maxitoro.com
-</a>** a partir de este día 30 de diciembre de 2025, mientras que la venta en taquilla será a partir del día 19 de enero de 2026 ubicada en la Avda. Castilla La Mancha nº 89 de Illescas (junto al restaurante El Bohío) en horario de 10:30 h. a 14:00 h. y de 17:00 h. a 20:00 h. de lunes a domingo. Los domingos tarde permanecerá cerrada.
+</a> a partir de este día 30 de diciembre de 2025, mientras que la venta en taquilla será a partir del día 19 de enero de 2026 ubicada en la Avda. Castilla La Mancha nº 89 de Illescas (junto al restaurante El Bohío) en horario de 10:30 h. a 14:00 h. y de 17:00 h. a 20:00 h. de lunes a domingo. Los domingos tarde permanecerá cerrada.
 
 El día de los festejos, la venta de entradas se realizará en la misma taquilla ubicada en la Avda. Castilla La Mancha nº 89, en horario de 10:30 h. a 14:00 h. y en las Taquillas de la Plaza de toros desde las 10:30 h. ininterrumpidamente hasta la hora del festejo.
 
