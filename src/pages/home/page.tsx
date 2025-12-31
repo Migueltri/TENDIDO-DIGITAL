@@ -454,8 +454,7 @@ const featuredNews: NewsItem[] = [
     image: "/images/canalo.jpg",
     category: "Actualidad",
     date: "31 de Diciembre de 2025",
-	video: "https://youtu.be/GLyKxaOlHAo",
-    fullContent: `El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
+	    fullContent: `El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
 
 Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
 
@@ -473,7 +472,17 @@ A lo largo de este año conmemorativo, la Real Unión de Criadores de Toros de L
 
 Como broche final, se adjunta un **vídeo resumen** que recoge los momentos más significativos de este aniversario, una mirada audiovisual que condensa la emoción y el espíritu de una celebración histórica.
 
-Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.`,
+Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://youtu.be/GLyKxaOlHAo"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -532,7 +541,6 @@ const latestNews: NewsItem[] = [
     image: "/images/canalo.jpg",
     category: "Actualidad",
     date: "31 de Diciembre de 2025",
-	video: "https://youtu.be/GLyKxaOlHAo",
     fullContent: `El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
 
 Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
@@ -551,7 +559,17 @@ A lo largo de este año conmemorativo, la Real Unión de Criadores de Toros de L
 
 Como broche final, se adjunta un **vídeo resumen** que recoge los momentos más significativos de este aniversario, una mirada audiovisual que condensa la emoción y el espíritu de una celebración histórica.
 
-Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.`,
+Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://youtu.be/GLyKxaOlHAo"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
