@@ -454,7 +454,7 @@ const featuredNews: NewsItem[] = [
     image: "/images/canalo.jpg",
     category: "Actualidad",
     date: "31 de Diciembre de 2025",
-	    fullContent: `El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
+	    fullContent: `<p> El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
 
 Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
 
@@ -482,7 +482,8 @@ Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de
     allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
   ></iframe>
-</div>`,
+</div>
+</p>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -541,7 +542,7 @@ const latestNews: NewsItem[] = [
     image: "/images/canalo.jpg",
     category: "Actualidad",
     date: "31 de Diciembre de 2025",
-    fullContent: `El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
+	    fullContent: `<p> El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
 
 Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
 
@@ -569,7 +570,8 @@ Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de
     allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
   ></iframe>
-</div>`,
+</div>
+</p>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
