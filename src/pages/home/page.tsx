@@ -448,8 +448,48 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-	{ 
+   { 
     id: 1000,
+    title: `Un festival de lujo unirá toreo y cante del más alto nivel en Atarfe`,
+    image: "/images/noticia.jpg",
+	footerImage1: "/images/illescas3.jpg",
+    category: "Actualidad",
+    date: "31 de Diciembre de 2025",
+	excerpt: "Novedosa forma de arrancar la temporada en el Coliseo de esta localidad granadina",
+    fullContent: `El Ayuntamiento de Atarfe (Granada) y el empresario **Pedro Pérez 'Chicote'** han cerrado el cartel del festejo que abre la temporada en la provincia de Granada el próximo 28 de febrero, una cita que se ha convertido en clásica en el arranque del año taurino en Andalucía.
+
+En esta ocasión, y como gran novedad, se trata de un festival taurino que reza en el cartel como "Extraordinaria y magna Fiesta Andaluza", ya que conjugará toreo y cante del más alto nivel en un acontecimiento único.
+
+Con motivo del día de Andalucía, Atarfe acogerá el sábado 28 de febrero este festival benéfico en el que actuarán los matadores de toros **Fimito de Córdoba**, **Diego Urdiales**, **El Cid**, **El Fandi**, **Esaú Fernández** y el novillero **Jaime de Pedro**, que hará su presentación ante el público de su tierra. El ganado será de **Virgen María** y el festejo dará comienzo a las 5 de la tarde. Los toreros estarán acompañados por un importante elenco de artistas flamencos que se anunciará próximamente.
+
+Este festival se organiza en colaboración con la hermandad Oración en el Huerto Realejo de Granada, que participará de los beneficios.
+
+**Declaraciones**
+
+El empresario **Pedro Pérez 'Chicote'** valora este festival como "una forma novedosa de abrir la temporada, es el primer festival de este nivel que se programa en la plaza de Atarfe", a lo que añade: "Se trata un cartel de lujo que mezcla figuras del toreo y del flamenco en una fórmula muy atractiva. Cante y toreo se unirán en una tarde irrepetible".
+
+La alcaldesa de Atarfe, **Yolanda Fernández**, explica que "desde el Ayuntamiento de Atarfe seguimos apostando por que haya toros el Día de Andalucía en nuestro Coliseo y estamos contentos de que en esta ocasión sea un festival que reúna a figuras del toreo y del flamenco. La Tauromaquia es cultura y en un pueblo con tradición taurina no podemos obviar nuestras raíces". Y expresa un deseo: "Ahora solo falta que se anime la gente y se llene la plaza".
+
+**Precios económicos**
+
+Como es habitual, Chicote ofrece precios económicos para que todo el mundo pueda tener acceso a este festejo, de modo que el tendido general costará 35 euros, con entradas a 15 y 25 euros para jóvenes.
+
+Se han habilitado puntos de venta en el Centro Cultural de Atarfe, Teatro Isabel la Católica, Cofradía Oración en el Huerto y a través de la web: <a
+  href="www.redentradas.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.redentradas.com
+</a> .
+
+Las taquillas del Coliseo de Atarfe se abrirán en horario de tarde (de 17 a 20 horas) a partir del 25 de febrero. Teléfono de reservas 618 606 680.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `La Real Unión de Criadores de Toros de Lidia cierra un año cargado de historia`,
     image: "/images/canalo.jpg",
     category: "Actualidad",
@@ -489,7 +529,7 @@ Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Illescas: con carteles para su feria del Milagro`,
     image: "/images/illescas2.jpg",
 	footerImage1: "/images/illescas3.jpg",
@@ -536,6 +576,46 @@ La venta telefónica puede realizarse a través del número 672 00 33 22 (5% rec
 ];
 
 const latestNews: NewsItem[] = [
+   { 
+    id: 148,
+    title: `Un festival de lujo unirá toreo y cante del más alto nivel en Atarfe`,
+    image: "/images/noticia.jpg",
+	footerImage1: "/images/illescas3.jpg",
+    category: "Actualidad",
+    date: "31 de Diciembre de 2025",
+	excerpt: "Novedosa forma de arrancar la temporada en el Coliseo de esta localidad granadina",
+    fullContent: `El Ayuntamiento de Atarfe (Granada) y el empresario **Pedro Pérez 'Chicote'** han cerrado el cartel del festejo que abre la temporada en la provincia de Granada el próximo 28 de febrero, una cita que se ha convertido en clásica en el arranque del año taurino en Andalucía.
+
+En esta ocasión, y como gran novedad, se trata de un festival taurino que reza en el cartel como "Extraordinaria y magna Fiesta Andaluza", ya que conjugará toreo y cante del más alto nivel en un acontecimiento único.
+
+Con motivo del día de Andalucía, Atarfe acogerá el sábado 28 de febrero este festival benéfico en el que actuarán los matadores de toros **Fimito de Córdoba**, **Diego Urdiales**, **El Cid**, **El Fandi**, **Esaú Fernández** y el novillero **Jaime de Pedro**, que hará su presentación ante el público de su tierra. El ganado será de **Virgen María** y el festejo dará comienzo a las 5 de la tarde. Los toreros estarán acompañados por un importante elenco de artistas flamencos que se anunciará próximamente.
+
+Este festival se organiza en colaboración con la hermandad Oración en el Huerto Realejo de Granada, que participará de los beneficios.
+
+**Declaraciones**
+
+El empresario **Pedro Pérez 'Chicote'** valora este festival como "una forma novedosa de abrir la temporada, es el primer festival de este nivel que se programa en la plaza de Atarfe", a lo que añade: "Se trata un cartel de lujo que mezcla figuras del toreo y del flamenco en una fórmula muy atractiva. Cante y toreo se unirán en una tarde irrepetible".
+
+La alcaldesa de Atarfe, **Yolanda Fernández**, explica que "desde el Ayuntamiento de Atarfe seguimos apostando por que haya toros el Día de Andalucía en nuestro Coliseo y estamos contentos de que en esta ocasión sea un festival que reúna a figuras del toreo y del flamenco. La Tauromaquia es cultura y en un pueblo con tradición taurina no podemos obviar nuestras raíces". Y expresa un deseo: "Ahora solo falta que se anime la gente y se llene la plaza".
+
+**Precios económicos**
+
+Como es habitual, Chicote ofrece precios económicos para que todo el mundo pueda tener acceso a este festejo, de modo que el tendido general costará 35 euros, con entradas a 15 y 25 euros para jóvenes.
+
+Se han habilitado puntos de venta en el Centro Cultural de Atarfe, Teatro Isabel la Católica, Cofradía Oración en el Huerto y a través de la web: <a
+  href="www.redentradas.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.redentradas.com
+</a> .
+
+Las taquillas del Coliseo de Atarfe se abrirán en horario de tarde (de 17 a 20 horas) a partir del 25 de febrero. Teléfono de reservas 618 606 680.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 149,
     title: `La Real Unión de Criadores de Toros de Lidia cierra un año cargado de historia`,
