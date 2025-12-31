@@ -475,7 +475,7 @@ Como broche final, se adjunta un **vídeo resumen** que recoge los momentos más
 Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
   <iframe
-    src="https://youtu.be/GLyKxaOlHAo"
+    src="https://www.youtube.com/embed/GLyKxaOlHAo"
     title="Video de YouTube"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -563,7 +563,7 @@ Como broche final, se adjunta un **vídeo resumen** que recoge los momentos más
 Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
   <iframe
-    src="https://youtu.be/GLyKxaOlHAo"
+    src="https://www.youtube.com/embed/GLyKxaOlHAo"
     title="Video de YouTube"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
