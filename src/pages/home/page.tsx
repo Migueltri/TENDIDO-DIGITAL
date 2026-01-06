@@ -450,124 +450,14 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
    { 
     id: 1000,
-    title: `Un festival de lujo unirá toreo y cante del más alto nivel en Atarfe`,
-    image: "/images/noticia.jpg",
+    title: `La Comunidad de Madrid reconoce la trayectoria profesional del periodista taurino Miguel Ángel Moncholi`,
+    image: "/images/moncholi1.jpg",
     category: "Actualidad",
-    date: "31 de Diciembre de 2025",
-	excerpt: "Novedosa forma de arrancar la temporada en el Coliseo de esta localidad granadina",
-    fullContent: `El Ayuntamiento de Atarfe (Granada) y el empresario **Pedro Pérez 'Chicote'** han cerrado el cartel del festejo que abre la temporada en la provincia de Granada el próximo 28 de febrero, una cita que se ha convertido en clásica en el arranque del año taurino en Andalucía.
+    date: "2 de Enero de 2026",
+	footerImage1: "moncholi2",
+    fullContent: `La Comunidad de Madrid ha reconocido hoy la trayectoria profesional del periodista taurino Miguel Ángel Moncholi en un acto celebrado en la Plaza de Toros de Las Ventas. El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el coloquio homenaje en el que se ha realizado un recorrido por su extensa carrera y se ha descubierto una placa conmemorativa, ubicada en el tendido bajo del coso madrileño.
 
-En esta ocasión, y como gran novedad, se trata de un festival taurino que reza en el cartel como "Extraordinaria y magna Fiesta Andaluza", ya que conjugará toreo y cante del más alto nivel en un acontecimiento único.
-
-Con motivo del día de Andalucía, Atarfe acogerá el sábado 28 de febrero este festival benéfico en el que actuarán los matadores de toros **Fimito de Córdoba**, **Diego Urdiales**, **El Cid**, **El Fandi**, **Esaú Fernández** y el novillero **Jaime de Pedro**, que hará su presentación ante el público de su tierra. El ganado será de **Virgen María** y el festejo dará comienzo a las 5 de la tarde. Los toreros estarán acompañados por un importante elenco de artistas flamencos que se anunciará próximamente.
-
-Este festival se organiza en colaboración con la hermandad Oración en el Huerto Realejo de Granada, que participará de los beneficios.
-
-**Declaraciones**
-
-El empresario **Pedro Pérez 'Chicote'** valora este festival como "una forma novedosa de abrir la temporada, es el primer festival de este nivel que se programa en la plaza de Atarfe", a lo que añade: "Se trata un cartel de lujo que mezcla figuras del toreo y del flamenco en una fórmula muy atractiva. Cante y toreo se unirán en una tarde irrepetible".
-
-La alcaldesa de Atarfe, **Yolanda Fernández**, explica que "desde el Ayuntamiento de Atarfe seguimos apostando por que haya toros el Día de Andalucía en nuestro Coliseo y estamos contentos de que en esta ocasión sea un festival que reúna a figuras del toreo y del flamenco. La Tauromaquia es cultura y en un pueblo con tradición taurina no podemos obviar nuestras raíces". Y expresa un deseo: "Ahora solo falta que se anime la gente y se llene la plaza".
-
-**Precios económicos**
-
-Como es habitual, Chicote ofrece precios económicos para que todo el mundo pueda tener acceso a este festejo, de modo que el tendido general costará 35 euros, con entradas a 15 y 25 euros para jóvenes.
-
-Se han habilitado puntos de venta en el Centro Cultural de Atarfe, Teatro Isabel la Católica, Cofradía Oración en el Huerto y a través de la web: <a
-  href="www.redentradas.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-www.redentradas.com
-</a> .
-
-Las taquillas del Coliseo de Atarfe se abrirán en horario de tarde (de 17 a 20 horas) a partir del 25 de febrero. Teléfono de reservas 618 606 680.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `La Real Unión de Criadores de Toros de Lidia cierra un año cargado de historia`,
-    image: "/images/canalo.jpg",
-    category: "Actualidad",
-    date: "31 de Diciembre de 2025",
-	    fullContent: `<p> El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
-
-Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
-
-Uno de los momentos más simbólicos de esta conmemoración fue la **corrida del 120 Aniversario**, celebrada en la plaza de toros de Las Ventas de Madrid, epicentro de la tauromaquia. Aquella tarde, el toro bravo ocupó el lugar que le corresponde como eje de una tradición viva, en un acto de memoria compartida y reconocimiento a la labor constante de la RUCLT a lo largo de más de un siglo.
-
-La emoción alcanzó uno de sus puntos culminantes con la **gala institucional del 120 aniversario**, presidida por **S.A.R. la Infanta Doña Elena**, que reunió a representantes del mundo ganadero, cultural, social y taurino. En este acto se rindió un homenaje especial a los **hierros fundadores de la Real Unión**, auténticos cimientos de la institución, reconociendo su legado y su contribución decisiva a la historia del toro de lidia en España.
-
-Otro de los grandes hitos del año fue la presentación en Sevilla de **El libro Verde del Toro Bravo**, una obra impulsada por la RUCLT que aborda, desde una perspectiva rigurosa y multidisciplinar, la importancia del toro bravo para la biodiversidad, la economía rural, la conservación de la dehesa y la identidad cultural española. Su presentación se convirtió en un espacio de reflexión y diálogo con la sociedad.
-
-La conmemoración tuvo también un destacado reflejo en el ámbito cultural y del campo. **Juan Pedro Domecq** (ganadero y vicepresidente de la RUCL) firmó la Tercera de ABC el mismo día del 120 aniversario, el 15 de abril de 2025, con un texto de hondo calado en defensa del campo bravo como depositario de memoria y futuro. Asimismo, la Real Unión de Criadores de Toros de Lidia colaboró en el **42º Concurso Nacional de Faenas y Doma de Campo de Ciudad Rodrigo (Salamanca)**, que se saldó con un éxito rotundo, reforzando el vínculo entre el toro, el caballo y los oficios tradicionales del mundo rural.
-
-La RUCLT tuvo además una presencia destacada en la **Feria Ecuestre de Badajoz**, uno de los encuentros de referencia del campo y el caballo, donde el toro bravo y la labor ganadera ocuparon un lugar central, subrayando la unión entre tradición, naturaleza y futuro.
-
-A lo largo de este año conmemorativo, la Real Unión de Criadores de Toros de Lidia ha recibido numerosos reconocimientos en distintos puntos de la geografía española, reflejo del respeto y la consideración ganados a lo largo de sus **120 años de historia**.
-
-Como broche final, se adjunta un **vídeo resumen** que recoge los momentos más significativos de este aniversario, una mirada audiovisual que condensa la emoción y el espíritu de una celebración histórica.
-
-Con el cierre de este 120 aniversario, la **Real Unión de Criadores de Toros de Lidia** reafirma su compromiso con la defensa del toro bravo, la excelencia ganadera y la conservación del medio natural, proyectando hacia el futuro un legado que, más de un siglo después, sigue vivo y lleno de sentido.
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
-  <iframe
-    src="https://www.youtube.com/embed/GLyKxaOlHAo"
-    title="Video de YouTube"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-  ></iframe>
-</div>
-</p>`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Illescas: con carteles para su feria del Milagro`,
-    image: "/images/illescas2.jpg",
-	footerImage1: "/images/illescas3.jpg",
-    category: "Actualidad",
-    date: "31 de Diciembre de 2025",
-    fullContent: `La plaza de toros de Illescas volverá a ser, un año más, epicentro del inicio de la temporada taurina 2026 con una **Feria del Milagro** llena de máximos alicientes. La corrida de toros (14 de marzo) y la de rejones (8 de marzo), que han sido oficializadas por la empresa MaxiToro este martes, se vuelven a erigir como **dos auténticos acontecimientos del arranque de campaña en el mundo del toro**.
-
-Además, y fiel a la tradición que Maximino Pérez ha venido llevando a cabo en las últimas temporadas, **oficializa los carteles durante la Navidad para que los aficionados puedan hacer el regalo de Reyes perfecto a sus familiares y amigos** de cara a estas fechas tan entrañables.
-
-**Un cartel de presente y futuro en la Corrida del Milagro el 14 de marzo**
-
-En la corrida de toros, que se celebrará el 14 de marzo, tendrá lugar la presentación de una de las grandes revelaciones del 2025, **Víctor Hernández**, que tuvo dos importantes actuaciones en Las Ventas durante la temporada pasada, además de destacar en otros cosos de primera categoría.
-
-Abrirá plaza una figura de gran relevancia, **José María Manzanares**, que repite en este escenario después de las grandes faenas realizadas en las últimas Ferias del Milagro. Y, tras él, otro de los nombres clave del escalafón, el sevillano **Juan Ortega**. Se lidiará un encierro con los hierros de **Domingo Hernández y Román Sorando**.
-
-**El cartel de rejones: una oda al toreo a caballo el día 8 de marzo**
-
-Pero si el cartel a pie es de impacto y futuro, el festejo a caballo del 8 de marzo también está lleno de gran atracción por la presencia de la máxima figura del momento, **Diego Ventura**, que tiene a Illescas como una de sus plazas "fetiche".
-
-En ese cartel, estará otro de los grandes nombres del toreo a caballo de los últimos años, el alicantino **Andy Cartagena**, y junto a él, el luso **Rui Fernandes**. Se lidiará una corrida de **El Capea** después de su gran resultado en los últimos años en este coso.
-
-**La venta de entradas, disponible desde este martes**
-
-La venta de entradas de forma anticipada **será de forma online en la pagina web <a
-  href="www.maxitoro.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-www.maxitoro.com
-</a> a partir de este día 30 de diciembre de 2025, mientras que la venta en taquilla será a partir del día 19 de enero de 2026 ubicada en la Avda. Castilla La Mancha nº 89 de Illescas (junto al restaurante El Bohío) en horario de 10:30 h. a 14:00 h. y de 17:00 h. a 20:00 h. de lunes a domingo. Los domingos tarde permanecerá cerrada.
-
-El día de los festejos, la venta de entradas se realizará en la misma taquilla ubicada en la Avda. Castilla La Mancha nº 89, en horario de 10:30 h. a 14:00 h. y en las Taquillas de la Plaza de toros desde las 10:30 h. ininterrumpidamente hasta la hora del festejo.
-
-Las entradas también se pueden adquirir a través del **Bono Cultural Joven** al que está adherida la empresa.
-
-**Venta por teléfono e información**
-
-La venta telefónica puede realizarse a través del número 672 00 33 22 (5% recargo - Envío **GRATUITO** a domicilio a partir de 100 euros).`,
+Al encuentro han asistido también destacadas personalidades del sector, como el ganadero Victorino Martín y el periodista Roberto Gómez. Durante su intervención, el consejero ha subrayado la contribución de Moncholi a la difusión de la tauromaquia, destacando que “durante más de 50 años, toda una vida, se ha dedicado a acercar el mundo del toro a la sociedad a través de los medios de comunicación”, entre otros, Cadena Ser y ABC, Televisión Española y Telemadrid.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -576,6 +466,20 @@ La venta telefónica puede realizarse a través del número 672 00 33 22 (5% rec
 
 const latestNews: NewsItem[] = [
    { 
+    id: 147,
+    title: `La Comunidad de Madrid reconoce la trayectoria profesional del periodista taurino Miguel Ángel Moncholi`,
+    image: "/images/moncholi1.jpg",
+    category: "Actualidad",
+    date: "2 de Enero de 2026",
+	footerImage1: "moncholi2",
+    fullContent: `La Comunidad de Madrid ha reconocido hoy la trayectoria profesional del periodista taurino Miguel Ángel Moncholi en un acto celebrado en la Plaza de Toros de Las Ventas. El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el coloquio homenaje en el que se ha realizado un recorrido por su extensa carrera y se ha descubierto una placa conmemorativa, ubicada en el tendido bajo del coso madrileño.
+
+Al encuentro han asistido también destacadas personalidades del sector, como el ganadero Victorino Martín y el periodista Roberto Gómez. Durante su intervención, el consejero ha subrayado la contribución de Moncholi a la difusión de la tauromaquia, destacando que “durante más de 50 años, toda una vida, se ha dedicado a acercar el mundo del toro a la sociedad a través de los medios de comunicación”, entre otros, Cadena Ser y ABC, Televisión Española y Telemadrid.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 148,
     title: `Un festival de lujo unirá toreo y cante del más alto nivel en Atarfe`,
     image: "/images/noticia.jpg",
@@ -620,7 +524,7 @@ Las taquillas del Coliseo de Atarfe se abrirán en horario de tarde (de 17 a 20 
     image: "/images/canalo.jpg",
     category: "Actualidad",
     date: "31 de Diciembre de 2025",
-	    fullContent: `<p> El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
+	fullContent: `<p> El año 2025 quedará grabado para siempre en la historia de la **Real Unión de Criadores de Toros de Lidia (RUCLT)**. Se han cumplido 120 años desde su fundación, el 15 de abril de 1905, una fecha que marca el inicio de un compromiso colectivo con el toro bravo, el campo español y una forma de vida ligada a la tierra, al esfuerzo y a la tradición.
 
 Durante doce meses, la RUCLT ha celebrado este aniversario con un intenso programa de actos que ha servido para rendir homenaje a los ganaderos que, generación tras generación, han cuidado y engrandecido uno de los patrimonios culturales y medioambientales más singulares de nuestro país. Un aniversario vivido con orgullo, pero también con gratitud hacia el legado recibido y responsabilidad hacia el futuro.
 
