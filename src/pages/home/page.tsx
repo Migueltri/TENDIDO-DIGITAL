@@ -454,7 +454,7 @@ const featuredNews: NewsItem[] = [
     image: "/images/moncholi1.jpg",
     category: "Actualidad",
     date: "2 de Enero de 2026",
-	footerImage1: "moncholi2",
+	footerImage1: "/images/moncholi2.jpg",
     fullContent: `La Comunidad de Madrid ha reconocido hoy la trayectoria profesional del periodista taurino Miguel Ángel Moncholi en un acto celebrado en la Plaza de Toros de Las Ventas. El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el coloquio homenaje en el que se ha realizado un recorrido por su extensa carrera y se ha descubierto una placa conmemorativa, ubicada en el tendido bajo del coso madrileño.
 
 Al encuentro han asistido también destacadas personalidades del sector, como el ganadero Victorino Martín y el periodista Roberto Gómez. Durante su intervención, el consejero ha subrayado la contribución de Moncholi a la difusión de la tauromaquia, destacando que “durante más de 50 años, toda una vida, se ha dedicado a acercar el mundo del toro a la sociedad a través de los medios de comunicación”, entre otros, Cadena Ser y ABC, Televisión Española y Telemadrid.`,
