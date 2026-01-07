@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AdminPage from './pages/admin/page';
+import AdminPage from './pages/admin/gestor';
 import Home from './pages/home/page';
 
 export default function App() {
