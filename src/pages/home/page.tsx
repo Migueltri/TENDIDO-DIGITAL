@@ -450,22 +450,74 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
    { 
     id: 1000,
-    title: `La Comunidad de Madrid reconoce la trayectoria profesional del periodista taurino Miguel Ángel Moncholi`,
-    image: "/images/moncholi1.jpg",
+    title: `Valdesaz apuesta por el futuro con una clase práctica de máximo interés en enero`,
+    image: "/images/valdesaz.jpg",
     category: "Actualidad",
-    date: "2 de Enero de 2026",
-	footerImage1: "/images/moncholi2.jpg",
-    fullContent: `La Comunidad de Madrid ha reconocido hoy la trayectoria profesional del periodista taurino Miguel Ángel Moncholi en un acto celebrado en la Plaza de Toros de Las Ventas. El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el coloquio homenaje en el que se ha realizado un recorrido por su extensa carrera y se ha descubierto una placa conmemorativa, ubicada en el tendido bajo del coso madrileño.
+    date: "7 de Enero de 2026",
+    fullContent: `La localidad alcarreña de Valdesaz se convertirá en el epicentro de la base del toreo el próximo *sábado 17 de enero*. En una firme apuesta por la promoción de los nuevos valores, el municipio celebrará una extraordinaria clase práctica a partir de las *12:00 horas*, consolidando su compromiso con la formación de los futuros profesionales del escalafón.
 
-Al encuentro han asistido también destacadas personalidades del sector, como el ganadero Victorino Martín y el periodista Roberto Gómez. Durante su intervención, el consejero ha subrayado la contribución de Moncholi a la difusión de la tauromaquia, destacando que “durante más de 50 años, toda una vida, se ha dedicado a acercar el mundo del toro a la sociedad a través de los medios de comunicación”, entre otros, Cadena Ser y ABC, Televisión Española y Telemadrid.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Para la ocasión, se ha reseñado un encierro de la ganadería *Finca Valtaja,* situada en Galápagos , cuyos novillos servirán para medir las capacidades y el progreso de cuatro jóvenes promesas procedentes de distintas escuelas taurinas del país. El cartel, que destaca por su variedad y proyección, contará con la participación de Pedro Gómez, de la Escuela de Galapagar; Celso Ortega, representante de la Escuela La Gallosina; y los alumnos Pablo Serrano e Izan Alonso, quienes actuarán en calidad de locales pertenecientes a la Escuela Taurina de Guadalajara.
+
+El festejo, que cuenta con la organización de la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, tendrá carácter gratuito para todos los aficionados que deseen acercarse a presenciar las evoluciones de estos novilleros.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+   { 
+    id: 1001,
+    title: `El rigor de Cuadri y la seriedad de los encastes: Madrid define su despertar en 2026`,
+    image: "/images/rigor.jpg",
+    category: "Actualidad",
+    date: "7 de Enero de 2026",
+	excerpt: "Plaza 1 recupera el pulso de Las Ventas con un inicio de temporada volcado en el toro; los hierros de Palha y Dolores Aguirre completan una apuesta de máximo compromiso.",
+    fullContent: `La empresa Plaza 1 ha definido la arquitectura de lo que será el primer tramo de la temporada 2026 en la Monumental de Las Ventas, un diseño de carteles que apuesta decididamente por la ortodoxia ganadera y el reconocimiento a una nómina de toreros curtidos en la severidad del ruedo madrileño. 
+
+El ciclo arrancará el próximo *22 de marzo* con un acontecimiento de especial calado para la afición: el retorno de la emblemática ganadería de *Cuadri*. Tras un paréntesis de un año, los ejemplares onubenses de la "H" coronada volverán a pisar el albero capitalino para ser lidiados por una terna de especialistas en la lidia de poder a poder conformada por *Pepe Moral, Gómez del Pilar y Damián Castaño*, tres diestros cuya trayectoria avala su solvencia ante el desafío que siempre supone el encaste propio de la familia Cuadri.
+
+El calendario de primavera mantendrá sus dos fechas de mayor calado litúrgico con una configuración de máximo interés. *El Domingo de Ramos, 29 de marzo*, la maestría de *Curro Díaz encabezará la terna frente a los toros de Martín Lorca*, en un cartel que completan la madurez de *Rafael Serna y el ímpetu del mexicano Diego San Román*, quien afronta una temporada de vital importancia para su consolidación en el escalafón europeo. Por su parte, la Pascua de Resurrección, el 5 de abril, recuperará la esencia lusa con los *toros de Palha. La veteranía de Antonio Ferrera servirá de eje en un festejo que contará con la entrega de Juan de Castilla e Isaac Fonseca*, configurando una terna de gran calado internacional.
+
+El mes de abril no rebajará la exigencia ganadera y completará el abono con una clara apuesta por la diversidad. El domingo 26 se ha reservado para una corrida de Dolores Aguirre, hierro de culto para el sector más exigente de la afición madrileña por su transmisión y casta. Previamente, el fomento de la cantera tendrá su espacio con dos novilladas de abono en las que se lidiarán los hierros de Antonio Palla y Sánchez Herrero, brindando la oportunidad a los nuevos valores de medirse en la primera plaza del mundo antes del inicio del ciclo isidril.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
    { 
+    id: 145,
+    title: `Valdesaz apuesta por el futuro con una clase práctica de máximo interés en enero`,
+    image: "/images/valdesaz.jpg",
+    category: "Actualidad",
+    date: "7 de Enero de 2026",
+    fullContent: `La localidad alcarreña de Valdesaz se convertirá en el epicentro de la base del toreo el próximo *sábado 17 de enero*. En una firme apuesta por la promoción de los nuevos valores, el municipio celebrará una extraordinaria clase práctica a partir de las *12:00 horas*, consolidando su compromiso con la formación de los futuros profesionales del escalafón.
+
+Para la ocasión, se ha reseñado un encierro de la ganadería *Finca Valtaja,* situada en Galápagos , cuyos novillos servirán para medir las capacidades y el progreso de cuatro jóvenes promesas procedentes de distintas escuelas taurinas del país. El cartel, que destaca por su variedad y proyección, contará con la participación de Pedro Gómez, de la Escuela de Galapagar; Celso Ortega, representante de la Escuela La Gallosina; y los alumnos Pablo Serrano e Izan Alonso, quienes actuarán en calidad de locales pertenecientes a la Escuela Taurina de Guadalajara.
+
+El festejo, que cuenta con la organización de la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, tendrá carácter gratuito para todos los aficionados que deseen acercarse a presenciar las evoluciones de estos novilleros.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+   { 
+    id: 146,
+    title: `El rigor de Cuadri y la seriedad de los encastes: Madrid define su despertar en 2026`,
+    image: "/images/rigor.jpg",
+    category: "Actualidad",
+    date: "7 de Enero de 2026",
+	excerpt: "Plaza 1 recupera el pulso de Las Ventas con un inicio de temporada volcado en el toro; los hierros de Palha y Dolores Aguirre completan una apuesta de máximo compromiso.",
+    fullContent: `La empresa Plaza 1 ha definido la arquitectura de lo que será el primer tramo de la temporada 2026 en la Monumental de Las Ventas, un diseño de carteles que apuesta decididamente por la ortodoxia ganadera y el reconocimiento a una nómina de toreros curtidos en la severidad del ruedo madrileño. 
+
+El ciclo arrancará el próximo *22 de marzo* con un acontecimiento de especial calado para la afición: el retorno de la emblemática ganadería de *Cuadri*. Tras un paréntesis de un año, los ejemplares onubenses de la "H" coronada volverán a pisar el albero capitalino para ser lidiados por una terna de especialistas en la lidia de poder a poder conformada por *Pepe Moral, Gómez del Pilar y Damián Castaño*, tres diestros cuya trayectoria avala su solvencia ante el desafío que siempre supone el encaste propio de la familia Cuadri.
+
+El calendario de primavera mantendrá sus dos fechas de mayor calado litúrgico con una configuración de máximo interés. *El Domingo de Ramos, 29 de marzo*, la maestría de *Curro Díaz encabezará la terna frente a los toros de Martín Lorca*, en un cartel que completan la madurez de *Rafael Serna y el ímpetu del mexicano Diego San Román*, quien afronta una temporada de vital importancia para su consolidación en el escalafón europeo. Por su parte, la Pascua de Resurrección, el 5 de abril, recuperará la esencia lusa con los *toros de Palha. La veteranía de Antonio Ferrera servirá de eje en un festejo que contará con la entrega de Juan de Castilla e Isaac Fonseca*, configurando una terna de gran calado internacional.
+
+El mes de abril no rebajará la exigencia ganadera y completará el abono con una clara apuesta por la diversidad. El domingo 26 se ha reservado para una corrida de Dolores Aguirre, hierro de culto para el sector más exigente de la afición madrileña por su transmisión y casta. Previamente, el fomento de la cantera tendrá su espacio con dos novilladas de abono en las que se lidiarán los hierros de Antonio Palla y Sánchez Herrero, brindando la oportunidad a los nuevos valores de medirse en la primera plaza del mundo antes del inicio del ciclo isidril.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 147,
     title: `La Comunidad de Madrid reconoce la trayectoria profesional del periodista taurino Miguel Ángel Moncholi`,
     image: "/images/moncholi1.jpg",
