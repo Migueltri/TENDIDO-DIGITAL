@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/home/admin/page';
-import Noticia from "./pages/noticia/Noticia";
+import AdminPage from './pages/admin/page';
+import Home from './pages/home/page';
 
 export default function App() {
   return (
