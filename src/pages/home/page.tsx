@@ -448,43 +448,184 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-   { 
+    { 
     id: 1000,
-    title: `Valdesaz apuesta por el futuro con una clase práctica de máximo interés en enero`,
-    image: "/images/valdesaz.jpg",
+    title: `Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”`,
+    image: "/images/charla.jpg",
     category: "Actualidad",
-    date: "7 de Enero de 2026",
-    fullContent: `La localidad alcarreña de Valdesaz se convertirá en el epicentro de la base del toreo el próximo **sábado 17 de enero**. En una firme apuesta por la promoción de los nuevos valores, el municipio celebrará una extraordinaria clase práctica a partir de las **12:00 horas**, consolidando su compromiso con la formación de los futuros profesionales del escalafón.
+    date: "8 de Enero de 2026",
+    fullContent: `El próximo domingo **25 de enero de 2026**, a las **18:30 horas**, Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”, organizada por la **Peña Taurina El Quite** en colaboración con el Ayuntamiento de la localidad.
 
-Para la ocasión, se ha reseñado un encierro de la ganadería **Finca Valtaja,** situada en Galápagos , cuyos novillos servirán para medir las capacidades y el progreso de cuatro jóvenes promesas procedentes de distintas escuelas taurinas del país. El cartel, que destaca por su variedad y proyección, contará con la participación de Pedro Gómez, de la Escuela de Galapagar; Celso Ortega, representante de la Escuela La Gallosina; y los alumnos Pablo Serrano e Izan Alonso, quienes actuarán en calidad de locales pertenecientes a la Escuela Taurina de Guadalajara.
+El acto tendrá lugar en el **Centro Polivalente (C/ La Seda nº 41)** y estará moderado por **Diego Cervera**. Participarán **Carlos Aragón Cancela**, de la ganadería **Flor de Jara**, y el matador de toros **Gómez del Pilar**, quienes analizarán la actualidad del mundo taurino y las perspectivas de la próxima temporada.
 
-El festejo, que cuenta con la organización de la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, tendrá carácter gratuito para todos los aficionados que deseen acercarse a presenciar las evoluciones de estos novilleros.`,
+Al finalizar la charla se ofrecerá un vino español a los asistentes.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
-   { 
+	{ 
     id: 1001,
-    title: `El rigor de Cuadri y la seriedad de los encastes: Madrid define su despertar en 2026`,
-    image: "/images/rigor.jpg",
+    title: `Con fecha, grupos y ganaderías para el Bolsín clasificatorio del Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/andalucia.jpg",
     category: "Actualidad",
-    date: "7 de Enero de 2026",
-	excerpt: "Plaza 1 recupera el pulso de Las Ventas con un inicio de temporada volcado en el toro; los hierros de Palha y Dolores Aguirre completan una apuesta de máximo compromiso.",
-    fullContent: `La empresa Plaza 1 ha definido la arquitectura de lo que será el primer tramo de la temporada 2026 en la Monumental de Las Ventas, un diseño de carteles que apuesta decididamente por la ortodoxia ganadera y el reconocimiento a una nómina de toreros curtidos en la severidad del ruedo madrileño. 
+    date: "8 de Enero de 2026",
+    fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía ya conoce todos los detalles de sus tentaderos clasificatorios
 
-El ciclo arrancará el próximo **22 de marzo** con un acontecimiento de especial calado para la afición: el retorno de la emblemática ganadería de **Cuadri**. Tras un paréntesis de un año, los ejemplares onubenses de la "H" coronada volverán a pisar el albero capitalino para ser lidiados por una terna de especialistas en la lidia de poder a poder conformada por **Pepe Moral, Gómez del Pilar y Damián Castaño**, tres diestros cuya trayectoria avala su solvencia ante el desafío que siempre supone el encaste propio de la familia Cuadri.
+ 
 
-El calendario de primavera mantendrá sus dos fechas de mayor calado litúrgico con una configuración de máximo interés. **El Domingo de Ramos, 29 de marzo**, la maestría de **Curro Díaz encabezará la terna frente a los toros de Martín Lorca**, en un cartel que completan la madurez de **Rafael Serna y el ímpetu del mexicano Diego San Román**, quien afronta una temporada de vital importancia para su consolidación en el escalafón europeo. Por su parte, la Pascua de Resurrección, el 5 de abril, recuperará la esencia lusa con los **toros de Palha. La veteranía de Antonio Ferrera servirá de eje en un festejo que contará con la entrega de Juan de Castilla e Isaac Fonseca**, configurando una terna de gran calado internacional.
+El Circuito de Novilladas de Andalucía 2026 ya conoce todos los detalles de su Bolsín clasificatorio, cita determinante de la que saldrán siete nombres que formarán parte de la séptima edición de uno de los certámenes más consolidados y prestigiosos del panorama taurino nacional, impulsado por la Fundación Toro de Lidia y la Junta de Andalucía y encuadrado en la Liga Nacional de Novilladas.
 
-El mes de abril no rebajará la exigencia ganadera y completará el abono con una clara apuesta por la diversidad. El domingo 26 se ha reservado para una corrida de Dolores Aguirre, hierro de culto para el sector más exigente de la afición madrileña por su transmisión y casta. Previamente, el fomento de la cantera tendrá su espacio con dos novilladas de abono en las que se lidiarán los hierros de Antonio Palla y Sánchez Herrero, brindando la oportunidad a los nuevos valores de medirse en la primera plaza del mundo antes del inicio del ciclo isidril.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+ 
+
+El Bolsín se celebrará el próximo jueves 15 de enero, en una intensa jornada dividida en dos tentaderos clasificatorios, con la participación de un total de 22 novilleros procedentes de distintas provincias andaluzas, además de espadas formados en las distintas Escuelas Taurinas de la comunidad.
+
+ 
+
+El Grupo 1 actuará en horario matinal en la ganadería de Aguadulce, situada en la provincia de Sevilla. Este primer bloque estará integrado por los siguientes novilleros: Isaac Galvín, Iván Rejas, Dennis Martín, Guillermo Luna, Julio Romero, Juan Jesús Rodríguez, Antonio Santana, Miriam Cabas, Joselito de Córdoba, Francisco Fernández, Pepe Martínez y Alfonso Alonso.
+
+ 
+
+Por su parte, el Grupo 2 está previsto para la sesión vespertina en la ganadería de Chamaco, en la localidad onubense de Hinojos (Huelva). En este segundo tentadero tomarán parte Víctor Barroso, Manuel Olivero, Pedro Luis, Fuentes Bocanegra, El Primi, Gonzalo Capdevila, Martín Morilla, Alejandro Duarte, Pedro Montaldo e Ignacio Candelas.
+
+       
+
+El Bolsín clasificatorio se consolida así como una de las jornadas más exigentes e importantes del calendario taurino andaluz, en la que los jóvenes aspirantes deberán demostrar sus cualidades técnicas, artísticas y su capacidad para afrontar un certamen que representa una auténtica plataforma de lanzamiento para sus carreras profesionales.
+
+ 
+
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Ubrique (Cádiz), ya conoce el cartel para la corrida de la piel`,
+    image: "/images/ubrique2.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+    fullContent: `La empresa **Toros y Espectáculos Hnos. Durán** ha dado a conocer el cartel de la tradicional **Corrida de la Piel de Ubrique**, que se celebrará el 21 de marzo.
+
+Con toros de la ganadería sevillana de **Virgen María**, harán el paseíllo los diestros **Daniel Luque, David de Miranda y Curro Durán**
+
+La empresa tiene previsto presentar el cartel de manera oficial en los próximos días.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+   { 
+    id: 1003,
+    title: `Arcos de la Frontera con un Rey Melchor muy taurino`,
+    image: "/images/arcos.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+	footerImage1: "/images/arcos1.jpg",
+    fullContent: `Si hay una noche mágica en el año en la de reyes, y este año en plena ruta de los pueblos blancos de Cádiz, más concretamente en Arcos de la Frontera, han tenido un Rey Melchor de lo más taurino en la figura del ganadero y empresario taurino **Eduardo Duarte**, gerente de **Ruedos del Sur**, encarnó a **Su Majestad el Rey Melchor**.
+
+Ante la atenta mirada de miles de paisanos, vecinos y visitantes que abarrotaron las calles del casco urbano de la serrana localidad gaditana, **Melchor** hizo su entrada triunfal en una carroza cargada de referencias al mundo del toro. No se trató de un gesto improvisado, sino de una cuidada puesta en escena que quiso rendir homenaje a una de las expresiones culturales más arraigadas en **España**. **El Rey de Oriente** apareció ataviado con enseres propios del toreo, integrando así la liturgia festiva de los **Reyes Magos** con la simbología taurina, en una fusión que despertó tanto admiración como emoción entre el público.
+
+Acompañando a **Su Majestad** marchaba un nutrido séquito de ‘**Pajes Taurinos**’, conformado por familiares y amigos cercanos a la gran familia de **Ruedos del Sur**. Este singular cortejo, lejos de ser anecdótico, reforzó el carácter reivindicativo de la presencia taurina en la cabalgata. Entre ellos destacó la figura del reconocido ‘**Plata de Ley**’ **Juan Sierra**, cuyo prestigio y trayectoria aportaron aún mayor solemnidad y autenticidad al desfile.
+
+La participación de **Eduardo Duarte** como **Rey Melchor** no solo supuso un honor personal, sino también un claro guiño de apoyo a la tauromaquia, entendida como patrimonio cultural y una de las señas de identidad más relevantes de nuestro país. En un contexto en el que el debate sobre las tradiciones ocupa un lugar destacado en la agenda social y cultural, este gesto simbólico cobró especial relevancia al desarrollarse en un evento tan transversal y popular como la **Cabalgata de Reyes**, capaz de congregar a generaciones enteras en torno a la ilusión compartida
+
+La estampa de **Melchor** avanzando entre aplausos, caramelos, juguetes, regalos... y miradas de asombro, envuelto en un imaginario taurino respetuoso y elegante, dejó una huella imborrable en la memoria colectiva de **Arcos de la Frontera**. Una noche en la que la fantasía infantil, la tradición festiva y la tauromaquia caminaron de la mano, recordando que las fiestas populares también pueden ser un espacio para la identidad, el mensaje y la reivindicación cultural y social.
+
+Así, el día Reyes volvió a cumplir su cometido: repartir ilusión, emoción y sueños. Pero este año, además, dejó constancia de que las tradiciones, cuando se expresan con sensibilidad y respeto, siguen teniendo un lugar destacado en el corazón de los pueblos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+     { 
+    id: 141,
+    title: `Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”`,
+    image: "/images/charla.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+    fullContent: `El próximo domingo **25 de enero de 2026**, a las **18:30 horas**, Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”, organizada por la **Peña Taurina El Quite** en colaboración con el Ayuntamiento de la localidad.
+
+El acto tendrá lugar en el **Centro Polivalente (C/ La Seda nº 41)** y estará moderado por **Diego Cervera**. Participarán **Carlos Aragón Cancela**, de la ganadería **Flor de Jara**, y el matador de toros **Gómez del Pilar**, quienes analizarán la actualidad del mundo taurino y las perspectivas de la próxima temporada.
+
+Al finalizar la charla se ofrecerá un vino español a los asistentes.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 142,
+    title: `Con fecha, grupos y ganaderías para el Bolsín clasificatorio del Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/andalucia.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+    fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía ya conoce todos los detalles de sus tentaderos clasificatorios
+
+ 
+
+El Circuito de Novilladas de Andalucía 2026 ya conoce todos los detalles de su Bolsín clasificatorio, cita determinante de la que saldrán siete nombres que formarán parte de la séptima edición de uno de los certámenes más consolidados y prestigiosos del panorama taurino nacional, impulsado por la Fundación Toro de Lidia y la Junta de Andalucía y encuadrado en la Liga Nacional de Novilladas.
+
+ 
+
+El Bolsín se celebrará el próximo jueves 15 de enero, en una intensa jornada dividida en dos tentaderos clasificatorios, con la participación de un total de 22 novilleros procedentes de distintas provincias andaluzas, además de espadas formados en las distintas Escuelas Taurinas de la comunidad.
+
+ 
+
+El Grupo 1 actuará en horario matinal en la ganadería de Aguadulce, situada en la provincia de Sevilla. Este primer bloque estará integrado por los siguientes novilleros: Isaac Galvín, Iván Rejas, Dennis Martín, Guillermo Luna, Julio Romero, Juan Jesús Rodríguez, Antonio Santana, Miriam Cabas, Joselito de Córdoba, Francisco Fernández, Pepe Martínez y Alfonso Alonso.
+
+ 
+
+Por su parte, el Grupo 2 está previsto para la sesión vespertina en la ganadería de Chamaco, en la localidad onubense de Hinojos (Huelva). En este segundo tentadero tomarán parte Víctor Barroso, Manuel Olivero, Pedro Luis, Fuentes Bocanegra, El Primi, Gonzalo Capdevila, Martín Morilla, Alejandro Duarte, Pedro Montaldo e Ignacio Candelas.
+
+       
+
+El Bolsín clasificatorio se consolida así como una de las jornadas más exigentes e importantes del calendario taurino andaluz, en la que los jóvenes aspirantes deberán demostrar sus cualidades técnicas, artísticas y su capacidad para afrontar un certamen que representa una auténtica plataforma de lanzamiento para sus carreras profesionales.
+
+ 
+
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 143,
+    title: `Ubrique (Cádiz), ya conoce el cartel para la corrida de la piel`,
+    image: "/images/ubrique2.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+    fullContent: `La empresa **Toros y Espectáculos Hnos. Durán** ha dado a conocer el cartel de la tradicional **Corrida de la Piel de Ubrique**, que se celebrará el 21 de marzo.
+
+Con toros de la ganadería sevillana de **Virgen María**, harán el paseíllo los diestros **Daniel Luque, David de Miranda y Curro Durán**
+
+La empresa tiene previsto presentar el cartel de manera oficial en los próximos días.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
    { 
+    id: 144,
+    title: `Arcos de la Frontera con un Rey Melchor muy taurino`,
+    image: "/images/arcos.jpg",
+    category: "Actualidad",
+    date: "8 de Enero de 2026",
+	footerImage1: "/images/arcos1.jpg",
+    fullContent: `Si hay una noche mágica en el año en la de reyes, y este año en plena ruta de los pueblos blancos de Cádiz, más concretamente en Arcos de la Frontera, han tenido un Rey Melchor de lo más taurino en la figura del ganadero y empresario taurino **Eduardo Duarte**, gerente de **Ruedos del Sur**, encarnó a **Su Majestad el Rey Melchor**.
+
+Ante la atenta mirada de miles de paisanos, vecinos y visitantes que abarrotaron las calles del casco urbano de la serrana localidad gaditana, **Melchor** hizo su entrada triunfal en una carroza cargada de referencias al mundo del toro. No se trató de un gesto improvisado, sino de una cuidada puesta en escena que quiso rendir homenaje a una de las expresiones culturales más arraigadas en **España**. **El Rey de Oriente** apareció ataviado con enseres propios del toreo, integrando así la liturgia festiva de los **Reyes Magos** con la simbología taurina, en una fusión que despertó tanto admiración como emoción entre el público.
+
+Acompañando a **Su Majestad** marchaba un nutrido séquito de ‘**Pajes Taurinos**’, conformado por familiares y amigos cercanos a la gran familia de **Ruedos del Sur**. Este singular cortejo, lejos de ser anecdótico, reforzó el carácter reivindicativo de la presencia taurina en la cabalgata. Entre ellos destacó la figura del reconocido ‘**Plata de Ley**’ **Juan Sierra**, cuyo prestigio y trayectoria aportaron aún mayor solemnidad y autenticidad al desfile.
+
+La participación de **Eduardo Duarte** como **Rey Melchor** no solo supuso un honor personal, sino también un claro guiño de apoyo a la tauromaquia, entendida como patrimonio cultural y una de las señas de identidad más relevantes de nuestro país. En un contexto en el que el debate sobre las tradiciones ocupa un lugar destacado en la agenda social y cultural, este gesto simbólico cobró especial relevancia al desarrollarse en un evento tan transversal y popular como la **Cabalgata de Reyes**, capaz de congregar a generaciones enteras en torno a la ilusión compartida
+
+La estampa de **Melchor** avanzando entre aplausos, caramelos, juguetes, regalos... y miradas de asombro, envuelto en un imaginario taurino respetuoso y elegante, dejó una huella imborrable en la memoria colectiva de **Arcos de la Frontera**. Una noche en la que la fantasía infantil, la tradición festiva y la tauromaquia caminaron de la mano, recordando que las fiestas populares también pueden ser un espacio para la identidad, el mensaje y la reivindicación cultural y social.
+
+Así, el día Reyes volvió a cumplir su cometido: repartir ilusión, emoción y sueños. Pero este año, además, dejó constancia de que las tradiciones, cuando se expresan con sensibilidad y respeto, siguen teniendo un lugar destacado en el corazón de los pueblos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 145,
     title: `Valdesaz apuesta por el futuro con una clase práctica de máximo interés en enero`,
     image: "/images/valdesaz.jpg",
