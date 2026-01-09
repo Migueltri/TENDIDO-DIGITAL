@@ -450,95 +450,42 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
     { 
     id: 1000,
-    title: `Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”`,
-    image: "/images/charla.jpg",
+    title: `Morante de la Puebla repetirá como organizador de los festejos taurinos de La Puebla del Río en 2026`,
+    image: "/images/organizara.jpg",
     category: "Actualidad",
-    date: "8 de Enero de 2026",
-    fullContent: `El próximo domingo **25 de enero de 2026**, a las **18:30 horas**, Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”, organizada por la **Peña Taurina El Quite** en colaboración con el Ayuntamiento de la localidad.
+    date: "9 de Enero de 2026",
+    fullContent: `Morante de la Puebla organizará un año más los festejos taurinos de La Puebla del Río, según publica **José Manuel Peña en ABC de Sevilla**. El Ayuntamiento de la localidad sevillana hará oficial este viernes la adjudicación a la empresa compuesta por el diestro cigarrero y su apoderado y amigo, **Pedro Jorge Marqués**.
 
-El acto tendrá lugar en el **Centro Polivalente (C/ La Seda nº 41)** y estará moderado por **Diego Cervera**. Participarán **Carlos Aragón Cancela**, de la ganadería **Flor de Jara**, y el matador de toros **Gómez del Pilar**, quienes analizarán la actualidad del mundo taurino y las perspectivas de la próxima temporada.
+La edición de 2026 repetirá la fórmula del año pasado, con un programa que se desarrollará entre el **viernes 23 y el domingo 25 de enero. El viernes 23 se celebrará un encierro infantil** y, como principal novedad, tras el chupinazo y dicho encierro, la plaza acogerá una exhibición de recortadores de primer nivel.
 
-Al finalizar la charla se ofrecerá un vino español a los asistentes.`,
+Los días 24 y 25 tendrán lugar dos encierros y sendas novilladas sin picadores. El sábado se celebrará un concurso de ganaderías con novillos de **Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado, Alcurrucén y David Ribeiro Telles**. Para la jornada del domingo, las reses pertenecerán a la ganadería portuguesa de **Manuel Veiga**.
+
+El novillero triunfador de ambos festejos obtendrá como premio torear en la **Real Maestranza de Caballería de Sevilla**.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Con fecha, grupos y ganaderías para el Bolsín clasificatorio del Circuito de Novilladas de Andalucía 2026`,
-    image: "/images/andalucia.jpg",
-    category: "Actualidad",
-    date: "8 de Enero de 2026",
-    fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía ya conoce todos los detalles de sus tentaderos clasificatorios
-
- 
-
-El Circuito de Novilladas de Andalucía 2026 ya conoce todos los detalles de su Bolsín clasificatorio, cita determinante de la que saldrán siete nombres que formarán parte de la séptima edición de uno de los certámenes más consolidados y prestigiosos del panorama taurino nacional, impulsado por la Fundación Toro de Lidia y la Junta de Andalucía y encuadrado en la Liga Nacional de Novilladas.
-
- 
-
-El Bolsín se celebrará el próximo jueves 15 de enero, en una intensa jornada dividida en dos tentaderos clasificatorios, con la participación de un total de 22 novilleros procedentes de distintas provincias andaluzas, además de espadas formados en las distintas Escuelas Taurinas de la comunidad.
-
- 
-
-El Grupo 1 actuará en horario matinal en la ganadería de Aguadulce, situada en la provincia de Sevilla. Este primer bloque estará integrado por los siguientes novilleros: Isaac Galvín, Iván Rejas, Dennis Martín, Guillermo Luna, Julio Romero, Juan Jesús Rodríguez, Antonio Santana, Miriam Cabas, Joselito de Córdoba, Francisco Fernández, Pepe Martínez y Alfonso Alonso.
-
- 
-
-Por su parte, el Grupo 2 está previsto para la sesión vespertina en la ganadería de Chamaco, en la localidad onubense de Hinojos (Huelva). En este segundo tentadero tomarán parte Víctor Barroso, Manuel Olivero, Pedro Luis, Fuentes Bocanegra, El Primi, Gonzalo Capdevila, Martín Morilla, Alejandro Duarte, Pedro Montaldo e Ignacio Candelas.
-
-       
-
-El Bolsín clasificatorio se consolida así como una de las jornadas más exigentes e importantes del calendario taurino andaluz, en la que los jóvenes aspirantes deberán demostrar sus cualidades técnicas, artísticas y su capacidad para afrontar un certamen que representa una auténtica plataforma de lanzamiento para sus carreras profesionales.
-
- 
-
-El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Ubrique (Cádiz), ya conoce el cartel para la corrida de la piel`,
-    image: "/images/ubrique2.jpg",
-    category: "Actualidad",
-    date: "8 de Enero de 2026",
-    fullContent: `La empresa **Toros y Espectáculos Hnos. Durán** ha dado a conocer el cartel de la tradicional **Corrida de la Piel de Ubrique**, que se celebrará el 21 de marzo.
-
-Con toros de la ganadería sevillana de **Virgen María**, harán el paseíllo los diestros **Daniel Luque, David de Miranda y Curro Durán**
-
-La empresa tiene previsto presentar el cartel de manera oficial en los próximos días.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-   { 
-    id: 1003,
-    title: `Arcos de la Frontera con un Rey Melchor muy taurino`,
-    image: "/images/arcos.jpg",
-    category: "Actualidad",
-    date: "8 de Enero de 2026",
-	footerImage1: "/images/arcos1.jpg",
-    fullContent: `Si hay una noche mágica en el año en la de reyes, y este año en plena ruta de los pueblos blancos de Cádiz, más concretamente en Arcos de la Frontera, han tenido un Rey Melchor de lo más taurino en la figura del ganadero y empresario taurino **Eduardo Duarte**, gerente de **Ruedos del Sur**, encarnó a **Su Majestad el Rey Melchor**.
-
-Ante la atenta mirada de miles de paisanos, vecinos y visitantes que abarrotaron las calles del casco urbano de la serrana localidad gaditana, **Melchor** hizo su entrada triunfal en una carroza cargada de referencias al mundo del toro. No se trató de un gesto improvisado, sino de una cuidada puesta en escena que quiso rendir homenaje a una de las expresiones culturales más arraigadas en **España**. **El Rey de Oriente** apareció ataviado con enseres propios del toreo, integrando así la liturgia festiva de los **Reyes Magos** con la simbología taurina, en una fusión que despertó tanto admiración como emoción entre el público.
-
-Acompañando a **Su Majestad** marchaba un nutrido séquito de ‘**Pajes Taurinos**’, conformado por familiares y amigos cercanos a la gran familia de **Ruedos del Sur**. Este singular cortejo, lejos de ser anecdótico, reforzó el carácter reivindicativo de la presencia taurina en la cabalgata. Entre ellos destacó la figura del reconocido ‘**Plata de Ley**’ **Juan Sierra**, cuyo prestigio y trayectoria aportaron aún mayor solemnidad y autenticidad al desfile.
-
-La participación de **Eduardo Duarte** como **Rey Melchor** no solo supuso un honor personal, sino también un claro guiño de apoyo a la tauromaquia, entendida como patrimonio cultural y una de las señas de identidad más relevantes de nuestro país. En un contexto en el que el debate sobre las tradiciones ocupa un lugar destacado en la agenda social y cultural, este gesto simbólico cobró especial relevancia al desarrollarse en un evento tan transversal y popular como la **Cabalgata de Reyes**, capaz de congregar a generaciones enteras en torno a la ilusión compartida
-
-La estampa de **Melchor** avanzando entre aplausos, caramelos, juguetes, regalos... y miradas de asombro, envuelto en un imaginario taurino respetuoso y elegante, dejó una huella imborrable en la memoria colectiva de **Arcos de la Frontera**. Una noche en la que la fantasía infantil, la tradición festiva y la tauromaquia caminaron de la mano, recordando que las fiestas populares también pueden ser un espacio para la identidad, el mensaje y la reivindicación cultural y social.
-
-Así, el día Reyes volvió a cumplir su cometido: repartir ilusión, emoción y sueños. Pero este año, además, dejó constancia de que las tradiciones, cuando se expresan con sensibilidad y respeto, siguen teniendo un lugar destacado en el corazón de los pueblos.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
-     { 
+    { 
+    id: 140,
+    title: `Morante de la Puebla repetirá como organizador de los festejos taurinos de La Puebla del Río en 2026`,
+    image: "/images/organizara.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+    fullContent: `Morante de la Puebla organizará un año más los festejos taurinos de La Puebla del Río, según publica **José Manuel Peña en ABC de Sevilla**. El Ayuntamiento de la localidad sevillana hará oficial este viernes la adjudicación a la empresa compuesta por el diestro cigarrero y su apoderado y amigo, **Pedro Jorge Marqués**.
+
+La edición de 2026 repetirá la fórmula del año pasado, con un programa que se desarrollará entre el **viernes 23 y el domingo 25 de enero. El viernes 23 se celebrará un encierro infantil** y, como principal novedad, tras el chupinazo y dicho encierro, la plaza acogerá una exhibición de recortadores de primer nivel.
+
+Los días 24 y 25 tendrán lugar dos encierros y sendas novilladas sin picadores. El sábado se celebrará un concurso de ganaderías con novillos de **Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado, Alcurrucén y David Ribeiro Telles**. Para la jornada del domingo, las reses pertenecerán a la ganadería portuguesa de **Manuel Veiga**.
+
+El novillero triunfador de ambos festejos obtendrá como premio torear en la **Real Maestranza de Caballería de Sevilla**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 141,
     title: `Yunquera de Henares acogerá la charla-coloquio “La tauromaquia de invierno 2025/2026”`,
     image: "/images/charla.jpg",
