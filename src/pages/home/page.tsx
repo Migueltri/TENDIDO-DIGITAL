@@ -448,8 +448,110 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-    { 
+  { 
     id: 1000,
+    title: `El consejo de administración de la Plaza de Toros aprueba la prórroga del contrato con Lances de Futuro para la feria de 2026`,
+    image: "/images/saantander.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	excerpt: "El Ayuntamiento realizará este año diferentes obras de reforma y mantenimiento en el Coso de Cuatro Caminos, entre las que se encuentran la sustitución de bancos del tendido 2 y la construcción de nuevos aseos y un archivo-sala de reuniones.",
+    fullContent: `Lances de Futuro organizará y gestionará la Feria de Santiago de 2026, una vez que el consejo de administración de la Plaza de Toros de Santander ha aprobado hoy la prórroga prevista en el contrato de adjudicación acordado en diciembre de 2024.
+
+La empresa, que se ha encargado de los festejos santanderinos desde 2021, ha expuesto al consejo las líneas básicas de su proyecto, que pasa por mantener el nivel de toreros, ganaderías y número de festejos.
+
+En este sentido, ha avanzado su interés por contar con algunas de las principales figuras del toreo, a la vez que seguirá trabajando en su plan de promoción para que los festejos santanderinos sigan consolidados como la feria de referencia en el norte de España.
+
+El consejo ha puesto en valor el trabajo realizado por Lances de Futuro en el éxito y proyección de la feria santanderina, y ha trasladado su felicitación a la empresa por su reciente designación como nueva gestora de la Real Maestranza de Sevilla, una de las instituciones más emblemáticas del ámbito taurino.
+
+Por otro lado, en el consejo de administración se ha presentado el informe sobre los trabajos a realizar en el recinto durante el año 2026, entre los que se encuentra la construcción de cuatro nuevos aseos y un salón de usos múltiples para archivo y sala de reuniones.
+
+Por otro lado, este año también está previsto sustituir los bancos del tendido 2, con madera nueva de pino de invernadero, aumentando los soportes metálicos, así como cambiar la cubierta del último corral.
+
+Además, los Talleres Municipales realizarán diferentes obras de mantenimiento para la puesta a punto de la Plaza de Toros de cara a los festejos de la Feria de Santiago 2026.
+
+De este modo, el taller metalúrgico revisará y reparará, en caso de que sea necesario, las puertas de corrales y toriles, las barandillas de grada y andanada, y engrasará los sistemas de apertura de todas las puertas metálicas.
+
+En lo que se refiere a la carpintería, se revisará la estructura de bajo cubierta, se reparará y sustituirá, en caso de que sea preciso, los bancos de grada, tendido y andanada, así como los tablones, puertas y burladeros del ruedo, enfermería y toriles que se encuentren en mal estado.
+
+Otros trabajos afectarán a la limpieza de cubierta y pesebrones, así como la pintura de la cubierta, el patio de caballos, cuadras, hall de la capilla, enfermería, foso, burladeros y otros elementos estructurales del recinto.
+
+**Premios Taurinos del Ayuntamiento**
+
+Además, el consejo de administración de la Plaza de Toros también ha dado cuenta de la gala de entrega de los Trofeos Taurinos del Ayuntamiento de Santander, que se celebrará el 27 de febrero en el Hotel Chiqui. A partir del próximo lunes, 12 de enero, las peñas ya podrán reservar su asistencia.
+
+Como es habitual, en esta cita se entregarán los tradicionales premios que reconocen a los principales protagonistas que han pasado por el ruedo del Coso de Cuatro Caminos en la última edición de la feria de Santiago.
+
+Según la decisión de un jurado compuesto por miembros del consejo de administración de la Plaza de Toros, periodistas y representantes de las peñas, en la categoría de ‘Triunfador de la Feria’, el premio fue para ‘El Cid’; mientras que la ganadería de Victorino Martín resultó distinguida como la ‘Mejor Ganadería’ de la feria, por lo que el tándem formado por ambos, en el que el sevillano cortó dos orejas y salió por la puerta grande, logró los máximos trofeos.
+
+La ‘Mejor Estocada’ fue para Roca Rey, el premio al ‘Mejor Rejoneador’ para Diego Ventura, mientras que el galardón al ‘Mejor Debutante’ recayó en Damián Castaño.
+
+Además, se ha premiado a Juan Renedo como ‘Aficionado Ejemplar’; a Patricia Navarro por su labor periodística, y se ha reconocido al matador de toros Curro Vázquez con la distinción ‘A toda una trayectoria’.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `David de Miranda estrena su nueva página web oficial`,
+    image: "/images/foto.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	excerpt: "Una plataforma moderna, visual y dinámica para seguir toda la actualidad del torero onubense",
+    fullContent: `Con la llegada del nuevo año, el matador de toros **David de Miranda** presenta su nueva página web oficial, 	
+	<a
+  href="www.davidemiranda.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.davidemiranda.com
+</a> , un espacio digital concebido para acercar al aficionado toda la información, noticias y próximos compromisos profesionales del diestro nacido en **Trigueros**.
+
+El torero onubense ha puesto en marcha esta nueva plataforma el pasado viernes 2 de enero, apostando por un diseño altamente visual y gráfico, acorde con los nuevos tiempos. La web incorpora un innovador sistema adaptable que permite su correcta visualización desde cualquier dispositivo, ya sea ordenador, tablet o teléfono móvil.
+
+En <a
+  href="www.davidemiranda.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.davidemiranda.com
+</a> , el aficionado podrá encontrar toda la actualidad de **David de Miranda** a golpe de clic. El sitio web ofrece un contenido amplio, dinámico y en constante actualización, que permite profundizar en la trayectoria y el presente profesional del matador.
+
+Entre sus principales secciones destacan la página de inicio con el posicionamiento de su eslogan, un completo apartado multimedia con galerías de imágenes y vídeos, la sección Crew Miranda, noticias de actualidad, carteles e información detallada sobre las próximas corridas, así como un espacio dedicado a las estadísticas, donde se recogen todos los festejos celebrados y sus resultados.
+
+Con este nuevo proyecto digital, **David de Miranda** refuerza su presencia en el entorno online y estrecha aún más el vínculo con los aficionados, ofreciendo una ventana directa y accesible a su carrera taurina.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `VÍCTOR PUERTO SE DESPEDIRÁ DEL TOREO ESTA TEMPORADA CONMEMORANDO EL XXXI ANIVERSARIO DE SU ALTERNATIVA`,
+    image: "/images/puerto.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	footerImage1: "/images/puerto1.jpg",
+	footerImage2: "/images/puerto2.jpg",
+	footerImage3: "/images/puerto3.jpg",
+    fullContent: `En una emotiva rueda de prensa celebrada esta mañana en el **Hotel Restaurante Casa Pepe de Carrión de Calatrava** (Ciudad Real), el matador de toros **Víctor Puerto** ha anunciado oficialmente su retirada definitiva del toreo activo al término de la presente temporada 2026.
+La noticia marca el cierre de una de las trayectorias más longevas y respetadas de la tauromaquia en la provincia de **Ciudad Real**, coincidiendo con el **XXXI Aniversario de su Alternativa**. La idea del diestro es afrontar una temporada donde se pueda despedir de las plazas que han marcado su carrera en **España**, sobre todo en la provincia de **Ciudad Real**.
+La gira de despedida constará de un número limitado de festejos, seleccionados cuidadosamente para agradecer a la afición el apoyo recibido desde aquel **9 de abril de 1995**, cuando tomó la alternativa en la **Plaza de Toros de Ciudad Real** de manos de **Miguel Báez "Litri"** de padrino y **Jesulín de Ubrique** de testigo con reses de la ganadería de **Luis Algarra**.
+"El toro me ha ido dado todo, ya él le he entregado mi vida entera. Tras treinta años de alternativa, siento que el cuerpo y la mente han alcanzado la plenitud, pero es el momento de dejar paso a las nuevas generaciones y retirarme con la dignidad que este traje merece. Todo lo que haga en el año de mi despedida quiero que tenga un significado especial. Me gustaría poder despedirme de la afición en las plazas de toros que han tenido una gran importancia en mi carrera y la provincia de Ciudad Real es la que me hizo torero y donde quiero buscar mi última temporada", declaró un emocionado Víctor Puerto.
+**Una trayectoria de leyenda: De 1996 a la cumbre**
+La carrera de **Víctor Puerto** quedó grabada en los anales de la tauromaquia desde su primer año como doctor en tauromaquia. 1996 fue el año de su consagración absoluta, logrando la histórica hazaña de **abrir dos veces la Puerta Grande de Las Ventas de Madrid**, una gesta que lo catapultó a la cima del escalafón de inmediato.
+Su idilio con las plazas de primera no se detuvo ahí. En la memoria de los aficionados queda para la eternidad su faena antológica en la **Real Maestranza de Caballería de Sevilla** ante toro de **Gavira**, un triunfo que le sirvió para entrar de lleno en la afición sevillana. La tarde de **Bilbao** que le espada le privó del corte de las orejas o las **Puertas Grandes de Pamplona, Santander**, entre otras.
+La Gira de Despedida 2026
+La campaña de este año, será un homenaje a estas tres décadas de entrega, donde espera poder despedirse de la afición en las plazas más significativas de su carrera y en especial en Ciudad Real capital, donde le encantaría poner el broche de oro a su trayectoria.
+La plaza de toros de Ciudad Real es uno de los cosos más representativos en la carrera de Víctor Puerto. No solo porque en ella tomó la alternativa ya referida, sino porque en su ruedo ha trenzado más de veinte paseillos como matador de toros, en los que ha alternado, tanto en feria como en la desaparecida Corrida de Beneficencia, con toreros como Enrique Ponce, El Juli, Rivera Ordóñez, Litri, Jesulín, Finito de Córdoba, Morante de la Puebla, o José Tomás (en dos ocasiones), además de varias actuaciones como novillero.
+Apoyo institucional
+En el acto estuvieron presentes el vicepresidente de la Diputación de Ciudad Real, Adrián Fernández y la concejal de asuntos taurinos de la capital, Mar Sánchez Izarra, los alcaldes de Miguelturra y Carrión de Calatrava, medios de comunicación y algunos aficionados, que mostraron su apoyo y admiración a la carrera del maestro, con el deseo de que esta temporada Víctor Puerto pueda despedirse de los aficionados de la provincia y la capital a los que tanto ha dado.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
     title: `Morante de la Puebla repetirá como organizador de los festejos taurinos de La Puebla del Río en 2026`,
     image: "/images/organizara.jpg",
     category: "Actualidad",
@@ -468,7 +570,109 @@ El novillero triunfador de ambos festejos obtendrá como premio torear en la **R
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+     { 
+    id: 137,
+    title: `El consejo de administración de la Plaza de Toros aprueba la prórroga del contrato con Lances de Futuro para la feria de 2026`,
+    image: "/images/saantander.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	excerpt: "El Ayuntamiento realizará este año diferentes obras de reforma y mantenimiento en el Coso de Cuatro Caminos, entre las que se encuentran la sustitución de bancos del tendido 2 y la construcción de nuevos aseos y un archivo-sala de reuniones.",
+    fullContent: `Lances de Futuro organizará y gestionará la Feria de Santiago de 2026, una vez que el consejo de administración de la Plaza de Toros de Santander ha aprobado hoy la prórroga prevista en el contrato de adjudicación acordado en diciembre de 2024.
+
+La empresa, que se ha encargado de los festejos santanderinos desde 2021, ha expuesto al consejo las líneas básicas de su proyecto, que pasa por mantener el nivel de toreros, ganaderías y número de festejos.
+
+En este sentido, ha avanzado su interés por contar con algunas de las principales figuras del toreo, a la vez que seguirá trabajando en su plan de promoción para que los festejos santanderinos sigan consolidados como la feria de referencia en el norte de España.
+
+El consejo ha puesto en valor el trabajo realizado por Lances de Futuro en el éxito y proyección de la feria santanderina, y ha trasladado su felicitación a la empresa por su reciente designación como nueva gestora de la Real Maestranza de Sevilla, una de las instituciones más emblemáticas del ámbito taurino.
+
+Por otro lado, en el consejo de administración se ha presentado el informe sobre los trabajos a realizar en el recinto durante el año 2026, entre los que se encuentra la construcción de cuatro nuevos aseos y un salón de usos múltiples para archivo y sala de reuniones.
+
+Por otro lado, este año también está previsto sustituir los bancos del tendido 2, con madera nueva de pino de invernadero, aumentando los soportes metálicos, así como cambiar la cubierta del último corral.
+
+Además, los Talleres Municipales realizarán diferentes obras de mantenimiento para la puesta a punto de la Plaza de Toros de cara a los festejos de la Feria de Santiago 2026.
+
+De este modo, el taller metalúrgico revisará y reparará, en caso de que sea necesario, las puertas de corrales y toriles, las barandillas de grada y andanada, y engrasará los sistemas de apertura de todas las puertas metálicas.
+
+En lo que se refiere a la carpintería, se revisará la estructura de bajo cubierta, se reparará y sustituirá, en caso de que sea preciso, los bancos de grada, tendido y andanada, así como los tablones, puertas y burladeros del ruedo, enfermería y toriles que se encuentren en mal estado.
+
+Otros trabajos afectarán a la limpieza de cubierta y pesebrones, así como la pintura de la cubierta, el patio de caballos, cuadras, hall de la capilla, enfermería, foso, burladeros y otros elementos estructurales del recinto.
+
+**Premios Taurinos del Ayuntamiento**
+
+Además, el consejo de administración de la Plaza de Toros también ha dado cuenta de la gala de entrega de los Trofeos Taurinos del Ayuntamiento de Santander, que se celebrará el 27 de febrero en el Hotel Chiqui. A partir del próximo lunes, 12 de enero, las peñas ya podrán reservar su asistencia.
+
+Como es habitual, en esta cita se entregarán los tradicionales premios que reconocen a los principales protagonistas que han pasado por el ruedo del Coso de Cuatro Caminos en la última edición de la feria de Santiago.
+
+Según la decisión de un jurado compuesto por miembros del consejo de administración de la Plaza de Toros, periodistas y representantes de las peñas, en la categoría de ‘Triunfador de la Feria’, el premio fue para ‘El Cid’; mientras que la ganadería de Victorino Martín resultó distinguida como la ‘Mejor Ganadería’ de la feria, por lo que el tándem formado por ambos, en el que el sevillano cortó dos orejas y salió por la puerta grande, logró los máximos trofeos.
+
+La ‘Mejor Estocada’ fue para Roca Rey, el premio al ‘Mejor Rejoneador’ para Diego Ventura, mientras que el galardón al ‘Mejor Debutante’ recayó en Damián Castaño.
+
+Además, se ha premiado a Juan Renedo como ‘Aficionado Ejemplar’; a Patricia Navarro por su labor periodística, y se ha reconocido al matador de toros Curro Vázquez con la distinción ‘A toda una trayectoria’.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 138,
+	title: `David de Miranda estrena su nueva página web oficial`,
+    image: "/images/foto.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	excerpt: "Una plataforma moderna, visual y dinámica para seguir toda la actualidad del torero onubense",
+    fullContent: `Con la llegada del nuevo año, el matador de toros **David de Miranda** presenta su nueva página web oficial, 	
+	<a
+  href="www.davidemiranda.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.davidemiranda.com
+</a> , un espacio digital concebido para acercar al aficionado toda la información, noticias y próximos compromisos profesionales del diestro nacido en **Trigueros**.
+
+El torero onubense ha puesto en marcha esta nueva plataforma el pasado viernes 2 de enero, apostando por un diseño altamente visual y gráfico, acorde con los nuevos tiempos. La web incorpora un innovador sistema adaptable que permite su correcta visualización desde cualquier dispositivo, ya sea ordenador, tablet o teléfono móvil.
+
+En <a
+  href="www.davidemiranda.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.davidemiranda.com
+</a> , el aficionado podrá encontrar toda la actualidad de **David de Miranda** a golpe de clic. El sitio web ofrece un contenido amplio, dinámico y en constante actualización, que permite profundizar en la trayectoria y el presente profesional del matador.
+
+Entre sus principales secciones destacan la página de inicio con el posicionamiento de su eslogan, un completo apartado multimedia con galerías de imágenes y vídeos, la sección Crew Miranda, noticias de actualidad, carteles e información detallada sobre las próximas corridas, así como un espacio dedicado a las estadísticas, donde se recogen todos los festejos celebrados y sus resultados.
+
+Con este nuevo proyecto digital, **David de Miranda** refuerza su presencia en el entorno online y estrecha aún más el vínculo con los aficionados, ofreciendo una ventana directa y accesible a su carrera taurina.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 139,
+    title: `VÍCTOR PUERTO SE DESPEDIRÁ DEL TOREO ESTA TEMPORADA CONMEMORANDO EL XXXI ANIVERSARIO DE SU ALTERNATIVA`,
+    image: "/images/puerto.jpg",
+    category: "Actualidad",
+    date: "9 de Enero de 2026",
+	footerImage1: "/images/puerto1.jpg",
+	footerImage2: "/images/puerto2.jpg",
+	footerImage3: "/images/puerto3.jpg",
+    fullContent: `En una emotiva rueda de prensa celebrada esta mañana en el **Hotel Restaurante Casa Pepe de Carrión de Calatrava** (Ciudad Real), el matador de toros **Víctor Puerto** ha anunciado oficialmente su retirada definitiva del toreo activo al término de la presente temporada 2026.
+La noticia marca el cierre de una de las trayectorias más longevas y respetadas de la tauromaquia en la provincia de **Ciudad Real**, coincidiendo con el **XXXI Aniversario de su Alternativa**. La idea del diestro es afrontar una temporada donde se pueda despedir de las plazas que han marcado su carrera en **España**, sobre todo en la provincia de **Ciudad Real**.
+La gira de despedida constará de un número limitado de festejos, seleccionados cuidadosamente para agradecer a la afición el apoyo recibido desde aquel **9 de abril de 1995**, cuando tomó la alternativa en la **Plaza de Toros de Ciudad Real** de manos de **Miguel Báez "Litri"** de padrino y **Jesulín de Ubrique** de testigo con reses de la ganadería de **Luis Algarra**.
+"El toro me ha ido dado todo, ya él le he entregado mi vida entera. Tras treinta años de alternativa, siento que el cuerpo y la mente han alcanzado la plenitud, pero es el momento de dejar paso a las nuevas generaciones y retirarme con la dignidad que este traje merece. Todo lo que haga en el año de mi despedida quiero que tenga un significado especial. Me gustaría poder despedirme de la afición en las plazas de toros que han tenido una gran importancia en mi carrera y la provincia de Ciudad Real es la que me hizo torero y donde quiero buscar mi última temporada", declaró un emocionado Víctor Puerto.
+**Una trayectoria de leyenda: De 1996 a la cumbre**
+La carrera de **Víctor Puerto** quedó grabada en los anales de la tauromaquia desde su primer año como doctor en tauromaquia. 1996 fue el año de su consagración absoluta, logrando la histórica hazaña de **abrir dos veces la Puerta Grande de Las Ventas de Madrid**, una gesta que lo catapultó a la cima del escalafón de inmediato.
+Su idilio con las plazas de primera no se detuvo ahí. En la memoria de los aficionados queda para la eternidad su faena antológica en la **Real Maestranza de Caballería de Sevilla** ante toro de **Gavira**, un triunfo que le sirvió para entrar de lleno en la afición sevillana. La tarde de **Bilbao** que le espada le privó del corte de las orejas o las **Puertas Grandes de Pamplona, Santander**, entre otras.
+La Gira de Despedida 2026
+La campaña de este año, será un homenaje a estas tres décadas de entrega, donde espera poder despedirse de la afición en las plazas más significativas de su carrera y en especial en Ciudad Real capital, donde le encantaría poner el broche de oro a su trayectoria.
+La plaza de toros de Ciudad Real es uno de los cosos más representativos en la carrera de Víctor Puerto. No solo porque en ella tomó la alternativa ya referida, sino porque en su ruedo ha trenzado más de veinte paseillos como matador de toros, en los que ha alternado, tanto en feria como en la desaparecida Corrida de Beneficencia, con toreros como Enrique Ponce, El Juli, Rivera Ordóñez, Litri, Jesulín, Finito de Córdoba, Morante de la Puebla, o José Tomás (en dos ocasiones), además de varias actuaciones como novillero.
+Apoyo institucional
+En el acto estuvieron presentes el vicepresidente de la Diputación de Ciudad Real, Adrián Fernández y la concejal de asuntos taurinos de la capital, Mar Sánchez Izarra, los alcaldes de Miguelturra y Carrión de Calatrava, medios de comunicación y algunos aficionados, que mostraron su apoyo y admiración a la carrera del maestro, con el deseo de que esta temporada Víctor Puerto pueda despedirse de los aficionados de la provincia y la capital a los que tanto ha dado.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 140,
     title: `Morante de la Puebla repetirá como organizador de los festejos taurinos de La Puebla del Río en 2026`,
     image: "/images/organizara.jpg",
