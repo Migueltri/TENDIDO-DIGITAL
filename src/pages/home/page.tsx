@@ -450,72 +450,76 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Curro Romero encabeza la comisión pro-monumento a Rafael de Paula junto a la Plaza de Toros de Jerez`,
-    image: "/images/curroyrafa.jpg",
+    title: `Jesús Sánchez se une al apoderamiento del novillero peruano Pedro Luis junto a José Ángel Martín`,
+    image: "/images/jesus.jpg",
     category: "Actualidad",
-    date: "11 de Enero de 2026",
-    fullContent: `Se ha constituido en la ciudad de Jerez de la Frontera una comisión con personalidades del ámbito de la cultura y del ámbito taurino con el objetivo de rendir homenaje al torero Rafael de Paula en su ciudad natal.
+    date: "12 de Enero de 2026",
+    fullContent: `El taurino madrileño Jesús Sánchez se incorpora al equipo de apoderamiento del novillero peruano Pedro Luis, al que continuará representando José Ángel Martín. 
 
-El diestro falleció el pasado 2 de noviembre a los 85 años, dejando un legado reconocido en los principales escenarios taurinos.
+Ambos asumirán de manera conjunta la planificación y dirección de la carrera del novillero limeño, uno de los nombres más destacados de la pasada temporada.
 
-La comisión propone diversas iniciativas para perpetuar la memoria del artista del torero Rafael de Paula. Una de las principales es la **instalación de un monumento en los alrededores de la plaza de toros de Jerez** y la colocación de un mármol en la calle Cantarería que recuerde su lugar de nacimiento. También se contempla la creación de un patio o jardín en el barrio de Santiago que lleve su nombre.
-
-El colectivo recuerda la trayectoria de Rafael de Paula, condecorado en 2002 con la Medalla de Oro de las Bellas Artes por Juan Carlos I en Cádiz. Señalan que, a pesar de su **reconocimiento internacional** y la pasión que siempre despertó entre los jerezanos, nunca había recibido un homenaje oficial por parte de su ciudad.
-
-Desde la comisión pro-Rafael de Paula destacan que esta iniciativa recoge un sentimiento histórico entre los aficionados que, desde 1979, reclamaban un homenaje al torero en su tierra. **Subrayan que se trata de un “deber moral, histórico y de justicia artística”** hacia quien llevó “el sentimiento y compás” de Jerez a los escenarios más importantes del toreo.
-
-Estas son las personas que la componen:
-
-**Por el mundo del toro** están Curro Romero, Luis Domecq, Santiago Domecq y Salvador Gavira.
-
-**Por el Flamenco** Manuel Morao y José Mercé.
-
-**Sus hijo y sobrino** Bernardo Soto Muñoz, Jesús Soto de Paula y Rafael Soto.
-
-**Por la Pintura están los pintores** Pedro Serna, Humberto Parra y Diego Ramos.
-
-**Por la literatura los escritores** Fernando Bergamin, Antonio Parra, Joaquín Albaicín y el director de ABC de Sevilla Alberto García Reyes.
-
-**Entidades que forman parte de la comisión son** la tertulia Los 13, la Asociación Cultural Calles Nueva y Cantarería, la Hermandad de Santiago de Nuestro Padre Jesús del Prendimiento, La Peña Tío José de Paula, la Fundación Cultural Taurina de Jerez y la Peña Rafael de Paula.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+En los últimos años, Jesús Sánchez ha formado parte del equipo de comunicación del matador de toros burgalés Morenito de Aranda. El acuerdo se ha formalizado esta mañana mediante el tradicional apretón de manos.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `El rejoneador José María Martín, con apoderado`,
-    image: "/images/apode.jpg",
+    title: `José María Garzón explica cual será sus líneas maestras para la gestión de Maestranza de Sevilla`,
+    image: "/images/lance.jpg",
     category: "Actualidad",
-    date: "11 de Enero de 2026",
-    fullContent: `El empresario taurino **Tito Flores**, gerente de **Tierra Castilla** y el rejoneador toledano **José María Martín** han llegado a un acuerdo profesional de apoderamiento.
+    date: "12 de Enero de 2026",
+	footerImage1: "/images/lance2.jpg",
+    fullContent: `En el **Hotel Querencia de Sevilla** ha sido el escenario elegido para la rueda de prensa con los medios de comunicación especializados en tauromaquia, que ha protagonizado José María Garzón como nuevo responsable de la **Plaza de Toros de la Real Maestranza de Caballería de Sevilla**, con su empresa Lances de Futuro.
+**José María Garzón**, ha comenzado expresando su máximo agradecimiento a la Real Maestranza de Caballería de Sevilla por la confianza depositada en su empresa para la gestión del coso sevillano. Del mismo modo, quiso reconocer y agradecer la labor de la Empresa Pagés durante sus **93 años**, aunque reconoció que en estos días desde que lo nombraron nuevo gestor del coso del baratillo no ha tenido contacto con Ramón Valencia.
+Una de las primeras palabras de Garzón fue para confirmar que ha integrado al 100% al equipo humano de la Empresa Pagés, encontrando actualmente en un proceso lógico de adaptación, y recordó que dispone de un contrato de cinco años para desarrollar su proyecto.
 
-Con el tradicional apretón de manos, para esta temporada 2026 y de forma indefinida, tanto empresario como rejoneador basándose en la confianza y respeto mutuo, empezarán una nueva etapa llena de proyectos e ilusiones.`,
+**ABONADOS**
+Garzon destacó un trato muy especial para el abonado, al que considera fundamental: habrá descuentos, actividades exclusivas y ventajas específicas. Asimismo, anunció un importante descuento en los abonos para menores de 25 años.
+También destaco momo uno de los objetivos de Lances de Futuro para esta edición es incrementar el abono en alrededor de **600 o 700 nuevos abonados**.
+
+**REAL VENTA DE ANTEQUERA**
+José María Garzón anunció la recuperación de la **Real Venta de Antequera**, recordó que desde hace más de 40 años no se celebra una corrida de toros en este enclave, siendo la última la célebre corrida de Miura en la que Espartaco se encerró con seis toros, la Venta de Antequera será expuesta algunas corridas además se celebrarán actos relacionados con el abono. La nueva empresa quiere también potenciar la tauromaquia entre los jóvenes, con actividades dirigidas a colegios, institutos y universidades, además de ampliar las tradicionales jornadas de puertas abiertas.
+
+**CARTELES**
+Lances de Futuro tiene previsto entre el **6 y el 20 de febrero** pata ña celebración de una gran gala de presentación oficial de la temporada,
+Garzón confirmó su intención de recuperar fechas emblemáticas para **Sevilla**, como la del **Corpus Christi**, reforzar la **Feria de San Miguel** y otras citas señaladas del calendario taurino sevillano. También señaló que el 15 de agosto -«el primer año no me puedo inmolar»- Asimismo, anunció que se está trabajando, en coordinación con la Junta de Andalucía y la Real Maestranza, para dejar puestos abiertos tanto en novilladas como en San Miguel para toreros triunfadores, relevantes o de especial interés llegado el momento. En cuanto al calendario de la temporada en **Sevilla**, las fechas anunciadas son: **Domingo de Resurrección, 5 de abril**; el siguiente fin de semana, **10, 11 y 12 de abril**; y de forma continuada desde el **miércoles 15 hasta el 26 de abril**.
+
+**GANADERIAS**
+Manolo Tornay y Niño de Belén, sean los hombres de Campo de Lances de Futuro, confirmó el debut en Sevilla de la ganadería de **Álvaro Núñez**, el regreso de **La Quinta** y de **Puerto de San Lorenzo**. Además, estarán Cuvillo, Garcigrande, Fuente Ymbro, Santi Domecq, Domingo Hernández, Victorino Martín y Miura. y una novillada de la ganadería **Garcigrande**
+
+**MORANTE DE LA PUEBLA**
+**José María Garzón**, empresario taurino, **“decisión del propio maestro”**.
+
+**TELEVISIÓN**
+Garzón: **“Me gustaría que se televisara de forma mixta, por plataforma privada y pública”**.
+
+**WEB**
+Lances de futuro crea una nueva web para la maestranza con el dominio 	<a
+  href="lancesmaestranza.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.lancesmaestranza.com
+</a>`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `Morante presenta el cartel de La Puebla del Río para las fiestas de San Sebastián 2026`,
-    image: "/images/moratnte.jpg",
+    title: `David de Miranda gana la Catedral de Manizales y “El Voceador de la Patria”, máximos premios que lo acreditan como Triunfador de la Feria`,
+    image: "/images/notix.jpg",
     category: "Actualidad",
-    date: "11 de Enero de 2026",
-	excerpt: "El Ayuntamiento de La Puebla del Río ha oficializado junto al diestro cigarrero Morante de la Puebla los carteles de las fiestas de San Sebastián 2026.",
-    fullContent: `En esta edición del 2026 repetirá la fórmula del año pasado con un encierro infantil el viernes 23 de enero, dos encierros y sendas novilladas sin picadores los días 24 y 25, aunque teniendo como novedad, tras el chupinazo y el encierro infantil, el viernes 23 la plaza acogerá una exhibición de recortadores de primer nivel.
+    date: "12 de Enero de 2026",
+    fullContent: `La **71.ª Temporada Taurina de Manizales** llegó a su fin este domingo con un nombre grabado en lo más alto del escalafón: **David de Miranda**. El torero español se erigió como el **gran triunfador del ciclo** al conquistar los dos galardones más importantes de la feria, la réplica de la **Catedral de Manizales** y el prestigioso trofeo **“El Voceador de la Patria”**, reconocimientos que lo acreditan como triunfador absoluto del serial manizaleño.
 
-Como ya es también tradicional el novillero triunfador de ambos festejos obtendrá como premio torear en la **Real Maestranza de Caballería de Sevilla**.
+El impacto del debut de **David de Miranda** en la **Feria de Manizales** no pudo ser mayor. Su rotunda actuación frente al toro **Serrano**, de 462 kilogramos, perteneciente a la ganadería de **Santa Bárbara**, marcó uno de los momentos más altos de la temporada. Una faena de gran dimensión artística, entrega y profundidad que conectó de manera inmediata con el público y el jurado, consolidando su gran momento profesional y proyectándolo con fuerza en el panorama taurino internacional.
 
-Los carteles son los siguientes:
+La feria también dejó otros reconocimientos destacados. La ganadería **Santa Bárbara** fue distinguida como **Mejor Ganadería**, ratificando la calidad y bravura de sus ejemplares. El premio a **Mejor Subalterno** fue para **Emerson Pineda**, por su destacada labor en el ruedo, mientras que **Olga Casado** recibió el reconocimiento como **Mejor Novillero**, confirmando su proyección y talento.
 
-**– Viernes 23 de enero**. Exhibición de recortes con astados de Fermín Bohórquez
-
-**– Sabado 24 de enero** Novillada sin picadores. Erales de Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado, Alcurrucén y David Ribeiro Telles, para **Armando Rojo, Julio Aparicio, Blas Márquez, Iñigo Norte, Joao Fernándés, Jaime de Pedro, Ignacio Garibay**
-
-**– Domingo 25 de enero** Novillada sin picadores, erales de Manuel Veiga para **Héctor Nieto, Manuel Real ‘Realito’, Manuel Luque ‘El Exquisito’, Nacho Sabater, Manuel León, Manuel Domínguez y Jaime Padilla**
-
-Además, del 10 al 19 de enero se podrá visitar la exposición "El alma de Morante", de Manuel Machuca, en la galería Luiz Verri del municipio, situado en la calle Betis 54.
-
-El cartel anunciador de las Fiestas de los Encierros en honor a San Sebastián rinde este año un emotivo homenaje a la gran tonadillera y vecina de La Puebla del Rio, Macarena del Río.`,
+Con este contundente triunfo, **David de Miranda** no solo cierra una feria memorable, sino que **escribe una página dorada en la historia reciente de la Temporada Taurina de Manizales**, una de las más importantes de América, dejando claro que su nombre ya forma parte del elenco de figuras que han sabido conquistar la exigente afición manizaleña.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -523,7 +527,83 @@ El cartel anunciador de las Fiestas de los Encierros en honor a San Sebastián r
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+   	{ 
+    id: 131,
+    title: `Jesús Sánchez se une al apoderamiento del novillero peruano Pedro Luis junto a José Ángel Martín`,
+    image: "/images/jesus.jpg",
+    category: "Actualidad",
+    date: "12 de Enero de 2026",
+    fullContent: `El taurino madrileño Jesús Sánchez se incorpora al equipo de apoderamiento del novillero peruano Pedro Luis, al que continuará representando José Ángel Martín. 
+
+Ambos asumirán de manera conjunta la planificación y dirección de la carrera del novillero limeño, uno de los nombres más destacados de la pasada temporada.
+
+En los últimos años, Jesús Sánchez ha formado parte del equipo de comunicación del matador de toros burgalés Morenito de Aranda. El acuerdo se ha formalizado esta mañana mediante el tradicional apretón de manos.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 132,
+    title: `José María Garzón explica cual será sus líneas maestras para la gestión de Maestranza de Sevilla`,
+    image: "/images/lance.jpg",
+    category: "Actualidad",
+    date: "12 de Enero de 2026",
+	footerImage1: "/images/lance2.jpg",
+    fullContent: `En el **Hotel Querencia de Sevilla** ha sido el escenario elegido para la rueda de prensa con los medios de comunicación especializados en tauromaquia, que ha protagonizado José María Garzón como nuevo responsable de la **Plaza de Toros de la Real Maestranza de Caballería de Sevilla**, con su empresa Lances de Futuro.
+**José María Garzón**, ha comenzado expresando su máximo agradecimiento a la Real Maestranza de Caballería de Sevilla por la confianza depositada en su empresa para la gestión del coso sevillano. Del mismo modo, quiso reconocer y agradecer la labor de la Empresa Pagés durante sus **93 años**, aunque reconoció que en estos días desde que lo nombraron nuevo gestor del coso del baratillo no ha tenido contacto con Ramón Valencia.
+Una de las primeras palabras de Garzón fue para confirmar que ha integrado al 100% al equipo humano de la Empresa Pagés, encontrando actualmente en un proceso lógico de adaptación, y recordó que dispone de un contrato de cinco años para desarrollar su proyecto.
+
+**ABONADOS**
+Garzon destacó un trato muy especial para el abonado, al que considera fundamental: habrá descuentos, actividades exclusivas y ventajas específicas. Asimismo, anunció un importante descuento en los abonos para menores de 25 años.
+También destaco momo uno de los objetivos de Lances de Futuro para esta edición es incrementar el abono en alrededor de **600 o 700 nuevos abonados**.
+
+**REAL VENTA DE ANTEQUERA**
+José María Garzón anunció la recuperación de la **Real Venta de Antequera**, recordó que desde hace más de 40 años no se celebra una corrida de toros en este enclave, siendo la última la célebre corrida de Miura en la que Espartaco se encerró con seis toros, la Venta de Antequera será expuesta algunas corridas además se celebrarán actos relacionados con el abono. La nueva empresa quiere también potenciar la tauromaquia entre los jóvenes, con actividades dirigidas a colegios, institutos y universidades, además de ampliar las tradicionales jornadas de puertas abiertas.
+
+**CARTELES**
+Lances de Futuro tiene previsto entre el **6 y el 20 de febrero** pata ña celebración de una gran gala de presentación oficial de la temporada,
+Garzón confirmó su intención de recuperar fechas emblemáticas para **Sevilla**, como la del **Corpus Christi**, reforzar la **Feria de San Miguel** y otras citas señaladas del calendario taurino sevillano. También señaló que el 15 de agosto -«el primer año no me puedo inmolar»- Asimismo, anunció que se está trabajando, en coordinación con la Junta de Andalucía y la Real Maestranza, para dejar puestos abiertos tanto en novilladas como en San Miguel para toreros triunfadores, relevantes o de especial interés llegado el momento. En cuanto al calendario de la temporada en **Sevilla**, las fechas anunciadas son: **Domingo de Resurrección, 5 de abril**; el siguiente fin de semana, **10, 11 y 12 de abril**; y de forma continuada desde el **miércoles 15 hasta el 26 de abril**.
+
+**GANADERIAS**
+Manolo Tornay y Niño de Belén, sean los hombres de Campo de Lances de Futuro, confirmó el debut en Sevilla de la ganadería de **Álvaro Núñez**, el regreso de **La Quinta** y de **Puerto de San Lorenzo**. Además, estarán Cuvillo, Garcigrande, Fuente Ymbro, Santi Domecq, Domingo Hernández, Victorino Martín y Miura. y una novillada de la ganadería **Garcigrande**
+
+**MORANTE DE LA PUEBLA**
+**José María Garzón**, empresario taurino, **“decisión del propio maestro”**.
+
+**TELEVISIÓN**
+Garzón: **“Me gustaría que se televisara de forma mixta, por plataforma privada y pública”**.
+
+**WEB**
+Lances de futuro crea una nueva web para la maestranza con el dominio 	<a
+  href="lancesmaestranza.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.lancesmaestranza.com
+</a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 133,
+    title: `David de Miranda gana la Catedral de Manizales y “El Voceador de la Patria”, máximos premios que lo acreditan como Triunfador de la Feria`,
+    image: "/images/notix.jpg",
+    category: "Actualidad",
+    date: "12 de Enero de 2026",
+    fullContent: `La **71.ª Temporada Taurina de Manizales** llegó a su fin este domingo con un nombre grabado en lo más alto del escalafón: **David de Miranda**. El torero español se erigió como el **gran triunfador del ciclo** al conquistar los dos galardones más importantes de la feria, la réplica de la **Catedral de Manizales** y el prestigioso trofeo **“El Voceador de la Patria”**, reconocimientos que lo acreditan como triunfador absoluto del serial manizaleño.
+
+El impacto del debut de **David de Miranda** en la **Feria de Manizales** no pudo ser mayor. Su rotunda actuación frente al toro **Serrano**, de 462 kilogramos, perteneciente a la ganadería de **Santa Bárbara**, marcó uno de los momentos más altos de la temporada. Una faena de gran dimensión artística, entrega y profundidad que conectó de manera inmediata con el público y el jurado, consolidando su gran momento profesional y proyectándolo con fuerza en el panorama taurino internacional.
+
+La feria también dejó otros reconocimientos destacados. La ganadería **Santa Bárbara** fue distinguida como **Mejor Ganadería**, ratificando la calidad y bravura de sus ejemplares. El premio a **Mejor Subalterno** fue para **Emerson Pineda**, por su destacada labor en el ruedo, mientras que **Olga Casado** recibió el reconocimiento como **Mejor Novillero**, confirmando su proyección y talento.
+
+Con este contundente triunfo, **David de Miranda** no solo cierra una feria memorable, sino que **escribe una página dorada en la historia reciente de la Temporada Taurina de Manizales**, una de las más importantes de América, dejando claro que su nombre ya forma parte del elenco de figuras que han sabido conquistar la exigente afición manizaleña.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 134,
     title: `Curro Romero encabeza la comisión pro-monumento a Rafael de Paula junto a la Plaza de Toros de Jerez`,
     image: "/images/curroyrafa.jpg",
