@@ -450,6 +450,22 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Largas colas en Valencia en la venta de los nuevos abonos de temporada`,
+    image: "/images/colas.jpg",
+    category: "Actualidad",
+    date: "12 de Enero de 2026",
+    fullContent: `La temporada valenciana del 2026 se abre paso, esta vez con la renovación de los abonos especiales para jóvenes y jubilados de la Plaza de Toros de Valencia. 
+
+Desde bien entrada la mañana y a pesar del frío, la afición valenciana se ha congregado en la explanada de la plaza de toros formando una cola que ha alcanzado cerca de 75 metros. 
+Pese a la gran afluencia de aficionados, la empresa solo puso a disposición 90 abonos sobrantes lo que provocó que gran parte de los allí presentes, quitando a los que como yo llevábamos desde las 6:00h de la mañana,volvieran a casa con las manos vacías. 
+
+Desde aquí hago un llamamiento personal a la empresa para que facilite el proceso. Abriendo antes de las 10h las taquillas, ampliando el abono disponible y poniendo este día de nuevos abonos en una fecha donde sea posible a todos (incluidos los jóvenes) asistir sin perder clase o faltar al trabajo, cosa que ha sido difícil teniendo en cuenta que hoy ha sido lunes. Exceptuando esto, la afición valenciana espera expectante la publicación oficial de los carteles de esta feria de Fallas 2026, un serial cuyos carteles ya han sido avanzados por este medio.`,
+    author: "Arnau Agulló",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `Jesús Sánchez se une al apoderamiento del novillero peruano Pedro Luis junto a José Ángel Martín`,
     image: "/images/jesus.jpg",
     category: "Actualidad",
@@ -464,7 +480,7 @@ En los últimos años, Jesús Sánchez ha formado parte del equipo de comunicaci
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `José María Garzón explica cual será sus líneas maestras para la gestión de Maestranza de Sevilla`,
     image: "/images/lance.jpg",
     category: "Actualidad",
@@ -508,7 +524,7 @@ www.lancesmaestranza.com
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `David de Miranda gana la Catedral de Manizales y “El Voceador de la Patria”, máximos premios que lo acreditan como Triunfador de la Feria`,
     image: "/images/notix.jpg",
     category: "Actualidad",
@@ -527,7 +543,23 @@ Con este contundente triunfo, **David de Miranda** no solo cierra una feria memo
 ];
 
 const latestNews: NewsItem[] = [
-   	{ 
+   { 
+    id: 130,
+    title: `Largas colas en Valencia en la venta de los nuevos abonos de temporada`,
+    image: "/images/colas.jpg",
+    category: "Actualidad",
+    date: "12 de Enero de 2026",
+    fullContent: `La temporada valenciana del 2026 se abre paso, esta vez con la renovación de los abonos especiales para jóvenes y jubilados de la Plaza de Toros de Valencia. 
+
+Desde bien entrada la mañana y a pesar del frío, la afición valenciana se ha congregado en la explanada de la plaza de toros formando una cola que ha alcanzado cerca de 75 metros. 
+Pese a la gran afluencia de aficionados, la empresa solo puso a disposición 90 abonos sobrantes lo que provocó que gran parte de los allí presentes, quitando a los que como yo llevábamos desde las 6:00h de la mañana,volvieran a casa con las manos vacías. 
+
+Desde aquí hago un llamamiento personal a la empresa para que facilite el proceso. Abriendo antes de las 10h las taquillas, ampliando el abono disponible y poniendo este día de nuevos abonos en una fecha donde sea posible a todos (incluidos los jóvenes) asistir sin perder clase o faltar al trabajo, cosa que ha sido difícil teniendo en cuenta que hoy ha sido lunes. Exceptuando esto, la afición valenciana espera expectante la publicación oficial de los carteles de esta feria de Fallas 2026, un serial cuyos carteles ya han sido avanzados por este medio.`,
+    author: "Arnau Agulló",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 131,
     title: `Jesús Sánchez se une al apoderamiento del novillero peruano Pedro Luis junto a José Ángel Martín`,
     image: "/images/jesus.jpg",
