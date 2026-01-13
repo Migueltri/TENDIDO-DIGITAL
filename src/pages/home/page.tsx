@@ -450,92 +450,66 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Largas colas en Valencia en la venta de los nuevos abonos de temporada`,
-    image: "/images/colas.jpg",
+    title: `Diputación de Huelva y la Fundación Toro de Lidia analizan el presente y futuro de la Plataforma de impulso a los Novilleros de Andalucía`,
+    image: "/images/ftl.jpg",
     category: "Actualidad",
-    date: "12 de Enero de 2026",
-    fullContent: `La temporada valenciana del 2026 se abre paso, esta vez con la renovación de los abonos especiales para jóvenes y jubilados de la Plaza de Toros de Valencia. 
+    date: "13 de Enero de 2026",
+	excerpt: "La institución onubense ha sido clave para la celebración de la sexta edición del Circuito de Novilladas de Andalucía, cuyo triunfador fue el ayamontino Carlos Tirado",
+    fullContent: `Borja Cardelús, director general de la Fundación Toro de Lidia, y David Toscano, presidente de la Diputación de Huelva, mantuvieron en la mañana de ayer una reunión de trabajo en la que analizaron el desarrollo del primer curso de la Plataforma de impulso a los Novilleros de Andalucía, cuya Memoria 2025 fue presentada y evaluada, así como las líneas de actuación y objetivos de cara a la temporada 2026.
 
-Desde bien entrada la mañana y a pesar del frío, la afición valenciana se ha congregado en la explanada de la plaza de toros formando una cola que ha alcanzado cerca de 75 metros. 
-Pese a la gran afluencia de aficionados, la empresa solo puso a disposición 90 abonos sobrantes lo que provocó que gran parte de los allí presentes, quitando a los que como yo llevábamos desde las 6:00h de la mañana,volvieran a casa con las manos vacías. 
+        
 
-Desde aquí hago un llamamiento personal a la empresa para que facilite el proceso. Abriendo antes de las 10h las taquillas, ampliando el abono disponible y poniendo este día de nuevos abonos en una fecha donde sea posible a todos (incluidos los jóvenes) asistir sin perder clase o faltar al trabajo, cosa que ha sido difícil teniendo en cuenta que hoy ha sido lunes. Exceptuando esto, la afición valenciana espera expectante la publicación oficial de los carteles de esta feria de Fallas 2026, un serial cuyos carteles ya han sido avanzados por este medio.`,
-    author: "Arnau Agulló",
-    authorLogo: "/images/tendidodigitallogosimple.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Jesús Sánchez se une al apoderamiento del novillero peruano Pedro Luis junto a José Ángel Martín`,
-    image: "/images/jesus.jpg",
-    category: "Actualidad",
-    date: "12 de Enero de 2026",
-    fullContent: `El taurino madrileño Jesús Sánchez se incorpora al equipo de apoderamiento del novillero peruano Pedro Luis, al que continuará representando José Ángel Martín. 
+En el encuentro estuvo también presente el empresario taurino Jorge Buendía, gestor del coso de la localidad onubense de Cortegana, plaza que en 2025 acogió la primera semifinal del Circuito de Novilladas de Andalucía, consolidándose como un enclave clave dentro del certamen.
 
-Ambos asumirán de manera conjunta la planificación y dirección de la carrera del novillero limeño, uno de los nombres más destacados de la pasada temporada.
+        
 
-En los últimos años, Jesús Sánchez ha formado parte del equipo de comunicación del matador de toros burgalés Morenito de Aranda. El acuerdo se ha formalizado esta mañana mediante el tradicional apretón de manos.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `José María Garzón explica cual será sus líneas maestras para la gestión de Maestranza de Sevilla`,
-    image: "/images/lance.jpg",
-    category: "Actualidad",
-    date: "12 de Enero de 2026",
-	footerImage1: "/images/lance2.jpg",
-    fullContent: `En el **Hotel Querencia de Sevilla** ha sido el escenario elegido para la rueda de prensa con los medios de comunicación especializados en tauromaquia, que ha protagonizado José María Garzón como nuevo responsable de la **Plaza de Toros de la Real Maestranza de Caballería de Sevilla**, con su empresa Lances de Futuro.
-**José María Garzón**, ha comenzado expresando su máximo agradecimiento a la Real Maestranza de Caballería de Sevilla por la confianza depositada en su empresa para la gestión del coso sevillano. Del mismo modo, quiso reconocer y agradecer la labor de la Empresa Pagés durante sus **93 años**, aunque reconoció que en estos días desde que lo nombraron nuevo gestor del coso del baratillo no ha tenido contacto con Ramón Valencia.
-Una de las primeras palabras de Garzón fue para confirmar que ha integrado al 100% al equipo humano de la Empresa Pagés, encontrando actualmente en un proceso lógico de adaptación, y recordó que dispone de un contrato de cinco años para desarrollar su proyecto.
+Durante la reunión se puso en valor el impacto del proyecto impulsado por la Fundación Toro de Lidia, que tiene como ejes principales la promoción y visibilidad de los novilleros andaluces, la difusión de los certámenes celebrados en Andalucía y el respaldo al trabajo formativo de las Escuelas Taurinas. La Memoria presentada refleja unos resultados muy destacados en su primer año de vida, con una comunidad digital que supera los 66.000 seguidores y cerca de 40 millones de impresiones, cifras que avalan el alcance y la repercusión de la iniciativa.
 
-**ABONADOS**
-Garzon destacó un trato muy especial para el abonado, al que considera fundamental: habrá descuentos, actividades exclusivas y ventajas específicas. Asimismo, anunció un importante descuento en los abonos para menores de 25 años.
-También destaco momo uno de los objetivos de Lances de Futuro para esta edición es incrementar el abono en alrededor de **600 o 700 nuevos abonados**.
+ 
 
-**REAL VENTA DE ANTEQUERA**
-José María Garzón anunció la recuperación de la **Real Venta de Antequera**, recordó que desde hace más de 40 años no se celebra una corrida de toros en este enclave, siendo la última la célebre corrida de Miura en la que Espartaco se encerró con seis toros, la Venta de Antequera será expuesta algunas corridas además se celebrarán actos relacionados con el abono. La nueva empresa quiere también potenciar la tauromaquia entre los jóvenes, con actividades dirigidas a colegios, institutos y universidades, además de ampliar las tradicionales jornadas de puertas abiertas.
+Asimismo, se destacó la intensa actividad presencial desarrollada por la Plataforma a lo largo de la temporada, con numerosos encuentros institucionales y acciones sociales y divulgativas encuadradas en programas de la Fundación Toro de Lidia, acercando la tauromaquia a centros sociales, educativos y universitarios, y reforzando su dimensión cultural y social.
 
-**CARTELES**
-Lances de Futuro tiene previsto entre el **6 y el 20 de febrero** pata ña celebración de una gran gala de presentación oficial de la temporada,
-Garzón confirmó su intención de recuperar fechas emblemáticas para **Sevilla**, como la del **Corpus Christi**, reforzar la **Feria de San Miguel** y otras citas señaladas del calendario taurino sevillano. También señaló que el 15 de agosto -«el primer año no me puedo inmolar»- Asimismo, anunció que se está trabajando, en coordinación con la Junta de Andalucía y la Real Maestranza, para dejar puestos abiertos tanto en novilladas como en San Miguel para toreros triunfadores, relevantes o de especial interés llegado el momento. En cuanto al calendario de la temporada en **Sevilla**, las fechas anunciadas son: **Domingo de Resurrección, 5 de abril**; el siguiente fin de semana, **10, 11 y 12 de abril**; y de forma continuada desde el **miércoles 15 hasta el 26 de abril**.
+ 
 
-**GANADERIAS**
-Manolo Tornay y Niño de Belén, sean los hombres de Campo de Lances de Futuro, confirmó el debut en Sevilla de la ganadería de **Álvaro Núñez**, el regreso de **La Quinta** y de **Puerto de San Lorenzo**. Además, estarán Cuvillo, Garcigrande, Fuente Ymbro, Santi Domecq, Domingo Hernández, Victorino Martín y Miura. y una novillada de la ganadería **Garcigrande**
+En el transcurso del encuentro se subrayó también el excelente momento que atraviesa el Circuito de Novilladas de Andalucía, certamen encuadrado en la Liga Nacional de Novilladas, cuya sexta edición tuvo como triunfador al novillero onubense Carlos Tirado, reafirmando el papel protagonista de Huelva en el presente y futuro del toreo joven. Tirado se proclamó vencedor tras una temporada de alto nivel, convirtiéndose en uno de los nombres propios del escalafón menor.
 
-**MORANTE DE LA PUEBLA**
-**José María Garzón**, empresario taurino, **“decisión del propio maestro”**.
+ 
 
-**TELEVISIÓN**
-Garzón: **“Me gustaría que se televisara de forma mixta, por plataforma privada y pública”**.
+La Diputación de Huelva fue reconocida como una de las instituciones clave en el sostenimiento y crecimiento de estos proyectos, al ser patrocinador oficial tanto del Circuito de Novilladas de Andalucía como de la Plataforma de impulso a los Novilleros de Andalucía, una muestra más de su firme apuesta por la tauromaquia como manifestación cultural, por el medio rural y por el futuro de los jóvenes toreros.
 
-**WEB**
-Lances de futuro crea una nueva web para la maestranza con el dominio 	<a
-  href="lancesmaestranza.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-www.lancesmaestranza.com
-</a>`,
+ 
+
+La reunión sirvió, además, para sentar las bases de colaboración de cara a 2026, con el objetivo común de seguir fortaleciendo un modelo de certamen y de promoción que se ha consolidado como referente a nivel nacional y que sitúa a Andalucía —y a la provincia de Huelva— en una posición destacada dentro del panorama taurino actual.
+
+ 
+
+La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
-    title: `David de Miranda gana la Catedral de Manizales y “El Voceador de la Patria”, máximos premios que lo acreditan como Triunfador de la Feria`,
-    image: "/images/notix.jpg",
+    id: 1001,
+    title: `David de Miranda, Medalla de Huelva al Arte 2026`,
+    image: "/images/davidd.jpg",
     category: "Actualidad",
-    date: "12 de Enero de 2026",
-    fullContent: `La **71.ª Temporada Taurina de Manizales** llegó a su fin este domingo con un nombre grabado en lo más alto del escalafón: **David de Miranda**. El torero español se erigió como el **gran triunfador del ciclo** al conquistar los dos galardones más importantes de la feria, la réplica de la **Catedral de Manizales** y el prestigioso trofeo **“El Voceador de la Patria”**, reconocimientos que lo acreditan como triunfador absoluto del serial manizaleño.
+    date: "13 de Enero de 2026",
+	excerpt: "El Ayuntamiento distingue al torero onubense como uno de los grandes referentes culturales de la provincia por su trayectoria, autenticidad y proyección dentro y fuera de Huelva",
+    fullContent: `El Ayuntamiento de Huelva ha anunciado oficialmente la concesión de la **Medalla de Huelva al Arte 2026** al diestro **David de Miranda**, uno de los máximos exponentes actuales del arte taurino surgidos de la provincia. El anuncio ha sido realizado esta mañana **-12 de enero-** por la alcaldesa de la ciudad, **Pilar Miranda**, acompañada por el concejal de Presidencia y Relaciones Institucionales, **Alfonso Castro**, tras haber comunicado previamente la propuesta a todos los grupos políticos municipales.
 
-El impacto del debut de **David de Miranda** en la **Feria de Manizales** no pudo ser mayor. Su rotunda actuación frente al toro **Serrano**, de 462 kilogramos, perteneciente a la ganadería de **Santa Bárbara**, marcó uno de los momentos más altos de la temporada. Una faena de gran dimensión artística, entrega y profundidad que conectó de manera inmediata con el público y el jurado, consolidando su gran momento profesional y proyectándolo con fuerza en el panorama taurino internacional.
+Esta distinción forma parte de las **Medallas de la Ciudad 2026**, cuya aprobación definitiva se elevará al **Pleno de Honores y Distinciones**, convocado para el próximo **martes 20 de enero**. La entrega oficial de los galardones tendrá lugar posteriormente en el **solemne acto institucional incluido en el Programa de las Fiestas de San Sebastián**, patrón de la ciudad, que se celebrará el **viernes 23 de enero, a las 20.00 horas, en el Gran Teatro de Huelva**.
 
-La feria también dejó otros reconocimientos destacados. La ganadería **Santa Bárbara** fue distinguida como **Mejor Ganadería**, ratificando la calidad y bravura de sus ejemplares. El premio a **Mejor Subalterno** fue para **Emerson Pineda**, por su destacada labor en el ruedo, mientras que **Olga Casado** recibió el reconocimiento como **Mejor Novillero**, confirmando su proyección y talento.
+Durante su intervención, la alcaldesa ha querido subrayar el profundo significado de esta jornada para la ciudad, recordando que **“El Día de Huelva es sin duda el más solemne y protocolario que organiza el Ayuntamiento, pero también es uno de los días más emocionantes, porque es el día en que Huelva reconoce el trabajo y la trayectoria de personas e instituciones onubenses que han brillado en su compromiso con esta ciudad”**.
 
-Con este contundente triunfo, **David de Miranda** no solo cierra una feria memorable, sino que **escribe una página dorada en la historia reciente de la Temporada Taurina de Manizales**, una de las más importantes de América, dejando claro que su nombre ya forma parte del elenco de figuras que han sabido conquistar la exigente afición manizaleña.`,
+En este sentido, **Pilar Miranda** ha destacado además que **“Es un día también para afianzar nuestro onubensismo, a través de la gratitud y la admiración a aquellas entidades y personas que no sólo desempeñan su trabajo y responsabilidades con eficacia, sino que además han demostrado el amor a su tierra y que representan lo mejor de Huelva y del onubense”**.
+
+La **Medalla de Huelva al Arte** reconoce en **David de Miranda** una trayectoria marcada por una **vocación profunda, forjada a base de esfuerzo, constancia y superación**. Su concepto del toreo, **asentado en el valor, la verdad y la pureza**, lo ha convertido en una de las figuras más sólidas y respetadas del panorama taurino actual.
+
+En los últimos años, el torero onubense ha protagonizado **actuaciones de enorme relevancia en plazas de primer nivel**, firmando faenas que han quedado grabadas en la memoria de la afición y alcanzando algunos de los **triunfos más destacados de la temporada taurina**. Su evolución artística y profesional ha supuesto, además, una importante proyección de la provincia de Huelva dentro y fuera de sus fronteras.
+
+Por su **aportación al patrimonio cultural y artístico**, por la **calidad y autenticidad de su expresión taurina** y por representar con dignidad y orgullo a su tierra, el Ayuntamiento considera que **David de Miranda es plenamente merecedor de la Medalla de Huelva al Arte**, un reconocimiento que pone en valor no solo su carrera, sino también el vínculo profundo entre el torero y la ciudad que lo vio nacer y crecer.
+
+Con esta distinción, **Huelva** vuelve a reafirmar su compromiso con el talento propio y con aquellos nombres que, desde diferentes ámbitos, contribuyen a engrandecer la identidad cultural, artística y emocional de la ciudad como el diestro **David de Miranda**.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -543,7 +517,73 @@ Con este contundente triunfo, **David de Miranda** no solo cierra una feria memo
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+  { 
+    id: 128,
+    title: `Diputación de Huelva y la Fundación Toro de Lidia analizan el presente y futuro de la Plataforma de impulso a los Novilleros de Andalucía`,
+    image: "/images/ftl.jpg",
+    category: "Actualidad",
+    date: "13 de Enero de 2026",
+	excerpt: "La institución onubense ha sido clave para la celebración de la sexta edición del Circuito de Novilladas de Andalucía, cuyo triunfador fue el ayamontino Carlos Tirado",
+    fullContent: `Borja Cardelús, director general de la Fundación Toro de Lidia, y David Toscano, presidente de la Diputación de Huelva, mantuvieron en la mañana de ayer una reunión de trabajo en la que analizaron el desarrollo del primer curso de la Plataforma de impulso a los Novilleros de Andalucía, cuya Memoria 2025 fue presentada y evaluada, así como las líneas de actuación y objetivos de cara a la temporada 2026.
+
+        
+
+En el encuentro estuvo también presente el empresario taurino Jorge Buendía, gestor del coso de la localidad onubense de Cortegana, plaza que en 2025 acogió la primera semifinal del Circuito de Novilladas de Andalucía, consolidándose como un enclave clave dentro del certamen.
+
+        
+
+Durante la reunión se puso en valor el impacto del proyecto impulsado por la Fundación Toro de Lidia, que tiene como ejes principales la promoción y visibilidad de los novilleros andaluces, la difusión de los certámenes celebrados en Andalucía y el respaldo al trabajo formativo de las Escuelas Taurinas. La Memoria presentada refleja unos resultados muy destacados en su primer año de vida, con una comunidad digital que supera los 66.000 seguidores y cerca de 40 millones de impresiones, cifras que avalan el alcance y la repercusión de la iniciativa.
+
+ 
+
+Asimismo, se destacó la intensa actividad presencial desarrollada por la Plataforma a lo largo de la temporada, con numerosos encuentros institucionales y acciones sociales y divulgativas encuadradas en programas de la Fundación Toro de Lidia, acercando la tauromaquia a centros sociales, educativos y universitarios, y reforzando su dimensión cultural y social.
+
+ 
+
+En el transcurso del encuentro se subrayó también el excelente momento que atraviesa el Circuito de Novilladas de Andalucía, certamen encuadrado en la Liga Nacional de Novilladas, cuya sexta edición tuvo como triunfador al novillero onubense Carlos Tirado, reafirmando el papel protagonista de Huelva en el presente y futuro del toreo joven. Tirado se proclamó vencedor tras una temporada de alto nivel, convirtiéndose en uno de los nombres propios del escalafón menor.
+
+ 
+
+La Diputación de Huelva fue reconocida como una de las instituciones clave en el sostenimiento y crecimiento de estos proyectos, al ser patrocinador oficial tanto del Circuito de Novilladas de Andalucía como de la Plataforma de impulso a los Novilleros de Andalucía, una muestra más de su firme apuesta por la tauromaquia como manifestación cultural, por el medio rural y por el futuro de los jóvenes toreros.
+
+ 
+
+La reunión sirvió, además, para sentar las bases de colaboración de cara a 2026, con el objetivo común de seguir fortaleciendo un modelo de certamen y de promoción que se ha consolidado como referente a nivel nacional y que sitúa a Andalucía —y a la provincia de Huelva— en una posición destacada dentro del panorama taurino actual.
+
+ 
+
+La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 129,
+    title: `David de Miranda, Medalla de Huelva al Arte 2026`,
+    image: "/images/davidd.jpg",
+    category: "Actualidad",
+    date: "13 de Enero de 2026",
+	excerpt: "El Ayuntamiento distingue al torero onubense como uno de los grandes referentes culturales de la provincia por su trayectoria, autenticidad y proyección dentro y fuera de Huelva",
+    fullContent: `El Ayuntamiento de Huelva ha anunciado oficialmente la concesión de la **Medalla de Huelva al Arte 2026** al diestro **David de Miranda**, uno de los máximos exponentes actuales del arte taurino surgidos de la provincia. El anuncio ha sido realizado esta mañana **-12 de enero-** por la alcaldesa de la ciudad, **Pilar Miranda**, acompañada por el concejal de Presidencia y Relaciones Institucionales, **Alfonso Castro**, tras haber comunicado previamente la propuesta a todos los grupos políticos municipales.
+
+Esta distinción forma parte de las **Medallas de la Ciudad 2026**, cuya aprobación definitiva se elevará al **Pleno de Honores y Distinciones**, convocado para el próximo **martes 20 de enero**. La entrega oficial de los galardones tendrá lugar posteriormente en el **solemne acto institucional incluido en el Programa de las Fiestas de San Sebastián**, patrón de la ciudad, que se celebrará el **viernes 23 de enero, a las 20.00 horas, en el Gran Teatro de Huelva**.
+
+Durante su intervención, la alcaldesa ha querido subrayar el profundo significado de esta jornada para la ciudad, recordando que **“El Día de Huelva es sin duda el más solemne y protocolario que organiza el Ayuntamiento, pero también es uno de los días más emocionantes, porque es el día en que Huelva reconoce el trabajo y la trayectoria de personas e instituciones onubenses que han brillado en su compromiso con esta ciudad”**.
+
+En este sentido, **Pilar Miranda** ha destacado además que **“Es un día también para afianzar nuestro onubensismo, a través de la gratitud y la admiración a aquellas entidades y personas que no sólo desempeñan su trabajo y responsabilidades con eficacia, sino que además han demostrado el amor a su tierra y que representan lo mejor de Huelva y del onubense”**.
+
+La **Medalla de Huelva al Arte** reconoce en **David de Miranda** una trayectoria marcada por una **vocación profunda, forjada a base de esfuerzo, constancia y superación**. Su concepto del toreo, **asentado en el valor, la verdad y la pureza**, lo ha convertido en una de las figuras más sólidas y respetadas del panorama taurino actual.
+
+En los últimos años, el torero onubense ha protagonizado **actuaciones de enorme relevancia en plazas de primer nivel**, firmando faenas que han quedado grabadas en la memoria de la afición y alcanzando algunos de los **triunfos más destacados de la temporada taurina**. Su evolución artística y profesional ha supuesto, además, una importante proyección de la provincia de Huelva dentro y fuera de sus fronteras.
+
+Por su **aportación al patrimonio cultural y artístico**, por la **calidad y autenticidad de su expresión taurina** y por representar con dignidad y orgullo a su tierra, el Ayuntamiento considera que **David de Miranda es plenamente merecedor de la Medalla de Huelva al Arte**, un reconocimiento que pone en valor no solo su carrera, sino también el vínculo profundo entre el torero y la ciudad que lo vio nacer y crecer.
+
+Con esta distinción, **Huelva** vuelve a reafirmar su compromiso con el talento propio y con aquellos nombres que, desde diferentes ámbitos, contribuyen a engrandecer la identidad cultural, artística y emocional de la ciudad como el diestro **David de Miranda**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 130,
     title: `Largas colas en Valencia en la venta de los nuevos abonos de temporada`,
     image: "/images/colas.jpg",
