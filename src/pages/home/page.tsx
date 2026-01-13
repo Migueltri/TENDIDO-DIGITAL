@@ -450,6 +450,29 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Plaza 1 define las novilladas de San Isidro con tres carteles de máxima proyección`,
+    image: "/images/plazaa1.jpg",
+    category: "Actualidad",
+    date: "13 de Enero de 2026",
+	fullContent: `La empresa Plaza 1 tiene prácticamente cerradas las novilladas de la próxima Feria de San Isidro.
+
+Serán tres citas en las que se anuncian algunos de los novilleros más destacados del escalafón, que se medirán a encierros de **Conde de Mayalde, Fuente Ymbro y Montealto**, conformando un elenco ganadero de primer nivel.
+
+En el apartado de los actuantes, el ciclo contará con una marcada presencia internacional, ya que harán el paseíllo el mexicano **Emiliano Osornio, el peruano Pedro Luis y el portugués Tomás Bastos. Además, debutará en la Plaza de Las Ventas Julio Norte, uno de los nombres propios de la temporada 2025, junto al catalán Mario Vilau.** Completan los carteles **Álvaro Serrano, triunfador del Circuito de Novilladas de la Comunidad de Madrid, así como Martín Morilla, Julio Méndez y Pedro Montaldo.**
+
+A falta de confirmación oficial y a expensas de los últimos flecos de las negociaciones, los carteles previstos para las novilladas de San Isidro son los siguientes:
+
+– **Lunes 12 de mayo**: Tomás Bastos, Martín Morilla y Álvaro Serrano (Montealto)
+
+– **Lunes 19 de mayo**: Pedro Luis, Mario Vilau y Julio Norte (Fuente Ymbro)
+
+– **Lunes 26 de mayo**: Emiliano Osornio, Pedro Montaldo y Julio Méndez (Conde de Mayalde)`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `Diputación de Huelva y la Fundación Toro de Lidia analizan el presente y futuro de la Plataforma de impulso a los Novilleros de Andalucía`,
     image: "/images/ftl.jpg",
     category: "Actualidad",
@@ -489,7 +512,7 @@ La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de 
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `David de Miranda, Medalla de Huelva al Arte 2026`,
     image: "/images/davidd.jpg",
     category: "Actualidad",
@@ -517,7 +540,30 @@ Con esta distinción, **Huelva** vuelve a reafirmar su compromiso con el talento
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+  	{ 
+    id: 127,
+    title: `Plaza 1 define las novilladas de San Isidro con tres carteles de máxima proyección`,
+    image: "/images/plazaa1.jpg",
+    category: "Actualidad",
+    date: "13 de Enero de 2026",
+	fullContent: `La empresa Plaza 1 tiene prácticamente cerradas las novilladas de la próxima Feria de San Isidro.
+
+Serán tres citas en las que se anuncian algunos de los novilleros más destacados del escalafón, que se medirán a encierros de **Conde de Mayalde, Fuente Ymbro y Montealto**, conformando un elenco ganadero de primer nivel.
+
+En el apartado de los actuantes, el ciclo contará con una marcada presencia internacional, ya que harán el paseíllo el mexicano **Emiliano Osornio, el peruano Pedro Luis y el portugués Tomás Bastos. Además, debutará en la Plaza de Las Ventas Julio Norte, uno de los nombres propios de la temporada 2025, junto al catalán Mario Vilau.** Completan los carteles **Álvaro Serrano, triunfador del Circuito de Novilladas de la Comunidad de Madrid, así como Martín Morilla, Julio Méndez y Pedro Montaldo.**
+
+A falta de confirmación oficial y a expensas de los últimos flecos de las negociaciones, los carteles previstos para las novilladas de San Isidro son los siguientes:
+
+– **Lunes 12 de mayo**: Tomás Bastos, Martín Morilla y Álvaro Serrano (Montealto)
+
+– **Lunes 19 de mayo**: Pedro Luis, Mario Vilau y Julio Norte (Fuente Ymbro)
+
+– **Lunes 26 de mayo**: Emiliano Osornio, Pedro Montaldo y Julio Méndez (Conde de Mayalde)`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 128,
     title: `Diputación de Huelva y la Fundación Toro de Lidia analizan el presente y futuro de la Plataforma de impulso a los Novilleros de Andalucía`,
     image: "/images/ftl.jpg",
