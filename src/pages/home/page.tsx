@@ -453,7 +453,7 @@ const featuredNews: NewsItem[] = [
     title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
     image: "/images/gran.jpg",
     category: "Actualidad",
-    date: "13 de Enero de 2026",
+    date: "14 de Enero de 2026",
 	fullContent: `La Plaza de Toros de Valencia ha presentado oficialmente la programación de la Feria de Fallas 2026, un ciclo que se celebrará del **13 al 19 de marzo** y que vuelve a situar a la ciudad como uno de los grandes ejes del inicio de la temporada taurina. Los carteles, **que ya fueron avanzados por este medio**, ratifican una apuesta clara por la calidad artística, el equilibrio entre figuras consolidadas y toreros en proyección, así como una cuidada diversidad de encastes.
 
 Bajo el lema "¡Estem en Falles, ara toquen bous!", la feria combina corridas de máximo atractivo, el tradicional festejo de rejones y una programación de novilladas que refuerza la atención a la cantera, uno de los pilares históricos del coso de la calle Xàtiva.
@@ -526,7 +526,7 @@ const latestNews: NewsItem[] = [
     title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
     image: "/images/gran.jpg",
     category: "Actualidad",
-    date: "13 de Enero de 2026",
+    date: "14 de Enero de 2026",
 	fullContent: `La Plaza de Toros de Valencia ha presentado oficialmente la programación de la Feria de Fallas 2026, un ciclo que se celebrará del **13 al 19 de marzo** y que vuelve a situar a la ciudad como uno de los grandes ejes del inicio de la temporada taurina. Los carteles, **que ya fueron avanzados por este medio**, ratifican una apuesta clara por la calidad artística, el equilibrio entre figuras consolidadas y toreros en proyección, así como una cuidada diversidad de encastes.
 
 Bajo el lema "¡Estem en Falles, ara toquen bous!", la feria combina corridas de máximo atractivo, el tradicional festejo de rejones y una programación de novilladas que refuerza la atención a la cantera, uno de los pilares históricos del coso de la calle Xàtiva.
