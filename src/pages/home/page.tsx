@@ -450,6 +450,21 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `La Plaza de Toros de Guadalajara sale a licitación pública`,
+    image: "/images/guada.jpg",
+    category: "Actualidad",
+    date: "14 de Enero de 2026",
+	fullContent: `La Plaza de Toros de Guadalajara se encuentra actualmente en proceso de licitación pública para la adjudicación de su gestión. Según ha podido saber este medio, **varias empresas taurinas estarían interesadas en concurrir al concurso**, atraídas por el potencial de una plaza que en los últimos años ha mantenido una programación estable.
+
+El procedimiento se abre tras varias temporadas en las que la Feria de la Antigua ha logrado consolidarse dentro del calendario taurino nacional, con carteles de buen nivel y presencia habitual de figuras del toreo, así como de ganaderías contrastadas.
+
+Esta continuidad en la oferta taurina convierte a Guadalajara en un coso atractivo desde el punto de vista empresarial. La resolución del concurso será clave para definir el futuro inmediato de la plaza y el modelo de feria de las próximas ediciones.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
     image: "/images/gran.jpg",
     category: "Actualidad",
@@ -521,7 +536,22 @@ Juan Alberto Torrijos – Julio Méndez – Julio Norte`,
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+ { 
+    id: 125,
+    title: `La Plaza de Toros de Guadalajara sale a licitación pública`,
+    image: "/images/guada.jpg",
+    category: "Actualidad",
+    date: "14 de Enero de 2026",
+	fullContent: `La Plaza de Toros de Guadalajara se encuentra actualmente en proceso de licitación pública para la adjudicación de su gestión. Según ha podido saber este medio, **varias empresas taurinas estarían interesadas en concurrir al concurso**, atraídas por el potencial de una plaza que en los últimos años ha mantenido una programación estable.
+
+El procedimiento se abre tras varias temporadas en las que la Feria de la Antigua ha logrado consolidarse dentro del calendario taurino nacional, con carteles de buen nivel y presencia habitual de figuras del toreo, así como de ganaderías contrastadas.
+
+Esta continuidad en la oferta taurina convierte a Guadalajara en un coso atractivo desde el punto de vista empresarial. La resolución del concurso será clave para definir el futuro inmediato de la plaza y el modelo de feria de las próximas ediciones.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 126,
     title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
     image: "/images/gran.jpg",
