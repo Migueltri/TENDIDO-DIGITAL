@@ -450,97 +450,148 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Plaza 1 define las novilladas de San Isidro con tres carteles de máxima proyección`,
-    image: "/images/plazaa1.jpg",
+    title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
+    image: "/images/gran.jpg",
     category: "Actualidad",
     date: "13 de Enero de 2026",
-	fullContent: `La empresa Plaza 1 tiene prácticamente cerradas las novilladas de la próxima Feria de San Isidro.
+	fullContent: `La Plaza de Toros de Valencia ha presentado oficialmente la programación de la Feria de Fallas 2026, un ciclo que se celebrará del **13 al 19 de marzo** y que vuelve a situar a la ciudad como uno de los grandes ejes del inicio de la temporada taurina. Los carteles, **que ya fueron avanzados por este medio**, ratifican una apuesta clara por la calidad artística, el equilibrio entre figuras consolidadas y toreros en proyección, así como una cuidada diversidad de encastes.
 
-Serán tres citas en las que se anuncian algunos de los novilleros más destacados del escalafón, que se medirán a encierros de **Conde de Mayalde, Fuente Ymbro y Montealto**, conformando un elenco ganadero de primer nivel.
+Bajo el lema "¡Estem en Falles, ara toquen bous!", la feria combina corridas de máximo atractivo, el tradicional festejo de rejones y una programación de novilladas que refuerza la atención a la cantera, uno de los pilares históricos del coso de la calle Xàtiva.
 
-En el apartado de los actuantes, el ciclo contará con una marcada presencia internacional, ya que harán el paseíllo el mexicano **Emiliano Osornio, el peruano Pedro Luis y el portugués Tomás Bastos. Además, debutará en la Plaza de Las Ventas Julio Norte, uno de los nombres propios de la temporada 2025, junto al catalán Mario Vilau.** Completan los carteles **Álvaro Serrano, triunfador del Circuito de Novilladas de la Comunidad de Madrid, así como Martín Morilla, Julio Méndez y Pedro Montaldo.**
+El abono reúne a nombres propios del primer nivel como **Roca Rey, Alejandro Talavante, José María Manzanares, Sebastián Castella, Pablo Aguado, Emilio de Justo, Miguel Ángel Perera, Borja Jiménez y Tomás Rufo**, junto a jóvenes valores que encuentran en Valencia un escenario de máxima exigencia para su consolidación.
 
-A falta de confirmación oficial y a expensas de los últimos flecos de las negociaciones, los carteles previstos para las novilladas de San Isidro son los siguientes:
+La confirmación oficial de los carteles refrenda la información adelantada por este medio y perfila una feria llamada a marcar el pulso artístico y empresarial del arranque de la temporada europea.
 
-– **Lunes 12 de mayo**: Tomás Bastos, Martín Morilla y Álvaro Serrano (Montealto)
+___
 
-– **Lunes 19 de mayo**: Pedro Luis, Mario Vilau y Julio Norte (Fuente Ymbro)
+**Carteles oficiales – Feria de Fallas Valencia 2026**
 
-– **Lunes 26 de mayo**: Emiliano Osornio, Pedro Montaldo y Julio Méndez (Conde de Mayalde)`,
+**Corridas de toros**
+
+**Viernes 13 de marzo** – 17:00 h
+Toros de La Quinta
+Fortes – Román – David de Miranda
+
+**Sábado 14 de marzo** – 17:00 h
+Alejandro Talavante – Roca Rey – Samuel Navalón
+
+**Domingo 15 de marzo** – 17:00 h
+Toros de Jandilla – Vegahermosa
+Sebastián Castella – José María Manzanares – Pablo Aguado
+
+**Martes 17 de marzo** – 17:00 h
+Toros de Santiago Domecq
+Miguel Ángel Perera – Víctor Hernández – Marco Pérez
+
+**Miércoles 18 de marzo** – 17:00 h
+Toros de Domingo Hernández
+Borja Jiménez – Tomás Rufo (mano a mano)
+
+**Jueves 19 de marzo** – 17:00 h
+Toros de Núñez del Cuvillo
+Alejandro Talavante – Emilio de Justo – Juan Ortega
+
+___
+
+**Rejones**
+
+**Domingo 15 de marzo** – 12:00 h
+Reses de María Guiomar C. de Moura
+Andy Cartagena – Diego Ventura – Lea Vicens
+
+___
+
+**Novilladas**
+
+**Sábado 7 de marzo** – 17:00 h
+Novillada sin picadores
+Alejandro Jován – Álvaro Alarcón – Iñaki Bermejo – Israel Guirao – Carlos Luis – Hugo Mása – Daniela García
+
+**Domingo 8 de marzo** – 17:00 h
+Novillada picada
+Alejandro Talavante – Emiliano Osornio – Mario Vilau – Marco Polope
+
+**Lunes 16 de marzo** – 17:00 h
+Novillada picada
+Juan Alberto Torrijos – Julio Méndez – Julio Norte`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Diputación de Huelva y la Fundación Toro de Lidia analizan el presente y futuro de la Plataforma de impulso a los Novilleros de Andalucía`,
-    image: "/images/ftl.jpg",
-    category: "Actualidad",
-    date: "13 de Enero de 2026",
-	excerpt: "La institución onubense ha sido clave para la celebración de la sexta edición del Circuito de Novilladas de Andalucía, cuyo triunfador fue el ayamontino Carlos Tirado",
-    fullContent: `Borja Cardelús, director general de la Fundación Toro de Lidia, y David Toscano, presidente de la Diputación de Huelva, mantuvieron en la mañana de ayer una reunión de trabajo en la que analizaron el desarrollo del primer curso de la Plataforma de impulso a los Novilleros de Andalucía, cuya Memoria 2025 fue presentada y evaluada, así como las líneas de actuación y objetivos de cara a la temporada 2026.
-
-        
-
-En el encuentro estuvo también presente el empresario taurino Jorge Buendía, gestor del coso de la localidad onubense de Cortegana, plaza que en 2025 acogió la primera semifinal del Circuito de Novilladas de Andalucía, consolidándose como un enclave clave dentro del certamen.
-
-        
-
-Durante la reunión se puso en valor el impacto del proyecto impulsado por la Fundación Toro de Lidia, que tiene como ejes principales la promoción y visibilidad de los novilleros andaluces, la difusión de los certámenes celebrados en Andalucía y el respaldo al trabajo formativo de las Escuelas Taurinas. La Memoria presentada refleja unos resultados muy destacados en su primer año de vida, con una comunidad digital que supera los 66.000 seguidores y cerca de 40 millones de impresiones, cifras que avalan el alcance y la repercusión de la iniciativa.
-
- 
-
-Asimismo, se destacó la intensa actividad presencial desarrollada por la Plataforma a lo largo de la temporada, con numerosos encuentros institucionales y acciones sociales y divulgativas encuadradas en programas de la Fundación Toro de Lidia, acercando la tauromaquia a centros sociales, educativos y universitarios, y reforzando su dimensión cultural y social.
-
- 
-
-En el transcurso del encuentro se subrayó también el excelente momento que atraviesa el Circuito de Novilladas de Andalucía, certamen encuadrado en la Liga Nacional de Novilladas, cuya sexta edición tuvo como triunfador al novillero onubense Carlos Tirado, reafirmando el papel protagonista de Huelva en el presente y futuro del toreo joven. Tirado se proclamó vencedor tras una temporada de alto nivel, convirtiéndose en uno de los nombres propios del escalafón menor.
-
- 
-
-La Diputación de Huelva fue reconocida como una de las instituciones clave en el sostenimiento y crecimiento de estos proyectos, al ser patrocinador oficial tanto del Circuito de Novilladas de Andalucía como de la Plataforma de impulso a los Novilleros de Andalucía, una muestra más de su firme apuesta por la tauromaquia como manifestación cultural, por el medio rural y por el futuro de los jóvenes toreros.
-
- 
-
-La reunión sirvió, además, para sentar las bases de colaboración de cara a 2026, con el objetivo común de seguir fortaleciendo un modelo de certamen y de promoción que se ha consolidado como referente a nivel nacional y que sitúa a Andalucía —y a la provincia de Huelva— en una posición destacada dentro del panorama taurino actual.
-
- 
-
-La Plataforma de Impulso a los Novilleros de Andalucía nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `David de Miranda, Medalla de Huelva al Arte 2026`,
-    image: "/images/davidd.jpg",
-    category: "Actualidad",
-    date: "13 de Enero de 2026",
-	excerpt: "El Ayuntamiento distingue al torero onubense como uno de los grandes referentes culturales de la provincia por su trayectoria, autenticidad y proyección dentro y fuera de Huelva",
-    fullContent: `El Ayuntamiento de Huelva ha anunciado oficialmente la concesión de la **Medalla de Huelva al Arte 2026** al diestro **David de Miranda**, uno de los máximos exponentes actuales del arte taurino surgidos de la provincia. El anuncio ha sido realizado esta mañana **-12 de enero-** por la alcaldesa de la ciudad, **Pilar Miranda**, acompañada por el concejal de Presidencia y Relaciones Institucionales, **Alfonso Castro**, tras haber comunicado previamente la propuesta a todos los grupos políticos municipales.
-
-Esta distinción forma parte de las **Medallas de la Ciudad 2026**, cuya aprobación definitiva se elevará al **Pleno de Honores y Distinciones**, convocado para el próximo **martes 20 de enero**. La entrega oficial de los galardones tendrá lugar posteriormente en el **solemne acto institucional incluido en el Programa de las Fiestas de San Sebastián**, patrón de la ciudad, que se celebrará el **viernes 23 de enero, a las 20.00 horas, en el Gran Teatro de Huelva**.
-
-Durante su intervención, la alcaldesa ha querido subrayar el profundo significado de esta jornada para la ciudad, recordando que **“El Día de Huelva es sin duda el más solemne y protocolario que organiza el Ayuntamiento, pero también es uno de los días más emocionantes, porque es el día en que Huelva reconoce el trabajo y la trayectoria de personas e instituciones onubenses que han brillado en su compromiso con esta ciudad”**.
-
-En este sentido, **Pilar Miranda** ha destacado además que **“Es un día también para afianzar nuestro onubensismo, a través de la gratitud y la admiración a aquellas entidades y personas que no sólo desempeñan su trabajo y responsabilidades con eficacia, sino que además han demostrado el amor a su tierra y que representan lo mejor de Huelva y del onubense”**.
-
-La **Medalla de Huelva al Arte** reconoce en **David de Miranda** una trayectoria marcada por una **vocación profunda, forjada a base de esfuerzo, constancia y superación**. Su concepto del toreo, **asentado en el valor, la verdad y la pureza**, lo ha convertido en una de las figuras más sólidas y respetadas del panorama taurino actual.
-
-En los últimos años, el torero onubense ha protagonizado **actuaciones de enorme relevancia en plazas de primer nivel**, firmando faenas que han quedado grabadas en la memoria de la afición y alcanzando algunos de los **triunfos más destacados de la temporada taurina**. Su evolución artística y profesional ha supuesto, además, una importante proyección de la provincia de Huelva dentro y fuera de sus fronteras.
-
-Por su **aportación al patrimonio cultural y artístico**, por la **calidad y autenticidad de su expresión taurina** y por representar con dignidad y orgullo a su tierra, el Ayuntamiento considera que **David de Miranda es plenamente merecedor de la Medalla de Huelva al Arte**, un reconocimiento que pone en valor no solo su carrera, sino también el vínculo profundo entre el torero y la ciudad que lo vio nacer y crecer.
-
-Con esta distinción, **Huelva** vuelve a reafirmar su compromiso con el talento propio y con aquellos nombres que, desde diferentes ámbitos, contribuyen a engrandecer la identidad cultural, artística y emocional de la ciudad como el diestro **David de Miranda**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
-  	{ 
+  { 
+    id: 126,
+    title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
+    image: "/images/gran.jpg",
+    category: "Actualidad",
+    date: "13 de Enero de 2026",
+	fullContent: `La Plaza de Toros de Valencia ha presentado oficialmente la programación de la Feria de Fallas 2026, un ciclo que se celebrará del **13 al 19 de marzo** y que vuelve a situar a la ciudad como uno de los grandes ejes del inicio de la temporada taurina. Los carteles, **que ya fueron avanzados por este medio**, ratifican una apuesta clara por la calidad artística, el equilibrio entre figuras consolidadas y toreros en proyección, así como una cuidada diversidad de encastes.
+
+Bajo el lema "¡Estem en Falles, ara toquen bous!", la feria combina corridas de máximo atractivo, el tradicional festejo de rejones y una programación de novilladas que refuerza la atención a la cantera, uno de los pilares históricos del coso de la calle Xàtiva.
+
+El abono reúne a nombres propios del primer nivel como **Roca Rey, Alejandro Talavante, José María Manzanares, Sebastián Castella, Pablo Aguado, Emilio de Justo, Miguel Ángel Perera, Borja Jiménez y Tomás Rufo**, junto a jóvenes valores que encuentran en Valencia un escenario de máxima exigencia para su consolidación.
+
+La confirmación oficial de los carteles refrenda la información adelantada por este medio y perfila una feria llamada a marcar el pulso artístico y empresarial del arranque de la temporada europea.
+
+___
+
+**Carteles oficiales – Feria de Fallas Valencia 2026**
+
+**Corridas de toros**
+
+**Viernes 13 de marzo** – 17:00 h
+Toros de La Quinta
+Fortes – Román – David de Miranda
+
+**Sábado 14 de marzo** – 17:00 h
+Alejandro Talavante – Roca Rey – Samuel Navalón
+
+**Domingo 15 de marzo** – 17:00 h
+Toros de Jandilla – Vegahermosa
+Sebastián Castella – José María Manzanares – Pablo Aguado
+
+**Martes 17 de marzo** – 17:00 h
+Toros de Santiago Domecq
+Miguel Ángel Perera – Víctor Hernández – Marco Pérez
+
+**Miércoles 18 de marzo** – 17:00 h
+Toros de Domingo Hernández
+Borja Jiménez – Tomás Rufo (mano a mano)
+
+**Jueves 19 de marzo** – 17:00 h
+Toros de Núñez del Cuvillo
+Alejandro Talavante – Emilio de Justo – Juan Ortega
+
+___
+
+**Rejones**
+
+**Domingo 15 de marzo** – 12:00 h
+Reses de María Guiomar C. de Moura
+Andy Cartagena – Diego Ventura – Lea Vicens
+
+___
+
+**Novilladas**
+
+**Sábado 7 de marzo** – 17:00 h
+Novillada sin picadores
+Alejandro Jován – Álvaro Alarcón – Iñaki Bermejo – Israel Guirao – Carlos Luis – Hugo Mása – Daniela García
+
+**Domingo 8 de marzo** – 17:00 h
+Novillada picada
+Alejandro Talavante – Emiliano Osornio – Mario Vilau – Marco Polope
+
+**Lunes 16 de marzo** – 17:00 h
+Novillada picada
+Juan Alberto Torrijos – Julio Méndez – Julio Norte`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 127,
     title: `Plaza 1 define las novilladas de San Isidro con tres carteles de máxima proyección`,
     image: "/images/plazaa1.jpg",
