@@ -450,6 +450,114 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Gonzalo Capdevila “La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas”`,
+    image: "/images/capdevila2.jpg",
+    category: "Entrevistas",
+    date: "15 de Enero de 2026",
+	footerImage1: "/images/capdevila1.jpg",
+	fullContent: `Hablamos con **Gonzalo Capdevila**, un joven novillero de **El Puerto de Santa María, Capdevila** entro de niño en la **Escuela cultural la Gallosina**, bajo la batuta del maestro **José Luis Galloso** y **José Manuel Berciano** se ha formado en el Mundo del toro, como él mismo indica, sin antecedentes taurinos en la familia, pero si mucha afición por parte su padre el aficionado **Raúl Capdevila Pedrajas**, que le metió en vena.
+
+En la temporada pasada Gonzalo sumó nueve festejos, aunque una cifra corta, pero suficientes para que están temporada recoja los frutos de los triunfos de Sanlúcar **de Barrameda (Cádiz), Cortegana (Huelva), Lodosa (Navarra), Casavieja (Ávila), Cerceda (Madrid) Villaseca de la Sagra (Toledo), Los Molinos (Madrid) Cadalso de los Vidrios (Madrid) o Arnedo (La Rioja)** donde entró vía sustitución ganándose con su tauromaquia está este 2026 anunciado en sus carteles del zapato de oro.
+
+**¿Qué balance haces de tu temporada 2025 con importantes triunfos?**
+El balance de la temporada 2025 ha sido muy positivo he podido darme a conocer en las ferias de novilladas más importantes de España, con tardes muy importantes que han podido rodar bien las cosas.
+
+**¿Cómo te planteas la temporada 2026?**
+La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas
+
+**¿Qué importancia tiene el circuito de novilladas?**
+El circuito tiene una gran importancia para darnos a conocer y una esperanza para los que toreamos poco
+
+**¿Quién es Gonzalo Capdevila?**
+Gonzalo Capdevila es un chico con 22 años que intenta ser torero y buena persona en esta vida
+
+**¿Por qué surge ese deseo de ser torero?**
+La verdad que no sabría decirte nada concreto, porque desde niño todos mis recuerdos son de toros
+
+**¿Hay antecedentes taurinos en tu familia?**
+No hay nadie profesional, pero en mi familia ahí grandes aficionados y de ahí pues me viene la afición.
+
+**¿Para su sentir el toreo, mejor con el capote, con la muleta y con la espada?**
+Intento sentirme bien en todos los tercios, pero si me tengo que decantar por uno sería la muleta.
+
+**¿Tiene alguna costumbre o alguna manía antes de salir al ruedo?**
+La única costumbre que tengo es salir con el pie derecho y hacer una cruz en el ruedo
+
+**¿Es supersticioso?**
+Intento no serlo
+
+**¿Qué es lo más bonito del toreo para usted?**
+Lo más bonito para mí, aunque aún no lo he conseguido debe de ser, todo lo que se sufre en este camino  (y también se disfrute) es alcanzar todos los sueños que desde niño sueñas con alcanzar.
+
+**¿quién lo apodera?**
+Ahora mismo me encuentro "solo", gracias a Dios tengo muchas personas en mi entorno que me intentan ayudar en lo que pueden.
+
+**¿Cómo está siendo la preparación para esta temporada?**
+Pues la preparación intensa y muy ilusionante. Disfruto mucho de mis entrenamientos con mis compañeros
+
+**¿Cómo es un día a día normal en la vida de Gonzalo Capdevila?**
+Mi día a día se resume en entrenar. Entreno en la localidad vecina de Sanlúcar de Barrameda. Desde el año pasado estoy encerrado allí, la verdad que hay un gran número de profesionales, que tengo la suerte de poder nutrirme de ellos.
+
+Por la mañana vamos a correr todos en grupo y la verdad que es bonito, te hace crecer mucho y tirar uno del otro.
+Después de correr llegamos y nos hacemos un toro, echamos habitualmente desde las 9:00 hasta las 14:00, andamos primero, corremos y entrenamos de salón.
+Y por las tardes suelo ir a entrar a matar con el maestro José Luis Galloso que es el que me pone fino.
+
+**por Último un deseo para el 2026**
+Ser feliz delante del toro y hacer feliz al que me esté viendo`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Pablo Aguado y David de Miranda, distinguido en Almería por el Foro Cultural 3 Taurinos 3`,
+    image: "/images/uno.jpg",
+    category: "Actualidad",
+    date: "15 de Enero de 2026",
+	footerImage1: "/images/0.jpg",
+	footerImage1Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	footerImage2: "/images/3.jpg",
+	footerImage2Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	footerImage3: "/images/2.jpg",
+	footerImage3Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	fullContent: `El **Foro Cultural 3 Taurinos 3** celebró el pasado día 14 la entrega de sus tradicionales premios taurinos correspondientes a la **Feria de Almería**, en un acto que tuvo lugar en el emblemático **Patio de Luces de la Diputación Provincial**, espacio que se ha consolidado como escenario habitual de encuentros culturales y sociales de relevancia en la provincia almeriense.
+
+La ceremonia sirvió para reconocer a dos destacados protagonistas del reciente ciclo taurino. Por un lado, el **“Premio HLA Mediterráneo al Valor y Esfuerzo”** recayó en el matador **David de Miranda**, **“destacando su entrega, constancia y actitud firme en el ruedo a lo largo de toda la programación taurina, cualidades que marcaron su paso por el serial almeriense”.**
+
+Por otro, el diestro **Pablo Aguado** fue galardonado con el **Premio Juan Luis de la Rosa al “Mejor Torero de Capote”**, un reconocimiento que **“pone en valor la calidad, la estética y la inspiración demostradas durante sus actuaciones en la feria”.**
+
+El acto estuvo moderado por **Daniel Valverde**, quien condujo un diálogo cercano y reflexivo en torno al desarrollo de la **Feria de Almería**, la importancia de estos galardones y su papel como herramientas de análisis, reconocimiento y estímulo profesional dentro del ámbito taurino. En este contexto, el **Foro Cultural 3 Taurinos 3** reafirmó su compromiso con la tauromaquia entendida como manifestación cultural, integrada plenamente en la agenda cultural provincial y abierta al debate, la reflexión y la puesta en valor de sus protagonistas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Santiago Domecq, Fernando Cepeda y Eduardo Ordóñez protagonizan las "XXIV Lecciones Magistrales" de Aula Taurina Sevilla`,
+    image: "/images/aulaa.jpg",
+    category: "Actualidad",
+    date: "15 de Enero de 2026",
+	fullContent: `La asociación sevillana **Aula Taurina**, perteneciente a la **Escuela de Tauromaquia de Sevilla** y con el patrocinio de la Real Maestranza de Caballería de Sevilla, celebrará los días **20 y 27 de enero y 10 de febrero**, la XXIV edición de su tradicional ciclo de **“Lecciones Magistrales”**, que tendrá lugar en el histórico **Salón de Carteles de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla**.
+
+Este consolidado ciclo cultural, referente en la divulgación de la tauromaquia entre la juventud, contará en esta edición con la participación de destacadas personalidades del ámbito taurino, que abordarán distintas vertientes de la Fiesta desde la ganadería, la profesión del torero y la promoción cultural.
+
+El programa se desarrollará conforme al siguiente calendario:
+
+· **Martes, 20 de enero**: **“La ganadería de Santiago Domecq”**. Intervendrá **Santiago Domecq Bohórquez**, propietario de la prestigiosa ganadería, con la moderación del periodista **Santiago Sánchez Tráver**.
+
+· **Martes, 27 de enero**: **“La Tauromaquia de Fernando Cepeda”**. Participará el matador de toros **Fernando Cepeda Melo**, bajo la moderación del periodista taurino **Carlos Crivell**.
+
+· **Martes, 10 de febrero**: **“La promoción de la cultura taurina en Andalucía. Las escuelas taurinas andaluzas”**. Intervendrá **Eduardo Ordóñez Acosta**, presidente de la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”**, con la moderación del periodista taurino **Emilio Trigo**.
+
+Las conferencias se celebrarán en el **Salón de Carteles de la Plaza de Toros de Sevilla**, situada en el Paseo de Colón. La **entrada será libre hasta completar aforo**, comenzando todas las sesiones a las **18.30 horas**.
+
+Con esta nueva edición, **Aula Taurina Sevilla** (Escuela de Tauromaquia de Sevilla) reafirma su compromiso con la difusión y defensa de la cultura taurina, fomentando el conocimiento y el debate en un enclave histórico de la ciudad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
     title: `Los retrasos en la Diputación ponen en riesgo la Feria de San Jorge 2026`,
     image: "/images/retrasos.jpg",
     category: "Actualidad",
@@ -464,7 +572,7 @@ Una situación similar se produjo en 2022, cuando el contrato se firmó el 29 de
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1004,
     title: `Guadalajara tendrá cinco encierros en 2026`,
     image: "/images/guadaa.jpg",
     category: "Actualidad",
@@ -488,6 +596,114 @@ El presupuesto para estos dos años de contratación asciende a 847.000 euros, y
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 120,
+    title: `Gonzalo Capdevila “La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas”`,
+    image: "/images/capdevila2.jpg",
+    category: "Entrevistas",
+    date: "15 de Enero de 2026",
+	footerImage1: "/images/capdevila1.jpg",
+	fullContent: `Hablamos con **Gonzalo Capdevila**, un joven novillero de **El Puerto de Santa María, Capdevila** entro de niño en la **Escuela cultural la Gallosina**, bajo la batuta del maestro **José Luis Galloso** y **José Manuel Berciano** se ha formado en el Mundo del toro, como él mismo indica, sin antecedentes taurinos en la familia, pero si mucha afición por parte su padre el aficionado **Raúl Capdevila Pedrajas**, que le metió en vena.
+
+En la temporada pasada Gonzalo sumó nueve festejos, aunque una cifra corta, pero suficientes para que están temporada recoja los frutos de los triunfos de Sanlúcar **de Barrameda (Cádiz), Cortegana (Huelva), Lodosa (Navarra), Casavieja (Ávila), Cerceda (Madrid) Villaseca de la Sagra (Toledo), Los Molinos (Madrid) Cadalso de los Vidrios (Madrid) o Arnedo (La Rioja)** donde entró vía sustitución ganándose con su tauromaquia está este 2026 anunciado en sus carteles del zapato de oro.
+
+**¿Qué balance haces de tu temporada 2025 con importantes triunfos?**
+El balance de la temporada 2025 ha sido muy positivo he podido darme a conocer en las ferias de novilladas más importantes de España, con tardes muy importantes que han podido rodar bien las cosas.
+
+**¿Cómo te planteas la temporada 2026?**
+La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas
+
+**¿Qué importancia tiene el circuito de novilladas?**
+El circuito tiene una gran importancia para darnos a conocer y una esperanza para los que toreamos poco
+
+**¿Quién es Gonzalo Capdevila?**
+Gonzalo Capdevila es un chico con 22 años que intenta ser torero y buena persona en esta vida
+
+**¿Por qué surge ese deseo de ser torero?**
+La verdad que no sabría decirte nada concreto, porque desde niño todos mis recuerdos son de toros
+
+**¿Hay antecedentes taurinos en tu familia?**
+No hay nadie profesional, pero en mi familia ahí grandes aficionados y de ahí pues me viene la afición.
+
+**¿Para su sentir el toreo, mejor con el capote, con la muleta y con la espada?**
+Intento sentirme bien en todos los tercios, pero si me tengo que decantar por uno sería la muleta.
+
+**¿Tiene alguna costumbre o alguna manía antes de salir al ruedo?**
+La única costumbre que tengo es salir con el pie derecho y hacer una cruz en el ruedo
+
+**¿Es supersticioso?**
+Intento no serlo
+
+**¿Qué es lo más bonito del toreo para usted?**
+Lo más bonito para mí, aunque aún no lo he conseguido debe de ser, todo lo que se sufre en este camino  (y también se disfrute) es alcanzar todos los sueños que desde niño sueñas con alcanzar.
+
+**¿quién lo apodera?**
+Ahora mismo me encuentro "solo", gracias a Dios tengo muchas personas en mi entorno que me intentan ayudar en lo que pueden.
+
+**¿Cómo está siendo la preparación para esta temporada?**
+Pues la preparación intensa y muy ilusionante. Disfruto mucho de mis entrenamientos con mis compañeros
+
+**¿Cómo es un día a día normal en la vida de Gonzalo Capdevila?**
+Mi día a día se resume en entrenar. Entreno en la localidad vecina de Sanlúcar de Barrameda. Desde el año pasado estoy encerrado allí, la verdad que hay un gran número de profesionales, que tengo la suerte de poder nutrirme de ellos.
+
+Por la mañana vamos a correr todos en grupo y la verdad que es bonito, te hace crecer mucho y tirar uno del otro.
+Después de correr llegamos y nos hacemos un toro, echamos habitualmente desde las 9:00 hasta las 14:00, andamos primero, corremos y entrenamos de salón.
+Y por las tardes suelo ir a entrar a matar con el maestro José Luis Galloso que es el que me pone fino.
+
+**por Último un deseo para el 2026**
+Ser feliz delante del toro y hacer feliz al que me esté viendo`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 121,
+    title: `Pablo Aguado y David de Miranda, distinguido en Almería por el Foro Cultural 3 Taurinos 3`,
+    image: "/images/uno.jpg",
+    category: "Actualidad",
+    date: "15 de Enero de 2026",
+	footerImage1: "/images/0.jpg",
+	footerImage1Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	footerImage2: "/images/3.jpg",
+	footerImage2Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	footerImage3: "/images/2.jpg",
+	footerImage3Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
+	fullContent: `El **Foro Cultural 3 Taurinos 3** celebró el pasado día 14 la entrega de sus tradicionales premios taurinos correspondientes a la **Feria de Almería**, en un acto que tuvo lugar en el emblemático **Patio de Luces de la Diputación Provincial**, espacio que se ha consolidado como escenario habitual de encuentros culturales y sociales de relevancia en la provincia almeriense.
+
+La ceremonia sirvió para reconocer a dos destacados protagonistas del reciente ciclo taurino. Por un lado, el **“Premio HLA Mediterráneo al Valor y Esfuerzo”** recayó en el matador **David de Miranda**, **“destacando su entrega, constancia y actitud firme en el ruedo a lo largo de toda la programación taurina, cualidades que marcaron su paso por el serial almeriense”.**
+
+Por otro, el diestro **Pablo Aguado** fue galardonado con el **Premio Juan Luis de la Rosa al “Mejor Torero de Capote”**, un reconocimiento que **“pone en valor la calidad, la estética y la inspiración demostradas durante sus actuaciones en la feria”.**
+
+El acto estuvo moderado por **Daniel Valverde**, quien condujo un diálogo cercano y reflexivo en torno al desarrollo de la **Feria de Almería**, la importancia de estos galardones y su papel como herramientas de análisis, reconocimiento y estímulo profesional dentro del ámbito taurino. En este contexto, el **Foro Cultural 3 Taurinos 3** reafirmó su compromiso con la tauromaquia entendida como manifestación cultural, integrada plenamente en la agenda cultural provincial y abierta al debate, la reflexión y la puesta en valor de sus protagonistas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 122,
+    title: `Santiago Domecq, Fernando Cepeda y Eduardo Ordóñez protagonizan las "XXIV Lecciones Magistrales" de Aula Taurina Sevilla`,
+    image: "/images/aulaa.jpg",
+    category: "Actualidad",
+    date: "15 de Enero de 2026",
+	fullContent: `La asociación sevillana **Aula Taurina**, perteneciente a la **Escuela de Tauromaquia de Sevilla** y con el patrocinio de la Real Maestranza de Caballería de Sevilla, celebrará los días **20 y 27 de enero y 10 de febrero**, la XXIV edición de su tradicional ciclo de **“Lecciones Magistrales”**, que tendrá lugar en el histórico **Salón de Carteles de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla**.
+
+Este consolidado ciclo cultural, referente en la divulgación de la tauromaquia entre la juventud, contará en esta edición con la participación de destacadas personalidades del ámbito taurino, que abordarán distintas vertientes de la Fiesta desde la ganadería, la profesión del torero y la promoción cultural.
+
+El programa se desarrollará conforme al siguiente calendario:
+
+· **Martes, 20 de enero**: **“La ganadería de Santiago Domecq”**. Intervendrá **Santiago Domecq Bohórquez**, propietario de la prestigiosa ganadería, con la moderación del periodista **Santiago Sánchez Tráver**.
+
+· **Martes, 27 de enero**: **“La Tauromaquia de Fernando Cepeda”**. Participará el matador de toros **Fernando Cepeda Melo**, bajo la moderación del periodista taurino **Carlos Crivell**.
+
+· **Martes, 10 de febrero**: **“La promoción de la cultura taurina en Andalucía. Las escuelas taurinas andaluzas”**. Intervendrá **Eduardo Ordóñez Acosta**, presidente de la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”**, con la moderación del periodista taurino **Emilio Trigo**.
+
+Las conferencias se celebrarán en el **Salón de Carteles de la Plaza de Toros de Sevilla**, situada en el Paseo de Colón. La **entrada será libre hasta completar aforo**, comenzando todas las sesiones a las **18.30 horas**.
+
+Con esta nueva edición, **Aula Taurina Sevilla** (Escuela de Tauromaquia de Sevilla) reafirma su compromiso con la difusión y defensa de la cultura taurina, fomentando el conocimiento y el debate en un enclave histórico de la ciudad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 123,
     title: `Los retrasos en la Diputación ponen en riesgo la Feria de San Jorge 2026`,
     image: "/images/retrasos.jpg",
