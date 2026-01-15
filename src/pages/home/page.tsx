@@ -450,85 +450,36 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `La Plaza de Toros de Guadalajara sale a licitación pública`,
-    image: "/images/guada.jpg",
+    title: `Los retrasos en la Diputación ponen en riesgo la Feria de San Jorge 2026`,
+    image: "/images/retrasos.jpg",
     category: "Actualidad",
     date: "14 de Enero de 2026",
-	fullContent: `La Plaza de Toros de Guadalajara se encuentra actualmente en proceso de licitación pública para la adjudicación de su gestión. Según ha podido saber este medio, **varias empresas taurinas estarían interesadas en concurrir al concurso**, atraídas por el potencial de una plaza que en los últimos años ha mantenido una programación estable.
+	fullContent: `La celebración de **la Feria de San Jorge 2026** podría verse comprometida debido a los retrasos de la Diputación Provincial en la publicación del pliego de gestión de la plaza de toros de la Misericordia, una circunstancia que pone en riesgo el arranque de la temporada taurina.
 
-El procedimiento se abre tras varias temporadas en las que la Feria de la Antigua ha logrado consolidarse dentro del calendario taurino nacional, con carteles de buen nivel y presencia habitual de figuras del toreo, así como de ganaderías contrastadas.
+Así lo ha advertido **Fernando Polo**, exgerente del coso zaragozano, en una entrevista concedida al programa Mediodía COPE Zaragoza. Polo ha recordado precedentes recientes, como el año 2018, cuando la Feria de San Jorge no pudo celebrarse tras la publicación tardía del pliego y la posterior presentación de un recurso.
 
-Esta continuidad en la oferta taurina convierte a Guadalajara en un coso atractivo desde el punto de vista empresarial. La resolución del concurso será clave para definir el futuro inmediato de la plaza y el modelo de feria de las próximas ediciones.`,
+Una situación similar se produjo en 2022, cuando el contrato se firmó el 29 de marzo, apenas unas semanas antes de una feria tradicionalmente articulada en torno al 23 de abril. “Si entonces estuvo al límite de suspenderse San Jorge, este año el retraso es aún mayor, con diez días más de demora”, ha señalado Polo, alertando de la dificultad para organizar el ciclo en los plazos habituales.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `La Plaza de Toros de Valencia confirma una Feria de Fallas 2026 de gran proyección`,
-    image: "/images/gran.jpg",
+    title: `Guadalajara tendrá cinco encierros en 2026`,
+    image: "/images/guadaa.jpg",
     category: "Actualidad",
-    date: "14 de Enero de 2026",
-	fullContent: `La Plaza de Toros de Valencia ha presentado oficialmente la programación de la Feria de Fallas 2026, un ciclo que se celebrará del **13 al 19 de marzo** y que vuelve a situar a la ciudad como uno de los grandes ejes del inicio de la temporada taurina. Los carteles, **que ya fueron avanzados por este medio**, ratifican una apuesta clara por la calidad artística, el equilibrio entre figuras consolidadas y toreros en proyección, así como una cuidada diversidad de encastes.
+    date: "15 de Enero de 2026",
+	fullContent: `El Ayuntamiento de Guadalajara ha abierto el proceso para contratar la organización de los festejos taurinos de las Ferias de 2026 y 2027 —con opción de prórroga hasta 2029—, incluyendo una programación histórica de encierros urbanos.  ￼
 
-Bajo el lema "¡Estem en Falles, ara toquen bous!", la feria combina corridas de máximo atractivo, el tradicional festejo de rejones y una programación de novilladas que refuerza la atención a la cantera, uno de los pilares históricos del coso de la calle Xàtiva.
+El pliego de condiciones contempla la celebración de cinco encierros tradicionales, una cifra sin precedentes en la ciudad, a los que se sumará un sexto encierro de prueba con cabestros —una modalidad que ya se probó durante las ferias de 2025— para familiarizar las reses y reforzar la seguridad de las carreras.  ￼
 
-El abono reúne a nombres propios del primer nivel como **Roca Rey, Alejandro Talavante, José María Manzanares, Sebastián Castella, Pablo Aguado, Emilio de Justo, Miguel Ángel Perera, Borja Jiménez y Tomás Rufo**, junto a jóvenes valores que encuentran en Valencia un escenario de máxima exigencia para su consolidación.
+El quinto encierro se ha programado para el miércoles de Ferias, día en el que tradicionalmente se celebra el concurso de recortadores, aunque el horario aún está por determinar con la empresa adjudicataria del contrato.  ￼
 
-La confirmación oficial de los carteles refrenda la información adelantada por este medio y perfila una feria llamada a marcar el pulso artístico y empresarial del arranque de la temporada europea.
+Según ha explicado el concejal de Festejos, la ampliación del número de encierros responde tanto a motivos tradicionales como a la intención de dinamizar económicamente el centro de la ciudad y situar a Guadalajara en el panorama nacional de festejos taurinos.  ￼
 
-___
+El contrato previsto incluye, además de los encierros, cuatro corridas de toros en la plaza de Las Cruces y el concurso nacional de recortadores, junto con actividades formativas de la Escuela Taurina local.  ￼
 
-**Carteles oficiales – Feria de Fallas Valencia 2026**
-
-**Corridas de toros**
-
-**Viernes 13 de marzo** – 17:00 h
-Toros de La Quinta
-Fortes – Román – David de Miranda
-
-**Sábado 14 de marzo** – 17:00 h
-Alejandro Talavante – Roca Rey – Samuel Navalón
-
-**Domingo 15 de marzo** – 17:00 h
-Toros de Jandilla – Vegahermosa
-Sebastián Castella – José María Manzanares – Pablo Aguado
-
-**Martes 17 de marzo** – 17:00 h
-Toros de Santiago Domecq
-Miguel Ángel Perera – Víctor Hernández – Marco Pérez
-
-**Miércoles 18 de marzo** – 17:00 h
-Toros de Domingo Hernández
-Borja Jiménez – Tomás Rufo (mano a mano)
-
-**Jueves 19 de marzo** – 17:00 h
-Toros de Núñez del Cuvillo
-Alejandro Talavante – Emilio de Justo – Juan Ortega
-
-___
-
-**Rejones**
-
-**Domingo 15 de marzo** – 12:00 h
-Reses de María Guiomar C. de Moura
-Andy Cartagena – Diego Ventura – Lea Vicens
-
-___
-
-**Novilladas**
-
-**Sábado 7 de marzo** – 17:00 h
-Novillada sin picadores
-Alejandro Jován – Álvaro Alarcón – Iñaki Bermejo – Israel Guirao – Carlos Luis – Hugo Mása – Daniela García
-
-**Domingo 8 de marzo** – 17:00 h
-Novillada picada
-Alejandro Talavante – Emiliano Osornio – Mario Vilau – Marco Polope
-
-**Lunes 16 de marzo** – 17:00 h
-Novillada picada
-Juan Alberto Torrijos – Julio Méndez – Julio Norte`,
+El presupuesto para estos dos años de contratación asciende a 847.000 euros, y las ofertas se podrán presentar hasta el 13 de febrero de 2026.  ￼`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -536,7 +487,43 @@ Juan Alberto Torrijos – Julio Méndez – Julio Norte`,
 ];
 
 const latestNews: NewsItem[] = [
- { 
+ 	{ 
+    id: 123,
+    title: `Los retrasos en la Diputación ponen en riesgo la Feria de San Jorge 2026`,
+    image: "/images/retrasos.jpg",
+    category: "Actualidad",
+    date: "14 de Enero de 2026",
+	fullContent: `La celebración de **la Feria de San Jorge 2026** podría verse comprometida debido a los retrasos de la Diputación Provincial en la publicación del pliego de gestión de la plaza de toros de la Misericordia, una circunstancia que pone en riesgo el arranque de la temporada taurina.
+
+Así lo ha advertido **Fernando Polo**, exgerente del coso zaragozano, en una entrevista concedida al programa Mediodía COPE Zaragoza. Polo ha recordado precedentes recientes, como el año 2018, cuando la Feria de San Jorge no pudo celebrarse tras la publicación tardía del pliego y la posterior presentación de un recurso.
+
+Una situación similar se produjo en 2022, cuando el contrato se firmó el 29 de marzo, apenas unas semanas antes de una feria tradicionalmente articulada en torno al 23 de abril. “Si entonces estuvo al límite de suspenderse San Jorge, este año el retraso es aún mayor, con diez días más de demora”, ha señalado Polo, alertando de la dificultad para organizar el ciclo en los plazos habituales.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 124,
+    title: `Guadalajara tendrá cinco encierros en 2026`,
+    image: "/images/guadaa.jpg",
+    category: "Actualidad",
+    date: "15 de Enero de 2026",
+	fullContent: `El Ayuntamiento de Guadalajara ha abierto el proceso para contratar la organización de los festejos taurinos de las Ferias de 2026 y 2027 —con opción de prórroga hasta 2029—, incluyendo una programación histórica de encierros urbanos.  ￼
+
+El pliego de condiciones contempla la celebración de cinco encierros tradicionales, una cifra sin precedentes en la ciudad, a los que se sumará un sexto encierro de prueba con cabestros —una modalidad que ya se probó durante las ferias de 2025— para familiarizar las reses y reforzar la seguridad de las carreras.  ￼
+
+El quinto encierro se ha programado para el miércoles de Ferias, día en el que tradicionalmente se celebra el concurso de recortadores, aunque el horario aún está por determinar con la empresa adjudicataria del contrato.  ￼
+
+Según ha explicado el concejal de Festejos, la ampliación del número de encierros responde tanto a motivos tradicionales como a la intención de dinamizar económicamente el centro de la ciudad y situar a Guadalajara en el panorama nacional de festejos taurinos.  ￼
+
+El contrato previsto incluye, además de los encierros, cuatro corridas de toros en la plaza de Las Cruces y el concurso nacional de recortadores, junto con actividades formativas de la Escuela Taurina local.  ￼
+
+El presupuesto para estos dos años de contratación asciende a 847.000 euros, y las ofertas se podrán presentar hasta el 13 de febrero de 2026.  ￼`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 125,
     title: `La Plaza de Toros de Guadalajara sale a licitación pública`,
     image: "/images/guada.jpg",
