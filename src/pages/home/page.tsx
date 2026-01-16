@@ -450,144 +450,19 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Gonzalo Capdevila “La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas”`,
-    image: "/images/capdevila2.jpg",
-    category: "Entrevistas",
-    date: "15 de Enero de 2026",
-	footerImage1: "/images/capdevila1.jpg",
-	fullContent: `Hablamos con **Gonzalo Capdevila**, un joven novillero de **El Puerto de Santa María, Capdevila** entro de niño en la **Escuela cultural la Gallosina**, bajo la batuta del maestro **José Luis Galloso** y **José Manuel Berciano** se ha formado en el Mundo del toro, como él mismo indica, sin antecedentes taurinos en la familia, pero si mucha afición por parte su padre el aficionado **Raúl Capdevila Pedrajas**, que le metió en vena.
-
-En la temporada pasada Gonzalo sumó nueve festejos, aunque una cifra corta, pero suficientes para que están temporada recoja los frutos de los triunfos de Sanlúcar **de Barrameda (Cádiz), Cortegana (Huelva), Lodosa (Navarra), Casavieja (Ávila), Cerceda (Madrid) Villaseca de la Sagra (Toledo), Los Molinos (Madrid) Cadalso de los Vidrios (Madrid) o Arnedo (La Rioja)** donde entró vía sustitución ganándose con su tauromaquia está este 2026 anunciado en sus carteles del zapato de oro.
-
-**¿Qué balance haces de tu temporada 2025 con importantes triunfos?**
-El balance de la temporada 2025 ha sido muy positivo he podido darme a conocer en las ferias de novilladas más importantes de España, con tardes muy importantes que han podido rodar bien las cosas.
-
-**¿Cómo te planteas la temporada 2026?**
-La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas
-
-**¿Qué importancia tiene el circuito de novilladas?**
-El circuito tiene una gran importancia para darnos a conocer y una esperanza para los que toreamos poco
-
-**¿Quién es Gonzalo Capdevila?**
-Gonzalo Capdevila es un chico con 22 años que intenta ser torero y buena persona en esta vida
-
-**¿Por qué surge ese deseo de ser torero?**
-La verdad que no sabría decirte nada concreto, porque desde niño todos mis recuerdos son de toros
-
-**¿Hay antecedentes taurinos en tu familia?**
-No hay nadie profesional, pero en mi familia ahí grandes aficionados y de ahí pues me viene la afición.
-
-**¿Para su sentir el toreo, mejor con el capote, con la muleta y con la espada?**
-Intento sentirme bien en todos los tercios, pero si me tengo que decantar por uno sería la muleta.
-
-**¿Tiene alguna costumbre o alguna manía antes de salir al ruedo?**
-La única costumbre que tengo es salir con el pie derecho y hacer una cruz en el ruedo
-
-**¿Es supersticioso?**
-Intento no serlo
-
-**¿Qué es lo más bonito del toreo para usted?**
-Lo más bonito para mí, aunque aún no lo he conseguido debe de ser, todo lo que se sufre en este camino  (y también se disfrute) es alcanzar todos los sueños que desde niño sueñas con alcanzar.
-
-**¿quién lo apodera?**
-Ahora mismo me encuentro "solo", gracias a Dios tengo muchas personas en mi entorno que me intentan ayudar en lo que pueden.
-
-**¿Cómo está siendo la preparación para esta temporada?**
-Pues la preparación intensa y muy ilusionante. Disfruto mucho de mis entrenamientos con mis compañeros
-
-**¿Cómo es un día a día normal en la vida de Gonzalo Capdevila?**
-Mi día a día se resume en entrenar. Entreno en la localidad vecina de Sanlúcar de Barrameda. Desde el año pasado estoy encerrado allí, la verdad que hay un gran número de profesionales, que tengo la suerte de poder nutrirme de ellos.
-
-Por la mañana vamos a correr todos en grupo y la verdad que es bonito, te hace crecer mucho y tirar uno del otro.
-Después de correr llegamos y nos hacemos un toro, echamos habitualmente desde las 9:00 hasta las 14:00, andamos primero, corremos y entrenamos de salón.
-Y por las tardes suelo ir a entrar a matar con el maestro José Luis Galloso que es el que me pone fino.
-
-**por Último un deseo para el 2026**
-Ser feliz delante del toro y hacer feliz al que me esté viendo`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Pablo Aguado y David de Miranda, distinguido en Almería por el Foro Cultural 3 Taurinos 3`,
-    image: "/images/uno.jpg",
+    title: `La Peña Taurina “Nicanor Villalta” celebra su 36 aniversario en Alcorisa`,
+    image: "/images/aniversario.jpg",
     category: "Actualidad",
-    date: "15 de Enero de 2026",
-	footerImage1: "/images/0.jpg",
-	footerImage1Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
-	footerImage2: "/images/3.jpg",
-	footerImage2Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
-	footerImage3: "/images/2.jpg",
-	footerImage3Caption: "Fotos: Foro Cultural 3 Taurinos 3 / Vía: José Luis Molina",
-	fullContent: `El **Foro Cultural 3 Taurinos 3** celebró el pasado día 14 la entrega de sus tradicionales premios taurinos correspondientes a la **Feria de Almería**, en un acto que tuvo lugar en el emblemático **Patio de Luces de la Diputación Provincial**, espacio que se ha consolidado como escenario habitual de encuentros culturales y sociales de relevancia en la provincia almeriense.
+    date: "16 de Enero de 2026",
+	fullContent: `La **Peña Taurina “Nicanor Villalta”** de Alcorisa celebrará el próximo **sábado 24 de enero de 2026** su 36 aniversario con un completo programa de actos enmarcado dentro de la XLVII Semana Cultural de Alcorisa.
 
-La ceremonia sirvió para reconocer a dos destacados protagonistas del reciente ciclo taurino. Por un lado, el **“Premio HLA Mediterráneo al Valor y Esfuerzo”** recayó en el matador **David de Miranda**, **“destacando su entrega, constancia y actitud firme en el ruedo a lo largo de toda la programación taurina, cualidades que marcaron su paso por el serial almeriense”.**
+La jornada comenzará a las **19:30 horas en el Centro Cultural Valero Lecha, donde tendrá lugar una charla-coloquio taurina con la participación del torero gaditano David Galván y el novillero alcorisano Tomás González**. El acto estará moderado por **Sergio Hueso**, director de la página digital Torolive y del podcast “A pie de albero”, ofreciendo una interesante conversación sobre la tauromaquia actual.
 
-Por otro, el diestro **Pablo Aguado** fue galardonado con el **Premio Juan Luis de la Rosa al “Mejor Torero de Capote”**, un reconocimiento que **“pone en valor la calidad, la estética y la inspiración demostradas durante sus actuaciones en la feria”.**
+Posteriormente, a las **22:00 horas**, se celebrará una **Cena de Gala** y la tradicional entrega de recuerdos en el **restaurante Caracas**. Durante la velada se pondrá fin al reinado de **Inés Ibáñez Lisbona**, quien dará la alternativa a las nuevas Madrinas de Honor, **Carla Omedas González y Sara Martín Calvo**, representantes de la Peña durante los años 2026 y 2027.
 
-El acto estuvo moderado por **Daniel Valverde**, quien condujo un diálogo cercano y reflexivo en torno al desarrollo de la **Feria de Almería**, la importancia de estos galardones y su papel como herramientas de análisis, reconocimiento y estímulo profesional dentro del ámbito taurino. En este contexto, el **Foro Cultural 3 Taurinos 3** reafirmó su compromiso con la tauromaquia entendida como manifestación cultural, integrada plenamente en la agenda cultural provincial y abierta al debate, la reflexión y la puesta en valor de sus protagonistas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Santiago Domecq, Fernando Cepeda y Eduardo Ordóñez protagonizan las "XXIV Lecciones Magistrales" de Aula Taurina Sevilla`,
-    image: "/images/aulaa.jpg",
-    category: "Actualidad",
-    date: "15 de Enero de 2026",
-	fullContent: `La asociación sevillana **Aula Taurina**, perteneciente a la **Escuela de Tauromaquia de Sevilla** y con el patrocinio de la Real Maestranza de Caballería de Sevilla, celebrará los días **20 y 27 de enero y 10 de febrero**, la XXIV edición de su tradicional ciclo de **“Lecciones Magistrales”**, que tendrá lugar en el histórico **Salón de Carteles de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla**.
+Asimismo, la **Peña Taurina “Nicanor Villalta”** rendirá un homenaje de reconocimiento a la **Peña Taurina Calandina**, coincidiendo con el **50 aniversario de su fundación (1976-2026)**, destacando su trayectoria y su aportación a la afición taurina.
 
-Este consolidado ciclo cultural, referente en la divulgación de la tauromaquia entre la juventud, contará en esta edición con la participación de destacadas personalidades del ámbito taurino, que abordarán distintas vertientes de la Fiesta desde la ganadería, la profesión del torero y la promoción cultural.
-
-El programa se desarrollará conforme al siguiente calendario:
-
-· **Martes, 20 de enero**: **“La ganadería de Santiago Domecq”**. Intervendrá **Santiago Domecq Bohórquez**, propietario de la prestigiosa ganadería, con la moderación del periodista **Santiago Sánchez Tráver**.
-
-· **Martes, 27 de enero**: **“La Tauromaquia de Fernando Cepeda”**. Participará el matador de toros **Fernando Cepeda Melo**, bajo la moderación del periodista taurino **Carlos Crivell**.
-
-· **Martes, 10 de febrero**: **“La promoción de la cultura taurina en Andalucía. Las escuelas taurinas andaluzas”**. Intervendrá **Eduardo Ordóñez Acosta**, presidente de la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”**, con la moderación del periodista taurino **Emilio Trigo**.
-
-Las conferencias se celebrarán en el **Salón de Carteles de la Plaza de Toros de Sevilla**, situada en el Paseo de Colón. La **entrada será libre hasta completar aforo**, comenzando todas las sesiones a las **18.30 horas**.
-
-Con esta nueva edición, **Aula Taurina Sevilla** (Escuela de Tauromaquia de Sevilla) reafirma su compromiso con la difusión y defensa de la cultura taurina, fomentando el conocimiento y el debate en un enclave histórico de la ciudad.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Los retrasos en la Diputación ponen en riesgo la Feria de San Jorge 2026`,
-    image: "/images/retrasos.jpg",
-    category: "Actualidad",
-    date: "14 de Enero de 2026",
-	fullContent: `La celebración de **la Feria de San Jorge 2026** podría verse comprometida debido a los retrasos de la Diputación Provincial en la publicación del pliego de gestión de la plaza de toros de la Misericordia, una circunstancia que pone en riesgo el arranque de la temporada taurina.
-
-Así lo ha advertido **Fernando Polo**, exgerente del coso zaragozano, en una entrevista concedida al programa Mediodía COPE Zaragoza. Polo ha recordado precedentes recientes, como el año 2018, cuando la Feria de San Jorge no pudo celebrarse tras la publicación tardía del pliego y la posterior presentación de un recurso.
-
-Una situación similar se produjo en 2022, cuando el contrato se firmó el 29 de marzo, apenas unas semanas antes de una feria tradicionalmente articulada en torno al 23 de abril. “Si entonces estuvo al límite de suspenderse San Jorge, este año el retraso es aún mayor, con diez días más de demora”, ha señalado Polo, alertando de la dificultad para organizar el ciclo en los plazos habituales.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Guadalajara tendrá cinco encierros en 2026`,
-    image: "/images/guadaa.jpg",
-    category: "Actualidad",
-    date: "15 de Enero de 2026",
-	fullContent: `El Ayuntamiento de Guadalajara ha abierto el proceso para contratar la organización de los festejos taurinos de las Ferias de 2026 y 2027 —con opción de prórroga hasta 2029—, incluyendo una programación histórica de encierros urbanos.  ￼
-
-El pliego de condiciones contempla la celebración de cinco encierros tradicionales, una cifra sin precedentes en la ciudad, a los que se sumará un sexto encierro de prueba con cabestros —una modalidad que ya se probó durante las ferias de 2025— para familiarizar las reses y reforzar la seguridad de las carreras.  ￼
-
-El quinto encierro se ha programado para el miércoles de Ferias, día en el que tradicionalmente se celebra el concurso de recortadores, aunque el horario aún está por determinar con la empresa adjudicataria del contrato.  ￼
-
-Según ha explicado el concejal de Festejos, la ampliación del número de encierros responde tanto a motivos tradicionales como a la intención de dinamizar económicamente el centro de la ciudad y situar a Guadalajara en el panorama nacional de festejos taurinos.  ￼
-
-El contrato previsto incluye, además de los encierros, cuatro corridas de toros en la plaza de Las Cruces y el concurso nacional de recortadores, junto con actividades formativas de la Escuela Taurina local.  ￼
-
-El presupuesto para estos dos años de contratación asciende a 847.000 euros, y las ofertas se podrán presentar hasta el 13 de febrero de 2026.  ￼`,
+El evento está organizado por la **Peña Taurina “Nicanor Villalta”**, con la colaboración del **Ayuntamiento de Alcorisa y Caja Rural**, reafirmando un año más el compromiso con la cultura taurina y la tradición local.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -596,6 +471,25 @@ El presupuesto para estos dos años de contratación asciende a 847.000 euros, y
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 119,
+    title: `La Peña Taurina “Nicanor Villalta” celebra su 36 aniversario en Alcorisa`,
+    image: "/images/aniversario.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `La **Peña Taurina “Nicanor Villalta”** de Alcorisa celebrará el próximo **sábado 24 de enero de 2026** su 36 aniversario con un completo programa de actos enmarcado dentro de la XLVII Semana Cultural de Alcorisa.
+
+La jornada comenzará a las **19:30 horas en el Centro Cultural Valero Lecha, donde tendrá lugar una charla-coloquio taurina con la participación del torero gaditano David Galván y el novillero alcorisano Tomás González**. El acto estará moderado por **Sergio Hueso**, director de la página digital Torolive y del podcast “A pie de albero”, ofreciendo una interesante conversación sobre la tauromaquia actual.
+
+Posteriormente, a las **22:00 horas**, se celebrará una **Cena de Gala** y la tradicional entrega de recuerdos en el **restaurante Caracas**. Durante la velada se pondrá fin al reinado de **Inés Ibáñez Lisbona**, quien dará la alternativa a las nuevas Madrinas de Honor, **Carla Omedas González y Sara Martín Calvo**, representantes de la Peña durante los años 2026 y 2027.
+
+Asimismo, la **Peña Taurina “Nicanor Villalta”** rendirá un homenaje de reconocimiento a la **Peña Taurina Calandina**, coincidiendo con el **50 aniversario de su fundación (1976-2026)**, destacando su trayectoria y su aportación a la afición taurina.
+
+El evento está organizado por la **Peña Taurina “Nicanor Villalta”**, con la colaboración del **Ayuntamiento de Alcorisa y Caja Rural**, reafirmando un año más el compromiso con la cultura taurina y la tradición local.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 120,
     title: `Gonzalo Capdevila “La temporada 2026 me gustaría estar y triunfar en todas las ferias de novilladas”`,
     image: "/images/capdevila2.jpg",
