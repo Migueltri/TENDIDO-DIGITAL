@@ -450,6 +450,95 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Festival Taurino Mixto a beneficio de la rehabilitación de la Plaza de Toros de Quintanar de la Orden`,
+    image: "/images/0657.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `Se ha presentado el cartel del Festival Taurino Mixto, un festejo solidario que se celebrará el sábado 28 de febrero con el objetivo de recaudar fondos para la rehabilitación de la Plaza de Toros de Quintanar de la Orden.
+
+El acto, organizado por la Peña Taurina La Encina, contó con la presencia de representantes institucionales, ganaderos, toreros y numerosos aficionados. Juan Carlos Sánchez, en representación de la peña, dio la bienvenida y agradeció la colaboración de todas las entidades y personas implicadas, destacando que el festival nace con la intención de ofrecer un festejo digno, atractivo y solidario, que contribuya a la recuperación de la Plaza de Toros.
+
+Durante el acto intervino Joaquín Romera, Vicepresidente de la Diputación de Toledo, quien manifestó el apoyo de la institución provincial al municipio y señaló que este festival aportará categoría y seriedad a la iniciativa de recuperación de la actividad taurina en Quintanar de la Orden.
+
+El Alcalde, D. Pablo Nieto Toldos, explicó la complicada situación actual de la Plaza de Toros, tanto a nivel estructural como patrimonial, así como las gestiones realizadas ante distintas administraciones para lograr financiación y la declaración de Bien de Interés Cultural. El alcalde puso en valor el trabajo de la Peña Taurina La Encina, destacando su esfuerzo y compromiso por mantener viva la tradición taurina y animó a la ciudadanía a respaldar el festival.
+
+En representación de los ganaderos, la Ganadería Los Danieles expresó su satisfacción por el regreso de los toros a Quintanar de la Orden y pidió el apoyo del público para llenar la plaza. Los toreros Miguel Andrades, Curro Muñoz y Héctor Recuero, presentes en el acto, mostraron su ilusión por participar en este festejo solidario y destacaron la importancia de la causa. El Gran Festival Taurino Mixto contará con seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella.
+
+Tras las intervenciones, se procedió al descubrimiento del cartel oficial del festival. Las entradas saldrán a la venta a partir del lunes en distintos puntos del municipio.
+
+El cartel está compuesto por seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella, para Ana Rita, Eugenio de Mora, Alejandro Mora, Miguel Andrades, Curro Muñoz y Hector Recuero`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Tres debuts con picadores en Los Barrios por el día de Andalucía`,
+    image: "/images/losbarrios.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `La empresa BullStar Espectáculos, dirigida por Juan Antonio Medina, ha presentado la novillada con picadores que se va a celebrar por el día de Andalucía en Montera Fórum de Los Barrios.
+Será el próximo 28 de febrero de 2026, con novillos de Couto de Fornilhos para los novilleros .Alejandro Duarte, Francisco Fernández y El Gali , los tres debutarán con picadores
+El acto de presentación del cartel ha tenido lugar en la **Peña Toro Embolao**, ha acogido a numerosos aficionados y ha contado con la intervención del alcalde de la localidad, **Miguel Fermín Alconchel**, la terna anunciada y **Juan Antonio Medina**, gerente de Bullstar Espectáculos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Cartel de alto voltaje en Arnedo por San José`,
+    image: "/images/arnedo.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `La alcaldesa de Arnedo, Rosa Herce, ha participado en la tarde de este jueves, junto al empresario Ignacio Ríos y el diestro Diego Urdiales, en la presentación del cartel de la próxima feria de San José, un acto que ha tenido lugar en el Salón de Plenos del Ayuntamiento de Arnedo y que ha reunido a representantes del mundo taurino y a numerosos aficionados.
+
+Durante la presentación se ha dado a conocer un cartel de máximo nivel para la festividad de San José. Diego Urdiales, José María Manzanares y Roca Rey harán el paseíllo el próximo domingo 22 de marzo en el Arnedo Arena, lidiando toros de la ganadería de Núñez del Cuvillo. Una combinación con la que el empresario Ignacio Ríos apuesta de forma clara por la calidad y la excelencia, situando a la plaza de Arnedo como uno de los referentes del inicio de la temporada taurina en el norte. Asimismo, se puso en valor el respaldo del Consejo Sectorial Taurino de Arnedo y la buena acogida que ha tenido el cartel entre la afición, en un acto que volvió a evidenciar el arraigo y la importancia de la tauromaquia en la ciudad.
+
+La feria de San José se completará con la final del XXIII Bolsín Zapato de Plata, que se celebrará el día 21 de marzo. En ella participarán los tres finalistas que se seleccionarán entre los 14 candidatos que tomarán parte en los tentaderos clasificatorios previstos para los próximos días 21 y 22 de febrero.
+
+En cuanto a la venta de abonos, tanto para renovación como para nuevos abonados, se realizará los días 27, 28, 29 y 30 de enero en horario de 17:00 a 19:30 horas, y el día 31 de enero de 11:00 a 13:00 horas. Las entradas sueltas podrán adquirirse a partir del 31 de enero, también de 11:00 a 13:00 horas. Durante el mes de marzo, la venta continuará los días 16, 17, 18, 19, 20 de marzo de 17:00 a 19:30 horas, así como los días de los festejos desde las 11:00 de la mañana de forma ininterrumpida hasta el inicio de los mismos.
+
+Se aplicará un 10% de descuento a los abonados del Zapato de Oro 2025, socios del Club Taurino de Arnedo y mayores de 65 años. Además, las entradas podrán adquirirse por internet a través de <a href="https://www.servitoro.com" target="_blank" rel="noopener noreferrer" style="color: #0000EE; text-decoration: underline;">servitoro.com</a> y bacantix, así como mediante el correo electrónico <a href="mailto:espectaculostaurinosrios@hotmail.com" style="color: #0000EE; text-decoration: underline;">espectaculostaurinosrios@hotmail.com</a>. Para más información, se ha habilitado el teléfono 669 565 211, disponible en horario de taquilla de tarde.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `La Flecha: las figuras arropan el 20º aniversario de la plaza de toros con un cartel de máximo nivel`,
+    image: "/images/laflecha.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	excerpt: "Será el próximo 28 de febrero a favor de la Asociación de Esclerosis Múltiple de Valladolid",
+	fullContent: `La plaza de toros de La Flecha celebrará el próximo 28 de febrero una corrida de toros a favor de la Asociación de Esclerosis Múltiple de Valladolid, con el objetivo de seguir apoyando la investigación y las asociaciones que trabajan de forma diaria frente a esta enfermedad neurodegenerativa.
+
+Esta corrida de toros, anunciada por Tauroemoción junto con el ayuntamiento de Arroyo de la Encomienda, se celebra coincidiendo con el décimo aniversario del festival taurino, uno de los festejos taurinos más consolidados de la provincia de Valladolid.
+
+El festejo contará con la presencia de tres figuras de referencia en el panorama actual: Sebastián Castella, Alejandro Talavante y Marco Pérez con toros de Zacarias Moreno, quienes se darán cita en el coso arroyano en una jornada que pretende unir, un año más, solidaridad, tradición y compromiso social, coincidiendo, además, con el 20º aniversario de la plaza de toros.
+
+Este cartel se presenta como uno de los actos conmemorativos más destacados dentro del calendario del recinto taurino, que, durante dos décadas, desde su inauguración en junio de 2006, ha sido sede de numerosos eventos culturales y festivos.
+
+La presentación ha sido en la casa de Cultura de Arroyo de la Encomienda en un multitudinario acto que ha contacto con el alcalde de la localidad, Sarbelio Fernández; la concejala de Cultura, Ana Sánchez; el vicepresidente de la asociación vallisoletana, Alfonso Galicia; y el director operativo de Tauroemoción, Nacho de la Viuda.
+
+Todas las partes han subrayado la importancia de visibilizar la Esclerosis Múltiple, una patología crónica que afecta a miles de personas, así como fomentar este tipo de acciones que permiten recaudar fondos y sensibilizar a la ciudadanía, además de seguir haciendo crecer este festejo como uno de los más importantes del inicio de la temporada en la provincia de Valladolid.
+
+Durante el acto, presentado por el periodista José Ángel Gallego, también se ha repasado la trayectoria del festival taurino con picadores que se ha venido celebrando durante una década a favor de la entidad vallisoletana.
+
+La venta de entradas para la corrida de toros ya está disponible en la página web oficial de la empresa 
+<a
+  href="www.tauroemocion.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.tauroemocion.com
+</a> y desde el 26 de enero en la casa de cultura de Arroyo de la Encomienda.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
     title: `La Peña Taurina “Nicanor Villalta” celebra su 36 aniversario en Alcorisa`,
     image: "/images/aniversario.jpg",
     category: "Actualidad",
@@ -471,6 +560,95 @@ El evento está organizado por la **Peña Taurina “Nicanor Villalta”**, con 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 115,
+    title: `Festival Taurino Mixto a beneficio de la rehabilitación de la Plaza de Toros de Quintanar de la Orden`,
+    image: "/images/0657.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `Se ha presentado el cartel del Festival Taurino Mixto, un festejo solidario que se celebrará el sábado 28 de febrero con el objetivo de recaudar fondos para la rehabilitación de la Plaza de Toros de Quintanar de la Orden.
+
+El acto, organizado por la Peña Taurina La Encina, contó con la presencia de representantes institucionales, ganaderos, toreros y numerosos aficionados. Juan Carlos Sánchez, en representación de la peña, dio la bienvenida y agradeció la colaboración de todas las entidades y personas implicadas, destacando que el festival nace con la intención de ofrecer un festejo digno, atractivo y solidario, que contribuya a la recuperación de la Plaza de Toros.
+
+Durante el acto intervino Joaquín Romera, Vicepresidente de la Diputación de Toledo, quien manifestó el apoyo de la institución provincial al municipio y señaló que este festival aportará categoría y seriedad a la iniciativa de recuperación de la actividad taurina en Quintanar de la Orden.
+
+El Alcalde, D. Pablo Nieto Toldos, explicó la complicada situación actual de la Plaza de Toros, tanto a nivel estructural como patrimonial, así como las gestiones realizadas ante distintas administraciones para lograr financiación y la declaración de Bien de Interés Cultural. El alcalde puso en valor el trabajo de la Peña Taurina La Encina, destacando su esfuerzo y compromiso por mantener viva la tradición taurina y animó a la ciudadanía a respaldar el festival.
+
+En representación de los ganaderos, la Ganadería Los Danieles expresó su satisfacción por el regreso de los toros a Quintanar de la Orden y pidió el apoyo del público para llenar la plaza. Los toreros Miguel Andrades, Curro Muñoz y Héctor Recuero, presentes en el acto, mostraron su ilusión por participar en este festejo solidario y destacaron la importancia de la causa. El Gran Festival Taurino Mixto contará con seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella.
+
+Tras las intervenciones, se procedió al descubrimiento del cartel oficial del festival. Las entradas saldrán a la venta a partir del lunes en distintos puntos del municipio.
+
+El cartel está compuesto por seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella, para Ana Rita, Eugenio de Mora, Alejandro Mora, Miguel Andrades, Curro Muñoz y Hector Recuero`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 116,
+    title: `Tres debuts con picadores en Los Barrios por el día de Andalucía`,
+    image: "/images/losbarrios.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `La empresa BullStar Espectáculos, dirigida por Juan Antonio Medina, ha presentado la novillada con picadores que se va a celebrar por el día de Andalucía en Montera Fórum de Los Barrios.
+Será el próximo 28 de febrero de 2026, con novillos de Couto de Fornilhos para los novilleros .Alejandro Duarte, Francisco Fernández y El Gali , los tres debutarán con picadores
+El acto de presentación del cartel ha tenido lugar en la **Peña Toro Embolao**, ha acogido a numerosos aficionados y ha contado con la intervención del alcalde de la localidad, **Miguel Fermín Alconchel**, la terna anunciada y **Juan Antonio Medina**, gerente de Bullstar Espectáculos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 117,
+    title: `Cartel de alto voltaje en Arnedo por San José`,
+    image: "/images/arnedo.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	fullContent: `La alcaldesa de Arnedo, Rosa Herce, ha participado en la tarde de este jueves, junto al empresario Ignacio Ríos y el diestro Diego Urdiales, en la presentación del cartel de la próxima feria de San José, un acto que ha tenido lugar en el Salón de Plenos del Ayuntamiento de Arnedo y que ha reunido a representantes del mundo taurino y a numerosos aficionados.
+
+Durante la presentación se ha dado a conocer un cartel de máximo nivel para la festividad de San José. Diego Urdiales, José María Manzanares y Roca Rey harán el paseíllo el próximo domingo 22 de marzo en el Arnedo Arena, lidiando toros de la ganadería de Núñez del Cuvillo. Una combinación con la que el empresario Ignacio Ríos apuesta de forma clara por la calidad y la excelencia, situando a la plaza de Arnedo como uno de los referentes del inicio de la temporada taurina en el norte. Asimismo, se puso en valor el respaldo del Consejo Sectorial Taurino de Arnedo y la buena acogida que ha tenido el cartel entre la afición, en un acto que volvió a evidenciar el arraigo y la importancia de la tauromaquia en la ciudad.
+
+La feria de San José se completará con la final del XXIII Bolsín Zapato de Plata, que se celebrará el día 21 de marzo. En ella participarán los tres finalistas que se seleccionarán entre los 14 candidatos que tomarán parte en los tentaderos clasificatorios previstos para los próximos días 21 y 22 de febrero.
+
+En cuanto a la venta de abonos, tanto para renovación como para nuevos abonados, se realizará los días 27, 28, 29 y 30 de enero en horario de 17:00 a 19:30 horas, y el día 31 de enero de 11:00 a 13:00 horas. Las entradas sueltas podrán adquirirse a partir del 31 de enero, también de 11:00 a 13:00 horas. Durante el mes de marzo, la venta continuará los días 16, 17, 18, 19, 20 de marzo de 17:00 a 19:30 horas, así como los días de los festejos desde las 11:00 de la mañana de forma ininterrumpida hasta el inicio de los mismos.
+
+Se aplicará un 10% de descuento a los abonados del Zapato de Oro 2025, socios del Club Taurino de Arnedo y mayores de 65 años. Además, las entradas podrán adquirirse por internet a través de <a href="https://www.servitoro.com" target="_blank" rel="noopener noreferrer" style="color: #0000EE; text-decoration: underline;">servitoro.com</a> y bacantix, así como mediante el correo electrónico <a href="mailto:espectaculostaurinosrios@hotmail.com" style="color: #0000EE; text-decoration: underline;">espectaculostaurinosrios@hotmail.com</a>. Para más información, se ha habilitado el teléfono 669 565 211, disponible en horario de taquilla de tarde.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 118,
+    title: `La Flecha: las figuras arropan el 20º aniversario de la plaza de toros con un cartel de máximo nivel`,
+    image: "/images/laflecha.jpg",
+    category: "Actualidad",
+    date: "16 de Enero de 2026",
+	excerpt: "Será el próximo 28 de febrero a favor de la Asociación de Esclerosis Múltiple de Valladolid",
+	fullContent: `La plaza de toros de La Flecha celebrará el próximo 28 de febrero una corrida de toros a favor de la Asociación de Esclerosis Múltiple de Valladolid, con el objetivo de seguir apoyando la investigación y las asociaciones que trabajan de forma diaria frente a esta enfermedad neurodegenerativa.
+
+Esta corrida de toros, anunciada por Tauroemoción junto con el ayuntamiento de Arroyo de la Encomienda, se celebra coincidiendo con el décimo aniversario del festival taurino, uno de los festejos taurinos más consolidados de la provincia de Valladolid.
+
+El festejo contará con la presencia de tres figuras de referencia en el panorama actual: Sebastián Castella, Alejandro Talavante y Marco Pérez con toros de Zacarias Moreno, quienes se darán cita en el coso arroyano en una jornada que pretende unir, un año más, solidaridad, tradición y compromiso social, coincidiendo, además, con el 20º aniversario de la plaza de toros.
+
+Este cartel se presenta como uno de los actos conmemorativos más destacados dentro del calendario del recinto taurino, que, durante dos décadas, desde su inauguración en junio de 2006, ha sido sede de numerosos eventos culturales y festivos.
+
+La presentación ha sido en la casa de Cultura de Arroyo de la Encomienda en un multitudinario acto que ha contacto con el alcalde de la localidad, Sarbelio Fernández; la concejala de Cultura, Ana Sánchez; el vicepresidente de la asociación vallisoletana, Alfonso Galicia; y el director operativo de Tauroemoción, Nacho de la Viuda.
+
+Todas las partes han subrayado la importancia de visibilizar la Esclerosis Múltiple, una patología crónica que afecta a miles de personas, así como fomentar este tipo de acciones que permiten recaudar fondos y sensibilizar a la ciudadanía, además de seguir haciendo crecer este festejo como uno de los más importantes del inicio de la temporada en la provincia de Valladolid.
+
+Durante el acto, presentado por el periodista José Ángel Gallego, también se ha repasado la trayectoria del festival taurino con picadores que se ha venido celebrando durante una década a favor de la entidad vallisoletana.
+
+La venta de entradas para la corrida de toros ya está disponible en la página web oficial de la empresa 
+<a
+  href="www.tauroemocion.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+www.tauroemocion.com
+</a> y desde el 26 de enero en la casa de cultura de Arroyo de la Encomienda.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 119,
     title: `La Peña Taurina “Nicanor Villalta” celebra su 36 aniversario en Alcorisa`,
     image: "/images/aniversario.jpg",
