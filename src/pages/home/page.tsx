@@ -450,116 +450,186 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Festival Taurino Mixto a beneficio de la rehabilitación de la Plaza de Toros de Quintanar de la Orden`,
-    image: "/images/0657.jpg",
+    title: `Borja Jiménez, homenaje a la excelencia taurina en Cieza`,
+    image: "/images/borjaa.jpg",
     category: "Actualidad",
-    date: "16 de Enero de 2026",
-	fullContent: `Se ha presentado el cartel del Festival Taurino Mixto, un festejo solidario que se celebrará el sábado 28 de febrero con el objetivo de recaudar fondos para la rehabilitación de la Plaza de Toros de Quintanar de la Orden.
+    date: "17 de Enero de 2026",
+	fullContent: `El pasado viernes 16 de enero, el Teatro Capitol de Cieza, en su emblemática Sala Manuela Burló, se convirtió en un auténtico altar del toreo. 
 
-El acto, organizado por la Peña Taurina La Encina, contó con la presencia de representantes institucionales, ganaderos, toreros y numerosos aficionados. Juan Carlos Sánchez, en representación de la peña, dio la bienvenida y agradeció la colaboración de todas las entidades y personas implicadas, destacando que el festival nace con la intención de ofrecer un festejo digno, atractivo y solidario, que contribuya a la recuperación de la Plaza de Toros.
+Aficionados y figuras del arte taurino se dieron cita en un acto que combinó emoción, respeto y reconocimiento. La Asociación Cultural Cieza Taurina hizo entrega del Premio a la Mejor Temporada 2025, galardón que este año recayó en Borja Jiménez, cuya carrera ha brillado con luz propia.
 
-Durante el acto intervino Joaquín Romera, Vicepresidente de la Diputación de Toledo, quien manifestó el apoyo de la institución provincial al municipio y señaló que este festival aportará categoría y seriedad a la iniciativa de recuperación de la actividad taurina en Quintanar de la Orden.
+Junto a Manolo Guillén, Borja logró una conexión mágica con el público, arrancando aplausos y gestos de admiración en cada instante. Durante su intervención, el diestro compartió sus años de lucha y sacrificio, cuando no toreaba y pasaba cada día entrenando, pero nunca perdió la fe en su vocación.
 
-El Alcalde, D. Pablo Nieto Toldos, explicó la complicada situación actual de la Plaza de Toros, tanto a nivel estructural como patrimonial, así como las gestiones realizadas ante distintas administraciones para lograr financiación y la declaración de Bien de Interés Cultural. El alcalde puso en valor el trabajo de la Peña Taurina La Encina, destacando su esfuerzo y compromiso por mantener viva la tradición taurina y animó a la ciudadanía a respaldar el festival.
-
-En representación de los ganaderos, la Ganadería Los Danieles expresó su satisfacción por el regreso de los toros a Quintanar de la Orden y pidió el apoyo del público para llenar la plaza. Los toreros Miguel Andrades, Curro Muñoz y Héctor Recuero, presentes en el acto, mostraron su ilusión por participar en este festejo solidario y destacaron la importancia de la causa. El Gran Festival Taurino Mixto contará con seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella.
-
-Tras las intervenciones, se procedió al descubrimiento del cartel oficial del festival. Las entradas saldrán a la venta a partir del lunes en distintos puntos del municipio.
-
-El cartel está compuesto por seis novillos de las ganaderías El Cubo, López Gibaja, Los Danieles, Hermanos Hernando Aboin y Peñatella, para Ana Rita, Eugenio de Mora, Alejandro Mora, Miguel Andrades, Curro Muñoz y Hector Recuero`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Gracias al trabajo incansable, la constancia y la confianza en sí mismo, Borja Jiménez ha alcanzado la cúspide del escalafón taurino, consolidándose como uno de los grandes referentes de la temporada y dejando en Cieza una noche que será recordada por mucho tiempo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `Tres debuts con picadores en Los Barrios por el día de Andalucía`,
-    image: "/images/losbarrios.jpg",
+    title: `El Carnaval de Ciudad Rodrigo prolongará su Festival Taurino con una clase práctica inédita protagonizada por Moises Fraile`,
+    image: "/images/carnaval.jpg",
     category: "Actualidad",
-    date: "16 de Enero de 2026",
-	fullContent: `La empresa BullStar Espectáculos, dirigida por Juan Antonio Medina, ha presentado la novillada con picadores que se va a celebrar por el día de Andalucía en Montera Fórum de Los Barrios.
-Será el próximo 28 de febrero de 2026, con novillos de Couto de Fornilhos para los novilleros .Alejandro Duarte, Francisco Fernández y El Gali , los tres debutarán con picadores
-El acto de presentación del cartel ha tenido lugar en la **Peña Toro Embolao**, ha acogido a numerosos aficionados y ha contado con la intervención del alcalde de la localidad, **Miguel Fermín Alconchel**, la terna anunciada y **Juan Antonio Medina**, gerente de Bullstar Espectáculos.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+    date: "17 de Enero de 2026",
+	fullContent: `El Ayuntamiento de Ciudad Rodrigo ha dado un paso significativo en la configuración del sábado grande del Carnaval al introducir una novedad de marcado carácter simbólico y formativo. El Festival Taurino de la tarde no concluirá con el último paseíllo, sino que **tendrá continuidad mediante una clase práctica a cargo de la Escuela de Tauromaquia de Galapagar**, un hecho inédito hasta la fecha en el coso mirobrigense.
+
+La iniciativa adquiere especial relevancia con la presencia de **Moisés Fraile**, alumno encargado de lidiar el eral al término del festival. Su participación trasciende el ámbito estrictamente formativo, **al tratarse del hijo y nieto de los ganaderos de El Pilar**, una de las divisas más reconocidas del campo charro. Portador de un apellido con profundo arraigo en la cabaña brava salmantina, su actuación se presenta como un símbolo de continuidad generacional y proyección de futuro.
+
+Moisés Fraile llega a esta cita avalado por una destacada trayectoria reciente, tras haber cortado un rabo el pasado mes de septiembre en el certamen organizado por la Escuela Taurina de Salamanca, donde se ha consolidado como uno de sus alumnos más destacados pese a contar con tan solo 14 años.
+
+Previamente, la jornada contará con el atractivo de los nombres consagrados que integran el cartel del festival. **Diego Urdiales, Alejandro Talavante, Pablo Aguado y El Mene lidiarán cuatro utreros de la ganadería de Talavante**, aportando el peso artístico y la dimensión mediática a una tarde de especial significado.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `Cartel de alto voltaje en Arnedo por San José`,
-    image: "/images/arnedo.jpg",
+    title: `Aplazada por motivos meteorológicos la clase práctica de Valdesaz`,
+    image: "/images/aplazada.jpg",
     category: "Actualidad",
-    date: "16 de Enero de 2026",
-	fullContent: `La alcaldesa de Arnedo, Rosa Herce, ha participado en la tarde de este jueves, junto al empresario Ignacio Ríos y el diestro Diego Urdiales, en la presentación del cartel de la próxima feria de San José, un acto que ha tenido lugar en el Salón de Plenos del Ayuntamiento de Arnedo y que ha reunido a representantes del mundo taurino y a numerosos aficionados.
+    date: "17 de Enero de 2026",
+	fullContent: `La **clase práctica extraordinaria** prevista para el próximo **17 de enero** en la localidad de **Valdesaz**, incluida en la programación de la temporada **2026**, ha sido aplazada debido a las **adversas condiciones meteorológicas**.
 
-Durante la presentación se ha dado a conocer un cartel de máximo nivel para la festividad de San José. Diego Urdiales, José María Manzanares y Roca Rey harán el paseíllo el próximo domingo 22 de marzo en el Arnedo Arena, lidiando toros de la ganadería de Núñez del Cuvillo. Una combinación con la que el empresario Ignacio Ríos apuesta de forma clara por la calidad y la excelencia, situando a la plaza de Arnedo como uno de los referentes del inicio de la temporada taurina en el norte. Asimismo, se puso en valor el respaldo del Consejo Sectorial Taurino de Arnedo y la buena acogida que ha tenido el cartel entre la afición, en un acto que volvió a evidenciar el arraigo y la importancia de la tauromaquia en la ciudad.
+El festejo, organizado por la **Escuela Taurina de Guadalajara**, estaba anunciado para las **12:00 horas** y contemplaba la lidia de novillos de la finca **Valtaja**, con la participación de alumnos pertenecientes a diferentes escuelas taurinas. Se trataba de una jornada de carácter formativo y con **entrada gratuita**.
 
-La feria de San José se completará con la final del XXIII Bolsín Zapato de Plata, que se celebrará el día 21 de marzo. En ella participarán los tres finalistas que se seleccionarán entre los 14 candidatos que tomarán parte en los tentaderos clasificatorios previstos para los próximos días 21 y 22 de febrero.
+Desde la organización se ha informado de que la decisión se ha adoptado atendiendo a criterios de seguridad, **tanto para los actuantes como para el público asistente**, así como con el objetivo de garantizar el correcto desarrollo del espectáculo.
 
-En cuanto a la venta de abonos, tanto para renovación como para nuevos abonados, se realizará los días 27, 28, 29 y 30 de enero en horario de 17:00 a 19:30 horas, y el día 31 de enero de 11:00 a 13:00 horas. Las entradas sueltas podrán adquirirse a partir del 31 de enero, también de 11:00 a 13:00 horas. Durante el mes de marzo, la venta continuará los días 16, 17, 18, 19, 20 de marzo de 17:00 a 19:30 horas, así como los días de los festejos desde las 11:00 de la mañana de forma ininterrumpida hasta el inicio de los mismos.
-
-Se aplicará un 10% de descuento a los abonados del Zapato de Oro 2025, socios del Club Taurino de Arnedo y mayores de 65 años. Además, las entradas podrán adquirirse por internet a través de <a href="https://www.servitoro.com" target="_blank" rel="noopener noreferrer" style="color: #0000EE; text-decoration: underline;">servitoro.com</a> y bacantix, así como mediante el correo electrónico <a href="mailto:espectaculostaurinosrios@hotmail.com" style="color: #0000EE; text-decoration: underline;">espectaculostaurinosrios@hotmail.com</a>. Para más información, se ha habilitado el teléfono 669 565 211, disponible en horario de taquilla de tarde.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+La nueva fecha de celebración será comunicada próximamente, una vez mejoren las condiciones meteorológicas, manteniéndose íntegramente el cartel anunciado inicialmente.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1003,
-    title: `La Flecha: las figuras arropan el 20º aniversario de la plaza de toros con un cartel de máximo nivel`,
-    image: "/images/laflecha.jpg",
+    title: `Guillena abre la temporada en Sevilla el próximo 22 de febrero`,
+    image: "/images/guillena.jpg",
     category: "Actualidad",
-    date: "16 de Enero de 2026",
-	excerpt: "Será el próximo 28 de febrero a favor de la Asociación de Esclerosis Múltiple de Valladolid",
-	fullContent: `La plaza de toros de La Flecha celebrará el próximo 28 de febrero una corrida de toros a favor de la Asociación de Esclerosis Múltiple de Valladolid, con el objetivo de seguir apoyando la investigación y las asociaciones que trabajan de forma diaria frente a esta enfermedad neurodegenerativa.
+    date: "17 de Enero de 2026",
+	fullContent: `La localidad sevillana de Guillena tenía programado para el pasado mes de octubre un festival taurino pero las inclemencias meteorológicas obligaron a aplazarlos y la nueva fecha es el próximo día 22 de febrero un acontecimiento benéfico en el que se unirá la tauromaquia y el cante flamenco.
 
-Esta corrida de toros, anunciada por Tauroemoción junto con el ayuntamiento de Arroyo de la Encomienda, se celebra coincidiendo con el décimo aniversario del festival taurino, uno de los festejos taurinos más consolidados de la provincia de Valladolid.
+La III edición del festival taurino de **Guillena** a beneficio de la familia de Loli Romero Florido, vecina de la localidad que perdió la vista en un incendio que ocurrió hace varios meses en su vivienda ubicada en Alcalá de Guadaíra.
 
-El festejo contará con la presencia de tres figuras de referencia en el panorama actual: Sebastián Castella, Alejandro Talavante y Marco Pérez con toros de Zacarias Moreno, quienes se darán cita en el coso arroyano en una jornada que pretende unir, un año más, solidaridad, tradición y compromiso social, coincidiendo, además, con el 20º aniversario de la plaza de toros.
+El cartel está compuesto con novillos de Espartaco para **Jesulín de Ubrique**, **Manuel Jesús ‘El Cid’**, **David Fandila ‘El Fandi’**, **Manuel Escribano**, **Ginés Marín** y el novillero **Javier Torres ‘Bombita’**. El festival contará con la actuación de **Paco Candela**.
 
-Este cartel se presenta como uno de los actos conmemorativos más destacados dentro del calendario del recinto taurino, que, durante dos décadas, desde su inauguración en junio de 2006, ha sido sede de numerosos eventos culturales y festivos.
-
-La presentación ha sido en la casa de Cultura de Arroyo de la Encomienda en un multitudinario acto que ha contacto con el alcalde de la localidad, Sarbelio Fernández; la concejala de Cultura, Ana Sánchez; el vicepresidente de la asociación vallisoletana, Alfonso Galicia; y el director operativo de Tauroemoción, Nacho de la Viuda.
-
-Todas las partes han subrayado la importancia de visibilizar la Esclerosis Múltiple, una patología crónica que afecta a miles de personas, así como fomentar este tipo de acciones que permiten recaudar fondos y sensibilizar a la ciudadanía, además de seguir haciendo crecer este festejo como uno de los más importantes del inicio de la temporada en la provincia de Valladolid.
-
-Durante el acto, presentado por el periodista José Ángel Gallego, también se ha repasado la trayectoria del festival taurino con picadores que se ha venido celebrando durante una década a favor de la entidad vallisoletana.
-
-La venta de entradas para la corrida de toros ya está disponible en la página web oficial de la empresa 
-<a
-  href="www.tauroemocion.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-www.tauroemocion.com
-</a> y desde el 26 de enero en la casa de cultura de Arroyo de la Encomienda.`,
+La organización del festejo ha corrido a cargo del empresario local **Manuel Expósito**, junto a **Jorge Cutiño** gerente de la empresa **Arenas de San Nicasio**.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1004,
-    title: `La Peña Taurina “Nicanor Villalta” celebra su 36 aniversario en Alcorisa`,
-    image: "/images/aniversario.jpg",
+    title: `Galván y Jaén: Una historia de superación`,
+    image: "/images/galvan.jpg",
     category: "Actualidad",
-    date: "16 de Enero de 2026",
-	fullContent: `La **Peña Taurina “Nicanor Villalta”** de Alcorisa celebrará el próximo **sábado 24 de enero de 2026** su 36 aniversario con un completo programa de actos enmarcado dentro de la XLVII Semana Cultural de Alcorisa.
+    date: "17 de Enero de 2026",
+	fullContent: `En la noche de ayer, **16 de enero**, en vísperas de la festividad de San Antón, la ciudad de **Jaén** vivió una velada cargada de emoción y simbolismo. El salón del Hotel Xauen registró un lleno absoluto para recibir al diestro gaditano **David Galván**, protagonista del regreso de las tertulias taurinas organizadas por la **Asociación Taurina de Aficionados Prácticos de Jaén**, que retomaba estas jornadas tras varios años de inactividad.
 
-La jornada comenzará a las **19:30 horas en el Centro Cultural Valero Lecha, donde tendrá lugar una charla-coloquio taurina con la participación del torero gaditano David Galván y el novillero alcorisano Tomás González**. El acto estará moderado por **Sergio Hueso**, director de la página digital Torolive y del podcast “A pie de albero”, ofreciendo una interesante conversación sobre la tauromaquia actual.
+La vuelta no podía ser con otro nombre. Tal y como señalaron los organizadores, debía ser con el torero que cortó las dos orejas al último toro de la pasada Feria de San Juan, y con una figura profundamente unida a la historia reciente de Jaén. Porque la relación de David Galván con esta tierra es, ante todo, una historia humana y de superación.
 
-Posteriormente, a las **22:00 horas**, se celebrará una **Cena de Gala** y la tradicional entrega de recuerdos en el **restaurante Caracas**. Durante la velada se pondrá fin al reinado de **Inés Ibáñez Lisbona**, quien dará la alternativa a las nuevas Madrinas de Honor, **Carla Omedas González y Sara Martín Calvo**, representantes de la Peña durante los años 2026 y 2027.
+El encuentro sirvió para recordar que Jaén tenía una "deuda pendiente" con Galván. El diestro no hacía el paseíllo en Jaén desde octubre de 2013, fecha en la que sufrió una gravísima cornada que conmocionó tanto a la afición jiennense como al panorama taurino nacional. Doce años después, Galván regresaba a la Feria de San Lucas, cerrando un círculo vital y profesional que tuvo ayer uno de sus momentos más emotivos.
 
-Asimismo, la **Peña Taurina “Nicanor Villalta”** rendirá un homenaje de reconocimiento a la **Peña Taurina Calandina**, coincidiendo con el **50 aniversario de su fundación (1976-2026)**, destacando su trayectoria y su aportación a la afición taurina.
+Durante la charla-coloquio, David Galván quiso expresar públicamente su agradecimiento al **Dr. Rafael Fuentes**, presente en el acto, destacando que "**gracias a él y a su equipo puedo estar hoy toreando**". El torero recordó con emoción que, de no haber estado en sus manos tras aquella cornada, su carrera no habría tenido continuidad. "**Jaén supone para mí algo muy especial, es una tierra donde me siento querido y en la que me encanta torear**", afirmó el diestro, visiblemente emocionado.
 
-El evento está organizado por la **Peña Taurina “Nicanor Villalta”**, con la colaboración del **Ayuntamiento de Alcorisa y Caja Rural**, reafirmando un año más el compromiso con la cultura taurina y la tradición local.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+El acto estuvo moderado por **D. José Luis Marín Weil** y contó también con la intervención del presidente de la Asociación Taurina de Aficionados Prácticos de Jaén, **D. Antonio González**, quien subrayó la importancia de recuperar estos espacios de encuentro y reflexión taurina, y el significado de hacerlo con una figura tan vinculada a la afición local como David Galván.
+
+Una noche para el recuerdo, en la que Jaén y Galván volvieron a encontrarse, reafirmando un vínculo forjado en la adversidad y fortalecido por el tiempo, un triunfo y la emoción compartida.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 110,
+    title: `Borja Jiménez, homenaje a la excelencia taurina en Cieza`,
+    image: "/images/borjaa.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	fullContent: `El pasado viernes 16 de enero, el Teatro Capitol de Cieza, en su emblemática Sala Manuela Burló, se convirtió en un auténtico altar del toreo. 
+
+Aficionados y figuras del arte taurino se dieron cita en un acto que combinó emoción, respeto y reconocimiento. La Asociación Cultural Cieza Taurina hizo entrega del Premio a la Mejor Temporada 2025, galardón que este año recayó en Borja Jiménez, cuya carrera ha brillado con luz propia.
+
+Junto a Manolo Guillén, Borja logró una conexión mágica con el público, arrancando aplausos y gestos de admiración en cada instante. Durante su intervención, el diestro compartió sus años de lucha y sacrificio, cuando no toreaba y pasaba cada día entrenando, pero nunca perdió la fe en su vocación.
+
+Gracias al trabajo incansable, la constancia y la confianza en sí mismo, Borja Jiménez ha alcanzado la cúspide del escalafón taurino, consolidándose como uno de los grandes referentes de la temporada y dejando en Cieza una noche que será recordada por mucho tiempo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 111,
+    title: `El Carnaval de Ciudad Rodrigo prolongará su Festival Taurino con una clase práctica inédita protagonizada por Moises Fraile`,
+    image: "/images/carnaval.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	fullContent: `El Ayuntamiento de Ciudad Rodrigo ha dado un paso significativo en la configuración del sábado grande del Carnaval al introducir una novedad de marcado carácter simbólico y formativo. El Festival Taurino de la tarde no concluirá con el último paseíllo, sino que **tendrá continuidad mediante una clase práctica a cargo de la Escuela de Tauromaquia de Galapagar**, un hecho inédito hasta la fecha en el coso mirobrigense.
+
+La iniciativa adquiere especial relevancia con la presencia de **Moisés Fraile**, alumno encargado de lidiar el eral al término del festival. Su participación trasciende el ámbito estrictamente formativo, **al tratarse del hijo y nieto de los ganaderos de El Pilar**, una de las divisas más reconocidas del campo charro. Portador de un apellido con profundo arraigo en la cabaña brava salmantina, su actuación se presenta como un símbolo de continuidad generacional y proyección de futuro.
+
+Moisés Fraile llega a esta cita avalado por una destacada trayectoria reciente, tras haber cortado un rabo el pasado mes de septiembre en el certamen organizado por la Escuela Taurina de Salamanca, donde se ha consolidado como uno de sus alumnos más destacados pese a contar con tan solo 14 años.
+
+Previamente, la jornada contará con el atractivo de los nombres consagrados que integran el cartel del festival. **Diego Urdiales, Alejandro Talavante, Pablo Aguado y El Mene lidiarán cuatro utreros de la ganadería de Talavante**, aportando el peso artístico y la dimensión mediática a una tarde de especial significado.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 112,
+    title: `Aplazada por motivos meteorológicos la clase práctica de Valdesaz`,
+    image: "/images/aplazada.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	fullContent: `La **clase práctica extraordinaria** prevista para el próximo **17 de enero** en la localidad de **Valdesaz**, incluida en la programación de la temporada **2026**, ha sido aplazada debido a las **adversas condiciones meteorológicas**.
+
+El festejo, organizado por la **Escuela Taurina de Guadalajara**, estaba anunciado para las **12:00 horas** y contemplaba la lidia de novillos de la finca **Valtaja**, con la participación de alumnos pertenecientes a diferentes escuelas taurinas. Se trataba de una jornada de carácter formativo y con **entrada gratuita**.
+
+Desde la organización se ha informado de que la decisión se ha adoptado atendiendo a criterios de seguridad, **tanto para los actuantes como para el público asistente**, así como con el objetivo de garantizar el correcto desarrollo del espectáculo.
+
+La nueva fecha de celebración será comunicada próximamente, una vez mejoren las condiciones meteorológicas, manteniéndose íntegramente el cartel anunciado inicialmente.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 113,
+    title: `Guillena abre la temporada en Sevilla el próximo 22 de febrero`,
+    image: "/images/guillena.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	fullContent: `La localidad sevillana de Guillena tenía programado para el pasado mes de octubre un festival taurino pero las inclemencias meteorológicas obligaron a aplazarlos y la nueva fecha es el próximo día 22 de febrero un acontecimiento benéfico en el que se unirá la tauromaquia y el cante flamenco.
+
+La III edición del festival taurino de **Guillena** a beneficio de la familia de Loli Romero Florido, vecina de la localidad que perdió la vista en un incendio que ocurrió hace varios meses en su vivienda ubicada en Alcalá de Guadaíra.
+
+El cartel está compuesto con novillos de Espartaco para **Jesulín de Ubrique**, **Manuel Jesús ‘El Cid’**, **David Fandila ‘El Fandi’**, **Manuel Escribano**, **Ginés Marín** y el novillero **Javier Torres ‘Bombita’**. El festival contará con la actuación de **Paco Candela**.
+
+La organización del festejo ha corrido a cargo del empresario local **Manuel Expósito**, junto a **Jorge Cutiño** gerente de la empresa **Arenas de San Nicasio**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 114,
+    title: `Galván y Jaén: Una historia de superación`,
+    image: "/images/galvan.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	fullContent: `En la noche de ayer, **16 de enero**, en vísperas de la festividad de San Antón, la ciudad de **Jaén** vivió una velada cargada de emoción y simbolismo. El salón del Hotel Xauen registró un lleno absoluto para recibir al diestro gaditano **David Galván**, protagonista del regreso de las tertulias taurinas organizadas por la **Asociación Taurina de Aficionados Prácticos de Jaén**, que retomaba estas jornadas tras varios años de inactividad.
+
+La vuelta no podía ser con otro nombre. Tal y como señalaron los organizadores, debía ser con el torero que cortó las dos orejas al último toro de la pasada Feria de San Juan, y con una figura profundamente unida a la historia reciente de Jaén. Porque la relación de David Galván con esta tierra es, ante todo, una historia humana y de superación.
+
+El encuentro sirvió para recordar que Jaén tenía una "deuda pendiente" con Galván. El diestro no hacía el paseíllo en Jaén desde octubre de 2013, fecha en la que sufrió una gravísima cornada que conmocionó tanto a la afición jiennense como al panorama taurino nacional. Doce años después, Galván regresaba a la Feria de San Lucas, cerrando un círculo vital y profesional que tuvo ayer uno de sus momentos más emotivos.
+
+Durante la charla-coloquio, David Galván quiso expresar públicamente su agradecimiento al **Dr. Rafael Fuentes**, presente en el acto, destacando que "**gracias a él y a su equipo puedo estar hoy toreando**". El torero recordó con emoción que, de no haber estado en sus manos tras aquella cornada, su carrera no habría tenido continuidad. "**Jaén supone para mí algo muy especial, es una tierra donde me siento querido y en la que me encanta torear**", afirmó el diestro, visiblemente emocionado.
+
+El acto estuvo moderado por **D. José Luis Marín Weil** y contó también con la intervención del presidente de la Asociación Taurina de Aficionados Prácticos de Jaén, **D. Antonio González**, quien subrayó la importancia de recuperar estos espacios de encuentro y reflexión taurina, y el significado de hacerlo con una figura tan vinculada a la afición local como David Galván.
+
+Una noche para el recuerdo, en la que Jaén y Galván volvieron a encontrarse, reafirmando un vínculo forjado en la adversidad y fortalecido por el tiempo, un triunfo y la emoción compartida.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 115,
     title: `Festival Taurino Mixto a beneficio de la rehabilitación de la Plaza de Toros de Quintanar de la Orden`,
     image: "/images/0657.jpg",
