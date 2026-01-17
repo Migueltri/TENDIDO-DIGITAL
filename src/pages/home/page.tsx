@@ -450,6 +450,34 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Un capote inédito pintado por Fernando Botero sale a la luz tras más de dos décadas de silencio`,
+    image: "/images/Entrega Capote F. Caja Rural del Sur.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	excerpt: "El capote fue entregado recientemente a la Fundación Social y Cultural Caja Rural del Sur por José Manuel Cárdenas, conocido como “Mame”, destinatario de la dedicatoria original del artista, en la que puede leerse: “A Mame Botero 2001”",
+	fullContent: `**Sevilla** se convierte en el escenario del redescubrimiento de una obra singular y hasta ahora desconocida del maestro **Fernando Botero**. Se trata de **un capote de torero pintado y dedicado por el artista colombiano en el año 2001, una pieza inédita** que ha permanecido alejada del ámbito público durante más de veinte años y que hoy ve la luz bajo la custodia de la **Fundación Social y Cultural Caja Rural del Sur**.
+
+El capote fue **entregado recientemente** a la entidad por **José Manuel Cárdenas**, conocido como **“Mame”**, destinatario de la dedicatoria original del artista, en la que puede leerse: *“A Mame Botero 2001”*. Esta inscripción, junto con la singularidad del soporte y la autoría, vincula la obra de manera directa con la biografía personal y artística de **Botero**.
+
+La pieza destaca por la confluencia de **tres elementos** de especial relevancia: **la firma de uno de los grandes nombres del arte contemporáneo, su carácter absolutamente inédito y el prolongado silencio que ha rodeado su existencia desde su creación**. A ello se suma un contexto institucional y geográfico que refuerza su interés, al quedar depositada en **Sevilla**, ciudad estrechamente ligada a la tradición taurina.
+
+Desde el punto de vista artístico, el capote de brega -*confeccionado por la prestigiosa sastrería sevillana Pedro Algaba, cuyo sello se conserva en la tela interior amarilla*- se transforma en **un auténtico lienzo bajo la mirada de Botero**. Sobre el fondo amarillo característico, **el artista despliega una escena taurina de gran fuerza plástica**: un toro monumental, de proporciones exageradas y contornos suavemente redondeados, domina el espacio de la plaza. Sus cuernos curvos y su expresión desafiante transmiten
+
+poder y solemnidad, mientras el público que lo rodea aporta equilibrio y calma a la composición.
+
+**La obra se encuentra en perfecto estado de conservación. Está firmada y fechada en 2001**, dedicada a su propietario y protegida mediante un enmarcado de madera con cristal, lo que ha garantizado su preservación a lo largo del tiempo.
+
+El origen de este capote pintado se sitúa en una estrecha relación personal. **José Manuel Cárdenas** mantiene una amistad de larga data con **Lina Botero**, hija del artista, derivada de su matrimonio con el español **Rodrigo Sánchez Arjona**, amigo de infancia del propietario de la obra. Fruto de esta relación, el matrimonio llegó incluso a convertirse en padrino de la hija de **Cárdenas**. En ese contexto de cercanía, **Lina Botero** trasladó el capote a **París**, ciudad donde **Fernando Botero** residía desde 1992, para que el maestro lo pintara y se lo dedicara expresamente a su amigo **“Mame”**.
+
+**Desde su creación en 2001**, la obra **ha permanecido siempre en manos de su legítimo propietario**, cuidadosamente custodiada en su domicilio particular, **hasta su reciente entrega a la Fundación Social y Cultural Caja Rural del Sur**.
+
+La aparición pública de este capote supone no solo el descubrimiento de una pieza desconocida de **Fernando Botero**, sino también **un punto de encuentro entre arte y tauromaquia, dos universos que el artista supo interpretar con una mirada única y reconocible**. Su presentación abre una nueva ventana al legado del creador colombiano y aporta un valioso testimonio a su relación con **España** y su cultura.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `Borja Jiménez, homenaje a la excelencia taurina en Cieza`,
     image: "/images/borjaa.jpg",
     category: "Actualidad",
@@ -466,7 +494,7 @@ Gracias al trabajo incansable, la constancia y la confianza en sí mismo, Borja 
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `El Carnaval de Ciudad Rodrigo prolongará su Festival Taurino con una clase práctica inédita protagonizada por Moises Fraile`,
     image: "/images/carnaval.jpg",
     category: "Actualidad",
@@ -483,7 +511,7 @@ Previamente, la jornada contará con el atractivo de los nombres consagrados que
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Aplazada por motivos meteorológicos la clase práctica de Valdesaz`,
     image: "/images/aplazada.jpg",
     category: "Actualidad",
@@ -500,7 +528,7 @@ La nueva fecha de celebración será comunicada próximamente, una vez mejoren l
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Guillena abre la temporada en Sevilla el próximo 22 de febrero`,
     image: "/images/guillena.jpg",
     category: "Actualidad",
@@ -517,7 +545,7 @@ La organización del festejo ha corrido a cargo del empresario local **Manuel Ex
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `Galván y Jaén: Una historia de superación`,
     image: "/images/galvan.jpg",
     category: "Actualidad",
@@ -541,6 +569,34 @@ Una noche para el recuerdo, en la que Jaén y Galván volvieron a encontrarse, r
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 109,
+    title: `Un capote inédito pintado por Fernando Botero sale a la luz tras más de dos décadas de silencio`,
+    image: "/images/Entrega Capote F. Caja Rural del Sur.jpg",
+    category: "Actualidad",
+    date: "17 de Enero de 2026",
+	excerpt: "El capote fue entregado recientemente a la Fundación Social y Cultural Caja Rural del Sur por José Manuel Cárdenas, conocido como “Mame”, destinatario de la dedicatoria original del artista, en la que puede leerse: “A Mame Botero 2001”",
+	fullContent: `**Sevilla** se convierte en el escenario del redescubrimiento de una obra singular y hasta ahora desconocida del maestro **Fernando Botero**. Se trata de **un capote de torero pintado y dedicado por el artista colombiano en el año 2001, una pieza inédita** que ha permanecido alejada del ámbito público durante más de veinte años y que hoy ve la luz bajo la custodia de la **Fundación Social y Cultural Caja Rural del Sur**.
+
+El capote fue **entregado recientemente** a la entidad por **José Manuel Cárdenas**, conocido como **“Mame”**, destinatario de la dedicatoria original del artista, en la que puede leerse: *“A Mame Botero 2001”*. Esta inscripción, junto con la singularidad del soporte y la autoría, vincula la obra de manera directa con la biografía personal y artística de **Botero**.
+
+La pieza destaca por la confluencia de **tres elementos** de especial relevancia: **la firma de uno de los grandes nombres del arte contemporáneo, su carácter absolutamente inédito y el prolongado silencio que ha rodeado su existencia desde su creación**. A ello se suma un contexto institucional y geográfico que refuerza su interés, al quedar depositada en **Sevilla**, ciudad estrechamente ligada a la tradición taurina.
+
+Desde el punto de vista artístico, el capote de brega -*confeccionado por la prestigiosa sastrería sevillana Pedro Algaba, cuyo sello se conserva en la tela interior amarilla*- se transforma en **un auténtico lienzo bajo la mirada de Botero**. Sobre el fondo amarillo característico, **el artista despliega una escena taurina de gran fuerza plástica**: un toro monumental, de proporciones exageradas y contornos suavemente redondeados, domina el espacio de la plaza. Sus cuernos curvos y su expresión desafiante transmiten
+
+poder y solemnidad, mientras el público que lo rodea aporta equilibrio y calma a la composición.
+
+**La obra se encuentra en perfecto estado de conservación. Está firmada y fechada en 2001**, dedicada a su propietario y protegida mediante un enmarcado de madera con cristal, lo que ha garantizado su preservación a lo largo del tiempo.
+
+El origen de este capote pintado se sitúa en una estrecha relación personal. **José Manuel Cárdenas** mantiene una amistad de larga data con **Lina Botero**, hija del artista, derivada de su matrimonio con el español **Rodrigo Sánchez Arjona**, amigo de infancia del propietario de la obra. Fruto de esta relación, el matrimonio llegó incluso a convertirse en padrino de la hija de **Cárdenas**. En ese contexto de cercanía, **Lina Botero** trasladó el capote a **París**, ciudad donde **Fernando Botero** residía desde 1992, para que el maestro lo pintara y se lo dedicara expresamente a su amigo **“Mame”**.
+
+**Desde su creación en 2001**, la obra **ha permanecido siempre en manos de su legítimo propietario**, cuidadosamente custodiada en su domicilio particular, **hasta su reciente entrega a la Fundación Social y Cultural Caja Rural del Sur**.
+
+La aparición pública de este capote supone no solo el descubrimiento de una pieza desconocida de **Fernando Botero**, sino también **un punto de encuentro entre arte y tauromaquia, dos universos que el artista supo interpretar con una mirada única y reconocible**. Su presentación abre una nueva ventana al legado del creador colombiano y aporta un valioso testimonio a su relación con **España** y su cultura.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 110,
     title: `Borja Jiménez, homenaje a la excelencia taurina en Cieza`,
     image: "/images/borjaa.jpg",
