@@ -545,7 +545,14 @@ Una vez finalizado el periodo de renovación, la adquisición de los abonos grat
 
 En taquillas, para los abonos de jubilados.
 
-Exclusivamente online, a través de la web [www.las-ventas.com](http://www.las-ventas.com) , para los abonos jóvenes sobrantes.
+Exclusivamente online, a través de la web <a
+  www.las-ventas.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.las-ventas.com
+</a> , para los abonos jóvenes sobrantes.
 
 Además, los jóvenes podrán abonarse en otras zonas de la plaza con precios súper reducidos. En el caso del público general, el abono de temporada completa ofrece un 20 % de descuento respecto a los precios de corridas de toros y novilladas. Este descuento se incrementa hasta el 25 % para parados de larga duración que acrediten dicha condición, y hasta el 30 % en localidades reservadas para personas con movilidad reducida (sillas de ruedas).`,
     author: "Eduardo Elvira",
@@ -568,7 +575,14 @@ Por su parte, el festejo de rejones del 8 de marzo estará encabezado por **Dieg
 
 La Feria del Milagro reafirma así su apuesta por carteles de máximo nivel, consolidándose como una de las grandes citas del arranque de la campaña taurina.
 
-Las entradas pueden adquirirse de forma online en [www.maxitoro.com](http://www.maxitoro.com) y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
+Las entradas pueden adquirirse de forma online en 	<a
+  www.maxitoro.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.maxitoro.com
+</a> y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -706,7 +720,14 @@ Una vez finalizado el periodo de renovación, la adquisición de los abonos grat
 
 En taquillas, para los abonos de jubilados.
 
-Exclusivamente online, a través de la web [www.las-ventas.com](http://www.las-ventas.com) , para los abonos jóvenes sobrantes.
+Exclusivamente online, a través de la web <a
+  www.las-ventas.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.las-ventas.com
+</a> , para los abonos jóvenes sobrantes.
 
 Además, los jóvenes podrán abonarse en otras zonas de la plaza con precios súper reducidos. En el caso del público general, el abono de temporada completa ofrece un 20 % de descuento respecto a los precios de corridas de toros y novilladas. Este descuento se incrementa hasta el 25 % para parados de larga duración que acrediten dicha condición, y hasta el 30 % en localidades reservadas para personas con movilidad reducida (sillas de ruedas).`,
     author: "Eduardo Elvira",
@@ -729,7 +750,14 @@ Por su parte, el festejo de rejones del 8 de marzo estará encabezado por **Dieg
 
 La Feria del Milagro reafirma así su apuesta por carteles de máximo nivel, consolidándose como una de las grandes citas del arranque de la campaña taurina.
 
-Las entradas pueden adquirirse de forma online en [www.maxitoro.com](http://www.maxitoro.com) y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
+Las entradas pueden adquirirse de forma online en 	<a
+  www.maxitoro.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.maxitoro.com
+</a> y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
