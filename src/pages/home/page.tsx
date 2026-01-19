@@ -450,125 +450,324 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Un capote inédito pintado por Fernando Botero sale a la luz tras más de dos décadas de silencio`,
-    image: "/images/Entrega Capote F. Caja Rural del Sur.jpg",
+    title: `José Garrido dona un vestido de luces a la Virgen del Silencio de Azuaga`,
+    image: "/images/jose garrido.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	excerpt: "El capote fue entregado recientemente a la Fundación Social y Cultural Caja Rural del Sur por José Manuel Cárdenas, conocido como “Mame”, destinatario de la dedicatoria original del artista, en la que puede leerse: “A Mame Botero 2001”",
-	fullContent: `**Sevilla** se convierte en el escenario del redescubrimiento de una obra singular y hasta ahora desconocida del maestro **Fernando Botero**. Se trata de **un capote de torero pintado y dedicado por el artista colombiano en el año 2001, una pieza inédita** que ha permanecido alejada del ámbito público durante más de veinte años y que hoy ve la luz bajo la custodia de la **Fundación Social y Cultural Caja Rural del Sur**.
+    date: "19 de Enero de 2026",
+	excerpt: "El matador de toros extremeño cede una de sus piezas más personales para ser convertida en la saya que lucirá la Sagrada Titular cada Miércoles Santo",
+	fullContent: `El matador de toros José Garrido ha hecho oficial la donación de uno de sus trajes de luces a la Sección del Santísimo Cristo de la Expiración y María Santísima del Silencio de Azuaga. Este gesto, nacido de la devoción y el compromiso del diestro, permitirá que el vestido sea transformado en una saya para la Santísima Virgen, enriqueciendo así el patrimonio artístico y religioso de la Hermandad.
 
-El capote fue **entregado recientemente** a la entidad por **José Manuel Cárdenas**, conocido como **“Mame”**, destinatario de la dedicatoria original del artista, en la que puede leerse: *“A Mame Botero 2001”*. Esta inscripción, junto con la singularidad del soporte y la autoría, vincula la obra de manera directa con la biografía personal y artística de **Botero**.
+ 
 
-La pieza destaca por la confluencia de **tres elementos** de especial relevancia: **la firma de uno de los grandes nombres del arte contemporáneo, su carácter absolutamente inédito y el prolongado silencio que ha rodeado su existencia desde su creación**. A ello se suma un contexto institucional y geográfico que refuerza su interés, al quedar depositada en **Sevilla**, ciudad estrechamente ligada a la tradición taurina.
+Un vínculo de fe y tradición
 
-Desde el punto de vista artístico, el capote de brega -*confeccionado por la prestigiosa sastrería sevillana Pedro Algaba, cuyo sello se conserva en la tela interior amarilla*- se transforma en **un auténtico lienzo bajo la mirada de Botero**. Sobre el fondo amarillo característico, **el artista despliega una escena taurina de gran fuerza plástica**: un toro monumental, de proporciones exageradas y contornos suavemente redondeados, domina el espacio de la plaza. Sus cuernos curvos y su expresión desafiante transmiten
+ 
 
-poder y solemnidad, mientras el público que lo rodea aporta equilibrio y calma a la composición.
+La pieza, que ha acompañado a Garrido en momentos clave de su carrera, adquirirá una "nueva vida" cargada de simbolismo. Según ha expresado la propia Junta de Gobierno de la corporación, la prenda se convertirá en un testimonio de fe y sacrificio, formando parte de la vestimenta que la Amantísima Titular lucirá en su estación de penitencia cada noche de Miércoles Santo.
 
-**La obra se encuentra en perfecto estado de conservación. Está firmada y fechada en 2001**, dedicada a su propietario y protegida mediante un enmarcado de madera con cristal, lo que ha garantizado su preservación a lo largo del tiempo.
+ 
 
-El origen de este capote pintado se sitúa en una estrecha relación personal. **José Manuel Cárdenas** mantiene una amistad de larga data con **Lina Botero**, hija del artista, derivada de su matrimonio con el español **Rodrigo Sánchez Arjona**, amigo de infancia del propietario de la obra. Fruto de esta relación, el matrimonio llegó incluso a convertirse en padrino de la hija de **Cárdenas**. En ese contexto de cercanía, **Lina Botero** trasladó el capote a **París**, ciudad donde **Fernando Botero** residía desde 1992, para que el maestro lo pintara y se lo dedicara expresamente a su amigo **“Mame”**.
+Este legado quedará para siempre unido a la historia de la Sagrada Titular, contribuyendo de manera notable al engrandecimiento de la Semana Santa del municipio.
 
-**Desde su creación en 2001**, la obra **ha permanecido siempre en manos de su legítimo propietario**, cuidadosamente custodiada en su domicilio particular, **hasta su reciente entrega a la Fundación Social y Cultural Caja Rural del Sur**.
+ 
 
-La aparición pública de este capote supone no solo el descubrimiento de una pieza desconocida de **Fernando Botero**, sino también **un punto de encuentro entre arte y tauromaquia, dos universos que el artista supo interpretar con una mirada única y reconocible**. Su presentación abre una nueva ventana al legado del creador colombiano y aporta un valioso testimonio a su relación con **España** y su cultura.`,
+Cita clave: 14 de marzo en Azuaga
+
+ 
+
+Como muestra de gratitud por este acto altruista, la Hermandad ha nombrado a José Garrido Hermano de pleno derecho de la Corporación. La oficialización de este vínculo tendrá lugar el próximo 14 de marzo en la Parroquia de Nuestra Señora de la Consolación de Azuaga, durante los Cultos en honor a los Sagrados Titulares.
+
+ 
+
+Durante este acto, se llevarán a cabo dos momentos de especial relevancia:
+
+ 
+
+1. Imposición de medallas: Donde el matador será recibido oficialmente como nuevo miembro de la Hermandad.
+
+2. Exposición del traje: Se presentará el vestido de luces original a todos los hermanos y al pueblo de Azuaga, compartiendo con alegría este acontecimiento histórico para la localidad`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `Borja Jiménez, homenaje a la excelencia taurina en Cieza`,
-    image: "/images/borjaa.jpg",
+    title: `David de Miranda cautiva en Salamanca en una extraordinaria ‘MasterClass TOROS’`,
+    image: "/images/3 MCT.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	fullContent: `El pasado viernes 16 de enero, el Teatro Capitol de Cieza, en su emblemática Sala Manuela Burló, se convirtió en un auténtico altar del toreo. 
+    date: "19 de Enero de 2026",
+	footerImage1: "/images/6 MCT.jpg",
+	footerImage2: "/images/2 MCT.jpg",
+	excerpt: "El diestro onubense protagonizó la primera sesión celebrada en el Museo Taurino de Salamanca, presentada por el periodista Javier Lorenzo",
+	fullContent: `El diestro onubense **David de Miranda** se desplazó a **Salamanca** **-17 de enero-** para protagonizar un encuentro con cerca de medio centenar de aficionados inscritos en un curso de formación y difusión taurina que se desarrolló en la capital charra hasta el mes de abril.
 
-Aficionados y figuras del arte taurino se dieron cita en un acto que combinó emoción, respeto y reconocimiento. La Asociación Cultural Cieza Taurina hizo entrega del Premio a la Mejor Temporada 2025, galardón que este año recayó en Borja Jiménez, cuya carrera ha brillado con luz propia.
+**David de Miranda** fue el eje central de la **primera sesión** reservada exclusivamente a los alumnos de la **V Edición de MasterClass TOROS @JavierLorenzomv**, tras una jornada inaugural de puertas abiertas que, la semana anterior, había contado con la participación del ganadero salmantino **Justo Hernández**, de la divisa **Garcigrande**.
 
-Junto a Manolo Guillén, Borja logró una conexión mágica con el público, arrancando aplausos y gestos de admiración en cada instante. Durante su intervención, el diestro compartió sus años de lucha y sacrificio, cuando no toreaba y pasaba cada día entrenando, pero nunca perdió la fe en su vocación.
+La cita tuvo lugar en el **Museo Taurino de Salamanca** y reunió a los 40 alumnos que agotaron las plazas en tiempo récord. Durante el encuentro, el torero de **Trigueros** cautivó a los asistentes con el relato de una trayectoria marcada por la superación personal, el esfuerzo y la constancia.
 
-Gracias al trabajo incansable, la constancia y la confianza en sí mismo, Borja Jiménez ha alcanzado la cúspide del escalafón taurino, consolidándose como uno de los grandes referentes de la temporada y dejando en Cieza una noche que será recordada por mucho tiempo.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/tendidodigitallogosimple.jpg",
+La sesión se estructuró en dos partes. En la primera, **Javier Lorenzo**, director y productor de **MasterClass TOROS**, realizó un exhaustivo análisis de la carrera profesional de **David de Miranda**, apoyándose en cifras e hitos significativos.
+
+Una trayectoria que ya alcanzaba las **120 corridas de toros**, con plazas emblemáticas en las que destacó especialmente **Huelva** como su gran bastión, además de los aldabonazos de las **‘Puertas Grandes’** de **Madrid** y de la **Real Maestranza de Sevilla**. También se abordaron campañas clave como las de **2019** y **2025**, así como su reciente y exitoso paso por la **Feria del Café de Manizales**, de la que salió como **máximo triunfador** y ganador los prestigiosos trofeos de la **‘Catedral de Manizales’** y **‘El Voceador de la Patria’**.
+
+Durante la sesión, **David de Miranda** pudo sostener entre sus manos el mismo galardón que obtuviera **Julio Robles** en 1985, expuesto junto al legado del maestro salmantino en la sala que lleva su nombre dentro del **Museo Taurino**, espacio en el que se celebraron semanalmente las clases de este curso impulsado por el **Ayuntamiento de Salamanca**.
+
+El análisis de su trayectoria desembocó en el estudio de su actuación en la plaza de toros de **La Malagueta**, considerada el punto culminante de su temporada 2025, donde la regularidad en el triunfo se erigió como su principal aval. En relación a aquella tarde,
+
+el propio torero reconoció que **“realmente no fui consciente de la repercusión de la faena hasta que pasaron unos días, cuando escuchaba a los aficionados y ya todas las empresas me querían contratar”**. Esta faena centró buena parte de la jornada, desgranándose sus claves, su impacto mediático y su trascendencia en el relanzamiento de su carrera.
+
+La sesión dio paso posteriormente a una entrevista en profundidad en la que **David de Miranda** analizó de primera mano su momento profesional, sin dejar de lado episodios especialmente duros de su trayectoria. Entre ellos, recordó un pasaje crítico que, según confesó, le uniría para siempre con **Salamanca**: la grave lesión vertebral sufrida tras un percance en **Toro** **-Zamora 2017-**, cuando apenas contaba con un año de alternativa. Aquel día, **“sin sentir nada de mi cuerpo de hombros para abajo”**, fue trasladado de urgencia al **Hospital de Salamanca**, donde permaneció ingresado más de dos semanas tras una intervención de extrema complejidad que finalmente resultó exitosa.
+
+Sobre aquel episodio, el torero afirmó con emoción que **“pase lo que pase en mi vida, ya siempre llevaré a Salamanca en mi corazón”**, expresando además su deseo intacto de poder hacer algún día el paseíllo en **La Glorieta**. **“Aquello fue tremendo, el percance muy incierto porque podía haber pasado lo peor, pero lo que recuerdo realmente duro de verdad fue tener que pasar casi un año sin poder torear”**, explicó.
+
+De aquella recuperación casi milagrosa, del largo periodo de inactividad, de la travesía profesional que precedió a su explosión definitiva en 2025 y de la repercusión alcanzada, que le situó en el circuito de las grandes ferias de 2026, **David de Miranda** fue desgranando los principales capítulos de una carrera que alcanzará el próximo 5 de agosto el décimo aniversario de su alternativa.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `El Carnaval de Ciudad Rodrigo prolongará su Festival Taurino con una clase práctica inédita protagonizada por Moises Fraile`,
-    image: "/images/carnaval.jpg",
+    title: `Mañana finaliza el plazo de renovación de los abonos de temporada 2026 en Las Ventas`,
+    image: "/images/acre.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	fullContent: `El Ayuntamiento de Ciudad Rodrigo ha dado un paso significativo en la configuración del sábado grande del Carnaval al introducir una novedad de marcado carácter simbólico y formativo. El Festival Taurino de la tarde no concluirá con el último paseíllo, sino que **tendrá continuidad mediante una clase práctica a cargo de la Escuela de Tauromaquia de Galapagar**, un hecho inédito hasta la fecha en el coso mirobrigense.
+    date: "19 de Enero de 2026",
+	footerImage1: "/images/abonos.jpg",
+	fullContent: `El plazo de renovación de los abonos de temporada completa finaliza mañana, **martes 20 de enero** . Este abono permitirá presenciar la totalidad de los festejos taurinos que se celebrarán durante la temporada 2026 en la Plaza de Toros de Las Ventas, incluidos los correspondientes a la **Feria de San Isidro y la Feria de Otoño**.
 
-La iniciativa adquiere especial relevancia con la presencia de **Moisés Fraile**, alumno encargado de lidiar el eral al término del festival. Su participación trasciende el ámbito estrictamente formativo, **al tratarse del hijo y nieto de los ganaderos de El Pilar**, una de las divisas más reconocidas del campo charro. Portador de un apellido con profundo arraigo en la cabaña brava salmantina, su actuación se presenta como un símbolo de continuidad generacional y proyección de futuro.
+Plaza 1 mantiene nuevamente el carácter gratuito de dos cupos especiales:
 
-Moisés Fraile llega a esta cita avalado por una destacada trayectoria reciente, tras haber cortado un rabo el pasado mes de septiembre en el certamen organizado por la Escuela Taurina de Salamanca, donde se ha consolidado como uno de sus alumnos más destacados pese a contar con tan solo 14 años.
+**2.100 abonos para jubilados**, ubicados en localidades de andanadas de sombra y sol y sombra.
 
-Previamente, la jornada contará con el atractivo de los nombres consagrados que integran el cartel del festival. **Diego Urdiales, Alejandro Talavante, Pablo Aguado y El Mene lidiarán cuatro utreros de la ganadería de Talavante**, aportando el peso artístico y la dimensión mediática a una tarde de especial significado.`,
+**700 abonos para jóvenes de hasta 25 años (nacidos en el año 2000 y posteriores), en localidades de las filas 1 a 7 de las andanadas de los tendidos 5 y 6.**
+
+Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas hasta este martes 20 de enero.
+
+Una vez finalizado el periodo de renovación, la adquisición de los abonos gratuitos que queden disponibles se realizará el **22 de enero**:
+
+En taquillas, para los abonos de jubilados.
+
+Exclusivamente online, a través de la web [www.las-ventas.com](http://www.las-ventas.com) , para los abonos jóvenes sobrantes.
+
+Además, los jóvenes podrán abonarse en otras zonas de la plaza con precios súper reducidos. En el caso del público general, el abono de temporada completa ofrece un 20 % de descuento respecto a los precios de corridas de toros y novilladas. Este descuento se incrementa hasta el 25 % para parados de larga duración que acrediten dicha condición, y hasta el 30 % en localidades reservadas para personas con movilidad reducida (sillas de ruedas).`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1003,
-    title: `Aplazada por motivos meteorológicos la clase práctica de Valdesaz`,
-    image: "/images/aplazada.jpg",
+    title: `Ambientazo en la apertura de taquillas de la Feria del Milagro de Illescas`,
+    image: "/images/ambientazo.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	fullContent: `La **clase práctica extraordinaria** prevista para el próximo **17 de enero** en la localidad de **Valdesaz**, incluida en la programación de la temporada **2026**, ha sido aplazada debido a las **adversas condiciones meteorológicas**.
+    date: "19 de Enero de 2026",
+	fullContent: `La Feria del Milagro de Illescas, uno de los ciclos más relevantes de la temporada taurina europea, ha abierto este lunes sus taquillas físicas con una notable afluencia de aficionados. , las colas desde primera hora de la mañana reflejan la expectación generada por el serial.
 
-El festejo, organizado por la **Escuela Taurina de Guadalajara**, estaba anunciado para las **12:00 horas** y contemplaba la lidia de novillos de la finca **Valtaja**, con la participación de alumnos pertenecientes a diferentes escuelas taurinas. Se trataba de una jornada de carácter formativo y con **entrada gratuita**.
+La empresa MaxiToro ha acompañado la apertura con un diseño especial de taquillas en gran formato, protagonizadas por los toreros anunciados en los distintos festejos, acercando así el ambiente de la feria al público.
 
-Desde la organización se ha informado de que la decisión se ha adoptado atendiendo a criterios de seguridad, **tanto para los actuantes como para el público asistente**, así como con el objetivo de garantizar el correcto desarrollo del espectáculo.
+La Corrida del Milagro, prevista para el **14 de marzo** , presenta un cartel de gran interés que combina figuras consolidadas y valores emergentes. **José María Manzanares, Juan Ortega y el joven Víctor Hernández** —una de las revelaciones de la pasada temporada— harán el paseíllo frente a un encierro de **Domingo Hernández y Román Sorando.**
 
-La nueva fecha de celebración será comunicada próximamente, una vez mejoren las condiciones meteorológicas, manteniéndose íntegramente el cartel anunciado inicialmente.`,
+Por su parte, el festejo de rejones del 8 de marzo estará encabezado por **Diego Ventura, acompañado por Andy Cartagena y Rui Fernandes, con toros de El Capea** , hierro de contrastada regularidad en esta plaza.
+
+La Feria del Milagro reafirma así su apuesta por carteles de máximo nivel, consolidándose como una de las grandes citas del arranque de la campaña taurina.
+
+Las entradas pueden adquirirse de forma online en [www.maxitoro.com](http://www.maxitoro.com) y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1004,
-    title: `Guillena abre la temporada en Sevilla el próximo 22 de febrero`,
-    image: "/images/guillena.jpg",
+    title: `Villita y Miguel Cubillo ponen fin a su relación de apoderamiento`,
+    image: "/images/villita.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	fullContent: `La localidad sevillana de Guillena tenía programado para el pasado mes de octubre un festival taurino pero las inclemencias meteorológicas obligaron a aplazarlos y la nueva fecha es el próximo día 22 de febrero un acontecimiento benéfico en el que se unirá la tauromaquia y el cante flamenco.
+    date: "19 de Enero de 2026",
+	fullContent: `El matador de toros **Juan José Villa ‘Villita’ y Miguel Cubillo** han decidido dar por finalizada su relación de apoderamiento, una etapa profesional que concluye desde el respeto, el cariño y una sincera amistad entre ambos. Esta decisión ha sido tomada de común acuerdo, con el propósito de que cada uno pueda seguir avanzando en sus respectivos caminos profesionales.
 
-La III edición del festival taurino de **Guillena** a beneficio de la familia de Loli Romero Florido, vecina de la localidad que perdió la vista en un incendio que ocurrió hace varios meses en su vivienda ubicada en Alcalá de Guadaíra.
-
-El cartel está compuesto con novillos de Espartaco para **Jesulín de Ubrique**, **Manuel Jesús ‘El Cid’**, **David Fandila ‘El Fandi’**, **Manuel Escribano**, **Ginés Marín** y el novillero **Javier Torres ‘Bombita’**. El festival contará con la actuación de **Paco Candela**.
-
-La organización del festejo ha corrido a cargo del empresario local **Manuel Expósito**, junto a **Jorge Cutiño** gerente de la empresa **Arenas de San Nicasio**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Durante el tiempo que han trabajado juntos se han cumplido los objetivos marcados por ambas partes, siempre desde la confianza y la dedicación mutua. De este modo, Villita ha querido agradecer todo lo que Miguel Cubillo le ha aportado durante esta etapa, tanto en el ámbito profesional como en el personal, por lo que el diestro ha señalado en el comunicado que ‘permanecerá una amistad para siempre’.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1005,
-    title: `Galván y Jaén: Una historia de superación`,
-    image: "/images/galvan.jpg",
+    title: `Paco Ureña, triunfador en los Premios del Club Taurino de Lorca.`,
+    image: "/images/triunfador.jpg",
     category: "Actualidad",
-    date: "17 de Enero de 2026",
-	fullContent: `En la noche de ayer, **16 de enero**, en vísperas de la festividad de San Antón, la ciudad de **Jaén** vivió una velada cargada de emoción y simbolismo. El salón del Hotel Xauen registró un lleno absoluto para recibir al diestro gaditano **David Galván**, protagonista del regreso de las tertulias taurinas organizadas por la **Asociación Taurina de Aficionados Prácticos de Jaén**, que retomaba estas jornadas tras varios años de inactividad.
+    date: "19 de Enero de 2026",
+	fullContent: `El diestro lorquino Paco Ureña fue el gran protagonista de la gala de entrega de los Premios de la temporada 2025 del Club Taurino de Lorca, celebrada el pasado domingo 18 de enero en el restaurante Los Cazorlos. El acto reunió a más de 500 personas entre aficionados, socios y protagonistas del mundo del toro.
 
-La vuelta no podía ser con otro nombre. Tal y como señalaron los organizadores, debía ser con el torero que cortó las dos orejas al último toro de la pasada Feria de San Juan, y con una figura profundamente unida a la historia reciente de Jaén. Porque la relación de David Galván con esta tierra es, ante todo, una historia humana y de superación.
+La ceremonia estuvo presidida por el presidente del Club Taurino de Lorca, Juan Coronel, quien fue el encargado de entregar los distintos galardones. Entre los asistentes destacaron también el alcalde de Lorca, Fulgencio Gil, así como representantes de diferentes clubes y asociaciones taurinas de Lorca y de la Región de Murcia.
 
-El encuentro sirvió para recordar que Jaén tenía una "deuda pendiente" con Galván. El diestro no hacía el paseíllo en Jaén desde octubre de 2013, fecha en la que sufrió una gravísima cornada que conmocionó tanto a la afición jiennense como al panorama taurino nacional. Doce años después, Galván regresaba a la Feria de San Lucas, cerrando un círculo vital y profesional que tuvo ayer uno de sus momentos más emotivos.
+Los premios se distribuyeron de la siguiente manera: Paco Ureña recibió el galardón a triunfador del Coso de Sutullena, tras haber salido a hombros en dos tardes. 
 
-Durante la charla-coloquio, David Galván quiso expresar públicamente su agradecimiento al **Dr. Rafael Fuentes**, presente en el acto, destacando que "**gracias a él y a su equipo puedo estar hoy toreando**". El torero recordó con emoción que, de no haber estado en sus manos tras aquella cornada, su carrera no habría tenido continuidad. "**Jaén supone para mí algo muy especial, es una tierra donde me siento querido y en la que me encanta torear**", afirmó el diestro, visiblemente emocionado.
+Por su parte, Álvaro Núñez fue reconocido con el premio a la mejor ganadería, gracias a la gran corrida lidiada en Lorca el pasado mes de septiembre, en la que sobresalió especialmente el quinto toro, de nombre “Campinero”.
+Fernando Robleño fue distinguido por su ejemplar trayectoria profesional, tras cumplir 25 años de alternativa, mientras que Javier Castaño recibió un reconocimiento por toda una vida dedicada al toreo.
 
-El acto estuvo moderado por **D. José Luis Marín Weil** y contó también con la intervención del presidente de la Asociación Taurina de Aficionados Prácticos de Jaén, **D. Antonio González**, quien subrayó la importancia de recuperar estos espacios de encuentro y reflexión taurina, y el significado de hacerlo con una figura tan vinculada a la afición local como David Galván.
-
-Una noche para el recuerdo, en la que Jaén y Galván volvieron a encontrarse, reafirmando un vínculo forjado en la adversidad y fortalecido por el tiempo, un triunfo y la emoción compartida.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Además, la Comisión de Fiestas de la pedanía lorquina de Ramonete y Antonio Giner, conocido como “Gris”, también fueron homenajeados. Durante la gala se puso en valor el excelente momento que atraviesa el Coso de Sutullena y se destacó la labor del Ayuntamiento de Lorca en favor de la tauromaquia.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 103,
+    title: `José Garrido dona un vestido de luces a la Virgen del Silencio de Azuaga`,
+    image: "/images/jose garrido.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	excerpt: "El matador de toros extremeño cede una de sus piezas más personales para ser convertida en la saya que lucirá la Sagrada Titular cada Miércoles Santo",
+	fullContent: `El matador de toros José Garrido ha hecho oficial la donación de uno de sus trajes de luces a la Sección del Santísimo Cristo de la Expiración y María Santísima del Silencio de Azuaga. Este gesto, nacido de la devoción y el compromiso del diestro, permitirá que el vestido sea transformado en una saya para la Santísima Virgen, enriqueciendo así el patrimonio artístico y religioso de la Hermandad.
+
+ 
+
+Un vínculo de fe y tradición
+
+ 
+
+La pieza, que ha acompañado a Garrido en momentos clave de su carrera, adquirirá una "nueva vida" cargada de simbolismo. Según ha expresado la propia Junta de Gobierno de la corporación, la prenda se convertirá en un testimonio de fe y sacrificio, formando parte de la vestimenta que la Amantísima Titular lucirá en su estación de penitencia cada noche de Miércoles Santo.
+
+ 
+
+Este legado quedará para siempre unido a la historia de la Sagrada Titular, contribuyendo de manera notable al engrandecimiento de la Semana Santa del municipio.
+
+ 
+
+Cita clave: 14 de marzo en Azuaga
+
+ 
+
+Como muestra de gratitud por este acto altruista, la Hermandad ha nombrado a José Garrido Hermano de pleno derecho de la Corporación. La oficialización de este vínculo tendrá lugar el próximo 14 de marzo en la Parroquia de Nuestra Señora de la Consolación de Azuaga, durante los Cultos en honor a los Sagrados Titulares.
+
+ 
+
+Durante este acto, se llevarán a cabo dos momentos de especial relevancia:
+
+ 
+
+1. Imposición de medallas: Donde el matador será recibido oficialmente como nuevo miembro de la Hermandad.
+
+2. Exposición del traje: Se presentará el vestido de luces original a todos los hermanos y al pueblo de Azuaga, compartiendo con alegría este acontecimiento histórico para la localidad`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 104,
+    title: `David de Miranda cautiva en Salamanca en una extraordinaria ‘MasterClass TOROS’`,
+    image: "/images/3 MCT.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	footerImage1: "/images/6 MCT.jpg",
+	footerImage2: "/images/2 MCT.jpg",
+	excerpt: "El diestro onubense protagonizó la primera sesión celebrada en el Museo Taurino de Salamanca, presentada por el periodista Javier Lorenzo",
+	fullContent: `El diestro onubense **David de Miranda** se desplazó a **Salamanca** **-17 de enero-** para protagonizar un encuentro con cerca de medio centenar de aficionados inscritos en un curso de formación y difusión taurina que se desarrolló en la capital charra hasta el mes de abril.
+
+**David de Miranda** fue el eje central de la **primera sesión** reservada exclusivamente a los alumnos de la **V Edición de MasterClass TOROS @JavierLorenzomv**, tras una jornada inaugural de puertas abiertas que, la semana anterior, había contado con la participación del ganadero salmantino **Justo Hernández**, de la divisa **Garcigrande**.
+
+La cita tuvo lugar en el **Museo Taurino de Salamanca** y reunió a los 40 alumnos que agotaron las plazas en tiempo récord. Durante el encuentro, el torero de **Trigueros** cautivó a los asistentes con el relato de una trayectoria marcada por la superación personal, el esfuerzo y la constancia.
+
+La sesión se estructuró en dos partes. En la primera, **Javier Lorenzo**, director y productor de **MasterClass TOROS**, realizó un exhaustivo análisis de la carrera profesional de **David de Miranda**, apoyándose en cifras e hitos significativos.
+
+Una trayectoria que ya alcanzaba las **120 corridas de toros**, con plazas emblemáticas en las que destacó especialmente **Huelva** como su gran bastión, además de los aldabonazos de las **‘Puertas Grandes’** de **Madrid** y de la **Real Maestranza de Sevilla**. También se abordaron campañas clave como las de **2019** y **2025**, así como su reciente y exitoso paso por la **Feria del Café de Manizales**, de la que salió como **máximo triunfador** y ganador los prestigiosos trofeos de la **‘Catedral de Manizales’** y **‘El Voceador de la Patria’**.
+
+Durante la sesión, **David de Miranda** pudo sostener entre sus manos el mismo galardón que obtuviera **Julio Robles** en 1985, expuesto junto al legado del maestro salmantino en la sala que lleva su nombre dentro del **Museo Taurino**, espacio en el que se celebraron semanalmente las clases de este curso impulsado por el **Ayuntamiento de Salamanca**.
+
+El análisis de su trayectoria desembocó en el estudio de su actuación en la plaza de toros de **La Malagueta**, considerada el punto culminante de su temporada 2025, donde la regularidad en el triunfo se erigió como su principal aval. En relación a aquella tarde,
+
+el propio torero reconoció que **“realmente no fui consciente de la repercusión de la faena hasta que pasaron unos días, cuando escuchaba a los aficionados y ya todas las empresas me querían contratar”**. Esta faena centró buena parte de la jornada, desgranándose sus claves, su impacto mediático y su trascendencia en el relanzamiento de su carrera.
+
+La sesión dio paso posteriormente a una entrevista en profundidad en la que **David de Miranda** analizó de primera mano su momento profesional, sin dejar de lado episodios especialmente duros de su trayectoria. Entre ellos, recordó un pasaje crítico que, según confesó, le uniría para siempre con **Salamanca**: la grave lesión vertebral sufrida tras un percance en **Toro** **-Zamora 2017-**, cuando apenas contaba con un año de alternativa. Aquel día, **“sin sentir nada de mi cuerpo de hombros para abajo”**, fue trasladado de urgencia al **Hospital de Salamanca**, donde permaneció ingresado más de dos semanas tras una intervención de extrema complejidad que finalmente resultó exitosa.
+
+Sobre aquel episodio, el torero afirmó con emoción que **“pase lo que pase en mi vida, ya siempre llevaré a Salamanca en mi corazón”**, expresando además su deseo intacto de poder hacer algún día el paseíllo en **La Glorieta**. **“Aquello fue tremendo, el percance muy incierto porque podía haber pasado lo peor, pero lo que recuerdo realmente duro de verdad fue tener que pasar casi un año sin poder torear”**, explicó.
+
+De aquella recuperación casi milagrosa, del largo periodo de inactividad, de la travesía profesional que precedió a su explosión definitiva en 2025 y de la repercusión alcanzada, que le situó en el circuito de las grandes ferias de 2026, **David de Miranda** fue desgranando los principales capítulos de una carrera que alcanzará el próximo 5 de agosto el décimo aniversario de su alternativa.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 105,
+    title: `Mañana finaliza el plazo de renovación de los abonos de temporada 2026 en Las Ventas`,
+    image: "/images/acre.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	footerImage1: "/images/abonos.jpg",
+	fullContent: `El plazo de renovación de los abonos de temporada completa finaliza mañana, **martes 20 de enero** . Este abono permitirá presenciar la totalidad de los festejos taurinos que se celebrarán durante la temporada 2026 en la Plaza de Toros de Las Ventas, incluidos los correspondientes a la **Feria de San Isidro y la Feria de Otoño**.
+
+Plaza 1 mantiene nuevamente el carácter gratuito de dos cupos especiales:
+
+**2.100 abonos para jubilados**, ubicados en localidades de andanadas de sombra y sol y sombra.
+
+**700 abonos para jóvenes de hasta 25 años (nacidos en el año 2000 y posteriores), en localidades de las filas 1 a 7 de las andanadas de los tendidos 5 y 6.**
+
+Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas hasta este martes 20 de enero.
+
+Una vez finalizado el periodo de renovación, la adquisición de los abonos gratuitos que queden disponibles se realizará el **22 de enero**:
+
+En taquillas, para los abonos de jubilados.
+
+Exclusivamente online, a través de la web [www.las-ventas.com](http://www.las-ventas.com) , para los abonos jóvenes sobrantes.
+
+Además, los jóvenes podrán abonarse en otras zonas de la plaza con precios súper reducidos. En el caso del público general, el abono de temporada completa ofrece un 20 % de descuento respecto a los precios de corridas de toros y novilladas. Este descuento se incrementa hasta el 25 % para parados de larga duración que acrediten dicha condición, y hasta el 30 % en localidades reservadas para personas con movilidad reducida (sillas de ruedas).`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 106,
+    title: `Ambientazo en la apertura de taquillas de la Feria del Milagro de Illescas`,
+    image: "/images/ambientazo.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	fullContent: `La Feria del Milagro de Illescas, uno de los ciclos más relevantes de la temporada taurina europea, ha abierto este lunes sus taquillas físicas con una notable afluencia de aficionados. , las colas desde primera hora de la mañana reflejan la expectación generada por el serial.
+
+La empresa MaxiToro ha acompañado la apertura con un diseño especial de taquillas en gran formato, protagonizadas por los toreros anunciados en los distintos festejos, acercando así el ambiente de la feria al público.
+
+La Corrida del Milagro, prevista para el **14 de marzo** , presenta un cartel de gran interés que combina figuras consolidadas y valores emergentes. **José María Manzanares, Juan Ortega y el joven Víctor Hernández** —una de las revelaciones de la pasada temporada— harán el paseíllo frente a un encierro de **Domingo Hernández y Román Sorando.**
+
+Por su parte, el festejo de rejones del 8 de marzo estará encabezado por **Diego Ventura, acompañado por Andy Cartagena y Rui Fernandes, con toros de El Capea** , hierro de contrastada regularidad en esta plaza.
+
+La Feria del Milagro reafirma así su apuesta por carteles de máximo nivel, consolidándose como una de las grandes citas del arranque de la campaña taurina.
+
+Las entradas pueden adquirirse de forma online en [www.maxitoro.com](http://www.maxitoro.com) y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 107,
+    title: `Villita y Miguel Cubillo ponen fin a su relación de apoderamiento`,
+    image: "/images/villita.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	fullContent: `El matador de toros **Juan José Villa ‘Villita’ y Miguel Cubillo** han decidido dar por finalizada su relación de apoderamiento, una etapa profesional que concluye desde el respeto, el cariño y una sincera amistad entre ambos. Esta decisión ha sido tomada de común acuerdo, con el propósito de que cada uno pueda seguir avanzando en sus respectivos caminos profesionales.
+
+Durante el tiempo que han trabajado juntos se han cumplido los objetivos marcados por ambas partes, siempre desde la confianza y la dedicación mutua. De este modo, Villita ha querido agradecer todo lo que Miguel Cubillo le ha aportado durante esta etapa, tanto en el ámbito profesional como en el personal, por lo que el diestro ha señalado en el comunicado que ‘permanecerá una amistad para siempre’.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 108,
+    title: `Paco Ureña, triunfador en los Premios del Club Taurino de Lorca.`,
+    image: "/images/triunfador.jpg",
+    category: "Actualidad",
+    date: "19 de Enero de 2026",
+	fullContent: `El diestro lorquino Paco Ureña fue el gran protagonista de la gala de entrega de los Premios de la temporada 2025 del Club Taurino de Lorca, celebrada el pasado domingo 18 de enero en el restaurante Los Cazorlos. El acto reunió a más de 500 personas entre aficionados, socios y protagonistas del mundo del toro.
+
+La ceremonia estuvo presidida por el presidente del Club Taurino de Lorca, Juan Coronel, quien fue el encargado de entregar los distintos galardones. Entre los asistentes destacaron también el alcalde de Lorca, Fulgencio Gil, así como representantes de diferentes clubes y asociaciones taurinas de Lorca y de la Región de Murcia.
+
+Los premios se distribuyeron de la siguiente manera: Paco Ureña recibió el galardón a triunfador del Coso de Sutullena, tras haber salido a hombros en dos tardes. 
+
+Por su parte, Álvaro Núñez fue reconocido con el premio a la mejor ganadería, gracias a la gran corrida lidiada en Lorca el pasado mes de septiembre, en la que sobresalió especialmente el quinto toro, de nombre “Campinero”.
+Fernando Robleño fue distinguido por su ejemplar trayectoria profesional, tras cumplir 25 años de alternativa, mientras que Javier Castaño recibió un reconocimiento por toda una vida dedicada al toreo.
+
+Además, la Comisión de Fiestas de la pedanía lorquina de Ramonete y Antonio Giner, conocido como “Gris”, también fueron homenajeados. Durante la gala se puso en valor el excelente momento que atraviesa el Coso de Sutullena y se destacó la labor del Ayuntamiento de Lorca en favor de la tauromaquia.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/tendidodigitallogosimple.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 109,
     title: `Un capote inédito pintado por Fernando Botero sale a la luz tras más de dos décadas de silencio`,
     image: "/images/Entrega Capote F. Caja Rural del Sur.jpg",
