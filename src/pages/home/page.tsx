@@ -7170,7 +7170,7 @@ document.body.style.width = "";
 useEffect(() => {
 const timer = setInterval(() => {
 setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-}, 6000);
+}, 3000);
 return () => clearInterval(timer);
 }, [featuredNews.length]);
 
