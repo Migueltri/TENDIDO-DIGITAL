@@ -450,6 +450,22 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `OneToro define su temporada televisiva con Sevilla, Castellón y Arlés como ejes principales.`,
+    image: "/images/one.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `OneToro, el único canal taurino privado tras la salida de Movistar, avanza en la configuración de su temporada televisiva con un calendario que se dividirá en tres tramos: hasta la Feria de Abril, un segundo bloque hasta agosto y un cierre que abarcará septiembre y octubre.
+Entre sus principales objetivos está la retransmisión completa de la Feria de Abril de Sevilla, una opción que la plataforma contempla con optimismo siempre que resulte viable desde el punto de vista económico. La emisión se realizaría en colaboración con Canal Sur, que ofrecería la señal únicamente para Andalucía, aunque el acuerdo aún no está cerrado de forma definitiva.
+Lo que sí está confirmado es la emisión de las dos corridas dominicales de la Feria de la Magdalena de Castellón. El 8 de marzo se televisará el festejo con toros de La Quinta, en el que actuarán Ginés Marín, Aarón Palacio y Javier Zulueta, en una clara apuesta por la juventud. El 15 de marzo llegará el mano a mano entre Alejandro Talavante y Juan Ortega, con toros de Domingo Hernández.
+Además, OneToro mantiene conversaciones con la empresa de Valencia para retransmitir tres festejos de la Feria de Fallas, la primera gran cita taurina de la temporada.
+Fuera de España, la plataforma ya tiene firmado el serial completo de Arlés (Francia), con la emisión de sus cuatro festejos, programados del 3 al 6 de abril.
+La programación se completará con contenidos diferidos, como el formato del “día después” desde Valdemorillo, y conexiones especiales durante el Carnaval del Toro de Ciudad Rodrigo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
     image: "/images/1 (1).jpg",
     category: "Actualidad",
@@ -481,7 +497,7 @@ Por último, en el apartado ganadero, el matador fue claro al afirmar que **“L
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Kilómetro Cero 2026 se celebrará en Valdemorillo con doce nombres para apuntar`,
     image: "/images/km0.jpg",
     category: "Actualidad",
@@ -501,7 +517,7 @@ Los carteles de las dos semifinales se realizarán por sorteo el día de la pres
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Presentación de los carteles del abono de Sevilla 2026`,
     image: "/images/presenta.jpg",
     category: "Actualidad",
@@ -520,7 +536,7 @@ A lo largo de la gala se darán a conocer de manera oficial los carteles que con
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Las Ventas perfila un potente arranque de temporada 2026 con torismo, triunfadores y una confirmación de alternativa`,
     image: "/images/perfila.jpg",
     category: "Actualidad",
@@ -557,7 +573,7 @@ A falta de confirmación oficial y posibles ajustes, los carteles previstos son 
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `El Niño de las Monjas pone fin a su relación de apoderamiento con Amadeo Pitarch y Jesús Rivera`,
     image: "/images/niño.jpg",
     category: "Actualidad",
@@ -573,6 +589,22 @@ El diestro valenciano se encuentra ya inmerso en la preparación de la próxima 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 97,
+    title: `OneToro define su temporada televisiva con Sevilla, Castellón y Arlés como ejes principales.`,
+    image: "/images/one.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `OneToro, el único canal taurino privado tras la salida de Movistar, avanza en la configuración de su temporada televisiva con un calendario que se dividirá en tres tramos: hasta la Feria de Abril, un segundo bloque hasta agosto y un cierre que abarcará septiembre y octubre.
+Entre sus principales objetivos está la retransmisión completa de la Feria de Abril de Sevilla, una opción que la plataforma contempla con optimismo siempre que resulte viable desde el punto de vista económico. La emisión se realizaría en colaboración con Canal Sur, que ofrecería la señal únicamente para Andalucía, aunque el acuerdo aún no está cerrado de forma definitiva.
+Lo que sí está confirmado es la emisión de las dos corridas dominicales de la Feria de la Magdalena de Castellón. El 8 de marzo se televisará el festejo con toros de La Quinta, en el que actuarán Ginés Marín, Aarón Palacio y Javier Zulueta, en una clara apuesta por la juventud. El 15 de marzo llegará el mano a mano entre Alejandro Talavante y Juan Ortega, con toros de Domingo Hernández.
+Además, OneToro mantiene conversaciones con la empresa de Valencia para retransmitir tres festejos de la Feria de Fallas, la primera gran cita taurina de la temporada.
+Fuera de España, la plataforma ya tiene firmado el serial completo de Arlés (Francia), con la emisión de sus cuatro festejos, programados del 3 al 6 de abril.
+La programación se completará con contenidos diferidos, como el formato del “día después” desde Valdemorillo, y conexiones especiales durante el Carnaval del Toro de Ciudad Rodrigo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 98,
     title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
     image: "/images/1 (1).jpg",
