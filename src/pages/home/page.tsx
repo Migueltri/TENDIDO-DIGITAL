@@ -450,180 +450,288 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `José Garrido dona un vestido de luces a la Virgen del Silencio de Azuaga`,
-    image: "/images/jose garrido.jpg",
+    title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
+    image: "/images/1 (1).jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	excerpt: "El matador de toros extremeño cede una de sus piezas más personales para ser convertida en la saya que lucirá la Sagrada Titular cada Miércoles Santo",
-	fullContent: `El matador de toros José Garrido ha hecho oficial la donación de uno de sus trajes de luces a la Sección del Santísimo Cristo de la Expiración y María Santísima del Silencio de Azuaga. Este gesto, nacido de la devoción y el compromiso del diestro, permitirá que el vestido sea transformado en una saya para la Santísima Virgen, enriqueciendo así el patrimonio artístico y religioso de la Hermandad.
+    date: "20 de Enero de 2026",
+	footerImage1: "/images/2 (1).jpg",
+	footerImage2: "/images/3 (1).jpg",
+	excerpt: "El diestro onubense inauguró con magisterio el coloquio programado por la Peña Joselito 'El Gallo' dentro de 'Los lunes taurinos del Hotel Vincci'",
+	fullContent: `El matador de toros onubense **David de Miranda** se erigió en el gran protagonista del coloquio organizado por la **Peña Joselito 'El Gallo'**, celebrado *-19 de enero-* dentro del ciclo **‘Los lunes taurinos del Hotel Vincci’**, en **Granada**. Durante más de una hora de conversación fluida y cercana, el diestro de **Trigueros** desplegó una auténtica lección catedrática sobre la esencia del toreo, su trayectoria profesional y los retos que afronta en el presente y futuro inmediato de su carrera.
 
- 
+El acto estuvo conducido por el presidente de la peña, **Rogelio Muñoz**, el coronel e historiador **Julián Tomás García**, así como por distintos aficionados que participaron activamente en el coloquio. **David de Miranda** respondió con franqueza y profundidad, ofreciendo una visión honesta del oficio de matador de toros.
 
-Un vínculo de fe y tradición
+Al repasar sus inicios, el torero subrayó la importancia que tuvo en su carrera el certamen **‘Huelva busca un torero’**, celebrado en 2011, al que definió como un verdadero trampolín profesional. Posteriormente evocó uno de los momentos más determinantes de su vida taurina: la alternativa, tomada en su ciudad natal en 2016, de manos de **José Tomás**, así como las tardes más relevantes que ha firmado en plazas como **Madrid, Sevilla, Málaga, Huelva y Linares**.
 
- 
+Especial emoción despertó su recuerdo de la grave **lesión cervical sufrida en Toro (Zamora) en 2017**, que lo mantuvo alejado de los ruedos durante un año y marcó un antes y un después en su carrera. Con sinceridad, el diestro afirmó que **“Las cogidas son un trance necesario”**, reconociendo que dejan secuelas físicas y también psicológicas, auténticos **“Fantasmas que son difíciles de superar”**.
 
-La pieza, que ha acompañado a Garrido en momentos clave de su carrera, adquirirá una "nueva vida" cargada de simbolismo. Según ha expresado la propia Junta de Gobierno de la corporación, la prenda se convertirá en un testimonio de fe y sacrificio, formando parte de la vestimenta que la Amantísima Titular lucirá en su estación de penitencia cada noche de Miércoles Santo.
+En el plano conceptual, **David de Miranda** reivindicó una tauromaquia basada en la autenticidad, dejando claro que **“La verdad y la pureza es lo que mejor me define”**. En este sentido, fue rotundo al afirmar que **“Cuando no estás a gusto delante de un toro, no se puede mentir”**, una máxima que resume su forma de entender el toreo.
 
- 
+Aunque reconoció poseer una personalidad muy definida en el ruedo, el onubense confesó su admiración por referentes contemporáneos como **Manolo Cortés, José Tomás, Paco Ojeda y Miguel Ángel Perera**, así como por las grandes figuras históricas del toreo, entre las que destacó a **Joselito ‘El Gallo’, Juan Belmonte y Manolete**.
 
-Este legado quedará para siempre unido a la historia de la Sagrada Titular, contribuyendo de manera notable al engrandecimiento de la Semana Santa del municipio.
+Para **David de Miranda**, la emoción del público no se logra desde la comodidad ni el exceso de técnica, sino desde la entrega total. En su opinión, emocionar exige **“Más compromiso, más riesgo y más arte”**, advirtiendo del **“Peligro de caer en una tauromaquia excesivamente depurada que conduce a la frialdad y la monotonía”**.
 
- 
+Tras proclamarse **triunfador de la feria colombiana de Manizales**, el torero afronta con ilusión una temporada 2026 cargada de compromisos de máximo nivel, con actuaciones previstas en **Venezuela, Jalostotitlán (México), Olivenza, Valencia** -*con la corrida de La Quinta*-, además de un doble compromiso en **Madrid y Sevilla**. En relación con **Granada**, mostró su deseo de volver a la **Monumental de Frascuelo**, confiando en estar anunciado en la **Feria del Corpus**, ya que considera que **“Es un placer y un privilegio hacer el paseíllo en una plaza como Granada”**.
 
-Cita clave: 14 de marzo en Azuaga
+A las puertas de cumplir **diez años como matador de toros**, **David de Miranda** abordó también el apartado de apoderamiento, señalando al maestro **Enrique Ponce** como la persona idónea para dirigir su carrera, tras haber recibido ofrecimientos de grandes empresas y después de la etapa compartida con **Jorge Buendía y José Luis Pereda**. Convencido de la figura del torero-apoderado, aseguró que **“Quién mejor para defenderme que otro torero”** y destacó que **“El maestro Enrique Ponce, con una mirada, te da mucha seguridad”**. No obstante, reconoció que la nueva etapa se afronta **“Desde lo desconocido”**, con la dificultad añadida de estar ligado a un apoderado independiente, sin respaldo directo de grandes casas empresariales.
 
- 
-
-Como muestra de gratitud por este acto altruista, la Hermandad ha nombrado a José Garrido Hermano de pleno derecho de la Corporación. La oficialización de este vínculo tendrá lugar el próximo 14 de marzo en la Parroquia de Nuestra Señora de la Consolación de Azuaga, durante los Cultos en honor a los Sagrados Titulares.
-
- 
-
-Durante este acto, se llevarán a cabo dos momentos de especial relevancia:
-
- 
-
-1. Imposición de medallas: Donde el matador será recibido oficialmente como nuevo miembro de la Hermandad.
-
-2. Exposición del traje: Se presentará el vestido de luces original a todos los hermanos y al pueblo de Azuaga, compartiendo con alegría este acontecimiento histórico para la localidad`,
+Por último, en el apartado ganadero, el matador fue claro al afirmar que **“Los toreros necesitamos materia prima para poder triunfar”**. En este sentido, destacó el hierro de **Juan Pedro Domecq** y otras ganaderías reconocidas **“Valorando especialmente la regularidad que ofrecen como base para el éxito en el ruedo”**.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `David de Miranda cautiva en Salamanca en una extraordinaria ‘MasterClass TOROS’`,
-    image: "/images/3 MCT.jpg",
+    title: `Kilómetro Cero 2026 se celebrará en Valdemorillo con doce nombres para apuntar`,
+    image: "/images/km0.jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	footerImage1: "/images/6 MCT.jpg",
-	footerImage2: "/images/2 MCT.jpg",
-	excerpt: "El diestro onubense protagonizó la primera sesión celebrada en el Museo Taurino de Salamanca, presentada por el periodista Javier Lorenzo",
-	fullContent: `El diestro onubense **David de Miranda** se desplazó a **Salamanca** **-17 de enero-** para protagonizar un encuentro con cerca de medio centenar de aficionados inscritos en un curso de formación y difusión taurina que se desarrolló en la capital charra hasta el mes de abril.
+    date: "20 de Enero de 2026",
+	excerpt: "El certamen de novilladas sin caballos desarrollará su cuarta edición en la plaza de toros de Valdemorillo a con tres festejos en el último fin de semana de febrero",
+	fullContent: `El certamen de novilladas sin caballos **Kilómetro Cero** nació en el año 2023 con la firme intención de recuperar el espíritu de "La Oportunidad de Vistalegre", un certamen que durante décadas puso en el foco a los que posteriormente han sido grandes figuras del toreo.
 
-**David de Miranda** fue el eje central de la **primera sesión** reservada exclusivamente a los alumnos de la **V Edición de MasterClass TOROS @JavierLorenzomv**, tras una jornada inaugural de puertas abiertas que, la semana anterior, había contado con la participación del ganadero salmantino **Justo Hernández**, de la divisa **Garcigrande**.
+En la presente temporada, se celebrará la cuarta edición del certamen. La **plaza de toros de Valdemorillo** acogerá, los días **27 y 28 de febrero y 1 de marzo** (viernes, sábado y domingo), las tres novilladas. El formato seguirá siendo el mismo de ediciones pasadas, con **dos semifinales** en las que harán el paseíllo seis novilleros ante seis novillos y la **gran final**, en la que se mantiene dicha combinación.
 
-La cita tuvo lugar en el **Museo Taurino de Salamanca** y reunió a los 40 alumnos que agotaron las plazas en tiempo récord. Durante el encuentro, el torero de **Trigueros** cautivó a los asistentes con el relato de una trayectoria marcada por la superación personal, el esfuerzo y la constancia.
+Los protagonistas de dichas novilladas serán **doce novilleros sin caballos** que buscarán relevar a Samuel Castrejón como triunfador, quien lo hizo en 2025. Los novilleros seleccionados son los siguientes: **Rubén Vara** y **Daniel García** de la Escuela Taurina José Cubero "Yiyo"; **Jacob Robledo**, de la Escuela Taurina CITAR-Anchuelo; **José Antonio de Gracia**, de la Escuela Taurina Fundación El Juli; **Pedro Gómez**; de la Escuela Taurina de Galapagar; **Rodrigo Cobo**, de la Escuela Taurina Miguel Cancela de Colmenar Viejo; **Gabriel Segura**, de la Escuela Taurina de Navas del Rey; **Raúl Caamaño**, de la Escuela Taurina de Toledo; **Rodrigo Villalón**, de la Escuela Taurina de Alicante; **Armando Rojo**, de la Escuela Taurina de Sevilla; **Jaime de Pedro**, de la Escuela Taurina de Atarfe; e **Israel Guirao**, de la Escuela Taurina de Valencia.
 
-La sesión se estructuró en dos partes. En la primera, **Javier Lorenzo**, director y productor de **MasterClass TOROS**, realizó un exhaustivo análisis de la carrera profesional de **David de Miranda**, apoyándose en cifras e hitos significativos.
+En el aspecto ganadero, serán seis las ganaderías que estarán presentes en ruedo de Valdemorillo. Respecto al año pasado, repiten las ganaderías de **Cerro Longo** y **Flor de Jara**, esta última fue la ganadería triunfadora de Kilómetro Cero 2205. Completan el elenco los hierros de **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona**.
 
-Una trayectoria que ya alcanzaba las **120 corridas de toros**, con plazas emblemáticas en las que destacó especialmente **Huelva** como su gran bastión, además de los aldabonazos de las **‘Puertas Grandes’** de **Madrid** y de la **Real Maestranza de Sevilla**. También se abordaron campañas clave como las de **2019** y **2025**, así como su reciente y exitoso paso por la **Feria del Café de Manizales**, de la que salió como **máximo triunfador** y ganador los prestigiosos trofeos de la **‘Catedral de Manizales’** y **‘El Voceador de la Patria’**.
-
-Durante la sesión, **David de Miranda** pudo sostener entre sus manos el mismo galardón que obtuviera **Julio Robles** en 1985, expuesto junto al legado del maestro salmantino en la sala que lleva su nombre dentro del **Museo Taurino**, espacio en el que se celebraron semanalmente las clases de este curso impulsado por el **Ayuntamiento de Salamanca**.
-
-El análisis de su trayectoria desembocó en el estudio de su actuación en la plaza de toros de **La Malagueta**, considerada el punto culminante de su temporada 2025, donde la regularidad en el triunfo se erigió como su principal aval. En relación a aquella tarde,
-
-el propio torero reconoció que **“realmente no fui consciente de la repercusión de la faena hasta que pasaron unos días, cuando escuchaba a los aficionados y ya todas las empresas me querían contratar”**. Esta faena centró buena parte de la jornada, desgranándose sus claves, su impacto mediático y su trascendencia en el relanzamiento de su carrera.
-
-La sesión dio paso posteriormente a una entrevista en profundidad en la que **David de Miranda** analizó de primera mano su momento profesional, sin dejar de lado episodios especialmente duros de su trayectoria. Entre ellos, recordó un pasaje crítico que, según confesó, le uniría para siempre con **Salamanca**: la grave lesión vertebral sufrida tras un percance en **Toro** **-Zamora 2017-**, cuando apenas contaba con un año de alternativa. Aquel día, **“sin sentir nada de mi cuerpo de hombros para abajo”**, fue trasladado de urgencia al **Hospital de Salamanca**, donde permaneció ingresado más de dos semanas tras una intervención de extrema complejidad que finalmente resultó exitosa.
-
-Sobre aquel episodio, el torero afirmó con emoción que **“pase lo que pase en mi vida, ya siempre llevaré a Salamanca en mi corazón”**, expresando además su deseo intacto de poder hacer algún día el paseíllo en **La Glorieta**. **“Aquello fue tremendo, el percance muy incierto porque podía haber pasado lo peor, pero lo que recuerdo realmente duro de verdad fue tener que pasar casi un año sin poder torear”**, explicó.
-
-De aquella recuperación casi milagrosa, del largo periodo de inactividad, de la travesía profesional que precedió a su explosión definitiva en 2025 y de la repercusión alcanzada, que le situó en el circuito de las grandes ferias de 2026, **David de Miranda** fue desgranando los principales capítulos de una carrera que alcanzará el próximo 5 de agosto el décimo aniversario de su alternativa.`,
+Los carteles de las dos semifinales se realizarán por sorteo el día de la presentación oficial del certamen. Las **entradas** para los tres días serán **gratuitas**, pero se deberán recoger en taquilla para poder acceder al interior de la plaza.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `Mañana finaliza el plazo de renovación de los abonos de temporada 2026 en Las Ventas`,
-    image: "/images/acre.jpg",
+    title: `Presentación de los carteles del abono de Sevilla 2026`,
+    image: "/images/presenta.jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	footerImage1: "/images/abonos.jpg",
-	fullContent: `El plazo de renovación de los abonos de temporada completa finaliza mañana, **martes 20 de enero** . Este abono permitirá presenciar la totalidad de los festejos taurinos que se celebrarán durante la temporada 2026 en la Plaza de Toros de Las Ventas, incluidos los correspondientes a la **Feria de San Isidro y la Feria de Otoño**.
+    date: "20 de Enero de 2026",
+	fullContent: `El Cartuja Center acogerá el próximo 9 de febrero la presentación oficial de los carteles del abono de la Feria de Sevilla 2026, en una cita que marcará un punto de inflexión en la forma de dar a conocer la temporada taurina sevillana.
 
-Plaza 1 mantiene nuevamente el carácter gratuito de dos cupos especiales:
+La empresa Lances de Futuro ha apostado por un nuevo formato para esta presentación, concebida como una gran gala teatralizada, con actuaciones artísticas y un planteamiento escénico innovador. De este modo, el acto abandona el tradicional escenario del Salón de Carteles de la Real Maestranza para trasladarse a un espacio cultural de mayor proyección como el Cartuja Center.
+Esta gala supone un paso adelante en la proyección pública de la temporada taurina de Sevilla. 
 
-**2.100 abonos para jubilados**, ubicados en localidades de andanadas de sombra y sol y sombra.
+Durante la etapa de la empresa Pagés, la presentación de los carteles se realizaba en un contexto más institucional y cerrado, mientras que el nuevo modelo impulsado por Lances de Futuro apuesta por un evento más abierto, dinámico y espectacular.
+El Teatro Cartuja Center se convertirá así en el epicentro de la afición, acogiendo una velada que reunirá a toreros, ganaderos, profesionales del sector, autoridades y representantes de la sociedad civil. Las actuaciones artísticas previstas reforzarán, además, la dimensión cultural del evento.
 
-**700 abonos para jóvenes de hasta 25 años (nacidos en el año 2000 y posteriores), en localidades de las filas 1 a 7 de las andanadas de los tendidos 5 y 6.**
-
-Ambos cupos se agotaron en la pasada temporada. Los abonados que deseen renovar sus tarjetas podrán hacerlo exclusivamente en las taquillas hasta este martes 20 de enero.
-
-Una vez finalizado el periodo de renovación, la adquisición de los abonos gratuitos que queden disponibles se realizará el **22 de enero**:
-
-En taquillas, para los abonos de jubilados.
-
-Exclusivamente online, a través de la web <a
-  www.las-ventas.com
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.las-ventas.com
-</a> , para los abonos jóvenes sobrantes.
-
-Además, los jóvenes podrán abonarse en otras zonas de la plaza con precios súper reducidos. En el caso del público general, el abono de temporada completa ofrece un 20 % de descuento respecto a los precios de corridas de toros y novilladas. Este descuento se incrementa hasta el 25 % para parados de larga duración que acrediten dicha condición, y hasta el 30 % en localidades reservadas para personas con movilidad reducida (sillas de ruedas).`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+A lo largo de la gala se darán a conocer de manera oficial los carteles que conforman el abono sevillano de 2026, una temporada llamada a marcar un nuevo tiempo en el histórico coso del Baratillo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1003,
-    title: `Ambientazo en la apertura de taquillas de la Feria del Milagro de Illescas`,
-    image: "/images/ambientazo.jpg",
+    title: `Las Ventas perfila un potente arranque de temporada 2026 con torismo, triunfadores y una confirmación de alternativa`,
+    image: "/images/perfila.jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	fullContent: `La Feria del Milagro de Illescas, uno de los ciclos más relevantes de la temporada taurina europea, ha abierto este lunes sus taquillas físicas con una notable afluencia de aficionados. , las colas desde primera hora de la mañana reflejan la expectación generada por el serial.
+    date: "20 de Enero de 2026",
+	fullContent: `Plaza 1, empresa gestora de la plaza de toros de Las Ventas, tiene prácticamente definido el inicio de la temporada 2026 en Madrid. El curso arrancará con una programación de alto interés para el aficionado, en la que se combinan hierros de marcado **carácter torista**, nombres contrastados del escalafón, una confirmación de alternativa y varias presentaciones antes de la celebración de la Feria de San Isidro, cuyos carteles se harán oficiales el próximo **5 de febrero**.
 
-La empresa MaxiToro ha acompañado la apertura con un diseño especial de taquillas en gran formato, protagonizadas por los toreros anunciados en los distintos festejos, acercando así el ambiente de la feria al público.
+La temporada comenzará el 22 de marzo con el regreso a Madrid de la corrida de **Cuadri**. El hierro de Trigueros estará acompañado por una terna de acreditado interés: **Pepe Moral, Damián Castaño y Gómez del Pilar**, tres toreros con currículum y argumentos contrastados ante este tipo de encastes.
 
-La Corrida del Milagro, prevista para el **14 de marzo** , presenta un cartel de gran interés que combina figuras consolidadas y valores emergentes. **José María Manzanares, Juan Ortega y el joven Víctor Hernández** —una de las revelaciones de la pasada temporada— harán el paseíllo frente a un encierro de **Domingo Hernández y Román Sorando.**
+El Domingo de Ramos será el turno de la corrida de **Dolores Aguirre**, en la que, salvo cambios, **Cristian Pérez confirmará su alternativa con Antonio Ferrera como padrino e Isaac Fonseca como testigo**. Ferrera, además, estaría anunciado en la primera cita venteña de la temporada con tres hierros de máxima exigencia: Dolores Aguirre, Partido de Resina y Adolfo Martín.
 
-Por su parte, el festejo de rejones del 8 de marzo estará encabezado por **Diego Ventura, acompañado por Andy Cartagena y Rui Fernandes, con toros de El Capea** , hierro de contrastada regularidad en esta plaza.
+Para el Domingo de Resurrección se ha reseñado una corrida de Martín Lorca, con una terna compuesta por **Curro Díaz, Rafael Serna y Diego San Román**, estos dos últimos nombres propios del pasado San Isidro 2025.
 
-La Feria del Milagro reafirma así su apuesta por carteles de máximo nivel, consolidándose como una de las grandes citas del arranque de la campaña taurina.
+El ciclo se completa con dos novilladas con picadores, en las que destacan los nombres de **Tomás Bastos, Mariscal Ruiz, Cid de María y El Mella**, junto a las presentaciones en Madrid de **Pedro Andrés y Jesús Romero**. Los hierros anunciados para estas citas son Hermanos Sánchez Herrero y Antonio Palla.
 
-Las entradas pueden adquirirse de forma online en 	<a
-  www.maxitoro.com
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.maxitoro.com
-</a> y en las taquillas de la Avenida de Castilla-La Mancha nº 89 de Illescas, en horario de mañana y tarde. También están disponibles a través del Bono Cultural Joven y del servicio de venta telefónica.`,
+El mes de abril se cerrará con una corrida de **Palha**, en la que harán el paseíllo **Sánchez Vara, Luis Gerpe y Francisco José Espada**, conformando un cartel de marcado corte torista.
+
+A falta de confirmación oficial y posibles ajustes, los carteles previstos son los siguientes:
+
+**Domingo 22 de marzo**: Pepe Moral, Damián Castaño y Gómez del Pilar (Cuadri)
+
+**Domingo 29 de marzo**: Antonio Ferrera, Isaac Fonseca y Cristian Pérez —confirmación de alternativa— (Dolores Aguirre)
+
+**Domingo 5 de abril**: Curro Díaz, Rafael Serna y Diego San Román (Martín Lorca)
+
+**Domingo 12 de abril**: Jesús Romero, Mariscal Ruiz y Pedro Andrés (Hnos. Sánchez Herrero)
+
+**Domingo 19 de abril**: Cid de María, El Mella y Tomás Bastos (Antonio Palla)
+
+**Domingo 26 de abril**: Sánchez Vara, Francisco José Espada y Luis Gerpe (Palha)
+
+**Antes** del inicio de la Feria de **San Isidro**, **Las Ventas** acogerá el **1 de mayo** una novillada con seis hierros de la Comunidad de Madrid, mientras que el domingo **3 de mayo** está reseñada una novillada de **Couto de Fornilhos**. En la tradicional corrida **Goyesca** del **2 de mayo**, harán el paseíllo **Uceda Leal, Manuel Jesús “El Cid” y Javier Cortés**, para lidiar un encierro de la ganadería de **El Pilar**.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1004,
-    title: `Villita y Miguel Cubillo ponen fin a su relación de apoderamiento`,
-    image: "/images/villita.jpg",
+    title: `El Niño de las Monjas pone fin a su relación de apoderamiento con Amadeo Pitarch y Jesús Rivera`,
+    image: "/images/niño.jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	fullContent: `El matador de toros **Juan José Villa ‘Villita’ y Miguel Cubillo** han decidido dar por finalizada su relación de apoderamiento, una etapa profesional que concluye desde el respeto, el cariño y una sincera amistad entre ambos. Esta decisión ha sido tomada de común acuerdo, con el propósito de que cada uno pueda seguir avanzando en sus respectivos caminos profesionales.
+    date: "20 de Enero de 2026",
+	fullContent: `El matador de toros **Jordi Pérez «El Niño de las Monjas»** y su equipo de apoderados, formado por **Amadeo Pitarch y Jesús Rivera** , han decidido por mutuo acuerdo poner fin a la etapa profesional que les unía desde el invierno del año 2024. Ambas partes se desean lo mejor en lo personal y en lo profesional.
 
-Durante el tiempo que han trabajado juntos se han cumplido los objetivos marcados por ambas partes, siempre desde la confianza y la dedicación mutua. De este modo, Villita ha querido agradecer todo lo que Miguel Cubillo le ha aportado durante esta etapa, tanto en el ámbito profesional como en el personal, por lo que el diestro ha señalado en el comunicado que ‘permanecerá una amistad para siempre’.`,
+El diestro valenciano se encuentra ya inmerso en la preparación de la próxima temporada, una campaña que afronta con gran ilusión y que llegará cargada de nuevos retos y apuestas importantes en su carrera.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1005,
-    title: `Paco Ureña, triunfador en los Premios del Club Taurino de Lorca.`,
-    image: "/images/triunfador.jpg",
+    title: `Valdemorillo acoge la IV edición de Kilómetro Cero`,
+    image: "/images/cero.jpg",
     category: "Actualidad",
-    date: "19 de Enero de 2026",
-	fullContent: `El diestro lorquino Paco Ureña fue el gran protagonista de la gala de entrega de los Premios de la temporada 2025 del Club Taurino de Lorca, celebrada el pasado domingo 18 de enero en el restaurante Los Cazorlos. El acto reunió a más de 500 personas entre aficionados, socios y protagonistas del mundo del toro.
+    date: "20 de Enero de 2026",
+	fullContent: `El certamen de novilladas sin caballos Kilómetro Cero, creado en 2023 con el objetivo de recuperar el espíritu de La Oportunidad de Vistalegre, afronta en la presente temporada su cuarta edición, consolidado como una de las principales plataformas de promoción para los nuevos valores del toreo.
 
-La ceremonia estuvo presidida por el presidente del Club Taurino de Lorca, Juan Coronel, quien fue el encargado de entregar los distintos galardones. Entre los asistentes destacaron también el alcalde de Lorca, Fulgencio Gil, así como representantes de diferentes clubes y asociaciones taurinas de Lorca y de la Región de Murcia.
+La plaza de toros de **Valdemorillo** será nuevamente el escenario del certamen, que se celebrará los días **27 y 28 de febrero y 1 de marzo (viernes, sábado y domingo)** , con la celebración de tres novilladas sin picadores. El formato se mantiene fiel a ediciones anteriores: dos semifinales, en las que actuarán seis novilleros ante seis novillos, y una gran final con idéntica estructura.
 
-Los premios se distribuyeron de la siguiente manera: Paco Ureña recibió el galardón a triunfador del Coso de Sutullena, tras haber salido a hombros en dos tardes. 
+Un total de **doce novilleros sin caballos** buscarán suceder a **Samuel Castrejón**, triunfador del certamen en 2025. Los jóvenes seleccionados representan a algunas de las principales escuelas taurinas del país y son los siguientes: **Rubén Vara y Daniel García** (Escuela Taurina José Cubero “Yiyo”); **Jacob Robledo** (Escuela Taurina CITAR-Anchuelo); **José Antonio de Gracia** (Escuela Taurina Fundación El Juli); **Pedro Gómez** (Escuela Taurina de Galapagar); **Rodrigo Cobo** (Escuela Taurina Miguel Cancela de Colmenar Viejo); **Gabriel Segura** (Escuela Taurina de Navas del Rey); **Raúl Caamaño** (Escuela Taurina de Toledo); **Rodrigo Villalón** (Escuela Taurina de Alicante); **Armando Rojo** (Escuela Taurina de Sevilla); **Jaime de Pedro** (Escuela Taurina de Atarfe); e **Israel Guirao** (Escuela Taurina de Valencia).
 
-Por su parte, Álvaro Núñez fue reconocido con el premio a la mejor ganadería, gracias a la gran corrida lidiada en Lorca el pasado mes de septiembre, en la que sobresalió especialmente el quinto toro, de nombre “Campinero”.
-Fernando Robleño fue distinguido por su ejemplar trayectoria profesional, tras cumplir 25 años de alternativa, mientras que Javier Castaño recibió un reconocimiento por toda una vida dedicada al toreo.
+En el apartado ganadero, serán seis los hierros que lidiarán novillos en el ruedo de Valdemorillo. Repiten, respecto a la pasada edición, **Cerro Longo y Flor de Jara**, esta última ganadería triunfadora de Kilómetro Cero 2025. Completan el elenco **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona.**
 
-Además, la Comisión de Fiestas de la pedanía lorquina de Ramonete y Antonio Giner, conocido como “Gris”, también fueron homenajeados. Durante la gala se puso en valor el excelente momento que atraviesa el Coso de Sutullena y se destacó la labor del Ayuntamiento de Lorca en favor de la tauromaquia.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/tendidodigitallogosimple.jpg",
+Los carteles de las dos semifinales se configurarán mediante sorteo, que tendrá lugar el día de la presentación oficial del certamen. La entrada a las tres novilladas será **gratuita** , si bien será necesario retirar previamente las localidades en **taquilla** para poder acceder al recinto.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 97,
+    title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
+    image: "/images/1 (1).jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	footerImage1: "/images/2 (1).jpg",
+	footerImage2: "/images/3 (1).jpg",
+	excerpt: "El diestro onubense inauguró con magisterio el coloquio programado por la Peña Joselito 'El Gallo' dentro de 'Los lunes taurinos del Hotel Vincci'",
+	fullContent: `El matador de toros onubense **David de Miranda** se erigió en el gran protagonista del coloquio organizado por la **Peña Joselito 'El Gallo'**, celebrado *-19 de enero-* dentro del ciclo **‘Los lunes taurinos del Hotel Vincci’**, en **Granada**. Durante más de una hora de conversación fluida y cercana, el diestro de **Trigueros** desplegó una auténtica lección catedrática sobre la esencia del toreo, su trayectoria profesional y los retos que afronta en el presente y futuro inmediato de su carrera.
+
+El acto estuvo conducido por el presidente de la peña, **Rogelio Muñoz**, el coronel e historiador **Julián Tomás García**, así como por distintos aficionados que participaron activamente en el coloquio. **David de Miranda** respondió con franqueza y profundidad, ofreciendo una visión honesta del oficio de matador de toros.
+
+Al repasar sus inicios, el torero subrayó la importancia que tuvo en su carrera el certamen **‘Huelva busca un torero’**, celebrado en 2011, al que definió como un verdadero trampolín profesional. Posteriormente evocó uno de los momentos más determinantes de su vida taurina: la alternativa, tomada en su ciudad natal en 2016, de manos de **José Tomás**, así como las tardes más relevantes que ha firmado en plazas como **Madrid, Sevilla, Málaga, Huelva y Linares**.
+
+Especial emoción despertó su recuerdo de la grave **lesión cervical sufrida en Toro (Zamora) en 2017**, que lo mantuvo alejado de los ruedos durante un año y marcó un antes y un después en su carrera. Con sinceridad, el diestro afirmó que **“Las cogidas son un trance necesario”**, reconociendo que dejan secuelas físicas y también psicológicas, auténticos **“Fantasmas que son difíciles de superar”**.
+
+En el plano conceptual, **David de Miranda** reivindicó una tauromaquia basada en la autenticidad, dejando claro que **“La verdad y la pureza es lo que mejor me define”**. En este sentido, fue rotundo al afirmar que **“Cuando no estás a gusto delante de un toro, no se puede mentir”**, una máxima que resume su forma de entender el toreo.
+
+Aunque reconoció poseer una personalidad muy definida en el ruedo, el onubense confesó su admiración por referentes contemporáneos como **Manolo Cortés, José Tomás, Paco Ojeda y Miguel Ángel Perera**, así como por las grandes figuras históricas del toreo, entre las que destacó a **Joselito ‘El Gallo’, Juan Belmonte y Manolete**.
+
+Para **David de Miranda**, la emoción del público no se logra desde la comodidad ni el exceso de técnica, sino desde la entrega total. En su opinión, emocionar exige **“Más compromiso, más riesgo y más arte”**, advirtiendo del **“Peligro de caer en una tauromaquia excesivamente depurada que conduce a la frialdad y la monotonía”**.
+
+Tras proclamarse **triunfador de la feria colombiana de Manizales**, el torero afronta con ilusión una temporada 2026 cargada de compromisos de máximo nivel, con actuaciones previstas en **Venezuela, Jalostotitlán (México), Olivenza, Valencia** -*con la corrida de La Quinta*-, además de un doble compromiso en **Madrid y Sevilla**. En relación con **Granada**, mostró su deseo de volver a la **Monumental de Frascuelo**, confiando en estar anunciado en la **Feria del Corpus**, ya que considera que **“Es un placer y un privilegio hacer el paseíllo en una plaza como Granada”**.
+
+A las puertas de cumplir **diez años como matador de toros**, **David de Miranda** abordó también el apartado de apoderamiento, señalando al maestro **Enrique Ponce** como la persona idónea para dirigir su carrera, tras haber recibido ofrecimientos de grandes empresas y después de la etapa compartida con **Jorge Buendía y José Luis Pereda**. Convencido de la figura del torero-apoderado, aseguró que **“Quién mejor para defenderme que otro torero”** y destacó que **“El maestro Enrique Ponce, con una mirada, te da mucha seguridad”**. No obstante, reconoció que la nueva etapa se afronta **“Desde lo desconocido”**, con la dificultad añadida de estar ligado a un apoderado independiente, sin respaldo directo de grandes casas empresariales.
+
+Por último, en el apartado ganadero, el matador fue claro al afirmar que **“Los toreros necesitamos materia prima para poder triunfar”**. En este sentido, destacó el hierro de **Juan Pedro Domecq** y otras ganaderías reconocidas **“Valorando especialmente la regularidad que ofrecen como base para el éxito en el ruedo”**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 98,
+    title: `Kilómetro Cero 2026 se celebrará en Valdemorillo con doce nombres para apuntar`,
+    image: "/images/km0.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	excerpt: "El certamen de novilladas sin caballos desarrollará su cuarta edición en la plaza de toros de Valdemorillo a con tres festejos en el último fin de semana de febrero",
+	fullContent: `El certamen de novilladas sin caballos **Kilómetro Cero** nació en el año 2023 con la firme intención de recuperar el espíritu de "La Oportunidad de Vistalegre", un certamen que durante décadas puso en el foco a los que posteriormente han sido grandes figuras del toreo.
+
+En la presente temporada, se celebrará la cuarta edición del certamen. La **plaza de toros de Valdemorillo** acogerá, los días **27 y 28 de febrero y 1 de marzo** (viernes, sábado y domingo), las tres novilladas. El formato seguirá siendo el mismo de ediciones pasadas, con **dos semifinales** en las que harán el paseíllo seis novilleros ante seis novillos y la **gran final**, en la que se mantiene dicha combinación.
+
+Los protagonistas de dichas novilladas serán **doce novilleros sin caballos** que buscarán relevar a Samuel Castrejón como triunfador, quien lo hizo en 2025. Los novilleros seleccionados son los siguientes: **Rubén Vara** y **Daniel García** de la Escuela Taurina José Cubero "Yiyo"; **Jacob Robledo**, de la Escuela Taurina CITAR-Anchuelo; **José Antonio de Gracia**, de la Escuela Taurina Fundación El Juli; **Pedro Gómez**; de la Escuela Taurina de Galapagar; **Rodrigo Cobo**, de la Escuela Taurina Miguel Cancela de Colmenar Viejo; **Gabriel Segura**, de la Escuela Taurina de Navas del Rey; **Raúl Caamaño**, de la Escuela Taurina de Toledo; **Rodrigo Villalón**, de la Escuela Taurina de Alicante; **Armando Rojo**, de la Escuela Taurina de Sevilla; **Jaime de Pedro**, de la Escuela Taurina de Atarfe; e **Israel Guirao**, de la Escuela Taurina de Valencia.
+
+En el aspecto ganadero, serán seis las ganaderías que estarán presentes en ruedo de Valdemorillo. Respecto al año pasado, repiten las ganaderías de **Cerro Longo** y **Flor de Jara**, esta última fue la ganadería triunfadora de Kilómetro Cero 2205. Completan el elenco los hierros de **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona**.
+
+Los carteles de las dos semifinales se realizarán por sorteo el día de la presentación oficial del certamen. Las **entradas** para los tres días serán **gratuitas**, pero se deberán recoger en taquilla para poder acceder al interior de la plaza.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 99,
+    title: `Presentación de los carteles del abono de Sevilla 2026`,
+    image: "/images/presenta.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `El Cartuja Center acogerá el próximo 9 de febrero la presentación oficial de los carteles del abono de la Feria de Sevilla 2026, en una cita que marcará un punto de inflexión en la forma de dar a conocer la temporada taurina sevillana.
+
+La empresa Lances de Futuro ha apostado por un nuevo formato para esta presentación, concebida como una gran gala teatralizada, con actuaciones artísticas y un planteamiento escénico innovador. De este modo, el acto abandona el tradicional escenario del Salón de Carteles de la Real Maestranza para trasladarse a un espacio cultural de mayor proyección como el Cartuja Center.
+Esta gala supone un paso adelante en la proyección pública de la temporada taurina de Sevilla. 
+
+Durante la etapa de la empresa Pagés, la presentación de los carteles se realizaba en un contexto más institucional y cerrado, mientras que el nuevo modelo impulsado por Lances de Futuro apuesta por un evento más abierto, dinámico y espectacular.
+El Teatro Cartuja Center se convertirá así en el epicentro de la afición, acogiendo una velada que reunirá a toreros, ganaderos, profesionales del sector, autoridades y representantes de la sociedad civil. Las actuaciones artísticas previstas reforzarán, además, la dimensión cultural del evento.
+
+A lo largo de la gala se darán a conocer de manera oficial los carteles que conforman el abono sevillano de 2026, una temporada llamada a marcar un nuevo tiempo en el histórico coso del Baratillo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 100,
+    title: `Las Ventas perfila un potente arranque de temporada 2026 con torismo, triunfadores y una confirmación de alternativa`,
+    image: "/images/perfila.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `Plaza 1, empresa gestora de la plaza de toros de Las Ventas, tiene prácticamente definido el inicio de la temporada 2026 en Madrid. El curso arrancará con una programación de alto interés para el aficionado, en la que se combinan hierros de marcado **carácter torista**, nombres contrastados del escalafón, una confirmación de alternativa y varias presentaciones antes de la celebración de la Feria de San Isidro, cuyos carteles se harán oficiales el próximo **5 de febrero**.
+
+La temporada comenzará el 22 de marzo con el regreso a Madrid de la corrida de **Cuadri**. El hierro de Trigueros estará acompañado por una terna de acreditado interés: **Pepe Moral, Damián Castaño y Gómez del Pilar**, tres toreros con currículum y argumentos contrastados ante este tipo de encastes.
+
+El Domingo de Ramos será el turno de la corrida de **Dolores Aguirre**, en la que, salvo cambios, **Cristian Pérez confirmará su alternativa con Antonio Ferrera como padrino e Isaac Fonseca como testigo**. Ferrera, además, estaría anunciado en la primera cita venteña de la temporada con tres hierros de máxima exigencia: Dolores Aguirre, Partido de Resina y Adolfo Martín.
+
+Para el Domingo de Resurrección se ha reseñado una corrida de Martín Lorca, con una terna compuesta por **Curro Díaz, Rafael Serna y Diego San Román**, estos dos últimos nombres propios del pasado San Isidro 2025.
+
+El ciclo se completa con dos novilladas con picadores, en las que destacan los nombres de **Tomás Bastos, Mariscal Ruiz, Cid de María y El Mella**, junto a las presentaciones en Madrid de **Pedro Andrés y Jesús Romero**. Los hierros anunciados para estas citas son Hermanos Sánchez Herrero y Antonio Palla.
+
+El mes de abril se cerrará con una corrida de **Palha**, en la que harán el paseíllo **Sánchez Vara, Luis Gerpe y Francisco José Espada**, conformando un cartel de marcado corte torista.
+
+A falta de confirmación oficial y posibles ajustes, los carteles previstos son los siguientes:
+
+**Domingo 22 de marzo**: Pepe Moral, Damián Castaño y Gómez del Pilar (Cuadri)
+
+**Domingo 29 de marzo**: Antonio Ferrera, Isaac Fonseca y Cristian Pérez —confirmación de alternativa— (Dolores Aguirre)
+
+**Domingo 5 de abril**: Curro Díaz, Rafael Serna y Diego San Román (Martín Lorca)
+
+**Domingo 12 de abril**: Jesús Romero, Mariscal Ruiz y Pedro Andrés (Hnos. Sánchez Herrero)
+
+**Domingo 19 de abril**: Cid de María, El Mella y Tomás Bastos (Antonio Palla)
+
+**Domingo 26 de abril**: Sánchez Vara, Francisco José Espada y Luis Gerpe (Palha)
+
+**Antes** del inicio de la Feria de **San Isidro**, **Las Ventas** acogerá el **1 de mayo** una novillada con seis hierros de la Comunidad de Madrid, mientras que el domingo **3 de mayo** está reseñada una novillada de **Couto de Fornilhos**. En la tradicional corrida **Goyesca** del **2 de mayo**, harán el paseíllo **Uceda Leal, Manuel Jesús “El Cid” y Javier Cortés**, para lidiar un encierro de la ganadería de **El Pilar**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 101,
+    title: `El Niño de las Monjas pone fin a su relación de apoderamiento con Amadeo Pitarch y Jesús Rivera`,
+    image: "/images/niño.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `El matador de toros **Jordi Pérez «El Niño de las Monjas»** y su equipo de apoderados, formado por **Amadeo Pitarch y Jesús Rivera** , han decidido por mutuo acuerdo poner fin a la etapa profesional que les unía desde el invierno del año 2024. Ambas partes se desean lo mejor en lo personal y en lo profesional.
+
+El diestro valenciano se encuentra ya inmerso en la preparación de la próxima temporada, una campaña que afronta con gran ilusión y que llegará cargada de nuevos retos y apuestas importantes en su carrera.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 102,
+    title: `Valdemorillo acoge la IV edición de Kilómetro Cero`,
+    image: "/images/cero.jpg",
+    category: "Actualidad",
+    date: "20 de Enero de 2026",
+	fullContent: `El certamen de novilladas sin caballos Kilómetro Cero, creado en 2023 con el objetivo de recuperar el espíritu de La Oportunidad de Vistalegre, afronta en la presente temporada su cuarta edición, consolidado como una de las principales plataformas de promoción para los nuevos valores del toreo.
+
+La plaza de toros de **Valdemorillo** será nuevamente el escenario del certamen, que se celebrará los días **27 y 28 de febrero y 1 de marzo (viernes, sábado y domingo)** , con la celebración de tres novilladas sin picadores. El formato se mantiene fiel a ediciones anteriores: dos semifinales, en las que actuarán seis novilleros ante seis novillos, y una gran final con idéntica estructura.
+
+Un total de **doce novilleros sin caballos** buscarán suceder a **Samuel Castrejón**, triunfador del certamen en 2025. Los jóvenes seleccionados representan a algunas de las principales escuelas taurinas del país y son los siguientes: **Rubén Vara y Daniel García** (Escuela Taurina José Cubero “Yiyo”); **Jacob Robledo** (Escuela Taurina CITAR-Anchuelo); **José Antonio de Gracia** (Escuela Taurina Fundación El Juli); **Pedro Gómez** (Escuela Taurina de Galapagar); **Rodrigo Cobo** (Escuela Taurina Miguel Cancela de Colmenar Viejo); **Gabriel Segura** (Escuela Taurina de Navas del Rey); **Raúl Caamaño** (Escuela Taurina de Toledo); **Rodrigo Villalón** (Escuela Taurina de Alicante); **Armando Rojo** (Escuela Taurina de Sevilla); **Jaime de Pedro** (Escuela Taurina de Atarfe); e **Israel Guirao** (Escuela Taurina de Valencia).
+
+En el apartado ganadero, serán seis los hierros que lidiarán novillos en el ruedo de Valdemorillo. Repiten, respecto a la pasada edición, **Cerro Longo y Flor de Jara**, esta última ganadería triunfadora de Kilómetro Cero 2025. Completan el elenco **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona.**
+
+Los carteles de las dos semifinales se configurarán mediante sorteo, que tendrá lugar el día de la presentación oficial del certamen. La entrada a las tres novilladas será **gratuita** , si bien será necesario retirar previamente las localidades en **taquilla** para poder acceder al recinto.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 103,
     title: `José Garrido dona un vestido de luces a la Virgen del Silencio de Azuaga`,
     image: "/images/jose garrido.jpg",
