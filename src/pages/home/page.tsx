@@ -568,31 +568,12 @@ El diestro valenciano se encuentra ya inmerso en la preparación de la próxima 
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Valdemorillo acoge la IV edición de Kilómetro Cero`,
-    image: "/images/cero.jpg",
-    category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `El certamen de novilladas sin caballos Kilómetro Cero, creado en 2023 con el objetivo de recuperar el espíritu de La Oportunidad de Vistalegre, afronta en la presente temporada su cuarta edición, consolidado como una de las principales plataformas de promoción para los nuevos valores del toreo.
-
-La plaza de toros de **Valdemorillo** será nuevamente el escenario del certamen, que se celebrará los días **27 y 28 de febrero y 1 de marzo (viernes, sábado y domingo)** , con la celebración de tres novilladas sin picadores. El formato se mantiene fiel a ediciones anteriores: dos semifinales, en las que actuarán seis novilleros ante seis novillos, y una gran final con idéntica estructura.
-
-Un total de **doce novilleros sin caballos** buscarán suceder a **Samuel Castrejón**, triunfador del certamen en 2025. Los jóvenes seleccionados representan a algunas de las principales escuelas taurinas del país y son los siguientes: **Rubén Vara y Daniel García** (Escuela Taurina José Cubero “Yiyo”); **Jacob Robledo** (Escuela Taurina CITAR-Anchuelo); **José Antonio de Gracia** (Escuela Taurina Fundación El Juli); **Pedro Gómez** (Escuela Taurina de Galapagar); **Rodrigo Cobo** (Escuela Taurina Miguel Cancela de Colmenar Viejo); **Gabriel Segura** (Escuela Taurina de Navas del Rey); **Raúl Caamaño** (Escuela Taurina de Toledo); **Rodrigo Villalón** (Escuela Taurina de Alicante); **Armando Rojo** (Escuela Taurina de Sevilla); **Jaime de Pedro** (Escuela Taurina de Atarfe); e **Israel Guirao** (Escuela Taurina de Valencia).
-
-En el apartado ganadero, serán seis los hierros que lidiarán novillos en el ruedo de Valdemorillo. Repiten, respecto a la pasada edición, **Cerro Longo y Flor de Jara**, esta última ganadería triunfadora de Kilómetro Cero 2025. Completan el elenco **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona.**
-
-Los carteles de las dos semifinales se configurarán mediante sorteo, que tendrá lugar el día de la presentación oficial del certamen. La entrada a las tres novilladas será **gratuita** , si bien será necesario retirar previamente las localidades en **taquilla** para poder acceder al recinto.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
-    id: 97,
+    id: 98,
     title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
     image: "/images/1 (1).jpg",
     category: "Actualidad",
@@ -624,7 +605,7 @@ Por último, en el apartado ganadero, el matador fue claro al afirmar que **“L
     showAuthorHeader: true
    },
 	{ 
-    id: 98,
+    id: 99,
     title: `Kilómetro Cero 2026 se celebrará en Valdemorillo con doce nombres para apuntar`,
     image: "/images/km0.jpg",
     category: "Actualidad",
@@ -644,7 +625,7 @@ Los carteles de las dos semifinales se realizarán por sorteo el día de la pres
     showAuthorHeader: true
    },
 	{ 
-    id: 99,
+    id: 100,
     title: `Presentación de los carteles del abono de Sevilla 2026`,
     image: "/images/presenta.jpg",
     category: "Actualidad",
@@ -663,7 +644,7 @@ A lo largo de la gala se darán a conocer de manera oficial los carteles que con
     showAuthorHeader: true
    },
 	{ 
-    id: 100,
+    id: 101,
     title: `Las Ventas perfila un potente arranque de temporada 2026 con torismo, triunfadores y una confirmación de alternativa`,
     image: "/images/perfila.jpg",
     category: "Actualidad",
@@ -700,7 +681,7 @@ A falta de confirmación oficial y posibles ajustes, los carteles previstos son 
     showAuthorHeader: true
    },
 	{ 
-    id: 101,
+    id: 102,
     title: `El Niño de las Monjas pone fin a su relación de apoderamiento con Amadeo Pitarch y Jesús Rivera`,
     image: "/images/niño.jpg",
     category: "Actualidad",
@@ -708,25 +689,6 @@ A falta de confirmación oficial y posibles ajustes, los carteles previstos son 
 	fullContent: `El matador de toros **Jordi Pérez «El Niño de las Monjas»** y su equipo de apoderados, formado por **Amadeo Pitarch y Jesús Rivera** , han decidido por mutuo acuerdo poner fin a la etapa profesional que les unía desde el invierno del año 2024. Ambas partes se desean lo mejor en lo personal y en lo profesional.
 
 El diestro valenciano se encuentra ya inmerso en la preparación de la próxima temporada, una campaña que afronta con gran ilusión y que llegará cargada de nuevos retos y apuestas importantes en su carrera.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 102,
-    title: `Valdemorillo acoge la IV edición de Kilómetro Cero`,
-    image: "/images/cero.jpg",
-    category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `El certamen de novilladas sin caballos Kilómetro Cero, creado en 2023 con el objetivo de recuperar el espíritu de La Oportunidad de Vistalegre, afronta en la presente temporada su cuarta edición, consolidado como una de las principales plataformas de promoción para los nuevos valores del toreo.
-
-La plaza de toros de **Valdemorillo** será nuevamente el escenario del certamen, que se celebrará los días **27 y 28 de febrero y 1 de marzo (viernes, sábado y domingo)** , con la celebración de tres novilladas sin picadores. El formato se mantiene fiel a ediciones anteriores: dos semifinales, en las que actuarán seis novilleros ante seis novillos, y una gran final con idéntica estructura.
-
-Un total de **doce novilleros sin caballos** buscarán suceder a **Samuel Castrejón**, triunfador del certamen en 2025. Los jóvenes seleccionados representan a algunas de las principales escuelas taurinas del país y son los siguientes: **Rubén Vara y Daniel García** (Escuela Taurina José Cubero “Yiyo”); **Jacob Robledo** (Escuela Taurina CITAR-Anchuelo); **José Antonio de Gracia** (Escuela Taurina Fundación El Juli); **Pedro Gómez** (Escuela Taurina de Galapagar); **Rodrigo Cobo** (Escuela Taurina Miguel Cancela de Colmenar Viejo); **Gabriel Segura** (Escuela Taurina de Navas del Rey); **Raúl Caamaño** (Escuela Taurina de Toledo); **Rodrigo Villalón** (Escuela Taurina de Alicante); **Armando Rojo** (Escuela Taurina de Sevilla); **Jaime de Pedro** (Escuela Taurina de Atarfe); e **Israel Guirao** (Escuela Taurina de Valencia).
-
-En el apartado ganadero, serán seis los hierros que lidiarán novillos en el ruedo de Valdemorillo. Repiten, respecto a la pasada edición, **Cerro Longo y Flor de Jara**, esta última ganadería triunfadora de Kilómetro Cero 2025. Completan el elenco **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona.**
-
-Los carteles de las dos semifinales se configurarán mediante sorteo, que tendrá lugar el día de la presentación oficial del certamen. La entrada a las tres novilladas será **gratuita** , si bien será necesario retirar previamente las localidades en **taquilla** para poder acceder al recinto.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
