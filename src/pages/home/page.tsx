@@ -450,16 +450,33 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
+    image: "/images/diestro.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `El matador de toros Diego García recogió el premio al Triunfador de la Feria Taurina de San Sebastián de los Reyes 2025, en una velada marcada por el ambiente de afición y la defensa de la tauromaquia. El acto reunió a numerosos aficionados y miembros destacados del mundo del toro, habituales impulsores de la feria de la localidad madrileña.
+
+El diestro madrileño, recién regresado de América, donde ha tenido una destacada presencia en diversas ferias de Perú, fue reconocido con este prestigioso galardón que concede desde 2012 la Peña Taurina “La Nuestra”, con motivo de las fiestas en honor del Santísimo Cristo de los Remedios.
+
+El premio viene a reconocer su gran actuación del pasado 28 de agosto en la Plaza de Toros de La Tercera, donde se lidiaron reses de la ganadería gaditana de Salvador Domecq. Aquella tarde, Diego García firmó una actuación rotunda, cortando tres orejas y saliendo a hombros junto a Ginés Marín, en una corrida que dejó una profunda huella en la afición de San Sebastián de los Reyes.
+
+El torero recibió el galardón de manos de la junta directiva de la peña al término de la tradicional cena anual que la asociación celebra con sus socios en un céntrico restaurante de la ciudad. En sus palabras de agradecimiento, Diego García destacó el apoyo recibido y reafirmó su compromiso de seguir trabajando con entrega y constancia para alcanzar su objetivo de llegar a ser figura del toreo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
     image: "/images/.jpg",
     category: "Actualidad",
     date: "21 de Enero de 2026",
-	excerpt: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
+	excerpt: `Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
 
 ●       El plazo de inscripción finaliza el 10 de febrero de 2026 y el premio tiene una dotación económica de 5.000 euros
 
 ●       El Instituto Juan Belmonte y Legados impulsan este galardón como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza`,
-	fullContent: `**Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
+	fullContent: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> **Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
 
 El premio **se dirige tanto a personas como a colectivos o instituciones, con perfiles muy variados como pastores, agricultores, naturalistas, divulgadores…o gestores del territorio**, entre otros, que representen un ecologismo arraigado, práctico y profundamente conectado con la realidad rural.
 
@@ -650,17 +667,34 @@ Esta decisión de volver a los ruedos llega seis meses después de la histórica
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 88,
+    title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
+    image: "/images/diestro.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `El matador de toros Diego García recogió el premio al Triunfador de la Feria Taurina de San Sebastián de los Reyes 2025, en una velada marcada por el ambiente de afición y la defensa de la tauromaquia. El acto reunió a numerosos aficionados y miembros destacados del mundo del toro, habituales impulsores de la feria de la localidad madrileña.
+
+El diestro madrileño, recién regresado de América, donde ha tenido una destacada presencia en diversas ferias de Perú, fue reconocido con este prestigioso galardón que concede desde 2012 la Peña Taurina “La Nuestra”, con motivo de las fiestas en honor del Santísimo Cristo de los Remedios.
+
+El premio viene a reconocer su gran actuación del pasado 28 de agosto en la Plaza de Toros de La Tercera, donde se lidiaron reses de la ganadería gaditana de Salvador Domecq. Aquella tarde, Diego García firmó una actuación rotunda, cortando tres orejas y saliendo a hombros junto a Ginés Marín, en una corrida que dejó una profunda huella en la afición de San Sebastián de los Reyes.
+
+El torero recibió el galardón de manos de la junta directiva de la peña al término de la tradicional cena anual que la asociación celebra con sus socios en un céntrico restaurante de la ciudad. En sus palabras de agradecimiento, Diego García destacó el apoyo recibido y reafirmó su compromiso de seguir trabajando con entrega y constancia para alcanzar su objetivo de llegar a ser figura del toreo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 89,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
     image: "/images/.jpg",
     category: "Actualidad",
     date: "21 de Enero de 2026",
-	excerpt: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
+	excerpt: `Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
 
 ●       El plazo de inscripción finaliza el 10 de febrero de 2026 y el premio tiene una dotación económica de 5.000 euros
 
 ●       El Instituto Juan Belmonte y Legados impulsan este galardón como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza`,
-	fullContent: `**Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
+	fullContent: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> **Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
 
 El premio **se dirige tanto a personas como a colectivos o instituciones, con perfiles muy variados como pastores, agricultores, naturalistas, divulgadores…o gestores del territorio**, entre otros, que representen un ecologismo arraigado, práctico y profundamente conectado con la realidad rural.
 
