@@ -714,7 +714,7 @@ Esta decisión de volver a los ruedos llega seis meses después de la histórica
 
 const latestNews: NewsItem[] = [
  	{ 
-    id: 90,
+    id: 87,
     title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
     image: "/images/titu.jpg",
     category: "Entrevistas",
@@ -756,6 +756,51 @@ Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, per
 **¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
 
 Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 88,
+    title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
+    image: "/images/perfila1.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La empresa Lances de Futuro, gestionada por **José María Garzón**, está ultimando un elenco ganadero de primer nivel para la temporada 2026, la primera bajo su gestión al frente de la Real Maestranza de Caballería de Sevilla. El propio empresario avanzó recientemente, en un encuentro con los medios de comunicación, las líneas maestras de una programación ganadera que presentará novedades de gran interés, como el debut del hierro de **Álvaro Núñez**, así como los regresos de **La Quinta y Puerto de San Lorenzo**.
+
+Según ha podido saber este medio, Garzón trabaja con una planificación en la que la ganadería de **Garcigrande** ocuparía un papel protagonista dentro del abono sevillano, con dos corridas de toros y una novillada con picadores ya reseñadas. A este bloque principal podrían sumarse otras divisas para completar las corridas de toros, actualmente aún pendientes de definición.
+
+El elenco ganadero diseñado para la temporada incluiría hierros de contrastada solvencia y variedad de encastes, entre los que figuran **La Quinta, Álvaro Núñez, Puerto de San Lorenzo, Miura, Victorino Martín, Hermanos García Jiménez, Fuente Ymbro, Domingo Hernández, Alcurrucén, Garcigrande, Jandilla, Santiago Domecq, Juan Pedro Domecq, Victoriano del Río, El Parralejo y Núñez del Cuvillo**, conformando así una de las propuestas ganaderas más completas y atractivas de los últimos años en la plaza sevillana.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 89,
+    title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
+    image: "/images/garzon2.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `**José María Garzón** tiene muy avanzada la confección del cartel que supondrá su debut como empresario de la Real Maestranza de Caballería de Sevilla. Un Domingo de Resurrección de 2026 señalado en rojo en el calendario taurino, después de que el periodista **Vicente Zabala de la Serna adelantara la reaparición de Morante de la Puebla el próximo 5 de abril.**
+
+De confirmarse oficialmente la presencia del torero cigarrero en la corrida inaugural de la temporada sevillana, Garzón tendría prácticamente cerrado su primer cartel al frente de la empresa maestrante. Una combinación de máximo relumbrón, con el atractivo añadido de la figura indiscutible de **Roca Rey y la incorporación de David de Miranda, único espada capaz de abrir la Puerta del Príncipe en 2025.** Un cartel de marcada rivalidad e interés, que reúne a tres de los nombres llamados a vertebrar, entre otros, el desarrollo de la temporada sevillana.
+
+Para esta cita del Domingo de Resurrección, está reseñada una corrida de toros de **Hermanos García Jiménez** , ganadería habitual en las grandes fechas del calendario.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 90,
+    title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
+    image: "/images/mor.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La noticia más esperada por la afición taurina ya es una realidad. Apenas seis meses después de anunciar su retirada el pasado 12 de octubre en la plaza de Las Ventas, **Morante de la Puebla reaparecerá el próximo Domingo de Resurrección en Sevilla** . Según adelanta el periodista **Vicente Zabala de la Serna en El Mundo** , el torero cigarrero ha decidido volver a vestirse de luces el **5 de abril en la Real Maestranza de Caballería de Sevilla**, en el festejo que abrirá la temporada sevillana.
+
+El regreso de Morante a la Maestranza no se limitará a esa esperada cita inaugural. De acuerdo con la información publicada, su reaparición en Sevilla vendrá acompañada de un calendario más amplio, **que incluirá dos tardes en la Feria de Abril, una en la Feria de San Miguel y una actuación adicional en la tradicional corrida del Corpus Christi**, festejo que el diestro de La Puebla del Río afronta con especial ilusión y que el nuevo empresario del coso sevillano, José María Garzón, pretende recuperar.
+
+Esta decisión de volver a los ruedos llega seis meses después de la histórica jornada vivida el 12 de octubre de 2025 en Las Ventas. Aquella fecha estuvo marcada por el festival matinal en homenaje a Antoñete y por la posterior Corrida de la Hispanidad, en la que Morante de la Puebla salió a hombros tras cortar dos orejas al cuarto toro de la tarde y anunciar su retirada al quitarse el añadido en el centro del ruedo.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -926,51 +971,6 @@ Víctor Hernández`,
 	fullContent: `La temporada francesa se va configurando con carteles de gran interés. Tras anunciar las fechas y la estructura de su feria, la localidad de **Dax ha dado a conocer uno de los carteles destacados de su ciclo continuado de agosto, en el que Julio Norte tomará la alternativa de manos de Roca Rey, con Pablo Aguado como testigo. La cita, prevista para el 13 de agosto, contará con un encierro de Juan Pedro Domecq.**
 
 Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del escalafón novilleril, con 21 paseíllos y un balance de 46 orejas y un rabo** . Una temporada de gran importancia que le permite afrontar el 2026 con la **ilusión de pisar grandes escenarios como Valencia, Madrid o Sevilla.** “Voy a cumplir un sueño en **una plaza que me ha motivado desde mis inicios y donde siempre me he sentido torero”,** asegura el novillero salmantino en el vídeo en el que anuncia su alternativa en Dax.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 88,
-    title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
-    image: "/images/perfila1.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La empresa Lances de Futuro, gestionada por **José María Garzón**, está ultimando un elenco ganadero de primer nivel para la temporada 2026, la primera bajo su gestión al frente de la Real Maestranza de Caballería de Sevilla. El propio empresario avanzó recientemente, en un encuentro con los medios de comunicación, las líneas maestras de una programación ganadera que presentará novedades de gran interés, como el debut del hierro de **Álvaro Núñez**, así como los regresos de **La Quinta y Puerto de San Lorenzo**.
-
-Según ha podido saber este medio, Garzón trabaja con una planificación en la que la ganadería de **Garcigrande** ocuparía un papel protagonista dentro del abono sevillano, con dos corridas de toros y una novillada con picadores ya reseñadas. A este bloque principal podrían sumarse otras divisas para completar las corridas de toros, actualmente aún pendientes de definición.
-
-El elenco ganadero diseñado para la temporada incluiría hierros de contrastada solvencia y variedad de encastes, entre los que figuran **La Quinta, Álvaro Núñez, Puerto de San Lorenzo, Miura, Victorino Martín, Hermanos García Jiménez, Fuente Ymbro, Domingo Hernández, Alcurrucén, Garcigrande, Jandilla, Santiago Domecq, Juan Pedro Domecq, Victoriano del Río, El Parralejo y Núñez del Cuvillo**, conformando así una de las propuestas ganaderas más completas y atractivas de los últimos años en la plaza sevillana.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 89,
-    title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
-    image: "/images/garzon2.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `**José María Garzón** tiene muy avanzada la confección del cartel que supondrá su debut como empresario de la Real Maestranza de Caballería de Sevilla. Un Domingo de Resurrección de 2026 señalado en rojo en el calendario taurino, después de que el periodista **Vicente Zabala de la Serna adelantara la reaparición de Morante de la Puebla el próximo 5 de abril.**
-
-De confirmarse oficialmente la presencia del torero cigarrero en la corrida inaugural de la temporada sevillana, Garzón tendría prácticamente cerrado su primer cartel al frente de la empresa maestrante. Una combinación de máximo relumbrón, con el atractivo añadido de la figura indiscutible de **Roca Rey y la incorporación de David de Miranda, único espada capaz de abrir la Puerta del Príncipe en 2025.** Un cartel de marcada rivalidad e interés, que reúne a tres de los nombres llamados a vertebrar, entre otros, el desarrollo de la temporada sevillana.
-
-Para esta cita del Domingo de Resurrección, está reseñada una corrida de toros de **Hermanos García Jiménez** , ganadería habitual en las grandes fechas del calendario.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 90,
-    title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
-    image: "/images/mor.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La noticia más esperada por la afición taurina ya es una realidad. Apenas seis meses después de anunciar su retirada el pasado 12 de octubre en la plaza de Las Ventas, **Morante de la Puebla reaparecerá el próximo Domingo de Resurrección en Sevilla** . Según adelanta el periodista **Vicente Zabala de la Serna en El Mundo** , el torero cigarrero ha decidido volver a vestirse de luces el **5 de abril en la Real Maestranza de Caballería de Sevilla**, en el festejo que abrirá la temporada sevillana.
-
-El regreso de Morante a la Maestranza no se limitará a esa esperada cita inaugural. De acuerdo con la información publicada, su reaparición en Sevilla vendrá acompañada de un calendario más amplio, **que incluirá dos tardes en la Feria de Abril, una en la Feria de San Miguel y una actuación adicional en la tradicional corrida del Corpus Christi**, festejo que el diestro de La Puebla del Río afronta con especial ilusión y que el nuevo empresario del coso sevillano, José María Garzón, pretende recuperar.
-
-Esta decisión de volver a los ruedos llega seis meses después de la histórica jornada vivida el 12 de octubre de 2025 en Las Ventas. Aquella fecha estuvo marcada por el festival matinal en homenaje a Antoñete y por la posterior Corrida de la Hispanidad, en la que Morante de la Puebla salió a hombros tras cortar dos orejas al cuarto toro de la tarde y anunciar su retirada al quitarse el añadido en el centro del ruedo.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
