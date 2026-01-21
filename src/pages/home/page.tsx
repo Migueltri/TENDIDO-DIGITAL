@@ -516,7 +516,7 @@ El torero recibió el galardón de manos de la junta directiva de la peña al t�
 	{ 
     id: 1002,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
-    image: "/images/.jpg",
+    image: "/images/premioo.jpg",
     category: "Actualidad",
     date: "21 de Enero de 2026",
 	excerpt: `Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
@@ -826,7 +826,7 @@ El torero recibió el galardón de manos de la junta directiva de la peña al t�
 	{ 
     id: 92,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
-    image: "/images/.jpg",
+    image: "/images/premioo.jpg",
     category: "Actualidad",
     date: "21 de Enero de 2026",
 	excerpt: `Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
