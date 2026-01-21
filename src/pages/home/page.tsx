@@ -450,6 +450,53 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
+    image: "/images/titu.jpg",
+    category: "Entrevistas",
+    date: "21 de Enero de 2026",
+	footerImage1: "/images/titu1.jpg",
+	footerImage2: "/images/titu2.jpg",
+	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes **expectativas** entre la afición.
+
+Tras una **temporada sobresaliente** en la que sumó numerosos **triunfos**, cortó **orejas importantes** y dejó constancia de su concepto profundo del **toreo**, **Norte** se perfila como un torero con proyección y personalidad. Su **temple**, **naturalidad** en el ruedo y **ambición controlada** dibujan un perfil que merece atención y seguimiento en los próximos meses.
+
+**¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
+
+Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
+
+**¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
+
+Bueno a mi me gusta fijarme en **todos** pero sí que tengo grandes **referentes** como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
+
+**¿Cómo describirías el toreo que buscas expresar en la plaza?**
+
+Eso prefiero que lo digan los **aficionados**, pero sí que me gusta **torear despacio**, pudiendo a los **animales** y **dejándomelos llegar muy cerca**.
+
+**¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
+
+Pues la planteamos con mucha **ilusión y ganas**, ya que va a ser una **temporada importante y decisiva** en mi trayectoria voy a **pisar plazas de máxima importancia** y evidentemente estoy **contento e ilusionado** pero a la vez **responsabilizado**.
+
+**¿Qué objetivos te has marcado para la temporada 2026?**
+
+**Ser yo mismo** y **seguir mi camino** como lo he estado haciendo hasta ahora.
+
+**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?**
+
+Pues **físicamente** durante el proceso de recuperación muchos **dolores**, sobretodo de la **sonda urinaria**, que muchas veces hacía que se me **agotaran las fuerzas** y me veía en un estado de **debilidad muy grande** pero yo siempre resistía, gracias a Dios me he **recuperado bien** y luego **mentalmente** siempre he tenido la **mente tranquila** y he estado pensando en que iba a **volver a ser el mismo** cuando volviese a una plaza.
+
+**¿En qué plaza sueñas con triunfar en el futuro?**
+
+Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, pero sobretodo Madrid y Sevilla.
+
+**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
+
+Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
     image: "/images/diestro.jpg",
     category: "Actualidad",
@@ -466,7 +513,7 @@ El torero recibió el galardón de manos de la junta directiva de la peña al t�
     showAuthorHeader: true
    },
 	{ 
-    id: 1000,
+    id: 1002,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
     image: "/images/.jpg",
     category: "Actualidad",
@@ -500,7 +547,7 @@ El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación ec
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1003,
     title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
     image: "/images/ddomecq.jpg",
     category: "Actualidad",
@@ -536,7 +583,7 @@ El público, compuesto mayoritariamente por jóvenes aficionados junto a asisten
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1004,
     title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
     image: "/images/feriaa.jpg",
     category: "Actualidad",
@@ -567,7 +614,7 @@ La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta fi
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1005,
     title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
     image: "/images/confirma.jpg",
     category: "Actualidad",
@@ -606,7 +653,7 @@ Víctor Hernández`,
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1006,
     title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
     image: "/images/jn.jpg",
     category: "Actualidad",
@@ -619,7 +666,7 @@ Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del 
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1007,
     title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
     image: "/images/perfila1.jpg",
     category: "Actualidad",
@@ -634,7 +681,7 @@ El elenco ganadero diseñado para la temporada incluiría hierros de contrastada
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1008,
     title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
     image: "/images/garzon2.jpg",
     category: "Actualidad",
@@ -649,7 +696,7 @@ Para esta cita del Domingo de Resurrección, está reseñada una corrida de toro
     showAuthorHeader: true
    },
 	{ 
-    id: 1007,
+    id: 1009,
     title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
     image: "/images/mor.jpg",
     category: "Actualidad",
@@ -667,6 +714,53 @@ Esta decisión de volver a los ruedos llega seis meses después de la histórica
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 90,
+    title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
+    image: "/images/titu.jpg",
+    category: "Entrevistas",
+    date: "21 de Enero de 2026",
+	footerImage1: "/images/titu1.jpg",
+	footerImage2: "/images/titu2.jpg",
+	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes **expectativas** entre la afición.
+
+Tras una **temporada sobresaliente** en la que sumó numerosos **triunfos**, cortó **orejas importantes** y dejó constancia de su concepto profundo del **toreo**, **Norte** se perfila como un torero con proyección y personalidad. Su **temple**, **naturalidad** en el ruedo y **ambición controlada** dibujan un perfil que merece atención y seguimiento en los próximos meses.
+
+**¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
+
+Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
+
+**¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
+
+Bueno a mi me gusta fijarme en **todos** pero sí que tengo grandes **referentes** como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
+
+**¿Cómo describirías el toreo que buscas expresar en la plaza?**
+
+Eso prefiero que lo digan los **aficionados**, pero sí que me gusta **torear despacio**, pudiendo a los **animales** y **dejándomelos llegar muy cerca**.
+
+**¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
+
+Pues la planteamos con mucha **ilusión y ganas**, ya que va a ser una **temporada importante y decisiva** en mi trayectoria voy a **pisar plazas de máxima importancia** y evidentemente estoy **contento e ilusionado** pero a la vez **responsabilizado**.
+
+**¿Qué objetivos te has marcado para la temporada 2026?**
+
+**Ser yo mismo** y **seguir mi camino** como lo he estado haciendo hasta ahora.
+
+**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?**
+
+Pues **físicamente** durante el proceso de recuperación muchos **dolores**, sobretodo de la **sonda urinaria**, que muchas veces hacía que se me **agotaran las fuerzas** y me veía en un estado de **debilidad muy grande** pero yo siempre resistía, gracias a Dios me he **recuperado bien** y luego **mentalmente** siempre he tenido la **mente tranquila** y he estado pensando en que iba a **volver a ser el mismo** cuando volviese a una plaza.
+
+**¿En qué plaza sueñas con triunfar en el futuro?**
+
+Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, pero sobretodo Madrid y Sevilla.
+
+**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
+
+Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 91,
     title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
     image: "/images/diestro.jpg",
@@ -7142,6 +7236,53 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
 const entrevistas: NewsItem[] = [
 	{ 
     id: 500,
+    title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
+    image: "/images/titu.jpg",
+    category: "Entrevistas",
+    date: "21 de Enero de 2026",
+	footerImage1: "/images/titu1.jpg",
+	footerImage2: "/images/titu2.jpg",
+	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes **expectativas** entre la afición.
+
+Tras una **temporada sobresaliente** en la que sumó numerosos **triunfos**, cortó **orejas importantes** y dejó constancia de su concepto profundo del **toreo**, **Norte** se perfila como un torero con proyección y personalidad. Su **temple**, **naturalidad** en el ruedo y **ambición controlada** dibujan un perfil que merece atención y seguimiento en los próximos meses.
+
+**¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
+
+Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
+
+**¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
+
+Bueno a mi me gusta fijarme en **todos** pero sí que tengo grandes **referentes** como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
+
+**¿Cómo describirías el toreo que buscas expresar en la plaza?**
+
+Eso prefiero que lo digan los **aficionados**, pero sí que me gusta **torear despacio**, pudiendo a los **animales** y **dejándomelos llegar muy cerca**.
+
+**¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
+
+Pues la planteamos con mucha **ilusión y ganas**, ya que va a ser una **temporada importante y decisiva** en mi trayectoria voy a **pisar plazas de máxima importancia** y evidentemente estoy **contento e ilusionado** pero a la vez **responsabilizado**.
+
+**¿Qué objetivos te has marcado para la temporada 2026?**
+
+**Ser yo mismo** y **seguir mi camino** como lo he estado haciendo hasta ahora.
+
+**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?**
+
+Pues **físicamente** durante el proceso de recuperación muchos **dolores**, sobretodo de la **sonda urinaria**, que muchas veces hacía que se me **agotaran las fuerzas** y me veía en un estado de **debilidad muy grande** pero yo siempre resistía, gracias a Dios me he **recuperado bien** y luego **mentalmente** siempre he tenido la **mente tranquila** y he estado pensando en que iba a **volver a ser el mismo** cuando volviese a una plaza.
+
+**¿En qué plaza sueñas con triunfar en el futuro?**
+
+Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, pero sobretodo Madrid y Sevilla.
+
+**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
+
+Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 501,
        title: "“Expreso mi concepto bajo los cánones del clasicismo, con mi singularidad personal” - Entrevista a David Galván",
     image: "/images/entrevista.jpg",
     category: "Entrevistas",
@@ -7196,7 +7337,7 @@ Para el aficionado considero que causa mayor interés la variedad que la monoton
   showAuthorHeader: true
   },
 	 {
-    id: 501,
+    id: 502,
     title: "Busco torear lo más despacio posible: Entrevista al novillero Tomás González",
     image: "images/tomasgonzalez.jpg",
     category: "Entrevistas",
@@ -7234,7 +7375,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 `
   },
 	{
-    id: 502,
+    id: 503,
     title: "Entrevista a Carlos Zúñiga: “Soy una persona ambiciosa y la vida me ha enseñado a saber esperar”",
     image: "images/carloszuñiga.jpg",
     category: "Entrevistas",
@@ -7265,7 +7406,7 @@ Reitero una vez más mi agradecimiento públicamente a Morante. Creo que ha sido
 Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pero soy una persona ambiciosa y además la vida me ha enseñado a saber esperar. Desde luego, y no lo voy a ocultar, mi objetivo es poder seguir creciendo pero siempre con la clarividencia de estudiar los pliegos y la situación de cada plaza. Quién sabe, si el futuro, nos deparará alguna sorpresa. También es bonito soñar...`
   },
 { 
-    id: 503,
+    id: 504,
     title: "“Soy torero no sobresaliente” - Entrevista con Enrique Martínez Chapurra",
     image: "images/enriquez.jpg",
     category: "Entrevistas",
@@ -7291,7 +7432,7 @@ Estoy muy contento y muy feliz con las 9 o 10 plazas que gestiono actualmente pe
 —Mi objetivo es seguir en mi profesión mientras las fuerzas y la ilusión me acompañen. Que venga lo que el destino quiera, pero yo lo único que quiero es ser feliz, y así lo soy con lo que hago.`
   }, 
  { 
-    id: 504,
+    id: 505,
        title: "“Considero que soy un torero que tiene personalidad” - Entrevista con Sergio Rodríguez",
     image: "/images/sergior.jpg",
 	imageCaption: "Sergio Rodríguez en la Final de la Copa Chenel",
@@ -7348,7 +7489,7 @@ Quiero aprovechar esa oportunidad que se me ha brindado, que creo que es muy bue
 Y nada, pues me encanta conocer nuevos países, nuevas costumbres y sobre todo que conozca mi toreo en otros rincones del mundo.”`
   },
  	{ 
-    id: 505,
+    id: 506,
     title: `Nicolás Grande, el joven que reivindica la tauromaquia desde las redes: “Mi generación es el futuro de este arte”`,
     image: "/images/nicolas.jpg",
     category: "Entrevistas",
