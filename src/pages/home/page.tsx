@@ -456,41 +456,42 @@ const featuredNews: NewsItem[] = [
     date: "21 de Enero de 2026",
 	footerImage1: "/images/titu1.jpg",
 	footerImage2: "/images/titu2.jpg",
-	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes **expectativas** entre la afición.
+	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes expectativas entre la afición.
 
-Tras una **temporada sobresaliente** en la que sumó numerosos **triunfos**, cortó **orejas importantes** y dejó constancia de su concepto profundo del **toreo**, **Norte** se perfila como un torero con proyección y personalidad. Su **temple**, **naturalidad** en el ruedo y **ambición controlada** dibujan un perfil que merece atención y seguimiento en los próximos meses.
+Tras una temporada sobresaliente en la que sumó numerosos triunfos, cortó orejas importantes y dejó constancia de su concepto profundo del toreo, Norte se perfila como un torero con proyección y personalidad. Su temple, naturalidad en el ruedo y ambición controlada dibujan un perfil que merece atención y seguimiento en los próximos meses.
 
 **¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
 
-Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
+ Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
 
 **¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
 
-Bueno a mi me gusta fijarme en **todos** pero sí que tengo grandes **referentes** como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
+ Bueno a mi me gusta fijarme en todos pero sí que tengo grandes referentes como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
 
 **¿Cómo describirías el toreo que buscas expresar en la plaza?**
-
-Eso prefiero que lo digan los **aficionados**, pero sí que me gusta **torear despacio**, pudiendo a los **animales** y **dejándomelos llegar muy cerca**.
+ 
+Eso prefiero que lo digan los aficionados, pero sí que me gusta torear despacio, pudiendo a los animales y dejándomelos llegar muy cerca.
 
 **¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
 
-Pues la planteamos con mucha **ilusión y ganas**, ya que va a ser una **temporada importante y decisiva** en mi trayectoria voy a **pisar plazas de máxima importancia** y evidentemente estoy **contento e ilusionado** pero a la vez **responsabilizado**.
+ Pues la planteamos con mucha ilusión y ganas, ya que va a ser una temporada importante y decisiva en mi trayectoria voy a pisar plazas de máxima importancia y evidentemente estoy contento e ilusionado pero a la vez responsabilizado.
 
 **¿Qué objetivos te has marcado para la temporada 2026?**
 
-**Ser yo mismo** y **seguir mi camino** como lo he estado haciendo hasta ahora.
+ Ser yo mismo y seguir mi camino como lo he estado haciendo hasta ahora.
 
-**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?**
+**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?** 
 
-Pues **físicamente** durante el proceso de recuperación muchos **dolores**, sobretodo de la **sonda urinaria**, que muchas veces hacía que se me **agotaran las fuerzas** y me veía en un estado de **debilidad muy grande** pero yo siempre resistía, gracias a Dios me he **recuperado bien** y luego **mentalmente** siempre he tenido la **mente tranquila** y he estado pensando en que iba a **volver a ser el mismo** cuando volviese a una plaza.
+Pues físicamente durante el proceso de recuperación muchos dolores, sobretodo de la sonda urinaria, que muchas veces hacía que se me agotaran las fuerzas y me veía en un estado de debilidad muy grande pero yo siempre resistía, gracias a Dios me he recuperado bien y luego mentalmente siempre he tenido la mente tranquila y he estado pensando en que iba a volver a ser el mismo cuando volviese a una plaza. 
 
-**¿En qué plaza sueñas con triunfar en el futuro?**
+**¿En qué plaza sueñas con triunfar en el futuro?** 
 
-Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, pero sobretodo Madrid y Sevilla.
+Me gustaría triunfar en todas las plazas importantes del mundo, pero sobretodo Madrid y Sevilla.
 
-**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
+**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?** 
 
-Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+Es un sueño hecho realidad y bueno con dos grandes figuras del toreo y me siento un auténtico afortunado.
+`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -721,41 +722,41 @@ const latestNews: NewsItem[] = [
     date: "21 de Enero de 2026",
 	footerImage1: "/images/titu1.jpg",
 	footerImage2: "/images/titu2.jpg",
-	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes **expectativas** entre la afición.
+	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes expectativas entre la afición.
 
-Tras una **temporada sobresaliente** en la que sumó numerosos **triunfos**, cortó **orejas importantes** y dejó constancia de su concepto profundo del **toreo**, **Norte** se perfila como un torero con proyección y personalidad. Su **temple**, **naturalidad** en el ruedo y **ambición controlada** dibujan un perfil que merece atención y seguimiento en los próximos meses.
+Tras una temporada sobresaliente en la que sumó numerosos triunfos, cortó orejas importantes y dejó constancia de su concepto profundo del toreo, Norte se perfila como un torero con proyección y personalidad. Su temple, naturalidad en el ruedo y ambición controlada dibujan un perfil que merece atención y seguimiento en los próximos meses.
 
 **¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
 
-Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
+ Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
 
 **¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
 
-Bueno a mi me gusta fijarme en **todos** pero sí que tengo grandes **referentes** como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
+ Bueno a mi me gusta fijarme en todos pero sí que tengo grandes referentes como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
 
 **¿Cómo describirías el toreo que buscas expresar en la plaza?**
-
-Eso prefiero que lo digan los **aficionados**, pero sí que me gusta **torear despacio**, pudiendo a los **animales** y **dejándomelos llegar muy cerca**.
+ 
+Eso prefiero que lo digan los aficionados, pero sí que me gusta torear despacio, pudiendo a los animales y dejándomelos llegar muy cerca.
 
 **¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
 
-Pues la planteamos con mucha **ilusión y ganas**, ya que va a ser una **temporada importante y decisiva** en mi trayectoria voy a **pisar plazas de máxima importancia** y evidentemente estoy **contento e ilusionado** pero a la vez **responsabilizado**.
+ Pues la planteamos con mucha ilusión y ganas, ya que va a ser una temporada importante y decisiva en mi trayectoria voy a pisar plazas de máxima importancia y evidentemente estoy contento e ilusionado pero a la vez responsabilizado.
 
 **¿Qué objetivos te has marcado para la temporada 2026?**
 
-**Ser yo mismo** y **seguir mi camino** como lo he estado haciendo hasta ahora.
+ Ser yo mismo y seguir mi camino como lo he estado haciendo hasta ahora.
 
-**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?**
+**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?** 
 
-Pues **físicamente** durante el proceso de recuperación muchos **dolores**, sobretodo de la **sonda urinaria**, que muchas veces hacía que se me **agotaran las fuerzas** y me veía en un estado de **debilidad muy grande** pero yo siempre resistía, gracias a Dios me he **recuperado bien** y luego **mentalmente** siempre he tenido la **mente tranquila** y he estado pensando en que iba a **volver a ser el mismo** cuando volviese a una plaza.
+Pues físicamente durante el proceso de recuperación muchos dolores, sobretodo de la sonda urinaria, que muchas veces hacía que se me agotaran las fuerzas y me veía en un estado de debilidad muy grande pero yo siempre resistía, gracias a Dios me he recuperado bien y luego mentalmente siempre he tenido la mente tranquila y he estado pensando en que iba a volver a ser el mismo cuando volviese a una plaza. 
 
-**¿En qué plaza sueñas con triunfar en el futuro?**
+**¿En qué plaza sueñas con triunfar en el futuro?** 
 
-Me **gustaría** triunfar en **todas** las plazas **importantes** del mundo, pero sobretodo Madrid y Sevilla.
+Me gustaría triunfar en todas las plazas importantes del mundo, pero sobretodo Madrid y Sevilla.
 
-**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?**
+**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?** 
 
-Es un **sueño hecho realidad** y bueno con dos **grandes figuras** del **toreo** y me **siento** un **auténtico afortunado**.`,
+Es un sueño hecho realidad y bueno con dos grandes figuras del toreo y me siento un auténtico afortunado.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
