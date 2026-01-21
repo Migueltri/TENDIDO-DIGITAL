@@ -667,7 +667,7 @@ Esta decisión de volver a los ruedos llega seis meses después de la histórica
 
 const latestNews: NewsItem[] = [
  	{ 
-    id: 88,
+    id: 91,
     title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
     image: "/images/diestro.jpg",
     category: "Actualidad",
@@ -684,7 +684,7 @@ El torero recibió el galardón de manos de la junta directiva de la peña al t�
     showAuthorHeader: true
    },
 	{ 
-    id: 89,
+    id: 92,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
     image: "/images/.jpg",
     category: "Actualidad",
@@ -718,7 +718,7 @@ El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación ec
     showAuthorHeader: true
    },
 	{ 
-    id: 90,
+    id: 93,
     title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
     image: "/images/ddomecq.jpg",
     category: "Actualidad",
@@ -754,7 +754,7 @@ El público, compuesto mayoritariamente por jóvenes aficionados junto a asisten
     showAuthorHeader: true
    },
 	{ 
-    id: 91,
+    id: 94,
     title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
     image: "/images/feriaa.jpg",
     category: "Actualidad",
@@ -785,7 +785,7 @@ La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta fi
     showAuthorHeader: true
    },
 	{ 
-    id: 92,
+    id: 95,
     title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
     image: "/images/confirma.jpg",
     category: "Actualidad",
@@ -824,7 +824,7 @@ Víctor Hernández`,
     showAuthorHeader: true
    },
 	{ 
-    id: 93,
+    id: 96,
     title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
     image: "/images/jn.jpg",
     category: "Actualidad",
@@ -837,7 +837,7 @@ Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del 
     showAuthorHeader: true
    },
 	{ 
-    id: 94,
+    id: 88,
     title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
     image: "/images/perfila1.jpg",
     category: "Actualidad",
@@ -852,7 +852,7 @@ El elenco ganadero diseñado para la temporada incluiría hierros de contrastada
     showAuthorHeader: true
    },
 	{ 
-    id: 95,
+    id: 89,
     title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
     image: "/images/garzon2.jpg",
     category: "Actualidad",
@@ -867,7 +867,7 @@ Para esta cita del Domingo de Resurrección, está reseñada una corrida de toro
     showAuthorHeader: true
    },
 	{ 
-    id: 96,
+    id: 90,
     title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
     image: "/images/mor.jpg",
     category: "Actualidad",
