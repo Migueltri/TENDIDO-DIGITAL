@@ -450,137 +450,198 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `OneToro define su temporada televisiva con Sevilla, Castellón y Arlés como ejes principales.`,
-    image: "/images/one.jpg",
+    title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
+    image: "/images/.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `OneToro, el único canal taurino privado tras la salida de Movistar, avanza en la configuración de su temporada televisiva con un calendario que se dividirá en tres tramos: hasta la Feria de Abril, un segundo bloque hasta agosto y un cierre que abarcará septiembre y octubre.
-Entre sus principales objetivos está la retransmisión completa de la Feria de Abril de Sevilla, una opción que la plataforma contempla con optimismo siempre que resulte viable desde el punto de vista económico. La emisión se realizaría en colaboración con Canal Sur, que ofrecería la señal únicamente para Andalucía, aunque el acuerdo aún no está cerrado de forma definitiva.
-Lo que sí está confirmado es la emisión de las dos corridas dominicales de la Feria de la Magdalena de Castellón. El 8 de marzo se televisará el festejo con toros de La Quinta, en el que actuarán Ginés Marín, Aarón Palacio y Javier Zulueta, en una clara apuesta por la juventud. El 15 de marzo llegará el mano a mano entre Alejandro Talavante y Juan Ortega, con toros de Domingo Hernández.
-Además, OneToro mantiene conversaciones con la empresa de Valencia para retransmitir tres festejos de la Feria de Fallas, la primera gran cita taurina de la temporada.
-Fuera de España, la plataforma ya tiene firmado el serial completo de Arlés (Francia), con la emisión de sus cuatro festejos, programados del 3 al 6 de abril.
-La programación se completará con contenidos diferidos, como el formato del “día después” desde Valdemorillo, y conexiones especiales durante el Carnaval del Toro de Ciudad Rodrigo.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+    date: "21 de Enero de 2026",
+	excerpt: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
+
+●       El plazo de inscripción finaliza el 10 de febrero de 2026 y el premio tiene una dotación económica de 5.000 euros
+
+●       El Instituto Juan Belmonte y Legados impulsan este galardón como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza`,
+	fullContent: `**Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
+
+El premio **se dirige tanto a personas como a colectivos o instituciones, con perfiles muy variados como pastores, agricultores, naturalistas, divulgadores…o gestores del territorio**, entre otros, que representen un ecologismo arraigado, práctico y profundamente conectado con la realidad rural.
+
+En un contexto marcado por la creciente desconexión entre el mundo urbano y el rural, el premio busca **reconocer trayectorias e iniciativas que hayan tendido puentes entre el saber tradicional y los retos medioambientales contemporáneos**. El galardonado o galardonada deberá representar un modelo de autenticidad, arraigo y compromiso, basado en la integración de tradición, gestión sostenible del territorio y vocación pública, con capacidad de inspirar y comunicar los valores del campo, así como de ejercer una influencia social o cultural significativa.
+
+Con esta iniciativa, **el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio**, la cultura rural y el reconocimiento de quienes trabajan por la conservación desde dentro, a partir del conocimiento práctico y la responsabilidad cotidiana con la tierra. El premiado tendrá, además, la oportunidad de participar en un documental audiovisual que Legados se compromete a realizar para la promoción de su reconocimiento y su labor en el medio rural.
+
+**El premio, que se resolverá en marzo de 2026, cuenta con una dotación económica de 5.000 euros** y está dirigido a personas o colectivos cuya trayectoria contribuya a fortalecer el vínculo entre sociedad y naturaleza.
+
+**Las candidaturas solo podrán presentarse de forma on-line hasta el 10 de febrero de 2026** en la web del Instituto Juan Belmonte formalizando una propuesta que recoja: la trayectoria o proyecto desarrollado, su forma de influencia pública, los valores rurales transmitidos y el vínculo con el entorno natural. Las bases completas del Premio de Ecología 2026 del Instituto Juan Belmonte y Legados pueden consultarse a través del siguiente enlace.
+
+El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación económica, a personas o colectivos -menores o iguales a 35 años-que destaquen por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones o que destaquen (sin límite de edad) por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes inspiradores.
+
+**Sobre el Instituto Juan Belmonte y Legados**
+
+**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
+
+**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos. </a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1001,
-    title: `David  de   Miranda,  pronunció  en   Granada  una  lección catedrática de la verdad de su toreo`,
-    image: "/images/1 (1).jpg",
+    title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
+    image: "/images/ddomecq.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	footerImage1: "/images/2 (1).jpg",
-	footerImage2: "/images/3 (1).jpg",
-	excerpt: "El diestro onubense inauguró con magisterio el coloquio programado por la Peña Joselito 'El Gallo' dentro de 'Los lunes taurinos del Hotel Vincci'",
-	fullContent: `El matador de toros onubense **David de Miranda** se erigió en el gran protagonista del coloquio organizado por la **Peña Joselito 'El Gallo'**, celebrado *-19 de enero-* dentro del ciclo **‘Los lunes taurinos del Hotel Vincci’**, en **Granada**. Durante más de una hora de conversación fluida y cercana, el diestro de **Trigueros** desplegó una auténtica lección catedrática sobre la esencia del toreo, su trayectoria profesional y los retos que afronta en el presente y futuro inmediato de su carrera.
+    date: "21 de Enero de 2026",
+	excerpt: "El Salón de Carteles de la Plaza de Toros de Real Maestranza de Caballería de Sevilla, celebró la apertura del ‘XXIV Ciclo de Lecciones Magistrales de Aula Taurina’",
+	fullContent: `La **Real Maestranza de Caballería de Sevilla** acogió en la tarde de hoy **-martes 20 de enero-** la inauguración del **XXIV Ciclo de Lecciones Magistrales de Aula Taurina**, una cita ya plenamente consolidada como referente cultural y formativo dentro del ámbito taurino en la capital hispalense. El acto, organizado por **Aula Taurina** y la **Escuela de Tauromaquia de Sevilla** bajo el patrocinio de la **Real Maestranza**, tuvo como escenario el **Salón de Carteles de la Plaza de Toros**, que registró un lleno absoluto, reflejo del notable interés despertado por esta nueva edición.
 
-El acto estuvo conducido por el presidente de la peña, **Rogelio Muñoz**, el coronel e historiador **Julián Tomás García**, así como por distintos aficionados que participaron activamente en el coloquio. **David de Miranda** respondió con franqueza y profundidad, ofreciendo una visión honesta del oficio de matador de toros.
+Abrió el acto D. **José María Martínez Parras**, vicepresidente de Aula Taurina y de la Escuela de Tauromaquia de Sevilla, quien dio la bienvenida a los asistentes y desglosó el contenido del ciclo, antes de presentar al invitado inaugural y al moderador de la sesión.
 
-Al repasar sus inicios, el torero subrayó la importancia que tuvo en su carrera el certamen **‘Huelva busca un torero’**, celebrado en 2011, al que definió como un verdadero trampolín profesional. Posteriormente evocó uno de los momentos más determinantes de su vida taurina: la alternativa, tomada en su ciudad natal en 2016, de manos de **José Tomás**, así como las tardes más relevantes que ha firmado en plazas como **Madrid, Sevilla, Málaga, Huelva y Linares**.
+La conferencia de apertura corrió a cargo del prestigioso ganadero D. **Santiago Domecq Bohórquez**, que estuvo acompañado en la mesa por el periodista D. **Santiago Sánchez-Tráver**, director de Portaltaurino.net - **actualmente está considerada como la mayor wiki taurina del mundo-** encargado de moderar el acto con rigor, conocimiento y brillantez. **Domecq** ofreció una profunda y didáctica disertación bajo el título “La ganadería de Santiago Domecq”, en la que realizó un completo recorrido por su trayectoria personal y profesional como criador de toros bravos.
 
-Especial emoción despertó su recuerdo de la grave **lesión cervical sufrida en Toro (Zamora) en 2017**, que lo mantuvo alejado de los ruedos durante un año y marcó un antes y un después en su carrera. Con sinceridad, el diestro afirmó que **“Las cogidas son un trance necesario”**, reconociendo que dejan secuelas físicas y también psicológicas, auténticos **“Fantasmas que son difíciles de superar”**.
+El ganadero comenzó evocando los orígenes de su afición, recordando que su vocación nació de un entorno familiar estrechamente ligado al toro: “Tenía el ambiente del toro por todas partes, por mi padre, que no fue ganadero, aunque sí un buen aficionado, y por mi madre, hermana de Fermín Bohórquez”.
 
-En el plano conceptual, **David de Miranda** reivindicó una tauromaquia basada en la autenticidad, dejando claro que **“La verdad y la pureza es lo que mejor me define”**. En este sentido, fue rotundo al afirmar que **“Cuando no estás a gusto delante de un toro, no se puede mentir”**, una máxima que resume su forma de entender el toreo.
+Explicó que inició su andadura ganadera a los 18 años, cuando adquirió una partida de reses bravas a **Carlos Núñez** en la finca de **Los Derramaderos**, subrayando que “No he tenido una herencia para recibir la ganadería y poco a poco me fui haciendo ganadero”, aunque expresó con orgullo que serán sus hijos quienes continúen ese legado.
 
-Aunque reconoció poseer una personalidad muy definida en el ruedo, el onubense confesó su admiración por referentes contemporáneos como **Manolo Cortés, José Tomás, Paco Ojeda y Miguel Ángel Perera**, así como por las grandes figuras históricas del toreo, entre las que destacó a **Joselito ‘El Gallo’, Juan Belmonte y Manolete**.
+En su intervención detalló la composición genética de su hierro, basado en el encaste **Parladé–Conde de la Corte**, con una cuidada mezcla de sangres **Domecq** y **Núñez**, y actualmente sustentado en tres líneas fundamentales: **Torrestrella, Jandilla** y **Juan Pedro Domecq**. Tras más de cuatro décadas de trabajo, afirmó que existe “Una perfecta mezcla, aunque con predominio de Domecq, con un sello personal al cabo de 43 años”, reconociendo la decisiva influencia de D. **Álvaro Domecq y Díez**, “Del que aprendí mucho”.
 
-Para **David de Miranda**, la emoción del público no se logra desde la comodidad ni el exceso de técnica, sino desde la entrega total. En su opinión, emocionar exige **“Más compromiso, más riesgo y más arte”**, advirtiendo del **“Peligro de caer en una tauromaquia excesivamente depurada que conduce a la frialdad y la monotonía”**.
+Lejos de hablar de una ganadería cerrada o definitiva, **Santiago Domecq** insistió en la necesidad de evolución constante: “El toro crece y cambia y la ganadería nunca puede estar anquilosada”. En ese sentido, dejó claro que su mirada está siempre puesta en la plaza: “Yo siempre pienso en el juego del toro en la plaza. Intento criar un toro para que el torero se exprese en su máxima plenitud. Los verdaderos actores de la Fiesta somos los ganaderos y los toreros”.
 
-Tras proclamarse **triunfador de la feria colombiana de Manizales**, el torero afronta con ilusión una temporada 2026 cargada de compromisos de máximo nivel, con actuaciones previstas en **Venezuela, Jalostotitlán (México), Olivenza, Valencia** -*con la corrida de La Quinta*-, además de un doble compromiso en **Madrid y Sevilla**. En relación con **Granada**, mostró su deseo de volver a la **Monumental de Frascuelo**, confiando en estar anunciado en la **Feria del Corpus**, ya que considera que **“Es un placer y un privilegio hacer el paseíllo en una plaza como Granada”**.
+El ganadero defendió con convicción el momento actual del toro bravo, asegurando que “Se está lidiando el mejor toro de la historia y, por supuesto, el más bravo”, destacando cualidades como el ritmo, el poder, la fijeza y la humillación. Subrayó además la uniformidad de criterios en la casa, tanto por su parte como por la de sus hijos, aun manteniendo distintas líneas de selección.
 
-A las puertas de cumplir **diez años como matador de toros**, **David de Miranda** abordó también el apartado de apoderamiento, señalando al maestro **Enrique Ponce** como la persona idónea para dirigir su carrera, tras haber recibido ofrecimientos de grandes empresas y después de la etapa compartida con **Jorge Buendía y José Luis Pereda**. Convencido de la figura del torero-apoderado, aseguró que **“Quién mejor para defenderme que otro torero”** y destacó que **“El maestro Enrique Ponce, con una mirada, te da mucha seguridad”**. No obstante, reconoció que la nueva etapa se afronta **“Desde lo desconocido”**, con la dificultad añadida de estar ligado a un apoderado independiente, sin respaldo directo de grandes casas empresariales.
+Uno de los asuntos que despertó mayor interés fue el de los indultos, sobre los que se mostró claramente favorable: “Lo digo con rotundidad”, explicó, matizando que no todos los toros indultados sirven después como sementales. “El indulto lo pide el público porque se ha emocionado con la lidia de un toro, y nosotros no somos nadie para juzgarlo, pero no juguemos a ser ganaderos”, afirmó, recalcando que la emoción del espectador es un valor esencial de la Fiesta.
 
-Por último, en el apartado ganadero, el matador fue claro al afirmar que **“Los toreros necesitamos materia prima para poder triunfar”**. En este sentido, destacó el hierro de **Juan Pedro Domecq** y otras ganaderías reconocidas **“Valorando especialmente la regularidad que ofrecen como base para el éxito en el ruedo”**.`,
+**Domecq** abordó también aspectos técnicos y de manejo, como la importancia del tentadero en campo abierto, una herramienta clave para su ganadería, o el uso de fundas en los pitones, reconociendo que, aunque inicialmente no eran de su agrado, “Con el tiempo me he dado cuenta de que se evitan muchos accidentes”.
+
+En el repaso a la actualidad de la ganadería, explicó que esta temporada cuenta con **ocho corridas de toros y una novillada** que se lidiará en un festival, con destinos como **Valencia, Sevilla, Dax, Nimes, Alicante, Albacete** y **Lorca**, quedando aún una corrida por definir. Sobre **Madrid**, señaló que “No acudiré este año por no disponer de toros con el trapío que actualmente exige la plaza”. En cuanto a **Sevilla**, confesó que es “La plaza de mis sueños”, a la que no llegó antes “Por el enorme respeto y el miedo que me daba”, y anunció que tiene apartados dieciséis toros de los que saldrá la corrida sevillana.
+
+El ganadero cerró su intervención con un mensaje de optimismo sobre el futuro de la Fiesta, asegurando que “El futuro del toro está más garantizado que nunca”, gracias a la masiva presencia de jóvenes en las plazas. No obstante, advirtió de la necesidad de mantener la emoción en un contexto cada vez más previsible. Reivindicó, finalmente, el carácter vocacional de su oficio: “El ganadero es un romántico y no siempre se gana dinero criando toros; se es ganadero por vocación y siempre se debe aspirar a triunfar en la plaza”, destacando como pilares fundamentales de la crianza moderna la alimentación, la sanidad y la preparación física del toro.
+
+El público, compuesto mayoritariamente por jóvenes aficionados junto a asistentes de todos los perfiles, siguió la conferencia con gran atención y respondió con entusiasmo a una sesión que dejó una profunda huella entre los presentes, constituyendo una brillante apertura para un ciclo que, año tras año, reafirma su gran prestigio dentro del panorama taurino.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1002,
-    title: `Kilómetro Cero 2026 se celebrará en Valdemorillo con doce nombres para apuntar`,
-    image: "/images/km0.jpg",
+    title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
+    image: "/images/feriaa.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	excerpt: "El certamen de novilladas sin caballos desarrollará su cuarta edición en la plaza de toros de Valdemorillo a con tres festejos en el último fin de semana de febrero",
-	fullContent: `El certamen de novilladas sin caballos **Kilómetro Cero** nació en el año 2023 con la firme intención de recuperar el espíritu de "La Oportunidad de Vistalegre", un certamen que durante décadas puso en el foco a los que posteriormente han sido grandes figuras del toreo.
+    date: "21 de Enero de 2026",
+	fullContent: `La Feria Taurina de Guijuelo 2026 ha sido presentada oficialmente en **Fitur**, en un **acto** organizado por el Excelentísimo Ayuntamiento de Guijuelo y el empresario **José Ignacio Cascón**, situando nuevamente a este ciclo en el punto de mira de la afición y consolidando el prestigio alcanzado durante los últimos años en los días más taurinos del calendario.
 
-En la presente temporada, se celebrará la cuarta edición del certamen. La **plaza de toros de Valdemorillo** acogerá, los días **27 y 28 de febrero y 1 de marzo** (viernes, sábado y domingo), las tres novilladas. El formato seguirá siendo el mismo de ediciones pasadas, con **dos semifinales** en las que harán el paseíllo seis novilleros ante seis novillos y la **gran final**, en la que se mantiene dicha combinación.
+El evento **tuvo lugar en el stand del Ayuntamiento de Guijuelo**, uno de los más concurridos de la feria, en un ambiente acogedor que no dejó de lado los productos más representativos del municipio, como el vino y el jamón. La presentación, conducida por el periodista **David Casas**, contó con la presencia de uno de los protagonistas del ciclo, **Manuel Diosleguarde**.
 
-Los protagonistas de dichas novilladas serán **doce novilleros sin caballos** que buscarán relevar a Samuel Castrejón como triunfador, quien lo hizo en 2025. Los novilleros seleccionados son los siguientes: **Rubén Vara** y **Daniel García** de la Escuela Taurina José Cubero "Yiyo"; **Jacob Robledo**, de la Escuela Taurina CITAR-Anchuelo; **José Antonio de Gracia**, de la Escuela Taurina Fundación El Juli; **Pedro Gómez**; de la Escuela Taurina de Galapagar; **Rodrigo Cobo**, de la Escuela Taurina Miguel Cancela de Colmenar Viejo; **Gabriel Segura**, de la Escuela Taurina de Navas del Rey; **Raúl Caamaño**, de la Escuela Taurina de Toledo; **Rodrigo Villalón**, de la Escuela Taurina de Alicante; **Armando Rojo**, de la Escuela Taurina de Sevilla; **Jaime de Pedro**, de la Escuela Taurina de Atarfe; e **Israel Guirao**, de la Escuela Taurina de Valencia.
+La feria se ha configurado a la altura de ediciones anteriores, con carteles rematados, presencia de figuras consagradas y una clara apuesta por la variedad de encastes y estilos, reafirmando a Guijuelo como una de las citas imprescindibles del mes de agosto.
 
-En el aspecto ganadero, serán seis las ganaderías que estarán presentes en ruedo de Valdemorillo. Respecto al año pasado, repiten las ganaderías de **Cerro Longo** y **Flor de Jara**, esta última fue la ganadería triunfadora de Kilómetro Cero 2205. Completan el elenco los hierros de **Ginés Bartolomé, Guerrero y Carpintero, Hermanas Ortega y La Machamona**.
+El ciclo se desarrollará entre los días **15 y 19 de agosto**, con dos corridas de toros, una corrida de rejones y una novillada, completando así una programación diversa y atractiva para todos los públicos.
 
-Los carteles de las dos semifinales se realizarán por sorteo el día de la presentación oficial del certamen. Las **entradas** para los tres días serán **gratuitas**, pero se deberán recoger en taquilla para poder acceder al interior de la plaza.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+**15 de agosto**: Corrida de toros de El Pilar para El Fandi, Emilio de Justo y Marco Pérez. La tarde tendrá un marcado carácter simbólico para Marco Pérez, que debuta como matador en el mismo coso donde actuó como novillero con picadores.
+
+**16 de agosto**: Corrida de rejones de San Pelayo para Sergio Galán, Hermoso de Mendoza y Víctor Herrero, recuperando este espectáculo tras la demanda de la afición.
+
+**18 de agosto**: Novillada de la Escuela Taurina de la Diputación de Salamanca, reafirmando el compromiso con la formación y el fomento de la tauromaquia.
+
+**19 de agosto**: Corrida de toros de Vellosino para Daniel Luque, Borja Jiménez y Manuel Diosleguarde, combinando figuras consolidadas, triunfadores recientes y toreros con especial vinculación con la afición local.
+
+Durante la presentación, el alcalde de Guijuelo, **Roberto Martín**, destacó que “una vez más, creemos que apostando por la tauromaquia se apuesta por el municipio, porque Guijuelo se llena de gente cuando hay toros y el ambiente es inmejorable”. Asimismo, anunció que se celebrará una gran presentación en el propio municipio semanas antes del inicio de la feria, donde se darán a conocer más detalles de los festejos.
+
+Por su parte, el empresario **José Ignacio Cascón aseguró: “Es la Feria que quería hacer, y con eso ya lo digo todo”**, reflejando su satisfacción por haber cerrado carteles de gran enjundia en los primeros meses del año.
+
+La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta firme por la calidad, la afición y la tradición, reforzando su proyección dentro del panorama taurino nacional.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1003,
-    title: `Presentación de los carteles del abono de Sevilla 2026`,
-    image: "/images/presenta.jpg",
+    title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
+    image: "/images/confirma.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `El Cartuja Center acogerá el próximo 9 de febrero la presentación oficial de los carteles del abono de la Feria de Sevilla 2026, en una cita que marcará un punto de inflexión en la forma de dar a conocer la temporada taurina sevillana.
+    date: "21 de Enero de 2026",
+	fullContent: `**Damián Castaño** ha confirmado su cuadrilla para la temporada 2026, incorporando **importantes nombres que refuerzan la estructura de un equipo pensado para lidiar corridas de máxima exigencia. Entre las novedades destacan Curro Vivas, como lidiador, y José Antonio Ventana “Toñete”** , que ocupará el puesto de tercero, completando **una cuadrilla de entidad para uno de los toreros más respetados del escalafón por su trayectoria frente a encierros duros.**
 
-La empresa Lances de Futuro ha apostado por un nuevo formato para esta presentación, concebida como una gran gala teatralizada, con actuaciones artísticas y un planteamiento escénico innovador. De este modo, el acto abandona el tradicional escenario del Salón de Carteles de la Real Maestranza para trasladarse a un espacio cultural de mayor proyección como el Cartuja Center.
-Esta gala supone un paso adelante en la proyección pública de la temporada taurina de Sevilla. 
+La **cuadrilla de Damián Castaño** para el curso 2026 queda **compuesta de la siguiente manera:**
 
-Durante la etapa de la empresa Pagés, la presentación de los carteles se realizaba en un contexto más institucional y cerrado, mientras que el nuevo modelo impulsado por Lances de Futuro apuesta por un evento más abierto, dinámico y espectacular.
-El Teatro Cartuja Center se convertirá así en el epicentro de la afición, acogiendo una velada que reunirá a toreros, ganaderos, profesionales del sector, autoridades y representantes de la sociedad civil. Las actuaciones artísticas previstas reforzarán, además, la dimensión cultural del evento.
+**Banderilleros:**
 
-A lo largo de la gala se darán a conocer de manera oficial los carteles que conforman el abono sevillano de 2026, una temporada llamada a marcar un nuevo tiempo en el histórico coso del Baratillo.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+Curro Vivas
+
+**Rubén Sánchez**
+
+José Antonio Ventana «Toñete»
+
+**Picadores:**
+
+Javier Martín
+
+Segundo picador: Ira alternando
+
+**Apoderado:**
+
+Manolo Sánchez
+
+**Mozo de espadas:**
+
+Sergio Castaño
+
+**Ayuda:**
+
+Víctor Hernández`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1004,
-    title: `Las Ventas perfila un potente arranque de temporada 2026 con torismo, triunfadores y una confirmación de alternativa`,
-    image: "/images/perfila.jpg",
+    title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
+    image: "/images/jn.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `Plaza 1, empresa gestora de la plaza de toros de Las Ventas, tiene prácticamente definido el inicio de la temporada 2026 en Madrid. El curso arrancará con una programación de alto interés para el aficionado, en la que se combinan hierros de marcado **carácter torista**, nombres contrastados del escalafón, una confirmación de alternativa y varias presentaciones antes de la celebración de la Feria de San Isidro, cuyos carteles se harán oficiales el próximo **5 de febrero**.
+    date: "21 de Enero de 2026",
+	fullContent: `La temporada francesa se va configurando con carteles de gran interés. Tras anunciar las fechas y la estructura de su feria, la localidad de **Dax ha dado a conocer uno de los carteles destacados de su ciclo continuado de agosto, en el que Julio Norte tomará la alternativa de manos de Roca Rey, con Pablo Aguado como testigo. La cita, prevista para el 13 de agosto, contará con un encierro de Juan Pedro Domecq.**
 
-La temporada comenzará el 22 de marzo con el regreso a Madrid de la corrida de **Cuadri**. El hierro de Trigueros estará acompañado por una terna de acreditado interés: **Pepe Moral, Damián Castaño y Gómez del Pilar**, tres toreros con currículum y argumentos contrastados ante este tipo de encastes.
-
-El Domingo de Ramos será el turno de la corrida de **Dolores Aguirre**, en la que, salvo cambios, **Cristian Pérez confirmará su alternativa con Antonio Ferrera como padrino e Isaac Fonseca como testigo**. Ferrera, además, estaría anunciado en la primera cita venteña de la temporada con tres hierros de máxima exigencia: Dolores Aguirre, Partido de Resina y Adolfo Martín.
-
-Para el Domingo de Resurrección se ha reseñado una corrida de Martín Lorca, con una terna compuesta por **Curro Díaz, Rafael Serna y Diego San Román**, estos dos últimos nombres propios del pasado San Isidro 2025.
-
-El ciclo se completa con dos novilladas con picadores, en las que destacan los nombres de **Tomás Bastos, Mariscal Ruiz, Cid de María y El Mella**, junto a las presentaciones en Madrid de **Pedro Andrés y Jesús Romero**. Los hierros anunciados para estas citas son Hermanos Sánchez Herrero y Antonio Palla.
-
-El mes de abril se cerrará con una corrida de **Palha**, en la que harán el paseíllo **Sánchez Vara, Luis Gerpe y Francisco José Espada**, conformando un cartel de marcado corte torista.
-
-A falta de confirmación oficial y posibles ajustes, los carteles previstos son los siguientes:
-
-**Domingo 22 de marzo**: Pepe Moral, Damián Castaño y Gómez del Pilar (Cuadri)
-
-**Domingo 29 de marzo**: Antonio Ferrera, Isaac Fonseca y Cristian Pérez —confirmación de alternativa— (Dolores Aguirre)
-
-**Domingo 5 de abril**: Curro Díaz, Rafael Serna y Diego San Román (Martín Lorca)
-
-**Domingo 12 de abril**: Jesús Romero, Mariscal Ruiz y Pedro Andrés (Hnos. Sánchez Herrero)
-
-**Domingo 19 de abril**: Cid de María, El Mella y Tomás Bastos (Antonio Palla)
-
-**Domingo 26 de abril**: Sánchez Vara, Francisco José Espada y Luis Gerpe (Palha)
-
-**Antes** del inicio de la Feria de **San Isidro**, **Las Ventas** acogerá el **1 de mayo** una novillada con seis hierros de la Comunidad de Madrid, mientras que el domingo **3 de mayo** está reseñada una novillada de **Couto de Fornilhos**. En la tradicional corrida **Goyesca** del **2 de mayo**, harán el paseíllo **Uceda Leal, Manuel Jesús “El Cid” y Javier Cortés**, para lidiar un encierro de la ganadería de **El Pilar**.`,
+Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del escalafón novilleril, con 21 paseíllos y un balance de 46 orejas y un rabo** . Una temporada de gran importancia que le permite afrontar el 2026 con la **ilusión de pisar grandes escenarios como Valencia, Madrid o Sevilla.** “Voy a cumplir un sueño en **una plaza que me ha motivado desde mis inicios y donde siempre me he sentido torero”,** asegura el novillero salmantino en el vídeo en el que anuncia su alternativa en Dax.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1005,
-    title: `El Niño de las Monjas pone fin a su relación de apoderamiento con Amadeo Pitarch y Jesús Rivera`,
-    image: "/images/niño.jpg",
+    title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
+    image: "/images/perfila1.jpg",
     category: "Actualidad",
-    date: "20 de Enero de 2026",
-	fullContent: `El matador de toros **Jordi Pérez «El Niño de las Monjas»** y su equipo de apoderados, formado por **Amadeo Pitarch y Jesús Rivera** , han decidido por mutuo acuerdo poner fin a la etapa profesional que les unía desde el invierno del año 2024. Ambas partes se desean lo mejor en lo personal y en lo profesional.
+    date: "21 de Enero de 2026",
+	fullContent: `La empresa Lances de Futuro, gestionada por **José María Garzón**, está ultimando un elenco ganadero de primer nivel para la temporada 2026, la primera bajo su gestión al frente de la Real Maestranza de Caballería de Sevilla. El propio empresario avanzó recientemente, en un encuentro con los medios de comunicación, las líneas maestras de una programación ganadera que presentará novedades de gran interés, como el debut del hierro de **Álvaro Núñez**, así como los regresos de **La Quinta y Puerto de San Lorenzo**.
 
-El diestro valenciano se encuentra ya inmerso en la preparación de la próxima temporada, una campaña que afronta con gran ilusión y que llegará cargada de nuevos retos y apuestas importantes en su carrera.`,
+Según ha podido saber este medio, Garzón trabaja con una planificación en la que la ganadería de **Garcigrande** ocuparía un papel protagonista dentro del abono sevillano, con dos corridas de toros y una novillada con picadores ya reseñadas. A este bloque principal podrían sumarse otras divisas para completar las corridas de toros, actualmente aún pendientes de definición.
+
+El elenco ganadero diseñado para la temporada incluiría hierros de contrastada solvencia y variedad de encastes, entre los que figuran **La Quinta, Álvaro Núñez, Puerto de San Lorenzo, Miura, Victorino Martín, Hermanos García Jiménez, Fuente Ymbro, Domingo Hernández, Alcurrucén, Garcigrande, Jandilla, Santiago Domecq, Juan Pedro Domecq, Victoriano del Río, El Parralejo y Núñez del Cuvillo**, conformando así una de las propuestas ganaderas más completas y atractivas de los últimos años en la plaza sevillana.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
+    image: "/images/garzon2.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `**José María Garzón** tiene muy avanzada la confección del cartel que supondrá su debut como empresario de la Real Maestranza de Caballería de Sevilla. Un Domingo de Resurrección de 2026 señalado en rojo en el calendario taurino, después de que el periodista **Vicente Zabala de la Serna adelantara la reaparición de Morante de la Puebla el próximo 5 de abril.**
+
+De confirmarse oficialmente la presencia del torero cigarrero en la corrida inaugural de la temporada sevillana, Garzón tendría prácticamente cerrado su primer cartel al frente de la empresa maestrante. Una combinación de máximo relumbrón, con el atractivo añadido de la figura indiscutible de **Roca Rey y la incorporación de David de Miranda, único espada capaz de abrir la Puerta del Príncipe en 2025.** Un cartel de marcada rivalidad e interés, que reúne a tres de los nombres llamados a vertebrar, entre otros, el desarrollo de la temporada sevillana.
+
+Para esta cita del Domingo de Resurrección, está reseñada una corrida de toros de **Hermanos García Jiménez** , ganadería habitual en las grandes fechas del calendario.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
+    image: "/images/mor.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La noticia más esperada por la afición taurina ya es una realidad. Apenas seis meses después de anunciar su retirada el pasado 12 de octubre en la plaza de Las Ventas, **Morante de la Puebla reaparecerá el próximo Domingo de Resurrección en Sevilla** . Según adelanta el periodista **Vicente Zabala de la Serna en El Mundo** , el torero cigarrero ha decidido volver a vestirse de luces el **5 de abril en la Real Maestranza de Caballería de Sevilla**, en el festejo que abrirá la temporada sevillana.
+
+El regreso de Morante a la Maestranza no se limitará a esa esperada cita inaugural. De acuerdo con la información publicada, su reaparición en Sevilla vendrá acompañada de un calendario más amplio, **que incluirá dos tardes en la Feria de Abril, una en la Feria de San Miguel y una actuación adicional en la tradicional corrida del Corpus Christi**, festejo que el diestro de La Puebla del Río afronta con especial ilusión y que el nuevo empresario del coso sevillano, José María Garzón, pretende recuperar.
+
+Esta decisión de volver a los ruedos llega seis meses después de la histórica jornada vivida el 12 de octubre de 2025 en Las Ventas. Aquella fecha estuvo marcada por el festival matinal en homenaje a Antoñete y por la posterior Corrida de la Hispanidad, en la que Morante de la Puebla salió a hombros tras cortar dos orejas al cuarto toro de la tarde y anunciar su retirada al quitarse el añadido en el centro del ruedo.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -589,6 +650,204 @@ El diestro valenciano se encuentra ya inmerso en la preparación de la próxima 
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 89,
+    title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	excerpt: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
+
+●       El plazo de inscripción finaliza el 10 de febrero de 2026 y el premio tiene una dotación económica de 5.000 euros
+
+●       El Instituto Juan Belmonte y Legados impulsan este galardón como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza`,
+	fullContent: `**Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
+
+El premio **se dirige tanto a personas como a colectivos o instituciones, con perfiles muy variados como pastores, agricultores, naturalistas, divulgadores…o gestores del territorio**, entre otros, que representen un ecologismo arraigado, práctico y profundamente conectado con la realidad rural.
+
+En un contexto marcado por la creciente desconexión entre el mundo urbano y el rural, el premio busca **reconocer trayectorias e iniciativas que hayan tendido puentes entre el saber tradicional y los retos medioambientales contemporáneos**. El galardonado o galardonada deberá representar un modelo de autenticidad, arraigo y compromiso, basado en la integración de tradición, gestión sostenible del territorio y vocación pública, con capacidad de inspirar y comunicar los valores del campo, así como de ejercer una influencia social o cultural significativa.
+
+Con esta iniciativa, **el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio**, la cultura rural y el reconocimiento de quienes trabajan por la conservación desde dentro, a partir del conocimiento práctico y la responsabilidad cotidiana con la tierra. El premiado tendrá, además, la oportunidad de participar en un documental audiovisual que Legados se compromete a realizar para la promoción de su reconocimiento y su labor en el medio rural.
+
+**El premio, que se resolverá en marzo de 2026, cuenta con una dotación económica de 5.000 euros** y está dirigido a personas o colectivos cuya trayectoria contribuya a fortalecer el vínculo entre sociedad y naturaleza.
+
+**Las candidaturas solo podrán presentarse de forma on-line hasta el 10 de febrero de 2026** en la web del Instituto Juan Belmonte formalizando una propuesta que recoja: la trayectoria o proyecto desarrollado, su forma de influencia pública, los valores rurales transmitidos y el vínculo con el entorno natural. Las bases completas del Premio de Ecología 2026 del Instituto Juan Belmonte y Legados pueden consultarse a través del siguiente enlace.
+
+El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación económica, a personas o colectivos -menores o iguales a 35 años-que destaquen por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones o que destaquen (sin límite de edad) por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes inspiradores.
+
+**Sobre el Instituto Juan Belmonte y Legados**
+
+**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
+
+**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos. </a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 90,
+    title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
+    image: "/images/ddomecq.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	excerpt: "El Salón de Carteles de la Plaza de Toros de Real Maestranza de Caballería de Sevilla, celebró la apertura del ‘XXIV Ciclo de Lecciones Magistrales de Aula Taurina’",
+	fullContent: `La **Real Maestranza de Caballería de Sevilla** acogió en la tarde de hoy **-martes 20 de enero-** la inauguración del **XXIV Ciclo de Lecciones Magistrales de Aula Taurina**, una cita ya plenamente consolidada como referente cultural y formativo dentro del ámbito taurino en la capital hispalense. El acto, organizado por **Aula Taurina** y la **Escuela de Tauromaquia de Sevilla** bajo el patrocinio de la **Real Maestranza**, tuvo como escenario el **Salón de Carteles de la Plaza de Toros**, que registró un lleno absoluto, reflejo del notable interés despertado por esta nueva edición.
+
+Abrió el acto D. **José María Martínez Parras**, vicepresidente de Aula Taurina y de la Escuela de Tauromaquia de Sevilla, quien dio la bienvenida a los asistentes y desglosó el contenido del ciclo, antes de presentar al invitado inaugural y al moderador de la sesión.
+
+La conferencia de apertura corrió a cargo del prestigioso ganadero D. **Santiago Domecq Bohórquez**, que estuvo acompañado en la mesa por el periodista D. **Santiago Sánchez-Tráver**, director de Portaltaurino.net - **actualmente está considerada como la mayor wiki taurina del mundo-** encargado de moderar el acto con rigor, conocimiento y brillantez. **Domecq** ofreció una profunda y didáctica disertación bajo el título “La ganadería de Santiago Domecq”, en la que realizó un completo recorrido por su trayectoria personal y profesional como criador de toros bravos.
+
+El ganadero comenzó evocando los orígenes de su afición, recordando que su vocación nació de un entorno familiar estrechamente ligado al toro: “Tenía el ambiente del toro por todas partes, por mi padre, que no fue ganadero, aunque sí un buen aficionado, y por mi madre, hermana de Fermín Bohórquez”.
+
+Explicó que inició su andadura ganadera a los 18 años, cuando adquirió una partida de reses bravas a **Carlos Núñez** en la finca de **Los Derramaderos**, subrayando que “No he tenido una herencia para recibir la ganadería y poco a poco me fui haciendo ganadero”, aunque expresó con orgullo que serán sus hijos quienes continúen ese legado.
+
+En su intervención detalló la composición genética de su hierro, basado en el encaste **Parladé–Conde de la Corte**, con una cuidada mezcla de sangres **Domecq** y **Núñez**, y actualmente sustentado en tres líneas fundamentales: **Torrestrella, Jandilla** y **Juan Pedro Domecq**. Tras más de cuatro décadas de trabajo, afirmó que existe “Una perfecta mezcla, aunque con predominio de Domecq, con un sello personal al cabo de 43 años”, reconociendo la decisiva influencia de D. **Álvaro Domecq y Díez**, “Del que aprendí mucho”.
+
+Lejos de hablar de una ganadería cerrada o definitiva, **Santiago Domecq** insistió en la necesidad de evolución constante: “El toro crece y cambia y la ganadería nunca puede estar anquilosada”. En ese sentido, dejó claro que su mirada está siempre puesta en la plaza: “Yo siempre pienso en el juego del toro en la plaza. Intento criar un toro para que el torero se exprese en su máxima plenitud. Los verdaderos actores de la Fiesta somos los ganaderos y los toreros”.
+
+El ganadero defendió con convicción el momento actual del toro bravo, asegurando que “Se está lidiando el mejor toro de la historia y, por supuesto, el más bravo”, destacando cualidades como el ritmo, el poder, la fijeza y la humillación. Subrayó además la uniformidad de criterios en la casa, tanto por su parte como por la de sus hijos, aun manteniendo distintas líneas de selección.
+
+Uno de los asuntos que despertó mayor interés fue el de los indultos, sobre los que se mostró claramente favorable: “Lo digo con rotundidad”, explicó, matizando que no todos los toros indultados sirven después como sementales. “El indulto lo pide el público porque se ha emocionado con la lidia de un toro, y nosotros no somos nadie para juzgarlo, pero no juguemos a ser ganaderos”, afirmó, recalcando que la emoción del espectador es un valor esencial de la Fiesta.
+
+**Domecq** abordó también aspectos técnicos y de manejo, como la importancia del tentadero en campo abierto, una herramienta clave para su ganadería, o el uso de fundas en los pitones, reconociendo que, aunque inicialmente no eran de su agrado, “Con el tiempo me he dado cuenta de que se evitan muchos accidentes”.
+
+En el repaso a la actualidad de la ganadería, explicó que esta temporada cuenta con **ocho corridas de toros y una novillada** que se lidiará en un festival, con destinos como **Valencia, Sevilla, Dax, Nimes, Alicante, Albacete** y **Lorca**, quedando aún una corrida por definir. Sobre **Madrid**, señaló que “No acudiré este año por no disponer de toros con el trapío que actualmente exige la plaza”. En cuanto a **Sevilla**, confesó que es “La plaza de mis sueños”, a la que no llegó antes “Por el enorme respeto y el miedo que me daba”, y anunció que tiene apartados dieciséis toros de los que saldrá la corrida sevillana.
+
+El ganadero cerró su intervención con un mensaje de optimismo sobre el futuro de la Fiesta, asegurando que “El futuro del toro está más garantizado que nunca”, gracias a la masiva presencia de jóvenes en las plazas. No obstante, advirtió de la necesidad de mantener la emoción en un contexto cada vez más previsible. Reivindicó, finalmente, el carácter vocacional de su oficio: “El ganadero es un romántico y no siempre se gana dinero criando toros; se es ganadero por vocación y siempre se debe aspirar a triunfar en la plaza”, destacando como pilares fundamentales de la crianza moderna la alimentación, la sanidad y la preparación física del toro.
+
+El público, compuesto mayoritariamente por jóvenes aficionados junto a asistentes de todos los perfiles, siguió la conferencia con gran atención y respondió con entusiasmo a una sesión que dejó una profunda huella entre los presentes, constituyendo una brillante apertura para un ciclo que, año tras año, reafirma su gran prestigio dentro del panorama taurino.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 91,
+    title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
+    image: "/images/feriaa.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La Feria Taurina de Guijuelo 2026 ha sido presentada oficialmente en **Fitur**, en un **acto** organizado por el Excelentísimo Ayuntamiento de Guijuelo y el empresario **José Ignacio Cascón**, situando nuevamente a este ciclo en el punto de mira de la afición y consolidando el prestigio alcanzado durante los últimos años en los días más taurinos del calendario.
+
+El evento **tuvo lugar en el stand del Ayuntamiento de Guijuelo**, uno de los más concurridos de la feria, en un ambiente acogedor que no dejó de lado los productos más representativos del municipio, como el vino y el jamón. La presentación, conducida por el periodista **David Casas**, contó con la presencia de uno de los protagonistas del ciclo, **Manuel Diosleguarde**.
+
+La feria se ha configurado a la altura de ediciones anteriores, con carteles rematados, presencia de figuras consagradas y una clara apuesta por la variedad de encastes y estilos, reafirmando a Guijuelo como una de las citas imprescindibles del mes de agosto.
+
+El ciclo se desarrollará entre los días **15 y 19 de agosto**, con dos corridas de toros, una corrida de rejones y una novillada, completando así una programación diversa y atractiva para todos los públicos.
+
+**15 de agosto**: Corrida de toros de El Pilar para El Fandi, Emilio de Justo y Marco Pérez. La tarde tendrá un marcado carácter simbólico para Marco Pérez, que debuta como matador en el mismo coso donde actuó como novillero con picadores.
+
+**16 de agosto**: Corrida de rejones de San Pelayo para Sergio Galán, Hermoso de Mendoza y Víctor Herrero, recuperando este espectáculo tras la demanda de la afición.
+
+**18 de agosto**: Novillada de la Escuela Taurina de la Diputación de Salamanca, reafirmando el compromiso con la formación y el fomento de la tauromaquia.
+
+**19 de agosto**: Corrida de toros de Vellosino para Daniel Luque, Borja Jiménez y Manuel Diosleguarde, combinando figuras consolidadas, triunfadores recientes y toreros con especial vinculación con la afición local.
+
+Durante la presentación, el alcalde de Guijuelo, **Roberto Martín**, destacó que “una vez más, creemos que apostando por la tauromaquia se apuesta por el municipio, porque Guijuelo se llena de gente cuando hay toros y el ambiente es inmejorable”. Asimismo, anunció que se celebrará una gran presentación en el propio municipio semanas antes del inicio de la feria, donde se darán a conocer más detalles de los festejos.
+
+Por su parte, el empresario **José Ignacio Cascón aseguró: “Es la Feria que quería hacer, y con eso ya lo digo todo”**, reflejando su satisfacción por haber cerrado carteles de gran enjundia en los primeros meses del año.
+
+La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta firme por la calidad, la afición y la tradición, reforzando su proyección dentro del panorama taurino nacional.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 92,
+    title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
+    image: "/images/confirma.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `**Damián Castaño** ha confirmado su cuadrilla para la temporada 2026, incorporando **importantes nombres que refuerzan la estructura de un equipo pensado para lidiar corridas de máxima exigencia. Entre las novedades destacan Curro Vivas, como lidiador, y José Antonio Ventana “Toñete”** , que ocupará el puesto de tercero, completando **una cuadrilla de entidad para uno de los toreros más respetados del escalafón por su trayectoria frente a encierros duros.**
+
+La **cuadrilla de Damián Castaño** para el curso 2026 queda **compuesta de la siguiente manera:**
+
+**Banderilleros:**
+
+Curro Vivas
+
+**Rubén Sánchez**
+
+José Antonio Ventana «Toñete»
+
+**Picadores:**
+
+Javier Martín
+
+Segundo picador: Ira alternando
+
+**Apoderado:**
+
+Manolo Sánchez
+
+**Mozo de espadas:**
+
+Sergio Castaño
+
+**Ayuda:**
+
+Víctor Hernández`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 93,
+    title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
+    image: "/images/jn.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La temporada francesa se va configurando con carteles de gran interés. Tras anunciar las fechas y la estructura de su feria, la localidad de **Dax ha dado a conocer uno de los carteles destacados de su ciclo continuado de agosto, en el que Julio Norte tomará la alternativa de manos de Roca Rey, con Pablo Aguado como testigo. La cita, prevista para el 13 de agosto, contará con un encierro de Juan Pedro Domecq.**
+
+Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del escalafón novilleril, con 21 paseíllos y un balance de 46 orejas y un rabo** . Una temporada de gran importancia que le permite afrontar el 2026 con la **ilusión de pisar grandes escenarios como Valencia, Madrid o Sevilla.** “Voy a cumplir un sueño en **una plaza que me ha motivado desde mis inicios y donde siempre me he sentido torero”,** asegura el novillero salmantino en el vídeo en el que anuncia su alternativa en Dax.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 94,
+    title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
+    image: "/images/perfila1.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La empresa Lances de Futuro, gestionada por **José María Garzón**, está ultimando un elenco ganadero de primer nivel para la temporada 2026, la primera bajo su gestión al frente de la Real Maestranza de Caballería de Sevilla. El propio empresario avanzó recientemente, en un encuentro con los medios de comunicación, las líneas maestras de una programación ganadera que presentará novedades de gran interés, como el debut del hierro de **Álvaro Núñez**, así como los regresos de **La Quinta y Puerto de San Lorenzo**.
+
+Según ha podido saber este medio, Garzón trabaja con una planificación en la que la ganadería de **Garcigrande** ocuparía un papel protagonista dentro del abono sevillano, con dos corridas de toros y una novillada con picadores ya reseñadas. A este bloque principal podrían sumarse otras divisas para completar las corridas de toros, actualmente aún pendientes de definición.
+
+El elenco ganadero diseñado para la temporada incluiría hierros de contrastada solvencia y variedad de encastes, entre los que figuran **La Quinta, Álvaro Núñez, Puerto de San Lorenzo, Miura, Victorino Martín, Hermanos García Jiménez, Fuente Ymbro, Domingo Hernández, Alcurrucén, Garcigrande, Jandilla, Santiago Domecq, Juan Pedro Domecq, Victoriano del Río, El Parralejo y Núñez del Cuvillo**, conformando así una de las propuestas ganaderas más completas y atractivas de los últimos años en la plaza sevillana.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 95,
+    title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
+    image: "/images/garzon2.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `**José María Garzón** tiene muy avanzada la confección del cartel que supondrá su debut como empresario de la Real Maestranza de Caballería de Sevilla. Un Domingo de Resurrección de 2026 señalado en rojo en el calendario taurino, después de que el periodista **Vicente Zabala de la Serna adelantara la reaparición de Morante de la Puebla el próximo 5 de abril.**
+
+De confirmarse oficialmente la presencia del torero cigarrero en la corrida inaugural de la temporada sevillana, Garzón tendría prácticamente cerrado su primer cartel al frente de la empresa maestrante. Una combinación de máximo relumbrón, con el atractivo añadido de la figura indiscutible de **Roca Rey y la incorporación de David de Miranda, único espada capaz de abrir la Puerta del Príncipe en 2025.** Un cartel de marcada rivalidad e interés, que reúne a tres de los nombres llamados a vertebrar, entre otros, el desarrollo de la temporada sevillana.
+
+Para esta cita del Domingo de Resurrección, está reseñada una corrida de toros de **Hermanos García Jiménez** , ganadería habitual en las grandes fechas del calendario.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 96,
+    title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
+    image: "/images/mor.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La noticia más esperada por la afición taurina ya es una realidad. Apenas seis meses después de anunciar su retirada el pasado 12 de octubre en la plaza de Las Ventas, **Morante de la Puebla reaparecerá el próximo Domingo de Resurrección en Sevilla** . Según adelanta el periodista **Vicente Zabala de la Serna en El Mundo** , el torero cigarrero ha decidido volver a vestirse de luces el **5 de abril en la Real Maestranza de Caballería de Sevilla**, en el festejo que abrirá la temporada sevillana.
+
+El regreso de Morante a la Maestranza no se limitará a esa esperada cita inaugural. De acuerdo con la información publicada, su reaparición en Sevilla vendrá acompañada de un calendario más amplio, **que incluirá dos tardes en la Feria de Abril, una en la Feria de San Miguel y una actuación adicional en la tradicional corrida del Corpus Christi**, festejo que el diestro de La Puebla del Río afronta con especial ilusión y que el nuevo empresario del coso sevillano, José María Garzón, pretende recuperar.
+
+Esta decisión de volver a los ruedos llega seis meses después de la histórica jornada vivida el 12 de octubre de 2025 en Las Ventas. Aquella fecha estuvo marcada por el festival matinal en homenaje a Antoñete y por la posterior Corrida de la Hispanidad, en la que Morante de la Puebla salió a hombros tras cortar dos orejas al cuarto toro de la tarde y anunciar su retirada al quitarse el añadido en el centro del ruedo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 97,
     title: `OneToro define su temporada televisiva con Sevilla, Castellón y Arlés como ejes principales.`,
     image: "/images/one.jpg",
