@@ -450,6 +450,31 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Arles anuncia una Feria de Pascua de máximo nivel con el respaldo de las figuras`,
+    image: "/images/fferia.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La ciudad de Arles ha dado a conocer una temporada 2026 de gran categoría, perfectamente estructurada y con argumentos de peso tanto en lo artístico como en lo ganadero. La empresa encabezada por Juan Bautista presentó oficialmente los carteles en el Coliseo en un acto multitudinario que reunió a cerca de 700 aficionados, presidido por el alcalde Patrick de Carolis.
+
+El ciclo se sostiene sobre la presencia de las principales figuras del toreo actual, con nombres como Roca Rey, Alejandro Talavante, Juan Ortega, Daniel Luque, Emilio de Justo y el esperado regreso de José María Manzanares, además del doblete de Marco Pérez, uno de los grandes atractivos del abono. A ello se suma un apartado ganadero de gran relieve, con hierros de máximo prestigio como Jandilla, Garcigrande, el regreso de Torrealta tras más de 25 años de ausencia, el debut de Murteira Grave y una corrida completa de la casa Pagés-Mailhan.
+La Feria de Pascua se desarrollará del viernes 3 al lunes 6 de abril, con un total de siete festejos: tres corridas de toros, una de rejones, una novillada con picadores, otra sin caballos y una tradicional corrida camarguesa.
+
+Dentro de las combinaciones destaca la terna internacional del lunes, formada por Manuel Escribano, Jesús Enrique Colombo y El Rafi, un cartel de marcado carácter banderillero. En el apartado novilleril sobresale el debut en el Coliseo del catalán Mario Vilau, una de las grandes revelaciones del escalafón, acompañado por Joselito de Córdoba y el francés Víctor. En rejones, Arles apuesta de nuevo por la terna triunfadora del pasado curso: Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza.
+
+Carteles de la Feria de Pascua de Arles 2026
+* Viernes 3 de abril: Corrida Camarguesa.
+* Sábado 4 de abril (matinal): Novillada sin picadores. Ian Bermejo, Mosti, Arias Samper, Mathias Sauvaire, Hugo Masia y Lisares (Yonnet).
+* Sábado 4 de abril: José María Manzanares, Alejandro Talavante y Marco Pérez (Garcigrande).
+* Domingo 5 de abril (matinal): Mario Vilau, Joselito de Córdoba y Víctor (varios hierros franceses).
+* Domingo 5 de abril: Daniel Luque, Emilio de Justo y Tomás Rufo (Torrealta).
+* Lunes 6 de abril (matinal): Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza (Passanha).
+* Lunes 6 de abril: Manuel Escribano, Jesús Enrique Colombo y El Rafi (Murteira Grave).`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
     image: "/images/titu.jpg",
     category: "Entrevistas",
@@ -497,7 +522,7 @@ Es un sueño hecho realidad y bueno con dos grandes figuras del toreo y me sient
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
     image: "/images/diestro.jpg",
     category: "Actualidad",
@@ -514,7 +539,7 @@ El torero recibió el galardón de manos de la junta directiva de la peña al t�
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
     image: "/images/premioo.jpg",
     category: "Actualidad",
@@ -548,7 +573,7 @@ El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación ec
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
     image: "/images/ddomecq.jpg",
     category: "Actualidad",
@@ -584,7 +609,7 @@ El público, compuesto mayoritariamente por jóvenes aficionados junto a asisten
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
     image: "/images/feriaa.jpg",
     category: "Actualidad",
@@ -615,7 +640,7 @@ La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta fi
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1006,
     title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
     image: "/images/confirma.jpg",
     category: "Actualidad",
@@ -654,7 +679,7 @@ Víctor Hernández`,
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1007,
     title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
     image: "/images/jn.jpg",
     category: "Actualidad",
@@ -667,7 +692,7 @@ Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del 
     showAuthorHeader: true
    },
 	{ 
-    id: 1007,
+    id: 1008,
     title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
     image: "/images/perfila1.jpg",
     category: "Actualidad",
@@ -682,7 +707,7 @@ El elenco ganadero diseñado para la temporada incluiría hierros de contrastada
     showAuthorHeader: true
    },
 	{ 
-    id: 1008,
+    id: 1009,
     title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
     image: "/images/garzon2.jpg",
     category: "Actualidad",
@@ -697,7 +722,7 @@ Para esta cita del Domingo de Resurrección, está reseñada una corrida de toro
     showAuthorHeader: true
    },
 	{ 
-    id: 1009,
+    id: 1010,
     title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
     image: "/images/mor.jpg",
     category: "Actualidad",
@@ -715,6 +740,31 @@ Esta decisión de volver a los ruedos llega seis meses después de la histórica
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 86,
+    title: `Arles anuncia una Feria de Pascua de máximo nivel con el respaldo de las figuras`,
+    image: "/images/fferia.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La ciudad de Arles ha dado a conocer una temporada 2026 de gran categoría, perfectamente estructurada y con argumentos de peso tanto en lo artístico como en lo ganadero. La empresa encabezada por Juan Bautista presentó oficialmente los carteles en el Coliseo en un acto multitudinario que reunió a cerca de 700 aficionados, presidido por el alcalde Patrick de Carolis.
+
+El ciclo se sostiene sobre la presencia de las principales figuras del toreo actual, con nombres como Roca Rey, Alejandro Talavante, Juan Ortega, Daniel Luque, Emilio de Justo y el esperado regreso de José María Manzanares, además del doblete de Marco Pérez, uno de los grandes atractivos del abono. A ello se suma un apartado ganadero de gran relieve, con hierros de máximo prestigio como Jandilla, Garcigrande, el regreso de Torrealta tras más de 25 años de ausencia, el debut de Murteira Grave y una corrida completa de la casa Pagés-Mailhan.
+La Feria de Pascua se desarrollará del viernes 3 al lunes 6 de abril, con un total de siete festejos: tres corridas de toros, una de rejones, una novillada con picadores, otra sin caballos y una tradicional corrida camarguesa.
+
+Dentro de las combinaciones destaca la terna internacional del lunes, formada por Manuel Escribano, Jesús Enrique Colombo y El Rafi, un cartel de marcado carácter banderillero. En el apartado novilleril sobresale el debut en el Coliseo del catalán Mario Vilau, una de las grandes revelaciones del escalafón, acompañado por Joselito de Córdoba y el francés Víctor. En rejones, Arles apuesta de nuevo por la terna triunfadora del pasado curso: Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza.
+
+Carteles de la Feria de Pascua de Arles 2026
+* Viernes 3 de abril: Corrida Camarguesa.
+* Sábado 4 de abril (matinal): Novillada sin picadores. Ian Bermejo, Mosti, Arias Samper, Mathias Sauvaire, Hugo Masia y Lisares (Yonnet).
+* Sábado 4 de abril: José María Manzanares, Alejandro Talavante y Marco Pérez (Garcigrande).
+* Domingo 5 de abril (matinal): Mario Vilau, Joselito de Córdoba y Víctor (varios hierros franceses).
+* Domingo 5 de abril: Daniel Luque, Emilio de Justo y Tomás Rufo (Torrealta).
+* Lunes 6 de abril (matinal): Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza (Passanha).
+* Lunes 6 de abril: Manuel Escribano, Jesús Enrique Colombo y El Rafi (Murteira Grave).`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 87,
     title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
     image: "/images/titu.jpg",
