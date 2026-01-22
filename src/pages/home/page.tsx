@@ -450,6 +450,23 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `El Corpus de Sevilla vuelve a tomar fuerza con un cartel de marcada identidad sevillana`,
+    image: "/images/corpus.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La Plaza de Toros de la Real Maestranza de Caballería de Sevilla se encamina a recuperar uno de sus festejos más emblemáticos del calendario taurino: la corrida del Corpus Christi, prevista para el próximo jueves 4 de junio. Aunque la Empresa Pagés no hará oficiales los carteles hasta el 9 de febrero, todo apunta a una combinación de máxima raíz sevillana que devolvería relevancia a esta fecha tras varias temporadas ocupada por novilladas.
+
+Según los rumores que circulan con insistencia en los mentideros taurinos, los nombres de Morante de la Puebla, Juan Ortega y Pablo Aguado encabezan las quinielas para conformar una terna de enorme peso artístico y profundo sabor local. Un cartel que destila sevillanía por los cuatro costados y que podría lidiar una corrida de Domingo Hernández o Álvaro Núñez, dos hierros habituales en citas de máxima categoría.
+
+La posible recuperación de esta corrida mayor supondría un paso significativo dentro de la temporada hispalense, devolviendo al Corpus el protagonismo que históricamente ha tenido en la ciudad. De confirmarse este cartel, sería además una fecha clave en la campaña de Morante de la Puebla, que reaparecerá el Domingo de Resurrección y podría alcanzar hasta cinco paseíllos en el coso del Baratillo.
+
+A la espera de la presentación oficial de los carteles el próximo mes de febrero, la afición valora positivamente la intención de la empresa de apostar por una terna de fuerte personalidad artística. Queda aún por despejar si el festejo mantendrá el horario nocturno de los últimos años o si regresará al tradicional horario vespertino.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `La Asociación Nacional de Presidentes celebrará en Málaga su XIV Asamblea Nacional`,
     image: "/images/asamblea.jpg",
     category: "Actualidad",
@@ -472,6 +489,23 @@ Con esta nueva edición, ANPTE reafirma su apuesta por la formación, el anális
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 84,
+    title: `El Corpus de Sevilla vuelve a tomar fuerza con un cartel de marcada identidad sevillana`,
+    image: "/images/corpus.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `La Plaza de Toros de la Real Maestranza de Caballería de Sevilla se encamina a recuperar uno de sus festejos más emblemáticos del calendario taurino: la corrida del Corpus Christi, prevista para el próximo jueves 4 de junio. Aunque la Empresa Pagés no hará oficiales los carteles hasta el 9 de febrero, todo apunta a una combinación de máxima raíz sevillana que devolvería relevancia a esta fecha tras varias temporadas ocupada por novilladas.
+
+Según los rumores que circulan con insistencia en los mentideros taurinos, los nombres de Morante de la Puebla, Juan Ortega y Pablo Aguado encabezan las quinielas para conformar una terna de enorme peso artístico y profundo sabor local. Un cartel que destila sevillanía por los cuatro costados y que podría lidiar una corrida de Domingo Hernández o Álvaro Núñez, dos hierros habituales en citas de máxima categoría.
+
+La posible recuperación de esta corrida mayor supondría un paso significativo dentro de la temporada hispalense, devolviendo al Corpus el protagonismo que históricamente ha tenido en la ciudad. De confirmarse este cartel, sería además una fecha clave en la campaña de Morante de la Puebla, que reaparecerá el Domingo de Resurrección y podría alcanzar hasta cinco paseíllos en el coso del Baratillo.
+
+A la espera de la presentación oficial de los carteles el próximo mes de febrero, la afición valora positivamente la intención de la empresa de apostar por una terna de fuerte personalidad artística. Queda aún por despejar si el festejo mantendrá el horario nocturno de los últimos años o si regresará al tradicional horario vespertino.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 85,
     title: `La Asociación Nacional de Presidentes celebrará en Málaga su XIV Asamblea Nacional`,
     image: "/images/asamblea.jpg",
