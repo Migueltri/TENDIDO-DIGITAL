@@ -450,296 +450,48 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Arles anuncia una Feria de Pascua de máximo nivel con el respaldo de las figuras`,
-    image: "/images/fferia.jpg",
+    title: `La Asociación Nacional de Presidentes celebrará en Málaga su XIV Asamblea Nacional`,
+    image: "/images/asamblea.jpg",
     category: "Actualidad",
     date: "21 de Enero de 2026",
-	fullContent: `La ciudad de Arles ha dado a conocer una temporada 2026 de gran categoría, perfectamente estructurada y con argumentos de peso tanto en lo artístico como en lo ganadero. La empresa encabezada por Juan Bautista presentó oficialmente los carteles en el Coliseo en un acto multitudinario que reunió a cerca de 700 aficionados, presidido por el alcalde Patrick de Carolis.
+	fullContent: `Málaga será la sede de la XIV Asamblea Nacional de la Asociación Nacional de Presidentes de Plazas de Toros de España (ANPTE), que se celebrará del 6 al 8 de febrero bajo el lema “Encastes con historia. Toros con identidad”. El encuentro reunirá a presidentes de plazas, socios de la entidad, profesionales y especialistas del mundo taurino llegados de distintos puntos del país.
+El programa arrancará el viernes con la recepción de los asistentes y el acto inaugural, seguido de la conferencia “150 años de historia de La Malagueta”, que impartirá el arquitecto municipal de Málaga, José María Morente. La jornada se completará con una visita cultural por la ciudad.
 
-El ciclo se sostiene sobre la presencia de las principales figuras del toreo actual, con nombres como Roca Rey, Alejandro Talavante, Juan Ortega, Daniel Luque, Emilio de Justo y el esperado regreso de José María Manzanares, además del doblete de Marco Pérez, uno de los grandes atractivos del abono. A ello se suma un apartado ganadero de gran relieve, con hierros de máximo prestigio como Jandilla, Garcigrande, el regreso de Torrealta tras más de 25 años de ausencia, el debut de Murteira Grave y una corrida completa de la casa Pagés-Mailhan.
-La Feria de Pascua se desarrollará del viernes 3 al lunes 6 de abril, con un total de siete festejos: tres corridas de toros, una de rejones, una novillada con picadores, otra sin caballos y una tradicional corrida camarguesa.
+El sábado se desarrollará el grueso de la Asamblea con la celebración de la XIV Asamblea General Ordinaria y, por la tarde, la Asamblea General Extraordinaria, en la que se procederá a la reelección de la Junta Directiva. Ese mismo día se ofrecerá la ponencia “Encastes minoritarios. Evolución y actualidad”, a cargo del veterinario y escritor José Luis Prieto, y se entregarán los diplomas a los alumnos del XI Curso de Presidencias de ANPTE.
 
-Dentro de las combinaciones destaca la terna internacional del lunes, formada por Manuel Escribano, Jesús Enrique Colombo y El Rafi, un cartel de marcado carácter banderillero. En el apartado novilleril sobresale el debut en el Coliseo del catalán Mario Vilau, una de las grandes revelaciones del escalafón, acompañado por Joselito de Córdoba y el francés Víctor. En rejones, Arles apuesta de nuevo por la terna triunfadora del pasado curso: Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza.
+La jornada del sábado concluirá con la tradicional Cena de Gala, que tendrá lugar en la Casa Diocesana de Málaga. Durante el acto se concederán los reconocimientos de ANPTE a Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, y a los toreros malagueños Mari Paz Vega y Saúl Jiménez Fortes. Asimismo, se entregarán los Premios “Marcelino Moronta” a los críticos taurinos Antonio Lorca y Carlos Crivell.
 
-Carteles de la Feria de Pascua de Arles 2026
-* Viernes 3 de abril: Corrida Camarguesa.
-* Sábado 4 de abril (matinal): Novillada sin picadores. Ian Bermejo, Mosti, Arias Samper, Mathias Sauvaire, Hugo Masia y Lisares (Yonnet).
-* Sábado 4 de abril: José María Manzanares, Alejandro Talavante y Marco Pérez (Garcigrande).
-* Domingo 5 de abril (matinal): Mario Vilau, Joselito de Córdoba y Víctor (varios hierros franceses).
-* Domingo 5 de abril: Daniel Luque, Emilio de Justo y Tomás Rufo (Torrealta).
-* Lunes 6 de abril (matinal): Andy Cartagena, Lea Vicens y Guillermo Hermoso de Mendoza (Passanha).
-* Lunes 6 de abril: Manuel Escribano, Jesús Enrique Colombo y El Rafi (Murteira Grave).`,
+El domingo se celebrará la conferencia “La incultura de la prohibición”, impartida por François Zumbiehl, catedrático de Letras Clásicas y doctor en Antropología, antes del acto oficial de clausura y una comida de convivencia.
+
+Con esta nueva edición, ANPTE reafirma su apuesta por la formación, el análisis del sector y la defensa de la tauromaquia desde el respeto a su historia, su diversidad y su identidad cultural.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
-    image: "/images/titu.jpg",
-    category: "Entrevistas",
-    date: "21 de Enero de 2026",
-	footerImage1: "/images/titu1.jpg",
-	footerImage2: "/images/titu2.jpg",
-	fullContent: `**Julio Norte** encara uno de los momentos más decisivos de su carrera. El novillero salmantino, que con esfuerzo, disciplina y constancia ha ido pasando de ser una figura emergente a consolidarse como una de las promesas más firmes del escalafón, vive un periodo de crecimiento que genera grandes expectativas entre la afición.
-
-Tras una temporada sobresaliente en la que sumó numerosos triunfos, cortó orejas importantes y dejó constancia de su concepto profundo del toreo, Norte se perfila como un torero con proyección y personalidad. Su temple, naturalidad en el ruedo y ambición controlada dibujan un perfil que merece atención y seguimiento en los próximos meses.
-
-**¿Cómo empezaste en el mundo del toreo y qué te inspiró a ser torero?**
-
- Pues empecé hace no mucho después de la pandemia cuando mi padre apoderaba al maestro Uceda Leal. Me inspiró a querer ser torero pues que estaba todo el tiempo rodeado de toros.
-
-**¿Qué toreros o figuras han influido más en tu estilo y trayectoria?**
-
- Bueno a mi me gusta fijarme en todos pero sí que tengo grandes referentes como el maestro Paco Ojeda, el juli, Perera y Roca Rey.
-
-**¿Cómo describirías el toreo que buscas expresar en la plaza?**
- 
-Eso prefiero que lo digan los aficionados, pero sí que me gusta torear despacio, pudiendo a los animales y dejándomelos llegar muy cerca.
-
-**¿Cómo planteas la temporada 2026, en la que ya se han anunciado festejos importantes en plazas de gran categoría?**
-
- Pues la planteamos con mucha ilusión y ganas, ya que va a ser una temporada importante y decisiva en mi trayectoria voy a pisar plazas de máxima importancia y evidentemente estoy contento e ilusionado pero a la vez responsabilizado.
-
-**¿Qué objetivos te has marcado para la temporada 2026?**
-
- Ser yo mismo y seguir mi camino como lo he estado haciendo hasta ahora.
-
-**Respecto a la grave cornada sufrida el 22 de septiembre del pasado año en San Agustín de Guadalix, ¿qué ha sido lo más duro, física y mentalmente, durante la recuperación?** 
-
-Pues físicamente durante el proceso de recuperación muchos dolores, sobretodo de la sonda urinaria, que muchas veces hacía que se me agotaran las fuerzas y me veía en un estado de debilidad muy grande pero yo siempre resistía, gracias a Dios me he recuperado bien y luego mentalmente siempre he tenido la mente tranquila y he estado pensando en que iba a volver a ser el mismo cuando volviese a una plaza. 
-
-**¿En qué plaza sueñas con triunfar en el futuro?** 
-
-Me gustaría triunfar en todas las plazas importantes del mundo, pero sobretodo Madrid y Sevilla.
-
-**¿Qué es para ti tomar la alternativa en Dax con figuras del torero como Roca Rey y Pablo Aguado?** 
-
-Es un sueño hecho realidad y bueno con dos grandes figuras del toreo y me siento un auténtico afortunado.
-`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Diego García, triunfador de la Feria Taurina de San Sebastián de los Reyes 2025.`,
-    image: "/images/diestro.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `El matador de toros Diego García recogió el premio al Triunfador de la Feria Taurina de San Sebastián de los Reyes 2025, en una velada marcada por el ambiente de afición y la defensa de la tauromaquia. El acto reunió a numerosos aficionados y miembros destacados del mundo del toro, habituales impulsores de la feria de la localidad madrileña.
-
-El diestro madrileño, recién regresado de América, donde ha tenido una destacada presencia en diversas ferias de Perú, fue reconocido con este prestigioso galardón que concede desde 2012 la Peña Taurina “La Nuestra”, con motivo de las fiestas en honor del Santísimo Cristo de los Remedios.
-
-El premio viene a reconocer su gran actuación del pasado 28 de agosto en la Plaza de Toros de La Tercera, donde se lidiaron reses de la ganadería gaditana de Salvador Domecq. Aquella tarde, Diego García firmó una actuación rotunda, cortando tres orejas y saliendo a hombros junto a Ginés Marín, en una corrida que dejó una profunda huella en la afición de San Sebastián de los Reyes.
-
-El torero recibió el galardón de manos de la junta directiva de la peña al término de la tradicional cena anual que la asociación celebra con sus socios en un céntrico restaurante de la ciudad. En sus palabras de agradecimiento, Diego García destacó el apoyo recibido y reafirmó su compromiso de seguir trabajando con entrega y constancia para alcanzar su objetivo de llegar a ser figura del toreo.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Nace el Premio de Ecología 2026 del Instituto Juan Belmonte y Legados para dignificar el cuidado de la tierra y su conservación`,
-    image: "/images/premioo.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	excerpt: `Podrán presentarse personas o colectivos vinculados al medio rural que acrediten su experiencia y compromiso real con el territorio
-
-●       El plazo de inscripción finaliza el 10 de febrero de 2026 y el premio tiene una dotación económica de 5.000 euros
-
-●       El Instituto Juan Belmonte y Legados impulsan este galardón como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza`,
-	fullContent: `<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://institutojuanbelmonte.com/wp-content/uploads/2026/01/Bases-Premio-Ecologia-2026-Instituto-Juan-Belmonte-y-Legados.pdf"> **Madrid, 21 de enero de 2026.-** El Primer Premio de Ecología 2026 del Instituto Juan Belmonte y Legados nace con el objetivo de **visibilizar y dotar de prestigio a personas o colectivos vinculados al medio rural** que, desde el conocimiento directo del campo y una relación viva con el territorio, lideran apoyándose en la experiencia, la sensibilidad y el cuidado del entorno.
-
-El premio **se dirige tanto a personas como a colectivos o instituciones, con perfiles muy variados como pastores, agricultores, naturalistas, divulgadores…o gestores del territorio**, entre otros, que representen un ecologismo arraigado, práctico y profundamente conectado con la realidad rural.
-
-En un contexto marcado por la creciente desconexión entre el mundo urbano y el rural, el premio busca **reconocer trayectorias e iniciativas que hayan tendido puentes entre el saber tradicional y los retos medioambientales contemporáneos**. El galardonado o galardonada deberá representar un modelo de autenticidad, arraigo y compromiso, basado en la integración de tradición, gestión sostenible del territorio y vocación pública, con capacidad de inspirar y comunicar los valores del campo, así como de ejercer una influencia social o cultural significativa.
-
-Con esta iniciativa, **el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio**, la cultura rural y el reconocimiento de quienes trabajan por la conservación desde dentro, a partir del conocimiento práctico y la responsabilidad cotidiana con la tierra. El premiado tendrá, además, la oportunidad de participar en un documental audiovisual que Legados se compromete a realizar para la promoción de su reconocimiento y su labor en el medio rural.
-
-**El premio, que se resolverá en marzo de 2026, cuenta con una dotación económica de 5.000 euros** y está dirigido a personas o colectivos cuya trayectoria contribuya a fortalecer el vínculo entre sociedad y naturaleza.
-
-**Las candidaturas solo podrán presentarse de forma on-line hasta el 10 de febrero de 2026** en la web del Instituto Juan Belmonte formalizando una propuesta que recoja: la trayectoria o proyecto desarrollado, su forma de influencia pública, los valores rurales transmitidos y el vínculo con el entorno natural. Las bases completas del Premio de Ecología 2026 del Instituto Juan Belmonte y Legados pueden consultarse a través del siguiente enlace.
-
-El jurado podrá conceder hasta **dos menciones honoríficas**, sin dotación económica, a personas o colectivos -menores o iguales a 35 años-que destaquen por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones o que destaquen (sin límite de edad) por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes inspiradores.
-
-**Sobre el Instituto Juan Belmonte y Legados**
-
-**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
-
-**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos. </a>`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Santiago Domecq: “Intento criar un toro para que el torero se pueda expresar en su máxima expresión”`,
-    image: "/images/ddomecq.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	excerpt: "El Salón de Carteles de la Plaza de Toros de Real Maestranza de Caballería de Sevilla, celebró la apertura del ‘XXIV Ciclo de Lecciones Magistrales de Aula Taurina’",
-	fullContent: `La **Real Maestranza de Caballería de Sevilla** acogió en la tarde de hoy **-martes 20 de enero-** la inauguración del **XXIV Ciclo de Lecciones Magistrales de Aula Taurina**, una cita ya plenamente consolidada como referente cultural y formativo dentro del ámbito taurino en la capital hispalense. El acto, organizado por **Aula Taurina** y la **Escuela de Tauromaquia de Sevilla** bajo el patrocinio de la **Real Maestranza**, tuvo como escenario el **Salón de Carteles de la Plaza de Toros**, que registró un lleno absoluto, reflejo del notable interés despertado por esta nueva edición.
-
-Abrió el acto D. **José María Martínez Parras**, vicepresidente de Aula Taurina y de la Escuela de Tauromaquia de Sevilla, quien dio la bienvenida a los asistentes y desglosó el contenido del ciclo, antes de presentar al invitado inaugural y al moderador de la sesión.
-
-La conferencia de apertura corrió a cargo del prestigioso ganadero D. **Santiago Domecq Bohórquez**, que estuvo acompañado en la mesa por el periodista D. **Santiago Sánchez-Tráver**, director de Portaltaurino.net - **actualmente está considerada como la mayor wiki taurina del mundo-** encargado de moderar el acto con rigor, conocimiento y brillantez. **Domecq** ofreció una profunda y didáctica disertación bajo el título “La ganadería de Santiago Domecq”, en la que realizó un completo recorrido por su trayectoria personal y profesional como criador de toros bravos.
-
-El ganadero comenzó evocando los orígenes de su afición, recordando que su vocación nació de un entorno familiar estrechamente ligado al toro: “Tenía el ambiente del toro por todas partes, por mi padre, que no fue ganadero, aunque sí un buen aficionado, y por mi madre, hermana de Fermín Bohórquez”.
-
-Explicó que inició su andadura ganadera a los 18 años, cuando adquirió una partida de reses bravas a **Carlos Núñez** en la finca de **Los Derramaderos**, subrayando que “No he tenido una herencia para recibir la ganadería y poco a poco me fui haciendo ganadero”, aunque expresó con orgullo que serán sus hijos quienes continúen ese legado.
-
-En su intervención detalló la composición genética de su hierro, basado en el encaste **Parladé–Conde de la Corte**, con una cuidada mezcla de sangres **Domecq** y **Núñez**, y actualmente sustentado en tres líneas fundamentales: **Torrestrella, Jandilla** y **Juan Pedro Domecq**. Tras más de cuatro décadas de trabajo, afirmó que existe “Una perfecta mezcla, aunque con predominio de Domecq, con un sello personal al cabo de 43 años”, reconociendo la decisiva influencia de D. **Álvaro Domecq y Díez**, “Del que aprendí mucho”.
-
-Lejos de hablar de una ganadería cerrada o definitiva, **Santiago Domecq** insistió en la necesidad de evolución constante: “El toro crece y cambia y la ganadería nunca puede estar anquilosada”. En ese sentido, dejó claro que su mirada está siempre puesta en la plaza: “Yo siempre pienso en el juego del toro en la plaza. Intento criar un toro para que el torero se exprese en su máxima plenitud. Los verdaderos actores de la Fiesta somos los ganaderos y los toreros”.
-
-El ganadero defendió con convicción el momento actual del toro bravo, asegurando que “Se está lidiando el mejor toro de la historia y, por supuesto, el más bravo”, destacando cualidades como el ritmo, el poder, la fijeza y la humillación. Subrayó además la uniformidad de criterios en la casa, tanto por su parte como por la de sus hijos, aun manteniendo distintas líneas de selección.
-
-Uno de los asuntos que despertó mayor interés fue el de los indultos, sobre los que se mostró claramente favorable: “Lo digo con rotundidad”, explicó, matizando que no todos los toros indultados sirven después como sementales. “El indulto lo pide el público porque se ha emocionado con la lidia de un toro, y nosotros no somos nadie para juzgarlo, pero no juguemos a ser ganaderos”, afirmó, recalcando que la emoción del espectador es un valor esencial de la Fiesta.
-
-**Domecq** abordó también aspectos técnicos y de manejo, como la importancia del tentadero en campo abierto, una herramienta clave para su ganadería, o el uso de fundas en los pitones, reconociendo que, aunque inicialmente no eran de su agrado, “Con el tiempo me he dado cuenta de que se evitan muchos accidentes”.
-
-En el repaso a la actualidad de la ganadería, explicó que esta temporada cuenta con **ocho corridas de toros y una novillada** que se lidiará en un festival, con destinos como **Valencia, Sevilla, Dax, Nimes, Alicante, Albacete** y **Lorca**, quedando aún una corrida por definir. Sobre **Madrid**, señaló que “No acudiré este año por no disponer de toros con el trapío que actualmente exige la plaza”. En cuanto a **Sevilla**, confesó que es “La plaza de mis sueños”, a la que no llegó antes “Por el enorme respeto y el miedo que me daba”, y anunció que tiene apartados dieciséis toros de los que saldrá la corrida sevillana.
-
-El ganadero cerró su intervención con un mensaje de optimismo sobre el futuro de la Fiesta, asegurando que “El futuro del toro está más garantizado que nunca”, gracias a la masiva presencia de jóvenes en las plazas. No obstante, advirtió de la necesidad de mantener la emoción en un contexto cada vez más previsible. Reivindicó, finalmente, el carácter vocacional de su oficio: “El ganadero es un romántico y no siempre se gana dinero criando toros; se es ganadero por vocación y siempre se debe aspirar a triunfar en la plaza”, destacando como pilares fundamentales de la crianza moderna la alimentación, la sanidad y la preparación física del toro.
-
-El público, compuesto mayoritariamente por jóvenes aficionados junto a asistentes de todos los perfiles, siguió la conferencia con gran atención y respondió con entusiasmo a una sesión que dejó una profunda huella entre los presentes, constituyendo una brillante apertura para un ciclo que, año tras año, reafirma su gran prestigio dentro del panorama taurino.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `La Feria Taurina de Guijuelo 2026 ya tiene carteles oficiales`,
-    image: "/images/feriaa.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La Feria Taurina de Guijuelo 2026 ha sido presentada oficialmente en **Fitur**, en un **acto** organizado por el Excelentísimo Ayuntamiento de Guijuelo y el empresario **José Ignacio Cascón**, situando nuevamente a este ciclo en el punto de mira de la afición y consolidando el prestigio alcanzado durante los últimos años en los días más taurinos del calendario.
-
-El evento **tuvo lugar en el stand del Ayuntamiento de Guijuelo**, uno de los más concurridos de la feria, en un ambiente acogedor que no dejó de lado los productos más representativos del municipio, como el vino y el jamón. La presentación, conducida por el periodista **David Casas**, contó con la presencia de uno de los protagonistas del ciclo, **Manuel Diosleguarde**.
-
-La feria se ha configurado a la altura de ediciones anteriores, con carteles rematados, presencia de figuras consagradas y una clara apuesta por la variedad de encastes y estilos, reafirmando a Guijuelo como una de las citas imprescindibles del mes de agosto.
-
-El ciclo se desarrollará entre los días **15 y 19 de agosto**, con dos corridas de toros, una corrida de rejones y una novillada, completando así una programación diversa y atractiva para todos los públicos.
-
-**15 de agosto**: Corrida de toros de El Pilar para El Fandi, Emilio de Justo y Marco Pérez. La tarde tendrá un marcado carácter simbólico para Marco Pérez, que debuta como matador en el mismo coso donde actuó como novillero con picadores.
-
-**16 de agosto**: Corrida de rejones de San Pelayo para Sergio Galán, Hermoso de Mendoza y Víctor Herrero, recuperando este espectáculo tras la demanda de la afición.
-
-**18 de agosto**: Novillada de la Escuela Taurina de la Diputación de Salamanca, reafirmando el compromiso con la formación y el fomento de la tauromaquia.
-
-**19 de agosto**: Corrida de toros de Vellosino para Daniel Luque, Borja Jiménez y Manuel Diosleguarde, combinando figuras consolidadas, triunfadores recientes y toreros con especial vinculación con la afición local.
-
-Durante la presentación, el alcalde de Guijuelo, **Roberto Martín**, destacó que “una vez más, creemos que apostando por la tauromaquia se apuesta por el municipio, porque Guijuelo se llena de gente cuando hay toros y el ambiente es inmejorable”. Asimismo, anunció que se celebrará una gran presentación en el propio municipio semanas antes del inicio de la feria, donde se darán a conocer más detalles de los festejos.
-
-Por su parte, el empresario **José Ignacio Cascón aseguró: “Es la Feria que quería hacer, y con eso ya lo digo todo”**, reflejando su satisfacción por haber cerrado carteles de gran enjundia en los primeros meses del año.
-
-La Feria Taurina de Guijuelo 2026 vuelve así a consolidarse como una apuesta firme por la calidad, la afición y la tradición, reforzando su proyección dentro del panorama taurino nacional.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Damián Castaño confirma su cuadrilla para la temporada 2026`,
-    image: "/images/confirma.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `**Damián Castaño** ha confirmado su cuadrilla para la temporada 2026, incorporando **importantes nombres que refuerzan la estructura de un equipo pensado para lidiar corridas de máxima exigencia. Entre las novedades destacan Curro Vivas, como lidiador, y José Antonio Ventana “Toñete”** , que ocupará el puesto de tercero, completando **una cuadrilla de entidad para uno de los toreros más respetados del escalafón por su trayectoria frente a encierros duros.**
-
-La **cuadrilla de Damián Castaño** para el curso 2026 queda **compuesta de la siguiente manera:**
-
-**Banderilleros:**
-
-Curro Vivas
-
-**Rubén Sánchez**
-
-José Antonio Ventana «Toñete»
-
-**Picadores:**
-
-Javier Martín
-
-Segundo picador: Ira alternando
-
-**Apoderado:**
-
-Manolo Sánchez
-
-**Mozo de espadas:**
-
-Sergio Castaño
-
-**Ayuda:**
-
-Víctor Hernández`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `Julio Norte cumple su sueño: alternativa entre figuras en Dax con Juan Pedro Domecq`,
-    image: "/images/jn.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La temporada francesa se va configurando con carteles de gran interés. Tras anunciar las fechas y la estructura de su feria, la localidad de **Dax ha dado a conocer uno de los carteles destacados de su ciclo continuado de agosto, en el que Julio Norte tomará la alternativa de manos de Roca Rey, con Pablo Aguado como testigo. La cita, prevista para el 13 de agosto, contará con un encierro de Juan Pedro Domecq.**
-
-Julio Norte se consolidó en 2025 como **uno de los nombres más destacados del escalafón novilleril, con 21 paseíllos y un balance de 46 orejas y un rabo** . Una temporada de gran importancia que le permite afrontar el 2026 con la **ilusión de pisar grandes escenarios como Valencia, Madrid o Sevilla.** “Voy a cumplir un sueño en **una plaza que me ha motivado desde mis inicios y donde siempre me he sentido torero”,** asegura el novillero salmantino en el vídeo en el que anuncia su alternativa en Dax.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `Garzón perfila un elenco ganadero de lujo para su debut en la Maestranza`,
-    image: "/images/perfila1.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La empresa Lances de Futuro, gestionada por **José María Garzón**, está ultimando un elenco ganadero de primer nivel para la temporada 2026, la primera bajo su gestión al frente de la Real Maestranza de Caballería de Sevilla. El propio empresario avanzó recientemente, en un encuentro con los medios de comunicación, las líneas maestras de una programación ganadera que presentará novedades de gran interés, como el debut del hierro de **Álvaro Núñez**, así como los regresos de **La Quinta y Puerto de San Lorenzo**.
-
-Según ha podido saber este medio, Garzón trabaja con una planificación en la que la ganadería de **Garcigrande** ocuparía un papel protagonista dentro del abono sevillano, con dos corridas de toros y una novillada con picadores ya reseñadas. A este bloque principal podrían sumarse otras divisas para completar las corridas de toros, actualmente aún pendientes de definición.
-
-El elenco ganadero diseñado para la temporada incluiría hierros de contrastada solvencia y variedad de encastes, entre los que figuran **La Quinta, Álvaro Núñez, Puerto de San Lorenzo, Miura, Victorino Martín, Hermanos García Jiménez, Fuente Ymbro, Domingo Hernández, Alcurrucén, Garcigrande, Jandilla, Santiago Domecq, Juan Pedro Domecq, Victoriano del Río, El Parralejo y Núñez del Cuvillo**, conformando así una de las propuestas ganaderas más completas y atractivas de los últimos años en la plaza sevillana.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1009,
-    title: `Garzón prepara su debut en la Maestranza con Morante, Roca Rey y David de Miranda`,
-    image: "/images/garzon2.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `**José María Garzón** tiene muy avanzada la confección del cartel que supondrá su debut como empresario de la Real Maestranza de Caballería de Sevilla. Un Domingo de Resurrección de 2026 señalado en rojo en el calendario taurino, después de que el periodista **Vicente Zabala de la Serna adelantara la reaparición de Morante de la Puebla el próximo 5 de abril.**
-
-De confirmarse oficialmente la presencia del torero cigarrero en la corrida inaugural de la temporada sevillana, Garzón tendría prácticamente cerrado su primer cartel al frente de la empresa maestrante. Una combinación de máximo relumbrón, con el atractivo añadido de la figura indiscutible de **Roca Rey y la incorporación de David de Miranda, único espada capaz de abrir la Puerta del Príncipe en 2025.** Un cartel de marcada rivalidad e interés, que reúne a tres de los nombres llamados a vertebrar, entre otros, el desarrollo de la temporada sevillana.
-
-Para esta cita del Domingo de Resurrección, está reseñada una corrida de toros de **Hermanos García Jiménez** , ganadería habitual en las grandes fechas del calendario.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1010,
-    title: `Morante de la Puebla reaparecerá el Domingo de Resurrección en Sevilla`,
-    image: "/images/mor.jpg",
-    category: "Actualidad",
-    date: "21 de Enero de 2026",
-	fullContent: `La noticia más esperada por la afición taurina ya es una realidad. Apenas seis meses después de anunciar su retirada el pasado 12 de octubre en la plaza de Las Ventas, **Morante de la Puebla reaparecerá el próximo Domingo de Resurrección en Sevilla** . Según adelanta el periodista **Vicente Zabala de la Serna en El Mundo** , el torero cigarrero ha decidido volver a vestirse de luces el **5 de abril en la Real Maestranza de Caballería de Sevilla**, en el festejo que abrirá la temporada sevillana.
-
-El regreso de Morante a la Maestranza no se limitará a esa esperada cita inaugural. De acuerdo con la información publicada, su reaparición en Sevilla vendrá acompañada de un calendario más amplio, **que incluirá dos tardes en la Feria de Abril, una en la Feria de San Miguel y una actuación adicional en la tradicional corrida del Corpus Christi**, festejo que el diestro de La Puebla del Río afronta con especial ilusión y que el nuevo empresario del coso sevillano, José María Garzón, pretende recuperar.
-
-Esta decisión de volver a los ruedos llega seis meses después de la histórica jornada vivida el 12 de octubre de 2025 en Las Ventas. Aquella fecha estuvo marcada por el festival matinal en homenaje a Antoñete y por la posterior Corrida de la Hispanidad, en la que Morante de la Puebla salió a hombros tras cortar dos orejas al cuarto toro de la tarde y anunciar su retirada al quitarse el añadido en el centro del ruedo.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 85,
+    title: `La Asociación Nacional de Presidentes celebrará en Málaga su XIV Asamblea Nacional`,
+    image: "/images/asamblea.jpg",
+    category: "Actualidad",
+    date: "21 de Enero de 2026",
+	fullContent: `Málaga será la sede de la XIV Asamblea Nacional de la Asociación Nacional de Presidentes de Plazas de Toros de España (ANPTE), que se celebrará del 6 al 8 de febrero bajo el lema “Encastes con historia. Toros con identidad”. El encuentro reunirá a presidentes de plazas, socios de la entidad, profesionales y especialistas del mundo taurino llegados de distintos puntos del país.
+El programa arrancará el viernes con la recepción de los asistentes y el acto inaugural, seguido de la conferencia “150 años de historia de La Malagueta”, que impartirá el arquitecto municipal de Málaga, José María Morente. La jornada se completará con una visita cultural por la ciudad.
+
+El sábado se desarrollará el grueso de la Asamblea con la celebración de la XIV Asamblea General Ordinaria y, por la tarde, la Asamblea General Extraordinaria, en la que se procederá a la reelección de la Junta Directiva. Ese mismo día se ofrecerá la ponencia “Encastes minoritarios. Evolución y actualidad”, a cargo del veterinario y escritor José Luis Prieto, y se entregarán los diplomas a los alumnos del XI Curso de Presidencias de ANPTE.
+
+La jornada del sábado concluirá con la tradicional Cena de Gala, que tendrá lugar en la Casa Diocesana de Málaga. Durante el acto se concederán los reconocimientos de ANPTE a Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, y a los toreros malagueños Mari Paz Vega y Saúl Jiménez Fortes. Asimismo, se entregarán los Premios “Marcelino Moronta” a los críticos taurinos Antonio Lorca y Carlos Crivell.
+
+El domingo se celebrará la conferencia “La incultura de la prohibición”, impartida por François Zumbiehl, catedrático de Letras Clásicas y doctor en Antropología, antes del acto oficial de clausura y una comida de convivencia.
+
+Con esta nueva edición, ANPTE reafirma su apuesta por la formación, el análisis del sector y la defensa de la tauromaquia desde el respeto a su historia, su diversidad y su identidad cultural.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 86,
     title: `Arles anuncia una Feria de Pascua de máximo nivel con el respaldo de las figuras`,
     image: "/images/fferia.jpg",
