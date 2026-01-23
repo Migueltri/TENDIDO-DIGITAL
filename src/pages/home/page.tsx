@@ -449,7 +449,53 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1000,
+    id: 1003,
+    title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
+    image: "/images/vuelve.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `El fin de semana taurino llega cargado de alicientes a ambos lados del Atlántico, con carteles que despiertan expectación y nombres propios que vuelven a escena. Destaca, por encima de todo, el regreso de Juan Ortega a la plaza del Nuevo Progreso de Guadalajara, donde dejó una de las faenas más recordadas del pasado año y donde ahora vuelve para reencontrarse con una afición que aún guarda en la memoria aquel toreo inspirado y profundo.
+
+México concentra buena parte de la atención con corridas de toros en León, Mérida y Guadalajara, combinaciones que mezclan experiencia, juventud y variedad ganadera. Al mismo tiempo, La Puebla del Río se convierte en epicentro del futuro del toreo con dos novilladas sin picadores enmarcadas en la Feria de San Sebastián, auténtico escaparate para los nombres que llaman a la puerta del escalafón.
+
+Estos son todos los festejos programados para el fin de semana:
+
+Sábado 24 de enero de 2026 📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado y Alcurrucén Para: Armando Rojo, Julio Aparicio Salmerón, Blas Márquez, Jaime de Pedro, Ignacio Garibay Jr. y João Fernandes
+
+📍 Plaza La Luz, León (Guanajuato, México) Corrida de toros – Toros en León 2026 Toros de De la Mora Para: Emiliano Gamero, Calita y Marco Pérez
+
+Domingo 25 de enero de 2026 📍 Mérida (Yucatán, México) Corrida de toros – Corrida Blanca 2026 Toros de Caparica Para: Tarik Othón, Diego Silveti y Marco Pérez
+
+📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Manuel Veiga Para: Héctor Nieto, Realito, El Exquisito, Nacho Sabater, Manuel León y Manuel Domínguez
+
+📍 Nuevo Progreso, Guadalajara (Jalisco, México) Corrida de toros – Toros en Guadalajara 2026 Toros de Teófilo Gómez Para: Sergio Flores, Juan Ortega y Héctor Gutiérrez
+
+📍 Plaza La Luz, León (Guanajuato, México) Novillada con picadores – Toros en León 2026 Novillos de Xalmonto Para: Eduardo Sebastián, Alan García, Vladimir Díaz y El Bicharraco
+
+Un fin de semana intenso, con aroma a torería, apuesta por la juventud y plazas que reclaman protagonismo en el calendario. El toreo no se detiene y la afición tiene múltiples citas para vibrar.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `La Malagueta se prepara para una de las grandes pugnas empresariales del invierno taurino`,
+    image: "/images/prepara.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `Este viernes expira el plazo marcado por la Diputación de Málaga para presentar ofertas al concurso que decidirá el futuro del coso, y todo indica que las tres firmas invitadas —Tauroemoción, Lances de Futuro y BMF— acudirán a la cita. Una terna de primer nivel que eleva el interés de una licitación llamada a marcar época, no solo por lo que está en juego, sino por el camino recorrido hasta llegar aquí.
+
+El proceso, sin embargo, ha estado lejos de ser modélico. El pliego inicial nació con graves deficiencias que provocaron una polémica justificada y un recurso que terminó prosperando. La exigencia de haber gestionado tres plazas de primera o segunda categoría durante los últimos años se reveló como una cláusula desproporcionada y restrictiva, más cercana a un filtro excluyente que a una defensa real de la competencia. El caso alcanzó tintes surrealistas cuando una empresa al frente de Las Ventas, con decenas de festejos anuales, quedaba descartada para una plaza con una programación muy inferior. En Málaga, por momentos, la experiencia parecía penalizar más que sumar.
+
+La reacción institucional no ayudó a calmar las aguas. La anulación exprés del concurso por un supuesto error técnico y su inmediata reapertura sin modificar el pliego levantaron sospechas y obligaron a que el procedimiento siguiera adelante bajo escrutinio. Finalmente, la corrección llegó y el concurso volvió a un marco más coherente, permitiendo que el foco regresara a lo verdaderamente importante: los proyectos y la capacidad de gestión de quienes aspiran a dirigir una plaza de enorme peso simbólico y responsabilidad histórica.
+
+Con este nuevo escenario, La Malagueta encara su futuro inmediato con tres aspirantes solventes, ideas contrastadas y ambición suficiente para estar a la altura de un coso de primera línea. Mientras otras plazas relevantes siguen atrapadas en los retrasos y la incertidumbre administrativa, Málaga ha reconducido el rumbo y se dispone a resolver una batalla empresarial que dignifica el proceso. A partir de ahora, el veredicto ya no dependerá de artificios ni de trampas burocráticas, sino de propuestas sólidas capaces de responder a lo que exige —y merece— La Malagueta.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
     title: `Los hierros de Morante para su regreso a la Maestranza`,
     image: "/images/hierros.jpg",
     category: "Actualidad",
@@ -469,6 +515,52 @@ Completan el abanico de posibilidades las ganaderías de Hermanos García Jimén
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 80,
+    title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
+    image: "/images/vuelve.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `El fin de semana taurino llega cargado de alicientes a ambos lados del Atlántico, con carteles que despiertan expectación y nombres propios que vuelven a escena. Destaca, por encima de todo, el regreso de Juan Ortega a la plaza del Nuevo Progreso de Guadalajara, donde dejó una de las faenas más recordadas del pasado año y donde ahora vuelve para reencontrarse con una afición que aún guarda en la memoria aquel toreo inspirado y profundo.
+
+México concentra buena parte de la atención con corridas de toros en León, Mérida y Guadalajara, combinaciones que mezclan experiencia, juventud y variedad ganadera. Al mismo tiempo, La Puebla del Río se convierte en epicentro del futuro del toreo con dos novilladas sin picadores enmarcadas en la Feria de San Sebastián, auténtico escaparate para los nombres que llaman a la puerta del escalafón.
+
+Estos son todos los festejos programados para el fin de semana:
+
+Sábado 24 de enero de 2026 📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado y Alcurrucén Para: Armando Rojo, Julio Aparicio Salmerón, Blas Márquez, Jaime de Pedro, Ignacio Garibay Jr. y João Fernandes
+
+📍 Plaza La Luz, León (Guanajuato, México) Corrida de toros – Toros en León 2026 Toros de De la Mora Para: Emiliano Gamero, Calita y Marco Pérez
+
+Domingo 25 de enero de 2026 📍 Mérida (Yucatán, México) Corrida de toros – Corrida Blanca 2026 Toros de Caparica Para: Tarik Othón, Diego Silveti y Marco Pérez
+
+📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Manuel Veiga Para: Héctor Nieto, Realito, El Exquisito, Nacho Sabater, Manuel León y Manuel Domínguez
+
+📍 Nuevo Progreso, Guadalajara (Jalisco, México) Corrida de toros – Toros en Guadalajara 2026 Toros de Teófilo Gómez Para: Sergio Flores, Juan Ortega y Héctor Gutiérrez
+
+📍 Plaza La Luz, León (Guanajuato, México) Novillada con picadores – Toros en León 2026 Novillos de Xalmonto Para: Eduardo Sebastián, Alan García, Vladimir Díaz y El Bicharraco
+
+Un fin de semana intenso, con aroma a torería, apuesta por la juventud y plazas que reclaman protagonismo en el calendario. El toreo no se detiene y la afición tiene múltiples citas para vibrar.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 81,
+    title: `La Malagueta se prepara para una de las grandes pugnas empresariales del invierno taurino`,
+    image: "/images/prepara.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `Este viernes expira el plazo marcado por la Diputación de Málaga para presentar ofertas al concurso que decidirá el futuro del coso, y todo indica que las tres firmas invitadas —Tauroemoción, Lances de Futuro y BMF— acudirán a la cita. Una terna de primer nivel que eleva el interés de una licitación llamada a marcar época, no solo por lo que está en juego, sino por el camino recorrido hasta llegar aquí.
+
+El proceso, sin embargo, ha estado lejos de ser modélico. El pliego inicial nació con graves deficiencias que provocaron una polémica justificada y un recurso que terminó prosperando. La exigencia de haber gestionado tres plazas de primera o segunda categoría durante los últimos años se reveló como una cláusula desproporcionada y restrictiva, más cercana a un filtro excluyente que a una defensa real de la competencia. El caso alcanzó tintes surrealistas cuando una empresa al frente de Las Ventas, con decenas de festejos anuales, quedaba descartada para una plaza con una programación muy inferior. En Málaga, por momentos, la experiencia parecía penalizar más que sumar.
+
+La reacción institucional no ayudó a calmar las aguas. La anulación exprés del concurso por un supuesto error técnico y su inmediata reapertura sin modificar el pliego levantaron sospechas y obligaron a que el procedimiento siguiera adelante bajo escrutinio. Finalmente, la corrección llegó y el concurso volvió a un marco más coherente, permitiendo que el foco regresara a lo verdaderamente importante: los proyectos y la capacidad de gestión de quienes aspiran a dirigir una plaza de enorme peso simbólico y responsabilidad histórica.
+
+Con este nuevo escenario, La Malagueta encara su futuro inmediato con tres aspirantes solventes, ideas contrastadas y ambición suficiente para estar a la altura de un coso de primera línea. Mientras otras plazas relevantes siguen atrapadas en los retrasos y la incertidumbre administrativa, Málaga ha reconducido el rumbo y se dispone a resolver una batalla empresarial que dignifica el proceso. A partir de ahora, el veredicto ya no dependerá de artificios ni de trampas burocráticas, sino de propuestas sólidas capaces de responder a lo que exige —y merece— La Malagueta.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 82,
     title: `Los hierros de Morante para su regreso a la Maestranza`,
     image: "/images/hierros.jpg",
