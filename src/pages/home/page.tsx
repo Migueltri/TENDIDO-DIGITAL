@@ -450,6 +450,29 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Clemente, la ausencia en Arles que invita a la reflexión`,
+    image: "/images/clemen.jpg",
+    category: "Opinión",
+    date: "23 de Enero de 2026",
+	fullContent: `En el siempre complejo tablero de la **temporada taurina** hay **ausencias que pesan más que muchas presencias**. No porque falten figuras consagradas, sino porque se echa de menos a **toreros que, por méritos propios, han llamado con fuerza a la puerta de los grandes carteles**. Entre ellos, este año, destaca con claridad el nombre de **Clemente**.
+
+El **torero francés** lleva tiempo demostrando que su sitio está **entre los nombres que marcan el pulso de las ferias importantes**. Su evolución ha sido constante, silenciosa y sólida, construida a base de **tardes serias, de compromiso con el oficio** y de una **manera de entender el toreo que bebe directamente de las fuentes clásicas**. En una época de prisas y efectismos, Clemente ha apostado por **la pureza, el temple y la colocación, tres pilares que sostienen el toreo eterno**.
+
+Su estilo no busca el **impacto fácil ni el gesto forzado**. Al contrario: hay en su muleta una **búsqueda constante de la naturalidad, del trazo limpio, del muletazo bien dicho**. Un **toreo de líneas claras, de ritmo interior, que conecta con el aficionado que valora el fondo más que la forma**. Ese **toreo sereno, clásico y sincero es, precisamente, una de sus grandes señas de identidad**.
+
+Por eso sorprende especialmente su **ausencia en Arles, una plaza que siempre ha sabido mirar hacia el futuro sin renunciar a la tradición**. Más aún cuando **Clemente llega avalado por hechos recientes que no admiten discusión: dos puertas grandes en Nîmes, una de las plazas más exigentes y simbólicas del sur de Francia**. Triunfar allí no es casualidad. Repetirlo, mucho menos.
+
+En una época en la que los **carteles tienden a repetirse y los nombres se suceden casi por inercia, dejar fuera a un torero que viene de triunfar con claridad invita, como mínimo, a la reflexión**. La **tauromaquia necesita figuras, sí, pero también necesita estilos, personalidades y discursos propios**. Y el de **Clemente, apoyado en el clasicismo y en el respeto al toro, aporta equilibrio y verdad a un panorama a veces demasiado uniforme**.
+
+Clemente representa una **manera de entender el toreo que no pasa de moda**. Un **torero que construye sus faenas desde la colocación, la distancia justa y el mando suave, sin estridencias, sin atajos**. Su **ausencia en una feria como Arles no resta brillo al ciclo, pero sí deja un hueco evidente para quienes siguen con atención el pulso real de la temporada**.
+
+Porque al final, las **ferias no se miden solo por la suma de apellidos ilustres, sino por su capacidad de reflejar el momento del toreo**. Y hoy, guste más o menos, **Clemente es parte de ese presente**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
     title: `Festejo de rejones en Benamocarra (Malaga)`,
     image: "/images/ma.jpg",
     category: "Actualidad",
@@ -470,7 +493,7 @@ Ferrer Martín y Diego Ventura, competirán mano a mano por el III Aguacate de O
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.`,
     image: "/images/OneToro.jpg",
     category: "Actualidad",
@@ -517,7 +540,7 @@ Tras cuatro años, OneToro ofrece un inicio de temporada de máxima intensidad c
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
     image: "/images/circuito.jpg",
     category: "Actualidad",
@@ -538,7 +561,7 @@ El Circuito de Novilladas de Andalucía, promovido por la **Junta de Andalucía 
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Cartel de lujo para la VII Corrida del Renacimiento de Baeza el próximo 11 de abril`,
     image: "/images/cartellujo.jpg",
     category: "Actualidad",
@@ -573,7 +596,7 @@ Las entradas para el festejo ya se encuentran a la venta en la página web ofici
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
     image: "/images/vuelve.jpg",
     category: "Actualidad",
@@ -602,7 +625,7 @@ Un fin de semana intenso, con aroma a torería, apuesta por la juventud y plazas
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1006,
     title: `La Malagueta se prepara para una de las grandes pugnas empresariales del invierno taurino`,
     image: "/images/prepara.jpg",
     category: "Actualidad",
@@ -619,7 +642,7 @@ Con este nuevo escenario, La Malagueta encara su futuro inmediato con tres aspir
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1007,
     title: `Los hierros de Morante para su regreso a la Maestranza`,
     image: "/images/hierros.jpg",
     category: "Actualidad",
@@ -639,6 +662,29 @@ Completan el abanico de posibilidades las ganaderías de Hermanos García Jimén
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 75,
+    title: `Clemente, la ausencia en Arles que invita a la reflexión`,
+    image: "/images/clemen.jpg",
+    category: "Opinión",
+    date: "23 de Enero de 2026",
+	fullContent: `En el siempre complejo tablero de la **temporada taurina** hay **ausencias que pesan más que muchas presencias**. No porque falten figuras consagradas, sino porque se echa de menos a **toreros que, por méritos propios, han llamado con fuerza a la puerta de los grandes carteles**. Entre ellos, este año, destaca con claridad el nombre de **Clemente**.
+
+El **torero francés** lleva tiempo demostrando que su sitio está **entre los nombres que marcan el pulso de las ferias importantes**. Su evolución ha sido constante, silenciosa y sólida, construida a base de **tardes serias, de compromiso con el oficio** y de una **manera de entender el toreo que bebe directamente de las fuentes clásicas**. En una época de prisas y efectismos, Clemente ha apostado por **la pureza, el temple y la colocación, tres pilares que sostienen el toreo eterno**.
+
+Su estilo no busca el **impacto fácil ni el gesto forzado**. Al contrario: hay en su muleta una **búsqueda constante de la naturalidad, del trazo limpio, del muletazo bien dicho**. Un **toreo de líneas claras, de ritmo interior, que conecta con el aficionado que valora el fondo más que la forma**. Ese **toreo sereno, clásico y sincero es, precisamente, una de sus grandes señas de identidad**.
+
+Por eso sorprende especialmente su **ausencia en Arles, una plaza que siempre ha sabido mirar hacia el futuro sin renunciar a la tradición**. Más aún cuando **Clemente llega avalado por hechos recientes que no admiten discusión: dos puertas grandes en Nîmes, una de las plazas más exigentes y simbólicas del sur de Francia**. Triunfar allí no es casualidad. Repetirlo, mucho menos.
+
+En una época en la que los **carteles tienden a repetirse y los nombres se suceden casi por inercia, dejar fuera a un torero que viene de triunfar con claridad invita, como mínimo, a la reflexión**. La **tauromaquia necesita figuras, sí, pero también necesita estilos, personalidades y discursos propios**. Y el de **Clemente, apoyado en el clasicismo y en el respeto al toro, aporta equilibrio y verdad a un panorama a veces demasiado uniforme**.
+
+Clemente representa una **manera de entender el toreo que no pasa de moda**. Un **torero que construye sus faenas desde la colocación, la distancia justa y el mando suave, sin estridencias, sin atajos**. Su **ausencia en una feria como Arles no resta brillo al ciclo, pero sí deja un hueco evidente para quienes siguen con atención el pulso real de la temporada**.
+
+Porque al final, las **ferias no se miden solo por la suma de apellidos ilustres, sino por su capacidad de reflejar el momento del toreo**. Y hoy, guste más o menos, **Clemente es parte de ese presente**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 76,
     title: `Festejo de rejones en Benamocarra (Malaga)`,
     image: "/images/ma.jpg",
