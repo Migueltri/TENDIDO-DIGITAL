@@ -449,6 +449,62 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/circuito.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026**, que celebrará su **séptima edición impulsado por la Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus **tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce**.
+
+Los **primeros seleccionados** han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su **proyección dentro del escalafón novilleril**.
+
+Estos **tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas**.
+
+El **proceso de selección continuará el próximo lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos **nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026**.
+
+Con este **primer anuncio, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional**.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Cartel de lujo para la VII Corrida del Renacimiento de Baeza el próximo 11 de abril`,
+    image: "/images/cartellujo.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `La Feria Internacional del Turismo **(FITUR)** ha sido el escenario elegido para la presentación oficial del cartel de la **VII** Corrida del Renacimiento, que se celebrará el próximo 11 de abril en la Plaza de Toros de Baeza.
+
+El festejo contará con un cartel de **auténtico lujo**, compuesto por dos figuras consolidadas del escalafón, **Alejandro Talavante y Emilio de Justo, junto al joven diestro jiennense Pedro Gallego, alumno de la Escuela Taurina de Baeza, quien tomará la alternativa en esta histórica cita.**
+
+Por primera vez en sus 134 años de historia, la monumental Plaza de Toros de Baeza acogerá la ceremonia de alternativa de un nuevo matador de toros, un acontecimiento de especial relevancia para la ciudad. Con esta apuesta, **tanto el Ayuntamiento de Baeza como la empresa Tauroemoción reafirman su compromiso con la promoción de las jóvenes promesas de la provincia y con la labor formativa que desarrolla la Escuela Taurina Municipal.**
+
+El **acto de presentación estuvo dirigido por el responsable de comunicación de Tauroemoción, Sergio Moreno, y contó con la participación de Alberto García, CEO de la empresa organizadora; Antonio Perales, concejal de Fiestas del Ayuntamiento de Baeza, y el propio Pedro Gallego. Durante sus intervenciones, los participantes destacaron la importancia de este festejo para continuar consolidando la Corrida del Renacimiento como una de las grandes citas taurinas de la temporada en la provincia de Jaén.**
+
+Para la ocasión, Tauroemoción ha reseñado un encierro de Victoriano del Río, una de las ganaderías de mayor prestigio en la actualidad de la cabaña brava española, cuyos astados han protagonizado destacadas faenas en las principales plazas del país.
+
+La afición baezana aguarda así una **tarde de gran expectación en el histórico Coso del Vivero, con un cartel que reúne figuras consagradas y una joven promesa que protagonizará un momento clave de su carrera profesional.**
+
+Al igual que en la pasada edición, el festejo se celebrará en el mes de abril con el objetivo de consolidar la Corrida del Renacimiento como un festejo de referencia de inicio de temporada y una cita imprescindible no solo para la afición jiennense, sino también para aficionados de otras provincias.
+
+Con este **rematado cartel, el Ayuntamiento de Baeza y Tauroemoción sellan su segunda temporada taurina consecutiva tras el resurgir de los festejos el pasado año en la ciudad Patrimonio Mundial, donde los aficionados pudieron disfrutar de dos tardes marcadas por la seriedad, el cuidado de los detalles y la pasión por la fiesta.**
+
+Las entradas para el festejo ya se encuentran a la venta en la página web oficial de la empresa organizadora,  
+<a
+  www.tauroemocion.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.tauroemocion.es
+</a> , y estarán disponibles desde el próximo 2 de febrero en el establecimiento Pópulo de Baeza.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1003,
     title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
     image: "/images/vuelve.jpg",
@@ -515,6 +571,62 @@ Completan el abanico de posibilidades las ganaderías de Hermanos García Jimén
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 78,
+    title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/circuito.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026**, que celebrará su **séptima edición impulsado por la Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus **tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce**.
+
+Los **primeros seleccionados** han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su **proyección dentro del escalafón novilleril**.
+
+Estos **tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas**.
+
+El **proceso de selección continuará el próximo lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos **nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026**.
+
+Con este **primer anuncio, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional**.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 79,
+    title: `Cartel de lujo para la VII Corrida del Renacimiento de Baeza el próximo 11 de abril`,
+    image: "/images/cartellujo.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `La Feria Internacional del Turismo **(FITUR)** ha sido el escenario elegido para la presentación oficial del cartel de la **VII** Corrida del Renacimiento, que se celebrará el próximo 11 de abril en la Plaza de Toros de Baeza.
+
+El festejo contará con un cartel de **auténtico lujo**, compuesto por dos figuras consolidadas del escalafón, **Alejandro Talavante y Emilio de Justo, junto al joven diestro jiennense Pedro Gallego, alumno de la Escuela Taurina de Baeza, quien tomará la alternativa en esta histórica cita.**
+
+Por primera vez en sus 134 años de historia, la monumental Plaza de Toros de Baeza acogerá la ceremonia de alternativa de un nuevo matador de toros, un acontecimiento de especial relevancia para la ciudad. Con esta apuesta, **tanto el Ayuntamiento de Baeza como la empresa Tauroemoción reafirman su compromiso con la promoción de las jóvenes promesas de la provincia y con la labor formativa que desarrolla la Escuela Taurina Municipal.**
+
+El **acto de presentación estuvo dirigido por el responsable de comunicación de Tauroemoción, Sergio Moreno, y contó con la participación de Alberto García, CEO de la empresa organizadora; Antonio Perales, concejal de Fiestas del Ayuntamiento de Baeza, y el propio Pedro Gallego. Durante sus intervenciones, los participantes destacaron la importancia de este festejo para continuar consolidando la Corrida del Renacimiento como una de las grandes citas taurinas de la temporada en la provincia de Jaén.**
+
+Para la ocasión, Tauroemoción ha reseñado un encierro de Victoriano del Río, una de las ganaderías de mayor prestigio en la actualidad de la cabaña brava española, cuyos astados han protagonizado destacadas faenas en las principales plazas del país.
+
+La afición baezana aguarda así una **tarde de gran expectación en el histórico Coso del Vivero, con un cartel que reúne figuras consagradas y una joven promesa que protagonizará un momento clave de su carrera profesional.**
+
+Al igual que en la pasada edición, el festejo se celebrará en el mes de abril con el objetivo de consolidar la Corrida del Renacimiento como un festejo de referencia de inicio de temporada y una cita imprescindible no solo para la afición jiennense, sino también para aficionados de otras provincias.
+
+Con este **rematado cartel, el Ayuntamiento de Baeza y Tauroemoción sellan su segunda temporada taurina consecutiva tras el resurgir de los festejos el pasado año en la ciudad Patrimonio Mundial, donde los aficionados pudieron disfrutar de dos tardes marcadas por la seriedad, el cuidado de los detalles y la pasión por la fiesta.**
+
+Las entradas para el festejo ya se encuentran a la venta en la página web oficial de la empresa organizadora,  
+<a
+  www.tauroemocion.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.tauroemocion.es
+</a> , y estarán disponibles desde el próximo 2 de febrero en el establecimiento Pópulo de Baeza.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 80,
     title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
     image: "/images/vuelve.jpg",
