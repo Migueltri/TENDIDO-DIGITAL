@@ -450,58 +450,17 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
-    title: `Roca Rey, Juan Ortega y Marco Pérez, cartel de máximo relumbre para la Goyesca de Arles`,
-    image: "/images/goyesca2.jpg",
+    title: `Los hierros de Morante para su regreso a la Maestranza`,
+    image: "/images/hierros.jpg",
     category: "Actualidad",
-    date: "22 de Enero de 2026",
-	fullContent: `El Coliseo de Arles ya tiene cerrada su programación para la temporada 2026, que volverá a tener como eje central uno de los acontecimientos culturales y taurinos más relevantes del calendario francés: la tradicional Corrida Goyesca, integrada en el marco de la Feria del Arroz, que se celebrará los días 11, 12 y 13 de septiembre.
+    date: "23 de Enero de 2026",
+	fullContent: `A medida que avanza el mes de enero, el dibujo de la temporada 2026 en la Real Maestranza empieza a tomar forma. Morante de la Puebla estará finalmente anunciado en Sevilla en cuatro tardes, con la posibilidad abierta a una quinta comparecencia. Tras un periodo de dudas sobre su continuidad, el torero cigarrero selló su regreso de la mano de José María Garzón, en un acuerdo tan discreto como significativo, que confirma su presencia en citas clave del calendario sevillano.
 
-La Goyesca, auténtico plato fuerte del ciclo, contará con el liderazgo de Andrés Roca Rey, que encabezará una terna de alto nivel junto a Juan Ortega y el joven salmantino Marco Pérez, quien hará su segundo paseíllo del año en el anfiteatro arlesiano. El festejo, uno de los de mayor prestigio de la temporada en Francia, tendrá lugar el sábado 12 de septiembre.
+El espada de La Puebla del Río hará el paseíllo en Domingo de Resurrección y en la festividad del Corpus Christi, recuperada recientemente por la empresa. A estas dos fechas se sumarán otras dos tardes primaverales aún por encajar, mientras que la opción de una quinta actuación, prevista para San Miguel, queda supeditada a una modificación del reglamento taurino andaluz, que actualmente no permite dejar huecos libres en los abonos.
 
-El cierre del serial llegará el domingo 13 de septiembre con una corrida de toros de Pages-Mailhan, en la que están anunciados Juan Leal, José Garrido y el mexicano Diego San Román.
+En el apartado ganadero, Morante ya ha señalado varios hierros de su confianza. Para Resurrección, la corrida apunta a ser de Garcigrande, ganadería con la que ha cosechado importantes éxitos en esta plaza. En esa jornada compartiría cartel con Andrés Roca Rey y David de Miranda. Para el Corpus Christi, cobra fuerza el debut en Sevilla de la vacada de Álvaro Núñez, con un cartel de marcado acento sevillano junto a Juan Ortega y Pablo Aguado.
 
-De este modo, la Feria del Arroz de Arles 2026 queda configurada con los siguientes festejos:
-Viernes, 11 de septiembre: Corrida Camarguesa.
-Sábado, 12 de septiembre: Corrida Goyesca. Toros de Jandilla para Juan Ortega, Roca Rey y Marco Pérez.
-Domingo, 13 de septiembre (matinal): Novillada sin caballos con reses de Hermanos Jalabert.
-Domingo, 13 de septiembre (tarde): Toros de Pages-Mailhan para Juan Leal, José Garrido y Diego San Román.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `El Corpus de Sevilla vuelve a tomar fuerza con un cartel de marcada identidad sevillana`,
-    image: "/images/corpus.jpg",
-    category: "Actualidad",
-    date: "22 de Enero de 2026",
-	fullContent: `La Plaza de Toros de la Real Maestranza de Caballería de Sevilla se encamina a recuperar uno de sus festejos más emblemáticos del calendario taurino: la corrida del Corpus Christi, prevista para el próximo jueves 4 de junio. Aunque la Empresa Pagés no hará oficiales los carteles hasta el 9 de febrero, todo apunta a una combinación de máxima raíz sevillana que devolvería relevancia a esta fecha tras varias temporadas ocupada por novilladas.
-
-Según los rumores que circulan con insistencia en los mentideros taurinos, los nombres de Morante de la Puebla, Juan Ortega y Pablo Aguado encabezan las quinielas para conformar una terna de enorme peso artístico y profundo sabor local. Un cartel que destila sevillanía por los cuatro costados y que podría lidiar una corrida de Domingo Hernández o Álvaro Núñez, dos hierros habituales en citas de máxima categoría.
-
-La posible recuperación de esta corrida mayor supondría un paso significativo dentro de la temporada hispalense, devolviendo al Corpus el protagonismo que históricamente ha tenido en la ciudad. De confirmarse este cartel, sería además una fecha clave en la campaña de Morante de la Puebla, que reaparecerá el Domingo de Resurrección y podría alcanzar hasta cinco paseíllos en el coso del Baratillo.
-
-A la espera de la presentación oficial de los carteles el próximo mes de febrero, la afición valora positivamente la intención de la empresa de apostar por una terna de fuerte personalidad artística. Queda aún por despejar si el festejo mantendrá el horario nocturno de los últimos años o si regresará al tradicional horario vespertino.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `La Asociación Nacional de Presidentes celebrará en Málaga su XIV Asamblea Nacional`,
-    image: "/images/asamblea.jpg",
-    category: "Actualidad",
-    date: "22 de Enero de 2026",
-	fullContent: `Málaga será la sede de la XIV Asamblea Nacional de la Asociación Nacional de Presidentes de Plazas de Toros de España (ANPTE), que se celebrará del 6 al 8 de febrero bajo el lema “Encastes con historia. Toros con identidad”. El encuentro reunirá a presidentes de plazas, socios de la entidad, profesionales y especialistas del mundo taurino llegados de distintos puntos del país.
-El programa arrancará el viernes con la recepción de los asistentes y el acto inaugural, seguido de la conferencia “150 años de historia de La Malagueta”, que impartirá el arquitecto municipal de Málaga, José María Morente. La jornada se completará con una visita cultural por la ciudad.
-
-El sábado se desarrollará el grueso de la Asamblea con la celebración de la XIV Asamblea General Ordinaria y, por la tarde, la Asamblea General Extraordinaria, en la que se procederá a la reelección de la Junta Directiva. Ese mismo día se ofrecerá la ponencia “Encastes minoritarios. Evolución y actualidad”, a cargo del veterinario y escritor José Luis Prieto, y se entregarán los diplomas a los alumnos del XI Curso de Presidencias de ANPTE.
-
-La jornada del sábado concluirá con la tradicional Cena de Gala, que tendrá lugar en la Casa Diocesana de Málaga. Durante el acto se concederán los reconocimientos de ANPTE a Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, y a los toreros malagueños Mari Paz Vega y Saúl Jiménez Fortes. Asimismo, se entregarán los Premios “Marcelino Moronta” a los críticos taurinos Antonio Lorca y Carlos Crivell.
-
-El domingo se celebrará la conferencia “La incultura de la prohibición”, impartida por François Zumbiehl, catedrático de Letras Clásicas y doctor en Antropología, antes del acto oficial de clausura y una comida de convivencia.
-
-Con esta nueva edición, ANPTE reafirma su apuesta por la formación, el análisis del sector y la defensa de la tauromaquia desde el respeto a su historia, su diversidad y su identidad cultural.`,
+Completan el abanico de posibilidades las ganaderías de Hermanos García Jiménez y Olga Jiménez, así como Domingo Hernández, hierro ligado a una de las faenas más recordadas del diestro en la Maestranza en los últimos años. Otras divisas como Núñez del Cuvillo, Jandilla o Juan Pedro Domecq quedan en un segundo plano y dependerían de que fructifique esa quinta tarde aún en el aire. Por ahora, estos son los mimbres con los que se construye el esperado regreso primaveral de Morante a Sevilla.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -510,6 +469,23 @@ Con esta nueva edición, ANPTE reafirma su apuesta por la formación, el anális
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 82,
+    title: `Los hierros de Morante para su regreso a la Maestranza`,
+    image: "/images/hierros.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `A medida que avanza el mes de enero, el dibujo de la temporada 2026 en la Real Maestranza empieza a tomar forma. Morante de la Puebla estará finalmente anunciado en Sevilla en cuatro tardes, con la posibilidad abierta a una quinta comparecencia. Tras un periodo de dudas sobre su continuidad, el torero cigarrero selló su regreso de la mano de José María Garzón, en un acuerdo tan discreto como significativo, que confirma su presencia en citas clave del calendario sevillano.
+
+El espada de La Puebla del Río hará el paseíllo en Domingo de Resurrección y en la festividad del Corpus Christi, recuperada recientemente por la empresa. A estas dos fechas se sumarán otras dos tardes primaverales aún por encajar, mientras que la opción de una quinta actuación, prevista para San Miguel, queda supeditada a una modificación del reglamento taurino andaluz, que actualmente no permite dejar huecos libres en los abonos.
+
+En el apartado ganadero, Morante ya ha señalado varios hierros de su confianza. Para Resurrección, la corrida apunta a ser de Garcigrande, ganadería con la que ha cosechado importantes éxitos en esta plaza. En esa jornada compartiría cartel con Andrés Roca Rey y David de Miranda. Para el Corpus Christi, cobra fuerza el debut en Sevilla de la vacada de Álvaro Núñez, con un cartel de marcado acento sevillano junto a Juan Ortega y Pablo Aguado.
+
+Completan el abanico de posibilidades las ganaderías de Hermanos García Jiménez y Olga Jiménez, así como Domingo Hernández, hierro ligado a una de las faenas más recordadas del diestro en la Maestranza en los últimos años. Otras divisas como Núñez del Cuvillo, Jandilla o Juan Pedro Domecq quedan en un segundo plano y dependerían de que fructifique esa quinta tarde aún en el aire. Por ahora, estos son los mimbres con los que se construye el esperado regreso primaveral de Morante a Sevilla.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 83,
     title: `Roca Rey, Juan Ortega y Marco Pérez, cartel de máximo relumbre para la Goyesca de Arles`,
     image: "/images/goyesca2.jpg",
