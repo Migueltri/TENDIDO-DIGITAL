@@ -449,7 +449,75 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1000,
+    title: `Festejo de rejones en Benamocarra (Malaga)`,
+    image: "/images/ma.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `Benamocarra acogerá el próximo Domingo 1 de Marzo un gran festejo de rejones, presentado esta mañana en el Salón de Plenos del Ayuntamiento de Benamocarra por el Alcalde, Abdeslam Lucena, la concejala de Cultura, Desireé Téllez y el rejoneador local, Ferrer Martín.
+
+ 
+
+Este año, el III Trofeo Aguacate de Oro será disputado por la máxima figura mundial del rejoneo, Diego Ventura, y el rejoneador local Ferrer Martín, revelación del rejoneo y triunfador en Latinoamerica.
+
+ 
+
+Durante la tarde, se lidiarán cuatro ejemplares de la prestigiosa ganadería Jodar y Ruchena, de Las Cabezas de San Juan (Sevilla).
+
+Ferrer Martín y Diego Ventura, competirán mano a mano por el III Aguacate de Oro en una tarde inolvidable, acompañada por la prestigiosa Banda de Música de Benamocarra, contando con la organización de la empresa Tauroluz S.L.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1001,
+    title: `OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.`,
+    image: "/images/OneToro.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `**OneToro** afronta el inicio de la temporada 2026 con un planteamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación taurina original.
+
+**OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.**
+
+**OneToro afronta el inicio de la Temporada 2026 con un planeamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación Taurina original.**
+
+**Kilómetro Cero y el impulso a la base**
+
+El pistoletazo de salida llegará con la retransmisión en directo de las tres novilladas sin picadores del certamen Kilómetro Cero, que se celebrarán en Valdemorillo los días 27 y 28 de febrero y el 1 de marzo, organizadas por la Fundación del Toro de Lidia. Una apuesta decidida por el futuro y los nuevos valores, uno de los compromisos estratégicos de OneToro.
+
+**22 citas y más de 30 estrenos para el inicio**
+
+El calendario continuará con la **Feria de Castellón**, OneToro retransmitirá dos corridas de toros, correspondientes al domingo 8, corrida de la Quinta para Ginés Marín, Aaron Palacios y Javier Zulueta y domingo 14, corrida de Domingo Hernández, para Talavante y Juan Ortega.
+
+Otra cita importante del mes de marzo es la **Feria de Fallas**, donde estaremos en directo los días 17, donde se lidiarán toros de Santiago Domecq para Perera, Víctor Hernández y Marco Pérez, el día 18, Domingo Hernández para Boja Jiménez y Tomas Rufo, mano a mano y el 19 de marzo, la ganadería de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega.
+
+Posteriormente, OneToro emitirá una corrida de toros de marcado carácter social, el 21 de marzo en Villaseca de la Sagra, a beneficio de la Fundación Oncohematología Infantil con toros de Cuadri, en una cita muy especial.
+
+En abril, la plataforma emitirá en directo **La Feria de Arles** al completo con sus tres corridas de toros de los días 4, 5 y 6 de abril y la corrida Camarguesa del día 3, consolidando su presencia en el circuito internacional.
+
+Para culminar esta primera parte de la temporada, a día de hoy, OneToro se encuentra en avanzadas negociaciones para la retransmisión de la **Feria de Abril de Sevilla**.
+
+Las retransmisiones de OneToro continúan capitaneadas por el periodista **David Casas**, los maestros comentaristas **Manuel Caballero, Eduardo Dávila y Domingo López Chaves**,
+
+los colaboradores **Domingo Delgado de la Cámara**, además de **Victor Soria** en el callejón. Esta temporada **Álvaro Acevedo** estará en el equipo de retransmisión.
+
+Además, la cadena privada volverá a contar con un despliegue audiovisual de primer nivel, compuesto por drones, más de diez cámaras, incluyendo tecnología super slow motion que permitirán no perder ningún detalle, y un completo sistema de micrófonos distribuidos por toda la plaza. Todo ello, integrado en nuestra unidad móvil de realización, hará posible un seguimiento dinámico, envolvente y con una calidad cinematográfica a la altura de los grandes eventos.
+
+**Programación propia y cobertura especial**
+
+Más allá de los directos, OneToro reforzará su oferta temática con una cobertura especial de la Feria de **Valdemorillo** a través del programa **La tarde después**, presentado por **Vanesa Santos**, cubriendo los tres festejos con las mejores imágenes, análisis y entrevistas de la jornada.
+
+Asimismo, se llevará a cabo por segundo año consecutivo nuestro programa **Conexión**, desde **El Carnaval del Toro de Ciudad Rodrigo**, con cuatro días de programación, abordando todos los festejos, el ambiente y los principales acontecimientos de una de las citas más singulares del invierno taurino.
+
+La parrilla de estrenos semanales de OneToro continúa con nuevas entregas de **“Tentaderos”**, **“A la cara”** y **“Mayorales”**, además de dos series nuevas: **“Ganaderías del Mundo”** y un formato especial de caza con el matador **Manuel Escribano** como protagonista.
+
+Tras cuatro años, OneToro ofrece un inicio de temporada de máxima intensidad consolidándose como el unico canal privado de temática taurina, acercando la tauromaquia a todos los aficionados del mundo y además espera estar presente en muchas más grandes citas a lo largo de la temporada.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
     title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
     image: "/images/circuito.jpg",
     category: "Actualidad",
@@ -470,7 +538,7 @@ El Circuito de Novilladas de Andalucía, promovido por la **Junta de Andalucía 
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Cartel de lujo para la VII Corrida del Renacimiento de Baeza el próximo 11 de abril`,
     image: "/images/cartellujo.jpg",
     category: "Actualidad",
@@ -505,7 +573,7 @@ Las entradas para el festejo ya se encuentran a la venta en la página web ofici
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
     image: "/images/vuelve.jpg",
     category: "Actualidad",
@@ -534,7 +602,7 @@ Un fin de semana intenso, con aroma a torería, apuesta por la juventud y plazas
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `La Malagueta se prepara para una de las grandes pugnas empresariales del invierno taurino`,
     image: "/images/prepara.jpg",
     category: "Actualidad",
@@ -551,7 +619,7 @@ Con este nuevo escenario, La Malagueta encara su futuro inmediato con tres aspir
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1006,
     title: `Los hierros de Morante para su regreso a la Maestranza`,
     image: "/images/hierros.jpg",
     category: "Actualidad",
@@ -571,6 +639,74 @@ Completan el abanico de posibilidades las ganaderías de Hermanos García Jimén
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 76,
+    title: `Festejo de rejones en Benamocarra (Malaga)`,
+    image: "/images/ma.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `Benamocarra acogerá el próximo Domingo 1 de Marzo un gran festejo de rejones, presentado esta mañana en el Salón de Plenos del Ayuntamiento de Benamocarra por el Alcalde, Abdeslam Lucena, la concejala de Cultura, Desireé Téllez y el rejoneador local, Ferrer Martín.
+
+ 
+
+Este año, el III Trofeo Aguacate de Oro será disputado por la máxima figura mundial del rejoneo, Diego Ventura, y el rejoneador local Ferrer Martín, revelación del rejoneo y triunfador en Latinoamerica.
+
+ 
+
+Durante la tarde, se lidiarán cuatro ejemplares de la prestigiosa ganadería Jodar y Ruchena, de Las Cabezas de San Juan (Sevilla).
+
+Ferrer Martín y Diego Ventura, competirán mano a mano por el III Aguacate de Oro en una tarde inolvidable, acompañada por la prestigiosa Banda de Música de Benamocarra, contando con la organización de la empresa Tauroluz S.L.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 77,
+    title: `OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.`,
+    image: "/images/OneToro.jpg",
+    category: "Actualidad",
+    date: "23 de Enero de 2026",
+	fullContent: `**OneToro** afronta el inicio de la temporada 2026 con un planteamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación taurina original.
+
+**OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.**
+
+**OneToro afronta el inicio de la Temporada 2026 con un planeamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación Taurina original.**
+
+**Kilómetro Cero y el impulso a la base**
+
+El pistoletazo de salida llegará con la retransmisión en directo de las tres novilladas sin picadores del certamen Kilómetro Cero, que se celebrarán en Valdemorillo los días 27 y 28 de febrero y el 1 de marzo, organizadas por la Fundación del Toro de Lidia. Una apuesta decidida por el futuro y los nuevos valores, uno de los compromisos estratégicos de OneToro.
+
+**22 citas y más de 30 estrenos para el inicio**
+
+El calendario continuará con la **Feria de Castellón**, OneToro retransmitirá dos corridas de toros, correspondientes al domingo 8, corrida de la Quinta para Ginés Marín, Aaron Palacios y Javier Zulueta y domingo 14, corrida de Domingo Hernández, para Talavante y Juan Ortega.
+
+Otra cita importante del mes de marzo es la **Feria de Fallas**, donde estaremos en directo los días 17, donde se lidiarán toros de Santiago Domecq para Perera, Víctor Hernández y Marco Pérez, el día 18, Domingo Hernández para Boja Jiménez y Tomas Rufo, mano a mano y el 19 de marzo, la ganadería de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega.
+
+Posteriormente, OneToro emitirá una corrida de toros de marcado carácter social, el 21 de marzo en Villaseca de la Sagra, a beneficio de la Fundación Oncohematología Infantil con toros de Cuadri, en una cita muy especial.
+
+En abril, la plataforma emitirá en directo **La Feria de Arles** al completo con sus tres corridas de toros de los días 4, 5 y 6 de abril y la corrida Camarguesa del día 3, consolidando su presencia en el circuito internacional.
+
+Para culminar esta primera parte de la temporada, a día de hoy, OneToro se encuentra en avanzadas negociaciones para la retransmisión de la **Feria de Abril de Sevilla**.
+
+Las retransmisiones de OneToro continúan capitaneadas por el periodista **David Casas**, los maestros comentaristas **Manuel Caballero, Eduardo Dávila y Domingo López Chaves**,
+
+los colaboradores **Domingo Delgado de la Cámara**, además de **Victor Soria** en el callejón. Esta temporada **Álvaro Acevedo** estará en el equipo de retransmisión.
+
+Además, la cadena privada volverá a contar con un despliegue audiovisual de primer nivel, compuesto por drones, más de diez cámaras, incluyendo tecnología super slow motion que permitirán no perder ningún detalle, y un completo sistema de micrófonos distribuidos por toda la plaza. Todo ello, integrado en nuestra unidad móvil de realización, hará posible un seguimiento dinámico, envolvente y con una calidad cinematográfica a la altura de los grandes eventos.
+
+**Programación propia y cobertura especial**
+
+Más allá de los directos, OneToro reforzará su oferta temática con una cobertura especial de la Feria de **Valdemorillo** a través del programa **La tarde después**, presentado por **Vanesa Santos**, cubriendo los tres festejos con las mejores imágenes, análisis y entrevistas de la jornada.
+
+Asimismo, se llevará a cabo por segundo año consecutivo nuestro programa **Conexión**, desde **El Carnaval del Toro de Ciudad Rodrigo**, con cuatro días de programación, abordando todos los festejos, el ambiente y los principales acontecimientos de una de las citas más singulares del invierno taurino.
+
+La parrilla de estrenos semanales de OneToro continúa con nuevas entregas de **“Tentaderos”**, **“A la cara”** y **“Mayorales”**, además de dos series nuevas: **“Ganaderías del Mundo”** y un formato especial de caza con el matador **Manuel Escribano** como protagonista.
+
+Tras cuatro años, OneToro ofrece un inicio de temporada de máxima intensidad consolidándose como el unico canal privado de temática taurina, acercando la tauromaquia a todos los aficionados del mundo y además espera estar presente en muchas más grandes citas a lo largo de la temporada.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 78,
     title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
     image: "/images/circuito.jpg",
