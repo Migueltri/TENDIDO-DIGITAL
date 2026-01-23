@@ -454,17 +454,17 @@ const featuredNews: NewsItem[] = [
     image: "/images/circuito.jpg",
     category: "Actualidad",
     date: "23 de Enero de 2026",
-	fullContent: `El **Circuito de Novilladas de Andalucía 2026**, que celebrará su **séptima edición impulsado por la Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus **tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce**.
+	fullContent: `El Circuito de Novilladas de Andalucía 2026, que celebrará su séptima edición impulsado por la **Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce.
 
-Los **primeros seleccionados** han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su **proyección dentro del escalafón novilleril**.
+Los primeros seleccionados han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su proyección dentro del escalafón novilleril.
 
-Estos **tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas**.
+Estos tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas.
 
-El **proceso de selección continuará el próximo lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos **nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026**.
+El proceso de selección continuará el próximo **lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026.
 
-Con este **primer anuncio, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional**.
+Con este **primer anuncio**, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional.
 
-El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
+El Circuito de Novilladas de Andalucía, promovido por la **Junta de Andalucía y la Fundación Toro de Lidia**, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las **Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
@@ -576,17 +576,17 @@ const latestNews: NewsItem[] = [
     image: "/images/circuito.jpg",
     category: "Actualidad",
     date: "23 de Enero de 2026",
-	fullContent: `El **Circuito de Novilladas de Andalucía 2026**, que celebrará su **séptima edición impulsado por la Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus **tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce**.
+	fullContent: `El Circuito de Novilladas de Andalucía 2026, que celebrará su séptima edición impulsado por la **Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce.
 
-Los **primeros seleccionados** han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su **proyección dentro del escalafón novilleril**.
+Los primeros seleccionados han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su proyección dentro del escalafón novilleril.
 
-Estos **tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas**.
+Estos tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas.
 
-El **proceso de selección continuará el próximo lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos **nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026**.
+El proceso de selección continuará el próximo **lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026.
 
-Con este **primer anuncio, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional**.
+Con este **primer anuncio**, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional.
 
-El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
+El Circuito de Novilladas de Andalucía, promovido por la **Junta de Andalucía y la Fundación Toro de Lidia**, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las **Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
     author: "Eduardo Elvira",
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
