@@ -448,6 +448,57 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+   { 
+    id: 1003,
+    title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
+    image: "/images/aparicio.jpg",
+    category: "Crónicas",
+    date: "24 de Enero de 2026",
+	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
+	torerosRaw: `·        Jaime de Pedro, dos orejas.
+
+·        Blas Márquez, dos orejas.
+
+·        Ignacio Garibay, dos orejas.
+
+·        Íñigo Norte, oreja.
+
+·        Julio Aparicio, dos orejas y rabo.
+
+·        Joao Fernándes, ovación con saludos tras aviso.
+
+·        Armando Rojo, dos orejas y rabo.`,
+  fullContent: `**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+
+**Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
+
+**Ignacio Garibay** se las vio en tercer lugar con un eral de encaste Murube con el hierro de **Fermín Bohórquez**, el novillero Azteca destaco en su toreo al natural donde lo llevo muy pulseado, el animal que acusaba falta de fuerza no dejo muchas opciones al mexicano, estocada que hizo guardia.
+
+**Iñigo Norte** lanceo templado al cuarto de la tarde un novillo de **David Ribeiro Telles**, el de Salamanca no tuvo muchas opciones con el complicado novillo que le toco en suerte, solo que quedó mostrar capacidad y valor que el público se lo supo valorar y tras una estocada le dieron una oreja.
+
+**Julio Aparicio**, nieto y sobrino de los **Julio Aparicio**, mostros sus cartas desde que se abrió con el capote, ante un extraordinario novillo de **Santiago Domecq** al que se le dio la vuelta al ruedo, como buen **Aparicio** su toreo está lleno de personalidad, sabor y mucha torería, de ese toreo con pellizco que gusta dejando una gran faena de muleta por ambos pitones una faena de impacto en La Puebla y tras una estocada se llevó el Rabo y el novillo la vuelta al ruedo.
+
+**Joao Fernandes**, se las vio con el novillo de más volumen con el hierro de **Alcurrucén**, que le faltó transmisión y al portugués solo que quedo mostrar cuando lo dejó su oponente concepto y sobretodo su valor, falló con los aceros.
+
+**Armando Rojo** que cerraba la tarde en la Puebla se las vio con un buen novillo de Garcigrande, al que toreo por verónicas muy templadas. Con la muleta conecto desde el principio con sus paisanos con su personalidad y buen toreo, faena muy profunda además de templada con ambos pitones, estocada y los máximos trofeos
+
+
+**FICHA DEL FESTEJO:**
+**La Puebla del Río (Sevilla).** Sábado 24 de enero de 2025. Fiestas de San Sebastián, novillada sin caballos, con lleno en los tendidos, en tarde fría.
+
+Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez**, **Fermín Bohórquez**, **David Ribeiro Telles**, **Santiago Domecq**, **Alcurrucén** y **Garcigrande**. El quinto, de Santiago Domecq, premiado con la vuelta al ruedo.
+
+* **Jaime de Pedro**, dos orejas.
+* **Blas Márquez**, dos orejas.
+* **Ignacio Garibay**, dos orejas.
+* **Íñigo Norte**, oreja.
+* **Julio Aparicio**, dos orejas y rabo.
+* **Joao Fernandes**, ovación con saludos tras aviso.
+* **Armando Rojo**, dos orejas y rabo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
 	{ 
     id: 1004,
     title: `Curro Díaz con nuevo apoderado para Perú`,
@@ -512,6 +563,57 @@ El movimiento se produce antes del inicio de la temporada europea y abre una nue
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 70,
+    title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
+    image: "/images/aparicio.jpg",
+    category: "Crónicas",
+    date: "24 de Enero de 2026",
+	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
+	torerosRaw: `·        Jaime de Pedro, dos orejas.
+
+·        Blas Márquez, dos orejas.
+
+·        Ignacio Garibay, dos orejas.
+
+·        Íñigo Norte, oreja.
+
+·        Julio Aparicio, dos orejas y rabo.
+
+·        Joao Fernándes, ovación con saludos tras aviso.
+
+·        Armando Rojo, dos orejas y rabo.`,
+  fullContent: `**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+
+**Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
+
+**Ignacio Garibay** se las vio en tercer lugar con un eral de encaste Murube con el hierro de **Fermín Bohórquez**, el novillero Azteca destaco en su toreo al natural donde lo llevo muy pulseado, el animal que acusaba falta de fuerza no dejo muchas opciones al mexicano, estocada que hizo guardia.
+
+**Iñigo Norte** lanceo templado al cuarto de la tarde un novillo de **David Ribeiro Telles**, el de Salamanca no tuvo muchas opciones con el complicado novillo que le toco en suerte, solo que quedó mostrar capacidad y valor que el público se lo supo valorar y tras una estocada le dieron una oreja.
+
+**Julio Aparicio**, nieto y sobrino de los **Julio Aparicio**, mostros sus cartas desde que se abrió con el capote, ante un extraordinario novillo de **Santiago Domecq** al que se le dio la vuelta al ruedo, como buen **Aparicio** su toreo está lleno de personalidad, sabor y mucha torería, de ese toreo con pellizco que gusta dejando una gran faena de muleta por ambos pitones una faena de impacto en La Puebla y tras una estocada se llevó el Rabo y el novillo la vuelta al ruedo.
+
+**Joao Fernandes**, se las vio con el novillo de más volumen con el hierro de **Alcurrucén**, que le faltó transmisión y al portugués solo que quedo mostrar cuando lo dejó su oponente concepto y sobretodo su valor, falló con los aceros.
+
+**Armando Rojo** que cerraba la tarde en la Puebla se las vio con un buen novillo de Garcigrande, al que toreo por verónicas muy templadas. Con la muleta conecto desde el principio con sus paisanos con su personalidad y buen toreo, faena muy profunda además de templada con ambos pitones, estocada y los máximos trofeos
+
+
+**FICHA DEL FESTEJO:**
+**La Puebla del Río (Sevilla).** Sábado 24 de enero de 2025. Fiestas de San Sebastián, novillada sin caballos, con lleno en los tendidos, en tarde fría.
+
+Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez**, **Fermín Bohórquez**, **David Ribeiro Telles**, **Santiago Domecq**, **Alcurrucén** y **Garcigrande**. El quinto, de Santiago Domecq, premiado con la vuelta al ruedo.
+
+* **Jaime de Pedro**, dos orejas.
+* **Blas Márquez**, dos orejas.
+* **Ignacio Garibay**, dos orejas.
+* **Íñigo Norte**, oreja.
+* **Julio Aparicio**, dos orejas y rabo.
+* **Joao Fernandes**, ovación con saludos tras aviso.
+* **Armando Rojo**, dos orejas y rabo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
+	{ 
     id: 71,
     title: `Curro Díaz con nuevo apoderado para Perú`,
     image: "/images/curro diaz.jpg",
@@ -7077,6 +7179,57 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
+	{ 
+    id: 4999,
+    title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
+    image: "/images/aparicio.jpg",
+    category: "Crónicas",
+    date: "24 de Enero de 2026",
+	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
+	torerosRaw: `·        Jaime de Pedro, dos orejas.
+
+·        Blas Márquez, dos orejas.
+
+·        Ignacio Garibay, dos orejas.
+
+·        Íñigo Norte, oreja.
+
+·        Julio Aparicio, dos orejas y rabo.
+
+·        Joao Fernándes, ovación con saludos tras aviso.
+
+·        Armando Rojo, dos orejas y rabo.`,
+  fullContent: `**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+
+**Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
+
+**Ignacio Garibay** se las vio en tercer lugar con un eral de encaste Murube con el hierro de **Fermín Bohórquez**, el novillero Azteca destaco en su toreo al natural donde lo llevo muy pulseado, el animal que acusaba falta de fuerza no dejo muchas opciones al mexicano, estocada que hizo guardia.
+
+**Iñigo Norte** lanceo templado al cuarto de la tarde un novillo de **David Ribeiro Telles**, el de Salamanca no tuvo muchas opciones con el complicado novillo que le toco en suerte, solo que quedó mostrar capacidad y valor que el público se lo supo valorar y tras una estocada le dieron una oreja.
+
+**Julio Aparicio**, nieto y sobrino de los **Julio Aparicio**, mostros sus cartas desde que se abrió con el capote, ante un extraordinario novillo de **Santiago Domecq** al que se le dio la vuelta al ruedo, como buen **Aparicio** su toreo está lleno de personalidad, sabor y mucha torería, de ese toreo con pellizco que gusta dejando una gran faena de muleta por ambos pitones una faena de impacto en La Puebla y tras una estocada se llevó el Rabo y el novillo la vuelta al ruedo.
+
+**Joao Fernandes**, se las vio con el novillo de más volumen con el hierro de **Alcurrucén**, que le faltó transmisión y al portugués solo que quedo mostrar cuando lo dejó su oponente concepto y sobretodo su valor, falló con los aceros.
+
+**Armando Rojo** que cerraba la tarde en la Puebla se las vio con un buen novillo de Garcigrande, al que toreo por verónicas muy templadas. Con la muleta conecto desde el principio con sus paisanos con su personalidad y buen toreo, faena muy profunda además de templada con ambos pitones, estocada y los máximos trofeos
+
+
+**FICHA DEL FESTEJO:**
+**La Puebla del Río (Sevilla).** Sábado 24 de enero de 2025. Fiestas de San Sebastián, novillada sin caballos, con lleno en los tendidos, en tarde fría.
+
+Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez**, **Fermín Bohórquez**, **David Ribeiro Telles**, **Santiago Domecq**, **Alcurrucén** y **Garcigrande**. El quinto, de Santiago Domecq, premiado con la vuelta al ruedo.
+
+* **Jaime de Pedro**, dos orejas.
+* **Blas Márquez**, dos orejas.
+* **Ignacio Garibay**, dos orejas.
+* **Íñigo Norte**, oreja.
+* **Julio Aparicio**, dos orejas y rabo.
+* **Joao Fernandes**, ovación con saludos tras aviso.
+* **Armando Rojo**, dos orejas y rabo.`,
+  author: "Eduardo Elvira",
+  authorLogo: "/images/edu4.jpg",
+  showAuthorHeader: true
+  },
 	{ 
     id: 5000,
     title: `Óscar Campos se impone en el IV Certamen de Invierno de Escuelas Taurinas de la Comunidad de Madrid`,
