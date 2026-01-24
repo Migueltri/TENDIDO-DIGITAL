@@ -449,211 +449,31 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1000,
-    title: `Clemente, la ausencia en Arles que invita a la reflexión`,
-    image: "/images/clemen.jpg",
-    category: "Opinión",
-    date: "23 de Enero de 2026",
-	fullContent: `En el siempre complejo tablero de la temporada taurina hay ausencias que pesan más que muchas presencias. No porque falten figuras consagradas, sino porque se echa de menos a toreros que, por méritos propios, han llamado con fuerza a la puerta de los grandes carteles. Entre ellos, este año, destaca con claridad el nombre de **Clemente**.
-
-El torero francés lleva tiempo demostrando que su sitio está entre los nombres que marcan el pulso de las ferias importantes. Su evolución ha sido constante, silenciosa y sólida, construida a base de tardes serias, de compromiso con el oficio y de una manera de entender el toreo que bebe directamente de las fuentes clásicas. En una época de prisas y efectismos, Clemente ha apostado por la **pureza, el temple y la colocación, tres pilares que sostienen el toreo eterno.**
-
-Su estilo no busca el impacto fácil ni el gesto forzado. Al contrario: hay en su muleta una búsqueda constante de la naturalidad, del trazo limpio, del muletazo bien dicho. Un toreo de líneas claras, de ritmo interior, que conecta con el aficionado que valora el fondo más que la forma. Ese toreo sereno, clásico y sincero es, precisamente, una de sus grandes señas de identidad.
-
-Por eso sorprende especialmente **su ausencia en Arles**, una plaza que siempre ha sabido mirar hacia el futuro sin renunciar a la tradición. Más aún cuando Clemente llega avalado por hechos recientes que no admiten discusión: **dos puertas grandes en Nîmes**, una de las plazas más exigentes y simbólicas del sur de Francia. **Triunfar allí no es casualidad. Repetirlo, mucho menos.**
-
-En una época en la que los carteles tienden a repetirse y los nombres se suceden casi por inercia, **dejar fuera a un torero que viene de triunfar con claridad invita, como mínimo, a la reflexión.** La tauromaquia necesita figuras, sí, pero también necesita estilos, personalidades y discursos propios. Y el de Clemente, **apoyado en el clasicismo y en el respeto al toro, aporta equilibrio y verdad a un panorama a veces demasiado uniforme.**
-
-Clemente representa una manera de entender el toreo que no pasa de moda. Un torero que construye sus faenas desde la colocación, la distancia justa y el mando suave, sin estridencias, sin atajos. **Su ausencia en una feria como Arles no resta brillo al ciclo, pero sí deja un hueco evidente para quienes siguen con atención el pulso real de la temporada.**
-
-Porque al final, las ferias no se miden solo por la suma de apellidos ilustres, sino por **su capacidad de reflejar el momento del toreo**. Y hoy, guste más o menos, **Clemente es parte de ese presente.**`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Festejo de rejones en Benamocarra (Malaga)`,
-    image: "/images/ma.jpg",
-    category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `Benamocarra acogerá el próximo Domingo 1 de Marzo un gran festejo de rejones, presentado esta mañana en el Salón de Plenos del Ayuntamiento de Benamocarra por el Alcalde, Abdeslam Lucena, la concejala de Cultura, Desireé Téllez y el rejoneador local, Ferrer Martín.
-
- 
-
-Este año, el III Trofeo Aguacate de Oro será disputado por la máxima figura mundial del rejoneo, Diego Ventura, y el rejoneador local Ferrer Martín, revelación del rejoneo y triunfador en Latinoamerica.
-
- 
-
-Durante la tarde, se lidiarán cuatro ejemplares de la prestigiosa ganadería Jodar y Ruchena, de Las Cabezas de San Juan (Sevilla).
-
-Ferrer Martín y Diego Ventura, competirán mano a mano por el III Aguacate de Oro en una tarde inolvidable, acompañada por la prestigiosa Banda de Música de Benamocarra, contando con la organización de la empresa Tauroluz S.L.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.`,
-    image: "/images/OneToro.jpg",
-    category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `**OneToro** afronta el inicio de la temporada 2026 con un planteamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación taurina original.
-
-**OneToro estará en directo en: Castellón, Valencia, Arles y avanzan las negociaciones con Sevilla.**
-
-**OneToro afronta el inicio de la Temporada 2026 con un planeamiento ambicioso y atractivo para sus abonados, sustentado en un calendario de gran interés, con retransmisiones en directo y programación Taurina original.**
-
-**Kilómetro Cero y el impulso a la base**
-
-El pistoletazo de salida llegará con la retransmisión en directo de las tres novilladas sin picadores del certamen Kilómetro Cero, que se celebrarán en Valdemorillo los días 27 y 28 de febrero y el 1 de marzo, organizadas por la Fundación del Toro de Lidia. Una apuesta decidida por el futuro y los nuevos valores, uno de los compromisos estratégicos de OneToro.
-
-**22 citas y más de 30 estrenos para el inicio**
-
-El calendario continuará con la **Feria de Castellón**, OneToro retransmitirá dos corridas de toros, correspondientes al domingo 8, corrida de la Quinta para Ginés Marín, Aaron Palacios y Javier Zulueta y domingo 14, corrida de Domingo Hernández, para Talavante y Juan Ortega.
-
-Otra cita importante del mes de marzo es la **Feria de Fallas**, donde estaremos en directo los días 17, donde se lidiarán toros de Santiago Domecq para Perera, Víctor Hernández y Marco Pérez, el día 18, Domingo Hernández para Boja Jiménez y Tomas Rufo, mano a mano y el 19 de marzo, la ganadería de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega.
-
-Posteriormente, OneToro emitirá una corrida de toros de marcado carácter social, el 21 de marzo en Villaseca de la Sagra, a beneficio de la Fundación Oncohematología Infantil con toros de Cuadri, en una cita muy especial.
-
-En abril, la plataforma emitirá en directo **La Feria de Arles** al completo con sus tres corridas de toros de los días 4, 5 y 6 de abril y la corrida Camarguesa del día 3, consolidando su presencia en el circuito internacional.
-
-Para culminar esta primera parte de la temporada, a día de hoy, OneToro se encuentra en avanzadas negociaciones para la retransmisión de la **Feria de Abril de Sevilla**.
-
-Las retransmisiones de OneToro continúan capitaneadas por el periodista **David Casas**, los maestros comentaristas **Manuel Caballero, Eduardo Dávila y Domingo López Chaves**,
-
-los colaboradores **Domingo Delgado de la Cámara**, además de **Victor Soria** en el callejón. Esta temporada **Álvaro Acevedo** estará en el equipo de retransmisión.
-
-Además, la cadena privada volverá a contar con un despliegue audiovisual de primer nivel, compuesto por drones, más de diez cámaras, incluyendo tecnología super slow motion que permitirán no perder ningún detalle, y un completo sistema de micrófonos distribuidos por toda la plaza. Todo ello, integrado en nuestra unidad móvil de realización, hará posible un seguimiento dinámico, envolvente y con una calidad cinematográfica a la altura de los grandes eventos.
-
-**Programación propia y cobertura especial**
-
-Más allá de los directos, OneToro reforzará su oferta temática con una cobertura especial de la Feria de **Valdemorillo** a través del programa **La tarde después**, presentado por **Vanesa Santos**, cubriendo los tres festejos con las mejores imágenes, análisis y entrevistas de la jornada.
-
-Asimismo, se llevará a cabo por segundo año consecutivo nuestro programa **Conexión**, desde **El Carnaval del Toro de Ciudad Rodrigo**, con cuatro días de programación, abordando todos los festejos, el ambiente y los principales acontecimientos de una de las citas más singulares del invierno taurino.
-
-La parrilla de estrenos semanales de OneToro continúa con nuevas entregas de **“Tentaderos”**, **“A la cara”** y **“Mayorales”**, además de dos series nuevas: **“Ganaderías del Mundo”** y un formato especial de caza con el matador **Manuel Escribano** como protagonista.
-
-Tras cuatro años, OneToro ofrece un inicio de temporada de máxima intensidad consolidándose como el unico canal privado de temática taurina, acercando la tauromaquia a todos los aficionados del mundo y además espera estar presente en muchas más grandes citas a lo largo de la temporada.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Pedro Luis, El Primi y Víctor Barroso, primeros clasificados para el Circuito de Novilladas de Andalucía 2026`,
-    image: "/images/circuito.jpg",
-    category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `El Circuito de Novilladas de Andalucía 2026, que celebrará su séptima edición impulsado por la **Fundación Toro de Lidia y la Junta de Andalucía**, ya conoce a sus tres primeros novilleros clasificados tras la celebración de los tentaderos correspondientes al Bolsín clasificatorio, desarrollados en las ganaderías de Chamaco y Aguadulce.
-
-Los primeros seleccionados han sido **Pedro Luis, novillero de Lima; El Primi, quien regresará al Circuito después de su destacada actuación en la edición de 2025; y Víctor Barroso, que volverá a trenzar el paseíllo en el certamen andaluz tras varios años de ausencia**, confirmando así su proyección dentro del escalafón novilleril.
-
-Estos tres nombres son los primeros en asegurar su presencia en una nueva edición de un certamen plenamente consolidado como una de las principales plataformas de promoción y proyección para los jóvenes valores del toreo, en el marco de la Liga Nacional de Novilladas.
-
-El proceso de selección continuará el próximo **lunes, cuando se darán a conocer, en directo desde la cuenta oficial de Instagram del Circuito de Novilladas de Andalucía a partir de las 20:00 horas, los cuatro novilleros seleccionados del tentadero celebrado en la ganadería de Aguadulce**. Estos nuevos nombres se sumarán a la nómina de participantes que conformarán el elenco definitivo del Circuito de Novilladas de Andalucía 2026.
-
-Con este **primer anuncio**, el Circuito comienza a perfilar una edición que volverá a apostar por la exigencia, la igualdad de oportunidades y el impulso decidido al futuro de la tauromaquia, reafirmando su compromiso con el toreo base y el relevo generacional.
-
-El Circuito de Novilladas de Andalucía, promovido por la **Junta de Andalucía y la Fundación Toro de Lidia**, se ha convertido en un referente nacional en la promoción de los jóvenes toreros, apostando por la vertebración del territorio y la puesta en valor de ganaderías y profesionales andaluces. Su celebración es posible gracias al apoyo de las **Diputaciones de Málaga, Granada, Huelva, Córdoba y Cádiz, el Instituto Andaluz de la Juventud, la Fundación Caja Rural del Sur y la Fundación Cajasol**.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Cartel de lujo para la VII Corrida del Renacimiento de Baeza el próximo 11 de abril`,
-    image: "/images/cartellujo.jpg",
-    category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `La Feria Internacional del Turismo **(FITUR)** ha sido el escenario elegido para la presentación oficial del cartel de la **VII** Corrida del Renacimiento, que se celebrará el próximo 11 de abril en la Plaza de Toros de Baeza.
-
-El festejo contará con un cartel de **auténtico lujo**, compuesto por dos figuras consolidadas del escalafón, **Alejandro Talavante y Emilio de Justo, junto al joven diestro jiennense Pedro Gallego, alumno de la Escuela Taurina de Baeza, quien tomará la alternativa en esta histórica cita.**
-
-Por primera vez en sus 134 años de historia, la monumental Plaza de Toros de Baeza acogerá la ceremonia de alternativa de un nuevo matador de toros, un acontecimiento de especial relevancia para la ciudad. Con esta apuesta, **tanto el Ayuntamiento de Baeza como la empresa Tauroemoción reafirman su compromiso con la promoción de las jóvenes promesas de la provincia y con la labor formativa que desarrolla la Escuela Taurina Municipal.**
-
-El **acto de presentación estuvo dirigido por el responsable de comunicación de Tauroemoción, Sergio Moreno, y contó con la participación de Alberto García, CEO de la empresa organizadora; Antonio Perales, concejal de Fiestas del Ayuntamiento de Baeza, y el propio Pedro Gallego. Durante sus intervenciones, los participantes destacaron la importancia de este festejo para continuar consolidando la Corrida del Renacimiento como una de las grandes citas taurinas de la temporada en la provincia de Jaén.**
-
-Para la ocasión, Tauroemoción ha reseñado un encierro de Victoriano del Río, una de las ganaderías de mayor prestigio en la actualidad de la cabaña brava española, cuyos astados han protagonizado destacadas faenas en las principales plazas del país.
-
-La afición baezana aguarda así una **tarde de gran expectación en el histórico Coso del Vivero, con un cartel que reúne figuras consagradas y una joven promesa que protagonizará un momento clave de su carrera profesional.**
-
-Al igual que en la pasada edición, el festejo se celebrará en el mes de abril con el objetivo de consolidar la Corrida del Renacimiento como un festejo de referencia de inicio de temporada y una cita imprescindible no solo para la afición jiennense, sino también para aficionados de otras provincias.
-
-Con este **rematado cartel, el Ayuntamiento de Baeza y Tauroemoción sellan su segunda temporada taurina consecutiva tras el resurgir de los festejos el pasado año en la ciudad Patrimonio Mundial, donde los aficionados pudieron disfrutar de dos tardes marcadas por la seriedad, el cuidado de los detalles y la pasión por la fiesta.**
-
-Las entradas para el festejo ya se encuentran a la venta en la página web oficial de la empresa organizadora,  
-<a
-  www.tauroemocion.es
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.tauroemocion.es
-</a> , y estarán disponibles desde el próximo 2 de febrero en el establecimiento Pópulo de Baeza.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Juan Ortega vuelve a Guadalajara y México y España se reparten el pulso taurino del fin de semana`,
-    image: "/images/vuelve.jpg",
-    category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `El fin de semana taurino llega cargado de alicientes a ambos lados del Atlántico, con carteles que despiertan expectación y nombres propios que vuelven a escena. Destaca, por encima de todo, el regreso de Juan Ortega a la plaza del Nuevo Progreso de Guadalajara, donde dejó una de las faenas más recordadas del pasado año y donde ahora vuelve para reencontrarse con una afición que aún guarda en la memoria aquel toreo inspirado y profundo.
-
-México concentra buena parte de la atención con corridas de toros en León, Mérida y Guadalajara, combinaciones que mezclan experiencia, juventud y variedad ganadera. Al mismo tiempo, La Puebla del Río se convierte en epicentro del futuro del toreo con dos novilladas sin picadores enmarcadas en la Feria de San Sebastián, auténtico escaparate para los nombres que llaman a la puerta del escalafón.
-
-Estos son todos los festejos programados para el fin de semana:
-
-Sábado 24 de enero de 2026 📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Garcigrande, Santiago Domecq, Fermín Bohórquez, Hermanos García Jiménez, Juan Manuel Criado y Alcurrucén Para: Armando Rojo, Julio Aparicio Salmerón, Blas Márquez, Jaime de Pedro, Ignacio Garibay Jr. y João Fernandes
-
-📍 Plaza La Luz, León (Guanajuato, México) Corrida de toros – Toros en León 2026 Toros de De la Mora Para: Emiliano Gamero, Calita y Marco Pérez
-
-Domingo 25 de enero de 2026 📍 Mérida (Yucatán, México) Corrida de toros – Corrida Blanca 2026 Toros de Caparica Para: Tarik Othón, Diego Silveti y Marco Pérez
-
-📍 La Puebla del Río (Sevilla, España) Novillada sin picadores – Feria de San Sebastián 2026 Reses de Manuel Veiga Para: Héctor Nieto, Realito, El Exquisito, Nacho Sabater, Manuel León y Manuel Domínguez
-
-📍 Nuevo Progreso, Guadalajara (Jalisco, México) Corrida de toros – Toros en Guadalajara 2026 Toros de Teófilo Gómez Para: Sergio Flores, Juan Ortega y Héctor Gutiérrez
-
-📍 Plaza La Luz, León (Guanajuato, México) Novillada con picadores – Toros en León 2026 Novillos de Xalmonto Para: Eduardo Sebastián, Alan García, Vladimir Díaz y El Bicharraco
-
-Un fin de semana intenso, con aroma a torería, apuesta por la juventud y plazas que reclaman protagonismo en el calendario. El toreo no se detiene y la afición tiene múltiples citas para vibrar.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1006,
-    title: `La Malagueta se prepara para una de las grandes pugnas empresariales del invierno taurino`,
-    image: "/images/prepara.jpg",
+    title: `Arranca el Circuito de Andalucía 2026: Pedro Luis, El Primi y Víctor Barroso, primeros nombres confirmados`,
+    image: "/images/arran.jpg",
     category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `Este viernes expira el plazo marcado por la Diputación de Málaga para presentar ofertas al concurso que decidirá el futuro del coso, y todo indica que las tres firmas invitadas —Tauroemoción, Lances de Futuro y BMF— acudirán a la cita. Una terna de primer nivel que eleva el interés de una licitación llamada a marcar época, no solo por lo que está en juego, sino por el camino recorrido hasta llegar aquí.
+    date: "24 de Enero de 2026",
+	fullContent: `El Circuito de Novilladas de Andalucía 2026, que alcanzará su séptima edición bajo el impulso de la Fundación Toro de Lidia y la Junta de Andalucía, comienza a desvelar los primeros nombres de su elenco. Tras la celebración de los tentaderos clasificatorios del Bolsín, desarrollados en las ganaderías de Chamaco y Aguadulce, ya se conocen los tres primeros novilleros que han asegurado su presencia en el certamen.
 
-El proceso, sin embargo, ha estado lejos de ser modélico. El pliego inicial nació con graves deficiencias que provocaron una polémica justificada y un recurso que terminó prosperando. La exigencia de haber gestionado tres plazas de primera o segunda categoría durante los últimos años se reveló como una cláusula desproporcionada y restrictiva, más cercana a un filtro excluyente que a una defensa real de la competencia. El caso alcanzó tintes surrealistas cuando una empresa al frente de Las Ventas, con decenas de festejos anuales, quedaba descartada para una plaza con una programación muy inferior. En Málaga, por momentos, la experiencia parecía penalizar más que sumar.
+Los seleccionados han sido Pedro Luis, novillero de Lima, El Primi —que regresará al Circuito tras dejar una notable impresión en la edición de 2025— y Víctor Barroso, quien volverá a trenzar el paseíllo en el certamen andaluz después de varios años. Tres nombres que confirman su proyección dentro del escalafón novilleril y que se convierten en los primeros protagonistas de una edición que vuelve a mirar al futuro del toreo.
 
-La reacción institucional no ayudó a calmar las aguas. La anulación exprés del concurso por un supuesto error técnico y su inmediata reapertura sin modificar el pliego levantaron sospechas y obligaron a que el procedimiento siguiera adelante bajo escrutinio. Finalmente, la corrección llegó y el concurso volvió a un marco más coherente, permitiendo que el foco regresara a lo verdaderamente importante: los proyectos y la capacidad de gestión de quienes aspiran a dirigir una plaza de enorme peso simbólico y responsabilidad histórica.
-
-Con este nuevo escenario, La Malagueta encara su futuro inmediato con tres aspirantes solventes, ideas contrastadas y ambición suficiente para estar a la altura de un coso de primera línea. Mientras otras plazas relevantes siguen atrapadas en los retrasos y la incertidumbre administrativa, Málaga ha reconducido el rumbo y se dispone a resolver una batalla empresarial que dignifica el proceso. A partir de ahora, el veredicto ya no dependerá de artificios ni de trampas burocráticas, sino de propuestas sólidas capaces de responder a lo que exige —y merece— La Malagueta.`,
+El proceso de selección continuará en los próximos días, cuando se anunciarán los nuevos clasificados del tentadero celebrado en Aguadulce, completando progresivamente la nómina de participantes del Circuito 2026. Consolidado como una de las principales plataformas de promoción del toreo base dentro de la Liga Nacional de Novilladas, el certamen reafirma su compromiso con la igualdad de oportunidades, la exigencia y el relevo generacional de la tauromaquia andaluza.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Los hierros de Morante para su regreso a la Maestranza`,
-    image: "/images/hierros.jpg",
+    title: `José Luis Moreno ha puesto fin a su vinculación profesional con la carrera de Andrés Roca Rey`,
+    image: "/images/more.jpg",
     category: "Actualidad",
-    date: "23 de Enero de 2026",
-	fullContent: `A medida que avanza el mes de enero, el dibujo de la temporada 2026 en la Real Maestranza empieza a tomar forma. Morante de la Puebla estará finalmente anunciado en Sevilla en cuatro tardes, con la posibilidad abierta a una quinta comparecencia. Tras un periodo de dudas sobre su continuidad, el torero cigarrero selló su regreso de la mano de José María Garzón, en un acuerdo tan discreto como significativo, que confirma su presencia en citas clave del calendario sevillano.
+    date: "24 de Enero de 2026",
+	fullContent: `El torero cordobés, natural de Dos Torres y siempre reconocido por su concepto clásico, su honestidad y su profundo respeto por la Tauromaquia, cierra así una etapa de casi dos años formando parte del equipo del diestro peruano como asesor artístico. Una labor discreta pero constante, acorde con una trayectoria marcada por la seriedad y el compromiso con la verdad del toreo.
 
-El espada de La Puebla del Río hará el paseíllo en Domingo de Resurrección y en la festividad del Corpus Christi, recuperada recientemente por la empresa. A estas dos fechas se sumarán otras dos tardes primaverales aún por encajar, mientras que la opción de una quinta actuación, prevista para San Miguel, queda supeditada a una modificación del reglamento taurino andaluz, que actualmente no permite dejar huecos libres en los abonos.
+Moreno se incorporó al entorno de Roca Rey en febrero de 2023, en un momento en el que el limeño estaba apoderado por Roberto Domínguez, llamando entonces la atención la apuesta por sumar a otro matador a su estructura. Tras la posterior salida de Domínguez y la llegada de Fernando Roca Rey al apoderamiento, el cordobés continuó desempeñando funciones de acompañamiento artístico. Ya en octubre, con Luisma Lozano al frente de la defensa del torero en los despachos, el escenario comenzó a redefinirse hasta desembocar en esta desvinculación, adelantada por Jesús Bayort y confirmada por este medio.
 
-En el apartado ganadero, Morante ya ha señalado varios hierros de su confianza. Para Resurrección, la corrida apunta a ser de Garcigrande, ganadería con la que ha cosechado importantes éxitos en esta plaza. En esa jornada compartiría cartel con Andrés Roca Rey y David de Miranda. Para el Corpus Christi, cobra fuerza el debut en Sevilla de la vacada de Álvaro Núñez, con un cartel de marcado acento sevillano junto a Juan Ortega y Pablo Aguado.
-
-Completan el abanico de posibilidades las ganaderías de Hermanos García Jiménez y Olga Jiménez, así como Domingo Hernández, hierro ligado a una de las faenas más recordadas del diestro en la Maestranza en los últimos años. Otras divisas como Núñez del Cuvillo, Jandilla o Juan Pedro Domecq quedan en un segundo plano y dependerían de que fructifique esa quinta tarde aún en el aire. Por ahora, estos son los mimbres con los que se construye el esperado regreso primaveral de Morante a Sevilla.`,
+El movimiento se produce antes del inicio de la temporada europea y abre una nueva etapa en la configuración del equipo de Andrés Roca Rey, que continúa ajustando su entorno de cara a 2026, tras recientes cambios también en su cuadrilla. Queda ahora por conocer si el torero peruano optará por incorporar a otro profesional en la dirección artística o si decidirá prescindir de esa figura. Por su parte, José Luis Moreno suma este capítulo a una trayectoria polifacética que, tras su retirada de los ruedos, le llevó tanto a la política municipal en Córdoba como al apoderamiento junto a Manuel Escribano entre 2019 y 2023.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -662,6 +482,36 @@ Completan el abanico de posibilidades las ganaderías de Hermanos García Jimén
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 73,
+    title: `Arranca el Circuito de Andalucía 2026: Pedro Luis, El Primi y Víctor Barroso, primeros nombres confirmados`,
+    image: "/images/arran.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El Circuito de Novilladas de Andalucía 2026, que alcanzará su séptima edición bajo el impulso de la Fundación Toro de Lidia y la Junta de Andalucía, comienza a desvelar los primeros nombres de su elenco. Tras la celebración de los tentaderos clasificatorios del Bolsín, desarrollados en las ganaderías de Chamaco y Aguadulce, ya se conocen los tres primeros novilleros que han asegurado su presencia en el certamen.
+
+Los seleccionados han sido Pedro Luis, novillero de Lima, El Primi —que regresará al Circuito tras dejar una notable impresión en la edición de 2025— y Víctor Barroso, quien volverá a trenzar el paseíllo en el certamen andaluz después de varios años. Tres nombres que confirman su proyección dentro del escalafón novilleril y que se convierten en los primeros protagonistas de una edición que vuelve a mirar al futuro del toreo.
+
+El proceso de selección continuará en los próximos días, cuando se anunciarán los nuevos clasificados del tentadero celebrado en Aguadulce, completando progresivamente la nómina de participantes del Circuito 2026. Consolidado como una de las principales plataformas de promoción del toreo base dentro de la Liga Nacional de Novilladas, el certamen reafirma su compromiso con la igualdad de oportunidades, la exigencia y el relevo generacional de la tauromaquia andaluza.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 74,
+    title: `José Luis Moreno ha puesto fin a su vinculación profesional con la carrera de Andrés Roca Rey`,
+    image: "/images/more.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El torero cordobés, natural de Dos Torres y siempre reconocido por su concepto clásico, su honestidad y su profundo respeto por la Tauromaquia, cierra así una etapa de casi dos años formando parte del equipo del diestro peruano como asesor artístico. Una labor discreta pero constante, acorde con una trayectoria marcada por la seriedad y el compromiso con la verdad del toreo.
+
+Moreno se incorporó al entorno de Roca Rey en febrero de 2023, en un momento en el que el limeño estaba apoderado por Roberto Domínguez, llamando entonces la atención la apuesta por sumar a otro matador a su estructura. Tras la posterior salida de Domínguez y la llegada de Fernando Roca Rey al apoderamiento, el cordobés continuó desempeñando funciones de acompañamiento artístico. Ya en octubre, con Luisma Lozano al frente de la defensa del torero en los despachos, el escenario comenzó a redefinirse hasta desembocar en esta desvinculación, adelantada por Jesús Bayort y confirmada por este medio.
+
+El movimiento se produce antes del inicio de la temporada europea y abre una nueva etapa en la configuración del equipo de Andrés Roca Rey, que continúa ajustando su entorno de cara a 2026, tras recientes cambios también en su cuadrilla. Queda ahora por conocer si el torero peruano optará por incorporar a otro profesional en la dirección artística o si decidirá prescindir de esa figura. Por su parte, José Luis Moreno suma este capítulo a una trayectoria polifacética que, tras su retirada de los ruedos, le llevó tanto a la política municipal en Córdoba como al apoderamiento junto a Manuel Escribano entre 2019 y 2023.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 75,
     title: `Clemente, la ausencia en Arles que invita a la reflexión`,
     image: "/images/clemen.jpg",
