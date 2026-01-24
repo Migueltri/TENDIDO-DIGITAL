@@ -449,6 +449,36 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Curro Díaz con nuevo apoderado para Perú`,
+    image: "/images/curro diaz.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
+
+Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
+
+Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `El matador de toros toledano Juan José Villa "Villita” estrena apoderados`,
+    image: "/images/vallita.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El invierno taurino sigue trayendo los lógicos cambios de apoderados, el último en realizar estos cambios en su equipo es el matador de toros toledano **Juan José Villa "Villita"** que tras la ruptura de apoderamiento con su anterior mentor, **Miguel Cubillo**, ha cerrado um acuerdo se ha sellado con el tradicional apretón de manos entre **Juan José Villa "Villita"** la empresa **Puerta Grande Gestión**, liderada por **César Sánchez** y **David Pascual.**
+
+Ambas partes se han mostrado **"muy ilusionadas con el inicio de esta nueva etapa profesional, que estará basada en la confianza, el respeto mutuo y el esfuerzo para conseguir los objetivos marcados para la temporada 2026".**
+
+El diestro toledano tomó la alternativa el pasado 22 de septiembre de 2025 en la plaza de toros de **Consuegra** (Toledo), con **‘El Cid’** como padrino y **Miguel Ángel Perera** como testigo, con un balance de tres orejas. Unos días antes se despidió como novillero en **Madrid** en una tarde en la que dio una vuelta al ruedo, dejando una gran impresión entre los aficionados`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1006,
     title: `Fernando Adrián, un invierno de reconocimientos tras una temporada para el recuerdo`,
     image: "/images/feradri.jpg",
@@ -482,6 +512,36 @@ El movimiento se produce antes del inicio de la temporada europea y abre una nue
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 71,
+    title: `Curro Díaz con nuevo apoderado para Perú`,
+    image: "/images/curro diaz.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
+
+Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
+
+Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 72,
+    title: `El matador de toros toledano Juan José Villa "Villita” estrena apoderados`,
+    image: "/images/vallita.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `El invierno taurino sigue trayendo los lógicos cambios de apoderados, el último en realizar estos cambios en su equipo es el matador de toros toledano **Juan José Villa "Villita"** que tras la ruptura de apoderamiento con su anterior mentor, **Miguel Cubillo**, ha cerrado um acuerdo se ha sellado con el tradicional apretón de manos entre **Juan José Villa "Villita"** la empresa **Puerta Grande Gestión**, liderada por **César Sánchez** y **David Pascual.**
+
+Ambas partes se han mostrado **"muy ilusionadas con el inicio de esta nueva etapa profesional, que estará basada en la confianza, el respeto mutuo y el esfuerzo para conseguir los objetivos marcados para la temporada 2026".**
+
+El diestro toledano tomó la alternativa el pasado 22 de septiembre de 2025 en la plaza de toros de **Consuegra** (Toledo), con **‘El Cid’** como padrino y **Miguel Ángel Perera** como testigo, con un balance de tres orejas. Unos días antes se despidió como novillero en **Madrid** en una tarde en la que dio una vuelta al ruedo, dejando una gran impresión entre los aficionados`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 73,
     title: `Fernando Adrián, un invierno de reconocimientos tras una temporada para el recuerdo`,
     image: "/images/feradri.jpg",
