@@ -450,15 +450,15 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1006,
-    title: `Arranca el Circuito de Andalucía 2026: Pedro Luis, El Primi y Víctor Barroso, primeros nombres confirmados`,
-    image: "/images/arran.jpg",
+    title: `Fernando Adrián, un invierno de reconocimientos tras una temporada para el recuerdo`,
+    image: "/images/feradri.jpg",
     category: "Actualidad",
     date: "24 de Enero de 2026",
-	fullContent: `El Circuito de Novilladas de Andalucía 2026, que alcanzará su séptima edición bajo el impulso de la Fundación Toro de Lidia y la Junta de Andalucía, comienza a desvelar los primeros nombres de su elenco. Tras la celebración de los tentaderos clasificatorios del Bolsín, desarrollados en las ganaderías de Chamaco y Aguadulce, ya se conocen los tres primeros novilleros que han asegurado su presencia en el certamen.
+	fullContent: `Fernando Adrián atraviesa un invierno marcado por la actividad y el contacto directo con los aficionados, prolongando el eco de una **temporada 2025** de enorme calado. El diestro madrileño firmó un curso sobresaliente, definido por la regularidad, el triunfo y una rotunda expresión artística, especialmente en plazas de primera categoría, donde dejó actuaciones de peso que lo situaron entre los nombres propios del escalafón.
 
-Los seleccionados han sido Pedro Luis, novillero de Lima, El Primi —que regresará al Circuito tras dejar una notable impresión en la edición de 2025— y Víctor Barroso, quien volverá a trenzar el paseíllo en el certamen andaluz después de varios años. Tres nombres que confirman su proyección dentro del escalafón novilleril y que se convierten en los primeros protagonistas de una edición que vuelve a mirar al futuro del toreo.
+Con la campaña ya cerrada, el protagonismo de Adrián se traslada ahora fuera de los ruedos a través de numerosos reconocimientos. El próximo lunes participará en Madrid en el acto de puesta en valor de las últimas ediciones de la **Copa Chenel y de la Fiesta del Toro**, organizado por la Comunidad de Madrid, un encuentro institucional que servirá para destacar la importancia del certamen y recordar su condición de primer triunfador de la Copa Chenel, cita fundamental en la proyección de nuevos valores. A ello se suma su presencia este sábado en la gala taurina de Abejar (Soria), así como los homenajes previstos el 13 de febrero en Santander, en la gala del Hotel Palacio del Mar, y el 17 de febrero en Castellón, donde el club taurino de la ciudad reconocerá su trayectoria y su pasada temporada.
 
-El proceso de selección continuará en los próximos días, cuando se anunciarán los nuevos clasificados del tentadero celebrado en Aguadulce, completando progresivamente la nómina de participantes del Circuito 2026. Consolidado como una de las principales plataformas de promoción del toreo base dentro de la Liga Nacional de Novilladas, el certamen reafirma su compromiso con la igualdad de oportunidades, la exigencia y el relevo generacional de la tauromaquia andaluza.`,
+La agenda de premios continuará en Almendralejo (Badajoz), donde será distinguido por una de las campañas más sólidas del año, **cerrada con más de veinte corridas toreadas, 37 orejas y cuatro rabos en Europa, incluidos tres indultos, además de una docena de toros desorejados**. Su paso por plazas de primera fue especialmente significativo, puntuando en todas ellas y manteniendo el mismo nivel de contundencia en cosos de segunda y tercera, donde salió a hombros en la mayoría de sus compromisos. A estos reconocimientos se añadirá próximamente el homenaje de Torrejón de Ardoz como triunfador de su feria, confirmando a Fernando Adrián como un torero en plena madurez y firmemente comprometido con la afición y la tauromaquia.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -482,6 +482,21 @@ El movimiento se produce antes del inicio de la temporada europea y abre una nue
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 72,
+    title: `Fernando Adrián, un invierno de reconocimientos tras una temporada para el recuerdo`,
+    image: "/images/feradri.jpg",
+    category: "Actualidad",
+    date: "24 de Enero de 2026",
+	fullContent: `Fernando Adrián atraviesa un invierno marcado por la actividad y el contacto directo con los aficionados, prolongando el eco de una **temporada 2025** de enorme calado. El diestro madrileño firmó un curso sobresaliente, definido por la regularidad, el triunfo y una rotunda expresión artística, especialmente en plazas de primera categoría, donde dejó actuaciones de peso que lo situaron entre los nombres propios del escalafón.
+
+Con la campaña ya cerrada, el protagonismo de Adrián se traslada ahora fuera de los ruedos a través de numerosos reconocimientos. El próximo lunes participará en Madrid en el acto de puesta en valor de las últimas ediciones de la **Copa Chenel y de la Fiesta del Toro**, organizado por la Comunidad de Madrid, un encuentro institucional que servirá para destacar la importancia del certamen y recordar su condición de primer triunfador de la Copa Chenel, cita fundamental en la proyección de nuevos valores. A ello se suma su presencia este sábado en la gala taurina de Abejar (Soria), así como los homenajes previstos el 13 de febrero en Santander, en la gala del Hotel Palacio del Mar, y el 17 de febrero en Castellón, donde el club taurino de la ciudad reconocerá su trayectoria y su pasada temporada.
+
+La agenda de premios continuará en Almendralejo (Badajoz), donde será distinguido por una de las campañas más sólidas del año, **cerrada con más de veinte corridas toreadas, 37 orejas y cuatro rabos en Europa, incluidos tres indultos, además de una docena de toros desorejados**. Su paso por plazas de primera fue especialmente significativo, puntuando en todas ellas y manteniendo el mismo nivel de contundencia en cosos de segunda y tercera, donde salió a hombros en la mayoría de sus compromisos. A estos reconocimientos se añadirá próximamente el homenaje de Torrejón de Ardoz como triunfador de su feria, confirmando a Fernando Adrián como un torero en plena madurez y firmemente comprometido con la afición y la tauromaquia.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 73,
     title: `Arranca el Circuito de Andalucía 2026: Pedro Luis, El Primi y Víctor Barroso, primeros nombres confirmados`,
     image: "/images/arran.jpg",
