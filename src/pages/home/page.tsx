@@ -449,6 +449,18 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1006,
+    title: `Ilusión y cautela ante el regreso de Morante: su apoderado pone el acento en Sevilla`,
+    image: "/images/img.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La reaparición de Morante de la Puebla ya es una realidad y su apoderado, Pedro Jorge Marques, ha querido subrayar el espíritu con el que se afronta este esperado retorno. Tras hacerse oficial la vuelta del torero sevillano a los ruedos, Marques destacó que la decisión nace desde la ilusión, aunque marcada por la prudencia que exige el momento y la responsabilidad que rodea a una figura de su dimensión. Sevilla aparece, una vez más, como el epicentro desde el que comenzar a construir la temporada y preparar este nuevo capítulo en la carrera del diestro.
+Más allá del plano profesional, el apoderado también dejó entrever el componente humano que acompaña esta reaparición. Admiración, ilusión y una lógica preocupación se mezclan en una relación que va más allá del apoderamiento y que afronta el regreso con plena conciencia de la exigencia artística y emocional que supone volver a la primera línea del toreo. Un retorno meditado, sentido y cargado de simbolismo, con Morante y Sevilla nuevamente unidos en el camino.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1007,
     title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
     image: "/images/cron1.jpg",
@@ -545,6 +557,18 @@ Tanto dentro como fuera hay muchas metas por cumplir **todavía** y muchos objet
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 68,
+    title: `Ilusión y cautela ante el regreso de Morante: su apoderado pone el acento en Sevilla`,
+    image: "/images/img.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La reaparición de Morante de la Puebla ya es una realidad y su apoderado, Pedro Jorge Marques, ha querido subrayar el espíritu con el que se afronta este esperado retorno. Tras hacerse oficial la vuelta del torero sevillano a los ruedos, Marques destacó que la decisión nace desde la ilusión, aunque marcada por la prudencia que exige el momento y la responsabilidad que rodea a una figura de su dimensión. Sevilla aparece, una vez más, como el epicentro desde el que comenzar a construir la temporada y preparar este nuevo capítulo en la carrera del diestro.
+    Más allá del plano profesional, el apoderado también dejó entrever el componente humano que acompaña esta reaparición. Admiración, ilusión y una lógica preocupación se mezclan en una relación que va más allá del apoderamiento y que afronta el regreso con plena conciencia de la exigencia artística y emocional que supone volver a la primera línea del toreo. Un retorno meditado, sentido y cargado de simbolismo, con Morante y Sevilla nuevamente unidos en el camino.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 69,
     title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
     image: "/images/cron1.jpg",
