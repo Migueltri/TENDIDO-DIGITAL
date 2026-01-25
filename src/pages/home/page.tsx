@@ -449,6 +449,26 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1003,
+    title: `Una temporada de éxitos consolida a Polo Saiz entre las ganaderías referentes del novilleril`,
+    image: "/images/exit.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La presente temporada ha estado marcada por una sucesión de actuaciones de notable nivel que consolidan a **Polo Saiz** como una de las ganaderías de referencia del actual escalafón novilleril. La regularidad mostrada por sus reses en distintas plazas, así como su comportamiento y calidad en la lidia, fundamentan el merecido galardón concedido en El Casar, en una velada dedicada al reconocimiento del buen hacer ganadero y al balance de una campaña que quedará reflejada en la memoria de los aficionados.
+
+Entre los ejemplares más destacados del año se encuentran:
+* **Garlin (Francia): “Orégano” nº 28, lidiado por Cid de María.**
+* **El Casar: “Malagueño” nº 6, lidiado por Aarón Palacio.**
+* **Cantalejo: “Presidiario” nº 18, lidiado por Félix San Román.**
+* **Trillo: “Orca” nº 12, lidiado por Joel Ramírez.**
+* **Albacete: “Pachorro” nº 102, lidiado por Juan Zamora.**
+
+Un conjunto de actuaciones que **acredita la solidez del proyecto ganadero** y el reconocimiento alcanzado por Polo Saiz dentro del panorama novilleril actual.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1004,
     title: `Tomás González y David Galván protagonizan un multitudinario coloquio taurino en la Semana Cultural de Alcorisa`,
     image: "/images/XLVII.jpg",
@@ -555,6 +575,26 @@ Tanto dentro como fuera hay muchas metas por cumplir todavía y muchos objetivos
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 65,
+    title: `Una temporada de éxitos consolida a Polo Saiz entre las ganaderías referentes del novilleril`,
+    image: "/images/exit.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La presente temporada ha estado marcada por una sucesión de actuaciones de notable nivel que consolidan a **Polo Saiz** como una de las ganaderías de referencia del actual escalafón novilleril. La regularidad mostrada por sus reses en distintas plazas, así como su comportamiento y calidad en la lidia, fundamentan el merecido galardón concedido en El Casar, en una velada dedicada al reconocimiento del buen hacer ganadero y al balance de una campaña que quedará reflejada en la memoria de los aficionados.
+
+Entre los ejemplares más destacados del año se encuentran:
+* **Garlin (Francia): “Orégano” nº 28, lidiado por Cid de María.**
+* **El Casar: “Malagueño” nº 6, lidiado por Aarón Palacio.**
+* **Cantalejo: “Presidiario” nº 18, lidiado por Félix San Román.**
+* **Trillo: “Orca” nº 12, lidiado por Joel Ramírez.**
+* **Albacete: “Pachorro” nº 102, lidiado por Juan Zamora.**
+
+Un conjunto de actuaciones que **acredita la solidez del proyecto ganadero** y el reconocimiento alcanzado por Polo Saiz dentro del panorama novilleril actual.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 66,
     title: `Tomás González y David Galván protagonizan un multitudinario coloquio taurino en la Semana Cultural de Alcorisa`,
     image: "/images/XLVII.jpg",
