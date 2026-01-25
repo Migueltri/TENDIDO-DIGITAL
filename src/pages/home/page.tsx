@@ -448,6 +448,43 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+	{   
+	id: 1002,
+    title: `Manuel León y Realito triunfan en la Puebla del Rio`,
+    image: "/images/cron.jpg",
+    category: "Crónicas",
+    date: "25 de Enero de 2026",
+	cronn
+	plaza: "Plaza de toros de La Puebla del Río, Sevilla",
+    ganaderia: "Novillos de Manuel Veiga y el primero bis de Fermín Bohórquez, al segundo se le premio con la vuelta al ruedo",
+	excerpt: "Manuel Domínguez con dos orejas y Jaime Padilla con una fiero también nombres propios en la segunda novillada de la Puebla",
+	torerosRaw: `Manuel Luque ‘El Exquisito’, lesionado
+Manuel León, dos orejas y rabo
+Nacho Sabater, ovación
+Jaime Padilla, oreja
+Manuel Real ‘Realito’, dos orejas y rabo
+Manuel Domínguez, dos orejas
+Héctor Nieto, ovación
+`,
+  fullContent: `**‘El Exquisito’** lanceo a gusto al primero de la tarde de **Manuel Veiga**, fue devuelto al dañarse en su lugar salió un sobrero de **Fermín Bohórquez**, no ayudo en nada al aspirante, poco pudo hacer **Manuel Luque** que se lesiono la rodilla Izquierda, le dio muerte al eral **Manuel León**.
+
+**Manuel León** recibo a la verónica al segundo de la tarde, dejo una buena tarde de principio a fin, novillo de **Veiga** tenía mucha trasmisión, toreo a gusto en redondos por la diestra, y de trazos muy largo con la izquierda, Bernardina muy ajustada para rematar una muy buena faena gran estocada y los máximos trofeos para el esportón.
+
+**Ignacio Sabater**, recibe al tercero de la tarde con una larga cambiada en los medios, le puso el novillero todo en el ruedo, sin poder conseguir un triunfo mayor debido a las complicaciones del novillo, se le puso también muy complicado para matarlo.
+
+**Jaime Padilla**, variado fue el saludo capotero del jerezano, le toco a **Padilla** un novillo con trasmisión al que entendió bien, lo toreo a placer gustándose mucho con ambos pitones, se puede ya decir que el joven **Padilla** esta ya más que lito para dar el paso a los con caballos, la espada le cayó algo trasera costándole al animal echarse.
+
+**El Realito**, toreo de exquisitas maneras con la capa ante el quinto de la tarde, el de **Veiga** tuvo clase, pero acuso mucho la falta de fuerzas desde su salida.
+
+**Manuel Real** lo entendió y sin bajarle mucho la mano le dio pases de mucha calidad y gusto por ambos pitones, estocada y se llevó el rabo.
+
+**Manuel Domínguez**, faenas seria e importante del novillero ante su novillo de **Manuel Veiga**, en la que demostró la personalidad de su tauromaquia y el gusto con el que la interpreta, ante un astado colaborador, recibe una voltereta sin pasar a mayores, marro con los aceros necesitando el descabello.
+
+**Héctor Nieto**, mostro disposición y valor ante un astado de **Veigas** que cerraba las fiestas de **San Sebastián** de la **Puebla del Rio** organizadas por el maestro **Morante de la Puebla**, toreo el novilleo con ambas manos, dejando pases buenos, se le atasco la espada lo que le privo de trofeos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+    },
 	{ 
     id: 1003,
     title: `Una temporada de éxitos consolida a Polo Saiz entre las ganaderías referentes del novilleril`,
