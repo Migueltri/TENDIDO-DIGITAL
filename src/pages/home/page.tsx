@@ -449,6 +449,38 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Tomás González y David Galván protagonizan un multitudinario coloquio taurino en la Semana Cultural de Alcorisa`,
+    image: "/images/XLVII.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La **XLVII Semana Cultural de Alcorisa (Teruel)** acogió ayer **una de sus citas taurinas más destacadas con la celebración de un coloquio protagonizado** por el novillero local **Tomás González.** El acto, organizado por la Peña Taurina ‘Nicanor Villalta’ en colaboración con el Ayuntamiento de Alcorisa, fue conducido por el periodista Sergio Hueso y congregó a más de doscientas personas, completando el aforo del Centro Cultural Valero Lecha y obligando a parte del público a seguir el acto de pie.
+
+González, que **ha culminado este año su primera temporada como novillero con picadores, realizó un balance positivo de una campaña marcada por la diversidad de encastes lidiados y por una notable evolución personal y profesional.** El torero alcorisano definió el curso como **“importante y de gran aprendizaje”, destacando la exigencia de una temporada en la que ha actuado en plazas de distinto nivel y frente a hierros de variado origen.**
+
+**Uno de los momentos más emotivos del coloquio llegó al recordar la grave cornada sufrida en Marchamalo, que le afectó al pulmón y le obligó a afrontar un largo y complejo proceso de recuperación. Según explicó, no ha logrado una recuperación plena hasta fechas recientes.** Pese a ello, aceptó la sustitución de Joselito de Córdoba en la Feria del Pilar, haciendo el paseíllo en la plaza de toros de Zaragoza en el cierre de la temporada. Allí **firmó una actuación destacada, a pesar de encontrarse físicamente mermado por las secuelas del percance. “Era una oportunidad que no podía ni debía dejar pasar”**, subrayó.
+
+**El coloquio contó también con la participación del matador de toros gaditano David Galván**, cuya intervención despertó **un notable interés entre los asistentes. Galván ofreció un recorrido por su trayectoria profesional, detallando los pasos que le han conducido hasta consolidarse en la primera línea del escalafón, en una ponencia cargada de contenido técnico y reflexiones personales.**
+
+Entre el público se encontraban el alcalde de Alcorisa, **Miguel Iranzo; la concejala de Cultura, Raquel Ejea; y el concejal de Deportes, Carlos Yeguas,** quienes respaldaron con su presencia una jornada que volvió a poner de **manifiesto el arraigo social y cultural de la tauromaquia en la localidad del Bajo Aragón.**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `À Punt vuelve a los toros por todo lo alto: tres festejos clave en Magdalena y Fallas, en directo`,
+    image: "/images/Á.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `À Punt dará un paso firme en su apuesta por la tauromaquia y retransmitirá en directo, en colaboración con OneToro TV, tres corridas de máximo nivel esta primavera: dos desde la Feria de la Magdalena de Castellón y una desde la Feria de Fallas de Valencia, coincidiendo con el día de San José. Las citas serán los días 8 y 15 de marzo en Castellón y el 19 de marzo en Valencia, en una fórmula compartida que recuerda a la etapa más reconocida de Canal 9, cuando los carteles de figuras conectaban con fuerza con la afición. Esta cobertura se enmarca dentro del calendario inicial de OneToro TV, que también ofrecerá otras corridas de Fallas y ya trabaja en futuras retransmisiones de grandes ferias.
+
+En lo estrictamente taurino, la oferta será de alto voltaje. En Castellón, el día 8 se lidiarán toros de La Quinta para Ginés Marín, Aarón Palacio y Javier Zulueta, mientras que el día 15 llegará un atractivo mano a mano entre Talavante y Juan Ortega con toros de Domingo Hernández. En Valencia, el festejo compartido del día 19 contará con reses de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega. Además, OneToro completará la Feria de Fallas con las corridas del 17 y 18 de marzo, emitirá un festejo benéfico en Villaseca de la Sagra el 21 de marzo y retransmitirá íntegra la Feria de Arles en abril, consolidando así un arranque de temporada marcado por la ambición y la presencia de figuras.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1006,
     title: `Ilusión y cautela ante el regreso de Morante: su apoderado pone el acento en Sevilla`,
     image: "/images/img.jpg",
@@ -557,6 +589,38 @@ Tanto dentro como fuera hay muchas metas por cumplir **todavía** y muchos objet
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 66,
+    title: `Tomás González y David Galván protagonizan un multitudinario coloquio taurino en la Semana Cultural de Alcorisa`,
+    image: "/images/XLVII.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La **XLVII Semana Cultural de Alcorisa (Teruel)** acogió ayer **una de sus citas taurinas más destacadas con la celebración de un coloquio protagonizado** por el novillero local **Tomás González.** El acto, organizado por la Peña Taurina ‘Nicanor Villalta’ en colaboración con el Ayuntamiento de Alcorisa, fue conducido por el periodista Sergio Hueso y congregó a más de doscientas personas, completando el aforo del Centro Cultural Valero Lecha y obligando a parte del público a seguir el acto de pie.
+
+González, que **ha culminado este año su primera temporada como novillero con picadores, realizó un balance positivo de una campaña marcada por la diversidad de encastes lidiados y por una notable evolución personal y profesional.** El torero alcorisano definió el curso como **“importante y de gran aprendizaje”, destacando la exigencia de una temporada en la que ha actuado en plazas de distinto nivel y frente a hierros de variado origen.**
+
+**Uno de los momentos más emotivos del coloquio llegó al recordar la grave cornada sufrida en Marchamalo, que le afectó al pulmón y le obligó a afrontar un largo y complejo proceso de recuperación. Según explicó, no ha logrado una recuperación plena hasta fechas recientes.** Pese a ello, aceptó la sustitución de Joselito de Córdoba en la Feria del Pilar, haciendo el paseíllo en la plaza de toros de Zaragoza en el cierre de la temporada. Allí **firmó una actuación destacada, a pesar de encontrarse físicamente mermado por las secuelas del percance. “Era una oportunidad que no podía ni debía dejar pasar”**, subrayó.
+
+**El coloquio contó también con la participación del matador de toros gaditano David Galván**, cuya intervención despertó **un notable interés entre los asistentes. Galván ofreció un recorrido por su trayectoria profesional, detallando los pasos que le han conducido hasta consolidarse en la primera línea del escalafón, en una ponencia cargada de contenido técnico y reflexiones personales.**
+
+Entre el público se encontraban el alcalde de Alcorisa, **Miguel Iranzo; la concejala de Cultura, Raquel Ejea; y el concejal de Deportes, Carlos Yeguas,** quienes respaldaron con su presencia una jornada que volvió a poner de **manifiesto el arraigo social y cultural de la tauromaquia en la localidad del Bajo Aragón.**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 67,
+    title: `À Punt vuelve a los toros por todo lo alto: tres festejos clave en Magdalena y Fallas, en directo`,
+    image: "/images/Á.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `À Punt dará un paso firme en su apuesta por la tauromaquia y retransmitirá en directo, en colaboración con OneToro TV, tres corridas de máximo nivel esta primavera: dos desde la Feria de la Magdalena de Castellón y una desde la Feria de Fallas de Valencia, coincidiendo con el día de San José. Las citas serán los días 8 y 15 de marzo en Castellón y el 19 de marzo en Valencia, en una fórmula compartida que recuerda a la etapa más reconocida de Canal 9, cuando los carteles de figuras conectaban con fuerza con la afición. Esta cobertura se enmarca dentro del calendario inicial de OneToro TV, que también ofrecerá otras corridas de Fallas y ya trabaja en futuras retransmisiones de grandes ferias.
+
+En lo estrictamente taurino, la oferta será de alto voltaje. En Castellón, el día 8 se lidiarán toros de La Quinta para Ginés Marín, Aarón Palacio y Javier Zulueta, mientras que el día 15 llegará un atractivo mano a mano entre Talavante y Juan Ortega con toros de Domingo Hernández. En Valencia, el festejo compartido del día 19 contará con reses de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega. Además, OneToro completará la Feria de Fallas con las corridas del 17 y 18 de marzo, emitirá un festejo benéfico en Villaseca de la Sagra el 21 de marzo y retransmitirá íntegra la Feria de Arles en abril, consolidando así un arranque de temporada marcado por la ambición y la presencia de figuras.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 68,
     title: `Ilusión y cautela ante el regreso de Morante: su apoderado pone el acento en Sevilla`,
     image: "/images/img.jpg",
