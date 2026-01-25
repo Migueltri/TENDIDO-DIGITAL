@@ -448,27 +448,26 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-   { 
-    id: 1003,
-    title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
-    image: "/images/aparicio.jpg",
-    category: "Crónicas",
-    date: "24 de Enero de 2026",
-	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
-	torerosRaw: `·        Jaime de Pedro, dos orejas.
+	{ 
+    id: 1007,
+    title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
+    image: "/images/cron1.jpg",
+    category: "Entrevistas",
+    date: "25 de Enero de 2026",
+	imageCaption: "Fotos de Vanesa Santos",
+	footerImage1: "/images/cron2.jpg",
+    footerImage1Caption: "Fotos de Vanesa Santos",
+    footerImage2: "/images/cron3.jpg",
+    footerImage2Caption: "Fotos de Vanesa Santos",
+    footerImage3: "/images/cron4.jpg",
+	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
 
-·        Blas Márquez, dos orejas.
+Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
 
-·        Ignacio Garibay, dos orejas.
+Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.
 
-·        Íñigo Norte, oreja.
 
-·        Julio Aparicio, dos orejas y rabo.
-
-·        Joao Fernándes, ovación con saludos tras aviso.
-
-·        Armando Rojo, dos orejas y rabo.`,
-  fullContent: `**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
 
 **Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
 
@@ -494,80 +493,158 @@ Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez*
 * **Íñigo Norte**, oreja.
 * **Julio Aparicio**, dos orejas y rabo.
 * **Joao Fernandes**, ovación con saludos tras aviso.
-* **Armando Rojo**, dos orejas y rabo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
-  },
-	{ 
-    id: 1004,
-    title: `Curro Díaz con nuevo apoderado para Perú`,
-    image: "/images/curro diaz.jpg",
-    category: "Actualidad",
-    date: "24 de Enero de 2026",
-	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
+* **Armando Rojo**, dos orejas y rabo.
 
-Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
 
-Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `El matador de toros toledano Juan José Villa "Villita” estrena apoderados`,
-    image: "/images/vallita.jpg",
-    category: "Actualidad",
-    date: "24 de Enero de 2026",
-	fullContent: `El invierno taurino sigue trayendo los lógicos cambios de apoderados, el último en realizar estos cambios en su equipo es el matador de toros toledano **Juan José Villa "Villita"** que tras la ruptura de apoderamiento con su anterior mentor, **Miguel Cubillo**, ha cerrado um acuerdo se ha sellado con el tradicional apretón de manos entre **Juan José Villa "Villita"** la empresa **Puerta Grande Gestión**, liderada por **César Sánchez** y **David Pascual.**
+**José Garrido** afronta una etapa clave de madurez en su carrera. El matador extremeño, que con constancia y una firme vocación ha ido construyendo un nombre propio en el toreo, atraviesa un momento de consolidación que despierta el interés de la afición y de los profesionales. Tras temporadas marcadas por actuaciones de peso, faenas de gran calado y una evolución técnica evidente, Garrido se reafirma como un torero de concepto claro y personalidad definida.
 
-Ambas partes se han mostrado **"muy ilusionadas con el inicio de esta nueva etapa profesional, que estará basada en la confianza, el respeto mutuo y el esfuerzo para conseguir los objetivos marcados para la temporada 2026".**
+**José, vienes de una tierra con mucha afición como Extremadura. ¿De qué manera crees que tus raíces han marcado tu forma de entender el toreo?**
 
-El diestro toledano tomó la alternativa el pasado 22 de septiembre de 2025 en la plaza de toros de **Consuegra** (Toledo), con **‘El Cid’** como padrino y **Miguel Ángel Perera** como testigo, con un balance de tres orejas. Unos días antes se despidió como novillero en **Madrid** en una tarde en la que dio una vuelta al ruedo, dejando una gran impresión entre los aficionados`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Fernando Adrián, un invierno de reconocimientos tras una temporada para el recuerdo`,
-    image: "/images/feradri.jpg",
-    category: "Opinión",
-    date: "24 de Enero de 2026",
-	fullContent: `Fernando Adrián atraviesa un invierno marcado por la actividad y el contacto directo con los aficionados, prolongando el eco de una **temporada 2025** de enorme calado. El diestro madrileño firmó un curso sobresaliente, definido por la regularidad, el triunfo y una rotunda expresión artística, especialmente en plazas de primera categoría, donde dejó actuaciones de peso que lo situaron entre los nombres propios del escalafón.
+Bueno, yo entiendo el toreo como una forma de ser, de estar, de vivir. Es con lo que convivo el día a día, con el **toro** y con la afición y de querer mejorar y de querer cada vez alimentar todas esas inquietudes que te da la afición.
 
-Con la campaña ya cerrada, el protagonismo de Adrián se traslada ahora fuera de los ruedos a través de numerosos reconocimientos. El próximo lunes participará en Madrid en el acto de puesta en valor de las últimas ediciones de la **Copa Chenel y de la Fiesta del Toro**, organizado por la Comunidad de Madrid, un encuentro institucional que servirá para destacar la importancia del certamen y recordar su condición de primer triunfador de la Copa Chenel, cita fundamental en la proyección de nuevos valores. A ello se suma su presencia este sábado en la gala taurina de Abejar (Soria), así como los homenajes previstos el 13 de febrero en Santander, en la gala del Hotel Palacio del Mar, y el 17 de febrero en Castellón, donde el club taurino de la ciudad reconocerá su trayectoria y su pasada temporada.
+Y en Extremadura eso se vive por su gente, por la gente de campo, por la dehesa, por las ganaderías que hay. Esa afición se siente en la calle y en los extremeños y bueno, pues el ser de aquí, quieras que no, te encuentras con el mundo del **toro** en el día a día. Tanto sus gentes, como en el campo, como en los animales, como en **todo**.
 
-La agenda de premios continuará en Almendralejo (Badajoz), donde será distinguido por una de las campañas más sólidas del año, **cerrada con más de veinte corridas toreadas, 37 orejas y cuatro rabos en Europa, incluidos tres indultos, además de una docena de toros desorejados**. Su paso por plazas de primera fue especialmente significativo, puntuando en todas ellas y manteniendo el mismo nivel de contundencia en cosos de segunda y tercera, donde salió a hombros en la mayoría de sus compromisos. A estos reconocimientos se añadirá próximamente el homenaje de Torrejón de Ardoz como triunfador de su feria, confirmando a Fernando Adrián como un torero en plena madurez y firmemente comprometido con la afición y la tauromaquia.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `José Luis Moreno ha puesto fin a su vinculación profesional con la carrera de Andrés Roca Rey`,
-    image: "/images/more.jpg",
-    category: "Actualidad",
-    date: "24 de Enero de 2026",
-	fullContent: `El torero cordobés, natural de Dos Torres y siempre reconocido por su concepto clásico, su honestidad y su profundo respeto por la Tauromaquia, cierra así una etapa de casi dos años formando parte del equipo del diestro peruano como asesor artístico. Una labor discreta pero constante, acorde con una trayectoria marcada por la seriedad y el compromiso con la verdad del toreo.
+**Tomaste la alternativa muy joven y con muchas expectativas. Mirando atrás, ¿qué ha sido lo más difícil de gestionar en tu carrera profesional?**
 
-Moreno se incorporó al entorno de Roca Rey en febrero de 2023, en un momento en el que el limeño estaba apoderado por Roberto Domínguez, llamando entonces la atención la apuesta por sumar a otro matador a su estructura. Tras la posterior salida de Domínguez y la llegada de Fernando Roca Rey al apoderamiento, el cordobés continuó desempeñando funciones de acompañamiento artístico. Ya en octubre, con Luisma Lozano al frente de la defensa del torero en los despachos, el escenario comenzó a redefinirse hasta desembocar en esta desvinculación, adelantada por Jesús Bayort y confirmada por este medio.
+Bueno, al final yo creo que lo más difícil es lo que viene de golpe y no estás acostumbrado a ello, como en mi caso el viaje, las multitudes, el momento de que venga **todo** nuevo: contratos, tardes seguidas, expectativas, como dices.
 
-El movimiento se produce antes del inicio de la temporada europea y abre una nueva etapa en la configuración del equipo de Andrés Roca Rey, que continúa ajustando su entorno de cara a 2026, tras recientes cambios también en su cuadrilla. Queda ahora por conocer si el torero peruano optará por incorporar a otro profesional en la dirección artística o si decidirá prescindir de esa figura. Por su parte, José Luis Moreno suma este capítulo a una trayectoria polifacética que, tras su retirada de los ruedos, le llevó tanto a la política municipal en Córdoba como al apoderamiento junto a Manuel Escribano entre 2019 y 2023.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+Y bueno, pues gestionar **todo** eso no es fácil. Siendo un chaval joven, pues como era yo cuando tomé la alternativa, pues al final todo eso te sumerge en un mundo quizás que te aleja un poco de la realidad. Yo creo que no lo llevé mal dentro de lo que cabe, supe más o menos valorar lo que tenía y lo que estaba consiguiendo, pero sí es cierto que no es fácil mantener los pies en la tierra.
+
+**Se habla mucho de tu concepto clásico y puro. ¿Cómo definirías tú tu toreo con tus propias palabras?**
+
+En mi concepto, al final yo intento hacer lo que a mí me gusta ver. Lo que yo más valoro en un **torero** es la personalidad, y la forma de ser uno mismo. Pero hay ciertos **toreros** que te gustan mucho e intentas en tus formas hacer lo que ellos hacen o lo que **tú** estás buscando en **tu** personalidad, pero con formas y conceptos de otros **toreros**.
+
+Yo no sabría definirme a mí mismo, hay veces que veo vídeos míos y me gusto mucho y otras veces que no me gusto nada, Siempre hay cosas que destaco y que intento ir mejorando. Pero sí es cierto que me gusta la profundidad y el empaque, el muletazo y, sobre todo, la reunión con los **toros**, Que **todo** sea uno y ese toreo un poco circular, reunido. Eso me gusta mucho y es lo que intento buscar.
+
+**Has tenido tardes importantes en plazas de primera. ¿Qué tiene una plaza como Madrid que la hace tan determinante para un torero?**
+
+Madrid es la que es capaz de determinar **tu** trayectoria y **tu** vida profesional, porque al ser **tan** exigente, el **toro** que sale, como su aficionado. Cuando las cosas salen bien es como encontrar una aguja en un pajar, también las cosas bien es tan difícil que salgan y tan exigente, que por eso **te** da tanto. No sabría con qué comparártelo, pero que se reúnan tantas cosas en Madrid para que salgan bien es casi imposible. Entonces pues bueno, pues cuando hay un triunfo o cuando congenias con la afición y eres capaz de ponerte de acuerdo con un toro para pegarle 20 pases, es algo grandioso.
+
+**En una profesión tan exigente, ¿cómo trabajas la cabeza y la confianza cuando las cosas no salen como esperas?**
+
+Yo creo que en el mundo del **toro** hay que fijarse más en la mentalización. Para las tardes duras, **tanto** así como para las **tardes** buenas, porque **tan** importante es **trabajar** la mente para unas como para otras. Y en esas plazas de primera, de **tanta** importancia, es muy importante gestionar las emociones porque **tanto** te puede afectar una **tarde** de triunfo como una **tarde** de fracaso.
+
+Entonces bueno, yo soy una persona que me guardo mucho las cosas dentro e intento exteriorizarlas y digerirlas conmigo mismo y bueno, de momento pues he sido capaz de, escalón a escalón, ir cultivando una mentalidad fuerte.
+
+**¿Hay alguna faena o tarde concreta que sientas que refleja realmente quién es José Garrido como torero?**
+
+No **te** diría a lo mejor una tarde concreta o un toro en especial. **Hay** tardes en las que me quedo con muchas cosas y lo que voy buscando es eso, pues concretarlas **todas** en un día que salga ese toro que me venga bien y poder reunir en una **tarde** el mejor **José Garrido**, que **todavía** creo que no ha salido. Ha habido apuntes, esta temporada del 2025 ha habido cosas, pero tiene que salir **el**... **el** de la faena redonda.
+
+**El toreo evoluciona constantemente. ¿Cómo encuentras el equilibrio entre respetar la tradición y adaptarte a los tiempos actuales?**
+
+El equilibrio es sencillo de decir pero difícil de lograr: beber de las fuentes antiguas para no perder la pureza, pero torear con la entrega que **te** exige las embestidas del **toro** actual.
+
+**¿Qué sueños o metas te quedan por cumplir dentro y fuera de los ruedos?**
+
+Tanto dentro como fuera hay muchas metas por cumplir **todavía** y muchos objetivos. Depende mucho lo de conseguir fuera, consiguiéndolo dentro primero en los ruedos. Depende mucho lo de fuera según lo que se consiga dentro. Así que vamos a intentar primero arreglar lo de dentro y luego vemos lo de fuera.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 69,
+    title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
+    image: "/images/cron1.jpg",
+    category: "Entrevistas",
+    date: "25 de Enero de 2026",
+	imageCaption: "Fotos de Vanesa Santos",
+	footerImage1: "/images/cron2.jpg",
+    footerImage1Caption: "Fotos de Vanesa Santos",
+    footerImage2: "/images/cron3.jpg",
+    footerImage2Caption: "Fotos de Vanesa Santos",
+    footerImage3: "/images/cron4.jpg",
+	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
+
+Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
+
+Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.
+
+
+**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+
+**Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
+
+**Ignacio Garibay** se las vio en tercer lugar con un eral de encaste Murube con el hierro de **Fermín Bohórquez**, el novillero Azteca destaco en su toreo al natural donde lo llevo muy pulseado, el animal que acusaba falta de fuerza no dejo muchas opciones al mexicano, estocada que hizo guardia.
+
+**Iñigo Norte** lanceo templado al cuarto de la tarde un novillo de **David Ribeiro Telles**, el de Salamanca no tuvo muchas opciones con el complicado novillo que le toco en suerte, solo que quedó mostrar capacidad y valor que el público se lo supo valorar y tras una estocada le dieron una oreja.
+
+**Julio Aparicio**, nieto y sobrino de los **Julio Aparicio**, mostros sus cartas desde que se abrió con el capote, ante un extraordinario novillo de **Santiago Domecq** al que se le dio la vuelta al ruedo, como buen **Aparicio** su toreo está lleno de personalidad, sabor y mucha torería, de ese toreo con pellizco que gusta dejando una gran faena de muleta por ambos pitones una faena de impacto en La Puebla y tras una estocada se llevó el Rabo y el novillo la vuelta al ruedo.
+
+**Joao Fernandes**, se las vio con el novillo de más volumen con el hierro de **Alcurrucén**, que le faltó transmisión y al portugués solo que quedo mostrar cuando lo dejó su oponente concepto y sobretodo su valor, falló con los aceros.
+
+**Armando Rojo** que cerraba la tarde en la Puebla se las vio con un buen novillo de Garcigrande, al que toreo por verónicas muy templadas. Con la muleta conecto desde el principio con sus paisanos con su personalidad y buen toreo, faena muy profunda además de templada con ambos pitones, estocada y los máximos trofeos
+
+
+**FICHA DEL FESTEJO:**
+**La Puebla del Río (Sevilla).** Sábado 24 de enero de 2025. Fiestas de San Sebastián, novillada sin caballos, con lleno en los tendidos, en tarde fría.
+
+Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez**, **Fermín Bohórquez**, **David Ribeiro Telles**, **Santiago Domecq**, **Alcurrucén** y **Garcigrande**. El quinto, de Santiago Domecq, premiado con la vuelta al ruedo.
+
+* **Jaime de Pedro**, dos orejas.
+* **Blas Márquez**, dos orejas.
+* **Ignacio Garibay**, dos orejas.
+* **Íñigo Norte**, oreja.
+* **Julio Aparicio**, dos orejas y rabo.
+* **Joao Fernandes**, ovación con saludos tras aviso.
+* **Armando Rojo**, dos orejas y rabo.
+
+
+**José Garrido** afronta una etapa clave de madurez en su carrera. El matador extremeño, que con constancia y una firme vocación ha ido construyendo un nombre propio en el toreo, atraviesa un momento de consolidación que despierta el interés de la afición y de los profesionales. Tras temporadas marcadas por actuaciones de peso, faenas de gran calado y una evolución técnica evidente, Garrido se reafirma como un torero de concepto claro y personalidad definida.
+
+**José, vienes de una tierra con mucha afición como Extremadura. ¿De qué manera crees que tus raíces han marcado tu forma de entender el toreo?**
+
+Bueno, yo entiendo el toreo como una forma de ser, de estar, de vivir. Es con lo que convivo el día a día, con el **toro** y con la afición y de querer mejorar y de querer cada vez alimentar todas esas inquietudes que te da la afición.
+
+Y en Extremadura eso se vive por su gente, por la gente de campo, por la dehesa, por las ganaderías que hay. Esa afición se siente en la calle y en los extremeños y bueno, pues el ser de aquí, quieras que no, te encuentras con el mundo del **toro** en el día a día. Tanto sus gentes, como en el campo, como en los animales, como en **todo**.
+
+**Tomaste la alternativa muy joven y con muchas expectativas. Mirando atrás, ¿qué ha sido lo más difícil de gestionar en tu carrera profesional?**
+
+Bueno, al final yo creo que lo más difícil es lo que viene de golpe y no estás acostumbrado a ello, como en mi caso el viaje, las multitudes, el momento de que venga **todo** nuevo: contratos, tardes seguidas, expectativas, como dices.
+
+Y bueno, pues gestionar **todo** eso no es fácil. Siendo un chaval joven, pues como era yo cuando tomé la alternativa, pues al final todo eso te sumerge en un mundo quizás que te aleja un poco de la realidad. Yo creo que no lo llevé mal dentro de lo que cabe, supe más o menos valorar lo que tenía y lo que estaba consiguiendo, pero sí es cierto que no es fácil mantener los pies en la tierra.
+
+**Se habla mucho de tu concepto clásico y puro. ¿Cómo definirías tú tu toreo con tus propias palabras?**
+
+En mi concepto, al final yo intento hacer lo que a mí me gusta ver. Lo que yo más valoro en un **torero** es la personalidad, y la forma de ser uno mismo. Pero hay ciertos **toreros** que te gustan mucho e intentas en tus formas hacer lo que ellos hacen o lo que **tú** estás buscando en **tu** personalidad, pero con formas y conceptos de otros **toreros**.
+
+Yo no sabría definirme a mí mismo, hay veces que veo vídeos míos y me gusto mucho y otras veces que no me gusto nada, Siempre hay cosas que destaco y que intento ir mejorando. Pero sí es cierto que me gusta la profundidad y el empaque, el muletazo y, sobre todo, la reunión con los **toros**, Que **todo** sea uno y ese toreo un poco circular, reunido. Eso me gusta mucho y es lo que intento buscar.
+
+**Has tenido tardes importantes en plazas de primera. ¿Qué tiene una plaza como Madrid que la hace tan determinante para un torero?**
+
+Madrid es la que es capaz de determinar **tu** trayectoria y **tu** vida profesional, porque al ser **tan** exigente, el **toro** que sale, como su aficionado. Cuando las cosas salen bien es como encontrar una aguja en un pajar, también las cosas bien es tan difícil que salgan y tan exigente, que por eso **te** da tanto. No sabría con qué comparártelo, pero que se reúnan tantas cosas en Madrid para que salgan bien es casi imposible. Entonces pues bueno, pues cuando hay un triunfo o cuando congenias con la afición y eres capaz de ponerte de acuerdo con un toro para pegarle 20 pases, es algo grandioso.
+
+**En una profesión tan exigente, ¿cómo trabajas la cabeza y la confianza cuando las cosas no salen como esperas?**
+
+Yo creo que en el mundo del **toro** hay que fijarse más en la mentalización. Para las tardes duras, **tanto** así como para las **tardes** buenas, porque **tan** importante es **trabajar** la mente para unas como para otras. Y en esas plazas de primera, de **tanta** importancia, es muy importante gestionar las emociones porque **tanto** te puede afectar una **tarde** de triunfo como una **tarde** de fracaso.
+
+Entonces bueno, yo soy una persona que me guardo mucho las cosas dentro e intento exteriorizarlas y digerirlas conmigo mismo y bueno, de momento pues he sido capaz de, escalón a escalón, ir cultivando una mentalidad fuerte.
+
+**¿Hay alguna faena o tarde concreta que sientas que refleja realmente quién es José Garrido como torero?**
+
+No **te** diría a lo mejor una tarde concreta o un toro en especial. **Hay** tardes en las que me quedo con muchas cosas y lo que voy buscando es eso, pues concretarlas **todas** en un día que salga ese toro que me venga bien y poder reunir en una **tarde** el mejor **José Garrido**, que **todavía** creo que no ha salido. Ha habido apuntes, esta temporada del 2025 ha habido cosas, pero tiene que salir **el**... **el** de la faena redonda.
+
+**El toreo evoluciona constantemente. ¿Cómo encuentras el equilibrio entre respetar la tradición y adaptarte a los tiempos actuales?**
+
+El equilibrio es sencillo de decir pero difícil de lograr: beber de las fuentes antiguas para no perder la pureza, pero torear con la entrega que **te** exige las embestidas del **toro** actual.
+
+**¿Qué sueños o metas te quedan por cumplir dentro y fuera de los ruedos?**
+
+Tanto dentro como fuera hay muchas metas por cumplir **todavía** y muchos objetivos. Depende mucho lo de conseguir fuera, consiguiéndolo dentro primero en los ruedos. Depende mucho lo de fuera según lo que se consiga dentro. Así que vamos a intentar primero arreglar lo de dentro y luego vemos lo de fuera.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 70,
     title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
     image: "/images/aparicio.jpg",
     category: "Crónicas",
     date: "24 de Enero de 2026",
+	plaza: "La Puebla del Rio",
+    ganaderia: "*Juan Manuel Criado, Hnos. García Jiménez, Fermín Bohórquez, David Ribeiro Telles, Santiago Domecq, Alcurrucén y Garcigrande* . El quinto, *de Santiago Domecq, premiado con la vuelta al ruedo.*",
 	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
 	torerosRaw: `·        Jaime de Pedro, dos orejas.
 
@@ -609,9 +686,9 @@ Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez*
 * **Julio Aparicio**, dos orejas y rabo.
 * **Joao Fernandes**, ovación con saludos tras aviso.
 * **Armando Rojo**, dos orejas y rabo.`,
-  author: "Eduardo Elvira",
-  authorLogo: "/images/edu4.jpg",
-  showAuthorHeader: true
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
   },
 	{ 
     id: 71,
@@ -7185,6 +7262,8 @@ const chronicles: Chronicle[] = [
     image: "/images/aparicio.jpg",
     category: "Crónicas",
     date: "24 de Enero de 2026",
+	plaza: "La Puebla del Rio",
+    ganaderia: "*Juan Manuel Criado, Hnos. García Jiménez, Fermín Bohórquez, David Ribeiro Telles, Santiago Domecq, Alcurrucén y Garcigrande* . El quinto, *de Santiago Domecq, premiado con la vuelta al ruedo.*",
 	excerpt: "Julio Aparicio y Armando Rojo son los nombres propios de la tarde al cortar un rabo cada uno.",
 	torerosRaw: `·        Jaime de Pedro, dos orejas.
 
@@ -7538,6 +7617,99 @@ Un festejo organizado por la Escuela de Sevilla, la Escuela de Ubrique y el prop
 
   // Entrevistas taurinas
 const entrevistas: NewsItem[] = [
+	{ 
+    id: 499,
+    title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
+    image: "/images/cron1.jpg",
+    category: "Entrevistas",
+    date: "25 de Enero de 2026",
+	imageCaption: "Fotos de Vanesa Santos",
+	footerImage1: "/images/cron2.jpg",
+    footerImage1Caption: "Fotos de Vanesa Santos",
+    footerImage2: "/images/cron3.jpg",
+    footerImage2Caption: "Fotos de Vanesa Santos",
+    footerImage3: "/images/cron4.jpg",
+	fullContent: `El matador de toros linarense **Curro Díaz** como el fin de incrementar su presencia en América y, concretamente, en Perú ha cerrado un acuerdo de apoderamiento con la empresa ***El Real de la Feria***, gestionada por el empresario **Saúl Ilizarbe Cruces**, que será la encargada de defender sus intereses en Perú durante esta misma temporada.
+
+Hay que recordar que Curro Díaz dio por finalizada su relación con el empresario **Jorge Buendía**, tras tres años de apoderamiento el pasado mes de diciembre.
+
+Curro Díaz está anunciado el próximo domingo de Resurrección, 5 de abril, en la plaza de **Las Ventas de Madrid** a **Rafael Serna** y el mexicano **Diego San Román**, con toros de **Martín Lorca**.
+
+
+**Jaime de Pedro** en el primero de la tarde destacó en la portagayola con la que recibió al primero, con la muleta busco la profundidad de su toreo destacando con el pitón izquierdo al novillo de **Criado**, la estocada quedó algo delantera y desprendida.
+
+**Blas Márquez** lo recibió por verónicas, al eral **Hnos. García Jiménez** que hacia segundo de la tarde, con la muleta toreo con ambos pitones, destacando en la verticalidad de su toreo y en el toreo en redondo con la diestra, media estocada y descabello.
+
+**Ignacio Garibay** se las vio en tercer lugar con un eral de encaste Murube con el hierro de **Fermín Bohórquez**, el novillero Azteca destaco en su toreo al natural donde lo llevo muy pulseado, el animal que acusaba falta de fuerza no dejo muchas opciones al mexicano, estocada que hizo guardia.
+
+**Iñigo Norte** lanceo templado al cuarto de la tarde un novillo de **David Ribeiro Telles**, el de Salamanca no tuvo muchas opciones con el complicado novillo que le toco en suerte, solo que quedó mostrar capacidad y valor que el público se lo supo valorar y tras una estocada le dieron una oreja.
+
+**Julio Aparicio**, nieto y sobrino de los **Julio Aparicio**, mostros sus cartas desde que se abrió con el capote, ante un extraordinario novillo de **Santiago Domecq** al que se le dio la vuelta al ruedo, como buen **Aparicio** su toreo está lleno de personalidad, sabor y mucha torería, de ese toreo con pellizco que gusta dejando una gran faena de muleta por ambos pitones una faena de impacto en La Puebla y tras una estocada se llevó el Rabo y el novillo la vuelta al ruedo.
+
+**Joao Fernandes**, se las vio con el novillo de más volumen con el hierro de **Alcurrucén**, que le faltó transmisión y al portugués solo que quedo mostrar cuando lo dejó su oponente concepto y sobretodo su valor, falló con los aceros.
+
+**Armando Rojo** que cerraba la tarde en la Puebla se las vio con un buen novillo de Garcigrande, al que toreo por verónicas muy templadas. Con la muleta conecto desde el principio con sus paisanos con su personalidad y buen toreo, faena muy profunda además de templada con ambos pitones, estocada y los máximos trofeos
+
+
+**FICHA DEL FESTEJO:**
+**La Puebla del Río (Sevilla).** Sábado 24 de enero de 2025. Fiestas de San Sebastián, novillada sin caballos, con lleno en los tendidos, en tarde fría.
+
+Erales, por orden de lidia, de **Juan Manuel Criado**, **Hnos. García Jiménez**, **Fermín Bohórquez**, **David Ribeiro Telles**, **Santiago Domecq**, **Alcurrucén** y **Garcigrande**. El quinto, de Santiago Domecq, premiado con la vuelta al ruedo.
+
+* **Jaime de Pedro**, dos orejas.
+* **Blas Márquez**, dos orejas.
+* **Ignacio Garibay**, dos orejas.
+* **Íñigo Norte**, oreja.
+* **Julio Aparicio**, dos orejas y rabo.
+* **Joao Fernandes**, ovación con saludos tras aviso.
+* **Armando Rojo**, dos orejas y rabo.
+
+
+**José Garrido** afronta una etapa clave de madurez en su carrera. El matador extremeño, que con constancia y una firme vocación ha ido construyendo un nombre propio en el toreo, atraviesa un momento de consolidación que despierta el interés de la afición y de los profesionales. Tras temporadas marcadas por actuaciones de peso, faenas de gran calado y una evolución técnica evidente, Garrido se reafirma como un torero de concepto claro y personalidad definida.
+
+**José, vienes de una tierra con mucha afición como Extremadura. ¿De qué manera crees que tus raíces han marcado tu forma de entender el toreo?**
+
+Bueno, yo entiendo el toreo como una forma de ser, de estar, de vivir. Es con lo que convivo el día a día, con el **toro** y con la afición y de querer mejorar y de querer cada vez alimentar todas esas inquietudes que te da la afición.
+
+Y en Extremadura eso se vive por su gente, por la gente de campo, por la dehesa, por las ganaderías que hay. Esa afición se siente en la calle y en los extremeños y bueno, pues el ser de aquí, quieras que no, te encuentras con el mundo del **toro** en el día a día. Tanto sus gentes, como en el campo, como en los animales, como en **todo**.
+
+**Tomaste la alternativa muy joven y con muchas expectativas. Mirando atrás, ¿qué ha sido lo más difícil de gestionar en tu carrera profesional?**
+
+Bueno, al final yo creo que lo más difícil es lo que viene de golpe y no estás acostumbrado a ello, como en mi caso el viaje, las multitudes, el momento de que venga **todo** nuevo: contratos, tardes seguidas, expectativas, como dices.
+
+Y bueno, pues gestionar **todo** eso no es fácil. Siendo un chaval joven, pues como era yo cuando tomé la alternativa, pues al final todo eso te sumerge en un mundo quizás que te aleja un poco de la realidad. Yo creo que no lo llevé mal dentro de lo que cabe, supe más o menos valorar lo que tenía y lo que estaba consiguiendo, pero sí es cierto que no es fácil mantener los pies en la tierra.
+
+**Se habla mucho de tu concepto clásico y puro. ¿Cómo definirías tú tu toreo con tus propias palabras?**
+
+En mi concepto, al final yo intento hacer lo que a mí me gusta ver. Lo que yo más valoro en un **torero** es la personalidad, y la forma de ser uno mismo. Pero hay ciertos **toreros** que te gustan mucho e intentas en tus formas hacer lo que ellos hacen o lo que **tú** estás buscando en **tu** personalidad, pero con formas y conceptos de otros **toreros**.
+
+Yo no sabría definirme a mí mismo, hay veces que veo vídeos míos y me gusto mucho y otras veces que no me gusto nada, Siempre hay cosas que destaco y que intento ir mejorando. Pero sí es cierto que me gusta la profundidad y el empaque, el muletazo y, sobre todo, la reunión con los **toros**, Que **todo** sea uno y ese toreo un poco circular, reunido. Eso me gusta mucho y es lo que intento buscar.
+
+**Has tenido tardes importantes en plazas de primera. ¿Qué tiene una plaza como Madrid que la hace tan determinante para un torero?**
+
+Madrid es la que es capaz de determinar **tu** trayectoria y **tu** vida profesional, porque al ser **tan** exigente, el **toro** que sale, como su aficionado. Cuando las cosas salen bien es como encontrar una aguja en un pajar, también las cosas bien es tan difícil que salgan y tan exigente, que por eso **te** da tanto. No sabría con qué comparártelo, pero que se reúnan tantas cosas en Madrid para que salgan bien es casi imposible. Entonces pues bueno, pues cuando hay un triunfo o cuando congenias con la afición y eres capaz de ponerte de acuerdo con un toro para pegarle 20 pases, es algo grandioso.
+
+**En una profesión tan exigente, ¿cómo trabajas la cabeza y la confianza cuando las cosas no salen como esperas?**
+
+Yo creo que en el mundo del **toro** hay que fijarse más en la mentalización. Para las tardes duras, **tanto** así como para las **tardes** buenas, porque **tan** importante es **trabajar** la mente para unas como para otras. Y en esas plazas de primera, de **tanta** importancia, es muy importante gestionar las emociones porque **tanto** te puede afectar una **tarde** de triunfo como una **tarde** de fracaso.
+
+Entonces bueno, yo soy una persona que me guardo mucho las cosas dentro e intento exteriorizarlas y digerirlas conmigo mismo y bueno, de momento pues he sido capaz de, escalón a escalón, ir cultivando una mentalidad fuerte.
+
+**¿Hay alguna faena o tarde concreta que sientas que refleja realmente quién es José Garrido como torero?**
+
+No **te** diría a lo mejor una tarde concreta o un toro en especial. **Hay** tardes en las que me quedo con muchas cosas y lo que voy buscando es eso, pues concretarlas **todas** en un día que salga ese toro que me venga bien y poder reunir en una **tarde** el mejor **José Garrido**, que **todavía** creo que no ha salido. Ha habido apuntes, esta temporada del 2025 ha habido cosas, pero tiene que salir **el**... **el** de la faena redonda.
+
+**El toreo evoluciona constantemente. ¿Cómo encuentras el equilibrio entre respetar la tradición y adaptarte a los tiempos actuales?**
+
+El equilibrio es sencillo de decir pero difícil de lograr: beber de las fuentes antiguas para no perder la pureza, pero torear con la entrega que **te** exige las embestidas del **toro** actual.
+
+**¿Qué sueños o metas te quedan por cumplir dentro y fuera de los ruedos?**
+
+Tanto dentro como fuera hay muchas metas por cumplir **todavía** y muchos objetivos. Depende mucho lo de conseguir fuera, consiguiéndolo dentro primero en los ruedos. Depende mucho lo de fuera según lo que se consiga dentro. Así que vamos a intentar primero arreglar lo de dentro y luego vemos lo de fuera.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 500,
     title: `“Me gusta torear despacio , pudiendo a los animales y dejándomelos llegar muy cerca” - Entrevista a Julio Norte`,
