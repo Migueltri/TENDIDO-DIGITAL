@@ -448,6 +448,19 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+	{ 
+    id: 1001,
+    title: `Paty Car Eventos seguirá gestionando la Plaza de Toros de Teruel una temporada más`,
+    image: "/images/paty.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La empresa Paty Car Eventos continuará al frente de la gestión de la Plaza de Toros de Teruel tras hacer efectiva la prórroga contemplada en el contrato vigente. La decisión quedó ratificada después de un encuentro con el Ayuntamiento de Teruel, donde la corporación municipal expresó su conformidad para prolongar el acuerdo, en un marco de diálogo fluido y entendimiento entre ambas partes, cumpliendo así con lo establecido en el pliego de condiciones.
+
+Desde la empresa organizadora afrontan este nuevo periodo con renovadas ganas y el firme propósito de seguir posicionando a Teruel dentro del circuito taurino nacional. Paty Car Eventos ya trabaja en el diseño de la próxima temporada, con la intención de ofrecer carteles atractivos y variados, pensados para responder a los gustos de la afición y mantener un alto nivel de calidad. Con esta continuidad, la gestora reafirma su compromiso con la promoción de la tauromaquia en la ciudad y con el impulso cultural y económico que supone la actividad taurina para la capital turolense.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
 	{   
 	id: 1002,
     title: `Manuel León y Realito triunfan en la Puebla del Rio`,
@@ -611,7 +624,20 @@ Tanto dentro como fuera hay muchas metas por cumplir todavía y muchos objetivos
 ];
 
 const latestNews: NewsItem[] = [
- 	{   
+   { 
+    id: 63,
+    title: `Paty Car Eventos seguirá gestionando la Plaza de Toros de Teruel una temporada más`,
+    image: "/images/paty.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+	fullContent: `La empresa Paty Car Eventos continuará al frente de la gestión de la Plaza de Toros de Teruel tras hacer efectiva la prórroga contemplada en el contrato vigente. La decisión quedó ratificada después de un encuentro con el Ayuntamiento de Teruel, donde la corporación municipal expresó su conformidad para prolongar el acuerdo, en un marco de diálogo fluido y entendimiento entre ambas partes, cumpliendo así con lo establecido en el pliego de condiciones.
+
+Desde la empresa organizadora afrontan este nuevo periodo con renovadas ganas y el firme propósito de seguir posicionando a Teruel dentro del circuito taurino nacional. Paty Car Eventos ya trabaja en el diseño de la próxima temporada, con la intención de ofrecer carteles atractivos y variados, pensados para responder a los gustos de la afición y mantener un alto nivel de calidad. Con esta continuidad, la gestora reafirma su compromiso con la promoción de la tauromaquia en la ciudad y con el impulso cultural y económico que supone la actividad taurina para la capital turolense.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{   
 	id: 64,
     title: `Manuel León y Realito triunfan en la Puebla del Rio`,
     image: "/images/cron.jpg",
