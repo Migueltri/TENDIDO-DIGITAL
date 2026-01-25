@@ -583,11 +583,11 @@ const latestNews: NewsItem[] = [
 	fullContent: `La presente temporada ha estado marcada por una sucesión de actuaciones de notable nivel que consolidan a **Polo Saiz** como una de las ganaderías de referencia del actual escalafón novilleril. La regularidad mostrada por sus reses en distintas plazas, así como su comportamiento y calidad en la lidia, fundamentan el merecido galardón concedido en El Casar, en una velada dedicada al reconocimiento del buen hacer ganadero y al balance de una campaña que quedará reflejada en la memoria de los aficionados.
 
 Entre los ejemplares más destacados del año se encuentran:
-* **Garlin (Francia): “Orégano” nº 28, lidiado por Cid de María.**
-* **El Casar: “Malagueño” nº 6, lidiado por Aarón Palacio.**
-* **Cantalejo: “Presidiario” nº 18, lidiado por Félix San Román.**
-* **Trillo: “Orca” nº 12, lidiado por Joel Ramírez.**
-* **Albacete: “Pachorro” nº 102, lidiado por Juan Zamora.**
+**Garlin (Francia): “Orégano” nº 28, lidiado por Cid de María.**
+**El Casar: “Malagueño” nº 6, lidiado por Aarón Palacio.**
+**Cantalejo: “Presidiario” nº 18, lidiado por Félix San Román.**
+**Trillo: “Orca” nº 12, lidiado por Joel Ramírez.**
+**Albacete: “Pachorro” nº 102, lidiado por Juan Zamora.**
 
 Un conjunto de actuaciones que **acredita la solidez del proyecto ganadero** y el reconocimiento alcanzado por Polo Saiz dentro del panorama novilleril actual.`,
     author: "Eduardo Elvira",
