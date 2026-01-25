@@ -448,6 +448,25 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+	{   
+	id: 1000,
+    title: `Borja Jiménez apadrina la Gala Benéfica a favor de ASPACE de Salamanca`,
+	image: "/images/cronn.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+    fullContent: `El matador de toros Borja Jiménez fue el gran protagonista y padrino de la Gala Benéfica celebrada en Villares de la Reina, un evento solidario organizado a beneficio de ASPACE, asociación dedicada a la atención integral de personas con parálisis cerebral y discapacidades afines, así como al apoyo continuo a sus familias mediante programas de rehabilitación, inclusión social, educación y mejora de la calidad de vida.
+
+    La presencia y el compromiso del diestro sevillano reforzaron el carácter solidario de una cita que congregó a autoridades, aficionados y miembros de la asociación, consolidando una iniciativa que une tauromaquia y responsabilidad social.
+
+	Durante su intervención, Borja Jiménez mostró públicamente su implicación con la causa y trasladó un mensaje claro de apoyo a la entidad: “Aquí me tenéis para todo lo que necesitéis”.
+
+	Así mismo, el torero anunció que ya se está trabajando junto con el Alcalde de Villares de la Reina, José Buenaventura Recio en la organización de un festival taurino benéfico para el próximo mes de junio, cuya recaudación irá destinada íntegramente a ASPACE. Según explicó, todos los profesionales participantes actuarán de manera totalmente gratuita, en un gesto colectivo de solidaridad y compromiso con la causa. En este mismo sentido, Borja Jiménez explicó que los ganaderos también se suman a esta iniciativa altruista y cederán sus novillos de forma desinteresada, con el objetivo de que el cien por cien de los beneficios obtenidos se destinen directamente a la asociación.
+
+	La gala, celebrada en el auditorio municipal de Villares de la Reina con el cartel de no hay billetes, se convierte así en el punto de partida de un proyecto solidario que aspira a movilizar al mundo taurino en favor de una causa social de primer nivel, reafirmando una vez más el compromiso del toreo con la sociedad y con quienes más lo necesitan.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+    },
 	{ 
     id: 1001,
     title: `Paty Car Eventos seguirá gestionando la Plaza de Toros de Teruel una temporada más`,
@@ -467,7 +486,6 @@ Desde la empresa organizadora afrontan este nuevo periodo con renovadas ganas y 
     image: "/images/cron.jpg",
     category: "Crónicas",
     date: "25 de Enero de 2026",
-	footerImage1: "/images/cronn.jpg",
 	plaza: "Plaza de toros de La Puebla del Río, Sevilla",
     ganaderia: "Novillos de Manuel Veiga y el primero bis de Fermín Bohórquez, al segundo se le premio con la vuelta al ruedo",
 	excerpt: "Manuel Domínguez con dos orejas y Jaime Padilla con una fiero también nombres propios en la segunda novillada de la Puebla",
@@ -624,7 +642,26 @@ Tanto dentro como fuera hay muchas metas por cumplir todavía y muchos objetivos
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+ 	{   
+	id: 62,
+    title: `Borja Jiménez apadrina la Gala Benéfica a favor de ASPACE de Salamanca`,
+	image: "/images/cronn.jpg",
+    category: "Actualidad",
+    date: "25 de Enero de 2026",
+    fullContent: `El matador de toros Borja Jiménez fue el gran protagonista y padrino de la Gala Benéfica celebrada en Villares de la Reina, un evento solidario organizado a beneficio de ASPACE, asociación dedicada a la atención integral de personas con parálisis cerebral y discapacidades afines, así como al apoyo continuo a sus familias mediante programas de rehabilitación, inclusión social, educación y mejora de la calidad de vida.
+
+    La presencia y el compromiso del diestro sevillano reforzaron el carácter solidario de una cita que congregó a autoridades, aficionados y miembros de la asociación, consolidando una iniciativa que une tauromaquia y responsabilidad social.
+
+	Durante su intervención, Borja Jiménez mostró públicamente su implicación con la causa y trasladó un mensaje claro de apoyo a la entidad: “Aquí me tenéis para todo lo que necesitéis”.
+
+	Así mismo, el torero anunció que ya se está trabajando junto con el Alcalde de Villares de la Reina, José Buenaventura Recio en la organización de un festival taurino benéfico para el próximo mes de junio, cuya recaudación irá destinada íntegramente a ASPACE. Según explicó, todos los profesionales participantes actuarán de manera totalmente gratuita, en un gesto colectivo de solidaridad y compromiso con la causa. En este mismo sentido, Borja Jiménez explicó que los ganaderos también se suman a esta iniciativa altruista y cederán sus novillos de forma desinteresada, con el objetivo de que el cien por cien de los beneficios obtenidos se destinen directamente a la asociación.
+
+	La gala, celebrada en el auditorio municipal de Villares de la Reina con el cartel de no hay billetes, se convierte así en el punto de partida de un proyecto solidario que aspira a movilizar al mundo taurino en favor de una causa social de primer nivel, reafirmando una vez más el compromiso del toreo con la sociedad y con quienes más lo necesitan.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+    },
+	{ 
     id: 63,
     title: `Paty Car Eventos seguirá gestionando la Plaza de Toros de Teruel una temporada más`,
     image: "/images/paty.jpg",
@@ -643,7 +680,6 @@ Desde la empresa organizadora afrontan este nuevo periodo con renovadas ganas y 
     image: "/images/cron.jpg",
     category: "Crónicas",
     date: "25 de Enero de 2026",
-	footerImage1: "/images/cronn.jpg",
 	plaza: "Plaza de toros de La Puebla del Río, Sevilla",
     ganaderia: "Novillos de Manuel Veiga y el primero bis de Fermín Bohórquez, al segundo se le premio con la vuelta al ruedo",
 	excerpt: "Manuel Domínguez con dos orejas y Jaime Padilla con una fiero también nombres propios en la segunda novillada de la Puebla",
