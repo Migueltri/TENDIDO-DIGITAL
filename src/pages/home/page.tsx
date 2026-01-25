@@ -9521,17 +9521,22 @@ TENDIDO DIGITAL
   </h3>
 
 {/* Resultados (ahora sí, después del resumen) */}
-{(chronicle.toreros || []).length > 0 && (
+{(selectedNews.toreros || []).length > 0 && (
   <div className="space-y-3 mt-6">
     <h4 className="font-bold text-gray-900 text-lg mb-3 flex items-center">
       <i className="ri-award-line mr-2 text-red-600"></i> Resultados
     </h4>
-    {(chronicle.toreros || []).map((torero, index) => (
-      <div key={index} className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
+    {(selectedNews.toreros || []).map((torero, index) => (
+      <div
+        key={index}
+        className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200"
+      >
         <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
         <div className="flex-1">
           <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-          <p className="text-gray-700 text-sm">{chronicle.resultado?.[index] || ""}</p>
+          <p className="text-gray-700 text-sm">
+            {selectedNews.resultado?.[index] || ""}
+          </p>
         </div>
       </div>
     ))}
