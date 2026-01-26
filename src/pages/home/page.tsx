@@ -448,201 +448,66 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-	{   
-	id: 1000,
-    title: `Borja Jiménez apadrina la Gala Benéfica a favor de ASPACE de Salamanca`,
-	image: "/images/cronn.jpg",
-    category: "Actualidad",
-    date: "25 de Enero de 2026",
-    fullContent: `El matador de toros Borja Jiménez fue el gran protagonista y padrino de la Gala Benéfica celebrada en Villares de la Reina, un evento solidario organizado a beneficio de ASPACE, asociación dedicada a la atención integral de personas con parálisis cerebral y discapacidades afines, así como al apoyo continuo a sus familias mediante programas de rehabilitación, inclusión social, educación y mejora de la calidad de vida.
-
-    La presencia y el compromiso del diestro sevillano reforzaron el carácter solidario de una cita que congregó a autoridades, aficionados y miembros de la asociación, consolidando una iniciativa que une tauromaquia y responsabilidad social.
-
-	Durante su intervención, Borja Jiménez mostró públicamente su implicación con la causa y trasladó un mensaje claro de apoyo a la entidad: “Aquí me tenéis para todo lo que necesitéis”.
-
-	Así mismo, el torero anunció que ya se está trabajando junto con el Alcalde de Villares de la Reina, José Buenaventura Recio en la organización de un festival taurino benéfico para el próximo mes de junio, cuya recaudación irá destinada íntegramente a ASPACE. Según explicó, todos los profesionales participantes actuarán de manera totalmente gratuita, en un gesto colectivo de solidaridad y compromiso con la causa. En este mismo sentido, Borja Jiménez explicó que los ganaderos también se suman a esta iniciativa altruista y cederán sus novillos de forma desinteresada, con el objetivo de que el cien por cien de los beneficios obtenidos se destinen directamente a la asociación.
-
-	La gala, celebrada en el auditorio municipal de Villares de la Reina con el cartel de no hay billetes, se convierte así en el punto de partida de un proyecto solidario que aspira a movilizar al mundo taurino en favor de una causa social de primer nivel, reafirmando una vez más el compromiso del toreo con la sociedad y con quienes más lo necesitan.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-    },
-	{ 
-    id: 1001,
-    title: `Paty Car Eventos seguirá gestionando la Plaza de Toros de Teruel una temporada más`,
-    image: "/images/paty.jpg",
-    category: "Actualidad",
-    date: "25 de Enero de 2026",
-	fullContent: `La empresa Paty Car Eventos continuará al frente de la gestión de la Plaza de Toros de Teruel tras hacer efectiva la prórroga contemplada en el contrato vigente. La decisión quedó ratificada después de un encuentro con el Ayuntamiento de Teruel, donde la corporación municipal expresó su conformidad para prolongar el acuerdo, en un marco de diálogo fluido y entendimiento entre ambas partes, cumpliendo así con lo establecido en el pliego de condiciones.
-
-Desde la empresa organizadora afrontan este nuevo periodo con renovadas ganas y el firme propósito de seguir posicionando a Teruel dentro del circuito taurino nacional. Paty Car Eventos ya trabaja en el diseño de la próxima temporada, con la intención de ofrecer carteles atractivos y variados, pensados para responder a los gustos de la afición y mantener un alto nivel de calidad. Con esta continuidad, la gestora reafirma su compromiso con la promoción de la tauromaquia en la ciudad y con el impulso cultural y económico que supone la actividad taurina para la capital turolense.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{   
-	id: 1002,
-    title: `Manuel León y Realito triunfan en la Puebla del Rio`,
-    image: "/images/cron.jpg",
-    category: "Crónicas",
-    date: "25 de Enero de 2026",
-	plaza: "Plaza de toros de La Puebla del Río, Sevilla",
-    ganaderia: "Novillos de Manuel Veiga y el primero bis de Fermín Bohórquez, al segundo se le premio con la vuelta al ruedo",
-	excerpt: "Manuel Domínguez con dos orejas y Jaime Padilla con una fiero también nombres propios en la segunda novillada de la Puebla",
-	torerosRaw: `Manuel Luque ‘El Exquisito’, lesionado
-Manuel León, dos orejas y rabo
-Nacho Sabater, ovación
-Jaime Padilla, oreja
-Manuel Real ‘Realito’, dos orejas y rabo
-Manuel Domínguez, dos orejas
-Héctor Nieto, ovación
-`,
-  fullContent: `**‘El Exquisito’** lanceo a gusto al primero de la tarde de **Manuel Veiga**, fue devuelto al dañarse en su lugar salió un sobrero de **Fermín Bohórquez**, no ayudo en nada al aspirante, poco pudo hacer **Manuel Luque** que se lesiono la rodilla Izquierda, le dio muerte al eral **Manuel León**.
-
-**Manuel León** recibo a la verónica al segundo de la tarde, dejo una buena tarde de principio a fin, novillo de **Veiga** tenía mucha trasmisión, toreo a gusto en redondos por la diestra, y de trazos muy largo con la izquierda, Bernardina muy ajustada para rematar una muy buena faena gran estocada y los máximos trofeos para el esportón.
-
-**Ignacio Sabater**, recibe al tercero de la tarde con una larga cambiada en los medios, le puso el novillero todo en el ruedo, sin poder conseguir un triunfo mayor debido a las complicaciones del novillo, se le puso también muy complicado para matarlo.
-
-**Jaime Padilla**, variado fue el saludo capotero del jerezano, le toco a **Padilla** un novillo con trasmisión al que entendió bien, lo toreo a placer gustándose mucho con ambos pitones, se puede ya decir que el joven **Padilla** esta ya más que lito para dar el paso a los con caballos, la espada le cayó algo trasera costándole al animal echarse.
-
-**El Realito**, toreo de exquisitas maneras con la capa ante el quinto de la tarde, el de **Veiga** tuvo clase, pero acuso mucho la falta de fuerzas desde su salida.
-
-**Manuel Real** lo entendió y sin bajarle mucho la mano le dio pases de mucha calidad y gusto por ambos pitones, estocada y se llevó el rabo.
-
-**Manuel Domínguez**, faenas seria e importante del novillero ante su novillo de **Manuel Veiga**, en la que demostró la personalidad de su tauromaquia y el gusto con el que la interpreta, ante un astado colaborador, recibe una voltereta sin pasar a mayores, marro con los aceros necesitando el descabello.
-
-**Héctor Nieto**, mostro disposición y valor ante un astado de **Veigas** que cerraba las fiestas de **San Sebastián** de la **Puebla del Rio** organizadas por el maestro **Morante de la Puebla**, toreo el novilleo con ambas manos, dejando pases buenos, se le atasco la espada lo que le privo de trofeos.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-    },
-	{ 
-    id: 1003,
-    title: `Una temporada de éxitos consolida a Polo Saiz entre las ganaderías referentes del novilleril`,
-    image: "/images/exit.jpg",
-    category: "Actualidad",
-    date: "25 de Enero de 2026",
-	fullContent: `La presente temporada ha estado marcada por una sucesión de actuaciones de notable nivel que consolidan a **Polo Saiz** como una de las ganaderías de referencia del actual escalafón novilleril. La regularidad mostrada por sus reses en distintas plazas, así como su comportamiento y calidad en la lidia, fundamentan el merecido galardón concedido en El Casar, en una velada dedicada al reconocimiento del buen hacer ganadero y al balance de una campaña que quedará reflejada en la memoria de los aficionados.
-
-Entre los ejemplares más destacados del año se encuentran:
-* **Garlin (Francia): “Orégano” nº 28, lidiado por Cid de María.**
-* **El Casar: “Malagueño” nº 6, lidiado por Aarón Palacio.**
-* **Cantalejo: “Presidiario” nº 18, lidiado por Félix San Román.**
-* **Trillo: “Orca” nº 12, lidiado por Joel Ramírez.**
-* **Albacete: “Pachorro” nº 102, lidiado por Juan Zamora.**
-
-Un conjunto de actuaciones que **acredita la solidez del proyecto ganadero** y el reconocimiento alcanzado por Polo Saiz dentro del panorama novilleril actual.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Tomás González y David Galván protagonizan un multitudinario coloquio taurino en la Semana Cultural de Alcorisa`,
-    image: "/images/XLVII.jpg",
-    category: "Actualidad",
-    date: "25 de Enero de 2026",
-	fullContent: `La **XLVII Semana Cultural de Alcorisa (Teruel)** acogió ayer una de sus citas taurinas más destacadas con la celebración de un coloquio protagonizado por el novillero local **Tomás González**. El acto, organizado por la Peña Taurina 'Nicanor Villalta' en colaboración con el Ayuntamiento de Alcorisa, fue conducido por el periodista Sergio Hueso y congregó a más de doscientas personas, completando el aforo del Centro Cultural Valero Lecha y obligando a parte del público a seguir el acto de pie.
-
-González, que ha culminado este año su primera temporada como novillero con picadores, realizó un balance positivo de una campaña marcada por la diversidad de encastes lidiados y por una notable evolución personal y profesional. El torero alcorisano definió el curso como "importante y de gran aprendizaje", destacando la exigencia de una temporada en la que ha actuado en plazas de distinto nivel y frente a hierros de variado origen.
-
-Uno de los momentos más emotivos del coloquio llegó al recordar la grave cornada sufrida en Marchamalo, que le afectó al pulmón y le obligó a afrontar un largo y complejo proceso de recuperación. Según explicó, no ha logrado una recuperación plena hasta fechas recientes. Pese a ello, aceptó la sustitución de Joselito de Córdoba en la Feria del Pilar, haciendo el paseíllo en la plaza de toros de Zaragoza en el cierre de la temporada. Allí firmó una actuación destacada, a pesar de encontrarse físicamente mermado por las secuelas del percance. "Era una oportunidad que no podía ni debía dejar pasar", subrayó.
-
-El coloquio contó también con la participación del matador de toros gaditano **David Galván**, cuya intervención despertó un notable interés entre los asistentes. Galván ofreció un recorrido por su trayectoria profesional, detallando los pasos que le han conducido hasta consolidarse en la primera línea del escalafón, en una ponencia cargada de contenido técnico y reflexiones personales.
-
-Entre el público se encontraban el alcalde de Alcorisa, **Miguel Iranzo**; la concejala de Cultura, **Raquel Ejea**; y el concejal de Deportes, **Carlos Yeguas**, quienes respaldaron con su presencia una jornada que volvió a poner de manifiesto el arraigo social y cultural de la tauromaquia en la localidad del Bajo Aragón.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
 	{ 
     id: 1005,
-    title: `À Punt vuelve a los toros por todo lo alto: tres festejos clave en Magdalena y Fallas, en directo`,
-    image: "/images/Á.jpg",
+    title: `Armando Rojo irrumpe con fuerza en La Puebla del Río y se gana un sitio en la Maestranza`,
+    image: "/images/rojo.jpg",
     category: "Actualidad",
-    date: "25 de Enero de 2026",
-	fullContent: `À Punt dará un paso firme en su apuesta por la tauromaquia y retransmitirá en directo, en colaboración con OneToro TV, tres corridas de máximo nivel esta primavera: dos desde la Feria de la Magdalena de Castellón y una desde la Feria de Fallas de Valencia, coincidiendo con el día de San José. Las citas serán los días 8 y 15 de marzo en Castellón y el 19 de marzo en Valencia, en una fórmula compartida que recuerda a la etapa más reconocida de Canal 9, cuando los carteles de figuras conectaban con fuerza con la afición. Esta cobertura se enmarca dentro del calendario inicial de OneToro TV, que también ofrecerá otras corridas de Fallas y ya trabaja en futuras retransmisiones de grandes ferias.
+    date: "26 de Enero de 2026",
+	fullContent: `El novillero sin picadores Armando Rojo, alumno de la Escuela Taurina de Sevilla y natural de La Puebla del Río, ha sido declarado triunfador del ciclo de novilladas sin picadores celebrado en su localidad natal bajo la organización del maestro Morante de la Puebla. Un reconocimiento de gran calado que premia el impacto causado por el joven espada a lo largo del serial y que lo proyecta directamente hacia uno de los escenarios más soñados del toreo.
 
-En lo estrictamente taurino, la oferta será de alto voltaje. En Castellón, el día 8 se lidiarán toros de La Quinta para Ginés Marín, Aarón Palacio y Javier Zulueta, mientras que el día 15 llegará un atractivo mano a mano entre Talavante y Juan Ortega con toros de Domingo Hernández. En Valencia, el festejo compartido del día 19 contará con reses de Núñez del Cuvillo para Talavante, Emilio de Justo y Juan Ortega. Además, OneToro completará la Feria de Fallas con las corridas del 17 y 18 de marzo, emitirá un festejo benéfico en Villaseca de la Sagra el 21 de marzo y retransmitirá íntegra la Feria de Arles en abril, consolidando así un arranque de temporada marcado por la ambición y la presencia de figuras.`,
+El galardón lleva como premio su actuación en la Real Maestranza de Caballería de Sevilla, una oportunidad de oro para este novillero de tan solo 16 años, que ya venía despertando interés entre los aficionados y profesionales. En el primer festejo del ciclo dejó un quite impropio de su edad y firmó una faena rotunda, templada y con personalidad, manejando ambas manos y mostrando un concepto distinto y con aroma a toreo grande. El resultado, dos orejas y rabo, fue el aval definitivo para que el jurado lo señalara como claro triunfador de las novilladas de La Puebla del Río 2026. Enhorabuena al torero, a sus maestros y a una afición que ve nacer a un nombre a seguir muy de cerca.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
-	{ 
+   { 
     id: 1006,
-    title: `Ilusión y cautela ante el regreso de Morante: su apoderado pone el acento en Sevilla`,
-    image: "/images/img.jpg",
+    title: `Guadalajara se rinde y pide más: Juan Ortega deja con ganas, Flores se repone y Gutiérrez confirma su momento`,
+    image: "/images/rinde.jpg",
     category: "Actualidad",
-    date: "25 de Enero de 2026",
-	fullContent: `La reaparición de Morante de la Puebla ya es una realidad y su apoderado, Pedro Jorge Marques, ha querido subrayar el espíritu con el que se afronta este esperado retorno. Tras hacerse oficial la vuelta del torero sevillano a los ruedos, Marques destacó que la decisión nace desde la ilusión, aunque marcada por la prudencia que exige el momento y la responsabilidad que rodea a una figura de su dimensión. Sevilla aparece, una vez más, como el epicentro desde el que comenzar a construir la temporada y preparar este nuevo capítulo en la carrera del diestro.
-Más allá del plano profesional, el apoderado también dejó entrever el componente humano que acompaña esta reaparición. Admiración, ilusión y una lógica preocupación se mezclan en una relación que va más allá del apoderamiento y que afronta el regreso con plena conciencia de la exigencia artística y emocional que supone volver a la primera línea del toreo. Un retorno meditado, sentido y cargado de simbolismo, con Morante y Sevilla nuevamente unidos en el camino.`,
+    date: "26 de Enero de 2026",
+	fullContent: `La tarde en Guadalajara estuvo marcada por la fuerte conexión del público con Juan Ortega, que pese a no cortar trofeo fue uno de los nombres más comentados del festejo. Tras los triunfos de Sergio Flores y Héctor Gutiérrez, la afición llegó a pedirle con insistencia que regalara un toro, señal inequívoca de que querían seguir viéndolo torear. Sin embargo, el sevillano se mantuvo firme en su concepto y en su ética: la mala fortuna —un toro despitorrado y los fallos con la espada— le cerró la Puerta Grande, pero dejó destellos de una versión distinta, variada y siempre estética, que caló hondo en los tendidos.
+
+Ortega mostró desde el saludo una tauromaquia diferente a la que suele verse en él en tierras tapatías: faroles de rodillas, verónicas flexionadas, chicuelinas, trincherazos y remates de gran plasticidad, todo con sello personal. Cuando quiso imponer su toreo largo y templado, el toro ya había dicho basta, y aunque la oreja parecía segura, la espada volvió a negarle el premio. La ovación final y los gritos de “¡toro, toro!” confirmaron que, aun sin trofeos, su paso por Guadalajara dejó huella y expectativa para futuras tardes.
+
+El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalteca se sobrepuso a un inicio cuesta arriba y a los pitos del público para terminar cortando una oreja de mucho mérito al toro más destacado del encierro, tras una faena de valor y entrega que incluyó un fuerte revolcón. Por su parte, el hidrocálido Héctor Gutiérrez confirmó su buen momento con dos actuaciones de inteligencia y buen gusto, cortando una oreja al sexto tras una labor templada y bien rematada. Guadalajara vivió así una tarde de emociones, contrastes y nombres que siguen dando de qué hablar en la baraja mexicana.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `“El toreo es una forma de ser, de estar y de vivir” - Entrevista a José Garrido`,
-    image: "/images/cron1.jpg",
-    category: "Entrevistas",
-    date: "25 de Enero de 2026",
-	imageCaption: "Fotos de Vanesa Santos",
-	footerImage1: "/images/cron2.jpg",
-    footerImage1Caption: "Fotos de Vanesa Santos",
-    footerImage2: "/images/cron3.jpg",
-    footerImage2Caption: "Fotos de Vanesa Santos",
-    footerImage3: "/images/cron4.jpg",
-	fullContent: `**José Garrido** afronta una etapa clave de madurez en su carrera. El matador extremeño, que con constancia, y una firme vocación ha ido construyendo un nombre propio en el toreo, atraviesa un momento de consolidación que despierta el interés de la afición y de los profesionales. Tras temporadas marcadas por actuaciones de peso, faenas de gran calado y una evolución técnica evidente, Garrido se reafirma como un torero de concepto claro y personalidad definida.
-
-**José, vienes de una tierra con mucha afición como Extremadura. ¿De qué manera crees que tus raíces han marcado tu forma de entender el toreo?**
-
-Bueno, yo entiendo el toreo como una forma de ser, de estar, de vivir. Es con lo que convivo el día a día, con el toro y con la afición y de querer mejorar y de querer cada vez alimentar todas esas inquietudes que te da la afición.
-
-Y en Extremadura eso se vive por su gente, por la gente de campo, por la dehesa, por las ganaderías que hay. Esa afición se siente en la calle y en los extremeños y bueno, pues el ser de aquí, quieras que no, te encuentras con el mundo del toro a día a día. Tanto sus gentes, como en el campo, como en los animales, como en todo.
-
-**Tomaste la alternativa muy joven y con muchas expectativas. Mirando atrás, ¿qué ha sido lo más difícil de gestionar en tu carrera profesional?**
-
-Bueno, al final yo creo que lo más difícil es lo que viene de golpe y no estás acostumbrado a ello, como en mi caso el viaje, las multitudes, el momento de que venga todo nuevo: contratos, tardes seguidas, expectativas, como dices.
-
-Y bueno, pues gestionar todo eso no es fácil. Siendo un chaval joven, pues como era yo cuando tomé la alternativa, pues al final todo eso te sumerge en un mundo quizás que te aleja un poco de la realidad. Yo creo que no lo llevé mal dentro de lo que cabe, supe más o menos valorar lo que tenía y lo que estaba consiguiendo, pero sí es cierto que no es fácil mantener los pies en la tierra.
-
-**Se habla mucho de tu concepto clásico y puro. ¿Cómo definirías tú tu toreo con tus propias palabras?**
-
-En mi concepto, al final yo intento hacer lo que a mí me gusta ver. Lo que yo más valoro en un torero es la personalidad, y la forma de ser uno mismo. Pero hay ciertos toreros que te gustan mucho e intentas en tus formas hacer lo que ellos hacen o lo que tú estás buscando en tu personalidad, pero con formas y conceptos de otros toreros.
-
-Yo no sabría definirme a mí mismo, hay veces que veo vídeos míos y me gusto mucho y otras veces que no me gusto nada, Siempre hay cosas que destaco y que intento ir mejorando. Pero sí es cierto que me gusta la profundidad y el empaque, el muletazo y, sobre todo, la reunión con los toros, Que todo sea uno y ese toreo un poco circular, reunido. Eso me gusta mucho y es lo que intento buscar.
-
-**Has tenido tardes importantes en plazas de primera. ¿Qué tiene una plaza como Madrid que la hace tan determinante para un torero?**
-
-Madrid es la que es capaz de determinar tu trayectoria y tu vida profesional, porque al ser tan exigente, el toro que sale, como su aficionado. Cuando las cosas salen bien es como encontrar una aguja en un pajar, también las cosas bien es tan difícil que salgan y tan exigente, que por eso te da tanto.
-
-No sabría con qué comparártelo, pero que se reúnan tantas cosas en Madrid para que salgan bien es casi imposible. Entonces pues bueno, pues cuando hay un triunfo o cuando congenias con la afición y eres capaz de ponerte de acuerdo con un toro para pegarle 20 pases, es algo grandioso.
-
-**En una profesión tan exigente, ¿cómo trabajas la cabeza y la confianza cuando las cosas no salen como esperas?**
-
-Yo creo que en el mundo del toro hay que fijarse más en la mentalización. Para las tardes duras, tanto así como para las tardes buenas, porque tan importante es trabajar la mente para unas como para otras. Y en esas plazas de primera, de tanta importancia, es muy importante gestionar las emociones porque tanto te puede afectar una tarde de triunfo como una tarde de fracaso.
-
-Entonces bueno, yo soy una persona que me guardo mucho las cosas dentro e intento exteriorizarlas y digerirlas conmigo mismo y bueno, de momento pues he sido capaz de, escalón a escalón, ir cultivando una mentalidad fuerte.
-
-**¿Hay alguna faena o tarde concreta que sientas que refleja realmente quién es José Garrido como torero?**
-
-No te diría a lo mejor una tarde concreta o un toro en especial. Hay tardes en las que me quedo con muchas cosas y lo que voy buscando es eso, pues concretarlas todas en un día que salga ese toro que me venga bien y poder reunir en una tarde el mejor José Garrido, que todavía creo que no ha salido. Ha habido apuntes, esta temporada del 2025 ha habido cosas, pero tiene que salir el... el de la faena redonda.
-
-**El toreo evoluciona constantemente. ¿Cómo encuentras el equilibrio entre respetar la tradición y adaptarte a los tiempos actuales?**
-
-El equilibrio es sencillo de decir pero difícil de lograr: beber de las fuentes antiguas para no perder la pureza, pero torear con la entrega que te exige las embestidas del toro actual.
-
-**¿Qué sueños o metas te quedan por cumplir dentro y fuera de los ruedos?**
-
-Tanto dentro como fuera hay muchas metas por cumplir todavía y muchos objetivos. Depende mucho lo de conseguir fuera, consiguiéndolo dentro primero en los ruedos. Depende mucho lo de fuera según lo que se consiga dentro. Así que vamos a intentar primero arreglar lo de dentro y luego vemos lo de fuera.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
- 	{   
+ 	{ 
+    id: 60,
+    title: `Armando Rojo irrumpe con fuerza en La Puebla del Río y se gana un sitio en la Maestranza`,
+    image: "/images/rojo.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `El novillero sin picadores Armando Rojo, alumno de la Escuela Taurina de Sevilla y natural de La Puebla del Río, ha sido declarado triunfador del ciclo de novilladas sin picadores celebrado en su localidad natal bajo la organización del maestro Morante de la Puebla. Un reconocimiento de gran calado que premia el impacto causado por el joven espada a lo largo del serial y que lo proyecta directamente hacia uno de los escenarios más soñados del toreo.
+
+El galardón lleva como premio su actuación en la Real Maestranza de Caballería de Sevilla, una oportunidad de oro para este novillero de tan solo 16 años, que ya venía despertando interés entre los aficionados y profesionales. En el primer festejo del ciclo dejó un quite impropio de su edad y firmó una faena rotunda, templada y con personalidad, manejando ambas manos y mostrando un concepto distinto y con aroma a toreo grande. El resultado, dos orejas y rabo, fue el aval definitivo para que el jurado lo señalara como claro triunfador de las novilladas de La Puebla del Río 2026. Enhorabuena al torero, a sus maestros y a una afición que ve nacer a un nombre a seguir muy de cerca.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+   { 
+    id: 61,
+    title: `Guadalajara se rinde y pide más: Juan Ortega deja con ganas, Flores se repone y Gutiérrez confirma su momento`,
+    image: "/images/rinde.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `La tarde en Guadalajara estuvo marcada por la fuerte conexión del público con Juan Ortega, que pese a no cortar trofeo fue uno de los nombres más comentados del festejo. Tras los triunfos de Sergio Flores y Héctor Gutiérrez, la afición llegó a pedirle con insistencia que regalara un toro, señal inequívoca de que querían seguir viéndolo torear. Sin embargo, el sevillano se mantuvo firme en su concepto y en su ética: la mala fortuna —un toro despitorrado y los fallos con la espada— le cerró la Puerta Grande, pero dejó destellos de una versión distinta, variada y siempre estética, que caló hondo en los tendidos.
+
+Ortega mostró desde el saludo una tauromaquia diferente a la que suele verse en él en tierras tapatías: faroles de rodillas, verónicas flexionadas, chicuelinas, trincherazos y remates de gran plasticidad, todo con sello personal. Cuando quiso imponer su toreo largo y templado, el toro ya había dicho basta, y aunque la oreja parecía segura, la espada volvió a negarle el premio. La ovación final y los gritos de “¡toro, toro!” confirmaron que, aun sin trofeos, su paso por Guadalajara dejó huella y expectativa para futuras tardes.
+
+El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalteca se sobrepuso a un inicio cuesta arriba y a los pitos del público para terminar cortando una oreja de mucho mérito al toro más destacado del encierro, tras una faena de valor y entrega que incluyó un fuerte revolcón. Por su parte, el hidrocálido Héctor Gutiérrez confirmó su buen momento con dos actuaciones de inteligencia y buen gusto, cortando una oreja al sexto tras una labor templada y bien rematada. Guadalajara vivió así una tarde de emociones, contrastes y nombres que siguen dando de qué hablar en la baraja mexicana.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{   
 	id: 62,
     title: `Borja Jiménez apadrina la Gala Benéfica a favor de ASPACE de Salamanca`,
 	image: "/images/cronn.jpg",
