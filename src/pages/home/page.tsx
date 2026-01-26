@@ -449,6 +449,42 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Presentado el 2º Festival Taurino del Real Club Pineda`,
+    image: "/images/festi.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `El II Festival Taurino "Toros en Pineda" ha sido presentado esta mañana con un cartel de lujo en el Pabellón del Hipódromo del Real Club Pineda y se celebrará el próximo sábado, 28 de febrero, a las 12:00 horas, en una plaza portátil que se instalará en el centro del citado hipódromo otorgándole singularidad al evento.
+
+Tras el éxito alcanzado en la pasada edición de 2024, Pineda vuelve a apostar por la organización de un festival taurino, reafirmando así su firme compromiso con la tauromaquia y con una afición profundamente arraigada en la historia y la idiosincrasia del club.
+
+En el festejo harán el paseíllo los diestros **Juan Ortega, Borja Jiménez, Pablo Aguado, Manuel Vázquez y Javier Zulueta, junto al novillero Rodrigo Molina**, quienes lidiarán reses de la ganadería de Gregorio Garzón Valdenebro.
+
+Durante el acto de presentación, el presidente del club, Rodrigo Molina, ha querido agradecer expresamente, la implicación y generosidad de toreros y ganaderos por su participación en este festival. Por su parte, el empresario Luis Garzón, organizador del evento junto a Eduardo Dávila Miura, subrayó la importancia que tiene para el toreo y para la afición que un club social con tanto arraigo en Sevilla y con una masa social tan amplia, impulse un festejo taurino de estas características.
+
+El cartel de esta segunda edición tiene además un marcado carácter emotivo. Su diseño está protagonizado por una fotografía de **Rafael Peralta Pineda**, maestro del toreo a caballo, socio del club y figura muy querida, que nos dejó el pasado año tras una vida estrechamente ligada al Real Club Pineda y a la tauromaquia. La imagen, obra del fotógrafo David Tack, recoge a Rafael Peralta montando a Rumboso XI, caballo cartujano de Pura Raza Española y supone un sentido homenaje a su figura y a su legado.
+
+El II Festival Taurino "Toros en Pineda" se presenta así como una cita señalada en el calendario, uniendo afición, tradición y recuerdo, en un entorno único.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Manuel Caballero estrena apoderado`,
+    image: "/images/estrena.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `El matador de toros albaceteño Manuel Caballero, hijo del matador del mismo nombre, ha llegado este fin de semana a un acuerdo de apoderamiento con el clásico apretón de mano con los taurinos Manuel Martínez Erice y Gerardo Roca se harán cargo de su carrera profesional.
+
+El principal objetivo de esta relación profesional es impulsar la carrera de Caballero esta temporada.
+
+Manuel Caballero tomó la alternativa el pasado 13 de septiembre en Albacete, en una tarde en la que cortó dos orejas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1003,
     title: `Yunquera de Henares analiza la tauromaquia de invierno de cara a la temporada 2026`,
     image: "/images/yunq.jpg",
@@ -564,6 +600,42 @@ El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalte
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 56,
+    title: `Presentado el 2º Festival Taurino del Real Club Pineda`,
+    image: "/images/festi.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `El II Festival Taurino "Toros en Pineda" ha sido presentado esta mañana con un cartel de lujo en el Pabellón del Hipódromo del Real Club Pineda y se celebrará el próximo sábado, 28 de febrero, a las 12:00 horas, en una plaza portátil que se instalará en el centro del citado hipódromo otorgándole singularidad al evento.
+
+Tras el éxito alcanzado en la pasada edición de 2024, Pineda vuelve a apostar por la organización de un festival taurino, reafirmando así su firme compromiso con la tauromaquia y con una afición profundamente arraigada en la historia y la idiosincrasia del club.
+
+En el festejo harán el paseíllo los diestros **Juan Ortega, Borja Jiménez, Pablo Aguado, Manuel Vázquez y Javier Zulueta, junto al novillero Rodrigo Molina**, quienes lidiarán reses de la ganadería de Gregorio Garzón Valdenebro.
+
+Durante el acto de presentación, el presidente del club, Rodrigo Molina, ha querido agradecer expresamente, la implicación y generosidad de toreros y ganaderos por su participación en este festival. Por su parte, el empresario Luis Garzón, organizador del evento junto a Eduardo Dávila Miura, subrayó la importancia que tiene para el toreo y para la afición que un club social con tanto arraigo en Sevilla y con una masa social tan amplia, impulse un festejo taurino de estas características.
+
+El cartel de esta segunda edición tiene además un marcado carácter emotivo. Su diseño está protagonizado por una fotografía de **Rafael Peralta Pineda**, maestro del toreo a caballo, socio del club y figura muy querida, que nos dejó el pasado año tras una vida estrechamente ligada al Real Club Pineda y a la tauromaquia. La imagen, obra del fotógrafo David Tack, recoge a Rafael Peralta montando a Rumboso XI, caballo cartujano de Pura Raza Española y supone un sentido homenaje a su figura y a su legado.
+
+El II Festival Taurino "Toros en Pineda" se presenta así como una cita señalada en el calendario, uniendo afición, tradición y recuerdo, en un entorno único.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 57,
+    title: `Manuel Caballero estrena apoderado`,
+    image: "/images/estrena.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `El matador de toros albaceteño Manuel Caballero, hijo del matador del mismo nombre, ha llegado este fin de semana a un acuerdo de apoderamiento con el clásico apretón de mano con los taurinos Manuel Martínez Erice y Gerardo Roca se harán cargo de su carrera profesional.
+
+El principal objetivo de esta relación profesional es impulsar la carrera de Caballero esta temporada.
+
+Manuel Caballero tomó la alternativa el pasado 13 de septiembre en Albacete, en una tarde en la que cortó dos orejas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 58,
     title: `Yunquera de Henares analiza la tauromaquia de invierno de cara a la temporada 2026`,
     image: "/images/yunq.jpg",
