@@ -449,6 +449,68 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Las entradas sueltas para la Feria de Fallas 2026 salen a la venta este martes 27 de enero`,
+    image: "/images/sueltas.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `La Feria de Fallas 2026 da el pistoletazo de salida en taquilla. Las entradas sueltas para el esperado ciclo fallero estarán disponibles desde la medianoche de este **martes 27 de enero (00:00h)** a través de la web oficial de la **Plaza de Toros de Valencia**, <a
+  http://plazadevalencia.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  http://plazadevalencia.es
+</a>
+Asimismo, los aficionados que prefieran la compra presencial podrán adquirir sus localidades a partir de las 10:00h del martes en las oficinas físicas de **Nautalia Viajes** repartidas por la ciudad de Valencia, manteniendo así el doble canal de venta habitual.
+
+El serial fallero se celebrará del 7 al 19 de marzo y presenta una programación amplia y variada, compuesta por seis corridas de toros, una corrida de rejones matinal, tres novilladas —dos con picadores y una sin caballos— y dos festejos populares, conformando uno de los ciclos más completos del inicio de temporada.
+
+**Carteles oficiales de la Feria de Fallas 2026**
+
+**Sábado 7 de marzo (17:00h)**
+Novillada sin picadores. Novillos de Aida Jovani para Alejandro González, Ian Bermejo, Israel Guirao, Clovis, Hugo Masiá y Daniel García.
+
+**Domingo 8 de marzo (17:00h)**
+Novillada con picadores. Novillos de Talavante para Emiliano Osornio, Mario Vilau y Marco Polope.
+
+**Viernes 13 de marzo (17:00h)**
+Corrida de toros. Toros de La Quinta para Fortes, Román y David de Miranda.
+
+**Sábado 14 de marzo (17:00h)**
+Corrida de toros. Toros de Victoriano del Río / Toros de Cortés para Alejandro Talavante, Roca Rey y Samuel Navalón.
+
+**Domingo 15 de marzo (12:00h)**
+Corrida de rejones. Toros de María Guiomar Cortés de Moura para Andy Cartagena, Diego Ventura y Lea Vicens.
+
+**Domingo 15 de marzo (17:00h)**
+Corrida de toros. Toros de Jandilla para Sebastián Castella, José María Manzanares y Pablo Aguado.
+
+**Lunes 16 de marzo (17:00h)**
+Novillada con picadores. Novillos de Fuente Ymbro para Juan Alberto Torrijos, Julio Méndez y Julio Norte.
+
+**Martes 17 de marzo (17:00h)**
+Corrida de toros. Toros de Santiago Domecq para Miguel Ángel Perera, Víctor Hernández y Marco Pérez.
+
+**Miércoles 18 de marzo (17:00h)**
+Corrida de toros, mano a mano. Toros de Domingo Hernández para Borja Jiménez y Tomás Rufo.
+Sobresaliente: Álvaro de la Calle.
+
+**Jueves 19 de marzo (17:00h)**
+Corrida de toros. Toros de Núñez del Cuvillo para Alejandro Talavante, Emilio de Justo y Juan Ortega.
+
+**Festejos populares**
+
+**Sábado 14 de marzo (11:00h)**
+XXXIX Concurso Nacional de Recortadores.
+
+**Sábado 14 de marzo (22:00h)**
+La Nit del Foc y Vacas Falleras.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Armando Rojo irrumpe con fuerza en La Puebla del Río y se gana un sitio en la Maestranza`,
     image: "/images/rojo.jpg",
@@ -480,6 +542,68 @@ El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalte
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 59,
+    title: `Las entradas sueltas para la Feria de Fallas 2026 salen a la venta este martes 27 de enero`,
+    image: "/images/sueltas.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `La Feria de Fallas 2026 da el pistoletazo de salida en taquilla. Las entradas sueltas para el esperado ciclo fallero estarán disponibles desde la medianoche de este **martes 27 de enero (00:00h)** a través de la web oficial de la **Plaza de Toros de Valencia**, <a
+  http://plazadevalencia.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  http://plazadevalencia.es
+</a>
+Asimismo, los aficionados que prefieran la compra presencial podrán adquirir sus localidades a partir de las 10:00h del martes en las oficinas físicas de **Nautalia Viajes** repartidas por la ciudad de Valencia, manteniendo así el doble canal de venta habitual.
+
+El serial fallero se celebrará del 7 al 19 de marzo y presenta una programación amplia y variada, compuesta por seis corridas de toros, una corrida de rejones matinal, tres novilladas —dos con picadores y una sin caballos— y dos festejos populares, conformando uno de los ciclos más completos del inicio de temporada.
+
+**Carteles oficiales de la Feria de Fallas 2026**
+
+**Sábado 7 de marzo (17:00h)**
+Novillada sin picadores. Novillos de Aida Jovani para Alejandro González, Ian Bermejo, Israel Guirao, Clovis, Hugo Masiá y Daniel García.
+
+**Domingo 8 de marzo (17:00h)**
+Novillada con picadores. Novillos de Talavante para Emiliano Osornio, Mario Vilau y Marco Polope.
+
+**Viernes 13 de marzo (17:00h)**
+Corrida de toros. Toros de La Quinta para Fortes, Román y David de Miranda.
+
+**Sábado 14 de marzo (17:00h)**
+Corrida de toros. Toros de Victoriano del Río / Toros de Cortés para Alejandro Talavante, Roca Rey y Samuel Navalón.
+
+**Domingo 15 de marzo (12:00h)**
+Corrida de rejones. Toros de María Guiomar Cortés de Moura para Andy Cartagena, Diego Ventura y Lea Vicens.
+
+**Domingo 15 de marzo (17:00h)**
+Corrida de toros. Toros de Jandilla para Sebastián Castella, José María Manzanares y Pablo Aguado.
+
+**Lunes 16 de marzo (17:00h)**
+Novillada con picadores. Novillos de Fuente Ymbro para Juan Alberto Torrijos, Julio Méndez y Julio Norte.
+
+**Martes 17 de marzo (17:00h)**
+Corrida de toros. Toros de Santiago Domecq para Miguel Ángel Perera, Víctor Hernández y Marco Pérez.
+
+**Miércoles 18 de marzo (17:00h)**
+Corrida de toros, mano a mano. Toros de Domingo Hernández para Borja Jiménez y Tomás Rufo.
+Sobresaliente: Álvaro de la Calle.
+
+**Jueves 19 de marzo (17:00h)**
+Corrida de toros. Toros de Núñez del Cuvillo para Alejandro Talavante, Emilio de Justo y Juan Ortega.
+
+**Festejos populares**
+
+**Sábado 14 de marzo (11:00h)**
+XXXIX Concurso Nacional de Recortadores.
+
+**Sábado 14 de marzo (22:00h)**
+La Nit del Foc y Vacas Falleras.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 60,
     title: `Armando Rojo irrumpe con fuerza en La Puebla del Río y se gana un sitio en la Maestranza`,
     image: "/images/rojo.jpg",
