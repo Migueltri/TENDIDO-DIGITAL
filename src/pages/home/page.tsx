@@ -449,6 +449,29 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1000,
+    title: `Cuatro nuevos novilleros se suman al Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/clasi.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía completa el elenco de novilleros que acceden al Circuito a través del Bolsín
+
+El Circuito de Novilladas de Andalucía 2026 ya conoce los nombres de los cuatro novilleros que completan el elenco de participantes que acceden a su séptima edición a través del Bolsín clasificatorio, tras el segundo tentadero, celebrado el pasado martes en la ganadería sevillana de Aguadulce.
+
+Los novilleros seleccionados han sido Isaac Galvín, natural de Chiclana de la Frontera; Francisco Fernández, de Los Barrios; Iván Rejas, de Granada; y Dennis Martín, de Almería, quienes han destacado por su proyección, regularidad y méritos contraídos durante la pasada temporada y sus buenas actuaciones en el Bolsín.
+
+Isaac Galvín fue uno de los nombres propios del curso 2025 en Andalucía, firmando importantes triunfos tanto en plazas españolas como francesas, además de alcanzar la final del prestigioso Ciclo de Canal Sur. Francisco Fernández, por su parte, dejó una actuación muy destacada en el tentadero clasificatorio y afronta ahora una temporada clave, en la que debutará con picadores en su localidad natal antes del inicio del certamen.
+
+Iván Rejas llega al Circuito tras ser finalista en dos ocasiones del Ciclo de Canal Sur y proclamarse triunfador de numerosos bolsines y certámenes, entre ellos el organizado por el Capítulo de Granada de la Fundación Toro de Lidia. Completa esta nómina Dennis Martín, novillero almeriense que protagonizó un gran 2025, cortando 14 orejas y un rabo en las siete novilladas que toreó a lo largo de la temporada.
+ 	
+Los cuatro novilleros debutarán en el Circuito de Novilladas de Andalucía en 2026, sumándose así a una lista en la que ya estaban Pedro Luis, El Primi y Víctor Barroso, quienes se clasificaron a través del primer tentadero del Bolsín.
+ 	
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1001,
     title: `Presentado el 2º Festival Taurino del Real Club Pineda`,
     image: "/images/festi.jpg",
@@ -600,6 +623,29 @@ El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalte
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 55,
+    title: `Cuatro nuevos novilleros se suman al Circuito de Novilladas de Andalucía 2026`,
+    image: "/images/clasi.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía completa el elenco de novilleros que acceden al Circuito a través del Bolsín
+
+El Circuito de Novilladas de Andalucía 2026 ya conoce los nombres de los cuatro novilleros que completan el elenco de participantes que acceden a su séptima edición a través del Bolsín clasificatorio, tras el segundo tentadero, celebrado el pasado martes en la ganadería sevillana de Aguadulce.
+
+Los novilleros seleccionados han sido Isaac Galvín, natural de Chiclana de la Frontera; Francisco Fernández, de Los Barrios; Iván Rejas, de Granada; y Dennis Martín, de Almería, quienes han destacado por su proyección, regularidad y méritos contraídos durante la pasada temporada y sus buenas actuaciones en el Bolsín.
+
+Isaac Galvín fue uno de los nombres propios del curso 2025 en Andalucía, firmando importantes triunfos tanto en plazas españolas como francesas, además de alcanzar la final del prestigioso Ciclo de Canal Sur. Francisco Fernández, por su parte, dejó una actuación muy destacada en el tentadero clasificatorio y afronta ahora una temporada clave, en la que debutará con picadores en su localidad natal antes del inicio del certamen.
+
+Iván Rejas llega al Circuito tras ser finalista en dos ocasiones del Ciclo de Canal Sur y proclamarse triunfador de numerosos bolsines y certámenes, entre ellos el organizado por el Capítulo de Granada de la Fundación Toro de Lidia. Completa esta nómina Dennis Martín, novillero almeriense que protagonizó un gran 2025, cortando 14 orejas y un rabo en las siete novilladas que toreó a lo largo de la temporada.
+ 	
+Los cuatro novilleros debutarán en el Circuito de Novilladas de Andalucía en 2026, sumándose así a una lista en la que ya estaban Pedro Luis, El Primi y Víctor Barroso, quienes se clasificaron a través del primer tentadero del Bolsín.
+ 	
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 56,
     title: `Presentado el 2º Festival Taurino del Real Club Pineda`,
     image: "/images/festi.jpg",
