@@ -449,6 +449,28 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1003,
+    title: `Yunquera de Henares analiza la tauromaquia de invierno de cara a la temporada 2026`,
+    image: "/images/yunq.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	footerImage1: "/images/yunq1.jpg",
+    footerImage2: "/images/yunq2.jpg",
+    footerImage3: "/images/yunq3.jpg",
+	fullContent: `El Centro Social Polivalente de Yunquera de Henares acogió en la tarde del domingo 25 de enero la charla-coloquio titulada “**La Tauromaquia de Invierno 2025/2026**”, un encuentro que reunió a aficionados y profesionales del mundo del toro para reflexionar sobre una de las etapas menos visibles pero fundamentales de la temporada taurina.
+
+El coloquio contó con la participación de los toreros **José Carlos Venegas y Gómez del Pilar**, con la moderación de **Diego Cervera**, quienes ofrecieron al público una visión cercana y detallada de cómo se vive el invierno en la carrera de un torero. Durante la charla se abordaron aspectos clave como los meses de preparación, los entrenamientos, el análisis personal y la planificación de una nueva campaña.
+
+Los ponentes compartieron además vivencias de su trayectoria profesional y analizaron las fechas ya cerradas de cara a la próxima temporada, aportando una mirada profunda a un periodo decisivo que, aunque alejado de los focos, resulta esencial para el desarrollo y la evolución de los profesionales taurinos.
+
+El acto, que registró una notable asistencia, permitió a los aficionados conocer de primera mano los entresijos del toreo más allá del ruedo, fomentando el diálogo y el intercambio de experiencias en un ambiente cercano y participativo.
+
+Desde la organización se quiso agradecer especialmente a la **Peña Taurina El Quite de Yunquera** la puesta en marcha de este encuentro, así como a los ponentes por su implicación y cercanía, que contribuyeron a llenar el Centro Social Polivalente en una tarde marcada por el interés cultural y taurino.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1004,
     title: `Las entradas sueltas para la Feria de Fallas 2026 salen a la venta este martes 27 de enero`,
     image: "/images/sueltas.jpg",
@@ -542,6 +564,28 @@ El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalte
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 58,
+    title: `Yunquera de Henares analiza la tauromaquia de invierno de cara a la temporada 2026`,
+    image: "/images/yunq.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	footerImage1: "/images/yunq1.jpg",
+    footerImage2: "/images/yunq2.jpg",
+    footerImage3: "/images/yunq3.jpg",
+	fullContent: `El Centro Social Polivalente de Yunquera de Henares acogió en la tarde del domingo 25 de enero la charla-coloquio titulada “**La Tauromaquia de Invierno 2025/2026**”, un encuentro que reunió a aficionados y profesionales del mundo del toro para reflexionar sobre una de las etapas menos visibles pero fundamentales de la temporada taurina.
+
+El coloquio contó con la participación de los toreros **José Carlos Venegas y Gómez del Pilar**, con la moderación de **Diego Cervera**, quienes ofrecieron al público una visión cercana y detallada de cómo se vive el invierno en la carrera de un torero. Durante la charla se abordaron aspectos clave como los meses de preparación, los entrenamientos, el análisis personal y la planificación de una nueva campaña.
+
+Los ponentes compartieron además vivencias de su trayectoria profesional y analizaron las fechas ya cerradas de cara a la próxima temporada, aportando una mirada profunda a un periodo decisivo que, aunque alejado de los focos, resulta esencial para el desarrollo y la evolución de los profesionales taurinos.
+
+El acto, que registró una notable asistencia, permitió a los aficionados conocer de primera mano los entresijos del toreo más allá del ruedo, fomentando el diálogo y el intercambio de experiencias en un ambiente cercano y participativo.
+
+Desde la organización se quiso agradecer especialmente a la **Peña Taurina El Quite de Yunquera** la puesta en marcha de este encuentro, así como a los ponentes por su implicación y cercanía, que contribuyeron a llenar el Centro Social Polivalente en una tarde marcada por el interés cultural y taurino.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 59,
     title: `Las entradas sueltas para la Feria de Fallas 2026 salen a la venta este martes 27 de enero`,
     image: "/images/sueltas.jpg",
