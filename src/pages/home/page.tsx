@@ -450,8 +450,32 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
   	{ 
     id: 1000,
-    title: `Un cartel muy rematado de Rejones para el dia de Andalucía en Ecija (Sevilla)`,
+    title: `Festival taurino sin picadores e Lora del Río (Sevilla)`,
     image: "/images/lora.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La Delegación del Gobierno de la Junta de Andalucía en Sevilla ha acogido este martes, 27 de enero, la presentación oficial del cartel del Festival taurino sin picadores de Lora del Río, que se celebrará el próximo sábado 7 de marzo. El acto ha contado con la presencia del delegado del Gobierno andaluz, Ricardo Sánchez; el alcalde de esta localidad, Antonio Miguel Enamorado; el empresario Paco Delgado, acompañado por Juan González; y los novilleros Manuel Casado, Martín Morilla y Paco de Sara.
+
+El regidor loreño ha destacado que "Lora del Río es tierra de toros de lidia; acogemos hasta siete ganaderías de reses bravas y contamos, además, con la marca 'Lora, Tierra de Toros'. Desde el Ayuntamiento seguimos apostando firmemente por la organización de un festival taurino como parte de nuestra identidad cultural y de nuestras tradiciones más arraigadas", informa en un comunicado.
+
+"La tauromaquia forma parte del patrimonio cultural de España y de la historia de nuestro municipio, vinculado históricamente a importantes ganaderías y a una afición muy consolidada". Asimismo, Enamorado ha señalado que "este festival taurino no solo tiene una dimensión cultural, sino también social y económica, ya que supone un atractivo turístico, dinamiza la hostelería y el comercio local y genera actividad en nuestro municipio".
+
+En opinión del alcalde de Lora, "nuestro objetivo es ofrecer un espectáculo de calidad, con todas las garantías de seguridad y respeto, y contribuir a la proyección de Lora del Río como referente taurino en la provincia". Por último, ha subrayado que "vamos a seguir impulsando iniciativas que potencien la tauromaquia desde el respeto, la educación en valores y la convivencia, entendiendo que es una expresión cultural profundamente arraigada en nuestra tierra y que cuenta con el respaldo de muchos aficionados y profesionales del sector".
+
+Por su parte, el delegado del Gobierno de la Junta de Andalucía en Sevilla ha resaltado que la apuesta del Gobierno andaluz por la tauromaquia es firme y se ha traducido en un nuevo Reglamento Taurino, ayudas a las escuelas taurinas andaluzas y a la Fundación del Toro de Lidia, los Premios Andalucía de la Tauromaquia y la creación de la Red de Municipios Taurinos de Andalucía (REMTA), que ya cuenta con 174 municipios adheridos.
+
+Ricardo Sánchez ha subrayado que el mundo taurino ocupa en Andalucía un lugar determinante en la actividad económica y cultural: "Andalucía ha sido, es y será taurina; desde la Junta de Andalucía defendemos la tauromaquia como lo que es, un bien cultural reconocido, protegido y admirado". "El Gobierno de Juanma Moreno apuesta por ella por ser fuente de riqueza, turismo y economía", ha concluido.
+El Festival taurino tendrá lugar el sábado 7 de marzo, a las 17,00 horas, y se lidiarán seis reses: cuatro de Roque Jiménez, una de Eduardo Miura y una de Agustín Lunar, para los diestros Canales Rivera, Esaú Fernández, Julio Benítez 'El Cordobés', Manuel Casado, Martín Morilla y Paco de Sara.
+
+En este festival colaboran la junta auxiliar juvenil de la Hermandad del Santísimo Sacramento y Cofradía de Nazareno y Nuestro Padre Jesús Nazareno y Nuestra Señora de los Dolores, y la Asociación de Comerciantes y Profesionales 'Las 5 Calles'.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Un cartel muy rematado de Rejones para el dia de Andalucía en Ecija (Sevilla)`,
+    image: "/images/ecija.jpg",
     category: "Actualidad",
     date: "27 de Enero de 2026",
 	fullContent: `En las caballerizas del Palacio de Benamejí, con presencia de la alcaldesa Silvia Heredia, la concejala de festejos Raquel Miranda y el empresario Jorge Buendía se ha presentado en la mañana de hoy el cartel del 28 de febrero. 
@@ -474,7 +498,7 @@ Para este evento, precios populares, venta anticipada en:
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1002,
     title: `Paco Ureña celebra sus 20 años de alternativa en Murcia.`,
     image: "/images/pu.jpg",
     category: "Actualidad",
@@ -490,7 +514,7 @@ La Región debe volcarse con los toreros de la tierra y así lo hará con Paco U
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Sevilla perfila un abono de altos vuelos: Morante se cae del Domingo Hernández y la Feria toma forma definitiva`,
     image: "/images/ca.jpg",
     category: "Actualidad",
@@ -538,7 +562,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `La Fiesta del Toro de la Comunidad de Madrid, cinco años y unos datos para reafirmar el momento taurino de la región`,
     image: "/images/com.jpg",
     category: "Actualidad",
@@ -569,7 +593,7 @@ La memoria al completo, con todos los datos desglosados y de manera gráfica los
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `José Carlos Venegas cierra una magnífica cuadrilla de cara a San Isidro 2026`,
     image: "/images/cuadri.jpg",
     category: "Actualidad",
@@ -591,7 +615,7 @@ Encabeza este sólido y ambicioso proyecto **su apoderada**, Dña. **Lidia Rodr�
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1006,
     title: `Telemadrid consolida su liderazgo taurino con la retransmisión íntegra de la Feria de San Isidro 2026`,
     image: "/images/tele.jpg",
     category: "Actualidad",
@@ -610,7 +634,7 @@ Esta firme apuesta de Telemadrid por la retransmisión íntegra de la Feria de S
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1007,
     title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
     image: "/images/almen.jpg",
     category: "Actualidad",
@@ -623,7 +647,7 @@ La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organi
     showAuthorHeader: true
    },
 	{ 
-    id: 1007,
+    id: 1008,
     title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
     image: "/images/rr.jpg",
     category: "Actualidad",
@@ -640,7 +664,7 @@ El cierre llegará en San Miguel con Jandilla, una elección que elimina cualqui
     showAuthorHeader: true
    },
 	{ 
-    id: 1008,
+    id: 1009,
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
@@ -882,9 +906,33 @@ Carteles no oficiales de la Feria de San Isidro 2026:
     showAuthorHeader: true
    },
 	{ 
+    id: 47,
+    title: `Festival taurino sin picadores e Lora del Río (Sevilla)`,
+    image: "/images/lora.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La Delegación del Gobierno de la Junta de Andalucía en Sevilla ha acogido este martes, 27 de enero, la presentación oficial del cartel del Festival taurino sin picadores de Lora del Río, que se celebrará el próximo sábado 7 de marzo. El acto ha contado con la presencia del delegado del Gobierno andaluz, Ricardo Sánchez; el alcalde de esta localidad, Antonio Miguel Enamorado; el empresario Paco Delgado, acompañado por Juan González; y los novilleros Manuel Casado, Martín Morilla y Paco de Sara.
+
+El regidor loreño ha destacado que "Lora del Río es tierra de toros de lidia; acogemos hasta siete ganaderías de reses bravas y contamos, además, con la marca 'Lora, Tierra de Toros'. Desde el Ayuntamiento seguimos apostando firmemente por la organización de un festival taurino como parte de nuestra identidad cultural y de nuestras tradiciones más arraigadas", informa en un comunicado.
+
+"La tauromaquia forma parte del patrimonio cultural de España y de la historia de nuestro municipio, vinculado históricamente a importantes ganaderías y a una afición muy consolidada". Asimismo, Enamorado ha señalado que "este festival taurino no solo tiene una dimensión cultural, sino también social y económica, ya que supone un atractivo turístico, dinamiza la hostelería y el comercio local y genera actividad en nuestro municipio".
+
+En opinión del alcalde de Lora, "nuestro objetivo es ofrecer un espectáculo de calidad, con todas las garantías de seguridad y respeto, y contribuir a la proyección de Lora del Río como referente taurino en la provincia". Por último, ha subrayado que "vamos a seguir impulsando iniciativas que potencien la tauromaquia desde el respeto, la educación en valores y la convivencia, entendiendo que es una expresión cultural profundamente arraigada en nuestra tierra y que cuenta con el respaldo de muchos aficionados y profesionales del sector".
+
+Por su parte, el delegado del Gobierno de la Junta de Andalucía en Sevilla ha resaltado que la apuesta del Gobierno andaluz por la tauromaquia es firme y se ha traducido en un nuevo Reglamento Taurino, ayudas a las escuelas taurinas andaluzas y a la Fundación del Toro de Lidia, los Premios Andalucía de la Tauromaquia y la creación de la Red de Municipios Taurinos de Andalucía (REMTA), que ya cuenta con 174 municipios adheridos.
+
+Ricardo Sánchez ha subrayado que el mundo taurino ocupa en Andalucía un lugar determinante en la actividad económica y cultural: "Andalucía ha sido, es y será taurina; desde la Junta de Andalucía defendemos la tauromaquia como lo que es, un bien cultural reconocido, protegido y admirado". "El Gobierno de Juanma Moreno apuesta por ella por ser fuente de riqueza, turismo y economía", ha concluido.
+El Festival taurino tendrá lugar el sábado 7 de marzo, a las 17,00 horas, y se lidiarán seis reses: cuatro de Roque Jiménez, una de Eduardo Miura y una de Agustín Lunar, para los diestros Canales Rivera, Esaú Fernández, Julio Benítez 'El Cordobés', Manuel Casado, Martín Morilla y Paco de Sara.
+
+En este festival colaboran la junta auxiliar juvenil de la Hermandad del Santísimo Sacramento y Cofradía de Nazareno y Nuestro Padre Jesús Nazareno y Nuestra Señora de los Dolores, y la Asociación de Comerciantes y Profesionales 'Las 5 Calles'.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 48,
     title: `Un cartel muy rematado de Rejones para el dia de Andalucía en Ecija (Sevilla)`,
-    image: "/images/lora.jpg",
+    image: "/images/ecija.jpg",
     category: "Actualidad",
     date: "27 de Enero de 2026",
 	fullContent: `En las caballerizas del Palacio de Benamejí, con presencia de la alcaldesa Silvia Heredia, la concejala de festejos Raquel Miranda y el empresario Jorge Buendía se ha presentado en la mañana de hoy el cartel del 28 de febrero. 
