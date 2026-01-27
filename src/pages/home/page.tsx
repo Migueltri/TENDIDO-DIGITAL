@@ -448,8 +448,49 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-    { 
+  	{ 
     id: 1000,
+    title: `Un cartel muy rematado de Rejones para el dia de Andalucía en Ecija (Sevilla)`,
+    image: "/images/lora.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `En las caballerizas del Palacio de Benamejí, con presencia de la alcaldesa Silvia Heredia, la concejala de festejos Raquel Miranda y el empresario Jorge Buendía se ha presentado en la mañana de hoy el cartel del 28 de febrero. 
+
+Con motivo del Día de Andalucía, a las 5 de la tarde se correrá en “El Coso de Pinichi” un encierro con toros de Los Espartales para quien ostenta el mando del toreo a caballo, Diego Ventura; la líder del escalafón, Lea Vicens y el torero más espectacular de los del arte de Marialva, Andy Cartagena. 
+
+Éste es un cartel muy rematado que supone la continuidad de Taurina De Buendía en su apuesta por una plaza a la que tanto ayuntamiento como empresa quieren dar continuidad en los próximos años, para que retorne a los lugares de privilegio que históricamente ha ostentado el coso astigitano.
+
+Para este evento, precios populares, venta anticipada en:
+<a
+  https://www.taurinadebuendia.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  https://www.taurinadebuendia.com
+</a> y los cinco puntos habituales de venta en la localidad a partir de la semana que viene en laPeña Pepe Luis Vargas, Casa Emilio, Bar Domingo, 100 Vinos y Bar el Brillante o en la taquilla de la Plaza de Toros desde el jueves 26 de febrero, de 10.00 a 13.30 horas y de 18.00 a 21.00 horas, y el día del festejo en horario ininterrumpido.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Paco Ureña celebra sus 20 años de alternativa en Murcia.`,
+    image: "/images/pu.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	excerpt: "Paco Ureña será homenajeado el próximo 12 de febrero en el Auditorio Víctor Villegas de Murcia con entrada gratuita.",
+	fullContent: `La Región de Murcia rendirá homenaje al torero Paco Ureña con motivo del vigésimo aniversario de su alternativa. El acto, titulado Paco Ureña, dos décadas de pasión, se celebrará el próximo 12 de febrero a las 20:00 horas en el Auditorio Víctor Villegas de Murcia. La entrada será gratuita hasta completar aforo.
+
+La iniciativa, promovida por la Plataforma Paco Ureña, veinte años de pasión y apoyada por el Gobierno regional, repasará la trayectoria de un diestro considerado una figura de referencia en la tauromaquia y un ejemplo de entrega, valor y superación. La gala contará con la asistencia de matadores de toros, ganaderos, empresarios y otros profesionales relacionados con el mundo del toro, además de sorpresas y actuaciones musicales.
+
+La Región debe volcarse con los toreros de la tierra y así lo hará con Paco Ureña, ya hay programadas salidas desde diferentes asociaciones y clubes taurinos que estarán presentes en el acto, así como autoridades regionales y locales para rendir homenaje a un torero con una carrera nada fácil.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
     title: `Sevilla perfila un abono de altos vuelos: Morante se cae del Domingo Hernández y la Feria toma forma definitiva`,
     image: "/images/ca.jpg",
     category: "Actualidad",
@@ -497,7 +538,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
     showAuthorHeader: true
    },
 	{ 
-    id: 1001,
+    id: 1003,
     title: `La Fiesta del Toro de la Comunidad de Madrid, cinco años y unos datos para reafirmar el momento taurino de la región`,
     image: "/images/com.jpg",
     category: "Actualidad",
@@ -528,7 +569,7 @@ La memoria al completo, con todos los datos desglosados y de manera gráfica los
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1004,
     title: `José Carlos Venegas cierra una magnífica cuadrilla de cara a San Isidro 2026`,
     image: "/images/cuadri.jpg",
     category: "Actualidad",
@@ -550,7 +591,7 @@ Encabeza este sólido y ambicioso proyecto **su apoderada**, Dña. **Lidia Rodr�
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1005,
     title: `Telemadrid consolida su liderazgo taurino con la retransmisión íntegra de la Feria de San Isidro 2026`,
     image: "/images/tele.jpg",
     category: "Actualidad",
@@ -569,7 +610,7 @@ Esta firme apuesta de Telemadrid por la retransmisión íntegra de la Feria de S
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1006,
     title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
     image: "/images/almen.jpg",
     category: "Actualidad",
@@ -582,7 +623,7 @@ La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organi
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1007,
     title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
     image: "/images/rr.jpg",
     category: "Actualidad",
@@ -599,7 +640,7 @@ El cierre llegará en San Miguel con Jandilla, una elección que elimina cualqui
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1008,
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
@@ -836,6 +877,47 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 – D 07/06: **Borja Jiménez,** en solitario (Domingo Hernández y Victoriano del Río)
 
 – D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 48,
+    title: `Un cartel muy rematado de Rejones para el dia de Andalucía en Ecija (Sevilla)`,
+    image: "/images/lora.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `En las caballerizas del Palacio de Benamejí, con presencia de la alcaldesa Silvia Heredia, la concejala de festejos Raquel Miranda y el empresario Jorge Buendía se ha presentado en la mañana de hoy el cartel del 28 de febrero. 
+
+Con motivo del Día de Andalucía, a las 5 de la tarde se correrá en “El Coso de Pinichi” un encierro con toros de Los Espartales para quien ostenta el mando del toreo a caballo, Diego Ventura; la líder del escalafón, Lea Vicens y el torero más espectacular de los del arte de Marialva, Andy Cartagena. 
+
+Éste es un cartel muy rematado que supone la continuidad de Taurina De Buendía en su apuesta por una plaza a la que tanto ayuntamiento como empresa quieren dar continuidad en los próximos años, para que retorne a los lugares de privilegio que históricamente ha ostentado el coso astigitano.
+
+Para este evento, precios populares, venta anticipada en:
+<a
+  https://www.taurinadebuendia.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  https://www.taurinadebuendia.com
+</a> y los cinco puntos habituales de venta en la localidad a partir de la semana que viene en laPeña Pepe Luis Vargas, Casa Emilio, Bar Domingo, 100 Vinos y Bar el Brillante o en la taquilla de la Plaza de Toros desde el jueves 26 de febrero, de 10.00 a 13.30 horas y de 18.00 a 21.00 horas, y el día del festejo en horario ininterrumpido.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 49,
+    title: `Paco Ureña celebra sus 20 años de alternativa en Murcia.`,
+    image: "/images/pu.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	excerpt: "Paco Ureña será homenajeado el próximo 12 de febrero en el Auditorio Víctor Villegas de Murcia con entrada gratuita.",
+	fullContent: `La Región de Murcia rendirá homenaje al torero Paco Ureña con motivo del vigésimo aniversario de su alternativa. El acto, titulado Paco Ureña, dos décadas de pasión, se celebrará el próximo 12 de febrero a las 20:00 horas en el Auditorio Víctor Villegas de Murcia. La entrada será gratuita hasta completar aforo.
+
+La iniciativa, promovida por la Plataforma Paco Ureña, veinte años de pasión y apoyada por el Gobierno regional, repasará la trayectoria de un diestro considerado una figura de referencia en la tauromaquia y un ejemplo de entrega, valor y superación. La gala contará con la asistencia de matadores de toros, ganaderos, empresarios y otros profesionales relacionados con el mundo del toro, además de sorpresas y actuaciones musicales.
+
+La Región debe volcarse con los toreros de la tierra y así lo hará con Paco Ureña, ya hay programadas salidas desde diferentes asociaciones y clubes taurinos que estarán presentes en el acto, así como autoridades regionales y locales para rendir homenaje a un torero con una carrera nada fácil.`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
