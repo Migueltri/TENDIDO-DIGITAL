@@ -736,109 +736,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
     showAuthorHeader: true
    },
 	{ 
-    id: 49,
-    title: `La Fiesta del Toro de la Comunidad de Madrid, cinco años y unos datos para reafirmar el momento taurino de la región`,
-    image: "/images/com.jpg",
-    category: "Actualidad",
-    date: "27 de Enero de 2026",
-	excerpt: "El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el acto de presentación de la Memora de la Fiesta del Toro de la Comunidad de Madrid en la Real Casa de Postas ",
-	fullContent: `**Los certámenes celebrados entre 2021 y 2025 arrojan unos datos muy positivos que demuestran el compromiso de las instituciones con el mundo del toro en la región**
-En la tarde de hoy se ha presentado la **Memoria de la Fiesta del Toro de la Comunidad de Madrid** que comprende los **años 2021 a 2025**. Un acto celebrado en la Real Casa de Postas y presidido por el consejero de Medio Ambiente, Agricultura e Interior, **Carlos Novillo**. En el acto han intervenido, el presidente de la Fundación Toro de Lidia, **Victorino Martín**; el director general de la Fundación Toro de Lidia, **Borja Cardelús**; el triunfador de la Copa Chenel 2021, **Fernando Adrián**; y el ganadero de Los **Eulogios**, **Manuel Sanz de la Morena**.
-
-La **Fiesta del Toro de la Comunidad de Madrid** nació en el año 2021, donde se celebraron las primeras ediciones de la **Copa Chenel** y el **Circuito de Novilladas de la Comunidad de Madrid**. En el año 2023, se uniría a ellas el certamen sin caballos **Kilómetro Cero** y en la última temporada nació el proyecto **Toros de la Comunidad de Madrid** como base de la promoción de las ganaderías de bravo de la región.
-
-Gracias a estos tres certámenes, en la Comunidad de Madrid se han celebrado un total de **114 festejos**, siendo la Copa Chenel el certamen que más ha albergado, con un total de **58 corridas de toros**. Estos circuitos nacieron con el espíritu de dar oportunidad a aquellos novilleros y matadores que, o estaban en el inicio de su carrera, o necesitaban un empujón para volver a despuntar en el escalafón. Un total de **165 profesionales** han toreado en las plazas madrileñas y se ha dado oportunidad de lidiar **79 ganaderías**, la mayoría de ellas de la **Comunidad de Madrid**.
-
-La promoción de la región era otro de los puntos a batir y tras 5 ediciones, se puede decir que **26 municipios madrileños** han albergado al menos un festejo de estos certámenes. No solo albergado, sino que 3 municipios han recuperado los festejos taurinos gracias a la Copa Chenel, concretamente: Móstoles, Valdemoro y Algete.
-
-La **comunicación**, uno de los pilares fundamentales en la sociedad de hoy en día y un aspecto explotar en el mundo del toro, también refleja unos datos muy positivos. Los jóvenes de hoy en día, consumidores de redes sociales, sitúan las cuentas de la Copa Chenel, Circuito de Novilladas de la Comunidad de Madrid y Kilómetro Cero en un momento álgido, algo que se refleja en más de **21 millones de visualizaciones en el año 2025**.
-
-La Copa Chenel y el Circuito de Madrid no se quedan en la plaza, sino que, desde la primera edición, llegan a las casas de todos los aficionados gracias a las **retransmisiones televisivas**. Un total de 76 festejos han sido televisados, con la apuesta firme de **Telemadrid**, que ha estado presente en 70 de ellos.
-
-**Toros de la Comunidad de Madrid** nació a comienzos de la temporada 2025 con el firme propósito de potenciación comunicativa de las ganaderías de la Comunidad de Madrid, tanto en las labores del campo como sus resultados en las plazas donde han lidiado. Se han alcanzado unos números muy positivos con 33.570 seguidores entre todas las redes sociales y más de **14 millones de impresiones**.
-
-El consejero de Medio Ambiente, Agricultura e Interior, **Carlos Novillo**, ha asegurado que "*han sido 5 años en los que el crecimiento del toro en la Comunidad de Madrid ha sido muy positivo, el trabajo con la Fundación Toro de Lidia ha estado marcado en llevar el toro a todos los rincones*".
-
-Una parte fundamental del proyecto son las localidades, por eso "*quiero agradecer a los alcaldes el trabajo y la implicación por haber albergado los festejos de la Copa Chenel, el Circuito de Madrid y Kilómetro Cero*". Por último, ha querido recalcar el papel de Telemadrid en el mundo del toro "*haciendo que llegue a todos los hogares madrileños con un trabajo encomiable y una disposición absoluta*".
-
-La memoria al completo, con todos los datos desglosados y de manera gráfica los puedes encontrar en el **apartado de Informes** de la página web de la **Fundación Toro de Lidia**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 50,
-    title: `José Carlos Venegas cierra una magnífica cuadrilla de cara a San Isidro 2026`,
-    image: "/images/cuadri.jpg",
-    category: "Actualidad",
-    date: "27 de Enero de 2026",
-	fullContent: `**José Carlos Venegas Fernández** nació en **Beas del Segura** (Jaén), tierra de hondas raíces taurinas que ha marcado desde sus inicios el carácter y la personalidad de un torero forjado en el rigor, la verdad y el respeto absoluto a los encastes. Tras un tiempo de ausencia de **Madrid, Venegas** afronta ahora uno de los compromisos más relevantes de su carrera.
-
-El próximo **miércoles 20 de mayo**, la **Monumental de Las Ventas** volverá a abrirle sus puertas en el marco del **ciclo isidril**, en una fecha situada en pleno corazón de la **Feria de San Isidro**, donde cada comparecencia adquiere especial trascendencia.
-
-**José Carlos Venegas** está anunciado en un **cartel de máxima responsabilidad**, lidiando **toros de la legendaria ganadería de Saltillo**, uno de los hierros más emblemáticos y respetados por la afición, símbolo de casta, dificultad y autenticidad. Compartirá paseíllo con Juan Leal y Juan de Castilla.
-
-Conscientes de la importancia del reto, el torero jienense ha cerrado una **cuadrilla de auténtico nivel** para su compromiso madrileño. En el tercio de varas contará con **dos picadores de máximo estatus, Adrián Majada** y **Luc Tosello**, este último elegido como un guiño sincero y emotivo a la afición francesa, además de reconocido especialista en el trato de los encastes minoritarios, donde el conocimiento y la sensibilidad resultan determinantes.
-
-A pie, acompañarán al diestro los reputados banderilleros **Iván García, Raúl Ruiz** -*galardonado con los premios a la Mejor Brega en San Isidro 2024 y 2025*- y **Fernando Sánchez**, todos ellos figuras de **‘Plata de Ley’** profesionales contrastados, de solvencia sobrada y pleno conocimiento de la lidia en plazas de máxima categoría.
-
-Encabeza este sólido y ambicioso proyecto **su apoderada**, Dña. **Lidia Rodríguez Bermejo**, pieza fundamental en la planificación de una temporada que tiene en **Madrid** su eje central. Bajo su dirección, **José Carlos Venegas** afronta este regreso con la serenidad del torero hecho y la determinación de quien sabe que **Las Ventas** es, una vez más, el escenario donde se mide la verdad del toreo.`,
-    author: "Rubén Sánchez",
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 51,
-    title: `Telemadrid consolida su liderazgo taurino con la retransmisión íntegra de la Feria de San Isidro 2026`,
-    image: "/images/tele.jpg",
-    category: "Actualidad",
-    date: "27 de Enero de 2026",
-	fullContent: `**Radio Televisión Madrid** volverá a desempeñar un papel protagonista en la actualidad taurina con **la retransmisión íntegra de la Feria de San Isidro 2026**, reforzando así su compromiso con la tauromaquia y con los aficionados. Por **segundo año consecutivo**, la cadena ofrecerá en abierto la totalidad de los festejos del ciclo isidril, un hito que consolida **un nuevo estándar en la cobertura televisiva del principal serial taurino del mundo.**
-
-Del 8 de mayo al 14 de junio, Telemadrid emitirá los 28 festejos de la Feria de San Isidro, además de la tradicional corrida Goyesca del 2 de mayo. Cada tarde, a partir de las 19:00 horas, el equipo de retransmisiones taurinas de la cadena acompañará al espectador con una **cobertura completa y especializada** de cada cita en la plaza de Las Ventas.
-
-La programación se verá reforzada con entrevistas a los protagonistas del serial dentro de los espacios informativos de la cadena. Asimismo, la cobertura se extenderá al entorno digital, donde Telemadrid habilitará un **canal específico dedicado a la Feria.** Como valor añadido, todas las corridas estarán disponibles bajo demanda durante siete días, facilitando el acceso a los contenidos en cualquier momento y desde cualquier dispositivo.
-
-En el ámbito radiofónico, Onda Madrid emitirá diariamente **Las Tertulias del Toril**, espacio dirigido por **Julio Martínez Romero** que, de **lunes a viernes (13:00-14:00 h)**, analizará la actualidad de Las Ventas con entrevistas a toreros, ganaderos y especialistas del sector. Por su parte, Javier Fernández-Mardomingo ofrecerá en **Buenos días, Madrid (07:00-10:00 h)** crónicas detalladas de cada jornada y conversaciones con sus protagonistas.
-
-Esta firme apuesta de Telemadrid por la retransmisión íntegra de la Feria de San Isidro llega respaldada por los **excelentes resultados de audiencia obtenidos la pasada temporada.** Las emisiones alcanzaron una media de **127.000 espectadores y un 11,9% de cuota de pantalla**, situando a la cadena como **la segunda más vista en la Comunidad de Madrid durante la franja de 19:00 a 21:30 horas.**`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 52,
-    title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
-    image: "/images/almen.jpg",
-    category: "Actualidad",
-    date: "27 de Enero de 2026",
-	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
-
-La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organizados por la empresa Tauroemoción, con carteles que reúnen a figuras del toreo a pie y del rejoneo, además de ganaderías de primer orden. Una programación cuidada que vuelve a estrechar los lazos entre la tauromaquia y los sectores del vino y la aceituna, pilares económicos y culturales del territorio.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 53,
-    title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
-    image: "/images/rr.jpg",
-    category: "Actualidad",
-    date: "27 de Enero de 2026",
-	fullContent: `Andrés Roca Rey ya ha marcado territorio en Sevilla para 2026 y lo hace con una planificación que va mucho más allá del azar. El torero peruano ha elegido cuatro ganaderías clave para cuatro fechas de enorme peso en el calendario maestrante, construyendo un relato medido al milímetro. No es solo una cuestión de tardes, sino de significado: cada hierro elegido encierra una intención y una lectura clara de cómo quiere ser juzgado por Sevilla.
-
-El punto de partida será el Domingo de Resurrección con Garcigrande, una elección que mezcla solemnidad y riesgo. Abrir la temporada sevillana con este hierro supone aceptar una prueba de fondo: toros que permiten, pero que exigen verdad y mando. Roca Rey asume así un arranque sin atajos, consciente de que Sevilla mide ese día con especial severidad y que cualquier triunfo nace más del poder que del alivio.
-
-La apuesta continúa en el tramo más caliente del ciclo. En la preferia comparecerá con Victoriano del Río, una ganadería asociada a tardes de emoción y opciones claras de triunfo cuando todo encaja. Ya en plena Feria, el jueves, llegará uno de los momentos más esperados: Domingo Hernández, con Morante de la Puebla en el cartel. Dos conceptos frente a frente y un hierro que exige gobierno para que la faena no se diluya, en una tarde pensada para la comparación directa y el pulso artístico.
-
-El cierre llegará en San Miguel con Jandilla, una elección que elimina cualquier excusa. La corrida del ajuste final, la que deja sentencias y marca recuerdos duraderos. Con este recorrido, Roca Rey dibuja una temporada sevillana de alto voltaje: seriedad para empezar, ambición en el centro y firmeza para terminar. Sevilla no verá cantidad, verá intención. Y eso, en la Maestranza, es hablar muy alto.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 54,
+    id: 2,
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
@@ -921,6 +819,108 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 – D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 50,
+    title: `La Fiesta del Toro de la Comunidad de Madrid, cinco años y unos datos para reafirmar el momento taurino de la región`,
+    image: "/images/com.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	excerpt: "El consejero de Medio Ambiente, Agricultura e Interior, Carlos Novillo, ha presidido el acto de presentación de la Memora de la Fiesta del Toro de la Comunidad de Madrid en la Real Casa de Postas ",
+	fullContent: `**Los certámenes celebrados entre 2021 y 2025 arrojan unos datos muy positivos que demuestran el compromiso de las instituciones con el mundo del toro en la región**
+En la tarde de hoy se ha presentado la **Memoria de la Fiesta del Toro de la Comunidad de Madrid** que comprende los **años 2021 a 2025**. Un acto celebrado en la Real Casa de Postas y presidido por el consejero de Medio Ambiente, Agricultura e Interior, **Carlos Novillo**. En el acto han intervenido, el presidente de la Fundación Toro de Lidia, **Victorino Martín**; el director general de la Fundación Toro de Lidia, **Borja Cardelús**; el triunfador de la Copa Chenel 2021, **Fernando Adrián**; y el ganadero de Los **Eulogios**, **Manuel Sanz de la Morena**.
+
+La **Fiesta del Toro de la Comunidad de Madrid** nació en el año 2021, donde se celebraron las primeras ediciones de la **Copa Chenel** y el **Circuito de Novilladas de la Comunidad de Madrid**. En el año 2023, se uniría a ellas el certamen sin caballos **Kilómetro Cero** y en la última temporada nació el proyecto **Toros de la Comunidad de Madrid** como base de la promoción de las ganaderías de bravo de la región.
+
+Gracias a estos tres certámenes, en la Comunidad de Madrid se han celebrado un total de **114 festejos**, siendo la Copa Chenel el certamen que más ha albergado, con un total de **58 corridas de toros**. Estos circuitos nacieron con el espíritu de dar oportunidad a aquellos novilleros y matadores que, o estaban en el inicio de su carrera, o necesitaban un empujón para volver a despuntar en el escalafón. Un total de **165 profesionales** han toreado en las plazas madrileñas y se ha dado oportunidad de lidiar **79 ganaderías**, la mayoría de ellas de la **Comunidad de Madrid**.
+
+La promoción de la región era otro de los puntos a batir y tras 5 ediciones, se puede decir que **26 municipios madrileños** han albergado al menos un festejo de estos certámenes. No solo albergado, sino que 3 municipios han recuperado los festejos taurinos gracias a la Copa Chenel, concretamente: Móstoles, Valdemoro y Algete.
+
+La **comunicación**, uno de los pilares fundamentales en la sociedad de hoy en día y un aspecto explotar en el mundo del toro, también refleja unos datos muy positivos. Los jóvenes de hoy en día, consumidores de redes sociales, sitúan las cuentas de la Copa Chenel, Circuito de Novilladas de la Comunidad de Madrid y Kilómetro Cero en un momento álgido, algo que se refleja en más de **21 millones de visualizaciones en el año 2025**.
+
+La Copa Chenel y el Circuito de Madrid no se quedan en la plaza, sino que, desde la primera edición, llegan a las casas de todos los aficionados gracias a las **retransmisiones televisivas**. Un total de 76 festejos han sido televisados, con la apuesta firme de **Telemadrid**, que ha estado presente en 70 de ellos.
+
+**Toros de la Comunidad de Madrid** nació a comienzos de la temporada 2025 con el firme propósito de potenciación comunicativa de las ganaderías de la Comunidad de Madrid, tanto en las labores del campo como sus resultados en las plazas donde han lidiado. Se han alcanzado unos números muy positivos con 33.570 seguidores entre todas las redes sociales y más de **14 millones de impresiones**.
+
+El consejero de Medio Ambiente, Agricultura e Interior, **Carlos Novillo**, ha asegurado que "*han sido 5 años en los que el crecimiento del toro en la Comunidad de Madrid ha sido muy positivo, el trabajo con la Fundación Toro de Lidia ha estado marcado en llevar el toro a todos los rincones*".
+
+Una parte fundamental del proyecto son las localidades, por eso "*quiero agradecer a los alcaldes el trabajo y la implicación por haber albergado los festejos de la Copa Chenel, el Circuito de Madrid y Kilómetro Cero*". Por último, ha querido recalcar el papel de Telemadrid en el mundo del toro "*haciendo que llegue a todos los hogares madrileños con un trabajo encomiable y una disposición absoluta*".
+
+La memoria al completo, con todos los datos desglosados y de manera gráfica los puedes encontrar en el **apartado de Informes** de la página web de la **Fundación Toro de Lidia**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 51,
+    title: `José Carlos Venegas cierra una magnífica cuadrilla de cara a San Isidro 2026`,
+    image: "/images/cuadri.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `**José Carlos Venegas Fernández** nació en **Beas del Segura** (Jaén), tierra de hondas raíces taurinas que ha marcado desde sus inicios el carácter y la personalidad de un torero forjado en el rigor, la verdad y el respeto absoluto a los encastes. Tras un tiempo de ausencia de **Madrid, Venegas** afronta ahora uno de los compromisos más relevantes de su carrera.
+
+El próximo **miércoles 20 de mayo**, la **Monumental de Las Ventas** volverá a abrirle sus puertas en el marco del **ciclo isidril**, en una fecha situada en pleno corazón de la **Feria de San Isidro**, donde cada comparecencia adquiere especial trascendencia.
+
+**José Carlos Venegas** está anunciado en un **cartel de máxima responsabilidad**, lidiando **toros de la legendaria ganadería de Saltillo**, uno de los hierros más emblemáticos y respetados por la afición, símbolo de casta, dificultad y autenticidad. Compartirá paseíllo con Juan Leal y Juan de Castilla.
+
+Conscientes de la importancia del reto, el torero jienense ha cerrado una **cuadrilla de auténtico nivel** para su compromiso madrileño. En el tercio de varas contará con **dos picadores de máximo estatus, Adrián Majada** y **Luc Tosello**, este último elegido como un guiño sincero y emotivo a la afición francesa, además de reconocido especialista en el trato de los encastes minoritarios, donde el conocimiento y la sensibilidad resultan determinantes.
+
+A pie, acompañarán al diestro los reputados banderilleros **Iván García, Raúl Ruiz** -*galardonado con los premios a la Mejor Brega en San Isidro 2024 y 2025*- y **Fernando Sánchez**, todos ellos figuras de **‘Plata de Ley’** profesionales contrastados, de solvencia sobrada y pleno conocimiento de la lidia en plazas de máxima categoría.
+
+Encabeza este sólido y ambicioso proyecto **su apoderada**, Dña. **Lidia Rodríguez Bermejo**, pieza fundamental en la planificación de una temporada que tiene en **Madrid** su eje central. Bajo su dirección, **José Carlos Venegas** afronta este regreso con la serenidad del torero hecho y la determinación de quien sabe que **Las Ventas** es, una vez más, el escenario donde se mide la verdad del toreo.`,
+    author: "Rubén Sánchez",
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 52,
+    title: `Telemadrid consolida su liderazgo taurino con la retransmisión íntegra de la Feria de San Isidro 2026`,
+    image: "/images/tele.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `**Radio Televisión Madrid** volverá a desempeñar un papel protagonista en la actualidad taurina con **la retransmisión íntegra de la Feria de San Isidro 2026**, reforzando así su compromiso con la tauromaquia y con los aficionados. Por **segundo año consecutivo**, la cadena ofrecerá en abierto la totalidad de los festejos del ciclo isidril, un hito que consolida **un nuevo estándar en la cobertura televisiva del principal serial taurino del mundo.**
+
+Del 8 de mayo al 14 de junio, Telemadrid emitirá los 28 festejos de la Feria de San Isidro, además de la tradicional corrida Goyesca del 2 de mayo. Cada tarde, a partir de las 19:00 horas, el equipo de retransmisiones taurinas de la cadena acompañará al espectador con una **cobertura completa y especializada** de cada cita en la plaza de Las Ventas.
+
+La programación se verá reforzada con entrevistas a los protagonistas del serial dentro de los espacios informativos de la cadena. Asimismo, la cobertura se extenderá al entorno digital, donde Telemadrid habilitará un **canal específico dedicado a la Feria.** Como valor añadido, todas las corridas estarán disponibles bajo demanda durante siete días, facilitando el acceso a los contenidos en cualquier momento y desde cualquier dispositivo.
+
+En el ámbito radiofónico, Onda Madrid emitirá diariamente **Las Tertulias del Toril**, espacio dirigido por **Julio Martínez Romero** que, de **lunes a viernes (13:00-14:00 h)**, analizará la actualidad de Las Ventas con entrevistas a toreros, ganaderos y especialistas del sector. Por su parte, Javier Fernández-Mardomingo ofrecerá en **Buenos días, Madrid (07:00-10:00 h)** crónicas detalladas de cada jornada y conversaciones con sus protagonistas.
+
+Esta firme apuesta de Telemadrid por la retransmisión íntegra de la Feria de San Isidro llega respaldada por los **excelentes resultados de audiencia obtenidos la pasada temporada.** Las emisiones alcanzaron una media de **127.000 espectadores y un 11,9% de cuota de pantalla**, situando a la cadena como **la segunda más vista en la Comunidad de Madrid durante la franja de 19:00 a 21:30 horas.**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 53,
+    title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
+    image: "/images/almen.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
+
+La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organizados por la empresa Tauroemoción, con carteles que reúnen a figuras del toreo a pie y del rejoneo, además de ganaderías de primer orden. Una programación cuidada que vuelve a estrechar los lazos entre la tauromaquia y los sectores del vino y la aceituna, pilares económicos y culturales del territorio.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 54,
+    title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
+    image: "/images/rr.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `Andrés Roca Rey ya ha marcado territorio en Sevilla para 2026 y lo hace con una planificación que va mucho más allá del azar. El torero peruano ha elegido cuatro ganaderías clave para cuatro fechas de enorme peso en el calendario maestrante, construyendo un relato medido al milímetro. No es solo una cuestión de tardes, sino de significado: cada hierro elegido encierra una intención y una lectura clara de cómo quiere ser juzgado por Sevilla.
+
+El punto de partida será el Domingo de Resurrección con Garcigrande, una elección que mezcla solemnidad y riesgo. Abrir la temporada sevillana con este hierro supone aceptar una prueba de fondo: toros que permiten, pero que exigen verdad y mando. Roca Rey asume así un arranque sin atajos, consciente de que Sevilla mide ese día con especial severidad y que cualquier triunfo nace más del poder que del alivio.
+
+La apuesta continúa en el tramo más caliente del ciclo. En la preferia comparecerá con Victoriano del Río, una ganadería asociada a tardes de emoción y opciones claras de triunfo cuando todo encaja. Ya en plena Feria, el jueves, llegará uno de los momentos más esperados: Domingo Hernández, con Morante de la Puebla en el cartel. Dos conceptos frente a frente y un hierro que exige gobierno para que la faena no se diluya, en una tarde pensada para la comparación directa y el pulso artístico.
+
+El cierre llegará en San Miguel con Jandilla, una elección que elimina cualquier excusa. La corrida del ajuste final, la que deja sentencias y marca recuerdos duraderos. Con este recorrido, Roca Rey dibuja una temporada sevillana de alto voltaje: seriedad para empezar, ambición en el centro y firmeza para terminar. Sevilla no verá cantidad, verá intención. Y eso, en la Maestranza, es hablar muy alto.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
