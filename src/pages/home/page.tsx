@@ -712,24 +712,43 @@ Domingo de Resurrección. Toros de Garcigrande para Morante de la Puebla, Roca R
 **Feria de Abril:**
 
 **Viernes, 10 de abril:**
+
 Ganadería por definir, seguramente en novillada.
+
 **Sábado, 11 de abril:**
+
 Ganadería por definir, con la opción de Alcurrucén.
+
 **Domingo, 12 de abril:**
+
 Ganadería por definir, con la opción de Fuente Ymbro.
+
 **Miércoles, 15 de abril:**
+
 Ganadería por definir, con la opción de El Parralejo para David de Miranda y dos más.
+
 **Jueves, 16 de abril:**
+
 Toros de Álvaro Núñez para Morante de la Puebla, Juan Ortega y un tercero.
+
 **Viernes, 17 de abril:**
+
 Toros de Domingo Hernández para Alejandro Talavante, Roca Rey y Pablo Aguado.
+
 **Sábado, 18 de abril:**
+
 Toros de Victorino Martín para Manuel Escribano y Borja Jiménez, con opción de cerrarse en mano a mano.
+
 **Domingo, 19 de abril:**
+
 Corrida de rejones.
+
 **Lunes, 20 de abril:**
+
 Toros de García Jimenez para Morante de la Puebla, Borja Jiménez y Tomás Rufo.
+
 **Martes, 21 de abril:**
+
 Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Perera, Castella y Marco Pérez.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
