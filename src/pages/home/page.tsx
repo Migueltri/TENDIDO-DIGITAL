@@ -75,7 +75,7 @@ const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | nul
 const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
 const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
 const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
-const [visibleNewsCount, setVisibleNewsCount] = useState(6);
+const [visibleNewsCount, setVisibleNewsCount] = useState(15);
 const [isLoadingMore, setIsLoadingMore] = useState(false);
 const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
@@ -8684,7 +8684,7 @@ const loadMoreNews = () => {
 setIsLoadingMore(true);
 
 setTimeout(() => {
-  setVisibleNewsCount(prev => Math.min(prev + 6, getFilteredNews().length));
+  setVisibleNewsCount(prev => Math.min(prev + 15, getFilteredNews().length));
   setIsLoadingMore(false);
 }, 800);
 };
