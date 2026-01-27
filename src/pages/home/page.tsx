@@ -510,7 +510,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
 	{ 
     id: 1004,
     title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
-    image: "/images/.jpg",
+    image: "/images/almen.jpg",
     category: "Actualidad",
     date: "27 de Enero de 2026",
 	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
@@ -677,7 +677,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
 	{ 
     id: 52,
     title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
-    image: "/images/.jpg",
+    image: "/images/almen.jpg",
     category: "Actualidad",
     date: "27 de Enero de 2026",
 	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
