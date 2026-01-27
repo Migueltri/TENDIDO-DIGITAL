@@ -448,181 +448,193 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-	{ 
-    id: 1000,
-    title: `Cuatro nuevos novilleros se suman al Circuito de Novilladas de Andalucía 2026`,
-    image: "/images/clasi.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	fullContent: `La séptima edición del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía completa el elenco de novilleros que acceden al Circuito a través del Bolsín
-
-El Circuito de Novilladas de Andalucía 2026 ya conoce los nombres de los cuatro novilleros que completan el elenco de participantes que acceden a su séptima edición a través del Bolsín clasificatorio, tras el segundo tentadero, celebrado el pasado martes en la ganadería sevillana de Aguadulce.
-
-Los novilleros seleccionados han sido Isaac Galvín, natural de Chiclana de la Frontera; Francisco Fernández, de Los Barrios; Iván Rejas, de Granada; y Dennis Martín, de Almería, quienes han destacado por su proyección, regularidad y méritos contraídos durante la pasada temporada y sus buenas actuaciones en el Bolsín.
-
-Isaac Galvín fue uno de los nombres propios del curso 2025 en Andalucía, firmando importantes triunfos tanto en plazas españolas como francesas, además de alcanzar la final del prestigioso Ciclo de Canal Sur. Francisco Fernández, por su parte, dejó una actuación muy destacada en el tentadero clasificatorio y afronta ahora una temporada clave, en la que debutará con picadores en su localidad natal antes del inicio del certamen.
-
-Iván Rejas llega al Circuito tras ser finalista en dos ocasiones del Ciclo de Canal Sur y proclamarse triunfador de numerosos bolsines y certámenes, entre ellos el organizado por el Capítulo de Granada de la Fundación Toro de Lidia. Completa esta nómina Dennis Martín, novillero almeriense que protagonizó un gran 2025, cortando 14 orejas y un rabo en las siete novilladas que toreó a lo largo de la temporada.
- 	
-Los cuatro novilleros debutarán en el Circuito de Novilladas de Andalucía en 2026, sumándose así a una lista en la que ya estaban Pedro Luis, El Primi y Víctor Barroso, quienes se clasificaron a través del primer tentadero del Bolsín.
- 	
-El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Presentado el 2º Festival Taurino del Real Club Pineda`,
-    image: "/images/festi.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	fullContent: `El II Festival Taurino "Toros en Pineda" ha sido presentado esta mañana con un cartel de lujo en el Pabellón del Hipódromo del Real Club Pineda y se celebrará el próximo sábado, 28 de febrero, a las 12:00 horas, en una plaza portátil que se instalará en el centro del citado hipódromo otorgándole singularidad al evento.
-
-Tras el éxito alcanzado en la pasada edición de 2024, Pineda vuelve a apostar por la organización de un festival taurino, reafirmando así su firme compromiso con la tauromaquia y con una afición profundamente arraigada en la historia y la idiosincrasia del club.
-
-En el festejo harán el paseíllo los diestros **Juan Ortega, Borja Jiménez, Pablo Aguado, Manuel Vázquez y Javier Zulueta, junto al novillero Rodrigo Molina**, quienes lidiarán reses de la ganadería de Gregorio Garzón Valdenebro.
-
-Durante el acto de presentación, el presidente del club, Rodrigo Molina, ha querido agradecer expresamente, la implicación y generosidad de toreros y ganaderos por su participación en este festival. Por su parte, el empresario Luis Garzón, organizador del evento junto a Eduardo Dávila Miura, subrayó la importancia que tiene para el toreo y para la afición que un club social con tanto arraigo en Sevilla y con una masa social tan amplia, impulse un festejo taurino de estas características.
-
-El cartel de esta segunda edición tiene además un marcado carácter emotivo. Su diseño está protagonizado por una fotografía de **Rafael Peralta Pineda**, maestro del toreo a caballo, socio del club y figura muy querida, que nos dejó el pasado año tras una vida estrechamente ligada al Real Club Pineda y a la tauromaquia. La imagen, obra del fotógrafo David Tack, recoge a Rafael Peralta montando a Rumboso XI, caballo cartujano de Pura Raza Española y supone un sentido homenaje a su figura y a su legado.
-
-El II Festival Taurino "Toros en Pineda" se presenta así como una cita señalada en el calendario, uniendo afición, tradición y recuerdo, en un entorno único.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Manuel Caballero estrena apoderado`,
-    image: "/images/estrena.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	fullContent: `El matador de toros albaceteño Manuel Caballero, hijo del matador del mismo nombre, ha llegado este fin de semana a un acuerdo de apoderamiento con el clásico apretón de mano con los taurinos Manuel Martínez Erice y Gerardo Roca se harán cargo de su carrera profesional.
-
-El principal objetivo de esta relación profesional es impulsar la carrera de Caballero esta temporada.
-
-Manuel Caballero tomó la alternativa el pasado 13 de septiembre en Albacete, en una tarde en la que cortó dos orejas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Yunquera de Henares analiza la tauromaquia de invierno de cara a la temporada 2026`,
-    image: "/images/yunq.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	footerImage1: "/images/yunq1.jpg",
-    footerImage2: "/images/yunq2.jpg",
-    footerImage3: "/images/yunq3.jpg",
-	fullContent: `El Centro Social Polivalente de Yunquera de Henares acogió en la tarde del domingo 25 de enero la charla-coloquio titulada “**La Tauromaquia de Invierno 2025/2026**”, un encuentro que reunió a aficionados y profesionales del mundo del toro para reflexionar sobre una de las etapas menos visibles pero fundamentales de la temporada taurina.
-
-El coloquio contó con la participación de los toreros **José Carlos Venegas y Gómez del Pilar**, con la moderación de **Diego Cervera**, quienes ofrecieron al público una visión cercana y detallada de cómo se vive el invierno en la carrera de un torero. Durante la charla se abordaron aspectos clave como los meses de preparación, los entrenamientos, el análisis personal y la planificación de una nueva campaña.
-
-Los ponentes compartieron además vivencias de su trayectoria profesional y analizaron las fechas ya cerradas de cara a la próxima temporada, aportando una mirada profunda a un periodo decisivo que, aunque alejado de los focos, resulta esencial para el desarrollo y la evolución de los profesionales taurinos.
-
-El acto, que registró una notable asistencia, permitió a los aficionados conocer de primera mano los entresijos del toreo más allá del ruedo, fomentando el diálogo y el intercambio de experiencias en un ambiente cercano y participativo.
-
-Desde la organización se quiso agradecer especialmente a la **Peña Taurina El Quite de Yunquera** la puesta en marcha de este encuentro, así como a los ponentes por su implicación y cercanía, que contribuyeron a llenar el Centro Social Polivalente en una tarde marcada por el interés cultural y taurino.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Las entradas sueltas para la Feria de Fallas 2026 salen a la venta este martes 27 de enero`,
-    image: "/images/sueltas.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	fullContent: `La Feria de Fallas 2026 da el pistoletazo de salida en taquilla. Las entradas sueltas para el esperado ciclo fallero estarán disponibles desde la medianoche de este **martes 27 de enero (00:00h)** a través de la web oficial de la **Plaza de Toros de Valencia**, <a
-  http://plazadevalencia.es
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  http://plazadevalencia.es
-</a>
-Asimismo, los aficionados que prefieran la compra presencial podrán adquirir sus localidades a partir de las 10:00h del martes en las oficinas físicas de **Nautalia Viajes** repartidas por la ciudad de Valencia, manteniendo así el doble canal de venta habitual.
-
-El serial fallero se celebrará del 7 al 19 de marzo y presenta una programación amplia y variada, compuesta por seis corridas de toros, una corrida de rejones matinal, tres novilladas —dos con picadores y una sin caballos— y dos festejos populares, conformando uno de los ciclos más completos del inicio de temporada.
-
-**Carteles oficiales de la Feria de Fallas 2026**
-
-**Sábado 7 de marzo (17:00h)**
-Novillada sin picadores. Novillos de Aida Jovani para Alejandro González, Ian Bermejo, Israel Guirao, Clovis, Hugo Masiá y Daniel García.
-
-**Domingo 8 de marzo (17:00h)**
-Novillada con picadores. Novillos de Talavante para Emiliano Osornio, Mario Vilau y Marco Polope.
-
-**Viernes 13 de marzo (17:00h)**
-Corrida de toros. Toros de La Quinta para Fortes, Román y David de Miranda.
-
-**Sábado 14 de marzo (17:00h)**
-Corrida de toros. Toros de Victoriano del Río / Toros de Cortés para Alejandro Talavante, Roca Rey y Samuel Navalón.
-
-**Domingo 15 de marzo (12:00h)**
-Corrida de rejones. Toros de María Guiomar Cortés de Moura para Andy Cartagena, Diego Ventura y Lea Vicens.
-
-**Domingo 15 de marzo (17:00h)**
-Corrida de toros. Toros de Jandilla para Sebastián Castella, José María Manzanares y Pablo Aguado.
-
-**Lunes 16 de marzo (17:00h)**
-Novillada con picadores. Novillos de Fuente Ymbro para Juan Alberto Torrijos, Julio Méndez y Julio Norte.
-
-**Martes 17 de marzo (17:00h)**
-Corrida de toros. Toros de Santiago Domecq para Miguel Ángel Perera, Víctor Hernández y Marco Pérez.
-
-**Miércoles 18 de marzo (17:00h)**
-Corrida de toros, mano a mano. Toros de Domingo Hernández para Borja Jiménez y Tomás Rufo.
-Sobresaliente: Álvaro de la Calle.
-
-**Jueves 19 de marzo (17:00h)**
-Corrida de toros. Toros de Núñez del Cuvillo para Alejandro Talavante, Emilio de Justo y Juan Ortega.
-
-**Festejos populares**
-
-**Sábado 14 de marzo (11:00h)**
-XXXIX Concurso Nacional de Recortadores.
-
-**Sábado 14 de marzo (22:00h)**
-La Nit del Foc y Vacas Falleras.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Armando Rojo irrumpe con fuerza en La Puebla del Río y se gana un sitio en la Maestranza`,
-    image: "/images/rojo.jpg",
-    category: "Actualidad",
-    date: "26 de Enero de 2026",
-	fullContent: `El novillero sin picadores Armando Rojo, alumno de la Escuela Taurina de Sevilla y natural de La Puebla del Río, ha sido declarado triunfador del ciclo de novilladas sin picadores celebrado en su localidad natal bajo la organización del maestro Morante de la Puebla. Un reconocimiento de gran calado que premia el impacto causado por el joven espada a lo largo del serial y que lo proyecta directamente hacia uno de los escenarios más soñados del toreo.
-
-El galardón lleva como premio su actuación en la Real Maestranza de Caballería de Sevilla, una oportunidad de oro para este novillero de tan solo 16 años, que ya venía despertando interés entre los aficionados y profesionales. En el primer festejo del ciclo dejó un quite impropio de su edad y firmó una faena rotunda, templada y con personalidad, manejando ambas manos y mostrando un concepto distinto y con aroma a toreo grande. El resultado, dos orejas y rabo, fue el aval definitivo para que el jurado lo señalara como claro triunfador de las novilladas de La Puebla del Río 2026. Enhorabuena al torero, a sus maestros y a una afición que ve nacer a un nombre a seguir muy de cerca.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
    { 
-    id: 1006,
-    title: `Guadalajara se rinde y pide más: Juan Ortega deja con ganas, Flores se repone y Gutiérrez confirma su momento`,
-    image: "/images/rinde.jpg",
+    id: 1005,
+    title: ``,
+    image: "/images/.jpg",
     category: "Actualidad",
     date: "26 de Enero de 2026",
-	fullContent: `La tarde en Guadalajara estuvo marcada por la fuerte conexión del público con Juan Ortega, que pese a no cortar trofeo fue uno de los nombres más comentados del festejo. Tras los triunfos de Sergio Flores y Héctor Gutiérrez, la afición llegó a pedirle con insistencia que regalara un toro, señal inequívoca de que querían seguir viéndolo torear. Sin embargo, el sevillano se mantuvo firme en su concepto y en su ética: la mala fortuna —un toro despitorrado y los fallos con la espada— le cerró la Puerta Grande, pero dejó destellos de una versión distinta, variada y siempre estética, que caló hondo en los tendidos.
-
-Ortega mostró desde el saludo una tauromaquia diferente a la que suele verse en él en tierras tapatías: faroles de rodillas, verónicas flexionadas, chicuelinas, trincherazos y remates de gran plasticidad, todo con sello personal. Cuando quiso imponer su toreo largo y templado, el toro ya había dicho basta, y aunque la oreja parecía segura, la espada volvió a negarle el premio. La ovación final y los gritos de “¡toro, toro!” confirmaron que, aun sin trofeos, su paso por Guadalajara dejó huella y expectativa para futuras tardes.
-
-El balance triunfal lo firmaron Sergio Flores y Héctor Gutiérrez. El tlaxcalteca se sobrepuso a un inicio cuesta arriba y a los pitos del público para terminar cortando una oreja de mucho mérito al toro más destacado del encierro, tras una faena de valor y entrega que incluyó un fuerte revolcón. Por su parte, el hidrocálido Héctor Gutiérrez confirmó su buen momento con dos actuaciones de inteligencia y buen gusto, cortando una oreja al sexto tras una labor templada y bien rematada. Guadalajara vivió así una tarde de emociones, contrastes y nombres que siguen dando de qué hablar en la baraja mexicana.`,
+	fullContent: ``,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
+    image: "/images/fer.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	imageCaption: "Feria de San Isidro 2026",
+	excerpt: "Plaza 1 ultima los carteles que se desarrollarán del 8 de mayo al 7 de junio.",
+	fullContent: `La Feria de San Isidro 2026 volverá a destacar por una combinación entre figuras consolidadas, toreros jóvenes y nombres que quieren buscarse esos huecos cotizados en las ferias. Apunta un serial atractivo para el aficionado y el público general, ya que combina carteles variados y sin el llamado Sota, Caballo y Rey al que estamos acostumbrados. 
+
+Entre las citas más señaladas figura la Corrida de la Beneficencia, prevista para el 14 de junio, con Alejandro Talavante, Roca Rey y Víctor Hernández frente a toros de Victoriano del Río. Tanto el extremeño como el madrileño sumarían tres paseíllos en el abono, una cifra que también alcanzarán otros diestros destacados del ciclo isidril.
+
+También se conoce ya el cartel de la tradicional Corrida de la Prensa, que volverá a apostar por un elenco de máximo nivel. En la tarde del 28 de mayo harán el paseíllo Andrés Roca Rey y Diego Urdiales, junto a Bruno Aloi, que confirmará alternativa en Las Ventas.
+
+Víctor Hernández, una de las grandes novedades de la feria y un torero que esperamos ver más en otras plazas, actuará en las corridas de Alcurrucén y Jandilla, esta última junto a Borja Jiménez. Ambos podrían alcanzar las tres tardes, al igual que Pablo Aguado y Fernando Adrián.
+
+Dos actuaciones tendrían Juan Ortega, Sebastián Castella, Daniel Luque, Tomás Rufo, Miguel Ángel Perera, Diego Urdiales, David de Miranda, Fortes, Morenito de Aranda, Paco Ureña, Emilio de Justo y Antonio Ferrera. 
+
+José María Manzanares, por su parte, realizaría un único paseíllo, en una feria que reforzará como pocas la presencia de nuevos valores junto a las grandes figuras. 
+Con la ausencia de Marco Pérez, Javier Zulueta, Sergio Rodríguez, Aarón Palacio, Curro Díaz, Gines Marín, entre otros toreros que esperan ansiosos una oportunidad. Pero quiero hacer hincapié en Mario Navas, un torero joven con proyección, pero que aún no le han dado sitio en los carteles (¿será Sevilla?), que no ha confirmado en Madrid y que atesora esa pureza que al aficionado hace que se le quede el regusto del arte en el paladar, lo veremos estoy seguro.
+
+El ciclo se desarrollará desde el 8 de mayo y, con el habitual descanso de los lunes, se prolongará hasta el domingo 7 de junio. Esa jornada final acogerá, casi con total seguridad, la corrida In Memoriam en la que Borja Jiménez se enfrentará en solitario a seis toros de las ganaderías de Domingo Hernández y Victoriano del Rio, en un festejo que servirá como homenaje al maestro Ignacio Sánchez Mejías.
+
+Las Ventas vivirá un San Isidro en el que el toro bravo toma también su protagonismo, como eje principal de la fiesta. En el apartado ganadero, Victoriano del Río volverá a tener un peso destacado con dos corridas y media, junto a los encierros de Juan Pedro Domecq. Como novedad relevante, la ganadería sevillana de La Quinta lidiará por primera vez dos corridas completas en la Feria, también Partido de Resina lidiará una corrida de toros en las que el aficionado disfrutará de la presencia de los antiguos Pablo Romero.
+
+Carteles no oficiales de la Feria de San Isidro 2026:
+
+– V 08/05: **Alejandro Talavante, Juan Ortega y Tristán Barroso** -confirmación- (Núñez del Cuvillo)
+
+– S 09/05: **Miguel Ángel Perera, Daniel Luque y Tomás Rufo** (La Quinta)
+
+– D 10/05: **David Galván, Román y Gonzalo Caballero** (Conde de Mayalde)
+
+– M 12/05: **Tomás Bastos, Martín Morilla y Álvaro Serrano** (Montealto)
+
+– X 13/05: **Antonio Ferrera, Calita y Jesús Enrique Colombo** (Partido de Resina)
+
+– J 14/05: **Sebastián Castella, Daniel Luque y David de Miranda** (El Parralejo)
+
+– V 15/05: **Diego Urdiales, Fortes y Fernando Adrián** (El Torero)
+
+– S 16/05: **El Cid, Álvaro Lorenzo y Manuel Diosleguarde** -confirmación- (La Quinta)
+
+– D 17/05: **Miguel Ángel Perera, Paco Ureña y Fernando Adrián** (Fuente Ymbro)
+
+– M 19/05: **Pedro Luis, Mario Vilau y Julio Norte** (Fuente Ymbro)
+
+– X 20/05: **Juan Leal, Juan de Castilla y José Carlos Venegas** (Saltillo)
+
+– J 21/05: **José María Manzanares, Juan Ortega y Pablo Aguado** (Puerto de San Lorenzo)
+
+– V 22/05: **Sebastián Castella, Emilio de Justo y Tomás Rufo** (Victoriano del Río)
+
+– S 23/05: **Andy Cartagena, Diego Ventura y Guillermo Hermoso de Mendoza** (Ángel Sánchez y Sánchez)
+
+– D 24/05: **Fortes, David de Miranda y Víctor Hernández** (Alcurrucén)
+
+– M 26/05: **Emiliano Osornio, Pedro Montaldo y Julio Méndez** (Conde de Mayalde)
+
+– X 27/05: **Isaac Fonseca, Molina y Jarocho** (Pedraza de Yeltes)
+
+– J 28/05: **Diego Urdiales, Roca Rey y Bruno Aloi** -confirmación- (Juan Pedro Domecq)
+
+– V 29/05: **Morenito de Aranda, Alejandro Talavante y Pablo Aguado** (Garcigrande)
+
+– S 30/05: **Rui Fernandes, Diego Ventura y Lea Vicens** (Guiomar Cortés de Moura)
+
+– D 31/05: **Antonio Ferrera, Manuel Escribano y Paco Ureña** (Adolfo Martín)
+
+– M 02/06: **Gómez del Pilar, Pepe Moral y Damián Castaño** (José Escolar)
+
+– X 03/06: **José Garrido, Ismael Martín y Samuel Navalón** (Lagunajanda)
+
+– J 04/06: **Emilio de Justo, Borja Jiménez y Víctor Hernández** (Jandilla)
+
+– V 05/06: **Uceda Leal, Pablo Aguado y Clemente** (Juan Pedro Domecq)
+
+– S 06/06: **Morenito de Aranda, Román y Fernando Adrián** (Victorino Martín)
+
+– D 07/06: **Borja Jiménez,** en solitario (Domingo Hernández y Victoriano del Río)
+
+– D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
  	{ 
+    id: 54,
+    title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
+    image: "/images/fer.jpg",
+    category: "Actualidad",
+    date: "26 de Enero de 2026",
+	imageCaption: "Feria de San Isidro 2026",
+	excerpt: "Plaza 1 ultima los carteles que se desarrollarán del 8 de mayo al 7 de junio.",
+	fullContent: `La Feria de San Isidro 2026 volverá a destacar por una combinación entre figuras consolidadas, toreros jóvenes y nombres que quieren buscarse esos huecos cotizados en las ferias. Apunta un serial atractivo para el aficionado y el público general, ya que combina carteles variados y sin el llamado Sota, Caballo y Rey al que estamos acostumbrados. 
+
+Entre las citas más señaladas figura la Corrida de la Beneficencia, prevista para el 14 de junio, con Alejandro Talavante, Roca Rey y Víctor Hernández frente a toros de Victoriano del Río. Tanto el extremeño como el madrileño sumarían tres paseíllos en el abono, una cifra que también alcanzarán otros diestros destacados del ciclo isidril.
+
+También se conoce ya el cartel de la tradicional Corrida de la Prensa, que volverá a apostar por un elenco de máximo nivel. En la tarde del 28 de mayo harán el paseíllo Andrés Roca Rey y Diego Urdiales, junto a Bruno Aloi, que confirmará alternativa en Las Ventas.
+
+Víctor Hernández, una de las grandes novedades de la feria y un torero que esperamos ver más en otras plazas, actuará en las corridas de Alcurrucén y Jandilla, esta última junto a Borja Jiménez. Ambos podrían alcanzar las tres tardes, al igual que Pablo Aguado y Fernando Adrián.
+
+Dos actuaciones tendrían Juan Ortega, Sebastián Castella, Daniel Luque, Tomás Rufo, Miguel Ángel Perera, Diego Urdiales, David de Miranda, Fortes, Morenito de Aranda, Paco Ureña, Emilio de Justo y Antonio Ferrera. 
+
+José María Manzanares, por su parte, realizaría un único paseíllo, en una feria que reforzará como pocas la presencia de nuevos valores junto a las grandes figuras. 
+Con la ausencia de Marco Pérez, Javier Zulueta, Sergio Rodríguez, Aarón Palacio, Curro Díaz, Gines Marín, entre otros toreros que esperan ansiosos una oportunidad. Pero quiero hacer hincapié en Mario Navas, un torero joven con proyección, pero que aún no le han dado sitio en los carteles (¿será Sevilla?), que no ha confirmado en Madrid y que atesora esa pureza que al aficionado hace que se le quede el regusto del arte en el paladar, lo veremos estoy seguro.
+
+El ciclo se desarrollará desde el 8 de mayo y, con el habitual descanso de los lunes, se prolongará hasta el domingo 7 de junio. Esa jornada final acogerá, casi con total seguridad, la corrida In Memoriam en la que Borja Jiménez se enfrentará en solitario a seis toros de las ganaderías de Domingo Hernández y Victoriano del Rio, en un festejo que servirá como homenaje al maestro Ignacio Sánchez Mejías.
+
+Las Ventas vivirá un San Isidro en el que el toro bravo toma también su protagonismo, como eje principal de la fiesta. En el apartado ganadero, Victoriano del Río volverá a tener un peso destacado con dos corridas y media, junto a los encierros de Juan Pedro Domecq. Como novedad relevante, la ganadería sevillana de La Quinta lidiará por primera vez dos corridas completas en la Feria, también Partido de Resina lidiará una corrida de toros en las que el aficionado disfrutará de la presencia de los antiguos Pablo Romero.
+
+Carteles no oficiales de la Feria de San Isidro 2026:
+
+– V 08/05: **Alejandro Talavante, Juan Ortega y Tristán Barroso** -confirmación- (Núñez del Cuvillo)
+
+– S 09/05: **Miguel Ángel Perera, Daniel Luque y Tomás Rufo** (La Quinta)
+
+– D 10/05: **David Galván, Román y Gonzalo Caballero** (Conde de Mayalde)
+
+– M 12/05: **Tomás Bastos, Martín Morilla y Álvaro Serrano** (Montealto)
+
+– X 13/05: **Antonio Ferrera, Calita y Jesús Enrique Colombo** (Partido de Resina)
+
+– J 14/05: **Sebastián Castella, Daniel Luque y David de Miranda** (El Parralejo)
+
+– V 15/05: **Diego Urdiales, Fortes y Fernando Adrián** (El Torero)
+
+– S 16/05: **El Cid, Álvaro Lorenzo y Manuel Diosleguarde** -confirmación- (La Quinta)
+
+– D 17/05: **Miguel Ángel Perera, Paco Ureña y Fernando Adrián** (Fuente Ymbro)
+
+– M 19/05: **Pedro Luis, Mario Vilau y Julio Norte** (Fuente Ymbro)
+
+– X 20/05: **Juan Leal, Juan de Castilla y José Carlos Venegas** (Saltillo)
+
+– J 21/05: **José María Manzanares, Juan Ortega y Pablo Aguado** (Puerto de San Lorenzo)
+
+– V 22/05: **Sebastián Castella, Emilio de Justo y Tomás Rufo** (Victoriano del Río)
+
+– S 23/05: **Andy Cartagena, Diego Ventura y Guillermo Hermoso de Mendoza** (Ángel Sánchez y Sánchez)
+
+– D 24/05: **Fortes, David de Miranda y Víctor Hernández** (Alcurrucén)
+
+– M 26/05: **Emiliano Osornio, Pedro Montaldo y Julio Méndez** (Conde de Mayalde)
+
+– X 27/05: **Isaac Fonseca, Molina y Jarocho** (Pedraza de Yeltes)
+
+– J 28/05: **Diego Urdiales, Roca Rey y Bruno Aloi** -confirmación- (Juan Pedro Domecq)
+
+– V 29/05: **Morenito de Aranda, Alejandro Talavante y Pablo Aguado** (Garcigrande)
+
+– S 30/05: **Rui Fernandes, Diego Ventura y Lea Vicens** (Guiomar Cortés de Moura)
+
+– D 31/05: **Antonio Ferrera, Manuel Escribano y Paco Ureña** (Adolfo Martín)
+
+– M 02/06: **Gómez del Pilar, Pepe Moral y Damián Castaño** (José Escolar)
+
+– X 03/06: **José Garrido, Ismael Martín y Samuel Navalón** (Lagunajanda)
+
+– J 04/06: **Emilio de Justo, Borja Jiménez y Víctor Hernández** (Jandilla)
+
+– V 05/06: **Uceda Leal, Pablo Aguado y Clemente** (Juan Pedro Domecq)
+
+– S 06/06: **Morenito de Aranda, Román y Fernando Adrián** (Victorino Martín)
+
+– D 07/06: **Borja Jiménez,** en solitario (Domingo Hernández y Victoriano del Río)
+
+– D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 55,
     title: `Cuatro nuevos novilleros se suman al Circuito de Novilladas de Andalucía 2026`,
     image: "/images/clasi.jpg",
