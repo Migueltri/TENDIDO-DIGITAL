@@ -448,13 +448,91 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-   { 
-    id: 1005,
+    { 
+    id: 1002,
+    title: `Sevilla perfila un abono de altos vuelos: Morante se cae del Domingo Hernández y la Feria toma forma definitiva`,
+    image: "/images/ca.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La cuenta atrás para la presentación oficial de los carteles de Sevilla ya ha comenzado y el abono de la Real Maestranza entra en su fase decisiva. A menos de dos semanas del acto previsto en el Cartuja Center, la estructura de la Feria de Abril y del resto de la temporada está prácticamente cerrada, con movimientos estratégicos que han terminado de encajar las piezas clave del ciclo.
+El cambio más relevante afecta directamente al corazón de la feria. Morante de la Puebla no actuará finalmente en la corrida de Domingo Hernández, un ajuste de calado que reconfigura por completo ese festejo, que pasa a estar integrado por Alejandro Talavante, Andrés Roca Rey y Pablo Aguado, uno de los carteles más atractivos del serial.
+Otro movimiento significativo es el adelanto de la corrida de Álvaro Núñez, inicialmente prevista para el 20 de abril y que finalmente se celebrará el día 16. En ese festejo harán el paseíllo Morante de la Puebla, Juan Ortega y un tercer espada aún por confirmar.
+
+En el apartado ganadero destacan varios dobletes importantes, como Garcigrande y García Jiménez, además del regreso de La Quinta tras su ausencia la pasada temporada y la vuelta de Puerto de San Lorenzo al coso del Baratillo, que lidiará en la Feria de San Miguel.
+
+El abono tendrá como grandes ejes a Morante de la Puebla, Juan Ortega, Roca Rey y Pablo Aguado, todos ellos anunciados en cuatro tardes, con la posibilidad de que Morante sume una quinta en San Miguel. Por detrás, figuras consolidadas como Manzanares, Talavante, Daniel Luque o Borja Jiménez contarían con tres actuaciones cada uno.
+
+La empresa Lances de Futuro mantiene además su apuesta por el relevo generacional, buscando dar sitio a los jóvenes valores junto a las figuras del escalafón, una línea que ya viene aplicando en otras plazas bajo su gestión. Las próximas horas serán determinantes para cerrar los carteles de mayor entidad antes de centrarse en la preferia y las novilladas del abono.
+
+Con estos ajustes, y a falta de pequeños remates, el abono sevillano presenta ya una imagen sólida y ambiciosa, llamada a convertirse en uno de los grandes acontecimientos taurinos de la temporada.
+**Domingo de Resurrección**
+
+**Domingo, 5 de abril.**
+Domingo de Resurrección. Toros de Garcigrande para Morante de la Puebla, Roca Rey y David de Miranda.
+
+**Feria de Abril:**
+
+**Viernes, 10 de abril:**
+Ganadería por definir, seguramente en novillada.
+**Sábado, 11 de abril:**
+Ganadería por definir, con la opción de Alcurrucén.
+**Domingo, 12 de abril:**
+Ganadería por definir, con la opción de Fuente Ymbro.
+**Miércoles, 15 de abril:**
+Ganadería por definir, con la opción de El Parralejo para David de Miranda y dos más.
+**Jueves, 16 de abril:**
+Toros de Álvaro Núñez para Morante de la Puebla, Juan Ortega y un tercero.
+**Viernes, 17 de abril:**
+Toros de Domingo Hernández para Alejandro Talavante, Roca Rey y Pablo Aguado.
+**Sábado, 18 de abril:**
+Toros de Victorino Martín para Manuel Escribano y Borja Jiménez, con opción de cerrarse en mano a mano.
+**Domingo, 19 de abril:**
+Corrida de rejones.
+**Lunes, 20 de abril:**
+Toros de García Jimenez para Morante de la Puebla, Borja Jiménez y Tomás Rufo.
+**Martes, 21 de abril:**
+Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Perera, Castella y Marco Pérez.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
     title: ``,
     image: "/images/.jpg",
     category: "Actualidad",
-    date: "26 de Enero de 2026",
+    date: "27 de Enero de 2026",
 	fullContent: ``,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
+
+La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organizados por la empresa Tauroemoción, con carteles que reúnen a figuras del toreo a pie y del rejoneo, además de ganaderías de primer orden. Una programación cuidada que vuelve a estrechar los lazos entre la tauromaquia y los sectores del vino y la aceituna, pilares económicos y culturales del territorio.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
+    image: "/images/rr.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `Andrés Roca Rey ya ha marcado territorio en Sevilla para 2026 y lo hace con una planificación que va mucho más allá del azar. El torero peruano ha elegido cuatro ganaderías clave para cuatro fechas de enorme peso en el calendario maestrante, construyendo un relato medido al milímetro. No es solo una cuestión de tardes, sino de significado: cada hierro elegido encierra una intención y una lectura clara de cómo quiere ser juzgado por Sevilla.
+
+El punto de partida será el Domingo de Resurrección con Garcigrande, una elección que mezcla solemnidad y riesgo. Abrir la temporada sevillana con este hierro supone aceptar una prueba de fondo: toros que permiten, pero que exigen verdad y mando. Roca Rey asume así un arranque sin atajos, consciente de que Sevilla mide ese día con especial severidad y que cualquier triunfo nace más del poder que del alivio.
+
+La apuesta continúa en el tramo más caliente del ciclo. En la preferia comparecerá con Victoriano del Río, una ganadería asociada a tardes de emoción y opciones claras de triunfo cuando todo encaja. Ya en plena Feria, el jueves, llegará uno de los momentos más esperados: Domingo Hernández, con Morante de la Puebla en el cartel. Dos conceptos frente a frente y un hierro que exige gobierno para que la faena no se diluya, en una tarde pensada para la comparación directa y el pulso artístico.
+
+El cierre llegará en San Miguel con Jandilla, una elección que elimina cualquier excusa. La corrida del ajuste final, la que deja sentencias y marca recuerdos duraderos. Con este recorrido, Roca Rey dibuja una temporada sevillana de alto voltaje: seriedad para empezar, ambición en el centro y firmeza para terminar. Sevilla no verá cantidad, verá intención. Y eso, en la Maestranza, es hablar muy alto.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -464,7 +542,7 @@ const featuredNews: NewsItem[] = [
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
-    date: "26 de Enero de 2026",
+    date: "27 de Enero de 2026",
 	imageCaption: "Feria de San Isidro 2026",
 	excerpt: "Plaza 1 ultima los carteles que se desarrollarán del 8 de mayo al 7 de junio.",
 	fullContent: `La Feria de San Isidro 2026 volverá a destacar por una combinación entre figuras consolidadas, toreros jóvenes y nombres que quieren buscarse esos huecos cotizados en las ferias. Apunta un serial atractivo para el aficionado y el público general, ya que combina carteles variados y sin el llamado Sota, Caballo y Rey al que estamos acostumbrados. 
@@ -548,12 +626,90 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 ];
 
 const latestNews: NewsItem[] = [
- 	{ 
+   { 
+    id: 1,
+    title: `Sevilla perfila un abono de altos vuelos: Morante se cae del Domingo Hernández y la Feria toma forma definitiva`,
+    image: "/images/ca.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La cuenta atrás para la presentación oficial de los carteles de Sevilla ya ha comenzado y el abono de la Real Maestranza entra en su fase decisiva. A menos de dos semanas del acto previsto en el Cartuja Center, la estructura de la Feria de Abril y del resto de la temporada está prácticamente cerrada, con movimientos estratégicos que han terminado de encajar las piezas clave del ciclo.
+El cambio más relevante afecta directamente al corazón de la feria. Morante de la Puebla no actuará finalmente en la corrida de Domingo Hernández, un ajuste de calado que reconfigura por completo ese festejo, que pasa a estar integrado por Alejandro Talavante, Andrés Roca Rey y Pablo Aguado, uno de los carteles más atractivos del serial.
+Otro movimiento significativo es el adelanto de la corrida de Álvaro Núñez, inicialmente prevista para el 20 de abril y que finalmente se celebrará el día 16. En ese festejo harán el paseíllo Morante de la Puebla, Juan Ortega y un tercer espada aún por confirmar.
+
+En el apartado ganadero destacan varios dobletes importantes, como Garcigrande y García Jiménez, además del regreso de La Quinta tras su ausencia la pasada temporada y la vuelta de Puerto de San Lorenzo al coso del Baratillo, que lidiará en la Feria de San Miguel.
+
+El abono tendrá como grandes ejes a Morante de la Puebla, Juan Ortega, Roca Rey y Pablo Aguado, todos ellos anunciados en cuatro tardes, con la posibilidad de que Morante sume una quinta en San Miguel. Por detrás, figuras consolidadas como Manzanares, Talavante, Daniel Luque o Borja Jiménez contarían con tres actuaciones cada uno.
+
+La empresa Lances de Futuro mantiene además su apuesta por el relevo generacional, buscando dar sitio a los jóvenes valores junto a las figuras del escalafón, una línea que ya viene aplicando en otras plazas bajo su gestión. Las próximas horas serán determinantes para cerrar los carteles de mayor entidad antes de centrarse en la preferia y las novilladas del abono.
+
+Con estos ajustes, y a falta de pequeños remates, el abono sevillano presenta ya una imagen sólida y ambiciosa, llamada a convertirse en uno de los grandes acontecimientos taurinos de la temporada.
+**Domingo de Resurrección**
+
+**Domingo, 5 de abril.**
+Domingo de Resurrección. Toros de Garcigrande para Morante de la Puebla, Roca Rey y David de Miranda.
+
+**Feria de Abril:**
+
+**Viernes, 10 de abril:**
+Ganadería por definir, seguramente en novillada.
+**Sábado, 11 de abril:**
+Ganadería por definir, con la opción de Alcurrucén.
+**Domingo, 12 de abril:**
+Ganadería por definir, con la opción de Fuente Ymbro.
+**Miércoles, 15 de abril:**
+Ganadería por definir, con la opción de El Parralejo para David de Miranda y dos más.
+**Jueves, 16 de abril:**
+Toros de Álvaro Núñez para Morante de la Puebla, Juan Ortega y un tercero.
+**Viernes, 17 de abril:**
+Toros de Domingo Hernández para Alejandro Talavante, Roca Rey y Pablo Aguado.
+**Sábado, 18 de abril:**
+Toros de Victorino Martín para Manuel Escribano y Borja Jiménez, con opción de cerrarse en mano a mano.
+**Domingo, 19 de abril:**
+Corrida de rejones.
+**Lunes, 20 de abril:**
+Toros de García Jimenez para Morante de la Puebla, Borja Jiménez y Tomás Rufo.
+**Martes, 21 de abril:**
+Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Perera, Castella y Marco Pérez.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 52,
+    title: `Almendralejo refuerza su cita taurina con una feria de primer nivel ligada al Salón del Vino y la Aceituna`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `La localidad de Almendralejo se prepara para volver a convertirse en uno de los focos taurinos de Extremadura los días 28 y 29 de marzo, con la celebración de su feria taurina en el marco del prestigioso Salón del Vino y la Aceituna. Una cita ya consolidada dentro del calendario cultural y festivo de la región, que une tradición, identidad y promoción agroalimentaria en un entorno de gran proyección.
+
+La plaza de toros de Almendralejo acogerá dos festejos de alto atractivo organizados por la empresa Tauroemoción, con carteles que reúnen a figuras del toreo a pie y del rejoneo, además de ganaderías de primer orden. Una programación cuidada que vuelve a estrechar los lazos entre la tauromaquia y los sectores del vino y la aceituna, pilares económicos y culturales del territorio.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 53,
+    title: `Roca Rey traza su hoja de ruta en Sevilla 2026: cuatro ganaderías y un mensaje de figura`,
+    image: "/images/rr.jpg",
+    category: "Actualidad",
+    date: "27 de Enero de 2026",
+	fullContent: `Andrés Roca Rey ya ha marcado territorio en Sevilla para 2026 y lo hace con una planificación que va mucho más allá del azar. El torero peruano ha elegido cuatro ganaderías clave para cuatro fechas de enorme peso en el calendario maestrante, construyendo un relato medido al milímetro. No es solo una cuestión de tardes, sino de significado: cada hierro elegido encierra una intención y una lectura clara de cómo quiere ser juzgado por Sevilla.
+
+El punto de partida será el Domingo de Resurrección con Garcigrande, una elección que mezcla solemnidad y riesgo. Abrir la temporada sevillana con este hierro supone aceptar una prueba de fondo: toros que permiten, pero que exigen verdad y mando. Roca Rey asume así un arranque sin atajos, consciente de que Sevilla mide ese día con especial severidad y que cualquier triunfo nace más del poder que del alivio.
+
+La apuesta continúa en el tramo más caliente del ciclo. En la preferia comparecerá con Victoriano del Río, una ganadería asociada a tardes de emoción y opciones claras de triunfo cuando todo encaja. Ya en plena Feria, el jueves, llegará uno de los momentos más esperados: Domingo Hernández, con Morante de la Puebla en el cartel. Dos conceptos frente a frente y un hierro que exige gobierno para que la faena no se diluya, en una tarde pensada para la comparación directa y el pulso artístico.
+
+El cierre llegará en San Miguel con Jandilla, una elección que elimina cualquier excusa. La corrida del ajuste final, la que deja sentencias y marca recuerdos duraderos. Con este recorrido, Roca Rey dibuja una temporada sevillana de alto voltaje: seriedad para empezar, ambición en el centro y firmeza para terminar. Sevilla no verá cantidad, verá intención. Y eso, en la Maestranza, es hablar muy alto.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 54,
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
-    date: "26 de Enero de 2026",
+    date: "27 de Enero de 2026",
 	imageCaption: "Feria de San Isidro 2026",
 	excerpt: "Plaza 1 ultima los carteles que se desarrollarán del 8 de mayo al 7 de junio.",
 	fullContent: `La Feria de San Isidro 2026 volverá a destacar por una combinación entre figuras consolidadas, toreros jóvenes y nombres que quieren buscarse esos huecos cotizados en las ferias. Apunta un serial atractivo para el aficionado y el público general, ya que combina carteles variados y sin el llamado Sota, Caballo y Rey al que estamos acostumbrados. 
