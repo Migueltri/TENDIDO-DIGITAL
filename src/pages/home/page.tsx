@@ -449,7 +449,41 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1000,
+    title: `La Diputación de Zaragoza prioriza el criterio económico en el nuevo pliego de La Misericordia hasta 2028`,
+    image: "/images/dipu.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La **Diputación de Zaragoza** ha aprobado el nuevo pliego de condiciones para la gestión del **Coso de la Misericordia** , que tendrá una vigencia de **tres temporadas** , **hasta 2028** , con posibilidad de prórroga por un año adicional. La decisión vuelve a situar en el centro del **debate** el peso **predominante** del criterio **económico** frente a otros aspectos de carácter **artístico, cultural y social** **tradicionalmente** asociados a las plazas de primera categoría.
+
+Según informa el periodista **Javier Clavero en Heraldo de Aragón** , el pliego fija un canon **mínimo anual de 165.435,62 euros** , susceptible de mejora al alza por parte de los licitadores. En cuanto a la programación, se mantiene la exigencia de un mínimo de **ocho corridas de toros**, una corrida de rejones, una novillada con picadores y seis festejos populares por temporada. La Feria de San Jorge deberá contar al menos con dos corridas, mientras que la Feria del Pilar incluirá un mínimo de seis corridas de toros, una de rejones, una novillada con picadores y seis festejos populares, quedando excluidos los festejos mixtos.
+
+El concurso estará limitado a empresarios con una amplia y acreditada experiencia en plazas de primera o segunda categoría. En concreto, se exige haber gestionado al menos una plaza de primera durante dos de las cuatro últimas anualidades completas, o bien haber organizado un mínimo de 25 corridas de toros anuales en plazas de primera y/o segunda categoría durante al menos tres de las últimas cinco anualidades completas. Este planteamiento refuerza un modelo basado fundamentalmente en la solvencia económica y la capacidad de gestión.
+
+Aunque el pliego contempla de forma secundaria aspectos como la reducción de precios para jóvenes y jubilados, así como el apoyo a las Escuelas Taurinas, el grueso de la valoración continúa recayendo en la oferta económica presentada por los aspirantes.
+
+Con este planteamiento, la plaza de La Misericordia vuelve a ser objeto de controversia. La apuesta prioritaria por el componente **económico** podría volver a condicionar la **innovación**, la **calidad artística** y la **accesibilidad** del proyecto **taurino**, dejando en un segundo plano la **identidad** y el **valor histórico** de uno de los cosos más emblemáticos del país.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1001,
+    title: `Cartel de toreros banderilleros para Morón de la Frontera (Sevilla)`,
+    image: "/images/moron.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La plaza de toros de Morón de la Frontera será donde se den cita una terna de toreros Banderilleros el próximo 7 de marzo.
+
+Un festejo en el que harán el paseíllo los matadores **Antonio Ferrera**, **El Fandi** y **Manuel Escribano**, con toros de la ganadería de **Julio de la Puerta**.
+
+En los próximos días se presentará el cartel organizado por la empresa **Toros y Espectáculos Hnos. Durán** que ha rematado una terna de banderilleros para la corrida de toros de **Morón de la Frontera** el próximo 7 de marzo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
     title: `La feria de Olivenza presentada oficialmente con Enrique Ponce como pregonero`,
     image: "/images/olpre.jpg",
     category: "Actualidad",
@@ -477,7 +511,7 @@ Olivenza se prepara para vivir una feria rematada donde los aficionados podrán 
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
+    id: 1003,
     title: `Fernando Cepeda protagoniza la segunda sesión de las XXIV Lecciones Magistrales de Aula Taurina Sevilla`,
     image: "/images/cep.jpg",
     category: "Actualidad",
@@ -511,7 +545,7 @@ Durante noventa minutos, el **Salón de Carteles** vibró con la sinceridad y la
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
+    id: 1004,
     title: `Juan Jesús Rodríguez y Adrián Olmedo acercan la tauromaquia a los mayores de la Residencia Asansull de La Línea (Cadiz)`,
     image: "/images/asan.jpg",
     category: "Actualidad",
@@ -532,7 +566,7 @@ La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo
     showAuthorHeader: true
    },
 	{ 
-    id: 1004,
+    id: 1005,
     title: `ANOET rechaza rotundamente la iniciativa del Gobierno de prohibir la entrada de menores a las plazas de toros`,
     image: "/images/prohib.jpg",
     category: "Actualidad",
@@ -549,7 +583,7 @@ Desde ANOET consideramos además que esta iniciativa tendría graves consecuenci
     showAuthorHeader: true
    },
 	{ 
-    id: 1005,
+    id: 1006,
     title: `Victorino vuelve a Alicante: Hogueras 2026 se blinda con un cartel ganadero de máximo nivel`,
     image: "/images/vuelv.jpg",
     category: "Actualidad",
@@ -565,7 +599,7 @@ Con esta decidida apuesta por la cabaña brava, Alicante refuerza su personalida
     showAuthorHeader: true
    },
 	{ 
-    id: 1006,
+    id: 1007,
     title: `Victorino sube la temperatura de Abril: Sevilla prepara un mano a mano de máxima exigencia`,
     image: "/images/sube.jpg",
     category: "Actualidad",
@@ -584,7 +618,7 @@ Victorino Martín, Sevilla y dos toreros dispuestos a no dejar nada dentro. Un d
     showAuthorHeader: true
    },
 	{ 
-    id: 1007,
+    id: 1008,
     title: `Sevilla se mira al espejo: así se reparte el poder el quinteto sevillano que incendia el abono`,
     image: "/images/espej.jpg",
     category: "Actualidad",
@@ -780,6 +814,40 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 – D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 38,
+    title: `La Diputación de Zaragoza prioriza el criterio económico en el nuevo pliego de La Misericordia hasta 2028`,
+    image: "/images/dipu.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La **Diputación de Zaragoza** ha aprobado el nuevo pliego de condiciones para la gestión del **Coso de la Misericordia** , que tendrá una vigencia de **tres temporadas** , **hasta 2028** , con posibilidad de prórroga por un año adicional. La decisión vuelve a situar en el centro del **debate** el peso **predominante** del criterio **económico** frente a otros aspectos de carácter **artístico, cultural y social** **tradicionalmente** asociados a las plazas de primera categoría.
+
+Según informa el periodista **Javier Clavero en Heraldo de Aragón** , el pliego fija un canon **mínimo anual de 165.435,62 euros** , susceptible de mejora al alza por parte de los licitadores. En cuanto a la programación, se mantiene la exigencia de un mínimo de **ocho corridas de toros**, una corrida de rejones, una novillada con picadores y seis festejos populares por temporada. La Feria de San Jorge deberá contar al menos con dos corridas, mientras que la Feria del Pilar incluirá un mínimo de seis corridas de toros, una de rejones, una novillada con picadores y seis festejos populares, quedando excluidos los festejos mixtos.
+
+El concurso estará limitado a empresarios con una amplia y acreditada experiencia en plazas de primera o segunda categoría. En concreto, se exige haber gestionado al menos una plaza de primera durante dos de las cuatro últimas anualidades completas, o bien haber organizado un mínimo de 25 corridas de toros anuales en plazas de primera y/o segunda categoría durante al menos tres de las últimas cinco anualidades completas. Este planteamiento refuerza un modelo basado fundamentalmente en la solvencia económica y la capacidad de gestión.
+
+Aunque el pliego contempla de forma secundaria aspectos como la reducción de precios para jóvenes y jubilados, así como el apoyo a las Escuelas Taurinas, el grueso de la valoración continúa recayendo en la oferta económica presentada por los aspirantes.
+
+Con este planteamiento, la plaza de La Misericordia vuelve a ser objeto de controversia. La apuesta prioritaria por el componente **económico** podría volver a condicionar la **innovación**, la **calidad artística** y la **accesibilidad** del proyecto **taurino**, dejando en un segundo plano la **identidad** y el **valor histórico** de uno de los cosos más emblemáticos del país.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 39,
+    title: `Cartel de toreros banderilleros para Morón de la Frontera (Sevilla)`,
+    image: "/images/moron.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La plaza de toros de Morón de la Frontera será donde se den cita una terna de toreros Banderilleros el próximo 7 de marzo.
+
+Un festejo en el que harán el paseíllo los matadores **Antonio Ferrera**, **El Fandi** y **Manuel Escribano**, con toros de la ganadería de **Julio de la Puerta**.
+
+En los próximos días se presentará el cartel organizado por la empresa **Toros y Espectáculos Hnos. Durán** que ha rematado una terna de banderilleros para la corrida de toros de **Morón de la Frontera** el próximo 7 de marzo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
