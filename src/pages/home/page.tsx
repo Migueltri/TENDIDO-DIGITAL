@@ -449,6 +449,106 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `La feria de Olivenza presentada oficialmente con Enrique Ponce como pregonero`,
+    image: "/images/olpre.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	footerImage1: "/images/olpre1.jpg",
+    footerImage2: "/images/olpre2.jpg",
+	excerpt: "La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros.",
+	fullContent: `La Feria Taurina de Olivenza 2026 fue presentada  ayer en un evento de gran afluencia celebrado en el Convento de San Juan de Dios, un espacio que volvió a registrar un lleno absoluto para inaugurar oficialmente una de las ferias más relevantes del arranque de la temporada taurina.
+
+La presentación estuvo moderada por el periodista Juan Bazaga, de Canal Extremadura Televisión, y giró en torno al pregón ofrecido por el maestro Enrique Ponce. Su intervención aportó sensibilidad y recuerdos de esa plaza, la cual compareció en repetidas ocasiones cuando se encontraba en activo. El torero valenciano protagonizó uno de los instantes más aplaudidos de la noche, recibiendo una larga y cálida ovación del público presente.
+
+La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros. El abono mantiene su apuesta por reunir a figuras consagradas y diestros que buscan abrirse camino, así como tres novilleros que buscan hacerse con huecos en las novilladas de las ferias.
+
+Arrancará el ciclo el viernes 6 de marzo con una novillada con picadores en la que estará anunciado Tomás Bastos, Olga Casado y David Gutiérrez que debutará con caballos frente a novillos de Talavante. 
+
+Seguirá con las corridas de toros, que tendrá lugar el sábado 7 de marzo, compuesto por José María Manzanares, Daniel Luque y Juan Ortega con toros de El Puerto de San Lorenzo. 
+
+Para el domingo 8 de marzo están programadas dos corridas de toros, una por la mañana a las 11:30 en la que harán el paseíllo Borja Jiménez, David de Miranda y Marco Pérez ante un encierro de tres de Domingo Hernández y tres de La Ventana del Puerto. Un cartel que enfrenta a toreros jóvenes con ganas de ocupar los primeros puestos del escalafón y a no dejarse ganar la pelea.
+
+Por la tarde a las 17:00 se celebrará la segunda corrida del día, con Alejandro Talavante que conmemora sus 20 años de alternativa, Emilio de Justo y Roca Rey con toros de Victoriano del Río. 
+
+Olivenza se prepara para vivir una feria rematada donde los aficionados podrán disfrutar de las figuras, promesas del toreo y toreros que quieren posicionarse en lo alto del escalafón, los empresarios deben buscar rivalidad entre toreros, es fundamental para la tauromaquia, si hay rivalidad en el ruedo hay emoción en el tendido.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Fernando Cepeda protagoniza la segunda sesión de las XXIV Lecciones Magistrales de Aula Taurina Sevilla`,
+    image: "/images/cep.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	imageCaption: "Fotos: Gentileza de Andrea Grijalva",
+	fullContent: `El **Salón de Carteles de la Real Maestranza de Sevilla** acogió la **segunda sesión** de las **XXIV Lecciones Magistrales** organizadas por **Aula Taurina Sevilla**, que en esta ocasión -*27 de enero*- tuvo como protagonista al matador de toros **Fernando Cepeda**. El acto congregó a un numeroso público compuesto por aficionados y alumnos de la **Escuela Taurina de Sevilla**, que siguieron con atención una jornada cargada de contenido humano y taurino.
+
+La reunión contó con la presencia del presidente de Aula Taurina, **Miguel Serrano**, y fue presentada y moderada brillantemente por el periodista **Carlos Crivell**, quien situó la figura del torero de **Gines** dentro de la historia del toreo sevillano, definiéndolo como **“Un torero más de escuela rondeña que sevillana”**.
+
+Durante el desarrollo de la **Lección Magistral** se proyectó un vídeo con imágenes representativas de la tauromaquia de **Fernando Cepeda**, destacando especialmente las correspondientes a la tarde de su **alternativa en Madrid**, el **25 de mayo de 1987**, cuando cuajó una importante faena al sexto toro de la corrida.
+
+**Cepeda** inició su intervención recordando sus comienzos en el mundo del toro y mostrando su gratitud hacia quienes fueron pilares fundamentales en su formación. Tuvo palabras de admiración para **David Domínguez, Melquiades Garrido, Ángel Caro y Manolo Cortés**, de quien afirmó: **“Fue un torero extraordinario, con el que me preparé y del que aprendí mucho”**.
+
+El diestro explicó que su etapa como novillero fue breve, con apenas veinticinco novilladas con picadores, aunque destacó que los triunfos logrados en plazas clave marcaron su futuro: **“Tuve la suerte de estar bien en Sevilla y en Madrid y eso me facilitó el camino”**. En este contexto recordó a su primer apoderado, D. **José Flores Camará**.
+
+Al abordar el momento de su alternativa, subrayó la importancia del respaldo de **Manolo Chopera**: **“Gracias a Manolo Chopera pude elegir el cartel, de forma que me decanté por Rafael de Paula y José María Manzanares”**.
+
+**Fernando Cepeda** reconoció con sinceridad que a su carrera quizá le faltó un punto de ambición, aunque explicó los motivos que condicionaron su trayectoria: **“Las cornadas que sufrí en Sevilla y en Córdoba me frenaron”**. Asimismo, quiso matizar su relación con las empresas: **“No fui un torero complicado; lo que ocurría es que pedía lo que creía que me merecía, en cuestiones de toros y compañeros”**.
+
+Uno de los capítulos más destacados de su carrera fue su paso por la **Real Maestranza de Sevilla**, donde llegó a lidiar dos corridas de seis toros -en la segunda mató siete-, una gesta que solo comparte con **Curro Romero** y **Joselito El Gallo**. Sobre aquellas tardes explicó: **“Fueron dos corridas planteadas para destacar y mejorar mi posición en el escalafón. Fueron dos buenas tardes de toros, en ambas corté dos orejas, me tocó la música con el capote, pero se me escapó la salida por la Puerta del Príncipe”**.
+
+El matador también reflexionó sobre su relación con las grandes plazas, reconociendo que en **Madrid** se sentía más liberado: **“En Madrid salía a torear con menos presión que en Sevilla, por ello se me ha considerado más torero de Madrid”**. En cuanto a su concepto del toreo, señaló que, pese a ser muy recordado por su manejo del capote, su tauromaquia iba más allá: **“Muchos se han quedado solo con el recuerdo de cómo manejaba la capa, pero también toreaba bien con la muleta. En aquellos tiempos no era fácil torear bien con el capote, y yo lo veía muy claro”**. Durante el acto se mostró una célebre fotografía de un quite realizado en Madrid el 2 de junio de 1989 a un toro de **Martínez Elizondo**, una de las imágenes más icónicas del toreo.
+
+Ya en su faceta como apoderado, **Cepeda** destacó su etapa junto a **Miguel Ángel Perera**, de quien dijo: **“Lo considero un gran torero y una excelente persona”**. Reconoció la dificultad de aquella relación profesional: **“Éramos independientes y eso no era fácil para las negociaciones, pero es una etapa de la que estoy muy satisfecho”**. Sobre el futuro, dejó abierta la puerta a volver a ejercer esa labor: **“Si hubiera un chaval que está empezando que me ilusionara, me encantaría llevarlo hasta la alternativa”**.
+
+En el tramo final de la **Lección Magistral**, **Fernando Cepeda** expresó su gratitud hacia los aficionados: **“La afición me ha respetado y me he sentido admirado por muy buenos aficionados”**, y se mostró esperanzado ante el porvenir de la Fiesta. A una pregunta del público sobre cómo sería hoy su cartel de alternativa, respondió con rotundidad: **“Morante de padrino y Perera de testigo”**.
+
+Durante noventa minutos, el **Salón de Carteles** vibró con la sinceridad y la profundidad de un torero al que diversos autores, como **Antonio García Barbeito, Barquerito** y el propio **Carlos Crivell**, han definido como **“Un torero muy bueno”**. Una cerrada ovación puso el broche final a otra tarde memorable de las **Lecciones Magistrales de Aula Taurina Sevilla**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `Juan Jesús Rodríguez y Adrián Olmedo acercan la tauromaquia a los mayores de la Residencia Asansull de La Línea (Cadiz)`,
+    image: "/images/asan.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `Los novilleros gaditanos **Juan Jesús Rodríguez** y **Adrián Olmedo** protagonizaron el pasado sábado una emotiva visita a la **Residencia de mayores Asansull de La Línea de la Concepción**, en una jornada marcada por la convivencia, el diálogo intergeneracional y la transmisión de los valores de la tauromaquia.
+
+La actividad se enmarca dentro del programa **“Veteranos y noveles”** de la **Fundación Toro de Lidia**, una iniciativa impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía**, que tiene como objetivo **fomentar el intercambio de experiencias entre distintas generaciones y acercar la tauromaquia a diferentes ámbitos sociales**.
+
+Durante el encuentro, los novilleros —alumnos de la **Escuela Taurina Linense**— compartieron un animado coloquio con los residentes, en el que se sucedieron anécdotas personales, recuerdos taurinos y vivencias ligadas al mundo del toro. Asimismo, los jóvenes mostraron a los mayores diversos vídeos de su toreo y de sus entrenamientos, permitiéndoles conocer de primera mano el día a día de un novillero en su proceso de formación.
+
+**La jornada se completó con una exhibición de toreo de salón**, que despertó el interés y la emoción de los asistentes, quienes siguieron con atención cada lance y cada explicación. Los residentes pudieron así apreciar la técnica, el sacrificio y la preparación que requiere el aprendizaje taurino, en un ambiente cercano y participativo.
+
+Los mayores disfrutaron de una mañana diferente, en la que la tauromaquia se convirtió en vehículo de valores como el respeto, el esfuerzo, la constancia y la superación, reforzando el carácter cultural y social de esta tradición. **La actividad fue acogida con gran cariño por parte de los residentes y del personal del centro, que valoraron muy positivamente la iniciativa.**
+
+La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, **impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `ANOET rechaza rotundamente la iniciativa del Gobierno de prohibir la entrada de menores a las plazas de toros`,
+    image: "/images/prohib.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) manifiesta públicamente su profundo desacuerdo con la iniciativa del Gobierno de España que pretende prohibir la entrada de menores de edad a los espectáculos taurinos celebrados en las plazas de toros.
+
+Desde ANOET consideramos que esta propuesta supone un ataque directo a la libertad cultural, educativa y familiar, además de una injerencia injustificada en una manifestación cultural que forma parte del patrimonio cultural español, tal y como reconoce la Ley 18/2013. Impedir la asistencia de menores no protege, sino que limita el derecho de las familias a decidir libremente sobre la educación cultural de sus hijos.
+
+Asimismo, recordamos que la asistencia de menores a los festejos taurinos se ha realizado históricamente de forma responsable, acompañada y regulada, sin que existan datos objetivos que justifiquen una prohibición generalizada.
+
+Desde ANOET consideramos además que esta iniciativa tendría graves consecuencias económicas y sociales para el sector taurino, y por ello instamos al Gobierno a reconsiderarla y a abrir un proceso de diálogo real con el sector, evitando decisiones ideológicas que dividen a la sociedad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Victorino vuelve a Alicante: Hogueras 2026 se blinda con un cartel ganadero de máximo nivel`,
     image: "/images/vuelv.jpg",
@@ -680,6 +780,106 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 – D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 40,
+    title: `La feria de Olivenza presentada oficialmente con Enrique Ponce como pregonero`,
+    image: "/images/olpre.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	footerImage1: "/images/olpre1.jpg",
+    footerImage2: "/images/olpre2.jpg",
+	excerpt: "La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros.",
+	fullContent: `La Feria Taurina de Olivenza 2026 fue presentada  ayer en un evento de gran afluencia celebrado en el Convento de San Juan de Dios, un espacio que volvió a registrar un lleno absoluto para inaugurar oficialmente una de las ferias más relevantes del arranque de la temporada taurina.
+
+La presentación estuvo moderada por el periodista Juan Bazaga, de Canal Extremadura Televisión, y giró en torno al pregón ofrecido por el maestro Enrique Ponce. Su intervención aportó sensibilidad y recuerdos de esa plaza, la cual compareció en repetidas ocasiones cuando se encontraba en activo. El torero valenciano protagonizó uno de los instantes más aplaudidos de la noche, recibiendo una larga y cálida ovación del público presente.
+
+La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros. El abono mantiene su apuesta por reunir a figuras consagradas y diestros que buscan abrirse camino, así como tres novilleros que buscan hacerse con huecos en las novilladas de las ferias.
+
+Arrancará el ciclo el viernes 6 de marzo con una novillada con picadores en la que estará anunciado Tomás Bastos, Olga Casado y David Gutiérrez que debutará con caballos frente a novillos de Talavante. 
+
+Seguirá con las corridas de toros, que tendrá lugar el sábado 7 de marzo, compuesto por José María Manzanares, Daniel Luque y Juan Ortega con toros de El Puerto de San Lorenzo. 
+
+Para el domingo 8 de marzo están programadas dos corridas de toros, una por la mañana a las 11:30 en la que harán el paseíllo Borja Jiménez, David de Miranda y Marco Pérez ante un encierro de tres de Domingo Hernández y tres de La Ventana del Puerto. Un cartel que enfrenta a toreros jóvenes con ganas de ocupar los primeros puestos del escalafón y a no dejarse ganar la pelea.
+
+Por la tarde a las 17:00 se celebrará la segunda corrida del día, con Alejandro Talavante que conmemora sus 20 años de alternativa, Emilio de Justo y Roca Rey con toros de Victoriano del Río. 
+
+Olivenza se prepara para vivir una feria rematada donde los aficionados podrán disfrutar de las figuras, promesas del toreo y toreros que quieren posicionarse en lo alto del escalafón, los empresarios deben buscar rivalidad entre toreros, es fundamental para la tauromaquia, si hay rivalidad en el ruedo hay emoción en el tendido.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 41,
+    title: `Fernando Cepeda protagoniza la segunda sesión de las XXIV Lecciones Magistrales de Aula Taurina Sevilla`,
+    image: "/images/cep.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	imageCaption: "Fotos: Gentileza de Andrea Grijalva",
+	fullContent: `El **Salón de Carteles de la Real Maestranza de Sevilla** acogió la **segunda sesión** de las **XXIV Lecciones Magistrales** organizadas por **Aula Taurina Sevilla**, que en esta ocasión -*27 de enero*- tuvo como protagonista al matador de toros **Fernando Cepeda**. El acto congregó a un numeroso público compuesto por aficionados y alumnos de la **Escuela Taurina de Sevilla**, que siguieron con atención una jornada cargada de contenido humano y taurino.
+
+La reunión contó con la presencia del presidente de Aula Taurina, **Miguel Serrano**, y fue presentada y moderada brillantemente por el periodista **Carlos Crivell**, quien situó la figura del torero de **Gines** dentro de la historia del toreo sevillano, definiéndolo como **“Un torero más de escuela rondeña que sevillana”**.
+
+Durante el desarrollo de la **Lección Magistral** se proyectó un vídeo con imágenes representativas de la tauromaquia de **Fernando Cepeda**, destacando especialmente las correspondientes a la tarde de su **alternativa en Madrid**, el **25 de mayo de 1987**, cuando cuajó una importante faena al sexto toro de la corrida.
+
+**Cepeda** inició su intervención recordando sus comienzos en el mundo del toro y mostrando su gratitud hacia quienes fueron pilares fundamentales en su formación. Tuvo palabras de admiración para **David Domínguez, Melquiades Garrido, Ángel Caro y Manolo Cortés**, de quien afirmó: **“Fue un torero extraordinario, con el que me preparé y del que aprendí mucho”**.
+
+El diestro explicó que su etapa como novillero fue breve, con apenas veinticinco novilladas con picadores, aunque destacó que los triunfos logrados en plazas clave marcaron su futuro: **“Tuve la suerte de estar bien en Sevilla y en Madrid y eso me facilitó el camino”**. En este contexto recordó a su primer apoderado, D. **José Flores Camará**.
+
+Al abordar el momento de su alternativa, subrayó la importancia del respaldo de **Manolo Chopera**: **“Gracias a Manolo Chopera pude elegir el cartel, de forma que me decanté por Rafael de Paula y José María Manzanares”**.
+
+**Fernando Cepeda** reconoció con sinceridad que a su carrera quizá le faltó un punto de ambición, aunque explicó los motivos que condicionaron su trayectoria: **“Las cornadas que sufrí en Sevilla y en Córdoba me frenaron”**. Asimismo, quiso matizar su relación con las empresas: **“No fui un torero complicado; lo que ocurría es que pedía lo que creía que me merecía, en cuestiones de toros y compañeros”**.
+
+Uno de los capítulos más destacados de su carrera fue su paso por la **Real Maestranza de Sevilla**, donde llegó a lidiar dos corridas de seis toros -en la segunda mató siete-, una gesta que solo comparte con **Curro Romero** y **Joselito El Gallo**. Sobre aquellas tardes explicó: **“Fueron dos corridas planteadas para destacar y mejorar mi posición en el escalafón. Fueron dos buenas tardes de toros, en ambas corté dos orejas, me tocó la música con el capote, pero se me escapó la salida por la Puerta del Príncipe”**.
+
+El matador también reflexionó sobre su relación con las grandes plazas, reconociendo que en **Madrid** se sentía más liberado: **“En Madrid salía a torear con menos presión que en Sevilla, por ello se me ha considerado más torero de Madrid”**. En cuanto a su concepto del toreo, señaló que, pese a ser muy recordado por su manejo del capote, su tauromaquia iba más allá: **“Muchos se han quedado solo con el recuerdo de cómo manejaba la capa, pero también toreaba bien con la muleta. En aquellos tiempos no era fácil torear bien con el capote, y yo lo veía muy claro”**. Durante el acto se mostró una célebre fotografía de un quite realizado en Madrid el 2 de junio de 1989 a un toro de **Martínez Elizondo**, una de las imágenes más icónicas del toreo.
+
+Ya en su faceta como apoderado, **Cepeda** destacó su etapa junto a **Miguel Ángel Perera**, de quien dijo: **“Lo considero un gran torero y una excelente persona”**. Reconoció la dificultad de aquella relación profesional: **“Éramos independientes y eso no era fácil para las negociaciones, pero es una etapa de la que estoy muy satisfecho”**. Sobre el futuro, dejó abierta la puerta a volver a ejercer esa labor: **“Si hubiera un chaval que está empezando que me ilusionara, me encantaría llevarlo hasta la alternativa”**.
+
+En el tramo final de la **Lección Magistral**, **Fernando Cepeda** expresó su gratitud hacia los aficionados: **“La afición me ha respetado y me he sentido admirado por muy buenos aficionados”**, y se mostró esperanzado ante el porvenir de la Fiesta. A una pregunta del público sobre cómo sería hoy su cartel de alternativa, respondió con rotundidad: **“Morante de padrino y Perera de testigo”**.
+
+Durante noventa minutos, el **Salón de Carteles** vibró con la sinceridad y la profundidad de un torero al que diversos autores, como **Antonio García Barbeito, Barquerito** y el propio **Carlos Crivell**, han definido como **“Un torero muy bueno”**. Una cerrada ovación puso el broche final a otra tarde memorable de las **Lecciones Magistrales de Aula Taurina Sevilla**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 42,
+    title: `Juan Jesús Rodríguez y Adrián Olmedo acercan la tauromaquia a los mayores de la Residencia Asansull de La Línea (Cadiz)`,
+    image: "/images/asan.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `Los novilleros gaditanos **Juan Jesús Rodríguez** y **Adrián Olmedo** protagonizaron el pasado sábado una emotiva visita a la **Residencia de mayores Asansull de La Línea de la Concepción**, en una jornada marcada por la convivencia, el diálogo intergeneracional y la transmisión de los valores de la tauromaquia.
+
+La actividad se enmarca dentro del programa **“Veteranos y noveles”** de la **Fundación Toro de Lidia**, una iniciativa impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía**, que tiene como objetivo **fomentar el intercambio de experiencias entre distintas generaciones y acercar la tauromaquia a diferentes ámbitos sociales**.
+
+Durante el encuentro, los novilleros —alumnos de la **Escuela Taurina Linense**— compartieron un animado coloquio con los residentes, en el que se sucedieron anécdotas personales, recuerdos taurinos y vivencias ligadas al mundo del toro. Asimismo, los jóvenes mostraron a los mayores diversos vídeos de su toreo y de sus entrenamientos, permitiéndoles conocer de primera mano el día a día de un novillero en su proceso de formación.
+
+**La jornada se completó con una exhibición de toreo de salón**, que despertó el interés y la emoción de los asistentes, quienes siguieron con atención cada lance y cada explicación. Los residentes pudieron así apreciar la técnica, el sacrificio y la preparación que requiere el aprendizaje taurino, en un ambiente cercano y participativo.
+
+Los mayores disfrutaron de una mañana diferente, en la que la tauromaquia se convirtió en vehículo de valores como el respeto, el esfuerzo, la constancia y la superación, reforzando el carácter cultural y social de esta tradición. **La actividad fue acogida con gran cariño por parte de los residentes y del personal del centro, que valoraron muy positivamente la iniciativa.**
+
+La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, **impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 43,
+    title: `ANOET rechaza rotundamente la iniciativa del Gobierno de prohibir la entrada de menores a las plazas de toros`,
+    image: "/images/prohib.jpg",
+    category: "Actualidad",
+    date: "28 de Enero de 2026",
+	fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) manifiesta públicamente su profundo desacuerdo con la iniciativa del Gobierno de España que pretende prohibir la entrada de menores de edad a los espectáculos taurinos celebrados en las plazas de toros.
+
+Desde ANOET consideramos que esta propuesta supone un ataque directo a la libertad cultural, educativa y familiar, además de una injerencia injustificada en una manifestación cultural que forma parte del patrimonio cultural español, tal y como reconoce la Ley 18/2013. Impedir la asistencia de menores no protege, sino que limita el derecho de las familias a decidir libremente sobre la educación cultural de sus hijos.
+
+Asimismo, recordamos que la asistencia de menores a los festejos taurinos se ha realizado históricamente de forma responsable, acompañada y regulada, sin que existan datos objetivos que justifiquen una prohibición generalizada.
+
+Desde ANOET consideramos además que esta iniciativa tendría graves consecuencias económicas y sociales para el sector taurino, y por ello instamos al Gobierno a reconsiderarla y a abrir un proceso de diálogo real con el sector, evitando decisiones ideológicas que dividen a la sociedad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
