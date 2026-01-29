@@ -449,6 +449,119 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Terna de sevillanos para la corrida de Sanlúcar la Mayor (Sevilla)`,
+    image: "/images/sanlu.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `La empresa TauroLuz ha presentado hoy en la Venta Pazo el cartel de la corrida de toros que tendrá lugar en Sanlúcar la Mayor, Sevilla, el próximo 21 de febrero. 
+Al acto de presentación acudieron los toreros anunciados en el cartel, en representación del Excmo. Ayuntamiento de Sanlúcar la Mayor el Primer Teniente de Alcalde, Juan Salado; y la concejala del Partido Popular, Carmen Sáez, que además fue invitada a presentar el acto y taurinos tan relevantes como los maestros Espartaco padre o Fernando Cepeda.
+El festejo reunirá a los matadores de toros sevillanos Oliva Soto, Lama de Góngora y Calerito que estoquearán astados de Hros. de D. José Luis Osborne.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Julio Norte, directo al Circuito de Novilladas de Andalucía tras ser triunfador del Circuito de Castilla y León en 2025`,
+    image: "/images/junort.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "El novillero de Salamanca ocupará la plaza de intercambio de la Liga Nacional de Novilladas y se convierte en el octavo nombre propio del certamen",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026** ya conoce al que será su octavo protagonista: **Julio Norte**. El novillero salmantino se suma al certamen impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía**, integrado en la **Liga Nacional de Novilladas**, que celebrará el próximo año su séptima edición consolidado como uno de los proyectos fundamentales de promoción del escalafón con picadores.
+
+Natural de Salamanca, **Julio Norte** ha sido uno de los nombres propios de la temporada 2025, firmando una campaña de gran regularidad y eco en las principales ferias. Su trayectoria tuvo un punto culminante con la proclamación como **triunfador del Circuito de Castilla y León 2025**, además de abrir la Puerta Grande en plazas de relevancia como Almería o Arganda, actuaciones que lo situaron en el foco del aficionado y de la crítica especializada.
+
+El presente curso se presenta especialmente ilusionante para el salmantino. Acartelado el próximo mes de marzo en la Feria de Fallas de Valencia, Julio Norte afronta un año decisivo en el que se **convertirá en matador de toros el 13 de agosto en Dax**, de manos de Roca Rey y con Pablo Aguado como testigo.
+
+En este contexto, **la participación de Julio Norte en el Circuito de Novilladas de Andalucía 2026 llega en un tramo clave de su carrera**, aportando al certamen un torero en plena madurez, con ambición, proyección y argumentos contrastados, reforzando así una edición que volverá a situar a Andalucía como epicentro de futuro para la tauromaquia.
+
+El salmantino se suma así a la lista de participantes en la que ya se encontraban los siete novilleros clasificados a través del Bolsín clasificatorio: **Víctor Barroso, Pedro Luis, El Primi, Iván Rejas, Dennis Martín, Francisco Fernández e Isaac Galvín**.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia**, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `La Copa Chenel y el Circuito de Madrid recorrerán trece municipios madrileños en la temporada 2026`,
+    image: "/images/chen.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "Daganzo de Arriba recuperará las corridas de toros 15 años después con una corrida de segunda fase de la Copa Chenel el 13 de junio",
+	fullContent: `<p>En la presente temporada se celebrará la sexta edición de los certámenes Copa Chenel, para matadores de toros, y del Circuito de Madrid, para novilleros con picadores.
+
+Cerrado el plazo de presentación de licitaciones empresariales para la organización de los festejos, ya se han definido los municipios donde se celebrarán las novilladas y las corridas. Serán **13 las localidades**, algunas de ellas por partida doble, las que acogerán los festejos.
+
+**La Copa Chenel** contará con dos nuevas plazas en la edición de 2026, **Daganzo de Arriba y Las Ventas**. El certamen estará compuesto por 13 festejos.
+
+La primera fase comenzará el **28 de marzo en San Agustín del Guadalix**; el **11 de abril**, la segunda corrida a celebrar en **Miraflores de la Sierra**; el sábado **18 de abril** será el turno de **Algete**; fin de semana completo que se cerrará con la corrida del **19 de abril en Valdilecha**; el **25 de abril, Colmenar de Oreja** volverá a acoger el certamen; y el **3 de mayo**, se cerrará la primera fase en **Valdemoro**.
+
+La segunda fase, a la que accederán **9 toreros**, se repartirá en 3 corridas. Dará comienzo el **13 de junio en Daganzo de Arriba**, que recuperará las corridas de toros 15 años después; la plaza de **Moralzarzal** volverá acoger otra corrida el día **20 de junio**; y la última de la fase, el **27 de junio en San Martín de Valdeiglesias**.
+
+Las semifinales se repartirán en tres festejos, con la gran novedad que última de ellas será con seis toreros en el cartel. La ronda comenzará el **11 de julio en Chichón**; el día siguiente, domingo **12 de julio**, será el turno de **Valdetorres de Jarama**; y la semifinal de 6 toreros se celebrará el **18 de julio en Alalpardo**.
+
+El último festejo de esta edición, la **Gran Final de la Copa Chenel 2026**, se celebrará en la **Plaza de Toros de Las Ventas**, en una fecha aún por determinar.
+
+El **Circuito de Madrid** seguirá con la misma estructura de años anteriores, contando con 4 novilladas clasificatorias, la fase semifinal con 3 festejos y, para terminar, la Final a tres y la Gran Final.
+
+La sexta edición comenzará el **7 de marzo en San Agustín del Guadalix**; seguirá su camino el **14 de marzo en El Álamo**; el **día 21 de marzo** el Circuito volverá a otra de las plazas insignia del certamen, **Valdetorres de Jarama**; y se cerrará la primera fase el domingo **22 de marzo en Estremera**.
+
+La ronda de semifinales dará comienzo el lunes **13 de abril en Talamanca de Jarama**; el domingo **26 de abril** será el turno de **Algete**; y la semifinal de seis novilleros se celebrará el **21 de junio en Villarejo de Salvanés**.
+
+Las dos finales se celebrarán en un fin de semana, siendo la Final a tres el día **4 de julio** en la histórica plaza de **Chinchón** y el domingo **5 de julio**, la Gran Final, en **San Martín de Valdeiglesias**.
+
+El tercer certamen que compone la Fiesta del Toro de la Comunidad de Madrid es el ciclo de novilladas sin picadores, **Kilómetro Cero**, que se celebrará en la **Plaza de Toros de Valdemorillo**. Compuesto por tres novilladas, se celebrará los días **27 y 28 de febrero**, las semifinales, y el domingo **1 de marzo** la Gran Final. Estos tres festejos serán de 6 novilleros y las entradas son gratuitas, pero con obligatoriedad de retirarlas en la taquilla.
+
+**La Fiesta del Toro de la Comunidad de Madrid**
+Es un proyecto de la Comunidad de Madrid y la Fundación Toro de Lidia que ha cumplido este año 5 ediciones y cuyo objetivo es promover la tauromaquia como expresión cultural.
+
+Los certámenes que componen este proyecto son Kilómetro Cero, para novilleros sin picadores; el Circuito de Madrid, para novilleros con picadores; y la Copa Chenel, para matadores de toros. Además, incluye un proyecto de promoción a las ganaderías madrileñas: Toros de la Comunidad de Madrid.
+
+**La Fiesta del Toro de la Comunidad de Madrid** ha celebrado ya un total de 145 festejos en los que han participado 91 matadores de toros, 37 novilleros con picadores, 36 novilleros sin picadores y 37 ganaderías, siendo la mayoría de ellas madrileñas.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/f9XkxfnXKx8"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+    <iframe
+    src="https://www.youtube.com/embed/0Bff2aosm8M"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>
+</p>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Nace la marca “Banderilleros de Oro”, un sello de calidad para el cartel de toreros banderilleros`,
+    image: "/images/banderill.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "Los diestros “El Fandi”, Antonio Ferrera, Manuel Escribano, Ismael Martín y Jesús Enrique Colombo forman la firma puesta en marcha por Alberto García",
+	fullContent: `Nace la marca “Banderilleros de Oro”, un distintivo con el objetivo de reforzar la identidad, la calidad y la promoción del cartel de toreros banderilleros, que ha vuelto a los grandes escenarios de las principales ciudades.
+El cartel de toreros banderilleros cuenta con una larga trayectoria dentro de la tauromaquia, consolidándose a lo largo de los años como un formato atractivo y singular, basado en la espectacularidad, la entrega y la capacidad lidiadora de matadores que destacan especialmente en el tercio de banderillas. Este tipo de festejos ha sabido ganarse el favor del público gracias a su dinamismo, emoción y autenticidad, convirtiéndose en una cita imprescindible en muchas plazas, siendo un revulsivo para la asistencia.
+Con el propósito de dar un salto cualitativo y fortalecer esta propuesta, se presenta la nueva marca “Banderilleros de Oro”, una creación impulsada por Alberto García, que busca unificar bajo un mismo sello la excelencia artística, la seriedad y la modernización en la difusión del espectáculo.
+La marca “Banderilleros de Oro” podrá utilizarse a elección de los organizadores siempre que el cartel esté conformado por algunos de los cinco nombres que la componen, David Fandila “El Fandi”, Antonio Ferrera, Jesús Enrique Colombo, Manuel Escribano e Ismael Martín, toreros de reconocido prestigio y trayectoria, referentes del toreo banderillero y protagonistas habituales de los carteles más destacados. No se descarta que estos toreros actúen en otros carteles con compañeros que pongan banderillas, pero no se incluirá en la marca.
+Este nuevo distintivo no solo representa una garantía de calidad artística en el ruedo, sino que, también apuesta decididamente por la promoción integral del festejo, incorporando herramientas actuales como la realización de spots publicitarios, una estrategia activa en redes sociales (@banderillerosdeoro), así como acciones específicas de promoción y difusión orientadas a acercar el espectáculo a nuevos públicos y reforzar su presencia mediática.
+Cabe destacar que Alberto García, creador de la marca, es apoderado de El Fandi y Manuel Escribano, si bien no interviene en la contratación del resto de toreros que forman parte de “Banderilleros de Oro”, manteniendo así la independencia profesional de cada uno de los integrantes.
+El primer festejo en España bajo el paraguas de esta novedosa marca, será en Morón de la Frontera (Sevilla) donde se anuncian Antonio Ferrera, “El Fandi” y Manuel Escribano con toros de Julio de la Puerta el 7 de marzo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Arnedo elige a los 14 novilleros clasificados para el XXIII bolsín taurino Zapato de Plata 2026`,
     image: "/images/consej.jpg",
@@ -521,6 +634,119 @@ El Bolsín Taurino Mirobrigense, que se celebra **anualmente** en Ciudad Rodrigo
 
 const latestNews: NewsItem[] = [
    { 
+    id: 28,
+    title: `Terna de sevillanos para la corrida de Sanlúcar la Mayor (Sevilla)`,
+    image: "/images/sanlu.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `La empresa TauroLuz ha presentado hoy en la Venta Pazo el cartel de la corrida de toros que tendrá lugar en Sanlúcar la Mayor, Sevilla, el próximo 21 de febrero. 
+Al acto de presentación acudieron los toreros anunciados en el cartel, en representación del Excmo. Ayuntamiento de Sanlúcar la Mayor el Primer Teniente de Alcalde, Juan Salado; y la concejala del Partido Popular, Carmen Sáez, que además fue invitada a presentar el acto y taurinos tan relevantes como los maestros Espartaco padre o Fernando Cepeda.
+El festejo reunirá a los matadores de toros sevillanos Oliva Soto, Lama de Góngora y Calerito que estoquearán astados de Hros. de D. José Luis Osborne.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 29,
+    title: `Julio Norte, directo al Circuito de Novilladas de Andalucía tras ser triunfador del Circuito de Castilla y León en 2025`,
+    image: "/images/junort.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "El novillero de Salamanca ocupará la plaza de intercambio de la Liga Nacional de Novilladas y se convierte en el octavo nombre propio del certamen",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026** ya conoce al que será su octavo protagonista: **Julio Norte**. El novillero salmantino se suma al certamen impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía**, integrado en la **Liga Nacional de Novilladas**, que celebrará el próximo año su séptima edición consolidado como uno de los proyectos fundamentales de promoción del escalafón con picadores.
+
+Natural de Salamanca, **Julio Norte** ha sido uno de los nombres propios de la temporada 2025, firmando una campaña de gran regularidad y eco en las principales ferias. Su trayectoria tuvo un punto culminante con la proclamación como **triunfador del Circuito de Castilla y León 2025**, además de abrir la Puerta Grande en plazas de relevancia como Almería o Arganda, actuaciones que lo situaron en el foco del aficionado y de la crítica especializada.
+
+El presente curso se presenta especialmente ilusionante para el salmantino. Acartelado el próximo mes de marzo en la Feria de Fallas de Valencia, Julio Norte afronta un año decisivo en el que se **convertirá en matador de toros el 13 de agosto en Dax**, de manos de Roca Rey y con Pablo Aguado como testigo.
+
+En este contexto, **la participación de Julio Norte en el Circuito de Novilladas de Andalucía 2026 llega en un tramo clave de su carrera**, aportando al certamen un torero en plena madurez, con ambición, proyección y argumentos contrastados, reforzando así una edición que volverá a situar a Andalucía como epicentro de futuro para la tauromaquia.
+
+El salmantino se suma así a la lista de participantes en la que ya se encontraban los siete novilleros clasificados a través del Bolsín clasificatorio: **Víctor Barroso, Pedro Luis, El Primi, Iván Rejas, Dennis Martín, Francisco Fernández e Isaac Galvín**.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia**, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 30,
+    title: `La Copa Chenel y el Circuito de Madrid recorrerán trece municipios madrileños en la temporada 2026`,
+    image: "/images/chen.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "Daganzo de Arriba recuperará las corridas de toros 15 años después con una corrida de segunda fase de la Copa Chenel el 13 de junio",
+	fullContent: `<p>En la presente temporada se celebrará la sexta edición de los certámenes Copa Chenel, para matadores de toros, y del Circuito de Madrid, para novilleros con picadores.
+
+Cerrado el plazo de presentación de licitaciones empresariales para la organización de los festejos, ya se han definido los municipios donde se celebrarán las novilladas y las corridas. Serán **13 las localidades**, algunas de ellas por partida doble, las que acogerán los festejos.
+
+**La Copa Chenel** contará con dos nuevas plazas en la edición de 2026, **Daganzo de Arriba y Las Ventas**. El certamen estará compuesto por 13 festejos.
+
+La primera fase comenzará el **28 de marzo en San Agustín del Guadalix**; el **11 de abril**, la segunda corrida a celebrar en **Miraflores de la Sierra**; el sábado **18 de abril** será el turno de **Algete**; fin de semana completo que se cerrará con la corrida del **19 de abril en Valdilecha**; el **25 de abril, Colmenar de Oreja** volverá a acoger el certamen; y el **3 de mayo**, se cerrará la primera fase en **Valdemoro**.
+
+La segunda fase, a la que accederán **9 toreros**, se repartirá en 3 corridas. Dará comienzo el **13 de junio en Daganzo de Arriba**, que recuperará las corridas de toros 15 años después; la plaza de **Moralzarzal** volverá acoger otra corrida el día **20 de junio**; y la última de la fase, el **27 de junio en San Martín de Valdeiglesias**.
+
+Las semifinales se repartirán en tres festejos, con la gran novedad que última de ellas será con seis toreros en el cartel. La ronda comenzará el **11 de julio en Chichón**; el día siguiente, domingo **12 de julio**, será el turno de **Valdetorres de Jarama**; y la semifinal de 6 toreros se celebrará el **18 de julio en Alalpardo**.
+
+El último festejo de esta edición, la **Gran Final de la Copa Chenel 2026**, se celebrará en la **Plaza de Toros de Las Ventas**, en una fecha aún por determinar.
+
+El **Circuito de Madrid** seguirá con la misma estructura de años anteriores, contando con 4 novilladas clasificatorias, la fase semifinal con 3 festejos y, para terminar, la Final a tres y la Gran Final.
+
+La sexta edición comenzará el **7 de marzo en San Agustín del Guadalix**; seguirá su camino el **14 de marzo en El Álamo**; el **día 21 de marzo** el Circuito volverá a otra de las plazas insignia del certamen, **Valdetorres de Jarama**; y se cerrará la primera fase el domingo **22 de marzo en Estremera**.
+
+La ronda de semifinales dará comienzo el lunes **13 de abril en Talamanca de Jarama**; el domingo **26 de abril** será el turno de **Algete**; y la semifinal de seis novilleros se celebrará el **21 de junio en Villarejo de Salvanés**.
+
+Las dos finales se celebrarán en un fin de semana, siendo la Final a tres el día **4 de julio** en la histórica plaza de **Chinchón** y el domingo **5 de julio**, la Gran Final, en **San Martín de Valdeiglesias**.
+
+El tercer certamen que compone la Fiesta del Toro de la Comunidad de Madrid es el ciclo de novilladas sin picadores, **Kilómetro Cero**, que se celebrará en la **Plaza de Toros de Valdemorillo**. Compuesto por tres novilladas, se celebrará los días **27 y 28 de febrero**, las semifinales, y el domingo **1 de marzo** la Gran Final. Estos tres festejos serán de 6 novilleros y las entradas son gratuitas, pero con obligatoriedad de retirarlas en la taquilla.
+
+**La Fiesta del Toro de la Comunidad de Madrid**
+Es un proyecto de la Comunidad de Madrid y la Fundación Toro de Lidia que ha cumplido este año 5 ediciones y cuyo objetivo es promover la tauromaquia como expresión cultural.
+
+Los certámenes que componen este proyecto son Kilómetro Cero, para novilleros sin picadores; el Circuito de Madrid, para novilleros con picadores; y la Copa Chenel, para matadores de toros. Además, incluye un proyecto de promoción a las ganaderías madrileñas: Toros de la Comunidad de Madrid.
+
+**La Fiesta del Toro de la Comunidad de Madrid** ha celebrado ya un total de 145 festejos en los que han participado 91 matadores de toros, 37 novilleros con picadores, 36 novilleros sin picadores y 37 ganaderías, siendo la mayoría de ellas madrileñas.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/f9XkxfnXKx8"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+    <iframe
+    src="https://www.youtube.com/embed/0Bff2aosm8M"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>
+</p>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 31,
+    title: `Nace la marca “Banderilleros de Oro”, un sello de calidad para el cartel de toreros banderilleros`,
+    image: "/images/banderill.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	excerpt: "Los diestros “El Fandi”, Antonio Ferrera, Manuel Escribano, Ismael Martín y Jesús Enrique Colombo forman la firma puesta en marcha por Alberto García",
+	fullContent: `Nace la marca “Banderilleros de Oro”, un distintivo con el objetivo de reforzar la identidad, la calidad y la promoción del cartel de toreros banderilleros, que ha vuelto a los grandes escenarios de las principales ciudades.
+El cartel de toreros banderilleros cuenta con una larga trayectoria dentro de la tauromaquia, consolidándose a lo largo de los años como un formato atractivo y singular, basado en la espectacularidad, la entrega y la capacidad lidiadora de matadores que destacan especialmente en el tercio de banderillas. Este tipo de festejos ha sabido ganarse el favor del público gracias a su dinamismo, emoción y autenticidad, convirtiéndose en una cita imprescindible en muchas plazas, siendo un revulsivo para la asistencia.
+Con el propósito de dar un salto cualitativo y fortalecer esta propuesta, se presenta la nueva marca “Banderilleros de Oro”, una creación impulsada por Alberto García, que busca unificar bajo un mismo sello la excelencia artística, la seriedad y la modernización en la difusión del espectáculo.
+La marca “Banderilleros de Oro” podrá utilizarse a elección de los organizadores siempre que el cartel esté conformado por algunos de los cinco nombres que la componen, David Fandila “El Fandi”, Antonio Ferrera, Jesús Enrique Colombo, Manuel Escribano e Ismael Martín, toreros de reconocido prestigio y trayectoria, referentes del toreo banderillero y protagonistas habituales de los carteles más destacados. No se descarta que estos toreros actúen en otros carteles con compañeros que pongan banderillas, pero no se incluirá en la marca.
+Este nuevo distintivo no solo representa una garantía de calidad artística en el ruedo, sino que, también apuesta decididamente por la promoción integral del festejo, incorporando herramientas actuales como la realización de spots publicitarios, una estrategia activa en redes sociales (@banderillerosdeoro), así como acciones específicas de promoción y difusión orientadas a acercar el espectáculo a nuevos públicos y reforzar su presencia mediática.
+Cabe destacar que Alberto García, creador de la marca, es apoderado de El Fandi y Manuel Escribano, si bien no interviene en la contratación del resto de toreros que forman parte de “Banderilleros de Oro”, manteniendo así la independencia profesional de cada uno de los integrantes.
+El primer festejo en España bajo el paraguas de esta novedosa marca, será en Morón de la Frontera (Sevilla) donde se anuncian Antonio Ferrera, “El Fandi” y Manuel Escribano con toros de Julio de la Puerta el 7 de marzo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 32,
     title: `Arnedo elige a los 14 novilleros clasificados para el XXIII bolsín taurino Zapato de Plata 2026`,
     image: "/images/consej.jpg",
