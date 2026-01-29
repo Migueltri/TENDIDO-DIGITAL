@@ -449,6 +449,20 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1006,
+    title: `Daniel Luque desafía los límites: seis toros y un trono en Mont de Marsan`,
+    image: "/images/luq.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	footerImage1: "/images/luq1.jpg",
+	fullContent: `El torero sevillano Daniel Luque vuelve a subir la apuesta en Francia al anunciar que lidiará seis toros en Mont de Marsan, un reto que pocos se atreven a enfrentar. Con esta arriesgada decisión, Luque reafirma su estatus como uno de los maestros indiscutibles del toreo internacional, dispuesto a dejar su huella en cada embestida.
+
+La cita promete espectáculo y tensión, mientras Luque busca consolidar su reinado en tierras francesas y demostrar que su arte no conoce fronteras. Entre aficionados y críticos, la expectación crece: todos quieren ver cómo el sevillano convierte el peligro en gloria en uno de los escenarios taurinos más exigentes.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1007,
     title: `Valdefresno, fidelidad al encaste Atanasio con Madrid como gran objetivo de la temporada`,
     image: "/images/valfres.jpg",
@@ -482,7 +496,21 @@ El Bolsín Taurino Mirobrigense, que se celebra **anualmente** en Ciudad Rodrigo
 
 const latestNews: NewsItem[] = [
    { 
-    id: 1,
+    id: 33,
+    title: `Daniel Luque desafía los límites: seis toros y un trono en Mont de Marsan`,
+    image: "/images/luq.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	footerImage1: "/images/luq1.jpg",
+	fullContent: `El torero sevillano Daniel Luque vuelve a subir la apuesta en Francia al anunciar que lidiará seis toros en Mont de Marsan, un reto que pocos se atreven a enfrentar. Con esta arriesgada decisión, Luque reafirma su estatus como uno de los maestros indiscutibles del toreo internacional, dispuesto a dejar su huella en cada embestida.
+
+La cita promete espectáculo y tensión, mientras Luque busca consolidar su reinado en tierras francesas y demostrar que su arte no conoce fronteras. Entre aficionados y críticos, la expectación crece: todos quieren ver cómo el sevillano convierte el peligro en gloria en uno de los escenarios taurinos más exigentes.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 34,
     title: `Sevilla perfila un abono de altos vuelos: Morante se cae del Domingo Hernández y la Feria toma forma definitiva`,
     image: "/images/ca.jpg",
     category: "Actualidad",
@@ -549,7 +577,7 @@ Ganadería por definir, con la opción de Santiago Domecq para, posiblemente ,Pe
     showAuthorHeader: true
    },
 	{ 
-    id: 2,
+    id: 35,
     title: `La Feria de San Isidro 2026, lista para su presentación el 5 de febrero`,
     image: "/images/fer.jpg",
     category: "Actualidad",
