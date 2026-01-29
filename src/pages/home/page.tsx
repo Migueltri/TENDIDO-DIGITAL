@@ -449,215 +449,33 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1000,
-    title: `La Diputación de Zaragoza prioriza el criterio económico en el nuevo pliego de La Misericordia hasta 2028`,
-    image: "/images/dipu.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	fullContent: `La **Diputación de Zaragoza** ha aprobado el nuevo pliego de condiciones para la gestión del **Coso de la Misericordia** , que tendrá una vigencia de **tres temporadas** , **hasta 2028** , con posibilidad de prórroga por un año adicional. La decisión vuelve a situar en el centro del **debate** el peso **predominante** del criterio **económico** frente a otros aspectos de carácter **artístico, cultural y social** **tradicionalmente** asociados a las plazas de primera categoría.
-
-Según informa el periodista **Javier Clavero en Heraldo de Aragón** , el pliego fija un canon **mínimo anual de 165.435,62 euros** , susceptible de mejora al alza por parte de los licitadores. En cuanto a la programación, se mantiene la exigencia de un mínimo de **ocho corridas de toros**, una corrida de rejones, una novillada con picadores y seis festejos populares por temporada. La Feria de San Jorge deberá contar al menos con dos corridas, mientras que la Feria del Pilar incluirá un mínimo de seis corridas de toros, una de rejones, una novillada con picadores y seis festejos populares, quedando excluidos los festejos mixtos.
-
-El concurso estará limitado a empresarios con una amplia y acreditada experiencia en plazas de primera o segunda categoría. En concreto, se exige haber gestionado al menos una plaza de primera durante dos de las cuatro últimas anualidades completas, o bien haber organizado un mínimo de 25 corridas de toros anuales en plazas de primera y/o segunda categoría durante al menos tres de las últimas cinco anualidades completas. Este planteamiento refuerza un modelo basado fundamentalmente en la solvencia económica y la capacidad de gestión.
-
-Aunque el pliego contempla de forma secundaria aspectos como la reducción de precios para jóvenes y jubilados, así como el apoyo a las Escuelas Taurinas, el grueso de la valoración continúa recayendo en la oferta económica presentada por los aspirantes.
-
-Con este planteamiento, la plaza de La Misericordia vuelve a ser objeto de controversia. La apuesta prioritaria por el componente **económico** podría volver a condicionar la **innovación**, la **calidad artística** y la **accesibilidad** del proyecto **taurino**, dejando en un segundo plano la **identidad** y el **valor histórico** de uno de los cosos más emblemáticos del país.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Cartel de toreros banderilleros para Morón de la Frontera (Sevilla)`,
-    image: "/images/moron.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	fullContent: `La plaza de toros de Morón de la Frontera será donde se den cita una terna de toreros Banderilleros el próximo 7 de marzo.
-
-Un festejo en el que harán el paseíllo los matadores **Antonio Ferrera**, **El Fandi** y **Manuel Escribano**, con toros de la ganadería de **Julio de la Puerta**.
-
-En los próximos días se presentará el cartel organizado por la empresa **Toros y Espectáculos Hnos. Durán** que ha rematado una terna de banderilleros para la corrida de toros de **Morón de la Frontera** el próximo 7 de marzo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `La feria de Olivenza presentada oficialmente con Enrique Ponce como pregonero`,
-    image: "/images/olpre.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	footerImage1: "/images/olpre1.jpg",
-    footerImage2: "/images/olpre2.jpg",
-	excerpt: "La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros.",
-	fullContent: `La Feria Taurina de Olivenza 2026 fue presentada  ayer en un evento de gran afluencia celebrado en el Convento de San Juan de Dios, un espacio que volvió a registrar un lleno absoluto para inaugurar oficialmente una de las ferias más relevantes del arranque de la temporada taurina.
-
-La presentación estuvo moderada por el periodista Juan Bazaga, de Canal Extremadura Televisión, y giró en torno al pregón ofrecido por el maestro Enrique Ponce. Su intervención aportó sensibilidad y recuerdos de esa plaza, la cual compareció en repetidas ocasiones cuando se encontraba en activo. El torero valenciano protagonizó uno de los instantes más aplaudidos de la noche, recibiendo una larga y cálida ovación del público presente.
-
-La feria tendrá lugar del 6 al 8 de marzo y contará con cuatro festejos: una novillada con picadores y tres corridas de toros. El abono mantiene su apuesta por reunir a figuras consagradas y diestros que buscan abrirse camino, así como tres novilleros que buscan hacerse con huecos en las novilladas de las ferias.
-
-Arrancará el ciclo el viernes 6 de marzo con una novillada con picadores en la que estará anunciado Tomás Bastos, Olga Casado y David Gutiérrez que debutará con caballos frente a novillos de Talavante. 
-
-Seguirá con las corridas de toros, que tendrá lugar el sábado 7 de marzo, compuesto por José María Manzanares, Daniel Luque y Juan Ortega con toros de El Puerto de San Lorenzo. 
-
-Para el domingo 8 de marzo están programadas dos corridas de toros, una por la mañana a las 11:30 en la que harán el paseíllo Borja Jiménez, David de Miranda y Marco Pérez ante un encierro de tres de Domingo Hernández y tres de La Ventana del Puerto. Un cartel que enfrenta a toreros jóvenes con ganas de ocupar los primeros puestos del escalafón y a no dejarse ganar la pelea.
-
-Por la tarde a las 17:00 se celebrará la segunda corrida del día, con Alejandro Talavante que conmemora sus 20 años de alternativa, Emilio de Justo y Roca Rey con toros de Victoriano del Río. 
-
-Olivenza se prepara para vivir una feria rematada donde los aficionados podrán disfrutar de las figuras, promesas del toreo y toreros que quieren posicionarse en lo alto del escalafón, los empresarios deben buscar rivalidad entre toreros, es fundamental para la tauromaquia, si hay rivalidad en el ruedo hay emoción en el tendido.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Fernando Cepeda protagoniza la segunda sesión de las XXIV Lecciones Magistrales de Aula Taurina Sevilla`,
-    image: "/images/cep.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	imageCaption: "Fotos: Gentileza de Andrea Grijalva",
-	fullContent: `El **Salón de Carteles de la Real Maestranza de Sevilla** acogió la **segunda sesión** de las **XXIV Lecciones Magistrales** organizadas por **Aula Taurina Sevilla**, que en esta ocasión -*27 de enero*- tuvo como protagonista al matador de toros **Fernando Cepeda**. El acto congregó a un numeroso público compuesto por aficionados y alumnos de la **Escuela Taurina de Sevilla**, que siguieron con atención una jornada cargada de contenido humano y taurino.
-
-La reunión contó con la presencia del presidente de Aula Taurina, **Miguel Serrano**, y fue presentada y moderada brillantemente por el periodista **Carlos Crivell**, quien situó la figura del torero de **Gines** dentro de la historia del toreo sevillano, definiéndolo como **“Un torero más de escuela rondeña que sevillana”**.
-
-Durante el desarrollo de la **Lección Magistral** se proyectó un vídeo con imágenes representativas de la tauromaquia de **Fernando Cepeda**, destacando especialmente las correspondientes a la tarde de su **alternativa en Madrid**, el **25 de mayo de 1987**, cuando cuajó una importante faena al sexto toro de la corrida.
-
-**Cepeda** inició su intervención recordando sus comienzos en el mundo del toro y mostrando su gratitud hacia quienes fueron pilares fundamentales en su formación. Tuvo palabras de admiración para **David Domínguez, Melquiades Garrido, Ángel Caro y Manolo Cortés**, de quien afirmó: **“Fue un torero extraordinario, con el que me preparé y del que aprendí mucho”**.
-
-El diestro explicó que su etapa como novillero fue breve, con apenas veinticinco novilladas con picadores, aunque destacó que los triunfos logrados en plazas clave marcaron su futuro: **“Tuve la suerte de estar bien en Sevilla y en Madrid y eso me facilitó el camino”**. En este contexto recordó a su primer apoderado, D. **José Flores Camará**.
-
-Al abordar el momento de su alternativa, subrayó la importancia del respaldo de **Manolo Chopera**: **“Gracias a Manolo Chopera pude elegir el cartel, de forma que me decanté por Rafael de Paula y José María Manzanares”**.
-
-**Fernando Cepeda** reconoció con sinceridad que a su carrera quizá le faltó un punto de ambición, aunque explicó los motivos que condicionaron su trayectoria: **“Las cornadas que sufrí en Sevilla y en Córdoba me frenaron”**. Asimismo, quiso matizar su relación con las empresas: **“No fui un torero complicado; lo que ocurría es que pedía lo que creía que me merecía, en cuestiones de toros y compañeros”**.
-
-Uno de los capítulos más destacados de su carrera fue su paso por la **Real Maestranza de Sevilla**, donde llegó a lidiar dos corridas de seis toros -en la segunda mató siete-, una gesta que solo comparte con **Curro Romero** y **Joselito El Gallo**. Sobre aquellas tardes explicó: **“Fueron dos corridas planteadas para destacar y mejorar mi posición en el escalafón. Fueron dos buenas tardes de toros, en ambas corté dos orejas, me tocó la música con el capote, pero se me escapó la salida por la Puerta del Príncipe”**.
-
-El matador también reflexionó sobre su relación con las grandes plazas, reconociendo que en **Madrid** se sentía más liberado: **“En Madrid salía a torear con menos presión que en Sevilla, por ello se me ha considerado más torero de Madrid”**. En cuanto a su concepto del toreo, señaló que, pese a ser muy recordado por su manejo del capote, su tauromaquia iba más allá: **“Muchos se han quedado solo con el recuerdo de cómo manejaba la capa, pero también toreaba bien con la muleta. En aquellos tiempos no era fácil torear bien con el capote, y yo lo veía muy claro”**. Durante el acto se mostró una célebre fotografía de un quite realizado en Madrid el 2 de junio de 1989 a un toro de **Martínez Elizondo**, una de las imágenes más icónicas del toreo.
-
-Ya en su faceta como apoderado, **Cepeda** destacó su etapa junto a **Miguel Ángel Perera**, de quien dijo: **“Lo considero un gran torero y una excelente persona”**. Reconoció la dificultad de aquella relación profesional: **“Éramos independientes y eso no era fácil para las negociaciones, pero es una etapa de la que estoy muy satisfecho”**. Sobre el futuro, dejó abierta la puerta a volver a ejercer esa labor: **“Si hubiera un chaval que está empezando que me ilusionara, me encantaría llevarlo hasta la alternativa”**.
-
-En el tramo final de la **Lección Magistral**, **Fernando Cepeda** expresó su gratitud hacia los aficionados: **“La afición me ha respetado y me he sentido admirado por muy buenos aficionados”**, y se mostró esperanzado ante el porvenir de la Fiesta. A una pregunta del público sobre cómo sería hoy su cartel de alternativa, respondió con rotundidad: **“Morante de padrino y Perera de testigo”**.
-
-Durante noventa minutos, el **Salón de Carteles** vibró con la sinceridad y la profundidad de un torero al que diversos autores, como **Antonio García Barbeito, Barquerito** y el propio **Carlos Crivell**, han definido como **“Un torero muy bueno”**. Una cerrada ovación puso el broche final a otra tarde memorable de las **Lecciones Magistrales de Aula Taurina Sevilla**.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Juan Jesús Rodríguez y Adrián Olmedo acercan la tauromaquia a los mayores de la Residencia Asansull de La Línea (Cadiz)`,
-    image: "/images/asan.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	fullContent: `Los novilleros gaditanos **Juan Jesús Rodríguez** y **Adrián Olmedo** protagonizaron el pasado sábado una emotiva visita a la **Residencia de mayores Asansull de La Línea de la Concepción**, en una jornada marcada por la convivencia, el diálogo intergeneracional y la transmisión de los valores de la tauromaquia.
-
-La actividad se enmarca dentro del programa **“Veteranos y noveles”** de la **Fundación Toro de Lidia**, una iniciativa impulsada y promovida por la **Plataforma de impulso a los Novilleros de Andalucía**, que tiene como objetivo **fomentar el intercambio de experiencias entre distintas generaciones y acercar la tauromaquia a diferentes ámbitos sociales**.
-
-Durante el encuentro, los novilleros —alumnos de la **Escuela Taurina Linense**— compartieron un animado coloquio con los residentes, en el que se sucedieron anécdotas personales, recuerdos taurinos y vivencias ligadas al mundo del toro. Asimismo, los jóvenes mostraron a los mayores diversos vídeos de su toreo y de sus entrenamientos, permitiéndoles conocer de primera mano el día a día de un novillero en su proceso de formación.
-
-**La jornada se completó con una exhibición de toreo de salón**, que despertó el interés y la emoción de los asistentes, quienes siguieron con atención cada lance y cada explicación. Los residentes pudieron así apreciar la técnica, el sacrificio y la preparación que requiere el aprendizaje taurino, en un ambiente cercano y participativo.
-
-Los mayores disfrutaron de una mañana diferente, en la que la tauromaquia se convirtió en vehículo de valores como el respeto, el esfuerzo, la constancia y la superación, reforzando el carácter cultural y social de esta tradición. **La actividad fue acogida con gran cariño por parte de los residentes y del personal del centro, que valoraron muy positivamente la iniciativa.**
-
-La **Plataforma de Impulso a los Novilleros de Andalucía** nace con el objetivo de promocionar y potenciar las carreras de los novilleros en la comunidad, así como sus Escuelas Taurinas y certámenes. Un proyecto anual, **impulsado por la Fundación Toro de Lidia y respaldado por la Junta de Andalucía, Fundación Caja Rural del Sur, Fundación Cajasol, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Diputación de Málaga, Diputación de Huelva, Diputación de Córdoba, Diputación de Granada y Diputación de Cádiz.**`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `ANOET rechaza rotundamente la iniciativa del Gobierno de prohibir la entrada de menores a las plazas de toros`,
-    image: "/images/prohib.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	fullContent: `La Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) manifiesta públicamente su profundo desacuerdo con la iniciativa del Gobierno de España que pretende prohibir la entrada de menores de edad a los espectáculos taurinos celebrados en las plazas de toros.
-
-Desde ANOET consideramos que esta propuesta supone un ataque directo a la libertad cultural, educativa y familiar, además de una injerencia injustificada en una manifestación cultural que forma parte del patrimonio cultural español, tal y como reconoce la Ley 18/2013. Impedir la asistencia de menores no protege, sino que limita el derecho de las familias a decidir libremente sobre la educación cultural de sus hijos.
-
-Asimismo, recordamos que la asistencia de menores a los festejos taurinos se ha realizado históricamente de forma responsable, acompañada y regulada, sin que existan datos objetivos que justifiquen una prohibición generalizada.
-
-Desde ANOET consideramos además que esta iniciativa tendría graves consecuencias económicas y sociales para el sector taurino, y por ello instamos al Gobierno a reconsiderarla y a abrir un proceso de diálogo real con el sector, evitando decisiones ideológicas que dividen a la sociedad.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Victorino vuelve a Alicante: Hogueras 2026 se blinda con un cartel ganadero de máximo nivel`,
-    image: "/images/vuelv.jpg",
-    category: "Actualidad",
-    date: "28 de Enero de 2026",
-	fullContent: `La Feria de Hogueras de Alicante 2026 comienza a tomar forma con un anuncio de enorme calado para la afición. El empresario Nacho Lloret desveló, durante la XVIII Gala de la Asociación Cultural Taurina Puerta Grande, una noticia llamada a marcar el pulso del próximo ciclo: la histórica reaparición de la ganadería de Victorino Martín en el coso alicantino, cuatro décadas después de su primera comparecencia.
-
-El hierro de la A coronada encabezará un elenco ganadero de auténtico lujo, en el que también figuran Victoriano del Río, Álvaro Núñez, El Puerto de San Lorenzo y Santiago Domecq. Cinco corridas que dibujan una feria ambiciosa, con variedad de encastes y personalidad propia, pensada para satisfacer tanto al aficionado exigente como al gran público.
-
-El regreso de Victorino Martín no es un detalle menor. Su última presencia dejó una huella imborrable en la pasada edición del serial, cuando su corrida fue señalada por amplios sectores de la afición como la más completa del abono. Aquella tarde quedó grabada en la memoria colectiva con el indulto de “Bohemio”, un toro de 532 kilos, nacido en 2020, lidiado magistralmente por Manuel Escribano, en uno de los momentos más destacados de toda la temporada taurina.
-Con esta decidida apuesta por la cabaña brava, Alicante refuerza su personalidad y eleva el listón de exigencia, consolidando la Feria de Hogueras como una de las citas imprescindibles del verano taurino y lanzando un mensaje claro: en 2026, el protagonismo será del toro y de la emoción en el ruedo.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1007,
-    title: `Victorino sube la temperatura de Abril: Sevilla prepara un mano a mano de máxima exigencia`,
-    image: "/images/sube.jpg",
+    title: `Valdefresno, fidelidad al encaste Atanasio con Madrid como gran objetivo de la temporada`,
+    image: "/images/valfres.jpg",
     category: "Actualidad",
-    date: "28 de Enero de 2026",
-	excerpt: "Escribano y Borja Jiménez, frente a frente, en uno de los carteles más competitivos del abono",
-	fullContent: `La Feria de Abril empieza a enseñar los colmillos. A falta de pocas semanas para la presentación oficial del abono —fijada para el 9 de febrero—, José María Garzón continúa dando forma a una Maestranza que busca emoción, competencia y verdad. Y si hay una fecha marcada a fuego en el calendario del aficionado, esa es la corrida de Victorino Martín.
+    date: "29 de Enero de 2026",
+	fullContent: `La comarca de la Tierra de Ledesma vuelve a ser refugio de una de las ganaderías que mantienen viva la esencia del campo bravo. Valdefresno, hierro salmantino de encaste Atanasio-Lisardo, afronta un nuevo curso desde la finca Tellosancho, en Tabera de Abajo, donde los toros de Nicolás Fraile apuran el invierno marcados por las lluvias y las nevadas. Un entorno exigente que acompaña la filosofía de una casa ganadera que defiende, con convicción y continuidad, un linaje histórico cada vez menos frecuente en las grandes ferias.
 
-Lejos de medias tintas, la empresa ha optado por un cartel de pulso firme, pensado para el aficionado que exige. Dos toreros, dos trayectorias en alza y un denominador común: conocen y respetan al toro de Victorino. Manuel Escribano y Borja Jiménez serán los encargados de medirse a uno de los hierros más temidos y respetados del campo bravo, en una tarde que respira chispa, rivalidad y ambición. Ambos estarán anunciados tres tardes en el abono, pero esta comparecencia tiene un peso específico distinto.
+Con la vista puesta en el arranque de la temporada, el ganadero reconoce las dificultades de apostar por este encaste, menos habitual para los toreros y con menor presencia en carteles de máximo relumbrón. Sin embargo, Valdefresno atraviesa un momento sólido, respaldado por actuaciones recientes de peso. Madrid vuelve a ser el principal escaparate del año, con una corrida ya reseñada y ocho cinqueños preparados para su posible lidia en Las Ventas durante el verano, plaza clave en el futuro inmediato de la divisa.
 
-El nombre de Escribano se ha convertido en habitual cuando suenan los albaserradas. El torero de Gerena ha construido una relación sólida con la divisa de La Coronada, cimentada a base de entrega y resultados. Ahí quedan hitos recientes y lejanos: el toro premiado con la vuelta al ruedo en 2025, o aquel inolvidable Cobradiezmos de 2016, paradigma de bravura y nobleza, que forma parte ya de la memoria colectiva de Sevilla.
-
-Borja Jiménez, por su parte, llega con menos recorrido en ferias, pero con argumentos de peso. Su nombre quedó definitivamente ligado a Victorino tras salir a hombros en Las Ventas en la Feria de Otoño de 2023, un triunfo que volvió a rubricar en 2024, paseando dos orejas en la corrida In Memoriam. Ese mismo año, en la Maestranza, dejó una de las faenas más rotundas del ciclo, confirmando que está preparado para asumir retos de máxima responsabilidad.
-Victorino Martín, Sevilla y dos toreros dispuestos a no dejar nada dentro. Un duelo sin red, pensado para el aficionado de paladar fino y corazón fuerte. Abril ya huele a pólvora.`,
+En total, la camada de este año rondará los cuarenta toros, de los que saldrán cuatro corridas y dos novilladas, algunas reservadas incluso para la temporada siguiente. El hierro salmantino espera anunciar presencia en plazas de primera, segunda y tercera categoría, además de ciclos novilleriles en septiembre. Con prudencia y ambición medida, Valdefresno encara un 2026 cargado de ilusiones, confiando en que sus toros respondan en la plaza con bravura, nobleza y transmisión, reflejo del trabajo y la constancia de toda una vida dedicada al toro bravo.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `Sevilla se mira al espejo: así se reparte el poder el quinteto sevillano que incendia el abono`,
-    image: "/images/espej.jpg",
+    title: `La Escuela Taurina de Guadalajara, representada en el Bolsín Taurino Mirobrigense`,
+    image: "/images/gua.jpg",
     category: "Actualidad",
-    date: "28 de Enero de 2026",
-	excerpt: "Escribano, Luque, Ortega, Borja Jiménez y Aguado ya tienen sitio en los carteles de la Maestranza",
-	fullContent: `La Maestranza empieza a tomar forma definitiva y, a medida que enero apura sus últimos días, el abono hispalense va dejando claras sus líneas maestras. Sevilla volverá a mirarse en sus toreros. Y lo hará con un quinteto de fuego, cinco nombres de la tierra que sostienen, con distintos acentos, el pulso de una temporada que apunta a histórica.
-La gran noticia ya es oficial: Morante de la Puebla vuelve a Sevilla. Será el 5 de abril, en una tarde de alto voltaje junto a Andrés Roca Rey y David de Miranda, con toros de Garcigrande. El genio cigarrero tendrá cuatro tardes aseguradas, con la puerta abierta a una quinta en San Miguel, si el cuerpo y la inspiración mandan.
+    date: "29 de Enero de 2026",
+	fullContent: `Los alumnos de la Escuela Taurina de Guadalajara, **Pedro Ruiz de la Hermosa y Jaime Torija**, han sido seleccionados para participar en el Bolsín Taurino Mirobrigense, donde ya han logrado pasar varias **clasificatorias** , uno de los **certámenes** de mayor prestigio en la formación de jóvenes aspirantes a **toreros** a nivel nacional.
 
-Pero más allá del regreso del torero que cambia el aire de la plaza, el foco se posa en los sevillanos que vertebran el serial. Juan Ortega y Pablo Aguado suman cuatro comparecencias cada uno, mientras que Manuel Escribano, Daniel Luque y Borja Jiménez estarán anunciados en tres tardes. Especial atención merece el mano a mano entre Escribano y Borja Jiménez, con la corrida de Victorino Martín, una cita marcada en rojo por afición y exigencia.
+La presencia de ambos alumnos en este reconocido bolsín supone un importante respaldo a su **trayectoria** y al **trabajo** que vienen desarrollando en el seno de la Escuela Taurina de Guadalajara, destacando su evolución, disciplina y compromiso con la **tauromaquia**.
 
-El abono crecerá en número de festejos y recupera fechas señaladas, como el Corpus Christi, devolviendo a la temporada sevillana ese empaque de feria larga y de gran capital taurina.
-
-**Las once tardes del bloque sevillano en la Maestranza**
-
-* Miércoles 15 de abril: Castella, Perera y Manuel Escribano (Santiago Domecq)
-
-* Jueves 16 de abril: Morante, Juan Ortega y, previsiblemente, Víctor Hernández (Álvaro Núñez)
-
-* Viernes 17 de abril: Talavante, Roca Rey y Pablo Aguado (Domingo Hernández)
-
-* Sábado 18 de abril: Manuel Escribano y Borja Jiménez, mano a mano (Victorino Martín)
-
-* Lunes 20 de abril: Morante, Borja Jiménez y Tomás Rufo (García Jiménez / Olga Jiménez)
-
-* Martes 21 de abril: Manzanares, Talavante y Daniel Luque (Núñez del Cuvillo)
-
-* Viernes 24 de abril: Daniel Luque, Juan Ortega y Pablo Aguado (Juan Pedro Domecq)
-
-* Domingo 26 de abril: Pepe Moral, Manuel Escribano y posiblemente Esaú Fernández (Miura)
-
-* Viernes 28 de septiembre: Manzanares, Talavante y Juan Ortega (Puerto de San Lorenzo / La Ventana del Puerto)
-
-* Sábado 29 de septiembre: Posiblemente Emilio de Justo, Roca Rey y Pablo Aguado (Jandilla / Vegahermosa)
-
-* Domingo 30 de septiembre:Daniel Luque, Borja Jiménez y un hueco reservado por si Morante decide firmar su quinta tarde (Garcigrande)
-
-Sevilla ya tiene mapa. Los nombres están puestos, las fechas marcadas y la afición empieza a sacar cuentas. Cinco toreros sevillanos, cinco maneras de entender el toreo y una Maestranza que vuelve a latir con pulso propio.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+El Bolsín Taurino Mirobrigense, que se celebra **anualmente** en Ciudad Rodrigo, es una cita de **referencia** dentro del calendario **taurino**, **caracterizada** por **su alto** nivel de exigencia y por haber servido de **plataforma** de **lanzamiento** para numerosos profesionales del escalafón.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
@@ -814,6 +632,36 @@ Carteles no oficiales de la Feria de San Isidro 2026:
 – D 14/06: **Alejandro Talavante, Roca Rey y Víctor Hernández** (Victoriano del Río)`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 36,
+    title: `Valdefresno, fidelidad al encaste Atanasio con Madrid como gran objetivo de la temporada`,
+    image: "/images/valfres.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `La comarca de la Tierra de Ledesma vuelve a ser refugio de una de las ganaderías que mantienen viva la esencia del campo bravo. Valdefresno, hierro salmantino de encaste Atanasio-Lisardo, afronta un nuevo curso desde la finca Tellosancho, en Tabera de Abajo, donde los toros de Nicolás Fraile apuran el invierno marcados por las lluvias y las nevadas. Un entorno exigente que acompaña la filosofía de una casa ganadera que defiende, con convicción y continuidad, un linaje histórico cada vez menos frecuente en las grandes ferias.
+
+Con la vista puesta en el arranque de la temporada, el ganadero reconoce las dificultades de apostar por este encaste, menos habitual para los toreros y con menor presencia en carteles de máximo relumbrón. Sin embargo, Valdefresno atraviesa un momento sólido, respaldado por actuaciones recientes de peso. Madrid vuelve a ser el principal escaparate del año, con una corrida ya reseñada y ocho cinqueños preparados para su posible lidia en Las Ventas durante el verano, plaza clave en el futuro inmediato de la divisa.
+
+En total, la camada de este año rondará los cuarenta toros, de los que saldrán cuatro corridas y dos novilladas, algunas reservadas incluso para la temporada siguiente. El hierro salmantino espera anunciar presencia en plazas de primera, segunda y tercera categoría, además de ciclos novilleriles en septiembre. Con prudencia y ambición medida, Valdefresno encara un 2026 cargado de ilusiones, confiando en que sus toros respondan en la plaza con bravura, nobleza y transmisión, reflejo del trabajo y la constancia de toda una vida dedicada al toro bravo.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 37,
+    title: `La Escuela Taurina de Guadalajara, representada en el Bolsín Taurino Mirobrigense`,
+    image: "/images/gua.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `Los alumnos de la Escuela Taurina de Guadalajara, **Pedro Ruiz de la Hermosa y Jaime Torija**, han sido seleccionados para participar en el Bolsín Taurino Mirobrigense, donde ya han logrado pasar varias **clasificatorias** , uno de los **certámenes** de mayor prestigio en la formación de jóvenes aspirantes a **toreros** a nivel nacional.
+
+La presencia de ambos alumnos en este reconocido bolsín supone un importante respaldo a su **trayectoria** y al **trabajo** que vienen desarrollando en el seno de la Escuela Taurina de Guadalajara, destacando su evolución, disciplina y compromiso con la **tauromaquia**.
+
+El Bolsín Taurino Mirobrigense, que se celebra **anualmente** en Ciudad Rodrigo, es una cita de **referencia** dentro del calendario **taurino**, **caracterizada** por **su alto** nivel de exigencia y por haber servido de **plataforma** de **lanzamiento** para numerosos profesionales del escalafón.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
 	{ 
