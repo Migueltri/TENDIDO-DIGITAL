@@ -449,15 +449,40 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1005,
+    title: `Arnedo elige a los 14 novilleros clasificados para el XXIII bolsín taurino Zapato de Plata 2026`,
+    image: "/images/consej.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `El **Consejo Sectorial Taurino de Arnedo** ha dado a conocer la relación de los **catorce novilleros seleccionados para participar en los tentaderos clasificatorios del XXIII Bolsín Taurino Zapato de Plata 2026** , una de las citas más consolidadas del escalafón menor. **Las pruebas se celebrarán los días 21 y 22 de febrero, y de ellas saldrán los finalistas que optarán al prestigioso trofeo riojano.**
+
+En la presente edición se han inscrito un **total de 98 aspirantes**, un dato que vuelve a poner de relieve el **alto interés y el notable nivel de** participación que mantiene este certamen, referencia obligada para las jóvenes promesas del toreo.
+
+Los tentaderos clasificatorios se desarrollarán en las siguientes ganaderías:
+
+**Sábado, 21 de febrero de 2026 – Ganadería El Montecillo:**
+Óscar Campos (Escuela Taurina de Madrid), Armando Rojo (Escuela Taurina de Sevilla), Noel García (Escuela Taurina de Salamanca), Iñigo Norte (Escuela Taurina de Salamanca), Israel Guirao (Escuela Taurina de Valencia), Clovis (Escuela Taurina de Béziers) y Aarón Navas (Escuela Taurina de Palencia).
+
+**Domingo, 22 de febrero de 2026 – Ganadería de Mollalta (Ciudad Real):**
+Manuel Domínguez, Pedro Gómez (Escuela Taurina de Galapagar), Manuel León (Escuela Taurina de Badajoz), José Antonio de Gracia (Escuela Taurina de El Juli), Blas Márquez (Escuela Taurina de Linares), Jaime Torija (Escuela Taurina de Guadalajara) y Alfonso Morales (Escuela Taurina de Linares).
+
+De entre los participantes, el jurado designará a los **tres novilleros finalistas**, que disputarán la gran final **el sábado 21 de marzo en la plaza de toros Arnedo Arena** . De esta última prueba saldrá el vencedor del XXIII Bolsín Taurino Zapato de Plata 2026, **quien obtendrá el derecho a ser anunciado en la Feria del Zapato de Oro 2026, siempre que haya debutado con picadores, con la posibilidad añadida de elegir novillada.**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1006,
-    title: `Daniel Luque desafía los límites: seis toros y un trono en Mont de Marsan`,
+    title: `Daniel Luque se anuncia en solitario con seis toros en Mont de Marsan en 2026`,
     image: "/images/luq.jpg",
     category: "Actualidad",
     date: "29 de Enero de 2026",
 	footerImage1: "/images/luq1.jpg",
-	fullContent: `El torero sevillano Daniel Luque vuelve a subir la apuesta en Francia al anunciar que lidiará seis toros en Mont de Marsan, un reto que pocos se atreven a enfrentar. Con esta arriesgada decisión, Luque reafirma su estatus como uno de los maestros indiscutibles del toreo internacional, dispuesto a dejar su huella en cada embestida.
+	fullContent: `Daniel Luque afrontará uno de los compromisos más destacados de la temporada 2026 al anunciarse como único espada frente a seis toros en la plaza de Mont de Marsan, reforzando así su liderazgo en el toreo francés.
 
-La cita promete espectáculo y tensión, mientras Luque busca consolidar su reinado en tierras francesas y demostrar que su arte no conoce fronteras. Entre aficionados y críticos, la expectación crece: todos quieren ver cómo el sevillano convierte el peligro en gloria en uno de los escenarios taurinos más exigentes.`,
+El diestro de Gerena, convertido en una de las grandes figuras en Francia, repetirá una fórmula ya exitosa en cosos como Bayona, Dax y Nimes, donde en 2024 lidió seis toros de La Quinta. Bajo el apoderamiento de la FIT, Luque mantiene su objetivo de encerrarse en solitario en las principales plazas del país galo.
+
+Antes de esta cita, iniciará campaña en Olivenza y suma tres tardes en el abono de Sevilla. Para la feria de La Madeleine, tiene reseñados toros de Daniel Ruiz, La Quinta, Victoriano del Río, Adolfo Martín, Fuente Ymbro y Juan Pedro Domecq.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -496,15 +521,40 @@ El Bolsín Taurino Mirobrigense, que se celebra **anualmente** en Ciudad Rodrigo
 
 const latestNews: NewsItem[] = [
    { 
+    id: 32,
+    title: `Arnedo elige a los 14 novilleros clasificados para el XXIII bolsín taurino Zapato de Plata 2026`,
+    image: "/images/consej.jpg",
+    category: "Actualidad",
+    date: "29 de Enero de 2026",
+	fullContent: `El **Consejo Sectorial Taurino de Arnedo** ha dado a conocer la relación de los **catorce novilleros seleccionados para participar en los tentaderos clasificatorios del XXIII Bolsín Taurino Zapato de Plata 2026** , una de las citas más consolidadas del escalafón menor. **Las pruebas se celebrarán los días 21 y 22 de febrero, y de ellas saldrán los finalistas que optarán al prestigioso trofeo riojano.**
+
+En la presente edición se han inscrito un **total de 98 aspirantes**, un dato que vuelve a poner de relieve el **alto interés y el notable nivel de** participación que mantiene este certamen, referencia obligada para las jóvenes promesas del toreo.
+
+Los tentaderos clasificatorios se desarrollarán en las siguientes ganaderías:
+
+**Sábado, 21 de febrero de 2026 – Ganadería El Montecillo:**
+Óscar Campos (Escuela Taurina de Madrid), Armando Rojo (Escuela Taurina de Sevilla), Noel García (Escuela Taurina de Salamanca), Iñigo Norte (Escuela Taurina de Salamanca), Israel Guirao (Escuela Taurina de Valencia), Clovis (Escuela Taurina de Béziers) y Aarón Navas (Escuela Taurina de Palencia).
+
+**Domingo, 22 de febrero de 2026 – Ganadería de Mollalta (Ciudad Real):**
+Manuel Domínguez, Pedro Gómez (Escuela Taurina de Galapagar), Manuel León (Escuela Taurina de Badajoz), José Antonio de Gracia (Escuela Taurina de El Juli), Blas Márquez (Escuela Taurina de Linares), Jaime Torija (Escuela Taurina de Guadalajara) y Alfonso Morales (Escuela Taurina de Linares).
+
+De entre los participantes, el jurado designará a los **tres novilleros finalistas**, que disputarán la gran final **el sábado 21 de marzo en la plaza de toros Arnedo Arena** . De esta última prueba saldrá el vencedor del XXIII Bolsín Taurino Zapato de Plata 2026, **quien obtendrá el derecho a ser anunciado en la Feria del Zapato de Oro 2026, siempre que haya debutado con picadores, con la posibilidad añadida de elegir novillada.**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 33,
-    title: `Daniel Luque desafía los límites: seis toros y un trono en Mont de Marsan`,
+    title: `Daniel Luque se anuncia en solitario con seis toros en Mont de Marsan en 2026`,
     image: "/images/luq.jpg",
     category: "Actualidad",
     date: "29 de Enero de 2026",
 	footerImage1: "/images/luq1.jpg",
-	fullContent: `El torero sevillano Daniel Luque vuelve a subir la apuesta en Francia al anunciar que lidiará seis toros en Mont de Marsan, un reto que pocos se atreven a enfrentar. Con esta arriesgada decisión, Luque reafirma su estatus como uno de los maestros indiscutibles del toreo internacional, dispuesto a dejar su huella en cada embestida.
+	fullContent: `Daniel Luque afrontará uno de los compromisos más destacados de la temporada 2026 al anunciarse como único espada frente a seis toros en la plaza de Mont de Marsan, reforzando así su liderazgo en el toreo francés.
 
-La cita promete espectáculo y tensión, mientras Luque busca consolidar su reinado en tierras francesas y demostrar que su arte no conoce fronteras. Entre aficionados y críticos, la expectación crece: todos quieren ver cómo el sevillano convierte el peligro en gloria en uno de los escenarios taurinos más exigentes.`,
+El diestro de Gerena, convertido en una de las grandes figuras en Francia, repetirá una fórmula ya exitosa en cosos como Bayona, Dax y Nimes, donde en 2024 lidió seis toros de La Quinta. Bajo el apoderamiento de la FIT, Luque mantiene su objetivo de encerrarse en solitario en las principales plazas del país galo.
+
+Antes de esta cita, iniciará campaña en Olivenza y suma tres tardes en el abono de Sevilla. Para la feria de La Madeleine, tiene reseñados toros de Daniel Ruiz, La Quinta, Victoriano del Río, Adolfo Martín, Fuente Ymbro y Juan Pedro Domecq.`,
     author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
