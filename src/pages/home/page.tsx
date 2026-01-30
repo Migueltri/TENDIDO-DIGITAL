@@ -449,6 +449,26 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1003,
+    title: `Tauroemocion de Albero García, virtual empresario de Málaga`,
+    image: "/images/malag.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	fullContent: `La empresa **Tauroemoción**, con su **CEO Alberto García**, son el nuevo empresario virtualmente de la plaza de toros de **Málaga** tras imponerse en el pliego de adjudicación. A las ofertas presentadas por Garzón y la familia Chopera.
+
+Así, lo ha determinado la **Mesa de Contratación de la Diputación de Málaga**, alzándose ganador la oferta de **Tauroemoción** con 93,27 puntos, con una ventaja de 6,27 puntos frente a la segunda opción, la comandada por **José María Garzón**. La empresa **BMF Toros** ha quedado en tercer lugar.
+
+Ahora toca que la empresa **Tauroemoción** tiene que justificar 'la innovación y originalidad de sus propuestas para prestar el servicio' en la organización de una feria en torno al 11 de junio por la conmemoración de los 150 años de la inauguración de la plaza de toros de **Málaga** y la donación a la Diputación de los trajes picassianos que se elaborarían para la Picassiana con el objetivo de que este festejo tenga cierta uniformidad.
+Según ha podido saber este medio, la miniferia del aniversario constaría de una corrida de toros, un festival taurino, una novillada con picadores y un concurso de recortadores. Tras remitir la información solicitada, la mesa se volverá a reunir para designar de forma definitiva a la empresa de **Alberto García** como la adjudicataria de la plaza de toros de **Málaga**.
+
+Esta adjudicación supone el desembarco de **Tauroemoción** en el circuito de las plazas de primera.
+
+**Alberto García** con una trayectoria empresarial consolidada en plazas de segunda categoría como **Valladolid, Burgos, Ávila, Zamora, Huesca, Jaén o Soria**, además de numerosos cosos de tercera como **Almendralejo o Baeza**, es además apoderado de **Emilio de Justo, El Fandi y Manuel Escribano**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1004,
     title: `Manuel Domínguez será apoderado por Ignacio Ríos`,
     image: "/images/manudom.jpg",
@@ -553,6 +573,26 @@ Las consecuencias artísticas pueden ser profundas. Cerrar carteles con tanta an
 
 const latestNews: NewsItem[] = [
   	{ 
+    id: 22,
+    title: `Tauroemocion de Albero García, virtual empresario de Málaga`,
+    image: "/images/malag.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	fullContent: `La empresa **Tauroemoción**, con su **CEO Alberto García**, son el nuevo empresario virtualmente de la plaza de toros de **Málaga** tras imponerse en el pliego de adjudicación. A las ofertas presentadas por Garzón y la familia Chopera.
+
+Así, lo ha determinado la **Mesa de Contratación de la Diputación de Málaga**, alzándose ganador la oferta de **Tauroemoción** con 93,27 puntos, con una ventaja de 6,27 puntos frente a la segunda opción, la comandada por **José María Garzón**. La empresa **BMF Toros** ha quedado en tercer lugar.
+
+Ahora toca que la empresa **Tauroemoción** tiene que justificar 'la innovación y originalidad de sus propuestas para prestar el servicio' en la organización de una feria en torno al 11 de junio por la conmemoración de los 150 años de la inauguración de la plaza de toros de **Málaga** y la donación a la Diputación de los trajes picassianos que se elaborarían para la Picassiana con el objetivo de que este festejo tenga cierta uniformidad.
+Según ha podido saber este medio, la miniferia del aniversario constaría de una corrida de toros, un festival taurino, una novillada con picadores y un concurso de recortadores. Tras remitir la información solicitada, la mesa se volverá a reunir para designar de forma definitiva a la empresa de **Alberto García** como la adjudicataria de la plaza de toros de **Málaga**.
+
+Esta adjudicación supone el desembarco de **Tauroemoción** en el circuito de las plazas de primera.
+
+**Alberto García** con una trayectoria empresarial consolidada en plazas de segunda categoría como **Valladolid, Burgos, Ávila, Zamora, Huesca, Jaén o Soria**, además de numerosos cosos de tercera como **Almendralejo o Baeza**, es además apoderado de **Emilio de Justo, El Fandi y Manuel Escribano**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 23,
     title: `Manuel Domínguez será apoderado por Ignacio Ríos`,
     image: "/images/manudom.jpg",
