@@ -449,6 +449,91 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Manuel Domínguez será apoderado por Ignacio Ríos`,
+    image: "/images/manudom.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: "El novillero sin caballos Manuel Domínguez, de Mairena del Alcor (Sevilla), y el empresario Ignacio Ríos, han llegado a un acuerdo de apoderamiento.",
+	fullContent: `Para **Ignacio Ríos** "**es un chaval que desde muy chiquitito lo he visto torear con una toalla en la peluquería de su madre, siempre he estado pendiente de él, fui quien lo llevó a la escuela taurina, y este invierno he decidido apostar en firme por un novillero sin picadores, sabiendo lo duro que es formar y educartaurinamente desde los cimientos. Vamos a seguir despacio y con paso muy firme**".
+
+La intención del joven empresario es "**apostar por un novillero para bien o para mal, porque va a ser un aprendizaje para ambos. Siento que necesito hacer algo por un niño que tiene muchas posibilidades de llegar a ser torero**".
+
+El nombre de **Manuel Domínguez** empezó a sonar con fuerza el pasado mes de octubre, cuando dejó buenísimas sensaciones en el festival celebrado en la plaza de toros de la **Real Maestranza de Sevilla** y también ha  dejado recientemente muy buenas sensaciones en el certamen organizado por **Morante de la Puebla** en **La Puebla del Río**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Fin del apoderamiento entre Lolo de Camas’ y Manuel Real “Realito” `,
+    image: "/images/realito.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	fullContent: `El novillero sevillano **Manuel Real “Realito”** y el hasta ahora su apoderado **José Manuel Espinosa 'Lolo de Camas'**, ha dado por concluida su relación profesional tras una etapa breve en el tiempo que finaliza desde el respeto mutuo y con los mejores deseos de éxito para ambas partes en sus respectivos caminos.
+
+**"Realito"** continuará su formación y proyección en la **Escuela Taurina Fernando Sampedro “El Almendro” de Camas.**
+
+El joven novillero **ha comenzado la temporada 2026 de manera inmejorable.** El pasado fin de semana, en la localidad sevillana de **La Puebla del Río, "Realito" firmó un triunfo rotundo** frente al quinto novillo de la tarde, un ejemplar de la ganadería de D. **Manuel Veiga**, al que cortó las **dos orejas y el rabo.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Morante	de	la	Puebla	recibió	en	su	finca	el	‘Galardón Tauromundo’ como ‘Triunfador de la Temporada 2025’`,
+    image: "/images/mora.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: `•	El trofeo fue entregado por Julián López "El Juli"`,
+	fullContent: `La **Asociación Tauromundo** volvió a dejar constancia de su firme compromiso con la defensa, promoción y dignificación de la tauromaquia al culminar, el pasado 24 de enero, uno de los actos más significativos de la **VI Bienal Internacional de la Tauromaquia**. En esta ocasión, el protagonista indiscutible fue el maestro **José Antonio Morante Camacho, “Morante de la Puebla”**, quien recibió finalmente el **Galardón Tauromundo** que le acreditó como **Triunfador de la Temporada 2025.**
+
+Dicho reconocimiento no pudo ser entregado en la fecha inicialmente prevista, durante la segunda jornada de la **Bienal** celebrada el sábado 26 de octubre en la ciudad de **Jerez de la Frontera**. Aquel encuentro, que revistió un carácter especialmente simbólico al enmarcarse en la candidatura jerezana a la **Capitalidad Europea de la Cultura**, se vio marcado por la ausencia del diestro sevillano debido a su delicado estado de salud. La imposibilidad de acudir al acto no restó, sin embargo, ni un ápice de valor al galardón ni al consenso unánime que lo señaló como máximo exponente de la temporada taurina.
+
+Una vez superado su proceso de recuperación, **Morante** abrió las puertas de su finca, **“La Huerta de San Antonio”**, situada en **La Puebla del Río**, para acoger un acto íntimo y cargado de emoción. Hasta allí se desplazaron los máximos responsables de **Tauromundo**, entidad que organizó la **Bienal** y que volvió a ejercer como eje vertebrador de un acontecimiento que unió tradición, cultura y reconocimiento a la excelencia artística.
+
+El presidente de **Tauromundo** y de la **Bienal Internacional de la Tauromaquia, Martín Vivas Ruiz**, asistió al encuentro junto al vicepresidente de la **Asociación** y director de la **Bienal, Gabriel Fernández Rey**, quienes encabezaron una representación institucional que subrayó la importancia del momento. La entrega del trofeo corrió a cargo del maestro **Julián López “El Juli”**, cuya presencia añadió un valor simbólico añadido al reconocimiento entre figuras consagradas del toreo contemporáneo.
+
+El acto se desarrolló en un ambiente de sobriedad y respeto, marcado por la cercanía y la gratitud. **Morante de la Puebla**, visiblemente emocionado, agradeció el galardón y el respaldo recibido tanto por **Tauromundo** como por el conjunto del mundo taurino, consciente de que el premio no solo distinguía una temporada triunfal, sino también una trayectoria artística profundamente influyente.
+
+Con este gesto, **Tauromundo** reafirmó su papel como institución de referencia en la promoción de la tauromaquia desde una perspectiva cultural, histórica y artística. La **VI Bienal Internacional de la Tauromaquia** volvió así a consolidarse como un foro de prestigio internacional, capaz de reconocer a sus protagonistas incluso más allá de las fechas oficiales, priorizando el valor humano y la trascendencia del legado taurino.
+
+La entrega del **Galardón Tauromundo** a **Morante de la Puebla** quedó, de este modo, como un episodio de especial relevancia dentro del calendario taurino, un acto que simbolizó la unión entre tradición y reconocimiento institucional, y que volvió a situar a la tauromaquia en el lugar que históricamente había ocupado dentro del patrimonio cultural.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `La Fundación Toro de Lidia completa la colección biográfica de los cinco califas del toreo con la publicación de El Cordobés`,
+    image: "/images/fuli.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: "Lagartijo, Guerrita, Machaquito, Manolete y El Cordobés ya cuentan con sus biografías completas gracias al trabajo del Capítulo de Córdoba de la Fundación Toro de Lidia y al Ayuntamiento de Córdoba",
+	fullContent: `La Fundación Toro de Lidia ha culminado un ambicioso proyecto editorial que consolida definitivamente el legado de los cinco Califas del Toreo: Rafael Molina “Lagartijo”, Rafael Guerra “Guerrita”, Rafael González “Machaquito”, Manuel Rodríguez “Manolete” y Manuel Benítez “El Cordobés”. Gracias al trabajo del Capítulo de Córdoba de la Fundación, dirigido por el abogado Francisco Gordón, y en colaboración con el Ayuntamiento de Córdoba, los cinco maestros del toreo nacidos en la ciudad califal cuentan ya con sus biografías plasmadas en libros que recuperan obras fundamentales de la literatura taurina.
+ 
+Así, El Círculo de Amistad de Córdoba acogía la presentación de la biografía de Manuel Benítez 'El Cordobés', escrita por Domingo Delgado de la Cámara para la Fundación Toro de Lidia.
+ 
+El presidente del capítulo cordobés de la Fundación, Francisco Gordón, ha recordado que Manuel Benítez es "el único califa vivo y que presentar su biografía en Córdoba supone un homenaje a su trayectoria y a su influencia histórica en la tauromaquia". Además, “el acto ha coincidido con el 90 cumpleaños del maestro y la biografía ha sido ilustrada con fotografías históricas de Ricardo. Las imágenes, seleccionadas con esmero por Florencio Rodríguez, hijo del fotoperiodista, graban con acierto la publicación, ayudando así a dibujar la figura inigualable del quinto califa”, continúa Gordón.
+ 
+El proyecto comenzó en 2021 con la publicación de la biografía de Rafael Guerra “Guerrita”, coincidiendo con el 80 aniversario de su fallecimiento. A esta le siguió en 2022 la de Rafael González “Machaquito” y, posteriormente, la de Rafael Molina “Lagartijo”. Recientemente se han sumado las biografías de “Manolete”, considerado el arquitecto del toreo moderno, y “El Cordobés”, completando así el círculo de los cinco toreros más grandes que han nacido en Córdoba.
+ 
+**Proyecto editorial de la Fundación Toro de Lidia**
+La Fundación Toro de Lidia ha desarrollado en los últimos años un extenso proyecto de recuperación de obras taurinas fundamentales. Este esfuerzo forma parte de una iniciativa más amplia que ha incluido la reedición de 12 libros taurinos esenciales, entre biografías, ensayos y novelas, con la colaboración del Ministerio de Cultura.
+ 
+Todos los libros están disponibles de forma gratuita en formato digital en la página web de la Fundación Toro de Lidia <a
+  www.fundaciontorodelidia.org
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.fundaciontorodelidia.org
+</a>, y también pueden adquirirse en formato físico a través de Amazon. Esta accesibilidad garantiza que las nuevas generaciones de aficionados puedan conocer la historia y el legado de estos maestros del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1008,
     title: `Zaragoza pone en jaque a la Fiesta: un pliego que ahoga la Feria del Pilar desde febrero`,
     image: "/images/zarag.jpg",
@@ -468,6 +553,91 @@ Las consecuencias artísticas pueden ser profundas. Cerrar carteles con tanta an
 
 const latestNews: NewsItem[] = [
   	{ 
+    id: 23,
+    title: `Manuel Domínguez será apoderado por Ignacio Ríos`,
+    image: "/images/manudom.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: "El novillero sin caballos Manuel Domínguez, de Mairena del Alcor (Sevilla), y el empresario Ignacio Ríos, han llegado a un acuerdo de apoderamiento.",
+	fullContent: `Para **Ignacio Ríos** "**es un chaval que desde muy chiquitito lo he visto torear con una toalla en la peluquería de su madre, siempre he estado pendiente de él, fui quien lo llevó a la escuela taurina, y este invierno he decidido apostar en firme por un novillero sin picadores, sabiendo lo duro que es formar y educartaurinamente desde los cimientos. Vamos a seguir despacio y con paso muy firme**".
+
+La intención del joven empresario es "**apostar por un novillero para bien o para mal, porque va a ser un aprendizaje para ambos. Siento que necesito hacer algo por un niño que tiene muchas posibilidades de llegar a ser torero**".
+
+El nombre de **Manuel Domínguez** empezó a sonar con fuerza el pasado mes de octubre, cuando dejó buenísimas sensaciones en el festival celebrado en la plaza de toros de la **Real Maestranza de Sevilla** y también ha  dejado recientemente muy buenas sensaciones en el certamen organizado por **Morante de la Puebla** en **La Puebla del Río**.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 24,
+    title: `Fin del apoderamiento entre Lolo de Camas’ y Manuel Real “Realito” `,
+    image: "/images/realito.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	fullContent: `El novillero sevillano **Manuel Real “Realito”** y el hasta ahora su apoderado **José Manuel Espinosa 'Lolo de Camas'**, ha dado por concluida su relación profesional tras una etapa breve en el tiempo que finaliza desde el respeto mutuo y con los mejores deseos de éxito para ambas partes en sus respectivos caminos.
+
+**"Realito"** continuará su formación y proyección en la **Escuela Taurina Fernando Sampedro “El Almendro” de Camas.**
+
+El joven novillero **ha comenzado la temporada 2026 de manera inmejorable.** El pasado fin de semana, en la localidad sevillana de **La Puebla del Río, "Realito" firmó un triunfo rotundo** frente al quinto novillo de la tarde, un ejemplar de la ganadería de D. **Manuel Veiga**, al que cortó las **dos orejas y el rabo.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 25,
+    title: `Morante	de	la	Puebla	recibió	en	su	finca	el	‘Galardón Tauromundo’ como ‘Triunfador de la Temporada 2025’`,
+    image: "/images/mora.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: `•	El trofeo fue entregado por Julián López "El Juli"`,
+	fullContent: `La **Asociación Tauromundo** volvió a dejar constancia de su firme compromiso con la defensa, promoción y dignificación de la tauromaquia al culminar, el pasado 24 de enero, uno de los actos más significativos de la **VI Bienal Internacional de la Tauromaquia**. En esta ocasión, el protagonista indiscutible fue el maestro **José Antonio Morante Camacho, “Morante de la Puebla”**, quien recibió finalmente el **Galardón Tauromundo** que le acreditó como **Triunfador de la Temporada 2025.**
+
+Dicho reconocimiento no pudo ser entregado en la fecha inicialmente prevista, durante la segunda jornada de la **Bienal** celebrada el sábado 26 de octubre en la ciudad de **Jerez de la Frontera**. Aquel encuentro, que revistió un carácter especialmente simbólico al enmarcarse en la candidatura jerezana a la **Capitalidad Europea de la Cultura**, se vio marcado por la ausencia del diestro sevillano debido a su delicado estado de salud. La imposibilidad de acudir al acto no restó, sin embargo, ni un ápice de valor al galardón ni al consenso unánime que lo señaló como máximo exponente de la temporada taurina.
+
+Una vez superado su proceso de recuperación, **Morante** abrió las puertas de su finca, **“La Huerta de San Antonio”**, situada en **La Puebla del Río**, para acoger un acto íntimo y cargado de emoción. Hasta allí se desplazaron los máximos responsables de **Tauromundo**, entidad que organizó la **Bienal** y que volvió a ejercer como eje vertebrador de un acontecimiento que unió tradición, cultura y reconocimiento a la excelencia artística.
+
+El presidente de **Tauromundo** y de la **Bienal Internacional de la Tauromaquia, Martín Vivas Ruiz**, asistió al encuentro junto al vicepresidente de la **Asociación** y director de la **Bienal, Gabriel Fernández Rey**, quienes encabezaron una representación institucional que subrayó la importancia del momento. La entrega del trofeo corrió a cargo del maestro **Julián López “El Juli”**, cuya presencia añadió un valor simbólico añadido al reconocimiento entre figuras consagradas del toreo contemporáneo.
+
+El acto se desarrolló en un ambiente de sobriedad y respeto, marcado por la cercanía y la gratitud. **Morante de la Puebla**, visiblemente emocionado, agradeció el galardón y el respaldo recibido tanto por **Tauromundo** como por el conjunto del mundo taurino, consciente de que el premio no solo distinguía una temporada triunfal, sino también una trayectoria artística profundamente influyente.
+
+Con este gesto, **Tauromundo** reafirmó su papel como institución de referencia en la promoción de la tauromaquia desde una perspectiva cultural, histórica y artística. La **VI Bienal Internacional de la Tauromaquia** volvió así a consolidarse como un foro de prestigio internacional, capaz de reconocer a sus protagonistas incluso más allá de las fechas oficiales, priorizando el valor humano y la trascendencia del legado taurino.
+
+La entrega del **Galardón Tauromundo** a **Morante de la Puebla** quedó, de este modo, como un episodio de especial relevancia dentro del calendario taurino, un acto que simbolizó la unión entre tradición y reconocimiento institucional, y que volvió a situar a la tauromaquia en el lugar que históricamente había ocupado dentro del patrimonio cultural.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 26,
+    title: `La Fundación Toro de Lidia completa la colección biográfica de los cinco califas del toreo con la publicación de El Cordobés`,
+    image: "/images/fuli.jpg",
+    category: "Actualidad",
+    date: "30 de Enero de 2026",
+	excerpt: "Lagartijo, Guerrita, Machaquito, Manolete y El Cordobés ya cuentan con sus biografías completas gracias al trabajo del Capítulo de Córdoba de la Fundación Toro de Lidia y al Ayuntamiento de Córdoba",
+	fullContent: `La Fundación Toro de Lidia ha culminado un ambicioso proyecto editorial que consolida definitivamente el legado de los cinco Califas del Toreo: Rafael Molina “Lagartijo”, Rafael Guerra “Guerrita”, Rafael González “Machaquito”, Manuel Rodríguez “Manolete” y Manuel Benítez “El Cordobés”. Gracias al trabajo del Capítulo de Córdoba de la Fundación, dirigido por el abogado Francisco Gordón, y en colaboración con el Ayuntamiento de Córdoba, los cinco maestros del toreo nacidos en la ciudad califal cuentan ya con sus biografías plasmadas en libros que recuperan obras fundamentales de la literatura taurina.
+ 
+Así, El Círculo de Amistad de Córdoba acogía la presentación de la biografía de Manuel Benítez 'El Cordobés', escrita por Domingo Delgado de la Cámara para la Fundación Toro de Lidia.
+ 
+El presidente del capítulo cordobés de la Fundación, Francisco Gordón, ha recordado que Manuel Benítez es "el único califa vivo y que presentar su biografía en Córdoba supone un homenaje a su trayectoria y a su influencia histórica en la tauromaquia". Además, “el acto ha coincidido con el 90 cumpleaños del maestro y la biografía ha sido ilustrada con fotografías históricas de Ricardo. Las imágenes, seleccionadas con esmero por Florencio Rodríguez, hijo del fotoperiodista, graban con acierto la publicación, ayudando así a dibujar la figura inigualable del quinto califa”, continúa Gordón.
+ 
+El proyecto comenzó en 2021 con la publicación de la biografía de Rafael Guerra “Guerrita”, coincidiendo con el 80 aniversario de su fallecimiento. A esta le siguió en 2022 la de Rafael González “Machaquito” y, posteriormente, la de Rafael Molina “Lagartijo”. Recientemente se han sumado las biografías de “Manolete”, considerado el arquitecto del toreo moderno, y “El Cordobés”, completando así el círculo de los cinco toreros más grandes que han nacido en Córdoba.
+ 
+**Proyecto editorial de la Fundación Toro de Lidia**
+La Fundación Toro de Lidia ha desarrollado en los últimos años un extenso proyecto de recuperación de obras taurinas fundamentales. Este esfuerzo forma parte de una iniciativa más amplia que ha incluido la reedición de 12 libros taurinos esenciales, entre biografías, ensayos y novelas, con la colaboración del Ministerio de Cultura.
+ 
+Todos los libros están disponibles de forma gratuita en formato digital en la página web de la Fundación Toro de Lidia <a
+  www.fundaciontorodelidia.org
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.fundaciontorodelidia.org
+</a>, y también pueden adquirirse en formato físico a través de Amazon. Esta accesibilidad garantiza que las nuevas generaciones de aficionados puedan conocer la historia y el legado de estos maestros del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 27,
     title: `Zaragoza pone en jaque a la Fiesta: un pliego que ahoga la Feria del Pilar desde febrero`,
     image: "/images/zarag.jpg",
