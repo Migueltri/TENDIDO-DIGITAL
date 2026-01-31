@@ -450,7 +450,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1003,
-    title: `Tauroemocion de Albero García, virtual empresario de Málaga`,
+    title: `Tauroemocion de Alberto García, virtual empresario de Málaga`,
     image: "/images/malag.jpg",
     category: "Actualidad",
     date: "30 de Enero de 2026",
@@ -574,7 +574,7 @@ Las consecuencias artísticas pueden ser profundas. Cerrar carteles con tanta an
 const latestNews: NewsItem[] = [
   	{ 
     id: 22,
-    title: `Tauroemocion de Albero García, virtual empresario de Málaga`,
+    title: `Tauroemocion de Alberto García, virtual empresario de Málaga`,
     image: "/images/malag.jpg",
     category: "Actualidad",
     date: "30 de Enero de 2026",
