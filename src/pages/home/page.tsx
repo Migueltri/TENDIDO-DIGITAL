@@ -450,123 +450,148 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1003,
-    title: `Tauroemocion de Alberto García, virtual empresario de Málaga`,
-    image: "/images/malag.jpg",
+    title: `El Puerto consolida los Premios Taurinos “Toros en El Puerto” como un referente en crecimiento que impulsa la tauromaquia en la ciudad y en la provincia`,
+    image: "/images/pre.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	fullContent: `La empresa **Tauroemoción**, con su **CEO Alberto García**, son el nuevo empresario virtualmente de la plaza de toros de **Málaga** tras imponerse en el pliego de adjudicación. A las ofertas presentadas por Garzón y la familia Chopera.
+    date: "31 de Enero de 2026",
+	excerpt: "La II Gala confirma el éxito y la proyección de unos galardones llamados a convertirse en cita imprescindible del calendario taurino nacional",
+	fullContent: `El Puerto de Santa María vivió anoche una velada histórica con la celebración de la II Edición de los Premios Taurinos **“Toros en El Puerto”**, un evento que, tras el éxito de su primera convocatoria, se consolida definitivamente como una referencia en el calendario taurino nacional y como un nuevo impulso para fortalecer la Fiesta de los Toros en la ciudad y en toda la provincia de Cádiz.
 
-Así, lo ha determinado la **Mesa de Contratación de la Diputación de Málaga**, alzándose ganador la oferta de **Tauroemoción** con 93,27 puntos, con una ventaja de 6,27 puntos frente a la segunda opción, la comandada por **José María Garzón**. La empresa **BMF Toros** ha quedado en tercer lugar.
+Con lleno absoluto y superando todas las previsiones de asistencia, la Bodega del Castillo de San Marcos acogió una gala que reunió a los grandes protagonistas de la Temporada 2025 en la Real Plaza de Toros, en una ceremonia cargada de emoción, reconocimiento y pasión por la tauromaquia, reafirmando el carácter taurino de El Puerto y su papel protagonista dentro del circuito andaluz y nacional.
 
-Ahora toca que la empresa **Tauroemoción** tiene que justificar 'la innovación y originalidad de sus propuestas para prestar el servicio' en la organización de una feria en torno al 11 de junio por la conmemoración de los 150 años de la inauguración de la plaza de toros de **Málaga** y la donación a la Diputación de los trajes picassianos que se elaborarían para la Picassiana con el objetivo de que este festejo tenga cierta uniformidad.
-Según ha podido saber este medio, la miniferia del aniversario constaría de una corrida de toros, un festival taurino, una novillada con picadores y un concurso de recortadores. Tras remitir la información solicitada, la mesa se volverá a reunir para designar de forma definitiva a la empresa de **Alberto García** como la adjudicataria de la plaza de toros de **Málaga**.
+La gala contó con la presencia de los máximos triunfadores de la Temporada. El maestro **José María Manzanares** recibió el **Premio Rafael Ortega a la Mejor Estocada**, galardón que le fue entregado por **Pepita Camacho**, viuda del legendario Rafael Ortega, quien acudió acompañada por el maestro **Juan José Padilla**.
 
-Esta adjudicación supone el desembarco de **Tauroemoción** en el circuito de las plazas de primera.
+El rejoneador **Rui Fernandes** fue distinguido con el **Premio “Álvaro Domecq”** al **Mejor Rejoneador**, entregado por **Antonio Domecq**, sobrino del maestro **Álvaro Domecq**.
 
-**Alberto García** con una trayectoria empresarial consolidada en plazas de segunda categoría como **Valladolid, Burgos, Ávila, Zamora, Huesca, Jaén o Soria**, además de numerosos cosos de tercera como **Almendralejo o Baeza**, es además apoderado de **Emilio de Justo, El Fandi y Manuel Escribano**.`,
+El **Premio a la Mejor Faena de la Temporada** recayó en **José Antonio Morante de la Puebla** por su extraordinaria labor ante el toro **“Laureado”** de la ganadería El Freixo, lidiado el segundo de su lote en la tarde del 3 de agosto. El galardón fue recogido en su nombre por el empresario de la Plaza de Toros de El Puerto, **Carlos Zúñiga**, de manos de la concejal de Turismo y Promoción de la Ciudad, **Olga de Navas**.
+
+El novillero aragonés **Aarón Palacio** fue reconocido como **Mejor Novillero con Picadores**, acudiendo acompañado por su apoderado, el torero **Raúl García “El Tato”**, y recibiendo el premio de manos de la vicepresidenta primera del Parlamento de Andalucía, **Ana Mestre**.
+
+Por segundo año consecutivo, **Curro Javier (Francisco Javier Amores Morales)**, de la cuadrilla de Morante de la Puebla, fue distinguido con el **Premio al Mejor Torero de Plata**, entregado por el concejal delegado de la Plaza de Toros, **Carmelo Navarro**.
+
+El **Premio al Mejor Toro** fue para **“Encendido”**, número 23, negro mulato, de 460 kilos, perteneciente a la ganadería de **D. Joaquín Núñez del Cuvillo**, lidiado por **Andrés Roca Rey** el segundo de su lote en la tarde del 9 de agosto. El galardón fue entregado por el presidente del Grupo Caballero, **Luis Caballero**, al nieto del ganadero, **Enrique Toscano Núñez**.
+
+El becerrista **Celso Ortega** recibió el **Premio “Juncal”** al **Novillero más Destacado de las Clases Prácticas**, de manos de sus maestros en la Escuela Taurina La Gallosina, **José Luis Galloso** y **José Manuel Berciano**, quien además le hizo entrega de un capote de paseo con la imagen de la Virgen de los Milagros, patrona de El Puerto, como símbolo de protección para la nueva temporada.
+
+Asimismo, se concedió una **Mención Especial a Daniel Crespo**, diestro portuense, por su brillante actuación frente al toro **“Aguaclara”** de la ganadería de Núñez del Cuvillo, lidiado el segundo de su lote en la tarde del 9 de agosto. En su representación, al encontrarse preparando la temporada en tierras francesas, recogió el galardón **Juan Manuel García de Quirós**, de manos del vicepresidente primero de la Diputación Provincial de Cádiz, **Juan José Ortiz**.
+
+El **Premio al Mejor Picador** fue otorgado a **Mario Benítez**, de la cuadrilla de **Pablo Aguado**, quien no pudo asistir al acto.
+
+La ceremonia, conducida un año más por el periodista de Canal Sur Fernando García Mena, reunió a autoridades, profesionales del sector y aficionados en una noche inolvidable que reafirma el compromiso firme de El Puerto de Santa María con la Fiesta Nacional. Una gala que congregó casi cuatrocientas personas donde no faltó la sabia nueva como los novilleros Gonzalo Capdevila y Pedro Gallego, José Marcos Cruz, así como los veteranos Gregorio Cruz Vélez o Antonio González Sabio, el presidente de la Plaza Rafael Carrero, los presidentes de todas las peñas taurinas de El Puerto o representantes de distintos sectores sociales y económicos de la ciudad y la provincia.
+
+Tanto Olga de Navas como Carmelo Navarro subrayaron que “estos premios suponen un nuevo impulso para la proyección de El Puerto como destino taurino de primer nivel, reforzando la marca de la ciudad y su vinculación histórica con la Real Plaza de Toros, al tiempo que contribuyen al posicionamiento de Cádiz como una de las grandes provincias taurinas de España”.
+
+**Una apuesta de futuro para la tauromaquia**
+
+El evento, impulsado por la empresa portuense EVENTIC, con su CEO **Raúl Capdevila Pedrajas** al frente, mantiene desde su origen una clara vocación de permanencia y crecimiento, orientada a prolongar el impacto de la feria taurina más allá de la temporada estival y a dinamizar durante todo el año la actividad cultural, turística y económica vinculada al mundo del toro. En su segunda edición, esta gala ha confirmado a El Puerto de Santa María como epicentro taurino, consolidando su liderazgo y reforzando su proyección como referente andaluz y nacional de la Fiesta de los Toros.
+
+Los galardones, diseñados por el prestigioso artista **Cristóbal Donaire Barea “Balcris”**, se consolidan como piezas únicas que reflejan la esencia artística y simbólica de la tauromaquia.
+
+Desde la organización se agradeció especialmente el respaldo de **Grupo Caballero**, así como el apoyo de la **Diputación de Cádiz**, la **Junta de Andalucía** y el **Ayuntamiento de El Puerto de Santa María**, además de la colaboración de patrocinadores como Grupo Caballero, Balcris, Restaurante El Faro, Bodegas Gutiérrez Colosía, Talleres El Palmar, Puerto Sherry, Restaurante Bar Jamón, Gilmar Consulting Inmobiliario, Geocaminos Obra Civil, GICA, Momento Andaluz Catering, Postres Pepe Mesa, Radio Puerto Emisora Municipal, COPE, 65 y Más y Sonido Ojeda.
+
+El Ayuntamiento de El Puerto de Santa María reafirma su compromiso con la promoción de la tauromaquia como parte esencial del patrimonio cultural e identitario de la ciudad, celebrando el éxito de esta segunda edición de los Premios **“Toros en El Puerto”**, que no solo reconocen a los mejores de la temporada, sino que marcan el inicio de una tradición sólida y en crecimiento.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1004,
-    title: `Manuel Domínguez será apoderado por Ignacio Ríos`,
-    image: "/images/manudom.jpg",
+    title: `Se derrumba una parte de la plaza de toros de Cabeza la Vaca`,
+    image: "/images/derr.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	excerpt: "El novillero sin caballos Manuel Domínguez, de Mairena del Alcor (Sevilla), y el empresario Ignacio Ríos, han llegado a un acuerdo de apoderamiento.",
-	fullContent: `Para **Ignacio Ríos** "**es un chaval que desde muy chiquitito lo he visto torear con una toalla en la peluquería de su madre, siempre he estado pendiente de él, fui quien lo llevó a la escuela taurina, y este invierno he decidido apostar en firme por un novillero sin picadores, sabiendo lo duro que es formar y educartaurinamente desde los cimientos. Vamos a seguir despacio y con paso muy firme**".
+    date: "31 de Enero de 2026",
+	footerImage1: "/images/derrum.jpg",
+	fullContent: `Esta semana diferentes borrascas han azotado a la península ibérica, habiendo muchas zonas afectadas, por inundaciones, en Extremadura una de las zonas más afectadas en la comarca de Tentudía, donde se encuentra la localidad de Cabeza la Vaca con no más de 1200 habitantes, han visto como parte de su centenaria plaza de toros de ha venido abajo provocando también daños en los vehículos que se encontraban estacionados al lado.
 
-La intención del joven empresario es "**apostar por un novillero para bien o para mal, porque va a ser un aprendizaje para ambos. Siento que necesito hacer algo por un niño que tiene muchas posibilidades de llegar a ser torero**".
+El coso, hecho en mampostería, está situado en una de las entradas a la localidad pacense y está catalogado como Bien de Interés Cultural desde el año 1989.
 
-El nombre de **Manuel Domínguez** empezó a sonar con fuerza el pasado mes de octubre, cuando dejó buenísimas sensaciones en el festival celebrado en la plaza de toros de la **Real Maestranza de Sevilla** y también ha  dejado recientemente muy buenas sensaciones en el certamen organizado por **Morante de la Puebla** en **La Puebla del Río**.`,
+La plaza tiene un aforo de unas 1.800 personas. El último festejo que ha acogido fue el pasado 15 de agosto, una novillada de la Escuela de Tauromaquia de Badajoz organizada por la Diputación Provincial en la que participaron Adrián Guillén, Fran Perera y Joaquín Manzur con novillos de la ganadería Ríogrande.
+
+Respecto a la última corrida de toros, tuvo lugar el 12 de julio de 2025. Torearon los extremeños José Garrido y Ginés Marín, además de Marco Pérez, de Salamanca, con toros de la ganadería Soto de la Fuente.
+
+**La historia de la plaza**
+Construida a finales del siglo XVIII, **Bien de Interés Cultural en la Categoría de Monumento**, dota a este pueblo de monumentalidad pero sin romper su estética. Su forma exterior es robusta y sencilla, encalándose su fachada año tras año. Está realizada en mampostería y consta de tres puertas en su fachada: la puerta grande o principal, la puerta del sol y la de la enfermería.
+
+Es una de las construcciones con más sabor y encanto popular de Extremadura. Su graderío es completamente macizo. Conserva en la parte de sol su estructura original, formada por asientos revestidos de pizarra y ladrillo configurando un espacio de gran belleza y aspecto rustico. El ruedo, con sus 40 metros de diámetro, viste desde el año 2000 un callejón de madera que protege los antiguos burladeros, ocupa una superficie de 2300 m2. Su aforo es de 2000 espectadores aproximadamente.
+
+En el año 1785 se prohíben correr toros en las calles y lugares públicos, lo que supone la desaparición de muchos de estos festejos. Esta ley tenía una excepción, la de aquellos espectáculos que dedicaban los ingresos a limosnas o a culto, como era el caso de Cabeza la Vaca. Se inicia en estas fechas la construcción de la actual plaza de toros, como lugar que pudiese proporcionar mayor seguridad a los espectadores y lidiadores. De esta forma, la plaza se construye con las aportaciones voluntarias y el trabajo de los cabezalavaqueños, levantándose así un coso taurino donde poder disfrutar de las aficiones más añejas.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1005,
-    title: `Fin del apoderamiento entre Lolo de Camas’ y Manuel Real “Realito” `,
-    image: "/images/realito.jpg",
+    title: `Laujar de Andarax celebrará una corrida mixta el 22 de marzo`,
+    image: "/images/laujar.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	fullContent: `El novillero sevillano **Manuel Real “Realito”** y el hasta ahora su apoderado **José Manuel Espinosa 'Lolo de Camas'**, ha dado por concluida su relación profesional tras una etapa breve en el tiempo que finaliza desde el respeto mutuo y con los mejores deseos de éxito para ambas partes en sus respectivos caminos.
+    date: "31 de Enero de 2026",
+	fullContent: `La localidad almeriense de **Laujar de Andarax** ha presentado el cartel de la **corrida de toros mixta** que se celebrará el próximo **22 de marzo a las 17:00 horas**, en un acto que reunió a autoridades municipales, profesionales del toreo y numerosos aficionados celebrado en el Centro Hispano-Filipino de la localidad.
 
-**"Realito"** continuará su formación y proyección en la **Escuela Taurina Fernando Sampedro “El Almendro” de Camas.**
+La rejoneadora **Lea Vicens** encabezará el cartel, acompañada por el matador **Sebastián Cortés** y el novillero **Pablo Sánchez**.
 
-El joven novillero **ha comenzado la temporada 2026 de manera inmejorable.** El pasado fin de semana, en la localidad sevillana de **La Puebla del Río, "Realito" firmó un triunfo rotundo** frente al quinto novillo de la tarde, un ejemplar de la ganadería de D. **Manuel Veiga**, al que cortó las **dos orejas y el rabo.**`,
+En el acto de presentación estuvieron presentes la alcaldesa **Almudena Morales**, el concejal de Festejos **José Antonio Ramos Campos**, el matador **Salvador Cortés** y el propio novillero **Pablo Sánchez**, además de un nutrido grupo de aficionados de la zona, que quisieron respaldar una cita ya marcada en el calendario taurino de la comarca.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Morante	de	la	Puebla	recibió	en	su	finca	el	‘Galardón Tauromundo’ como ‘Triunfador de la Temporada 2025’`,
-    image: "/images/mora.jpg",
+    title: `Nino Julián tomará la alternativa en la Feria de Istres`,
+    image: "/images/nin.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	excerpt: `•	El trofeo fue entregado por Julián López "El Juli"`,
-	fullContent: `La **Asociación Tauromundo** volvió a dejar constancia de su firme compromiso con la defensa, promoción y dignificación de la tauromaquia al culminar, el pasado 24 de enero, uno de los actos más significativos de la **VI Bienal Internacional de la Tauromaquia**. En esta ocasión, el protagonista indiscutible fue el maestro **José Antonio Morante Camacho, “Morante de la Puebla”**, quien recibió finalmente el **Galardón Tauromundo** que le acreditó como **Triunfador de la Temporada 2025.**
+    date: "31 de Enero de 2026",
+	fullContent: `El nombre de Nino Julián ya figura en la relación de novilleros que darán el paso a matadores de toros esta temporada. El novillero de Nimes recibirá la alternativa el próximo domingo 21 de junio en la Plaza de Toros de Istres, dentro de un cartel compuesto íntegramente por toreros banderilleros. El francés hará el paseíllo junto a Jesús Enrique Colombo, que ejercerá como padrino, e Ismael Martín, en calidad de testigo.
 
-Dicho reconocimiento no pudo ser entregado en la fecha inicialmente prevista, durante la segunda jornada de la **Bienal** celebrada el sábado 26 de octubre en la ciudad de **Jerez de la Frontera**. Aquel encuentro, que revistió un carácter especialmente simbólico al enmarcarse en la candidatura jerezana a la **Capitalidad Europea de la Cultura**, se vio marcado por la ausencia del diestro sevillano debido a su delicado estado de salud. La imposibilidad de acudir al acto no restó, sin embargo, ni un ápice de valor al galardón ni al consenso unánime que lo señaló como máximo exponente de la temporada taurina.
+Para la ocasión se lidiarán toros de la prestigiosa ganadería francesa de Margé. La alternativa tendrá además un significado especial, ya que Nino Julián se convertirá en el quinto matador de toros en la historia en tomar la alternativa en el coso de Le Palio.
 
-Una vez superado su proceso de recuperación, **Morante** abrió las puertas de su finca, **“La Huerta de San Antonio”**, situada en **La Puebla del Río**, para acoger un acto íntimo y cargado de emoción. Hasta allí se desplazaron los máximos responsables de **Tauromundo**, entidad que organizó la **Bienal** y que volvió a ejercer como eje vertebrador de un acontecimiento que unió tradición, cultura y reconocimiento a la excelencia artística.
-
-El presidente de **Tauromundo** y de la **Bienal Internacional de la Tauromaquia, Martín Vivas Ruiz**, asistió al encuentro junto al vicepresidente de la **Asociación** y director de la **Bienal, Gabriel Fernández Rey**, quienes encabezaron una representación institucional que subrayó la importancia del momento. La entrega del trofeo corrió a cargo del maestro **Julián López “El Juli”**, cuya presencia añadió un valor simbólico añadido al reconocimiento entre figuras consagradas del toreo contemporáneo.
-
-El acto se desarrolló en un ambiente de sobriedad y respeto, marcado por la cercanía y la gratitud. **Morante de la Puebla**, visiblemente emocionado, agradeció el galardón y el respaldo recibido tanto por **Tauromundo** como por el conjunto del mundo taurino, consciente de que el premio no solo distinguía una temporada triunfal, sino también una trayectoria artística profundamente influyente.
-
-Con este gesto, **Tauromundo** reafirmó su papel como institución de referencia en la promoción de la tauromaquia desde una perspectiva cultural, histórica y artística. La **VI Bienal Internacional de la Tauromaquia** volvió así a consolidarse como un foro de prestigio internacional, capaz de reconocer a sus protagonistas incluso más allá de las fechas oficiales, priorizando el valor humano y la trascendencia del legado taurino.
-
-La entrega del **Galardón Tauromundo** a **Morante de la Puebla** quedó, de este modo, como un episodio de especial relevancia dentro del calendario taurino, un acto que simbolizó la unión entre tradición y reconocimiento institucional, y que volvió a situar a la tauromaquia en el lugar que históricamente había ocupado dentro del patrimonio cultural.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+La elección de Istres como escenario no es casual, ya que se trata de una plaza que cuida con especial atención cada alternativa, reservándolas únicamente para toreros en los que aprecia condiciones reales de futuro. Una circunstancia que refuerza la confianza depositada en la proyección de Nino Julián, uno de los nombres más destacados del escalafón novilleril francés, que ya dejó señales de su concepto y capacidad en su presentación en Madrid dentro del certamen “Cénate Las Ventas” la pasada temporada.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `La Fundación Toro de Lidia completa la colección biográfica de los cinco califas del toreo con la publicación de El Cordobés`,
-    image: "/images/fuli.jpg",
+    title: `Regresan los toros a Bargas en un interesante festival el 1 de marzo.`,
+    image: "/images/barg.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	excerpt: "Lagartijo, Guerrita, Machaquito, Manolete y El Cordobés ya cuentan con sus biografías completas gracias al trabajo del Capítulo de Córdoba de la Fundación Toro de Lidia y al Ayuntamiento de Córdoba",
-	fullContent: `La Fundación Toro de Lidia ha culminado un ambicioso proyecto editorial que consolida definitivamente el legado de los cinco Califas del Toreo: Rafael Molina “Lagartijo”, Rafael Guerra “Guerrita”, Rafael González “Machaquito”, Manuel Rodríguez “Manolete” y Manuel Benítez “El Cordobés”. Gracias al trabajo del Capítulo de Córdoba de la Fundación, dirigido por el abogado Francisco Gordón, y en colaboración con el Ayuntamiento de Córdoba, los cinco maestros del toreo nacidos en la ciudad califal cuentan ya con sus biografías plasmadas en libros que recuperan obras fundamentales de la literatura taurina.
- 
-Así, El Círculo de Amistad de Córdoba acogía la presentación de la biografía de Manuel Benítez 'El Cordobés', escrita por Domingo Delgado de la Cámara para la Fundación Toro de Lidia.
- 
-El presidente del capítulo cordobés de la Fundación, Francisco Gordón, ha recordado que Manuel Benítez es "el único califa vivo y que presentar su biografía en Córdoba supone un homenaje a su trayectoria y a su influencia histórica en la tauromaquia". Además, “el acto ha coincidido con el 90 cumpleaños del maestro y la biografía ha sido ilustrada con fotografías históricas de Ricardo. Las imágenes, seleccionadas con esmero por Florencio Rodríguez, hijo del fotoperiodista, graban con acierto la publicación, ayudando así a dibujar la figura inigualable del quinto califa”, continúa Gordón.
- 
-El proyecto comenzó en 2021 con la publicación de la biografía de Rafael Guerra “Guerrita”, coincidiendo con el 80 aniversario de su fallecimiento. A esta le siguió en 2022 la de Rafael González “Machaquito” y, posteriormente, la de Rafael Molina “Lagartijo”. Recientemente se han sumado las biografías de “Manolete”, considerado el arquitecto del toreo moderno, y “El Cordobés”, completando así el círculo de los cinco toreros más grandes que han nacido en Córdoba.
- 
-**Proyecto editorial de la Fundación Toro de Lidia**
-La Fundación Toro de Lidia ha desarrollado en los últimos años un extenso proyecto de recuperación de obras taurinas fundamentales. Este esfuerzo forma parte de una iniciativa más amplia que ha incluido la reedición de 12 libros taurinos esenciales, entre biografías, ensayos y novelas, con la colaboración del Ministerio de Cultura.
- 
-Todos los libros están disponibles de forma gratuita en formato digital en la página web de la Fundación Toro de Lidia <a
-  www.fundaciontorodelidia.org
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.fundaciontorodelidia.org
-</a>, y también pueden adquirirse en formato físico a través de Amazon. Esta accesibilidad garantiza que las nuevas generaciones de aficionados puedan conocer la historia y el legado de estos maestros del toreo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+    date: "31 de Enero de 2026",
+	fullContent: `La Plaza de Toros de Bargas (Toledo) volverá a abrir sus puertas a los festejos taurinos el próximo 1 de marzo, a partir de las 17:00 horas, con la celebración de un Festival con Picadores que supone el regreso de los toros a la localidad fuera del marco habitual de su Feria Taurina de septiembre.
+
+El festejo, impulsado por el Ayuntamiento de Bargas y organizado como homenaje a la Hermandad del Santísimo Cristo de la Sala, contará con un atractivo cartel en el que se anuncian varias figuras destacadas del escalafón junto a un joven novillero local. Harán el paseíllo Miguel Ángel Perera, Daniel Luque, David de Miranda, Tomás Rufo y Marco Pérez, completando el cartel actuará ante su afición el novillero Adrián Maroto.
+
+Para la ocasión se lidiarán novillos de la ganadería gaditana de Santiago Domecq, hierro de contrastada trayectoria en el panorama taurino, en una cita que ha despertado notable expectación en la localidad.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `Zaragoza pone en jaque a la Fiesta: un pliego que ahoga la Feria del Pilar desde febrero`,
-    image: "/images/zarag.jpg",
+    title: `David de Miranda, rotundidad y autoridad en una tarde de ‘Puerta Grande’`,
+    image: "/images/mira.jpg",
     category: "Actualidad",
-    date: "30 de Enero de 2026",
-	fullContent: `La aprobación del nuevo pliego de condiciones para la gestión de la plaza de toros de La Misericordia ha vuelto a sacudir al mundo taurino. El documento, que regulará la explotación del coso zaragozano hasta 2028, fija un canon mínimo anual superior a los 200.000 euros y prioriza claramente el criterio económico sobre cualquier planteamiento artístico o cultural. Aunque exige un número concreto de festejos —ocho corridas de toros, una de rejones, una novillada con picadores y varios festejos populares—, deja en un segundo plano la calidad de los carteles, la innovación y el impulso a nuevos valores, algo especialmente grave tratándose de una plaza de primera categoría.
+    date: "31 de Enero de 2026",
+	excerpt: "•	Debut triunfal del onubense en San Cristóbal que salió a hombros junto a Jesús Enrique Colombo",
+	fullContent: `La Plaza de **Toros Hugo Domingo Molina** acogió este jueves el **segundo festejo de la Feria Internacional de San Sebastián 2026**, celebrado desde las cinco de la tarde bajo un cielo nublado que permitió disfrutar de una jornada fresca y agradable. Con **más de media plaza cubierta**, el público respondió al cartel con interés y disposición para disfrutar de la tarde.
 
-Uno de los puntos más polémicos del pliego es la obligación de presentar en febrero los carteles cerrados de la Feria del Pilar, que se celebra en octubre. Esta exigencia fuerza a las empresas a comprometer toreros y ganaderías antes incluso de que la temporada haya arrancado, en un contexto donde las cornadas, lesiones y cambios de escalafón son habituales. Además, el riesgo económico es enorme: si un torero comprometido no puede actuar por causas sobrevenidas, la empresa se expone a perder el aval depositado, una penalización que muchos consideran desproporcionada y alejada de la realidad profesional del toreo.
+Se lidiaron toros de **Los Aranguez**, con un comportamiento desigual. Destacaron especialmente los ejemplares lidiados en **segundo y tercer lugar**, que fueron premiados con la **vuelta al ruedo** por su nobleza y entrega. El resto del encierro ofreció escasas opciones, con toros faltos de recorrido, descastados y con poco son, lo que obligó a los toreros a poner casi todo de su parte.
 
-El pliego también restringe de forma severa quién puede optar a la gestión de la plaza. Solo empresarios con una trayectoria muy concreta en plazas de primera y segunda categoría cumplen los requisitos, lo que reduce drásticamente la competencia y deja fuera a gestores con experiencia contrastada. Esta criba no solo limita la diversidad de proyectos, sino que refuerza la idea de que la capacidad financiera pesa más que las propuestas destinadas a fomentar la afición, facilitar el acceso de jóvenes y jubilados o apoyar a las Escuelas Taurinas.
+**David de Miranda** firmó una actuación de alto calado que quedó marcada por la rotundidad y la autoridad mostrada a lo largo de toda la tarde. El diestro onubense volvió a dejar constancia de su madurez artística y de su capacidad para imponerse a las circunstancias, rubricando un triunfo que refrenda su gran momento.
 
-Las consecuencias artísticas pueden ser profundas. Cerrar carteles con tanta antelación perjudica directamente a los toreros emergentes, que aún no han tenido ocasión de abrirse paso durante la temporada. Zaragoza, tradicionalmente un escaparate donde convivían figuras consolidadas y nuevos talentos, corre el riesgo de perder frescura y emoción. Ante este escenario, la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET) ya ha anunciado una reunión urgente para estudiar medidas y defender una gestión más flexible y coherente con la esencia de la Fiesta.`,
-    authorLogo: "/images/rubens.jpg",
+Desde la salida del *primero de su lote*, **David de Miranda** mostró con claridad sus intenciones. El toro permitió el lucimiento y el torero supo aprovechar sus condiciones con una faena cimentada en el **dominio, el temple y el buen gusto**. La labor fue creciendo en intensidad, especialmente por el pitón derecho, por donde llegaron muletazos largos, ligados y profundos, siempre llevando al animal embebido en la muleta.
+
+Destacaron especialmente los **naturales**, largos y templados, ejecutados con cadencia y personalidad, ante un toro que colaboró y permitió el lucimiento. **David de Miranda** se mostró relajado, asentado y con una notable dimensión para entender los tiempos de la faena, construyendo un trasteo de marcado carácter artístico que caló profundamente con los tendidos
+
+La faena encontró su rúbrica con un **certero espadazo**, ejecutado con verdad y determinación, que puso broche de oro a una labor redonda. El premio no se hizo esperar: **dos orejas**, mientras el toro fue premiado con la **vuelta al ruedo**, reflejo de la calidad ofrecida en el ruedo y del alto nivel alcanzado en el conjunto de la obra.
+
+Muy distinta fue la condición del *quinto de la tarde*. El toro, parado y sin recorrido, no ofreció opciones para el lucimiento. Ante este panorama, **David de Miranda** tiró de oficio intentando extraer muletazos de mérito donde apenas los había. A pesar del esfuerzo, la falta de transmisión y de entrega del animal limitó el alcance de la faena y fue silenciado.
+
+Con todo, la tarde quedó marcada por el **triunfo rotundo** conseguido en el primero de su lote, una actuación que volvió a poner de manifiesto la **clase, el temple y la ambición de David de Miranda**.
+
+El venezolano **Jesús Enrique Colombo** volvió a demostrar su entrega y conexión con los tendidos. Cortó **dos orejas** en su primero; mientras en su segundo ante un toro de nulo juego fue silenciado.
+
+Por su parte, **Emilio de Justo**, triunfador de las tres ediciones anteriores de la feria, no tuvo fortuna con dos toros sin opciones, siendo silenciado en ambos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
