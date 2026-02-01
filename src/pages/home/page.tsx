@@ -449,155 +449,93 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1003,
-    title: `El Puerto consolida los Premios Taurinos “Toros en El Puerto” como un referente en crecimiento que impulsa la tauromaquia en la ciudad y en la provincia`,
-    image: "/images/pre.jpg",
-    category: "Actualidad",
-    date: "31 de Enero de 2026",
-	excerpt: "La II Gala confirma el éxito y la proyección de unos galardones llamados a convertirse en cita imprescindible del calendario taurino nacional",
-	fullContent: `El Puerto de Santa María vivió anoche una velada histórica con la celebración de la II Edición de los Premios Taurinos **“Toros en El Puerto”**, un evento que, tras el éxito de su primera convocatoria, se consolida definitivamente como una referencia en el calendario taurino nacional y como un nuevo impulso para fortalecer la Fiesta de los Toros en la ciudad y en toda la provincia de Cádiz.
-
-Con lleno absoluto y superando todas las previsiones de asistencia, la Bodega del Castillo de San Marcos acogió una gala que reunió a los grandes protagonistas de la Temporada 2025 en la Real Plaza de Toros, en una ceremonia cargada de emoción, reconocimiento y pasión por la tauromaquia, reafirmando el carácter taurino de El Puerto y su papel protagonista dentro del circuito andaluz y nacional.
-
-La gala contó con la presencia de los máximos triunfadores de la Temporada. El maestro **José María Manzanares** recibió el **Premio Rafael Ortega a la Mejor Estocada**, galardón que le fue entregado por **Pepita Camacho**, viuda del legendario Rafael Ortega, quien acudió acompañada por el maestro **Juan José Padilla**.
-
-El rejoneador **Rui Fernandes** fue distinguido con el **Premio “Álvaro Domecq”** al **Mejor Rejoneador**, entregado por **Antonio Domecq**, sobrino del maestro **Álvaro Domecq**.
-
-El **Premio a la Mejor Faena de la Temporada** recayó en **José Antonio Morante de la Puebla** por su extraordinaria labor ante el toro **“Laureado”** de la ganadería El Freixo, lidiado el segundo de su lote en la tarde del 3 de agosto. El galardón fue recogido en su nombre por el empresario de la Plaza de Toros de El Puerto, **Carlos Zúñiga**, de manos de la concejal de Turismo y Promoción de la Ciudad, **Olga de Navas**.
-
-El novillero aragonés **Aarón Palacio** fue reconocido como **Mejor Novillero con Picadores**, acudiendo acompañado por su apoderado, el torero **Raúl García “El Tato”**, y recibiendo el premio de manos de la vicepresidenta primera del Parlamento de Andalucía, **Ana Mestre**.
-
-Por segundo año consecutivo, **Curro Javier (Francisco Javier Amores Morales)**, de la cuadrilla de Morante de la Puebla, fue distinguido con el **Premio al Mejor Torero de Plata**, entregado por el concejal delegado de la Plaza de Toros, **Carmelo Navarro**.
-
-El **Premio al Mejor Toro** fue para **“Encendido”**, número 23, negro mulato, de 460 kilos, perteneciente a la ganadería de **D. Joaquín Núñez del Cuvillo**, lidiado por **Andrés Roca Rey** el segundo de su lote en la tarde del 9 de agosto. El galardón fue entregado por el presidente del Grupo Caballero, **Luis Caballero**, al nieto del ganadero, **Enrique Toscano Núñez**.
-
-El becerrista **Celso Ortega** recibió el **Premio “Juncal”** al **Novillero más Destacado de las Clases Prácticas**, de manos de sus maestros en la Escuela Taurina La Gallosina, **José Luis Galloso** y **José Manuel Berciano**, quien además le hizo entrega de un capote de paseo con la imagen de la Virgen de los Milagros, patrona de El Puerto, como símbolo de protección para la nueva temporada.
-
-Asimismo, se concedió una **Mención Especial a Daniel Crespo**, diestro portuense, por su brillante actuación frente al toro **“Aguaclara”** de la ganadería de Núñez del Cuvillo, lidiado el segundo de su lote en la tarde del 9 de agosto. En su representación, al encontrarse preparando la temporada en tierras francesas, recogió el galardón **Juan Manuel García de Quirós**, de manos del vicepresidente primero de la Diputación Provincial de Cádiz, **Juan José Ortiz**.
-
-El **Premio al Mejor Picador** fue otorgado a **Mario Benítez**, de la cuadrilla de **Pablo Aguado**, quien no pudo asistir al acto.
-
-La ceremonia, conducida un año más por el periodista de Canal Sur Fernando García Mena, reunió a autoridades, profesionales del sector y aficionados en una noche inolvidable que reafirma el compromiso firme de El Puerto de Santa María con la Fiesta Nacional. Una gala que congregó casi cuatrocientas personas donde no faltó la sabia nueva como los novilleros Gonzalo Capdevila y Pedro Gallego, José Marcos Cruz, así como los veteranos Gregorio Cruz Vélez o Antonio González Sabio, el presidente de la Plaza Rafael Carrero, los presidentes de todas las peñas taurinas de El Puerto o representantes de distintos sectores sociales y económicos de la ciudad y la provincia.
-
-Tanto Olga de Navas como Carmelo Navarro subrayaron que “estos premios suponen un nuevo impulso para la proyección de El Puerto como destino taurino de primer nivel, reforzando la marca de la ciudad y su vinculación histórica con la Real Plaza de Toros, al tiempo que contribuyen al posicionamiento de Cádiz como una de las grandes provincias taurinas de España”.
-
-**Una apuesta de futuro para la tauromaquia**
-
-El evento, impulsado por la empresa portuense EVENTIC, con su CEO **Raúl Capdevila Pedrajas** al frente, mantiene desde su origen una clara vocación de permanencia y crecimiento, orientada a prolongar el impacto de la feria taurina más allá de la temporada estival y a dinamizar durante todo el año la actividad cultural, turística y económica vinculada al mundo del toro. En su segunda edición, esta gala ha confirmado a El Puerto de Santa María como epicentro taurino, consolidando su liderazgo y reforzando su proyección como referente andaluz y nacional de la Fiesta de los Toros.
-
-Los galardones, diseñados por el prestigioso artista **Cristóbal Donaire Barea “Balcris”**, se consolidan como piezas únicas que reflejan la esencia artística y simbólica de la tauromaquia.
-
-Desde la organización se agradeció especialmente el respaldo de **Grupo Caballero**, así como el apoyo de la **Diputación de Cádiz**, la **Junta de Andalucía** y el **Ayuntamiento de El Puerto de Santa María**, además de la colaboración de patrocinadores como Grupo Caballero, Balcris, Restaurante El Faro, Bodegas Gutiérrez Colosía, Talleres El Palmar, Puerto Sherry, Restaurante Bar Jamón, Gilmar Consulting Inmobiliario, Geocaminos Obra Civil, GICA, Momento Andaluz Catering, Postres Pepe Mesa, Radio Puerto Emisora Municipal, COPE, 65 y Más y Sonido Ojeda.
-
-El Ayuntamiento de El Puerto de Santa María reafirma su compromiso con la promoción de la tauromaquia como parte esencial del patrimonio cultural e identitario de la ciudad, celebrando el éxito de esta segunda edición de los Premios **“Toros en El Puerto”**, que no solo reconocen a los mejores de la temporada, sino que marcan el inicio de una tradición sólida y en crecimiento.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Se derrumba una parte de la plaza de toros de Cabeza la Vaca`,
-    image: "/images/derr.jpg",
-    category: "Actualidad",
-    date: "31 de Enero de 2026",
-	footerImage1: "/images/derrum.jpg",
-	fullContent: `Esta semana diferentes borrascas han azotado a la península ibérica, habiendo muchas zonas afectadas, por inundaciones, en Extremadura una de las zonas más afectadas en la comarca de Tentudía, donde se encuentra la localidad de Cabeza la Vaca con no más de 1200 habitantes, han visto como parte de su centenaria plaza de toros de ha venido abajo provocando también daños en los vehículos que se encontraban estacionados al lado.
-
-El coso, hecho en mampostería, está situado en una de las entradas a la localidad pacense y está catalogado como Bien de Interés Cultural desde el año 1989.
-
-La plaza tiene un aforo de unas 1.800 personas. El último festejo que ha acogido fue el pasado 15 de agosto, una novillada de la Escuela de Tauromaquia de Badajoz organizada por la Diputación Provincial en la que participaron Adrián Guillén, Fran Perera y Joaquín Manzur con novillos de la ganadería Ríogrande.
-
-Respecto a la última corrida de toros, tuvo lugar el 12 de julio de 2025. Torearon los extremeños José Garrido y Ginés Marín, además de Marco Pérez, de Salamanca, con toros de la ganadería Soto de la Fuente.
-
-**La historia de la plaza**
-Construida a finales del siglo XVIII, **Bien de Interés Cultural en la Categoría de Monumento**, dota a este pueblo de monumentalidad pero sin romper su estética. Su forma exterior es robusta y sencilla, encalándose su fachada año tras año. Está realizada en mampostería y consta de tres puertas en su fachada: la puerta grande o principal, la puerta del sol y la de la enfermería.
-
-Es una de las construcciones con más sabor y encanto popular de Extremadura. Su graderío es completamente macizo. Conserva en la parte de sol su estructura original, formada por asientos revestidos de pizarra y ladrillo configurando un espacio de gran belleza y aspecto rustico. El ruedo, con sus 40 metros de diámetro, viste desde el año 2000 un callejón de madera que protege los antiguos burladeros, ocupa una superficie de 2300 m2. Su aforo es de 2000 espectadores aproximadamente.
-
-En el año 1785 se prohíben correr toros en las calles y lugares públicos, lo que supone la desaparición de muchos de estos festejos. Esta ley tenía una excepción, la de aquellos espectáculos que dedicaban los ingresos a limosnas o a culto, como era el caso de Cabeza la Vaca. Se inicia en estas fechas la construcción de la actual plaza de toros, como lugar que pudiese proporcionar mayor seguridad a los espectadores y lidiadores. De esta forma, la plaza se construye con las aportaciones voluntarias y el trabajo de los cabezalavaqueños, levantándose así un coso taurino donde poder disfrutar de las aficiones más añejas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Laujar de Andarax celebrará una corrida mixta el 22 de marzo`,
-    image: "/images/laujar.jpg",
-    category: "Actualidad",
-    date: "31 de Enero de 2026",
-	fullContent: `La localidad almeriense de **Laujar de Andarax** ha presentado el cartel de la **corrida de toros mixta** que se celebrará el próximo **22 de marzo a las 17:00 horas**, en un acto que reunió a autoridades municipales, profesionales del toreo y numerosos aficionados celebrado en el Centro Hispano-Filipino de la localidad.
-
-La rejoneadora **Lea Vicens** encabezará el cartel, acompañada por el matador **Sebastián Cortés** y el novillero **Pablo Sánchez**.
-
-En el acto de presentación estuvieron presentes la alcaldesa **Almudena Morales**, el concejal de Festejos **José Antonio Ramos Campos**, el matador **Salvador Cortés** y el propio novillero **Pablo Sánchez**, además de un nutrido grupo de aficionados de la zona, que quisieron respaldar una cita ya marcada en el calendario taurino de la comarca.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Nino Julián tomará la alternativa en la Feria de Istres`,
-    image: "/images/nin.jpg",
-    category: "Actualidad",
-    date: "31 de Enero de 2026",
-	fullContent: `El nombre de Nino Julián ya figura en la relación de novilleros que darán el paso a matadores de toros esta temporada. El novillero de Nimes recibirá la alternativa el próximo domingo 21 de junio en la Plaza de Toros de Istres, dentro de un cartel compuesto íntegramente por toreros banderilleros. El francés hará el paseíllo junto a Jesús Enrique Colombo, que ejercerá como padrino, e Ismael Martín, en calidad de testigo.
-
-Para la ocasión se lidiarán toros de la prestigiosa ganadería francesa de Margé. La alternativa tendrá además un significado especial, ya que Nino Julián se convertirá en el quinto matador de toros en la historia en tomar la alternativa en el coso de Le Palio.
-
-La elección de Istres como escenario no es casual, ya que se trata de una plaza que cuida con especial atención cada alternativa, reservándolas únicamente para toreros en los que aprecia condiciones reales de futuro. Una circunstancia que refuerza la confianza depositada en la proyección de Nino Julián, uno de los nombres más destacados del escalafón novilleril francés, que ya dejó señales de su concepto y capacidad en su presentación en Madrid dentro del certamen “Cénate Las Ventas” la pasada temporada.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1007,
-    title: `Regresan los toros a Bargas en un interesante festival el 1 de marzo.`,
-    image: "/images/barg.jpg",
+    title: `David de Miranda, IV Premio Nacional ‘La Divisa’ de Trigueros`,
+    image: "/images/premi.jpg",
     category: "Actualidad",
-    date: "31 de Enero de 2026",
-	fullContent: `La Plaza de Toros de Bargas (Toledo) volverá a abrir sus puertas a los festejos taurinos el próximo 1 de marzo, a partir de las 17:00 horas, con la celebración de un Festival con Picadores que supone el regreso de los toros a la localidad fuera del marco habitual de su Feria Taurina de septiembre.
+    date: "1 de Febrero de 2026",
+	fullContent: `El torero onubense **David de Miranda** será distinguido con el **IV Premio Nacional ‘La Divisa’ de Trigueros**, en reconocimiento a su **mérito taurino durante la temporada 2025**, dentro del marco del **XXXII Ciclo de Conferencias Taurinas**, organizado por la Peña Cultural Taurina ‘La Divisa’ de la localidad onubense de Trigueros.
 
-El festejo, impulsado por el Ayuntamiento de Bargas y organizado como homenaje a la Hermandad del Santísimo Cristo de la Sala, contará con un atractivo cartel en el que se anuncian varias figuras destacadas del escalafón junto a un joven novillero local. Harán el paseíllo Miguel Ángel Perera, Daniel Luque, David de Miranda, Tomás Rufo y Marco Pérez, completando el cartel actuará ante su afición el novillero Adrián Maroto.
+La entidad cultural ha cerrado el cartel completo de protagonistas de este tradicional ciclo, que se desarrollará los **días 13, 20 y 27 de febrero** en el **Centro Cívico Convento del Carmen**, con inicio de todas las sesiones a las **20:30 horas**.
 
-Para la ocasión se lidiarán novillos de la ganadería gaditana de Santiago Domecq, hierro de contrastada trayectoria en el panorama taurino, en una cita que ha despertado notable expectación en la localidad.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
+El ciclo se abrirá el **viernes 13 de febrero** con la conferencia titulada **‘El toro del Siglo XXI’**, que contará con la participación de la **ganadería de Victoriano del Río**. Intervendrá el ganadero **Pablo del Río**, siendo moderador del coloquio el socio de la Peña **Domingo Prieto García**. Al término del acto se procederá a la entrega del **XIV Premio Nacional ‘La Divisa’ de Trigueros** a la **divisa más destacada de la temporada 2025**.
+
+La segunda cita tendrá lugar el **viernes 20 de febrero** bajo el título **‘La conquista de la gloria’**, protagonizada por el **diestro revelación de la pasada campaña y natural de Trigueros, David de Miranda**. La periodista **Beatriz García Gutiérrez** será la encargada de conducir el encuentro. Como colofón a la velada, el torero de Huelva recibirá el **IV Premio Nacional ‘La Divisa’ de Trigueros** al **mérito taurino**.
+
+El **viernes 27 de febrero** se cerrará el XXXII Ciclo de Conferencias con la ponencia **‘Enrique Ponce. La leyenda: 40 años de temple y maestría’**, en la que tomará la palabra el maestro de Chiva, **Enrique Ponce Martínez**. El coloquio estará moderado por el escritor y analista taurino **Francisco Villaverde**. Al finalizar el acto, se hará entrega al matador valenciano del **Premio ‘La Divisa’ de Trigueros** a la **trayectoria taurina**.
+
+Con este ciclo, la **Peña Cultural Taurina ‘La Divisa’** reafirma su compromiso con la difusión y puesta en valor de la tauromaquia, reuniendo a figuras clave del toro, el periodismo y la historia reciente del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `David de Miranda, rotundidad y autoridad en una tarde de ‘Puerta Grande’`,
-    image: "/images/mira.jpg",
+    title: `Éxito de participación en el IV Coloquio Taurino celebrado en Tórtola de Henares`,
+    image: "/images/colo.jpg",
     category: "Actualidad",
-    date: "31 de Enero de 2026",
-	excerpt: "•	Debut triunfal del onubense en San Cristóbal que salió a hombros junto a Jesús Enrique Colombo",
-	fullContent: `La Plaza de **Toros Hugo Domingo Molina** acogió este jueves el **segundo festejo de la Feria Internacional de San Sebastián 2026**, celebrado desde las cinco de la tarde bajo un cielo nublado que permitió disfrutar de una jornada fresca y agradable. Con **más de media plaza cubierta**, el público respondió al cartel con interés y disposición para disfrutar de la tarde.
+    date: "1 de Febrero de 2026",
+	footerImage1: "/images/ab.jpg",
+	footerImage2: "/images/aba.jpg",
+	fullContent: `El centro municipal **El Horno** acogió ayer por la tarde, con notable éxito de asistencia, la celebración del **IV Coloquio Taurino**, un evento que reunió a más de 200 aficionados y que volvió a poner de manifiesto la fuerte vinculación del municipio con la tauromaquia.
 
-Se lidiaron toros de **Los Aranguez**, con un comportamiento desigual. Destacaron especialmente los ejemplares lidiados en **segundo y tercer lugar**, que fueron premiados con la **vuelta al ruedo** por su nobleza y entrega. El resto del encierro ofreció escasas opciones, con toros faltos de recorrido, descastados y con poco son, lo que obligó a los toreros a poner casi todo de su parte.
+La mesa redonda estuvo moderada por **Diego Cervera** y contó con la presencia de destacadas figuras del ámbito taurino, como los matadores de toros **David Galván y Roberto Martín “Jarocho”, el novillero Daniel Moset, el banderillero Jorge Fuentes y el presidente de la Escuela Taurina de Guadalajara, José Antonio Cid “Jota”**. Durante el coloquio, los ponentes compartieron con el público sus vivencias personales y profesionales en los ruedos, en un ambiente cercano y distendido que resultó muy entretenido para los asistentes.
 
-**David de Miranda** firmó una actuación de alto calado que quedó marcada por la rotundidad y la autoridad mostrada a lo largo de toda la tarde. El diestro onubense volvió a dejar constancia de su madurez artística y de su capacidad para imponerse a las circunstancias, rubricando un triunfo que refrenda su gran momento.
+El encuentro estuvo organizado por el vecino del municipio **Pablo García Marcos**, cuyo trabajo y dedicación fueron fundamentales para el correcto desarrollo de la jornada. Tras el debate, la alcaldesa de Tórtola de Henares, Ana Monge, acompañada por el propio organizador, hizo entrega de un detalle conmemorativo a cada uno de los participantes como muestra de agradecimiento por su implicación en el evento.
 
-Desde la salida del *primero de su lote*, **David de Miranda** mostró con claridad sus intenciones. El toro permitió el lucimiento y el torero supo aprovechar sus condiciones con una faena cimentada en el **dominio, el temple y el buen gusto**. La labor fue creciendo en intensidad, especialmente por el pitón derecho, por donde llegaron muletazos largos, ligados y profundos, siempre llevando al animal embebido en la muleta.
+Como colofón a la tarde, tuvo lugar la presentación oficial de la Asociación Taurina "Tórtola de Henares", una nueva entidad que nace con el objetivo de fomentar, proteger y difundir la cultura taurina en la localidad. Este acto simbolizó el cierre de una jornada que refuerza los lazos del municipio con el mundo del toro.
 
-Destacaron especialmente los **naturales**, largos y templados, ejecutados con cadencia y personalidad, ante un toro que colaboró y permitió el lucimiento. **David de Miranda** se mostró relajado, asentado y con una notable dimensión para entender los tiempos de la faena, construyendo un trasteo de marcado carácter artístico que caló profundamente con los tendidos
-
-La faena encontró su rúbrica con un **certero espadazo**, ejecutado con verdad y determinación, que puso broche de oro a una labor redonda. El premio no se hizo esperar: **dos orejas**, mientras el toro fue premiado con la **vuelta al ruedo**, reflejo de la calidad ofrecida en el ruedo y del alto nivel alcanzado en el conjunto de la obra.
-
-Muy distinta fue la condición del *quinto de la tarde*. El toro, parado y sin recorrido, no ofreció opciones para el lucimiento. Ante este panorama, **David de Miranda** tiró de oficio intentando extraer muletazos de mérito donde apenas los había. A pesar del esfuerzo, la falta de transmisión y de entrega del animal limitó el alcance de la faena y fue silenciado.
-
-Con todo, la tarde quedó marcada por el **triunfo rotundo** conseguido en el primero de su lote, una actuación que volvió a poner de manifiesto la **clase, el temple y la ambición de David de Miranda**.
-
-El venezolano **Jesús Enrique Colombo** volvió a demostrar su entrega y conexión con los tendidos. Cortó **dos orejas** en su primero; mientras en su segundo ante un toro de nulo juego fue silenciado.
-
-Por su parte, **Emilio de Justo**, triunfador de las tres ediciones anteriores de la feria, no tuvo fortuna con dos toros sin opciones, siendo silenciado en ambos.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Desde el Ayuntamiento de Tórtola de Henares se quiere expresar un agradecimiento especial a Pablo García Marcos por la excelente organización de este coloquio, que se consolida como una cita taurina de referencia en la provincia de Guadalajara. El elevado número de asistentes y el interés mostrado por el público reflejan el arraigo y el seguimiento que la tauromaquia mantiene en la comarca`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
-  	{ 
+  { 
+    id: 14,
+    title: `David de Miranda, IV Premio Nacional ‘La Divisa’ de Trigueros`,
+    image: "/images/premi.jpg",
+    category: "Actualidad",
+    date: "1 de Febrero de 2026",
+	fullContent: `El torero onubense **David de Miranda** será distinguido con el **IV Premio Nacional ‘La Divisa’ de Trigueros**, en reconocimiento a su **mérito taurino durante la temporada 2025**, dentro del marco del **XXXII Ciclo de Conferencias Taurinas**, organizado por la Peña Cultural Taurina ‘La Divisa’ de la localidad onubense de Trigueros.
+
+La entidad cultural ha cerrado el cartel completo de protagonistas de este tradicional ciclo, que se desarrollará los **días 13, 20 y 27 de febrero** en el **Centro Cívico Convento del Carmen**, con inicio de todas las sesiones a las **20:30 horas**.
+
+El ciclo se abrirá el **viernes 13 de febrero** con la conferencia titulada **‘El toro del Siglo XXI’**, que contará con la participación de la **ganadería de Victoriano del Río**. Intervendrá el ganadero **Pablo del Río**, siendo moderador del coloquio el socio de la Peña **Domingo Prieto García**. Al término del acto se procederá a la entrega del **XIV Premio Nacional ‘La Divisa’ de Trigueros** a la **divisa más destacada de la temporada 2025**.
+
+La segunda cita tendrá lugar el **viernes 20 de febrero** bajo el título **‘La conquista de la gloria’**, protagonizada por el **diestro revelación de la pasada campaña y natural de Trigueros, David de Miranda**. La periodista **Beatriz García Gutiérrez** será la encargada de conducir el encuentro. Como colofón a la velada, el torero de Huelva recibirá el **IV Premio Nacional ‘La Divisa’ de Trigueros** al **mérito taurino**.
+
+El **viernes 27 de febrero** se cerrará el XXXII Ciclo de Conferencias con la ponencia **‘Enrique Ponce. La leyenda: 40 años de temple y maestría’**, en la que tomará la palabra el maestro de Chiva, **Enrique Ponce Martínez**. El coloquio estará moderado por el escritor y analista taurino **Francisco Villaverde**. Al finalizar el acto, se hará entrega al matador valenciano del **Premio ‘La Divisa’ de Trigueros** a la **trayectoria taurina**.
+
+Con este ciclo, la **Peña Cultural Taurina ‘La Divisa’** reafirma su compromiso con la difusión y puesta en valor de la tauromaquia, reuniendo a figuras clave del toro, el periodismo y la historia reciente del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 15,
+    title: `Éxito de participación en el IV Coloquio Taurino celebrado en Tórtola de Henares`,
+    image: "/images/colo.jpg",
+    category: "Actualidad",
+    date: "1 de Febrero de 2026",
+	footerImage1: "/images/ab.jpg",
+	footerImage2: "/images/aba.jpg",
+	fullContent: `El centro municipal **El Horno** acogió ayer por la tarde, con notable éxito de asistencia, la celebración del **IV Coloquio Taurino**, un evento que reunió a más de 200 aficionados y que volvió a poner de manifiesto la fuerte vinculación del municipio con la tauromaquia.
+
+La mesa redonda estuvo moderada por **Diego Cervera** y contó con la presencia de destacadas figuras del ámbito taurino, como los matadores de toros **David Galván y Roberto Martín “Jarocho”, el novillero Daniel Moset, el banderillero Jorge Fuentes y el presidente de la Escuela Taurina de Guadalajara, José Antonio Cid “Jota”**. Durante el coloquio, los ponentes compartieron con el público sus vivencias personales y profesionales en los ruedos, en un ambiente cercano y distendido que resultó muy entretenido para los asistentes.
+
+El encuentro estuvo organizado por el vecino del municipio **Pablo García Marcos**, cuyo trabajo y dedicación fueron fundamentales para el correcto desarrollo de la jornada. Tras el debate, la alcaldesa de Tórtola de Henares, Ana Monge, acompañada por el propio organizador, hizo entrega de un detalle conmemorativo a cada uno de los participantes como muestra de agradecimiento por su implicación en el evento.
+
+Como colofón a la tarde, tuvo lugar la presentación oficial de la Asociación Taurina "Tórtola de Henares", una nueva entidad que nace con el objetivo de fomentar, proteger y difundir la cultura taurina en la localidad. Este acto simbolizó el cierre de una jornada que refuerza los lazos del municipio con el mundo del toro.
+
+Desde el Ayuntamiento de Tórtola de Henares se quiere expresar un agradecimiento especial a Pablo García Marcos por la excelente organización de este coloquio, que se consolida como una cita taurina de referencia en la provincia de Guadalajara. El elevado número de asistentes y el interés mostrado por el público reflejan el arraigo y el seguimiento que la tauromaquia mantiene en la comarca`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 16,
     title: `El Puerto consolida los Premios Taurinos “Toros en El Puerto” como un referente en crecimiento que impulsa la tauromaquia en la ciudad y en la provincia`,
     image: "/images/pre.jpg",
