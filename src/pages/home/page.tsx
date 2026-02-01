@@ -449,6 +449,66 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1005,
+    title: `Manzanares “mi hijo acaba de cumplir 14 años lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura”`,
+    image: "/images/manz.jpg",
+    category: "Entrevistas",
+    date: "1 de Febrero de 2026",
+	footerImage1: "/images/manz1.jpg",
+	fullContent: `En la tarde noche del pasado viernes 30 de enero y en una tregua entre borrasca y borrasca, se entregaron los premios **“Toros en El Puerto”**, que organiza la empresa Eventic, cuyo CEO es **Raúl Capdevila.**
+
+En un marco inmejorable y lleno de historia como es **El Castillo de San Marcos**, refugio del **Rey Alfonso X El Sabio**, o donde **Juan de la Cosa** dibujara el primer mapamundi tras el descubrimiento de América, allí pudimos hablar con el Maestro **José María Manzanares**, que fue a recoger el trofeo **Rafael Ortega** a la Mejor estocada de la temporada 2025 en **El Puerto de Santa María.**
+
+A lo largo de esta breve pero intensa entrevista que nos concede en excesiva, al maestro deja claro tres cosas importantes, su amor por la **Plaza Real** de **El Puerto de Santa María**, que ya va pensando en el final de su carrera y que se está fraguando poco a poco el cuarto **Manzanares.**
+
+**MH: maestro un premio más El Puerto ¿esta es una plaza que significa mucho en su carrera?**
+
+**JMM:** Si siempre es una de las plazas que más me ha dado en toda mi carrera que más quiero, donde he tenido tardes muy bonita, la verdad y siempre es un gusto el poder venir a recoger un premio y más poder venir a crear.
+
+**MH:** Importante también El Puerto para usted, pero impórtate también la temporada que ya se viene encima esta de 2026.
+
+**JMM:** Si la verdad que esta anterior que para mí ha sido una temporada muy positiva, con la cornada de Fallas que la verdad vino en muy mala época para los toreros que es al principio de temporada y luego el percance de las costillas en Murcia, que también fue a final de temporada, que nos viene muy mal a los toreros, todo lo demás la verdad el resto de la temporada me he encontrado muy bien, y físicamente sin los dolores que pasaba los años atrás con la espalda con el cuello y si dios quiere con muchísima ilusión para esta temporada de este 2026, ya preparándome desde hace un me o mes y pico y centrado, deseando que empiece porque creo que va ser un año muy bonito si dios quiere.
+
+**MH: En su agradecimiento por este premio a dejado usted caer que tiene 44 años y que le queda poco ¿es que por la cabeza del Maestro Manzanares ya piensa en retirarse?**
+
+**JMM:** No, no haber, me queda poco en el sentido de que no se el tiempo que los toros me van a respetar, o que mi cuerpo me va a aguantar, por ilusión a mí me gustaría estar mínimo cinco años más, no sé si podría hace, incluso si pudriera más, no sé si ojala y dios quiera porque vamos el toreo es mi vida y es lo que más me hace feliz, aunque se sufre mucho yo sigo con mucha ilusión y me quedan muchas cosas que dar que aun sacar de adentro de mí y vivo con esa ilusión de seguir entrenando de seguir intentado crecer como torero.
+
+**MH: arrancamos la temporada de nuevo con la polémica del gobierno que quiere prohibir de nuevo la entrada de los niños y los menores a la tauromaquia ¿Qué significaría eso para el mundo del toro, el que prohibiese a la juventud entrar en los toros?**
+
+**JMM:** No significaría nada, porque creo que no lo van a conseguir, creo desde hace muchos años estamos recibiendo diferentes ataques por parte del gobierno que hoy en día nos gobierna, intentando que las futuras generaciones no conozcan, porque lo único que pretende con este tipo de medida es que las nuevas generaciones pues se intente olvidar del mundo de toro, pero históricamente el mundo del toro siempre ha recibido durante estos siglos atrás muchos ataques, se han intentado de muchas manera acabar con él, pero al final el toreo es algo, un arte demasiado grande demasiado profundo, que a la gente le llega muy adentro del que le gusta siempre, lo ama como una cosa, que es algo intocable en su vida, y bueno estará la polémica que querrán prohibir cosa, que querrán prohibir a los niños luego querrán prohibir ..., pero no hay nada mejor que prohibir a la gente, para que la gente se rebele y aun saldrá con más fuerza el mundo del toro.
+
+**MH: Usted es un eslabón en una cadena importante de toreros, su abuelo, su padre, usted ¿hay más Manzanares?**
+
+**JMM:** Mi niño, mi niño que acaba de cumplir catorce años, lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura, muy dura, yo lo viví con mi padre, mi padre con mi abuelo y buenos tienes que renunciar a todo realmente en la vida y dedicarte plenamente a ella, haber últimamente me hace muchas preguntas y siempre me quiere acompañar, torea de salón, quiere acompañarme a todos los entrenamientos y bueno yo la verdad que ni le quito la idea ni le ánimo, yo estoy llevando acabo la misma estrategia que llevo mi padre conmigo, me dejó ir poquito a poco que yo fuera evolucionado o más bien que fuera madurando en mi pensamiento y eso es lo que estoy haciendo con él. Si en un futuro quiere ser torero lo ayudare lo que pueda y si quiere ser otra cosa lo ayudar también, pero esta claro que como torero lo podere ayudar más.
+
+**MH: Yo a su padre siempre lo he considerado torero de toreo, que para mí es más que figura del toreo, usted es figurón del toreo ¿El nuevo Manzanares que corte lleva?**
+
+**JMM:** Él es un niño muy sensible, tiene más el tipo de mi padre que el mío, es muy delgadito, como te he dicho es un niño muy sensible que sabe apreciar muy bien todos los detalles que rodean lo que es el arte de torear, es muy listo, se fija en muchas cosas cuando me acompaña, sobre todo en agosto que es cuando él tiene vacaciones, me suele acompañar a las corridas de agosto, él lo vive con una ilusión especial y muchos de mis compañeros con los que toreo que lo conocen me dicen que se fijan en él y que le cambia la expresión cuando está viendo toros, no sé qué decirte, eso me preocupa, porque eso significa que si lo tiene dentro, esta claro que su bisabuelo, su abuelo y su padre son torero y por lo menos la educación taurina la está teniendo, ya que luego el decida ser torero o no es cosa suya, pero por lo menos como me educo a mí, mi padre, la misma educación le estoy dando a él.
+
+**MH:** para finalizar maestro **¿Un deseo para esta temporada?**
+
+**JMM:** Salud, sobre todo salud, para mí, para todo mis compañeros, que sea un año llenos de éxito para todos nosotros, que la fiesta va creciendo todos estos años cada vez más, veo mucha gente joven, cada año veo, desde la pandemia para acá muchísima gente joven en muchísimas plazas y no hay nada que a mí me alegre más, dios quiera que también me de muchos más tiempo para poder disfrutar de más años y sobre todo salud, y que disfrutemos de un arte tan único como es el nuestro y que apoyemos mucho.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `José Garrido conquista Lenguazaque (Colombia) y sale a hombros tras una tarde de gloria`,
+    image: "/images/jg.jpg",
+    category: "Actualidad",
+    date: "1 de Febrero de 2026",
+	excerpt: "El matador de toros extremeño José Garrido ha firmado una actuación memorable en la plaza de toros de Lenguazaque, logrando un triunfo rotundo que le permitió cruzar a hombros la Puerta Grande tras cortar un total de tres oreja",
+	fullContent: `Ante un encierro de la prestigiosa ganadería de Ernesto Gutiérrez, Garrido dio una lección de capacidad, temple y mando. Su entrega fue total desde el primer tercio, conectando profundamente con los tendidos colombianos a través de una faena cargada de mando y calado artístico que culminó con una certera estocada.
+
+La tarde estuvo marcada por la importancia del cartel, en el que Garrido compartió terna con el diestro local Ramsés. Además, la jornada tuvo un matiz histórico al celebrarse la alternativa del joven Anderson Sánchez, en la que José Garrido actuó como testigo de una ceremonia que añade un nuevo nombre al escalafón superior.
+
+Con este resultado, José Garrido suma un nuevo triunfo en su temporada americana, consolidando sus estadísticas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1007,
     title: `David de Miranda, IV Premio Nacional ‘La Divisa’ de Trigueros`,
     image: "/images/premi.jpg",
@@ -493,7 +553,67 @@ Desde el Ayuntamiento de Tórtola de Henares se quiere expresar un agradecimient
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+ { 
+    id: 12,
+    title: `Manzanares “mi hijo acaba de cumplir 14 años lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura”`,
+    image: "/images/manz.jpg",
+    category: "Entrevistas",
+    date: "1 de Febrero de 2026",
+	footerImage1: "/images/manz1.jpg",
+	fullContent: `En la tarde noche del pasado viernes 30 de enero y en una tregua entre borrasca y borrasca, se entregaron los premios **“Toros en El Puerto”**, que organiza la empresa Eventic, cuyo CEO es **Raúl Capdevila.**
+
+En un marco inmejorable y lleno de historia como es **El Castillo de San Marcos**, refugio del **Rey Alfonso X El Sabio**, o donde **Juan de la Cosa** dibujara el primer mapamundi tras el descubrimiento de América, allí pudimos hablar con el Maestro **José María Manzanares**, que fue a recoger el trofeo **Rafael Ortega** a la Mejor estocada de la temporada 2025 en **El Puerto de Santa María.**
+
+A lo largo de esta breve pero intensa entrevista que nos concede en excesiva, al maestro deja claro tres cosas importantes, su amor por la **Plaza Real** de **El Puerto de Santa María**, que ya va pensando en el final de su carrera y que se está fraguando poco a poco el cuarto **Manzanares.**
+
+**MH: maestro un premio más El Puerto ¿esta es una plaza que significa mucho en su carrera?**
+
+**JMM:** Si siempre es una de las plazas que más me ha dado en toda mi carrera que más quiero, donde he tenido tardes muy bonita, la verdad y siempre es un gusto el poder venir a recoger un premio y más poder venir a crear.
+
+**MH:** Importante también El Puerto para usted, pero impórtate también la temporada que ya se viene encima esta de 2026.
+
+**JMM:** Si la verdad que esta anterior que para mí ha sido una temporada muy positiva, con la cornada de Fallas que la verdad vino en muy mala época para los toreros que es al principio de temporada y luego el percance de las costillas en Murcia, que también fue a final de temporada, que nos viene muy mal a los toreros, todo lo demás la verdad el resto de la temporada me he encontrado muy bien, y físicamente sin los dolores que pasaba los años atrás con la espalda con el cuello y si dios quiere con muchísima ilusión para esta temporada de este 2026, ya preparándome desde hace un me o mes y pico y centrado, deseando que empiece porque creo que va ser un año muy bonito si dios quiere.
+
+**MH: En su agradecimiento por este premio a dejado usted caer que tiene 44 años y que le queda poco ¿es que por la cabeza del Maestro Manzanares ya piensa en retirarse?**
+
+**JMM:** No, no haber, me queda poco en el sentido de que no se el tiempo que los toros me van a respetar, o que mi cuerpo me va a aguantar, por ilusión a mí me gustaría estar mínimo cinco años más, no sé si podría hace, incluso si pudriera más, no sé si ojala y dios quiera porque vamos el toreo es mi vida y es lo que más me hace feliz, aunque se sufre mucho yo sigo con mucha ilusión y me quedan muchas cosas que dar que aun sacar de adentro de mí y vivo con esa ilusión de seguir entrenando de seguir intentado crecer como torero.
+
+**MH: arrancamos la temporada de nuevo con la polémica del gobierno que quiere prohibir de nuevo la entrada de los niños y los menores a la tauromaquia ¿Qué significaría eso para el mundo del toro, el que prohibiese a la juventud entrar en los toros?**
+
+**JMM:** No significaría nada, porque creo que no lo van a conseguir, creo desde hace muchos años estamos recibiendo diferentes ataques por parte del gobierno que hoy en día nos gobierna, intentando que las futuras generaciones no conozcan, porque lo único que pretende con este tipo de medida es que las nuevas generaciones pues se intente olvidar del mundo de toro, pero históricamente el mundo del toro siempre ha recibido durante estos siglos atrás muchos ataques, se han intentado de muchas manera acabar con él, pero al final el toreo es algo, un arte demasiado grande demasiado profundo, que a la gente le llega muy adentro del que le gusta siempre, lo ama como una cosa, que es algo intocable en su vida, y bueno estará la polémica que querrán prohibir cosa, que querrán prohibir a los niños luego querrán prohibir ..., pero no hay nada mejor que prohibir a la gente, para que la gente se rebele y aun saldrá con más fuerza el mundo del toro.
+
+**MH: Usted es un eslabón en una cadena importante de toreros, su abuelo, su padre, usted ¿hay más Manzanares?**
+
+**JMM:** Mi niño, mi niño que acaba de cumplir catorce años, lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura, muy dura, yo lo viví con mi padre, mi padre con mi abuelo y buenos tienes que renunciar a todo realmente en la vida y dedicarte plenamente a ella, haber últimamente me hace muchas preguntas y siempre me quiere acompañar, torea de salón, quiere acompañarme a todos los entrenamientos y bueno yo la verdad que ni le quito la idea ni le ánimo, yo estoy llevando acabo la misma estrategia que llevo mi padre conmigo, me dejó ir poquito a poco que yo fuera evolucionado o más bien que fuera madurando en mi pensamiento y eso es lo que estoy haciendo con él. Si en un futuro quiere ser torero lo ayudare lo que pueda y si quiere ser otra cosa lo ayudar también, pero esta claro que como torero lo podere ayudar más.
+
+**MH: Yo a su padre siempre lo he considerado torero de toreo, que para mí es más que figura del toreo, usted es figurón del toreo ¿El nuevo Manzanares que corte lleva?**
+
+**JMM:** Él es un niño muy sensible, tiene más el tipo de mi padre que el mío, es muy delgadito, como te he dicho es un niño muy sensible que sabe apreciar muy bien todos los detalles que rodean lo que es el arte de torear, es muy listo, se fija en muchas cosas cuando me acompaña, sobre todo en agosto que es cuando él tiene vacaciones, me suele acompañar a las corridas de agosto, él lo vive con una ilusión especial y muchos de mis compañeros con los que toreo que lo conocen me dicen que se fijan en él y que le cambia la expresión cuando está viendo toros, no sé qué decirte, eso me preocupa, porque eso significa que si lo tiene dentro, esta claro que su bisabuelo, su abuelo y su padre son torero y por lo menos la educación taurina la está teniendo, ya que luego el decida ser torero o no es cosa suya, pero por lo menos como me educo a mí, mi padre, la misma educación le estoy dando a él.
+
+**MH:** para finalizar maestro **¿Un deseo para esta temporada?**
+
+**JMM:** Salud, sobre todo salud, para mí, para todo mis compañeros, que sea un año llenos de éxito para todos nosotros, que la fiesta va creciendo todos estos años cada vez más, veo mucha gente joven, cada año veo, desde la pandemia para acá muchísima gente joven en muchísimas plazas y no hay nada que a mí me alegre más, dios quiera que también me de muchos más tiempo para poder disfrutar de más años y sobre todo salud, y que disfrutemos de un arte tan único como es el nuestro y que apoyemos mucho.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 13,
+    title: `José Garrido conquista Lenguazaque (Colombia) y sale a hombros tras una tarde de gloria`,
+    image: "/images/jg.jpg",
+    category: "Actualidad",
+    date: "1 de Febrero de 2026",
+	excerpt: "El matador de toros extremeño José Garrido ha firmado una actuación memorable en la plaza de toros de Lenguazaque, logrando un triunfo rotundo que le permitió cruzar a hombros la Puerta Grande tras cortar un total de tres oreja",
+	fullContent: `Ante un encierro de la prestigiosa ganadería de Ernesto Gutiérrez, Garrido dio una lección de capacidad, temple y mando. Su entrega fue total desde el primer tercio, conectando profundamente con los tendidos colombianos a través de una faena cargada de mando y calado artístico que culminó con una certera estocada.
+
+La tarde estuvo marcada por la importancia del cartel, en el que Garrido compartió terna con el diestro local Ramsés. Además, la jornada tuvo un matiz histórico al celebrarse la alternativa del joven Anderson Sánchez, en la que José Garrido actuó como testigo de una ceremonia que añade un nuevo nombre al escalafón superior.
+
+Con este resultado, José Garrido suma un nuevo triunfo en su temporada americana, consolidando sus estadísticas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 14,
     title: `David de Miranda, IV Premio Nacional ‘La Divisa’ de Trigueros`,
     image: "/images/premi.jpg",
