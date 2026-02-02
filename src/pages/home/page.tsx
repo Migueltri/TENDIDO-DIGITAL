@@ -450,110 +450,100 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1005,
-    title: `Manzanares “mi hijo acaba de cumplir 14 años lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura”`,
-    image: "/images/manz.jpg",
-    category: "Entrevistas",
-    date: "1 de Febrero de 2026",
-	footerImage1: "/images/manz1.jpg",
-	fullContent: `En la tarde noche del pasado viernes 30 de enero y en una tregua entre borrasca y borrasca, se entregaron los premios **“Toros en El Puerto”**, que organiza la empresa Eventic, cuyo CEO es **Raúl Capdevila.**
+    title: `Morante dice sí a Madrid y se anuncia el 12 de octubre en una fecha clave del calendario`,
+    image: "/images/moran.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `Morante de la Puebla ha decidido extender su temporada y volver a vestirse de luces en Madrid el próximo 12 de octubre, una jornada de especial simbolismo para la tauromaquia y para la afición. El torero sevillano, que en principio tenía previsto poner fin antes a su campaña, ha optado finalmente por sumar esta comparecencia otoñal en la capital, reforzando así el atractivo del cierre de temporada.
 
-En un marco inmejorable y lleno de historia como es **El Castillo de San Marcos**, refugio del **Rey Alfonso X El Sabio**, o donde **Juan de la Cosa** dibujara el primer mapamundi tras el descubrimiento de América, allí pudimos hablar con el Maestro **José María Manzanares**, que fue a recoger el trofeo **Rafael Ortega** a la Mejor estocada de la temporada 2025 en **El Puerto de Santa María.**
-
-A lo largo de esta breve pero intensa entrevista que nos concede en excesiva, al maestro deja claro tres cosas importantes, su amor por la **Plaza Real** de **El Puerto de Santa María**, que ya va pensando en el final de su carrera y que se está fraguando poco a poco el cuarto **Manzanares.**
-
-**MH: maestro un premio más El Puerto ¿esta es una plaza que significa mucho en su carrera?**
-
-**JMM:** Si siempre es una de las plazas que más me ha dado en toda mi carrera que más quiero, donde he tenido tardes muy bonita, la verdad y siempre es un gusto el poder venir a recoger un premio y más poder venir a crear.
-
-**MH:** Importante también El Puerto para usted, pero impórtate también la temporada que ya se viene encima esta de 2026.
-
-**JMM:** Si la verdad que esta anterior que para mí ha sido una temporada muy positiva, con la cornada de Fallas que la verdad vino en muy mala época para los toreros que es al principio de temporada y luego el percance de las costillas en Murcia, que también fue a final de temporada, que nos viene muy mal a los toreros, todo lo demás la verdad el resto de la temporada me he encontrado muy bien, y físicamente sin los dolores que pasaba los años atrás con la espalda con el cuello y si dios quiere con muchísima ilusión para esta temporada de este 2026, ya preparándome desde hace un me o mes y pico y centrado, deseando que empiece porque creo que va ser un año muy bonito si dios quiere.
-
-**MH: En su agradecimiento por este premio a dejado usted caer que tiene 44 años y que le queda poco ¿es que por la cabeza del Maestro Manzanares ya piensa en retirarse?**
-
-**JMM:** No, no haber, me queda poco en el sentido de que no se el tiempo que los toros me van a respetar, o que mi cuerpo me va a aguantar, por ilusión a mí me gustaría estar mínimo cinco años más, no sé si podría hace, incluso si pudriera más, no sé si ojala y dios quiera porque vamos el toreo es mi vida y es lo que más me hace feliz, aunque se sufre mucho yo sigo con mucha ilusión y me quedan muchas cosas que dar que aun sacar de adentro de mí y vivo con esa ilusión de seguir entrenando de seguir intentado crecer como torero.
-
-**MH: arrancamos la temporada de nuevo con la polémica del gobierno que quiere prohibir de nuevo la entrada de los niños y los menores a la tauromaquia ¿Qué significaría eso para el mundo del toro, el que prohibiese a la juventud entrar en los toros?**
-
-**JMM:** No significaría nada, porque creo que no lo van a conseguir, creo desde hace muchos años estamos recibiendo diferentes ataques por parte del gobierno que hoy en día nos gobierna, intentando que las futuras generaciones no conozcan, porque lo único que pretende con este tipo de medida es que las nuevas generaciones pues se intente olvidar del mundo de toro, pero históricamente el mundo del toro siempre ha recibido durante estos siglos atrás muchos ataques, se han intentado de muchas manera acabar con él, pero al final el toreo es algo, un arte demasiado grande demasiado profundo, que a la gente le llega muy adentro del que le gusta siempre, lo ama como una cosa, que es algo intocable en su vida, y bueno estará la polémica que querrán prohibir cosa, que querrán prohibir a los niños luego querrán prohibir ..., pero no hay nada mejor que prohibir a la gente, para que la gente se rebele y aun saldrá con más fuerza el mundo del toro.
-
-**MH: Usted es un eslabón en una cadena importante de toreros, su abuelo, su padre, usted ¿hay más Manzanares?**
-
-**JMM:** Mi niño, mi niño que acaba de cumplir catorce años, lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura, muy dura, yo lo viví con mi padre, mi padre con mi abuelo y buenos tienes que renunciar a todo realmente en la vida y dedicarte plenamente a ella, haber últimamente me hace muchas preguntas y siempre me quiere acompañar, torea de salón, quiere acompañarme a todos los entrenamientos y bueno yo la verdad que ni le quito la idea ni le ánimo, yo estoy llevando acabo la misma estrategia que llevo mi padre conmigo, me dejó ir poquito a poco que yo fuera evolucionado o más bien que fuera madurando en mi pensamiento y eso es lo que estoy haciendo con él. Si en un futuro quiere ser torero lo ayudare lo que pueda y si quiere ser otra cosa lo ayudar también, pero esta claro que como torero lo podere ayudar más.
-
-**MH: Yo a su padre siempre lo he considerado torero de toreo, que para mí es más que figura del toreo, usted es figurón del toreo ¿El nuevo Manzanares que corte lleva?**
-
-**JMM:** Él es un niño muy sensible, tiene más el tipo de mi padre que el mío, es muy delgadito, como te he dicho es un niño muy sensible que sabe apreciar muy bien todos los detalles que rodean lo que es el arte de torear, es muy listo, se fija en muchas cosas cuando me acompaña, sobre todo en agosto que es cuando él tiene vacaciones, me suele acompañar a las corridas de agosto, él lo vive con una ilusión especial y muchos de mis compañeros con los que toreo que lo conocen me dicen que se fijan en él y que le cambia la expresión cuando está viendo toros, no sé qué decirte, eso me preocupa, porque eso significa que si lo tiene dentro, esta claro que su bisabuelo, su abuelo y su padre son torero y por lo menos la educación taurina la está teniendo, ya que luego el decida ser torero o no es cosa suya, pero por lo menos como me educo a mí, mi padre, la misma educación le estoy dando a él.
-
-**MH:** para finalizar maestro **¿Un deseo para esta temporada?**
-
-**JMM:** Salud, sobre todo salud, para mí, para todo mis compañeros, que sea un año llenos de éxito para todos nosotros, que la fiesta va creciendo todos estos años cada vez más, veo mucha gente joven, cada año veo, desde la pandemia para acá muchísima gente joven en muchísimas plazas y no hay nada que a mí me alegre más, dios quiera que también me de muchos más tiempo para poder disfrutar de más años y sobre todo salud, y que disfrutemos de un arte tan único como es el nuestro y que apoyemos mucho.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+La decisión se fraguó tras un encuentro con el empresario Rafael García Garrido, una conversación que derivó en un acuerdo y abrió la puerta a esta actuación en el Día de la Hispanidad. Tal y como avanzó el programa El Toril de Onda Madrid, el gesto confirma la disposición de Morante a prolongar su año taurino más allá de los planes iniciales. Además de la corrida prevista, no se descarta que la jornada se complete con la celebración de un festival matinal, una posibilidad que continúa sobre la mesa y que añadiría aún más interés a una fecha ya marcada en rojo por los aficionados.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `José Garrido conquista Lenguazaque (Colombia) y sale a hombros tras una tarde de gloria`,
-    image: "/images/jg.jpg",
+    title: `Del quirófano al albero: la ciencia revela cómo respondió el cuerpo de Escribano tras la cornada`,
+    image: "/images/quiro.jpg",
     category: "Actualidad",
-    date: "1 de Febrero de 2026",
-	excerpt: "El matador de toros extremeño José Garrido ha firmado una actuación memorable en la plaza de toros de Lenguazaque, logrando un triunfo rotundo que le permitió cruzar a hombros la Puerta Grande tras cortar un total de tres oreja",
-	fullContent: `Ante un encierro de la prestigiosa ganadería de Ernesto Gutiérrez, Garrido dio una lección de capacidad, temple y mando. Su entrega fue total desde el primer tercio, conectando profundamente con los tendidos colombianos a través de una faena cargada de mando y calado artístico que culminó con una certera estocada.
+    date: "2 de Febrero de 2026",
+	fullContent: `Un estudio científico internacional ha puesto el foco en una de las tardes más sobrecogedoras vividas recientemente en la Real Maestranza de Caballería de Sevilla. La investigación, publicada en la revista especializada Trauma Care, analiza la respuesta física y fisiológica del torero Manuel Escribano tras sufrir una cornada y regresar al ruedo minutos después, en un episodio que ya forma parte de la memoria colectiva del toreo.
+Los hechos se remontan al 13 de abril de 2024, cuando Escribano fue prendido de gravedad al inicio de la corrida por un toro de Victorino Martín. La cornada, localizada en la cara interna del muslo derecho, obligó a su traslado urgente a la enfermería del coso sevillano, donde fue intervenido quirúrgicamente bajo anestesia local con la intención de que pudiera continuar la lidia. Contra todo pronóstico, y tras pasar por el quirófano, el diestro volvió al ruedo para estoquear al sexto toro de la tarde, dejando una imagen de enorme impacto: de la camilla al albero en cuestión de minutos.
 
-La tarde estuvo marcada por la importancia del cartel, en el que Garrido compartió terna con el diestro local Ramsés. Además, la jornada tuvo un matiz histórico al celebrarse la alternativa del joven Anderson Sánchez, en la que José Garrido actuó como testigo de una ceremonia que añade un nuevo nombre al escalafón superior.
+El valor diferencial del estudio radica en que permitió registrar de forma continua la respuesta psicofisiológica del torero durante todo el proceso, desde los instantes previos a la cornada hasta su reaparición tras la intervención. Los datos obtenidos revelan que el organismo de Escribano no reaccionó siguiendo los patrones fisiológicos habituales tras un trauma de esta magnitud, lo que abre nuevas líneas de investigación sobre cómo responde el cuerpo del torero en situaciones extremas.
 
-Con este resultado, José Garrido suma un nuevo triunfo en su temporada americana, consolidando sus estadísticas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Además, durante la segunda lidia se registraron niveles de activación fisiológica inferiores a los normales, lo que indica que, pese a su capacidad para continuar la corrida, el cuerpo del torero aún se encontraba en pleno proceso de recuperación. Un hallazgo que aporta una perspectiva inédita sobre lo que ocurre en la enfermería y en el regreso al ruedo, más allá de lo que percibe el espectador.
+
+El trabajo está firmado por los investigadores Luis Teba-del-Pino, Luis Suárez-Arrones y Eduardo Sáez de Villarreal, especialistas en ciencias del deporte y responsables de la preparación física de Manuel Escribano. Sin pretender extrapolar conclusiones generales, el estudio ofrece una mirada científica y documentada sobre una de esas tardes que engrandecen la épica del toreo y ayuda a comprender, con datos, qué sucede realmente en el cuerpo del torero cuando la cornada y la entrega se miden en minutos.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `David de Miranda, IV Premio Nacional ‘La Divisa’ de Trigueros`,
-    image: "/images/premi.jpg",
+    title: `Jesús Enrique Colombo, triunfador de la Feria de San Sebastián`,
+    image: "/images/colom.jpg",
     category: "Actualidad",
-    date: "1 de Febrero de 2026",
-	fullContent: `El torero onubense **David de Miranda** será distinguido con el **IV Premio Nacional ‘La Divisa’ de Trigueros**, en reconocimiento a su **mérito taurino durante la temporada 2025**, dentro del marco del **XXXII Ciclo de Conferencias Taurinas**, organizado por la Peña Cultural Taurina ‘La Divisa’ de la localidad onubense de Trigueros.
+    date: "2 de Febrero de 2026",
+	fullContent: `La Comisión Taurina Municipal de San Cristóbal dio a conocer el pasado sábado 31 de enero los galardones correspondientes a la 61ª Feria Internacional de San Sebastián, en un acto celebrado en los salones del Club Demócrata tras la conclusión del ciclo ferial. Un serial que, compuesto por tres corridas de toros, dejó definidos a sus máximos exponentes y escribió nuevos nombres en la memoria del abono tachirense.
 
-La entidad cultural ha cerrado el cartel completo de protagonistas de este tradicional ciclo, que se desarrollará los **días 13, 20 y 27 de febrero** en el **Centro Cívico Convento del Carmen**, con inicio de todas las sesiones a las **20:30 horas**.
+Entre todos ellos, Jesús Enrique Colombo emergió como el nombre propio de la feria. El espada taribeño fue proclamado Triunfador de la Feria, reconocimiento que resume su actuación a lo largo del abono. Además, fue distinguido con el permio a la Mejor Estocada, otorgado por la ejecución realizada al toro número 22, perteneciente a la divisa de Los Aránguez, ratificando así su solvencia con los aceros, un apartado en el que continúa mostrando un alto nivel de regularidad.
 
-El ciclo se abrirá el **viernes 13 de febrero** con la conferencia titulada **‘El toro del Siglo XXI’**, que contará con la participación de la **ganadería de Victoriano del Río**. Intervendrá el ganadero **Pablo del Río**, siendo moderador del coloquio el socio de la Peña **Domingo Prieto García**. Al término del acto se procederá a la entrega del **XIV Premio Nacional ‘La Divisa’ de Trigueros** a la **divisa más destacada de la temporada 2025**.
-
-La segunda cita tendrá lugar el **viernes 20 de febrero** bajo el título **‘La conquista de la gloria’**, protagonizada por el **diestro revelación de la pasada campaña y natural de Trigueros, David de Miranda**. La periodista **Beatriz García Gutiérrez** será la encargada de conducir el encuentro. Como colofón a la velada, el torero de Huelva recibirá el **IV Premio Nacional ‘La Divisa’ de Trigueros** al **mérito taurino**.
-
-El **viernes 27 de febrero** se cerrará el XXXII Ciclo de Conferencias con la ponencia **‘Enrique Ponce. La leyenda: 40 años de temple y maestría’**, en la que tomará la palabra el maestro de Chiva, **Enrique Ponce Martínez**. El coloquio estará moderado por el escritor y analista taurino **Francisco Villaverde**. Al finalizar el acto, se hará entrega al matador valenciano del **Premio ‘La Divisa’ de Trigueros** a la **trayectoria taurina**.
-
-Con este ciclo, la **Peña Cultural Taurina ‘La Divisa’** reafirma su compromiso con la difusión y puesta en valor de la tauromaquia, reuniendo a figuras clave del toro, el periodismo y la historia reciente del toreo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `Éxito de participación en el IV Coloquio Taurino celebrado en Tórtola de Henares`,
-    image: "/images/colo.jpg",
-    category: "Actualidad",
-    date: "1 de Febrero de 2026",
-	footerImage1: "/images/ab.jpg",
-	footerImage2: "/images/aba.jpg",
-	fullContent: `El centro municipal **El Horno** acogió ayer por la tarde, con notable éxito de asistencia, la celebración del **IV Coloquio Taurino**, un evento que reunió a más de 200 aficionados y que volvió a poner de manifiesto la fuerte vinculación del municipio con la tauromaquia.
-
-La mesa redonda estuvo moderada por **Diego Cervera** y contó con la presencia de destacadas figuras del ámbito taurino, como los matadores de toros **David Galván y Roberto Martín “Jarocho”, el novillero Daniel Moset, el banderillero Jorge Fuentes y el presidente de la Escuela Taurina de Guadalajara, José Antonio Cid “Jota”**. Durante el coloquio, los ponentes compartieron con el público sus vivencias personales y profesionales en los ruedos, en un ambiente cercano y distendido que resultó muy entretenido para los asistentes.
-
-El encuentro estuvo organizado por el vecino del municipio **Pablo García Marcos**, cuyo trabajo y dedicación fueron fundamentales para el correcto desarrollo de la jornada. Tras el debate, la alcaldesa de Tórtola de Henares, Ana Monge, acompañada por el propio organizador, hizo entrega de un detalle conmemorativo a cada uno de los participantes como muestra de agradecimiento por su implicación en el evento.
-
-Como colofón a la tarde, tuvo lugar la presentación oficial de la Asociación Taurina "Tórtola de Henares", una nueva entidad que nace con el objetivo de fomentar, proteger y difundir la cultura taurina en la localidad. Este acto simbolizó el cierre de una jornada que refuerza los lazos del municipio con el mundo del toro.
-
-Desde el Ayuntamiento de Tórtola de Henares se quiere expresar un agradecimiento especial a Pablo García Marcos por la excelente organización de este coloquio, que se consolida como una cita taurina de referencia en la provincia de Guadalajara. El elevado número de asistentes y el interés mostrado por el público reflejan el arraigo y el seguimiento que la tauromaquia mantiene en la comarca`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+De este modo, el diestro taribeño cerró la feria con dos premios concedidos por la Comisión Taurina Municipal.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
- { 
+{ 
+    id: 9,
+    title: `Morante dice sí a Madrid y se anuncia el 12 de octubre en una fecha clave del calendario`,
+    image: "/images/moran.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `Morante de la Puebla ha decidido extender su temporada y volver a vestirse de luces en Madrid el próximo 12 de octubre, una jornada de especial simbolismo para la tauromaquia y para la afición. El torero sevillano, que en principio tenía previsto poner fin antes a su campaña, ha optado finalmente por sumar esta comparecencia otoñal en la capital, reforzando así el atractivo del cierre de temporada.
+
+La decisión se fraguó tras un encuentro con el empresario Rafael García Garrido, una conversación que derivó en un acuerdo y abrió la puerta a esta actuación en el Día de la Hispanidad. Tal y como avanzó el programa El Toril de Onda Madrid, el gesto confirma la disposición de Morante a prolongar su año taurino más allá de los planes iniciales. Además de la corrida prevista, no se descarta que la jornada se complete con la celebración de un festival matinal, una posibilidad que continúa sobre la mesa y que añadiría aún más interés a una fecha ya marcada en rojo por los aficionados.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 10,
+    title: `Del quirófano al albero: la ciencia revela cómo respondió el cuerpo de Escribano tras la cornada`,
+    image: "/images/quiro.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `Un estudio científico internacional ha puesto el foco en una de las tardes más sobrecogedoras vividas recientemente en la Real Maestranza de Caballería de Sevilla. La investigación, publicada en la revista especializada Trauma Care, analiza la respuesta física y fisiológica del torero Manuel Escribano tras sufrir una cornada y regresar al ruedo minutos después, en un episodio que ya forma parte de la memoria colectiva del toreo.
+Los hechos se remontan al 13 de abril de 2024, cuando Escribano fue prendido de gravedad al inicio de la corrida por un toro de Victorino Martín. La cornada, localizada en la cara interna del muslo derecho, obligó a su traslado urgente a la enfermería del coso sevillano, donde fue intervenido quirúrgicamente bajo anestesia local con la intención de que pudiera continuar la lidia. Contra todo pronóstico, y tras pasar por el quirófano, el diestro volvió al ruedo para estoquear al sexto toro de la tarde, dejando una imagen de enorme impacto: de la camilla al albero en cuestión de minutos.
+
+El valor diferencial del estudio radica en que permitió registrar de forma continua la respuesta psicofisiológica del torero durante todo el proceso, desde los instantes previos a la cornada hasta su reaparición tras la intervención. Los datos obtenidos revelan que el organismo de Escribano no reaccionó siguiendo los patrones fisiológicos habituales tras un trauma de esta magnitud, lo que abre nuevas líneas de investigación sobre cómo responde el cuerpo del torero en situaciones extremas.
+
+Además, durante la segunda lidia se registraron niveles de activación fisiológica inferiores a los normales, lo que indica que, pese a su capacidad para continuar la corrida, el cuerpo del torero aún se encontraba en pleno proceso de recuperación. Un hallazgo que aporta una perspectiva inédita sobre lo que ocurre en la enfermería y en el regreso al ruedo, más allá de lo que percibe el espectador.
+
+El trabajo está firmado por los investigadores Luis Teba-del-Pino, Luis Suárez-Arrones y Eduardo Sáez de Villarreal, especialistas en ciencias del deporte y responsables de la preparación física de Manuel Escribano. Sin pretender extrapolar conclusiones generales, el estudio ofrece una mirada científica y documentada sobre una de esas tardes que engrandecen la épica del toreo y ayuda a comprender, con datos, qué sucede realmente en el cuerpo del torero cuando la cornada y la entrega se miden en minutos.`,
+    author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 11,
+    title: `Jesús Enrique Colombo, triunfador de la Feria de San Sebastián`,
+    image: "/images/colom.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `La Comisión Taurina Municipal de San Cristóbal dio a conocer el pasado sábado 31 de enero los galardones correspondientes a la 61ª Feria Internacional de San Sebastián, en un acto celebrado en los salones del Club Demócrata tras la conclusión del ciclo ferial. Un serial que, compuesto por tres corridas de toros, dejó definidos a sus máximos exponentes y escribió nuevos nombres en la memoria del abono tachirense.
+
+Entre todos ellos, Jesús Enrique Colombo emergió como el nombre propio de la feria. El espada taribeño fue proclamado Triunfador de la Feria, reconocimiento que resume su actuación a lo largo del abono. Además, fue distinguido con el permio a la Mejor Estocada, otorgado por la ejecución realizada al toro número 22, perteneciente a la divisa de Los Aránguez, ratificando así su solvencia con los aceros, un apartado en el que continúa mostrando un alto nivel de regularidad.
+
+De este modo, el diestro taribeño cerró la feria con dos premios concedidos por la Comisión Taurina Municipal.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 12,
     title: `Manzanares “mi hijo acaba de cumplir 14 años lo que pasa que me da mucho miedo a mí, haber me encantaría que fuera, pero es una vida muy dura”`,
     image: "/images/manz.jpg",
