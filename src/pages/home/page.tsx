@@ -449,6 +449,114 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Telemadrid retransmitirá en directo la gala de presentación de los carteles de la Feria de San Isidro 2026`,
+    image: "/images/telem.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `**Telemadrid retransmitirá en directo la gala en la que se presentarán oficialmente los carteles de la Feria de San Isidro 2026**, una de las citas más relevantes del calendario taurino. **El acto, organizado por Plaza 1, se celebrará el jueves 5 de febrero a las 19:30 horas.**
+
+Durante la gala se darán a conocer los carteles de **un total de 31 festejos, entre ellos las 26 corridas que compondrán la Feria de San Isidro, que se celebrará del 8 de mayo al 6 de junio.** Asimismo, se anunciarán otras fechas destacadas del ciclo madrileño, como la **Corrida In Memoriam, prevista para el 7 de junio, y la tradicional Corrida de Beneficencia, que tendrá lugar el 14 de junio.** También se presentarán los festejos de apertura de la Feria de la Comunidad de Madrid, que se desarrollará del 1 al 3 de mayo.
+
+La retransmisión estará presentada, por tercer año consecutivo, por **Ramón García**, que estará acompañado por la periodista **Gemma Camacho**. El cierre institucional del **acto correrá a cargo de la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso.**
+
+La gala reunirá a matadores, rejoneadores y ganaderos incluidos en los carteles, así como a representantes del ámbito cultural, social y deportivo vinculados a la tauromaquia. Contará con el respaldo institucional de la Comunidad de Madrid y con la asistencia del alcalde de la capital, José Luis Martínez-Almeida.
+
+Como antesala a la presentación, a partir de las 19:00 horas, Telemadrid ofrecerá una edición especial del programa Madrid Directo, que adelantará su horario habitual para conectar en directo con la llegada de invitados, la alfombra roja y el ambiente previo al acto.
+
+Uno de los momentos más esperados de la gala será la presentación de la imagen oficial de la Feria de San Isidro 2026, que marcará la identidad visual de la próxima temporada, tras varios años con carteles protagonizados por rostros conocidos como Cayetana Rivera o Victoria Federica.
+
+El programa incluirá también la entrega de los premios anuales de Plaza 1. Entre los galardones destacan el premio ‘Mujer y Tauromaquia’, que será concedido a Mariló Montero, y el premio ‘Embajador de la Tauromaquia’, que recibirá Sergio Ramos.
+
+Con esta emisión especial, Telemadrid refuerza su apuesta por la cobertura de los grandes acontecimientos taurinos y da inicio a la programación informativa dedicada a la temporada de San Isidro 2026.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Sergio Rollón vuelve al Circuito de Madrid y se convierte en el primer participante de 2026`,
+    image: "/images/serro.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El novillero, que reaparecerá este viernes en Valdemorillo, es el primer nombre del Circuito de Madrid 2026. Vuelve tras quedar finalista el año pasado y sufrir una grave cornada",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce las localidades por las que viajará entre los meses de marzo y julio. Con una de las tres patas conocidas, restan novilleros y ganaderías por desvelarse.
+
+El primero de los nombres que harán el paseíllo en la sexta edición del certamen, es el del novillero, **Sergio Rollón**, quien representará a la **Escuela Taurina Fundación El Juli**.
+
+El novillero **debutó con picadores el 15 de marzo de 2025** en Valdilecha, el primer festejo del **Circuito de Madrid 2025** con novillos de Caras Blancas y El Uno. Tras tocar pelo en todas las novilladas toreadas, llegó a Valdetorres de Jarama en la Final a Tres. En dicha tarde, un novillo **de Hermanos González** le propinó una gravísima cornada en el Triángulo de Scarpa.
+
+Vuelve al Circuito de Madrid para reafirmar las buenas sensaciones dejadas en la edición pasada y con el ánimo de resarcirse del momento amargo que vivió. Como el propio novillero aseguró,
+
+**Reaparecerá** en público este viernes, **6 de febrero**, en la **Plaza de Toros de Valdemorillo**. Se volverá a vestir de luces para matar la novillada de **Jiménez Pasquau** a las 17:00 horas, cartel que comparte con cinco compañeros.
+
+Una tarde que, sin duda, estará marcada por la ilusión de volverse a ver de luces y con los sentimientos a flor de piel de quienes han estado a su lado en el largo camino recorrido durante estos ocho meses.
+
+Por lo tanto, el novillero Sergio Rollón será uno de los ocho novilleros que lucharán por hacerse con la sexta edición del Circuito de Madrid, que dará comienzo el 7 de marzo en San Agustín del Guadalix.
+
+**Un Circuito de la Liga Nacional de Novilladas**
+
+El Circuito de Madrid celebra este 2026 su sexta edición, desde que naciera en el año 2021 con el objetivo de celebrar 9 novilladas con picadores en las que dar la oportunidad a ocho novilleros de la región. El proyecto está enmarcado en la Liga Nacional de Novilladas, la cual aglutina cinco circuitos activos en todo el panorama nacional.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `Manuel Quintana completa la nómina de novilleros participantes del Circuito de Andalucía 2026`,
+    image: "/images/maquin.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El cordobés accede al certamen tras ser segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la A.A.E.T. “Pedro Romero” y refuerza una séptima edición de máximo nivel",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026** ya tiene cerrado su elenco de participantes tras la incorporación de **Manuel Quintana** , que se convierte en el noveno novillero seleccionado para la próxima edición del certamen. El ciclo, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía** , está encuadrado en la **Liga Nacional de Novilladas** y celebrará en 2026 su séptima edición.
+
+Natural de Córdoba, **Manuel Quintana** accede al Circuito tras haber sido **segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** , ocupando la plaza disponible después de que el triunfador del certamen no debutara con picadores y renunciara a su puesto.
+
+Quintana fue una de las grandes sensaciones del escalafón menor en la pasada temporada, firmando una campaña sobresaliente tanto en número como en relevancia de sus triunfos. Entre sus actuaciones más destacadas figuran la proclamación como **triunfador del Memorial Iván Fandiño de Bilbao** y la Puerta Grande en Arles, además de otros importantes éxitos que avalan su proyección.
+
+El balance numérico de su temporada refleja la dimensión de su año: **57 orejas y cuatro rabos en las 30 novilladas que estoqueó** , cifras que lo sitúan como uno de los nombres más destacados entre la novillería y justifican su presencia en un certamen de la exigencia del Circuito de Novilladas de Andalucía.
+
+Con la incorporación de Manuel Quintana, el **Circuito de Novilladas de Andalucía 2026** queda definitivamente conformado por **Pedro Luis, Víctor Barroso, El Primi, Isaac Galvín, Iván Rejas, Dennis Martín y Francisco Fernández** , que lograron su clasificación a través del clasificatorio Bolsín, **Julio Norte** , que ocupa la plaza de intercambio, y el propio **Manuel Quintana** .
+
+El certamen se dará a conocer el próximo **viernes 13 de febrero** todas sus combinaciones, ganaderías y la estructura final de esta séptima edición, que volverá a situar a Andalucía como referencia en la promoción del futuro de la tauromaquia.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Curro Vázquez y Pablo Aguado, el día 10 de febrero en los Mano a mano de la Fundación Cajasol`,
+    image: "/images/va.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El encuentro se desarrollará a las 8 de la tarde con entrada libre hasta completar aforo",
+	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 74 con un encuentro que por primera vez tendrá como protagonistas a dos matadores de toros, **Curro Vázquez** y **Pablo Aguado**, y que se celebrará el **martes 10 de febrero** en la sede de Fundación Cajasol en Sevilla. Este acto dará comienzo a las ocho de la tarde (**20.00 horas**).
+
+El periodista **José Enrique Moreno** será de nuevo el encargado de conducir el acto, que tiene como título 'De torero a torero' y en el que se pretende que ambos diestros reflexionen sobre la Tauromaquia desde la perspectiva de dos generaciones separadas por varias décadas.
+
+**Curro Vázquez** es un referente en el toreo de pureza y profundidad, cualidades que le convirtieron en torero de culto para aficionados y otros toreros. Tomó la alternativa en 1969 y, con algún paréntesis, se mantuvo en activo hasta 2002, cuando se retiró en Vistalegre. El pasado mes de octubre tuvo una feliz y puntual reaparición en el festival dedicado a Antoñete en Las Ventas, en el que volvió a dar una lección de temple, torería y naturalidad. Aunque nacido en Linares, Curro fue torero predilecto de la afición madrileña. En la actualidad es apoderado.
+
+**Pablo Aguado** es un gran valor del toreo sevillano. Desde su histórico triunfo en la Maestranza en la temporada 2016, cuando cortó cuatro orejas a la corrida de Jandilla, Aguado no ha dejado de crecer como torero sin abandonar en ningún momento esa difícil línea del toreo de arte y de pellizco, al más puro estilo sevillano pero no exento de profundidad. Alternativado en Sevilla en 2017, este sevillano de nacimiento ha cuajado una magnífica temporada en 2025 y en este momento está colocado en la primera línea del toreo, siendo su nombre reclamado en todas las grandes ferias.
+
+**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
+
+---------------------------------------------------------------------------------------------------------------------------
+-
+
+**Ciclo:** Los Mano a mano de la Fundación Cajasol
+**Fecha:** MARTES 10 de abril de 2026
+**Hora:** 20.00
+**Lugar:** Sede de la Fundación Cajasol. C/ Chicarreros, 1.
+
+**Invitados:** **Curro Vázquez y Pablo Aguado**
+**Tema:** *De torero a torero*`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Morante dice sí a Madrid y se anuncia el 12 de octubre en una fecha clave del calendario`,
     image: "/images/moran.jpg",
@@ -497,7 +605,115 @@ De este modo, el diestro taribeño cerró la feria con dos premios concedidos po
 ];
 
 const latestNews: NewsItem[] = [
-{ 
+	{ 
+    id: 5,
+    title: `Telemadrid retransmitirá en directo la gala de presentación de los carteles de la Feria de San Isidro 2026`,
+    image: "/images/telem.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	fullContent: `**Telemadrid retransmitirá en directo la gala en la que se presentarán oficialmente los carteles de la Feria de San Isidro 2026**, una de las citas más relevantes del calendario taurino. **El acto, organizado por Plaza 1, se celebrará el jueves 5 de febrero a las 19:30 horas.**
+
+Durante la gala se darán a conocer los carteles de **un total de 31 festejos, entre ellos las 26 corridas que compondrán la Feria de San Isidro, que se celebrará del 8 de mayo al 6 de junio.** Asimismo, se anunciarán otras fechas destacadas del ciclo madrileño, como la **Corrida In Memoriam, prevista para el 7 de junio, y la tradicional Corrida de Beneficencia, que tendrá lugar el 14 de junio.** También se presentarán los festejos de apertura de la Feria de la Comunidad de Madrid, que se desarrollará del 1 al 3 de mayo.
+
+La retransmisión estará presentada, por tercer año consecutivo, por **Ramón García**, que estará acompañado por la periodista **Gemma Camacho**. El cierre institucional del **acto correrá a cargo de la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso.**
+
+La gala reunirá a matadores, rejoneadores y ganaderos incluidos en los carteles, así como a representantes del ámbito cultural, social y deportivo vinculados a la tauromaquia. Contará con el respaldo institucional de la Comunidad de Madrid y con la asistencia del alcalde de la capital, José Luis Martínez-Almeida.
+
+Como antesala a la presentación, a partir de las 19:00 horas, Telemadrid ofrecerá una edición especial del programa Madrid Directo, que adelantará su horario habitual para conectar en directo con la llegada de invitados, la alfombra roja y el ambiente previo al acto.
+
+Uno de los momentos más esperados de la gala será la presentación de la imagen oficial de la Feria de San Isidro 2026, que marcará la identidad visual de la próxima temporada, tras varios años con carteles protagonizados por rostros conocidos como Cayetana Rivera o Victoria Federica.
+
+El programa incluirá también la entrega de los premios anuales de Plaza 1. Entre los galardones destacan el premio ‘Mujer y Tauromaquia’, que será concedido a Mariló Montero, y el premio ‘Embajador de la Tauromaquia’, que recibirá Sergio Ramos.
+
+Con esta emisión especial, Telemadrid refuerza su apuesta por la cobertura de los grandes acontecimientos taurinos y da inicio a la programación informativa dedicada a la temporada de San Isidro 2026.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 6,
+    title: `Sergio Rollón vuelve al Circuito de Madrid y se convierte en el primer participante de 2026`,
+    image: "/images/serro.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El novillero, que reaparecerá este viernes en Valdemorillo, es el primer nombre del Circuito de Madrid 2026. Vuelve tras quedar finalista el año pasado y sufrir una grave cornada",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce las localidades por las que viajará entre los meses de marzo y julio. Con una de las tres patas conocidas, restan novilleros y ganaderías por desvelarse.
+
+El primero de los nombres que harán el paseíllo en la sexta edición del certamen, es el del novillero, **Sergio Rollón**, quien representará a la **Escuela Taurina Fundación El Juli**.
+
+El novillero **debutó con picadores el 15 de marzo de 2025** en Valdilecha, el primer festejo del **Circuito de Madrid 2025** con novillos de Caras Blancas y El Uno. Tras tocar pelo en todas las novilladas toreadas, llegó a Valdetorres de Jarama en la Final a Tres. En dicha tarde, un novillo **de Hermanos González** le propinó una gravísima cornada en el Triángulo de Scarpa.
+
+Vuelve al Circuito de Madrid para reafirmar las buenas sensaciones dejadas en la edición pasada y con el ánimo de resarcirse del momento amargo que vivió. Como el propio novillero aseguró,
+
+**Reaparecerá** en público este viernes, **6 de febrero**, en la **Plaza de Toros de Valdemorillo**. Se volverá a vestir de luces para matar la novillada de **Jiménez Pasquau** a las 17:00 horas, cartel que comparte con cinco compañeros.
+
+Una tarde que, sin duda, estará marcada por la ilusión de volverse a ver de luces y con los sentimientos a flor de piel de quienes han estado a su lado en el largo camino recorrido durante estos ocho meses.
+
+Por lo tanto, el novillero Sergio Rollón será uno de los ocho novilleros que lucharán por hacerse con la sexta edición del Circuito de Madrid, que dará comienzo el 7 de marzo en San Agustín del Guadalix.
+
+**Un Circuito de la Liga Nacional de Novilladas**
+
+El Circuito de Madrid celebra este 2026 su sexta edición, desde que naciera en el año 2021 con el objetivo de celebrar 9 novilladas con picadores en las que dar la oportunidad a ocho novilleros de la región. El proyecto está enmarcado en la Liga Nacional de Novilladas, la cual aglutina cinco circuitos activos en todo el panorama nacional.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 7,
+    title: `Manuel Quintana completa la nómina de novilleros participantes del Circuito de Andalucía 2026`,
+    image: "/images/maquin.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El cordobés accede al certamen tras ser segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la A.A.E.T. “Pedro Romero” y refuerza una séptima edición de máximo nivel",
+	fullContent: `El **Circuito de Novilladas de Andalucía 2026** ya tiene cerrado su elenco de participantes tras la incorporación de **Manuel Quintana** , que se convierte en el noveno novillero seleccionado para la próxima edición del certamen. El ciclo, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía** , está encuadrado en la **Liga Nacional de Novilladas** y celebrará en 2026 su séptima edición.
+
+Natural de Córdoba, **Manuel Quintana** accede al Circuito tras haber sido **segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** , ocupando la plaza disponible después de que el triunfador del certamen no debutara con picadores y renunciara a su puesto.
+
+Quintana fue una de las grandes sensaciones del escalafón menor en la pasada temporada, firmando una campaña sobresaliente tanto en número como en relevancia de sus triunfos. Entre sus actuaciones más destacadas figuran la proclamación como **triunfador del Memorial Iván Fandiño de Bilbao** y la Puerta Grande en Arles, además de otros importantes éxitos que avalan su proyección.
+
+El balance numérico de su temporada refleja la dimensión de su año: **57 orejas y cuatro rabos en las 30 novilladas que estoqueó** , cifras que lo sitúan como uno de los nombres más destacados entre la novillería y justifican su presencia en un certamen de la exigencia del Circuito de Novilladas de Andalucía.
+
+Con la incorporación de Manuel Quintana, el **Circuito de Novilladas de Andalucía 2026** queda definitivamente conformado por **Pedro Luis, Víctor Barroso, El Primi, Isaac Galvín, Iván Rejas, Dennis Martín y Francisco Fernández** , que lograron su clasificación a través del clasificatorio Bolsín, **Julio Norte** , que ocupa la plaza de intercambio, y el propio **Manuel Quintana** .
+
+El certamen se dará a conocer el próximo **viernes 13 de febrero** todas sus combinaciones, ganaderías y la estructura final de esta séptima edición, que volverá a situar a Andalucía como referencia en la promoción del futuro de la tauromaquia.
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 8,
+    title: `Curro Vázquez y Pablo Aguado, el día 10 de febrero en los Mano a mano de la Fundación Cajasol`,
+    image: "/images/va.jpg",
+    category: "Actualidad",
+    date: "2 de Febrero de 2026",
+	excerpt: "El encuentro se desarrollará a las 8 de la tarde con entrada libre hasta completar aforo",
+	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 74 con un encuentro que por primera vez tendrá como protagonistas a dos matadores de toros, **Curro Vázquez** y **Pablo Aguado**, y que se celebrará el **martes 10 de febrero** en la sede de Fundación Cajasol en Sevilla. Este acto dará comienzo a las ocho de la tarde (**20.00 horas**).
+
+El periodista **José Enrique Moreno** será de nuevo el encargado de conducir el acto, que tiene como título 'De torero a torero' y en el que se pretende que ambos diestros reflexionen sobre la Tauromaquia desde la perspectiva de dos generaciones separadas por varias décadas.
+
+**Curro Vázquez** es un referente en el toreo de pureza y profundidad, cualidades que le convirtieron en torero de culto para aficionados y otros toreros. Tomó la alternativa en 1969 y, con algún paréntesis, se mantuvo en activo hasta 2002, cuando se retiró en Vistalegre. El pasado mes de octubre tuvo una feliz y puntual reaparición en el festival dedicado a Antoñete en Las Ventas, en el que volvió a dar una lección de temple, torería y naturalidad. Aunque nacido en Linares, Curro fue torero predilecto de la afición madrileña. En la actualidad es apoderado.
+
+**Pablo Aguado** es un gran valor del toreo sevillano. Desde su histórico triunfo en la Maestranza en la temporada 2016, cuando cortó cuatro orejas a la corrida de Jandilla, Aguado no ha dejado de crecer como torero sin abandonar en ningún momento esa difícil línea del toreo de arte y de pellizco, al más puro estilo sevillano pero no exento de profundidad. Alternativado en Sevilla en 2017, este sevillano de nacimiento ha cuajado una magnífica temporada en 2025 y en este momento está colocado en la primera línea del toreo, siendo su nombre reclamado en todas las grandes ferias.
+
+**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
+
+---------------------------------------------------------------------------------------------------------------------------
+-
+
+**Ciclo:** Los Mano a mano de la Fundación Cajasol
+**Fecha:** MARTES 10 de abril de 2026
+**Hora:** 20.00
+**Lugar:** Sede de la Fundación Cajasol. C/ Chicarreros, 1.
+
+**Invitados:** **Curro Vázquez y Pablo Aguado**
+**Tema:** *De torero a torero*`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 9,
     title: `Morante dice sí a Madrid y se anuncia el 12 de octubre en una fecha clave del calendario`,
     image: "/images/moran.jpg",
