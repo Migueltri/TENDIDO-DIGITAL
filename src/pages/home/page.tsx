@@ -24,6 +24,14 @@
   footerImage3Caption?: string;
   footerImage4?: string;
   footerImage4Caption?: string;
+  footerImage5?: string;
+  footerImage5Caption?: string;
+  footerImage6?: string;
+  footerImage6Caption?: string;
+  footerImage7?: string;
+  footerImage7Caption?: string;	  
+  footerImage8?: string;
+  footerImage8Caption?: string;
   boldContent?: boolean;
   author?: string;
   authorLogo?: string;
@@ -447,7 +455,99 @@ const CrónicaLayout = ({ news }: { news: any }) => (
   </article>
 );
 	
-const featuredNews: NewsItem[] = [
+const featuredNews: NewsItem[] = [	
+	{ 
+    id: 1003,
+    title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `La Asociación Nacional de Empresarios Españoles (ANOET), una vez revisado el pliego de la Plaza de Toros de Zaragoza al detalle, y tras la reunión de Junta Directiva, considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria y que pueden vulnerar y distorsionar la libre competencia, así como definir la fecha exacta en la que lo hará cada uno de ellos.
+
+Para ANOET se trata de una medida que limita la libertad de los empresarios a la hora de programar una feria y que impide incluir las novedades de la temporada, ya que obliga a cerrar los carteles de las ferias de San Jorge y El Pilar a mitad del mes de febrero. Consideramos que esta exigencia del Pliego, que es causa de rescisión del contrato, hipoteca a la empresa para toda la temporada, pudiendo llegar a perjudicar los derechos de los espectadores.
+
+Por otra parte, ANOET estima que existen otras fórmulas para valorar a las empresas distintas al canon económico al alza y sin límite -como consta en el pliego-, una medida que convierte estos procesos de adjudicación de las plazas en auténticas subastas. En este sentido, insta a la Diputación de Zaragoza a adoptar alguna otra fórmula que realmente beneficie a la Tauromaquia y preserve el futuro de la plaza.
+
+Para ello, ANOET se pone a disposición de la Diputación de Zaragoza con el fin de mantener una reunión que sirva para aclarar los puntos que entendemos que distorsionan la legalidad vigente.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Mont de Marsan presenta una Feria de la Madeleine 2026 de máxima categoría, con Daniel Luque en solitario como gran acontecimiento`,
+    image: "/images/mont.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `La ciudad de Mont de Marsan ha dado a conocer oficialmente los carteles de la **Feria de la Madeleine 2026** , un ciclo que volverá a situar al coso de Plumaçon entre los grandes referentes del verano taurino europeo. El serial estará compuesto por **seis corridas de toros, una novillada con picadores y una novillada sin caballos** , con un elenco de toreros y ganaderías de primer nivel que refuerzan el prestigio histórico de esta feria del suroeste francés.
+
+El principal foco de atención llegará el sábado 25 de julio, jornada en la que **Daniel Luque hará el paseíllo en solitario** . El diestro de Gerena afrontará un compromiso de máxima exigencia al lidiar seis toros de **Daniel Ruiz, Victoriano del Río, La Quinta, Adolfo Martín, Fuente Ymbro y Juan Pedro Domecq** , en una de las citas más relevantes y singulares de toda la temporada europea.
+
+La feria se abrirá el miércoles 22 de julio con un cartel de enorme atractivo, integrado por **Borja Jiménez, Roca Rey y Marco Pérez** , que se medirán a un encierro de **Jandilla** , en una combinación que conjuga presente, proyección y máxima categoría. A lo largo del abono también harán el paseíllo toreros consolidados como **Miguel Ángel Perera y David de Miranda**, en una programación que mantiene un equilibrio **entre figuras** , toreros emergentes y apuestas de marcado carácter.
+
+El apartado más **torista** volverá a tener un peso específico dentro del ciclo, con la presencia de **Antonio Ferrera, Morenito de Aranda, Pepe Moral, Román y Juan de Castilla** , anunciados frente a hierros de marcada personalidad. Paralelamente, la organización refuerza su tradicional apuesta por la juventud con la participación de **Marco Pérez, Tristán Barroso y Dorian Canton** , mientras que la novillada matinal del sábado concederá protagonismo a **Emiliano Osornio, Julio Norte y Clovis**.
+
+Los carteles completos de la Feria de la Madeleine 2026 quedan configurados de la siguiente manera:
+
+– **Miércoles 22 de julio** : Borja Jiménez, Roca Rey y Marco Pérez (**Jandilla**).
+– **Jueves 23 de julio**: Novillada sin picadores (**Lartet y Camino de Santiago**).
+– **Jueves 23 de julio**: Antonio Ferrera, Pepe Moral y Dorian Canton (**José Escolar**).
+– **Viernes 24 de julio**: Miguel Ángel Perera, David de Miranda y Tristán Barroso (**Zacarías Moreno**).
+– **Sábado 25 de julio**: (matinal): Emiliano Osornio, Julio Norte y Clovis (**José Cruz**).
+– **Sábado 25 de julio**: Daniel Luque, en solitario (**Juan Pedro Domecq, La Quinta, Daniel Ruiz, Victoriano del Río, Adolfo Martín y Fuente Ymbro**).
+– **Domingo 26 de julio**: Morenito de Aranda, Román y Juan de Castilla (**Victorino Martín**).
+
+Con este anuncio, Mont de Marsan consolida una vez más a la Feria de la Madeleine como uno de los ciclos más sólidos, equilibrados y **atractivos** del verano **taurino**, combinando figuras, **toreros** en proyección y un **apartado** ganadero de máxima exigencia.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Santiago López Ortega, segundo novillero confirmado para el Circuito de Novilladas de Madrid 2026`,
+    image: "/images/sanlo.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `El **Circuito de Novilladas de Madrid 2026** continúa avanzando en la confección de su plantel de espadas y ya ha comenzado a desvelar los nombres que formarán parte de esta nueva edición. Tras el anuncio, realizado en la jornada de ayer, del novillero Sergio Rollón como primer participante, la organización ha confirmado al mexicano **Santiago López Ortega** como segundo nombre del certamen.
+
+Santiago López Ortega participará en el circuito en representación de la **Escuela Taurina CITAR-Anchuelo** , consolidando así su proyección dentro del escalafón novilleril y su presencia en uno de los ciclos más relevantes de promoción en la Comunidad de Madrid.
+
+El joven espada cuenta con una trayectoria reciente especialmente destacada. Su debut con picadores tuvo lugar en la pasada **Feria de Málaga 2025** , donde firmó una actuación solvente que fue premiada con una oreja ante un novillo de la ganadería de Macandro.
+
+Asimismo, ha sido protagonista en diversos certámenes de referencia, alcanzando la final del certamen **Camino hacia Las Ventas 2024**, así como la **final del ciclo ‘Kilómetro Cero’**, y logrando además el **primer puesto en el certamen ‘Guadalajara busca torero’**, resultados que avalan su progresión y regularidad.
+
+Con esta segunda confirmación, el Circuito de Novilladas de Madrid 2026 continúa perfilando un cartel de jóvenes valores llamado a convertirse, una vez más, en una plataforma clave para la proyección de las nuevas figuras del toreo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Valdemorillo presenta los toros de Torrealta para una cita de máxima expectación este domingo`,
+    image: "/images/tor.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	footerImage1: "/images/tor1.jpg",
+	footerImage2: "/images/tor2.jpg",
+	footerImage3: "/images/tor3.jpg",
+	footerImage4: "/images/tor4.jpg",
+	footerImage5: "/images/tor5.jpg",
+	footerImage6: "/images/tor6.jpg",
+	footerImage7: "/images/tor7.jpg",
+	footerImage8: "/images/tor8.jpg",
+	fullContent: `Valdemorillo volverá a **situarse en el centro de la atención taurina este domingo 8 de febrero, a las 17:00 horas** , con una corrida que ha despertado un notable interés entre los aficionados. Se lidiará un encierro de la ganadería de **Torrealta**, hierro de acreditada regularidad y prestigio en las principales ferias.
+
+Los **toros que se presentan en este reportaje gráfico, y que serán los protagonistas de la tarde**, responden fielmente al sello característico de la divisa: seriedad en las caras, armonía de hechuras y una presentación acorde con la importancia del compromiso. Un conjunto que ha sido cuidado con esmero para una plaza que cada temporada exige máximo rigor en la selección del ganado.
+
+La ganadería de **Torrealta** llega a Valdemorillo avalada por una **trayectoria reciente marcada por la bravura, la movilidad y la clase**, cualidades que la han convertido en una de las referencias del campo bravo actual y que generan una lógica expectación.
+
+Para su lidia, el cartel reúne a **tres toreros de contrastada personalidad y concepto: Uceda Leal, Juan Ortega y Pablo Aguado**, una terna de marcado carácter artístico que garantiza una tarde de alto contenido para el aficionado. Tres nombres que, desde registros distintos, se enfrentarán a un encierro que está llamado a convertirse en uno de los grandes alicientes de la feria.
+
+Con la presentación de estos **toros de Torrealta**, Valdemorillo refuerza su apuesta por el protagonismo del **toro íntegro** y por carteles de interés, en una cita que se perfila como uno de los acontecimientos taurinos más destacados de este inicio de temporada.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1007,
     title: `España es el único país del mundo que no puede prohibir la entrada de los niños a las plazas de toros`,
@@ -495,6 +595,98 @@ Los antitaurinos, políticos o no, basan sus argumentos en una supuesta e infund
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 1,
+    title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `La Asociación Nacional de Empresarios Españoles (ANOET), una vez revisado el pliego de la Plaza de Toros de Zaragoza al detalle, y tras la reunión de Junta Directiva, considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria y que pueden vulnerar y distorsionar la libre competencia, así como definir la fecha exacta en la que lo hará cada uno de ellos.
+
+Para ANOET se trata de una medida que limita la libertad de los empresarios a la hora de programar una feria y que impide incluir las novedades de la temporada, ya que obliga a cerrar los carteles de las ferias de San Jorge y El Pilar a mitad del mes de febrero. Consideramos que esta exigencia del Pliego, que es causa de rescisión del contrato, hipoteca a la empresa para toda la temporada, pudiendo llegar a perjudicar los derechos de los espectadores.
+
+Por otra parte, ANOET estima que existen otras fórmulas para valorar a las empresas distintas al canon económico al alza y sin límite -como consta en el pliego-, una medida que convierte estos procesos de adjudicación de las plazas en auténticas subastas. En este sentido, insta a la Diputación de Zaragoza a adoptar alguna otra fórmula que realmente beneficie a la Tauromaquia y preserve el futuro de la plaza.
+
+Para ello, ANOET se pone a disposición de la Diputación de Zaragoza con el fin de mantener una reunión que sirva para aclarar los puntos que entendemos que distorsionan la legalidad vigente.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1,
+    title: `Mont de Marsan presenta una Feria de la Madeleine 2026 de máxima categoría, con Daniel Luque en solitario como gran acontecimiento`,
+    image: "/images/mont.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `La ciudad de Mont de Marsan ha dado a conocer oficialmente los carteles de la **Feria de la Madeleine 2026** , un ciclo que volverá a situar al coso de Plumaçon entre los grandes referentes del verano taurino europeo. El serial estará compuesto por **seis corridas de toros, una novillada con picadores y una novillada sin caballos** , con un elenco de toreros y ganaderías de primer nivel que refuerzan el prestigio histórico de esta feria del suroeste francés.
+
+El principal foco de atención llegará el sábado 25 de julio, jornada en la que **Daniel Luque hará el paseíllo en solitario** . El diestro de Gerena afrontará un compromiso de máxima exigencia al lidiar seis toros de **Daniel Ruiz, Victoriano del Río, La Quinta, Adolfo Martín, Fuente Ymbro y Juan Pedro Domecq** , en una de las citas más relevantes y singulares de toda la temporada europea.
+
+La feria se abrirá el miércoles 22 de julio con un cartel de enorme atractivo, integrado por **Borja Jiménez, Roca Rey y Marco Pérez** , que se medirán a un encierro de **Jandilla** , en una combinación que conjuga presente, proyección y máxima categoría. A lo largo del abono también harán el paseíllo toreros consolidados como **Miguel Ángel Perera y David de Miranda**, en una programación que mantiene un equilibrio **entre figuras** , toreros emergentes y apuestas de marcado carácter.
+
+El apartado más **torista** volverá a tener un peso específico dentro del ciclo, con la presencia de **Antonio Ferrera, Morenito de Aranda, Pepe Moral, Román y Juan de Castilla** , anunciados frente a hierros de marcada personalidad. Paralelamente, la organización refuerza su tradicional apuesta por la juventud con la participación de **Marco Pérez, Tristán Barroso y Dorian Canton** , mientras que la novillada matinal del sábado concederá protagonismo a **Emiliano Osornio, Julio Norte y Clovis**.
+
+Los carteles completos de la Feria de la Madeleine 2026 quedan configurados de la siguiente manera:
+
+– **Miércoles 22 de julio** : Borja Jiménez, Roca Rey y Marco Pérez (**Jandilla**).
+– **Jueves 23 de julio**: Novillada sin picadores (**Lartet y Camino de Santiago**).
+– **Jueves 23 de julio**: Antonio Ferrera, Pepe Moral y Dorian Canton (**José Escolar**).
+– **Viernes 24 de julio**: Miguel Ángel Perera, David de Miranda y Tristán Barroso (**Zacarías Moreno**).
+– **Sábado 25 de julio**: (matinal): Emiliano Osornio, Julio Norte y Clovis (**José Cruz**).
+– **Sábado 25 de julio**: Daniel Luque, en solitario (**Juan Pedro Domecq, La Quinta, Daniel Ruiz, Victoriano del Río, Adolfo Martín y Fuente Ymbro**).
+– **Domingo 26 de julio**: Morenito de Aranda, Román y Juan de Castilla (**Victorino Martín**).
+
+Con este anuncio, Mont de Marsan consolida una vez más a la Feria de la Madeleine como uno de los ciclos más sólidos, equilibrados y **atractivos** del verano **taurino**, combinando figuras, **toreros** en proyección y un **apartado** ganadero de máxima exigencia.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 2,
+    title: `Santiago López Ortega, segundo novillero confirmado para el Circuito de Novilladas de Madrid 2026`,
+    image: "/images/sanlo.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	fullContent: `El **Circuito de Novilladas de Madrid 2026** continúa avanzando en la confección de su plantel de espadas y ya ha comenzado a desvelar los nombres que formarán parte de esta nueva edición. Tras el anuncio, realizado en la jornada de ayer, del novillero Sergio Rollón como primer participante, la organización ha confirmado al mexicano **Santiago López Ortega** como segundo nombre del certamen.
+
+Santiago López Ortega participará en el circuito en representación de la **Escuela Taurina CITAR-Anchuelo** , consolidando así su proyección dentro del escalafón novilleril y su presencia en uno de los ciclos más relevantes de promoción en la Comunidad de Madrid.
+
+El joven espada cuenta con una trayectoria reciente especialmente destacada. Su debut con picadores tuvo lugar en la pasada **Feria de Málaga 2025** , donde firmó una actuación solvente que fue premiada con una oreja ante un novillo de la ganadería de Macandro.
+
+Asimismo, ha sido protagonista en diversos certámenes de referencia, alcanzando la final del certamen **Camino hacia Las Ventas 2024**, así como la **final del ciclo ‘Kilómetro Cero’**, y logrando además el **primer puesto en el certamen ‘Guadalajara busca torero’**, resultados que avalan su progresión y regularidad.
+
+Con esta segunda confirmación, el Circuito de Novilladas de Madrid 2026 continúa perfilando un cartel de jóvenes valores llamado a convertirse, una vez más, en una plataforma clave para la proyección de las nuevas figuras del toreo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 3,
+    title: `Valdemorillo presenta los toros de Torrealta para una cita de máxima expectación este domingo`,
+    image: "/images/tor.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	footerImage1: "/images/tor1.jpg",
+	footerImage2: "/images/tor2.jpg",
+	footerImage3: "/images/tor3.jpg",
+	footerImage4: "/images/tor4.jpg",
+	footerImage5: "/images/tor5.jpg",
+	footerImage6: "/images/tor6.jpg",
+	footerImage7: "/images/tor7.jpg",
+	footerImage8: "/images/tor8.jpg",
+	fullContent: `Valdemorillo volverá a **situarse en el centro de la atención taurina este domingo 8 de febrero, a las 17:00 horas** , con una corrida que ha despertado un notable interés entre los aficionados. Se lidiará un encierro de la ganadería de **Torrealta**, hierro de acreditada regularidad y prestigio en las principales ferias.
+
+Los **toros que se presentan en este reportaje gráfico, y que serán los protagonistas de la tarde**, responden fielmente al sello característico de la divisa: seriedad en las caras, armonía de hechuras y una presentación acorde con la importancia del compromiso. Un conjunto que ha sido cuidado con esmero para una plaza que cada temporada exige máximo rigor en la selección del ganado.
+
+La ganadería de **Torrealta** llega a Valdemorillo avalada por una **trayectoria reciente marcada por la bravura, la movilidad y la clase**, cualidades que la han convertido en una de las referencias del campo bravo actual y que generan una lógica expectación.
+
+Para su lidia, el cartel reúne a **tres toreros de contrastada personalidad y concepto: Uceda Leal, Juan Ortega y Pablo Aguado**, una terna de marcado carácter artístico que garantiza una tarde de alto contenido para el aficionado. Tres nombres que, desde registros distintos, se enfrentarán a un encierro que está llamado a convertirse en uno de los grandes alicientes de la feria.
+
+Con la presentación de estos **toros de Torrealta**, Valdemorillo refuerza su apuesta por el protagonismo del **toro íntegro** y por carteles de interés, en una cita que se perfila como uno de los acontecimientos taurinos más destacados de este inicio de temporada.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 4,
     title: `España es el único país del mundo que no puede prohibir la entrada de los niños a las plazas de toros`,
