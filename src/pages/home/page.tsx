@@ -457,6 +457,53 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1002,
+    title: `Comienza la renovación y venta de abonos para la Feria de la Magdalena 2026`,
+    image: "/images/mag.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	excerpt: "El martes 3 de febrero abren las taquillas en Castellón para la renovación y venta de abonos de la Feria de la Magdalena 2026.",
+	fullContent: `Las taquillas de la Plaza de Toros de Castellón volvieron a abrir sus puertas este martes
+para dar inicio al período de renovación y venta de nuevos abonos con vistas a la próxima
+Feria de la Magdalena, uno de los acontecimientos más esperados por los aficionados.
+Todos los abonados que deseen mantener su localidad, así como los aficionados que
+quieren incorporarse al abono por primera vez, podrán efectuar todos los trámites de
+forma presencial en las taquillas oficiales del coso castellonense.
+
+**Horario de taquillas físicas de la Plaza de Toros de Castellón:**
+
+-   Lunes a viernes: de 10:00 a 14:00 h. y de 17:00 a 20:00 h.
+-   Sábados: de 10:00 a 14:00 h.
+-   Domingos: cerrado.
+
+Desde Funtausa se anima a los aficionados a anticipar sus gestiones para asegurar las
+mejores localidades disponibles. La Feria de la Magdalena congrega cada temporada a
+miles de aficionados llegados desde distintos puntos del país, reafirmándose como una de
+las grandes referencias del calendario taurino.
+
+Con esta apertura de taquillas se pone en marcha la cuenta atrás hacia un nuevo ciclo que
+volverá a combinar emoción, presencia de grandes figuras del escalafón y el peso de una
+tradición profundamente arraigada en Castellón.
+
+**Los carteles son los siguientes:**
+
+-   Domingo 08/03: **Ginés Marín, Aarón Palacio y Javier Zulueta.** **La Quinta.**
+-   Lunes 09/03: **Rui Fernandes, Diego Ventura y Lea Vicens.** **Los Espartales.**
+-   Martes 10/03: Clase práctica. **Noel García** (E.T. Salamanca), **Abel Rodríguez**
+    (E.T. Castellón), **Jaime Padilla** (E.T. Málaga), **Bruno Martínez** (E.T. Castellón),
+    **Pablo Torres** (E.T. Valencia) y **Celso Ortega** (E.T. La Gallosina de El Puerto de
+    Santa María). **Aída Jovani.**
+-   Miércoles 11/03: Novillada sin picadores. **Juan Zamora, Iker de Virgilio, Ian**
+    **Bermejo, Jorge Escamilla, Rodrigo Villalón y Lisares.** **Hermanas Angoso.**
+-   Jueves 12/03: **Miguel Ángel Perera, Tomás y Marco Pérez.** **Montalvo.**
+-   Viernes 13/03: **Manzanares, Roca Rey y Pablo Aguado.** **Hnos. García Jiménez.**
+-   Sábado 14/03: **Sebastián Castella, Daniel Luque y Emilio de Justo.** **Zalduendo.**
+-   Domingo 15/03: **Talavante y Juan Ortega**, mano a mano. **Domingo Hernández.**`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1003,
     title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
     image: "/images/zara.jpg",
@@ -595,6 +642,53 @@ Los antitaurinos, políticos o no, basan sus argumentos en una supuesta e infund
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 1,
+    title: `Comienza la renovación y venta de abonos para la Feria de la Magdalena 2026`,
+    image: "/images/mag.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	excerpt: "El martes 3 de febrero abren las taquillas en Castellón para la renovación y venta de abonos de la Feria de la Magdalena 2026.",
+	fullContent: `Las taquillas de la Plaza de Toros de Castellón volvieron a abrir sus puertas este martes
+para dar inicio al período de renovación y venta de nuevos abonos con vistas a la próxima
+Feria de la Magdalena, uno de los acontecimientos más esperados por los aficionados.
+Todos los abonados que deseen mantener su localidad, así como los aficionados que
+quieren incorporarse al abono por primera vez, podrán efectuar todos los trámites de
+forma presencial en las taquillas oficiales del coso castellonense.
+
+**Horario de taquillas físicas de la Plaza de Toros de Castellón:**
+
+-   Lunes a viernes: de 10:00 a 14:00 h. y de 17:00 a 20:00 h.
+-   Sábados: de 10:00 a 14:00 h.
+-   Domingos: cerrado.
+
+Desde Funtausa se anima a los aficionados a anticipar sus gestiones para asegurar las
+mejores localidades disponibles. La Feria de la Magdalena congrega cada temporada a
+miles de aficionados llegados desde distintos puntos del país, reafirmándose como una de
+las grandes referencias del calendario taurino.
+
+Con esta apertura de taquillas se pone en marcha la cuenta atrás hacia un nuevo ciclo que
+volverá a combinar emoción, presencia de grandes figuras del escalafón y el peso de una
+tradición profundamente arraigada en Castellón.
+
+**Los carteles son los siguientes:**
+
+-   Domingo 08/03: **Ginés Marín, Aarón Palacio y Javier Zulueta.** **La Quinta.**
+-   Lunes 09/03: **Rui Fernandes, Diego Ventura y Lea Vicens.** **Los Espartales.**
+-   Martes 10/03: Clase práctica. **Noel García** (E.T. Salamanca), **Abel Rodríguez**
+    (E.T. Castellón), **Jaime Padilla** (E.T. Málaga), **Bruno Martínez** (E.T. Castellón),
+    **Pablo Torres** (E.T. Valencia) y **Celso Ortega** (E.T. La Gallosina de El Puerto de
+    Santa María). **Aída Jovani.**
+-   Miércoles 11/03: Novillada sin picadores. **Juan Zamora, Iker de Virgilio, Ian**
+    **Bermejo, Jorge Escamilla, Rodrigo Villalón y Lisares.** **Hermanas Angoso.**
+-   Jueves 12/03: **Miguel Ángel Perera, Tomás y Marco Pérez.** **Montalvo.**
+-   Viernes 13/03: **Manzanares, Roca Rey y Pablo Aguado.** **Hnos. García Jiménez.**
+-   Sábado 14/03: **Sebastián Castella, Daniel Luque y Emilio de Justo.** **Zalduendo.**
+-   Domingo 15/03: **Talavante y Juan Ortega**, mano a mano. **Domingo Hernández.**`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1,
     title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
