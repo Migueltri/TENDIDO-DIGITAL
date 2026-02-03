@@ -449,162 +449,96 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1001,
-    title: `Telemadrid retransmitirá en directo la gala de presentación de los carteles de la Feria de San Isidro 2026`,
-    image: "/images/telem.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	fullContent: `**Telemadrid retransmitirá en directo la gala en la que se presentarán oficialmente los carteles de la Feria de San Isidro 2026**, una de las citas más relevantes del calendario taurino. **El acto, organizado por Plaza 1, se celebrará el jueves 5 de febrero a las 19:30 horas.**
-
-Durante la gala se darán a conocer los carteles de **un total de 31 festejos, entre ellos las 26 corridas que compondrán la Feria de San Isidro, que se celebrará del 8 de mayo al 6 de junio.** Asimismo, se anunciarán otras fechas destacadas del ciclo madrileño, como la **Corrida In Memoriam, prevista para el 7 de junio, y la tradicional Corrida de Beneficencia, que tendrá lugar el 14 de junio.** También se presentarán los festejos de apertura de la Feria de la Comunidad de Madrid, que se desarrollará del 1 al 3 de mayo.
-
-La retransmisión estará presentada, por tercer año consecutivo, por **Ramón García**, que estará acompañado por la periodista **Gemma Camacho**. El cierre institucional del **acto correrá a cargo de la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso.**
-
-La gala reunirá a matadores, rejoneadores y ganaderos incluidos en los carteles, así como a representantes del ámbito cultural, social y deportivo vinculados a la tauromaquia. Contará con el respaldo institucional de la Comunidad de Madrid y con la asistencia del alcalde de la capital, José Luis Martínez-Almeida.
-
-Como antesala a la presentación, a partir de las 19:00 horas, Telemadrid ofrecerá una edición especial del programa Madrid Directo, que adelantará su horario habitual para conectar en directo con la llegada de invitados, la alfombra roja y el ambiente previo al acto.
-
-Uno de los momentos más esperados de la gala será la presentación de la imagen oficial de la Feria de San Isidro 2026, que marcará la identidad visual de la próxima temporada, tras varios años con carteles protagonizados por rostros conocidos como Cayetana Rivera o Victoria Federica.
-
-El programa incluirá también la entrega de los premios anuales de Plaza 1. Entre los galardones destacan el premio ‘Mujer y Tauromaquia’, que será concedido a Mariló Montero, y el premio ‘Embajador de la Tauromaquia’, que recibirá Sergio Ramos.
-
-Con esta emisión especial, Telemadrid refuerza su apuesta por la cobertura de los grandes acontecimientos taurinos y da inicio a la programación informativa dedicada a la temporada de San Isidro 2026.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Sergio Rollón vuelve al Circuito de Madrid y se convierte en el primer participante de 2026`,
-    image: "/images/serro.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	excerpt: "El novillero, que reaparecerá este viernes en Valdemorillo, es el primer nombre del Circuito de Madrid 2026. Vuelve tras quedar finalista el año pasado y sufrir una grave cornada",
-	fullContent: `El **Circuito de Madrid 2026** ya conoce las localidades por las que viajará entre los meses de marzo y julio. Con una de las tres patas conocidas, restan novilleros y ganaderías por desvelarse.
-
-El primero de los nombres que harán el paseíllo en la sexta edición del certamen, es el del novillero, **Sergio Rollón**, quien representará a la **Escuela Taurina Fundación El Juli**.
-
-El novillero **debutó con picadores el 15 de marzo de 2025** en Valdilecha, el primer festejo del **Circuito de Madrid 2025** con novillos de Caras Blancas y El Uno. Tras tocar pelo en todas las novilladas toreadas, llegó a Valdetorres de Jarama en la Final a Tres. En dicha tarde, un novillo **de Hermanos González** le propinó una gravísima cornada en el Triángulo de Scarpa.
-
-Vuelve al Circuito de Madrid para reafirmar las buenas sensaciones dejadas en la edición pasada y con el ánimo de resarcirse del momento amargo que vivió. Como el propio novillero aseguró,
-
-**Reaparecerá** en público este viernes, **6 de febrero**, en la **Plaza de Toros de Valdemorillo**. Se volverá a vestir de luces para matar la novillada de **Jiménez Pasquau** a las 17:00 horas, cartel que comparte con cinco compañeros.
-
-Una tarde que, sin duda, estará marcada por la ilusión de volverse a ver de luces y con los sentimientos a flor de piel de quienes han estado a su lado en el largo camino recorrido durante estos ocho meses.
-
-Por lo tanto, el novillero Sergio Rollón será uno de los ocho novilleros que lucharán por hacerse con la sexta edición del Circuito de Madrid, que dará comienzo el 7 de marzo en San Agustín del Guadalix.
-
-**Un Circuito de la Liga Nacional de Novilladas**
-
-El Circuito de Madrid celebra este 2026 su sexta edición, desde que naciera en el año 2021 con el objetivo de celebrar 9 novilladas con picadores en las que dar la oportunidad a ocho novilleros de la región. El proyecto está enmarcado en la Liga Nacional de Novilladas, la cual aglutina cinco circuitos activos en todo el panorama nacional.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `Manuel Quintana completa la nómina de novilleros participantes del Circuito de Andalucía 2026`,
-    image: "/images/maquin.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	excerpt: "El cordobés accede al certamen tras ser segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la A.A.E.T. “Pedro Romero” y refuerza una séptima edición de máximo nivel",
-	fullContent: `El **Circuito de Novilladas de Andalucía 2026** ya tiene cerrado su elenco de participantes tras la incorporación de **Manuel Quintana** , que se convierte en el noveno novillero seleccionado para la próxima edición del certamen. El ciclo, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía** , está encuadrado en la **Liga Nacional de Novilladas** y celebrará en 2026 su séptima edición.
-
-Natural de Córdoba, **Manuel Quintana** accede al Circuito tras haber sido **segundo clasificado del XXXI Ciclo de Novilladas sin Picadores de la Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** , ocupando la plaza disponible después de que el triunfador del certamen no debutara con picadores y renunciara a su puesto.
-
-Quintana fue una de las grandes sensaciones del escalafón menor en la pasada temporada, firmando una campaña sobresaliente tanto en número como en relevancia de sus triunfos. Entre sus actuaciones más destacadas figuran la proclamación como **triunfador del Memorial Iván Fandiño de Bilbao** y la Puerta Grande en Arles, además de otros importantes éxitos que avalan su proyección.
-
-El balance numérico de su temporada refleja la dimensión de su año: **57 orejas y cuatro rabos en las 30 novilladas que estoqueó** , cifras que lo sitúan como uno de los nombres más destacados entre la novillería y justifican su presencia en un certamen de la exigencia del Circuito de Novilladas de Andalucía.
-
-Con la incorporación de Manuel Quintana, el **Circuito de Novilladas de Andalucía 2026** queda definitivamente conformado por **Pedro Luis, Víctor Barroso, El Primi, Isaac Galvín, Iván Rejas, Dennis Martín y Francisco Fernández** , que lograron su clasificación a través del clasificatorio Bolsín, **Julio Norte** , que ocupa la plaza de intercambio, y el propio **Manuel Quintana** .
-
-El certamen se dará a conocer el próximo **viernes 13 de febrero** todas sus combinaciones, ganaderías y la estructura final de esta séptima edición, que volverá a situar a Andalucía como referencia en la promoción del futuro de la tauromaquia.
-
-El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Real Maestranza de Caballería de Sevilla, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Curro Vázquez y Pablo Aguado, el día 10 de febrero en los Mano a mano de la Fundación Cajasol`,
-    image: "/images/va.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	excerpt: "El encuentro se desarrollará a las 8 de la tarde con entrada libre hasta completar aforo",
-	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 74 con un encuentro que por primera vez tendrá como protagonistas a dos matadores de toros, **Curro Vázquez** y **Pablo Aguado**, y que se celebrará el **martes 10 de febrero** en la sede de Fundación Cajasol en Sevilla. Este acto dará comienzo a las ocho de la tarde (**20.00 horas**).
-
-El periodista **José Enrique Moreno** será de nuevo el encargado de conducir el acto, que tiene como título 'De torero a torero' y en el que se pretende que ambos diestros reflexionen sobre la Tauromaquia desde la perspectiva de dos generaciones separadas por varias décadas.
-
-**Curro Vázquez** es un referente en el toreo de pureza y profundidad, cualidades que le convirtieron en torero de culto para aficionados y otros toreros. Tomó la alternativa en 1969 y, con algún paréntesis, se mantuvo en activo hasta 2002, cuando se retiró en Vistalegre. El pasado mes de octubre tuvo una feliz y puntual reaparición en el festival dedicado a Antoñete en Las Ventas, en el que volvió a dar una lección de temple, torería y naturalidad. Aunque nacido en Linares, Curro fue torero predilecto de la afición madrileña. En la actualidad es apoderado.
-
-**Pablo Aguado** es un gran valor del toreo sevillano. Desde su histórico triunfo en la Maestranza en la temporada 2016, cuando cortó cuatro orejas a la corrida de Jandilla, Aguado no ha dejado de crecer como torero sin abandonar en ningún momento esa difícil línea del toreo de arte y de pellizco, al más puro estilo sevillano pero no exento de profundidad. Alternativado en Sevilla en 2017, este sevillano de nacimiento ha cuajado una magnífica temporada en 2025 y en este momento está colocado en la primera línea del toreo, siendo su nombre reclamado en todas las grandes ferias.
-
-**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
-
----------------------------------------------------------------------------------------------------------------------------
--
-
-**Ciclo:** Los Mano a mano de la Fundación Cajasol
-**Fecha:** MARTES 10 de abril de 2026
-**Hora:** 20.00
-**Lugar:** Sede de la Fundación Cajasol. C/ Chicarreros, 1.
-
-**Invitados:** **Curro Vázquez y Pablo Aguado**
-**Tema:** *De torero a torero*`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Morante dice sí a Madrid y se anuncia el 12 de octubre en una fecha clave del calendario`,
-    image: "/images/moran.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	fullContent: `Morante de la Puebla ha decidido extender su temporada y volver a vestirse de luces en Madrid el próximo 12 de octubre, una jornada de especial simbolismo para la tauromaquia y para la afición. El torero sevillano, que en principio tenía previsto poner fin antes a su campaña, ha optado finalmente por sumar esta comparecencia otoñal en la capital, reforzando así el atractivo del cierre de temporada.
-
-La decisión se fraguó tras un encuentro con el empresario Rafael García Garrido, una conversación que derivó en un acuerdo y abrió la puerta a esta actuación en el Día de la Hispanidad. Tal y como avanzó el programa El Toril de Onda Madrid, el gesto confirma la disposición de Morante a prolongar su año taurino más allá de los planes iniciales. Además de la corrida prevista, no se descarta que la jornada se complete con la celebración de un festival matinal, una posibilidad que continúa sobre la mesa y que añadiría aún más interés a una fecha ya marcada en rojo por los aficionados.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Del quirófano al albero: la ciencia revela cómo respondió el cuerpo de Escribano tras la cornada`,
-    image: "/images/quiro.jpg",
-    category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	fullContent: `Un estudio científico internacional ha puesto el foco en una de las tardes más sobrecogedoras vividas recientemente en la Real Maestranza de Caballería de Sevilla. La investigación, publicada en la revista especializada Trauma Care, analiza la respuesta física y fisiológica del torero Manuel Escribano tras sufrir una cornada y regresar al ruedo minutos después, en un episodio que ya forma parte de la memoria colectiva del toreo.
-Los hechos se remontan al 13 de abril de 2024, cuando Escribano fue prendido de gravedad al inicio de la corrida por un toro de Victorino Martín. La cornada, localizada en la cara interna del muslo derecho, obligó a su traslado urgente a la enfermería del coso sevillano, donde fue intervenido quirúrgicamente bajo anestesia local con la intención de que pudiera continuar la lidia. Contra todo pronóstico, y tras pasar por el quirófano, el diestro volvió al ruedo para estoquear al sexto toro de la tarde, dejando una imagen de enorme impacto: de la camilla al albero en cuestión de minutos.
-
-El valor diferencial del estudio radica en que permitió registrar de forma continua la respuesta psicofisiológica del torero durante todo el proceso, desde los instantes previos a la cornada hasta su reaparición tras la intervención. Los datos obtenidos revelan que el organismo de Escribano no reaccionó siguiendo los patrones fisiológicos habituales tras un trauma de esta magnitud, lo que abre nuevas líneas de investigación sobre cómo responde el cuerpo del torero en situaciones extremas.
-
-Además, durante la segunda lidia se registraron niveles de activación fisiológica inferiores a los normales, lo que indica que, pese a su capacidad para continuar la corrida, el cuerpo del torero aún se encontraba en pleno proceso de recuperación. Un hallazgo que aporta una perspectiva inédita sobre lo que ocurre en la enfermería y en el regreso al ruedo, más allá de lo que percibe el espectador.
-
-El trabajo está firmado por los investigadores Luis Teba-del-Pino, Luis Suárez-Arrones y Eduardo Sáez de Villarreal, especialistas en ciencias del deporte y responsables de la preparación física de Manuel Escribano. Sin pretender extrapolar conclusiones generales, el estudio ofrece una mirada científica y documentada sobre una de esas tardes que engrandecen la épica del toreo y ayuda a comprender, con datos, qué sucede realmente en el cuerpo del torero cuando la cornada y la entrega se miden en minutos.`,
-    author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1007,
-    title: `Jesús Enrique Colombo, triunfador de la Feria de San Sebastián`,
-    image: "/images/colom.jpg",
+    title: `España es el único país del mundo que no puede prohibir la entrada de los niños a las plazas de toros`,
+    image: "/images/asist.jpg",
     category: "Actualidad",
-    date: "2 de Febrero de 2026",
-	fullContent: `La Comisión Taurina Municipal de San Cristóbal dio a conocer el pasado sábado 31 de enero los galardones correspondientes a la 61ª Feria Internacional de San Sebastián, en un acto celebrado en los salones del Club Demócrata tras la conclusión del ciclo ferial. Un serial que, compuesto por tres corridas de toros, dejó definidos a sus máximos exponentes y escribió nuevos nombres en la memoria del abono tachirense.
+    date: "3 de Febrero de 2026",
+	excerpt: `El intento de Pedro Sánchez de privar a los niños españoles de ir a los toros hay que enfrentarlo con menos dialogo y más tribunales
+Tan ruin y despreciable artimaña tiene nombres y apellidos
+Ya basta de ataques miserables por parte de quienes están obligados a defender nuestra cultura`,
+	fullContent: `Después del estrepitoso fracaso del gobierno en su intento de derogar la **Ley 18/2013** que regula la Tauromaquia como **Patrimonio Cultural del pueblo español**, los antitaurinos y los políticos que mendigan votos en su entorno y dirigen sus estrategias, asoman ahora como amenaza a la Fiesta, la reforma de la Ley Orgánica de protección integral de la infancia y la adolescencia (LOPIVI) para prohibir que los menores puedan acceder a las plazas de toros.
 
-Entre todos ellos, Jesús Enrique Colombo emergió como el nombre propio de la feria. El espada taribeño fue proclamado Triunfador de la Feria, reconocimiento que resume su actuación a lo largo del abono. Además, fue distinguido con el permio a la Mejor Estocada, otorgado por la ejecución realizada al toro número 22, perteneciente a la divisa de Los Aránguez, ratificando así su solvencia con los aceros, un apartado en el que continúa mostrando un alto nivel de regularidad.
+Esta sería la fórmula con la que el gobierno social comunista de Pedro Sánchez daría respuesta a la preocupación expresada dentro del Comité de los Derechos del Niño de Naciones Unidas por uno de sus miembros, el islandés **Bragi Gudbransson**, quien, elucubrando, aseguró poco más o menos que *“existen pruebas científicas de que la Tauromaquia normaliza la violencia infantil”*, sin presentar prueba alguna, cuando son millones los testimonios en sentido contrario de quienes desde niños, durante siglos han venido asistiendo a los toros sin secuela psicológica alguna.
 
-De este modo, el diestro taribeño cerró la feria con dos premios concedidos por la Comisión Taurina Municipal.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
+Obviamente, detrás de esta artimaña no hay otra cosa que la obsesión manifiesta de los políticos del gobierno social comunista de continuar lanzando globos a la palestra, buscando diluir el desastre, también manifiesto, de la gestión de **Pedro Sánchez** al frente del ejecutivo nacional.
+
+Pero como esta historia se hace interminable vamos a intentar explicar de una vez por todas, que la Tauromaquia en España está blindada, como no lo ha hecho ningún otros país del mundo, por una ley nacional **que la declaró Patrimonio Cultural de TODOS los españoles, sin distinción de edad, sexo, raza o religión**, y si así lo quiso el legislador, no puede contradecirlo o tergiversarlo cualquiera, porque donde no distingue el legislador, mal puede distinguir el intérprete, dado que además de no ser lícito, contradice la seguridad jurídica.
+
+Fue la misma organización de Naciones Unidas para la Educación, la Ciencia y la Cultura (**UNESCO**), que regula qué forma parte de nuestra cultura, la que dictó dos Convenciones Internacionales para resguardar y proteger nuestra diversidad cultural durante los años **2003 y 2005**, y fue en estas Convenciones en las que se basó nuestro legislador.
+
+Pues bien, estas Convenciones otorgan la competencia para decidir qué forma o no forma parte del Patrimonio Cultural de los pueblos, a los propios pueblos, sus comunidades e incluso sus individuos.
+
+Los niños son parte del pueblo español, como lo son también sus abuelos y sus padres, quienes en última instancia son los únicos que pueden decidir sobre esto y decidir su autorización de acudir a los toros, o no, mientras estos estén bajo su potestad, pero lo que no puede ser es que un Comité de Naciones Unidas, contradiga lo que disponen sus propios tratados internacionales, acordados por los 185 países que integran la **UNESCO**, y menos aún, que sea el propio gobierno español el que inste una reforma maliciosa y oscura de una ley, con la que se pretenda burlar lo ya dispuesto por el Parlamento español.
+
+Pero es que, además, es la propia **Declaración Universal de los Derechos Humanos de las Naciones Unidas** la que garantiza el derecho que tienen los niños a tener acceso a la cultura de la que forman parte, y señores, por más que no les guste, la Fiesta de los Toros forma parte del Patrimonio Cultural del pueblo español.
+
+Trabajamos desde la AIT durante más de diez años para lograr esa ley, recorrimos España entera y cientos de pueblos, ciudades e incluso Comunidades, aprobaron en sus ayuntamientos, diputaciones y parlamentos este reconocimiento de patrimonio cultural inmaterial de sus celebraciones taurinas, que luego fue trasladado al Congreso de los Diputados como una Iniciativa Legislativa Popular, para convertirse en la Ley 18/2013 de 12 de noviembre, que regula la Tauromaquia como Patrimonio Cultural del Pueblo español. **Esta protección cultural es única, ninguna otra expresión de las artes, las ciencias y la cultura de nuestro país, dispone de una ley similar.**
+
+El artículo 2 de dicha ley establece:
+*La Tauromaquia en los términos definidos en el artículo 1, forma parte del patrimonio cultural **digno de protección en todo el territorio nacional**, de acuerdo con la normativa aplicable y los tratados internacionales sobre la materia.*
+
+Y es la propia ley, en su artículo 3 la que dispone: Deber de protección.
+*En su condición de Patrimonio Cultural, **los poderes públicos** garantizarán la conservación de la Tauromaquia y **promoverán su enriquecimiento de acuerdo con lo previsto en el artículo 46 de la Constitución**.*
+
+Y es justamente este artículo 46 el que reza: *¡**la ley penal sancionará los atentados contra este patrimonio!***
+
+Está claro entonces. ¡Ya sabemos quiénes tienen la competencia para la protección y contra quién se tiene que ir! Ya basta de ataques miserables por parte, incluso, de quienes están obligados a defender nuestra cultura.
+
+Los antitaurinos, políticos o no, basan sus argumentos en una supuesta e infundada superioridad moral que les hace creer que ellos **no** tienen que respetar las leyes y allí está su mayor error. Las leyes existen y en nuestras sociedades civilizadas se aprueban para mantener el orden social. Nadie, léase bien, **NADIE**, está por encima de las leyes y la Constitución que nos rigen, y si quien pretende burlarlas está investido de autoridad, su conducta está sujeta a la condición delictiva del prevaricador.
+
+**El Comité de Naciones Unidas sobre los Derechos de los Niños**, está integrado por **“expertos”** de diferentes nacionalidades que difícilmente conocen la cultura española (Togo, Omán, Marruecos, Argentina, Bután, Panamá, Kenia, Islandia, Moldavia, Suiza, Georgia, Zambia, Barbados, Etiopía, Níger, Malta, Mauritania y Bélgica) que tratan de influir en los valores intrínsecos de una cultura que solo le pertenece al pueblo español, **pero que encuentran en nuestro territorio a traidores que, creyéndose en superioridad moral o vendiéndose por un puñado de votos arremeten contra los valores esenciales de la cultura de sus pueblos.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 4,
+    title: `España es el único país del mundo que no puede prohibir la entrada de los niños a las plazas de toros`,
+    image: "/images/asist.jpg",
+    category: "Actualidad",
+    date: "3 de Febrero de 2026",
+	excerpt: `El intento de Pedro Sánchez de privar a los niños españoles de ir a los toros hay que enfrentarlo con menos dialogo y más tribunales
+Tan ruin y despreciable artimaña tiene nombres y apellidos
+Ya basta de ataques miserables por parte de quienes están obligados a defender nuestra cultura`,
+	fullContent: `Después del estrepitoso fracaso del gobierno en su intento de derogar la **Ley 18/2013** que regula la Tauromaquia como **Patrimonio Cultural del pueblo español**, los antitaurinos y los políticos que mendigan votos en su entorno y dirigen sus estrategias, asoman ahora como amenaza a la Fiesta, la reforma de la Ley Orgánica de protección integral de la infancia y la adolescencia (LOPIVI) para prohibir que los menores puedan acceder a las plazas de toros.
+
+Esta sería la fórmula con la que el gobierno social comunista de Pedro Sánchez daría respuesta a la preocupación expresada dentro del Comité de los Derechos del Niño de Naciones Unidas por uno de sus miembros, el islandés **Bragi Gudbransson**, quien, elucubrando, aseguró poco más o menos que *“existen pruebas científicas de que la Tauromaquia normaliza la violencia infantil”*, sin presentar prueba alguna, cuando son millones los testimonios en sentido contrario de quienes desde niños, durante siglos han venido asistiendo a los toros sin secuela psicológica alguna.
+
+Obviamente, detrás de esta artimaña no hay otra cosa que la obsesión manifiesta de los políticos del gobierno social comunista de continuar lanzando globos a la palestra, buscando diluir el desastre, también manifiesto, de la gestión de **Pedro Sánchez** al frente del ejecutivo nacional.
+
+Pero como esta historia se hace interminable vamos a intentar explicar de una vez por todas, que la Tauromaquia en España está blindada, como no lo ha hecho ningún otros país del mundo, por una ley nacional **que la declaró Patrimonio Cultural de TODOS los españoles, sin distinción de edad, sexo, raza o religión**, y si así lo quiso el legislador, no puede contradecirlo o tergiversarlo cualquiera, porque donde no distingue el legislador, mal puede distinguir el intérprete, dado que además de no ser lícito, contradice la seguridad jurídica.
+
+Fue la misma organización de Naciones Unidas para la Educación, la Ciencia y la Cultura (**UNESCO**), que regula qué forma parte de nuestra cultura, la que dictó dos Convenciones Internacionales para resguardar y proteger nuestra diversidad cultural durante los años **2003 y 2005**, y fue en estas Convenciones en las que se basó nuestro legislador.
+
+Pues bien, estas Convenciones otorgan la competencia para decidir qué forma o no forma parte del Patrimonio Cultural de los pueblos, a los propios pueblos, sus comunidades e incluso sus individuos.
+
+Los niños son parte del pueblo español, como lo son también sus abuelos y sus padres, quienes en última instancia son los únicos que pueden decidir sobre esto y decidir su autorización de acudir a los toros, o no, mientras estos estén bajo su potestad, pero lo que no puede ser es que un Comité de Naciones Unidas, contradiga lo que disponen sus propios tratados internacionales, acordados por los 185 países que integran la **UNESCO**, y menos aún, que sea el propio gobierno español el que inste una reforma maliciosa y oscura de una ley, con la que se pretenda burlar lo ya dispuesto por el Parlamento español.
+
+Pero es que, además, es la propia **Declaración Universal de los Derechos Humanos de las Naciones Unidas** la que garantiza el derecho que tienen los niños a tener acceso a la cultura de la que forman parte, y señores, por más que no les guste, la Fiesta de los Toros forma parte del Patrimonio Cultural del pueblo español.
+
+Trabajamos desde la AIT durante más de diez años para lograr esa ley, recorrimos España entera y cientos de pueblos, ciudades e incluso Comunidades, aprobaron en sus ayuntamientos, diputaciones y parlamentos este reconocimiento de patrimonio cultural inmaterial de sus celebraciones taurinas, que luego fue trasladado al Congreso de los Diputados como una Iniciativa Legislativa Popular, para convertirse en la Ley 18/2013 de 12 de noviembre, que regula la Tauromaquia como Patrimonio Cultural del Pueblo español. **Esta protección cultural es única, ninguna otra expresión de las artes, las ciencias y la cultura de nuestro país, dispone de una ley similar.**
+
+El artículo 2 de dicha ley establece:
+*La Tauromaquia en los términos definidos en el artículo 1, forma parte del patrimonio cultural **digno de protección en todo el territorio nacional**, de acuerdo con la normativa aplicable y los tratados internacionales sobre la materia.*
+
+Y es la propia ley, en su artículo 3 la que dispone: Deber de protección.
+*En su condición de Patrimonio Cultural, **los poderes públicos** garantizarán la conservación de la Tauromaquia y **promoverán su enriquecimiento de acuerdo con lo previsto en el artículo 46 de la Constitución**.*
+
+Y es justamente este artículo 46 el que reza: *¡**la ley penal sancionará los atentados contra este patrimonio!***
+
+Está claro entonces. ¡Ya sabemos quiénes tienen la competencia para la protección y contra quién se tiene que ir! Ya basta de ataques miserables por parte, incluso, de quienes están obligados a defender nuestra cultura.
+
+Los antitaurinos, políticos o no, basan sus argumentos en una supuesta e infundada superioridad moral que les hace creer que ellos **no** tienen que respetar las leyes y allí está su mayor error. Las leyes existen y en nuestras sociedades civilizadas se aprueban para mantener el orden social. Nadie, léase bien, **NADIE**, está por encima de las leyes y la Constitución que nos rigen, y si quien pretende burlarlas está investido de autoridad, su conducta está sujeta a la condición delictiva del prevaricador.
+
+**El Comité de Naciones Unidas sobre los Derechos de los Niños**, está integrado por **“expertos”** de diferentes nacionalidades que difícilmente conocen la cultura española (Togo, Omán, Marruecos, Argentina, Bután, Panamá, Kenia, Islandia, Moldavia, Suiza, Georgia, Zambia, Barbados, Etiopía, Níger, Malta, Mauritania y Bélgica) que tratan de influir en los valores intrínsecos de una cultura que solo le pertenece al pueblo español, **pero que encuentran en nuestro territorio a traidores que, creyéndose en superioridad moral o vendiéndose por un puñado de votos arremeten contra los valores esenciales de la cultura de sus pueblos.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 5,
     title: `Telemadrid retransmitirá en directo la gala de presentación de los carteles de la Feria de San Isidro 2026`,
