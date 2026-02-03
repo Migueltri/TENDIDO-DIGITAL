@@ -459,7 +459,7 @@ const featuredNews: NewsItem[] = [
 	{ 
     id: 1003,
     title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
-    image: "/images/.jpg",
+    image: "/images/zara.jpg",
     category: "Actualidad",
     date: "3 de Febrero de 2026",
 	fullContent: `La Asociación Nacional de Empresarios Españoles (ANOET), una vez revisado el pliego de la Plaza de Toros de Zaragoza al detalle, y tras la reunión de Junta Directiva, considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria y que pueden vulnerar y distorsionar la libre competencia, así como definir la fecha exacta en la que lo hará cada uno de ellos.
@@ -598,7 +598,7 @@ const latestNews: NewsItem[] = [
 	{ 
     id: 1,
     title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
-    image: "/images/.jpg",
+    image: "/images/zara.jpg",
     category: "Actualidad",
     date: "3 de Febrero de 2026",
 	fullContent: `La Asociación Nacional de Empresarios Españoles (ANOET), una vez revisado el pliego de la Plaza de Toros de Zaragoza al detalle, y tras la reunión de Junta Directiva, considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria y que pueden vulnerar y distorsionar la libre competencia, así como definir la fecha exacta en la que lo hará cada uno de ellos.
