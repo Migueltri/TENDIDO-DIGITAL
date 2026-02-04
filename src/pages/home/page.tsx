@@ -457,6 +457,37 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1005,
+    title: `Seleccionados los novilleros que participarán en el V Bolsín Taurino de Torre Pacheco`,
+    image: "/images/V.jpg",
+    category: "Actualidad",
+    date: "4 de Febrero de 2026",
+	excerpt: `El tentadero clasificatorio tendrá lugar el próximo 1 de marzo y participarán novilleros de diferentes escuelas taurinas`,
+	fullContent: `El Club Taurino de Torre Pacheco (Murcia) ha hecho públicos los nueve nombres de los novilleros que participarán en el V Bolsín tras una larga lista de solicitudes procedentes de todas las escuelas taurinas. 
+
+
+Los novilleros finalmente seleccionados son: 
+
+-	Toni Marín, Escuela Taurina de Murcia “El Toreo” 
+-	Iván de Benito, Escuela Taurina de Murcia “El Toreo” 
+-	Samuel Mancilla, Escuela Taurina de Algeciras
+-	Jesús Montiel, Escuela Taurina de Murcia “El Toreo” 
+-	Manuel Real “Realito”, Escuela Taurina de Camas (Sevilla) 
+-	“Ruiz de Palazón”, Escuela Taurina de Alicante
+-	Cristóbal Granero, Escuela Taurina de Alicante
+-	Roberto Cordero, Escuela Taurina de Pepino (Toledo) 
+-	Jaime Torrija, Escuela Taurina de Guadalajara
+
+
+El tentadero clasificatorio será el próximo 1 de marzo en la plaza de toros de la Finca “La Herencia” que está situada en término municipal de Torre Pacheco, se medirán a diferentes vacas de una reconocida ganadería, todo gracias al Club Taurino de la ciudad y contando con la ayuda de la Comunidad Autónoma de la Región de Murcia y del Ayuntamiento de Torre Pacheco. 
+
+
+Un encuentro que reúne al mundo taurino de la Región de Murcia y da visibilidad a los jóvenes valores del panorama novilleril, con una mención especial a la Escuela Taurina de la Región de Murcia “El Toreo”, que necesita el apoyo de la afición murciana ya que acaba de arrancar hace escaso 1 año y tiene en su poder a toreros con unas cualidades que ilusionan.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1006,
     title: `Sevilla perfila sus novilladas de abono: Lances de Futuro apuesta por variedad y prestigio ganadero`,
     image: "/images/perf.jpg",
@@ -574,6 +605,37 @@ Domingo 3 de mayo: Novillada Picada. **Mario Arruza**, **Cristian González** y 
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 296,
+    title: `Seleccionados los novilleros que participarán en el V Bolsín Taurino de Torre Pacheco`,
+    image: "/images/V.jpg",
+    category: "Actualidad",
+    date: "4 de Febrero de 2026",
+	excerpt: `El tentadero clasificatorio tendrá lugar el próximo 1 de marzo y participarán novilleros de diferentes escuelas taurinas`,
+	fullContent: `El Club Taurino de Torre Pacheco (Murcia) ha hecho públicos los nueve nombres de los novilleros que participarán en el V Bolsín tras una larga lista de solicitudes procedentes de todas las escuelas taurinas. 
+
+
+Los novilleros finalmente seleccionados son: 
+
+-	Toni Marín, Escuela Taurina de Murcia “El Toreo” 
+-	Iván de Benito, Escuela Taurina de Murcia “El Toreo” 
+-	Samuel Mancilla, Escuela Taurina de Algeciras
+-	Jesús Montiel, Escuela Taurina de Murcia “El Toreo” 
+-	Manuel Real “Realito”, Escuela Taurina de Camas (Sevilla) 
+-	“Ruiz de Palazón”, Escuela Taurina de Alicante
+-	Cristóbal Granero, Escuela Taurina de Alicante
+-	Roberto Cordero, Escuela Taurina de Pepino (Toledo) 
+-	Jaime Torrija, Escuela Taurina de Guadalajara
+
+
+El tentadero clasificatorio será el próximo 1 de marzo en la plaza de toros de la Finca “La Herencia” que está situada en término municipal de Torre Pacheco, se medirán a diferentes vacas de una reconocida ganadería, todo gracias al Club Taurino de la ciudad y contando con la ayuda de la Comunidad Autónoma de la Región de Murcia y del Ayuntamiento de Torre Pacheco. 
+
+
+Un encuentro que reúne al mundo taurino de la Región de Murcia y da visibilidad a los jóvenes valores del panorama novilleril, con una mención especial a la Escuela Taurina de la Región de Murcia “El Toreo”, que necesita el apoyo de la afición murciana ya que acaba de arrancar hace escaso 1 año y tiene en su poder a toreros con unas cualidades que ilusionan.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 297,
     title: `Sevilla perfila sus novilladas de abono: Lances de Futuro apuesta por variedad y prestigio ganadero`,
