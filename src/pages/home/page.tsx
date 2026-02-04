@@ -457,191 +457,238 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1002,
-    title: `Comienza la renovación y venta de abonos para la Feria de la Magdalena 2026`,
-    image: "/images/mag.jpg",
-    category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	excerpt: "El martes 3 de febrero abren las taquillas en Castellón para la renovación y venta de abonos de la Feria de la Magdalena 2026.",
-	fullContent: `Las taquillas de la Plaza de Toros de Castellón volvieron a abrir sus puertas este martes
-para dar inicio al período de renovación y venta de nuevos abonos con vistas a la próxima
-Feria de la Magdalena, uno de los acontecimientos más esperados por los aficionados.
-Todos los abonados que deseen mantener su localidad, así como los aficionados que
-quieren incorporarse al abono por primera vez, podrán efectuar todos los trámites de
-forma presencial en las taquillas oficiales del coso castellonense.
-
-**Horario de taquillas físicas de la Plaza de Toros de Castellón:**
-
--   Lunes a viernes: de 10:00 a 14:00 h. y de 17:00 a 20:00 h.
--   Sábados: de 10:00 a 14:00 h.
--   Domingos: cerrado.
-
-Desde Funtausa se anima a los aficionados a anticipar sus gestiones para asegurar las
-mejores localidades disponibles. La Feria de la Magdalena congrega cada temporada a
-miles de aficionados llegados desde distintos puntos del país, reafirmándose como una de
-las grandes referencias del calendario taurino.
-
-Con esta apertura de taquillas se pone en marcha la cuenta atrás hacia un nuevo ciclo que
-volverá a combinar emoción, presencia de grandes figuras del escalafón y el peso de una
-tradición profundamente arraigada en Castellón.
-
-**Los carteles son los siguientes:**
-
--   Domingo 08/03: **Ginés Marín, Aarón Palacio y Javier Zulueta.** **La Quinta.**
--   Lunes 09/03: **Rui Fernandes, Diego Ventura y Lea Vicens.** **Los Espartales.**
--   Martes 10/03: Clase práctica. **Noel García** (E.T. Salamanca), **Abel Rodríguez**
-    (E.T. Castellón), **Jaime Padilla** (E.T. Málaga), **Bruno Martínez** (E.T. Castellón),
-    **Pablo Torres** (E.T. Valencia) y **Celso Ortega** (E.T. La Gallosina de El Puerto de
-    Santa María). **Aída Jovani.**
--   Miércoles 11/03: Novillada sin picadores. **Juan Zamora, Iker de Virgilio, Ian**
-    **Bermejo, Jorge Escamilla, Rodrigo Villalón y Lisares.** **Hermanas Angoso.**
--   Jueves 12/03: **Miguel Ángel Perera, Tomás y Marco Pérez.** **Montalvo.**
--   Viernes 13/03: **Manzanares, Roca Rey y Pablo Aguado.** **Hnos. García Jiménez.**
--   Sábado 14/03: **Sebastián Castella, Daniel Luque y Emilio de Justo.** **Zalduendo.**
--   Domingo 15/03: **Talavante y Juan Ortega**, mano a mano. **Domingo Hernández.**`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `ZARAGOZA: ANOET considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria`,
-    image: "/images/zara.jpg",
-    category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	fullContent: `La Asociación Nacional de Empresarios Españoles (ANOET), una vez revisado el pliego de la Plaza de Toros de Zaragoza al detalle, y tras la reunión de Junta Directiva, considera inaceptable que exija a las empresas que decidan concursar compromisos con toreros y ganaderías que actuarán en la feria y que pueden vulnerar y distorsionar la libre competencia, así como definir la fecha exacta en la que lo hará cada uno de ellos.
-
-Para ANOET se trata de una medida que limita la libertad de los empresarios a la hora de programar una feria y que impide incluir las novedades de la temporada, ya que obliga a cerrar los carteles de las ferias de San Jorge y El Pilar a mitad del mes de febrero. Consideramos que esta exigencia del Pliego, que es causa de rescisión del contrato, hipoteca a la empresa para toda la temporada, pudiendo llegar a perjudicar los derechos de los espectadores.
-
-Por otra parte, ANOET estima que existen otras fórmulas para valorar a las empresas distintas al canon económico al alza y sin límite -como consta en el pliego-, una medida que convierte estos procesos de adjudicación de las plazas en auténticas subastas. En este sentido, insta a la Diputación de Zaragoza a adoptar alguna otra fórmula que realmente beneficie a la Tauromaquia y preserve el futuro de la plaza.
-
-Para ello, ANOET se pone a disposición de la Diputación de Zaragoza con el fin de mantener una reunión que sirva para aclarar los puntos que entendemos que distorsionan la legalidad vigente.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Mont de Marsan presenta una Feria de la Madeleine 2026 de máxima categoría, con Daniel Luque en solitario como gran acontecimiento`,
-    image: "/images/mont.jpg",
-    category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	fullContent: `La ciudad de Mont de Marsan ha dado a conocer oficialmente los carteles de la **Feria de la Madeleine 2026** , un ciclo que volverá a situar al coso de Plumaçon entre los grandes referentes del verano taurino europeo. El serial estará compuesto por **seis corridas de toros, una novillada con picadores y una novillada sin caballos** , con un elenco de toreros y ganaderías de primer nivel que refuerzan el prestigio histórico de esta feria del suroeste francés.
-
-El principal foco de atención llegará el sábado 25 de julio, jornada en la que **Daniel Luque hará el paseíllo en solitario** . El diestro de Gerena afrontará un compromiso de máxima exigencia al lidiar seis toros de **Daniel Ruiz, Victoriano del Río, La Quinta, Adolfo Martín, Fuente Ymbro y Juan Pedro Domecq** , en una de las citas más relevantes y singulares de toda la temporada europea.
-
-La feria se abrirá el miércoles 22 de julio con un cartel de enorme atractivo, integrado por **Borja Jiménez, Roca Rey y Marco Pérez** , que se medirán a un encierro de **Jandilla** , en una combinación que conjuga presente, proyección y máxima categoría. A lo largo del abono también harán el paseíllo toreros consolidados como **Miguel Ángel Perera y David de Miranda**, en una programación que mantiene un equilibrio **entre figuras** , toreros emergentes y apuestas de marcado carácter.
-
-El apartado más **torista** volverá a tener un peso específico dentro del ciclo, con la presencia de **Antonio Ferrera, Morenito de Aranda, Pepe Moral, Román y Juan de Castilla** , anunciados frente a hierros de marcada personalidad. Paralelamente, la organización refuerza su tradicional apuesta por la juventud con la participación de **Marco Pérez, Tristán Barroso y Dorian Canton** , mientras que la novillada matinal del sábado concederá protagonismo a **Emiliano Osornio, Julio Norte y Clovis**.
-
-Los carteles completos de la Feria de la Madeleine 2026 quedan configurados de la siguiente manera:
-
-– **Miércoles 22 de julio** : Borja Jiménez, Roca Rey y Marco Pérez (**Jandilla**).
-– **Jueves 23 de julio**: Novillada sin picadores (**Lartet y Camino de Santiago**).
-– **Jueves 23 de julio**: Antonio Ferrera, Pepe Moral y Dorian Canton (**José Escolar**).
-– **Viernes 24 de julio**: Miguel Ángel Perera, David de Miranda y Tristán Barroso (**Zacarías Moreno**).
-– **Sábado 25 de julio**: (matinal): Emiliano Osornio, Julio Norte y Clovis (**José Cruz**).
-– **Sábado 25 de julio**: Daniel Luque, en solitario (**Juan Pedro Domecq, La Quinta, Daniel Ruiz, Victoriano del Río, Adolfo Martín y Fuente Ymbro**).
-– **Domingo 26 de julio**: Morenito de Aranda, Román y Juan de Castilla (**Victorino Martín**).
-
-Con este anuncio, Mont de Marsan consolida una vez más a la Feria de la Madeleine como uno de los ciclos más sólidos, equilibrados y **atractivos** del verano **taurino**, combinando figuras, **toreros** en proyección y un **apartado** ganadero de máxima exigencia.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Santiago López Ortega, segundo novillero confirmado para el Circuito de Novilladas de Madrid 2026`,
-    image: "/images/sanlo.jpg",
-    category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	fullContent: `El **Circuito de Novilladas de Madrid 2026** continúa avanzando en la confección de su plantel de espadas y ya ha comenzado a desvelar los nombres que formarán parte de esta nueva edición. Tras el anuncio, realizado en la jornada de ayer, del novillero Sergio Rollón como primer participante, la organización ha confirmado al mexicano **Santiago López Ortega** como segundo nombre del certamen.
-
-Santiago López Ortega participará en el circuito en representación de la **Escuela Taurina CITAR-Anchuelo** , consolidando así su proyección dentro del escalafón novilleril y su presencia en uno de los ciclos más relevantes de promoción en la Comunidad de Madrid.
-
-El joven espada cuenta con una trayectoria reciente especialmente destacada. Su debut con picadores tuvo lugar en la pasada **Feria de Málaga 2025** , donde firmó una actuación solvente que fue premiada con una oreja ante un novillo de la ganadería de Macandro.
-
-Asimismo, ha sido protagonista en diversos certámenes de referencia, alcanzando la final del certamen **Camino hacia Las Ventas 2024**, así como la **final del ciclo ‘Kilómetro Cero’**, y logrando además el **primer puesto en el certamen ‘Guadalajara busca torero’**, resultados que avalan su progresión y regularidad.
-
-Con esta segunda confirmación, el Circuito de Novilladas de Madrid 2026 continúa perfilando un cartel de jóvenes valores llamado a convertirse, una vez más, en una plataforma clave para la proyección de las nuevas figuras del toreo.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1006,
-    title: `Valdemorillo presenta los toros de Torrealta para una cita de máxima expectación este domingo`,
-    image: "/images/tor.jpg",
+    title: `Sevilla perfila sus novilladas de abono: Lances de Futuro apuesta por variedad y prestigio ganadero`,
+    image: "/images/perf.jpg",
     category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	footerImage1: "/images/tor1.jpg",
-	footerImage2: "/images/tor2.jpg",
-	footerImage3: "/images/tor3.jpg",
-	footerImage4: "/images/tor4.jpg",
-	footerImage5: "/images/tor5.jpg",
-	footerImage6: "/images/tor6.jpg",
-	footerImage7: "/images/tor7.jpg",
-	footerImage8: "/images/tor8.jpg",
-	fullContent: `Valdemorillo volverá a **situarse en el centro de la atención taurina este domingo 8 de febrero, a las 17:00 horas** , con una corrida que ha despertado un notable interés entre los aficionados. Se lidiará un encierro de la ganadería de **Torrealta**, hierro de acreditada regularidad y prestigio en las principales ferias.
+    date: "4 de Febrero de 2026",
+	fullContent: `La empresa Lances de Futuro ya ha definido el esquema de las novilladas picadas del abono sevillano para la temporada 2026, tal y como ha podido saber este medio antes de la presentación oficial de los carteles. El acto tendrá lugar el próximo lunes 9 de febrero en el Cartuja Center, en una gala que servirá de puesta de largo para la nueva etapa empresarial en la Maestranza.
 
-Los **toros que se presentan en este reportaje gráfico, y que serán los protagonistas de la tarde**, responden fielmente al sello característico de la divisa: seriedad en las caras, armonía de hechuras y una presentación acorde con la importancia del compromiso. Un conjunto que ha sido cuidado con esmero para una plaza que cada temporada exige máximo rigor en la selección del ganado.
+Entre las citas más señaladas del serial novilleril destaca la programada en Preferia, el 13 de abril, cuando se lidiará un encierro de la ganadería de Talavante para los novilleros Emiliano Osornio, Julio Norte y Tomás Bastos, una terna de marcado interés para los aficionados.
 
-La ganadería de **Torrealta** llega a Valdemorillo avalada por una **trayectoria reciente marcada por la bravura, la movilidad y la clase**, cualidades que la han convertido en una de las referencias del campo bravo actual y que generan una lógica expectación.
+El resto de las novilladas del abono se celebrarán en los domingos posteriores a la Feria de Abril, además de una última función que actuará como antesala de la Feria de San Miguel, ya en el mes de septiembre. Para estas fechas, la empresa ha seleccionado reses de los hierros de La Cercada —procedencia El Freixo—, Garcigrande, Fermín Bohórquez, Guadaira y Murteira Grave.
 
-Para su lidia, el cartel reúne a **tres toreros de contrastada personalidad y concepto: Uceda Leal, Juan Ortega y Pablo Aguado**, una terna de marcado carácter artístico que garantiza una tarde de alto contenido para el aficionado. Tres nombres que, desde registros distintos, se enfrentarán a un encierro que está llamado a convertirse en uno de los grandes alicientes de la feria.
-
-Con la presentación de estos **toros de Torrealta**, Valdemorillo refuerza su apuesta por el protagonismo del **toro íntegro** y por carteles de interés, en una cita que se perfila como uno de los acontecimientos taurinos más destacados de este inicio de temporada.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+Con este planteamiento, Sevilla reafirma su compromiso con la promoción de los nuevos valores del escalafón y con la presencia de ganaderías contrastadas, configurando un ciclo novilleril equilibrado y de alto interés dentro del abono maestrante.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `España es el único país del mundo que no puede prohibir la entrada de los niños a las plazas de toros`,
-    image: "/images/asist.jpg",
+    title: `El Consejo de Asuntos Taurinos de la Comunidad de Madrid aprueba los carteles de la Feria de San Isidro 2026`,
+    image: "/images/cam.jpg",
     category: "Actualidad",
-    date: "3 de Febrero de 2026",
-	excerpt: `El intento de Pedro Sánchez de privar a los niños españoles de ir a los toros hay que enfrentarlo con menos dialogo y más tribunales
-Tan ruin y despreciable artimaña tiene nombres y apellidos
-Ya basta de ataques miserables por parte de quienes están obligados a defender nuestra cultura`,
-	fullContent: `Después del estrepitoso fracaso del gobierno en su intento de derogar la **Ley 18/2013** que regula la Tauromaquia como **Patrimonio Cultural del pueblo español**, los antitaurinos y los políticos que mendigan votos en su entorno y dirigen sus estrategias, asoman ahora como amenaza a la Fiesta, la reforma de la Ley Orgánica de protección integral de la infancia y la adolescencia (LOPIVI) para prohibir que los menores puedan acceder a las plazas de toros.
+    date: "4 de Febrero de 2026",
+	excerpt: `La Plaza de Toros de Las Ventas acogerá un ciclo de 26 corridas del 8 de mayo al 6 de junio, uno de los más importantes del mundo.`,
+	fullContent: `La CAM ha dado luz verde a los carteles de la Feria de San Isidro 2026 tras una reunión celebrada en la Plaza de Toros de Las Ventas, escenario donde se han cerrado los mimbres del ciclo más importante del calendario taurino. El encuentro estuvo presidido por D. Carlos Novillo Piris, consejero de Medio Ambiente, Agricultura e Interior de la Comunidad de Madrid, y contó con la presencia de la empresa Plaza 1, responsable de la gestión del coso madrileño.
 
-Esta sería la fórmula con la que el gobierno social comunista de Pedro Sánchez daría respuesta a la preocupación expresada dentro del Comité de los Derechos del Niño de Naciones Unidas por uno de sus miembros, el islandés **Bragi Gudbransson**, quien, elucubrando, aseguró poco más o menos que *“existen pruebas científicas de que la Tauromaquia normaliza la violencia infantil”*, sin presentar prueba alguna, cuando son millones los testimonios en sentido contrario de quienes desde niños, durante siglos han venido asistiendo a los toros sin secuela psicológica alguna.
+En la cita se aprobó un serial compuesto por un total de 26 corridas de toros que se celebrarán entre el 8 de mayo y el 6 de junio, configurando, como es tradición, una feria que se extenderá a lo largo de casi un mes.
 
-Obviamente, detrás de esta artimaña no hay otra cosa que la obsesión manifiesta de los políticos del gobierno social comunista de continuar lanzando globos a la palestra, buscando diluir el desastre, también manifiesto, de la gestión de **Pedro Sánchez** al frente del ejecutivo nacional.
+El encuentro del órgano encargado de la gestión y supervisión de los festejos taurinos en la región sirvió para aprobar tanto la composición de los encierros como la participación de matadores y novilleros, configurando un abono amplio y equilibrado.
 
-Pero como esta historia se hace interminable vamos a intentar explicar de una vez por todas, que la Tauromaquia en España está blindada, como no lo ha hecho ningún otros país del mundo, por una ley nacional **que la declaró Patrimonio Cultural de TODOS los españoles, sin distinción de edad, sexo, raza o religión**, y si así lo quiso el legislador, no puede contradecirlo o tergiversarlo cualquiera, porque donde no distingue el legislador, mal puede distinguir el intérprete, dado que además de no ser lícito, contradice la seguridad jurídica.
+Además del ciclo principal, el serial madrileño volverá a incluir citas de especial relevancia como la Corrida In Memoriam y la tradicional Corrida de la Beneficencia, que se celebrarán una vez finalizada la feria.
 
-Fue la misma organización de Naciones Unidas para la Educación, la Ciencia y la Cultura (**UNESCO**), que regula qué forma parte de nuestra cultura, la que dictó dos Convenciones Internacionales para resguardar y proteger nuestra diversidad cultural durante los años **2003 y 2005**, y fue en estas Convenciones en las que se basó nuestro legislador.
+La presentación oficial de los carteles tendrá lugar este jueves 5 de febrero en una gala que reunirá las principales figuras del toreo y a destacados protagonistas del abono del coso madrileño.
 
-Pues bien, estas Convenciones otorgan la competencia para decidir qué forma o no forma parte del Patrimonio Cultural de los pueblos, a los propios pueblos, sus comunidades e incluso sus individuos.
+En el plan artístico, la nómina de toreros es extensa y variada. Figuras como Alejandro Talavante, Fernando Adrián, Pablo Aguado y Víctor Hernández se erigen como pilares del ciclo, mientras que otros nombres del máximo atractivo repetirán en dos paseíllos, encabezados por Roca Rey, junto a Emilio de Justo, Daniel Luque, Juan Ortega, Tomás Rufo o Sebastián Castella.
 
-Los niños son parte del pueblo español, como lo son también sus abuelos y sus padres, quienes en última instancia son los únicos que pueden decidir sobre esto y decidir su autorización de acudir a los toros, o no, mientras estos estén bajo su potestad, pero lo que no puede ser es que un Comité de Naciones Unidas, contradiga lo que disponen sus propios tratados internacionales, acordados por los 185 países que integran la **UNESCO**, y menos aún, que sea el propio gobierno español el que inste una reforma maliciosa y oscura de una ley, con la que se pretenda burlar lo ya dispuesto por el Parlamento español.
+También actuarán en dos tardes matadores como David de Miranda, Paco Ureña, Diego Urdiales, Fortes, Morenito de Aranda y Uceda Leal, entre otros. En esta ocasión, la empresa Plaza 1 ha optado por no conceder cuatro tardes a ningún espada, apostando por un reparto más equilibrado del abono.
 
-Pero es que, además, es la propia **Declaración Universal de los Derechos Humanos de las Naciones Unidas** la que garantiza el derecho que tienen los niños a tener acceso a la cultura de la que forman parte, y señores, por más que no les guste, la Fiesta de los Toros forma parte del Patrimonio Cultural del pueblo español.
+**La gesta de Borja Jiménez**
 
-Trabajamos desde la AIT durante más de diez años para lograr esa ley, recorrimos España entera y cientos de pueblos, ciudades e incluso Comunidades, aprobaron en sus ayuntamientos, diputaciones y parlamentos este reconocimiento de patrimonio cultural inmaterial de sus celebraciones taurinas, que luego fue trasladado al Congreso de los Diputados como una Iniciativa Legislativa Popular, para convertirse en la Ley 18/2013 de 12 de noviembre, que regula la Tauromaquia como Patrimonio Cultural del Pueblo español. **Esta protección cultural es única, ninguna otra expresión de las artes, las ciencias y la cultura de nuestro país, dispone de una ley similar.**
+Dentro de ese grupo de diestros que sumarán dos actuaciones en el ciclo destaca el nombre de Borja Jiménez. El torero de Espartinas asumirá una de las gestas más señaladas del abono al enfrentarse en solitario a seis toros en la Corrida In Memoriam dedicada a Ignacio Sánchez Mejías, con un encierro compuesto por tres astados de Victoriano del Río y tres de Domingo Hernández.
 
-El artículo 2 de dicha ley establece:
-*La Tauromaquia en los términos definidos en el artículo 1, forma parte del patrimonio cultural **digno de protección en todo el territorio nacional**, de acuerdo con la normativa aplicable y los tratados internacionales sobre la materia.*
+Además, Borja Jiménez trenzará su primer paseíllo del ciclo en una corrida de Jandilla, completando así una presencia de máxima exigencia en el abono madrileño.
 
-Y es la propia ley, en su artículo 3 la que dispone: Deber de protección.
-*En su condición de Patrimonio Cultural, **los poderes públicos** garantizarán la conservación de la Tauromaquia y **promoverán su enriquecimiento de acuerdo con lo previsto en el artículo 46 de la Constitución**.*
+**Carteles de la Feria de San Isidro 2026**
 
-Y es justamente este artículo 46 el que reza: *¡**la ley penal sancionará los atentados contra este patrimonio!***
+Viernes 8 de mayo: **Alejandro Talavante**, **Juan Ortega** y **Tristán Barroso** (confirma alternativa). **Núñez del Cuvillo**.
 
-Está claro entonces. ¡Ya sabemos quiénes tienen la competencia para la protección y contra quién se tiene que ir! Ya basta de ataques miserables por parte, incluso, de quienes están obligados a defender nuestra cultura.
+Sábado 9 de mayo: **Miguel Ángel Perera**, **Daniel Luque** y **Tomás Rufo**. **La Quinta**.
 
-Los antitaurinos, políticos o no, basan sus argumentos en una supuesta e infundada superioridad moral que les hace creer que ellos **no** tienen que respetar las leyes y allí está su mayor error. Las leyes existen y en nuestras sociedades civilizadas se aprueban para mantener el orden social. Nadie, léase bien, **NADIE**, está por encima de las leyes y la Constitución que nos rigen, y si quien pretende burlarlas está investido de autoridad, su conducta está sujeta a la condición delictiva del prevaricador.
+Domingo 10 de mayo: **Román**, **David Galván** y **Gonzalo Caballero**. **Conde de Mayalde**.
 
-**El Comité de Naciones Unidas sobre los Derechos de los Niños**, está integrado por **“expertos”** de diferentes nacionalidades que difícilmente conocen la cultura española (Togo, Omán, Marruecos, Argentina, Bután, Panamá, Kenia, Islandia, Moldavia, Suiza, Georgia, Zambia, Barbados, Etiopía, Níger, Malta, Mauritania y Bélgica) que tratan de influir en los valores intrínsecos de una cultura que solo le pertenece al pueblo español, **pero que encuentran en nuestro territorio a traidores que, creyéndose en superioridad moral o vendiéndose por un puñado de votos arremeten contra los valores esenciales de la cultura de sus pueblos.**`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Martes 12 de mayo: Novillada picada. **Tomás Bastos**, **Martín Morilla** y **Álvaro Serrano**. **Montealto**.
+
+Miércoles 13 de mayo: **Antonio Ferrera**, **Calita** y **Colombo**. **Partido de Resina**.
+
+Jueves 14 de mayo: **Sebastián Castella**, **Daniel Luque** y **David de Miranda**. **El Parralejo**.
+
+Viernes 15 de mayo: **Diego Urdiales**, **Fortes** y **Fernando Adrián**. **El Torero**.
+
+Sábado 16 de mayo: Rejones. **Andy Cartagena**, **Diego Ventura** y **Guillermo Hermoso de Mendoza**. **Herederos de Ángel Sánchez y Sánchez**.
+
+Domingo 17 de mayo: **El Cid**, **Álvaro Lorenzo** y **Manuel Diosleguarde** (confirma alternativa). **La Quinta**.
+
+Martes 19 de mayo: Novillada picada. **Pedro Luis**, **Mario Vilau** y **Julio Norte**. **Fuente Ymbro**.
+
+Miércoles 20 de mayo: **Juan Leal**, **Juan de Castilla** y **José Carlos Venegas**. **Saltillo**.
+
+Jueves 21 de mayo: **José María Manzanares**, **Juan Ortega** y **Pablo Aguado**. **Puerto de San Lorenzo – La Ventana del Puerto**.
+
+Viernes 22 de mayo: **Sebastián Castella**, **Emilio de Justo** y **Tomás Rufo**. **Victoriano del Río – Toros de Cortés**.
+
+Sábado 23 de mayo: **Fortes**, **David de Miranda** y **Víctor Hernández**. **Alcurrucén**.
+
+Domingo 24 de mayo: **Miguel Ángel Perera**, **Paco Ureña** y **Fernando Adrián**. **Fuente Ymbro**.
+
+Martes 26 de mayo: Novillada picada. **Emiliano Osornio**, **Pedro Montaldo** y **Julio Méndez**. **Conde de Mayalde**.
+
+Miércoles 27 de mayo: **Isaac Fonseca**, **Molina** y **Jarocho**. **Pedraza de Yeltes**.
+
+Jueves 28 de mayo: **Diego Urdiales**, **Roca Rey** y **Bruno Aloi** (confirma alternativa). **Juan Pedro Domecq**.
+
+Viernes 29 de mayo: **Morenito de Aranda**, **Alejandro Talavante** y **Pablo Aguado**. **Garcigrande**.
+
+Sábado 30 de mayo: Rejones. **Rui Fernandes**, **Diego Ventura** y **Lea Vicens**. **Mª Guiomar Cortes de Moura**.
+
+Domingo 31 de mayo: **Antonio Ferrera**, **Manuel Escribano** y **Paco Ureña**. **Adolfo Martín**.
+
+Martes 2 de junio: **Pepe Moral**, **Damián Castaño** y **Gómez del Pilar**. **José Escolar**.
+
+Miércoles 3 de junio: **José Garrido**, **Ismael Martín** y **Samuel Navalón**. **Lagunajanda**.
+
+Jueves 4 de junio: **Emilio de Justo**, **Borja Jiménez** y **Víctor Hernández**. **Jandilla – Vegahermosa**.
+
+Viernes 5 de mayo: **Uceda Leal**, **Pablo Aguado** y **Clemente**. **Juan Pedro Domecq**.
+
+Sábado 6 de mayo: **Morenito de Aranda**, **Fernando Adrián** y **Román**. **Victorino Martín**.
+
+**Carteles fuera de abono**
+
+Domingo 7 de junio. **Corrida In Memoriam** (Homenaje a Ignacio Sánchez Mejías). **Borja Jiménez** en solitario. **Victoriano del Río – Toros de Cortés y Domingo Hernández**.
+
+Domingo 14 de junio. **Corrida de la Beneficencia**. **Alejandro Talavante**, **Roca Rey** y **Víctor Hernández**. **Victoriano del Río – Toros de Cortés**.
+
+**Carteles Miniferia de la Comunidad de Madrid**
+
+Viernes 1 de mayo: Novillada picada. **David López**, **Álvaro Serrano** y **Joel Ramírez**. **Seis ganaderías de la CAM**.
+
+Sábado 2 de mayo: **Corrida Goyesca**. **Uceda Leal**, **El Cid** y **Javier Cortés**. **El Pilar**.
+
+Domingo 3 de mayo: Novillada Picada. **Mario Arruza**, **Cristian González** y **Juan Alberto Torrijos**. **Couto de Fornilhos**.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 297,
+    title: `Sevilla perfila sus novilladas de abono: Lances de Futuro apuesta por variedad y prestigio ganadero`,
+    image: "/images/perf.jpg",
+    category: "Actualidad",
+    date: "4 de Febrero de 2026",
+	fullContent: `La empresa Lances de Futuro ya ha definido el esquema de las novilladas picadas del abono sevillano para la temporada 2026, tal y como ha podido saber este medio antes de la presentación oficial de los carteles. El acto tendrá lugar el próximo lunes 9 de febrero en el Cartuja Center, en una gala que servirá de puesta de largo para la nueva etapa empresarial en la Maestranza.
+
+Entre las citas más señaladas del serial novilleril destaca la programada en Preferia, el 13 de abril, cuando se lidiará un encierro de la ganadería de Talavante para los novilleros Emiliano Osornio, Julio Norte y Tomás Bastos, una terna de marcado interés para los aficionados.
+
+El resto de las novilladas del abono se celebrarán en los domingos posteriores a la Feria de Abril, además de una última función que actuará como antesala de la Feria de San Miguel, ya en el mes de septiembre. Para estas fechas, la empresa ha seleccionado reses de los hierros de La Cercada —procedencia El Freixo—, Garcigrande, Fermín Bohórquez, Guadaira y Murteira Grave.
+
+Con este planteamiento, Sevilla reafirma su compromiso con la promoción de los nuevos valores del escalafón y con la presencia de ganaderías contrastadas, configurando un ciclo novilleril equilibrado y de alto interés dentro del abono maestrante.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 298,
+    title: `El Consejo de Asuntos Taurinos de la Comunidad de Madrid aprueba los carteles de la Feria de San Isidro 2026`,
+    image: "/images/cam.jpg",
+    category: "Actualidad",
+    date: "4 de Febrero de 2026",
+	excerpt: `La Plaza de Toros de Las Ventas acogerá un ciclo de 26 corridas del 8 de mayo al 6 de junio, uno de los más importantes del mundo.`,
+	fullContent: `La CAM ha dado luz verde a los carteles de la Feria de San Isidro 2026 tras una reunión celebrada en la Plaza de Toros de Las Ventas, escenario donde se han cerrado los mimbres del ciclo más importante del calendario taurino. El encuentro estuvo presidido por D. Carlos Novillo Piris, consejero de Medio Ambiente, Agricultura e Interior de la Comunidad de Madrid, y contó con la presencia de la empresa Plaza 1, responsable de la gestión del coso madrileño.
+
+En la cita se aprobó un serial compuesto por un total de 26 corridas de toros que se celebrarán entre el 8 de mayo y el 6 de junio, configurando, como es tradición, una feria que se extenderá a lo largo de casi un mes.
+
+El encuentro del órgano encargado de la gestión y supervisión de los festejos taurinos en la región sirvió para aprobar tanto la composición de los encierros como la participación de matadores y novilleros, configurando un abono amplio y equilibrado.
+
+Además del ciclo principal, el serial madrileño volverá a incluir citas de especial relevancia como la Corrida In Memoriam y la tradicional Corrida de la Beneficencia, que se celebrarán una vez finalizada la feria.
+
+La presentación oficial de los carteles tendrá lugar este jueves 5 de febrero en una gala que reunirá las principales figuras del toreo y a destacados protagonistas del abono del coso madrileño.
+
+En el plan artístico, la nómina de toreros es extensa y variada. Figuras como Alejandro Talavante, Fernando Adrián, Pablo Aguado y Víctor Hernández se erigen como pilares del ciclo, mientras que otros nombres del máximo atractivo repetirán en dos paseíllos, encabezados por Roca Rey, junto a Emilio de Justo, Daniel Luque, Juan Ortega, Tomás Rufo o Sebastián Castella.
+
+También actuarán en dos tardes matadores como David de Miranda, Paco Ureña, Diego Urdiales, Fortes, Morenito de Aranda y Uceda Leal, entre otros. En esta ocasión, la empresa Plaza 1 ha optado por no conceder cuatro tardes a ningún espada, apostando por un reparto más equilibrado del abono.
+
+**La gesta de Borja Jiménez**
+
+Dentro de ese grupo de diestros que sumarán dos actuaciones en el ciclo destaca el nombre de Borja Jiménez. El torero de Espartinas asumirá una de las gestas más señaladas del abono al enfrentarse en solitario a seis toros en la Corrida In Memoriam dedicada a Ignacio Sánchez Mejías, con un encierro compuesto por tres astados de Victoriano del Río y tres de Domingo Hernández.
+
+Además, Borja Jiménez trenzará su primer paseíllo del ciclo en una corrida de Jandilla, completando así una presencia de máxima exigencia en el abono madrileño.
+
+**Carteles de la Feria de San Isidro 2026**
+
+Viernes 8 de mayo: **Alejandro Talavante**, **Juan Ortega** y **Tristán Barroso** (confirma alternativa). **Núñez del Cuvillo**.
+
+Sábado 9 de mayo: **Miguel Ángel Perera**, **Daniel Luque** y **Tomás Rufo**. **La Quinta**.
+
+Domingo 10 de mayo: **Román**, **David Galván** y **Gonzalo Caballero**. **Conde de Mayalde**.
+
+Martes 12 de mayo: Novillada picada. **Tomás Bastos**, **Martín Morilla** y **Álvaro Serrano**. **Montealto**.
+
+Miércoles 13 de mayo: **Antonio Ferrera**, **Calita** y **Colombo**. **Partido de Resina**.
+
+Jueves 14 de mayo: **Sebastián Castella**, **Daniel Luque** y **David de Miranda**. **El Parralejo**.
+
+Viernes 15 de mayo: **Diego Urdiales**, **Fortes** y **Fernando Adrián**. **El Torero**.
+
+Sábado 16 de mayo: Rejones. **Andy Cartagena**, **Diego Ventura** y **Guillermo Hermoso de Mendoza**. **Herederos de Ángel Sánchez y Sánchez**.
+
+Domingo 17 de mayo: **El Cid**, **Álvaro Lorenzo** y **Manuel Diosleguarde** (confirma alternativa). **La Quinta**.
+
+Martes 19 de mayo: Novillada picada. **Pedro Luis**, **Mario Vilau** y **Julio Norte**. **Fuente Ymbro**.
+
+Miércoles 20 de mayo: **Juan Leal**, **Juan de Castilla** y **José Carlos Venegas**. **Saltillo**.
+
+Jueves 21 de mayo: **José María Manzanares**, **Juan Ortega** y **Pablo Aguado**. **Puerto de San Lorenzo – La Ventana del Puerto**.
+
+Viernes 22 de mayo: **Sebastián Castella**, **Emilio de Justo** y **Tomás Rufo**. **Victoriano del Río – Toros de Cortés**.
+
+Sábado 23 de mayo: **Fortes**, **David de Miranda** y **Víctor Hernández**. **Alcurrucén**.
+
+Domingo 24 de mayo: **Miguel Ángel Perera**, **Paco Ureña** y **Fernando Adrián**. **Fuente Ymbro**.
+
+Martes 26 de mayo: Novillada picada. **Emiliano Osornio**, **Pedro Montaldo** y **Julio Méndez**. **Conde de Mayalde**.
+
+Miércoles 27 de mayo: **Isaac Fonseca**, **Molina** y **Jarocho**. **Pedraza de Yeltes**.
+
+Jueves 28 de mayo: **Diego Urdiales**, **Roca Rey** y **Bruno Aloi** (confirma alternativa). **Juan Pedro Domecq**.
+
+Viernes 29 de mayo: **Morenito de Aranda**, **Alejandro Talavante** y **Pablo Aguado**. **Garcigrande**.
+
+Sábado 30 de mayo: Rejones. **Rui Fernandes**, **Diego Ventura** y **Lea Vicens**. **Mª Guiomar Cortes de Moura**.
+
+Domingo 31 de mayo: **Antonio Ferrera**, **Manuel Escribano** y **Paco Ureña**. **Adolfo Martín**.
+
+Martes 2 de junio: **Pepe Moral**, **Damián Castaño** y **Gómez del Pilar**. **José Escolar**.
+
+Miércoles 3 de junio: **José Garrido**, **Ismael Martín** y **Samuel Navalón**. **Lagunajanda**.
+
+Jueves 4 de junio: **Emilio de Justo**, **Borja Jiménez** y **Víctor Hernández**. **Jandilla – Vegahermosa**.
+
+Viernes 5 de mayo: **Uceda Leal**, **Pablo Aguado** y **Clemente**. **Juan Pedro Domecq**.
+
+Sábado 6 de mayo: **Morenito de Aranda**, **Fernando Adrián** y **Román**. **Victorino Martín**.
+
+**Carteles fuera de abono**
+
+Domingo 7 de junio. **Corrida In Memoriam** (Homenaje a Ignacio Sánchez Mejías). **Borja Jiménez** en solitario. **Victoriano del Río – Toros de Cortés y Domingo Hernández**.
+
+Domingo 14 de junio. **Corrida de la Beneficencia**. **Alejandro Talavante**, **Roca Rey** y **Víctor Hernández**. **Victoriano del Río – Toros de Cortés**.
+
+**Carteles Miniferia de la Comunidad de Madrid**
+
+Viernes 1 de mayo: Novillada picada. **David López**, **Álvaro Serrano** y **Joel Ramírez**. **Seis ganaderías de la CAM**.
+
+Sábado 2 de mayo: **Corrida Goyesca**. **Uceda Leal**, **El Cid** y **Javier Cortés**. **El Pilar**.
+
+Domingo 3 de mayo: Novillada Picada. **Mario Arruza**, **Cristian González** y **Juan Alberto Torrijos**. **Couto de Fornilhos**.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 299,
     title: `Comienza la renovación y venta de abonos para la Feria de la Magdalena 2026`,
