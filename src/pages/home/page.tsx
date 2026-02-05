@@ -455,7 +455,53 @@ const CrónicaLayout = ({ news }: { news: any }) => (
   </article>
 );
 	
-const featuredNews: NewsItem[] = [	
+const featuredNews: NewsItem[] = [
+	{ 
+    id: 1006,
+    title: `Definidos los clasificados para el 7º tentadero del Bolsín Taurino Mirobrigense`,
+    image: "/images/tentadero.jpg",
+    category: "Actualidad",
+    date: "5 de Febrero de 2026",
+	excerpt: "El Bolsín Taurino Mirobrigense continúa avanzando en su proceso de selección con la publicación de los novilleros clasificados para el séptimo tentadero. ",
+	fullContent: `Tras las primeras pruebas del certamen, el jurado ha seleccionado para este séptimo
+tentadero a **Ekaitz Moreno Leal** (San Sebastián), **Francisco Rodríguez Perera** (Táliga,
+Badajoz), **Yeferson Fernando Vanegas Contreras** (Salamanca), **Joao Miguel Mourato**
+**Mexia** (Moita – Setúbal, Portugal), **Clovis Germain Metge** (Garons, Francia), **Manuel**
+**Real Sigüenza** (Castilleja de la Cuesta, Sevilla), **Íñigo Rebaque Luis** (Salamanca),
+**Jorge Oliva Delgado** (Segovia), **Manuel León Sánchez** (Coria, Cáceres), **Rubén Núñez**
+**Rodríguez** (San Felices de los Gallegos, Salamanca), **Jaime Torija Moreno** (El Casar,
+Guadalajara) y **Pedro Caminero Senovilla** (Portillo, Valladolid).
+
+La cita, en la que se lidiarán reses de la ganadería **Hermanos Sánchez Herrero**, tendrá
+lugar el próximo 7 de febrero, a partir de las 16:00 horas. Será una jornada en la que se
+volverá a poner a prueba el concepto, la capacidad y la proyección de los aspirantes que
+siguen adelante en el bolsín taurino.
+
+Esta edición del bolsín arrancó con 50 aspirantes, todos ellos novilleros sin picadores, que
+han ido superando sucesivos tentaderos hasta llegar a este séptimo festejo clasificatorio,
+que marca ya el tramo decisivo del certamen. El proceso, basado en la regularidad y la
+capacidad mostrada en cada tentadero, va estrechando el cerco en busca del nombre
+propio que terminará alzándose como vencedor.
+
+La Gran Final se celebrará el 8 de febrero, a partir de las 16:30 horas, con un tentadero
+de machos de las ganaderías **Vega de Algodor**, **Valdeflores**, **El Gustal de**
+**Campocerrado**, **Hermanos Sánchez Herrero** y **Toros de Orive**, en una jornada que
+pondrá el broche final a esta 70ª edición de un certamen profundamente arraigado en la
+historia taurina mirobrigense.
+
+El certamen permitirá que los cinco novilleros seleccionados tengan la oportunidad de
+torear durante el Carnaval del Toro 2026 ante el público mirobrigense, mientras que el
+ganador absoluto del bolsín disfrutará de la experiencia de actuar el Martes de Carnaval
+junto a varias figuras del toreo, un aliciente que refuerza la relevancia de este bolsín como
+plataforma de proyección para las jóvenes promesas del toreo.
+
+Con esta nueva criba, el Bolsín Taurino Mirobrigense confirma, una edición más, su papel
+como escaparate de futuros profesionales, midiendo vocación, concepto y capacidad de
+quienes sueñan con dar el salto en la profesión.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1007,
     title: `Enrique Luján, propuesto como nuevo gestor de la plaza de toros de Algeciras`,
@@ -482,6 +528,52 @@ La concesionaria asumirá igualmente la organización de las Jornadas de Tauroma
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 294,
+    title: `Definidos los clasificados para el 7º tentadero del Bolsín Taurino Mirobrigense`,
+    image: "/images/tentadero.jpg",
+    category: "Actualidad",
+    date: "5 de Febrero de 2026",
+	excerpt: "El Bolsín Taurino Mirobrigense continúa avanzando en su proceso de selección con la publicación de los novilleros clasificados para el séptimo tentadero. ",
+	fullContent: `Tras las primeras pruebas del certamen, el jurado ha seleccionado para este séptimo
+tentadero a **Ekaitz Moreno Leal** (San Sebastián), **Francisco Rodríguez Perera** (Táliga,
+Badajoz), **Yeferson Fernando Vanegas Contreras** (Salamanca), **Joao Miguel Mourato**
+**Mexia** (Moita – Setúbal, Portugal), **Clovis Germain Metge** (Garons, Francia), **Manuel**
+**Real Sigüenza** (Castilleja de la Cuesta, Sevilla), **Íñigo Rebaque Luis** (Salamanca),
+**Jorge Oliva Delgado** (Segovia), **Manuel León Sánchez** (Coria, Cáceres), **Rubén Núñez**
+**Rodríguez** (San Felices de los Gallegos, Salamanca), **Jaime Torija Moreno** (El Casar,
+Guadalajara) y **Pedro Caminero Senovilla** (Portillo, Valladolid).
+
+La cita, en la que se lidiarán reses de la ganadería **Hermanos Sánchez Herrero**, tendrá
+lugar el próximo 7 de febrero, a partir de las 16:00 horas. Será una jornada en la que se
+volverá a poner a prueba el concepto, la capacidad y la proyección de los aspirantes que
+siguen adelante en el bolsín taurino.
+
+Esta edición del bolsín arrancó con 50 aspirantes, todos ellos novilleros sin picadores, que
+han ido superando sucesivos tentaderos hasta llegar a este séptimo festejo clasificatorio,
+que marca ya el tramo decisivo del certamen. El proceso, basado en la regularidad y la
+capacidad mostrada en cada tentadero, va estrechando el cerco en busca del nombre
+propio que terminará alzándose como vencedor.
+
+La Gran Final se celebrará el 8 de febrero, a partir de las 16:30 horas, con un tentadero
+de machos de las ganaderías **Vega de Algodor**, **Valdeflores**, **El Gustal de**
+**Campocerrado**, **Hermanos Sánchez Herrero** y **Toros de Orive**, en una jornada que
+pondrá el broche final a esta 70ª edición de un certamen profundamente arraigado en la
+historia taurina mirobrigense.
+
+El certamen permitirá que los cinco novilleros seleccionados tengan la oportunidad de
+torear durante el Carnaval del Toro 2026 ante el público mirobrigense, mientras que el
+ganador absoluto del bolsín disfrutará de la experiencia de actuar el Martes de Carnaval
+junto a varias figuras del toreo, un aliciente que refuerza la relevancia de este bolsín como
+plataforma de proyección para las jóvenes promesas del toreo.
+
+Con esta nueva criba, el Bolsín Taurino Mirobrigense confirma, una edición más, su papel
+como escaparate de futuros profesionales, midiendo vocación, concepto y capacidad de
+quienes sueñan con dar el salto en la profesión.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 295,
     title: `Enrique Luján, propuesto como nuevo gestor de la plaza de toros de Algeciras`,
