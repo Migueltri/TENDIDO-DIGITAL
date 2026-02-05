@@ -457,154 +457,54 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1005,
-    title: `Seleccionados los novilleros que participarán en el V Bolsín Taurino de Torre Pacheco`,
-    image: "/images/V.jpg",
-    category: "Actualidad",
-    date: "4 de Febrero de 2026",
-	excerpt: `El tentadero clasificatorio tendrá lugar el próximo 1 de marzo y participarán novilleros de diferentes escuelas taurinas`,
-	fullContent: `El Club Taurino de Torre Pacheco (Murcia) ha hecho públicos los nueve nombres de los novilleros que participarán en el V Bolsín tras una larga lista de solicitudes procedentes de todas las escuelas taurinas. 
-
-
-Los novilleros finalmente seleccionados son: 
-
--	Toni Marín, Escuela Taurina de Murcia “El Toreo” 
--	Iván de Benito, Escuela Taurina de Murcia “El Toreo” 
--	Samuel Mancilla, Escuela Taurina de Algeciras
--	Jesús Montiel, Escuela Taurina de Murcia “El Toreo” 
--	Manuel Real “Realito”, Escuela Taurina de Camas (Sevilla) 
--	“Ruiz de Palazón”, Escuela Taurina de Alicante
--	Cristóbal Granero, Escuela Taurina de Alicante
--	Roberto Cordero, Escuela Taurina de Pepino (Toledo) 
--	Jaime Torrija, Escuela Taurina de Guadalajara
-
-
-El tentadero clasificatorio será el próximo 1 de marzo en la plaza de toros de la Finca “La Herencia” que está situada en término municipal de Torre Pacheco, se medirán a diferentes vacas de una reconocida ganadería, todo gracias al Club Taurino de la ciudad y contando con la ayuda de la Comunidad Autónoma de la Región de Murcia y del Ayuntamiento de Torre Pacheco. 
-
-
-Un encuentro que reúne al mundo taurino de la Región de Murcia y da visibilidad a los jóvenes valores del panorama novilleril, con una mención especial a la Escuela Taurina de la Región de Murcia “El Toreo”, que necesita el apoyo de la afición murciana ya que acaba de arrancar hace escaso 1 año y tiene en su poder a toreros con unas cualidades que ilusionan.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Sevilla perfila sus novilladas de abono: Lances de Futuro apuesta por variedad y prestigio ganadero`,
-    image: "/images/perf.jpg",
-    category: "Actualidad",
-    date: "4 de Febrero de 2026",
-	fullContent: `La empresa Lances de Futuro ya ha definido el esquema de las novilladas picadas del abono sevillano para la temporada 2026, tal y como ha podido saber este medio antes de la presentación oficial de los carteles. El acto tendrá lugar el próximo lunes 9 de febrero en el Cartuja Center, en una gala que servirá de puesta de largo para la nueva etapa empresarial en la Maestranza.
-
-Entre las citas más señaladas del serial novilleril destaca la programada en Preferia, el 13 de abril, cuando se lidiará un encierro de la ganadería de Talavante para los novilleros Emiliano Osornio, Julio Norte y Tomás Bastos, una terna de marcado interés para los aficionados.
-
-El resto de las novilladas del abono se celebrarán en los domingos posteriores a la Feria de Abril, además de una última función que actuará como antesala de la Feria de San Miguel, ya en el mes de septiembre. Para estas fechas, la empresa ha seleccionado reses de los hierros de La Cercada —procedencia El Freixo—, Garcigrande, Fermín Bohórquez, Guadaira y Murteira Grave.
-
-Con este planteamiento, Sevilla reafirma su compromiso con la promoción de los nuevos valores del escalafón y con la presencia de ganaderías contrastadas, configurando un ciclo novilleril equilibrado y de alto interés dentro del abono maestrante.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1007,
-    title: `El Consejo de Asuntos Taurinos de la Comunidad de Madrid aprueba los carteles de la Feria de San Isidro 2026`,
-    image: "/images/cam.jpg",
+    title: `Enrique Luján, propuesto como nuevo gestor de la plaza de toros de Algeciras`,
+    image: "/images/propu.jpg",
     category: "Actualidad",
-    date: "4 de Febrero de 2026",
-	excerpt: `La Plaza de Toros de Las Ventas acogerá un ciclo de 26 corridas del 8 de mayo al 6 de junio, uno de los más importantes del mundo.`,
-	fullContent: `La CAM ha dado luz verde a los carteles de la Feria de San Isidro 2026 tras una reunión celebrada en la Plaza de Toros de Las Ventas, escenario donde se han cerrado los mimbres del ciclo más importante del calendario taurino. El encuentro estuvo presidido por D. Carlos Novillo Piris, consejero de Medio Ambiente, Agricultura e Interior de la Comunidad de Madrid, y contó con la presencia de la empresa Plaza 1, responsable de la gestión del coso madrileño.
+    date: "5 de Febrero de 2026",
+	fullContent: `El empresario **Enrique Luján** ha sido propuesto como **nuevo adjudicatario de la gestión del coso de Las Palomas de Algeciras**, tras la resolución de la mesa de contratación del Ayuntamiento, una vez valoradas las distintas ofertas presentadas al concurso público.
 
-En la cita se aprobó un serial compuesto por un total de 26 corridas de toros que se celebrarán entre el 8 de mayo y el 6 de junio, configurando, como es tradición, una feria que se extenderá a lo largo de casi un mes.
+En el procedimiento también concurrían las propuestas de Carmelo García, anterior gestor de la plaza, y de Carlos Zúñiga.
 
-El encuentro del órgano encargado de la gestión y supervisión de los festejos taurinos en la región sirvió para aprobar tanto la composición de los encierros como la participación de matadores y novilleros, configurando un abono amplio y equilibrado.
+La empresa **Euro Tauro Luján** será la encargada de organizar la próxima **Feria Real de Algeciras**, para la que ha diseñado un ciclo integrado por tres corridas de toros, un festejo de rejones y una clase práctica para alumnos de escuelas taurinas. Fuera del abono ferial, la concesión contempla igualmente la celebración del espectáculo Gran Prix Algeciras, con el objetivo de ampliar la actividad del recinto más allá del calendario estrictamente taurino.
 
-Además del ciclo principal, el serial madrileño volverá a incluir citas de especial relevancia como la Corrida In Memoriam y la tradicional Corrida de la Beneficencia, que se celebrarán una vez finalizada la feria.
+Uno de los ejes del proyecto presentado por la adjudicataria es la apuesta por la formación y el **fomento de la tauromaquia base**. En este ámbito, **Euro Tauro Luján** se compromete a la celebración de **diez tentaderos anuales, tres clases prácticas y tres novilladas sin picadores en plazas colaboradoras**, con participación de alumnos de la **Escuela Taurina de Algeciras**.
 
-La presentación oficial de los carteles tendrá lugar este jueves 5 de febrero en una gala que reunirá las principales figuras del toreo y a destacados protagonistas del abono del coso madrileño.
+El programa se completa con la organización de jornadas magistrales impartidas por profesionales, **clinicos técnicos anuales** de toreo de salón, cursos de preparación física y mental del torero y el acceso a **un archivo audiovisual profesional** para el análisis de faenas y tentaderos. Asimismo, se prevé la creación de **una mesa de trabajo conjunta** entre la empresa y la escuela taurina algecireña para la planificación de actividades, la selección de **alumnos** y la evaluación anual del proyecto.
 
-En el plan artístico, la nómina de toreros es extensa y variada. Figuras como Alejandro Talavante, Fernando Adrián, Pablo Aguado y Víctor Hernández se erigen como pilares del ciclo, mientras que otros nombres del máximo atractivo repetirán en dos paseíllos, encabezados por Roca Rey, junto a Emilio de Justo, Daniel Luque, Juan Ortega, Tomás Rufo o Sebastián Castella.
+La concesionaria asumirá igualmente la organización de las Jornadas de Tauromaquia Ciudad de Algeciras, además de impulsar distintas acciones externas orientadas al fomento de la cultura taurina y a la promoción de la Feria Real, con el propósito de reforzar el vínculo entre la plaza y la ciudad.
 
-También actuarán en dos tardes matadores como David de Miranda, Paco Ureña, Diego Urdiales, Fortes, Morenito de Aranda y Uceda Leal, entre otros. En esta ocasión, la empresa Plaza 1 ha optado por no conceder cuatro tardes a ningún espada, apostando por un reparto más equilibrado del abono.
-
-**La gesta de Borja Jiménez**
-
-Dentro de ese grupo de diestros que sumarán dos actuaciones en el ciclo destaca el nombre de Borja Jiménez. El torero de Espartinas asumirá una de las gestas más señaladas del abono al enfrentarse en solitario a seis toros en la Corrida In Memoriam dedicada a Ignacio Sánchez Mejías, con un encierro compuesto por tres astados de Victoriano del Río y tres de Domingo Hernández.
-
-Además, Borja Jiménez trenzará su primer paseíllo del ciclo en una corrida de Jandilla, completando así una presencia de máxima exigencia en el abono madrileño.
-
-**Carteles de la Feria de San Isidro 2026**
-
-Viernes 8 de mayo: **Alejandro Talavante**, **Juan Ortega** y **Tristán Barroso** (confirma alternativa). **Núñez del Cuvillo**.
-
-Sábado 9 de mayo: **Miguel Ángel Perera**, **Daniel Luque** y **Tomás Rufo**. **La Quinta**.
-
-Domingo 10 de mayo: **Román**, **David Galván** y **Gonzalo Caballero**. **Conde de Mayalde**.
-
-Martes 12 de mayo: Novillada picada. **Tomás Bastos**, **Martín Morilla** y **Álvaro Serrano**. **Montealto**.
-
-Miércoles 13 de mayo: **Antonio Ferrera**, **Calita** y **Colombo**. **Partido de Resina**.
-
-Jueves 14 de mayo: **Sebastián Castella**, **Daniel Luque** y **David de Miranda**. **El Parralejo**.
-
-Viernes 15 de mayo: **Diego Urdiales**, **Fortes** y **Fernando Adrián**. **El Torero**.
-
-Sábado 16 de mayo: Rejones. **Andy Cartagena**, **Diego Ventura** y **Guillermo Hermoso de Mendoza**. **Herederos de Ángel Sánchez y Sánchez**.
-
-Domingo 17 de mayo: **El Cid**, **Álvaro Lorenzo** y **Manuel Diosleguarde** (confirma alternativa). **La Quinta**.
-
-Martes 19 de mayo: Novillada picada. **Pedro Luis**, **Mario Vilau** y **Julio Norte**. **Fuente Ymbro**.
-
-Miércoles 20 de mayo: **Juan Leal**, **Juan de Castilla** y **José Carlos Venegas**. **Saltillo**.
-
-Jueves 21 de mayo: **José María Manzanares**, **Juan Ortega** y **Pablo Aguado**. **Puerto de San Lorenzo – La Ventana del Puerto**.
-
-Viernes 22 de mayo: **Sebastián Castella**, **Emilio de Justo** y **Tomás Rufo**. **Victoriano del Río – Toros de Cortés**.
-
-Sábado 23 de mayo: **Fortes**, **David de Miranda** y **Víctor Hernández**. **Alcurrucén**.
-
-Domingo 24 de mayo: **Miguel Ángel Perera**, **Paco Ureña** y **Fernando Adrián**. **Fuente Ymbro**.
-
-Martes 26 de mayo: Novillada picada. **Emiliano Osornio**, **Pedro Montaldo** y **Julio Méndez**. **Conde de Mayalde**.
-
-Miércoles 27 de mayo: **Isaac Fonseca**, **Molina** y **Jarocho**. **Pedraza de Yeltes**.
-
-Jueves 28 de mayo: **Diego Urdiales**, **Roca Rey** y **Bruno Aloi** (confirma alternativa). **Juan Pedro Domecq**.
-
-Viernes 29 de mayo: **Morenito de Aranda**, **Alejandro Talavante** y **Pablo Aguado**. **Garcigrande**.
-
-Sábado 30 de mayo: Rejones. **Rui Fernandes**, **Diego Ventura** y **Lea Vicens**. **Mª Guiomar Cortes de Moura**.
-
-Domingo 31 de mayo: **Antonio Ferrera**, **Manuel Escribano** y **Paco Ureña**. **Adolfo Martín**.
-
-Martes 2 de junio: **Pepe Moral**, **Damián Castaño** y **Gómez del Pilar**. **José Escolar**.
-
-Miércoles 3 de junio: **José Garrido**, **Ismael Martín** y **Samuel Navalón**. **Lagunajanda**.
-
-Jueves 4 de junio: **Emilio de Justo**, **Borja Jiménez** y **Víctor Hernández**. **Jandilla – Vegahermosa**.
-
-Viernes 5 de mayo: **Uceda Leal**, **Pablo Aguado** y **Clemente**. **Juan Pedro Domecq**.
-
-Sábado 6 de mayo: **Morenito de Aranda**, **Fernando Adrián** y **Román**. **Victorino Martín**.
-
-**Carteles fuera de abono**
-
-Domingo 7 de junio. **Corrida In Memoriam** (Homenaje a Ignacio Sánchez Mejías). **Borja Jiménez** en solitario. **Victoriano del Río – Toros de Cortés y Domingo Hernández**.
-
-Domingo 14 de junio. **Corrida de la Beneficencia**. **Alejandro Talavante**, **Roca Rey** y **Víctor Hernández**. **Victoriano del Río – Toros de Cortés**.
-
-**Carteles Miniferia de la Comunidad de Madrid**
-
-Viernes 1 de mayo: Novillada picada. **David López**, **Álvaro Serrano** y **Joel Ramírez**. **Seis ganaderías de la CAM**.
-
-Sábado 2 de mayo: **Corrida Goyesca**. **Uceda Leal**, **El Cid** y **Javier Cortés**. **El Pilar**.
-
-Domingo 3 de mayo: Novillada Picada. **Mario Arruza**, **Cristian González** y **Juan Alberto Torrijos**. **Couto de Fornilhos**.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
+**Euro Tauro Luján** cuenta con una amplia experiencia en la gestión de plazas de toros y es actualmente responsable de los cosos de **Villafranca de los Barros y Fuentes de León (Badajoz), Calahorra (La Rioja), Tudela y Cintruénigo (Navarra), Aracena (Huelva), Íscar, Laguna de Duero y Pedrajas de San Esteban (Valladolid) y Abarán (Murcia).**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 295,
+    title: `Enrique Luján, propuesto como nuevo gestor de la plaza de toros de Algeciras`,
+    image: "/images/propu.jpg",
+    category: "Actualidad",
+    date: "5 de Febrero de 2026",
+	fullContent: `El empresario **Enrique Luján** ha sido propuesto como **nuevo adjudicatario de la gestión del coso de Las Palomas de Algeciras**, tras la resolución de la mesa de contratación del Ayuntamiento, una vez valoradas las distintas ofertas presentadas al concurso público.
+
+En el procedimiento también concurrían las propuestas de Carmelo García, anterior gestor de la plaza, y de Carlos Zúñiga.
+
+La empresa **Euro Tauro Luján** será la encargada de organizar la próxima **Feria Real de Algeciras**, para la que ha diseñado un ciclo integrado por tres corridas de toros, un festejo de rejones y una clase práctica para alumnos de escuelas taurinas. Fuera del abono ferial, la concesión contempla igualmente la celebración del espectáculo Gran Prix Algeciras, con el objetivo de ampliar la actividad del recinto más allá del calendario estrictamente taurino.
+
+Uno de los ejes del proyecto presentado por la adjudicataria es la apuesta por la formación y el **fomento de la tauromaquia base**. En este ámbito, **Euro Tauro Luján** se compromete a la celebración de **diez tentaderos anuales, tres clases prácticas y tres novilladas sin picadores en plazas colaboradoras**, con participación de alumnos de la **Escuela Taurina de Algeciras**.
+
+El programa se completa con la organización de jornadas magistrales impartidas por profesionales, **clinicos técnicos anuales** de toreo de salón, cursos de preparación física y mental del torero y el acceso a **un archivo audiovisual profesional** para el análisis de faenas y tentaderos. Asimismo, se prevé la creación de **una mesa de trabajo conjunta** entre la empresa y la escuela taurina algecireña para la planificación de actividades, la selección de **alumnos** y la evaluación anual del proyecto.
+
+La concesionaria asumirá igualmente la organización de las Jornadas de Tauromaquia Ciudad de Algeciras, además de impulsar distintas acciones externas orientadas al fomento de la cultura taurina y a la promoción de la Feria Real, con el propósito de reforzar el vínculo entre la plaza y la ciudad.
+
+**Euro Tauro Luján** cuenta con una amplia experiencia en la gestión de plazas de toros y es actualmente responsable de los cosos de **Villafranca de los Barros y Fuentes de León (Badajoz), Calahorra (La Rioja), Tudela y Cintruénigo (Navarra), Aracena (Huelva), Íscar, Laguna de Duero y Pedrajas de San Esteban (Valladolid) y Abarán (Murcia).**`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 296,
     title: `Seleccionados los novilleros que participarán en el V Bolsín Taurino de Torre Pacheco`,
