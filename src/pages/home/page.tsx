@@ -458,7 +458,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1002,
-    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    title: `Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
     image: "/images/croned.jpg",
     category: "Crónicas",
     date: "6 de Febrero de 2026",
@@ -792,7 +792,7 @@ Criado y 1 eral de Toros de Orive para:
 const latestNews: NewsItem[] = [
 	{ 
     id: 287,
-    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    title: `Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
     image: "/images/croned.jpg",
     category: "Crónicas",
     date: "6 de Febrero de 2026",
@@ -9742,7 +9742,7 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 const chronicles: Chronicle[] = [
 	{ 
     id: 4998,
-    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    title: `Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
     image: "/images/croned.jpg",
     category: "Crónicas",
     date: "6 de Febrero de 2026",
