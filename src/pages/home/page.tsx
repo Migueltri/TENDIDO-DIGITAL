@@ -779,14 +779,17 @@ colaboración del ayuntamiento.`,
 Viejo puso en valor el trabajo conjunto con la empresa gestora Funtausa y la decisión de adelantar la presentación del cartel, que este año contará con Manzanares, Juan Ortega y Roca Rey. “Es un cartel a la altura de lo que Brihuega necesita, de lo que el aficionado espera de la Plaza de Toros de La Muralla y de la propia afición taurina de nuestro municipio”, señaló.
  
 **Inversiones y legado del 60 aniversario**
+
 El regidor recordó el importante esfuerzo inversor realizado por el Ayuntamiento para conservar y potenciar el coso briocense. “En la legislatura pasada hicimos una inversión cercana a los 300.000 euros para mejorar la infraestructura de la plaza”, explicó. Enmarcando estas actuaciones dentro de la conmemoración del 60 aniversario de la Plaza de Toros La Muralla.
 Entre las iniciativas más destacadas de esa efeméride figura la creación del Museo Taurino de Brihuega, que de momento se ubica en el convento de San José y que contará con un espacio definitivo bajo la presidencia del coso a partir de 2026. También resaltó la edición de un libro conmemorativo y diversos actos dirigidos a los vecinos, como el homenaje a los nacidos en 1965.
  
 **Tauromaquia como patrimonio y desestacionalización**
+
 Para Viejo, la tradición taurina forma parte esencial de la identidad local: “Es una parte de nuestro gran patrimonio inmaterial. Hemos trabajado en los últimos años por reconocer y poner en valor precisamente esta tradición”. En esa línea, recordó que desde 2025 la plaza es visitable durante todo el año, contribuyendo a diversificar la oferta cultural.
 El alcalde incidió además en la relevancia económica del festejo de primavera: “Es un evento social y económico para el municipio; durante todo un fin de semana Brihuega se llena y se benefician la restauración, la hostelería, las casas rurales y el comercio”.
  
 **Seguridad y uso polivalente del coso**
+
 Otro de los aspectos destacados fue el dispositivo de seguridad que rodea a los grandes acontecimientos. “El Ayuntamiento constituyó la Comisión de Seguridad para festejos multitudinarios, con implicación de Protección Civil, Cruz Roja, Guardia Civil y la propia empresa. Es un trabajo que a veces no se ve, pero es fundamental”.
 Viejo concluyó invitando a descubrir Brihuega más allá de la temporada de la lavanda: “Tenemos un gran patrimonio histórico-artístico y paisajes espectaculares en cualquier época del año. Estamos consiguiendo desestacionalizar el turismo y la plaza es un elemento clave para ello”.`,
 	author: "Manolo Herrera",
