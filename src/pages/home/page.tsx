@@ -457,77 +457,582 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1006,
-    title: `Definidos los clasificados para el 7º tentadero del Bolsín Taurino Mirobrigense`,
-    image: "/images/tentadero.jpg",
+    id: 1003,
+    title: `Navalmoral de la Mata apuesta por un cartel de figuras y futuro`,
+    image: "/images/mata.jpg",
     category: "Actualidad",
-    date: "5 de Febrero de 2026",
-	excerpt: "El Bolsín Taurino Mirobrigense continúa avanzando en su proceso de selección con la publicación de los novilleros clasificados para el séptimo tentadero. ",
-	fullContent: `Tras las primeras pruebas del certamen, el jurado ha seleccionado para este séptimo
-tentadero a **Ekaitz Moreno Leal** (San Sebastián), **Francisco Rodríguez Perera** (Táliga,
-Badajoz), **Yeferson Fernando Vanegas Contreras** (Salamanca), **Joao Miguel Mourato**
-**Mexia** (Moita – Setúbal, Portugal), **Clovis Germain Metge** (Garons, Francia), **Manuel**
-**Real Sigüenza** (Castilleja de la Cuesta, Sevilla), **Íñigo Rebaque Luis** (Salamanca),
-**Jorge Oliva Delgado** (Segovia), **Manuel León Sánchez** (Coria, Cáceres), **Rubén Núñez**
-**Rodríguez** (San Felices de los Gallegos, Salamanca), **Jaime Torija Moreno** (El Casar,
-Guadalajara) y **Pedro Caminero Senovilla** (Portillo, Valladolid).
+    date: "6 de Febrero de 2026",
+	fullContent: `La plaza de toros de **Navalmoral de la Mata** vuelve a convertirse en epicentro
+de la **Tauromaquia** a principios de temporada con otro cartelazo lleno de
+alicientes el próximo 29 de marzo. Frente a una corrida
+de **Alcurrucén**, trenzarán el paseíllo **Alejandro Talavante, Roca Rey y Marco**
+**Pérez.**
 
-La cita, en la que se lidiarán reses de la ganadería **Hermanos Sánchez Herrero**, tendrá
-lugar el próximo 7 de febrero, a partir de las 16:00 horas. Será una jornada en la que se
-volverá a poner a prueba el concepto, la capacidad y la proyección de los aspirantes que
-siguen adelante en el bolsín taurino.
+Combinación importante para un acontecimiento en una de las plazas más
+modernas de **Extremadura.** Por tercer año consecutivo, el coso reúne tres
+diestros de prestigio y una ganadería de garantías.
 
-Esta edición del bolsín arrancó con 50 aspirantes, todos ellos novilleros sin picadores, que
-han ido superando sucesivos tentaderos hasta llegar a este séptimo festejo clasificatorio,
-que marca ya el tramo decisivo del certamen. El proceso, basado en la regularidad y la
-capacidad mostrada en cada tentadero, va estrechando el cerco en busca del nombre
-propio que terminará alzándose como vencedor.
+La corrida está organizada por el empresario Marcos lozano romero, con la
+colaboración del ayuntamiento.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Luis Viejo: “La Corrida de Primavera y La Muralla son un motor turístico y cultural fundamental para Brihuega”`,
+    image: "/images/viejo.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	excerpt: "El alcalde de Brihuega, Luis Viejo, ha vuelto a subrayar la importancia estratégica de la tauromaquia dentro del proyecto de desarrollo cultural y turístico del municipio.",
+	fullContent: `Con motivo de la tradicional Corrida de Primavera, el primer edil destacó que el festejo “está a la altura del esfuerzo que está haciendo la institución no solo con esta corrida, sino con la tauromaquia y con la apuesta por el turismo en un municipio como Brihuega”.
+Viejo puso en valor el trabajo conjunto con la empresa gestora Funtausa y la decisión de adelantar la presentación del cartel, que este año contará con Manzanares, Juan Ortega y Roca Rey. “Es un cartel a la altura de lo que Brihuega necesita, de lo que el aficionado espera de la Plaza de Toros de La Muralla y de la propia afición taurina de nuestro municipio”, señaló.
+ 
+**Inversiones y legado del 60 aniversario**
+El regidor recordó el importante esfuerzo inversor realizado por el Ayuntamiento para conservar y potenciar el coso briocense. “En la legislatura pasada hicimos una inversión cercana a los 300.000 euros para mejorar la infraestructura de la plaza”, explicó. Enmarcando estas actuaciones dentro de la conmemoración del 60 aniversario de la Plaza de Toros La Muralla.
+Entre las iniciativas más destacadas de esa efeméride figura la creación del Museo Taurino de Brihuega, que de momento se ubica en el convento de San José y que contará con un espacio definitivo bajo la presidencia del coso a partir de 2026. También resaltó la edición de un libro conmemorativo y diversos actos dirigidos a los vecinos, como el homenaje a los nacidos en 1965.
+ 
+**Tauromaquia como patrimonio y desestacionalización**
+Para Viejo, la tradición taurina forma parte esencial de la identidad local: “Es una parte de nuestro gran patrimonio inmaterial. Hemos trabajado en los últimos años por reconocer y poner en valor precisamente esta tradición”. En esa línea, recordó que desde 2025 la plaza es visitable durante todo el año, contribuyendo a diversificar la oferta cultural.
+El alcalde incidió además en la relevancia económica del festejo de primavera: “Es un evento social y económico para el municipio; durante todo un fin de semana Brihuega se llena y se benefician la restauración, la hostelería, las casas rurales y el comercio”.
+ 
+**Seguridad y uso polivalente del coso**
+Otro de los aspectos destacados fue el dispositivo de seguridad que rodea a los grandes acontecimientos. “El Ayuntamiento constituyó la Comisión de Seguridad para festejos multitudinarios, con implicación de Protección Civil, Cruz Roja, Guardia Civil y la propia empresa. Es un trabajo que a veces no se ve, pero es fundamental”.
+Viejo concluyó invitando a descubrir Brihuega más allá de la temporada de la lavanda: “Tenemos un gran patrimonio histórico-artístico y paisajes espectaculares en cualquier época del año. Estamos consiguiendo desestacionalizar el turismo y la plaza es un elemento clave para ello”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `GUIJUELO EN BENEFICIO DE ASDEM CON TALAVANTE AL FRENTE.`,
+    image: "/images/guij.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `La Asociación Salmantina de Esclerosis Múltiple (ASDEM) ha presentado el cartel del festival solidario que tendrá lugar en la plaza de toros de Guijuelo, Salamanca. Se ha podido saber que la iniciativa ha venido de la mano de Alejandro Talavante.
 
-La Gran Final se celebrará el 8 de febrero, a partir de las 16:30 horas, con un tentadero
-de machos de las ganaderías **Vega de Algodor**, **Valdeflores**, **El Gustal de**
-**Campocerrado**, **Hermanos Sánchez Herrero** y **Toros de Orive**, en una jornada que
-pondrá el broche final a esta 70ª edición de un certamen profundamente arraigado en la
-historia taurina mirobrigense.
+El festival matinal tendrá lugar el día 22 de marzo a las 12:00h, contando con la actuación del espada extremeño **Alejandro Talavante**, **David de Miranda**, la gran revelación de la temporada 2025, dos toreros salmantinos como son **Ismael Martín** y **Javier Blanco**, el novillero **Cristian González** y el aficionado práctico **Ramón Martín Galán**.
 
-El certamen permitirá que los cinco novilleros seleccionados tengan la oportunidad de
-torear durante el Carnaval del Toro 2026 ante el público mirobrigense, mientras que el
-ganador absoluto del bolsín disfrutará de la experiencia de actuar el Martes de Carnaval
-junto a varias figuras del toreo, un aliciente que refuerza la relevancia de este bolsín como
-plataforma de proyección para las jóvenes promesas del toreo.
+Se lidiarán reses de las ganaderías de Loreto Charro, Juan Manuel Criado, Domingo Hernández, Montalvo, Toros de Orive y Hermanos Martín Galán.
 
-Con esta nueva criba, el Bolsín Taurino Mirobrigense confirma, una edición más, su papel
-como escaparate de futuros profesionales, midiendo vocación, concepto y capacidad de
-quienes sueñan con dar el salto en la profesión.`,
+Las entradas saldrán a la venta online a partir del 1 de marzo a través de 	<a
+  www.bacantix.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.bacantix.com
+</a>, la venta presencial en las taquillas de la plaza a partir del 18 de marzo (de 12:00 a 14:00h) y el mismo día del festejo desde las 10:00h.
+
+Los precios del festival son: 70 euros en barrera, 40 euros en la fila 1 y 30 euros en el resto de las localidades. Aquellos que quieran colaborar aunque no puedan asistir al festejo podrán ayudar a través de bizum (al número **653 214 893**) o mediante transferencia bancaria (**ES04 0081 7830 9300 0166 1769**)`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín.`,
+    image: "/images/noti.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	excerpt: "El ofrecimiento del torero sevillano se produjo durante la gala de presentación de San Isidro y recibió una respuesta medida por parte del diestro peruano.",
+	fullContent: `La Gala de presentación de la Feria de San Isidro 2026 ha dejado uno de los momentos más comentados de la velada cuando Borja Jiménez lanzó un envite público a Andrés Roca Rey para torear juntos una corrida de la reconocida ganadería Victorino Martín. El ofrecimiento se produjo en directo, durante el acto retransmitido por Telemadrid, y tuvo respuesta por parte del diestro peruano.
+
+Fue el propio Borja Jiménez quien, tras la proyección de la imagen del cartel, tomó la palabra para dirigirse directamente a Roca Rey, al que señaló como eje del ciclo venteño. “Quiero decir algo ahora que he visto la imagen del cartel. Andrés Roca Rey como máximo protagonista de este cartel, lo quiero invitar, ya que es el protagonista de Madrid, a que toree la corrida de Victorino conmigo”, expresó el torero sevillano ante el público presente que sin dudarlo rompió en aplausos.
+
+La réplica por parte de Roca Rey no se hizo esperar mucho, aunque llegó en un tono medido y sin concretar fechas ni acuerdos. “Qué bonito el ofrecimiento de Borja, es bonito que los toreros se ofrezcan de esa manera. No me ha impactado. Veremos qué pasa, la temporada es muy larga y queda mucho hasta Otoño”, respondió el espada peruano, dejando el posible cruce abierto, pero sin confirmarlo.
+
+El intercambio de declaraciones, producido en un escenario oficial y con amplia repercusión mediática, ha dejado sobre la mesa un posible mano a mano de altos vuelos, con la ganadería de Victorino Martín como telón de fondo, y evidenció la existencia de una competencia directa entre dos nombres propios del escalafón actual.
+
+Por ahora, el envite queda en el aire, a la espera de que el calendario y las voluntades terminen de marcar el camino. Pero la semilla ya está plantada, y el debate, servido.`,
 	author: "Iris Rodríguez",
     authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Enrique Luján, propuesto como nuevo gestor de la plaza de toros de Algeciras`,
-    image: "/images/propu.jpg",
+    title: `PRESENTADOS LOS CARTELES OFICIALES DE LA FERIA DE SAN ISIDRO 2026.`,
+    image: "/images/cart.jpg",
     category: "Actualidad",
-    date: "5 de Febrero de 2026",
-	fullContent: `El empresario **Enrique Luján** ha sido propuesto como **nuevo adjudicatario de la gestión del coso de Las Palomas de Algeciras**, tras la resolución de la mesa de contratación del Ayuntamiento, una vez valoradas las distintas ofertas presentadas al concurso público.
-
-En el procedimiento también concurrían las propuestas de Carmelo García, anterior gestor de la plaza, y de Carlos Zúñiga.
-
-La empresa **Euro Tauro Luján** será la encargada de organizar la próxima **Feria Real de Algeciras**, para la que ha diseñado un ciclo integrado por tres corridas de toros, un festejo de rejones y una clase práctica para alumnos de escuelas taurinas. Fuera del abono ferial, la concesión contempla igualmente la celebración del espectáculo Gran Prix Algeciras, con el objetivo de ampliar la actividad del recinto más allá del calendario estrictamente taurino.
-
-Uno de los ejes del proyecto presentado por la adjudicataria es la apuesta por la formación y el **fomento de la tauromaquia base**. En este ámbito, **Euro Tauro Luján** se compromete a la celebración de **diez tentaderos anuales, tres clases prácticas y tres novilladas sin picadores en plazas colaboradoras**, con participación de alumnos de la **Escuela Taurina de Algeciras**.
-
-El programa se completa con la organización de jornadas magistrales impartidas por profesionales, **clinicos técnicos anuales** de toreo de salón, cursos de preparación física y mental del torero y el acceso a **un archivo audiovisual profesional** para el análisis de faenas y tentaderos. Asimismo, se prevé la creación de **una mesa de trabajo conjunta** entre la empresa y la escuela taurina algecireña para la planificación de actividades, la selección de **alumnos** y la evaluación anual del proyecto.
-
-La concesionaria asumirá igualmente la organización de las Jornadas de Tauromaquia Ciudad de Algeciras, además de impulsar distintas acciones externas orientadas al fomento de la cultura taurina y a la promoción de la Feria Real, con el propósito de reforzar el vínculo entre la plaza y la ciudad.
-
-**Euro Tauro Luján** cuenta con una amplia experiencia en la gestión de plazas de toros y es actualmente responsable de los cosos de **Villafranca de los Barros y Fuentes de León (Badajoz), Calahorra (La Rioja), Tudela y Cintruénigo (Navarra), Aracena (Huelva), Íscar, Laguna de Duero y Pedrajas de San Esteban (Valladolid) y Abarán (Murcia).**`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+    date: "6 de Febrero de 2026",
+	fullContent: `Este jueves 5 de febrero se ha celebrado la gala de presentación de los carteles de la feria más
+importante del ciclo taurino en todo el mundo. La feria tendrá lugar entre el 8 de mayo y el 7 de
+junio y estará compuesta por 21 corridas de toros, 3 novilladas y 2 festejos de rejones.
+Podremos disfrutar tres tardes de Alejandro Talavante, Pablo Aguado, Fernando Adrián y Víctor
+Hernández. Seguidos por Roca Rey, Sebastián Castella, Borja Jiménez, Emilio de Justo, Juan
+Ortega, Daniel Luque, David de Miranda, Antonio Ferrera, Paco Ureña, Morenito de Aranda,
+Miguel Ángel Perera, Diego Urdiales, Román y Fortes que todos ellos torearan dos tardes. Cabe
+destacar a Diego Ventura como máxima figura del rejoneo y que estará presente en ambas citas
+del abono.
+En esta feria contamos con tres acontecimientos importantes, siendo estos la Corrida de la Prensa
+del 28 de mayo con Diego Urdiales, Roca Rey y Bruno Aloi, quien confirmará su alternativa, la
+Corrida in Memoriam el 7 de junio, dónde Borja Jiménez se encerrará con seis toros de Domingo
+Hernández y Victoriano del Río, y por último la Corrida de la Beneficencia, el 14 de junio con
+Talavante, Roca Rey y Víctor Hernández.
+Retomando la confirmación de Bruno Aloi, Manuel Diosleguarde y Tristán Barroso también
+llevarán a cabo la suya, por lo que podremos disfrutar y conocer a nuevos toreros con ganas de
+mostrar todo lo que llevan dentro y justificar de esa forma su puesto en la feria más importante
+del mundo.
+Por otro lado, centrándonos en las ganaderías, se puede decir que Victoriano del Río, Juan Pedro
+Domecq y La Quinta van a ser la base de la Feria de San Isidro. Contaremos con la presencia de
+ganaderías como Garcigrande, José Escolar, Victorino Martín, Domingo Hernández o Jandilla,
+entre otras muchas. Hablando de los festejos de rejones, este año volvemos con la presencia de la
+ganadería salmantina Herederos de Ángel Sánchez y Sánchez tras 24 años sin pisar Las Ventas.
+Finalmente, los carteles oficiales quedan conformados de la siguiente manera:
+Viernes 8 de mayo. Ganadería Núñez del Cuvillo:
+- Alejandro Talavante.
+- Juan Ortega.
+- Tristán Barroso (confirmación).
+Sábado 9 de mayo. Ganadería La Quinta:
+- Miguel Ángel Perera.
+- Daniel Luque.
+- Tomás Rufo.
+Domingo 10 de mayo. Ganadería Conde de Mayalde:
+- David Galván.
+- Román.
+- Gonzalo Caballero.
+Martes 12 de mayo. Ganadería Montealto (novillada):
+- Tomás Bastos.
+- Martín Morilla.
+- Álvaro Serrano.
+Miércoles 13 de mayo. Ganadería Partido de Resina:
+- Antonio Ferrera.
+- Calita.
+- Jesús Enrique Colombo.
+Jueves 14 de mayo. Ganadería El Parralejo:
+- Sebastián Castella.
+- Daniel Luque.
+- David de Miranda.
+Viernes 15 de mayo. Ganadería El Torero:
+- Diego Urdiales.
+- Fortes.
+- Fernando Adrián.
+Sábado 16 de mayo. Ganadería La Quinta:
+- El Cid.
+- Álvaro Lorenzo.
+- Manuel Diosleguarde (confirmación).
+Domingo 17 de mayo. Ganadería Fuente Ymbro:
+- Miguel Ángel Perera.
+- Paco Ureña.
+- Fernando Adrán.
+Martes 19 de mayo. Ganadería Fuente Ymbro (novillada):
+- Pedro Luis.
+- Mario Vilau.
+- Julio Norte.
+Miércoles 20 de mayo. Ganadería Saltillo:
+- Juan Leal.
+- Juan de Castilla.
+- José Carlos Venegas.
+Jueves 21 de mayo. Ganadería Puerto de San Lorenzo:
+- José María Manzanares.
+- Juan Ortega.
+- Pablo Aguado.
+Viernes 22 de mayo. Ganadería Victoriano del Río:
+- Sebastián Castella.
+- Emilio de Justo.
+- Tomás Rufo.
+Sábado 23 de mayo. Ganadería Herederos Ángel Sánchez y Sánchez:
+- Andy Cartagena.
+- Diego Ventura.
+- Guillermo Hermoso de Mendoza.
+Domingo 24 de mayo. Ganadería Alcurrucén:
+- Fortes.
+- David de Miranda.
+- Víctor Hernández.
+Martes 26 de mayo. Ganadería Conde de Mayalde (novillada):
+- Emiliano Osornio.
+- Pedro Montaldo.
+- Julio Méndez.
+Miércoles 27 de mayo. Ganadería Pedraza de Yeltes:
+- Isaac Fonseca.
+- José Fernando Molina.
+- Jarocho
+Jueves 28 de mayo (Corrida de la Prensa). Ganadería Juan Pedro Domecq:
+- Diego Urdiales.
+- Roca Rey.
+- Bruno Aloi (confirmación).
+Viernes 29 de mayo. Ganadería Garcigrande:
+- Morenito de Aranda.
+- Alejandro Talavante.
+- Pablo Aguado.
+Sábado 30 de mayo. Ganadería Guiomar Cortés de Moura:
+- Rui Fernandes.
+- Diego Ventura.
+- Lea Vicens.
+Domingo 31 de mayo. Ganadería Adolfo Martín:
+- Antonio Ferrera.
+- Manuel Escribano.
+- Paco Ureña.
+Martes 2 de junio. Ganadería José Escolar:
+- Gómez del Pilar.
+- Pepe Moral.
+- Damián Castaño.
+Miércoles 3 de junio. Ganadería Lagunajanda:
+- José Garrido.
+- Ismael Martín.
+- Samuel Navalón.
+Jueves 4 de junio. Ganadería Jandilla.
+- Emilio de Justo.
+- Borja Jiménez.
+- Víctor Hernández.
+Viernes 5 de junio. Ganadería Juan Pedro Domecq:
+- Uceda Leal.
+- Pablo Aguado.
+- Clemente.
+Sábado 6 de junio. Ganadería Victorino Martín:
+- Morenito de Aranda.
+- Román.
+- Fernando Adrián.
+Domingo 7 de junio (Corrida in Memoriam). Ganadería Domingo Hernández y Victoriano del
+Río:
+- Borja Jiménez en solitario.
+Domingo 14 de junio. Ganadería Victoriano del Río y Toros de Cortés:
+- Alejandro Talavante.
+- Roca Rey.
+- Víctor Hernández.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `UNA SEMANA PARA EL CARNAVAL DEL TORO, 7 DÍAS PARA EL CAMPANAZO.`,
+    image: "/images/carnav.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `Queda tan solo una semana para uno de los momentos más esperados de la temporada
+taurina: el Carnaval del Toro de Ciudad Rodrigo, Salamanca. Del 13 al 17 de febrero se
+volverán a vivir cinco días llenos de disfraces, música, diversión y, lo más importante,
+toros.
+Hace casi tres siglos que se celebran de manera continuada en las fechas de carnaval estos
+encierros populares, de forma que Ciudad Rodrigo se ha convertido en una gran referencia
+taurina, atrayendo aficionados de países como Portugal o Francia.Su prestigio se debe a
+una tradición viva que cuenta con encierros a caballos, toros de gran presencia y una
+participación directa del pueblo.
+La Plaza Mayor pasa a convertirse en un coso muy particular, pues cada año se construye
+especialmente para el Carnaval. En esta actividad no solo participan operarios
+especializados, sino gente del pueblo que, gracias a la tradición, sabe hacerlo.
+Este Carnaval del Toro 2026 dará comienzo el día 13 de febrero a las 18:15h con su
+tradicional campanazo, y en este año Alejandro Talavante no solo participará como torero,
+sino que ha sido designado Pregonero Mayor del Carnaval.
+Los carteles que componen este carnaval son los siguientes:
+Sábado 14 – Festival taurino con picadores, 4 utreros de la ganadería de Talavante para:
+- Diego Urdiales.
+- Alejandro Talavante.
+- Pablo Aguado.
+- El Mene
+o Tras el festival, tendrá lugar una clase práctica de la Escuela de
+Tauromaquia de Salamanca, dónde Moisés Fraile lidiará un eral.
+Domingo 15 – Novillada sin picadores, 4 erales de la ganadería Toros de Orive para el
+segundo, tercer, cuarto y quinto clasificados del Bolsín Taurino Mirobrigense y un novillo
+de El Canario para el rejoneador Víctor Herrero (aportado por los constructores de los
+tablaos).
+Lunes 16 – Novillada con picadores, 4 reses de la ganadería Hermanos Sánchez Herrero
+para:
+- Tomás Bastos.
+- Julio Méndez.
+- Félix San Román.
+- Diego Mateos, quien debuta con picadores.
+Martes 17 – Festival taurino con picadores, 3 utreros de la ganadería de Juan Manuel
+Criado y 1 eral de Toros de Orive para:
+- Miguel Ángel Perera.
+- Borja Jiménez.
+- Manuel Diosleguarde.
+- Triunfador del Bolsín Taurino Mirobrigense; 70ª edición.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 288,
+    title: `Navalmoral de la Mata apuesta por un cartel de figuras y futuro`,
+    image: "/images/mata.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `La plaza de toros de **Navalmoral de la Mata** vuelve a convertirse en epicentro
+de la **Tauromaquia** a principios de temporada con otro cartelazo lleno de
+alicientes el próximo 29 de marzo. Frente a una corrida
+de **Alcurrucén**, trenzarán el paseíllo **Alejandro Talavante, Roca Rey y Marco**
+**Pérez.**
+
+Combinación importante para un acontecimiento en una de las plazas más
+modernas de **Extremadura.** Por tercer año consecutivo, el coso reúne tres
+diestros de prestigio y una ganadería de garantías.
+
+La corrida está organizada por el empresario Marcos lozano romero, con la
+colaboración del ayuntamiento.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 289,
+    title: `Luis Viejo: “La Corrida de Primavera y La Muralla son un motor turístico y cultural fundamental para Brihuega”`,
+    image: "/images/viejo.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	excerpt: "El alcalde de Brihuega, Luis Viejo, ha vuelto a subrayar la importancia estratégica de la tauromaquia dentro del proyecto de desarrollo cultural y turístico del municipio.",
+	fullContent: `Con motivo de la tradicional Corrida de Primavera, el primer edil destacó que el festejo “está a la altura del esfuerzo que está haciendo la institución no solo con esta corrida, sino con la tauromaquia y con la apuesta por el turismo en un municipio como Brihuega”.
+Viejo puso en valor el trabajo conjunto con la empresa gestora Funtausa y la decisión de adelantar la presentación del cartel, que este año contará con Manzanares, Juan Ortega y Roca Rey. “Es un cartel a la altura de lo que Brihuega necesita, de lo que el aficionado espera de la Plaza de Toros de La Muralla y de la propia afición taurina de nuestro municipio”, señaló.
+ 
+**Inversiones y legado del 60 aniversario**
+El regidor recordó el importante esfuerzo inversor realizado por el Ayuntamiento para conservar y potenciar el coso briocense. “En la legislatura pasada hicimos una inversión cercana a los 300.000 euros para mejorar la infraestructura de la plaza”, explicó. Enmarcando estas actuaciones dentro de la conmemoración del 60 aniversario de la Plaza de Toros La Muralla.
+Entre las iniciativas más destacadas de esa efeméride figura la creación del Museo Taurino de Brihuega, que de momento se ubica en el convento de San José y que contará con un espacio definitivo bajo la presidencia del coso a partir de 2026. También resaltó la edición de un libro conmemorativo y diversos actos dirigidos a los vecinos, como el homenaje a los nacidos en 1965.
+ 
+**Tauromaquia como patrimonio y desestacionalización**
+Para Viejo, la tradición taurina forma parte esencial de la identidad local: “Es una parte de nuestro gran patrimonio inmaterial. Hemos trabajado en los últimos años por reconocer y poner en valor precisamente esta tradición”. En esa línea, recordó que desde 2025 la plaza es visitable durante todo el año, contribuyendo a diversificar la oferta cultural.
+El alcalde incidió además en la relevancia económica del festejo de primavera: “Es un evento social y económico para el municipio; durante todo un fin de semana Brihuega se llena y se benefician la restauración, la hostelería, las casas rurales y el comercio”.
+ 
+**Seguridad y uso polivalente del coso**
+Otro de los aspectos destacados fue el dispositivo de seguridad que rodea a los grandes acontecimientos. “El Ayuntamiento constituyó la Comisión de Seguridad para festejos multitudinarios, con implicación de Protección Civil, Cruz Roja, Guardia Civil y la propia empresa. Es un trabajo que a veces no se ve, pero es fundamental”.
+Viejo concluyó invitando a descubrir Brihuega más allá de la temporada de la lavanda: “Tenemos un gran patrimonio histórico-artístico y paisajes espectaculares en cualquier época del año. Estamos consiguiendo desestacionalizar el turismo y la plaza es un elemento clave para ello”.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 290,
+    title: `GUIJUELO EN BENEFICIO DE ASDEM CON TALAVANTE AL FRENTE.`,
+    image: "/images/guij.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `La Asociación Salmantina de Esclerosis Múltiple (ASDEM) ha presentado el cartel del festival solidario que tendrá lugar en la plaza de toros de Guijuelo, Salamanca. Se ha podido saber que la iniciativa ha venido de la mano de Alejandro Talavante.
+
+El festival matinal tendrá lugar el día 22 de marzo a las 12:00h, contando con la actuación del espada extremeño **Alejandro Talavante**, **David de Miranda**, la gran revelación de la temporada 2025, dos toreros salmantinos como son **Ismael Martín** y **Javier Blanco**, el novillero **Cristian González** y el aficionado práctico **Ramón Martín Galán**.
+
+Se lidiarán reses de las ganaderías de Loreto Charro, Juan Manuel Criado, Domingo Hernández, Montalvo, Toros de Orive y Hermanos Martín Galán.
+
+Las entradas saldrán a la venta online a partir del 1 de marzo a través de 	<a
+  www.bacantix.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.bacantix.com
+</a>, la venta presencial en las taquillas de la plaza a partir del 18 de marzo (de 12:00 a 14:00h) y el mismo día del festejo desde las 10:00h.
+
+Los precios del festival son: 70 euros en barrera, 40 euros en la fila 1 y 30 euros en el resto de las localidades. Aquellos que quieran colaborar aunque no puedan asistir al festejo podrán ayudar a través de bizum (al número **653 214 893**) o mediante transferencia bancaria (**ES04 0081 7830 9300 0166 1769**)`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 291,
+    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín.`,
+    image: "/images/noti.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	excerpt: "El ofrecimiento del torero sevillano se produjo durante la gala de presentación de San Isidro y recibió una respuesta medida por parte del diestro peruano.",
+	fullContent: `La Gala de presentación de la Feria de San Isidro 2026 ha dejado uno de los momentos más comentados de la velada cuando Borja Jiménez lanzó un envite público a Andrés Roca Rey para torear juntos una corrida de la reconocida ganadería Victorino Martín. El ofrecimiento se produjo en directo, durante el acto retransmitido por Telemadrid, y tuvo respuesta por parte del diestro peruano.
+
+Fue el propio Borja Jiménez quien, tras la proyección de la imagen del cartel, tomó la palabra para dirigirse directamente a Roca Rey, al que señaló como eje del ciclo venteño. “Quiero decir algo ahora que he visto la imagen del cartel. Andrés Roca Rey como máximo protagonista de este cartel, lo quiero invitar, ya que es el protagonista de Madrid, a que toree la corrida de Victorino conmigo”, expresó el torero sevillano ante el público presente que sin dudarlo rompió en aplausos.
+
+La réplica por parte de Roca Rey no se hizo esperar mucho, aunque llegó en un tono medido y sin concretar fechas ni acuerdos. “Qué bonito el ofrecimiento de Borja, es bonito que los toreros se ofrezcan de esa manera. No me ha impactado. Veremos qué pasa, la temporada es muy larga y queda mucho hasta Otoño”, respondió el espada peruano, dejando el posible cruce abierto, pero sin confirmarlo.
+
+El intercambio de declaraciones, producido en un escenario oficial y con amplia repercusión mediática, ha dejado sobre la mesa un posible mano a mano de altos vuelos, con la ganadería de Victorino Martín como telón de fondo, y evidenció la existencia de una competencia directa entre dos nombres propios del escalafón actual.
+
+Por ahora, el envite queda en el aire, a la espera de que el calendario y las voluntades terminen de marcar el camino. Pero la semilla ya está plantada, y el debate, servido.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 292,
+    title: `PRESENTADOS LOS CARTELES OFICIALES DE LA FERIA DE SAN ISIDRO 2026.`,
+    image: "/images/cart.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `Este jueves 5 de febrero se ha celebrado la gala de presentación de los carteles de la feria más
+importante del ciclo taurino en todo el mundo. La feria tendrá lugar entre el 8 de mayo y el 7 de
+junio y estará compuesta por 21 corridas de toros, 3 novilladas y 2 festejos de rejones.
+Podremos disfrutar tres tardes de Alejandro Talavante, Pablo Aguado, Fernando Adrián y Víctor
+Hernández. Seguidos por Roca Rey, Sebastián Castella, Borja Jiménez, Emilio de Justo, Juan
+Ortega, Daniel Luque, David de Miranda, Antonio Ferrera, Paco Ureña, Morenito de Aranda,
+Miguel Ángel Perera, Diego Urdiales, Román y Fortes que todos ellos torearan dos tardes. Cabe
+destacar a Diego Ventura como máxima figura del rejoneo y que estará presente en ambas citas
+del abono.
+En esta feria contamos con tres acontecimientos importantes, siendo estos la Corrida de la Prensa
+del 28 de mayo con Diego Urdiales, Roca Rey y Bruno Aloi, quien confirmará su alternativa, la
+Corrida in Memoriam el 7 de junio, dónde Borja Jiménez se encerrará con seis toros de Domingo
+Hernández y Victoriano del Río, y por último la Corrida de la Beneficencia, el 14 de junio con
+Talavante, Roca Rey y Víctor Hernández.
+Retomando la confirmación de Bruno Aloi, Manuel Diosleguarde y Tristán Barroso también
+llevarán a cabo la suya, por lo que podremos disfrutar y conocer a nuevos toreros con ganas de
+mostrar todo lo que llevan dentro y justificar de esa forma su puesto en la feria más importante
+del mundo.
+Por otro lado, centrándonos en las ganaderías, se puede decir que Victoriano del Río, Juan Pedro
+Domecq y La Quinta van a ser la base de la Feria de San Isidro. Contaremos con la presencia de
+ganaderías como Garcigrande, José Escolar, Victorino Martín, Domingo Hernández o Jandilla,
+entre otras muchas. Hablando de los festejos de rejones, este año volvemos con la presencia de la
+ganadería salmantina Herederos de Ángel Sánchez y Sánchez tras 24 años sin pisar Las Ventas.
+Finalmente, los carteles oficiales quedan conformados de la siguiente manera:
+Viernes 8 de mayo. Ganadería Núñez del Cuvillo:
+- Alejandro Talavante.
+- Juan Ortega.
+- Tristán Barroso (confirmación).
+Sábado 9 de mayo. Ganadería La Quinta:
+- Miguel Ángel Perera.
+- Daniel Luque.
+- Tomás Rufo.
+Domingo 10 de mayo. Ganadería Conde de Mayalde:
+- David Galván.
+- Román.
+- Gonzalo Caballero.
+Martes 12 de mayo. Ganadería Montealto (novillada):
+- Tomás Bastos.
+- Martín Morilla.
+- Álvaro Serrano.
+Miércoles 13 de mayo. Ganadería Partido de Resina:
+- Antonio Ferrera.
+- Calita.
+- Jesús Enrique Colombo.
+Jueves 14 de mayo. Ganadería El Parralejo:
+- Sebastián Castella.
+- Daniel Luque.
+- David de Miranda.
+Viernes 15 de mayo. Ganadería El Torero:
+- Diego Urdiales.
+- Fortes.
+- Fernando Adrián.
+Sábado 16 de mayo. Ganadería La Quinta:
+- El Cid.
+- Álvaro Lorenzo.
+- Manuel Diosleguarde (confirmación).
+Domingo 17 de mayo. Ganadería Fuente Ymbro:
+- Miguel Ángel Perera.
+- Paco Ureña.
+- Fernando Adrán.
+Martes 19 de mayo. Ganadería Fuente Ymbro (novillada):
+- Pedro Luis.
+- Mario Vilau.
+- Julio Norte.
+Miércoles 20 de mayo. Ganadería Saltillo:
+- Juan Leal.
+- Juan de Castilla.
+- José Carlos Venegas.
+Jueves 21 de mayo. Ganadería Puerto de San Lorenzo:
+- José María Manzanares.
+- Juan Ortega.
+- Pablo Aguado.
+Viernes 22 de mayo. Ganadería Victoriano del Río:
+- Sebastián Castella.
+- Emilio de Justo.
+- Tomás Rufo.
+Sábado 23 de mayo. Ganadería Herederos Ángel Sánchez y Sánchez:
+- Andy Cartagena.
+- Diego Ventura.
+- Guillermo Hermoso de Mendoza.
+Domingo 24 de mayo. Ganadería Alcurrucén:
+- Fortes.
+- David de Miranda.
+- Víctor Hernández.
+Martes 26 de mayo. Ganadería Conde de Mayalde (novillada):
+- Emiliano Osornio.
+- Pedro Montaldo.
+- Julio Méndez.
+Miércoles 27 de mayo. Ganadería Pedraza de Yeltes:
+- Isaac Fonseca.
+- José Fernando Molina.
+- Jarocho
+Jueves 28 de mayo (Corrida de la Prensa). Ganadería Juan Pedro Domecq:
+- Diego Urdiales.
+- Roca Rey.
+- Bruno Aloi (confirmación).
+Viernes 29 de mayo. Ganadería Garcigrande:
+- Morenito de Aranda.
+- Alejandro Talavante.
+- Pablo Aguado.
+Sábado 30 de mayo. Ganadería Guiomar Cortés de Moura:
+- Rui Fernandes.
+- Diego Ventura.
+- Lea Vicens.
+Domingo 31 de mayo. Ganadería Adolfo Martín:
+- Antonio Ferrera.
+- Manuel Escribano.
+- Paco Ureña.
+Martes 2 de junio. Ganadería José Escolar:
+- Gómez del Pilar.
+- Pepe Moral.
+- Damián Castaño.
+Miércoles 3 de junio. Ganadería Lagunajanda:
+- José Garrido.
+- Ismael Martín.
+- Samuel Navalón.
+Jueves 4 de junio. Ganadería Jandilla.
+- Emilio de Justo.
+- Borja Jiménez.
+- Víctor Hernández.
+Viernes 5 de junio. Ganadería Juan Pedro Domecq:
+- Uceda Leal.
+- Pablo Aguado.
+- Clemente.
+Sábado 6 de junio. Ganadería Victorino Martín:
+- Morenito de Aranda.
+- Román.
+- Fernando Adrián.
+Domingo 7 de junio (Corrida in Memoriam). Ganadería Domingo Hernández y Victoriano del
+Río:
+- Borja Jiménez en solitario.
+Domingo 14 de junio. Ganadería Victoriano del Río y Toros de Cortés:
+- Alejandro Talavante.
+- Roca Rey.
+- Víctor Hernández.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 293,
+    title: `UNA SEMANA PARA EL CARNAVAL DEL TORO, 7 DÍAS PARA EL CAMPANAZO.`,
+    image: "/images/carnav.jpg",
+    category: "Actualidad",
+    date: "6 de Febrero de 2026",
+	fullContent: `Queda tan solo una semana para uno de los momentos más esperados de la temporada
+taurina: el Carnaval del Toro de Ciudad Rodrigo, Salamanca. Del 13 al 17 de febrero se
+volverán a vivir cinco días llenos de disfraces, música, diversión y, lo más importante,
+toros.
+Hace casi tres siglos que se celebran de manera continuada en las fechas de carnaval estos
+encierros populares, de forma que Ciudad Rodrigo se ha convertido en una gran referencia
+taurina, atrayendo aficionados de países como Portugal o Francia.Su prestigio se debe a
+una tradición viva que cuenta con encierros a caballos, toros de gran presencia y una
+participación directa del pueblo.
+La Plaza Mayor pasa a convertirse en un coso muy particular, pues cada año se construye
+especialmente para el Carnaval. En esta actividad no solo participan operarios
+especializados, sino gente del pueblo que, gracias a la tradición, sabe hacerlo.
+Este Carnaval del Toro 2026 dará comienzo el día 13 de febrero a las 18:15h con su
+tradicional campanazo, y en este año Alejandro Talavante no solo participará como torero,
+sino que ha sido designado Pregonero Mayor del Carnaval.
+Los carteles que componen este carnaval son los siguientes:
+Sábado 14 – Festival taurino con picadores, 4 utreros de la ganadería de Talavante para:
+- Diego Urdiales.
+- Alejandro Talavante.
+- Pablo Aguado.
+- El Mene
+o Tras el festival, tendrá lugar una clase práctica de la Escuela de
+Tauromaquia de Salamanca, dónde Moisés Fraile lidiará un eral.
+Domingo 15 – Novillada sin picadores, 4 erales de la ganadería Toros de Orive para el
+segundo, tercer, cuarto y quinto clasificados del Bolsín Taurino Mirobrigense y un novillo
+de El Canario para el rejoneador Víctor Herrero (aportado por los constructores de los
+tablaos).
+Lunes 16 – Novillada con picadores, 4 reses de la ganadería Hermanos Sánchez Herrero
+para:
+- Tomás Bastos.
+- Julio Méndez.
+- Félix San Román.
+- Diego Mateos, quien debuta con picadores.
+Martes 17 – Festival taurino con picadores, 3 utreros de la ganadería de Juan Manuel
+Criado y 1 eral de Toros de Orive para:
+- Miguel Ángel Perera.
+- Borja Jiménez.
+- Manuel Diosleguarde.
+- Triunfador del Bolsín Taurino Mirobrigense; 70ª edición.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 294,
     title: `Definidos los clasificados para el 7º tentadero del Bolsín Taurino Mirobrigense`,
