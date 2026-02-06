@@ -505,7 +505,7 @@ Viejo concluyó invitando a descubrir Brihuega más allá de la temporada de la 
    },
 	{ 
     id: 1005,
-    title: `GUIJUELO EN BENEFICIO DE ASDEM CON TALAVANTE AL FRENTE.`,
+    title: `Guijuelo en beneficio de asdem con talavante al frente`,
     image: "/images/guij.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -531,7 +531,7 @@ Los precios del festival son: 70 euros en barrera, 40 euros en la fila 1 y 30 eu
    },
 	{ 
     id: 1006,
-    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín.`,
+    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín`,
     image: "/images/noti.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -551,7 +551,7 @@ Por ahora, el envite queda en el aire, a la espera de que el calendario y las vo
    },
 	{ 
     id: 1007,
-    title: `PRESENTADOS LOS CARTELES OFICIALES DE LA FERIA DE SAN ISIDRO 2026.`,
+    title: `Presentados los carteles oficiales de la feria de san isidro 2026`,
     image: "/images/cart.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -696,7 +696,7 @@ Domingo 14 de junio. Ganadería Victoriano del Río y Toros de Cortés:
    },
 	{ 
     id: 1008,
-    title: `UNA SEMANA PARA EL CARNAVAL DEL TORO, 7 DÍAS PARA EL CAMPANAZO.`,
+    title: `Una semana para el carnaval del toro, 7 días para el campanazo`,
     image: "/images/carnav.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -798,7 +798,7 @@ Viejo concluyó invitando a descubrir Brihuega más allá de la temporada de la 
    },
 	{ 
     id: 290,
-    title: `GUIJUELO EN BENEFICIO DE ASDEM CON TALAVANTE AL FRENTE.`,
+    title: `Guijuelo en beneficio de asdem con talavante al frente`,
     image: "/images/guij.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -824,7 +824,7 @@ Los precios del festival son: 70 euros en barrera, 40 euros en la fila 1 y 30 eu
    },
 	{ 
     id: 291,
-    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín.`,
+    title: `Bora Jiménez lanza un envite público a Roca Rey con una corrida de Victorino Martín`,
     image: "/images/noti.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -844,7 +844,7 @@ Por ahora, el envite queda en el aire, a la espera de que el calendario y las vo
    },
 	{ 
     id: 292,
-    title: `PRESENTADOS LOS CARTELES OFICIALES DE LA FERIA DE SAN ISIDRO 2026.`,
+    title: `Presentados los carteles oficiales de la feria de san isidro 2026`,
     image: "/images/cart.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
@@ -989,7 +989,7 @@ Domingo 14 de junio. Ganadería Victoriano del Río y Toros de Cortés:
    },
 	{ 
     id: 293,
-    title: `UNA SEMANA PARA EL CARNAVAL DEL TORO, 7 DÍAS PARA EL CAMPANAZO.`,
+    title: `Una semana para el carnaval del toro, 7 días para el campanazo`,
     image: "/images/carnav.jpg",
     category: "Actualidad",
     date: "6 de Febrero de 2026",
