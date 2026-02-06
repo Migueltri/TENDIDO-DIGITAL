@@ -437,7 +437,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
           <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
             <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
               <i className="ri-file-text-line mr-2 text-red-600"></i>
-              Resumen de la corrida
+              Resumen del festejo
             </h4>
             <div className="text-gray-700 text-sm leading-relaxed">
  			 { renderArticleContent(news.fullContent || news.excerpt) }
@@ -456,6 +456,50 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+	{ 
+    id: 1002,
+    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    image: "/images/croned.jpg",
+    category: "Crónicas",
+    date: "6 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Jiménez Pasquau",
+    torerosRaw: `Alvaro Serrano,oreja;
+Mario Vilau, oreja;
+Julio Mendez, oreja;
+Sergio Rollon (Que reaparecia tras su grave percance) , vuelta al ruedo;
+Felix San Roman, silencio tras aviso;
+Samuel Castrejon (Que debutaba con picadores), dos orejas;`,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Viernes 6 de Febrero de 2026. Fiestas de San Blas, Novillada con Caballos, tres cuartos de entrada, en tarde fría y con lluvia.
+
+Utreros de la ganadería de Jimenez Pasquau; El sexto novillo fue premiado con la vuelta al ruedo.
+
+Incidencias: saludó una ovación Sergio Rollón tras el paseíllo con motivo de su reaparición tras su grave percance en Valdetorres del Jarama.
+Jesús Robledo 'Tito' se desmonteró tras parear al cuarto.
+
+**Alvaro Serrano**, oreja;
+**Mario Vilau**, oreja;
+**Julio Mendez**, oreja;
+**Sergio Rollón** (Que reaparecia tras su grave percance) , vuelta al ruedo;
+**Felix San Roman**, silencio tras aviso;
+**Samuel Castrejon** (Que debutaba con picadores), dos orejas;
+
+
+En el primer novillo, **Álvaro Serrano** mostró una actitud muy entregada y buscó siempre la conexión con el público, logrando una faena que fue de menos a más y que, junto a una estocada efectiva, le permitió cortar una oreja.
+
+**Mario Vilau** destacó en el segundo novillo por su firmeza y capacidad de mando ante una embestida exigente, dejando los mejores momentos al natural. Pese a una actuación de gran nivel, la oreja obtenida tras la estocada se consideró un premio escaso.
+
+**Julio Méndez** firmó una faena de menos a más ante un novillo falto de poder, pero de buena intención, al que supo aprovechar con oficio y temple junto a las tablas, rematando con un buen final por ayudados y trincherillas antes de la estocada, lo que le valió una oreja.
+
+**Sergio Rollón** reapareció tras su grave cornada de julio, lidiando un novillo áspero y deslucido. Faena de mérito, marcada por la firmeza y el esfuerzo, mejor valorada por un público con memoria que por el lucimiento. Media estocada y vuelta al ruedo con ligera petición.
+
+**Félix San Román** se enfrentó a un novillo falto de poder que condicionó su labor. La faena, larga y poco conectada, se desarrolló en un ambiente frío, roto solo por una aparatosa cogida que alarmó al público. Pinchazo hondo y silencio tras aviso.
+
+**Samuel Castrejón**, debutando con picadores, firmó la actuación de la tarde. Dos verónicas iniciales marcaron una faena de enorme calado, basada en el temple, el abandono y el toreo ralentizado al máximo. El público respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1003,
     title: `Navalmoral de la Mata apuesta por un cartel de figuras y futuro`,
@@ -746,6 +790,50 @@ Criado y 1 eral de Toros de Orive para:
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 287,
+    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    image: "/images/croned.jpg",
+    category: "Crónicas",
+    date: "6 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Jiménez Pasquau",
+    torerosRaw: `Alvaro Serrano,oreja;
+Mario Vilau, oreja;
+Julio Mendez, oreja;
+Sergio Rollon (Que reaparecia tras su grave percance) , vuelta al ruedo;
+Felix San Roman, silencio tras aviso;
+Samuel Castrejon (Que debutaba con picadores), dos orejas;`,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Viernes 6 de Febrero de 2026. Fiestas de San Blas, Novillada con Caballos, tres cuartos de entrada, en tarde fría y con lluvia.
+
+Utreros de la ganadería de Jimenez Pasquau; El sexto novillo fue premiado con la vuelta al ruedo.
+
+Incidencias: saludó una ovación Sergio Rollón tras el paseíllo con motivo de su reaparición tras su grave percance en Valdetorres del Jarama.
+Jesús Robledo 'Tito' se desmonteró tras parear al cuarto.
+
+**Alvaro Serrano**, oreja;
+**Mario Vilau**, oreja;
+**Julio Mendez**, oreja;
+**Sergio Rollón** (Que reaparecia tras su grave percance) , vuelta al ruedo;
+**Felix San Roman**, silencio tras aviso;
+**Samuel Castrejon** (Que debutaba con picadores), dos orejas;
+
+
+En el primer novillo, **Álvaro Serrano** mostró una actitud muy entregada y buscó siempre la conexión con el público, logrando una faena que fue de menos a más y que, junto a una estocada efectiva, le permitió cortar una oreja.
+
+**Mario Vilau** destacó en el segundo novillo por su firmeza y capacidad de mando ante una embestida exigente, dejando los mejores momentos al natural. Pese a una actuación de gran nivel, la oreja obtenida tras la estocada se consideró un premio escaso.
+
+**Julio Méndez** firmó una faena de menos a más ante un novillo falto de poder, pero de buena intención, al que supo aprovechar con oficio y temple junto a las tablas, rematando con un buen final por ayudados y trincherillas antes de la estocada, lo que le valió una oreja.
+
+**Sergio Rollón** reapareció tras su grave cornada de julio, lidiando un novillo áspero y deslucido. Faena de mérito, marcada por la firmeza y el esfuerzo, mejor valorada por un público con memoria que por el lucimiento. Media estocada y vuelta al ruedo con ligera petición.
+
+**Félix San Román** se enfrentó a un novillo falto de poder que condicionó su labor. La faena, larga y poco conectada, se desarrolló en un ambiente frío, roto solo por una aparatosa cogida que alarmó al público. Pinchazo hondo y silencio tras aviso.
+
+**Samuel Castrejón**, debutando con picadores, firmó la actuación de la tarde. Dos verónicas iniciales marcaron una faena de enorme calado, basada en el temple, el abandono y el toreo ralentizado al máximo. El público respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 288,
     title: `Navalmoral de la Mata apuesta por un cartel de figuras y futuro`,
@@ -9653,6 +9741,50 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
 	{ 
+    id: 4998,
+    title: `Titular: Samuel Castrejón firma una tarde de alto nivel en su debut con picadores`,
+    image: "/images/croned.jpg",
+    category: "Crónicas",
+    date: "6 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Jiménez Pasquau",
+    torerosRaw: `Alvaro Serrano,oreja;
+Mario Vilau, oreja;
+Julio Mendez, oreja;
+Sergio Rollon (Que reaparecia tras su grave percance) , vuelta al ruedo;
+Felix San Roman, silencio tras aviso;
+Samuel Castrejon (Que debutaba con picadores), dos orejas;`,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Viernes 6 de Febrero de 2026. Fiestas de San Blas, Novillada con Caballos, tres cuartos de entrada, en tarde fría y con lluvia.
+
+Utreros de la ganadería de Jimenez Pasquau; El sexto novillo fue premiado con la vuelta al ruedo.
+
+Incidencias: saludó una ovación Sergio Rollón tras el paseíllo con motivo de su reaparición tras su grave percance en Valdetorres del Jarama.
+Jesús Robledo 'Tito' se desmonteró tras parear al cuarto.
+
+**Alvaro Serrano**, oreja;
+**Mario Vilau**, oreja;
+**Julio Mendez**, oreja;
+**Sergio Rollón** (Que reaparecia tras su grave percance) , vuelta al ruedo;
+**Felix San Roman**, silencio tras aviso;
+**Samuel Castrejon** (Que debutaba con picadores), dos orejas;
+
+
+En el primer novillo, **Álvaro Serrano** mostró una actitud muy entregada y buscó siempre la conexión con el público, logrando una faena que fue de menos a más y que, junto a una estocada efectiva, le permitió cortar una oreja.
+
+**Mario Vilau** destacó en el segundo novillo por su firmeza y capacidad de mando ante una embestida exigente, dejando los mejores momentos al natural. Pese a una actuación de gran nivel, la oreja obtenida tras la estocada se consideró un premio escaso.
+
+**Julio Méndez** firmó una faena de menos a más ante un novillo falto de poder, pero de buena intención, al que supo aprovechar con oficio y temple junto a las tablas, rematando con un buen final por ayudados y trincherillas antes de la estocada, lo que le valió una oreja.
+
+**Sergio Rollón** reapareció tras su grave cornada de julio, lidiando un novillo áspero y deslucido. Faena de mérito, marcada por la firmeza y el esfuerzo, mejor valorada por un público con memoria que por el lucimiento. Media estocada y vuelta al ruedo con ligera petición.
+
+**Félix San Román** se enfrentó a un novillo falto de poder que condicionó su labor. La faena, larga y poco conectada, se desarrolló en un ambiente frío, roto solo por una aparatosa cogida que alarmó al público. Pinchazo hondo y silencio tras aviso.
+
+**Samuel Castrejón**, debutando con picadores, firmó la actuación de la tarde. Dos verónicas iniciales marcaron una faena de enorme calado, basada en el temple, el abandono y el toreo ralentizado al máximo. El público respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 4999,
     title: `Once orejas y dos rabos en la primera novillada de la Puebla del Rio`,
     image: "/images/aparicio.jpg",
@@ -10798,7 +10930,7 @@ if (activeTab === 'cronicas') {
 <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
   <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
     <i className="ri-file-text-line mr-2 text-red-600"></i>
-    Resumen de la corrida
+    Resumen del festejo
   </h4>
   <div className="text-gray-700 text-sm leading-relaxed">
     {renderArticleContent(
@@ -11753,7 +11885,7 @@ TENDIDO DIGITAL
 <div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
   <h3 className="font-bold text-gray-900 flex items-center mb-3">
     <i className="ri-file-text-line text-red-600 mr-2"></i>
-    Resumen de la corrida
+    Resumen del festejo
   </h3>
 
 {/* Resultados (ahora sí, después del resumen) */}
