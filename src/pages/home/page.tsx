@@ -463,7 +463,7 @@ const featuredNews: NewsItem[] = [
     category: "Crónicas",
     date: "7 de Febrero de 2026",
 	excerpt: "Borja Jiménez y Tomás Rufo se midieron en un mano a mano con reses de El Capea, Carmen Lorenzo, Fuente Ymbro y Hnos. García Jímenez.",
-	plaza: "Plaza Valdemorillo (Madrid)",
+	plaza: "Valdemorillo (Madrid)",
 	ganaderia: "Fuente Ymbro (4 y 5) , Hnos Garcia Jimenez (3 y 6) , El Capea (1) , Carmen Lorenzo (2)",
     torerosRaw: `Borja Jimenez,oreja, silencio y ovacion con saludos;
 Tomas Rufo, silencio,oreja y silencio;`,
@@ -493,7 +493,7 @@ const latestNews: NewsItem[] = [
     category: "Crónicas",
     date: "7 de Febrero de 2026",
 	excerpt: "Borja Jiménez y Tomás Rufo se midieron en un mano a mano con reses de El Capea, Carmen Lorenzo, Fuente Ymbro y Hnos. García Jímenez.",
-	plaza: "Plaza Valdemorillo (Madrid)",
+	plaza: "Valdemorillo (Madrid)",
 	ganaderia: "Fuente Ymbro (4 y 5) , Hnos Garcia Jimenez (3 y 6) , El Capea (1) , Carmen Lorenzo (2)",
     torerosRaw: `Borja Jimenez,oreja, silencio y ovacion con saludos;
 Tomas Rufo, silencio,oreja y silencio;`,
@@ -9470,7 +9470,7 @@ const chronicles: Chronicle[] = [
     category: "Crónicas",
     date: "7 de Febrero de 2026",
 	excerpt: "Borja Jiménez y Tomás Rufo se midieron en un mano a mano con reses de El Capea, Carmen Lorenzo, Fuente Ymbro y Hnos. García Jímenez.",
-	plaza: "Plaza Valdemorillo (Madrid)",
+	plaza: "Valdemorillo (Madrid)",
 	ganaderia: "Fuente Ymbro (4 y 5) , Hnos Garcia Jimenez (3 y 6) , El Capea (1) , Carmen Lorenzo (2)",
     torerosRaw: `Borja Jimenez,oreja, silencio y ovacion con saludos;
 Tomas Rufo, silencio,oreja y silencio;`,
