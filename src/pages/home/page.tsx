@@ -457,6 +457,36 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
+    image: "/images/croni.jpg",
+    category: "Crónicas",
+    date: "8 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Torrealta",
+    torerosRaw: `Uceda Leal , palmas y vuelta al ruedo;
+Juan Ortega , silencio y dos orejas;
+Pablo Aguado , silencio y silencio `,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Domingo 8 de Febrero de 2026. Fiestas de San Blas, Corrida de Toros, Lleno de ‘No hay billetes’, en tarde fría y con lluvia.
+
+Toros de la ganadería de Torrealta;
+
+Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de España. El banderillero Iván García se desmonteró tras parear al sexto.
+
+**Uceda Leal** , palmas y vuelta al ruedo;
+**Juan Ortega** , silencio y dos orejas;
+**Pablo Aguado** , silencio y silencio
+
+**Uceda Leal** destacó por su toreo clásico y de gran sabor frente a dos toros de Torrealta de escasa fuerza. En el primero, de gran calidad pero muy flojo, dejó una faena elegante aunque condicionada por el animal y falló con la espada. En el cuarto, con menos clase pero más fondo, logró lo mejor de la tarde, sobre todo al natural, firmando una faena técnica y meritoria que fue premiada con una vuelta al ruedo.
+
+**Juan Ortega** tuvo una actuación de menos a más. En su primero, un toro flojo y sin entrega, apenas pudo lucirse y fue silenciado. En el quinto, todo cambió: cuajó una gran faena por el pitón derecho a un buen toro de Torrealta, con series largas y muy ligadas, que levantaron al público. Tras una estocada, cortó dos orejas.
+
+**Pablo Aguado** brilló al capote, especialmente a la verónica, firmando lo más destacado del inicio del festejo. Sin embargo, sus dos toros, faltos de fuerza y de duración, le impidieron redondear la faena: en el primero dejó detalles de buen trazo pero falló con la espada, y en el sexto apenas tuvo opciones. Ambos turnos se saldaron con silencio.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Ginés Marín, fuera de San Isidro 2026: una decisión que reabre el debate sobre los criterios de la feria`,
     image: "/images/gin.jpg",
@@ -570,6 +600,36 @@ Los carteles son los siguientes:
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 281,
+    title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
+    image: "/images/croni.jpg",
+    category: "Crónicas",
+    date: "8 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Torrealta",
+    torerosRaw: `Uceda Leal , palmas y vuelta al ruedo;
+Juan Ortega , silencio y dos orejas;
+Pablo Aguado , silencio y silencio `,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Domingo 8 de Febrero de 2026. Fiestas de San Blas, Corrida de Toros, Lleno de ‘No hay billetes’, en tarde fría y con lluvia.
+
+Toros de la ganadería de Torrealta;
+
+Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de España. El banderillero Iván García se desmonteró tras parear al sexto.
+
+**Uceda Leal** , palmas y vuelta al ruedo;
+**Juan Ortega** , silencio y dos orejas;
+**Pablo Aguado** , silencio y silencio
+
+**Uceda Leal** destacó por su toreo clásico y de gran sabor frente a dos toros de Torrealta de escasa fuerza. En el primero, de gran calidad pero muy flojo, dejó una faena elegante aunque condicionada por el animal y falló con la espada. En el cuarto, con menos clase pero más fondo, logró lo mejor de la tarde, sobre todo al natural, firmando una faena técnica y meritoria que fue premiada con una vuelta al ruedo.
+
+**Juan Ortega** tuvo una actuación de menos a más. En su primero, un toro flojo y sin entrega, apenas pudo lucirse y fue silenciado. En el quinto, todo cambió: cuajó una gran faena por el pitón derecho a un buen toro de Torrealta, con series largas y muy ligadas, que levantaron al público. Tras una estocada, cortó dos orejas.
+
+**Pablo Aguado** brilló al capote, especialmente a la verónica, firmando lo más destacado del inicio del festejo. Sin embargo, sus dos toros, faltos de fuerza y de duración, le impidieron redondear la faena: en el primero dejó detalles de buen trazo pero falló con la espada, y en el sexto apenas tuvo opciones. Ambos turnos se saldaron con silencio.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 282,
     title: `Ginés Marín, fuera de San Isidro 2026: una decisión que reabre el debate sobre los criterios de la feria`,
@@ -9658,6 +9718,36 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
+	{ 
+    id: 4996,
+    title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
+    image: "/images/croni.jpg",
+    category: "Crónicas",
+    date: "8 de Febrero de 2026",
+	plaza: "Valdemorillo (Madrid)",
+	ganaderia: "Torrealta",
+    torerosRaw: `Uceda Leal , palmas y vuelta al ruedo;
+Juan Ortega , silencio y dos orejas;
+Pablo Aguado , silencio y silencio `,
+    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Domingo 8 de Febrero de 2026. Fiestas de San Blas, Corrida de Toros, Lleno de ‘No hay billetes’, en tarde fría y con lluvia.
+
+Toros de la ganadería de Torrealta;
+
+Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de España. El banderillero Iván García se desmonteró tras parear al sexto.
+
+**Uceda Leal** , palmas y vuelta al ruedo;
+**Juan Ortega** , silencio y dos orejas;
+**Pablo Aguado** , silencio y silencio
+
+**Uceda Leal** destacó por su toreo clásico y de gran sabor frente a dos toros de Torrealta de escasa fuerza. En el primero, de gran calidad pero muy flojo, dejó una faena elegante aunque condicionada por el animal y falló con la espada. En el cuarto, con menos clase pero más fondo, logró lo mejor de la tarde, sobre todo al natural, firmando una faena técnica y meritoria que fue premiada con una vuelta al ruedo.
+
+**Juan Ortega** tuvo una actuación de menos a más. En su primero, un toro flojo y sin entrega, apenas pudo lucirse y fue silenciado. En el quinto, todo cambió: cuajó una gran faena por el pitón derecho a un buen toro de Torrealta, con series largas y muy ligadas, que levantaron al público. Tras una estocada, cortó dos orejas.
+
+**Pablo Aguado** brilló al capote, especialmente a la verónica, firmando lo más destacado del inicio del festejo. Sin embargo, sus dos toros, faltos de fuerza y de duración, le impidieron redondear la faena: en el primero dejó detalles de buen trazo pero falló con la espada, y en el sexto apenas tuvo opciones. Ambos turnos se saldaron con silencio.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 4997,
     title: `Tarde deslucida por los aceros en Valdemorillo`,
