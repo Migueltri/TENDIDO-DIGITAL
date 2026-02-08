@@ -457,35 +457,230 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1002,
-    title: `Tarde deslucida por los aceros en Valdemorillo`,
-    image: "/images/cronic.jpg",
-    category: "Crónicas",
-    date: "7 de Febrero de 2026",
-	excerpt: "Borja Jiménez y Tomás Rufo se midieron en un mano a mano con reses de El Capea, Carmen Lorenzo, Fuente Ymbro y Hnos. García Jímenez.",
-	plaza: "Valdemorillo (Madrid)",
-	ganaderia: "Fuente Ymbro (4 y 5) , Hnos Garcia Jimenez (3 y 6) , El Capea (1) , Carmen Lorenzo (2)",
-    torerosRaw: `Borja Jimenez,oreja, silencio y ovacion con saludos;
-Tomas Rufo, silencio,oreja y silencio;`,
-    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Sábado 7 de Febrero de 2026. Fiestas de San Blas, Corrida de Toros, aforo casi completo, en tarde fría y con lluvia.
+    id: 1005,
+    title: `Ginés Marín, fuera de San Isidro 2026: una decisión que reabre el debate sobre los criterios de la feria`,
+    image: "/images/gin.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	fullContent: `La confección de los carteles de la **Feria de San Isidro** siempre genera debate. Es inevitable. Se trata del ciclo más determinante del calendario taurino y, por tanto, cada nombre anunciado –y cada nombre que queda fuera– adquiere una dimensión que trasciende lo estrictamente empresarial. En este contexto, la ausencia de **Ginés Marín en la Feria de San Isidro 2026** no puede pasar inadvertida.
 
-Toros de las ganaderías Fuente Ymbro (4 y 5) , Hnos Garcia Jimenez (3 y 6) , El Capea (1) , Carmen Lorenzo (2); primer y cuarto toro ovacionados en el arrastre; segundo y sexto pitados en el arrastre.
+No se trata de una reivindicación gratuita ni de un ejercicio de simpatía personal hacia un torero concreto. Se trata, sencillamente, de analizar con rigor el lugar que ocupa hoy Ginés Marín dentro del escalafón y de preguntarse si su trayectoria reciente encuentra un reflejo lógico en la principal feria del mundo.
 
-Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de España. **Iván García** se desmonteró tras parear al quinto.
+Gines Marín ha construido su carrera desde la seriedad, el compromiso con las plazas duras y una evolución artística que no ha sido fruto de la casualidad. Ha apostado reiteradamente por escenarios de máxima exigencia y ha asumido, sin atajos, el papel de torero que quiere abrirse camino desde el mérito y no desde la comodidad. En un tiempo en el que la regularidad es uno de los bienes más escasos del toreo, su nombre ha estado ligado precisamente a esa virtud: comparecer, competir y sostener un nivel reconocible.
 
-**Borja Jimenez**,oreja, silencio y ovacion con saludos;
-**Tomas Rufo**, silencio,oreja y silencio;
+Por eso, su ausencia en **San Isidro 2026** plantea una cuestión de fondo que va más allá de un caso concreto: ¿qué criterios terminan pesando realmente en la configuración de los carteles? Si la Feria de Madrid continúa siendo –como históricamente se ha defendido– el espacio donde se examina al torero sin concesiones, donde el pasado reciente tiene valor y donde la responsabilidad se premia, resulta difícil encontrar una explicación estrictamente taurina para dejar fuera a un matador que ha demostrado estar preparado para ese escenario.
 
-El diestro sevillano comenzó la tarde con un toro de El Capea de escasas fuerzas, aunque empleado en el tercio de varas, que no logró transmitir mucho ni en el capote ni en la muleta a pesar del esfuerzo del matador. Mató con una estocada entera que le sirvió para que el toro cayese redondo, siendo premiado con una oreja. El toro por su parte fue aplaudido en al arrastre ante un público vehemente. Ante el segundo de su lote, un buen toro de García Jiménez que destacó en comparación al otro de esta misma ganadería, Borja Jiménez firmó una faena de peso sobre todo en la muleta que podría haber sido premiada con otra oreja, pero que fue emborronada por los aceros. Destacables los aplausos a Tito Sandoval en el tercio de varas. Por último, Borja se enfrentó ante un quinto de poca presencia y estrecho de sienes de la ganadería Fuente Ymbro con el que pudo firmar la faena de la tarde, entregándose tanto que recibió un susto al ser prendido en el aire. Volvió a fallar con los aceros, lo que le arrebató el triunfo. A destacar los dos pares de banderillas de **Iván García** que le permitieron desmonterarse. Borja finalmente recibió una fuerte ovación dando la vuelta al ruedo. o respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.
+No se trata de negar la lógica empresarial ni de desconocer las complejas negociaciones que rodean a un ciclo de esta magnitud. Pero precisamente por la relevancia de **San Isidro**, la coherencia entre el momento profesional de los toreros y su presencia en los carteles es un elemento esencial para preservar la credibilidad del propio serial.
 
-**Tomás Rufo** por su parte firmó una faena caracterizada por la mansedumbre del astado de Carmen Lorenzo, en la que pudo dejar un natural para el recuerdo. La espada volvió a ser un obstáculo, pinchó hasta en cuatro ocasiones antes de escuchar un aviso, logrando finalmente el descabello al segundo intento. En el cuarto de la tarde, Tomás Rufo dejó una faena muy seria de menos a más a un animal de Fuente Ymbro. Esta vez acertó con la espada, pero el toro mostró su bravura a la hora de caer aguantándose la muerte encendiendo los aplausos del público. El matador fue premiado con una oreja y hubo fuerte petición de vuelta al ruedo para el toro, que el presidente no concedió. Por último, el sexto de la tarde fue un toro de García Jiménez con mucha presencia pero que se vino abajo en seguida. El diestro no logró conectar con el público durante la faena, la alargó demasiado y el toro no le ayudó en nada a la hora de entrar a matar lo que provocó que pinchara hasta en 3 ocasiones. El animal fue pitado en el arrastre.`,
-    author: "Nerea F.Elena",
-    authorLogo: "/images/nere.jpg",
+El aficionado de Madrid –y el aficionado en general– no reclama unanimidades ni repartos automáticos. Reclama, sobre todo, argumentos. Y cuando un torero con recorrido, con capacidad contrastada y con una línea profesional sólida queda fuera del principal escaparate, la sensación que se instala es la de una oportunidad perdida para la propia feria.
+
+Ginés Marín no necesita gestos paternalistas ni invitaciones simbólicas. Lo que su ausencia pone sobre la mesa es una reflexión más amplia: si San Isidro quiere seguir siendo el termómetro real del toreo contemporáneo, debe cuidar con especial atención que el mérito, la regularidad y la proyección artística encuentren un espacio visible en sus carteles.
+
+Porque cuando un ciclo de referencia prescinde de toreros que están en plena disposición de competir en él, el debate ya no gira en torno a un nombre concreto. Gira, inevitablemente, en torno al modelo de feria que se está construyendo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `“Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco” - Entrevista a Daniel Luque`,
+    image: "/images/entr.jpg",
+    category: "Entrevistas",
+    date: "8 de Febrero de 2026",
+	imageCaption: "Fotos de Melanie Huertas",
+	footerImage1: "/images/entr1.jpg",
+	footerImage2: "/images/entr2.jpg",
+	footerImage3: "/images/entr3.jpg",
+	fullContent: `**Daniel Luque** afronta uno de los momentos más sólidos y determinantes de su trayectoria profesional. El torero de Gerena, forjado a base de constancia, ambición y una inquebrantable entrega al oficio, atraviesa una etapa de plenitud que lo sitúa en un lugar de referencia dentro del escalafón. Tras varias temporadas marcadas por la regularidad, la firmeza en las plazas de mayor responsabilidad y una evolución artística cada vez más reconocible, Luque se consolida como un matador de concepto poderoso, personalidad arrolladora y una madurez que hoy despierta el respeto unánime de la afición.
+
+**Daniel, llevas muchos años en el toreo desde que tomaste la alternativa en Nimes en 2007 a muy corta edad. ¿Cómo describirías tu evolución personal y artística desde entonces hasta hoy?**
+
+Bueno, creo que la palabra que más pueda definir hoy en día mi cambio es la madurez. A veces, uno actúa sin pensar bien las cosas, y cuando llegan las consecuencias, hay que ser capaz de preguntarse a sí mismo, y darse cuenta que no se puede siempre culpar a los demás. He sido capaz de reconocer mis fallos y errores, y sobre todo aprender de ellos, que es fundamental. Lo personal y artístico son muy relacionados, cuando uno se siente bien y seguro, es capaz de tirar palante y sacar lo mejor que tiene. Todo no sale siempre como uno quiere, pero es importante no rendirse y seguir aprendiendo y evolucionando. Como persona y como torero.
+
+**Tu estilo combina poder, temple y hondura, y te ha permitido triunfar en plazas de máxima exigencia como Sevilla, Bilbao o Pamplona. ¿Qué aspectos del toreo consideras fundamentales para mantener ese nivel de constancia?**
+
+Creo que la disciplina es fundamental, como la perseverancia y la determinación. Todo esto conlleva muchos sacrificios, horas de dudas, de introspección, pero siempre hay que entrenar una y otra vez, sin perder de vista la meta.
+
+**En temporadas recientes has toreado más de 30 corridas y logrado numerosos trofeos en cosos de primer nivel. ¿Qué balance haces de tu trayectoria en los últimos años, sobre todo tras cerrar el pasado curso con 33 corridas y 57 orejas?**
+
+Pues me voy a referir a la anterior pregunta, creo que he sido constante, y he podido demostrar de verdad mi toreo y concepto. Pasaron muchas cosas, buenas como malas, pero cada una de estas me ha servido para evolucionar, y sobre todo ver y sentir que la afición está sensible a esto, y valora los esfuerzos. Eso es algo muy importante, darse cuenta que uno va por buen camino y que las cosas van saliendo... y la satisfacción de ver que todos los sacrificios y el trabajo tienen su recompensa.
+
+**Acabas de iniciar una nueva etapa profesional con el apoderado Antonio Barrera. ¿Cómo ha influido este cambio en tu preparación y en los objetivos que te marcas para 2026?**
+
+La verdad que en mi preparación, no hubo muchos cambios, en el aspecto que siempre me he impuesto una preparación muy intensa, pero claro, esta nueva etapa me ilusiona mucho y estoy muy contento hasta ahora de cómo están pasando las cosas. Quiero seguir disfrutando en las plazas, y seguir demostrando mi toreo tarde tras tarde. Creo que 2026 será una temporada muy importante en mi carrera. Lo podremos hablar dentro de unos meses a ver qué tal.
+
+**Has igualado hechos históricos en plazas como Azpeitia y te has convertido en uno de los toreros con más paseíllos en ese coso. ¿Qué significado tiene para ti ese tipo de hitos en tu carrera?**
+
+Es algo bonito no , Pensar que uno es parte de la historia de una plaza de toros, es una satisfacción importante. Tanto al nivel profesional que personal. Porque se crea un cariño especial con la ciudad, con su gente, y al fin y al cabo, esto se queda siempre en el corazón. También es una gran responsabilidad, porque cada año la gente te exige más y espera mucho de ti, y hay que estar a la altura.
+
+**En tu opinión, ¿qué papel juega la relación con la afición en tu forma de enfrentarte cada tarde a un toro, especialmente en plazas donde ya has dejado una huella importante?**
+
+Esta relación es fundamental, cuando sabes que la gente está a favor tuya, es una presión especial por supuesto, pero te pone en buenas disposiciones, porque es como "una presión sana" y que te lleva mucho. Al momento de centrarte, de pensar la tarde, te condiciona un poco, Pero claro, una vez frente al toro, todo esto se te olvida un poco.
+
+**¿Cómo manejas la presión y las expectativas que conlleva estar anunciado en ferias importantes, con la rivalidad constante y el exigente nivel del escalafón actual?**
+
+Yo creo que en nuestra profesión, la rivalidad y competitividad son fundamentales para la fiesta, Hay toreros muy importantes, y cada uno quiere triunfar y dejar sus huellas, y es lo que se merece el aficionado. Hay un nivel muy alto hoy en día, que exige mucho, y tenemos que estar a la altura.
+Me exijo mucho, siempre, igual que a mi equipo, entrenó mucho y me centró mucho en mis propias metas, para que luego la presión no se me pueda afectar demasiado. Hay que encontrar un buen equilibrio para poder sentir estas presión y exigencia, sin que se te afecte y te pueda poner en malas condiciones.
+
+**Cuando el toro te permite expresarte, ¿qué busca Daniel Luque en una faena?**
+
+Dejarme llevar, que todo fluya y sentirme muy a gusto. Porque en este caso, disfruto, y la afición también. Busco autenticidad, demostrar cuál torero soy. Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `El novillero Pepe Martínez estrena apoderamiento`,
+    image: "/images/martnz.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	fullContent: `El matador de toros sevillano **Álvaro Gómez** asumirá el apoderamiento del novillero sevillano de **Valencina de la Concepción Pepe Martínez**, en un acuerdo se ha sellado con el ya clásico apretón de manos y por tiempo indefinido, tras una reunión en la que ambas partes han coincidido en los planteamientos y objetivos de cara a la presente temporada.
+Pepe Martínez fue el triunfador de las novilladas sin caballos 2024 en Sevilla, donde logró salir a hombros.
+Ambos inician así un ilusionante proyecto conjunto, con la firme intención de seguir creciendo profesionalmente y con la vista puesta en poder torear en el albero maestrante durante las próximas novilladas de feria e introducirlo en el circuito de novilladas, buscando hueco en las ferias y certámenes de relevancia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `Almendralejo abre las taquillas para la feria del Salón del Vino y la Aceituna`,
+    image: "/images/alme.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	excerpt: "Una corrida de toros y otra de rejones componen el fin de semana que se celebrará los días 28 y 29 de marzo",
+	fullContent: `La plaza de toros de Almendralejo abre sus taquillas para la venta de abonos con motivo de la feria del Salón del Vino y la Aceituna de los próximos días 28 y 29 de marzo.
+Emilio de Justo, Juan Ortega y Pablo Aguado lidiarán toros de Juan Pedro Domecq el 28 de marzo, mientras que el día 29 se celebrará un festejo de rejones Hispano – Luso con seis rejoneadores y la participación de los forcados portugueses.
+Desde este lunes, 9 de febrero, se pueden adquirir los abonos en las taquillas de la plaza de toros con un 20% de descuento, también online en la web oficial de la empresa <a
+  www.tauroemocion.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.tauroemocion.es
+</a>Los abonados del pasado año conservarán su localidad hasta el día 11 de febrero.
+Las entradas sueltas se pondrán a la venta, tanto online como en la taquilla, desde el lunes, 16 de febrero, y contarán con descuento en venta anticipada hasta el 15 de marzo.
+Las figuras vuelven a Almendralejo con una corrida de toros y otra de rejones, consolidando de esta manera una feria que ya se ha convertido en punto de encuentro de los aficionados en el comienzo de temporada.
+Los carteles son los siguientes:
+-            28 de marzo: toros de Juan Pedro Domecq para Emilio de Justo, Juan Ortega y Pablo Aguado.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 282,
+    title: `Ginés Marín, fuera de San Isidro 2026: una decisión que reabre el debate sobre los criterios de la feria`,
+    image: "/images/gin.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	fullContent: `La confección de los carteles de la **Feria de San Isidro** siempre genera debate. Es inevitable. Se trata del ciclo más determinante del calendario taurino y, por tanto, cada nombre anunciado –y cada nombre que queda fuera– adquiere una dimensión que trasciende lo estrictamente empresarial. En este contexto, la ausencia de **Ginés Marín en la Feria de San Isidro 2026** no puede pasar inadvertida.
+
+No se trata de una reivindicación gratuita ni de un ejercicio de simpatía personal hacia un torero concreto. Se trata, sencillamente, de analizar con rigor el lugar que ocupa hoy Ginés Marín dentro del escalafón y de preguntarse si su trayectoria reciente encuentra un reflejo lógico en la principal feria del mundo.
+
+Gines Marín ha construido su carrera desde la seriedad, el compromiso con las plazas duras y una evolución artística que no ha sido fruto de la casualidad. Ha apostado reiteradamente por escenarios de máxima exigencia y ha asumido, sin atajos, el papel de torero que quiere abrirse camino desde el mérito y no desde la comodidad. En un tiempo en el que la regularidad es uno de los bienes más escasos del toreo, su nombre ha estado ligado precisamente a esa virtud: comparecer, competir y sostener un nivel reconocible.
+
+Por eso, su ausencia en **San Isidro 2026** plantea una cuestión de fondo que va más allá de un caso concreto: ¿qué criterios terminan pesando realmente en la configuración de los carteles? Si la Feria de Madrid continúa siendo –como históricamente se ha defendido– el espacio donde se examina al torero sin concesiones, donde el pasado reciente tiene valor y donde la responsabilidad se premia, resulta difícil encontrar una explicación estrictamente taurina para dejar fuera a un matador que ha demostrado estar preparado para ese escenario.
+
+No se trata de negar la lógica empresarial ni de desconocer las complejas negociaciones que rodean a un ciclo de esta magnitud. Pero precisamente por la relevancia de **San Isidro**, la coherencia entre el momento profesional de los toreros y su presencia en los carteles es un elemento esencial para preservar la credibilidad del propio serial.
+
+El aficionado de Madrid –y el aficionado en general– no reclama unanimidades ni repartos automáticos. Reclama, sobre todo, argumentos. Y cuando un torero con recorrido, con capacidad contrastada y con una línea profesional sólida queda fuera del principal escaparate, la sensación que se instala es la de una oportunidad perdida para la propia feria.
+
+Ginés Marín no necesita gestos paternalistas ni invitaciones simbólicas. Lo que su ausencia pone sobre la mesa es una reflexión más amplia: si San Isidro quiere seguir siendo el termómetro real del toreo contemporáneo, debe cuidar con especial atención que el mérito, la regularidad y la proyección artística encuentren un espacio visible en sus carteles.
+
+Porque cuando un ciclo de referencia prescinde de toreros que están en plena disposición de competir en él, el debate ya no gira en torno a un nombre concreto. Gira, inevitablemente, en torno al modelo de feria que se está construyendo.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 283,
+    title: `“Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco” - Entrevista a Daniel Luque`,
+    image: "/images/entr.jpg",
+    category: "Entrevistas",
+    date: "8 de Febrero de 2026",
+	imageCaption: "Fotos de Melanie Huertas",
+	footerImage1: "/images/entr1.jpg",
+	footerImage2: "/images/entr2.jpg",
+	footerImage3: "/images/entr3.jpg",
+	fullContent: `**Daniel Luque** afronta uno de los momentos más sólidos y determinantes de su trayectoria profesional. El torero de Gerena, forjado a base de constancia, ambición y una inquebrantable entrega al oficio, atraviesa una etapa de plenitud que lo sitúa en un lugar de referencia dentro del escalafón. Tras varias temporadas marcadas por la regularidad, la firmeza en las plazas de mayor responsabilidad y una evolución artística cada vez más reconocible, Luque se consolida como un matador de concepto poderoso, personalidad arrolladora y una madurez que hoy despierta el respeto unánime de la afición.
+
+**Daniel, llevas muchos años en el toreo desde que tomaste la alternativa en Nimes en 2007 a muy corta edad. ¿Cómo describirías tu evolución personal y artística desde entonces hasta hoy?**
+
+Bueno, creo que la palabra que más pueda definir hoy en día mi cambio es la madurez. A veces, uno actúa sin pensar bien las cosas, y cuando llegan las consecuencias, hay que ser capaz de preguntarse a sí mismo, y darse cuenta que no se puede siempre culpar a los demás. He sido capaz de reconocer mis fallos y errores, y sobre todo aprender de ellos, que es fundamental. Lo personal y artístico son muy relacionados, cuando uno se siente bien y seguro, es capaz de tirar palante y sacar lo mejor que tiene. Todo no sale siempre como uno quiere, pero es importante no rendirse y seguir aprendiendo y evolucionando. Como persona y como torero.
+
+**Tu estilo combina poder, temple y hondura, y te ha permitido triunfar en plazas de máxima exigencia como Sevilla, Bilbao o Pamplona. ¿Qué aspectos del toreo consideras fundamentales para mantener ese nivel de constancia?**
+
+Creo que la disciplina es fundamental, como la perseverancia y la determinación. Todo esto conlleva muchos sacrificios, horas de dudas, de introspección, pero siempre hay que entrenar una y otra vez, sin perder de vista la meta.
+
+**En temporadas recientes has toreado más de 30 corridas y logrado numerosos trofeos en cosos de primer nivel. ¿Qué balance haces de tu trayectoria en los últimos años, sobre todo tras cerrar el pasado curso con 33 corridas y 57 orejas?**
+
+Pues me voy a referir a la anterior pregunta, creo que he sido constante, y he podido demostrar de verdad mi toreo y concepto. Pasaron muchas cosas, buenas como malas, pero cada una de estas me ha servido para evolucionar, y sobre todo ver y sentir que la afición está sensible a esto, y valora los esfuerzos. Eso es algo muy importante, darse cuenta que uno va por buen camino y que las cosas van saliendo... y la satisfacción de ver que todos los sacrificios y el trabajo tienen su recompensa.
+
+**Acabas de iniciar una nueva etapa profesional con el apoderado Antonio Barrera. ¿Cómo ha influido este cambio en tu preparación y en los objetivos que te marcas para 2026?**
+
+La verdad que en mi preparación, no hubo muchos cambios, en el aspecto que siempre me he impuesto una preparación muy intensa, pero claro, esta nueva etapa me ilusiona mucho y estoy muy contento hasta ahora de cómo están pasando las cosas. Quiero seguir disfrutando en las plazas, y seguir demostrando mi toreo tarde tras tarde. Creo que 2026 será una temporada muy importante en mi carrera. Lo podremos hablar dentro de unos meses a ver qué tal.
+
+**Has igualado hechos históricos en plazas como Azpeitia y te has convertido en uno de los toreros con más paseíllos en ese coso. ¿Qué significado tiene para ti ese tipo de hitos en tu carrera?**
+
+Es algo bonito no , Pensar que uno es parte de la historia de una plaza de toros, es una satisfacción importante. Tanto al nivel profesional que personal. Porque se crea un cariño especial con la ciudad, con su gente, y al fin y al cabo, esto se queda siempre en el corazón. También es una gran responsabilidad, porque cada año la gente te exige más y espera mucho de ti, y hay que estar a la altura.
+
+**En tu opinión, ¿qué papel juega la relación con la afición en tu forma de enfrentarte cada tarde a un toro, especialmente en plazas donde ya has dejado una huella importante?**
+
+Esta relación es fundamental, cuando sabes que la gente está a favor tuya, es una presión especial por supuesto, pero te pone en buenas disposiciones, porque es como "una presión sana" y que te lleva mucho. Al momento de centrarte, de pensar la tarde, te condiciona un poco, Pero claro, una vez frente al toro, todo esto se te olvida un poco.
+
+**¿Cómo manejas la presión y las expectativas que conlleva estar anunciado en ferias importantes, con la rivalidad constante y el exigente nivel del escalafón actual?**
+
+Yo creo que en nuestra profesión, la rivalidad y competitividad son fundamentales para la fiesta, Hay toreros muy importantes, y cada uno quiere triunfar y dejar sus huellas, y es lo que se merece el aficionado. Hay un nivel muy alto hoy en día, que exige mucho, y tenemos que estar a la altura.
+Me exijo mucho, siempre, igual que a mi equipo, entrenó mucho y me centró mucho en mis propias metas, para que luego la presión no se me pueda afectar demasiado. Hay que encontrar un buen equilibrio para poder sentir estas presión y exigencia, sin que se te afecte y te pueda poner en malas condiciones.
+
+**Cuando el toro te permite expresarte, ¿qué busca Daniel Luque en una faena?**
+
+Dejarme llevar, que todo fluya y sentirme muy a gusto. Porque en este caso, disfruto, y la afición también. Busco autenticidad, demostrar cuál torero soy. Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 284,
+    title: `El novillero Pepe Martínez estrena apoderamiento`,
+    image: "/images/martnz.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	fullContent: `El matador de toros sevillano **Álvaro Gómez** asumirá el apoderamiento del novillero sevillano de **Valencina de la Concepción Pepe Martínez**, en un acuerdo se ha sellado con el ya clásico apretón de manos y por tiempo indefinido, tras una reunión en la que ambas partes han coincidido en los planteamientos y objetivos de cara a la presente temporada.
+Pepe Martínez fue el triunfador de las novilladas sin caballos 2024 en Sevilla, donde logró salir a hombros.
+Ambos inician así un ilusionante proyecto conjunto, con la firme intención de seguir creciendo profesionalmente y con la vista puesta en poder torear en el albero maestrante durante las próximas novilladas de feria e introducirlo en el circuito de novilladas, buscando hueco en las ferias y certámenes de relevancia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 285,
+    title: `Almendralejo abre las taquillas para la feria del Salón del Vino y la Aceituna`,
+    image: "/images/alme.jpg",
+    category: "Actualidad",
+    date: "8 de Febrero de 2026",
+	excerpt: "Una corrida de toros y otra de rejones componen el fin de semana que se celebrará los días 28 y 29 de marzo",
+	fullContent: `La plaza de toros de Almendralejo abre sus taquillas para la venta de abonos con motivo de la feria del Salón del Vino y la Aceituna de los próximos días 28 y 29 de marzo.
+Emilio de Justo, Juan Ortega y Pablo Aguado lidiarán toros de Juan Pedro Domecq el 28 de marzo, mientras que el día 29 se celebrará un festejo de rejones Hispano – Luso con seis rejoneadores y la participación de los forcados portugueses.
+Desde este lunes, 9 de febrero, se pueden adquirir los abonos en las taquillas de la plaza de toros con un 20% de descuento, también online en la web oficial de la empresa <a
+  www.tauroemocion.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.tauroemocion.es
+</a>Los abonados del pasado año conservarán su localidad hasta el día 11 de febrero.
+Las entradas sueltas se pondrán a la venta, tanto online como en la taquilla, desde el lunes, 16 de febrero, y contarán con descuento en venta anticipada hasta el 15 de marzo.
+Las figuras vuelven a Almendralejo con una corrida de toros y otra de rejones, consolidando de esta manera una feria que ya se ha convertido en punto de encuentro de los aficionados en el comienzo de temporada.
+Los carteles son los siguientes:
+-            28 de marzo: toros de Juan Pedro Domecq para Emilio de Justo, Juan Ortega y Pablo Aguado.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+	},
 	{ 
     id: 286,
     title: `Tarde deslucida por los aceros en Valdemorillo`,
@@ -506,7 +701,7 @@ Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de
 **Borja Jimenez**,oreja, silencio y ovacion con saludos;
 **Tomas Rufo**, silencio,oreja y silencio;
 
-El diestro sevillano comenzó la tarde con un toro de El Capea de escasas fuerzas, aunque empleado en el tercio de varas, que no logró transmitir mucho ni en el capote ni en la muleta a pesar del esfuerzo del matador. Mató con una estocada entera que le sirvió para que el toro cayese redondo, siendo premiado con una oreja. El toro por su parte fue aplaudido en al arrastre ante un público vehemente. Ante el segundo de su lote, un buen toro de García Jiménez que destacó en comparación al otro de esta misma ganadería, Borja Jiménez firmó una faena de peso sobre todo en la muleta que podría haber sido premiada con otra oreja, pero que fue emborronada por los aceros. Destacables los aplausos a Tito Sandoval en el tercio de varas. Por último, Borja se enfrentó ante un quinto de poca presencia y estrecho de sienes de la ganadería Fuente Ymbro con el que pudo firmar la faena de la tarde, entregándose tanto que recibió un susto al ser prendido en el aire. Volvió a fallar con los aceros, lo que le arrebató el triunfo. A destacar los dos pares de banderillas de **Iván García** que le permitieron desmonterarse. Borja finalmente recibió una fuerte ovación dando la vuelta al ruedo. o respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.
+El diestro sevillano comenzó la tarde con un toro de El Capea de escasas fuerzas, aunque empleado en el tercio de varas, que no logró transmitir mucho ni en el capote ni en la muleta a pesar del esfuerzo del matador. Mató con una estocada entera que le sirvió para que el toro cayese redondo, siendo premiado con una oreja. El toro por su parte fue aplaudido en al arrastre ante un público vehemente. Ante el segundo de su lote, un buen toro de García Jiménez que destacó en comparación al otro de esta misma ganadería, Borja Jiménez firmó una faena de peso sobre todo en la muleta que podría haber sido premiada con otra oreja, pero que fue emborronada por los aceros. Destacables los aplausos a Tito Sandoval en el tercio de varas. Por último, Borja se enfrentó ante un quinto de poca presencia y estrecho de sienes de la ganadería Fuente Ymbro con el que pudo firmar la faena de la tarde, entregándose tanto que recibió un susto al ser prendido en el aire. Volvió a fallar con los aceros, lo que le arrebató el triunfo. A destacar los dos pares de banderillas de **Iván García** que le permitieron desmonterarse. Borja finalmente recibió una fuerte ovación dando la vuelta al ruedo.
 
 **Tomás Rufo** por su parte firmó una faena caracterizada por la mansedumbre del astado de Carmen Lorenzo, en la que pudo dejar un natural para el recuerdo. La espada volvió a ser un obstáculo, pinchó hasta en cuatro ocasiones antes de escuchar un aviso, logrando finalmente el descabello al segundo intento. En el cuarto de la tarde, Tomás Rufo dejó una faena muy seria de menos a más a un animal de Fuente Ymbro. Esta vez acertó con la espada, pero el toro mostró su bravura a la hora de caer aguantándose la muerte encendiendo los aplausos del público. El matador fue premiado con una oreja y hubo fuerte petición de vuelta al ruedo para el toro, que el presidente no concedió. Por último, el sexto de la tarde fue un toro de García Jiménez con mucha presencia pero que se vino abajo en seguida. El diestro no logró conectar con el público durante la faena, la alargó demasiado y el toro no le ayudó en nada a la hora de entrar a matar lo que provocó que pinchara hasta en 3 ocasiones. El animal fue pitado en el arrastre.`,
     author: "Nerea F.Elena",
@@ -9483,7 +9678,7 @@ Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de
 **Borja Jimenez**,oreja, silencio y ovacion con saludos;
 **Tomas Rufo**, silencio,oreja y silencio;
 
-El diestro sevillano comenzó la tarde con un toro de El Capea de escasas fuerzas, aunque empleado en el tercio de varas, que no logró transmitir mucho ni en el capote ni en la muleta a pesar del esfuerzo del matador. Mató con una estocada entera que le sirvió para que el toro cayese redondo, siendo premiado con una oreja. El toro por su parte fue aplaudido en al arrastre ante un público vehemente. Ante el segundo de su lote, un buen toro de García Jiménez que destacó en comparación al otro de esta misma ganadería, Borja Jiménez firmó una faena de peso sobre todo en la muleta que podría haber sido premiada con otra oreja, pero que fue emborronada por los aceros. Destacables los aplausos a Tito Sandoval en el tercio de varas. Por último, Borja se enfrentó ante un quinto de poca presencia y estrecho de sienes de la ganadería Fuente Ymbro con el que pudo firmar la faena de la tarde, entregándose tanto que recibió un susto al ser prendido en el aire. Volvió a fallar con los aceros, lo que le arrebató el triunfo. A destacar los dos pares de banderillas de **Iván García** que le permitieron desmonterarse. Borja finalmente recibió una fuerte ovación dando la vuelta al ruedo. o respondió con olés rotundos. Estocada y dos orejas. El novillo fue premiado con la vuelta al ruedo.
+El diestro sevillano comenzó la tarde con un toro de El Capea de escasas fuerzas, aunque empleado en el tercio de varas, que no logró transmitir mucho ni en el capote ni en la muleta a pesar del esfuerzo del matador. Mató con una estocada entera que le sirvió para que el toro cayese redondo, siendo premiado con una oreja. El toro por su parte fue aplaudido en al arrastre ante un público vehemente. Ante el segundo de su lote, un buen toro de García Jiménez que destacó en comparación al otro de esta misma ganadería, Borja Jiménez firmó una faena de peso sobre todo en la muleta que podría haber sido premiada con otra oreja, pero que fue emborronada por los aceros. Destacables los aplausos a Tito Sandoval en el tercio de varas. Por último, Borja se enfrentó ante un quinto de poca presencia y estrecho de sienes de la ganadería Fuente Ymbro con el que pudo firmar la faena de la tarde, entregándose tanto que recibió un susto al ser prendido en el aire. Volvió a fallar con los aceros, lo que le arrebató el triunfo. A destacar los dos pares de banderillas de **Iván García** que le permitieron desmonterarse. Borja finalmente recibió una fuerte ovación dando la vuelta al ruedo.
 
 **Tomás Rufo** por su parte firmó una faena caracterizada por la mansedumbre del astado de Carmen Lorenzo, en la que pudo dejar un natural para el recuerdo. La espada volvió a ser un obstáculo, pinchó hasta en cuatro ocasiones antes de escuchar un aviso, logrando finalmente el descabello al segundo intento. En el cuarto de la tarde, Tomás Rufo dejó una faena muy seria de menos a más a un animal de Fuente Ymbro. Esta vez acertó con la espada, pero el toro mostró su bravura a la hora de caer aguantándose la muerte encendiendo los aplausos del público. El matador fue premiado con una oreja y hubo fuerte petición de vuelta al ruedo para el toro, que el presidente no concedió. Por último, el sexto de la tarde fue un toro de García Jiménez con mucha presencia pero que se vino abajo en seguida. El diestro no logró conectar con el público durante la faena, la alargó demasiado y el toro no le ayudó en nada a la hora de entrar a matar lo que provocó que pinchara hasta en 3 ocasiones. El animal fue pitado en el arrastre.`,
     author: "Nerea F.Elena",
