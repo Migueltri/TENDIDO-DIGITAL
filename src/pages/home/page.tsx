@@ -457,142 +457,64 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1004,
-    title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
-    image: "/images/croni.jpg",
-    category: "Crónicas",
-    date: "8 de Febrero de 2026",
-	plaza: "Valdemorillo (Madrid)",
-	ganaderia: "Torrealta",
-    torerosRaw: `Uceda Leal , palmas y vuelta al ruedo;
-Juan Ortega , silencio y dos orejas;
-Pablo Aguado , silencio y silencio `,
-    fullContent: `Ficha del Festejo: Valdemorillo (Madrid). Domingo 8 de Febrero de 2026. Fiestas de San Blas, Corrida de Toros, Lleno de ‘No hay billetes’, en tarde fría y con lluvia.
-
-Toros de la ganadería de Torrealta;
-
-Incidencias: Al finalizar el paseíllo sonaron los acordes del Himno Nacional de España. El banderillero Iván García se desmonteró tras parear al sexto.
-
-**Uceda Leal** , palmas y vuelta al ruedo;
-**Juan Ortega** , silencio y dos orejas;
-**Pablo Aguado** , silencio y silencio
-
-**Uceda Leal** destacó por su toreo clásico y de gran sabor frente a dos toros de Torrealta de escasa fuerza. En el primero, de gran calidad pero muy flojo, dejó una faena elegante aunque condicionada por el animal y falló con la espada. En el cuarto, con menos clase pero más fondo, logró lo mejor de la tarde, sobre todo al natural, firmando una faena técnica y meritoria que fue premiada con una vuelta al ruedo.
-
-**Juan Ortega** tuvo una actuación de menos a más. En su primero, un toro flojo y sin entrega, apenas pudo lucirse y fue silenciado. En el quinto, todo cambió: cuajó una gran faena por el pitón derecho a un buen toro de Torrealta, con series largas y muy ligadas, que levantaron al público. Tras una estocada, cortó dos orejas.
-
-**Pablo Aguado** brilló al capote, especialmente a la verónica, firmando lo más destacado del inicio del festejo. Sin embargo, sus dos toros, faltos de fuerza y de duración, le impidieron redondear la faena: en el primero dejó detalles de buen trazo pero falló con la espada, y en el sexto apenas tuvo opciones. Ambos turnos se saldaron con silencio.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Ginés Marín, fuera de San Isidro 2026: una decisión que reabre el debate sobre los criterios de la feria`,
-    image: "/images/gin.jpg",
-    category: "Actualidad",
-    date: "8 de Febrero de 2026",
-	fullContent: `La confección de los carteles de la **Feria de San Isidro** siempre genera debate. Es inevitable. Se trata del ciclo más determinante del calendario taurino y, por tanto, cada nombre anunciado –y cada nombre que queda fuera– adquiere una dimensión que trasciende lo estrictamente empresarial. En este contexto, la ausencia de **Ginés Marín en la Feria de San Isidro 2026** no puede pasar inadvertida.
-
-No se trata de una reivindicación gratuita ni de un ejercicio de simpatía personal hacia un torero concreto. Se trata, sencillamente, de analizar con rigor el lugar que ocupa hoy Ginés Marín dentro del escalafón y de preguntarse si su trayectoria reciente encuentra un reflejo lógico en la principal feria del mundo.
-
-Gines Marín ha construido su carrera desde la seriedad, el compromiso con las plazas duras y una evolución artística que no ha sido fruto de la casualidad. Ha apostado reiteradamente por escenarios de máxima exigencia y ha asumido, sin atajos, el papel de torero que quiere abrirse camino desde el mérito y no desde la comodidad. En un tiempo en el que la regularidad es uno de los bienes más escasos del toreo, su nombre ha estado ligado precisamente a esa virtud: comparecer, competir y sostener un nivel reconocible.
-
-Por eso, su ausencia en **San Isidro 2026** plantea una cuestión de fondo que va más allá de un caso concreto: ¿qué criterios terminan pesando realmente en la configuración de los carteles? Si la Feria de Madrid continúa siendo –como históricamente se ha defendido– el espacio donde se examina al torero sin concesiones, donde el pasado reciente tiene valor y donde la responsabilidad se premia, resulta difícil encontrar una explicación estrictamente taurina para dejar fuera a un matador que ha demostrado estar preparado para ese escenario.
-
-No se trata de negar la lógica empresarial ni de desconocer las complejas negociaciones que rodean a un ciclo de esta magnitud. Pero precisamente por la relevancia de **San Isidro**, la coherencia entre el momento profesional de los toreros y su presencia en los carteles es un elemento esencial para preservar la credibilidad del propio serial.
-
-El aficionado de Madrid –y el aficionado en general– no reclama unanimidades ni repartos automáticos. Reclama, sobre todo, argumentos. Y cuando un torero con recorrido, con capacidad contrastada y con una línea profesional sólida queda fuera del principal escaparate, la sensación que se instala es la de una oportunidad perdida para la propia feria.
-
-Ginés Marín no necesita gestos paternalistas ni invitaciones simbólicas. Lo que su ausencia pone sobre la mesa es una reflexión más amplia: si San Isidro quiere seguir siendo el termómetro real del toreo contemporáneo, debe cuidar con especial atención que el mérito, la regularidad y la proyección artística encuentren un espacio visible en sus carteles.
-
-Porque cuando un ciclo de referencia prescinde de toreros que están en plena disposición de competir en él, el debate ya no gira en torno a un nombre concreto. Gira, inevitablemente, en torno al modelo de feria que se está construyendo.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1006,
-    title: `“Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco” - Entrevista a Daniel Luque`,
-    image: "/images/entr.jpg",
-    category: "Entrevistas",
-    date: "8 de Febrero de 2026",
-	imageCaption: "Fotos de Melanie Huertas",
-	footerImage1: "/images/entr1.jpg",
-	footerImage2: "/images/entr2.jpg",
-	footerImage3: "/images/entr3.jpg",
-	fullContent: `**Daniel Luque** afronta uno de los momentos más sólidos y determinantes de su trayectoria profesional. El torero de Gerena, forjado a base de constancia, ambición y una inquebrantable entrega al oficio, atraviesa una etapa de plenitud que lo sitúa en un lugar de referencia dentro del escalafón. Tras varias temporadas marcadas por la regularidad, la firmeza en las plazas de mayor responsabilidad y una evolución artística cada vez más reconocible, Luque se consolida como un matador de concepto poderoso, personalidad arrolladora y una madurez que hoy despierta el respeto unánime de la afición.
-
-**Daniel, llevas muchos años en el toreo desde que tomaste la alternativa en Nimes en 2007 a muy corta edad. ¿Cómo describirías tu evolución personal y artística desde entonces hasta hoy?**
-
-Bueno, creo que la palabra que más pueda definir hoy en día mi cambio es la madurez. A veces, uno actúa sin pensar bien las cosas, y cuando llegan las consecuencias, hay que ser capaz de preguntarse a sí mismo, y darse cuenta que no se puede siempre culpar a los demás. He sido capaz de reconocer mis fallos y errores, y sobre todo aprender de ellos, que es fundamental. Lo personal y artístico son muy relacionados, cuando uno se siente bien y seguro, es capaz de tirar palante y sacar lo mejor que tiene. Todo no sale siempre como uno quiere, pero es importante no rendirse y seguir aprendiendo y evolucionando. Como persona y como torero.
-
-**Tu estilo combina poder, temple y hondura, y te ha permitido triunfar en plazas de máxima exigencia como Sevilla, Bilbao o Pamplona. ¿Qué aspectos del toreo consideras fundamentales para mantener ese nivel de constancia?**
-
-Creo que la disciplina es fundamental, como la perseverancia y la determinación. Todo esto conlleva muchos sacrificios, horas de dudas, de introspección, pero siempre hay que entrenar una y otra vez, sin perder de vista la meta.
-
-**En temporadas recientes has toreado más de 30 corridas y logrado numerosos trofeos en cosos de primer nivel. ¿Qué balance haces de tu trayectoria en los últimos años, sobre todo tras cerrar el pasado curso con 33 corridas y 57 orejas?**
-
-Pues me voy a referir a la anterior pregunta, creo que he sido constante, y he podido demostrar de verdad mi toreo y concepto. Pasaron muchas cosas, buenas como malas, pero cada una de estas me ha servido para evolucionar, y sobre todo ver y sentir que la afición está sensible a esto, y valora los esfuerzos. Eso es algo muy importante, darse cuenta que uno va por buen camino y que las cosas van saliendo... y la satisfacción de ver que todos los sacrificios y el trabajo tienen su recompensa.
-
-**Acabas de iniciar una nueva etapa profesional con el apoderado Antonio Barrera. ¿Cómo ha influido este cambio en tu preparación y en los objetivos que te marcas para 2026?**
-
-La verdad que en mi preparación, no hubo muchos cambios, en el aspecto que siempre me he impuesto una preparación muy intensa, pero claro, esta nueva etapa me ilusiona mucho y estoy muy contento hasta ahora de cómo están pasando las cosas. Quiero seguir disfrutando en las plazas, y seguir demostrando mi toreo tarde tras tarde. Creo que 2026 será una temporada muy importante en mi carrera. Lo podremos hablar dentro de unos meses a ver qué tal.
-
-**Has igualado hechos históricos en plazas como Azpeitia y te has convertido en uno de los toreros con más paseíllos en ese coso. ¿Qué significado tiene para ti ese tipo de hitos en tu carrera?**
-
-Es algo bonito no , Pensar que uno es parte de la historia de una plaza de toros, es una satisfacción importante. Tanto al nivel profesional que personal. Porque se crea un cariño especial con la ciudad, con su gente, y al fin y al cabo, esto se queda siempre en el corazón. También es una gran responsabilidad, porque cada año la gente te exige más y espera mucho de ti, y hay que estar a la altura.
-
-**En tu opinión, ¿qué papel juega la relación con la afición en tu forma de enfrentarte cada tarde a un toro, especialmente en plazas donde ya has dejado una huella importante?**
-
-Esta relación es fundamental, cuando sabes que la gente está a favor tuya, es una presión especial por supuesto, pero te pone en buenas disposiciones, porque es como "una presión sana" y que te lleva mucho. Al momento de centrarte, de pensar la tarde, te condiciona un poco, Pero claro, una vez frente al toro, todo esto se te olvida un poco.
-
-**¿Cómo manejas la presión y las expectativas que conlleva estar anunciado en ferias importantes, con la rivalidad constante y el exigente nivel del escalafón actual?**
-
-Yo creo que en nuestra profesión, la rivalidad y competitividad son fundamentales para la fiesta, Hay toreros muy importantes, y cada uno quiere triunfar y dejar sus huellas, y es lo que se merece el aficionado. Hay un nivel muy alto hoy en día, que exige mucho, y tenemos que estar a la altura.
-Me exijo mucho, siempre, igual que a mi equipo, entrenó mucho y me centró mucho en mis propias metas, para que luego la presión no se me pueda afectar demasiado. Hay que encontrar un buen equilibrio para poder sentir estas presión y exigencia, sin que se te afecte y te pueda poner en malas condiciones.
-
-**Cuando el toro te permite expresarte, ¿qué busca Daniel Luque en una faena?**
-
-Dejarme llevar, que todo fluya y sentirme muy a gusto. Porque en este caso, disfruto, y la afición también. Busco autenticidad, demostrar cuál torero soy. Siempre buscaré poder dar y ser quien soy realmente, sin engaño ni truco.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `El novillero Pepe Martínez estrena apoderamiento`,
-    image: "/images/martnz.jpg",
+    title: `Morante, protagonista en los carteles de Sevilla por partida doble`,
+    image: "/images/ft.jpg",
     category: "Actualidad",
-    date: "8 de Febrero de 2026",
-	fullContent: `El matador de toros sevillano **Álvaro Gómez** asumirá el apoderamiento del novillero sevillano de **Valencina de la Concepción Pepe Martínez**, en un acuerdo se ha sellado con el ya clásico apretón de manos y por tiempo indefinido, tras una reunión en la que ambas partes han coincidido en los planteamientos y objetivos de cara a la presente temporada.
-Pepe Martínez fue el triunfador de las novilladas sin caballos 2024 en Sevilla, donde logró salir a hombros.
-Ambos inician así un ilusionante proyecto conjunto, con la firme intención de seguir creciendo profesionalmente y con la vista puesta en poder torear en el albero maestrante durante las próximas novilladas de feria e introducirlo en el circuito de novilladas, buscando hueco en las ferias y certámenes de relevancia.`,
+    date: "9 de Febrero de 2026",
+	imageCaption: "foto Raul Caro / EFE",
+	fullContent: `«Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el diestro
+
+La Real Maestranza de Caballería ha desvelado este lunes el cartel anunciador de la temporada taurina 2026 en Sevilla, una obra del pintor checo **Georg Dokoupil** que tiene como protagonista a **Morante de la Puebla**.
+
+Francés ha desvelado que el autor no cejó en el empeño -ha llegado a pintar varios cuadros- hasta conseguir uno de su plena satisfacción. El propio **Dokoupil**, un artista adscrito al neoexpresionismo, ha aludido a su fuente de inspiración. «No hay torero que tenga mejor figura», ha señalado entre aplausos.
+
+En el acto, celebrado en el Salón de los Carteles de la Plaza de Toro, Morante ha bromeado con su condición de modelo, ha felicitado al cartelista y ha deseado suerte al nuevo empresario de la Maestranza, **José María Garzón**. «Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el matador
+
+El galerista Fernando Francés, comisionado por la Maestranza para hacer el encargo, ha señalado que había pretendido hacer «un homenaje a la tauromaquia y a la figura de Morante, que acababa de anunciar su retirada».
+La obra de **Dokoupil** servirá para timbrar todo el billetaje, los programas de mano, trípticos y la cartelería global de los festejos que se celebren en el coso sevillano durante la temporada 2026. La obra, finalmente, engrosará la amplia colección de arte contemporáneo que ha dado nombre al espacio de la plaza de toros en el que se exponen durante todo el año.
+La obra de Dokoupil se unirá a la cada vez más extensa lista de firmas de prestigio que han aceptado el guante de la Real Maestranza para anunciar la temporada taurina sevillana desde 1994 a iniciativa del recordado pintor y caballero maestrante Juan Maestre, decidido impulsor de esta iniciativa que ha ido otorgando al nobiliario una de las colecciones de arte más conocidas y diversas de la ciudad.
+La colección de carteles, que ha dado nombre al salón que los alberga en la plaza de toros, atesora firmas como las de Luis Manuel Fernández, Miquel Barceló, autor de uno de los carteles más contestados, Carmen Laffón, Botero, Salinas, Luis Gordillo, Hernán Cortés, Norman Foster, el creador mexicano Abraham Cruz Villegas o la austríaca Martha Jungwirth que firmó el del pasado año.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1008,
-    title: `Almendralejo abre las taquillas para la feria del Salón del Vino y la Aceituna`,
-    image: "/images/alme.jpg",
+    id: 1007,
+    title: `Cabra con cartel para sábado de Gloria`,
+    image: "/images/cabraa.jpg",
     category: "Actualidad",
-    date: "8 de Febrero de 2026",
-	excerpt: "Una corrida de toros y otra de rejones componen el fin de semana que se celebrará los días 28 y 29 de marzo",
-	fullContent: `La plaza de toros de Almendralejo abre sus taquillas para la venta de abonos con motivo de la feria del Salón del Vino y la Aceituna de los próximos días 28 y 29 de marzo.
-Emilio de Justo, Juan Ortega y Pablo Aguado lidiarán toros de Juan Pedro Domecq el 28 de marzo, mientras que el día 29 se celebrará un festejo de rejones Hispano – Luso con seis rejoneadores y la participación de los forcados portugueses.
-Desde este lunes, 9 de febrero, se pueden adquirir los abonos en las taquillas de la plaza de toros con un 20% de descuento, también online en la web oficial de la empresa <a
-  www.tauroemocion.es
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.tauroemocion.es
-</a>Los abonados del pasado año conservarán su localidad hasta el día 11 de febrero.
-Las entradas sueltas se pondrán a la venta, tanto online como en la taquilla, desde el lunes, 16 de febrero, y contarán con descuento en venta anticipada hasta el 15 de marzo.
-Las figuras vuelven a Almendralejo con una corrida de toros y otra de rejones, consolidando de esta manera una feria que ya se ha convertido en punto de encuentro de los aficionados en el comienzo de temporada.
-Los carteles son los siguientes:
--            28 de marzo: toros de Juan Pedro Domecq para Emilio de Justo, Juan Ortega y Pablo Aguado.`,
+    date: "9 de Febrero de 2026",
+	excerpt: "El empresario taurino mexicano José Luis Alatorre da a conocer el cartel que tendrá lugar el próximo 4 de abril en la localidad cordobesa.",
+	fullContent: `El empresario taurino mexicano **José Luis Alatorre** ha dado un paso
+decisivo en su consolidación en España con la organización de una
+corrida de toros de máxima expectación. El festejo tendrá lugar el
+próximo **4 de abril, Sábado de Gloria**, en la localidad cordobesa
+de **Cabra** y ha sido concebido como un **homenaje a la Semana Santa**
+**egabrense**, declarada de Interés Turístico Nacional.
+
+El cartel está encabezado por el diestro francés **Sebastián Castella**,
+una de las figuras más sólidas del escalafón. Junto a él, actuará el
+extremeño **Miguel Ángel Perera**, otra de las grandes referencias del
+toreo actual. La terna la completa **Borja Jiménez**, considerado el
+torero del momento por su fuerte irrupción en los grandes escenarios.
+
+Para esta ocasión tan especial, se lidiará una corrida de la ganadería
+del **maestro Capea**, un hierro que ofrece contrastadas garantías de
+calidad y bravura para el espectáculo.
+
+La elección de la fecha no es casual, ya que busca reforzar el **vínculo**
+**entre el mundo del toro y las tradiciones religiosas** en Cabra. El
+evento se integra en el calendario cultural del municipio en un **Sábado**
+**de Gloria** cargado de simbolismo, presentando la corrida no solo
+como un festejo taurino, sino como un acto cultural de homenaje.
+
+Con esta importante apuesta, **José Luis Alatorre** confirma su
+intención de consolidarse en el **panorama taurino español**. La
+corrida de Cabra se convierte así en uno de los **acontecimientos**
+**taurinos más esperados** de la primavera andaluza, combinando
+figuras del toreo, una ganadería de prestigio y una fecha con un
+profundo significado local.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
@@ -600,6 +522,69 @@ Los carteles son los siguientes:
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 279,
+    title: `Morante, protagonista en los carteles de Sevilla por partida doble`,
+    image: "/images/ft.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	imageCaption: "foto Raul Caro / EFE",
+	fullContent: `«Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el diestro
+
+La Real Maestranza de Caballería ha desvelado este lunes el cartel anunciador de la temporada taurina 2026 en Sevilla, una obra del pintor checo **Georg Dokoupil** que tiene como protagonista a **Morante de la Puebla**.
+
+Francés ha desvelado que el autor no cejó en el empeño -ha llegado a pintar varios cuadros- hasta conseguir uno de su plena satisfacción. El propio **Dokoupil**, un artista adscrito al neoexpresionismo, ha aludido a su fuente de inspiración. «No hay torero que tenga mejor figura», ha señalado entre aplausos.
+
+En el acto, celebrado en el Salón de los Carteles de la Plaza de Toro, Morante ha bromeado con su condición de modelo, ha felicitado al cartelista y ha deseado suerte al nuevo empresario de la Maestranza, **José María Garzón**. «Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el matador
+
+El galerista Fernando Francés, comisionado por la Maestranza para hacer el encargo, ha señalado que había pretendido hacer «un homenaje a la tauromaquia y a la figura de Morante, que acababa de anunciar su retirada».
+La obra de **Dokoupil** servirá para timbrar todo el billetaje, los programas de mano, trípticos y la cartelería global de los festejos que se celebren en el coso sevillano durante la temporada 2026. La obra, finalmente, engrosará la amplia colección de arte contemporáneo que ha dado nombre al espacio de la plaza de toros en el que se exponen durante todo el año.
+La obra de Dokoupil se unirá a la cada vez más extensa lista de firmas de prestigio que han aceptado el guante de la Real Maestranza para anunciar la temporada taurina sevillana desde 1994 a iniciativa del recordado pintor y caballero maestrante Juan Maestre, decidido impulsor de esta iniciativa que ha ido otorgando al nobiliario una de las colecciones de arte más conocidas y diversas de la ciudad.
+La colección de carteles, que ha dado nombre al salón que los alberga en la plaza de toros, atesora firmas como las de Luis Manuel Fernández, Miquel Barceló, autor de uno de los carteles más contestados, Carmen Laffón, Botero, Salinas, Luis Gordillo, Hernán Cortés, Norman Foster, el creador mexicano Abraham Cruz Villegas o la austríaca Martha Jungwirth que firmó el del pasado año.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 280,
+    title: `Cabra con cartel para sábado de Gloria`,
+    image: "/images/cabraa.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	excerpt: "El empresario taurino mexicano José Luis Alatorre da a conocer el cartel que tendrá lugar el próximo 4 de abril en la localidad cordobesa.",
+	fullContent: `El empresario taurino mexicano **José Luis Alatorre** ha dado un paso
+decisivo en su consolidación en España con la organización de una
+corrida de toros de máxima expectación. El festejo tendrá lugar el
+próximo **4 de abril, Sábado de Gloria**, en la localidad cordobesa
+de **Cabra** y ha sido concebido como un **homenaje a la Semana Santa**
+**egabrense**, declarada de Interés Turístico Nacional.
+
+El cartel está encabezado por el diestro francés **Sebastián Castella**,
+una de las figuras más sólidas del escalafón. Junto a él, actuará el
+extremeño **Miguel Ángel Perera**, otra de las grandes referencias del
+toreo actual. La terna la completa **Borja Jiménez**, considerado el
+torero del momento por su fuerte irrupción en los grandes escenarios.
+
+Para esta ocasión tan especial, se lidiará una corrida de la ganadería
+del **maestro Capea**, un hierro que ofrece contrastadas garantías de
+calidad y bravura para el espectáculo.
+
+La elección de la fecha no es casual, ya que busca reforzar el **vínculo**
+**entre el mundo del toro y las tradiciones religiosas** en Cabra. El
+evento se integra en el calendario cultural del municipio en un **Sábado**
+**de Gloria** cargado de simbolismo, presentando la corrida no solo
+como un festejo taurino, sino como un acto cultural de homenaje.
+
+Con esta importante apuesta, **José Luis Alatorre** confirma su
+intención de consolidarse en el **panorama taurino español**. La
+corrida de Cabra se convierte así en uno de los **acontecimientos**
+**taurinos más esperados** de la primavera andaluza, combinando
+figuras del toreo, una ganadería de prestigio y una fecha con un
+profundo significado local.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 281,
     title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
