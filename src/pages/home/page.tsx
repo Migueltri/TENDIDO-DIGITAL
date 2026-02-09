@@ -126,7 +126,7 @@ const schemaData = {
 "url": "images/tendidodigitallogosimple.jpg"
 },
 "description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
-"foundingDate": "2010",
+"foundingDate": "2025",
 "address": {
 "@type": "PostalAddress",
 "addressCountry": "ES"
@@ -457,6 +457,30 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1005,
+    title: `Víctor Hernández protagoniza una Conferencia Taurina en Brihuega`,
+    image: "/images/asoc.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	fullContent: `La Asociación Taurina **“16 de Agosto”** organiza el próximo **28 de febrero a las 19:00** horas una destacada Conferencia Taurina que tendrá
+como protagonista al matador de toros **Víctor Hernández**, una de las figuras jóvenes con mayor proyección del panorama taurino actual.
+
+El acto tendrá lugar en el **Hostal Restaurante Villa de Brihuega**, un enclave habitual para la actividad cultural y taurina de la localidad, y
+contará con la moderación del periodista Diego Cervera, que guiará una conversación centrada en la trayectoria, vivencias y expectativas del
+diestro madrileño.
+
+Bajo el título **“Madrid espera: San Isidro y la temporada de Víctor Hernández”**, la conferencia abordará la importancia de la Feria de San
+Isidro como eje de la temporada taurina, así como los retos y objetivos que el torero afronta en un momento clave de su carrera. Hernández
+compartirá su visión del toreo, su preparación, y las sensaciones ante una temporada que se presenta decisiva.
+
+La cita se enmarca dentro de las actividades culturales impulsadas por la Asociación Taurina **“16 de Agosto”**, entidad comprometida con la
+difusión y el análisis de la tauromaquia desde una perspectiva cercana y divulgativa. El evento cuenta además con la colaboración del
+**Excmo. Ayuntamiento de Brihuega, la Villa de Brihuega Hostal-Restaurante, FUNTAUSA y Esencias de Vida.**`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1006,
     title: `Morante, protagonista en los carteles de Sevilla por partida doble`,
     image: "/images/ft.jpg",
@@ -522,6 +546,30 @@ profundo significado local.`,
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 278,
+    title: `Víctor Hernández protagoniza una Conferencia Taurina en Brihuega`,
+    image: "/images/asoc.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	fullContent: `La Asociación Taurina **“16 de Agosto”** organiza el próximo **28 de febrero a las 19:00** horas una destacada Conferencia Taurina que tendrá
+como protagonista al matador de toros **Víctor Hernández**, una de las figuras jóvenes con mayor proyección del panorama taurino actual.
+
+El acto tendrá lugar en el **Hostal Restaurante Villa de Brihuega**, un enclave habitual para la actividad cultural y taurina de la localidad, y
+contará con la moderación del periodista Diego Cervera, que guiará una conversación centrada en la trayectoria, vivencias y expectativas del
+diestro madrileño.
+
+Bajo el título **“Madrid espera: San Isidro y la temporada de Víctor Hernández”**, la conferencia abordará la importancia de la Feria de San
+Isidro como eje de la temporada taurina, así como los retos y objetivos que el torero afronta en un momento clave de su carrera. Hernández
+compartirá su visión del toreo, su preparación, y las sensaciones ante una temporada que se presenta decisiva.
+
+La cita se enmarca dentro de las actividades culturales impulsadas por la Asociación Taurina **“16 de Agosto”**, entidad comprometida con la
+difusión y el análisis de la tauromaquia desde una perspectiva cercana y divulgativa. El evento cuenta además con la colaboración del
+**Excmo. Ayuntamiento de Brihuega, la Villa de Brihuega Hostal-Restaurante, FUNTAUSA y Esencias de Vida.**`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 279,
     title: `Morante, protagonista en los carteles de Sevilla por partida doble`,
