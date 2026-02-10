@@ -457,234 +457,102 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1004,
-    title: `Lances de Futuro debuta al frente de la Maestranza con los carteles de la temporada 2026`,
-    image: "/images/lancess.jpg",
-    category: "Actualidad",
-    date: "9 de Febrero de 2026",
-	fullContent: `La empresa **Lances de Futuro** ha presentado
-oficialmente los carteles de la temporada taurina
-2026 en la **Plaza de Toros de la Real Maestranza**
-**de Caballería de Sevilla**, en un año especialmente
-significativo al tratarse de su primer ejercicio como
-empresa gestora del coso sevillano.
-
-La nueva etapa se abrirá, como marca la tradición,
-el Domingo de Resurrección, con un cartel de
-máximo **atractivo** que reunirá a **Morante de la**
-**Puebla, Roca Rey y David de Miranda** frente a **toros**
-**de Garcigrande**.
-
-La temporada se articula en torno al ciclo de **Feria**
-**de Abril**, el serial de novilladas, las corridas del
-**Corpus** y la **Feria de San Miguel**, conformando un
-abono amplio, equilibrado y con presencia de las
-principales **figuras** del escalafón, ganaderías de
-primer nivel y **toreros** sevillanos.
-
-La inauguración de este nuevo proyecto
-empresarial tendrá lugar el **domingo 5 de abril**, con
-**toros de Garcigrande** para **Morante de la Puebla,**
-**Roca Rey y David de Miranda**.
-
-Domingo de Resurrección
-
-**Domingo, 5 de abril:** Toros de Garcigrande para
-**Morante de la Puebla, Roca Rey y David de Miranda.**
-
-Feria de Abril;
-
-El ciclo ferial presentado por Lances de Futuro
-combina carteles de **figuras**, una destacada
-presencia de ganaderías de prestigio y varios
-alicientes especiales, como el mano a mano con
-**toros de Victorino Martín** y la tradicional corrida de
-rejones.
-
-**Sábado, 11 de abril:** Toros de Alcurrucén para **Pepe**
-**Moral, Lama de Góngora y Fabio Jiménez.**
-
-**Domingo, 12 de abril:** Toros de Fuente Ymbro para
-**Álvaro Lorenzo, Rafael Serna y Molina.**
-
-**Martes, 14 de abril:** Novillada con picadores de
-Talavante para **Emiliano Osornio, Julio Norte y**
-**Tomás Bastos.**
-
-**Miércoles, 15 de abril:** Toros de Santiago Domecq
-para **Miguel Ángel Perera, David Galván y Aarón**
-**Palacio.**
-
-**Jueves, 16 de abril:** Toros de Álvaro Núñez para
-**Morante de la Puebla, Juan Ortega y Víctor**
-**Hernández.**
-
-**Viernes, 17 de abril:** Toros de Domingo Hernández
-para **Alejandro Talavante, Roca Rey y Pablo**
-**Aguado.**
-
-**Sábado, 18 de abril:** Toros de Victorino Martín para
-**Manuel Escribano y Borja Jiménez,** mano a mano.
-
-**Domingo, 19 de abril:** Corrida de rejones. Toros de
-Capea para **Andy Cartagena, Lea Vicens y**
-**Guillermo Hermoso de Mendoza.**
-
-**Lunes, 20 de abril:** Toros de García Jiménez para
-**Morante de la Puebla, Borja Jiménez y Tomás Rufo.**
-
-**Martes, 21 de abril:** Toros de Núñez del Cuvillo para
-**José María Manzanares, Alejandro Talavante y**
-**Daniel Luque.**
-
-**Miércoles, 22 de abril:** Toros de El Parralejo para
-**Diego Urdiales, Emilio de Justo y David de Miranda.**
-
-**Jueves, 23 de abril:** Toros de Victoriano del Río
-para **José María Manzanares, Roca Rey y Javier**
-**Zulueta.**
-
-**Viernes, 24 de abril:** Toros de Juan Pedro Domecq
-para **Daniel Luque, Juan Ortega y Pablo Aguado.**
-
-**Sábado, 25 de abril:** Toros de La Quinta para **El Cid,**
-**Fortes y José Garrido.**
-
-**Domingo, 26 de abril:** Toros de Miura para **Pepe**
-**Moral, Manuel Escribano y Román.**
-
-Novilladas;
-
-**Domingo, 10 de mayo :** Novillos de la Cercada para
-**Carlos Tirado, Mario Vilau y Julio Méndez.**
-
-**Domingo, 17 de mayo:** Novillos de Murteira Grave
-para **Uceda Vargas, Gonzalo Capdevila y Mariscal**
-**Ruiz.**
-
-**Domingo, 31 de mayo:** Novillos de Guadaira para
-**Peregrino, Martín Morilla y Ruiz de Velasco.**
-
-Corpus;
-
-**Jueves, 4 de junio:** Toros de García Jiménez para
-**Morante de la Puebla, Juan Ortega y Pablo Aguado.**
-
-**Jueves, 11 de junio:** Novillos de Fermin Bohorquez
-para **Manuel Olivero, Torrejón y Sergio Rollón.**
-
-Feria de San Miguel;
-
-La temporada se cerrará con la tradicional Feria de
-San Miguel, que volverá a reunir a las máximas
-**figuras** y a los nombres propios del curso.
-
-**Jueves, 24 de septiembre:** Novillos de Garcigrande
-**Olga Casado, Ignacio Garibay y Manuel Domínguez.**
-
-**Viernes, 25 de septiembre:** **José María**
-**Manzanares, Alejandro Talavante y Juan Ortega.**
-
-**Sábado, 26 de septiembre:** **Emilio de Justo, Roca**
-**Rey y Pablo Aguado.**
-
-Domingo, 27 de septiembre:** **Matador por definir,
-Daniel Luque y Borja Jiménez.
-	Con este ambicioso abono, Lances de Futuro inicia su andadura al frente de la Maestranza con una temporada que conjuga tradición, máxima categoría y una decidida apuesta por el futuro del toreo, en una plaza que volverá a ser referente del calendario taurino nacional e internacional.`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1005,
-    title: `Víctor Hernández protagoniza una Conferencia Taurina en Brihuega`,
-    image: "/images/asoc.jpg",
+    title: `Borja Jiménez y el reto de Sevilla: crecer como torero tarde a tarde en la Maestranza`,
+    image: "/images/borji.jpg",
     category: "Actualidad",
-    date: "9 de Febrero de 2026",
-	fullContent: `La Asociación Taurina **“16 de Agosto”** organiza el próximo **28 de febrero a las 19:00** horas una destacada Conferencia Taurina que tendrá
-como protagonista al matador de toros **Víctor Hernández**, una de las figuras jóvenes con mayor proyección del panorama taurino actual.
+    date: "10 de Febrero de 2026",
+	fullContent: `Borja Jiménez encara su compromiso en Sevilla con una idea muy clara: no dejar de evolucionar como torero. El diestro afronta la temporada con una exigencia personal máxima, centrado en alcanzar ese concepto de toreo que persigue y que tiene muy definido en su interior. La superación diaria es el motor que guía su preparación y su manera de entender la profesión.
 
-El acto tendrá lugar en el **Hostal Restaurante Villa de Brihuega**, un enclave habitual para la actividad cultural y taurina de la localidad, y
-contará con la moderación del periodista Diego Cervera, que guiará una conversación centrada en la trayectoria, vivencias y expectativas del
-diestro madrileño.
-
-Bajo el título **“Madrid espera: San Isidro y la temporada de Víctor Hernández”**, la conferencia abordará la importancia de la Feria de San
-Isidro como eje de la temporada taurina, así como los retos y objetivos que el torero afronta en un momento clave de su carrera. Hernández
-compartirá su visión del toreo, su preparación, y las sensaciones ante una temporada que se presenta decisiva.
-
-La cita se enmarca dentro de las actividades culturales impulsadas por la Asociación Taurina **“16 de Agosto”**, entidad comprometida con la
-difusión y el análisis de la tauromaquia desde una perspectiva cercana y divulgativa. El evento cuenta además con la colaboración del
-**Excmo. Ayuntamiento de Brihuega, la Villa de Brihuega Hostal-Restaurante, FUNTAUSA y Esencias de Vida.**`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+Con tres comparecencias en la Real Maestranza, Borja no esconde la responsabilidad que supone anunciarse en una de las plazas más determinantes del escalafón. “Sevilla es la plaza que más me presiona”, reconoce, consciente de lo que significa triunfar —o fallar— en su ruedo. Aun así, asume el desafío desde la gratitud y la fe, agradecido por poder vivir un momento clave en su carrera en un escenario de máxima exigencia.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Morante, protagonista en los carteles de Sevilla por partida doble`,
-    image: "/images/ft.jpg",
+    title: `Juan Ortega mira a Sevilla con calma y ambición: cuatro tardes para soñar en la Maestranza`,
+    image: "/images/afro.jpg",
     category: "Actualidad",
-    date: "9 de Febrero de 2026",
-	imageCaption: "foto Raul Caro / EFE",
-	fullContent: `«Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el diestro
+    date: "10 de Febrero de 2026",
+	fullContent: `Juan Ortega afronta su temporada en Sevilla con ilusión, serenidad y madurez, preparado para vivir cuatro tardes clave en el ruedo de la Real Maestranza, una plaza que mide a los toreros en fondo y forma.
 
-La Real Maestranza de Caballería ha desvelado este lunes el cartel anunciador de la temporada taurina 2026 en Sevilla, una obra del pintor checo **Georg Dokoupil** que tiene como protagonista a **Morante de la Puebla**.
+El diestro sevillano subraya el momento de plena compenetración que atraviesa junto a su apoderado, José María, una relación basada en la confianza y la responsabilidad compartida. “Este año, por muchos motivos, la unión que tengo con José María es cosa de los dos, cada uno asume su parte”, explica Ortega, convencido de que esa sintonía es fundamental para afrontar una plaza de máxima exigencia.
 
-Francés ha desvelado que el autor no cejó en el empeño -ha llegado a pintar varios cuadros- hasta conseguir uno de su plena satisfacción. El propio **Dokoupil**, un artista adscrito al neoexpresionismo, ha aludido a su fuente de inspiración. «No hay torero que tenga mejor figura», ha señalado entre aplausos.
+En el plano anímico, Ortega llega reforzado tras su paso por México y Colombia, donde ha podido vestirse de luces y acumular sensaciones positivas. “Tengo la suerte de haber toreado en América y las sensaciones que traigo son de felicidad. Tengo muchas ganas de que llegue Sevilla; otras veces se espera con más miedo, pero ahora estoy ilusionado”, confiesa.
 
-En el acto, celebrado en el Salón de los Carteles de la Plaza de Toro, Morante ha bromeado con su condición de modelo, ha felicitado al cartelista y ha deseado suerte al nuevo empresario de la Maestranza, **José María Garzón**. «Todos vamos a disfrutar de esta feria; va a ser mi reaparición y me encuentro muy responsabilizado con todas las expectativas que hay sobre mí», ha señalado el matador
+El torero sevillano también quiso detenerse en el formato de presentación de los carteles, una puesta en escena que considera muy personal de su apoderado. “Esta forma de presentar los carteles es marca José María”, señaló, destacando la novedad y el cuidado con el que se ha preparado la gala de esta temporada.
 
-El galerista Fernando Francés, comisionado por la Maestranza para hacer el encargo, ha señalado que había pretendido hacer «un homenaje a la tauromaquia y a la figura de Morante, que acababa de anunciar su retirada».
-La obra de **Dokoupil** servirá para timbrar todo el billetaje, los programas de mano, trípticos y la cartelería global de los festejos que se celebren en el coso sevillano durante la temporada 2026. La obra, finalmente, engrosará la amplia colección de arte contemporáneo que ha dado nombre al espacio de la plaza de toros en el que se exponen durante todo el año.
-La obra de Dokoupil se unirá a la cada vez más extensa lista de firmas de prestigio que han aceptado el guante de la Real Maestranza para anunciar la temporada taurina sevillana desde 1994 a iniciativa del recordado pintor y caballero maestrante Juan Maestre, decidido impulsor de esta iniciativa que ha ido otorgando al nobiliario una de las colecciones de arte más conocidas y diversas de la ciudad.
-La colección de carteles, que ha dado nombre al salón que los alberga en la plaza de toros, atesora firmas como las de Luis Manuel Fernández, Miquel Barceló, autor de uno de los carteles más contestados, Carmen Laffón, Botero, Salinas, Luis Gordillo, Hernán Cortés, Norman Foster, el creador mexicano Abraham Cruz Villegas o la austríaca Martha Jungwirth que firmó el del pasado año.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Cuatro tardes por delante, una Maestranza expectante y un Juan Ortega dispuesto a dejar su sello en la feria sevillana.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Cabra con cartel para sábado de Gloria`,
-    image: "/images/cabraa.jpg",
+    title: `Nautalia planta cara al pliego de Zaragoza y abre un nuevo frente en la gestión de La Misericordia`,
+    image: "/images/naut.jpg",
     category: "Actualidad",
-    date: "9 de Febrero de 2026",
-	excerpt: "El empresario taurino mexicano José Luis Alatorre da a conocer el cartel que tendrá lugar el próximo 4 de abril en la localidad cordobesa.",
-	fullContent: `El empresario taurino mexicano **José Luis Alatorre** ha dado un paso
-decisivo en su consolidación en España con la organización de una
-corrida de toros de máxima expectación. El festejo tendrá lugar el
-próximo **4 de abril, Sábado de Gloria**, en la localidad cordobesa
-de **Cabra** y ha sido concebido como un **homenaje a la Semana Santa**
-**egabrense**, declarada de Interés Turístico Nacional.
+    date: "10 de Febrero de 2026",
+	fullContent: `El empresario taurino Rafael García Garrido, responsable de las plazas de Madrid y Valencia, ha presentado, en representación de Nautalia, un recurso de reposición contra el pliego de condiciones para la explotación de la plaza de toros de Zaragoza, al considerar que varios de sus puntos no se ajustan a la legalidad. Así lo adelanta el diario El Mundo en su edición del 10 de febrero.
 
-El cartel está encabezado por el diestro francés **Sebastián Castella**,
-una de las figuras más sólidas del escalafón. Junto a él, actuará el
-extremeño **Miguel Ángel Perera**, otra de las grandes referencias del
-toreo actual. La terna la completa **Borja Jiménez**, considerado el
-torero del momento por su fuerte irrupción en los grandes escenarios.
+La iniciativa llega después del contundente posicionamiento de la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET), que ya había mostrado su rechazo al contenido del pliego. Desde la patronal se calificó de inadmisible que se obligue a las empresas aspirantes a presentar compromisos cerrados con toreros y ganaderías, incluyendo incluso la fecha exacta de actuación de cada uno durante el mes de febrero, algo que, según ANOET, puede alterar la libre competencia entre los licitadores.
 
-Para esta ocasión tan especial, se lidiará una corrida de la ganadería
-del **maestro Capea**, un hierro que ofrece contrastadas garantías de
-calidad y bravura para el espectáculo.
-
-La elección de la fecha no es casual, ya que busca reforzar el **vínculo**
-**entre el mundo del toro y las tradiciones religiosas** en Cabra. El
-evento se integra en el calendario cultural del municipio en un **Sábado**
-**de Gloria** cargado de simbolismo, presentando la corrida no solo
-como un festejo taurino, sino como un acto cultural de homenaje.
-
-Con esta importante apuesta, **José Luis Alatorre** confirma su
-intención de consolidarse en el **panorama taurino español**. La
-corrida de Cabra se convierte así en uno de los **acontecimientos**
-**taurinos más esperados** de la primavera andaluza, combinando
-figuras del toreo, una ganadería de prestigio y una fecha con un
-profundo significado local.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+Asimismo, la asociación denunció que el modelo de adjudicación se apoya de forma casi exclusiva en un canon económico al alza y sin límite, tal y como recoge el propio pliego. Para ANOET, existen otros criterios objetivos para evaluar los proyectos empresariales, advirtiendo de que este sistema acaba convirtiendo la concesión de las plazas en auténticas subastas, alejadas de un modelo equilibrado y sostenible para la Fiesta.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+    { 
+    id: 274,
+    title: `Borja Jiménez y el reto de Sevilla: crecer como torero tarde a tarde en la Maestranza`,
+    image: "/images/borji.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `Borja Jiménez encara su compromiso en Sevilla con una idea muy clara: no dejar de evolucionar como torero. El diestro afronta la temporada con una exigencia personal máxima, centrado en alcanzar ese concepto de toreo que persigue y que tiene muy definido en su interior. La superación diaria es el motor que guía su preparación y su manera de entender la profesión.
+
+Con tres comparecencias en la Real Maestranza, Borja no esconde la responsabilidad que supone anunciarse en una de las plazas más determinantes del escalafón. “Sevilla es la plaza que más me presiona”, reconoce, consciente de lo que significa triunfar —o fallar— en su ruedo. Aun así, asume el desafío desde la gratitud y la fe, agradecido por poder vivir un momento clave en su carrera en un escenario de máxima exigencia.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 275,
+    title: `Juan Ortega mira a Sevilla con calma y ambición: cuatro tardes para soñar en la Maestranza`,
+    image: "/images/afro.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `Juan Ortega afronta su temporada en Sevilla con ilusión, serenidad y madurez, preparado para vivir cuatro tardes clave en el ruedo de la Real Maestranza, una plaza que mide a los toreros en fondo y forma.
+
+El diestro sevillano subraya el momento de plena compenetración que atraviesa junto a su apoderado, José María, una relación basada en la confianza y la responsabilidad compartida. “Este año, por muchos motivos, la unión que tengo con José María es cosa de los dos, cada uno asume su parte”, explica Ortega, convencido de que esa sintonía es fundamental para afrontar una plaza de máxima exigencia.
+
+En el plano anímico, Ortega llega reforzado tras su paso por México y Colombia, donde ha podido vestirse de luces y acumular sensaciones positivas. “Tengo la suerte de haber toreado en América y las sensaciones que traigo son de felicidad. Tengo muchas ganas de que llegue Sevilla; otras veces se espera con más miedo, pero ahora estoy ilusionado”, confiesa.
+
+El torero sevillano también quiso detenerse en el formato de presentación de los carteles, una puesta en escena que considera muy personal de su apoderado. “Esta forma de presentar los carteles es marca José María”, señaló, destacando la novedad y el cuidado con el que se ha preparado la gala de esta temporada.
+
+Cuatro tardes por delante, una Maestranza expectante y un Juan Ortega dispuesto a dejar su sello en la feria sevillana.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 276,
+    title: `Nautalia planta cara al pliego de Zaragoza y abre un nuevo frente en la gestión de La Misericordia`,
+    image: "/images/naut.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `El empresario taurino Rafael García Garrido, responsable de las plazas de Madrid y Valencia, ha presentado, en representación de Nautalia, un recurso de reposición contra el pliego de condiciones para la explotación de la plaza de toros de Zaragoza, al considerar que varios de sus puntos no se ajustan a la legalidad. Así lo adelanta el diario El Mundo en su edición del 10 de febrero.
+
+La iniciativa llega después del contundente posicionamiento de la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET), que ya había mostrado su rechazo al contenido del pliego. Desde la patronal se calificó de inadmisible que se obligue a las empresas aspirantes a presentar compromisos cerrados con toreros y ganaderías, incluyendo incluso la fecha exacta de actuación de cada uno durante el mes de febrero, algo que, según ANOET, puede alterar la libre competencia entre los licitadores.
+
+Asimismo, la asociación denunció que el modelo de adjudicación se apoya de forma casi exclusiva en un canon económico al alza y sin límite, tal y como recoge el propio pliego. Para ANOET, existen otros criterios objetivos para evaluar los proyectos empresariales, advirtiendo de que este sistema acaba convirtiendo la concesión de las plazas en auténticas subastas, alejadas de un modelo equilibrado y sostenible para la Fiesta.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 277,
     title: `Lances de Futuro debuta al frente de la Maestranza con los carteles de la temporada 2026`,
