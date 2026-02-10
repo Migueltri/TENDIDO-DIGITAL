@@ -457,10 +457,117 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Olga Casado y su tarde en La Maestranza`,
+    image: "/images/olgacas.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `**Olga Casado irrumpe en La Maestranza**. La empresa Lances de Futuro la ha
+situado el 24 de septiembre junto a Ignacio Garibay y Manuel Domínguez, ante
+Garcigrande, en una de las plazas más exigentes del mundo. **No ha sido regalo:**
+**la novillera se ha ganado el puesto a pulso.**
+
+Su temporada ha sido un **rosario de éxitos**. Puertollano le vio cortar **dos orejas y**
+**rabo**; Francia le abrió la **Puerta Grande** junto a Castella y Lea Vicens. Siguieron
+San Sebastián de los Reyes y Salamanca —*esta última en histórica lidia junto a*
+*dos mujeres*—, además de una doble oreja en el festival madrileño en homenaje a
+Antoñete. Incluso América **ha rendido pleitesía a su temple**.
+
+Se le ha **juzgado con lupa**, quizás *injustamente*: la mayoría de sus actuaciones
+han sido en corridas mixtas, lejos del mano a mano con novilleros. Pero la
+controversia no resiste el peso de los hechos. Olga ha demostrado toreo de verdad
+en plazas de todo calibre, y eso es lo que la ha colocado en Sevilla.
+
+La Maestranza podría ser **solo el principio**: todo apunta a que se le podría abrir
+las **puertas de Madrid** novillera con picadores en la próxima feria de otoño tras su
+**salida a hombros** en el pasado festival en homenaje a Antoñete.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Juan Ortega se alza como triunfador de la Feria de San Blas 2026 de Valdemorillo`,
+    image: "/images/juanort.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	excerpt: "El sevillano lidera los premios de la Feria de San Blas 2026, que también reconocieron a ‘Valenciano’ y a Samuel Castejón",
+	fullContent: `Juan Ortega ha sido proclamado triunfador de la Feria de San Blas 2026 de Valdemorillo tras la unánime decisión del jurado de los Premios Taurinos. El diestro sevillano se hizo con este galardón tras la actuación firmada el domingo 8 de febrero, cuando desorejó a un toro de Torrealta, protagonizando una de las faenas más destacadas del ciclo.
+
+Por otra parte, se han otorgado otros premios; en el apartado de mejor toro de la Feria, el jurado ha concedido el premio por mayoría a ‘Valenciano’, de la ganadería de El Capea, lidiado en primer lugar por Borja Jiménez el sábado 7 de febrero. Destacó por su bravura y entrega, y fue considerado el ejemplar más completo de los lidiados durante la tarde.
+
+La decisión de los premios ha correspondido a un jurado formado por Rosario Pérez (ABC), Sixto Naranjo (COPE), Alicia P. Velarde (El Séptimo Toro), el aficionado Domingo Delgado de la Cámara y el empresario Víctor Zabala (Pueblos del Toreo), junto al alcalde de Valdemorillo, Santiago Villena, y el concejal de asuntos taurinos, Miguel Partida.
+
+El galardón al mejor novillero ha sido para Samuel Castejón, de la Escuela Taurina José Cubero ‘Yiyo’, tras una actuación de impacto en su debut con picadores el viernes 6 de febrero, cuando cortó dos orejas al sexto novillo de Jiménez Pasquau, logrando la Puerta Grande.`,
+	author: "Nerea Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `La Flecha y una corrida solidaria llena de figuras.`,
+    image: "/images/flech.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `El próximo 28 de febrero se celebrará una corrida a beneficio de la Asociación de Esclerosis Múltiple de Valladolid. En los últimos años esta plaza optaba por el formato de festivales mayormente, pero ahora vuelve el festejo mayor con 3 toreros de máximo nivel. Esta corrida hace que La Flecha sea un escenario taurino muy activo en el inicio de temporada en la zona de Castilla y León
+
+Esta cita tendrá un carácter solidario como ya hemos nombrado anteriormente en el que la plaza opta por seguir apoyando la investigación y a los trabajadores que luchan diariamente junto a las personas afectadas por esta enfermedad neurodegenerativa.En esta corrida el Ayuntamiento De Arroyo de la Encomienda junto a la empresa Tauroemoción han sido los responsables de que el regreso de las corridas de toros a esta plaza este ligado a una causa social.
+
+En el cartel se presentan referentes del toreo moderno: Sebastián Castella, el francés que en el 2025 se consolidó en la cima del toreo en la que fue su 25 temporada como matador de toros con triunfos importantes y faenas de ensueño; también estará Alejandro Talavante, una de las máximas figuras del toreo actual el cual tiene ya agenciadas tardes importantes en plazas como Sevilla y Madrid; por último Marco Pérez, el cual ya va adentrándose en el escalafón tras sus hazañas la temporada pasada como su salida a hombros en Nimes en su alternativa y en diversas plazas donde ha mostrado su concepto del toreo como matador de toros y ha triunfado notoriamente. La terna promete, se juntan jerarquía, personalidad y proyección en un encierro de Zacarías Moreno. Las entradas están ya a la venta en la página web de la plaza de toros de La Flecha.
+
+Además esta fecha coincide con el 10º aniversario del festival taurino solidario, uno de los más consolidados en la provincia de Valladolid, y el 20º aniversario de la plaza de toros, inaugurada en el 2006.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Mario Vilau participa en el Circuito de Madrid 2026 ocupando la plaza de intercambio`,
+    image: "/images/vilau.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	excerpt: "El novillero catalán, una de las sensaciones de la pasada campaña, estará presente en la edición de 2026 del Circuito de Madrid. Ocupa la plaza de intercambio tras ganar el Circuito Valenciano 2025",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce al cuarto novillero integrante, uno de los
+nombres propios de la temporada pasada que busca hacerse un hueco teniendo que
+salir de su región.
+
+Se trata del novillero de Barcelona **Mario Vilau**, quien ocupará la plaza de intercambio
+tras ganar el **Circuito Valenciano 2025** y la **Liga Nacional de Novilladas** de dicho
+año. Uno de los novilleros más prometedores de la temporada pasada, donde actuó en
+22 novilladas en las que cortó 46 orejas y 4 rabos.
+
+Su apuesta por el **Circuito de Madrid** puede significar un punto de inflexión en la
+carrera del joven novillero, llegando a los carteles de la región que le den el salto a las
+ferias más importantes.
+
+Además, este año hará el paseíllo en tres de las principales plazas de primera
+categoría: **Madrid, Sevilla y Valencia**. El primer puerto será Valencia en la Feria de
+Fallas, donde hará el paseíllo el 8 de marzo matando una novillada de Talavante; dos
+días después, el 10 de mayo, matará el encierro de La Cercada en Sevilla; y su
+presentación en Las Ventas será el 19 de mayo ante los novillos de Fuente Ymbro.
+
+Un inicio de temporada para reafirmar la imagen dada en la campaña 2025 como uno
+de los novilleros punteros del escalafón. Además, lo hará llevando **Cataluña** por
+bandera, una región de la que está orgulloso de representar en todas las plazas de
+toros que pisa.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde
+hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta
+del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel,
+Kilómetro Cero y Toros de la Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la
+promoción de los municipios madrileños a través del toro. En la presente temporada,
+tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Borja Jiménez y el reto de Sevilla: crecer como torero tarde a tarde en la Maestranza`,
     image: "/images/borji.jpg",
-    category: "Actualidad",
+    category: "Opinión",
     date: "10 de Febrero de 2026",
 	fullContent: `Borja Jiménez encara su compromiso en Sevilla con una idea muy clara: no dejar de evolucionar como torero. El diestro afronta la temporada con una exigencia personal máxima, centrado en alcanzar ese concepto de toreo que persigue y que tiene muy definido en su interior. La superación diaria es el motor que guía su preparación y su manera de entender la profesión.
 
@@ -473,7 +580,7 @@ Con tres comparecencias en la Real Maestranza, Borja no esconde la responsabilid
     id: 1006,
     title: `Juan Ortega mira a Sevilla con calma y ambición: cuatro tardes para soñar en la Maestranza`,
     image: "/images/afro.jpg",
-    category: "Actualidad",
+    category: "Opinión",
     date: "10 de Febrero de 2026",
 	fullContent: `Juan Ortega afronta su temporada en Sevilla con ilusión, serenidad y madurez, preparado para vivir cuatro tardes clave en el ruedo de la Real Maestranza, una plaza que mide a los toreros en fondo y forma.
 
@@ -506,11 +613,118 @@ Asimismo, la asociación denunció que el modelo de adjudicación se apoya de fo
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+   { 
+    id: 270,
+    title: `Olga Casado y su tarde en La Maestranza`,
+    image: "/images/olgacas.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `**Olga Casado irrumpe en La Maestranza**. La empresa Lances de Futuro la ha
+situado el 24 de septiembre junto a Ignacio Garibay y Manuel Domínguez, ante
+Garcigrande, en una de las plazas más exigentes del mundo. **No ha sido regalo:**
+**la novillera se ha ganado el puesto a pulso.**
+
+Su temporada ha sido un **rosario de éxitos**. Puertollano le vio cortar **dos orejas y**
+**rabo**; Francia le abrió la **Puerta Grande** junto a Castella y Lea Vicens. Siguieron
+San Sebastián de los Reyes y Salamanca —*esta última en histórica lidia junto a*
+*dos mujeres*—, además de una doble oreja en el festival madrileño en homenaje a
+Antoñete. Incluso América **ha rendido pleitesía a su temple**.
+
+Se le ha **juzgado con lupa**, quizás *injustamente*: la mayoría de sus actuaciones
+han sido en corridas mixtas, lejos del mano a mano con novilleros. Pero la
+controversia no resiste el peso de los hechos. Olga ha demostrado toreo de verdad
+en plazas de todo calibre, y eso es lo que la ha colocado en Sevilla.
+
+La Maestranza podría ser **solo el principio**: todo apunta a que se le podría abrir
+las **puertas de Madrid** novillera con picadores en la próxima feria de otoño tras su
+**salida a hombros** en el pasado festival en homenaje a Antoñete.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 271,
+    title: `Juan Ortega se alza como triunfador de la Feria de San Blas 2026 de Valdemorillo`,
+    image: "/images/juanort.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	excerpt: "El sevillano lidera los premios de la Feria de San Blas 2026, que también reconocieron a ‘Valenciano’ y a Samuel Castejón",
+	fullContent: `Juan Ortega ha sido proclamado triunfador de la Feria de San Blas 2026 de Valdemorillo tras la unánime decisión del jurado de los Premios Taurinos. El diestro sevillano se hizo con este galardón tras la actuación firmada el domingo 8 de febrero, cuando desorejó a un toro de Torrealta, protagonizando una de las faenas más destacadas del ciclo.
+
+Por otra parte, se han otorgado otros premios; en el apartado de mejor toro de la Feria, el jurado ha concedido el premio por mayoría a ‘Valenciano’, de la ganadería de El Capea, lidiado en primer lugar por Borja Jiménez el sábado 7 de febrero. Destacó por su bravura y entrega, y fue considerado el ejemplar más completo de los lidiados durante la tarde.
+
+La decisión de los premios ha correspondido a un jurado formado por Rosario Pérez (ABC), Sixto Naranjo (COPE), Alicia P. Velarde (El Séptimo Toro), el aficionado Domingo Delgado de la Cámara y el empresario Víctor Zabala (Pueblos del Toreo), junto al alcalde de Valdemorillo, Santiago Villena, y el concejal de asuntos taurinos, Miguel Partida.
+
+El galardón al mejor novillero ha sido para Samuel Castejón, de la Escuela Taurina José Cubero ‘Yiyo’, tras una actuación de impacto en su debut con picadores el viernes 6 de febrero, cuando cortó dos orejas al sexto novillo de Jiménez Pasquau, logrando la Puerta Grande.`,
+	author: "Nerea Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 272,
+    title: `La Flecha y una corrida solidaria llena de figuras.`,
+    image: "/images/flech.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	fullContent: `El próximo 28 de febrero se celebrará una corrida a beneficio de la Asociación de Esclerosis Múltiple de Valladolid. En los últimos años esta plaza optaba por el formato de festivales mayormente, pero ahora vuelve el festejo mayor con 3 toreros de máximo nivel. Esta corrida hace que La Flecha sea un escenario taurino muy activo en el inicio de temporada en la zona de Castilla y León
+
+Esta cita tendrá un carácter solidario como ya hemos nombrado anteriormente en el que la plaza opta por seguir apoyando la investigación y a los trabajadores que luchan diariamente junto a las personas afectadas por esta enfermedad neurodegenerativa.En esta corrida el Ayuntamiento De Arroyo de la Encomienda junto a la empresa Tauroemoción han sido los responsables de que el regreso de las corridas de toros a esta plaza este ligado a una causa social.
+
+En el cartel se presentan referentes del toreo moderno: Sebastián Castella, el francés que en el 2025 se consolidó en la cima del toreo en la que fue su 25 temporada como matador de toros con triunfos importantes y faenas de ensueño; también estará Alejandro Talavante, una de las máximas figuras del toreo actual el cual tiene ya agenciadas tardes importantes en plazas como Sevilla y Madrid; por último Marco Pérez, el cual ya va adentrándose en el escalafón tras sus hazañas la temporada pasada como su salida a hombros en Nimes en su alternativa y en diversas plazas donde ha mostrado su concepto del toreo como matador de toros y ha triunfado notoriamente. La terna promete, se juntan jerarquía, personalidad y proyección en un encierro de Zacarías Moreno. Las entradas están ya a la venta en la página web de la plaza de toros de La Flecha.
+
+Además esta fecha coincide con el 10º aniversario del festival taurino solidario, uno de los más consolidados en la provincia de Valladolid, y el 20º aniversario de la plaza de toros, inaugurada en el 2006.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 273,
+    title: `Mario Vilau participa en el Circuito de Madrid 2026 ocupando la plaza de intercambio`,
+    image: "/images/vilau.jpg",
+    category: "Actualidad",
+    date: "10 de Febrero de 2026",
+	excerpt: "El novillero catalán, una de las sensaciones de la pasada campaña, estará presente en la edición de 2026 del Circuito de Madrid. Ocupa la plaza de intercambio tras ganar el Circuito Valenciano 2025",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce al cuarto novillero integrante, uno de los
+nombres propios de la temporada pasada que busca hacerse un hueco teniendo que
+salir de su región.
+
+Se trata del novillero de Barcelona **Mario Vilau**, quien ocupará la plaza de intercambio
+tras ganar el **Circuito Valenciano 2025** y la **Liga Nacional de Novilladas** de dicho
+año. Uno de los novilleros más prometedores de la temporada pasada, donde actuó en
+22 novilladas en las que cortó 46 orejas y 4 rabos.
+
+Su apuesta por el **Circuito de Madrid** puede significar un punto de inflexión en la
+carrera del joven novillero, llegando a los carteles de la región que le den el salto a las
+ferias más importantes.
+
+Además, este año hará el paseíllo en tres de las principales plazas de primera
+categoría: **Madrid, Sevilla y Valencia**. El primer puerto será Valencia en la Feria de
+Fallas, donde hará el paseíllo el 8 de marzo matando una novillada de Talavante; dos
+días después, el 10 de mayo, matará el encierro de La Cercada en Sevilla; y su
+presentación en Las Ventas será el 19 de mayo ante los novillos de Fuente Ymbro.
+
+Un inicio de temporada para reafirmar la imagen dada en la campaña 2025 como uno
+de los novilleros punteros del escalafón. Además, lo hará llevando **Cataluña** por
+bandera, una región de la que está orgulloso de representar en todas las plazas de
+toros que pisa.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde
+hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta
+del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel,
+Kilómetro Cero y Toros de la Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la
+promoción de los municipios madrileños a través del toro. En la presente temporada,
+tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 274,
     title: `Borja Jiménez y el reto de Sevilla: crecer como torero tarde a tarde en la Maestranza`,
     image: "/images/borji.jpg",
-    category: "Actualidad",
+    category: "Opinión",
     date: "10 de Febrero de 2026",
 	fullContent: `Borja Jiménez encara su compromiso en Sevilla con una idea muy clara: no dejar de evolucionar como torero. El diestro afronta la temporada con una exigencia personal máxima, centrado en alcanzar ese concepto de toreo que persigue y que tiene muy definido en su interior. La superación diaria es el motor que guía su preparación y su manera de entender la profesión.
 
@@ -523,7 +737,7 @@ Con tres comparecencias en la Real Maestranza, Borja no esconde la responsabilid
     id: 275,
     title: `Juan Ortega mira a Sevilla con calma y ambición: cuatro tardes para soñar en la Maestranza`,
     image: "/images/afro.jpg",
-    category: "Actualidad",
+    category: "Opinión",
     date: "10 de Febrero de 2026",
 	fullContent: `Juan Ortega afronta su temporada en Sevilla con ilusión, serenidad y madurez, preparado para vivir cuatro tardes clave en el ruedo de la Real Maestranza, una plaza que mide a los toreros en fondo y forma.
 
