@@ -499,7 +499,7 @@ Por otra parte, se han otorgado otros premios; en el apartado de mejor toro de l
 La decisión de los premios ha correspondido a un jurado formado por Rosario Pérez (ABC), Sixto Naranjo (COPE), Alicia P. Velarde (El Séptimo Toro), el aficionado Domingo Delgado de la Cámara y el empresario Víctor Zabala (Pueblos del Toreo), junto al alcalde de Valdemorillo, Santiago Villena, y el concejal de asuntos taurinos, Miguel Partida.
 
 El galardón al mejor novillero ha sido para Samuel Castejón, de la Escuela Taurina José Cubero ‘Yiyo’, tras una actuación de impacto en su debut con picadores el viernes 6 de febrero, cuando cortó dos orejas al sexto novillo de Jiménez Pasquau, logrando la Puerta Grande.`,
-	author: "Nerea Sáez",
+	author: "Inés Sáez",
     authorLogo: "/images/nereasa.jpg",
     showAuthorHeader: true
    },
@@ -656,7 +656,7 @@ Por otra parte, se han otorgado otros premios; en el apartado de mejor toro de l
 La decisión de los premios ha correspondido a un jurado formado por Rosario Pérez (ABC), Sixto Naranjo (COPE), Alicia P. Velarde (El Séptimo Toro), el aficionado Domingo Delgado de la Cámara y el empresario Víctor Zabala (Pueblos del Toreo), junto al alcalde de Valdemorillo, Santiago Villena, y el concejal de asuntos taurinos, Miguel Partida.
 
 El galardón al mejor novillero ha sido para Samuel Castejón, de la Escuela Taurina José Cubero ‘Yiyo’, tras una actuación de impacto en su debut con picadores el viernes 6 de febrero, cuando cortó dos orejas al sexto novillo de Jiménez Pasquau, logrando la Puerta Grande.`,
-	author: "Nerea Sáez",
+	author: "Inés Sáez",
     authorLogo: "/images/nereasa.jpg",
     showAuthorHeader: true
    },
