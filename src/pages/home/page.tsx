@@ -457,6 +457,145 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Lances de Futuro debuta al frente de la Maestranza con los carteles de la temporada 2026`,
+    image: "/images/lancess.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	fullContent: `La empresa **Lances de Futuro** ha presentado
+oficialmente los carteles de la temporada taurina
+2026 en la **Plaza de Toros de la Real Maestranza**
+**de Caballería de Sevilla**, en un año especialmente
+significativo al tratarse de su primer ejercicio como
+empresa gestora del coso sevillano.
+
+La nueva etapa se abrirá, como marca la tradición,
+el Domingo de Resurrección, con un cartel de
+máximo **atractivo** que reunirá a **Morante de la**
+**Puebla, Roca Rey y David de Miranda** frente a **toros**
+**de Garcigrande**.
+
+La temporada se articula en torno al ciclo de **Feria**
+**de Abril**, el serial de novilladas, las corridas del
+**Corpus** y la **Feria de San Miguel**, conformando un
+abono amplio, equilibrado y con presencia de las
+principales **figuras** del escalafón, ganaderías de
+primer nivel y **toreros** sevillanos.
+
+La inauguración de este nuevo proyecto
+empresarial tendrá lugar el **domingo 5 de abril**, con
+**toros de Garcigrande** para **Morante de la Puebla,**
+**Roca Rey y David de Miranda**.
+
+Domingo de Resurrección
+
+**Domingo, 5 de abril:** Toros de Garcigrande para
+**Morante de la Puebla, Roca Rey y David de Miranda.**
+
+Feria de Abril;
+
+El ciclo ferial presentado por Lances de Futuro
+combina carteles de **figuras**, una destacada
+presencia de ganaderías de prestigio y varios
+alicientes especiales, como el mano a mano con
+**toros de Victorino Martín** y la tradicional corrida de
+rejones.
+
+**Sábado, 11 de abril:** Toros de Alcurrucén para **Pepe**
+**Moral, Lama de Góngora y Fabio Jiménez.**
+
+**Domingo, 12 de abril:** Toros de Fuente Ymbro para
+**Álvaro Lorenzo, Rafael Serna y Molina.**
+
+**Martes, 14 de abril:** Novillada con picadores de
+Talavante para **Emiliano Osornio, Julio Norte y**
+**Tomás Bastos.**
+
+**Miércoles, 15 de abril:** Toros de Santiago Domecq
+para **Miguel Ángel Perera, David Galván y Aarón**
+**Palacio.**
+
+**Jueves, 16 de abril:** Toros de Álvaro Núñez para
+**Morante de la Puebla, Juan Ortega y Víctor**
+**Hernández.**
+
+**Viernes, 17 de abril:** Toros de Domingo Hernández
+para **Alejandro Talavante, Roca Rey y Pablo**
+**Aguado.**
+
+**Sábado, 18 de abril:** Toros de Victorino Martín para
+**Manuel Escribano y Borja Jiménez,** mano a mano.
+
+**Domingo, 19 de abril:** Corrida de rejones. Toros de
+Capea para **Andy Cartagena, Lea Vicens y**
+**Guillermo Hermoso de Mendoza.**
+
+**Lunes, 20 de abril:** Toros de García Jiménez para
+**Morante de la Puebla, Borja Jiménez y Tomás Rufo.**
+
+**Martes, 21 de abril:** Toros de Núñez del Cuvillo para
+**José María Manzanares, Alejandro Talavante y**
+**Daniel Luque.**
+
+**Miércoles, 22 de abril:** Toros de El Parralejo para
+**Diego Urdiales, Emilio de Justo y David de Miranda.**
+
+**Jueves, 23 de abril:** Toros de Victoriano del Río
+para **José María Manzanares, Roca Rey y Javier**
+**Zulueta.**
+
+**Viernes, 24 de abril:** Toros de Juan Pedro Domecq
+para **Daniel Luque, Juan Ortega y Pablo Aguado.**
+
+**Sábado, 25 de abril:** Toros de La Quinta para **El Cid,**
+**Fortes y José Garrido.**
+
+**Domingo, 26 de abril:** Toros de Miura para **Pepe**
+**Moral, Manuel Escribano y Román.**
+
+Novilladas;
+
+**Domingo, 10 de mayo :** Novillos de la Cercada para
+**Carlos Tirado, Mario Vilau y Julio Méndez.**
+
+**Domingo, 17 de mayo:** Novillos de Murteira Grave
+para **Uceda Vargas, Gonzalo Capdevila y Mariscal**
+**Ruiz.**
+
+**Domingo, 31 de mayo:** Novillos de Guadaira para
+**Peregrino, Martín Morilla y Ruiz de Velasco.**
+
+Corpus;
+
+**Jueves, 4 de junio:** Toros de García Jiménez para
+**Morante de la Puebla, Juan Ortega y Pablo Aguado.**
+
+**Jueves, 11 de junio:** Novillos de Fermin Bohorquez
+para **Manuel Olivero, Torrejón y Sergio Rollón.**
+
+Feria de San Miguel;
+
+La temporada se cerrará con la tradicional Feria de
+San Miguel, que volverá a reunir a las máximas
+**figuras** y a los nombres propios del curso.
+
+**Jueves, 24 de septiembre:** Novillos de Garcigrande
+**Olga Casado, Ignacio Garibay y Manuel Domínguez.**
+
+**Viernes, 25 de septiembre:** **José María**
+**Manzanares, Alejandro Talavante y Juan Ortega.**
+
+**Sábado, 26 de septiembre:** **Emilio de Justo, Roca**
+**Rey y Pablo Aguado.**
+
+Domingo, 27 de septiembre:** **Matador por definir,
+Daniel Luque y Borja Jiménez.
+	Con este ambicioso abono, Lances de Futuro inicia su andadura al frente de la Maestranza con una temporada que conjuga tradición, máxima categoría y una decidida apuesta por el futuro del toreo, en una plaza que volverá a ser referente del calendario taurino nacional e internacional.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Víctor Hernández protagoniza una Conferencia Taurina en Brihuega`,
     image: "/images/asoc.jpg",
@@ -546,6 +685,145 @@ profundo significado local.`,
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 277,
+    title: `Lances de Futuro debuta al frente de la Maestranza con los carteles de la temporada 2026`,
+    image: "/images/lancess.jpg",
+    category: "Actualidad",
+    date: "9 de Febrero de 2026",
+	fullContent: `La empresa **Lances de Futuro** ha presentado
+oficialmente los carteles de la temporada taurina
+2026 en la **Plaza de Toros de la Real Maestranza**
+**de Caballería de Sevilla**, en un año especialmente
+significativo al tratarse de su primer ejercicio como
+empresa gestora del coso sevillano.
+
+La nueva etapa se abrirá, como marca la tradición,
+el Domingo de Resurrección, con un cartel de
+máximo **atractivo** que reunirá a **Morante de la**
+**Puebla, Roca Rey y David de Miranda** frente a **toros**
+**de Garcigrande**.
+
+La temporada se articula en torno al ciclo de **Feria**
+**de Abril**, el serial de novilladas, las corridas del
+**Corpus** y la **Feria de San Miguel**, conformando un
+abono amplio, equilibrado y con presencia de las
+principales **figuras** del escalafón, ganaderías de
+primer nivel y **toreros** sevillanos.
+
+La inauguración de este nuevo proyecto
+empresarial tendrá lugar el **domingo 5 de abril**, con
+**toros de Garcigrande** para **Morante de la Puebla,**
+**Roca Rey y David de Miranda**.
+
+Domingo de Resurrección
+
+**Domingo, 5 de abril:** Toros de Garcigrande para
+**Morante de la Puebla, Roca Rey y David de Miranda.**
+
+Feria de Abril;
+
+El ciclo ferial presentado por Lances de Futuro
+combina carteles de **figuras**, una destacada
+presencia de ganaderías de prestigio y varios
+alicientes especiales, como el mano a mano con
+**toros de Victorino Martín** y la tradicional corrida de
+rejones.
+
+**Sábado, 11 de abril:** Toros de Alcurrucén para **Pepe**
+**Moral, Lama de Góngora y Fabio Jiménez.**
+
+**Domingo, 12 de abril:** Toros de Fuente Ymbro para
+**Álvaro Lorenzo, Rafael Serna y Molina.**
+
+**Martes, 14 de abril:** Novillada con picadores de
+Talavante para **Emiliano Osornio, Julio Norte y**
+**Tomás Bastos.**
+
+**Miércoles, 15 de abril:** Toros de Santiago Domecq
+para **Miguel Ángel Perera, David Galván y Aarón**
+**Palacio.**
+
+**Jueves, 16 de abril:** Toros de Álvaro Núñez para
+**Morante de la Puebla, Juan Ortega y Víctor**
+**Hernández.**
+
+**Viernes, 17 de abril:** Toros de Domingo Hernández
+para **Alejandro Talavante, Roca Rey y Pablo**
+**Aguado.**
+
+**Sábado, 18 de abril:** Toros de Victorino Martín para
+**Manuel Escribano y Borja Jiménez,** mano a mano.
+
+**Domingo, 19 de abril:** Corrida de rejones. Toros de
+Capea para **Andy Cartagena, Lea Vicens y**
+**Guillermo Hermoso de Mendoza.**
+
+**Lunes, 20 de abril:** Toros de García Jiménez para
+**Morante de la Puebla, Borja Jiménez y Tomás Rufo.**
+
+**Martes, 21 de abril:** Toros de Núñez del Cuvillo para
+**José María Manzanares, Alejandro Talavante y**
+**Daniel Luque.**
+
+**Miércoles, 22 de abril:** Toros de El Parralejo para
+**Diego Urdiales, Emilio de Justo y David de Miranda.**
+
+**Jueves, 23 de abril:** Toros de Victoriano del Río
+para **José María Manzanares, Roca Rey y Javier**
+**Zulueta.**
+
+**Viernes, 24 de abril:** Toros de Juan Pedro Domecq
+para **Daniel Luque, Juan Ortega y Pablo Aguado.**
+
+**Sábado, 25 de abril:** Toros de La Quinta para **El Cid,**
+**Fortes y José Garrido.**
+
+**Domingo, 26 de abril:** Toros de Miura para **Pepe**
+**Moral, Manuel Escribano y Román.**
+
+Novilladas;
+
+**Domingo, 10 de mayo :** Novillos de la Cercada para
+**Carlos Tirado, Mario Vilau y Julio Méndez.**
+
+**Domingo, 17 de mayo:** Novillos de Murteira Grave
+para **Uceda Vargas, Gonzalo Capdevila y Mariscal**
+**Ruiz.**
+
+**Domingo, 31 de mayo:** Novillos de Guadaira para
+**Peregrino, Martín Morilla y Ruiz de Velasco.**
+
+Corpus;
+
+**Jueves, 4 de junio:** Toros de García Jiménez para
+**Morante de la Puebla, Juan Ortega y Pablo Aguado.**
+
+**Jueves, 11 de junio:** Novillos de Fermin Bohorquez
+para **Manuel Olivero, Torrejón y Sergio Rollón.**
+
+Feria de San Miguel;
+
+La temporada se cerrará con la tradicional Feria de
+San Miguel, que volverá a reunir a las máximas
+**figuras** y a los nombres propios del curso.
+
+**Jueves, 24 de septiembre:** Novillos de Garcigrande
+**Olga Casado, Ignacio Garibay y Manuel Domínguez.**
+
+**Viernes, 25 de septiembre:** **José María**
+**Manzanares, Alejandro Talavante y Juan Ortega.**
+
+**Sábado, 26 de septiembre:** **Emilio de Justo, Roca**
+**Rey y Pablo Aguado.**
+
+Domingo, 27 de septiembre:** **Matador por definir,
+Daniel Luque y Borja Jiménez.
+	Con este ambicioso abono, Lances de Futuro inicia su andadura al frente de la Maestranza con una temporada que conjuga tradición, máxima categoría y una decidida apuesta por el futuro del toreo, en una plaza que volverá a ser referente del calendario taurino nacional e internacional.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 278,
     title: `Víctor Hernández protagoniza una Conferencia Taurina en Brihuega`,
