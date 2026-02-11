@@ -1157,8 +1157,7 @@ Los carteles para esta temporada 2026:
 
 -   S 04/04: **Paco Ureña y Roca Rey**, mano a mano (Juan Pedro Domecq)
 
--   M 09/06: Festividad de la Región de Murcia. **Borja Jiménez, Jorge
-    Martínez y Marco Pérez** (Moreno Pérez-Tabernero)
+-   M 09/06: Festividad de la Región de Murcia. **Borja Jiménez, Jorge Martínez y Marco Pérez** (Moreno Pérez-Tabernero)
 
 -   D 20/09: **Diego Urdiales, Paco Ureña y Miguel Ángel Perera** (Santiago
     Domecq)`,
