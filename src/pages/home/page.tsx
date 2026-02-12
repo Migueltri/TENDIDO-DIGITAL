@@ -456,6 +456,99 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
+    { 
+    id: 1000,
+    title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "El ciclo se celebrará del 23 al 25 de mayo con el toro como eje central del espectáculo.",
+	fullContent: `La Feria del Toro 2026 de Vic-Fézensac ya tiene carteles oficialesl. El Club Taurin Vicois ha anunciado un ciclo que se desarrollará del 23 al 25 de mayo en las Arènes Joseph Fourniol, con apostando por la diversidad ganadera, identidad de esta plaza francesa.
+La programación reunirá diez encastes distintos, combinando hierros históricos y ganaderías habituales, en un cartel que vuelve a poner el protagonismo en el toro.
+Sábado 23 de mayo a las 11h: novillada de Aguadulce para Gonzalo Capdevila, Pedro Andrés y Pedro Luis. Por la tarde, a las 18h se lidiará una corrida de Prieto de la Cal con Alberto Lamelas, Luis Gerpe y Maxime Solera.
+Domingo 24 de mayo a las 11h: Corrida Concurso, seña de identidad del ciclo desde 1972 , con toros de: Saltillo, La Quinta, Partido de Resina, Benítez Cubero, Dolores Aguirre y Pagés Malhan, para Sánchez Vara, Román e Isaac Fonseca. Por la tarde, a las 18h se anunciará la corrida de Baltasar Ibán con Morenito de Aranda, José Garrido y Juan de Castilla.
+Lunes 25 a las 11h: novillada sin picadores de Le Lartet para Manuel Real “Realito”, Rémy Asensio, y el ganador del bolsín de Bougue. Por la tarde, a las 18h, se cerrará la feria con la corrida de Miura, que será estoqueada por Pepe Moral, Damián Castaño y Gómez del Pilar.
+Con este planteamiento, Vic vuelve a reivindicar su personalidad dentro del panorama taurino internacional, priorizando la integridad del toro y el peso de los encastes sobre cualquier otro criterio.
+Con este elenco, Vic-Fézensac vuelve a situarse como una de las plazas francesas de mayor personalidad dentro del circuito taurino internacional.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Fernando Adrián incorpora a Curro Javier y a Pedro Iturralde a su cuadrilla para la nueva temporada`,
+    image: "/images/incor.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El **matador** de **toros** Fernando Adrián ha cerrado la
+composición de su cuadrilla para la presente
+**temporada** con la incorporación del banderillero
+**Curro Javier**, que ocupará el **puesto** que deja
+Marcos Prieto.
+
+El **torero** madrileño contará además con el estreno
+en sus **filas** del picador **Pedro Iturralde**, que
+compartirá la **suerte** de varas con el joven picador
+guadalajareño **Javier Díaz-Manrique**.
+
+Como lidiador continuará el salmantino **Roberto**
+**Blanco**, mientras que el **puesto** de tercero seguirá
+siendo desempeñado por el madrileño Diego
+Valladar.
+
+La estructura del equipo se completa con **Francisco
+Javier Villalba como mozo de espadas, y con
+Santiago Ellauri al frente de la gestión profesional
+del diestro** .`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Sebastián Castella dona a la Real Maestranza el traje con el que abrió la Puerta del Príncipe en 2023`,
+    image: "/images/seb.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El matador de toros Sebastián Castella ha entregado este jueves a la Real Maestranza de Caballería de Sevilla el traje de luces que vistió en la corrida del 30 de septiembre de 2023, tarde en la que logró abrir la Puerta del Príncipe.
+
+El acto de donación se ha celebrado en el Salón de Carteles de la plaza de toros de la Real Maestranza y ha contado con la presencia del teniente de hermano mayor de la Real Corporación, Marcelo Maestre.
+
+El terno, de color grosella y oro, pasará a formar parte de los fondos del Museo Taurino de la Real Maestranza, donde podrá contemplarse junto a otros trajes históricos, como el que donó José María Manzanares tras el indulto de ‘Arrojado’, o el que lució Morante de la Puebla la tarde en la que cortó un rabo en el coso sevillano.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `El Ayuntamiento de Albacete aprueba el pliego para la gestión de la plaza de toros por cinco años con exigentes requisitos económicos y técnicos`,
+    image: "/images/ayun.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El **Ayuntamiento de Albacete** ha aprobado el pliego de condiciones que regirá la adjudicación de la gestión de la plaza de toros de la
+ciudad **durante los próximos cinco años**. El contrato establece una duración inicial de dos años, con la posibilidad de hasta tres
+prórrogas anuales.
+
+En **materia** de solvencia económica, las empresas licitadoras deberán acreditar un volumen anual de negocio superior a 2,7 millones de
+euros. En cuanto a la solvencia **técnica**, se exigirá haber sido **titular** o concesionaria, en los últimos ocho años, de al menos cinco ferias en
+plazas de primera **categoría**, o bien haber gestionado diez o más ferias en plazas de segunda **categoría** durante los últimos diez años.
+
+Respecto a la **programación**, el pliego fija la celebración de diez **festejos** durante la feria, entre los **días 8 y 17 de septiembre**, de los cuales
+dos deberán ser **novilladas** con picadores y ocho corridas de **toros**, incluyendo obligatoriamente una corrida de **carácter torista**. Se
+valorará de forma positiva la presencia en los carteles de **toreros** de reconocida trayectoria, así como la participación de tres **toreros**
+locales y ganaderías de primer nivel.
+
+Asimismo, la empresa adjudicataria deberá organizar una novillada sin picadores durante las fiestas de **San Juan**, con la participación de
+seis novilleros, dando preferencia a los alumnos de la Escuela Taurina de Albacete. En el festival del **Cotolengo**, deberá aportar un **novillo-**
+**toro** para el novillero de dicha **Escuela** y, además, programar otra **novillada sin picadores** para seis alumnos del mismo centro formativo.
+
+Entre los criterios de valoración figuran el **menor incremento posible** en el precio de abonos y localidades, el **mantenimiento de abonos**
+especiales para **mayores de 65 años**, **personas desempleadas** y **jóvenes de hasta 28 años**, con un precio de **50 euros**, así como el apoyo a
+la **Escuela Taurina de Albacete** y la calidad del **acto de presentación oficial de la feria**.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1004,
     title: `La plaza de toros de Alicante acoge el V Certamen José María Manzanares para novilleros sin picadores`,
@@ -620,7 +713,100 @@ Así las cosas, el futuro empresarial de La Misericordia sigue generando debate 
 ];
 
 const latestNews: NewsItem[] = [
-  	{ 
+   { 
+    id: 251,
+    title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
+    image: "/images/.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "El ciclo se celebrará del 23 al 25 de mayo con el toro como eje central del espectáculo.",
+	fullContent: `La Feria del Toro 2026 de Vic-Fézensac ya tiene carteles oficialesl. El Club Taurin Vicois ha anunciado un ciclo que se desarrollará del 23 al 25 de mayo en las Arènes Joseph Fourniol, con apostando por la diversidad ganadera, identidad de esta plaza francesa.
+La programación reunirá diez encastes distintos, combinando hierros históricos y ganaderías habituales, en un cartel que vuelve a poner el protagonismo en el toro.
+Sábado 23 de mayo a las 11h: novillada de Aguadulce para Gonzalo Capdevila, Pedro Andrés y Pedro Luis. Por la tarde, a las 18h se lidiará una corrida de Prieto de la Cal con Alberto Lamelas, Luis Gerpe y Maxime Solera.
+Domingo 24 de mayo a las 11h: Corrida Concurso, seña de identidad del ciclo desde 1972 , con toros de: Saltillo, La Quinta, Partido de Resina, Benítez Cubero, Dolores Aguirre y Pagés Malhan, para Sánchez Vara, Román e Isaac Fonseca. Por la tarde, a las 18h se anunciará la corrida de Baltasar Ibán con Morenito de Aranda, José Garrido y Juan de Castilla.
+Lunes 25 a las 11h: novillada sin picadores de Le Lartet para Manuel Real “Realito”, Rémy Asensio, y el ganador del bolsín de Bougue. Por la tarde, a las 18h, se cerrará la feria con la corrida de Miura, que será estoqueada por Pepe Moral, Damián Castaño y Gómez del Pilar.
+Con este planteamiento, Vic vuelve a reivindicar su personalidad dentro del panorama taurino internacional, priorizando la integridad del toro y el peso de los encastes sobre cualquier otro criterio.
+Con este elenco, Vic-Fézensac vuelve a situarse como una de las plazas francesas de mayor personalidad dentro del circuito taurino internacional.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 252,
+    title: `Fernando Adrián incorpora a Curro Javier y a Pedro Iturralde a su cuadrilla para la nueva temporada`,
+    image: "/images/incor.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El **matador** de **toros** Fernando Adrián ha cerrado la
+composición de su cuadrilla para la presente
+**temporada** con la incorporación del banderillero
+**Curro Javier**, que ocupará el **puesto** que deja
+Marcos Prieto.
+
+El **torero** madrileño contará además con el estreno
+en sus **filas** del picador **Pedro Iturralde**, que
+compartirá la **suerte** de varas con el joven picador
+guadalajareño **Javier Díaz-Manrique**.
+
+Como lidiador continuará el salmantino **Roberto**
+**Blanco**, mientras que el **puesto** de tercero seguirá
+siendo desempeñado por el madrileño Diego
+Valladar.
+
+La estructura del equipo se completa con **Francisco
+Javier Villalba como mozo de espadas, y con
+Santiago Ellauri al frente de la gestión profesional
+del diestro** .`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 253,
+    title: `Sebastián Castella dona a la Real Maestranza el traje con el que abrió la Puerta del Príncipe en 2023`,
+    image: "/images/seb.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El matador de toros Sebastián Castella ha entregado este jueves a la Real Maestranza de Caballería de Sevilla el traje de luces que vistió en la corrida del 30 de septiembre de 2023, tarde en la que logró abrir la Puerta del Príncipe.
+
+El acto de donación se ha celebrado en el Salón de Carteles de la plaza de toros de la Real Maestranza y ha contado con la presencia del teniente de hermano mayor de la Real Corporación, Marcelo Maestre.
+
+El terno, de color grosella y oro, pasará a formar parte de los fondos del Museo Taurino de la Real Maestranza, donde podrá contemplarse junto a otros trajes históricos, como el que donó José María Manzanares tras el indulto de ‘Arrojado’, o el que lució Morante de la Puebla la tarde en la que cortó un rabo en el coso sevillano.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 254,
+    title: `El Ayuntamiento de Albacete aprueba el pliego para la gestión de la plaza de toros por cinco años con exigentes requisitos económicos y técnicos`,
+    image: "/images/ayun.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `El **Ayuntamiento de Albacete** ha aprobado el pliego de condiciones que regirá la adjudicación de la gestión de la plaza de toros de la
+ciudad **durante los próximos cinco años**. El contrato establece una duración inicial de dos años, con la posibilidad de hasta tres
+prórrogas anuales.
+
+En **materia** de solvencia económica, las empresas licitadoras deberán acreditar un volumen anual de negocio superior a 2,7 millones de
+euros. En cuanto a la solvencia **técnica**, se exigirá haber sido **titular** o concesionaria, en los últimos ocho años, de al menos cinco ferias en
+plazas de primera **categoría**, o bien haber gestionado diez o más ferias en plazas de segunda **categoría** durante los últimos diez años.
+
+Respecto a la **programación**, el pliego fija la celebración de diez **festejos** durante la feria, entre los **días 8 y 17 de septiembre**, de los cuales
+dos deberán ser **novilladas** con picadores y ocho corridas de **toros**, incluyendo obligatoriamente una corrida de **carácter torista**. Se
+valorará de forma positiva la presencia en los carteles de **toreros** de reconocida trayectoria, así como la participación de tres **toreros**
+locales y ganaderías de primer nivel.
+
+Asimismo, la empresa adjudicataria deberá organizar una novillada sin picadores durante las fiestas de **San Juan**, con la participación de
+seis novilleros, dando preferencia a los alumnos de la Escuela Taurina de Albacete. En el festival del **Cotolengo**, deberá aportar un **novillo-**
+**toro** para el novillero de dicha **Escuela** y, además, programar otra **novillada sin picadores** para seis alumnos del mismo centro formativo.
+
+Entre los criterios de valoración figuran el **menor incremento posible** en el precio de abonos y localidades, el **mantenimiento de abonos**
+especiales para **mayores de 65 años**, **personas desempleadas** y **jóvenes de hasta 28 años**, con un precio de **50 euros**, así como el apoyo a
+la **Escuela Taurina de Albacete** y la calidad del **acto de presentación oficial de la feria**.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 255,
     title: `La plaza de toros de Alicante acoge el V Certamen José María Manzanares para novilleros sin picadores`,
     image: "/images/cert.jpg",
