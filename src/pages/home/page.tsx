@@ -459,7 +459,7 @@ const featuredNews: NewsItem[] = [
     { 
     id: 1000,
     title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
-    image: "/images/.jpg",
+    image: "/images/vic.jpg",
     category: "Actualidad",
     date: "12 de Febrero de 2026",
 	excerpt: "El ciclo se celebrará del 23 al 25 de mayo con el toro como eje central del espectáculo.",
@@ -716,7 +716,7 @@ const latestNews: NewsItem[] = [
    { 
     id: 251,
     title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
-    image: "/images/.jpg",
+    image: "/images/vic.jpg",
     category: "Actualidad",
     date: "12 de Febrero de 2026",
 	excerpt: "El ciclo se celebrará del 23 al 25 de mayo con el toro como eje central del espectáculo.",
