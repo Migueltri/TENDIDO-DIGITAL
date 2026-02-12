@@ -648,7 +648,7 @@ tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
     id: 1007,
     title: `Luque, el invierno hecho ambición: tres tardes para seguir creciendo en Sevilla`,
     image: "/images/aza.jpg",
-    category: "Actualidad",
+    category: "Opinión",
     date: "12 de Febrero de 2026",
 	footerImage1: "/images/azaa.jpg",
 	fullContent: `Sevilla ya huele a albero nuevo y azahar, y Daniel Luque asoma en el horizonte de la Maestranza con la determinación de quien ha convertido el invierno en laboratorio y la temporada en argumento. El torero de Gerena llega a su plaza —porque a estas alturas también es suya— con el pulso firme y la convicción de que cada comparecencia en el ruedo sevillano es examen mayor.
