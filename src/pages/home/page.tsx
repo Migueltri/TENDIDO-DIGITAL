@@ -457,81 +457,87 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1001,
-    title: `Curro Vázquez y Pablo Aguado, confesiones de torero en la Fundación Cajasol`,
-    image: "/images/amb.jpg",
+    id: 1004,
+    title: `La plaza de toros de Alicante acoge el V Certamen José María Manzanares para novilleros sin picadores`,
+    image: "/images/cert.jpg",
     category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	excerpt: "Enorme expectación y gran profundidad en un encuentro que ‘acabó el papel’ en la Sala Antonio Machado",
-	fullContent: `Los clásicos Mano a Mano de la Fundación Cajasol alcanzaban su 74ª edición y la sala Antonio Machado de la Fundación Cajasol se quedó pequeña para albergar una cita con matices muy especiales: por primera vez, el encuentro –comenzaron en el año 2007- estaba protagonizado por dos matadores de toros: Curro Vázquez y Pablo Aguado.
+    date: "12 de Febrero de 2026",
+	excerpt: "El 22 de febrero se celebrará una clase práctica con novillos de Hermanos Martí y la participación de seis alumnos de destacadas escuelas taurinas",
+	fullContent: `La plaza de toros de Alicante acogerá el próximo 22 de febrero, en horario matinal, el **V Certamen José María Manzanares**, una jornada en formato de clase práctica destinada a impulsar a los jóvenes valores de la tauromaquia y abierta al público con entrada gratuita al coso.
 
-El acto, titulado 'De torero a torero', volvía a estar moderado por el periodista José Enrique Moreno, habitual conductor de este foro taurino, que propuso un diálogo abierto sobre la tauromaquia desde la mirada de dos generaciones separadas por varias décadas, pero unidas por una misma concepción del toreo. Moreno también explicó en el arranque de este encuentro que los Mano a mano mantendrán su fórmula de torero más personaje relevante de otro ámbito, pero que a partir de ahora se abrirán y explorarán territorios puramente taurinos.
+El certamen está organizado por el Ayuntamiento de Alicante, la Escuela Taurina Municipal de Alicante y la empresa Eventos Mare Nostrum. Durante la mañana, a partir de las 12:00 horas, se lidiarán novillos de la joven ganadería Hermanos Martí, de Bocairent (Valencia), debutantes en plaza de segunda categoría, que servirán de base para la actuación de los siguientes novilleros: Iker de Virgilio, de la Escuela Taurina de Castellón; Cristóbal Granero y Rodrigo Villalón, de la Escuela Taurina de Alicante; Jorge Escamilla, de la Escuela Taurina de Valencia; Remy Asensio, de la Escuela Taurina de San Fernando; y Pablo Méndez, de la Escuela Taurina de Guadalajara.
 
-Y de torero a torero iba a transcurrir esta charla que logró abarrotar hasta el techo el salón previsto. Curro Vázquez, delgado, delataba aún la preparación del festival del pasado 12 de octubre en el que reverdeció laureles a beneficio del monumento de Antoñete, que fue su íntimo amigo. 
-
-“Siempre me ha gustado hablar y estar con los toreros mayores, con los banderilleros, de ellos aprendíamos mucho”, lanzó el veterano maestro madrileño. “Entre los toreros hablamos un idioma distinto, nos gusta hablar entre nosotros, lo hacemos con una profundidad especial”, remachó Pablo. “Seguimos hablando mucho y todo lo hace sencillo: los miedos, las preocupaciones… te las quita en un minuto”, añadió el diestro sevillano.
-
-“Tienes que pensar que al que va a torear le gusta lo mismo que a ti, tienes que ponerle el toro que le va, defenderle económicamente… y la hora de hablarle no se me ocurre decirle que se juegue la vida pero sí la mejor manera de aprovechar un toro concreto”, prosiguió el diestro madrileño sobre la labor de un apoderado antes de adentrarse en detalles de la lidia, la vida y el toreo vedados al neófito.
-
-“Nunca pensé en ser apoderado pero buscándoselo a Cayetano, fueron mis hijos los que me animaron a apoderarlo”, desveló Curro, que años después iba a asumir la dirección de la carrera de Pablo Aguado. El sevillano recordó esos inicios, la incorporación de su hermano Antonio, de su sobrino Fran, del primer viaje a Lima. “Había un toro que nos preocupaba por su cara y Cayetano tuvo el detalle de cambiárselo a Pablo”, destacó Curro.
-
-**12 de octubre**
-
-José Enrique Moreno recordó el desarrollo del festival madrileño, de la “lección de torería” de aquella mañana del 12 de octubre. “Aquello fue una locura de un cuerdo, una insensatez, pero mereció la pena; al principio le dije a Morante que no podía ser, que me podía atropellar un novillo o que me podía caer, pero él siguió hablando del festival y me di cuenta que debía de estar, que el ofrecimiento de Morante merecía la pena… y no me caí”, bromeó Curro Vázquez.
-
-¿Qué hizo para prepararse con 74 años? “Los de mi época nos poníamos a andar, a pensar, a jugar al frontón, a torear de salón…”, señaló Curro. El moderador incidió en esa palabra: pensar. Pablo parafraseó al propio Morante: “es tan bonito torear como pensar el toreo”. Pero había que hablar de aquel revival. “Es que lo clásico no pasa de moda”, insistió Aguado antes de que Moreno pusiera sobre el tapete el concepto de la naturalidad. “Este –a Aguado- lo hace, también Ortega, están en la línea del toreo clásico que los de mi época hacíamos; Morante ha tirado de esa línea y de ahí han venido otros más jóvenes”, espetó Curro Vázquez subrayando “la entrega y la pasión”, que había puesto el diestro de La Puebla en la pasada temporada.
-
-“Ha sido único, impresionante, ha reunido todas las cualidades que puede tener un torero”, añadió Aguado que, como el propio Ortega, han quedado como sucesores naturales del genio cigarrero. “No me gusta sentirme como relevo, nadie sustituye a nadie, no tengo esa mentalidad”, advirtió Aguado. “Es que no se puede sustituir ni copiar pero sí aprender”, completó Curro recordando aquellos tiempos en los que el toreo era una mera transmisión oral de generación en generación de toreros. 
-
-**Las fuentes**
-
-Curro Vázquez recordó la figura de Pepín Martín Vázquez, evocada por su propio padre y por los viejos toreros de los que aprendió siendo un niño. “José Fuentes llevaba un mozo de espadas que había sido banderillero de Pepín, un picador de los Zurito… aquella cuadrilla era una maravilla y me encantaba viajar con ellos para escucharlos”, señaló el maestro de Linares que se confesó admirador de toreros como Ordóñez, Rafael Ortega, Pepe Luis, Camino… “de todos ellos fui tomando cosas que se adaptaban a mi concepto”.
-
-Aguado, por su parte, habló de Rafael Torres. “Me impactó verlo torear de salón con el capote; también a Pepe Luis, hablé siempre mucho de toros con él en el campo”. Pero uno y otro volvieron una y otra vez a la figura de Pepín Martín Vázquez, al afecto por Rafaelito Torres –Curro Vázquez y el gran banderillero sevillano comenzaron juntos- que llegó a recibir, presente en el público, una ovación inesperada.
-
-**Esencia**
-
-La charla siguió por otros derroteros, evocando figuras de ayer, hoy y siempre. El moderador preguntó por otros conceptos, por la esencia del toreo. “Se torea con las muñecas, se les puede más con temple que con violencia”, precisó Curro. “La cabeza tiene que ser lo primero para saber qué hacerle a cada toro; el corazón te tiene que dejar ponerte delante del toro y las muñecas, sacar lo que cada toro tiene”, añadió Aguado. 
-
-¿Es Pablo un torero de pelea o de armonía? Fue la pregunta lanzada por José Enrique Moreno. “Hay aficionados que valoran al torero en función del resultado numérico pero no siempre es así, a veces hay que andarle a un toro complicado, detalles que también están llenos de torería”, señaló el sevillano. “A mí me ha costado enfrentarme con mi entorno”, espetó Curro, que asumía las críticas con sentido del humor. “Raro era el año que no me estaban retirando…”, señaló entre risas reconociendo haber vivido una trayectoria desigual que renacía cada vez que “cuajaba un toro a gusto para venirme arriba”.
-
-¿Tienen dudas los toreros? “Cuando estamos en un patio de caballos lo vemos aquello imposible”, confesó Pablo. “Delante del toro se disipa todo y hace que te vengas arriba”, añadió. “Los toreros tendemos a boicotearnos a nosotros mismos, a vernos incapaces de llegar a donde llegan los compañeros y eso a veces te anula la moral”.
-
-**Maestro**
-
-¿Qué es un maestro del toreo? “Hoy se utiliza demasiado y con que te nombren una vez al día está bien; el maestro es el veterano, el que te puede enseñar”, dijo Curro Vázquez con gran acierto elogiado por el moderador. “Porque es un maestro”, remachó Pablo.
-
-La charla entraba en la recta final. Había que hablar del tiempo de los toreros, de la espera –y la esperanza- de los aficionados. “A los toreros hay que esperarlos, que llegue el toro con el que se pueden sentir”, explicó Curro que confesó que le gustaría sentirse torero de toreros. ¿Y eso qué es?, preguntó Moreno. “Que le gustes a otros toreros…”, así de clarito.
-
-Aguado aún tuvo tiempo de valorar su colocación en la próxima temporada sevillana, de hablar de la “ilusión” que genera el cambio empresarial en la plaza de la Maestranza. A Curro, que casi siempre se le resistió el coso del Baratillo, incidió en la misma palabra: ilusión. 
-
-Tocaba hablar del toro, de su evolución… “Los ganaderos han conseguido algo increíble y es que embista un toro tan grande como el sale hoy en día”, argumentó Aguado quejándose, eso sí, del tamaño y la desproporción del toro actual. “Todo eso se desvanece cuando comprobamos el milagro que han conseguido los ganaderos”, añadió el matador. “El toro ha cambiado mucho, en todas las épocas; el más grande, el de más pitones es el de ahora pero ahora se ha conseguido un toro que humilla, que repite más”, dijo al respecto Curro Vázquez.
-
-Llegaba el momento del cierre. Y Curro habló de su etapa de apoderado junto a Morante, un tiempo que definió como “maravilloso”, afirmando haberse entendido muy bien con el torero y haber disfrutado con su toreo.`,
+El V Certamen José María Manzanares rinde homenaje a una de las figuras más representativas de la tauromaquia alicantina y reafirma el papel del coso de la Plaza de España como enclave destacado en la promoción de la cultura taurina y el apoyo al futuro del toreo.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1002,
-    title: `Rafael de la Cueva, nuevo integrante del Circuito de Madrid 2026 por la Escuela Taurina José Cubero “Yiyo”`,
-    image: "/images/cuev.jpg",
+    id: 1005,
+    title: `Balears Cambio de Tercio recibe el premio a la innovación taurina en los Premios Talento La Razón 2026`,
+    image: "/images/bale.jpg",
     category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	excerpt: "El novillero de la Escuela Taurina José Cubero “Yiyo”, estará presente en la sexta edición del certamen. Destacó en su paso por el escalafón sin caballos y busca la oportunidad de encaminar su temporada 2026",
-	fullContent: `El **Circuito de Madrid 2026** ya conoce al quinto de sus novilleros participantes, se
-trata de uno de los representantes de la Escuela Taurina José Cubero "Yiyo", **Rafael**
-**de la Cueva**.
+    date: "12 de Febrero de 2026",
+	excerpt: "La empresa taurina Balears Cambio de Tercio ha sido galardonada con el Premio a la Innovación Taurina en la gala de los Premios Talento La Razón 2026, celebrada ayer en Madrid. Este reconocimiento destaca la labor de la joven compañía en la revitalización de la tauromaquia en las Islas Baleares, donde ha logrado transformar el panorama taurino en apenas una temporada.",
+	fullContent: `El premio fue recogido por los empresarios **Francisco D’Agostino** y el
+maestro **Javier Conde**, artífices de un proyecto que ha devuelto la ilusión a la afición
+balear mediante una gestión profesional, valiente y adaptada a los nuevos tiempos.
 
-El novillero venezolano lleva toda su etapa sin caballos en la escuela madrileña y
-debutó con picadores el **17 de septiembre de 2023** en Campo Real (Madrid). Se trata
-de uno de los alumnos más destacados de la **Escuela José Cubero “Yiyo”** y en la
-temporada pasada actuó un total de 9 novilladas en las que cortó 19 orejas.
+**Un modelo de éxito: cultura, juventud y plazas llenas**
 
-En la campaña pasada hizo el paseíllo en **Las Ventas** el día 3 de mayo con motivo de
-la final del certamen "Camino hacia Las Ventas", de novilladas sin picadores. Busca
-alzarse con el Circuito de Madrid y relevar a Jarocho en cuanto a triunfadores de dicha
-escuela se refiere, quien lo hizo en la edición de 2024.
+El jurado ha valorado especialmente la capacidad de **Balears Cambio de**
+**Tercio** para recuperar escenarios históricos como la plaza de **Muro**, reabierta tras
+ocho años de inactividad, y consolidar ferias en localidades como **Inca**. La empresa
+ha demostrado que la tauromaquia sigue siendo un motor cultural y económico capaz
+de atraer a un público diverso:
+
+-   **Conexión con la juventud:** La asistencia de más de 350 jóvenes menores de edad
+    en el festejo de abril marcó un hito en el relevo generacional de las islas.
+-   **Transversalidad cultural:** La integración de eventos como el concierto de Estrella
+    Morente o la proyección de "Tardes de Soledad" (que reunió a 2.000 personas) ha
+    situado a la tauromaquia en el centro del diálogo cultural balear.
+-   **Excelencia en el ruedo:** Desde el histórico indulto de "Calderero" por Borja Jiménez
+    hasta el éxito de la corrida de Miura con el cartel de "no hay billetes", la gestión ha
+    apostado por el máximo rigor artístico y ganadero.
+
+"Este premio es la confirmación de que el renacer taurino en Baleares no ha sido
+fruto del azar, sino de una estrategia clara y un respeto profundo por el rito",
+afirmaron D’Agostino y Conde durante la gala. "Hemos demostrado que, cuando se
+ofrece calidad y una visión renovada, la sociedad responde con fuerza".
+
+**Sobre los Premios Talento La Razón**
+Los galardones otorgados por el diario **LA RAZÓN** reconocen anualmente la
+excelencia empresarial y el liderazgo en sectores clave. En esta edición de 2026, la
+inclusión de **Balears Cambio de Tercio** subraya la importancia de la tauromaquia
+como una industria capaz de innovar en su gestión y de reconectar con la sociedad
+civil a través de la cultura y la emoción.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Juan Pablo Ibarra, representante de la Escuela de Colmenar Viejo en el Circuito de Madrid 2026`,
+    image: "/images/ibar.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "El novillero mexicano debutará con caballos en el certamen madrileño tras haber sido un nombre destacado en el escalafón sin picadores",
+	fullContent: `El **Circuito de Madrid 2026** sigue tomando forma y cada vez son menos los novilleros
+que quedan por conocerse. El sexto de los novilleros que participarán en el certamen
+es Juan Pablo Ibarra.
+
+Su llegada a España fue en el año 2023 cuando desembocó en la capital para torear
+una serie de clases prácticas. En la temporada **2024 debutó sin caballos** en el
+certamen "Camino hacia Las Ventas", haciendo el paseíllo en Collado Villalba.
+
+El novillero mexicano **debutará con picadores en el Circuito de Madrid 2026**,
+cerrando de esta manera una exitosa carrera sin caballos en la que han destacado
+triunfos como el de el certamen “*Camino hacia Las Ventas*” o ser finalista
+de “*Kilómetro Cero*”, ambos en 2025.
+
+Llega representando a la **Escuela Taurina Miguel Cancela de Colmenar Viejo** de la
+que han salido dos triunfadores del Circuito de Madrid como Isaac Fonseca,
+compatriota de Ibarra y Alejandro Chicharro, quien ganó en 2023.
 
 **Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
 El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde
@@ -546,321 +552,67 @@ tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
     showAuthorHeader: true
    },
 	{ 
-    id: 1003,
-    title: `Eduardo Ordoñez: “Las Escuelas Andaluzas ponen las herramientas necesarias para alcanzar los sueños de ser torero”`,
-    image: "/images/nppp.jpg",
-    category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	excerpt: "•	El Presidente de la Asociación Andaluza de Escuelas Taurinas ‘Pedro Romero, centró la III y última sesión de las XXIV Lecciones Magistrales de Aula Taurina de Sevilla.",
-	fullContent: `El Salón de Carteles de la Plaza de Toros de la **Real Maestranza de**
-**Caballería de Sevilla**, espacio cargado de historia y simbolismo, fue el
-escenario de la tercera y última sesión de las **XXIV Lecciones Magistrales**
-**de Aula Taurina de Sevilla**, dedicada a un asunto capital: **“La promoción**
-**de la cultura taurina en Andalucía. Las escuelas taurinas andaluzas”**.
-
-La sesión sirvió para poner en valor el papel esencial que desempeñan las
-**Escuelas Taurinas Andaluzas**, uno de los pilares más sólidos, constantes y,
-a menudo, silenciosos de la **Fiesta** de los toros. **“Desde hace casi tres**
-**décadas, estas escuelas vienen desarrollando una labor fundamental en la**
-**defensa de la tauromaquia, entendida no solo como espectáculo, sino como**
-**manifestación cultural, educativa y social, sustentada en la pedagogía, el**
-**compromiso y la transmisión de valores”**, aseveró **Eduardo Ordóñez**.
-
-El acto estuvo moderado por el periodista taurino **Emilio Trigo** y contó
-con la presidencia del Coordinador General de la Secretaría de Interior, D.
-**Juan Manuel Pérez Alarcón**, así como de D. **Miguel Serrano**, Presidente
-del Aula Taurina y de la Escuela de Tauromaquia de Sevilla.
-
-El origen de este proyecto común se remonta al **7 de junio de 1997**, fecha
-en la que se constituyó la **Asociación Andaluza de Escuelas Taurinas**
-**“Pedro Romero”**, que desde sus inicios contó con el respaldo de la **Junta**
-**de Andalucía**, a través de su **Consejería de Presidencia**, y de **Canal Sur**
-**Televisión**. **“Este apoyo institucional y mediático permitió poner en**
-**marcha el ambicioso ‘Programa de Fomento de la Cultura Taurina**
-**Andaluza y de los Jóvenes Valores del Toreo’, materializado en**
-**competiciones y espectáculos de alto nivel técnico y artístico, ampliamente**
-**aceptados por el público y convertidos en una referencia dentro y fuera de**
-**Andalucía”**, afirmó **Ordóñez**.
-
-Actualmente, la Asociación integra **30 Escuelas Taurinas** repartidas por
-toda la comunidad autónoma, en las que se forman cerca de **500 alumnos**
-**procedentes de todas las provincias andaluzas**, cifras que reflejan la
-vitalidad del presente y un horizonte de esperanza para la tauromaquia.
-
-Más allá de los números, se destacó la dimensión educativa y social de
-las Escuelas, que no solo forman toreros, sino personas, educando
-aficionados conscientes y ciudadanos comprometidos. Así lo subrayó su
-presidente, D. **Eduardo Ordóñez Acosta**, quien afirmó que **“Las Escuelas**
-**inculcan valores de esfuerzo, compañerismo, trabajo en equipo,**
-**superación y todo lo que la sociedad pasa por alto, como el respeto”**. En
-este sentido, **“Negó con rotundidad que las Escuelas sean fábricas de**
-**toreros”**, defendiendo que **“A todos los alumnos se les respeta su**
-**personalidad, y las Escuelas ponen las herramientas necesarias para**
-**alcanzar los sueños de ser torero”**.
-
-Durante su intervención, **Ordóñez Acosta** explicó el proceso de creación
-de las **Escuelas Taurinas Andaluzas**, señalando que **“Nacen después de**
-**haber gestionado la desaparecida Escuela de Jerez de la Frontera, y esa**
-**experiencia le animó a impulsar un proyecto común en todo el territorio**
-**andaluz”**. Asimismo, destacó que **“Actualmente los resultados son muy**
-**exitosos en todos los niveles”**, reconociendo que **“Las administraciones**
-**como la Junta de Andalucía, Canal Sur TV, ayuntamientos, diputaciones**
-**y la Real Maestranza han sido claves para el proyecto”**, y agradeció **“Con**
-**efusividad el incansable trabajo de los maestros, profesores y de su Junta**
-**Directiva”**.
-
-Los frutos de este esfuerzo sostenido quedaron reflejados en cifras
-contundentes. Tal y como se expuso durante la sesión, **“108 ganaderías han**
-**participado en los 28 años del programa de Fomento de la Cultura Taurina**
-**Andaluza, así como 109 matadores de toros y 78 novilleros con picadores”**,
-datos que evidencian que las **Escuelas** no solo sostienen la **Fiesta**, sino que
-la renuevan y la proyectan desde la base.
-
-En cuanto al futuro inmediato, el presidente anunció que **“Este año el**
-**proyecto común alcanza en la temporada 2026 el 27º Encuentro Andaluz**
-**de Escuelas Taurinas, el 28º Ciclo de Becerradas y el 32º Ciclo de**
-**Novilladas sin picadores retransmitidas por Canal Sur TV”**. Además,
-avanzó que **“Se visiona una nueva gestión en el futuro de las Escuelas**
-**Andaluzas, con la incorporación de un organigrama interno más amplio y**
-**diverso”**.
-
-En la faceta personal D. **Eduardo Ordóñez Acosta**, personifica este
-compromiso desde los orígenes de la Asociación. Matador de toros y
-presidente de la misma desde su fundación, tomó la alternativa en **2001** en la
-localidad gaditana de **Olvera**, compartiendo cartel con **Francisco Ruiz**
-**Miguel** y **Antonio Lozano**, y lidiando reses de **Cuvillo** y **Gabriel Rojas**.
-
-Su trayectoria profesional incluye **60 novilladas con picadores y 36 sin**
-**picadores**, además de innumerables festejos populares en la provincia de
-**Guadalajara**, donde, como él mismo recordó, **“Consiguió el sueño de ser**
-**matador de toros tras perseguir esa ilusión desde los festejos populares,**
-**como las capeas en Guadalajara”**. En este sentido, relató que **“Con 15 años**
-**se fue a buscar la suerte del toro y para comer tenía que torear; después,**
-**una vez de vuelta en Jerez, estudió delineación y se hizo un gran**
-**profesional”**.
-
-Como novillero, actuó en plazas de máxima relevancia como **Las Ventas**
-y **Vistalegre**, donde debutó de luces en **1964**, y trenzó el paseíllo en cosos
-tan significativos como la **Real Maestranza de Sevilla, Bilbao, Valencia,**
-**Santander** o **Málaga**. Una experiencia vital y profesional que le otorga una
-visión profunda y autorizada sobre el presente y el futuro de la cultura
-taurina.
-
-En tiempos de debate y transformación cultural, las **“Escuelas Taurinas**
-**Andaluzas continúan siendo un baluarte de identidad y un ejemplo de**
-**cómo la tradición puede convivir con la formación moderna, el rigor**
-**educativo y el respeto a la diversidad”**, concluyó **Eduardo Ordóñez**.
-
-Bajo la presidencia de D. **Eduardo Ordóñez Acosta** y con el respaldo
-de su Junta Directiva, la **Asociación Andaluza de Escuelas Taurinas**
-**“Pedro Romero”** sigue escribiendo una de las páginas más sólidas y
-necesarias de la tauromaquia andaluza contemporánea.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Álvaro Lorenzo y su encerrona por su X aniversario como matador de toros`,
-    image: "/images/tole.jpg",
-    category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	fullContent: `**Toledo cierra filas con Álvaro Lorenzo.** El **28 de marzo**, la plaza de su tierra le
-devolverá el abrazo con una **encerrona de altura: seis hierros** —Miura, Victorino
-Martín, Victoriano del Río, Garcigrande, Alcurrucén y El Freixo—, seis toros, **un**
-**solo diestro y una causa**. La empresa **Eventos Mare Nostrum** organiza el
-festejo con la colaboración de la Propiedad del coso, el equipo médico y
-proveedores implicados en esta ocasión.
-
-La lidia supone una **gesta solidaria**: lo recaudado irá íntegramente a la
-**Fundación del Hospital Nacional de Parapléjicos**. Pero también es un **hito**
-**personal**. En 2026 se cumplen **diez años de la alternativa** de Lorenzo, y esta
-encerrona en su tierra **mide al torero y al hombre**. Él afronta el reto con la **ilusión**
-**del que vuelve a empezar**, con la responsabilidad que merece y con el
-compromiso que la causa exige.
-
-La **variedad de encastes** multiplica el interés para los aficionados: Seis hierros
-que abarcan desde la **casta más antigua** hasta las **líneas modernas de bravura**.
-Seis toros que **desvelará él mismo, uno a uno**.
-
-El cartel, obra del artista **Iván Estupiñá**, nace del diálogo con el diestro: idea de
-Lorenzo, forma de Estupiñá. Una imagen que condensa la **soledad del reto** y la
-**calidez de la solidaridad**.
-
-Las entradas ya están a la venta en la web oficial de la plaza y mediante reserva
-en el **695 201 966**. Las taquillas abrirán el viernes **27 de marzo** y de forma
-ininterrumpida el día del festejo. **Toledo espera. La causa también.**`,
-	author: "Enrique Salazar",
-    authorLogo: "/images/enrisala.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Presentados los carteles de Kilómetro Cero 2026`,
-    image: "/images/kilo.jpg",
-    category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	excerpt: "La Fundación Toro de Lidia organiza en Valdemorillo un certamen sin picadores con apoyo de la Comunidad de Madrid.",
-	fullContent: `El certamen Kilómetro Cero 2026 ya tiene carteles. El ciclo de novilladas sin picadores, organizado por la Fundación Toro de Lidia con el apoyo de la Comunidad de Madrid, se celebrará los días 27 y 28 de febrero y 1 de marzo en la Plaza de Toros de Valdemorillo.
-Además, la organización ha anunciado que la entrada será gratuita, una medida apuesta por acercar al público a los nuevos valores del toreo. Los festejos también serán retransmitidos por OneToro.
-El viernes 27 de febrero José Antonio de Gracia, Raúl Caamaño, Pedro Gómez, Jacob Robledo, Jaime de Pedro y Rubén Vara se encerrarán con novillos de Hermanas Ortega y Ginés Bartolomé en la primera tarde de semifinal.
-El sábado 28 de febrero segundo día de semifinal, se lidiarán Novillos de Guerrero y Carpintero y Cerro Longo para Rodrigo Cobo, Armando Rojo, Gabriel Segura, Israel Guirao, Rodrigo Villalón y Daniel García.
-La gran final se celebrará Domingo 1 de marzo con novillos de Flor de Jara y La Machamona.
-Kilómetro Cero se consolida así como una de las principales plataformas para los novilleros sin picadores de la Comunidad de Madrid, ofreciendo visibilidad, y ahora también acceso libre para los aficionados que quieran descubrir a las futuras figuras del toreo.`,
-	author: "Inés Sáez",
-    authorLogo: "/images/nereasa.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Lorca presenta su temporada taurina`,
-    image: "/images/prin.jpg",
-    category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	footerImage1: "/images/lorc.jpg",
-	footerImage2: "/images/lorc1.jpg",
-	footerImage3: "/images/lorc2.jpg",
-	excerpt: "El coso de Sutullena tendrá toros el 4 de abril, 9 de junio y el 20 de septiembre con tres corridas de toros de máxima expectación. ",
-	fullContent: `En el día de hoy 11 de febrero, se han presentado los carteles que tendrán lugar
-en la temporada taurina de Lorca. Contará con tres corridas de toros de relumbrón a lo
-largo del año con toreros de gran calado en la afición como Roca Rey, Perera, Paco Ureña,
-Borja Jiménez, Marco Pérez y Diego Urdiales, además y con gran acierto incorporando a
-un torero de la tierra joven y sin oportunidades como es el caso de Jorge Martínez.
-
-También, se llevarán a cabo actividades taurinas ofrecidas por el Ayuntamiento del
-municipio como de su club taurino.
-
-Lorca se quiere posicionar como una de las plazas de referencia de la Región después de
-su reinauguración en 2024, contará con tres corridas repartidas en el calendario, pero con
-fechas especiales, el 4 de abril es sábado de Gloria, el 9 de junio es el día de la Región de
-Murcia y el 20 de septiembre, finalizará la temporada lorquina con una corrida goyesca
-para celebrar el mes de la alternativa del torero Paco Ureña.
-
-Durante la presentación se anunció que el Abono Joven para los tres festejos costará 30
-euros y que el plazo de renovación de abonos comenzará el lunes 16 de febrero hasta el
-27 del mismo mes, los nuevos abonados tendrán abiertas las taquillas del 28 de febrero al
-20 de marzo y las localidades sueltan se podrán adquirid a partir del 21 de marzo.
-
-Los carteles para esta temporada 2026:
-
--   S 04/04: **Paco Ureña y Roca Rey**, mano a mano (Juan Pedro Domecq)
-
--   M 09/06: Festividad de la Región de Murcia. **Borja Jiménez, Jorge
-    Martínez y Marco Pérez** (Moreno Pérez-Tabernero)
-
--   D 20/09: **Diego Urdiales, Paco Ureña y Miguel Ángel Perera** (Santiago
-    Domecq)`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1007,
-    title: `Juan de Castilla, de la tragedia en Manizales al desafío de reaparecer en España: cornada brutal y recuperación a contrarreloj`,
-    image: "/images/trage.jpg",
+    title: `Luque, el invierno hecho ambición: tres tardes para seguir creciendo en Sevilla`,
+    image: "/images/aza.jpg",
     category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	fullContent: `El toreo volvió a mostrar su cara más dura en la Feria del Café de Manizales. Juan de Castilla sufrió un gravísimo percance durante la lidia de un toro de Santa Bárbara en la segunda corrida del abono, en un gesto de entrega absoluta al acudir al quite para auxiliar a uno de sus banderilleros. El astado lo prendió con violencia, lo levantó del suelo y lo zarandeó con estremecedora crudeza, dejando una imagen impactante que heló la sangre de los presentes y que quedará marcada en la memoria de la afición colombiana.
+    date: "12 de Febrero de 2026",
+	footerImage1: "/images/azaa.jpg",
+	fullContent: `Sevilla ya huele a albero nuevo y azahar, y Daniel Luque asoma en el horizonte de la Maestranza con la determinación de quien ha convertido el invierno en laboratorio y la temporada en argumento. El torero de Gerena llega a su plaza —porque a estas alturas también es suya— con el pulso firme y la convicción de que cada comparecencia en el ruedo sevillano es examen mayor.
 
-El parte médico confirmó la magnitud del drama. El torero ingresó en la enfermería con una cornada en la cara posterolateral del muslo derecho, con un amplio desgarro muscular en el punto de entrada y orificio de salida en la cara anteroposterior, acompañado de un importante hematoma. Además, presentaba una fractura abierta de tibia en la pierna izquierda. Tras la intervención quirúrgica posterior se confirmó también la rotura de tibia y peroné. El equipo médico actuó con rapidez, estabilizando la fractura bajo sedación y realizando una exhaustiva revisión quirúrgica de las heridas, comprobando la integridad vascular antes de su traslado al Hospital Santa Sofía para completar la intervención. Aunque la trayectoria de la cornada fue limpia, la penetración total del pitón provocó graves destrozos internos.
+No es una primavera más. Luque aterriza en el Arenal con la mochila cargada de horas de campo, tentaderos y reflexión. “Vengo con toda la ilusión del mundo de poder demostrar lo que uno hace durante todo el invierno y durante toda la temporada”, confiesa, consciente de que Sevilla no regala nada y de que cada pase debe tener verdad.
 
-En medio de la dureza del percance, Juan de Castilla volvió a demostrar la fortaleza que lo caracteriza. Tras la operación, envió un mensaje de tranquilidad a su madre que, al difundirse en redes sociales, emocionó profundamente al mundo taurino. Su serenidad, pensando antes en calmar a los suyos que en su propio dolor, evidenció la dimensión humana de un torero que atraviesa uno de los momentos más difíciles de su carrera.
+Su discurso no suena a ruptura, sino a evolución. El de Gerena no habla de reinventarse, sino de crecer sin traicionarse. De pulir lo que ya funciona y de añadir matices a un concepto que ha ido cuajando con los años. “Quiero dar más de mí cada día; no reinventarme, pero sí sacar cosas nuevas y seguir avanzando, que es lo importante”, explica, dejando claro que la ambición no es una pose, sino una forma de entender el oficio.
 
-La gravedad de las lesiones le obligó a cancelar compromisos de relevancia en Colombia, incluido un cartel de figuras en el cierre de la Feria de Manizales. Sin embargo, su mente ya está puesta en la reaparición en España. Está anunciado el 21 de marzo en Villaseca de la Sagra (Toledo), en la IV Corrida Benéfica de la Fundación Oncohematología Infantil junto a Gómez del Pilar y toros de Cuadri, y el 26 de abril en San Agustín de Guadalix (Madrid), dentro de la Feria del Aficionado, compartiendo cartel con Damián Castaño y Maxime Solera ante reses de Dolores Aguirre y José Escolar Gil.
+Tres tardes le esperan en el albero maestrante. Tres citas para refrendar el momento que atraviesa y para seguir estrechando una relación forjada a base de entrega y compromiso con una de las plazas más exigentes del planeta taurino. Sevilla mide, pesa y coloca a cada cual en su sitio. Y Luque lo sabe.
 
-Desde que recibió el visto bueno médico para iniciar la rehabilitación, el torero se ha embarcado en una recuperación titánica. Primero en el hospital y después en su domicilio, las sesiones han sido tan exigentes que el esfuerzo le ha arrancado lágrimas, tal y como se aprecia en un vídeo difundido en redes. Aún apoyado en una muleta, se machaca en el gimnasio para recuperar la musculatura y la movilidad perdidas, con el firme propósito de volver cuanto antes al toreo de salón y a los tentaderos. Juan de Castilla afronta ahora la lidia más dura, la de su propia recuperación, decidido a regresar a los ruedos con más fuerza y reafirmar el sitio que se ha ganado como uno de los toreros con mayor proyección de su generación.`,
+La Maestranza será, una vez más, juez y escenario. Allí donde el silencio suena más fuerte que en ningún otro lugar, Daniel Luque buscará hablar con el toreo que ha madurado en la intimidad del invierno. Porque en Sevilla no basta con estar: hay que decir. Y Luque quiere decir mucho.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `La Feria de Abril se verá… pero no entera: Garzón desvela el complejo puzle televisivo de Sevilla 2026`,
-    image: "/images/desvela.jpg",
+    title: `Marco Pérez se queda fuera de Sevilla: sin acuerdo con la empresa para la Feria de Abril`,
+    image: "/images/marcoo.jpg",
     category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	fullContent: `La **televisión** volverá a asomarse a la **Maestranza** en **2026**, aunque no lo hará de forma íntegra. **José María Garzón**, empresario de **Lances de Futuro**, confirmó en el **Hotel Colón** de **Sevilla** que las conversaciones con **OneToro** y **Canal Sur** están muy avanzadas para retransmitir parte de la **Feria de Abril**. Sin embargo, no todo el abono será televisado.
+    date: "12 de Febrero de 2026",
+	fullContent: `La Feria de Abril pierde a uno de los nombres jóvenes con mayor proyección. El salmantino Marco Pérez no formará parte del abono sevillano tras no aceptar las condiciones ofrecidas por la empresa Lances de Futuro para su inclusión en los carteles.
 
-El **motivo** tiene **nombre propio**... aunque no se pronuncie. "Hay **toreros** que no quieren **televisión**", afirmó Garzón con **rotundidad**, evitando desvelar identidades pese a ser **preguntado** en reiteradas ocasiones. "Lo sabéis **todos**", añadió, dejando entrever que se **trata** de una realidad conocida en el sector, aunque pocas veces explicitada.
+Durante la rueda de prensa celebrada este miércoles, el empresario José María Garzón fue cuestionado directamente por esta ausencia y explicó que existió propuesta formal por parte de la empresa. “Se le ofrecieron varias ganaderías con las que ya está anunciado en otras plazas y que lidiará esta temporada. No puedo hablar de cifras, fechas ni combinaciones. Su entorno no consideró adecuada la oferta y no se alcanzó un acuerdo”, señaló.
 
-**Sevilla no es Madrid: negociación a tres bandas**
+De este modo, la negociación no llegó a buen puerto y el nombre del joven espada no figurará finalmente en los carteles de la Maestranza esta primavera.
 
-El empresario explicó que cerrar acuerdos **televisivos** en Sevilla resulta **más** complejo que en **otras** plazas de primera categoría. "Madrid es diferente. Allí, cuando negocias, ya sabes que hay **televisión**. En Sevilla no ocurre así. Esto se aborda después, y por eso es **más** complicado", señaló.
+**Un torero marcado por el impacto precoz**
 
-En la capital hispalense, primero se confeccionan los carteles y posteriormente se encaja la cobertura audiovisual, lo que obliga a equilibrar intereses empresariales, exigencias artísticas y derechos **televisivos**. Un **auténtico** ejercicio de ingeniería **taurina**.
+Marco Pérez ha sido, desde sus primeros pasos, uno de los nombres señalados por la afición. Su desparpajo, frescura y sorprendente madurez frente a los animales le colocaron muy pronto en el foco mediático y profesional.
 
-**Exclusividad frente a difusión**
+En su etapa como becerrista dejó huella en plazas de máxima exigencia. El 12 de octubre de 2022 paseó un rabo en la Real Maestranza de Sevilla, un hito al alcance de muy pocos, y el 15 de mayo de 2023 cortó tres orejas en Las Ventas, reafirmando su condición de torero llamado a cotas mayores ante públicos de máxima responsabilidad.
 
-Garzón subrayó que la intención de la empresa es proyectar la feria al mayor número de aficionados posible, pero respetando la postura de aquellos **matadores** que prefieren que su actuación en Sevilla conserve un halo de exclusividad.
+Tras tomar la alternativa en Nimes el 6 de junio de la pasada temporada, el diestro salmantino ha compartido cartel con figuras consolidadas, afianzando su proyección en plazas de primera categoría.
 
-Por ello, las retransmisiones serán selectivas y abarcarán únicamente **determinadas** corridas del **abono**, una decisión que busca conjugar la difusión nacional con la voluntad individual de algunos protagonistas del escalafón.
-
-**Más ventanas abiertas a la Maestranza**
-
-A pesar de que la emisión no será completa, el empresario se mostró optimista. A la presencia de OneToro y Canal Sur podría sumarse alguna **televisión autonómica** adicional, ampliando el **alcance** de una feria que cada año despierta interés más allá de Andalucía.
-
-Sevilla volverá a verse en las pantallas, sí. Pero no en su **totalidad**. La Feria de Abril 2026 será, **también** en lo **televisivo**, un delicado equilibrio entre tradición, estrategia y poder de decisión de las figuras.`,
+La ausencia en Sevilla supone, sin duda, un capítulo llamativo en su joven carrera. La afición hispalense se queda este año sin ver la evolución de un torero que ya sabe lo que es tocar el cielo en el albero maestrante, mientras el curso taurino seguirá su camino lejos del Baratillo para uno de los nombres propios de la nueva generación.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1009,
-    title: `Sevilla 2026: Garzón sacude la Maestranza con una feria de figuras, juventud y ambición renovada`,
-    image: "/images/feri.jpg",
+    title: `La Misericordia sigue su curso: la Diputación no frena el concurso pese al recurso y las críticas de ANOET`,
+    image: "/images/criti.jpg",
     category: "Actualidad",
-    date: "11 de Febrero de 2026",
-	fullContent: `La temporada 2026 ya late en Sevilla. José María Garzón, máximo responsable de Lances de Futuro, compareció este miércoles en el Hotel Colón tras la gala oficial de presentación de los carteles en la Real Maestranza de Caballería. Allí desveló las claves de un ciclo que combina primeras figuras, savia nueva y una decidida apuesta por la seriedad del toro, configurando una feria llamada a marcar el pulso taurino nacional e internacional.
+    date: "12 de Febrero de 2026",
+	fullContent: `La Diputación de Zaragoza mantiene firme el timón en el proceso de adjudicación de la plaza de toros de La Misericordia. Su presidente, Juan Antonio Sánchez Quero, ha descartado paralizar el concurso tras el recurso de reposición presentado el pasado lunes por la empresa Nautalia.
 
-"Estoy satisfecho. Hay carteles de enorme atractivo y oportunidades reales para los jóvenes", afirmó el empresario, consciente de que nunca existe la feria perfecta, pero convencido de haber diseñado un abono "muy en la línea del gusto sevillano". Además, anunció una medida estratégica para el futuro: el abono joven tendrá un precio cerrado de 350 euros para toda la temporada, una apuesta clara por rejuvenecer y fidelizar la afición.
+Lejos de dar marcha atrás, la institución provincial sostiene el pliego en sus términos actuales, a pesar no solo de la impugnación formulada por la citada empresa, sino también del contundente pronunciamiento hecho público por la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET), que ha llegado a calificar el documento como una “subasta”.
 
-**Morante, pieza clave en un engranaje complejo**
+En declaraciones realizadas a petición de la diputada popular Mari Carmen Lázaro y recogidas por Heraldo, Sánchez Quero defendió que “el pliego se ajusta a la legalidad” y dejó claro que el procedimiento no se detendrá porque los empresarios —los únicos que pueden concurrir según lo establecido— consideren que el texto es incorrecto o deba anularse.
 
-La presencia de Morante de la Puebla ha sido uno de los grandes ejes sobre los que ha girado la confección de los carteles. Garzón reconoció que las conversaciones fueron intensas y que incluso se barajó una estructura alternativa sin el torero cigarrero.
+Desde la Presidencia se subraya que el objetivo del pliego es “buscar la excelencia” en la gestión del coso zaragozano. Sin embargo, esta postura choca frontalmente con la visión de la patronal taurina. ANOET considera “inaceptable” que se exija a las empresas licitadoras compromisos cerrados con toreros y ganaderías de cara a la feria, incluyendo además la fijación anticipada de fechas concretas para cada actuación durante el mes de febrero, al entender que tales condiciones podrían afectar a la libre competencia.
 
-"La incógnita nos obligó a trabajar en distintos escenarios. Mantuvimos varias reuniones, personales y telefónicas, hasta lograr el acuerdo definitivo", explicó. La filtración publicada en prensa terminó de precipitar el anuncio oficial. "Todo se desarrolló con absoluta normalidad", subrayó.
+En su comunicado, la asociación también defiende que existen fórmulas alternativas para evaluar las ofertas más allá del canon económico al alza y sin límite contemplado en el pliego, un sistema que —según advierten— transforma los procesos de adjudicación en auténticas pujas.
 
-Sobre la posibilidad de haber reducido presencia de figuras para ampliar espacio a nuevos nombres, el empresario fue claro: "Se podría haber optado por otro modelo, pero este año entendimos que era la fórmula más equilibrada".
-
-**Ausencias destacadas y negociaciones sin acuerdo**
-
-No todos los nombres esperados figuran en el abono. Marco Pérez quedó fuera tras no fructificar las conversaciones: se le ofrecieron distintas opciones ganaderas, pero no hubo entendimiento final.
-
-Con Diego Ventura el desacuerdo fue estrictamente económico. "En lo ganadero y en la estructura había consenso, pero no en las cifras", explicó Garzón, dejando abierta la puerta a futuras colaboraciones.
-
-En el caso de Oliva Soto, el empresario asumió responsabilidad: "Hablé con él varias veces. Todos no podían entrar. Puede que me haya equivocado".
-
-También aclaró que con Diego Urdiales solo se contempló una actuación, descartando la posibilidad de una segunda tarde. Respecto a Manzanares y Talavante, desmintió especulaciones sobre triples comparecencias: "Muchas veces lo que se comenta no responde a la realidad".
-
-**David de Miranda y Roca Rey, ejes de expectación**
-
-La inclusión de David de Miranda tanto en Domingo de Resurrección como en otra fecha del ciclo fue fruto de una negociación fluida y satisfactoria para ambas partes.
-
-En cuanto a Roca Rey, Garzón aseguró que se trabajaron distintas combinaciones hasta cerrar carteles "con gancho y rivalidad", reforzando el atractivo del abono.
-
-**Novilladas: sorpresa y futuro**
-
-El apartado novilleril mantiene el sello de apuesta decidida por el relevo generacional. Garzón avanzó que habrá nombres capaces de sorprender, aunque reconoció que las limitaciones normativas impidieron dejar fechas abiertas. La intención es ganar margen organizativo de cara a 2027.
-
-**Abonos y pedagogía taurina**
-
-Más allá de los carteles, el empresario insistió en la necesidad de trabajar la formación del público: "Cuando alguien adquiere su entrada debe comprender qué significa ver toros en Sevilla. Hay que hacer pedagogía". El objetivo es fortalecer el vínculo entre tradición y nuevas generaciones.
-
-**Más toro y regreso de la Venta de Antequera**
-
-La Venta de Antequera, espacio donde se exhiben los toros antes de su lidia, reabrirá tras las obras en curso, aunque aún no se han definido las corridas que se mostrarán allí.
-
-La presentación contará con entre cinco y siete ganaderías y, según adelantó Garzón, el listón ganadero subirá un peldaño: "Habrá más presencia. No es fácil, porque escasea el toro en el campo, pero el nivel será muy bueno".
-
-**Corpus, horarios y proyección televisiva**
-
-La corrida del Corpus es, en palabras del empresario, "una apuesta personal". El horario aún está por definir, barajándose las 20:00 horas para ese festejo y entre las 18:30 y 19:00 para el resto del ciclo.
-
-Frente a quienes califican la feria de continuista, Garzón respondió con serenidad: "Cada aficionado tiene su feria ideal. El balance hay que hacerlo cuando termine".
-
-En el plano mediático, confirmó conversaciones para que OneToro y Canal Sur retransmitan los festejos, reforzando así la difusión de una temporada que aspira a ser uno de los grandes acontecimientos taurinos de 2026.
-
-Sevilla ya tiene feria. Y no es una más: es una declaración de intenciones. Figuras consolidadas, juventud con hambre y un toro con mayor presencia configuran un abono que promete debate, emoción y plazas llenas en la Maestranza.`,
+Así las cosas, el futuro empresarial de La Misericordia sigue generando debate en los despachos mientras el sector permanece atento a una decisión que marcará el rumbo de una de las plazas de mayor peso en el calendario taurino.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -869,6 +621,167 @@ Sevilla ya tiene feria. Y no es una más: es una declaración de intenciones. Fi
 
 const latestNews: NewsItem[] = [
   	{ 
+    id: 255,
+    title: `La plaza de toros de Alicante acoge el V Certamen José María Manzanares para novilleros sin picadores`,
+    image: "/images/cert.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "El 22 de febrero se celebrará una clase práctica con novillos de Hermanos Martí y la participación de seis alumnos de destacadas escuelas taurinas",
+	fullContent: `La plaza de toros de Alicante acogerá el próximo 22 de febrero, en horario matinal, el **V Certamen José María Manzanares**, una jornada en formato de clase práctica destinada a impulsar a los jóvenes valores de la tauromaquia y abierta al público con entrada gratuita al coso.
+
+El certamen está organizado por el Ayuntamiento de Alicante, la Escuela Taurina Municipal de Alicante y la empresa Eventos Mare Nostrum. Durante la mañana, a partir de las 12:00 horas, se lidiarán novillos de la joven ganadería Hermanos Martí, de Bocairent (Valencia), debutantes en plaza de segunda categoría, que servirán de base para la actuación de los siguientes novilleros: Iker de Virgilio, de la Escuela Taurina de Castellón; Cristóbal Granero y Rodrigo Villalón, de la Escuela Taurina de Alicante; Jorge Escamilla, de la Escuela Taurina de Valencia; Remy Asensio, de la Escuela Taurina de San Fernando; y Pablo Méndez, de la Escuela Taurina de Guadalajara.
+
+El V Certamen José María Manzanares rinde homenaje a una de las figuras más representativas de la tauromaquia alicantina y reafirma el papel del coso de la Plaza de España como enclave destacado en la promoción de la cultura taurina y el apoyo al futuro del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 256,
+    title: `Balears Cambio de Tercio recibe el premio a la innovación taurina en los Premios Talento La Razón 2026`,
+    image: "/images/bale.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "La empresa taurina Balears Cambio de Tercio ha sido galardonada con el Premio a la Innovación Taurina en la gala de los Premios Talento La Razón 2026, celebrada ayer en Madrid. Este reconocimiento destaca la labor de la joven compañía en la revitalización de la tauromaquia en las Islas Baleares, donde ha logrado transformar el panorama taurino en apenas una temporada.",
+	fullContent: `El premio fue recogido por los empresarios **Francisco D’Agostino** y el
+maestro **Javier Conde**, artífices de un proyecto que ha devuelto la ilusión a la afición
+balear mediante una gestión profesional, valiente y adaptada a los nuevos tiempos.
+
+**Un modelo de éxito: cultura, juventud y plazas llenas**
+
+El jurado ha valorado especialmente la capacidad de **Balears Cambio de**
+**Tercio** para recuperar escenarios históricos como la plaza de **Muro**, reabierta tras
+ocho años de inactividad, y consolidar ferias en localidades como **Inca**. La empresa
+ha demostrado que la tauromaquia sigue siendo un motor cultural y económico capaz
+de atraer a un público diverso:
+
+-   **Conexión con la juventud:** La asistencia de más de 350 jóvenes menores de edad
+    en el festejo de abril marcó un hito en el relevo generacional de las islas.
+-   **Transversalidad cultural:** La integración de eventos como el concierto de Estrella
+    Morente o la proyección de "Tardes de Soledad" (que reunió a 2.000 personas) ha
+    situado a la tauromaquia en el centro del diálogo cultural balear.
+-   **Excelencia en el ruedo:** Desde el histórico indulto de "Calderero" por Borja Jiménez
+    hasta el éxito de la corrida de Miura con el cartel de "no hay billetes", la gestión ha
+    apostado por el máximo rigor artístico y ganadero.
+
+"Este premio es la confirmación de que el renacer taurino en Baleares no ha sido
+fruto del azar, sino de una estrategia clara y un respeto profundo por el rito",
+afirmaron D’Agostino y Conde durante la gala. "Hemos demostrado que, cuando se
+ofrece calidad y una visión renovada, la sociedad responde con fuerza".
+
+**Sobre los Premios Talento La Razón**
+Los galardones otorgados por el diario **LA RAZÓN** reconocen anualmente la
+excelencia empresarial y el liderazgo en sectores clave. En esta edición de 2026, la
+inclusión de **Balears Cambio de Tercio** subraya la importancia de la tauromaquia
+como una industria capaz de innovar en su gestión y de reconectar con la sociedad
+civil a través de la cultura y la emoción.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 257,
+    title: `Juan Pablo Ibarra, representante de la Escuela de Colmenar Viejo en el Circuito de Madrid 2026`,
+    image: "/images/ibar.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	excerpt: "El novillero mexicano debutará con caballos en el certamen madrileño tras haber sido un nombre destacado en el escalafón sin picadores",
+	fullContent: `El **Circuito de Madrid 2026** sigue tomando forma y cada vez son menos los novilleros
+que quedan por conocerse. El sexto de los novilleros que participarán en el certamen
+es Juan Pablo Ibarra.
+
+Su llegada a España fue en el año 2023 cuando desembocó en la capital para torear
+una serie de clases prácticas. En la temporada **2024 debutó sin caballos** en el
+certamen "Camino hacia Las Ventas", haciendo el paseíllo en Collado Villalba.
+
+El novillero mexicano **debutará con picadores en el Circuito de Madrid 2026**,
+cerrando de esta manera una exitosa carrera sin caballos en la que han destacado
+triunfos como el de el certamen “*Camino hacia Las Ventas*” o ser finalista
+de “*Kilómetro Cero*”, ambos en 2025.
+
+Llega representando a la **Escuela Taurina Miguel Cancela de Colmenar Viejo** de la
+que han salido dos triunfadores del Circuito de Madrid como Isaac Fonseca,
+compatriota de Ibarra y Alejandro Chicharro, quien ganó en 2023.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde
+hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta
+del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel,
+Kilómetro Cero y Toros de la Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la
+promoción de los municipios madrileños a través del toro. En la presente temporada,
+tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 258,
+    title: `Luque, el invierno hecho ambición: tres tardes para seguir creciendo en Sevilla`,
+    image: "/images/aza.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	footerImage1: "/images/azaa.jpg",
+	fullContent: `Sevilla ya huele a albero nuevo y azahar, y Daniel Luque asoma en el horizonte de la Maestranza con la determinación de quien ha convertido el invierno en laboratorio y la temporada en argumento. El torero de Gerena llega a su plaza —porque a estas alturas también es suya— con el pulso firme y la convicción de que cada comparecencia en el ruedo sevillano es examen mayor.
+
+No es una primavera más. Luque aterriza en el Arenal con la mochila cargada de horas de campo, tentaderos y reflexión. “Vengo con toda la ilusión del mundo de poder demostrar lo que uno hace durante todo el invierno y durante toda la temporada”, confiesa, consciente de que Sevilla no regala nada y de que cada pase debe tener verdad.
+
+Su discurso no suena a ruptura, sino a evolución. El de Gerena no habla de reinventarse, sino de crecer sin traicionarse. De pulir lo que ya funciona y de añadir matices a un concepto que ha ido cuajando con los años. “Quiero dar más de mí cada día; no reinventarme, pero sí sacar cosas nuevas y seguir avanzando, que es lo importante”, explica, dejando claro que la ambición no es una pose, sino una forma de entender el oficio.
+
+Tres tardes le esperan en el albero maestrante. Tres citas para refrendar el momento que atraviesa y para seguir estrechando una relación forjada a base de entrega y compromiso con una de las plazas más exigentes del planeta taurino. Sevilla mide, pesa y coloca a cada cual en su sitio. Y Luque lo sabe.
+
+La Maestranza será, una vez más, juez y escenario. Allí donde el silencio suena más fuerte que en ningún otro lugar, Daniel Luque buscará hablar con el toreo que ha madurado en la intimidad del invierno. Porque en Sevilla no basta con estar: hay que decir. Y Luque quiere decir mucho.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 259,
+    title: `Marco Pérez se queda fuera de Sevilla: sin acuerdo con la empresa para la Feria de Abril`,
+    image: "/images/marcoo.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `La Feria de Abril pierde a uno de los nombres jóvenes con mayor proyección. El salmantino Marco Pérez no formará parte del abono sevillano tras no aceptar las condiciones ofrecidas por la empresa Lances de Futuro para su inclusión en los carteles.
+
+Durante la rueda de prensa celebrada este miércoles, el empresario José María Garzón fue cuestionado directamente por esta ausencia y explicó que existió propuesta formal por parte de la empresa. “Se le ofrecieron varias ganaderías con las que ya está anunciado en otras plazas y que lidiará esta temporada. No puedo hablar de cifras, fechas ni combinaciones. Su entorno no consideró adecuada la oferta y no se alcanzó un acuerdo”, señaló.
+
+De este modo, la negociación no llegó a buen puerto y el nombre del joven espada no figurará finalmente en los carteles de la Maestranza esta primavera.
+
+**Un torero marcado por el impacto precoz**
+
+Marco Pérez ha sido, desde sus primeros pasos, uno de los nombres señalados por la afición. Su desparpajo, frescura y sorprendente madurez frente a los animales le colocaron muy pronto en el foco mediático y profesional.
+
+En su etapa como becerrista dejó huella en plazas de máxima exigencia. El 12 de octubre de 2022 paseó un rabo en la Real Maestranza de Sevilla, un hito al alcance de muy pocos, y el 15 de mayo de 2023 cortó tres orejas en Las Ventas, reafirmando su condición de torero llamado a cotas mayores ante públicos de máxima responsabilidad.
+
+Tras tomar la alternativa en Nimes el 6 de junio de la pasada temporada, el diestro salmantino ha compartido cartel con figuras consolidadas, afianzando su proyección en plazas de primera categoría.
+
+La ausencia en Sevilla supone, sin duda, un capítulo llamativo en su joven carrera. La afición hispalense se queda este año sin ver la evolución de un torero que ya sabe lo que es tocar el cielo en el albero maestrante, mientras el curso taurino seguirá su camino lejos del Baratillo para uno de los nombres propios de la nueva generación.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 260,
+    title: `La Misericordia sigue su curso: la Diputación no frena el concurso pese al recurso y las críticas de ANOET`,
+    image: "/images/criti.jpg",
+    category: "Actualidad",
+    date: "12 de Febrero de 2026",
+	fullContent: `La Diputación de Zaragoza mantiene firme el timón en el proceso de adjudicación de la plaza de toros de La Misericordia. Su presidente, Juan Antonio Sánchez Quero, ha descartado paralizar el concurso tras el recurso de reposición presentado el pasado lunes por la empresa Nautalia.
+
+Lejos de dar marcha atrás, la institución provincial sostiene el pliego en sus términos actuales, a pesar no solo de la impugnación formulada por la citada empresa, sino también del contundente pronunciamiento hecho público por la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET), que ha llegado a calificar el documento como una “subasta”.
+
+En declaraciones realizadas a petición de la diputada popular Mari Carmen Lázaro y recogidas por Heraldo, Sánchez Quero defendió que “el pliego se ajusta a la legalidad” y dejó claro que el procedimiento no se detendrá porque los empresarios —los únicos que pueden concurrir según lo establecido— consideren que el texto es incorrecto o deba anularse.
+
+Desde la Presidencia se subraya que el objetivo del pliego es “buscar la excelencia” en la gestión del coso zaragozano. Sin embargo, esta postura choca frontalmente con la visión de la patronal taurina. ANOET considera “inaceptable” que se exija a las empresas licitadoras compromisos cerrados con toreros y ganaderías de cara a la feria, incluyendo además la fijación anticipada de fechas concretas para cada actuación durante el mes de febrero, al entender que tales condiciones podrían afectar a la libre competencia.
+
+En su comunicado, la asociación también defiende que existen fórmulas alternativas para evaluar las ofertas más allá del canon económico al alza y sin límite contemplado en el pliego, un sistema que —según advierten— transforma los procesos de adjudicación en auténticas pujas.
+
+Así las cosas, el futuro empresarial de La Misericordia sigue generando debate en los despachos mientras el sector permanece atento a una decisión que marcará el rumbo de una de las plazas de mayor peso en el calendario taurino.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 261,
     title: `Curro Vázquez y Pablo Aguado, confesiones de torero en la Fundación Cajasol`,
     image: "/images/amb.jpg",
