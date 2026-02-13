@@ -457,6 +457,132 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1002,
+    title: `El Ayuntamiento reúne a los aficionados taurinos en el primer gran acto del marco “Sevilla, ciudad taurina”`,
+    image: "/images/sevi.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "<p>El Salón Colón ha acogido este jueves 12 de febrero el primer encuentro del programa “Sevilla, ciudad taurina”, un nuevo foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias y debates",
+	fullContent: `El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha presidido hoy el I Encuentro de Aficionados Taurinos de Sevilla, celebrado en el marco de la programación de “Sevilla, ciudad taurina”, una iniciativa que nace con el objetivo de reforzar el papel de la afición y fomentar el diálogo en torno al presente y el futuro de la tauromaquia en la ciudad.
+El Salón Colón acogió este foro de debate en el que, desde los escaños, los integrantes de las peñas han debatido sobre el pasado, presente y futuro de la fiesta con Sevilla como eje vertebrador.
+En esta primera cita han participado personalidades y tertulias del toreo como Tertulia Los 13, Círculo Pablo Aguado, Tertulia El Porvenir, Círculo Taurino de Sevilla, Tertulia Puerta Carmona, y Tertulia Taurina Universitaria, Juan Ortega, Pineda , Peña Eduardo Dávila y tertulia los 40, entre otros.
+Durante su intervención, Alés ha subrayado el carácter “histórico” de este encuentro, al tratarse de la primera vez que Sevilla acoge un espacio específicamente dedicado a reunir a los aficionados taurinos, a pesar de ser una de las grandes referencias mundiales de la tauromaquia. “Sevilla, cuna de grandes toreros y plaza de referencia internacional, necesitaba un lugar de encuentro, diálogo y convivencia entre quienes sienten el toro como parte esencial de su identidad cultural”, ha señalado.
+El delegado ha destacado que, desde la Delegación de Fiestas Mayores, se ha trabajado para que la programación de Sevilla Ciudad Taurina trascienda la celebración de actos o eventos puntuales, situando a la afición como eje central de la iniciativa. En este sentido, ha reconocido el papel fundamental que desempeñan las peñas, tertulias, asociaciones y familias en la transmisión de los valores y el conocimiento del mundo del toro de generación en generación.
+Asimismo, Manuel Alés ha señalado que este encuentro supone también un espacio de reflexión sobre los retos que afronta la tauromaquia en la sociedad actual, apostando por un diálogo sereno, respetuoso y constructivo que permita consolidar el futuro de esta tradición.
+El delegado ha incidido en el valor simbólico del acto, destacando que “marca un antes y un después” en la relación entre las instituciones y la afición taurina, así como en el acercamiento entre distintas generaciones de aficionados. “Hoy no solo inauguramos un acto, inauguramos un camino de colaboración, de diálogo y de reivindicación cultural de lo que la tauromaquia representa para Sevilla: arte, historia, estética, ritual, emoción y patrimonio vivo”, ha afirmado.
+En este sentido, Alés ha recordado que la tauromaquia forma parte inseparable de la identidad sevillana, junto a otras manifestaciones culturales y tradicionales como la Semana Santa, la Feria o el flamenco.
+El delegado ha concluido agradeciendo la implicación de todas las peñas, asociaciones, profesionales y aficionados que han hecho posible la celebración del encuentro, mostrando su deseo de que esta iniciativa tenga continuidad en el tiempo y contribuya a fortalecer la afición taurina en la ciudad.
+**Sevilla, ciudad taurina**
+El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha destacado que “afianzamos con este acto y desde este Ayuntamiento, el reciente nacimiento de una seña de identidad, una marca propia de la ciudad, una de las tantas sevillas que habitan esta ciudad, y que la hacen ser lo que es: ‘Sevilla. Ciudad taurina’”
+En este sentido, el edil destaca que “el Ayuntamiento defiende sin complejos la tauromaquia local como manifestación cultural sevillana, y queremos difundirla para que los sevillanos puedan conocerla, disfrutarla y hacerlos partícipe de la misma, abriendo las puertas al marco de la creación de un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.; así como un lugar de análisis de la tauromaquia a través de debates, en el que los aficionados serán una parte fundamental”.
+Esta marca es “una fórmula colaborativa para estructurar la afición; con la sociedad civil taurina, participación de las asociaciones, peñas, etc. la cual tendrá un papel predominante y busca impulsar la huella taurina en la ciudad; identificando los barrios con sus toreros, monumentos, rutas culturales y festejos conmemorativos, entre otros muchos actos”, ha señalado el delegado.
+El lanzamiento de esta marca involucra cuatro áreas municipales de primer nivel. Fiestas Mayores, al ser la tauromaquia Fiesta Mayor de la ciudad;  Cultura, por su raigambre en la idiosincrasia local: Turismo, por la atracción que suponen nuestros festejos para el aficionado nacional y extranjero y Economía, por el impacto económico en el PIB local.
+Del mismo modo, Alés asegura que “esta marca contará con un equipo de expertos en la materia, que incluirá a todos los que hacen posible el festejo taurino: toreros, Presidentes de plaza, empresarios o aficionados. Igualmente, contaremos con un nutrido grupo de colaboradores para llevar a cabo una agenda cultural de primer nivel”.
+El nacimiento de esta iniciativa busca identificar a los toros como fiesta mayor de Sevilla, que Sevilla ciudad Taurina sea:
+1.	Un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.
+2.	De análisis de la tauromaquia a través de los debates.
+3.	Estructurar la afición, la sociedad civil taurina, con la participación de las asociaciones, peñas, etc.
+4.	Dejar huella taurina en la ciudad, identificando los barrios con sus toreros, monumentos, incluso festejos conmemorativos, etc.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/eC997vMnpuo"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</div>
+</p>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `El Circuito de Novilladas de Andalucía 2026 presenta su séptima edición en Sevilla`,
+    image: "/images/circui.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "La Plaza de Toros de “La Malagueta”, en el año de su 150º aniversario, será escenario de la 'Gran Final' del certamen",
+	fullContent: `**La séptima edición del certamen cuenta con el respaldo de Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla**
+El Salón de Carteles de la Real Maestranza de Caballería de Sevilla ha acogido este viernes la presentación oficial del Circuito de Novilladas con picadores de Andalucía 2026, que alcanza su séptima edición plenamente consolidado como uno de los proyectos fundamentales en la promoción de nuevos valores.
+
+Un proyecto impulsado por la Fundación Toro de Lidia y la Junta de Andalucía, y respaldado por Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla.
+
+El Circuito volverá a recorrer la geografía andaluza con seis festejos reafirmando su compromiso con la juventud, el territorio y el futuro de la tauromaquia.
+
+Así, el certamen comenzará con tres festejos clasificatorios:
+Sábado 7 de marzo, Lucena:Novillos de Osborne para Pedro Luis, Iván Rejas y Manuel Quintana, que debuta con picadores.
+Sábado 14 de marzo, Cortes de la Frontera:Novillos de Aguadulce para El Primi, Julio Norte y Dennis Martín, que debuta con picadores.
+Sábado 21 de marzo, Sanlúcar de Barrameda:Novillos de Luis González Conde para Víctor Barroso, Francisco Fernández e Isaac Galvín, que debuta con picadores.
+
+Tras estas tres citas, el Circuito celebrará sus semifinales:
+Sábado 11 de abril, Motril: Novillos de Fermín Bohórquez para tres de los seis semifinalistas.
+Sábado 18 de abril, Aracena: Novillos de Ave María para los tres semifinalistas restantes.
+
+La ‘Gran Final’ tendrá lugar el 14 de junio en la Plaza de Toros de La Malagueta (Málaga), donde harán el paseíllo los tres novilleros finalistas.
+
+Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, ha asegurado que “Pisar la Real Maestranza es un honor. La confianza mutua con la Fundación Toro de Lidia ha sido clave para que este proyecto crezca y sigan surgiendo nuevas iniciativas, con el impulso fundamental de Borja Cardelús.
+
+La final en La Malagueta, en su 150 aniversario y dentro del abono de la Feria de Málaga, es un orgullo. Prometemos estar a la altura. Estamos muy ilusionados.”
+.
+
+Seguidamente, Manuel Ruiz Rojas, Director financiero de la Fundación Caja Rural del Sur, patrocinador del certamen, ha destacado “Desde el primer día que vino a presentarnos el proyecto Victorino Martín nos convenció y decidimos apoyarlo. Somos el primer patrocinador oficial y nos sentimos muy orgullosos de formar parte de esta iniciativa. Seguiremos respaldando y apoyando el mundo del toro.”.
+
+Ha cerrado el acto D. David Gil, secretario general de Interior de la Junta de Andalucía, quien ha reafirmado el respaldo institucional del Gobierno andaluz a un proyecto estratégico para la promoción de la tauromaquia y la juventud andaluza: “Quiero dar la enhorabuena a la Fundación Toro de Lidia por la presentación del séptimo Circuito de Andalucía y desear toda la suerte a los participantes; estoy convencido de que ofrecerán un gran espectáculo. Este Circuito se ha consolidado como un referente para quienes quieren ser toreros y demuestra que el esfuerzo tiene recompensa.
+
+Desde 2020 lo venimos apoyando para que siga creciendo, y hoy vuelve a ser protagonista gracias a la visibilidad de Canal Sur y a una gran final en Málaga. La tauromaquia goza de buena salud en Andalucía; es parte de nuestro patrimonio cultural y el Gobierno andaluz seguirá apostando firmemente por ella”.
+
+Con esta séptima edición, el Circuito de Novilladas de Andalucía continúa consolidándose como una plataforma real de oportunidades para los jóvenes novilleros y como un modelo eficaz de colaboración entre instituciones públicas y sector privado, llevando la tauromaquia a distintas provincias andaluzas y fortaleciendo su tejido cultural.
+
+Andalucía vuelve a situarse, una temporada más, en el epicentro del futuro del toreo.
+
+**Un certamen consolidado como referencia nacional gracias al compromiso institucional**
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Félix San Román, participante del Circuito de Madrid 2026 por la Escuela Taurina de Galapagar`,
+    image: "/images/feli.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "El novillero, que debutó con caballos la temporada pasada, hará el paseíllo representando a la Escuela Taurina de Galapagar. Tiene una importante temporada por delante con Valencia en el horizonte",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce al sexto de sus novilleros
+participantes, se trata del representante de la Escuela Taurina de
+Galapagar, **Félix San Román**.
+
+El novillero madrileño tuvo una importante etapa sin caballos, donde
+acumuló importantes triunfos en la temporada 2024. En la pasada
+campaña **debutó con picadores**, en Navalagamella, donde cortó 4 orejas
+a un lote de Flor de Jara.
+
+Ganadero de **Monte la Ermita**, comenzó su andadura en los ruedos
+matando festivales para dar, posteriormente dar el paso al traje de luces.
+En la **temporada pasada** mató 14 novilladas en las que cortó 29 orejas y
+un rabo.
+
+Representa a la **Escuela Taurina de Galapagar**, que nació hace dos
+temporadas y tuvo como representante en la edición pasada a Luis Rivero.
+El madrileño Félix San Román comenzó su temporada el pasado viernes
+en Valdemorillo y tiene una campaña importante en la que, por el momento,
+destaca su comparecencia en la **Plaza de Toros de Valencia** el próximo 9
+de mayo.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se
+celebra desde hace cinco temporadas en los municipios de la región.
+Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde
+también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la
+Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Borja Jiménez a favor de ASPACE en Villares de la Reina`,
     image: "/images/fav.jpg",
@@ -585,7 +711,133 @@ de Toros de Orive.`,
 ];
 
 const latestNews: NewsItem[] = [
-  { 
+{ 
+    id: 243,
+    title: `El Ayuntamiento reúne a los aficionados taurinos en el primer gran acto del marco “Sevilla, ciudad taurina”`,
+    image: "/images/sevi.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "<p>El Salón Colón ha acogido este jueves 12 de febrero el primer encuentro del programa “Sevilla, ciudad taurina”, un nuevo foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias y debates",
+	fullContent: `El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha presidido hoy el I Encuentro de Aficionados Taurinos de Sevilla, celebrado en el marco de la programación de “Sevilla, ciudad taurina”, una iniciativa que nace con el objetivo de reforzar el papel de la afición y fomentar el diálogo en torno al presente y el futuro de la tauromaquia en la ciudad.
+El Salón Colón acogió este foro de debate en el que, desde los escaños, los integrantes de las peñas han debatido sobre el pasado, presente y futuro de la fiesta con Sevilla como eje vertebrador.
+En esta primera cita han participado personalidades y tertulias del toreo como Tertulia Los 13, Círculo Pablo Aguado, Tertulia El Porvenir, Círculo Taurino de Sevilla, Tertulia Puerta Carmona, y Tertulia Taurina Universitaria, Juan Ortega, Pineda , Peña Eduardo Dávila y tertulia los 40, entre otros.
+Durante su intervención, Alés ha subrayado el carácter “histórico” de este encuentro, al tratarse de la primera vez que Sevilla acoge un espacio específicamente dedicado a reunir a los aficionados taurinos, a pesar de ser una de las grandes referencias mundiales de la tauromaquia. “Sevilla, cuna de grandes toreros y plaza de referencia internacional, necesitaba un lugar de encuentro, diálogo y convivencia entre quienes sienten el toro como parte esencial de su identidad cultural”, ha señalado.
+El delegado ha destacado que, desde la Delegación de Fiestas Mayores, se ha trabajado para que la programación de Sevilla Ciudad Taurina trascienda la celebración de actos o eventos puntuales, situando a la afición como eje central de la iniciativa. En este sentido, ha reconocido el papel fundamental que desempeñan las peñas, tertulias, asociaciones y familias en la transmisión de los valores y el conocimiento del mundo del toro de generación en generación.
+Asimismo, Manuel Alés ha señalado que este encuentro supone también un espacio de reflexión sobre los retos que afronta la tauromaquia en la sociedad actual, apostando por un diálogo sereno, respetuoso y constructivo que permita consolidar el futuro de esta tradición.
+El delegado ha incidido en el valor simbólico del acto, destacando que “marca un antes y un después” en la relación entre las instituciones y la afición taurina, así como en el acercamiento entre distintas generaciones de aficionados. “Hoy no solo inauguramos un acto, inauguramos un camino de colaboración, de diálogo y de reivindicación cultural de lo que la tauromaquia representa para Sevilla: arte, historia, estética, ritual, emoción y patrimonio vivo”, ha afirmado.
+En este sentido, Alés ha recordado que la tauromaquia forma parte inseparable de la identidad sevillana, junto a otras manifestaciones culturales y tradicionales como la Semana Santa, la Feria o el flamenco.
+El delegado ha concluido agradeciendo la implicación de todas las peñas, asociaciones, profesionales y aficionados que han hecho posible la celebración del encuentro, mostrando su deseo de que esta iniciativa tenga continuidad en el tiempo y contribuya a fortalecer la afición taurina en la ciudad.
+**Sevilla, ciudad taurina**
+El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha destacado que “afianzamos con este acto y desde este Ayuntamiento, el reciente nacimiento de una seña de identidad, una marca propia de la ciudad, una de las tantas sevillas que habitan esta ciudad, y que la hacen ser lo que es: ‘Sevilla. Ciudad taurina’”
+En este sentido, el edil destaca que “el Ayuntamiento defiende sin complejos la tauromaquia local como manifestación cultural sevillana, y queremos difundirla para que los sevillanos puedan conocerla, disfrutarla y hacerlos partícipe de la misma, abriendo las puertas al marco de la creación de un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.; así como un lugar de análisis de la tauromaquia a través de debates, en el que los aficionados serán una parte fundamental”.
+Esta marca es “una fórmula colaborativa para estructurar la afición; con la sociedad civil taurina, participación de las asociaciones, peñas, etc. la cual tendrá un papel predominante y busca impulsar la huella taurina en la ciudad; identificando los barrios con sus toreros, monumentos, rutas culturales y festejos conmemorativos, entre otros muchos actos”, ha señalado el delegado.
+El lanzamiento de esta marca involucra cuatro áreas municipales de primer nivel. Fiestas Mayores, al ser la tauromaquia Fiesta Mayor de la ciudad;  Cultura, por su raigambre en la idiosincrasia local: Turismo, por la atracción que suponen nuestros festejos para el aficionado nacional y extranjero y Economía, por el impacto económico en el PIB local.
+Del mismo modo, Alés asegura que “esta marca contará con un equipo de expertos en la materia, que incluirá a todos los que hacen posible el festejo taurino: toreros, Presidentes de plaza, empresarios o aficionados. Igualmente, contaremos con un nutrido grupo de colaboradores para llevar a cabo una agenda cultural de primer nivel”.
+El nacimiento de esta iniciativa busca identificar a los toros como fiesta mayor de Sevilla, que Sevilla ciudad Taurina sea:
+1.	Un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.
+2.	De análisis de la tauromaquia a través de los debates.
+3.	Estructurar la afición, la sociedad civil taurina, con la participación de las asociaciones, peñas, etc.
+4.	Dejar huella taurina en la ciudad, identificando los barrios con sus toreros, monumentos, incluso festejos conmemorativos, etc.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/eC997vMnpuo"
+    title="Video de YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</div>
+</p>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 244,
+    title: `El Circuito de Novilladas de Andalucía 2026 presenta su séptima edición en Sevilla`,
+    image: "/images/circui.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "La Plaza de Toros de “La Malagueta”, en el año de su 150º aniversario, será escenario de la 'Gran Final' del certamen",
+	fullContent: `**La séptima edición del certamen cuenta con el respaldo de Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla**
+El Salón de Carteles de la Real Maestranza de Caballería de Sevilla ha acogido este viernes la presentación oficial del Circuito de Novilladas con picadores de Andalucía 2026, que alcanza su séptima edición plenamente consolidado como uno de los proyectos fundamentales en la promoción de nuevos valores.
+
+Un proyecto impulsado por la Fundación Toro de Lidia y la Junta de Andalucía, y respaldado por Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla.
+
+El Circuito volverá a recorrer la geografía andaluza con seis festejos reafirmando su compromiso con la juventud, el territorio y el futuro de la tauromaquia.
+
+Así, el certamen comenzará con tres festejos clasificatorios:
+Sábado 7 de marzo, Lucena:Novillos de Osborne para Pedro Luis, Iván Rejas y Manuel Quintana, que debuta con picadores.
+Sábado 14 de marzo, Cortes de la Frontera:Novillos de Aguadulce para El Primi, Julio Norte y Dennis Martín, que debuta con picadores.
+Sábado 21 de marzo, Sanlúcar de Barrameda:Novillos de Luis González Conde para Víctor Barroso, Francisco Fernández e Isaac Galvín, que debuta con picadores.
+
+Tras estas tres citas, el Circuito celebrará sus semifinales:
+Sábado 11 de abril, Motril: Novillos de Fermín Bohórquez para tres de los seis semifinalistas.
+Sábado 18 de abril, Aracena: Novillos de Ave María para los tres semifinalistas restantes.
+
+La ‘Gran Final’ tendrá lugar el 14 de junio en la Plaza de Toros de La Malagueta (Málaga), donde harán el paseíllo los tres novilleros finalistas.
+
+Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, ha asegurado que “Pisar la Real Maestranza es un honor. La confianza mutua con la Fundación Toro de Lidia ha sido clave para que este proyecto crezca y sigan surgiendo nuevas iniciativas, con el impulso fundamental de Borja Cardelús.
+
+La final en La Malagueta, en su 150 aniversario y dentro del abono de la Feria de Málaga, es un orgullo. Prometemos estar a la altura. Estamos muy ilusionados.”
+.
+
+Seguidamente, Manuel Ruiz Rojas, Director financiero de la Fundación Caja Rural del Sur, patrocinador del certamen, ha destacado “Desde el primer día que vino a presentarnos el proyecto Victorino Martín nos convenció y decidimos apoyarlo. Somos el primer patrocinador oficial y nos sentimos muy orgullosos de formar parte de esta iniciativa. Seguiremos respaldando y apoyando el mundo del toro.”.
+
+Ha cerrado el acto D. David Gil, secretario general de Interior de la Junta de Andalucía, quien ha reafirmado el respaldo institucional del Gobierno andaluz a un proyecto estratégico para la promoción de la tauromaquia y la juventud andaluza: “Quiero dar la enhorabuena a la Fundación Toro de Lidia por la presentación del séptimo Circuito de Andalucía y desear toda la suerte a los participantes; estoy convencido de que ofrecerán un gran espectáculo. Este Circuito se ha consolidado como un referente para quienes quieren ser toreros y demuestra que el esfuerzo tiene recompensa.
+
+Desde 2020 lo venimos apoyando para que siga creciendo, y hoy vuelve a ser protagonista gracias a la visibilidad de Canal Sur y a una gran final en Málaga. La tauromaquia goza de buena salud en Andalucía; es parte de nuestro patrimonio cultural y el Gobierno andaluz seguirá apostando firmemente por ella”.
+
+Con esta séptima edición, el Circuito de Novilladas de Andalucía continúa consolidándose como una plataforma real de oportunidades para los jóvenes novilleros y como un modelo eficaz de colaboración entre instituciones públicas y sector privado, llevando la tauromaquia a distintas provincias andaluzas y fortaleciendo su tejido cultural.
+
+Andalucía vuelve a situarse, una temporada más, en el epicentro del futuro del toreo.
+
+**Un certamen consolidado como referencia nacional gracias al compromiso institucional**
+El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 245,
+    title: `Félix San Román, participante del Circuito de Madrid 2026 por la Escuela Taurina de Galapagar`,
+    image: "/images/feli.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "El novillero, que debutó con caballos la temporada pasada, hará el paseíllo representando a la Escuela Taurina de Galapagar. Tiene una importante temporada por delante con Valencia en el horizonte",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce al sexto de sus novilleros
+participantes, se trata del representante de la Escuela Taurina de
+Galapagar, **Félix San Román**.
+
+El novillero madrileño tuvo una importante etapa sin caballos, donde
+acumuló importantes triunfos en la temporada 2024. En la pasada
+campaña **debutó con picadores**, en Navalagamella, donde cortó 4 orejas
+a un lote de Flor de Jara.
+
+Ganadero de **Monte la Ermita**, comenzó su andadura en los ruedos
+matando festivales para dar, posteriormente dar el paso al traje de luces.
+En la **temporada pasada** mató 14 novilladas en las que cortó 29 orejas y
+un rabo.
+
+Representa a la **Escuela Taurina de Galapagar**, que nació hace dos
+temporadas y tuvo como representante en la edición pasada a Luis Rivero.
+El madrileño Félix San Román comenzó su temporada el pasado viernes
+en Valdemorillo y tiene una campaña importante en la que, por el momento,
+destaca su comparecencia en la **Plaza de Toros de Valencia** el próximo 9
+de mayo.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se
+celebra desde hace cinco temporadas en los municipios de la región.
+Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde
+también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la
+Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 246,
     title: `Borja Jiménez a favor de ASPACE en Villares de la Reina`,
     image: "/images/fav.jpg",
