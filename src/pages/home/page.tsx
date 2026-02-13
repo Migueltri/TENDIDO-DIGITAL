@@ -456,264 +456,262 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 );
 	
 const featuredNews: NewsItem[] = [
-    { 
-    id: 1000,
-    title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
-    image: "/images/vic.jpg",
-    category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	excerpt: "El ciclo se celebrará del 23 al 25 de mayo con el toro como eje central del espectáculo.",
-	fullContent: `La Feria del Toro 2026 de Vic-Fézensac ya tiene carteles oficialesl. El Club Taurin Vicois ha anunciado un ciclo que se desarrollará del 23 al 25 de mayo en las Arènes Joseph Fourniol, con apostando por la diversidad ganadera, identidad de esta plaza francesa.
-La programación reunirá diez encastes distintos, combinando hierros históricos y ganaderías habituales, en un cartel que vuelve a poner el protagonismo en el toro.
-Sábado 23 de mayo a las 11h: novillada de Aguadulce para Gonzalo Capdevila, Pedro Andrés y Pedro Luis. Por la tarde, a las 18h se lidiará una corrida de Prieto de la Cal con Alberto Lamelas, Luis Gerpe y Maxime Solera.
-Domingo 24 de mayo a las 11h: Corrida Concurso, seña de identidad del ciclo desde 1972 , con toros de: Saltillo, La Quinta, Partido de Resina, Benítez Cubero, Dolores Aguirre y Pagés Malhan, para Sánchez Vara, Román e Isaac Fonseca. Por la tarde, a las 18h se anunciará la corrida de Baltasar Ibán con Morenito de Aranda, José Garrido y Juan de Castilla.
-Lunes 25 a las 11h: novillada sin picadores de Le Lartet para Manuel Real “Realito”, Rémy Asensio, y el ganador del bolsín de Bougue. Por la tarde, a las 18h, se cerrará la feria con la corrida de Miura, que será estoqueada por Pepe Moral, Damián Castaño y Gómez del Pilar.
-Con este planteamiento, Vic vuelve a reivindicar su personalidad dentro del panorama taurino internacional, priorizando la integridad del toro y el peso de los encastes sobre cualquier otro criterio.
-Con este elenco, Vic-Fézensac vuelve a situarse como una de las plazas francesas de mayor personalidad dentro del circuito taurino internacional.`,
-	author: "Inés Sáez",
-    authorLogo: "/images/nereasa.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Fernando Adrián incorpora a Curro Javier y a Pedro Iturralde a su cuadrilla para la nueva temporada`,
-    image: "/images/incor.jpg",
-    category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	fullContent: `El **matador** de **toros** Fernando Adrián ha cerrado la
-composición de su cuadrilla para la presente
-**temporada** con la incorporación del banderillero
-**Curro Javier**, que ocupará el **puesto** que deja
-Marcos Prieto.
-
-El **torero** madrileño contará además con el estreno
-en sus **filas** del picador **Pedro Iturralde**, que
-compartirá la **suerte** de varas con el joven picador
-guadalajareño **Javier Díaz-Manrique**.
-
-Como lidiador continuará el salmantino **Roberto**
-**Blanco**, mientras que el **puesto** de tercero seguirá
-siendo desempeñado por el madrileño Diego
-Valladar.
-
-La estructura del equipo se completa con **Francisco
-Javier Villalba como mozo de espadas, y con
-Santiago Ellauri al frente de la gestión profesional
-del diestro** .`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `Sebastián Castella dona a la Real Maestranza el traje con el que abrió la Puerta del Príncipe en 2023`,
-    image: "/images/seb.jpg",
-    category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	fullContent: `El matador de toros Sebastián Castella ha entregado este jueves a la Real Maestranza de Caballería de Sevilla el traje de luces que vistió en la corrida del 30 de septiembre de 2023, tarde en la que logró abrir la Puerta del Príncipe.
-
-El acto de donación se ha celebrado en el Salón de Carteles de la plaza de toros de la Real Maestranza y ha contado con la presencia del teniente de hermano mayor de la Real Corporación, Marcelo Maestre.
-
-El terno, de color grosella y oro, pasará a formar parte de los fondos del Museo Taurino de la Real Maestranza, donde podrá contemplarse junto a otros trajes históricos, como el que donó José María Manzanares tras el indulto de ‘Arrojado’, o el que lució Morante de la Puebla la tarde en la que cortó un rabo en el coso sevillano.`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `El Ayuntamiento de Albacete aprueba el pliego para la gestión de la plaza de toros por cinco años con exigentes requisitos económicos y técnicos`,
-    image: "/images/ayun.jpg",
-    category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	fullContent: `El **Ayuntamiento de Albacete** ha aprobado el pliego de condiciones que regirá la adjudicación de la gestión de la plaza de toros de la
-ciudad **durante los próximos cinco años**. El contrato establece una duración inicial de dos años, con la posibilidad de hasta tres
-prórrogas anuales.
-
-En **materia** de solvencia económica, las empresas licitadoras deberán acreditar un volumen anual de negocio superior a 2,7 millones de
-euros. En cuanto a la solvencia **técnica**, se exigirá haber sido **titular** o concesionaria, en los últimos ocho años, de al menos cinco ferias en
-plazas de primera **categoría**, o bien haber gestionado diez o más ferias en plazas de segunda **categoría** durante los últimos diez años.
-
-Respecto a la **programación**, el pliego fija la celebración de diez **festejos** durante la feria, entre los **días 8 y 17 de septiembre**, de los cuales
-dos deberán ser **novilladas** con picadores y ocho corridas de **toros**, incluyendo obligatoriamente una corrida de **carácter torista**. Se
-valorará de forma positiva la presencia en los carteles de **toreros** de reconocida trayectoria, así como la participación de tres **toreros**
-locales y ganaderías de primer nivel.
-
-Asimismo, la empresa adjudicataria deberá organizar una novillada sin picadores durante las fiestas de **San Juan**, con la participación de
-seis novilleros, dando preferencia a los alumnos de la Escuela Taurina de Albacete. En el festival del **Cotolengo**, deberá aportar un **novillo-**
-**toro** para el novillero de dicha **Escuela** y, además, programar otra **novillada sin picadores** para seis alumnos del mismo centro formativo.
-
-Entre los criterios de valoración figuran el **menor incremento posible** en el precio de abonos y localidades, el **mantenimiento de abonos**
-especiales para **mayores de 65 años**, **personas desempleadas** y **jóvenes de hasta 28 años**, con un precio de **50 euros**, así como el apoyo a
-la **Escuela Taurina de Albacete** y la calidad del **acto de presentación oficial de la feria**.`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `La plaza de toros de Alicante acoge el V Certamen José María Manzanares para novilleros sin picadores`,
-    image: "/images/cert.jpg",
-    category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	excerpt: "El 22 de febrero se celebrará una clase práctica con novillos de Hermanos Martí y la participación de seis alumnos de destacadas escuelas taurinas",
-	fullContent: `La plaza de toros de Alicante acogerá el próximo 22 de febrero, en horario matinal, el **V Certamen José María Manzanares**, una jornada en formato de clase práctica destinada a impulsar a los jóvenes valores de la tauromaquia y abierta al público con entrada gratuita al coso.
-
-El certamen está organizado por el Ayuntamiento de Alicante, la Escuela Taurina Municipal de Alicante y la empresa Eventos Mare Nostrum. Durante la mañana, a partir de las 12:00 horas, se lidiarán novillos de la joven ganadería Hermanos Martí, de Bocairent (Valencia), debutantes en plaza de segunda categoría, que servirán de base para la actuación de los siguientes novilleros: Iker de Virgilio, de la Escuela Taurina de Castellón; Cristóbal Granero y Rodrigo Villalón, de la Escuela Taurina de Alicante; Jorge Escamilla, de la Escuela Taurina de Valencia; Remy Asensio, de la Escuela Taurina de San Fernando; y Pablo Méndez, de la Escuela Taurina de Guadalajara.
-
-El V Certamen José María Manzanares rinde homenaje a una de las figuras más representativas de la tauromaquia alicantina y reafirma el papel del coso de la Plaza de España como enclave destacado en la promoción de la cultura taurina y el apoyo al futuro del toreo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
 	{ 
     id: 1005,
-    title: `Balears Cambio de Tercio recibe el premio a la innovación taurina en los Premios Talento La Razón 2026`,
-    image: "/images/bale.jpg",
+    title: `Borja Jiménez a favor de ASPACE en Villares de la Reina`,
+    image: "/images/fav.jpg",
     category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	excerpt: "La empresa taurina Balears Cambio de Tercio ha sido galardonada con el Premio a la Innovación Taurina en la gala de los Premios Talento La Razón 2026, celebrada ayer en Madrid. Este reconocimiento destaca la labor de la joven compañía en la revitalización de la tauromaquia en las Islas Baleares, donde ha logrado transformar el panorama taurino en apenas una temporada.",
-	fullContent: `El premio fue recogido por los empresarios **Francisco D’Agostino** y el
-maestro **Javier Conde**, artífices de un proyecto que ha devuelto la ilusión a la afición
-balear mediante una gestión profesional, valiente y adaptada a los nuevos tiempos.
+    date: "13 de Febrero de 2026",
+	excerpt: "Borja Jiménez impulsa un festival solidario en Villares de la Reina, Salamanca, a favor de ASPACE, la Asociación de Padres de Personas con Parálisis Cerebral y Encefalopatías.",
+	fullContent: `Desde el pasado mes de enero se sabía que el matador de toros sevillano estaba
+organizando junto el Ayuntamiento de Villares de la Reina un festival taurino benéfico a
+favor de ASPACE. Hoy, ya podemos saber los participantes que actuarán
+desinteresadamente en él, pues el 100% de la recaudación estará destinada para la
+asociación.
 
-**Un modelo de éxito: cultura, juventud y plazas llenas**
+El festival taurino con picadores tendrá lugar el día **20 de junio** con los toreros charros
+**Damián Castaño, Marcos Garcigrande, Alejandro Marcos, Manuel Diosleguarde y**
+la novillera **Raquel Martín**. Junto a ellos, las ganaderías salmantinas de **Garcigrande,**
+**Hermanos García Jiménes, El Capea, El Pilar, Domingo Hernández y Montalvo**, que
+donarán los novillos que se lidiarán dicho día, también de manera desinteresada.
 
-El jurado ha valorado especialmente la capacidad de **Balears Cambio de**
-**Tercio** para recuperar escenarios históricos como la plaza de **Muro**, reabierta tras
-ocho años de inactividad, y consolidar ferias en localidades como **Inca**. La empresa
-ha demostrado que la tauromaquia sigue siendo un motor cultural y económico capaz
-de atraer a un público diverso:
-
--   **Conexión con la juventud:** La asistencia de más de 350 jóvenes menores de edad
-    en el festejo de abril marcó un hito en el relevo generacional de las islas.
--   **Transversalidad cultural:** La integración de eventos como el concierto de Estrella
-    Morente o la proyección de "Tardes de Soledad" (que reunió a 2.000 personas) ha
-    situado a la tauromaquia en el centro del diálogo cultural balear.
--   **Excelencia en el ruedo:** Desde el histórico indulto de "Calderero" por Borja Jiménez
-    hasta el éxito de la corrida de Miura con el cartel de "no hay billetes", la gestión ha
-    apostado por el máximo rigor artístico y ganadero.
-
-"Este premio es la confirmación de que el renacer taurino en Baleares no ha sido
-fruto del azar, sino de una estrategia clara y un respeto profundo por el rito",
-afirmaron D’Agostino y Conde durante la gala. "Hemos demostrado que, cuando se
-ofrece calidad y una visión renovada, la sociedad responde con fuerza".
-
-**Sobre los Premios Talento La Razón**
-Los galardones otorgados por el diario **LA RAZÓN** reconocen anualmente la
-excelencia empresarial y el liderazgo en sectores clave. En esta edición de 2026, la
-inclusión de **Balears Cambio de Tercio** subraya la importancia de la tauromaquia
-como una industria capaz de innovar en su gestión y de reconectar con la sociedad
-civil a través de la cultura y la emoción.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+**Los beneficios obtenidos serán destinados directamente a los programas de**
+**rehabilitación e inclusión que se llevan a cabo en ASPACE.**`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Juan Pablo Ibarra, representante de la Escuela de Colmenar Viejo en el Circuito de Madrid 2026`,
-    image: "/images/ibar.jpg",
+    title: `Osornio y Sevilla: cuando el sueño mexicano se mide en la Maestranza`,
+    image: "/images/sueñ.jpg",
     category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	excerpt: "El novillero mexicano debutará con caballos en el certamen madrileño tras haber sido un nombre destacado en el escalafón sin picadores",
-	fullContent: `El **Circuito de Madrid 2026** sigue tomando forma y cada vez son menos los novilleros
-que quedan por conocerse. El sexto de los novilleros que participarán en el certamen
-es Juan Pablo Ibarra.
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/sueño.jpg",
+	fullContent: `Hay plazas que son escenario. Y hay plazas que son examen. Sevilla pertenece a las segundas. Por eso el anuncio del debut de Emiliano Osornio en la capital hispalense no es un simple compromiso más en su agenda: es una declaración de intenciones.
 
-Su llegada a España fue en el año 2023 cuando desembocó en la capital para torear
-una serie de clases prácticas. En la temporada **2024 debutó sin caballos** en el
-certamen "Camino hacia Las Ventas", haciendo el paseíllo en Collado Villalba.
+Para un novillero mexicano, hacer el paseíllo en la Plaza de toros de la Real Maestranza de Caballería de Sevilla no es solo una oportunidad profesional, es un sueño con acento propio. Osornio lo asume con una emoción transparente, consciente del simbolismo que encierra cruzar el ruedo maestrante vestido de luces. Sevilla no regala nada, pero tampoco olvida a quien logra tocar su fibra.
 
-El novillero mexicano **debutará con picadores en el Circuito de Madrid 2026**,
-cerrando de esta manera una exitosa carrera sin caballos en la que han destacado
-triunfos como el de el certamen “*Camino hacia Las Ventas*” o ser finalista
-de “*Kilómetro Cero*”, ambos en 2025.
+La ilusión, sin embargo, camina de la mano de la responsabilidad. Y quizá ahí radique la madurez del joven espada. Sabe que las expectativas pesan, que el nombre empieza a sonar y que cada tarde cuenta. En una temporada que se anuncia decisiva, Sevilla aparece como el punto de inflexión: la plaza que puede abrir puertas… o exigir más sacrificio.
 
-Llega representando a la **Escuela Taurina Miguel Cancela de Colmenar Viejo** de la
-que han salido dos triunfadores del Circuito de Madrid como Isaac Fonseca,
-compatriota de Ibarra y Alejandro Chicharro, quien ganó en 2023.
+Osornio habla de ir “descorchando” su nombre poco a poco. La expresión no es menor. En el toreo, nadie se impone de golpe; el reconocimiento se construye a base de tardes serias, de firmeza ante la embestida y de verdad sin atajos. Y si algo enseña Sevilla es precisamente eso: la importancia del poso.
 
-**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
-El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde
-hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta
-del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel,
-Kilómetro Cero y Toros de la Comunidad de Madrid.
-El principal objetivo, además de la celebración de festejos y dar oportunidades, es la
-promoción de los municipios madrileños a través del toro. En la presente temporada,
-tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+La Maestranza mide el temple, la colocación y, sobre todo, la autenticidad. Allí no basta con querer; hay que poder. Y para un novillero que cruza el Atlántico con ambición y respeto, el desafío es mayúsculo.
+
+El debut de Emiliano Osornio no es solo el estreno de un nombre en un cartel. Es el comienzo de una prueba mayor: demostrar que la ilusión puede sostenerse con argumentos y que el sueño mexicano tiene fundamento para escribirse en el albero sevillano.
+
+Porque en Sevilla, los sueños se escuchan… pero solo permanecen los que se torean de verdad.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Luque, el invierno hecho ambición: tres tardes para seguir creciendo en Sevilla`,
-    image: "/images/aza.jpg",
-    category: "Opinión",
-    date: "12 de Febrero de 2026",
-	footerImage1: "/images/azaa.jpg",
-	fullContent: `Sevilla ya huele a albero nuevo y azahar, y Daniel Luque asoma en el horizonte de la Maestranza con la determinación de quien ha convertido el invierno en laboratorio y la temporada en argumento. El torero de Gerena llega a su plaza —porque a estas alturas también es suya— con el pulso firme y la convicción de que cada comparecencia en el ruedo sevillano es examen mayor.
+    title: `Talavante y Sevilla: el reencuentro con una plaza que marca destinos`,
+    image: "/images/reen.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/reenc.jpg",
+	fullContent: `El regreso de Alejandro Talavante a Sevilla no es una fecha más en el calendario. Es una cita con la historia y con una afición que, como pocas, sabe premiar la verdad y castigar la tibieza. El extremeño no esconde su entusiasmo ante una temporada que le devuelve a un escenario donde siempre ha sentido el calor del tendido.
 
-No es una primavera más. Luque aterriza en el Arenal con la mochila cargada de horas de campo, tentaderos y reflexión. “Vengo con toda la ilusión del mundo de poder demostrar lo que uno hace durante todo el invierno y durante toda la temporada”, confiesa, consciente de que Sevilla no regala nada y de que cada pase debe tener verdad.
+Volver a la Plaza de toros de la Real Maestranza de Caballería de Sevilla supone, en palabras del propio torero, una mezcla de responsabilidad y orgullo. Se siente arropado por el público sevillano prácticamente desde que tomó la alternativa, y ese respaldo, lejos de aliviar la presión, acrecienta el compromiso. Porque en Sevilla no basta con estar: hay que dejar huella.
 
-Su discurso no suena a ruptura, sino a evolución. El de Gerena no habla de reinventarse, sino de crecer sin traicionarse. De pulir lo que ya funciona y de añadir matices a un concepto que ha ido cuajando con los años. “Quiero dar más de mí cada día; no reinventarme, pero sí sacar cosas nuevas y seguir avanzando, que es lo importante”, explica, dejando claro que la ambición no es una pose, sino una forma de entender el oficio.
+Talavante evoca con especial emoción lo vivido el pasado 12 de octubre, cuando firmó una obra que, aunque en el marco de un festival, alcanzó notable repercusión. Fue, según reconoce, esa faena soñada que todo matador anhela cuajar en el albero maestrante. También recuerda su paso por la Feria, donde un toro del hierro de Matilla le permitió sentir la entrega apasionada de la afición.
 
-Tres tardes le esperan en el albero maestrante. Tres citas para refrendar el momento que atraviesa y para seguir estrechando una relación forjada a base de entrega y compromiso con una de las plazas más exigentes del planeta taurino. Sevilla mide, pesa y coloca a cada cual en su sitio. Y Luque lo sabe.
+Para el torero, Sevilla encarna la esencia del toreo: exigencia sin concesiones, sensibilidad en cada muletazo y una liturgia que convierte cada paseíllo en examen definitivo. Por eso, su vuelta no es un simple retorno, sino un desafío personal. Quiere responder a ese cariño con entrega y autenticidad.
 
-La Maestranza será, una vez más, juez y escenario. Allí donde el silencio suena más fuerte que en ningún otro lugar, Daniel Luque buscará hablar con el toreo que ha madurado en la intimidad del invierno. Porque en Sevilla no basta con estar: hay que decir. Y Luque quiere decir mucho.`,
+En una plaza donde el silencio pesa tanto como la ovación, Talavante sabe que todo se mide con lupa. Y precisamente ahí radica la grandeza del compromiso: torear en Sevilla es mirarse frente al espejo del toreo eterno.
+
+La temporada dirá la última palabra. Pero la ilusión está intacta y el deseo claro: volver a sentir que la Maestranza late al compás de su muleta.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `Marco Pérez se queda fuera de Sevilla: sin acuerdo con la empresa para la Feria de Abril`,
-    image: "/images/marcoo.jpg",
+    title: `Paco Ureña, veinte años de verdad y entrega: Murcia se rinde a su torero`,
+    image: "/images/veint.jpg",
     category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	fullContent: `La Feria de Abril pierde a uno de los nombres jóvenes con mayor proyección. El salmantino Marco Pérez no formará parte del abono sevillano tras no aceptar las condiciones ofrecidas por la empresa Lances de Futuro para su inclusión en los carteles.
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/veinte.jpg",
+	fullContent: `Las emociones afloraron sin reservas en una velada que se prolongó durante más de dos horas y en la que las lágrimas fueron fiel reflejo del cariño y la admiración hacia Paco Ureña, que esta temporada conmemora el vigésimo aniversario de su alternativa.
 
-Durante la rueda de prensa celebrada este miércoles, el empresario José María Garzón fue cuestionado directamente por esta ausencia y explicó que existió propuesta formal por parte de la empresa. “Se le ofrecieron varias ganaderías con las que ya está anunciado en otras plazas y que lidiará esta temporada. No puedo hablar de cifras, fechas ni combinaciones. Su entorno no consideró adecuada la oferta y no se alcanzó un acuerdo”, señaló.
+El Auditorio y Centro de Congresos Víctor Villegas acogió un acto de gran calado, con la presencia de más de medio millar de aficionados y profesionales llegados desde distintos puntos de la Región y de otras provincias españolas. El evento estuvo presidido por Marcos Ortuño, consejero de Presidencia de la Región de Murcia, y Francisco Abril, director general de Administración Local, junto a numerosos representantes institucionales del Ayuntamiento de Murcia, del Ayuntamiento de Lorca y de otras entidades públicas.
 
-De este modo, la negociación no llegó a buen puerto y el nombre del joven espada no figurará finalmente en los carteles de la Maestranza esta primavera.
+Arropando al diestro lorquino, visiblemente emocionado y acompañado por su esposa e hija, se dieron cita familiares y compañeros de profesión como Luis Francisco Esplá, Javier Conde, Manolo Sánchez, Jiménez Fortes, Diego Urdiales y Rafaelillo, así como el resto de matadores murcianos, que a escote le hicieron entrega de un galardón cargado de simbolismo.
 
-**Un torero marcado por el impacto precoz**
+También quisieron sumarse, mediante mensajes audiovisuales, Pepín Liria y el espada mexicano Arturo Macías. No faltó el reconocimiento del ganadero Victorino Martín, ni las palabras del presidente de la Real Unión de Criadores de Toros de Lidia, Antonio Bañuelos, quien igualmente le hizo entrega de un galardón.
 
-Marco Pérez ha sido, desde sus primeros pasos, uno de los nombres señalados por la afición. Su desparpajo, frescura y sorprendente madurez frente a los animales le colocaron muy pronto en el foco mediático y profesional.
+El tejido asociativo taurino de la Región de Murcia, representado por clubes y peñas, mostró su respaldo incondicional, al igual que empresarios de relevancia como Ángel Bernal y Manuel Martínez Erice.
 
-En su etapa como becerrista dejó huella en plazas de máxima exigencia. El 12 de octubre de 2022 paseó un rabo en la Real Maestranza de Sevilla, un hito al alcance de muy pocos, y el 15 de mayo de 2023 cortó tres orejas en Las Ventas, reafirmando su condición de torero llamado a cotas mayores ante públicos de máxima responsabilidad.
+Uno de los instantes más conmovedores llegó cuando Ureña subió al escenario rodeado de quienes han sido pilares fundamentales en estas dos décadas de profesión y vida: su madre; su apoderado, Juan Diego; su hombre de confianza, Curro Vivas; su amigo David Domínguez; su psicóloga, Toñi Martos; su fisioterapeuta, Quico; y el sastre Antonio, de Fermín. Un círculo íntimo que simboliza el sacrificio, la constancia y la fe que han marcado su trayectoria.
 
-Tras tomar la alternativa en Nimes el 6 de junio de la pasada temporada, el diestro salmantino ha compartido cartel con figuras consolidadas, afianzando su proyección en plazas de primera categoría.
+La gala contó con actuaciones musicales, números de magia y diversas intervenciones, bajo la dirección y conducción de Íñigo Crespo, que hilvanó con maestría cada momento de la noche.
 
-La ausencia en Sevilla supone, sin duda, un capítulo llamativo en su joven carrera. La afición hispalense se queda este año sin ver la evolución de un torero que ya sabe lo que es tocar el cielo en el albero maestrante, mientras el curso taurino seguirá su camino lejos del Baratillo para uno de los nombres propios de la nueva generación.`,
+Una cita que ya forma parte de la memoria taurina de Murcia. Y, sobre todo, un homenaje sentido a un torero íntegro, de pureza y pasión inquebrantables, que ha escrito con sangre y verdad veinte años de compromiso con el toreo.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1009,
-    title: `La Misericordia sigue su curso: la Diputación no frena el concurso pese al recurso y las críticas de ANOET`,
-    image: "/images/criti.jpg",
+    title: `Clovis Germain ganador del bolsín taurino mirobrigense`,
+    image: "/images/clovis.jpg",
     category: "Actualidad",
-    date: "12 de Febrero de 2026",
-	fullContent: `La Diputación de Zaragoza mantiene firme el timón en el proceso de adjudicación de la plaza de toros de La Misericordia. Su presidente, Juan Antonio Sánchez Quero, ha descartado paralizar el concurso tras el recurso de reposición presentado el pasado lunes por la empresa Nautalia.
+    date: "13 de Febrero de 2026",
+	imageCaption: "Imagen de Gaceta de Salamanca",
+	excerpt: "Desde el 17 de enero, siete tientas después, por fin conocemos el nombre ganador de esta 70ª edición del Bolsín Mirobrigense. ",
+	fullContent: `Su nombre es **Clovis Germain**, quien a parte de haber ganado este prestigioso bolsín,
+toreará el 7 de marzo en la novillada sin picadores de Valencia. El joven novillero se ha
+proclamado ganador y uno de los favoritos del certamen.
 
-Lejos de dar marcha atrás, la institución provincial sostiene el pliego en sus términos actuales, a pesar no solo de la impugnación formulada por la citada empresa, sino también del contundente pronunciamiento hecho público por la Asociación Nacional de Organizadores de Espectáculos Taurinos (ANOET), que ha llegado a calificar el documento como una “subasta”.
+Tras él, el salmantino **Iñigo Norte** ha quedado en segundo puesto, siguiéndole el
+venezolano **Fernando Vanegas**, cuarto puesto para **Francisco Rodríguez Perera** y por
+último **Pedro Caminero** como el quinto clasificado.
 
-En declaraciones realizadas a petición de la diputada popular Mari Carmen Lázaro y recogidas por Heraldo, Sánchez Quero defendió que “el pliego se ajusta a la legalidad” y dejó claro que el procedimiento no se detendrá porque los empresarios —los únicos que pueden concurrir según lo establecido— consideren que el texto es incorrecto o deba anularse.
+De esta manera quedan conformados definitivamente los carteles del Carnaval del Toro
+de Ciudad Rodrigo, actuando el domingo 15 **Francisco Rodríguez Perera**, **Fernando**
+**Vanegas**, **Iñigo Norte** y **Pedro Caminero** con erales de la ganadería Toros de Orive. Este
+mismo día, el rejoneador **Víctor Herrero** toreará un novillo de El Canario.
 
-Desde la Presidencia se subraya que el objetivo del pliego es “buscar la excelencia” en la gestión del coso zaragozano. Sin embargo, esta postura choca frontalmente con la visión de la patronal taurina. ANOET considera “inaceptable” que se exija a las empresas licitadoras compromisos cerrados con toreros y ganaderías de cara a la feria, incluyendo además la fijación anticipada de fechas concretas para cada actuación durante el mes de febrero, al entender que tales condiciones podrían afectar a la libre competencia.
-
-En su comunicado, la asociación también defiende que existen fórmulas alternativas para evaluar las ofertas más allá del canon económico al alza y sin límite contemplado en el pliego, un sistema que —según advierten— transforma los procesos de adjudicación en auténticas pujas.
-
-Así las cosas, el futuro empresarial de La Misericordia sigue generando debate en los despachos mientras el sector permanece atento a una decisión que marcará el rumbo de una de las plazas de mayor peso en el calendario taurino.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+Por otro lado, **Clovis Germain** cierra el cartel del martes 17, acompañando en el festejo
+a **Miguel Ángel Perera**, **Borja Jiménez** y **Manuel Diosleguarde**. Los matadores lidiaran
+utreros de la ganadería de Juan Manuel Criado mientras que el triunfador lidiara un eral
+de Toros de Orive.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+  { 
+    id: 246,
+    title: `Borja Jiménez a favor de ASPACE en Villares de la Reina`,
+    image: "/images/fav.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	excerpt: "Borja Jiménez impulsa un festival solidario en Villares de la Reina, Salamanca, a favor de ASPACE, la Asociación de Padres de Personas con Parálisis Cerebral y Encefalopatías.",
+	fullContent: `Desde el pasado mes de enero se sabía que el matador de toros sevillano estaba
+organizando junto el Ayuntamiento de Villares de la Reina un festival taurino benéfico a
+favor de ASPACE. Hoy, ya podemos saber los participantes que actuarán
+desinteresadamente en él, pues el 100% de la recaudación estará destinada para la
+asociación.
+
+El festival taurino con picadores tendrá lugar el día **20 de junio** con los toreros charros
+**Damián Castaño, Marcos Garcigrande, Alejandro Marcos, Manuel Diosleguarde y**
+la novillera **Raquel Martín**. Junto a ellos, las ganaderías salmantinas de **Garcigrande,**
+**Hermanos García Jiménes, El Capea, El Pilar, Domingo Hernández y Montalvo**, que
+donarán los novillos que se lidiarán dicho día, también de manera desinteresada.
+
+**Los beneficios obtenidos serán destinados directamente a los programas de**
+**rehabilitación e inclusión que se llevan a cabo en ASPACE.**`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 247,
+    title: `Osornio y Sevilla: cuando el sueño mexicano se mide en la Maestranza`,
+    image: "/images/sueñ.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/sueño.jpg",
+	fullContent: `Hay plazas que son escenario. Y hay plazas que son examen. Sevilla pertenece a las segundas. Por eso el anuncio del debut de Emiliano Osornio en la capital hispalense no es un simple compromiso más en su agenda: es una declaración de intenciones.
+
+Para un novillero mexicano, hacer el paseíllo en la Plaza de toros de la Real Maestranza de Caballería de Sevilla no es solo una oportunidad profesional, es un sueño con acento propio. Osornio lo asume con una emoción transparente, consciente del simbolismo que encierra cruzar el ruedo maestrante vestido de luces. Sevilla no regala nada, pero tampoco olvida a quien logra tocar su fibra.
+
+La ilusión, sin embargo, camina de la mano de la responsabilidad. Y quizá ahí radique la madurez del joven espada. Sabe que las expectativas pesan, que el nombre empieza a sonar y que cada tarde cuenta. En una temporada que se anuncia decisiva, Sevilla aparece como el punto de inflexión: la plaza que puede abrir puertas… o exigir más sacrificio.
+
+Osornio habla de ir “descorchando” su nombre poco a poco. La expresión no es menor. En el toreo, nadie se impone de golpe; el reconocimiento se construye a base de tardes serias, de firmeza ante la embestida y de verdad sin atajos. Y si algo enseña Sevilla es precisamente eso: la importancia del poso.
+
+La Maestranza mide el temple, la colocación y, sobre todo, la autenticidad. Allí no basta con querer; hay que poder. Y para un novillero que cruza el Atlántico con ambición y respeto, el desafío es mayúsculo.
+
+El debut de Emiliano Osornio no es solo el estreno de un nombre en un cartel. Es el comienzo de una prueba mayor: demostrar que la ilusión puede sostenerse con argumentos y que el sueño mexicano tiene fundamento para escribirse en el albero sevillano.
+
+Porque en Sevilla, los sueños se escuchan… pero solo permanecen los que se torean de verdad.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 248,
+    title: `Talavante y Sevilla: el reencuentro con una plaza que marca destinos`,
+    image: "/images/reen.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/reenc.jpg",
+	fullContent: `El regreso de Alejandro Talavante a Sevilla no es una fecha más en el calendario. Es una cita con la historia y con una afición que, como pocas, sabe premiar la verdad y castigar la tibieza. El extremeño no esconde su entusiasmo ante una temporada que le devuelve a un escenario donde siempre ha sentido el calor del tendido.
+
+Volver a la Plaza de toros de la Real Maestranza de Caballería de Sevilla supone, en palabras del propio torero, una mezcla de responsabilidad y orgullo. Se siente arropado por el público sevillano prácticamente desde que tomó la alternativa, y ese respaldo, lejos de aliviar la presión, acrecienta el compromiso. Porque en Sevilla no basta con estar: hay que dejar huella.
+
+Talavante evoca con especial emoción lo vivido el pasado 12 de octubre, cuando firmó una obra que, aunque en el marco de un festival, alcanzó notable repercusión. Fue, según reconoce, esa faena soñada que todo matador anhela cuajar en el albero maestrante. También recuerda su paso por la Feria, donde un toro del hierro de Matilla le permitió sentir la entrega apasionada de la afición.
+
+Para el torero, Sevilla encarna la esencia del toreo: exigencia sin concesiones, sensibilidad en cada muletazo y una liturgia que convierte cada paseíllo en examen definitivo. Por eso, su vuelta no es un simple retorno, sino un desafío personal. Quiere responder a ese cariño con entrega y autenticidad.
+
+En una plaza donde el silencio pesa tanto como la ovación, Talavante sabe que todo se mide con lupa. Y precisamente ahí radica la grandeza del compromiso: torear en Sevilla es mirarse frente al espejo del toreo eterno.
+
+La temporada dirá la última palabra. Pero la ilusión está intacta y el deseo claro: volver a sentir que la Maestranza late al compás de su muleta.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 249,
+    title: `Paco Ureña, veinte años de verdad y entrega: Murcia se rinde a su torero`,
+    image: "/images/veint.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	footerImage1: "/images/veinte.jpg",
+	fullContent: `Las emociones afloraron sin reservas en una velada que se prolongó durante más de dos horas y en la que las lágrimas fueron fiel reflejo del cariño y la admiración hacia Paco Ureña, que esta temporada conmemora el vigésimo aniversario de su alternativa.
+
+El Auditorio y Centro de Congresos Víctor Villegas acogió un acto de gran calado, con la presencia de más de medio millar de aficionados y profesionales llegados desde distintos puntos de la Región y de otras provincias españolas. El evento estuvo presidido por Marcos Ortuño, consejero de Presidencia de la Región de Murcia, y Francisco Abril, director general de Administración Local, junto a numerosos representantes institucionales del Ayuntamiento de Murcia, del Ayuntamiento de Lorca y de otras entidades públicas.
+
+Arropando al diestro lorquino, visiblemente emocionado y acompañado por su esposa e hija, se dieron cita familiares y compañeros de profesión como Luis Francisco Esplá, Javier Conde, Manolo Sánchez, Jiménez Fortes, Diego Urdiales y Rafaelillo, así como el resto de matadores murcianos, que a escote le hicieron entrega de un galardón cargado de simbolismo.
+
+También quisieron sumarse, mediante mensajes audiovisuales, Pepín Liria y el espada mexicano Arturo Macías. No faltó el reconocimiento del ganadero Victorino Martín, ni las palabras del presidente de la Real Unión de Criadores de Toros de Lidia, Antonio Bañuelos, quien igualmente le hizo entrega de un galardón.
+
+El tejido asociativo taurino de la Región de Murcia, representado por clubes y peñas, mostró su respaldo incondicional, al igual que empresarios de relevancia como Ángel Bernal y Manuel Martínez Erice.
+
+Uno de los instantes más conmovedores llegó cuando Ureña subió al escenario rodeado de quienes han sido pilares fundamentales en estas dos décadas de profesión y vida: su madre; su apoderado, Juan Diego; su hombre de confianza, Curro Vivas; su amigo David Domínguez; su psicóloga, Toñi Martos; su fisioterapeuta, Quico; y el sastre Antonio, de Fermín. Un círculo íntimo que simboliza el sacrificio, la constancia y la fe que han marcado su trayectoria.
+
+La gala contó con actuaciones musicales, números de magia y diversas intervenciones, bajo la dirección y conducción de Íñigo Crespo, que hilvanó con maestría cada momento de la noche.
+
+Una cita que ya forma parte de la memoria taurina de Murcia. Y, sobre todo, un homenaje sentido a un torero íntegro, de pureza y pasión inquebrantables, que ha escrito con sangre y verdad veinte años de compromiso con el toreo.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 250,
+    title: `Clovis Germain ganador del bolsín taurino mirobrigense`,
+    image: "/images/clovis.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	imageCaption: "Imagen de Gaceta de Salamanca",
+	excerpt: "Desde el 17 de enero, siete tientas después, por fin conocemos el nombre ganador de esta 70ª edición del Bolsín Mirobrigense. ",
+	fullContent: `Su nombre es **Clovis Germain**, quien a parte de haber ganado este prestigioso bolsín,
+toreará el 7 de marzo en la novillada sin picadores de Valencia. El joven novillero se ha
+proclamado ganador y uno de los favoritos del certamen.
+
+Tras él, el salmantino **Iñigo Norte** ha quedado en segundo puesto, siguiéndole el
+venezolano **Fernando Vanegas**, cuarto puesto para **Francisco Rodríguez Perera** y por
+último **Pedro Caminero** como el quinto clasificado.
+
+De esta manera quedan conformados definitivamente los carteles del Carnaval del Toro
+de Ciudad Rodrigo, actuando el domingo 15 **Francisco Rodríguez Perera**, **Fernando**
+**Vanegas**, **Iñigo Norte** y **Pedro Caminero** con erales de la ganadería Toros de Orive. Este
+mismo día, el rejoneador **Víctor Herrero** toreará un novillo de El Canario.
+
+Por otro lado, **Clovis Germain** cierra el cartel del martes 17, acompañando en el festejo
+a **Miguel Ángel Perera**, **Borja Jiménez** y **Manuel Diosleguarde**. Los matadores lidiaran
+utreros de la ganadería de Juan Manuel Criado mientras que el triunfador lidiara un eral
+de Toros de Orive.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 251,
     title: `Vic-Fézensac presenta una Feria del Toro 2026 marcada por la variedad de encastes`,
     image: "/images/vic.jpg",
