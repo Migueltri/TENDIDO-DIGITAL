@@ -457,6 +457,23 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Ramón Valencia y Toño Matilla rompen el frente común empresarial y concurrirán al concurso de la Plaza de Toros Zaragoza`,
+    image: "/images/empres.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	fullContent: `Los empresarios taurinos **Ramón Valencia y Toño Matilla** presentarán finalmente sus respectivas ofertas al concurso de la Plaza de Toros de Zaragoza, según ha adelantado el periodista **Vicente Zabala de la Serna.**
+
+Este movimiento se produce apenas unas horas después de que se alcanzara un acuerdo en el seno de ANOET en relación con el pliego de condiciones que regirá la adjudicación del coso zaragozano.
+
+Hasta ese momento, todo apuntaba a la posibilidad de un plante conjunto por parte del sector, en respaldo al recurso presentado por Rafael García Garrido en nombre de Nautalia, después de que la patronal empresarial calificara de “inaceptable” el citado pliego, al considerar excesivo el incremento del canon y la obligatoriedad de programar la Feria del Pilar en la capital aragonesa.
+
+Sin embargo, y de acuerdo con la información del citado periodista, tanto Ramón Valencia —tras perder la gestión de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla— como Toño Matilla han decidido desmarcarse de ese supuesto pacto sectorial y concurrir al concurso de Zaragoza por separado.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1002,
     title: `El Ayuntamiento reúne a los aficionados taurinos en el primer gran acto del marco “Sevilla, ciudad taurina”`,
     image: "/images/sevi.jpg",
@@ -711,7 +728,24 @@ de Toros de Orive.`,
 ];
 
 const latestNews: NewsItem[] = [
-{ 
+	{ 
+    id: 242,
+    title: `Ramón Valencia y Toño Matilla rompen el frente común empresarial y concurrirán al concurso de la Plaza de Toros Zaragoza`,
+    image: "/images/empres.jpg",
+    category: "Actualidad",
+    date: "13 de Febrero de 2026",
+	fullContent: `Los empresarios taurinos **Ramón Valencia y Toño Matilla** presentarán finalmente sus respectivas ofertas al concurso de la Plaza de Toros de Zaragoza, según ha adelantado el periodista **Vicente Zabala de la Serna.**
+
+Este movimiento se produce apenas unas horas después de que se alcanzara un acuerdo en el seno de ANOET en relación con el pliego de condiciones que regirá la adjudicación del coso zaragozano.
+
+Hasta ese momento, todo apuntaba a la posibilidad de un plante conjunto por parte del sector, en respaldo al recurso presentado por Rafael García Garrido en nombre de Nautalia, después de que la patronal empresarial calificara de “inaceptable” el citado pliego, al considerar excesivo el incremento del canon y la obligatoriedad de programar la Feria del Pilar en la capital aragonesa.
+
+Sin embargo, y de acuerdo con la información del citado periodista, tanto Ramón Valencia —tras perder la gestión de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla— como Toño Matilla han decidido desmarcarse de ese supuesto pacto sectorial y concurrir al concurso de Zaragoza por separado.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 243,
     title: `El Ayuntamiento reúne a los aficionados taurinos en el primer gran acto del marco “Sevilla, ciudad taurina”`,
     image: "/images/sevi.jpg",
