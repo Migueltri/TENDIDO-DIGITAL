@@ -457,277 +457,180 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1001,
-    title: `Ramón Valencia y Toño Matilla rompen el frente común empresarial y concurrirán al concurso de la Plaza de Toros Zaragoza`,
-    image: "/images/empres.jpg",
-    category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	fullContent: `Los empresarios taurinos **Ramón Valencia y Toño Matilla** presentarán finalmente sus respectivas ofertas al concurso de la Plaza de Toros de Zaragoza, según ha adelantado el periodista **Vicente Zabala de la Serna.**
-
-Este movimiento se produce apenas unas horas después de que se alcanzara un acuerdo en el seno de ANOET en relación con el pliego de condiciones que regirá la adjudicación del coso zaragozano.
-
-Hasta ese momento, todo apuntaba a la posibilidad de un plante conjunto por parte del sector, en respaldo al recurso presentado por Rafael García Garrido en nombre de Nautalia, después de que la patronal empresarial calificara de “inaceptable” el citado pliego, al considerar excesivo el incremento del canon y la obligatoriedad de programar la Feria del Pilar en la capital aragonesa.
-
-Sin embargo, y de acuerdo con la información del citado periodista, tanto Ramón Valencia —tras perder la gestión de la Plaza de Toros de la Real Maestranza de Caballería de Sevilla— como Toño Matilla han decidido desmarcarse de ese supuesto pacto sectorial y concurrir al concurso de Zaragoza por separado.`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `El Ayuntamiento reúne a los aficionados taurinos en el primer gran acto del marco “Sevilla, ciudad taurina”`,
-    image: "/images/sevi.jpg",
-    category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	excerpt: "<p>El Salón Colón ha acogido este jueves 12 de febrero el primer encuentro del programa “Sevilla, ciudad taurina”, un nuevo foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias y debates",
-	fullContent: `El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha presidido hoy el I Encuentro de Aficionados Taurinos de Sevilla, celebrado en el marco de la programación de “Sevilla, ciudad taurina”, una iniciativa que nace con el objetivo de reforzar el papel de la afición y fomentar el diálogo en torno al presente y el futuro de la tauromaquia en la ciudad.
-El Salón Colón acogió este foro de debate en el que, desde los escaños, los integrantes de las peñas han debatido sobre el pasado, presente y futuro de la fiesta con Sevilla como eje vertebrador.
-En esta primera cita han participado personalidades y tertulias del toreo como Tertulia Los 13, Círculo Pablo Aguado, Tertulia El Porvenir, Círculo Taurino de Sevilla, Tertulia Puerta Carmona, y Tertulia Taurina Universitaria, Juan Ortega, Pineda , Peña Eduardo Dávila y tertulia los 40, entre otros.
-Durante su intervención, Alés ha subrayado el carácter “histórico” de este encuentro, al tratarse de la primera vez que Sevilla acoge un espacio específicamente dedicado a reunir a los aficionados taurinos, a pesar de ser una de las grandes referencias mundiales de la tauromaquia. “Sevilla, cuna de grandes toreros y plaza de referencia internacional, necesitaba un lugar de encuentro, diálogo y convivencia entre quienes sienten el toro como parte esencial de su identidad cultural”, ha señalado.
-El delegado ha destacado que, desde la Delegación de Fiestas Mayores, se ha trabajado para que la programación de Sevilla Ciudad Taurina trascienda la celebración de actos o eventos puntuales, situando a la afición como eje central de la iniciativa. En este sentido, ha reconocido el papel fundamental que desempeñan las peñas, tertulias, asociaciones y familias en la transmisión de los valores y el conocimiento del mundo del toro de generación en generación.
-Asimismo, Manuel Alés ha señalado que este encuentro supone también un espacio de reflexión sobre los retos que afronta la tauromaquia en la sociedad actual, apostando por un diálogo sereno, respetuoso y constructivo que permita consolidar el futuro de esta tradición.
-El delegado ha incidido en el valor simbólico del acto, destacando que “marca un antes y un después” en la relación entre las instituciones y la afición taurina, así como en el acercamiento entre distintas generaciones de aficionados. “Hoy no solo inauguramos un acto, inauguramos un camino de colaboración, de diálogo y de reivindicación cultural de lo que la tauromaquia representa para Sevilla: arte, historia, estética, ritual, emoción y patrimonio vivo”, ha afirmado.
-En este sentido, Alés ha recordado que la tauromaquia forma parte inseparable de la identidad sevillana, junto a otras manifestaciones culturales y tradicionales como la Semana Santa, la Feria o el flamenco.
-El delegado ha concluido agradeciendo la implicación de todas las peñas, asociaciones, profesionales y aficionados que han hecho posible la celebración del encuentro, mostrando su deseo de que esta iniciativa tenga continuidad en el tiempo y contribuya a fortalecer la afición taurina en la ciudad.
-**Sevilla, ciudad taurina**
-El delegado de Fiestas Mayores del Ayuntamiento de Sevilla, Manuel Alés, ha destacado que “afianzamos con este acto y desde este Ayuntamiento, el reciente nacimiento de una seña de identidad, una marca propia de la ciudad, una de las tantas sevillas que habitan esta ciudad, y que la hacen ser lo que es: ‘Sevilla. Ciudad taurina’”
-En este sentido, el edil destaca que “el Ayuntamiento defiende sin complejos la tauromaquia local como manifestación cultural sevillana, y queremos difundirla para que los sevillanos puedan conocerla, disfrutarla y hacerlos partícipe de la misma, abriendo las puertas al marco de la creación de un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.; así como un lugar de análisis de la tauromaquia a través de debates, en el que los aficionados serán una parte fundamental”.
-Esta marca es “una fórmula colaborativa para estructurar la afición; con la sociedad civil taurina, participación de las asociaciones, peñas, etc. la cual tendrá un papel predominante y busca impulsar la huella taurina en la ciudad; identificando los barrios con sus toreros, monumentos, rutas culturales y festejos conmemorativos, entre otros muchos actos”, ha señalado el delegado.
-El lanzamiento de esta marca involucra cuatro áreas municipales de primer nivel. Fiestas Mayores, al ser la tauromaquia Fiesta Mayor de la ciudad;  Cultura, por su raigambre en la idiosincrasia local: Turismo, por la atracción que suponen nuestros festejos para el aficionado nacional y extranjero y Economía, por el impacto económico en el PIB local.
-Del mismo modo, Alés asegura que “esta marca contará con un equipo de expertos en la materia, que incluirá a todos los que hacen posible el festejo taurino: toreros, Presidentes de plaza, empresarios o aficionados. Igualmente, contaremos con un nutrido grupo de colaboradores para llevar a cabo una agenda cultural de primer nivel”.
-El nacimiento de esta iniciativa busca identificar a los toros como fiesta mayor de Sevilla, que Sevilla ciudad Taurina sea:
-1.	Un foro para el desarrollo de la cultura taurina a través de exposiciones, conferencias, etc.
-2.	De análisis de la tauromaquia a través de los debates.
-3.	Estructurar la afición, la sociedad civil taurina, con la participación de las asociaciones, peñas, etc.
-4.	Dejar huella taurina en la ciudad, identificando los barrios con sus toreros, monumentos, incluso festejos conmemorativos, etc.
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 1.5rem 0;">
-  <iframe
-    src="https://www.youtube.com/embed/eC997vMnpuo"
-    title="Video de YouTube"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-</div>
-</p>`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `El Circuito de Novilladas de Andalucía 2026 presenta su séptima edición en Sevilla`,
-    image: "/images/circui.jpg",
-    category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	excerpt: "La Plaza de Toros de “La Malagueta”, en el año de su 150º aniversario, será escenario de la 'Gran Final' del certamen",
-	fullContent: `**La séptima edición del certamen cuenta con el respaldo de Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla**
-El Salón de Carteles de la Real Maestranza de Caballería de Sevilla ha acogido este viernes la presentación oficial del Circuito de Novilladas con picadores de Andalucía 2026, que alcanza su séptima edición plenamente consolidado como uno de los proyectos fundamentales en la promoción de nuevos valores.
-
-Un proyecto impulsado por la Fundación Toro de Lidia y la Junta de Andalucía, y respaldado por Diputación de Málaga, Diputación de Granada, Diputación de Córdoba, Diputación de Huelva, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur, Fundación Cajasol y Real Maestranza de Caballería de Sevilla.
-
-El Circuito volverá a recorrer la geografía andaluza con seis festejos reafirmando su compromiso con la juventud, el territorio y el futuro de la tauromaquia.
-
-Así, el certamen comenzará con tres festejos clasificatorios:
-Sábado 7 de marzo, Lucena:Novillos de Osborne para Pedro Luis, Iván Rejas y Manuel Quintana, que debuta con picadores.
-Sábado 14 de marzo, Cortes de la Frontera:Novillos de Aguadulce para El Primi, Julio Norte y Dennis Martín, que debuta con picadores.
-Sábado 21 de marzo, Sanlúcar de Barrameda:Novillos de Luis González Conde para Víctor Barroso, Francisco Fernández e Isaac Galvín, que debuta con picadores.
-
-Tras estas tres citas, el Circuito celebrará sus semifinales:
-Sábado 11 de abril, Motril: Novillos de Fermín Bohórquez para tres de los seis semifinalistas.
-Sábado 18 de abril, Aracena: Novillos de Ave María para los tres semifinalistas restantes.
-
-La ‘Gran Final’ tendrá lugar el 14 de junio en la Plaza de Toros de La Malagueta (Málaga), donde harán el paseíllo los tres novilleros finalistas.
-
-Borja Ortiz, director de Asuntos Taurinos de la Diputación de Málaga, ha asegurado que “Pisar la Real Maestranza es un honor. La confianza mutua con la Fundación Toro de Lidia ha sido clave para que este proyecto crezca y sigan surgiendo nuevas iniciativas, con el impulso fundamental de Borja Cardelús.
-
-La final en La Malagueta, en su 150 aniversario y dentro del abono de la Feria de Málaga, es un orgullo. Prometemos estar a la altura. Estamos muy ilusionados.”
-.
-
-Seguidamente, Manuel Ruiz Rojas, Director financiero de la Fundación Caja Rural del Sur, patrocinador del certamen, ha destacado “Desde el primer día que vino a presentarnos el proyecto Victorino Martín nos convenció y decidimos apoyarlo. Somos el primer patrocinador oficial y nos sentimos muy orgullosos de formar parte de esta iniciativa. Seguiremos respaldando y apoyando el mundo del toro.”.
-
-Ha cerrado el acto D. David Gil, secretario general de Interior de la Junta de Andalucía, quien ha reafirmado el respaldo institucional del Gobierno andaluz a un proyecto estratégico para la promoción de la tauromaquia y la juventud andaluza: “Quiero dar la enhorabuena a la Fundación Toro de Lidia por la presentación del séptimo Circuito de Andalucía y desear toda la suerte a los participantes; estoy convencido de que ofrecerán un gran espectáculo. Este Circuito se ha consolidado como un referente para quienes quieren ser toreros y demuestra que el esfuerzo tiene recompensa.
-
-Desde 2020 lo venimos apoyando para que siga creciendo, y hoy vuelve a ser protagonista gracias a la visibilidad de Canal Sur y a una gran final en Málaga. La tauromaquia goza de buena salud en Andalucía; es parte de nuestro patrimonio cultural y el Gobierno andaluz seguirá apostando firmemente por ella”.
-
-Con esta séptima edición, el Circuito de Novilladas de Andalucía continúa consolidándose como una plataforma real de oportunidades para los jóvenes novilleros y como un modelo eficaz de colaboración entre instituciones públicas y sector privado, llevando la tauromaquia a distintas provincias andaluzas y fortaleciendo su tejido cultural.
-
-Andalucía vuelve a situarse, una temporada más, en el epicentro del futuro del toreo.
-
-**Un certamen consolidado como referencia nacional gracias al compromiso institucional**
-El Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia, se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Félix San Román, participante del Circuito de Madrid 2026 por la Escuela Taurina de Galapagar`,
-    image: "/images/feli.jpg",
-    category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	excerpt: "El novillero, que debutó con caballos la temporada pasada, hará el paseíllo representando a la Escuela Taurina de Galapagar. Tiene una importante temporada por delante con Valencia en el horizonte",
-	fullContent: `El **Circuito de Madrid 2026** ya conoce al sexto de sus novilleros
-participantes, se trata del representante de la Escuela Taurina de
-Galapagar, **Félix San Román**.
-
-El novillero madrileño tuvo una importante etapa sin caballos, donde
-acumuló importantes triunfos en la temporada 2024. En la pasada
-campaña **debutó con picadores**, en Navalagamella, donde cortó 4 orejas
-a un lote de Flor de Jara.
-
-Ganadero de **Monte la Ermita**, comenzó su andadura en los ruedos
-matando festivales para dar, posteriormente dar el paso al traje de luces.
-En la **temporada pasada** mató 14 novilladas en las que cortó 29 orejas y
-un rabo.
-
-Representa a la **Escuela Taurina de Galapagar**, que nació hace dos
-temporadas y tuvo como representante en la edición pasada a Luis Rivero.
-El madrileño Félix San Román comenzó su temporada el pasado viernes
-en Valdemorillo y tiene una campaña importante en la que, por el momento,
-destaca su comparecencia en la **Plaza de Toros de Valencia** el próximo 9
-de mayo.
-
-**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
-El Circuito de Madrid es el proyecto de novilladas con picadores que se
-celebra desde hace cinco temporadas en los municipios de la región.
-Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde
-también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la
-Comunidad de Madrid.
-El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1005,
-    title: `Borja Jiménez a favor de ASPACE en Villares de la Reina`,
-    image: "/images/fav.jpg",
+    title: `El Bolsín Taurino “Sueño de Luces” abre la temporada 2026 en Finca Valtaja`,
+    image: "/images/bolsin.jpg",
     category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	excerpt: "Borja Jiménez impulsa un festival solidario en Villares de la Reina, Salamanca, a favor de ASPACE, la Asociación de Padres de Personas con Parálisis Cerebral y Encefalopatías.",
-	fullContent: `Desde el pasado mes de enero se sabía que el matador de toros sevillano estaba
-organizando junto el Ayuntamiento de Villares de la Reina un festival taurino benéfico a
-favor de ASPACE. Hoy, ya podemos saber los participantes que actuarán
-desinteresadamente en él, pues el 100% de la recaudación estará destinada para la
-asociación.
+    date: "14 de Febrero de 2026",
+	fullContent: `La **Finca Valtaja** acogerá el próximo 1 de marzo, a las 11:30 horas, el **Bolsín Taurino "Sueño de Luces"**, cita que inaugura la temporada 2026 y que reunirá a destacados alumnos de distintas escuelas taurinas.
 
-El festival taurino con picadores tendrá lugar el día **20 de junio** con los toreros charros
-**Damián Castaño, Marcos Garcigrande, Alejandro Marcos, Manuel Diosleguarde y**
-la novillera **Raquel Martín**. Junto a ellos, las ganaderías salmantinas de **Garcigrande,**
-**Hermanos García Jiménes, El Capea, El Pilar, Domingo Hernández y Montalvo**, que
-donarán los novillos que se lidiarán dicho día, también de manera desinteresada.
+En el cartel figuran **Izan Alonso (Escuela Taurina de Guadalajara), Angelito (Escuela de Huesca), Juan Morales (Escuela El Yiyo de Madrid) y Curro de Belén (Escuela de Albacete). Actuará fuera de concurso Celso Ortega (Escuela La Gallosina de El Puerto de Santa María).** Las reses pertenecerán a la ganadería **Tauro Valtaja.**
 
-**Los beneficios obtenidos serán destinados directamente a los programas de**
-**rehabilitación e inclusión que se llevan a cabo en ASPACE.**`,
-    author: "Nerea F.Elena",
-    authorLogo: "/images/nere.jpg",
+Organizado por la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, el bolsín se consolida como plataforma de promoción para jóvenes promesas del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Osornio y Sevilla: cuando el sueño mexicano se mide en la Maestranza`,
-    image: "/images/sueñ.jpg",
+    title: `JTS rendirá homenaje a El Juli bajo el lema “El Juli, figura y referente de una época”`,
+    image: "/images/homen.jpg",
     category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	footerImage1: "/images/sueño.jpg",
-	fullContent: `Hay plazas que son escenario. Y hay plazas que son examen. Sevilla pertenece a las segundas. Por eso el anuncio del debut de Emiliano Osornio en la capital hispalense no es un simple compromiso más en su agenda: es una declaración de intenciones.
-
-Para un novillero mexicano, hacer el paseíllo en la Plaza de toros de la Real Maestranza de Caballería de Sevilla no es solo una oportunidad profesional, es un sueño con acento propio. Osornio lo asume con una emoción transparente, consciente del simbolismo que encierra cruzar el ruedo maestrante vestido de luces. Sevilla no regala nada, pero tampoco olvida a quien logra tocar su fibra.
-
-La ilusión, sin embargo, camina de la mano de la responsabilidad. Y quizá ahí radique la madurez del joven espada. Sabe que las expectativas pesan, que el nombre empieza a sonar y que cada tarde cuenta. En una temporada que se anuncia decisiva, Sevilla aparece como el punto de inflexión: la plaza que puede abrir puertas… o exigir más sacrificio.
-
-Osornio habla de ir “descorchando” su nombre poco a poco. La expresión no es menor. En el toreo, nadie se impone de golpe; el reconocimiento se construye a base de tardes serias, de firmeza ante la embestida y de verdad sin atajos. Y si algo enseña Sevilla es precisamente eso: la importancia del poso.
-
-La Maestranza mide el temple, la colocación y, sobre todo, la autenticidad. Allí no basta con querer; hay que poder. Y para un novillero que cruza el Atlántico con ambición y respeto, el desafío es mayúsculo.
-
-El debut de Emiliano Osornio no es solo el estreno de un nombre en un cartel. Es el comienzo de una prueba mayor: demostrar que la ilusión puede sostenerse con argumentos y que el sueño mexicano tiene fundamento para escribirse en el albero sevillano.
-
-Porque en Sevilla, los sueños se escuchan… pero solo permanecen los que se torean de verdad.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+    date: "14 de Febrero de 2026",
+	excerpt: "La asociación Juventud Taurina de Salamanca celebrará el próximo jueves 19 de febrero un acto de reconocimiento a El Juli, una de las grandes figuras del toreo contemporáneo. El encuentro tendrá lugar a las 20:30 en el Teatro Liceo de Salamanca y será de entrada libre hasta completar aforo.",
+	fullContent: `Bajo el título “El Juli, figura y referente de una época”, la Juventud Taurina de Salamanca (JTS) dedicará una velada especial a repasar la trayectoria, el legado y la influencia del diestro madrileño en la tauromaquia moderna. La figura de Julián López “El Juli”, protagonista indiscutible de las últimas décadas, será analizada desde distintas perspectivas, poniendo en valor su aportación técnica, su capacidad de liderazgo en el escalafón y su condición de espejo para varias generaciones de aficionados y toreros.
+El acto contará con la participación de la periodista Elena Salamanca, que acompañará el desarrollo del homenaje en una conversación estructurada en torno a los hitos más relevantes de su carrera y a su impacto en la evolución del toreo del siglo XXI.
+La entrada será libre hasta completar aforo, y además, el homenaje podrá seguirse en directo a través de la retransmisión en streaming que la asociación realizará mediante Facebook, facilitando así el acceso a aficionados que no pueden acudir presencialmente.
+Con iniciativas como esta y su actividad continua en el mundo del toro, la Juventud Taurina de Salamanca (JTS) se consolida como uno de los colectivos juveniles más activos del panorama taurino nacional. La asociación no solo organiza homenajes y actos culturales, sino que también organiza y coordina viajes a corridas de toros para sus socios, mantiene su propio abono en la Plaza de Toros de la Glorieta y desarrolla actividades que acercan a las nuevas generaciones a la Fiesta, proyectando una imagen dinámica y comprometida de la afición joven.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Talavante y Sevilla: el reencuentro con una plaza que marca destinos`,
-    image: "/images/reen.jpg",
+    title: `Tragedia en el Carnaval del Toro: fallece un vecino de 67 años tras ser corneado en la capea nocturna.`,
+    image: "/images/falleci.jpg",
     category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	footerImage1: "/images/reenc.jpg",
-	fullContent: `El regreso de Alejandro Talavante a Sevilla no es una fecha más en el calendario. Es una cita con la historia y con una afición que, como pocas, sabe premiar la verdad y castigar la tibieza. El extremeño no esconde su entusiasmo ante una temporada que le devuelve a un escenario donde siempre ha sentido el calor del tendido.
-
-Volver a la Plaza de toros de la Real Maestranza de Caballería de Sevilla supone, en palabras del propio torero, una mezcla de responsabilidad y orgullo. Se siente arropado por el público sevillano prácticamente desde que tomó la alternativa, y ese respaldo, lejos de aliviar la presión, acrecienta el compromiso. Porque en Sevilla no basta con estar: hay que dejar huella.
-
-Talavante evoca con especial emoción lo vivido el pasado 12 de octubre, cuando firmó una obra que, aunque en el marco de un festival, alcanzó notable repercusión. Fue, según reconoce, esa faena soñada que todo matador anhela cuajar en el albero maestrante. También recuerda su paso por la Feria, donde un toro del hierro de Matilla le permitió sentir la entrega apasionada de la afición.
-
-Para el torero, Sevilla encarna la esencia del toreo: exigencia sin concesiones, sensibilidad en cada muletazo y una liturgia que convierte cada paseíllo en examen definitivo. Por eso, su vuelta no es un simple retorno, sino un desafío personal. Quiere responder a ese cariño con entrega y autenticidad.
-
-En una plaza donde el silencio pesa tanto como la ovación, Talavante sabe que todo se mide con lupa. Y precisamente ahí radica la grandeza del compromiso: torear en Sevilla es mirarse frente al espejo del toreo eterno.
-
-La temporada dirá la última palabra. Pero la ilusión está intacta y el deseo claro: volver a sentir que la Maestranza late al compás de su muleta.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+    date: "14 de Febrero de 2026",
+	imageCaption: "Imagen de El Español",
+	excerpt: "El suceso se produjo horas después del tradicional Campanazo que había dado comienzo oficial a las fiestas.",
+	fullContent: `Un varón de 67 años, conocido en el ambiente taurino mirobrigense como “Taquio”, perdió la vida en la madrugada de este sábado 14 de febrero en la Plaza Mayor de Ciudad Rodrigo, convertida en coso taurino con motivo del Carnaval del Toro. El suceso tuvo lugar durante la primera capea nocturna, apenas horas después del tradicional Campanazo que abrió oficialmente las fiestas. 
+El trágico episodio se produjo en torno a la 1:16 horas. Según las informaciones recabadas, el hombre arrancó a correr tratando de escapar del toro, perteneciente a la ganadería extremeña de Antonio López Gibaja. Sin embargo, el astado logró alcanzarlo.
+En primera instancia lo prendió por la espalda. Tras el impacto, el aficionado cayó al suelo y, ya inerme, fue nuevamente herido por el animal, que le infirió una cornada en el pecho de consecuencias fatales.
+El equipo médico del festejo, encabezado por el doctor Enrique Crespo, intervino con inmediatez, pero nada pudo hacerse por salvar la vida del vecino mirobrigense, cuya herida torácica resultó letal.
+La víctima era un rostro conocido en el ámbito taurino local y miembro de una peña, un aficionado habitual de los festejos del Carnaval. 
+Se trata del primer fallecimiento por asta de toro en estas fiestas en cuarenta años, un dato que marca con luto una celebración de profundo arraigo en la comarca.
+La conmoción se dejó sentir desde primeras horas de la mañana. Antes del inicio del tradicional Toro del Antruejo, el fallecido fue recordado en la zona de Los Pinos, en un homenaje encabezado por el alcalde de Ciudad Rodrigo, Marcos Iglesias, y el teniente de alcalde, Ramón Sastre, y acompañado por multitud de vecinos y aficionados. En el acto se trasladó el apoyo y el acompañamiento en el dolor a familiares y allegados, concluyendo con una cerrada y sentida ovación. 
+Asimismo, y según lo previsto por la organización del Carnaval del Toro, la programación continuará con normalidad pese al trágico suceso. No obstante, está previsto que antes del festival anunciado para la tarde de este sábado se celebre un nuevo acto de homenaje en la plaza de toros, en memoria del aficionado fallecido.
+Desde Portal Tendido Digital transmitimos nuestras más sentidas condolencias a los familiares, amigos y allegados al fallecido, sumándonos al dolor de la familia taurina mirobrigense en estos momentos de profunda tristeza.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `Paco Ureña, veinte años de verdad y entrega: Murcia se rinde a su torero`,
-    image: "/images/veint.jpg",
+    title: `Morante de la Puebla estará anunciado en la Feria de Jerez`,
+    image: "/images/jere.jpg",
     category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	footerImage1: "/images/veinte.jpg",
-	fullContent: `Las emociones afloraron sin reservas en una velada que se prolongó durante más de dos horas y en la que las lágrimas fueron fiel reflejo del cariño y la admiración hacia Paco Ureña, que esta temporada conmemora el vigésimo aniversario de su alternativa.
+    date: "14 de Febrero de 2026",
+	excerpt: "El diestro cigarrero suma una tarde más en su temporada de “regreso”.",
+	fullContent: `La temporada 2026 de Morante de la Puebla continúa tomando forma y ya tiene una nueva parada confirmada. El torero sevillano hará también el paseíllo en la plaza de toros de Jerez de la Frontera durante la próxima Feria del Caballo, sumando así este compromiso a su ya anunciada presencia en Sevilla.
 
-El Auditorio y Centro de Congresos Víctor Villegas acogió un acto de gran calado, con la presencia de más de medio millar de aficionados y profesionales llegados desde distintos puntos de la Región y de otras provincias españolas. El evento estuvo presidido por Marcos Ortuño, consejero de Presidencia de la Región de Murcia, y Francisco Abril, director general de Administración Local, junto a numerosos representantes institucionales del Ayuntamiento de Murcia, del Ayuntamiento de Lorca y de otras entidades públicas.
+El acuerdo con la empresa Matilla, gestora del coso jerezano, pone fin a la espera que mantenía en suspenso la confección definitiva de los carteles, pendientes de la decisión del diestro. Salvo cambios de última hora, Morante actuará una única tarde en el ruedo jerezano, escenario donde el pasado año dejó una de las actuaciones más recordadas de la temporada al cortar un rabo a un toro de Álvaro Núñez.
 
-Arropando al diestro lorquino, visiblemente emocionado y acompañado por su esposa e hija, se dieron cita familiares y compañeros de profesión como Luis Francisco Esplá, Javier Conde, Manolo Sánchez, Jiménez Fortes, Diego Urdiales y Rafaelillo, así como el resto de matadores murcianos, que a escote le hicieron entrega de un galardón cargado de simbolismo.
+La cita tiene además un significado especial para la afición local, al tratarse de la primera Feria del Caballo que vivirá la ciudad sin Rafael de Paula, figura emblemática del barrio de Santiago y torero profundamente admirado por Morante.
 
-También quisieron sumarse, mediante mensajes audiovisuales, Pepín Liria y el espada mexicano Arturo Macías. No faltó el reconocimiento del ganadero Victorino Martín, ni las palabras del presidente de la Real Unión de Criadores de Toros de Lidia, Antonio Bañuelos, quien igualmente le hizo entrega de un galardón.
+Antes de su paso por Jerez, el cigarrero tiene confirmadas cuatro actuaciones en la plaza sevillana, donde abrirá temporada el Domingo de Resurrección, comparecerá dos tardes en la Feria de Abril y volverá a hacer el paseíllo en la corrida del Corpus. Por ahora queda libre la fecha de la Feria de San Miguel, lo que mantiene abierta la posibilidad de una nueva presencia en el coso hispalense.
 
-El tejido asociativo taurino de la Región de Murcia, representado por clubes y peñas, mostró su respaldo incondicional, al igual que empresarios de relevancia como Ángel Bernal y Manuel Martínez Erice.
-
-Uno de los instantes más conmovedores llegó cuando Ureña subió al escenario rodeado de quienes han sido pilares fundamentales en estas dos décadas de profesión y vida: su madre; su apoderado, Juan Diego; su hombre de confianza, Curro Vivas; su amigo David Domínguez; su psicóloga, Toñi Martos; su fisioterapeuta, Quico; y el sastre Antonio, de Fermín. Un círculo íntimo que simboliza el sacrificio, la constancia y la fe que han marcado su trayectoria.
-
-La gala contó con actuaciones musicales, números de magia y diversas intervenciones, bajo la dirección y conducción de Íñigo Crespo, que hilvanó con maestría cada momento de la noche.
-
-Una cita que ya forma parte de la memoria taurina de Murcia. Y, sobre todo, un homenaje sentido a un torero íntegro, de pureza y pasión inquebrantables, que ha escrito con sangre y verdad veinte años de compromiso con el toreo.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+La presencia de Morante en cada plaza se vive como un acontecimiento, ya que todo apunta a que su temporada volverá a desarrollarse con un número limitado de actuaciones, lo que incrementa la expectación en torno a cada anuncio oficial.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1009,
-    title: `Clovis Germain ganador del bolsín taurino mirobrigense`,
-    image: "/images/clovis.jpg",
+    title: `Roqueta de Mar, ya tiene cartel para su festival`,
+    image: "/images/roque.jpg",
     category: "Actualidad",
-    date: "13 de Febrero de 2026",
-	imageCaption: "Imagen de Gaceta de Salamanca",
-	excerpt: "Desde el 17 de enero, siete tientas después, por fin conocemos el nombre ganador de esta 70ª edición del Bolsín Mirobrigense. ",
-	fullContent: `Su nombre es **Clovis Germain**, quien a parte de haber ganado este prestigioso bolsín,
-toreará el 7 de marzo en la novillada sin picadores de Valencia. El joven novillero se ha
-proclamado ganador y uno de los favoritos del certamen.
+    date: "14 de Febrero de 2026",
+	fullContent: `El empresario y matador de toros **José Gabriel Olivencia,** ha dado a conocer el tradicional festival taurino con colaboración benéfica a distintas asociaciones, que se celebrará el próximo sábado 11 de abril a las 17:00 horas en la plaza de toros de **Roquetas de Mar.**
 
-Tras él, el salmantino **Iñigo Norte** ha quedado en segundo puesto, siguiéndole el
-venezolano **Fernando Vanegas**, cuarto puesto para **Francisco Rodríguez Perera** y por
-último **Pedro Caminero** como el quinto clasificado.
+El festival consolidado como una de las citas más destacadas del calendario taurino en la provincia de **Almería.**
 
-De esta manera quedan conformados definitivamente los carteles del Carnaval del Toro
-de Ciudad Rodrigo, actuando el domingo 15 **Francisco Rodríguez Perera**, **Fernando**
-**Vanegas**, **Iñigo Norte** y **Pedro Caminero** con erales de la ganadería Toros de Orive. Este
-mismo día, el rejoneador **Víctor Herrero** toreará un novillo de El Canario.
-
-Por otro lado, **Clovis Germain** cierra el cartel del martes 17, acompañando en el festejo
-a **Miguel Ángel Perera**, **Borja Jiménez** y **Manuel Diosleguarde**. Los matadores lidiaran
-utreros de la ganadería de Juan Manuel Criado mientras que el triunfador lidiara un eral
-de Toros de Orive.`,
-    author: "Nerea F.Elena",
-    authorLogo: "/images/nere.jpg",
+Se lidiarán reses de la ganadería **Fuente Ymbro,** para el rejoneador **Sebastián Fernández** y los matadores de toros **Diego Urdiales, David Fandila «El Fandi», Manuel Escribano y Tomás Rufo,** la novillera **Olga Casado** y el novillero sin picadores **Blas Márquez.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 237,
+    title: `El Bolsín Taurino “Sueño de Luces” abre la temporada 2026 en Finca Valtaja`,
+    image: "/images/bolsin.jpg",
+    category: "Actualidad",
+    date: "14 de Febrero de 2026",
+	fullContent: `La **Finca Valtaja** acogerá el próximo 1 de marzo, a las 11:30 horas, el **Bolsín Taurino "Sueño de Luces"**, cita que inaugura la temporada 2026 y que reunirá a destacados alumnos de distintas escuelas taurinas.
+
+En el cartel figuran **Izan Alonso (Escuela Taurina de Guadalajara), Angelito (Escuela de Huesca), Juan Morales (Escuela El Yiyo de Madrid) y Curro de Belén (Escuela de Albacete). Actuará fuera de concurso Celso Ortega (Escuela La Gallosina de El Puerto de Santa María).** Las reses pertenecerán a la ganadería **Tauro Valtaja.**
+
+Organizado por la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, el bolsín se consolida como plataforma de promoción para jóvenes promesas del toreo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 238,
+    title: `JTS rendirá homenaje a El Juli bajo el lema “El Juli, figura y referente de una época”`,
+    image: "/images/homen.jpg",
+    category: "Actualidad",
+    date: "14 de Febrero de 2026",
+	excerpt: "La asociación Juventud Taurina de Salamanca celebrará el próximo jueves 19 de febrero un acto de reconocimiento a El Juli, una de las grandes figuras del toreo contemporáneo. El encuentro tendrá lugar a las 20:30 en el Teatro Liceo de Salamanca y será de entrada libre hasta completar aforo.",
+	fullContent: `Bajo el título “El Juli, figura y referente de una época”, la Juventud Taurina de Salamanca (JTS) dedicará una velada especial a repasar la trayectoria, el legado y la influencia del diestro madrileño en la tauromaquia moderna. La figura de Julián López “El Juli”, protagonista indiscutible de las últimas décadas, será analizada desde distintas perspectivas, poniendo en valor su aportación técnica, su capacidad de liderazgo en el escalafón y su condición de espejo para varias generaciones de aficionados y toreros.
+El acto contará con la participación de la periodista Elena Salamanca, que acompañará el desarrollo del homenaje en una conversación estructurada en torno a los hitos más relevantes de su carrera y a su impacto en la evolución del toreo del siglo XXI.
+La entrada será libre hasta completar aforo, y además, el homenaje podrá seguirse en directo a través de la retransmisión en streaming que la asociación realizará mediante Facebook, facilitando así el acceso a aficionados que no pueden acudir presencialmente.
+Con iniciativas como esta y su actividad continua en el mundo del toro, la Juventud Taurina de Salamanca (JTS) se consolida como uno de los colectivos juveniles más activos del panorama taurino nacional. La asociación no solo organiza homenajes y actos culturales, sino que también organiza y coordina viajes a corridas de toros para sus socios, mantiene su propio abono en la Plaza de Toros de la Glorieta y desarrolla actividades que acercan a las nuevas generaciones a la Fiesta, proyectando una imagen dinámica y comprometida de la afición joven.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 239,
+    title: `Tragedia en el Carnaval del Toro: fallece un vecino de 67 años tras ser corneado en la capea nocturna.`,
+    image: "/images/falleci.jpg",
+    category: "Actualidad",
+    date: "14 de Febrero de 2026",
+	imageCaption: "Imagen de El Español",
+	excerpt: "El suceso se produjo horas después del tradicional Campanazo que había dado comienzo oficial a las fiestas.",
+	fullContent: `Un varón de 67 años, conocido en el ambiente taurino mirobrigense como “Taquio”, perdió la vida en la madrugada de este sábado 14 de febrero en la Plaza Mayor de Ciudad Rodrigo, convertida en coso taurino con motivo del Carnaval del Toro. El suceso tuvo lugar durante la primera capea nocturna, apenas horas después del tradicional Campanazo que abrió oficialmente las fiestas. 
+El trágico episodio se produjo en torno a la 1:16 horas. Según las informaciones recabadas, el hombre arrancó a correr tratando de escapar del toro, perteneciente a la ganadería extremeña de Antonio López Gibaja. Sin embargo, el astado logró alcanzarlo.
+En primera instancia lo prendió por la espalda. Tras el impacto, el aficionado cayó al suelo y, ya inerme, fue nuevamente herido por el animal, que le infirió una cornada en el pecho de consecuencias fatales.
+El equipo médico del festejo, encabezado por el doctor Enrique Crespo, intervino con inmediatez, pero nada pudo hacerse por salvar la vida del vecino mirobrigense, cuya herida torácica resultó letal.
+La víctima era un rostro conocido en el ámbito taurino local y miembro de una peña, un aficionado habitual de los festejos del Carnaval. 
+Se trata del primer fallecimiento por asta de toro en estas fiestas en cuarenta años, un dato que marca con luto una celebración de profundo arraigo en la comarca.
+La conmoción se dejó sentir desde primeras horas de la mañana. Antes del inicio del tradicional Toro del Antruejo, el fallecido fue recordado en la zona de Los Pinos, en un homenaje encabezado por el alcalde de Ciudad Rodrigo, Marcos Iglesias, y el teniente de alcalde, Ramón Sastre, y acompañado por multitud de vecinos y aficionados. En el acto se trasladó el apoyo y el acompañamiento en el dolor a familiares y allegados, concluyendo con una cerrada y sentida ovación. 
+Asimismo, y según lo previsto por la organización del Carnaval del Toro, la programación continuará con normalidad pese al trágico suceso. No obstante, está previsto que antes del festival anunciado para la tarde de este sábado se celebre un nuevo acto de homenaje en la plaza de toros, en memoria del aficionado fallecido.
+Desde Portal Tendido Digital transmitimos nuestras más sentidas condolencias a los familiares, amigos y allegados al fallecido, sumándonos al dolor de la familia taurina mirobrigense en estos momentos de profunda tristeza.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 240,
+    title: `Morante de la Puebla estará anunciado en la Feria de Jerez`,
+    image: "/images/jere.jpg",
+    category: "Actualidad",
+    date: "14 de Febrero de 2026",
+	excerpt: "El diestro cigarrero suma una tarde más en su temporada de “regreso”.",
+	fullContent: `La temporada 2026 de Morante de la Puebla continúa tomando forma y ya tiene una nueva parada confirmada. El torero sevillano hará también el paseíllo en la plaza de toros de Jerez de la Frontera durante la próxima Feria del Caballo, sumando así este compromiso a su ya anunciada presencia en Sevilla.
+
+El acuerdo con la empresa Matilla, gestora del coso jerezano, pone fin a la espera que mantenía en suspenso la confección definitiva de los carteles, pendientes de la decisión del diestro. Salvo cambios de última hora, Morante actuará una única tarde en el ruedo jerezano, escenario donde el pasado año dejó una de las actuaciones más recordadas de la temporada al cortar un rabo a un toro de Álvaro Núñez.
+
+La cita tiene además un significado especial para la afición local, al tratarse de la primera Feria del Caballo que vivirá la ciudad sin Rafael de Paula, figura emblemática del barrio de Santiago y torero profundamente admirado por Morante.
+
+Antes de su paso por Jerez, el cigarrero tiene confirmadas cuatro actuaciones en la plaza sevillana, donde abrirá temporada el Domingo de Resurrección, comparecerá dos tardes en la Feria de Abril y volverá a hacer el paseíllo en la corrida del Corpus. Por ahora queda libre la fecha de la Feria de San Miguel, lo que mantiene abierta la posibilidad de una nueva presencia en el coso hispalense.
+
+La presencia de Morante en cada plaza se vive como un acontecimiento, ya que todo apunta a que su temporada volverá a desarrollarse con un número limitado de actuaciones, lo que incrementa la expectación en torno a cada anuncio oficial.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 241,
+    title: `Roqueta de Mar, ya tiene cartel para su festival`,
+    image: "/images/roque.jpg",
+    category: "Actualidad",
+    date: "14 de Febrero de 2026",
+	fullContent: `El empresario y matador de toros **José Gabriel Olivencia,** ha dado a conocer el tradicional festival taurino con colaboración benéfica a distintas asociaciones, que se celebrará el próximo sábado 11 de abril a las 17:00 horas en la plaza de toros de **Roquetas de Mar.**
+
+El festival consolidado como una de las citas más destacadas del calendario taurino en la provincia de **Almería.**
+
+Se lidiarán reses de la ganadería **Fuente Ymbro,** para el rejoneador **Sebastián Fernández** y los matadores de toros **Diego Urdiales, David Fandila «El Fandi», Manuel Escribano y Tomás Rufo,** la novillera **Olga Casado** y el novillero sin picadores **Blas Márquez.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 242,
     title: `Ramón Valencia y Toño Matilla rompen el frente común empresarial y concurrirán al concurso de la Plaza de Toros Zaragoza`,
