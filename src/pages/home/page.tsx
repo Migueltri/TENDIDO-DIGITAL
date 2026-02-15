@@ -11582,9 +11582,6 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
-// Generamos featuredNews a partir de latestNews para evitar duplicados
-const featuredNews = latestNews.slice(0, 5); 
-
 // --- 4. COMPONENTE PRINCIPAL ---
 
 export default function HomePage() {
