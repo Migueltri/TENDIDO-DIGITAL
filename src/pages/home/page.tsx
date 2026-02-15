@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-// --- 1. INTERFACES Y TIPOS ---
-interface BaseArticle {
-  id: number | string;
+  interface BaseArticle {
+  id: number;
   title: string;
   plaza?: string;
   date: string;
@@ -10,7 +8,7 @@ interface BaseArticle {
   toreros?: string[];
   ganaderia?: string;
   resultado?: string[];
-  torerosRaw?: string;
+  torerosRaw?: string[];
   image: string;
   imageCaption?: string;
   video?: string;
@@ -31,7 +29,7 @@ interface BaseArticle {
   footerImage6?: string;
   footerImage6Caption?: string;
   footerImage7?: string;
-  footerImage7Caption?: string;
+  footerImage7Caption?: string;	  
   footerImage8?: string;
   footerImage8Caption?: string;
   boldContent?: boolean;
@@ -45,22 +43,38 @@ type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
 // --- 2. FUNCIONES AUXILIARES ---
-function formatExactDate(dateString: string): string {
+// Muestra la hora tal como la escribiste en tus datos
+
+  // Si es un formato tiktokISO, conviértelo; si no, devuélvelo limpio
   const parsed = new Date(dateString);
   if (!isNaN(parsed.getTime())) {
     return parsed.toLocaleString("es-ES", {
-      day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
     });
   }
+  // No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
   return dateString;
 }
 
+fetch('/data/db.json')
+  .then(response => response.json())
+  .then(data => {
+     const noticias = data.articles;
+     // Aquí tu código que pinta las noticias en pantalla
+  });
+
 function formatTimeAgo(dateString: string): string {
   const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; 
+  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
+
   const now = new Date();
   const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
   const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
+
   if (diff < 60) return "hace unos segundos";
   if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
   if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
