@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// ------------------------------------------------------------------
-// 1. DEFINICIONES Y TIPOS
-// ------------------------------------------------------------------
+// --- 1. INTERFACES Y TIPOS ---
 interface BaseArticle {
   id: number | string;
   title: string;
@@ -38,11 +36,13 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
-// Funciones de utilidad
+// --- 2. FUNCIONES AUXILIARES ---
 function formatExactDate(dateString: string): string {
   const parsed = new Date(dateString);
   if (!isNaN(parsed.getTime())) {
-    return parsed.toLocaleString("es-ES", { day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    return parsed.toLocaleString("es-ES", {
+      day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit",
+    });
   }
   return dateString;
 }
@@ -86,12 +86,9 @@ const renderArticleContent = (text?: string | null) => {
   ));
 };
 
-// ------------------------------------------------------------------
-// 2. DATOS (PEGA TUS NOTICIAS AQUÍ)
-// ------------------------------------------------------------------
+// --- 3. DATOS ESTÁTICOS (SECCIONES SEPARADAS COMO PEDISTE) ---
+// Se definen AQUÍ para que 'HomePage' pueda verlas.
 
-// IMPORTANTE: Pega TODO tu array de noticias aquí dentro. 
-// No cambies el nombre 'NOTICIAS_ANTIGUAS'.
 const featuredNews: NewsItem[] = [
 	{
     identificación: 1009,
@@ -124,7 +121,7 @@ Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia ca
    }
 ];
 
-const NOTICIAS_ANTIGUAS: any[] = [
+const latestNews: NewsItem[] = [
 	{ 
     id: 235,
     title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
@@ -11592,28 +11589,19 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
-// ------------------------------------------------------------------
-// 3. CÁLCULO AUTOMÁTICO DE SECCIONES (NO TOCAR)
-// ------------------------------------------------------------------
-
-// Esto evita el error "ReferenceError" creando las variables automáticamente
-const featuredNews = NOTICIAS_ANTIGUAS.slice(0, 5); // Las 5 primeras son destacadas
-const chronicles = NOTICIAS_ANTIGUAS.filter(n => n.category === 'Crónicas' || n.category === 'Cronicas');
-const entrevistas = NOTICIAS_ANTIGUAS.filter(n => n.category === 'Entrevistas');
-
-// ------------------------------------------------------------------
-// 4. COMPONENTE PRINCIPAL
-// ------------------------------------------------------------------
+// --- 4. COMPONENTE PRINCIPAL ---
 
 export default function HomePage() {
   // ESTADOS
   const [loading, setLoading] = useState(true);
-  const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS); // Inicializa con las fijas
+  
+  // Aquí usamos las variables que definimos ARRIBA
+  const [articles, setArticles] = useState([...featuredNews, ...NOTICIAS_ANTIGUAS]); 
   
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
+  const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
   const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
   const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
   const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
@@ -11629,24 +11617,21 @@ export default function HomePage() {
   const [contactForm, setContactForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [isContactSubmitting, setIsContactSubmitting] = useState(false);
   const [contactMessage, setContactMessage] = useState('');
-  
-  // Guardados
   const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePost, setSharePost] = useState<any>(null);
 
-  // EFECTO: Cargar noticias del CMS (db.json) y mezclar
+  // Carga desde CMS
   useEffect(() => {
-    console.log("Iniciando carga de noticias del CMS...");
     fetch('/data/db.json')
       .then((res) => {
-         if(!res.ok) throw new Error("No se encontró db.json (normal si es la primera vez)");
+         if(!res.ok) throw new Error("No db.json found");
          return res.json();
       })
       .then((data) => {
         if (data && Array.isArray(data.articles)) {
-            // MEZCLAR: Noticias CMS + Noticias Antiguas
-            const newArticles = [...data.articles, ...NOTICIAS_ANTIGUAS];
+            // Combinamos los datos del CMS con los datos estáticos
+            const newArticles = [...data.articles, ...featuredNews, ...NOTICIAS_ANTIGUAS];
             setArticles(newArticles);
         }
         setLoading(false);
@@ -11657,22 +11642,22 @@ export default function HomePage() {
       });
   }, []);
 
-  // EFECTO: Scroll
+  // Scroll Handler
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // EFECTO: Carousel Timer
+  // Carousel
   useEffect(() => {
     const timer = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-    }, 5000); 
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
-  // --- LÓGICA DE UI ---
+  // Handlers
   const loadMoreNews = () => {
     setIsLoadingMore(true);
     setTimeout(() => {
@@ -11713,13 +11698,12 @@ export default function HomePage() {
       document.body.style.overflow = "auto";
   };
 
-  const toggleSave = (id: number | string, e?: any) => {
-      const idNum = Number(id);
+  const toggleSave = (id: number, e?: any) => {
       if(e) e.stopPropagation();
       setSavedPosts(prev => {
           const newSet = new Set(prev);
-          if(newSet.has(idNum)) newSet.delete(idNum);
-          else newSet.add(idNum);
+          if(newSet.has(id)) newSet.delete(id);
+          else newSet.add(id);
           return newSet;
       });
   };
@@ -11733,6 +11717,12 @@ export default function HomePage() {
   const closeShareModal = () => {
       setIsShareModalOpen(false);
       setSharePost(null);
+  };
+
+  const shareToWhatsApp = () => {
+      if(!sharePost) return;
+      window.open(`https://wa.me/?text=${encodeURIComponent(sharePost.title + ' - ' + window.location.origin)}`, '_blank');
+      closeShareModal();
   };
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -11765,7 +11755,7 @@ export default function HomePage() {
 
   // --- RENDERIZADO ---
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
         {/* HEADER */}
         <header className={`sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm transition-all ${scrollY > 50 ? 'shadow-md' : ''}`}>
             <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
@@ -11780,12 +11770,12 @@ export default function HomePage() {
                     <button onClick={() => setActiveTab('entrevistas')} className="hover:text-red-600 transition">Entrevistas</button>
                     <button onClick={() => scrollToSection('contacto')} className="hover:text-red-600 transition">Contacto</button>
                 </nav>
-                <button className="md:hidden text-2xl p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <button className="md:hidden text-2xl" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <i className={isMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
                 </button>
             </div>
             {isMenuOpen && (
-                <div className="md:hidden bg-white border-t p-4 flex flex-col gap-4 shadow-lg absolute w-full">
+                <div className="md:hidden bg-white border-t p-4 flex flex-col gap-4 shadow-lg absolute w-full z-50">
                     <button onClick={() => { setActiveTab('inicio'); setIsMenuOpen(false); }}>Inicio</button>
                     <button onClick={() => { setActiveTab('cronicas'); setIsMenuOpen(false); }}>Crónicas</button>
                     <button onClick={() => { setActiveTab('entrevistas'); setIsMenuOpen(false); }}>Entrevistas</button>
@@ -11796,6 +11786,7 @@ export default function HomePage() {
 
         {/* MAIN */}
         <main>
+            {/* VISTA INICIO */}
             {activeTab === 'inicio' && (
                 <>
                     {/* HERO */}
@@ -11804,18 +11795,18 @@ export default function HomePage() {
                             <div key={news.id} className={`absolute inset-0 transition-opacity duration-1000 ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
                                 <img src={news.image} alt={news.title} className="w-full h-full object-cover opacity-60" />
                                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
-                                    <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase">{news.category}</span>
-                                    <h1 className="text-3xl md:text-5xl font-bold max-w-4xl mb-4 leading-tight">{news.title}</h1>
-                                    <button onClick={() => openNewsModal(news)} className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition shadow-lg">
-                                        Leer noticia completa
+                                    <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wider">{news.category}</span>
+                                    <h1 className="text-3xl md:text-5xl font-bold max-w-4xl mb-6 leading-tight drop-shadow-lg">{news.title}</h1>
+                                    <button onClick={() => openNewsModal(news)} className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition shadow-xl">
+                                        Leer Noticia
                                     </button>
                                 </div>
                             </div>
                         ))}
                     </section>
 
-                    {/* NEWS GRID */}
-                    <section id="actualidad" className="max-w-7xl mx-auto px-4 py-12">
+                    {/* FILTROS Y GRID */}
+                    <section id="actualidad" className="max-w-7xl mx-auto px-4 py-16">
                         <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Últimas Noticias</h2>
@@ -11823,11 +11814,7 @@ export default function HomePage() {
                             </div>
                             <div className="flex gap-2 overflow-x-auto pb-2 w-full md:w-auto">
                                 {['todas', 'actualidad', 'cronicas', 'entrevistas', 'opinion'].map(cat => (
-                                    <button 
-                                        key={cat}
-                                        onClick={() => setNewsFilter(cat)}
-                                        className={`px-6 py-2 rounded-full text-sm font-bold capitalize whitespace-nowrap transition-all ${newsFilter === cat ? 'bg-red-600 text-white shadow-md' : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-50'}`}
-                                    >
+                                    <button key={cat} onClick={() => setNewsFilter(cat)} className={`px-6 py-2 rounded-full text-sm font-bold capitalize transition ${newsFilter === cat ? 'bg-red-600 text-white shadow-md' : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-50'}`}>
                                         {cat}
                                     </button>
                                 ))}
@@ -11847,17 +11834,14 @@ export default function HomePage() {
                                         <span className="text-xs text-gray-400 font-medium block mb-2">{formatExactDate(news.date)}</span>
                                         <h3 className="font-bold text-lg mb-3 leading-snug group-hover:text-red-600 transition-colors line-clamp-2">{news.title}</h3>
                                         <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed">{news.excerpt || news.summary}</p>
-                                        <div className="mt-4 flex items-center text-red-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                                            Leer más <i className="ri-arrow-right-line ml-1"></i>
-                                        </div>
                                     </div>
                                 </article>
                             ))}
                         </div>
-
+                        
                         {visibleNewsCount < getFilteredNews().length && (
-                            <div className="text-center mt-16">
-                                <button onClick={loadMoreNews} disabled={isLoadingMore} className="bg-white border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-bold hover:bg-red-600 hover:text-white transition-all shadow-md disabled:opacity-50">
+                            <div className="text-center mt-12">
+                                <button onClick={loadMoreNews} className="bg-white border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-bold hover:bg-red-600 hover:text-white transition-all shadow-md">
                                     {isLoadingMore ? 'Cargando...' : 'Cargar más noticias'}
                                 </button>
                             </div>
@@ -11866,72 +11850,59 @@ export default function HomePage() {
                 </>
             )}
 
-            {/* SECCIÓN CRÓNICAS */}
+            {/* VISTA CRÓNICAS */}
             {activeTab === 'cronicas' && (
-                 <div className="max-w-7xl mx-auto px-4 py-12">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Crónicas Taurinas</h2>
-                        <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
-                    </div>
+                <div className="max-w-7xl mx-auto px-4 py-16">
+                    <h2 className="text-3xl font-bold text-center mb-12">Crónicas Taurinas</h2>
                     <div className="space-y-8">
                         {chronicles.map((item: any) => (
-                             <div key={item.id} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-all cursor-pointer group" onClick={() => openChronicleModal(item)}>
-                                 <div className="md:flex">
-                                     <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
-                                         <img src={item.image} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
+                             <div key={item.id} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all cursor-pointer flex flex-col md:flex-row group" onClick={() => openChronicleModal(item)}>
+                                 <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
+                                     <img src={item.image} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
+                                 </div>
+                                 <div className="p-8 md:w-2/3 flex flex-col justify-center">
+                                     <div className="flex items-center gap-2 mb-2 text-sm text-gray-500">
+                                         <span className="text-red-600 font-bold uppercase tracking-wider">Reseña</span> • {item.date}
                                      </div>
-                                     <div className="p-8 md:w-2/3 flex flex-col justify-center">
-                                         <div className="flex items-center gap-2 mb-3">
-                                             <span className="text-xs font-bold text-red-600 uppercase tracking-wider">La Reseña</span>
-                                             <span className="text-gray-300">•</span>
-                                             <span className="text-xs text-gray-500">{item.date}</span>
-                                         </div>
-                                         <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">{item.title}</h3>
-                                         <p className="text-gray-600 mb-6 line-clamp-3">{item.excerpt || item.fullContent}</p>
-                                         <div className="flex items-center gap-4 text-sm font-medium">
-                                             <span className="text-gray-900"><i className="ri-map-pin-line text-red-500 mr-1"></i> {item.plaza}</span>
-                                             <span className="text-gray-900"><i className="ri-vip-crown-line text-red-500 mr-1"></i> {item.ganaderia}</span>
-                                         </div>
+                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">{item.title}</h3>
+                                     <p className="text-gray-600 mb-6 line-clamp-3">{item.excerpt || item.fullContent}</p>
+                                     <div className="flex gap-4 text-sm font-medium text-gray-700">
+                                         <span><i className="ri-map-pin-line text-red-500"></i> {item.plaza}</span>
+                                         <span><i className="ri-vip-crown-line text-red-500"></i> {item.ganaderia}</span>
                                      </div>
                                  </div>
                              </div>
                         ))}
-                        {chronicles.length === 0 && <p className="text-center text-gray-500">No hay crónicas disponibles.</p>}
                     </div>
-                 </div>
+                </div>
             )}
 
-            {/* SECCIÓN ENTREVISTAS */}
+            {/* VISTA ENTREVISTAS */}
             {activeTab === 'entrevistas' && (
-                <div className="max-w-7xl mx-auto px-4 py-12">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Entrevistas</h2>
-                        <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
-                    </div>
+                <div className="max-w-7xl mx-auto px-4 py-16">
+                    <h2 className="text-3xl font-bold text-center mb-12">Entrevistas</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {entrevistas.map((item: any) => (
-                             <div key={item.id} className="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden cursor-pointer hover:-translate-y-1 transition-all duration-300" onClick={() => openNewsModal(item)}>
-                                 <div className="relative h-64 overflow-hidden">
-                                     <img src={item.image} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" loading="lazy" />
-                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                     <div className="absolute bottom-4 left-4 text-white">
-                                         <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-2 inline-block">Entrevista</span>
-                                         <h3 className="text-xl font-bold leading-tight">{item.title}</h3>
+                             <div key={item.id} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden cursor-pointer group" onClick={() => openNewsModal(item)}>
+                                 <div className="h-72 overflow-hidden relative">
+                                     <img src={item.image} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                     <div className="absolute bottom-6 left-6 text-white">
+                                         <h3 className="text-2xl font-bold leading-tight">{item.title}</h3>
                                      </div>
                                  </div>
                                  <div className="p-6">
-                                     <p className="text-gray-600 text-sm line-clamp-3 mb-4">{item.excerpt}</p>
-                                     <span className="text-red-600 font-bold text-sm group-hover:underline">Leer entrevista completa &rarr;</span>
+                                     <p className="text-gray-600 line-clamp-3">{item.excerpt}</p>
+                                     <div className="mt-4 text-red-600 font-bold text-sm group-hover:underline">Leer entrevista completa &rarr;</div>
                                  </div>
                              </div>
                         ))}
-                         {entrevistas.length === 0 && <div className="col-span-2 text-center text-gray-500">No hay entrevistas disponibles.</div>}
                     </div>
                 </div>
             )}
         </main>
 
-        {/* MODAL NOTICIA */}
+        {/* MODAL DE NOTICIA */}
         {isNewsModalOpen && selectedNews && (
             <div className="fixed inset-0 bg-white z-[60] overflow-y-auto animate-fade-in">
                 <div className="sticky top-0 bg-white/95 backdrop-blur border-b px-4 py-3 flex justify-between items-center z-10 shadow-sm">
@@ -11948,52 +11919,35 @@ export default function HomePage() {
                     </div>
                 </div>
                 
-                <div className="max-w-3xl mx-auto px-4 py-8">
-                    {/* Cabecera Noticia */}
+                <div className="max-w-3xl mx-auto px-4 py-10">
                     <div className="text-center mb-8">
-                        <span className="bg-red-50 text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">{selectedNews.category}</span>
-                        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-6 leading-tight">{selectedNews.title}</h1>
-                        <p className="text-gray-500 text-sm">{formatExactDate(selectedNews.date)} {selectedNews.author ? `| Por ${selectedNews.author}` : ''}</p>
+                        <span className="bg-red-50 text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase">{selectedNews.category}</span>
+                        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-4 leading-tight">{selectedNews.title}</h1>
+                        <div className="flex justify-center items-center gap-2 text-gray-500 text-sm">
+                            <span>{formatExactDate(selectedNews.date)}</span>
+                            {selectedNews.author && <span>| Por <strong>{selectedNews.author}</strong></span>}
+                        </div>
                     </div>
 
                     <img src={selectedNews.image} className="w-full rounded-xl shadow-lg mb-2" />
                     {selectedNews.imageCaption && <p className="text-right text-xs text-gray-400 italic mb-8">{selectedNews.imageCaption}</p>}
 
-                    {/* Ficha Técnica para Crónicas */}
-                    {selectedNews.category === 'Crónicas' && (
-                         <div className="bg-orange-50 border border-orange-100 rounded-xl p-6 mb-8 shadow-sm">
-                            <h3 className="font-bold text-orange-900 text-lg mb-4 flex items-center"><i className="ri-file-list-3-line mr-2"></i> Ficha del Festejo</h3>
-                            <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
-                                <div><span className="font-semibold text-orange-800">Plaza:</span> {selectedNews.plaza}</div>
-                                <div><span className="font-semibold text-orange-800">Ganadería:</span> {selectedNews.ganaderia}</div>
-                            </div>
-                            {selectedNews.torerosRaw && (
-                                <div className="bg-white/50 p-4 rounded-lg text-sm text-gray-700 whitespace-pre-wrap font-medium border border-orange-100">
-                                    {selectedNews.torerosRaw}
-                                </div>
-                            )}
-                         </div>
-                    )}
-
-                    {/* Contenido */}
                     <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
-                        {selectedNews.excerpt && <p className="font-semibold text-xl text-gray-600 mb-8 not-prose border-l-4 border-red-600 pl-4">{selectedNews.excerpt}</p>}
+                        {selectedNews.excerpt && <p className="font-medium text-xl text-gray-600 mb-8 not-prose border-l-4 border-red-500 pl-4">{selectedNews.excerpt}</p>}
                         {renderArticleContent(selectedNews.fullContent || selectedNews.detalles)}
                     </div>
-                    
-                    {/* Galería extra */}
+
                     <div className="mt-12 space-y-6">
                         {[selectedNews.footerImage1, selectedNews.footerImage2, selectedNews.footerImage3, selectedNews.footerImage4].filter(Boolean).map((img, idx) => (
-                            <img key={idx} src={img} className="w-full rounded-xl shadow-md" />
+                            <img key={idx} src={img} className="w-full rounded-xl shadow-md" loading="lazy" />
                         ))}
                     </div>
                 </div>
             </div>
         )}
 
-        {/* MODAL CRÓNICA (reutilizamos el de noticia para simplificar o uno específico si se prefiere) */}
+        {/* MODAL CRÓNICA */}
         {isChronicleModalOpen && selectedChronicle && (
-            // ... (Esencialmente el mismo diseño que el de noticia, ya que ahora las crónicas usan la misma estructura de datos)
             <div className="fixed inset-0 bg-white z-[60] overflow-y-auto animate-fade-in">
                  <div className="sticky top-0 bg-white/95 backdrop-blur border-b px-4 py-3 flex justify-between items-center z-10 shadow-sm">
                     <button onClick={closeChronicleModal} className="flex items-center text-gray-600 hover:text-black transition">
@@ -12028,29 +11982,20 @@ export default function HomePage() {
                 </div>
             </div>
         )}
-        
-        {/* CONTACTO */}
-        <section id="contacto" className="bg-gray-900 text-white py-16">
-            <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold mb-4">Contacta con Nosotros</h2>
-                <p className="text-gray-400 mb-8 max-w-2xl mx-auto">¿Tienes alguna noticia o sugerencia? Estamos aquí para escucharte.</p>
-                <div className="flex justify-center gap-8 mb-12">
-                    <div className="flex flex-col items-center">
-                        <div className="bg-gray-800 p-4 rounded-full mb-3"><i className="ri-mail-line text-2xl text-red-500"></i></div>
-                        <p className="text-gray-300">tendidodigitall@gmail.com</p>
-                    </div>
-                </div>
-                <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-gray-500 text-sm">© 2025 TENDIDO DIGITAL. Todos los derechos reservados.</p>
-                    <div className="flex gap-4 mt-4 md:mt-0">
-                        <a href="https://www.instagram.com/portaltendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-instagram-fill text-xl"></i></a>
-                        <a href="https://www.tiktok.com/@portaltendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-tiktok-fill text-xl"></i></a>
-                        <a href="https://x.com/ptendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-twitter-x-fill text-xl"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
+        {/* FOOTER */}
+        <footer className="bg-gray-900 text-white py-12 border-t border-gray-800" id="contacto">
+            <div className="max-w-7xl mx-auto px-4 text-center">
+                <h2 className="text-2xl font-bold mb-4">TENDIDO DIGITAL</h2>
+                <p className="text-gray-400 mb-8">Portal taurino de referencia.</p>
+                <div className="flex justify-center gap-6 mb-8">
+                    <a href="https://twitter.com/ptendidodigital" target="_blank" className="hover:text-red-500 transition"><i className="ri-twitter-x-fill text-2xl"></i></a>
+                    <a href="https://instagram.com/portaltendidodigital" target="_blank" className="hover:text-red-500 transition"><i className="ri-instagram-fill text-2xl"></i></a>
+                    <a href="https://tiktok.com/@portaltendidodigital" target="_blank" className="hover:text-red-500 transition"><i className="ri-tiktok-fill text-2xl"></i></a>
+                </div>
+                <p className="text-gray-600 text-sm">© 2026 Tendido Digital. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </div>
   );
 }
