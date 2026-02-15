@@ -149,7 +149,6 @@ useEffect(() => {
       </div>
     </div>
   );
-}
 	
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
