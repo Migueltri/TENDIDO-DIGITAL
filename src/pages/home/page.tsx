@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
   interface BaseArticle {
   id: number;
   title: string;
@@ -82,7 +82,9 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-export default function Home() {
+export default function HomePage() {
+  // Inicializamos con las noticias antiguas
+const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS);
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
@@ -102,6 +104,53 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
 
+useEffect(() => {
+    // 2. Cargamos las noticias NUEVAS del CMS (db.json)
+    fetch('/data/db.json')
+      .then((res) => {
+         if(!res.ok) return null;
+         return res.json();
+      })
+      .then((data) => {
+        if (data && data.articles) {
+            // MEZCLAMOS: Las nuevas del CMS + las antiguas
+            // Ponemos las del CMS primero (data.articles)
+            setArticles([...data.articles, ...NOTICIAS_ANTIGUAS]);
+        }
+      })
+      .catch((error) => console.error("Error cargando noticias CMS:", error));
+  }, []);
+
+  return (
+    <div className="container mx-auto px-4 py-12">
+      <h1 className="text-4xl font-bold text-center mb-12">Últimas Noticias</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article) => (
+          <article key={article.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+            <img 
+              src={article.imageUrl} 
+              alt={article.title} 
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <span className="text-xs font-bold text-red-600 uppercase">
+                {article.category}
+              </span>
+              <h2 className="text-xl font-bold mt-2 mb-2">
+                {article.title}
+              </h2>
+              <p className="text-gray-600 text-sm line-clamp-3">
+                {article.summary}
+              </p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+	
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
 const [isShareModalOpen, setIsShareModalOpen] = useState(false);
@@ -494,7 +543,16 @@ Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia ca
    }
 ];
 
-const latestNews: NewsItem[] = [
+const NOTICIAS_ANTIGUAS = [
+  {
+    id: "old-1",
+    title: "Mi noticia antigua",
+    summary: "Resumen de la noticia...",
+    imageUrl: "/ruta-imagen.jpg",
+    category: "Actualidad",
+    date: "2024-01-01",
+    authorId: "1"
+  },
 	{ 
     id: 235,
     title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
