@@ -82,8 +82,9 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-export default function HomePage() {
-  // Inicializamos con las noticias antiguas
+	export default function HomePage() {
+  // Inicializamos estado con las noticias antiguas para que siempre se vean
+const [loading, setLoading] = useState(true);
 const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS);
 const [currentSlide, setCurrentSlide] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,11 +104,6 @@ useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
   return () => clearInterval(interval);
 }, []);
-
-export default function HomePage() {
-  // Inicializamos estado con las noticias antiguas para que siempre se vean
-  const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     console.log("Iniciando carga de noticias del CMS...");
