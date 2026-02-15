@@ -1,22 +1,3 @@
-import { useState, useEffect } from 'react';
-
-// ... tus otros imports ...
-
-export default function HomePage() {
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    // Esta función carga las noticias creadas con el CMS
-    fetch('src/pages/home/db.json') // Asegúrate que esta ruta coincide con la del CMS
-      .then(res => res.json())
-      .then(data => {
-        if (data.articles) {
-          setArticles(data.articles);
-        }
-      })
-      .catch(error => console.error("Error cargando noticias:", error));
-  }, []);
-	
 import React, { useState, useEffect } from "react";
   interface BaseArticle {
   id: number;
@@ -13662,13 +13643,4 @@ TENDIDO DIGITAL
 
 </div>
 );
-}
-	  return (
-    <div>
-      {/* Donde antes tenías tu array fijo, ahora usa 'articles' */}
-      {articles.map(news => (
-         <NewsCard key={news.id} data={news} />
-      ))}
-    </div>
-  );
 }
