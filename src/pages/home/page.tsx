@@ -457,131 +457,66 @@ const CrónicaLayout = ({ news }: { news: any }) => (
 	
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1004,
-    title: `La Asociación Andaluza de Escuelas Taurinas “Pedro Romero” celebra en Camas su Asamblea General con una ambiciosa mirada al futuro`,
-    image: "/images/np.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	fullContent: `**Camas** volvió a convertirse en epicentro de la formación taurina andaluza. Hoy, sábado 14 de febrero, la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** celebró su **Asamblea General Ordinaria y Extraordinaria** en el **Salón de Actos del Excmo. Ayuntamiento de Camas**, sede habitual de este importante encuentro anual.
-
-La sesión fue abierta por el presidente de la Asociación, **D. Eduardo Ordóñez**, quien dio la bienvenida a los asistentes e inauguró una jornada marcada por el consenso, el balance positivo y la proyección de futuro. A continuación, **D. Francisco Acedo**, representante de la **Escuela Taurina de Camas** y anfitrión del acto, saludó a los presentes y procedió al pase de lista: **un total de 27 escuelas** estuvieron representadas de manera presencial, mientras que las de **Linares, Antequera, Ronda** y **Huelva** delegaron su voto, alcanzándose así la cifra total de **31 Escuelas Asociadas.**
-
-**Asamblea General Ordinaria**
-
-El primer punto del orden del día fue la lectura y aprobación del acta de la última asamblea, a cargo del secretario **D. Juan Repullo**, siendo aprobada por unanimidad por todas las escuelas participantes.
-
-Seguidamente, el presidente **Eduardo Ordóñez** presentó el informe de gestión correspondiente al Proyecto 2025. Se trató de “un resumen muy amplio y detallado con todo tipo de acciones sobre el curso anterior”, destacando que “todos los objetivos se cumplieron con Canal Sur, con una media de audiencia del 13,80 % de share, así como con la Junta de Andalucía y el programa previsto en su totalidad”. Durante la exposición se subrayó que la **Temporada 2025** quedó marcada como una de las más memorables para la **Asociación**, estructurada en tres grandes circuitos: el **31º Ciclo de Novilladas Sin Picadores Canal Sur TV**, el **27º Ciclo de Becerradas** y el **26º Encuentro Andaluz de Escuelas Taurinas**.
-
-Asimismo, se puso de relieve que el **Proyecto de Fomento de la Cultura Taurina de Andalucía 2025**, que contó con **Borja Jiménez** como padrino de lujo, se saldó con un cumplimiento sobresaliente de los objetivos marcados. La **A.A.E.T. “Pedro Romero”** volvió a consolidar su reputación como principal referente formativo de la tauromaquia en **España**, culminando un año de intensa actividad con un **reconocimiento internacional** que vino a confirmar el peso de su labor en la promoción de nuevos valores y en la defensa de la cultura taurina andaluza. En este sentido, se recordó el galardón recibido en la **VI Bienal Internacional de la Tauromaquia, organizada por la Asociación Tauromundo en colaboración con la Fundación Cultura Taurina de Jerez de la Frontera**, entregado el pasado 25 de octubre en el **Alcázar de Jerez**.
-
-Igualmente, se destacó el compromiso con la juventud demostrado por **Andrés Roca Rey**, padrino del **Proyecto de Fomento de la Cultura Taurina de Andalucía 2024**, quien “reafirmó su compromiso con la juventud con un gesto de gran calado: la donación de más de 30.000 euros destinados a las Escuelas Taurinas de Andalucía”.
-
-El segundo punto abordó el balance de cuentas del ejercicio 2025, presentado por el tesorero **D. Rafael Osorio**. A continuación, **D. Juan Rojas**, vicetesorero, expuso el **Proyecto 2026**, que contempla una temporada de gran envergadura: “El **28º Ciclo de Becerradas** contará con una becerrada más que el año anterior, celebrándose la gran final en **Lucena** el próximo 5 de septiembre. El **32º Ciclo de Novilladas Sin Picadores Canal Sur TV** incluirá 12 festejos, con 10 novilladas televisadas y 2 pruebas de selección en el campo, teniendo su gran final en **Villacarrillo** el sábado 29 de agosto, localidad que volverá a acoger esta cita como en temporadas precedentes”.
-
-“El proyecto incorpora además un festejo televisado para los “mejores andaluces”, que se celebrará en **Arroyomolinos de León** el domingo 19 de septiembre, así como la celebración del **27º Encuentro Andaluz de Escuelas Taurinas** en dos sedes: **Los Barrios** (3 y 4 de octubre) y **Ubrique** (24 y 25 de octubre), con la retransmisión televisiva de un festejo en cada sede. En total, serán **14 los festejos inicialmente televisados**, sin descartar la inclusión de alguno más a lo largo del curso 2026. La **presentación oficial** de la temporada tendrá lugar el próximo viernes **20 de marzo** en la **Real Maestranza de Caballería de Sevilla**.”
-
-El presupuesto para 2026 fue aprobado posteriormente por la Asamblea, así como los puntos relativos al pago de cuotas y nuevas propuestas presentadas por **Francisco Acedo**, vocal de la Junta Directiva.
-
-Uno de los momentos destacados -gran ovación de bienvenida- de la jornada fue la presentación oficial de la **Escuela Taurina Costa del Sol**, aprobada previamente por la Junta Directiva. El presidente **Eduardo Ordóñez** dio la bienvenida a esta nueva incorporación, que estará presidida por **Francisco José Porras Becerra** y contará con el maestro **Fernando Cámara Castro** como coordinador de toreo, teniendo su sede oficial en la **Plaza de Toros de Estepona.**
-
-**Asamblea General Extraordinaria**
-
-En sesión extraordinaria, el jurista y abogado **Juan Miguel Cabral** presentó la propuesta de modificación de los Estatutos, señalando que “se han modificado varios artículos para una nueva adaptación a los tiempos actuales y modernizar los Estatutos con la realidad vigente”. Tras el turno de ruegos y preguntas, se anunció la concesión de reconocimientos a **Rafael Osorio** y **José Manuel Cabrera**, que serán entregados en el acto oficial de presentación de la temporada 2026.
-
-La jornada se cerró en la localidad natal del **“Faraón de Camas”** con un almuerzo de hermandad, en el que se vivió una inolvidable convivencia entre todas las escuelas asistentes. Finalmente, la **A.A.E.T. “Pedro Romero”** quiso agradecer públicamente al **Excmo. Ayuntamiento de Camas** su colaboración y la cesión de sus magníficas instalaciones para la celebración de estas Asambleas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `El Bolsín Taurino “Sueño de Luces” abre la temporada 2026 en Finca Valtaja`,
-    image: "/images/bolsin.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	fullContent: `La **Finca Valtaja** acogerá el próximo 1 de marzo, a las 11:30 horas, el **Bolsín Taurino "Sueño de Luces"**, cita que inaugura la temporada 2026 y que reunirá a destacados alumnos de distintas escuelas taurinas.
-
-En el cartel figuran **Izan Alonso (Escuela Taurina de Guadalajara), Angelito (Escuela de Huesca), Juan Morales (Escuela El Yiyo de Madrid) y Curro de Belén (Escuela de Albacete). Actuará fuera de concurso Celso Ortega (Escuela La Gallosina de El Puerto de Santa María).** Las reses pertenecerán a la ganadería **Tauro Valtaja.**
-
-Organizado por la Escuela Taurina de Guadalajara y la Federación Taurina de Guadalajara, el bolsín se consolida como plataforma de promoción para jóvenes promesas del toreo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `JTS rendirá homenaje a El Juli bajo el lema “El Juli, figura y referente de una época”`,
-    image: "/images/homen.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	excerpt: "La asociación Juventud Taurina de Salamanca celebrará el próximo jueves 19 de febrero un acto de reconocimiento a El Juli, una de las grandes figuras del toreo contemporáneo. El encuentro tendrá lugar a las 20:30 en el Teatro Liceo de Salamanca y será de entrada libre hasta completar aforo.",
-	fullContent: `Bajo el título “El Juli, figura y referente de una época”, la Juventud Taurina de Salamanca (JTS) dedicará una velada especial a repasar la trayectoria, el legado y la influencia del diestro madrileño en la tauromaquia moderna. La figura de Julián López “El Juli”, protagonista indiscutible de las últimas décadas, será analizada desde distintas perspectivas, poniendo en valor su aportación técnica, su capacidad de liderazgo en el escalafón y su condición de espejo para varias generaciones de aficionados y toreros.
-El acto contará con la participación de la periodista Elena Salamanca, que acompañará el desarrollo del homenaje en una conversación estructurada en torno a los hitos más relevantes de su carrera y a su impacto en la evolución del toreo del siglo XXI.
-La entrada será libre hasta completar aforo, y además, el homenaje podrá seguirse en directo a través de la retransmisión en streaming que la asociación realizará mediante Facebook, facilitando así el acceso a aficionados que no pueden acudir presencialmente.
-Con iniciativas como esta y su actividad continua en el mundo del toro, la Juventud Taurina de Salamanca (JTS) se consolida como uno de los colectivos juveniles más activos del panorama taurino nacional. La asociación no solo organiza homenajes y actos culturales, sino que también organiza y coordina viajes a corridas de toros para sus socios, mantiene su propio abono en la Plaza de Toros de la Glorieta y desarrolla actividades que acercan a las nuevas generaciones a la Fiesta, proyectando una imagen dinámica y comprometida de la afición joven.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `Tragedia en el Carnaval del Toro: fallece un vecino de 67 años tras ser corneado en la capea nocturna.`,
-    image: "/images/falleci.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	imageCaption: "Imagen de El Español",
-	excerpt: "El suceso se produjo horas después del tradicional Campanazo que había dado comienzo oficial a las fiestas.",
-	fullContent: `Un varón de 67 años, conocido en el ambiente taurino mirobrigense como “Taquio”, perdió la vida en la madrugada de este sábado 14 de febrero en la Plaza Mayor de Ciudad Rodrigo, convertida en coso taurino con motivo del Carnaval del Toro. El suceso tuvo lugar durante la primera capea nocturna, apenas horas después del tradicional Campanazo que abrió oficialmente las fiestas. 
-El trágico episodio se produjo en torno a la 1:16 horas. Según las informaciones recabadas, el hombre arrancó a correr tratando de escapar del toro, perteneciente a la ganadería extremeña de Antonio López Gibaja. Sin embargo, el astado logró alcanzarlo.
-En primera instancia lo prendió por la espalda. Tras el impacto, el aficionado cayó al suelo y, ya inerme, fue nuevamente herido por el animal, que le infirió una cornada en el pecho de consecuencias fatales.
-El equipo médico del festejo, encabezado por el doctor Enrique Crespo, intervino con inmediatez, pero nada pudo hacerse por salvar la vida del vecino mirobrigense, cuya herida torácica resultó letal.
-La víctima era un rostro conocido en el ámbito taurino local y miembro de una peña, un aficionado habitual de los festejos del Carnaval. 
-Se trata del primer fallecimiento por asta de toro en estas fiestas en cuarenta años, un dato que marca con luto una celebración de profundo arraigo en la comarca.
-La conmoción se dejó sentir desde primeras horas de la mañana. Antes del inicio del tradicional Toro del Antruejo, el fallecido fue recordado en la zona de Los Pinos, en un homenaje encabezado por el alcalde de Ciudad Rodrigo, Marcos Iglesias, y el teniente de alcalde, Ramón Sastre, y acompañado por multitud de vecinos y aficionados. En el acto se trasladó el apoyo y el acompañamiento en el dolor a familiares y allegados, concluyendo con una cerrada y sentida ovación. 
-Asimismo, y según lo previsto por la organización del Carnaval del Toro, la programación continuará con normalidad pese al trágico suceso. No obstante, está previsto que antes del festival anunciado para la tarde de este sábado se celebre un nuevo acto de homenaje en la plaza de toros, en memoria del aficionado fallecido.
-Desde Portal Tendido Digital transmitimos nuestras más sentidas condolencias a los familiares, amigos y allegados al fallecido, sumándonos al dolor de la familia taurina mirobrigense en estos momentos de profunda tristeza.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `Morante de la Puebla estará anunciado en la Feria de Jerez`,
-    image: "/images/jere.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	excerpt: "El diestro cigarrero suma una tarde más en su temporada de “regreso”.",
-	fullContent: `La temporada 2026 de Morante de la Puebla continúa tomando forma y ya tiene una nueva parada confirmada. El torero sevillano hará también el paseíllo en la plaza de toros de Jerez de la Frontera durante la próxima Feria del Caballo, sumando así este compromiso a su ya anunciada presencia en Sevilla.
-
-El acuerdo con la empresa Matilla, gestora del coso jerezano, pone fin a la espera que mantenía en suspenso la confección definitiva de los carteles, pendientes de la decisión del diestro. Salvo cambios de última hora, Morante actuará una única tarde en el ruedo jerezano, escenario donde el pasado año dejó una de las actuaciones más recordadas de la temporada al cortar un rabo a un toro de Álvaro Núñez.
-
-La cita tiene además un significado especial para la afición local, al tratarse de la primera Feria del Caballo que vivirá la ciudad sin Rafael de Paula, figura emblemática del barrio de Santiago y torero profundamente admirado por Morante.
-
-Antes de su paso por Jerez, el cigarrero tiene confirmadas cuatro actuaciones en la plaza sevillana, donde abrirá temporada el Domingo de Resurrección, comparecerá dos tardes en la Feria de Abril y volverá a hacer el paseíllo en la corrida del Corpus. Por ahora queda libre la fecha de la Feria de San Miguel, lo que mantiene abierta la posibilidad de una nueva presencia en el coso hispalense.
-
-La presencia de Morante en cada plaza se vive como un acontecimiento, ya que todo apunta a que su temporada volverá a desarrollarse con un número limitado de actuaciones, lo que incrementa la expectación en torno a cada anuncio oficial.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1009,
-    title: `Roqueta de Mar, ya tiene cartel para su festival`,
-    image: "/images/roque.jpg",
-    category: "Actualidad",
-    date: "14 de Febrero de 2026",
-	fullContent: `El empresario y matador de toros **José Gabriel Olivencia,** ha dado a conocer el tradicional festival taurino con colaboración benéfica a distintas asociaciones, que se celebrará el próximo sábado 11 de abril a las 17:00 horas en la plaza de toros de **Roquetas de Mar.**
+    title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
+	image: "/images/ciud.jpg",
+    category: "Crónicas",
+    date: "15 de Febrero de 2026",
+	excerpt: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
+	torerosRaw: `Diego Urdiales: una oreja.
+Alejandro Talavante: ovación.
+Pablo Aguado: una oreja
+El Mene: una oreja.
+Moisés Fraile: ovación.`,
+	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
 
-El festival consolidado como una de las citas más destacadas del calendario taurino en la provincia de **Almería.**
+Abrió plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunos lances estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y paseó una oreja. El novillo por su parte fue aplaudido en el arrastre.
 
-Se lidiarán reses de la ganadería **Fuente Ymbro,** para el rejoneador **Sebastián Fernández** y los matadores de toros **Diego Urdiales, David Fandila «El Fandi», Manuel Escribano y Tomás Rufo,** la novillera **Olga Casado** y el novillero sin picadores **Blas Márquez.**`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quite por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, pareció suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriarán y todo se quedó en una ovación. De nuevo, el animal fue aplaudido en el arrastre.
+
+**Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
+
+**El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
+
+Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quite por gaoneras muy ajustado y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 235,
+    title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
+	image: "/images/ciud.jpg",
+    category: "Crónicas",
+    date: "15 de Febrero de 2026",
+	excerpt: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
+	torerosRaw: `Diego Urdiales: una oreja.
+Alejandro Talavante: ovación.
+Pablo Aguado: una oreja
+El Mene: una oreja.
+Moisés Fraile: ovación.`,
+	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
+
+Abrió plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunos lances estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y paseó una oreja. El novillo por su parte fue aplaudido en el arrastre.
+
+**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quite por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, pareció suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriarán y todo se quedó en una ovación. De nuevo, el animal fue aplaudido en el arrastre.
+
+**Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
+
+**El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
+
+Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quite por gaoneras muy ajustado y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 236,
     title: `La Asociación Andaluza de Escuelas Taurinas “Pedro Romero” celebra en Camas su Asamblea General con una ambiciosa mirada al futuro`,
@@ -11134,6 +11069,35 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
+	{ 
+    id: 4995,
+    title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
+	image: "/images/ciud.jpg",
+    category: "Crónicas",
+    date: "15 de Febrero de 2026",
+	excerpt: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
+	torerosRaw: `Diego Urdiales: una oreja.
+Alejandro Talavante: ovación.
+Pablo Aguado: una oreja
+El Mene: una oreja.
+Moisés Fraile: ovación.`,
+	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
+
+Abrió plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunos lances estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y paseó una oreja. El novillo por su parte fue aplaudido en el arrastre.
+
+**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quite por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, pareció suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriarán y todo se quedó en una ovación. De nuevo, el animal fue aplaudido en el arrastre.
+
+**Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
+
+**El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
+
+Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quite por gaoneras muy ajustado y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 4996,
     title: `Juan Ortega pone el broche a San Blas con dos orejas en Valdemorillo`,
