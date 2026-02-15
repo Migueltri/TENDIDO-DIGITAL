@@ -58,7 +58,6 @@ type Chronicle = BaseArticle;
   }
   // No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
   return dateString;
-}
 
 fetch('/data/db.json')
   .then(response => response.json())
