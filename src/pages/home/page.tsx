@@ -11597,8 +11597,6 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
-const latestNews: NewsItem[] = [...chronicles, ...entrevistas];
-
 // --- 4. COMPONENTE PRINCIPAL ---
 
 export default function HomePage() {
