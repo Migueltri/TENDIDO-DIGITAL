@@ -26,6 +26,14 @@ interface BaseArticle {
   footerImage3Caption?: string;
   footerImage4?: string;
   footerImage4Caption?: string;
+  footerImage5?: string;
+  footerImage5Caption?: string;
+  footerImage6?: string;
+  footerImage6Caption?: string;
+  footerImage7?: string;
+  footerImage7Caption?: string;	  
+  footerImage8?: string;
+  footerImage8Caption?: string;
   boldContent?: boolean;
   author?: string;
   authorLogo?: string;
@@ -45,20 +53,6 @@ function formatExactDate(dateString: string): string {
     });
   }
   return dateString;
-}
-
-function formatTimeAgo(dateString: string): string {
-  const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; 
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
-  const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
-  if (diff < 60) return "hace unos segundos";
-  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
-  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
-  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
-  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
-  return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
 const renderArticleContent = (text?: string | null) => {
@@ -86,8 +80,7 @@ const renderArticleContent = (text?: string | null) => {
   ));
 };
 
-// --- 3. DATOS ESTÁTICOS (SECCIONES SEPARADAS COMO PEDISTE) ---
-// Se definen AQUÍ para que 'HomePage' pueda verlas.
+// --- 3. DATOS ESTÁTICOS ---
 
 const featuredNews: NewsItem[] = [
 	{
@@ -117,7 +110,7 @@ Abró plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le per
 Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quiet por gaoneras muy ajustadas y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, se conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
     autora: "Nerea F.Elena",
     autorLogo: "/images/nere.jpg",
-    showAuthorHeader: true
+    showAuthorHeader: verdadero
    }
 ];
 
@@ -11589,19 +11582,19 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
+// Generamos featuredNews a partir de latestNews para evitar duplicados
+const featuredNews = latestNews.slice(0, 5); 
+
 // --- 4. COMPONENTE PRINCIPAL ---
 
 export default function HomePage() {
-  // ESTADOS
   const [loading, setLoading] = useState(true);
-  
-  // Aquí usamos las variables que definimos ARRIBA
-  const [articles, setArticles] = useState([...featuredNews, ...NOTICIAS_ANTIGUAS]); 
+  const [articles, setArticles] = useState(latestNews); // Inicializamos con latestNews
   
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
+  const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
   const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
   const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
   const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
@@ -11610,13 +11603,6 @@ export default function HomePage() {
   const [activeTab, setActiveTab] = useState('inicio');
   const [newsFilter, setNewsFilter] = useState('todas');
   
-  // Newsletter y contacto
-  const [newsletterEmail, setNewsletterEmail] = useState('');
-  const [isNewsletterSubmitting, setIsNewsletterSubmitting] = useState(false);
-  const [newsletterMessage, setNewsletterMessage] = useState('');
-  const [contactForm, setContactForm] = useState({ name: '', email: '', subject: '', message: '' });
-  const [isContactSubmitting, setIsContactSubmitting] = useState(false);
-  const [contactMessage, setContactMessage] = useState('');
   const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePost, setSharePost] = useState<any>(null);
@@ -11630,8 +11616,7 @@ export default function HomePage() {
       })
       .then((data) => {
         if (data && Array.isArray(data.articles)) {
-            // Combinamos los datos del CMS con los datos estáticos
-            const newArticles = [...data.articles, ...featuredNews, ...NOTICIAS_ANTIGUAS];
+            const newArticles = [...data.articles, ...latestNews];
             setArticles(newArticles);
         }
         setLoading(false);
@@ -11717,32 +11702,6 @@ export default function HomePage() {
   const closeShareModal = () => {
       setIsShareModalOpen(false);
       setSharePost(null);
-  };
-
-  const shareToWhatsApp = () => {
-      if(!sharePost) return;
-      window.open(`https://wa.me/?text=${encodeURIComponent(sharePost.title + ' - ' + window.location.origin)}`, '_blank');
-      closeShareModal();
-  };
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
-      setIsNewsletterSubmitting(true);
-      setTimeout(() => {
-          setNewsletterMessage("¡Gracias por suscribirte!");
-          setNewsletterEmail("");
-          setIsNewsletterSubmitting(false);
-      }, 1000);
-  };
-
-  const handleContactSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
-      setIsContactSubmitting(true);
-      setTimeout(() => {
-          setContactMessage("Mensaje enviado correctamente.");
-          setContactForm({ name: '', email: '', subject: '', message: '' });
-          setIsContactSubmitting(false);
-      }, 1000);
   };
 
   const getFilteredNews = () => {
