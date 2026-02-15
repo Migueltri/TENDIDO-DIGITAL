@@ -104,23 +104,92 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
 
-useEffect(() => {
-    // 2. Cargamos las noticias NUEVAS del CMS (db.json)
+export default function HomePage() {
+  // Inicializamos estado con las noticias antiguas para que siempre se vean
+  const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    console.log("Iniciando carga de noticias del CMS...");
+    
+    // Intentamos cargar el archivo JSON generado por el CMS
     fetch('/data/db.json')
       .then((res) => {
-         if(!res.ok) return null;
+         if(!res.ok) throw new Error("No se encontró db.json (es normal si es la primera vez)");
          return res.json();
       })
       .then((data) => {
-        if (data && data.articles) {
-            // MEZCLAMOS: Las nuevas del CMS + las antiguas
-            // Ponemos las del CMS primero (data.articles)
+        if (data && Array.isArray(data.articles)) {
+            console.log("Noticias CMS cargadas:", data.articles.length);
+            // IMPORTANTE: Unimos (Noticias Nuevas + Noticias Antiguas)
             setArticles([...data.articles, ...NOTICIAS_ANTIGUAS]);
         }
+        setLoading(false);
       })
-      .catch((error) => console.error("Error cargando noticias CMS:", error));
+      .catch((error) => {
+        console.warn("Aviso CMS:", error.message);
+        // Si falla, no pasa nada, se quedan las antiguas
+        setLoading(false);
+      });
   }, []);
 
+  return (
+    <div className="container mx-auto px-4 py-12">
+      <h1 className="text-4xl font-bold text-center mb-12 text-gray-900">Últimas Noticias</h1>
+      
+      {/* Indicador de carga discreto (opcional) */}
+      {loading && <p className="text-center text-xs text-gray-400 mb-4">Sincronizando...</p>}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article, index) => (
+          <article 
+            key={article.id || index} // Fallback seguro para key
+            className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
+                {article.imageUrl ? (
+                  <img 
+                    src={article.imageUrl} 
+                    alt={article.title} 
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      // Evita que la web se rompa si la imagen falla
+                      e.currentTarget.src = 'https://via.placeholder.com/600x400?text=Sin+Imagen';
+                    }}
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">Sin Imagen</div>
+                )}
+            </div>
+            <div className="p-6">
+              <span className="inline-block px-3 py-1 mb-3 text-xs font-bold tracking-wider text-red-600 uppercase bg-red-50 rounded-full">
+                {article.category || 'General'}
+              </span>
+              <h2 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                {article.title}
+              </h2>
+              <p className="text-gray-600 text-sm line-clamp-3">
+                {article.summary}
+              </p>
+              {article.date && (
+                 <p className="text-xs text-gray-400 mt-4 pt-4 border-t border-gray-100">
+                    {new Date(article.date).toLocaleDateString()}
+                 </p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+      
+      {articles.length === 0 && (
+          <div className="text-center py-12 text-gray-500">
+              <p>No hay noticias disponibles en este momento.</p>
+          </div>
+      )}
+    </div>
+  );
+}
+	
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-12">Últimas Noticias</h1>
@@ -361,7 +430,7 @@ const copyLink = async () => {
 
 // Obtener posts filtrados según la pestaña activa
 const getFilteredPosts = () => {
-const allPosts = [...featuredNews, ...latestNews];
+const allPosts = [...featuredNews, ...NOTICIAS_ANTIGUAS];
 
 switch (activeTab) {
   case 'guardados':
@@ -375,9 +444,9 @@ switch (activeTab) {
   
 // Obtener noticias filtradas por categoría
 const getFilteredNews = () => {
-  if (newsFilter === 'todas') return latestNews;
+  if (newsFilter === 'todas') return NOTICIAS_ANTIGUAS;
 
-  return latestNews.filter(news => {
+  returnNOTICIAS_ANTIGUAS.filter(news => {
     const cat = news.category?.toLowerCase() || '';
     switch (newsFilter) {
       case 'cronicas':
@@ -12056,7 +12125,7 @@ useEffect(() => {
       const idString = decoded.replace("news-", "");
       const id = parseInt(idString, 10);
 
-      const allPosts = [...featuredNews, ...latestNews];
+      const allPosts = [...featuredNews, ...NOTICIAS_ANTIGUAS];
       const selected = allPosts.find((n) => n.id === id);
 
       if (selected) {
@@ -12158,7 +12227,7 @@ const SponsorBanner = () => (
 );
 	
   if (activeTab === "entrevistas") {
-    const entrevistas = latestNews.filter((item) =>
+    const entrevistas = NOTICIAS_ANTIGUAS.filter((item) =>
       item.title.toLowerCase().includes("entrevista")
     );
 
