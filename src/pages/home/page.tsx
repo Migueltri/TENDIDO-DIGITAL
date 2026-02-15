@@ -59,6 +59,13 @@ function formatExactDate(dateString: string): string {
   return dateString;
 }
 
+fetch('/data/db.json')
+  .then(response => response.json())
+  .then(data => {
+     const noticias = data.articles;
+     // Aquí tu código que pinta las noticias en pantalla
+  });
+
 function formatTimeAgo(dateString: string): string {
   const parsed = new Date(dateString);
   if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
