@@ -7,7 +7,7 @@ export default function HomePage() {
 
   useEffect(() => {
     // Esta función carga las noticias creadas con el CMS
-    fetch('/data/db.json') // Asegúrate que esta ruta coincide con la del CMS
+    fetch('src/pages/home/db.json') // Asegúrate que esta ruta coincide con la del CMS
       .then(res => res.json())
       .then(data => {
         if (data.articles) {
@@ -16,6 +16,7 @@ export default function HomePage() {
       })
       .catch(error => console.error("Error cargando noticias:", error));
   }, []);
+	
 import React, { useState, useEffect } from "react";
   interface BaseArticle {
   id: number;
