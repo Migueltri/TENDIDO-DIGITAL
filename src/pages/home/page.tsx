@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-// --- 1. INTERFACES Y TIPOS ---
+// ------------------------------------------------------------------
+// 1. DEFINICIONES Y TIPOS
+// ------------------------------------------------------------------
 interface BaseArticle {
   id: number | string;
   title: string;
@@ -26,14 +28,6 @@ interface BaseArticle {
   footerImage3Caption?: string;
   footerImage4?: string;
   footerImage4Caption?: string;
-  footerImage5?: string;
-  footerImage5Caption?: string;
-  footerImage6?: string;
-  footerImage6Caption?: string;
-  footerImage7?: string;
-  footerImage7Caption?: string;	  
-  footerImage8?: string;
-  footerImage8Caption?: string;
   boldContent?: boolean;
   author?: string;
   authorLogo?: string;
@@ -44,17 +38,11 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
-// --- 2. FUNCIONES AUXILIARES (DEFINIDAS ANTES DEL COMPONENTE) ---
+// Funciones de utilidad
 function formatExactDate(dateString: string): string {
   const parsed = new Date(dateString);
   if (!isNaN(parsed.getTime())) {
-    return parsed.toLocaleString("es-ES", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
+    return parsed.toLocaleString("es-ES", { day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" });
   }
   return dateString;
 }
@@ -88,24 +76,55 @@ const renderArticleContent = (text?: string | null) => {
   }
 
   const toHtml = (p: string) =>
-    p
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/[“”]/g, '"')
-      .replace(/[‘’]/g, "'")
-      .replace(/\n+/g, ' ');
+    p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+     .replace(/[“”]/g, '"')
+     .replace(/[‘’]/g, "'")
+     .replace(/\n+/g, ' ');
 
   return paragraphs.map((p, i) => (
-    <p
-      key={i}
-      className="text-gray-700 text-sm leading-relaxed mb-4"
-      dangerouslySetInnerHTML={{ __html: toHtml(p) }}
-    />
+    <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
   ));
 };
 
-// --- 3. DATOS ESTÁTICOS (IMPORTANTE: ESTO VA ANTES DEL COMPONENTE) ---
+// ------------------------------------------------------------------
+// 2. DATOS (PEGA TUS NOTICIAS AQUÍ)
+// ------------------------------------------------------------------
 
-const latestNews: NewsItem[] = [
+// IMPORTANTE: Pega TODO tu array de noticias aquí dentro. 
+// No cambies el nombre 'NOTICIAS_ANTIGUAS'.
+const featuredNews: NewsItem[] = [
+	{
+    identificación: 1009,
+    título: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
+	imagen: "/images/ciud.jpg",
+    categoría: "Crónicas",
+    fecha: "15 de Febrero de 2026",
+	extracto: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
+	torerosRaw: `Diego Urdiales: una oreja.
+Alejandro Talavante: ovación.
+Pablo Aguado: una oreja
+El Mene: una oreja.
+Moisés Fraile: ovación.`,
+	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo a cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
+
+Abró plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunas lanzas estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y pasó una oreja. El novillo por su parte fue aplaudido en el arrastre.
+
+**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quiet por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, parecía suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriaran y todo se quedo en una ovacion. De nuevo, el animal fue aplaudido en el arrastre.
+
+**Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
+
+**El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
+
+Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quiet por gaoneras muy ajustadas y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, se conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
+    autora: "Nerea F.Elena",
+    autorLogo: "/images/nere.jpg",
+    showAuthorHeader: verdadero
+   }
+];
+
+const NOTICIAS_ANTIGUAS: any[] = [
 	{ 
     id: 235,
     title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
@@ -11573,16 +11592,28 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
+// ------------------------------------------------------------------
+// 3. CÁLCULO AUTOMÁTICO DE SECCIONES (NO TOCAR)
+// ------------------------------------------------------------------
+
+// Esto evita el error "ReferenceError" creando las variables automáticamente
+const featuredNews = NOTICIAS_ANTIGUAS.slice(0, 5); // Las 5 primeras son destacadas
+const chronicles = NOTICIAS_ANTIGUAS.filter(n => n.category === 'Crónicas' || n.category === 'Cronicas');
+const entrevistas = NOTICIAS_ANTIGUAS.filter(n => n.category === 'Entrevistas');
+
+// ------------------------------------------------------------------
+// 4. COMPONENTE PRINCIPAL
+// ------------------------------------------------------------------
+
 export default function HomePage() {
   // ESTADOS
   const [loading, setLoading] = useState(true);
-  // Inicializamos con las noticias antiguas y destacadas
-  const [articles, setArticles] = useState([...featuredNews, ...NOTICIAS_ANTIGUAS]); 
+  const [articles, setArticles] = useState(NOTICIAS_ANTIGUAS); // Inicializa con las fijas
   
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
+  const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
   const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
   const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
   const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
@@ -11604,19 +11635,18 @@ export default function HomePage() {
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePost, setSharePost] = useState<any>(null);
 
-  // EFECTO: Cargar noticias del CMS (db.json)
+  // EFECTO: Cargar noticias del CMS (db.json) y mezclar
   useEffect(() => {
     console.log("Iniciando carga de noticias del CMS...");
     fetch('/data/db.json')
       .then((res) => {
-         if(!res.ok) throw new Error("No se encontró db.json (es normal si es la primera vez)");
+         if(!res.ok) throw new Error("No se encontró db.json (normal si es la primera vez)");
          return res.json();
       })
       .then((data) => {
         if (data && Array.isArray(data.articles)) {
-            // Unimos (Noticias CMS + Destacadas + Antiguas)
-            // Aseguramos no duplicar por ID si es necesario
-            const newArticles = [...data.articles, ...featuredNews, ...NOTICIAS_ANTIGUAS];
+            // MEZCLAR: Noticias CMS + Noticias Antiguas
+            const newArticles = [...data.articles, ...NOTICIAS_ANTIGUAS];
             setArticles(newArticles);
         }
         setLoading(false);
@@ -11638,11 +11668,11 @@ export default function HomePage() {
   useEffect(() => {
     const timer = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-    }, 5000); // 5 segundos
+    }, 5000); 
     return () => clearInterval(timer);
   }, []);
 
-  // FUNCIONES DE LÓGICA
+  // --- LÓGICA DE UI ---
   const loadMoreNews = () => {
     setIsLoadingMore(true);
     setTimeout(() => {
@@ -11683,12 +11713,13 @@ export default function HomePage() {
       document.body.style.overflow = "auto";
   };
 
-  const toggleSave = (id: number, e?: any) => {
+  const toggleSave = (id: number | string, e?: any) => {
+      const idNum = Number(id);
       if(e) e.stopPropagation();
       setSavedPosts(prev => {
           const newSet = new Set(prev);
-          if(newSet.has(id)) newSet.delete(id);
-          else newSet.add(id);
+          if(newSet.has(idNum)) newSet.delete(idNum);
+          else newSet.add(idNum);
           return newSet;
       });
   };
@@ -11704,19 +11735,9 @@ export default function HomePage() {
       setSharePost(null);
   };
 
-  // Redes sociales
-  const shareToWhatsApp = () => {
-      if(!sharePost) return;
-      window.open(`https://wa.me/?text=${encodeURIComponent(sharePost.title + ' - ' + window.location.origin)}`, '_blank');
-      closeShareModal();
-  };
-  // (Añadir resto de share functions...)
-
-  // Newsletter Submit
   const handleNewsletterSubmit = (e: React.FormEvent) => {
       e.preventDefault();
       setIsNewsletterSubmitting(true);
-      // Simulación
       setTimeout(() => {
           setNewsletterMessage("¡Gracias por suscribirte!");
           setNewsletterEmail("");
@@ -11734,7 +11755,6 @@ export default function HomePage() {
       }, 1000);
   };
 
-  // FILTRADO
   const getFilteredNews = () => {
       if (newsFilter === 'todas') return articles;
       return articles.filter(news => {
@@ -11743,70 +11763,70 @@ export default function HomePage() {
       });
   };
 
-  // --- RENDERIZADO (JSX) ---
+  // --- RENDERIZADO ---
   return (
     <div className="min-h-screen bg-gray-50">
         {/* HEADER */}
-        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+        <header className={`sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm transition-all ${scrollY > 50 ? 'shadow-md' : ''}`}>
             <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
                 <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-                    <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="h-12 w-auto" />
+                    <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="h-12 w-auto mix-blend-multiply" />
                     <span className="font-bold text-xl text-gray-900 hidden md:block">TENDIDO DIGITAL</span>
                 </div>
                 <nav className="hidden md:flex gap-6 font-medium text-gray-700">
-                    <button onClick={() => { setActiveTab('inicio'); scrollToSection('inicio'); }} className="hover:text-red-600">Inicio</button>
-                    <button onClick={() => { setActiveTab('inicio'); scrollToSection('actualidad'); }} className="hover:text-red-600">Actualidad</button>
-                    <button onClick={() => setActiveTab('cronicas')} className="hover:text-red-600">Crónicas</button>
-                    <button onClick={() => setActiveTab('entrevistas')} className="hover:text-red-600">Entrevistas</button>
-                    <button onClick={() => scrollToSection('contacto')} className="hover:text-red-600">Contacto</button>
+                    <button onClick={() => { setActiveTab('inicio'); scrollToSection('inicio'); }} className="hover:text-red-600 transition">Inicio</button>
+                    <button onClick={() => { setActiveTab('inicio'); scrollToSection('actualidad'); }} className="hover:text-red-600 transition">Actualidad</button>
+                    <button onClick={() => setActiveTab('cronicas')} className="hover:text-red-600 transition">Crónicas</button>
+                    <button onClick={() => setActiveTab('entrevistas')} className="hover:text-red-600 transition">Entrevistas</button>
+                    <button onClick={() => scrollToSection('contacto')} className="hover:text-red-600 transition">Contacto</button>
                 </nav>
-                <button className="md:hidden text-2xl" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <button className="md:hidden text-2xl p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <i className={isMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
                 </button>
             </div>
-            {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white border-t p-4 flex flex-col gap-4 shadow-lg">
+                <div className="md:hidden bg-white border-t p-4 flex flex-col gap-4 shadow-lg absolute w-full">
                     <button onClick={() => { setActiveTab('inicio'); setIsMenuOpen(false); }}>Inicio</button>
+                    <button onClick={() => { setActiveTab('cronicas'); setIsMenuOpen(false); }}>Crónicas</button>
                     <button onClick={() => { setActiveTab('entrevistas'); setIsMenuOpen(false); }}>Entrevistas</button>
                     <button onClick={() => { scrollToSection('contacto'); setIsMenuOpen(false); }}>Contacto</button>
                 </div>
             )}
         </header>
 
-        {/* CONTENIDO PRINCIPAL */}
+        {/* MAIN */}
         <main>
             {activeTab === 'inicio' && (
                 <>
-                    {/* HERO CAROUSEL */}
+                    {/* HERO */}
                     <section id="inicio" className="relative h-[60vh] md:h-[80vh] bg-black text-white overflow-hidden">
                         {featuredNews.map((news, idx) => (
                             <div key={news.id} className={`absolute inset-0 transition-opacity duration-1000 ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
                                 <img src={news.image} alt={news.title} className="w-full h-full object-cover opacity-60" />
                                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
-                                    <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-4">{news.category}</span>
-                                    <h1 className="text-3xl md:text-5xl font-bold max-w-4xl mb-4">{news.title}</h1>
-                                    <button onClick={() => openNewsModal(news)} className="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition">
-                                        Leer más
+                                    <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase">{news.category}</span>
+                                    <h1 className="text-3xl md:text-5xl font-bold max-w-4xl mb-4 leading-tight">{news.title}</h1>
+                                    <button onClick={() => openNewsModal(news)} className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition shadow-lg">
+                                        Leer noticia completa
                                     </button>
                                 </div>
                             </div>
                         ))}
                     </section>
 
-                    {/* ACTUALIDAD GRID */}
+                    {/* NEWS GRID */}
                     <section id="actualidad" className="max-w-7xl mx-auto px-4 py-12">
                         <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900">Últimas Noticias</h2>
-                                <div className="w-20 h-1 bg-red-600 mt-2"></div>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Últimas Noticias</h2>
+                                <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full mt-2"></div>
                             </div>
-                            <div className="flex gap-2 overflow-x-auto pb-2">
+                            <div className="flex gap-2 overflow-x-auto pb-2 w-full md:w-auto">
                                 {['todas', 'actualidad', 'cronicas', 'entrevistas', 'opinion'].map(cat => (
                                     <button 
                                         key={cat}
                                         onClick={() => setNewsFilter(cat)}
-                                        className={`px-4 py-2 rounded-full text-sm font-bold capitalize whitespace-nowrap ${newsFilter === cat ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                                        className={`px-6 py-2 rounded-full text-sm font-bold capitalize whitespace-nowrap transition-all ${newsFilter === cat ? 'bg-red-600 text-white shadow-md' : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-50'}`}
                                     >
                                         {cat}
                                     </button>
@@ -11816,23 +11836,28 @@ export default function HomePage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {getFilteredNews().slice(0, visibleNewsCount).map((news: any) => (
-                                <article key={news.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group cursor-pointer" onClick={() => openNewsModal(news)}>
-                                    <div className="h-48 overflow-hidden relative">
-                                        <img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-                                        <span className="absolute top-4 left-4 bg-black/70 text-white text-xs px-2 py-1 rounded">{news.category}</span>
+                                <article key={news.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer" onClick={() => openNewsModal(news)}>
+                                    <div className="h-56 overflow-hidden relative">
+                                        <img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" loading="lazy" />
+                                        <div className="absolute top-4 left-4">
+                                            <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">{news.category}</span>
+                                        </div>
                                     </div>
                                     <div className="p-6">
-                                        <span className="text-xs text-gray-500">{news.date}</span>
-                                        <h3 className="font-bold text-lg mt-2 mb-3 leading-tight group-hover:text-red-600">{news.title}</h3>
-                                        <p className="text-gray-600 text-sm line-clamp-3">{news.summary || news.excerpt}</p>
+                                        <span className="text-xs text-gray-400 font-medium block mb-2">{formatExactDate(news.date)}</span>
+                                        <h3 className="font-bold text-lg mb-3 leading-snug group-hover:text-red-600 transition-colors line-clamp-2">{news.title}</h3>
+                                        <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed">{news.excerpt || news.summary}</p>
+                                        <div className="mt-4 flex items-center text-red-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                            Leer más <i className="ri-arrow-right-line ml-1"></i>
+                                        </div>
                                     </div>
                                 </article>
                             ))}
                         </div>
 
                         {visibleNewsCount < getFilteredNews().length && (
-                            <div className="text-center mt-12">
-                                <button onClick={loadMoreNews} className="bg-white border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-bold hover:bg-red-50 transition">
+                            <div className="text-center mt-16">
+                                <button onClick={loadMoreNews} disabled={isLoadingMore} className="bg-white border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-bold hover:bg-red-600 hover:text-white transition-all shadow-md disabled:opacity-50">
                                     {isLoadingMore ? 'Cargando...' : 'Cargar más noticias'}
                                 </button>
                             </div>
@@ -11841,64 +11866,191 @@ export default function HomePage() {
                 </>
             )}
 
-            {activeTab === 'entrevistas' && (
-                <div className="max-w-7xl mx-auto px-4 py-12">
-                    <h2 className="text-3xl font-bold mb-8">Entrevistas</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {entrevistas.map((item: any) => (
-                             <div key={item.id} className="flex gap-4 bg-white p-4 rounded-xl shadow cursor-pointer hover:bg-gray-50" onClick={() => openNewsModal(item)}>
-                                 <img src={item.image} className="w-32 h-32 object-cover rounded-lg" />
-                                 <div>
-                                     <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                                     <p className="text-sm text-gray-600 line-clamp-3">{item.excerpt}</p>
+            {/* SECCIÓN CRÓNICAS */}
+            {activeTab === 'cronicas' && (
+                 <div className="max-w-7xl mx-auto px-4 py-12">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Crónicas Taurinas</h2>
+                        <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    <div className="space-y-8">
+                        {chronicles.map((item: any) => (
+                             <div key={item.id} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-all cursor-pointer group" onClick={() => openChronicleModal(item)}>
+                                 <div className="md:flex">
+                                     <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
+                                         <img src={item.image} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
+                                     </div>
+                                     <div className="p-8 md:w-2/3 flex flex-col justify-center">
+                                         <div className="flex items-center gap-2 mb-3">
+                                             <span className="text-xs font-bold text-red-600 uppercase tracking-wider">La Reseña</span>
+                                             <span className="text-gray-300">•</span>
+                                             <span className="text-xs text-gray-500">{item.date}</span>
+                                         </div>
+                                         <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">{item.title}</h3>
+                                         <p className="text-gray-600 mb-6 line-clamp-3">{item.excerpt || item.fullContent}</p>
+                                         <div className="flex items-center gap-4 text-sm font-medium">
+                                             <span className="text-gray-900"><i className="ri-map-pin-line text-red-500 mr-1"></i> {item.plaza}</span>
+                                             <span className="text-gray-900"><i className="ri-vip-crown-line text-red-500 mr-1"></i> {item.ganaderia}</span>
+                                         </div>
+                                     </div>
                                  </div>
                              </div>
                         ))}
+                        {chronicles.length === 0 && <p className="text-center text-gray-500">No hay crónicas disponibles.</p>}
+                    </div>
+                 </div>
+            )}
+
+            {/* SECCIÓN ENTREVISTAS */}
+            {activeTab === 'entrevistas' && (
+                <div className="max-w-7xl mx-auto px-4 py-12">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Entrevistas</h2>
+                        <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {entrevistas.map((item: any) => (
+                             <div key={item.id} className="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden cursor-pointer hover:-translate-y-1 transition-all duration-300" onClick={() => openNewsModal(item)}>
+                                 <div className="relative h-64 overflow-hidden">
+                                     <img src={item.image} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" loading="lazy" />
+                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                     <div className="absolute bottom-4 left-4 text-white">
+                                         <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-bold mb-2 inline-block">Entrevista</span>
+                                         <h3 className="text-xl font-bold leading-tight">{item.title}</h3>
+                                     </div>
+                                 </div>
+                                 <div className="p-6">
+                                     <p className="text-gray-600 text-sm line-clamp-3 mb-4">{item.excerpt}</p>
+                                     <span className="text-red-600 font-bold text-sm group-hover:underline">Leer entrevista completa &rarr;</span>
+                                 </div>
+                             </div>
+                        ))}
+                         {entrevistas.length === 0 && <div className="col-span-2 text-center text-gray-500">No hay entrevistas disponibles.</div>}
                     </div>
                 </div>
             )}
-            
-            {/* ... Otros tabs (Crónicas, etc.) similar ... */}
         </main>
 
-        {/* FOOTER Y MODALES */}
-        {/* ... (Aquí iría el resto del footer y modales como lo tenías, asegúrate de copiarlos) ... */}
-        
-        {/* MODAL DE NOTICIA */}
+        {/* MODAL NOTICIA */}
         {isNewsModalOpen && selectedNews && (
-            <div className="fixed inset-0 bg-white z-[60] overflow-y-auto">
-                <div className="sticky top-0 bg-white border-b px-4 py-3 flex justify-between items-center">
-                    <button onClick={closeNewsModal} className="text-gray-500 hover:text-black">
-                        <i className="ri-arrow-left-line text-2xl"></i> Volver
+            <div className="fixed inset-0 bg-white z-[60] overflow-y-auto animate-fade-in">
+                <div className="sticky top-0 bg-white/95 backdrop-blur border-b px-4 py-3 flex justify-between items-center z-10 shadow-sm">
+                    <button onClick={closeNewsModal} className="flex items-center text-gray-600 hover:text-black transition">
+                        <i className="ri-arrow-left-line text-2xl mr-2"></i> <span className="font-medium">Volver</span>
                     </button>
-                    <div className="flex gap-4">
-                        <button onClick={() => toggleSave(selectedNews.id)}><i className="ri-bookmark-line text-xl"></i></button>
-                        <button onClick={() => openShareModal(selectedNews)}><i className="ri-share-line text-xl"></i></button>
+                    <div className="flex gap-2">
+                        <button onClick={() => toggleSave(selectedNews.id)} className="p-2 rounded-full hover:bg-gray-100 transition">
+                            <i className={`ri-bookmark-${savedPosts.has(Number(selectedNews.id)) ? 'fill text-yellow-500' : 'line'} text-xl`}></i>
+                        </button>
+                        <button onClick={() => openShareModal(selectedNews)} className="p-2 rounded-full hover:bg-gray-100 transition">
+                            <i className="ri-share-line text-xl"></i>
+                        </button>
                     </div>
                 </div>
+                
                 <div className="max-w-3xl mx-auto px-4 py-8">
-                    <h1 className="text-3xl md:text-4xl font-bold mb-4">{selectedNews.title}</h1>
-                    <img src={selectedNews.image} className="w-full rounded-xl mb-8" />
-                    
+                    {/* Cabecera Noticia */}
+                    <div className="text-center mb-8">
+                        <span className="bg-red-50 text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">{selectedNews.category}</span>
+                        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-6 leading-tight">{selectedNews.title}</h1>
+                        <p className="text-gray-500 text-sm">{formatExactDate(selectedNews.date)} {selectedNews.author ? `| Por ${selectedNews.author}` : ''}</p>
+                    </div>
+
+                    <img src={selectedNews.image} className="w-full rounded-xl shadow-lg mb-2" />
+                    {selectedNews.imageCaption && <p className="text-right text-xs text-gray-400 italic mb-8">{selectedNews.imageCaption}</p>}
+
+                    {/* Ficha Técnica para Crónicas */}
                     {selectedNews.category === 'Crónicas' && (
-                        <div className="bg-orange-50 p-6 rounded-xl border border-orange-100 mb-8">
-                            <h3 className="font-bold text-orange-800 mb-2">Ficha del Festejo</h3>
-                            <p><strong>Plaza:</strong> {selectedNews.plaza}</p>
-                            <p><strong>Ganadería:</strong> {selectedNews.ganaderia}</p>
+                         <div className="bg-orange-50 border border-orange-100 rounded-xl p-6 mb-8 shadow-sm">
+                            <h3 className="font-bold text-orange-900 text-lg mb-4 flex items-center"><i className="ri-file-list-3-line mr-2"></i> Ficha del Festejo</h3>
+                            <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+                                <div><span className="font-semibold text-orange-800">Plaza:</span> {selectedNews.plaza}</div>
+                                <div><span className="font-semibold text-orange-800">Ganadería:</span> {selectedNews.ganaderia}</div>
+                            </div>
                             {selectedNews.torerosRaw && (
-                                <div className="mt-4 pt-4 border-t border-orange-200">
-                                    <pre className="whitespace-pre-wrap font-sans text-sm text-gray-700">{selectedNews.torerosRaw}</pre>
+                                <div className="bg-white/50 p-4 rounded-lg text-sm text-gray-700 whitespace-pre-wrap font-medium border border-orange-100">
+                                    {selectedNews.torerosRaw}
                                 </div>
                             )}
-                        </div>
+                         </div>
                     )}
 
-                    <div className="prose prose-lg max-w-none text-gray-800">
-                        {renderArticleContent(selectedNews.fullContent || selectedNews.excerpt)}
+                    {/* Contenido */}
+                    <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+                        {selectedNews.excerpt && <p className="font-semibold text-xl text-gray-600 mb-8 not-prose border-l-4 border-red-600 pl-4">{selectedNews.excerpt}</p>}
+                        {renderArticleContent(selectedNews.fullContent || selectedNews.detalles)}
+                    </div>
+                    
+                    {/* Galería extra */}
+                    <div className="mt-12 space-y-6">
+                        {[selectedNews.footerImage1, selectedNews.footerImage2, selectedNews.footerImage3, selectedNews.footerImage4].filter(Boolean).map((img, idx) => (
+                            <img key={idx} src={img} className="w-full rounded-xl shadow-md" />
+                        ))}
                     </div>
                 </div>
             </div>
         )}
+
+        {/* MODAL CRÓNICA (reutilizamos el de noticia para simplificar o uno específico si se prefiere) */}
+        {isChronicleModalOpen && selectedChronicle && (
+            // ... (Esencialmente el mismo diseño que el de noticia, ya que ahora las crónicas usan la misma estructura de datos)
+            <div className="fixed inset-0 bg-white z-[60] overflow-y-auto animate-fade-in">
+                 <div className="sticky top-0 bg-white/95 backdrop-blur border-b px-4 py-3 flex justify-between items-center z-10 shadow-sm">
+                    <button onClick={closeChronicleModal} className="flex items-center text-gray-600 hover:text-black transition">
+                        <i className="ri-arrow-left-line text-2xl mr-2"></i> <span className="font-medium">Volver a Crónicas</span>
+                    </button>
+                    <div className="flex gap-2">
+                        <button onClick={() => toggleSave(selectedChronicle.id)} className="p-2 rounded-full hover:bg-gray-100 transition">
+                             <i className={`ri-bookmark-${savedPosts.has(Number(selectedChronicle.id)) ? 'fill text-yellow-500' : 'line'} text-xl`}></i>
+                        </button>
+                    </div>
+                </div>
+                <div className="max-w-3xl mx-auto px-4 py-8">
+                    <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">La Reseña</span>
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-6 leading-tight">{selectedChronicle.title}</h1>
+                    <img src={selectedChronicle.image} className="w-full rounded-xl shadow-lg mb-8" />
+                    
+                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8">
+                         <div className="grid md:grid-cols-2 gap-4 text-sm mb-4">
+                             <div><span className="font-bold text-gray-900">Plaza:</span> {selectedChronicle.plaza}</div>
+                             <div><span className="font-bold text-gray-900">Ganadería:</span> {selectedChronicle.ganaderia}</div>
+                         </div>
+                         {selectedChronicle.torerosRaw && (
+                             <div className="p-4 bg-white rounded border border-gray-200 text-sm font-medium text-gray-800 whitespace-pre-line">
+                                 {selectedChronicle.torerosRaw}
+                             </div>
+                         )}
+                    </div>
+
+                    <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+                         {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles || selectedChronicle.excerpt)}
+                    </div>
+                </div>
+            </div>
+        )}
+        
+        {/* CONTACTO */}
+        <section id="contacto" className="bg-gray-900 text-white py-16">
+            <div className="max-w-7xl mx-auto px-4 text-center">
+                <h2 className="text-3xl font-bold mb-4">Contacta con Nosotros</h2>
+                <p className="text-gray-400 mb-8 max-w-2xl mx-auto">¿Tienes alguna noticia o sugerencia? Estamos aquí para escucharte.</p>
+                <div className="flex justify-center gap-8 mb-12">
+                    <div className="flex flex-col items-center">
+                        <div className="bg-gray-800 p-4 rounded-full mb-3"><i className="ri-mail-line text-2xl text-red-500"></i></div>
+                        <p className="text-gray-300">tendidodigitall@gmail.com</p>
+                    </div>
+                </div>
+                <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p className="text-gray-500 text-sm">© 2025 TENDIDO DIGITAL. Todos los derechos reservados.</p>
+                    <div className="flex gap-4 mt-4 md:mt-0">
+                        <a href="https://www.instagram.com/portaltendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-instagram-fill text-xl"></i></a>
+                        <a href="https://www.tiktok.com/@portaltendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-tiktok-fill text-xl"></i></a>
+                        <a href="https://x.com/ptendidodigital" target="_blank" className="text-gray-400 hover:text-white transition"><i className="ri-twitter-x-fill text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
   );
 }
