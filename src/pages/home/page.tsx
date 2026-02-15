@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // --- 1. INTERFACES Y TIPOS ---
 interface BaseArticle {
@@ -10,7 +10,7 @@ interface BaseArticle {
   toreros?: string[];
   ganaderia?: string;
   resultado?: string[];
-  torerosRaw?: string[];
+  torerosRaw?: string;
   image: string;
   imageCaption?: string;
   video?: string;
@@ -31,7 +31,7 @@ interface BaseArticle {
   footerImage6?: string;
   footerImage6Caption?: string;
   footerImage7?: string;
-  footerImage7Caption?: string;	  
+  footerImage7Caption?: string;
   footerImage8?: string;
   footerImage8Caption?: string;
   boldContent?: boolean;
@@ -53,6 +53,20 @@ function formatExactDate(dateString: string): string {
     });
   }
   return dateString;
+}
+
+function formatTimeAgo(dateString: string): string {
+  const parsed = new Date(dateString);
+  if (isNaN(parsed.getTime())) return ""; 
+  const now = new Date();
+  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
+  const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
+  if (diff < 60) return "hace unos segundos";
+  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
+  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
+  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
+  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
+  return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
 const renderArticleContent = (text?: string | null) => {
@@ -81,15 +95,16 @@ const renderArticleContent = (text?: string | null) => {
 };
 
 // --- 3. DATOS ESTÁTICOS ---
-
+// Definidos AQUÍ fuera para evitar errores de duplicado
+	
 const featuredNews: NewsItem[] = [
-	{
-    identificación: 1009,
-    título: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
-	imagen: "/images/ciud.jpg",
-    categoría: "Crónicas",
-    fecha: "15 de Febrero de 2026",
-	extracto: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+	{ 
+    id: 1009,
+    title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
+	image: "/images/ciud.jpg",
+    category: "Crónicas",
+    date: "15 de Febrero de 2026",
+	excerpt: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
 	plaza: "Plaza Mayor de Ciudad Rodrigo",
     ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
 	torerosRaw: `Diego Urdiales: una oreja.
@@ -97,20 +112,20 @@ Alejandro Talavante: ovación.
 Pablo Aguado: una oreja
 El Mene: una oreja.
 Moisés Fraile: ovación.`,
-	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo a cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
+	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
 
-Abró plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunas lanzas estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y pasó una oreja. El novillo por su parte fue aplaudido en el arrastre.
+Abrió plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunos lances estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y paseó una oreja. El novillo por su parte fue aplaudido en el arrastre.
 
-**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quiet por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, parecía suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriaran y todo se quedo en una ovacion. De nuevo, el animal fue aplaudido en el arrastre.
+**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quite por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, pareció suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriarán y todo se quedó en una ovación. De nuevo, el animal fue aplaudido en el arrastre.
 
 **Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
 
 **El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
 
-Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quiet por gaoneras muy ajustadas y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, se conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
-    autora: "Nerea F.Elena",
-    autorLogo: "/images/nere.jpg",
-    showAuthorHeader: verdadero
+Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quite por gaoneras muy ajustado y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
    }
 ];
 
@@ -11582,11 +11597,13 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
+const latestNews: NewsItem[] = [...chronicles, ...entrevistas];
+
 // --- 4. COMPONENTE PRINCIPAL ---
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
-  const [articles, setArticles] = useState(latestNews); // Inicializamos con latestNews
+  const [articles, setArticles] = useState(latestNews); 
   
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11603,6 +11620,17 @@ export default function HomePage() {
   const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [sharePost, setSharePost] = useState<any>(null);
+  
+  // Newsletter y contacto
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [isNewsletterSubmitting, setIsNewsletterSubmitting] = useState(false);
+  const [newsletterMessage, setNewsletterMessage] = useState('');
+  const [contactForm, setContactForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const [isContactSubmitting, setIsContactSubmitting] = useState(false);
+  const [contactMessage, setContactMessage] = useState('');
+
+  // Generamos featuredNews a partir de latestNews (primeros 5)
+  const featuredNews = articles.slice(0, 5);
 
   // Carga desde CMS
   useEffect(() => {
@@ -11637,7 +11665,7 @@ export default function HomePage() {
         setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [featuredNews.length]);
 
   // Handlers
   const loadMoreNews = () => {
@@ -11701,13 +11729,79 @@ export default function HomePage() {
       setSharePost(null);
   };
 
+  const shareToWhatsApp = () => {
+      if(!sharePost) return;
+      window.open(`https://wa.me/?text=${encodeURIComponent(sharePost.title + ' - ' + window.location.origin)}`, '_blank');
+      closeShareModal();
+  };
+  
+  const shareToTwitter = () => {
+      if(!sharePost) return;
+      const text = `${sharePost.title} - vía @tendidodigital`;
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)}`;
+      window.open(url, '_blank');
+      closeShareModal();
+  };
+
+  const shareToFacebook = () => {
+      if(!sharePost) return;
+      const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`;
+      window.open(url, '_blank');
+      closeShareModal();
+  };
+
+  const copyLink = async () => {
+      try {
+        if (sharePost) {
+          const encoded = btoa(`news-${sharePost.id}`);
+          const link = `${window.location.origin}/?p=${encoded}&utm_source=ig_web_copy_link`;
+          await navigator.clipboard.writeText(link);
+          setContactMessage("¡Enlace copiado!");
+          closeShareModal();
+          setTimeout(() => setContactMessage(""), 3000);
+        }
+      } catch (error) {
+        console.error("Error al copiar enlace:", error);
+      }
+  };
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+      setIsNewsletterSubmitting(true);
+      setTimeout(() => {
+          setNewsletterMessage("¡Gracias por suscribirte!");
+          setNewsletterEmail("");
+          setIsNewsletterSubmitting(false);
+      }, 1000);
+  };
+
+  const handleContactSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+      setIsContactSubmitting(true);
+      setTimeout(() => {
+          setContactMessage("Mensaje enviado correctamente.");
+          setContactForm({ name: '', email: '', subject: '', message: '' });
+          setIsContactSubmitting(false);
+      }, 1000);
+  };
+
   const getFilteredNews = () => {
       if (newsFilter === 'todas') return articles;
       return articles.filter(news => {
           const cat = news.category?.toLowerCase() || '';
-          return cat.includes(newsFilter.toLowerCase()) || newsFilter.toLowerCase().includes(cat);
+          const filter = newsFilter.toLowerCase();
+          return cat.includes(filter) || filter.includes(cat);
       });
   };
+  
+  const SponsorBanner = () => (
+    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+        <a href="https://tauromania.es" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center space-y-3">
+        <img src="/images/tauromania.png" alt="TauroManía logo" className="w-52 md:w-64 object-contain" />
+        <p className="text-gray-700 font-medium text-sm text-center">Colaboración <span className="font-bold text-yellow-600">- TauroManía</span></p>
+        </a>
+    </div>
+  );
 
   // --- RENDERIZADO ---
   return (
@@ -11778,8 +11872,9 @@ export default function HomePage() {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {getFilteredNews().slice(0, visibleNewsCount).map((news: any) => (
-                                <article key={news.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer" onClick={() => openNewsModal(news)}>
+                            {getFilteredNews().slice(0, visibleNewsCount).map((news: any, index) => (
+                                <React.Fragment key={news.id}>
+                                <article className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer" onClick={() => openNewsModal(news)}>
                                     <div className="h-56 overflow-hidden relative">
                                         <img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" loading="lazy" />
                                         <div className="absolute top-4 left-4">
@@ -11792,6 +11887,8 @@ export default function HomePage() {
                                         <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed">{news.excerpt || news.summary}</p>
                                     </div>
                                 </article>
+                                {(index + 1) % 6 === 0 && <SponsorBanner />}
+                                </React.Fragment>
                             ))}
                         </div>
                         
@@ -11895,7 +11992,14 @@ export default function HomePage() {
 
                     <div className="mt-12 space-y-6">
                         {[selectedNews.footerImage1, selectedNews.footerImage2, selectedNews.footerImage3, selectedNews.footerImage4].filter(Boolean).map((img, idx) => (
-                            <img key={idx} src={img} className="w-full rounded-xl shadow-md" loading="lazy" />
+                            <div key={idx}>
+                                <img src={img} className="w-full rounded-xl shadow-md" loading="lazy" />
+                                {/* Captions opcionales si existen */}
+                                {idx === 0 && selectedNews.footerImage1Caption && <p className="text-xs text-gray-500 mt-1">{selectedNews.footerImage1Caption}</p>}
+                                {idx === 1 && selectedNews.footerImage2Caption && <p className="text-xs text-gray-500 mt-1">{selectedNews.footerImage2Caption}</p>}
+                                {idx === 2 && selectedNews.footerImage3Caption && <p className="text-xs text-gray-500 mt-1">{selectedNews.footerImage3Caption}</p>}
+                                {idx === 3 && selectedNews.footerImage4Caption && <p className="text-xs text-gray-500 mt-1">{selectedNews.footerImage4Caption}</p>}
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -11939,6 +12043,50 @@ export default function HomePage() {
             </div>
         )}
 
+        {/* MODAL COMPARTIR */}
+        {isShareModalOpen && sharePost && (
+          <div className="fixed inset-0 bg-black/50 z-[70] flex items-center justify-center p-4" onClick={closeShareModal}>
+            <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300" onClick={e => e.stopPropagation()}>
+              <div className="text-center mb-6">
+                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <i className="ri-share-line text-white text-2xl"></i>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
+                <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+              </div>
+
+              <div className="space-y-3 mb-6">
+                <button onClick={shareToWhatsApp} className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+                  <i className="ri-whatsapp-line text-xl"></i>
+                  <span className="font-medium">Compartir en WhatsApp</span>
+                </button>
+
+                <button onClick={shareToTwitter} className="w-full flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+                  <i className="ri-twitter-fill text-xl"></i>
+                  <span className="font-medium">Compartir en Twitter</span>
+                </button>
+
+                <button onClick={shareToFacebook} className="w-full flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+                  <i className="ri-facebook-fill text-xl"></i>
+                  <span className="font-medium">Compartir en Facebook</span>
+                </button>
+
+                <button onClick={copyLink} className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+                  <i className="ri-link text-xl"></i>
+                  <span className="font-medium">Copiar enlace</span>
+                </button>
+              </div>
+
+              <button
+                onClick={closeShareModal}
+                className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* FOOTER */}
         <footer className="bg-gray-900 text-white py-12 border-t border-gray-800" id="contacto">
             <div className="max-w-7xl mx-auto px-4 text-center">
@@ -11949,6 +12097,26 @@ export default function HomePage() {
                     <a href="https://instagram.com/portaltendidodigital" target="_blank" className="hover:text-red-500 transition"><i className="ri-instagram-fill text-2xl"></i></a>
                     <a href="https://tiktok.com/@portaltendidodigital" target="_blank" className="hover:text-red-500 transition"><i className="ri-tiktok-fill text-2xl"></i></a>
                 </div>
+                
+                {/* FORMULARIO NEWSLETTER / CONTACTO */}
+                <div className="max-w-md mx-auto bg-gray-800 p-6 rounded-xl mb-8">
+                    <h3 className="text-lg font-bold mb-4">Suscríbete al boletín</h3>
+                    <form onSubmit={handleNewsletterSubmit} className="space-y-3">
+                        <input 
+                            type="email" 
+                            placeholder="Tu email" 
+                            className="w-full p-3 rounded bg-gray-700 text-white border-none focus:ring-2 focus:ring-red-500"
+                            value={newsletterEmail}
+                            onChange={e => setNewsletterEmail(e.target.value)}
+                            required
+                        />
+                        <button type="submit" disabled={isNewsletterSubmitting} className="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded font-bold transition">
+                            {isNewsletterSubmitting ? 'Enviando...' : 'Suscribirse'}
+                        </button>
+                        {newsletterMessage && <p className="text-sm text-green-400">{newsletterMessage}</p>}
+                    </form>
+                </div>
+
                 <p className="text-gray-600 text-sm">© 2026 Tendido Digital. Todos los derechos reservados.</p>
             </div>
         </footer>
