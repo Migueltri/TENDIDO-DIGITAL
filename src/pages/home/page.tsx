@@ -117,7 +117,7 @@ Abró plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le per
 Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quiet por gaoneras muy ajustadas y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, se conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
     autora: "Nerea F.Elena",
     autorLogo: "/images/nere.jpg",
-    showAuthorHeader: verdadero
+    showAuthorHeader: true
    }
 ];
 
