@@ -11597,68 +11597,84 @@ function formatTimeAgo(dateString: string): string {
 }
 
 useEffect(() => {
-  // Intentamos leer el archivo que genera la App
-  fetch('/data/db.json')
-    .then(res => {
-      if(res.ok) return res.json();
-      return null;
-    })
-    .then(data => {
-      if (data && Array.isArray(data.articles)) {
-        // Transformamos los datos de la App al formato de tu Web
-        const newArticles = data.articles
-          .filter((a: any) => a.isPublished)
-          .map((a: any) => {
-            // 1. BUSCAMOS AL AUTOR REAL EN LA LISTA USANDO EL ID
-            const realAuthor = localAuthors.find((au: any) => String(au.id) === String(a.authorId));
-            
-            // 2. Definimos Nombre y Foto dinámicamente
-            let finalName = realAuthor ? realAuthor.name : "Redacción Tendido Digital";
-            let finalPic = "/images/tendidodigitallogosimple.png"; // Logo por defecto si falla todo
+    // Definimos función asíncrona para cargar datos desde el JSON público
+    const loadData = async () => {
+      try {
+        // 1. CARGAMOS EL JSON (Asegúrate de que la ruta es correcta en tu web)
+        // En Next.js o webs estáticas suele ser '/data/db.json' o '/db.json'
+        const response = await fetch('/data/db.json'); 
+        const data = await response.json();
 
-            if (realAuthor) {
-                if (realAuthor.imageUrl) {
-                    finalPic = realAuthor.imageUrl; // Usar foto del autor
-                } else {
-                    // Si el autor no tiene foto, generamos avatar con sus iniciales
-                    finalPic = `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+        // Extraemos autores y noticias del JSON descargado
+        const localAuthors = data.authors || [];
+        const dbArticles = data.articles || [];
+
+        // 2. Procesamos las noticias
+        const processedArticles = dbArticles
+            .filter((a: any) => a.isPublished)
+            .map((a: any) => {
+                // Buscamos autor cruzando IDs
+                const realAuthor = localAuthors.find((au: any) => String(au.id) === String(a.authorId));
+                
+                let finalName = realAuthor ? realAuthor.name : "Tendido Digital";
+                let finalPic = "/images/tendidodigitallogosimple.png";
+                
+                if (realAuthor) {
+                    if (realAuthor.imageUrl) {
+                        finalPic = realAuthor.imageUrl;
+                    } else {
+                        finalPic = `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+                    }
                 }
-            }
 
-            // 3. Devolvemos el objeto noticia con los datos correctos
-            return {
-                id: a.id, // Ojo: a.id o a.aid según tu base de datos
-                title: a.title,
-                image: a.imageUrl, 
-                category: a.category,
-                date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
-                rawDate: a.date, // Importante para calcular "hace 2 horas"
-                excerpt: a.summary,
-                fullContent: a.content,
-                
-                // Datos taurinos
-                plaza: a.bullfightLocation,
-                ganaderia: a.bullfightCattle,
-                // Formateamos los resultados si existen
-                torerosRaw: a.bullfightResults 
-                    ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') 
-                    : '',
-                
-                // --- AQUÍ ESTÁ EL CAMBIO IMPORTANTE ---
-                author: finalName,      // Ya no es fijo, es la variable calculada arriba
-                authorLogo: finalPic,   // Ya no es fijo, es la foto del autor real
-                showAuthorHeader: true,
-                authorId: a.authorId
-            };
-        });
-		  
-        // FUSIONAR: Ponemos las nuevas primero, seguidas de las antiguas (latestNews)
-        setCombinedNews([...newArticles, ...latestNews]);
+                if (finalName.trim().toLowerCase() === 'redacción') {
+                     finalName = "Equipo Tendido"; 
+                }
+
+                return {
+                    id: a.id,
+                    title: a.title,
+                    image: a.imageUrl,
+                    category: a.category,
+                    date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
+                    rawDate: a.date,
+                    excerpt: a.summary,
+                    fullContent: a.content,
+                    plaza: a.bullfightLocation,
+                    ganaderia: a.bullfightCattle,
+                    torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') : '',
+                    
+                    // DATOS VINCULADOS
+                    author: finalName,
+                    authorLogo: finalPic,
+                    showAuthorHeader: true,
+                    authorId: a.authorId
+                };
+            });
+
+        // 3. Guardamos en el estado
+        const allNewsSource = processedArticles.length > 0 ? processedArticles : fallbackNews;
+        setCombinedNews(allNewsSource);
+
+        // Lógica 24h
+        const isRecent = (rawDate?: string) => {
+            if (!rawDate) return false;
+            const diffHours = (new Date().getTime() - new Date(rawDate).getTime()) / (36e5);
+            return diffHours <= 48;
+        };
+
+        let breakingNews = allNewsSource.filter((n: any) => isRecent(n.rawDate));
+        if (breakingNews.length === 0) breakingNews = allNewsSource.slice(0, 3);
+        setNews24h(breakingNews);
+
+      } catch (error) {
+        console.error("Error cargando noticias:", error);
       }
-    })
-    .catch(err => console.log("Usando noticias estáticas"));
-}, []);
+    };
 
+    loadData();
+  }, []);
+	
 useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
   return () => clearInterval(interval);
