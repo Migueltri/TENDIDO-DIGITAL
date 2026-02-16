@@ -1,43 +1,6 @@
 {
   "articles": [
     {
-      "id": "101",
-      "title": "Sábado en el Carnaval del Toro de Ciudad Rodrigo",
-      "summary": "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento.",
-      "content": "<p>Texto completo de la crónica del carnaval...</p>",
-      "imageUrl": "https://picsum.photos/800/600?random=10",
-      "contentImages": [],
-      "category": "Crónicas",
-      "authorId": "1",
-      "date": "2026-02-16T09:48:08.399Z",
-      "isPublished": true,
-      "bullfightLocation": "Plaza Mayor de Ciudad Rodrigo",
-      "bullfightCattle": "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
-      "bullfightSummary": "En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable.",
-      "bullfightResults": [
-        {
-          "bullfighter": "Diego Urdiales",
-          "result": "una oreja"
-        },
-        {
-          "bullfighter": "Alejandro Talavante",
-          "result": "ovación"
-        },
-        {
-          "bullfighter": "Pablo Aguado",
-          "result": "una oreja"
-        },
-        {
-          "bullfighter": "El Mene",
-          "result": "una oreja"
-        },
-        {
-          "bullfighter": "Moisés Fraile",
-          "result": "ovación"
-        }
-      ]
-    },
-    {
       "id": "102",
       "title": "La Asociación Andaluza de Escuelas Taurinas celebra su Asamblea",
       "summary": "Pedro Romero celebra en Camas su Asamblea General con una ambiciosa mirada al futuro.",
@@ -108,5 +71,5 @@
       "systemRole": "EDITOR"
     }
   ],
-  "lastUpdated": "2026-02-16T11:18:40.738Z"
+  "lastUpdated": "2026-02-16T11:20:46.531Z"
 }
