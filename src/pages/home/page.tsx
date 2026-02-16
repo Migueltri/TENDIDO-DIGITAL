@@ -11587,109 +11587,95 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-// --- CARGA DE DATOS CORREGIDA PARA LA WEB ---
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        // 1. Hacemos la petición al archivo JSON público
-        // Asegúrate de que el archivo db.json está en la carpeta 'public/data/' de tu proyecto web
-        const response = await fetch('/data/db.json');
-        
-        if (!response.ok) {
-            throw new Error("No se pudo cargar el archivo db.json");
-        }
-
-        const data = await response.json();
-
-        // 2. Obtenemos las listas crudas del JSON
-        const fetchedAuthors = data.authors || [];
-        const fetchedArticles = data.articles || [];
-
-        // 3. Procesamos las noticias cruzando con los autores descargados
-        const processedArticles = fetchedArticles
-            .filter((a: any) => a.isPublished) // Solo las publicadas
-            .map((a: any) => {
-                // Buscamos el autor en la lista descargada, NO usando getAuthors()
-                const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
-                
-                // Valores por defecto
-                let finalName = "Tendido Digital";
-                let finalPic = "/images/tendidodigitallogosimple.png";
-                
-                // Si encontramos al autor, usamos sus datos
-                if (realAuthor) {
-                    finalName = realAuthor.name;
-                    
-                    // Ajuste específico si se llama "Redacción"
-                    if (finalName.trim().toLowerCase() === 'redacción') {
-                         finalName = "Equipo Tendido"; 
-                    }
-
-                    // Foto del autor o avatar generado
-                    if (realAuthor.imageUrl) {
-                        finalPic = realAuthor.imageUrl;
-                    } else {
-                        finalPic = `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
-                    }
-                }
-
-                // Devolvemos el objeto con el formato que espera tu web
-                return {
-                    id: a.id,
-                    title: a.title,
-                    image: a.imageUrl,
-                    category: a.category,
-                    date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-                    rawDate: a.date, // Guardamos fecha cruda para cálculos
-                    excerpt: a.summary,
-                    fullContent: a.content,
-                    plaza: a.bullfightLocation,
-                    ganaderia: a.bullfightCattle,
-                    // Formateamos los resultados de las crónicas
-                    torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') : '',
-                    
-                    // Datos del autor procesados
-                    author: finalName,
-                    authorLogo: finalPic,
-                    showAuthorHeader: true,
-                    authorId: a.authorId
-                };
-            });
-
-        // 4. Actualizamos el estado con las noticias procesadas
-        // Si no hay noticias en el JSON, usamos 'latestNews' (las estáticas que tienes en el archivo)
-        const finalNewsList = processedArticles.length > 0 ? processedArticles : latestNews;
-        
-        // Ordenamos por fecha (opcional, pero recomendable)
-        finalNewsList.sort((a: any, b: any) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
-
-        setCombinedNews(finalNewsList);
-
-        // 5. Calculamos noticias de última hora (24h)
-        const isRecent = (rawDate?: string) => {
-            if (!rawDate) return false;
-            const diffHours = (new Date().getTime() - new Date(rawDate).getTime()) / (36e5);
-            return diffHours <= 48; // 48 horas
-        };
-
-        let breakingNews = finalNewsList.filter((n: any) => isRecent(n.rawDate));
-        
-        // Si no hay noticias de 24h, mostramos las 3 primeras como fallback
-        if (breakingNews.length === 0) {
-            breakingNews = finalNewsList.slice(0, 3);
-        }
-        
-        setNews24h(breakingNews);
-
-      } catch (error) {
-        console.error("Error cargando noticias desde JSON:", error);
-        // En caso de error, carga las noticias estáticas que ya tienes en el archivo
-        setCombinedNews(latestNews); 
+useEffect(() => {
+  const loadData = async () => {
+    try {
+      const response = await fetch('/data/db.json');
+      
+      if (!response.ok) {
+        throw new Error(`Error en la petición: HTTP ${response.status}`);
       }
-    };
 
-    loadData();
-  }, []);
+      const data = await response.json();
+      const fetchedAuthors = data.authors || [];
+      const fetchedArticles = data.articles || [];
+
+      // 1. Procesar noticias nuevas de la App
+      const processedArticles = fetchedArticles
+        .filter(a => a.isPublished)
+        .map(a => {
+          const realAuthor = fetchedAuthors.find(au => String(au.id) === String(a.authorId));
+          let finalName = "Tendido Digital";
+          let finalPic = "/images/tendidodigitallogosimple.png";
+          
+          if (realAuthor) {
+            finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
+            finalPic = realAuthor.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+          }
+
+          return {
+            id: a.id,
+            title: a.title,
+            image: a.imageUrl,
+            category: a.category,
+            date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
+            rawDate: a.date, 
+            excerpt: a.summary,
+            fullContent: a.content,
+            plaza: a.bullfightLocation,
+            ganaderia: a.bullfightCattle,
+            torerosRaw: a.bullfightResults ? a.bullfightResults.map(r => `${r.bullfighter}: ${r.result}`).join('\n') : '',
+            author: finalName,
+            authorLogo: finalPic,
+            showAuthorHeader: true,
+            authorId: a.authorId
+          };
+        });
+
+      // 2. FUSIÓN Y DESDUPLICACIÓN: Unimos las del JSON con las estáticas (latestNews)
+      const combinedRawList = [...processedArticles, ...latestNews];
+      
+      const uniqueNewsMap = new Map();
+      combinedRawList.forEach(news => {
+        // Si el ID ya existe, el Map conserva la primera aparición (dando prioridad a processedArticles si hay conflicto)
+        if (!uniqueNewsMap.has(news.id)) {
+          uniqueNewsMap.set(news.id, news);
+        }
+      });
+      
+      const finalNewsList = Array.from(uniqueNewsMap.values());
+
+      // 3. Ordenar por fecha de forma descendente (más recientes primero)
+      finalNewsList.sort((a, b) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
+
+      setCombinedNews(finalNewsList);
+
+      // 4. Calcular noticias de las últimas 48 horas (Optimizado)
+      const now = new Date().getTime();
+      let breakingNews = finalNewsList.filter(n => {
+        if (!n.rawDate) return false;
+        return (now - new Date(n.rawDate).getTime()) / 36e5 <= 48;
+      });
+      
+      // Fallback si no hay noticias recientes
+      if (breakingNews.length === 0 && finalNewsList.length > 0) {
+        breakingNews = finalNewsList.slice(0, 3);
+      }
+      
+      setNews24h(breakingNews);
+
+    } catch (error) {
+      console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
+      
+      // En caso de error, el sistema no se cae, usa el fallback correctamente
+      const fallbackList = [...latestNews].sort((a, b) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
+      setCombinedNews(fallbackList);
+      setNews24h(fallbackList.slice(0, 3)); 
+    }
+  };
+
+  loadData();
+}, []); // Asumiendo que 'latestNews' está definido fuera del componente o es estático.
 	
 useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
