@@ -41,31 +41,27 @@
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1009,
-    title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
-	image: "/images/ciud.jpg",
-    category: "Crónicas",
-    date: "15 de Febrero de 2026",
-	excerpt: "Cuatro orejas y varios novillos aplaudidos en el arrastre en una tarde marcada por el viento, la huella taurina y el debut con entrega de Moisés Fraile.",
+    title: `El escritor Rubén Amón ensalza la dimensión taurina de El Puerto en la presentación de “Morante, punto y aparte”`,
+	image: "/images/WhatsApp Image 2026-02-15 at 19.13.43.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "El teniente de alcalde de Gran Ciudad, Javier Bello, ha acompañado  a la Academia de Bellas Artes Santa Cecilia en un acto que refuerza la agenda cultural de la ciudad y pone en valor la figura de Morante",
 	plaza: "Plaza Mayor de Ciudad Rodrigo",
-    ganaderia: "Novillos de las ganaderías de Talavante y un eral de El Pilar.",
-	torerosRaw: `Diego Urdiales: una oreja.
-Alejandro Talavante: ovación.
-Pablo Aguado: una oreja
-El Mene: una oreja.
-Moisés Fraile: ovación.`,
-	fullContent: `En este sábado de carnaval, Ciudad Rodrigo vivió una tarde con una novillada de Talavante sensacional, ofreciendo cada uno de ellos un juego más que notable, bravos, con empuje en el caballo y una condición que creció a medida que avanzaba el festejo. El broche final lo puso un eral de El Pilar para el debutante Moisés Fraile.
+	fullContent: `El Auditorio Municipal Monasterio San Miguel, de El Puerto de Santa Maria, ha acogido la presentación de “Morante, punto y aparte”, la última obra del periodista y escritor Rubén Amón, en un acto organizado por la Academia de Bellas Artes Santa Cecilia que contó con la presencia del teniente de alcalde de Gran Ciudad, Javier Bello.
 
-Abrió plaza **Diego Urdiales**, toreando un novillo fijo en el capote que le permitió dibujar algunos lances estimables a pesar del aire. Empujó con fuerza en el tercio de varas y confirmo su nobleza ante el vendaval, pues el viento dejaba al descubierto al matador constantemente, pero el astado no hizo por él. No fue fácil el trasteo, el novillo apenas dejaba que Urdiales se colocara, yendo siempre detrás de la muleta sin apenas frenar. El riojano bridó su novillo al fallecido la noche anterior en la capea nocturna, añadiendo emoción a una faena de mérito y exposición. Mató de manera efectiva y paseó una oreja. El novillo por su parte fue aplaudido en el arrastre.
+El autor compartió mesa con el presidente de la Academia, Luis Garrido, y el periodista Paco Reyero, en una cita que congregó a numerosos aficionados y amantes de la cultura. Javier Bello felicitó a la entidad por la organización de una actividad que “contribuye a enriquecer la programación cultural de la ciudad y a proyectar la relevancia de El Puerto en el ámbito taurino”. Asimismo, agradeció a Rubén Amón su presencia dentro de la gira de presentación del libro, reforzando así su vínculo con la Academia, a la que ya visitó el pasado verano con motivo de su libro “Tenemos que hablar”.
 
-**Alejandro Talavante** sorteó un novillo con mayor transmisión que el primero, dejando ver su buen aire con el capote y con un quite por chicuelinas con ajuste y compás. Inició la faena de muleta a pies quietos, ligando tandas con muletazos encadenados y templados, aprovechando que el viento parecía haber disminuido un poco para mostrarse más versátil y asentado. La estocada, un poco contraria, pareció suficiente, pero el novillo se levantó y el espada extremeño se vio obligado al descabello. La demora hizo que los tendidos se enfriarán y todo se quedó en una ovación. De nuevo, el animal fue aplaudido en el arrastre.
+En su intervención, el periodista definió a Morante de la Puebla como probablemente el mejor torero de todos los tiempos y, sin duda, el mejor que él ha visto, destacando que su tauromaquia trasciende lo estrictamente técnico para convertirse en una experiencia estética y emocional única. “Cuando termina de torear, el público queda exhausto por el punto de referencia que crea; su expresión artística es descomunal”, afirmó.
 
-**Pablo Aguado** dejó la faena de mayor sabor y torería. Brindó al cirujano de la plaza, Enrique Crespo, y arrancó con una tanda sensacional que marcó el tono de lo que vendría después: toreo con la yema de los dedos, de forma muy natural, despacio y con una gran pureza estética, creando una imagen de las que llegan y se quedan en los aficionados. Un pinchazo precedió a una estocada ligeramente tendida. En el trance se cortó en un dedo y tuvo que pasar por enfermería, donde recibió dos puntos de sutura. Cortó una oreja de ley.
+Amón evocó también uno de los momentos que vivió el pasado año en la plaza portuense, cuando, acompañado por su hijo, presenció una faena de Morante mientras sonaba el pasodoble “Concha flamenca”, hasta el punto de preguntarle a su hijo por qué no se quedaban “a vivir para siempre en ese instante”. Para Amón, la plaza de toros de El Puerto “forma parte de las grandes escalas de una temporada y de una vida”, asegurando que, junto a Sevilla y Madrid, es el lugar donde ha sido más feliz como aficionado.
 
-**El Mene** se encontró con el novillo más completo del encierro, brindando a Talavante y planteando una faena de ligazón y entrega, exprimiendo la calidad del astado, dejando varios muletazos hilvanados con sentido y mando. Tras un pinchazo, dejó la mejor estocada de la tarde, recibiendo una oreja. El novillo fue aplaudido en el arrastre.
+Editado por Espasa, el libro combina crónica periodística y ensayo para retratar a Morante como mucho más que un torero: “un acontecimiento, una categoría en sí mismo, una religión civil y un icono cultural de primer orden”. Amón subrayó que la conversión del diestro en fenómeno de masas e icono transversal ha coincidido con la que el escritor considera su temporada más arrebatadora, la de 2025.
 
-Cerró el debutante **Moisés Fraile** ante un eral de El Pilar, de su propia casa. Saludó con un quite por gaoneras muy ajustado y comenzó su faena a pies quietos, con decisión, aunque sufrió una fuerte voltereta. No obstante, eso no hizo que mermara su entrega. Su labor, llena de ganas y personalidad, conectó con el público, dejando pases muy buenos, especialmente con la mano izquierda. La espada emborronó lo que podía haber sido un gran premio: estocada enhebrada, varios pinchazos y hasta tres descabellos.`,
-    author: "Nerea F.Elena",
-    authorLogo: "/images/nere.jpg",
+Durante el coloquio, el periodista defendió que Morante “se echa la feria a la espalda en el momento más delicado” y que para el diestro el toreo es también “un camino de salvación”, capaz de abrir nuevas sendas en la tauromaquia contemporánea.
+
+El Puerto avanza porque con actos como este continúa consolidando una programación cultural diversa y de calidad, estrechamente vinculada a su identidad y a tradiciones que forman parte de su historia y proyección cultural.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
