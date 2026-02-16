@@ -12049,32 +12049,6 @@ const CrónicaLayout = ({ news }: { news: any }) => (
     </div>
   </article>
 );
-
-	useEffect(() => {
-  fetch('/data/db.json')
-    .then(res => res.ok ? res.json() : null)
-    .then(data => {
-      if (data && Array.isArray(data.articles)) {
-        const newArticles = data.articles.filter((a: any) => a.isPublished).map((a: any) => ({
-             id: a.id,
-             title: a.title,
-             image: a.imageUrl,
-             category: a.category,
-             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
-             excerpt: a.summary,
-             fullContent: a.content,
-             plaza: a.bullfightLocation,
-             ganaderia: a.bullfightCattle,
-             torerosRaw: a.bullfightResults ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n') : '',
-             author: "Manolo Herrera",
-             authorLogo: "/images/manoloherrera.jpg",
-             showAuthorHeader: true
-          }));
-        setCombinedNews([...newArticles, ...latestNews]);
-      }
-    })
-    .catch(err => console.log("Usando noticias estáticas"));
-}, []);
 	
 // Función para cargar más noticias
 const loadMoreNews = () => {
