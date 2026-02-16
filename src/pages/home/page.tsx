@@ -363,11 +363,13 @@ switch (activeTab) {
 }
 };
   
-// Obtener noticias filtradas por categoría
 const getFilteredNews = () => {
-  if (newsFilter === 'todas') return latestNews;
+  // AQUÍ ESTÁ EL CAMBIO: Usamos 'combinedNews' en vez de 'latestNews'
+  const dataToUse = combinedNews; 
 
-  return latestNews.filter(news => {
+  if (newsFilter === 'todas') return dataToUse;
+
+  return dataToUse.filter(news => {
     const cat = news.category?.toLowerCase() || '';
     switch (newsFilter) {
       case 'cronicas':
