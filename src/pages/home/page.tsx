@@ -82,21 +82,6 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-const [currentSlide, setCurrentSlide] = useState(0);
-const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
-const [isMenuOpen, setIsMenuOpen] = useState(false);
-const [scrollY, setScrollY] = useState(0);
-const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
-const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
-const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
-const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
-const [visibleNewsCount, setVisibleNewsCount] = useState(15);
-const [isLoadingMore, setIsLoadingMore] = useState(false);
-const [activeTab, setActiveTab] = useState('inicio');
-const [newsFilter, setNewsFilter] = useState('todas');
-// Estado para actualizar automáticamente el tiempo relativo
-const [currentTime, setCurrentTime] = useState(new Date());
-
 useEffect(() => {
   // Intentamos leer el archivo que genera la App
   fetch('/data/db.json')
@@ -11994,6 +11979,20 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
 ];
 
 export default function Home() {
+const [currentSlide, setCurrentSlide] = useState(0);
+const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+const [scrollY, setScrollY] = useState(0);
+const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
+const [selectedChronicle, setSelectedChronicle] = useState<Chronicle | null>(null);
+const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
+const [isChronicleModalOpen, setIsChronicleModalOpen] = useState(false);
+const [visibleNewsCount, setVisibleNewsCount] = useState(15);
+const [isLoadingMore, setIsLoadingMore] = useState(false);
+const [activeTab, setActiveTab] = useState('inicio');
+const [newsFilter, setNewsFilter] = useState('todas');
+// Estado para actualizar automáticamente el tiempo relativo
+const [currentTime, setCurrentTime] = useState(new Date());
 
 	useEffect(() => {
   fetch('/data/db.json')
