@@ -11596,30 +11596,44 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-useEffect(() => {
-    // Definimos función asíncrona para cargar datos desde el JSON público
+ useEffect(() => {
     const loadData = async () => {
       try {
-        // 1. CARGAMOS EL JSON (Asegúrate de que la ruta es correcta en tu web)
-        // En Next.js o webs estáticas suele ser '/data/db.json' o '/db.json'
-        const response = await fetch('/data/db.json'); 
+        // 1. Hacemos la petición al archivo JSON público
+        // Asegúrate de que el archivo db.json está en la carpeta 'public/data/' de tu proyecto web
+        const response = await fetch('/data/db.json');
+        
+        if (!response.ok) {
+            throw new Error("No se pudo cargar el archivo db.json");
+        }
+
         const data = await response.json();
 
-        // Extraemos autores y noticias del JSON descargado
-        const localAuthors = data.authors || [];
-        const dbArticles = data.articles || [];
+        // 2. Obtenemos las listas crudas del JSON
+        const fetchedAuthors = data.authors || [];
+        const fetchedArticles = data.articles || [];
 
-        // 2. Procesamos las noticias
-        const processedArticles = dbArticles
-            .filter((a: any) => a.isPublished)
+        // 3. Procesamos las noticias cruzando con los autores descargados
+        const processedArticles = fetchedArticles
+            .filter((a: any) => a.isPublished) // Solo las publicadas
             .map((a: any) => {
-                // Buscamos autor cruzando IDs
-                const realAuthor = localAuthors.find((au: any) => String(au.id) === String(a.authorId));
+                // Buscamos el autor en la lista descargada, NO usando getAuthors()
+                const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
                 
-                let finalName = realAuthor ? realAuthor.name : "Tendido Digital";
+                // Valores por defecto
+                let finalName = "Tendido Digital";
                 let finalPic = "/images/tendidodigitallogosimple.png";
                 
+                // Si encontramos al autor, usamos sus datos
                 if (realAuthor) {
+                    finalName = realAuthor.name;
+                    
+                    // Ajuste específico si se llama "Redacción"
+                    if (finalName.trim().toLowerCase() === 'redacción') {
+                         finalName = "Equipo Tendido"; 
+                    }
+
+                    // Foto del autor o avatar generado
                     if (realAuthor.imageUrl) {
                         finalPic = realAuthor.imageUrl;
                     } else {
@@ -11627,24 +11641,22 @@ useEffect(() => {
                     }
                 }
 
-                if (finalName.trim().toLowerCase() === 'redacción') {
-                     finalName = "Equipo Tendido"; 
-                }
-
+                // Devolvemos el objeto con el formato que espera tu web
                 return {
                     id: a.id,
                     title: a.title,
                     image: a.imageUrl,
                     category: a.category,
                     date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-                    rawDate: a.date,
+                    rawDate: a.date, // Guardamos fecha cruda para cálculos
                     excerpt: a.summary,
                     fullContent: a.content,
                     plaza: a.bullfightLocation,
                     ganaderia: a.bullfightCattle,
+                    // Formateamos los resultados de las crónicas
                     torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') : '',
                     
-                    // DATOS VINCULADOS
+                    // Datos del autor procesados
                     author: finalName,
                     authorLogo: finalPic,
                     showAuthorHeader: true,
@@ -11652,23 +11664,35 @@ useEffect(() => {
                 };
             });
 
-        // 3. Guardamos en el estado
-        const allNewsSource = processedArticles.length > 0 ? processedArticles : fallbackNews;
-        setCombinedNews(allNewsSource);
+        // 4. Actualizamos el estado con las noticias procesadas
+        // Si no hay noticias en el JSON, usamos 'latestNews' (las estáticas que tienes en el archivo)
+        const finalNewsList = processedArticles.length > 0 ? processedArticles : latestNews;
+        
+        // Ordenamos por fecha (opcional, pero recomendable)
+        finalNewsList.sort((a: any, b: any) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
 
-        // Lógica 24h
+        setCombinedNews(finalNewsList);
+
+        // 5. Calculamos noticias de última hora (24h)
         const isRecent = (rawDate?: string) => {
             if (!rawDate) return false;
             const diffHours = (new Date().getTime() - new Date(rawDate).getTime()) / (36e5);
-            return diffHours <= 48;
+            return diffHours <= 48; // 48 horas
         };
 
-        let breakingNews = allNewsSource.filter((n: any) => isRecent(n.rawDate));
-        if (breakingNews.length === 0) breakingNews = allNewsSource.slice(0, 3);
+        let breakingNews = finalNewsList.filter((n: any) => isRecent(n.rawDate));
+        
+        // Si no hay noticias de 24h, mostramos las 3 primeras como fallback
+        if (breakingNews.length === 0) {
+            breakingNews = finalNewsList.slice(0, 3);
+        }
+        
         setNews24h(breakingNews);
 
       } catch (error) {
-        console.error("Error cargando noticias:", error);
+        console.error("Error cargando noticias desde JSON:", error);
+        // En caso de error, carga las noticias estáticas que ya tienes en el archivo
+        setCombinedNews(latestNews); 
       }
     };
 
