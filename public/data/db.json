@@ -1,75 +1,62 @@
 {
-  "articles": [
-    {
-      "id": "102",
-      "title": "La Asociación Andaluza de Escuelas Taurinas celebra su Asamblea",
-      "summary": "Pedro Romero celebra en Camas su Asamblea General con una ambiciosa mirada al futuro.",
-      "content": "<p>Texto completo de la noticia...</p>",
-      "imageUrl": "https://picsum.photos/800/600?random=11",
-      "contentImages": [],
-      "category": "Actualidad",
-      "authorId": "2",
-      "date": "2026-02-15T09:48:08.399Z",
-      "isPublished": false
-    }
-  ],
+  "articles": [],
   "authors": [
     {
       "id": "1",
       "name": "Eduardo Elvira",
       "role": "Director",
-      "imageUrl": "https://ui-avatars.com/api/?name=Eduardo+Elvira&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Eduardo+Elvira&background=0D8ABC&color=fff&size=128",
       "systemRole": "ADMIN"
     },
     {
       "id": "2",
       "name": "Nerea F.Elena",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Nerea+F+Elena&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Nerea+F+Elena&background=E63946&color=fff&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "3",
       "name": "Manolo Herrera",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Manolo+Herrera&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Manolo+Herrera&background=random&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "4",
       "name": "Rubén Sánchez",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Ruben+Sanchez&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Ruben+Sanchez&background=random&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "5",
       "name": "Iris Rodríguez",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Iris+Rodriguez&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Iris+Rodriguez&background=random&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "6",
       "name": "Antonio Tortosa",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Antonio+Tortosa&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Antonio+Tortosa&background=random&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "7",
       "name": "Inés Sáez",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Ines+Saez&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Ines+Saez&background=random&size=128",
       "systemRole": "EDITOR"
     },
     {
       "id": "8",
       "name": "Enrique Salazar",
       "role": "Redacción",
-      "imageUrl": "https://ui-avatars.com/api/?name=Enrique+Salazar&background=random",
+      "imageUrl": "https://ui-avatars.com/api/?name=Enrique+Salazar&background=random&size=128",
       "systemRole": "EDITOR"
     }
   ],
-  "lastUpdated": "2026-02-16T11:20:54.337Z"
+  "lastUpdated": "2026-02-16T11:22:32.418Z"
 }
