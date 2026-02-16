@@ -11587,96 +11587,114 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
+// --- CARGA DE DATOS CORREGIDA PARA LA WEB ---
   useEffect(() => {
-    // 1. Cargar favoritos guardados (Esto no cambia)
-    const saved = localStorage.getItem('td_user_favorites');
-    if (saved) {
-        try {
-            setSavedIds(new Set(JSON.parse(saved)));
-        } catch (e) { console.error("Error cargando favoritos", e); }
-    }
-
-    // 2. CARGAR NOTICIAS (AQUÍ ESTÁ LA CLAVE)
     const loadData = async () => {
       try {
-        console.log("🔄 Conectando con GitHub...");
+        // 1. Hacemos la petición al archivo JSON público
+        // Asegúrate de que el archivo db.json está en la carpeta 'public/data/' de tu proyecto web
+        const response = await fetch('/data/db.json');
         
-        // <<<--- ESTA LÍNEA ES LA QUE TIENES QUE REVISAR --->>>
-        // El truco es ?t=${Date.now()} -> Eso obliga a leer el archivo nuevo SIEMPRE.
-        const response = await fetch(`/data/db.json?t=${Date.now()}`, {
-            cache: 'no-store',
-            headers: { 
-                'Cache-Control': 'no-cache, no-store, must-revalidate',
-                'Pragma': 'no-cache'
-            }
-        });
-        
-        if (response.ok) {
-            const data = await response.json();
-            const articles = data.articles || [];
-            const authors = data.authors || [];
-            
-            // Procesar datos (Unir noticias con autores)
-            const processed = articles
-                .filter((a: any) => a.isPublished) // Solo mostramos las que están publicadas
-                .map((a: any) => {
-                    const realAuthor = authors.find((au: any) => String(au.id) === String(a.authorId));
-                    let finalName = realAuthor ? realAuthor.name : "Tendido Digital";
-                    let finalPic = "/images/tendidodigitallogosimple.png";
-                    
-                    if (realAuthor) {
-                        finalPic = realAuthor.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random`;
-                    }
-                    if (finalName.trim().toLowerCase() === 'redacción') finalName = "Equipo Tendido"; 
-
-                    return {
-                        ...a,
-                        date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-                        rawDate: a.date, 
-                        author: finalName,
-                        authorLogo: finalPic,
-                        fullContent: a.content,
-                        excerpt: a.summary,
-                        image: a.imageUrl
-                    };
-                });
-
-            // Ordenar: Más recientes primero
-            processed.sort((a: any, b: any) => {
-                 const dateA = a.rawDate ? new Date(a.rawDate).getTime() : 0;
-                 const dateB = b.rawDate ? new Date(b.rawDate).getTime() : 0;
-                 return dateB - dateA;
-            });
-
-            setCombinedNews(processed.length > 0 ? processed : fallbackNews);
-
-            // Filtrar última hora (48h) para el widget de arriba
-            const now = new Date().getTime();
-            const breaking = processed.filter((n: any) => {
-                 if (!n.rawDate) return false;
-                 const diff = (now - new Date(n.rawDate).getTime()) / (1000 * 60 * 60);
-                 return diff <= 48;
-            });
-            setNews24h(breaking.length > 0 ? breaking : processed.slice(0, 3));
-            console.log("✅ Noticias actualizadas correctamente desde GitHub.");
-
-        } else {
-            console.error("❌ Error al descargar db.json. Código:", response.status);
-            setCombinedNews(fallbackNews);
+        if (!response.ok) {
+            throw new Error("No se pudo cargar el archivo db.json");
         }
+
+        const data = await response.json();
+
+        // 2. Obtenemos las listas crudas del JSON
+        const fetchedAuthors = data.authors || [];
+        const fetchedArticles = data.articles || [];
+
+        // 3. Procesamos las noticias cruzando con los autores descargados
+        const processedArticles = fetchedArticles
+            .filter((a: any) => a.isPublished) // Solo las publicadas
+            .map((a: any) => {
+                // Buscamos el autor en la lista descargada, NO usando getAuthors()
+                const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
+                
+                // Valores por defecto
+                let finalName = "Tendido Digital";
+                let finalPic = "/images/tendidodigitallogosimple.png";
+                
+                // Si encontramos al autor, usamos sus datos
+                if (realAuthor) {
+                    finalName = realAuthor.name;
+                    
+                    // Ajuste específico si se llama "Redacción"
+                    if (finalName.trim().toLowerCase() === 'redacción') {
+                         finalName = "Equipo Tendido"; 
+                    }
+
+                    // Foto del autor o avatar generado
+                    if (realAuthor.imageUrl) {
+                        finalPic = realAuthor.imageUrl;
+                    } else {
+                        finalPic = `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+                    }
+                }
+
+                // Devolvemos el objeto con el formato que espera tu web
+                return {
+                    id: a.id,
+                    title: a.title,
+                    image: a.imageUrl,
+                    category: a.category,
+                    date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
+                    rawDate: a.date, // Guardamos fecha cruda para cálculos
+                    excerpt: a.summary,
+                    fullContent: a.content,
+                    plaza: a.bullfightLocation,
+                    ganaderia: a.bullfightCattle,
+                    // Formateamos los resultados de las crónicas
+                    torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') : '',
+                    
+                    // Datos del autor procesados
+                    author: finalName,
+                    authorLogo: finalPic,
+                    showAuthorHeader: true,
+                    authorId: a.authorId
+                };
+            });
+
+        // 4. Actualizamos el estado con las noticias procesadas
+        // Si no hay noticias en el JSON, usamos 'latestNews' (las estáticas que tienes en el archivo)
+        const finalNewsList = processedArticles.length > 0 ? processedArticles : latestNews;
+        
+        // Ordenamos por fecha (opcional, pero recomendable)
+        finalNewsList.sort((a: any, b: any) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
+
+        setCombinedNews(finalNewsList);
+
+        // 5. Calculamos noticias de última hora (24h)
+        const isRecent = (rawDate?: string) => {
+            if (!rawDate) return false;
+            const diffHours = (new Date().getTime() - new Date(rawDate).getTime()) / (36e5);
+            return diffHours <= 48; // 48 horas
+        };
+
+        let breakingNews = finalNewsList.filter((n: any) => isRecent(n.rawDate));
+        
+        // Si no hay noticias de 24h, mostramos las 3 primeras como fallback
+        if (breakingNews.length === 0) {
+            breakingNews = finalNewsList.slice(0, 3);
+        }
+        
+        setNews24h(breakingNews);
+
       } catch (error) {
-        console.error("❌ Error de red al intentar conectar:", error);
-        setCombinedNews(fallbackNews);
+        console.error("Error cargando noticias desde JSON:", error);
+        // En caso de error, carga las noticias estáticas que ya tienes en el archivo
+        setCombinedNews(latestNews); 
       }
     };
 
-    loadData(); // Ejecutamos la carga
-
-    // Scroll listener (Esto es solo visual)
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    loadData();
   }, []);
+	
+useEffect(() => {
+  const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
+  return () => clearInterval(interval);
+}, []);
 
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
