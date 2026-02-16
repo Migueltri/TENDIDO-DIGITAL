@@ -12011,7 +12011,8 @@ const CrónicaLayout = ({ news }: { news: any }) => (
              plaza: a.bullfightLocation,
              ganaderia: a.bullfightCattle,
              torerosRaw: a.bullfightResults ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n') : '',
-             author: "Manolo herrera",
+             author: "Manolo Herrera",
+             authorLogo: "/images/manoloherrera.jpg",
              showAuthorHeader: true
           }));
         setCombinedNews([...newArticles, ...latestNews]);
