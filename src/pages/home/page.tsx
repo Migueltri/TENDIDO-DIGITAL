@@ -11590,7 +11590,8 @@ function formatTimeAgo(dateString: string): string {
 useEffect(() => {
   const loadData = async () => {
     try {
-      const response = await fetch('/data/db.json');
+      // Añadimos un timestamp para romper la caché
+		const response = await fetch(`/data/db.json?v=${new Date().getTime()}`);
       
       if (!response.ok) {
         throw new Error(`Error en la petición: HTTP ${response.status}`);
