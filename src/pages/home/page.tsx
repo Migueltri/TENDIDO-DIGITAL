@@ -11539,8 +11539,6 @@ type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
 export default function Home() {
-const localAuthors = getAuthors(); // O data.authors si lo sacas del json directo
-const dbArticles = getArticles();  // O data.articles
 const [currentSlide, setCurrentSlide] = useState(0);
 const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11573,13 +11571,6 @@ function formatExactDate(dateString: string): string {
   return dateString;
 }
 
-fetch('/data/db.json')
-  .then(response => response.json())
-  .then(data => {
-     const noticias = data.articles;
-     // Aquí tu código que pinta las noticias en pantalla
-  });
-
 function formatTimeAgo(dateString: string): string {
   const parsed = new Date(dateString);
   if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
@@ -11596,7 +11587,8 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
- useEffect(() => {
+// --- CARGA DE DATOS CORREGIDA PARA LA WEB ---
+  useEffect(() => {
     const loadData = async () => {
       try {
         // 1. Hacemos la petición al archivo JSON público
