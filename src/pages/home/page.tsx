@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+  import React, { useState, useEffect } from "react";
   interface BaseArticle {
   id: number;
   title: string;
@@ -84,6 +84,7 @@ function formatTimeAgo(dateString: string): string {
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
+const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -96,6 +97,43 @@ const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
 // Estado para actualizar automáticamente el tiempo relativo
 const [currentTime, setCurrentTime] = useState(new Date());
+
+useEffect(() => {
+  // Intentamos leer el archivo que genera la App
+  fetch('/data/db.json')
+    .then(res => {
+      if(res.ok) return res.json();
+      return null;
+    })
+    .then(data => {
+      if (data && Array.isArray(data.articles)) {
+        // Transformamos los datos de la App al formato de tu Web
+        const newArticles = data.articles
+          .filter((a: any) => a.isPublished)
+          .map((a: any) => ({
+             id: a.id, // Importante: IDs deben ser únicos
+             title: a.title,
+             image: a.imageUrl,
+             category: a.category,
+             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
+             excerpt: a.summary,
+             fullContent: a.content,
+             plaza: a.bullfightLocation,
+             ganaderia: a.bullfightCattle,
+             // Formateamos resultados taurinos si existen
+             torerosRaw: a.bullfightResults 
+                ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n')
+                : '',
+             author: "Redacción",
+             showAuthorHeader: true
+          }));
+
+        // FUSIONAR: Ponemos las nuevas primero, seguidas de las antiguas (latestNews)
+        setCombinedNews([...newArticles, ...latestNews]);
+      }
+    })
+    .catch(err => console.log("Usando noticias estáticas"));
+}, []);
 
 useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
