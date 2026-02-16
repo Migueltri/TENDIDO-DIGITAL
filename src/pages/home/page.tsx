@@ -11541,6 +11541,7 @@ type Chronicle = BaseArticle;
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
+const [news24h, setNews24h] = useState<NewsItem[]>([]);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -11587,96 +11588,122 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-useEffect(() => {
-  const loadData = async () => {
-    try {
-      // Añadimos un timestamp para romper la caché
-		const response = await fetch(`/data/db.json?v=${new Date().getTime()}`);
-      
-      if (!response.ok) {
-        throw new Error(`Error en la petición: HTTP ${response.status}`);
-      }
+// --- 1. CARGA DE DATOS UNIFICADA Y SEGURA ---
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch(`/data/db.json?v=${new Date().getTime()}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-      const data = await response.json();
-      const fetchedAuthors = data.authors || [];
-      const fetchedArticles = data.articles || [];
+        const data = await response.json();
+        const fetchedAuthors = data.authors || [];
+        const fetchedArticles = data.articles || [];
 
-      // 1. Procesar noticias nuevas de la App
-      const processedArticles = fetchedArticles
-        .filter(a => a.isPublished)
-        .map(a => {
-          const realAuthor = fetchedAuthors.find(au => String(au.id) === String(a.authorId));
-          let finalName = "Tendido Digital";
-          let finalPic = "/images/tendidodigitallogosimple.png";
-          
-          if (realAuthor) {
-            finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
-            finalPic = realAuthor.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
-          }
+        const processedArticles = fetchedArticles
+          .filter((a: any) => a.isPublished)
+          .map((a: any) => {
+            const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
+            let finalName = "Tendido Digital";
+            let finalPic = "/images/tendidodigitallogosimple.png";
 
-          return {
-            id: a.id,
-            title: a.title,
-            image: a.imageUrl,
-            category: a.category,
-            date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-            rawDate: a.date, 
-            excerpt: a.summary,
-            fullContent: a.content,
-            plaza: a.bullfightLocation,
-            ganaderia: a.bullfightCattle,
-            torerosRaw: a.bullfightResults ? a.bullfightResults.map(r => `${r.bullfighter}: ${r.result}`).join('\n') : '',
-            author: finalName,
-            authorLogo: finalPic,
-            showAuthorHeader: true,
-            authorId: a.authorId
-          };
+            if (realAuthor) {
+              finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
+              finalPic = realAuthor.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+            }
+
+            return {
+              id: a.id,
+              title: a.title,
+              image: a.imageUrl,
+              category: a.category,
+              date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
+              rawDate: a.date,
+              excerpt: a.summary,
+              fullContent: a.content,
+              plaza: a.bullfightLocation,
+              ganaderia: a.bullfightCattle,
+              torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => `${r.bullfighter}: ${r.result}`).join('\n') : '',
+              author: finalName,
+              authorLogo: finalPic,
+              showAuthorHeader: true,
+              authorId: a.authorId
+            };
+          });
+
+        const combinedRawList = [...processedArticles, ...latestNews];
+        const uniqueNewsMap = new Map();
+        
+        combinedRawList.forEach(news => {
+          if (!uniqueNewsMap.has(news.id)) uniqueNewsMap.set(news.id, news);
         });
 
-      // 2. FUSIÓN Y DESDUPLICACIÓN: Unimos las del JSON con las estáticas (latestNews)
-      const combinedRawList = [...processedArticles, ...latestNews];
-      
-      const uniqueNewsMap = new Map();
-      combinedRawList.forEach(news => {
-        // Si el ID ya existe, el Map conserva la primera aparición (dando prioridad a processedArticles si hay conflicto)
-        if (!uniqueNewsMap.has(news.id)) {
-          uniqueNewsMap.set(news.id, news);
+        const finalNewsList = Array.from(uniqueNewsMap.values());
+        finalNewsList.sort((a, b) => new Date(b.rawDate || "").getTime() - new Date(a.rawDate || "").getTime());
+
+        setCombinedNews(finalNewsList);
+
+        const now = new Date().getTime();
+        let breakingNews = finalNewsList.filter(n => {
+          if (!n.rawDate) return false;
+          return (now - new Date(n.rawDate).getTime()) / 36e5 <= 48;
+        });
+
+        if (breakingNews.length === 0 && finalNewsList.length > 0) {
+          breakingNews = finalNewsList.slice(0, 3);
         }
-      });
-      
-      const finalNewsList = Array.from(uniqueNewsMap.values());
+        setNews24h(breakingNews);
 
-      // 3. Ordenar por fecha de forma descendente (más recientes primero)
-      finalNewsList.sort((a, b) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
-
-      setCombinedNews(finalNewsList);
-
-      // 4. Calcular noticias de las últimas 48 horas (Optimizado)
-      const now = new Date().getTime();
-      let breakingNews = finalNewsList.filter(n => {
-        if (!n.rawDate) return false;
-        return (now - new Date(n.rawDate).getTime()) / 36e5 <= 48;
-      });
-      
-      // Fallback si no hay noticias recientes
-      if (breakingNews.length === 0 && finalNewsList.length > 0) {
-        breakingNews = finalNewsList.slice(0, 3);
+      } catch (error) {
+        console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
+        const fallbackList = [...latestNews].sort((a, b) => new Date(b.rawDate || "").getTime() - new Date(a.rawDate || "").getTime());
+        setCombinedNews(fallbackList);
+        setNews24h(fallbackList.slice(0, 3)); 
       }
-      
-      setNews24h(breakingNews);
+    };
 
-    } catch (error) {
-      console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
-      
-      // En caso de error, el sistema no se cae, usa el fallback correctamente
-      const fallbackList = [...latestNews].sort((a, b) => new Date(b.rawDate).getTime() - new Date(a.rawDate).getTime());
-      setCombinedNews(fallbackList);
-      setNews24h(fallbackList.slice(0, 3)); 
+    loadData();
+  }, []);
+
+  // --- 2. RELOJ AISLADO ---
+  useEffect(() => {
+    const interval = setInterval(() => setCurrentTime(new Date()), 60000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // --- 3. SLIDER PROTEGIDO CONTRA ARRAYS VACÍOS ---
+  useEffect(() => {
+    if (!featuredNews || featuredNews.length === 0) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [featuredNews?.length]);
+
+  // --- 4. SCROLL OPTIMIZADO PARA NO SATURAR EL RENDERIZADO ---
+  useEffect(() => {
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // --- 5. CONTROL DE MODALES CORREGIDO ---
+  useEffect(() => {
+    if (isNewsModalOpen || isChronicleModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
-  };
-
-  loadData();
-}, []); // Asumiendo que 'latestNews' está definido fuera del componente o es estático.
+    return () => { document.body.style.overflow = ''; };
+  }, [isNewsModalOpen, isChronicleModalOpen]);
 	
 useEffect(() => {
   const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
