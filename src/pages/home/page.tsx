@@ -11539,6 +11539,8 @@ type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
 export default function Home() {
+const localAuthors = getAuthors(); // O data.authors si lo sacas del json directo
+const dbArticles = getArticles();  // O data.articles
 const [currentSlide, setCurrentSlide] = useState(0);
 const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11606,25 +11608,50 @@ useEffect(() => {
         // Transformamos los datos de la App al formato de tu Web
         const newArticles = data.articles
           .filter((a: any) => a.isPublished)
-          .map((a: any) => ({
-             id: a.id, // Importante: IDs deben ser únicos
-             title: a.title,
-             image: a.imageUrl,
-             category: a.category,
-             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
-             excerpt: a.summary,
-             fullContent: a.content,
-             plaza: a.bullfightLocation,
-             ganaderia: a.bullfightCattle,
-             // Formateamos resultados taurinos si existen
-             torerosRaw: a.bullfightResults 
-                ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n')
-                : '',
-             author: "Manolo Herrera",
-             authorLogo: "/images/manoloherrera.jpg",
-             showAuthorHeader: true
-          }));
+          .map((a: any) => {
+            // 1. BUSCAMOS AL AUTOR REAL EN LA LISTA USANDO EL ID
+            const realAuthor = localAuthors.find((au: any) => String(au.id) === String(a.authorId));
+            
+            // 2. Definimos Nombre y Foto dinámicamente
+            let finalName = realAuthor ? realAuthor.name : "Redacción Tendido Digital";
+            let finalPic = "/images/tendidodigitallogosimple.png"; // Logo por defecto si falla todo
 
+            if (realAuthor) {
+                if (realAuthor.imageUrl) {
+                    finalPic = realAuthor.imageUrl; // Usar foto del autor
+                } else {
+                    // Si el autor no tiene foto, generamos avatar con sus iniciales
+                    finalPic = `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+                }
+            }
+
+            // 3. Devolvemos el objeto noticia con los datos correctos
+            return {
+                id: a.id, // Ojo: a.id o a.aid según tu base de datos
+                title: a.title,
+                image: a.imageUrl, 
+                category: a.category,
+                date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
+                rawDate: a.date, // Importante para calcular "hace 2 horas"
+                excerpt: a.summary,
+                fullContent: a.content,
+                
+                // Datos taurinos
+                plaza: a.bullfightLocation,
+                ganaderia: a.bullfightCattle,
+                // Formateamos los resultados si existen
+                torerosRaw: a.bullfightResults 
+                    ? a.bullfightResults.map((r: any) => r.bullfighter + ': ' + r.result).join('\n') 
+                    : '',
+                
+                // --- AQUÍ ESTÁ EL CAMBIO IMPORTANTE ---
+                author: finalName,      // Ya no es fijo, es la variable calculada arriba
+                authorLogo: finalPic,   // Ya no es fijo, es la foto del autor real
+                showAuthorHeader: true,
+                authorId: a.authorId
+            };
+        });
+		  
         // FUSIONAR: Ponemos las nuevas primero, seguidas de las antiguas (latestNews)
         setCombinedNews([...newArticles, ...latestNews]);
       }
