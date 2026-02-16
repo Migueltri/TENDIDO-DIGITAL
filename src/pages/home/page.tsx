@@ -42,8 +42,6 @@ type NewsItem = BaseArticle;
 type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
-// Muestra la hora tal como la escribiste en tus datos
-function formatExactDate(dateString: string): string {
   // Si es un formato tiktokISO, conviértelo; si no, devuélvelo limpio
   const parsed = new Date(dateString);
   if (!isNaN(parsed.getTime())) {
