@@ -38,446 +38,6 @@
   showAuthorHeader?: boolean;
 }
 
-type NewsItem = BaseArticle;
-type OpinionArticle = BaseArticle;
-type Chronicle = BaseArticle;
-
-// Muestra la hora tal como la escribiste en tus datos
-function formatExactDate(dateString: string): string {
-  // Si es un formato tiktokISO, conviértelo; si no, devuélvelo limpio
-  const parsed = new Date(dateString);
-  if (!isNaN(parsed.getTime())) {
-    return parsed.toLocaleString("es-ES", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  }
-  // No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
-  return dateString;
-}
-
-fetch('/data/db.json')
-  .then(response => response.json())
-  .then(data => {
-     const noticias = data.articles;
-     // Aquí tu código que pinta las noticias en pantalla
-  });
-
-function formatTimeAgo(dateString: string): string {
-  const parsed = new Date(dateString);
-  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
-
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
-  const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
-
-  if (diff < 60) return "hace unos segundos";
-  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
-  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
-  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
-  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
-  return rtf.format(-Math.floor(diff / 31536000), "year");
-}
-
-useEffect(() => {
-  // Intentamos leer el archivo que genera la App
-  fetch('/data/db.json')
-    .then(res => {
-      if(res.ok) return res.json();
-      return null;
-    })
-    .then(data => {
-      if (data && Array.isArray(data.articles)) {
-        // Transformamos los datos de la App al formato de tu Web
-        const newArticles = data.articles
-          .filter((a: any) => a.isPublished)
-          .map((a: any) => ({
-             id: a.id, // Importante: IDs deben ser únicos
-             title: a.title,
-             image: a.imageUrl,
-             category: a.category,
-             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
-             excerpt: a.summary,
-             fullContent: a.content,
-             plaza: a.bullfightLocation,
-             ganaderia: a.bullfightCattle,
-             // Formateamos resultados taurinos si existen
-             torerosRaw: a.bullfightResults 
-                ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n')
-                : '',
-             author: "Redacción",
-             showAuthorHeader: true
-          }));
-
-        // FUSIONAR: Ponemos las nuevas primero, seguidas de las antiguas (latestNews)
-        setCombinedNews([...newArticles, ...latestNews]);
-      }
-    })
-    .catch(err => console.log("Usando noticias estáticas"));
-}, []);
-
-useEffect(() => {
-  const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
-  return () => clearInterval(interval);
-}, []);
-
-// Estados para interacciones sociales (sin contadores de likes)
-const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
-const [isShareModalOpen, setIsShareModalOpen] = useState(false);
-const [sharePost, setSharePost] = useState<NewsItem | OpinionArticle | Chronicle | null>(null);
-
-// Estados para formularios
-const [newsletterEmail, setNewsletterEmail] = useState('');
-const [isNewsletterSubmitting, setIsNewsletterSubmitting] = useState(false);
-const [newsletterMessage, setNewsletterMessage] = useState('');
-
-const [contactForm, setContactForm] = useState({
-name: '',
-email: '',
-subject: '',
-message: ''
-});
-const [isContactSubmitting, setIsContactSubmitting] = useState(false);
-const [contactMessage, setContactMessage] = useState('');
-
-// Schema.org JSON-LD para SEO
-useEffect(() => {
-const schemaData = {
-"@context": "https://schema.org",
-"@type": "NewsMediaOrganization",
-"name": "TENDIDO DIGITAL",
-"url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
-"logo": {
-"@type": "ImageObject",
-"url": "images/tendidodigitallogosimple.jpg"
-},
-"description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
-"foundingDate": "2025",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "ES"
-},
-"sameAs": [
-"https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
-],
-    "mainEntity": {
-      "@type": "WebSite",
-      "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
-      }
-    }
-  };
-
-const scriptId = 'tendido-schema-org';
-const existingScript = document.getElementById(scriptId);
-if (existingScript) {
-  existingScript.remove();
-}
-
-const script = document.createElement('script');
-script.type = 'application/ld+json';
-script.id = scriptId;
-script.textContent = JSON.stringify(schemaData);
-document.head.appendChild(script);
-
-return () => {
-  const scriptToRemove = document.getElementById(scriptId);
-  if (scriptToRemove) {
-    scriptToRemove.remove();
-  }
-};
-}, []);
-
-// Función para manejar suscripción al newsletter
-const handleNewsletterSubmit = async (e: React.FormEvent) => {
-e.preventDefault();
-if (!newsletterEmail.trim()) return;
-
-setIsNewsletterSubmitting(true);
-setNewsletterMessage('');
-
-try {
-  const formData = new FormData();
-  formData.append('email', newsletterEmail);
-
-  const response = await fetch('https://readdy.ai/api/form/d3fehu1rrun81ijtot9g', {
-    method: 'POST',
-    body: formData
-  });
-
-  if (response.ok) {
-    setNewsletterMessage('¡Gracias por suscribirte! Recibirás nuestras mejores noticias taurinas.');
-    setNewsletterEmail('');
-  } else {
-    setNewsletterMessage('Error al procesar la suscripción. Inténtalo de nuevo.');
-  }
-} catch (error) {
-  setNewsletterMessage('Error de conexión. Verifica tu conexión a internet.');
-} finally {
-  setIsNewsletterSubmitting(false);
-}
-};
-
-// Función para manejar formulario de contacto
-const handleContactSubmit = async (e: React.FormEvent) => {
-e.preventDefault();
-if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.message.trim()) {
-setContactMessage('Por favor, completa todos los campos obligatorios.');
-return;
-}
-
-setIsContactSubmitting(true);
-setContactMessage('');
-
-try {
-  const formData = new FormData();
-  formData.append('name', contactForm.name);
-  formData.append('email', contactForm.email);
-  formData.append('subject', contactForm.subject);
-  formData.append('message', contactForm.message);
-
-  const response = await fetch('https://readdy.ai/api/form/d3fehu1rrun81ijtota0', {
-    method: 'POST',
-    body: formData
-  });
-
-  if (response.ok) {
-    setContactMessage('¡Mensaje enviado correctamente! Te responderemos pronto');
-    setContactForm({ name: '', email: '', subject: '', message: '' });
-  } else {
-    setContactMessage('Error al enviar el mensaje. Inténtalo de nuevo.');
-  }
-} catch (error) {
-  setContactMessage('Error de conexión. Verifica tu conexión a internet.');
-} finally {
-  setIsContactSubmitting(false);
-}
-};
-
-// Funciones para interacciones sociales (sin likes)
-const toggleSave = (postId: number, e?: React.MouseEvent) => {
-if (e) {
-e.stopPropagation();
-}
-
-setSavedPosts(prev => {
-  const newSaved = new Set(prev);
-  if (newSaved.has(postId)) {
-    newSaved.delete(postId);
-  } else {
-    newSaved.add(postId);
-  }
-  return newSaved;
-});
-};
-
-const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
-if (e) {
-e.stopPropagation();
-}
-setSharePost(post);
-setIsShareModalOpen(true);
-};
-
-const closeShareModal = () => {
-setIsShareModalOpen(false);
-setSharePost(null);
-};
-
-const shareToWhatsApp = () => {
-  if (sharePost) {
-    const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${window.location.origin}`;
-    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const shareToTwitter = () => {
-  if (sharePost) {
-    const text = `${sharePost.title} - vía @tendidodigital`;
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const shareToFacebook = () => {
-  if (sharePost) {
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const copyLink = async () => {
-  try {
-    if (sharePost) {
-      // Creamos un enlace único por ID
-      const encoded = btoa(`news-${sharePost.id}`); // Cada id produce un string único
-      const link = `${window.location.origin}/?p=${encoded}&utm_source=ig_web_copy_link`;
-
-      await navigator.clipboard.writeText(link);
-      setContactMessage("¡Enlace copiado al portapapeles!");
-      closeShareModal();
-
-      setTimeout(() => setContactMessage(""), 3000);
-    }
-  } catch (error) {
-    console.error("Error al copiar enlace:", error);
-  }
-};
-
-// Obtener posts filtrados según la pestaña activa
-const getFilteredPosts = () => {
-const allPosts = [...featuredNews, ...latestNews];
-
-switch (activeTab) {
-  case 'guardados':
-    return allPosts.filter(post => savedPosts.has(post.id));
-  case 'cronicas':
-    return chronicles;
-  default:
-    return allPosts;
-}
-};
-  
-const getFilteredNews = () => {
-  const dataToUse = combinedNews; // Usamos la combinada
-  if (newsFilter === 'todas') return dataToUse;
-  return dataToUse.filter(news => {
-    const cat = news.category?.toLowerCase() || '';
-    switch (newsFilter) {
-      case 'cronicas': return cat.includes('crónica');
-      case 'entrevistas': return cat.includes('entrevista');
-      case 'opinion': return cat.includes('opinión');
-      case 'actualidad': return cat.includes('actualidad');
-      default: return true;
-    }
-  });
-};
-
-// convierte el contenido en párrafos y transforma **bold** a <strong>
-// mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
-const renderArticleContent = (text?: string | null) => {
-  if (!text) return null;
-
-  // Normaliza saltos y recorta
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-
-  // 1) Intento normal: dividir por dobles saltos de línea
-  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-  // 2) Si no hay dobles saltos y el texto es largo, dividir por párrafos cada 2-3 oraciones
-  if (paragraphs.length === 1 && normalized.length > 200) {
-    // separación por oraciones (aprox usando punto+símbolo)
-    const sentences = normalized.split(/(?<=[.?!])\s+/);
-    const groupSize = 2; // agrupar 2 oraciones por párrafo (ajusta si quieres)
-    paragraphs = [];
-    for (let i = 0; i < sentences.length; i += groupSize) {
-      paragraphs.push(sentences.slice(i, i + groupSize).join(' ').trim());
-    }
-  }
-
-const splitToreros = (raw?: string | string[]) => {
-  if (!raw) return [];
-  if (Array.isArray(raw)) return raw.filter(Boolean).map(r => r.trim());
-  return String(raw)
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n')
-    .split('\n')
-    .map(l => l.trim())
-    .filter(Boolean);
-};
-
-  // 3) Si sigue siendo uno y hay comas largas, romper por comas con sentido (fallback)
-  if (paragraphs.length === 1 && normalized.length > 1000) {
-    const parts = normalized.split(/, /);
-    paragraphs = [];
-    for (let i = 0; i < parts.length; i += 4) {
-      paragraphs.push(parts.slice(i, i + 4).join(', ').trim());
-    }
-  }
-
-  // Función que convierte **bold** y limita HTML esperado
-  const toHtml = (p: string) =>
-    p
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/[“”]/g, '"')
-      .replace(/[‘’]/g, "'")
-      .replace(/\n+/g, ' ');
-
-  return paragraphs.map((p, i) => (
-    <p
-      key={i}
-      className="text-gray-700 text-sm leading-relaxed mb-4"
-      dangerouslySetInnerHTML={{ __html: toHtml(p) }}
-    />
-  ));
-};
-
-const CrónicaLayout = ({ news }: { news: any }) => (
-  <article
-    key={news.id}
-    className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 cursor-pointer"
-    onClick={() => openNewsModal(news)}
-  >
-    <div className="p-6">
-      <h3 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 leading-tight">
-        {news.title}
-      </h3>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-1">
-          <div className="relative overflow-hidden rounded-xl">
-            <img
-              src={news.image}
-              alt={news.title}
-              className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
-              loading="lazy"
-            />
-          </div>
-        </div>
-
-        <div className="lg:col-span-2">
-          <div className="bg-gray-50 rounded-xl p-4 mb-6">
-            <div className="flex flex-wrap justify-between text-sm md:text-base">
-              <p>
-                <span className="font-semibold text-gray-900">Plaza:</span>{" "}
-                <span className="text-gray-700">{news.plaza || "No especificada"}</span>
-              </p>
-              <p>
-                <span className="font-semibold text-gray-900">Ganadería:</span>{" "}
-                <span className="text-red-600 font-medium">{news.ganaderia || "No indicada"}</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
-            <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
-              <i className="ri-file-text-line mr-2 text-red-600"></i>
-              Resumen del festejo
-            </h4>
-            <div className="text-gray-700 text-sm leading-relaxed">
- 			 { renderArticleContent(news.fullContent || news.excerpt) }
-			</div>
-
-          </div>
-          <div className="text-right mt-6">
-            <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center gap-2 bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300 inline-flex">
-              Leer crónica completa <i className="ri-arrow-right-line"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-);
-	
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1009,
@@ -11978,6 +11538,10 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
+type NewsItem = BaseArticle;
+type OpinionArticle = BaseArticle;
+type Chronicle = BaseArticle;
+
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
@@ -11993,6 +11557,442 @@ const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
 // Estado para actualizar automáticamente el tiempo relativo
 const [currentTime, setCurrentTime] = useState(new Date());
+
+	// Muestra la hora tal como la escribiste en tus datos
+function formatExactDate(dateString: string): string {
+  // Si es un formato tiktokISO, conviértelo; si no, devuélvelo limpio
+  const parsed = new Date(dateString);
+  if (!isNaN(parsed.getTime())) {
+    return parsed.toLocaleString("es-ES", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  }
+  // No intentamos parsear los textos en español, sólo los devolvemos sin el “Invalid Date”
+  return dateString;
+}
+
+fetch('/data/db.json')
+  .then(response => response.json())
+  .then(data => {
+     const noticias = data.articles;
+     // Aquí tu código que pinta las noticias en pantalla
+  });
+
+function formatTimeAgo(dateString: string): string {
+  const parsed = new Date(dateString);
+  if (isNaN(parsed.getTime())) return ""; // no mostrar “Invalid Date”
+
+  const now = new Date();
+  const diff = Math.floor((now.getTime() - parsed.getTime()) / 1000);
+  const rtf = new Intl.RelativeTimeFormat("es", { numeric: "auto" });
+
+  if (diff < 60) return "hace unos segundos";
+  if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
+  if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
+  if (diff < 2592000) return rtf.format(-Math.floor(diff / 86400), "day");
+  if (diff < 31536000) return rtf.format(-Math.floor(diff / 2592000), "month");
+  return rtf.format(-Math.floor(diff / 31536000), "year");
+}
+
+useEffect(() => {
+  // Intentamos leer el archivo que genera la App
+  fetch('/data/db.json')
+    .then(res => {
+      if(res.ok) return res.json();
+      return null;
+    })
+    .then(data => {
+      if (data && Array.isArray(data.articles)) {
+        // Transformamos los datos de la App al formato de tu Web
+        const newArticles = data.articles
+          .filter((a: any) => a.isPublished)
+          .map((a: any) => ({
+             id: a.id, // Importante: IDs deben ser únicos
+             title: a.title,
+             image: a.imageUrl,
+             category: a.category,
+             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
+             excerpt: a.summary,
+             fullContent: a.content,
+             plaza: a.bullfightLocation,
+             ganaderia: a.bullfightCattle,
+             // Formateamos resultados taurinos si existen
+             torerosRaw: a.bullfightResults 
+                ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n')
+                : '',
+             author: "Redacción",
+             showAuthorHeader: true
+          }));
+
+        // FUSIONAR: Ponemos las nuevas primero, seguidas de las antiguas (latestNews)
+        setCombinedNews([...newArticles, ...latestNews]);
+      }
+    })
+    .catch(err => console.log("Usando noticias estáticas"));
+}, []);
+
+useEffect(() => {
+  const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
+  return () => clearInterval(interval);
+}, []);
+
+// Estados para interacciones sociales (sin contadores de likes)
+const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
+const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+const [sharePost, setSharePost] = useState<NewsItem | OpinionArticle | Chronicle | null>(null);
+
+// Estados para formularios
+const [newsletterEmail, setNewsletterEmail] = useState('');
+const [isNewsletterSubmitting, setIsNewsletterSubmitting] = useState(false);
+const [newsletterMessage, setNewsletterMessage] = useState('');
+
+const [contactForm, setContactForm] = useState({
+name: '',
+email: '',
+subject: '',
+message: ''
+});
+const [isContactSubmitting, setIsContactSubmitting] = useState(false);
+const [contactMessage, setContactMessage] = useState('');
+
+// Schema.org JSON-LD para SEO
+useEffect(() => {
+const schemaData = {
+"@context": "https://schema.org",
+"@type": "NewsMediaOrganization",
+"name": "TENDIDO DIGITAL",
+"url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
+"logo": {
+"@type": "ImageObject",
+"url": "images/tendidodigitallogosimple.jpg"
+},
+"description": "Portal taurino de referencia en España. Noticias, crónicas, entrevistas y toda la actualidad del mundo del toro con más de 15 años de experiencia.",
+"foundingDate": "2025",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "ES"
+},
+"sameAs": [
+"https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
+],
+    "mainEntity": {
+      "@type": "WebSite",
+      "url": typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${typeof window !== 'undefined' ? window.location.origin : "https://tendidodigital.com"}/search?q={search_term_string}`
+      }
+    }
+  };
+
+const scriptId = 'tendido-schema-org';
+const existingScript = document.getElementById(scriptId);
+if (existingScript) {
+  existingScript.remove();
+}
+
+const script = document.createElement('script');
+script.type = 'application/ld+json';
+script.id = scriptId;
+script.textContent = JSON.stringify(schemaData);
+document.head.appendChild(script);
+
+return () => {
+  const scriptToRemove = document.getElementById(scriptId);
+  if (scriptToRemove) {
+    scriptToRemove.remove();
+  }
+};
+}, []);
+
+// Función para manejar suscripción al newsletter
+const handleNewsletterSubmit = async (e: React.FormEvent) => {
+e.preventDefault();
+if (!newsletterEmail.trim()) return;
+
+setIsNewsletterSubmitting(true);
+setNewsletterMessage('');
+
+try {
+  const formData = new FormData();
+  formData.append('email', newsletterEmail);
+
+  const response = await fetch('https://readdy.ai/api/form/d3fehu1rrun81ijtot9g', {
+    method: 'POST',
+    body: formData
+  });
+
+  if (response.ok) {
+    setNewsletterMessage('¡Gracias por suscribirte! Recibirás nuestras mejores noticias taurinas.');
+    setNewsletterEmail('');
+  } else {
+    setNewsletterMessage('Error al procesar la suscripción. Inténtalo de nuevo.');
+  }
+} catch (error) {
+  setNewsletterMessage('Error de conexión. Verifica tu conexión a internet.');
+} finally {
+  setIsNewsletterSubmitting(false);
+}
+};
+
+// Función para manejar formulario de contacto
+const handleContactSubmit = async (e: React.FormEvent) => {
+e.preventDefault();
+if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.message.trim()) {
+setContactMessage('Por favor, completa todos los campos obligatorios.');
+return;
+}
+
+setIsContactSubmitting(true);
+setContactMessage('');
+
+try {
+  const formData = new FormData();
+  formData.append('name', contactForm.name);
+  formData.append('email', contactForm.email);
+  formData.append('subject', contactForm.subject);
+  formData.append('message', contactForm.message);
+
+  const response = await fetch('https://readdy.ai/api/form/d3fehu1rrun81ijtota0', {
+    method: 'POST',
+    body: formData
+  });
+
+  if (response.ok) {
+    setContactMessage('¡Mensaje enviado correctamente! Te responderemos pronto');
+    setContactForm({ name: '', email: '', subject: '', message: '' });
+  } else {
+    setContactMessage('Error al enviar el mensaje. Inténtalo de nuevo.');
+  }
+} catch (error) {
+  setContactMessage('Error de conexión. Verifica tu conexión a internet.');
+} finally {
+  setIsContactSubmitting(false);
+}
+};
+
+// Funciones para interacciones sociales (sin likes)
+const toggleSave = (postId: number, e?: React.MouseEvent) => {
+if (e) {
+e.stopPropagation();
+}
+
+setSavedPosts(prev => {
+  const newSaved = new Set(prev);
+  if (newSaved.has(postId)) {
+    newSaved.delete(postId);
+  } else {
+    newSaved.add(postId);
+  }
+  return newSaved;
+});
+};
+
+const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
+if (e) {
+e.stopPropagation();
+}
+setSharePost(post);
+setIsShareModalOpen(true);
+};
+
+const closeShareModal = () => {
+setIsShareModalOpen(false);
+setSharePost(null);
+};
+
+const shareToWhatsApp = () => {
+  if (sharePost) {
+    const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${window.location.origin}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
+};
+
+const shareToTwitter = () => {
+  if (sharePost) {
+    const text = `${sharePost.title} - vía @tendidodigital`;
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
+};
+
+const shareToFacebook = () => {
+  if (sharePost) {
+    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeShareModal();
+  }
+};
+
+const copyLink = async () => {
+  try {
+    if (sharePost) {
+      // Creamos un enlace único por ID
+      const encoded = btoa(`news-${sharePost.id}`); // Cada id produce un string único
+      const link = `${window.location.origin}/?p=${encoded}&utm_source=ig_web_copy_link`;
+
+      await navigator.clipboard.writeText(link);
+      setContactMessage("¡Enlace copiado al portapapeles!");
+      closeShareModal();
+
+      setTimeout(() => setContactMessage(""), 3000);
+    }
+  } catch (error) {
+    console.error("Error al copiar enlace:", error);
+  }
+};
+
+// Obtener posts filtrados según la pestaña activa
+const getFilteredPosts = () => {
+const allPosts = [...featuredNews, ...latestNews];
+
+switch (activeTab) {
+  case 'guardados':
+    return allPosts.filter(post => savedPosts.has(post.id));
+  case 'cronicas':
+    return chronicles;
+  default:
+    return allPosts;
+}
+};
+  
+const getFilteredNews = () => {
+  const dataToUse = combinedNews; // Usamos la combinada
+  if (newsFilter === 'todas') return dataToUse;
+  return dataToUse.filter(news => {
+    const cat = news.category?.toLowerCase() || '';
+    switch (newsFilter) {
+      case 'cronicas': return cat.includes('crónica');
+      case 'entrevistas': return cat.includes('entrevista');
+      case 'opinion': return cat.includes('opinión');
+      case 'actualidad': return cat.includes('actualidad');
+      default: return true;
+    }
+  });
+};
+
+// convierte el contenido en párrafos y transforma **bold** a <strong>
+// mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
+const renderArticleContent = (text?: string | null) => {
+  if (!text) return null;
+
+  // Normaliza saltos y recorta
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+
+  // 1) Intento normal: dividir por dobles saltos de línea
+  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  // 2) Si no hay dobles saltos y el texto es largo, dividir por párrafos cada 2-3 oraciones
+  if (paragraphs.length === 1 && normalized.length > 200) {
+    // separación por oraciones (aprox usando punto+símbolo)
+    const sentences = normalized.split(/(?<=[.?!])\s+/);
+    const groupSize = 2; // agrupar 2 oraciones por párrafo (ajusta si quieres)
+    paragraphs = [];
+    for (let i = 0; i < sentences.length; i += groupSize) {
+      paragraphs.push(sentences.slice(i, i + groupSize).join(' ').trim());
+    }
+  }
+
+const splitToreros = (raw?: string | string[]) => {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw.filter(Boolean).map(r => r.trim());
+  return String(raw)
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .split('\n')
+    .map(l => l.trim())
+    .filter(Boolean);
+};
+
+  // 3) Si sigue siendo uno y hay comas largas, romper por comas con sentido (fallback)
+  if (paragraphs.length === 1 && normalized.length > 1000) {
+    const parts = normalized.split(/, /);
+    paragraphs = [];
+    for (let i = 0; i < parts.length; i += 4) {
+      paragraphs.push(parts.slice(i, i + 4).join(', ').trim());
+    }
+  }
+
+  // Función que convierte **bold** y limita HTML esperado
+  const toHtml = (p: string) =>
+    p
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+      .replace(/\n+/g, ' ');
+
+  return paragraphs.map((p, i) => (
+    <p
+      key={i}
+      className="text-gray-700 text-sm leading-relaxed mb-4"
+      dangerouslySetInnerHTML={{ __html: toHtml(p) }}
+    />
+  ));
+};
+
+const CrónicaLayout = ({ news }: { news: any }) => (
+  <article
+    key={news.id}
+    className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 cursor-pointer"
+    onClick={() => openNewsModal(news)}
+  >
+    <div className="p-6">
+      <h3 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 leading-tight">
+        {news.title}
+      </h3>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-1">
+          <div className="relative overflow-hidden rounded-xl">
+            <img
+              src={news.image}
+              alt={news.title}
+              className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+          <div className="bg-gray-50 rounded-xl p-4 mb-6">
+            <div className="flex flex-wrap justify-between text-sm md:text-base">
+              <p>
+                <span className="font-semibold text-gray-900">Plaza:</span>{" "}
+                <span className="text-gray-700">{news.plaza || "No especificada"}</span>
+              </p>
+              <p>
+                <span className="font-semibold text-gray-900">Ganadería:</span>{" "}
+                <span className="text-red-600 font-medium">{news.ganaderia || "No indicada"}</span>
+              </p>
+            </div>
+          </div>
+          <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+            <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+              <i className="ri-file-text-line mr-2 text-red-600"></i>
+              Resumen del festejo
+            </h4>
+            <div className="text-gray-700 text-sm leading-relaxed">
+ 			 { renderArticleContent(news.fullContent || news.excerpt) }
+			</div>
+
+          </div>
+          <div className="text-right mt-6">
+            <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center gap-2 bg-red-50 hover:bg-red-100 px-4 py-2 rounded-full transition-all duration-300 inline-flex">
+              Leer crónica completa <i className="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+);
 
 	useEffect(() => {
   fetch('/data/db.json')
