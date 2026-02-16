@@ -82,7 +82,6 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
 const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -364,24 +363,16 @@ switch (activeTab) {
 };
   
 const getFilteredNews = () => {
-  // AQUÍ ESTÁ EL CAMBIO: Usamos 'combinedNews' en vez de 'latestNews'
-  const dataToUse = combinedNews; 
-
+  const dataToUse = combinedNews; // Usamos la combinada
   if (newsFilter === 'todas') return dataToUse;
-
   return dataToUse.filter(news => {
     const cat = news.category?.toLowerCase() || '';
     switch (newsFilter) {
-      case 'cronicas':
-        return cat.includes('crónica');
-      case 'entrevistas':
-        return cat.includes('entrevista');
-      case 'opinion':
-        return cat.includes('opinión');
-      case 'actualidad':
-        return cat.includes('actualidad');
-      default:
-        return true;
+      case 'cronicas': return cat.includes('crónica');
+      case 'entrevistas': return cat.includes('entrevista');
+      case 'opinion': return cat.includes('opinión');
+      case 'actualidad': return cat.includes('actualidad');
+      default: return true;
     }
   });
 };
@@ -12002,6 +11993,33 @@ Aun así, creo que cualquiera debería sentarse en un tendido al menos una vez p
   },
 ];
 
+export default function Home() {
+
+	useEffect(() => {
+  fetch('/data/db.json')
+    .then(res => res.ok ? res.json() : null)
+    .then(data => {
+      if (data && Array.isArray(data.articles)) {
+        const newArticles = data.articles.filter((a: any) => a.isPublished).map((a: any) => ({
+             id: a.id,
+             title: a.title,
+             image: a.imageUrl,
+             category: a.category,
+             date: new Date(a.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }),
+             excerpt: a.summary,
+             fullContent: a.content,
+             plaza: a.bullfightLocation,
+             ganaderia: a.bullfightCattle,
+             torerosRaw: a.bullfightResults ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n') : '',
+             author: "Redacción",
+             showAuthorHeader: true
+          }));
+        setCombinedNews([...newArticles, ...latestNews]);
+      }
+    })
+    .catch(err => console.log("Usando noticias estáticas"));
+}, []);
+	
 // Función para cargar más noticias
 const loadMoreNews = () => {
 setIsLoadingMore(true);
