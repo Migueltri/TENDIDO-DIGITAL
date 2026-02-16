@@ -11624,7 +11624,8 @@ useEffect(() => {
              torerosRaw: a.bullfightResults 
                 ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n')
                 : '',
-             author: "Redacción",
+             author: "Manolo Herrera",
+             authorLogo: "/images/manoloherrera.jpg",
              showAuthorHeader: true
           }));
 
@@ -12010,7 +12011,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
              plaza: a.bullfightLocation,
              ganaderia: a.bullfightCattle,
              torerosRaw: a.bullfightResults ? a.bullfightResults.map((r:any) => r.bullfighter + ': ' + r.result).join('\n') : '',
-             author: "Redacción",
+             author: "Manolo herrera",
              showAuthorHeader: true
           }));
         setCombinedNews([...newArticles, ...latestNews]);
