@@ -38,7 +38,41 @@
   showAuthorHeader?: boolean;
 }
 
-const featuredNews: NewsItem[] = [
+const featuredNews: NewsItem[] = [	
+	{ 
+    id: 1000,
+    title: `Castellón abre la venta de entradas sueltas para la Magdalena 2026 con notable afluencia`,
+	image: "/images/caste.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `La mañana amaneció con aroma de feria en **Castellón**. Hoy comenzaba la venta de entradas sueltas para la **Feria de la Magdalena 2026** y, desde primeras horas, el trasiego de aficionados en los aledaños de la Plaza de Toros anunciaba que **la cita vuelve a latir con fuerza**. Conversaciones de barrera imaginaria, corrillos improvisados y esa ilusión intacta del que acude a asegurarse un asiento fueron componiendo **la estampa de un día señalado en el calendario taurino**.
+
+Superado el periodo de renovación y venta de abonos, llegaba **uno de los momentos más esperados**: la posibilidad de elegir localidad suelta para quienes no quieren perderse una feria que, año tras año, reafirma su peso específico en el panorama nacional. La respuesta del público fue notoria, confirmando que **la Magdalena sigue siendo punto de encuentro imprescindible para la afición**.
+
+La empresa **Funtausa**, gestora del coso castellonense, recordó además que mañana, a partir de las 10:00 horas, se pondrán a la venta las entradas para los festejos populares, otro de los pilares del ciclo magdalenero. Unos festejos que, fieles a la tradición, congregan a numerosos aficionados y mantienen viva **la vertiente más participativa de la fiesta**.
+
+Desde la organización se recomienda adquirir las localidades con la mayor antelación posible para garantizar disponibilidad y escoger ubicación en una plaza que, un año más, se prepara para vestirse de gala.
+
+**Porque cuando Castellón anuncia Magdalena, no solo se abre una taquilla: se abre, también, la puerta de una feria que vuelve a situar a la ciudad en el epicentro del toreo.**`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
+    title: `Funtausa renueva la gestión del Coso de las Cruces para las ferias de 2026 y 2027`,
+	image: "/images/empres (2).jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `La empresa Funtausa continuará al frente del **Coso de las Cruces** tras resultar adjudicataria del concurso público convocado por el Ayuntamiento de Guadalajara, al que concurrió como única oferta presentada. Con Álvaro Polo como gerente, la firma asumirá la organización de las ferias taurinas de 2026 y 2027, con opción de prórroga para las temporadas 2028 y 2029.
+
+El contrato contempla la gestión integral de los encierros urbanos, declarados de Interés Turístico Regional, así como la organización de cuatro corridas de toros cuyos carteles deberán ajustarse a los criterios técnicos establecidos en el pliego de condiciones. Asimismo, la empresa será responsable del Concurso Nacional de Recortadores —con 16 participantes y cinco toros— y de los cinco encierros tradicionales incluidos en el programa festivo.
+
+Entre las obligaciones recogidas figura también la colaboración activa con la Escuela Taurina de Guadalajara mediante la organización de clases prácticas, tentaderos y actividades formativas dirigidas a jóvenes alumnos, reforzando el compromiso con la promoción y el desarrollo de la tauromaquia en la provincia.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1000,
     title: `Coria anuncia un gran festival taurino con figuras del toreo para el 14 y 15 de marzo de 2026`,
@@ -291,6 +325,40 @@ El Puerto avanza porque con actos como este continúa consolidando una programac
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 221,
+    title: `Castellón abre la venta de entradas sueltas para la Magdalena 2026 con notable afluencia`,
+	image: "/images/caste.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `La mañana amaneció con aroma de feria en **Castellón**. Hoy comenzaba la venta de entradas sueltas para la **Feria de la Magdalena 2026** y, desde primeras horas, el trasiego de aficionados en los aledaños de la Plaza de Toros anunciaba que **la cita vuelve a latir con fuerza**. Conversaciones de barrera imaginaria, corrillos improvisados y esa ilusión intacta del que acude a asegurarse un asiento fueron componiendo **la estampa de un día señalado en el calendario taurino**.
+
+Superado el periodo de renovación y venta de abonos, llegaba **uno de los momentos más esperados**: la posibilidad de elegir localidad suelta para quienes no quieren perderse una feria que, año tras año, reafirma su peso específico en el panorama nacional. La respuesta del público fue notoria, confirmando que **la Magdalena sigue siendo punto de encuentro imprescindible para la afición**.
+
+La empresa **Funtausa**, gestora del coso castellonense, recordó además que mañana, a partir de las 10:00 horas, se pondrán a la venta las entradas para los festejos populares, otro de los pilares del ciclo magdalenero. Unos festejos que, fieles a la tradición, congregan a numerosos aficionados y mantienen viva **la vertiente más participativa de la fiesta**.
+
+Desde la organización se recomienda adquirir las localidades con la mayor antelación posible para garantizar disponibilidad y escoger ubicación en una plaza que, un año más, se prepara para vestirse de gala.
+
+**Porque cuando Castellón anuncia Magdalena, no solo se abre una taquilla: se abre, también, la puerta de una feria que vuelve a situar a la ciudad en el epicentro del toreo.**`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 222,
+    title: `Funtausa renueva la gestión del Coso de las Cruces para las ferias de 2026 y 2027`,
+	image: "/images/empres (2).jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `La empresa Funtausa continuará al frente del **Coso de las Cruces** tras resultar adjudicataria del concurso público convocado por el Ayuntamiento de Guadalajara, al que concurrió como única oferta presentada. Con Álvaro Polo como gerente, la firma asumirá la organización de las ferias taurinas de 2026 y 2027, con opción de prórroga para las temporadas 2028 y 2029.
+
+El contrato contempla la gestión integral de los encierros urbanos, declarados de Interés Turístico Regional, así como la organización de cuatro corridas de toros cuyos carteles deberán ajustarse a los criterios técnicos establecidos en el pliego de condiciones. Asimismo, la empresa será responsable del Concurso Nacional de Recortadores —con 16 participantes y cinco toros— y de los cinco encierros tradicionales incluidos en el programa festivo.
+
+Entre las obligaciones recogidas figura también la colaboración activa con la Escuela Taurina de Guadalajara mediante la organización de clases prácticas, tentaderos y actividades formativas dirigidas a jóvenes alumnos, reforzando el compromiso con la promoción y el desarrollo de la tauromaquia en la provincia.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 223,
     title: `Coria anuncia un gran festival taurino con figuras del toreo para el 14 y 15 de marzo de 2026`,
