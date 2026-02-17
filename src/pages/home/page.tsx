@@ -40,13 +40,161 @@
 
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1001,
+    title: `Cartaya (Huelva) celebrara una corrida de rejones en la XXIV Feria del Caballo`,
+	image: "/images/cartaya.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `En la mañana de hoy se ha presentado en el Ayuntamiento de Cartaya el histórico cartel del arte del rejoneo que se celebrará el próximo día 7 de marzo a las 16:30 con motivo la 24 feria del Caballo y sus complementos de Cartaya.
+
+El alcalde Manuel Barroso y los concejales Manuel Bendala y José Manuel Camacho, junto a la diputada Provincial Patricia Millán, la pintora del cartel Ángela Villegas y el Empresario Jorge Buendia han presentado el elenco que anuncia que el mandón del toreo a caballo, Diego Ventura estará arropado por Andy Cartagena abriendo un cartel que cierra la joven promesa del toreo portugués, Duarte Fernándes, que ya causó expectación en esta misma localidad el año pasado.
+
+Una corrida del máximo nivel también debe elegir con la misma grandeza el ganado a lidiar. En este caso los toros de “Los Espartales” son del hierro que eligen las figuras para sus compromisos más importantes.
+
+Las entradas se ponen a la venta en el Teatro Municipal de Cartaya desde hoy lunes 16 de Febrero a las 16 30. Todos los días de lunes a viernes.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `Ignacio Garibay cierra el elenco del Circuito de Madrid 2026 y representará a la Escuela Taurina José Cubero “Yiyo”`,
+	image: "/images/igna.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "El novillero mexicano debutará con caballos en la presente edición del certamen. Llega tras una exitosa temporada sin picadores en 2025",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce el elenco completo de novilleros que participarán representando a las Escuelas Taurinas de la Comunidad de Madrid y un novillero que ocupa la plaza de intercambio.
+
+El último novillero en aterrizar en el certamen es el mexicano Ignacio Garibay, quien debutará con picadores en su primera novillada del Circuito. Tras una exitosa etapa sin caballos, en la que destacan las **38 novilladas** del año pasado, donde cortó **77 orejas**, da el paso al escalafón superior como una de las sensaciones de la **Escuela Taurina José Cubero “Yiyo”**.
+
+Entre sus logros más destacados se encuentran erigirse **como triunfador de la Feria de Dax** donde cortó 2 orejas en la novillada clasificatoria y dos en la Gran Final; también **triunfador del Certamen Internacional de Escuelas Taurinas “La Malagueta”** donde cortó 2 orejas en la clasificatoria y 3 en la Gran Final.
+
+Entre otros triunfos se encuentran 1 oreja en **Valencia**, triunfador del certamen Promesas de Nuestra Tierra, del certamen de **Villamanta** o el de **Navarredondilla**.
+
+Además, hizo el paseíllo en Las Ventas, en la Gran Final del certamen **Camino hacia Las Ventas** e inicio esta temporada 2026 cortando 2 orejas en **la Puebla del Río** a un novillo de Fermín Bohórquez.
+
+Debutará con picadores en la presente edición y se une de esta manera al elenco de novilleros de la Escuela Taurina José Cubero "Yiyo", algunos de ellos triunfadores en ediciones anteriores.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la Comunidad de Madrid.
+
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `Morante de la Puebla avala la candidatura de Toño Matilla para la Plaza de Toros de Zaragoza con dos tardes en la Feria del Pilar`,
+	image: "/images/Morantepue.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `El empresario **Toño Matilla** ha formalizado su candidatura para la gestión de la Plaza de Toros de Zaragoza incorporando un respaldo artístico de primer nivel: el compromiso firmado de Morante de la Puebla para actuar en dos corridas durante la próxima Feria del Pilar.
+
+Según informa el periodista **Javier Clavero** en el diario Heraldo de Aragón, el diestro sevillano ha suscrito una carta de compromiso integrada en la oferta presentada al concurso público por la **Unión Temporal de Empresas (UTE) compuesta por el propio Matilla, Ramón Valencia y Jesús Mena.**
+
+La inclusión de Morante refuerza de manera sustancial la propuesta empresarial, al asegurar la presencia de una de las principales figuras del escalafón en el ciclo más relevante del coso de la Misericordia. Este respaldo supone, además, una declaración de intenciones en favor de una Feria del Pilar con mayor proyección artística y capacidad de atracción, consolidando uno de los ejes fundamentales del calendario taurino nacional.
+
+El proceso de licitación de la plaza zaragozana continúa generando notable expectación en el sector, con distintos grupos empresariales posicionados para asumir la gestión de un recinto estratégico en la temporada española. En este contexto, la candidatura liderada por Matilla adquiere un significativo valor añadido al incorporar el apoyo explícito de una figura de referencia, subrayando la ambición y solidez de su proyecto.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `Valencia se rinde al toreo: lleno absoluto con un mes de antelación en la gran cita fallera`,
+	image: "/images/falla.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `La Plaza de Toros de Valencia ya ha colgado el ansiado cartel de “No hay billetes” para la corrida del próximo 14 de marzo, considerada la gran joya del abono de la Feria de Fallas. Un hito que se produce cuando todavía falta un mes para que el paseíllo eche a andar.
+El festejo reúne a tres nombres propios del escalafón: Alejandro Talavante, Roca Rey y Samuel Navalón, que se medirán a un encierro con el hierro de Victoriano del Río y Toros de Cortés. Un cartel de máximas garantías que ha levantado una expectación extraordinaria entre la afición.
+La rapidez con la que se han agotado las localidades supone un hecho inédito desde que los festejos falleros se comercializan con los actuales plazos de venta anticipada, confirmando el excelente momento que atraviesa el ciclo y la firme respuesta del público valenciano.
+Por otro lado, las entradas sueltas para el resto de la Feria de Fallas 2026 continúan disponibles a través de la web oficial del coso valenciano y en las oficinas de Nautalia Viajes repartidas por toda la provincia. A partir del 4 de marzo, también se habilitarán las taquillas físicas de la plaza para la venta directa al público.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Rafael García Garrido, empresario de Madrid, habla sobre la posible vuelta de Morante a Las Ventas`,
+    image: "/images/Moranteymadrid.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "La opinión personal del propio empresario es que Morante volverá a Madrid esta emporada.",
+	fullContent: `El programa radiofónico El Séptimo Toro dedicó parte de su última emisión a analizar la próxima Feria de San Isidro y la temporada que se aproxima en la plaza de toros de Las Ventas, contando como invitado a Rafael García Garrido, presidente de Plaza 1 y uno de los empresarios más destacados del momento. Durante la entrevista, el nombre propio que marcó la conversación fue el de Morante de la Puebla, cuya posible vuelta a Madrid mantiene expectantes a los aficionados.
+
+García Garrido, explicó que la empresa mantiene plena disposición para contar con el torero sevillano, aunque dejó claro que la decisión depende únicamente del propio matador y de su entorno. Recordó además la relevancia de la última actuación de Morante en Madrid, un hito que, según señaló, ha llevado al diestro a querer asegurarse de que el momento de regresar sea el adecuado.
+
+El empresario insistió en que no existe ninguna discrepancia entre las partes y que tanto la plaza como el torero desean reencontrarse cuando las circunstancias lo permitan. A su juicio, la vuelta podría producirse durante la presente temporada, aunque subrayó que se trata de una opinión personal y que todo dependerá de cuándo el torero se sienta preparado para dar ese paso.
+
+Mientras tanto, la temporada madrileña se presenta cargada de atractivos, con los carteles de San Isidro ya sobre la mesa y con el interés añadido de un posible regreso que, de producirse, marcaría uno de los momentos más esperados, quizás en la Feria de Otoño, por el momento toca esperar, no lo sabrá ni el propio torero.
+
+Posdata: El toreo necesita a Morante, pero Morante no puede ser el que tire del toreo, despacio y con buena letra.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Arganda del Rey acoge el III Certamen “Vid de Plata”`,
+	image: "/images/argan.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `Arganda del Rey celebrará los días **20, 21 y 22** de marzo de 2026 el **III Certamen “Vid de Plata”** de Tentaderos Clasificatorios en la Finca Feligrés. El evento reunirá a jóvenes alumnos de distintas escuelas taurinas en tres jornadas de competición.
+
+El viernes 20 participarán **José Antonio de Gracia, José Huelves, Miguel Remiro y Fernando Díaz.**
+El sábado 21 actuarán **Francisco Benito, Álvaro Castillo, Arias Samper y Hugo Hernández.**
+El domingo 22 será el turno de **Manuel León, Pablo Jurado, Armando Rojo y Samuel Montero.**
+
+El certamen busca impulsar a las nuevas promesas del toreo y consolidar a Arganda del Rey como referente en la promoción de jóvenes valores taurinos.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `Fandi y Colombo llenan de emoción la Monumental de Mérida en una tarde de indultos y taquilla salvada`,
+	image: "/images/.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "",
+	fullContent: ``,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `Vanegas y Herrero encienden el coso de tablas en una tarde de lleno absoluto`,
+	image: "/images/cronn1.jpg",
+    category: "Crónicas",
+    date: "16 de Febrero de 2026",
+	excerpt: "Fernando Vanegas corta dos orejas y firma la faena más rotunda del domingo en el Carnaval del toro, mientras el bodonés vuelve a hacer historia a caballo dentro de las dificultades del ruedo.",
+	imageCaption: "Imagen de Mateo G.J.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Erales de la ganadería de Toros de Orive y una res de El Canario para Víctor Herrero",
+	torerosRaw: `Íñigo Norte: palmas.
+Fernando Vanegas: dos orejas.
+Francisco Rodríguez Perera: una oreja
+Pedro Caminero: palmas.
+Víctor Herrero: dos orejas.`,
+	fullContent: `En esta segunda tarde de abono, el Carnaval volvió a demostrar que Ciudad Rodrigo tiene pulso propio cuando suenan los clarines. Lleno en los tendidos y un gran ambiente para este festejo mixto, novillada sin picadores para los finalistas del Bolsín Taurino Mirobrigense y rejones.
+Comenzó la tarde con **Íñigo Norte** ante un eral de Toros de Orive que, de salida, apuntó bravura y alegría. El novillero salmantino lo recibió con gran disposición, pero a medida que avanzó la lidia, el novillo se mostró falto de fuerzas, lo que hizo que la faena fuera a menos. Norte trató de aguantarlo con pulso y temple, dejando derechazos estimables hacia el final. La espada, con un pinchazo hondo y descabello, diluyó cualquier opción de premio, recibiendo palmas por parte de los espectadores. 
+Sin embargo, la tarde creció con **Fernando Vanegas**, donde mostró una gran variedad capotera y puso banderillas él mismo, conectando automáticamente con el tendido. Una vez con la muleta en la mano, supo realizar una faena ligada, aprovechando al máximo al eral de Orive siendo, hasta ahora, el más completo de estos carnavales, teniendo calidad, transmisión y recorrido. Vanegas entendió bien las distancias y construyó una labor de ambición y firmeza. Con una buena estocada, fue premiado con dos orejas. Por su parte, el novillo recibió una vuelta al ruedo. 
+Le llegó el turno al extremeño **Francisco Rodríguez**, quien se enfrentó a un oponente de embestida a media altura con algún rebrinco que afeaba el muletazo. El pacense dejó detalles de gusto con el capote y pasajes interesantes con la muleta, con una actitud a la que nada se le puede reprochar. Logró cortar una oreja como premio a su disposición.
+Cerró la terna novilleril **Pedro Caminero**. La tarde, ya más fría, enfrió el ánimo en los tendidos. Caminero no terminó de encontrar las distancias ni el sitio que demandaba el animal. Enganchones y desarmes deslucieron el conjunto de la faena. Mató tras un aviso y fue aplaudido por el público. 
+Por último, **Víctor Herrero**, que por segundo año consecutivo hacía el paseíllo en esta gran plaza gracias al impulso de los tablaos. Asumió de nuevo el reto de torear en este coso rectangular, que si ya de normal dificulta la lidia, a caballo aún más. El novillo, ahora de la ganadería de El Canario, no aportó una gran colaboración, estaba distraído y no transmitía mucho, obligando al rejoneador a ponerlo todo. Tirando de oficio y entrega, montando hasta cuatro caballos, lo más vistoso llego con un castaño de cabos blancos. Arriesgó en terrenos comprometidos y dejo pasajes de gran mérito en un escenario para nada sencillo. Mató al segundo intento y paseo dos orejas, muy pedidas por el público.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1009,
     title: `El escritor Rubén Amón ensalza la dimensión taurina de El Puerto en la presentación de “Morante, punto y aparte”`,
 	image: "/images/WhatsApp Image 2026-02-15 at 19.13.43.jpg",
     category: "Actualidad",
     date: "16 de Febrero de 2026",
 	excerpt: "El teniente de alcalde de Gran Ciudad, Javier Bello, ha acompañado  a la Academia de Bellas Artes Santa Cecilia en un acto que refuerza la agenda cultural de la ciudad y pone en valor la figura de Morante",
-	plaza: "Plaza Mayor de Ciudad Rodrigo",
 	fullContent: `El Auditorio Municipal Monasterio San Miguel, de El Puerto de Santa Maria, ha acogido la presentación de “Morante, punto y aparte”, la última obra del periodista y escritor Rubén Amón, en un acto organizado por la Academia de Bellas Artes Santa Cecilia que contó con la presencia del teniente de alcalde de Gran Ciudad, Javier Bello.
 
 El autor compartió mesa con el presidente de la Academia, Luis Garrido, y el periodista Paco Reyero, en una cita que congregó a numerosos aficionados y amantes de la cultura. Javier Bello felicitó a la entidad por la organización de una actividad que “contribuye a enriquecer la programación cultural de la ciudad y a proyectar la relevancia de El Puerto en el ámbito taurino”. Asimismo, agradeció a Rubén Amón su presencia dentro de la gira de presentación del libro, reforzando así su vínculo con la Academia, a la que ya visitó el pasado verano con motivo de su libro “Tenemos que hablar”.
@@ -67,6 +215,179 @@ El Puerto avanza porque con actos como este continúa consolidando una programac
 ];
 
 const latestNews: NewsItem[] = [
+   { 
+    id: 226,
+    title: `Cartaya (Huelva) celebrara una corrida de rejones en la XXIV Feria del Caballo`,
+	image: "/images/cartaya.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `En la mañana de hoy se ha presentado en el Ayuntamiento de Cartaya el histórico cartel del arte del rejoneo que se celebrará el próximo día 7 de marzo a las 16:30 con motivo la 24 feria del Caballo y sus complementos de Cartaya.
+
+El alcalde Manuel Barroso y los concejales Manuel Bendala y José Manuel Camacho, junto a la diputada Provincial Patricia Millán, la pintora del cartel Ángela Villegas y el Empresario Jorge Buendia han presentado el elenco que anuncia que el mandón del toreo a caballo, Diego Ventura estará arropado por Andy Cartagena abriendo un cartel que cierra la joven promesa del toreo portugués, Duarte Fernándes, que ya causó expectación en esta misma localidad el año pasado.
+
+Una corrida del máximo nivel también debe elegir con la misma grandeza el ganado a lidiar. En este caso los toros de “Los Espartales” son del hierro que eligen las figuras para sus compromisos más importantes.
+
+Las entradas se ponen a la venta en el Teatro Municipal de Cartaya desde hoy lunes 16 de Febrero a las 16 30. Todos los días de lunes a viernes.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 227,
+    title: `Ignacio Garibay cierra el elenco del Circuito de Madrid 2026 y representará a la Escuela Taurina José Cubero “Yiyo”`,
+	image: "/images/igna.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "El novillero mexicano debutará con caballos en la presente edición del certamen. Llega tras una exitosa temporada sin picadores en 2025",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce el elenco completo de novilleros que participarán representando a las Escuelas Taurinas de la Comunidad de Madrid y un novillero que ocupa la plaza de intercambio.
+
+El último novillero en aterrizar en el certamen es el mexicano Ignacio Garibay, quien debutará con picadores en su primera novillada del Circuito. Tras una exitosa etapa sin caballos, en la que destacan las **38 novilladas** del año pasado, donde cortó **77 orejas**, da el paso al escalafón superior como una de las sensaciones de la **Escuela Taurina José Cubero “Yiyo”**.
+
+Entre sus logros más destacados se encuentran erigirse **como triunfador de la Feria de Dax** donde cortó 2 orejas en la novillada clasificatoria y dos en la Gran Final; también **triunfador del Certamen Internacional de Escuelas Taurinas “La Malagueta”** donde cortó 2 orejas en la clasificatoria y 3 en la Gran Final.
+
+Entre otros triunfos se encuentran 1 oreja en **Valencia**, triunfador del certamen Promesas de Nuestra Tierra, del certamen de **Villamanta** o el de **Navarredondilla**.
+
+Además, hizo el paseíllo en Las Ventas, en la Gran Final del certamen **Camino hacia Las Ventas** e inicio esta temporada 2026 cortando 2 orejas en **la Puebla del Río** a un novillo de Fermín Bohórquez.
+
+Debutará con picadores en la presente edición y se une de esta manera al elenco de novilleros de la Escuela Taurina José Cubero "Yiyo", algunos de ellos triunfadores en ediciones anteriores.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la Comunidad de Madrid.
+
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 228,
+    title: `Morante de la Puebla avala la candidatura de Toño Matilla para la Plaza de Toros de Zaragoza con dos tardes en la Feria del Pilar`,
+	image: "/images/Morantepue.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `El empresario **Toño Matilla** ha formalizado su candidatura para la gestión de la Plaza de Toros de Zaragoza incorporando un respaldo artístico de primer nivel: el compromiso firmado de Morante de la Puebla para actuar en dos corridas durante la próxima Feria del Pilar.
+
+Según informa el periodista **Javier Clavero** en el diario Heraldo de Aragón, el diestro sevillano ha suscrito una carta de compromiso integrada en la oferta presentada al concurso público por la **Unión Temporal de Empresas (UTE) compuesta por el propio Matilla, Ramón Valencia y Jesús Mena.**
+
+La inclusión de Morante refuerza de manera sustancial la propuesta empresarial, al asegurar la presencia de una de las principales figuras del escalafón en el ciclo más relevante del coso de la Misericordia. Este respaldo supone, además, una declaración de intenciones en favor de una Feria del Pilar con mayor proyección artística y capacidad de atracción, consolidando uno de los ejes fundamentales del calendario taurino nacional.
+
+El proceso de licitación de la plaza zaragozana continúa generando notable expectación en el sector, con distintos grupos empresariales posicionados para asumir la gestión de un recinto estratégico en la temporada española. En este contexto, la candidatura liderada por Matilla adquiere un significativo valor añadido al incorporar el apoyo explícito de una figura de referencia, subrayando la ambición y solidez de su proyecto.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 229,
+    title: `Valencia se rinde al toreo: lleno absoluto con un mes de antelación en la gran cita fallera`,
+	image: "/images/falla.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `La Plaza de Toros de Valencia ya ha colgado el ansiado cartel de “No hay billetes” para la corrida del próximo 14 de marzo, considerada la gran joya del abono de la Feria de Fallas. Un hito que se produce cuando todavía falta un mes para que el paseíllo eche a andar.
+El festejo reúne a tres nombres propios del escalafón: Alejandro Talavante, Roca Rey y Samuel Navalón, que se medirán a un encierro con el hierro de Victoriano del Río y Toros de Cortés. Un cartel de máximas garantías que ha levantado una expectación extraordinaria entre la afición.
+La rapidez con la que se han agotado las localidades supone un hecho inédito desde que los festejos falleros se comercializan con los actuales plazos de venta anticipada, confirmando el excelente momento que atraviesa el ciclo y la firme respuesta del público valenciano.
+Por otro lado, las entradas sueltas para el resto de la Feria de Fallas 2026 continúan disponibles a través de la web oficial del coso valenciano y en las oficinas de Nautalia Viajes repartidas por toda la provincia. A partir del 4 de marzo, también se habilitarán las taquillas físicas de la plaza para la venta directa al público.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 230,
+    title: `Rafael García Garrido, empresario de Madrid, habla sobre la posible vuelta de Morante a Las Ventas`,
+    image: "/images/Moranteymadrid.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "La opinión personal del propio empresario es que Morante volverá a Madrid esta emporada.",
+	fullContent: `El programa radiofónico El Séptimo Toro dedicó parte de su última emisión a analizar la próxima Feria de San Isidro y la temporada que se aproxima en la plaza de toros de Las Ventas, contando como invitado a Rafael García Garrido, presidente de Plaza 1 y uno de los empresarios más destacados del momento. Durante la entrevista, el nombre propio que marcó la conversación fue el de Morante de la Puebla, cuya posible vuelta a Madrid mantiene expectantes a los aficionados.
+
+García Garrido, explicó que la empresa mantiene plena disposición para contar con el torero sevillano, aunque dejó claro que la decisión depende únicamente del propio matador y de su entorno. Recordó además la relevancia de la última actuación de Morante en Madrid, un hito que, según señaló, ha llevado al diestro a querer asegurarse de que el momento de regresar sea el adecuado.
+
+El empresario insistió en que no existe ninguna discrepancia entre las partes y que tanto la plaza como el torero desean reencontrarse cuando las circunstancias lo permitan. A su juicio, la vuelta podría producirse durante la presente temporada, aunque subrayó que se trata de una opinión personal y que todo dependerá de cuándo el torero se sienta preparado para dar ese paso.
+
+Mientras tanto, la temporada madrileña se presenta cargada de atractivos, con los carteles de San Isidro ya sobre la mesa y con el interés añadido de un posible regreso que, de producirse, marcaría uno de los momentos más esperados, quizás en la Feria de Otoño, por el momento toca esperar, no lo sabrá ni el propio torero.
+
+Posdata: El toreo necesita a Morante, pero Morante no puede ser el que tire del toreo, despacio y con buena letra.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 231,
+    title: `Arganda del Rey acoge el III Certamen “Vid de Plata”`,
+	image: "/images/argan.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	fullContent: `Arganda del Rey celebrará los días **20, 21 y 22** de marzo de 2026 el **III Certamen “Vid de Plata”** de Tentaderos Clasificatorios en la Finca Feligrés. El evento reunirá a jóvenes alumnos de distintas escuelas taurinas en tres jornadas de competición.
+
+El viernes 20 participarán **José Antonio de Gracia, José Huelves, Miguel Remiro y Fernando Díaz.**
+El sábado 21 actuarán **Francisco Benito, Álvaro Castillo, Arias Samper y Hugo Hernández.**
+El domingo 22 será el turno de **Manuel León, Pablo Jurado, Armando Rojo y Samuel Montero.**
+
+El certamen busca impulsar a las nuevas promesas del toreo y consolidar a Arganda del Rey como referente en la promoción de jóvenes valores taurinos.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 232,
+    title: `Fandi y Colombo llenan de emoción la Monumental de Mérida en una tarde de indultos y taquilla salvada`,
+	image: "/images/.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "",
+	fullContent: ``,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 233,
+    title: `Vanegas y Herrero encienden el coso de tablas en una tarde de lleno absoluto`,
+	image: "/images/cronn1.jpg",
+    category: "Crónicas",
+    date: "16 de Febrero de 2026",
+	excerpt: "Fernando Vanegas corta dos orejas y firma la faena más rotunda del domingo en el Carnaval del toro, mientras el bodonés vuelve a hacer historia a caballo dentro de las dificultades del ruedo.",
+	imageCaption: "Imagen de Mateo G.J.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Erales de la ganadería de Toros de Orive y una res de El Canario para Víctor Herrero",
+	torerosRaw: `Íñigo Norte: palmas.
+Fernando Vanegas: dos orejas.
+Francisco Rodríguez Perera: una oreja
+Pedro Caminero: palmas.
+Víctor Herrero: dos orejas.`,
+	fullContent: `En esta segunda tarde de abono, el Carnaval volvió a demostrar que Ciudad Rodrigo tiene pulso propio cuando suenan los clarines. Lleno en los tendidos y un gran ambiente para este festejo mixto, novillada sin picadores para los finalistas del Bolsín Taurino Mirobrigense y rejones.
+Comenzó la tarde con **Íñigo Norte** ante un eral de Toros de Orive que, de salida, apuntó bravura y alegría. El novillero salmantino lo recibió con gran disposición, pero a medida que avanzó la lidia, el novillo se mostró falto de fuerzas, lo que hizo que la faena fuera a menos. Norte trató de aguantarlo con pulso y temple, dejando derechazos estimables hacia el final. La espada, con un pinchazo hondo y descabello, diluyó cualquier opción de premio, recibiendo palmas por parte de los espectadores. 
+Sin embargo, la tarde creció con **Fernando Vanegas**, donde mostró una gran variedad capotera y puso banderillas él mismo, conectando automáticamente con el tendido. Una vez con la muleta en la mano, supo realizar una faena ligada, aprovechando al máximo al eral de Orive siendo, hasta ahora, el más completo de estos carnavales, teniendo calidad, transmisión y recorrido. Vanegas entendió bien las distancias y construyó una labor de ambición y firmeza. Con una buena estocada, fue premiado con dos orejas. Por su parte, el novillo recibió una vuelta al ruedo. 
+Le llegó el turno al extremeño **Francisco Rodríguez**, quien se enfrentó a un oponente de embestida a media altura con algún rebrinco que afeaba el muletazo. El pacense dejó detalles de gusto con el capote y pasajes interesantes con la muleta, con una actitud a la que nada se le puede reprochar. Logró cortar una oreja como premio a su disposición.
+Cerró la terna novilleril **Pedro Caminero**. La tarde, ya más fría, enfrió el ánimo en los tendidos. Caminero no terminó de encontrar las distancias ni el sitio que demandaba el animal. Enganchones y desarmes deslucieron el conjunto de la faena. Mató tras un aviso y fue aplaudido por el público. 
+Por último, **Víctor Herrero**, que por segundo año consecutivo hacía el paseíllo en esta gran plaza gracias al impulso de los tablaos. Asumió de nuevo el reto de torear en este coso rectangular, que si ya de normal dificulta la lidia, a caballo aún más. El novillo, ahora de la ganadería de El Canario, no aportó una gran colaboración, estaba distraído y no transmitía mucho, obligando al rejoneador a ponerlo todo. Tirando de oficio y entrega, montando hasta cuatro caballos, lo más vistoso llego con un castaño de cabos blancos. Arriesgó en terrenos comprometidos y dejo pasajes de gran mérito en un escenario para nada sencillo. Mató al segundo intento y paseo dos orejas, muy pedidas por el público.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 234,
+    title: `El escritor Rubén Amón ensalza la dimensión taurina de El Puerto en la presentación de “Morante, punto y aparte”`,
+	image: "/images/WhatsApp Image 2026-02-15 at 19.13.43.jpg",
+    category: "Actualidad",
+    date: "16 de Febrero de 2026",
+	excerpt: "El teniente de alcalde de Gran Ciudad, Javier Bello, ha acompañado  a la Academia de Bellas Artes Santa Cecilia en un acto que refuerza la agenda cultural de la ciudad y pone en valor la figura de Morante",
+	fullContent: `El Auditorio Municipal Monasterio San Miguel, de El Puerto de Santa Maria, ha acogido la presentación de “Morante, punto y aparte”, la última obra del periodista y escritor Rubén Amón, en un acto organizado por la Academia de Bellas Artes Santa Cecilia que contó con la presencia del teniente de alcalde de Gran Ciudad, Javier Bello.
+
+El autor compartió mesa con el presidente de la Academia, Luis Garrido, y el periodista Paco Reyero, en una cita que congregó a numerosos aficionados y amantes de la cultura. Javier Bello felicitó a la entidad por la organización de una actividad que “contribuye a enriquecer la programación cultural de la ciudad y a proyectar la relevancia de El Puerto en el ámbito taurino”. Asimismo, agradeció a Rubén Amón su presencia dentro de la gira de presentación del libro, reforzando así su vínculo con la Academia, a la que ya visitó el pasado verano con motivo de su libro “Tenemos que hablar”.
+
+En su intervención, el periodista definió a Morante de la Puebla como probablemente el mejor torero de todos los tiempos y, sin duda, el mejor que él ha visto, destacando que su tauromaquia trasciende lo estrictamente técnico para convertirse en una experiencia estética y emocional única. “Cuando termina de torear, el público queda exhausto por el punto de referencia que crea; su expresión artística es descomunal”, afirmó.
+
+Amón evocó también uno de los momentos que vivió el pasado año en la plaza portuense, cuando, acompañado por su hijo, presenció una faena de Morante mientras sonaba el pasodoble “Concha flamenca”, hasta el punto de preguntarle a su hijo por qué no se quedaban “a vivir para siempre en ese instante”. Para Amón, la plaza de toros de El Puerto “forma parte de las grandes escalas de una temporada y de una vida”, asegurando que, junto a Sevilla y Madrid, es el lugar donde ha sido más feliz como aficionado.
+
+Editado por Espasa, el libro combina crónica periodística y ensayo para retratar a Morante como mucho más que un torero: “un acontecimiento, una categoría en sí mismo, una religión civil y un icono cultural de primer orden”. Amón subrayó que la conversión del diestro en fenómeno de masas e icono transversal ha coincidido con la que el escritor considera su temporada más arrebatadora, la de 2025.
+
+Durante el coloquio, el periodista defendió que Morante “se echa la feria a la espalda en el momento más delicado” y que para el diestro el toreo es también “un camino de salvación”, capaz de abrir nuevas sendas en la tauromaquia contemporánea.
+
+El Puerto avanza porque con actos como este continúa consolidando una programación cultural diversa y de calidad, estrechamente vinculada a su identidad y a tradiciones que forman parte de su historia y proyección cultural.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 235,
     title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
