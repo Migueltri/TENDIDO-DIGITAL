@@ -154,11 +154,22 @@ El certamen busca impulsar a las nuevas promesas del toreo y consolidar a Argand
 	{ 
     id: 1007,
     title: `Fandi y Colombo llenan de emoción la Monumental de Mérida en una tarde de indultos y taquilla salvada`,
-	image: "/images/.jpg",
+	image: "/images/fandiii.jpg",
     category: "Actualidad",
     date: "16 de Febrero de 2026",
-	excerpt: "",
-	fullContent: ``,
+	fullContent: `La segunda corrida de la LV Feria del Sol en la Plaza de Toros Monumental Román Eduardo Sandia confirmó que cuando el cartel tiene tirón, la respuesta del público no falla. Con más de tres cuartos de entrada —cerca de 14 mil espectadores—, la combinación de David Fandila El Fandi y Jesús Enrique Colombo sostuvo el peso de la taquilla y devolvió el ambiente grande al coso merideño en una tarde fría, incluso pasada por llovizna al cierre del festejo.
+
+
+
+El encierro fue variado en comportamiento. Se lidiaron toros de San Antonio, con el hierro de Edgar Varela, y dos ejemplares de Campolargo, estos últimos decisivos en el resultado final. Destacó el cuarto toro, «Sevillano», premiado con la vuelta al ruedo, mientras que el que cerró plaza, «Merideño», fue indultado en medio de la división de opiniones, decisión que marcó el epílogo del festejo.
+
+
+
+El Fandi volvió a demostrar por qué es torero imprescindible en Mérida. Poderoso con las banderillas y firme en la muleta, cuajó una de sus faenas más redondas en este ruedo ante el noble «Embajador» de Campolargo, al que desorejó tras una estocada fulminante. Pudo ampliar su balance de no mediar la espada en su segundo y mostró oficio ante el tercero de su lote, arrancando el reconocimiento del público. Su balance: dos orejas y una actuación que volvió a conectar con sus seguidores.
+
+
+
+Colombo, por su parte, tiró de raza y ambición. Tras una primera labor de esfuerzo sin premio —con petición desatendida por la presidencia—, se reivindicó con el sobrero «Sevillano», al que cortó dos orejas tras faena intensa y prolongada. El clímax llegó con «Merideño», un toro de gran nobleza al que el público pidió con fuerza el indulto, finalmente concedido. Colombo sumó dos orejas simbólicas en una tarde de máxima conexión con los tendidos y reafirmó su condición de ídolo local.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
@@ -327,14 +338,25 @@ El certamen busca impulsar a las nuevas promesas del toreo y consolidar a Argand
     authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    },
-	{ 
+   { 
     id: 232,
     title: `Fandi y Colombo llenan de emoción la Monumental de Mérida en una tarde de indultos y taquilla salvada`,
-	image: "/images/.jpg",
+	image: "/images/fandiii.jpg",
     category: "Actualidad",
     date: "16 de Febrero de 2026",
-	excerpt: "",
-	fullContent: ``,
+	fullContent: `La segunda corrida de la LV Feria del Sol en la Plaza de Toros Monumental Román Eduardo Sandia confirmó que cuando el cartel tiene tirón, la respuesta del público no falla. Con más de tres cuartos de entrada —cerca de 14 mil espectadores—, la combinación de David Fandila El Fandi y Jesús Enrique Colombo sostuvo el peso de la taquilla y devolvió el ambiente grande al coso merideño en una tarde fría, incluso pasada por llovizna al cierre del festejo.
+
+
+
+El encierro fue variado en comportamiento. Se lidiaron toros de San Antonio, con el hierro de Edgar Varela, y dos ejemplares de Campolargo, estos últimos decisivos en el resultado final. Destacó el cuarto toro, «Sevillano», premiado con la vuelta al ruedo, mientras que el que cerró plaza, «Merideño», fue indultado en medio de la división de opiniones, decisión que marcó el epílogo del festejo.
+
+
+
+El Fandi volvió a demostrar por qué es torero imprescindible en Mérida. Poderoso con las banderillas y firme en la muleta, cuajó una de sus faenas más redondas en este ruedo ante el noble «Embajador» de Campolargo, al que desorejó tras una estocada fulminante. Pudo ampliar su balance de no mediar la espada en su segundo y mostró oficio ante el tercero de su lote, arrancando el reconocimiento del público. Su balance: dos orejas y una actuación que volvió a conectar con sus seguidores.
+
+
+
+Colombo, por su parte, tiró de raza y ambición. Tras una primera labor de esfuerzo sin premio —con petición desatendida por la presidencia—, se reivindicó con el sobrero «Sevillano», al que cortó dos orejas tras faena intensa y prolongada. El clímax llegó con «Merideño», un toro de gran nobleza al que el público pidió con fuerza el indulto, finalmente concedido. Colombo sumó dos orejas simbólicas en una tarde de máxima conexión con los tendidos y reafirmó su condición de ídolo local.`,
 	author: "Rubén Sánchez",
     authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
