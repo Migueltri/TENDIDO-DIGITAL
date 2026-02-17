@@ -40,6 +40,58 @@
 
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1000,
+    title: `Exigente encierro de Sánchez Herrero en el Carnaval del toro`,
+	image: "/images/ciudro.jpg",
+    category: "Crónicas",
+    date: "16 de Febrero de 2026",
+	excerpt: "La bravura desigual del hierro salmantino puso a prueba a la terna en una tarde de entrega, volteretas y un debut con picadores cargado de personalidad.",
+	imageCaption: "Imagen de Mateo G.J.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganadería Sánchez Herrero",
+	torerosRaw: `Tomás Bastos: una oreja.
+Julio Méndez: una oreja.
+Félix San Román: ovación. 
+Diego Mateos: aplausos.`,
+	fullContent: `En la plaza de toros de Ciudad Rodrigo, con tres cuartos largos de entrada en los tendidos, se celebró la novillada con picadores de la Ganadería Sánchez Herrero, que ofreció un encierro de matices: bravura y repetición en algunos, teclas y exigencias en otros.
+
+Abrió cartel **Tomás Bastos** ante un primero bravo y repetidor por el pitón derecho, pero con peligro y genio por el izquierdo. El novillero dejó verónicas de buen trazo en el recibo capotero, asentando la faena desde el saludo. En varas, el novillo empujó con un solo pitón, mostrando la condición desigual que después confirmaría. Con la muleta, Bastos entendió pronto que el triunfo pasaba por el derecho, por donde dejó series templadas. Firme en el sitio y paciente ante las dificultades del izquierdo, construyó una labor de mérito. Media estocada, aviso y descabello precedieron a la concesión de una oreja.
+
+**Julio Méndez** se las vio ante un segundo negro, deslucido y justo de entrega, que apenas aguantó dos tandas por el izquierdo. En el recibo sufrió una fuerte voltereta que no hizo que mermara su determinación. Tras un tercio de varas donde el novillo apenas quiso pelea, Méndez inició la faena con la rodilla flexionada en la tierra, gesto que animó a los tendidos, y dejó naturales de buen corte, asentándose también por el derecho. Supo exprimir lo poco que ofrecía el astado. Tras pinchazo y estocada, paseó una oreja.
+
+El tercero, castaño de capa, fue bravo y noble, uno de los ejemplares más completos de la tarde. **Félix San Román** lo saludó con buen aire capotero y el novillo empujó con entrega en el caballo. El trasteo comenzó por abajo, marcando dominio, y por el derecho llegaron tandas templadas y ligadas, corriendo la mano con gusto. Por el izquierdo se recreó el novillero, dejando muletazos de mayor expresión. La espada, sin embargo, enfrió el posible premio: estocada y descabello que dejaron todo en ovación.
+
+Cerró plaza el salmantino **Diego Mateos**, que debutaba con picadores. Recibió a porta gayola a un cuarto pegajoso con el capote y exigente desde el inicio. El novillo tenía teclas y se quedaba corto, siendo el pitón derecho el único potable. Diego inició por lo bajo, asentando la embestida, y logró extraer derechazos de mérito, dejando entrever su concepto y personalidad en el ruedo mirobrigense. Fue una faena meritoria ante las condiciones del oponente. Pinchazo, estocada, aviso y varios intentos con el descabello
+
+hicieron que las opciones de triunfo desaparecieran. Recibió aplausos por parte de los espectadores.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
+    title: `Fernando Sánchez, lealtad y ambición: Madrid en el punto de mira del tercero talaverano para 2026`,
+	image: "/images/leal.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `El baile de cuadrillas vuelve a marcar el pulso del invierno taurino. Como cada temporada, no son pocos los matadores que retocan sus equipos de cara al nuevo curso, dando salida a hombres de plata y oro que buscan nuevos horizontes, afrontan el final de etapa o simplemente necesitan un cambio de aire. Una realidad que no solo afecta a las grandes figuras, sino también a toreros del segundo tramo del escalafón y a jóvenes que aprietan los dientes para abrirse paso.
+
+
+
+Si miramos al escalafón de 2025, apenas un reducido grupo de espadas forma parte del llamado Grupo Especial, lo que obliga a tener la cuadrilla cerrada antes del primer paseíllo. En ese contexto se mueven nombres consolidados que perfilan al milímetro sus equipos, aunque también hay banderilleros que, aun formando parte de cuadrillas punteras, optan por torear “suelto” cuando el calendario lo permite. Es el caso de Fernando Sánchez, uno de los terceros más cotizados por la afición y respetado en el vestuario.
+
+
+
+El de Talavera lo tiene claro: continuará a las órdenes de Tomás Rufo, manteniendo la fidelidad a su jefe de filas, pero sin cerrar la puerta a otras oportunidades siempre que no coincidan fechas. “Seguiré con Rufo y, los días que no toree con él, si me llaman, iré suelto”, aseguró el subalterno, que el pasado curso acompañó al espada en 34 paseíllos y sumó además actuaciones con otros diestros. Para 2026, eso sí, rebaja el ritmo: quiere seleccionar compromisos y poner el foco en Madrid, donde espera vestirse de luces todas las tardes posibles, con especial atención a la cita del 22 de marzo frente a los toros de Hijos de D. Celestino Cuadri Vides.
+
+
+
+La temporada ya echó a andar para él en Valdemorillo, en el mano a mano entre Borja Jiménez y el propio Rufo. En el horizonte asoman compromisos en Castellón, Valencia, Arles y dos tardes más en la capital, además de una corrida en Mérida y festivales en Cantillana y Bargas. Falta por confirmar si espadas como Pepe Moral, Damián Castaño o Gómez del Pilar contarán con sus servicios. Lo que sí es seguro es que Fernando Sánchez seguirá siendo sinónimo de entrega, profesionalidad y ambición en los ruedos.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1001,
     title: `Cartaya (Huelva) celebrara una corrida de rejones en la XXIV Feria del Caballo`,
 	image: "/images/cartaya.jpg",
@@ -226,7 +278,59 @@ El Puerto avanza porque con actos como este continúa consolidando una programac
 ];
 
 const latestNews: NewsItem[] = [
-   { 
+  { 
+    id: 224,
+    title: `Exigente encierro de Sánchez Herrero en el Carnaval del toro`,
+	image: "/images/ciudro.jpg",
+    category: "Crónicas",
+    date: "16 de Febrero de 2026",
+	excerpt: "La bravura desigual del hierro salmantino puso a prueba a la terna en una tarde de entrega, volteretas y un debut con picadores cargado de personalidad.",
+	imageCaption: "Imagen de Mateo G.J.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganadería Sánchez Herrero",
+	torerosRaw: `Tomás Bastos: una oreja.
+Julio Méndez: una oreja.
+Félix San Román: ovación. 
+Diego Mateos: aplausos.`,
+	fullContent: `En la plaza de toros de Ciudad Rodrigo, con tres cuartos largos de entrada en los tendidos, se celebró la novillada con picadores de la Ganadería Sánchez Herrero, que ofreció un encierro de matices: bravura y repetición en algunos, teclas y exigencias en otros.
+
+Abrió cartel **Tomás Bastos** ante un primero bravo y repetidor por el pitón derecho, pero con peligro y genio por el izquierdo. El novillero dejó verónicas de buen trazo en el recibo capotero, asentando la faena desde el saludo. En varas, el novillo empujó con un solo pitón, mostrando la condición desigual que después confirmaría. Con la muleta, Bastos entendió pronto que el triunfo pasaba por el derecho, por donde dejó series templadas. Firme en el sitio y paciente ante las dificultades del izquierdo, construyó una labor de mérito. Media estocada, aviso y descabello precedieron a la concesión de una oreja.
+
+**Julio Méndez** se las vio ante un segundo negro, deslucido y justo de entrega, que apenas aguantó dos tandas por el izquierdo. En el recibo sufrió una fuerte voltereta que no hizo que mermara su determinación. Tras un tercio de varas donde el novillo apenas quiso pelea, Méndez inició la faena con la rodilla flexionada en la tierra, gesto que animó a los tendidos, y dejó naturales de buen corte, asentándose también por el derecho. Supo exprimir lo poco que ofrecía el astado. Tras pinchazo y estocada, paseó una oreja.
+
+El tercero, castaño de capa, fue bravo y noble, uno de los ejemplares más completos de la tarde. **Félix San Román** lo saludó con buen aire capotero y el novillo empujó con entrega en el caballo. El trasteo comenzó por abajo, marcando dominio, y por el derecho llegaron tandas templadas y ligadas, corriendo la mano con gusto. Por el izquierdo se recreó el novillero, dejando muletazos de mayor expresión. La espada, sin embargo, enfrió el posible premio: estocada y descabello que dejaron todo en ovación.
+
+Cerró plaza el salmantino **Diego Mateos**, que debutaba con picadores. Recibió a porta gayola a un cuarto pegajoso con el capote y exigente desde el inicio. El novillo tenía teclas y se quedaba corto, siendo el pitón derecho el único potable. Diego inició por lo bajo, asentando la embestida, y logró extraer derechazos de mérito, dejando entrever su concepto y personalidad en el ruedo mirobrigense. Fue una faena meritoria ante las condiciones del oponente. Pinchazo, estocada, aviso y varios intentos con el descabello
+
+hicieron que las opciones de triunfo desaparecieran. Recibió aplausos por parte de los espectadores.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 225,
+    title: `Fernando Sánchez, lealtad y ambición: Madrid en el punto de mira del tercero talaverano para 2026`,
+	image: "/images/leal.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `El baile de cuadrillas vuelve a marcar el pulso del invierno taurino. Como cada temporada, no son pocos los matadores que retocan sus equipos de cara al nuevo curso, dando salida a hombres de plata y oro que buscan nuevos horizontes, afrontan el final de etapa o simplemente necesitan un cambio de aire. Una realidad que no solo afecta a las grandes figuras, sino también a toreros del segundo tramo del escalafón y a jóvenes que aprietan los dientes para abrirse paso.
+
+
+
+Si miramos al escalafón de 2025, apenas un reducido grupo de espadas forma parte del llamado Grupo Especial, lo que obliga a tener la cuadrilla cerrada antes del primer paseíllo. En ese contexto se mueven nombres consolidados que perfilan al milímetro sus equipos, aunque también hay banderilleros que, aun formando parte de cuadrillas punteras, optan por torear “suelto” cuando el calendario lo permite. Es el caso de Fernando Sánchez, uno de los terceros más cotizados por la afición y respetado en el vestuario.
+
+
+
+El de Talavera lo tiene claro: continuará a las órdenes de Tomás Rufo, manteniendo la fidelidad a su jefe de filas, pero sin cerrar la puerta a otras oportunidades siempre que no coincidan fechas. “Seguiré con Rufo y, los días que no toree con él, si me llaman, iré suelto”, aseguró el subalterno, que el pasado curso acompañó al espada en 34 paseíllos y sumó además actuaciones con otros diestros. Para 2026, eso sí, rebaja el ritmo: quiere seleccionar compromisos y poner el foco en Madrid, donde espera vestirse de luces todas las tardes posibles, con especial atención a la cita del 22 de marzo frente a los toros de Hijos de D. Celestino Cuadri Vides.
+
+
+
+La temporada ya echó a andar para él en Valdemorillo, en el mano a mano entre Borja Jiménez y el propio Rufo. En el horizonte asoman compromisos en Castellón, Valencia, Arles y dos tardes más en la capital, además de una corrida en Mérida y festivales en Cantillana y Bargas. Falta por confirmar si espadas como Pepe Moral, Damián Castaño o Gómez del Pilar contarán con sus servicios. Lo que sí es seguro es que Fernando Sánchez seguirá siendo sinónimo de entrega, profesionalidad y ambición en los ruedos.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 226,
     title: `Cartaya (Huelva) celebrara una corrida de rejones en la XXIV Feria del Caballo`,
 	image: "/images/cartaya.jpg",
