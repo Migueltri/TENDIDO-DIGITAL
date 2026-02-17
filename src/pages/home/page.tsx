@@ -41,6 +41,19 @@
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1000,
+    title: `Coria anuncia un gran festival taurino con figuras del toreo para el 14 y 15 de marzo de 2026`,
+	image: "/images/cori.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `Coria acogerá el próximo sábado **14 de marzo de 2026**, a las 16:30 horas, un Gran Festival Taurino con Picadores que reunirá a destacadas figuras del toreo. Se lidiarán seis novillos-toros de la ganadería de **Carmen Valiente**, uno de ellos para el rejoneador extremeño **Leonardo Hernández y el resto para los diestros Diego Urdiales, Manuel Escribano, Rafael Cerro y Ginés Marín, además del novillero local Jorge Hurtado.**
+
+La programación continuará el domingo 15 de marzo, a las 17:00 horas, con un espectáculo de recortadores en el que se lidiarán tres novillos-toros de la misma ganadería. La organización ha habilitado el teléfono **622 75 25 15** para información y reservas.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
     title: `Exigente encierro de Sánchez Herrero en el Carnaval del toro`,
 	image: "/images/ciudro.jpg",
     category: "Crónicas",
@@ -278,6 +291,19 @@ El Puerto avanza porque con actos como este continúa consolidando una programac
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 223,
+    title: `Coria anuncia un gran festival taurino con figuras del toreo para el 14 y 15 de marzo de 2026`,
+	image: "/images/cori.jpg",
+    category: "Actualidad",
+    date: "17 de Febrero de 2026",
+	fullContent: `Coria acogerá el próximo sábado **14 de marzo de 2026**, a las 16:30 horas, un Gran Festival Taurino con Picadores que reunirá a destacadas figuras del toreo. Se lidiarán seis novillos-toros de la ganadería de **Carmen Valiente**, uno de ellos para el rejoneador extremeño **Leonardo Hernández y el resto para los diestros Diego Urdiales, Manuel Escribano, Rafael Cerro y Ginés Marín, además del novillero local Jorge Hurtado.**
+
+La programación continuará el domingo 15 de marzo, a las 17:00 horas, con un espectáculo de recortadores en el que se lidiarán tres novillos-toros de la misma ganadería. La organización ha habilitado el teléfono **622 75 25 15** para información y reservas.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
  	{ 
     id: 224,
     title: `Fernando Sánchez, lealtad y ambición: Madrid en el punto de mira del tercero talaverano para 2026`,
