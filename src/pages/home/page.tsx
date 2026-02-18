@@ -41,7 +41,7 @@
 const featuredNews: NewsItem[] = [	
 	{ 
     id: 1000,
-    title: `ahora esta imagen, pero no pongas negrita de más, fíjate en el texto bien, analízalo con lupa`,
+    title: `La Fundación Zaballos reconoce la labor de la Fundación del Toro de Lidia`,
 	image: "/images/ndp.jpg",
     category: "Actualidad",
     date: "18 de Febrero de 2026",
@@ -381,7 +381,7 @@ Cerró la tarde **Clovis Germain**, triunfador de la 70ª edición del Bolsín T
 const latestNews: NewsItem[] = [
 	{ 
     id: 210,
-    title: `ahora esta imagen, pero no pongas negrita de más, fíjate en el texto bien, analízalo con lupa`,
+    title: `La Fundación Zaballos reconoce la labor de la Fundación del Toro de Lidia`,
 	image: "/images/ndp.jpg",
     category: "Actualidad",
     date: "18 de Febrero de 2026",
