@@ -40,6 +40,33 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1003,
+    title: `David de Miranda conquista México y llama a la puerta de las grandes ferias`,
+	image: "/images/puerta.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `El nombre de David de Miranda ya no entiende de fronteras. El diestro onubense, revelación de la pasada campaña en España, ha firmado una carta de presentación de alto impacto en su debut mexicano, saldado con tres orejas en la plaza de Jalostotitlan. Un estreno que confirma que su excelente momento también encuentra eco al otro lado del Atlántico.
+
+**Una faena de peso y personalidad**
+
+Ante "Quitapenas", ejemplar de 490 kilos del hierro de Jose Garfias, De Miranda dejó patente su evolución y poso. Ya con el capote se mostró firme y templado, marcando los tiempos a un toro de buena condición y clase.
+
+Con la muleta construyó una obra maciza, de estructura y profundidad. Especialmente destacadas fueron las series al natural, largas y ligadas, donde el onubense imprimió suavidad y gobierno. El toreo en redondo fue creciendo en intensidad hasta alcanzar un clímax rotundo, conectando con fuerza con los tendidos. Una estocada efectiva rubricó una actuación premiada con dos orejas en ese ejemplar —sumadas a otro trofeo obtenido en su primero— para cerrar la tarde con tres apéndices en su presentación azteca.
+
+**Puerta abierta en Aguascalientes**
+
+El impacto de su debut no ha tardado en traducirse en nuevos compromisos. De Miranda ha sido anunciado en la prestigiosa Feria Nacional de San Marcos, uno de los ciclos de mayor relevancia en América. Será el 9 de mayo en Aguascalientes, donde lidiará toros de Santa Ines y Campo Real, en un cartel que supone un nuevo espaldarazo a su creciente proyección internacional.
+
+**Temporada grande también en Europa**
+
+Mientras su nombre se afianza en México, en España le aguarda una agenda de máxima responsabilidad. Está anunciado en dos tardes en la Plaza de Toros de la Real Maestranza de Sevilla —una de ellas el Domingo de Resurrección— y otras dos comparecencias en la Plaza de Toros de Las Ventas, además de su presencia en citas clave del arranque de curso.
+
+Un calendario de máxima exigencia que refrenda que el gran momento de David de Miranda no es fruto de la casualidad, sino consecuencia de una trayectoria ascendente, firme y cada vez más universal.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1004,
     title: `Pozoblanco se viste de Pasión: Talavante lidera un cartel de poder y futuro en el norte cordobés`,
 	image: "/images/pozob.jpg",
@@ -213,6 +240,33 @@ Cerró la tarde **Clovis Germain**, triunfador de la 70ª edición del Bolsín T
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 215,
+    title: `David de Miranda conquista México y llama a la puerta de las grandes ferias`,
+	image: "/images/puerta.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `El nombre de David de Miranda ya no entiende de fronteras. El diestro onubense, revelación de la pasada campaña en España, ha firmado una carta de presentación de alto impacto en su debut mexicano, saldado con tres orejas en la plaza de Jalostotitlan. Un estreno que confirma que su excelente momento también encuentra eco al otro lado del Atlántico.
+
+**Una faena de peso y personalidad**
+
+Ante "Quitapenas", ejemplar de 490 kilos del hierro de Jose Garfias, De Miranda dejó patente su evolución y poso. Ya con el capote se mostró firme y templado, marcando los tiempos a un toro de buena condición y clase.
+
+Con la muleta construyó una obra maciza, de estructura y profundidad. Especialmente destacadas fueron las series al natural, largas y ligadas, donde el onubense imprimió suavidad y gobierno. El toreo en redondo fue creciendo en intensidad hasta alcanzar un clímax rotundo, conectando con fuerza con los tendidos. Una estocada efectiva rubricó una actuación premiada con dos orejas en ese ejemplar —sumadas a otro trofeo obtenido en su primero— para cerrar la tarde con tres apéndices en su presentación azteca.
+
+**Puerta abierta en Aguascalientes**
+
+El impacto de su debut no ha tardado en traducirse en nuevos compromisos. De Miranda ha sido anunciado en la prestigiosa Feria Nacional de San Marcos, uno de los ciclos de mayor relevancia en América. Será el 9 de mayo en Aguascalientes, donde lidiará toros de Santa Ines y Campo Real, en un cartel que supone un nuevo espaldarazo a su creciente proyección internacional.
+
+**Temporada grande también en Europa**
+
+Mientras su nombre se afianza en México, en España le aguarda una agenda de máxima responsabilidad. Está anunciado en dos tardes en la Plaza de Toros de la Real Maestranza de Sevilla —una de ellas el Domingo de Resurrección— y otras dos comparecencias en la Plaza de Toros de Las Ventas, además de su presencia en citas clave del arranque de curso.
+
+Un calendario de máxima exigencia que refrenda que el gran momento de David de Miranda no es fruto de la casualidad, sino consecuencia de una trayectoria ascendente, firme y cada vez más universal.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 216,
     title: `Pozoblanco se viste de Pasión: Talavante lidera un cartel de poder y futuro en el norte cordobés`,
