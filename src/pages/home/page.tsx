@@ -40,6 +40,108 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1004,
+    title: `Pozoblanco se viste de Pasión: Talavante lidera un cartel de poder y futuro en el norte cordobés`,
+	image: "/images/pozob.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	footerImage1: "/images/pozob1.jpg",
+	fullContent: `La localidad cordobesa de Pozoblanco se prepara para vivir el próximo 28 de marzo, Sábado de Pasión, una tarde de toros marcada por la expectación y el atractivo de un cartel que aúna jerarquía y juventud. A partir de las 18:00 horas, el coso pozoalbense abrirá sus puertas para un festejo mixto que reúne presente y porvenir del escalafón.
+
+Encabeza la combinación Alejandro Talavante, actual referente del toreo y líder del escalafón 2025, nombre imprescindible por su peso artístico y su regularidad en las grandes citas. El extremeño vuelve a un escenario de máxima responsabilidad en una temporada donde está llamado a marcar territorio.
+
+A su lado hará el paseíllo David de Miranda, uno de los nombres propios del pasado curso y torero especialmente vinculado a Pozoblanco, plaza en la que ya dejó huella con actuaciones de resonancia. Regresa ahora respaldado por sus méritos y con el aval de sus triunfos.
+
+Completa el cartel el novillero cordobés Manuel Quintana, joven promesa de la tierra que afronta una oportunidad de oro para reivindicarse ante su afición y consolidarse como uno de los valores emergentes del panorama actual.
+
+**Hierro de garantías para una tarde de altos vuelos**
+
+Para la ocasión se lidiarán toros y novillos de Domingo Hernández, divisa habitual en las grandes ferias y sinónimo de garantía en plazas de responsabilidad. Un encierro que añade alicientes a una cita que ya despierta enorme interés entre los aficionados.
+
+El festejo forma parte de la apuesta decidida de la empresa Caido y Soledad, dirigida por Antonio Tejero, en colaboración con el Ayuntamiento de Pozoblanco, que continúa reforzando el papel de la ciudad como enclave taurino de referencia en el norte de la provincia.
+
+Las entradas están disponibles a través de la web oficial <a
+  torospozoblanco.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  torospozoblanco.com
+</a> y podrán adquirirse físicamente desde el 23 de marzo. Todo está dispuesto para que Pozoblanco viva una tarde grande, de esas que marcan la primavera y reafirman su sitio en el calendario taurino andaluz.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Olivenza, kilómetro cero de la temporada: 35 años marcando el compás del escalafón`,
+	image: "/images/locali.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `Cuenta atrás en marcha. En apenas tres semanas, Olivenza volverá a latir al ritmo del toreo y a situarse, una vez más, en el epicentro del arranque del curso taurino. La Feria de Olivenza, que alcanza su 35º aniversario, levantará el telón de la primavera del 6 al 8 de marzo con un abono equilibrado, fiel a su sello: figuras consagradas, nombres en pleno auge y una firme apuesta por la savia nueva.
+
+Bajo la organización de Fusión Internacional por la Tauromaquia, el serial extremeño volverá a medir las primeras sensaciones del escalafón y a dictar el tono competitivo de la campaña.
+
+**Viernes 6: juventud y debut con caballos**
+
+El ciclo arrancará el viernes con una novillada con picadores que pondrá el foco en el futuro. Están anunciados Tomás Bastos, Olga Casado y el extremeño David Gutiérrez —formado en la Escuela Taurina de Badajoz—, quien hará su presentación con caballos ante utreros de Talavante. Una cita que servirá para calibrar el pulso de una nueva generación que pide paso.
+
+**Sábado 7: arte y expectación en terna de altos vuelos**
+
+La tarde del sábado concentra uno de los carteles más atractivos del abono. José María Manzanares, Daniel Luque y Juan Ortega se medirán a un encierro de El Puerto de San Lorenzo en una combinación marcada por el clasicismo, la inspiración y la personalidad de tres espadas llamados a firmar momentos de alto voltaje artístico.
+
+**Domingo 8: doble cita y cierre de máxima categoría**
+
+La jornada dominical llegará con doble sesión.
+
+Por la mañana (11:30 h), terna joven y ambiciosa con Borja Jiménez, David de Miranda y el novillero Marco Pérez, que lidiarán un encierro compartido de Domingo Hernández y La Ventana del Puerto. Una combinación fresca, de ambición declarada y con el aliciente del hambre de triunfo.
+
+El broche llegará por la tarde (17:00 h) con una corrida de Victoriano del Río para un cartel de relumbrón: Alejandro Talavante —que conmemora el 20º aniversario de su alternativa—, Emilio de Justo y Roca Rey. Una terna de peso, mediática y rematada, llamada a convertirse en uno de los grandes focos del inicio de temporada.
+
+Con este planteamiento, Olivenza reafirma su condición de gran escaparate del comienzo de curso, punto de encuentro imprescindible donde se calibran estados de forma, se confirman aspiraciones y se encienden las primeras pasiones del año.
+
+Las localidades ya pueden adquirirse por internet y vía telefónica, además de en las taquillas de la plaza desde el 26 de febrero. Porque, una vez más, la primavera taurina empieza en Extremadura.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `Villaseca de la Sagra anuncia los 18 novilleros del XII Alfarero de Plata 2026, con Pedro de la Hermosa y Jaime Torija en representación de la Escuela Taurina de Guadalajara`,
+	image: "/images/xxv.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `Finalizado el plazo oficial de inscripción, la organización del XII Certamen de Novilladas sin Picadores **“Alfarero de Plata” 2026**, que se celebrará en Villaseca de la Sagra, ha hecho público el listado definitivo de los 18 novilleros que formarán parte de la presente edición.
+
+Tras el correspondiente proceso de valoración, los jóvenes seleccionados son:
+
+1. Fernando Donoso Sánchez
+2. Pedro Ruiz de la Hermosa Alé
+3. José Alejandro Chavarri Maldonado
+4. Manuel León Sánchez
+5. Manuel Díaz de Lope Díaz Rodríguez
+6. David García Cob
+7. Rodrigo Cobo Moreno
+8. Jorge Oliva Delgado
+9. Israel Guirao Engra
+10. Armando Rojo García
+11. Javier Fernández-Baillo Gómez-Lobo
+12. Javier Torres “Bombita”
+13. Noel García Sánchez
+14. Jaime Padilla Morales
+15. Jaime Torija Moreno
+16. Ian Rodríguez Bermejo
+17. Alejandro González Martínez
+18. Rubén Sánchez Abejón
+
+Asimismo, la organización ha acordado designar a dos aspirantes en calidad de suplentes, con el objetivo de garantizar el normal desarrollo del certamen ante posibles eventualidades –como lesiones o percances– que pudieran impedir la participación de alguno de los titulares durante el transcurso del **XII Alfarero de Plata** 2026.
+
+Por otra parte, el sorteo que determinará el orden y la composición de las tres novilladas clasificatorias tendrá lugar el próximo lunes 2 de marzo, en el marco de las XXV Jornadas Taurinas de Villaseca de la Sagra, una vez finalizado el coloquio programado para esa jornada.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1007,
     title: `Presentados los carteles oficiales del VI Circuito de Novilladas de Madrid`,
 	image: "/images/presentacion.jpg",
@@ -111,6 +213,108 @@ Cerró la tarde **Clovis Germain**, triunfador de la 70ª edición del Bolsín T
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 216,
+    title: `Pozoblanco se viste de Pasión: Talavante lidera un cartel de poder y futuro en el norte cordobés`,
+	image: "/images/pozob.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	footerImage1: "/images/pozob1.jpg",
+	fullContent: `La localidad cordobesa de Pozoblanco se prepara para vivir el próximo 28 de marzo, Sábado de Pasión, una tarde de toros marcada por la expectación y el atractivo de un cartel que aúna jerarquía y juventud. A partir de las 18:00 horas, el coso pozoalbense abrirá sus puertas para un festejo mixto que reúne presente y porvenir del escalafón.
+
+Encabeza la combinación Alejandro Talavante, actual referente del toreo y líder del escalafón 2025, nombre imprescindible por su peso artístico y su regularidad en las grandes citas. El extremeño vuelve a un escenario de máxima responsabilidad en una temporada donde está llamado a marcar territorio.
+
+A su lado hará el paseíllo David de Miranda, uno de los nombres propios del pasado curso y torero especialmente vinculado a Pozoblanco, plaza en la que ya dejó huella con actuaciones de resonancia. Regresa ahora respaldado por sus méritos y con el aval de sus triunfos.
+
+Completa el cartel el novillero cordobés Manuel Quintana, joven promesa de la tierra que afronta una oportunidad de oro para reivindicarse ante su afición y consolidarse como uno de los valores emergentes del panorama actual.
+
+**Hierro de garantías para una tarde de altos vuelos**
+
+Para la ocasión se lidiarán toros y novillos de Domingo Hernández, divisa habitual en las grandes ferias y sinónimo de garantía en plazas de responsabilidad. Un encierro que añade alicientes a una cita que ya despierta enorme interés entre los aficionados.
+
+El festejo forma parte de la apuesta decidida de la empresa Caido y Soledad, dirigida por Antonio Tejero, en colaboración con el Ayuntamiento de Pozoblanco, que continúa reforzando el papel de la ciudad como enclave taurino de referencia en el norte de la provincia.
+
+Las entradas están disponibles a través de la web oficial <a
+  torospozoblanco.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  torospozoblanco.com
+</a> y podrán adquirirse físicamente desde el 23 de marzo. Todo está dispuesto para que Pozoblanco viva una tarde grande, de esas que marcan la primavera y reafirman su sitio en el calendario taurino andaluz.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 217,
+    title: `Olivenza, kilómetro cero de la temporada: 35 años marcando el compás del escalafón`,
+	image: "/images/locali.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `Cuenta atrás en marcha. En apenas tres semanas, Olivenza volverá a latir al ritmo del toreo y a situarse, una vez más, en el epicentro del arranque del curso taurino. La Feria de Olivenza, que alcanza su 35º aniversario, levantará el telón de la primavera del 6 al 8 de marzo con un abono equilibrado, fiel a su sello: figuras consagradas, nombres en pleno auge y una firme apuesta por la savia nueva.
+
+Bajo la organización de Fusión Internacional por la Tauromaquia, el serial extremeño volverá a medir las primeras sensaciones del escalafón y a dictar el tono competitivo de la campaña.
+
+**Viernes 6: juventud y debut con caballos**
+
+El ciclo arrancará el viernes con una novillada con picadores que pondrá el foco en el futuro. Están anunciados Tomás Bastos, Olga Casado y el extremeño David Gutiérrez —formado en la Escuela Taurina de Badajoz—, quien hará su presentación con caballos ante utreros de Talavante. Una cita que servirá para calibrar el pulso de una nueva generación que pide paso.
+
+**Sábado 7: arte y expectación en terna de altos vuelos**
+
+La tarde del sábado concentra uno de los carteles más atractivos del abono. José María Manzanares, Daniel Luque y Juan Ortega se medirán a un encierro de El Puerto de San Lorenzo en una combinación marcada por el clasicismo, la inspiración y la personalidad de tres espadas llamados a firmar momentos de alto voltaje artístico.
+
+**Domingo 8: doble cita y cierre de máxima categoría**
+
+La jornada dominical llegará con doble sesión.
+
+Por la mañana (11:30 h), terna joven y ambiciosa con Borja Jiménez, David de Miranda y el novillero Marco Pérez, que lidiarán un encierro compartido de Domingo Hernández y La Ventana del Puerto. Una combinación fresca, de ambición declarada y con el aliciente del hambre de triunfo.
+
+El broche llegará por la tarde (17:00 h) con una corrida de Victoriano del Río para un cartel de relumbrón: Alejandro Talavante —que conmemora el 20º aniversario de su alternativa—, Emilio de Justo y Roca Rey. Una terna de peso, mediática y rematada, llamada a convertirse en uno de los grandes focos del inicio de temporada.
+
+Con este planteamiento, Olivenza reafirma su condición de gran escaparate del comienzo de curso, punto de encuentro imprescindible donde se calibran estados de forma, se confirman aspiraciones y se encienden las primeras pasiones del año.
+
+Las localidades ya pueden adquirirse por internet y vía telefónica, además de en las taquillas de la plaza desde el 26 de febrero. Porque, una vez más, la primavera taurina empieza en Extremadura.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 218,
+    title: `Villaseca de la Sagra anuncia los 18 novilleros del XII Alfarero de Plata 2026, con Pedro de la Hermosa y Jaime Torija en representación de la Escuela Taurina de Guadalajara`,
+	image: "/images/xxv.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	fullContent: `Finalizado el plazo oficial de inscripción, la organización del XII Certamen de Novilladas sin Picadores **“Alfarero de Plata” 2026**, que se celebrará en Villaseca de la Sagra, ha hecho público el listado definitivo de los 18 novilleros que formarán parte de la presente edición.
+
+Tras el correspondiente proceso de valoración, los jóvenes seleccionados son:
+
+1. Fernando Donoso Sánchez
+2. Pedro Ruiz de la Hermosa Alé
+3. José Alejandro Chavarri Maldonado
+4. Manuel León Sánchez
+5. Manuel Díaz de Lope Díaz Rodríguez
+6. David García Cob
+7. Rodrigo Cobo Moreno
+8. Jorge Oliva Delgado
+9. Israel Guirao Engra
+10. Armando Rojo García
+11. Javier Fernández-Baillo Gómez-Lobo
+12. Javier Torres “Bombita”
+13. Noel García Sánchez
+14. Jaime Padilla Morales
+15. Jaime Torija Moreno
+16. Ian Rodríguez Bermejo
+17. Alejandro González Martínez
+18. Rubén Sánchez Abejón
+
+Asimismo, la organización ha acordado designar a dos aspirantes en calidad de suplentes, con el objetivo de garantizar el normal desarrollo del certamen ante posibles eventualidades –como lesiones o percances– que pudieran impedir la participación de alguno de los titulares durante el transcurso del **XII Alfarero de Plata** 2026.
+
+Por otra parte, el sorteo que determinará el orden y la composición de las tres novilladas clasificatorias tendrá lugar el próximo lunes 2 de marzo, en el marco de las XXV Jornadas Taurinas de Villaseca de la Sagra, una vez finalizado el coloquio programado para esa jornada.`,
+	author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 219,
     title: `Presentados los carteles oficiales del VI Circuito de Novilladas de Madrid`,
