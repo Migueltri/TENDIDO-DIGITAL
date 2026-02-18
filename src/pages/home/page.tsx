@@ -40,6 +40,145 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1000,
+    title: `ahora esta imagen, pero no pongas negrita de más, fíjate en el texto bien, analízalo con lupa`,
+	image: "/images/ndp.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El galardón reconoce la labor de la Fundación en la defensa, protección y puesta en valor del toro de lidia como parte esencial del patrimonio cultural de España",
+	fullContent: `La Fundación del Toro de Lidia ha sido distinguida con el **Premio de Honor del Jurado en la VI Edición de los Premios Fundación Zaballos para la Defensa de los Derechos Constitucionales**, ceremonia que tendrá lugar el próximo viernes, 27 de febrero, a las 20:00h en el Hotel Intercontinental de Madrid, bajo la presidencia de honor de Su Majestad el Rey D. Felipe VI.
+
+Victorino Martín, presidente de la Fundación del Toro de Lidia, recogerá el galardón en representación de la institución durante una gala que reunirá a destacadas personalidades del ámbito jurídico, cultural, institucional y empresarial de España.
+
+La Fundación Zaballos otorga este reconocimiento en atención a la **gran labor que realiza la Fundación del Toro de Lidia en la defensa, promoción y puesta en valor del toro de lidia como parte fundamental del patrimonio cultural de España**, según consta en la motivación del jurado.
+
+El jurado de la VI Edición, integrado por juristas, magistrados, académicosy representantes de la sociedad civil española, ha valorado la trayectoria de la Fundación y su papel en la defensa de los derechos constitucionales vinculados a la cultura, el patrimonio y la libertad.
+
+Los Premios de la Fundación Zaballos son una iniciativa con la que la entidad reconoce cada año a personas e instituciones destacadas por su contribución a la defensa de los derechos constitucionales, el impulso de valores cívicos y el compromiso social.
+
+El acto estará conducido por los periodistas Ana Terradillos, Javier Barroso y Patricia Betancort, será amenizado con intervenciones artísticas como: Las sopranos Pilar Jurado y Klaudya , el compositor y pianista Juan Antonio Simarro, y el grupo musical Chaíto & Palosanto, en una gala que combina reconocimiento institucional y expresión cultural.
+Los premios de la VI Gala se estructuran en dos categorías: Premios del Patronato y Premios del Jurado.
+En los Premios del Patronato, el Premio Internacional se concede a D. Ricardo Benjamín Salinas Pliego. El Premio Nacional se otorga a la Policía Nacional, que será recogido por el Ilustrísimo Señor D. Francisco Pardo Piqueras, Director General de la Policía.
+En cuanto a los Premios del Jurado, los galardonados son:
+* Excelentísima Señora Doña María Isabel Perelló Doménech, Premio a la Independencia Judicial.
+* D. José María Álvarez-Pallete López, Premio a su compromiso permanente con el progreso social y su visión innovadora en la modernización de infraestructuras.
+* D. Matías Prats Luque, Premio al Periodismo Responsable y Humano.
+* Fundación Toro de Lidia, Premio a la Protección del Toro de Lidia como Patrimonio Cultural de España.
+* D. Pablo Sánchez Bergasa, Premio a la Innovación y al Talento Altruista.
+* D. Juan Carlos Unzué Labiano, Premio por su Lucha Incansable en favor de los Enfermos de ELA.
+
+**Sobre la Fundación Toro de Lidia:**
+	La Fundación Toro de Lidia es una organización sin ánimo de lucro cuyo fin principal es la defensa, promoción y divulgación de la tauromaquia en España. Actúa como el interlocutor referente del sector taurino, agrupando a toreros, ganaderos, empresarios y aficionados para proteger y fomentar el espectáculo taurino.
+
+**Para acreditaciones de prensa y asistencia a la gala mandar email a:**
+**comunicaciones@zaballos.es**
+
+**Fundación Zaballos**
+<a
+  www.fundacionzaballos.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.fundacionzaballos.es
+</a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
+    title: `Aula Taurina de Sevilla concede el ‘IV Premio Conde de Vistahermosa’ al sevillano Pablo López Rioboo`,
+	image: "/images/cond.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "•	El autor ha sido galardonado por una importante obra que sostiene un estudio profundo sobre la evolución del toro bravo",
+	fullContent: `**Aula Taurina de Sevilla** ha concedido el **IV Premio Conde de Vistahermosa** a D. **Pablo López Rioboo** por su trabajo titulado “***La evolución del toro conforme al toreo: análisis de la bravura***”, una investigación que profundiza en la transformación del toro bravo a lo largo del tiempo en relación directa con la evolución de las suertes y los conceptos del toreo.
+
+El estudio premiado aborda, con enfoque analítico y rigor académico, la manera en que la selección genética, la crianza y las exigencias artísticas del toreo han influido en la configuración del toro actual, poniendo el acento en la bravura como elemento esencial y definitorio de la lidia. El jurado ha valorado especialmente la solidez metodológica del trabajo, su aportación al debate contemporáneo sobre el toro de lidia y su contribución al conocimiento científico e histórico del ámbito taurino.
+
+El galardón cuenta con el patrocinio de la **Real Maestranza de Caballería de Sevilla**, institución de larga tradición en el apoyo y la promoción de la cultura taurina. El premio consiste en dos abonos de **Grada Especial** para la **Temporada Taurina de Sevilla 2026**, así como en la **Medalla de la Orden de la Real Maestranza**, distinción que simboliza el reconocimiento al mérito y al compromiso con el estudio y la defensa del patrimonio taurino.
+
+El **Premio Conde de Vistahermosa** nace con el propósito de fomentar la investigación en materia taurina, especialmente entre los jóvenes, promoviendo trabajos de carácter científico, histórico o social que contribuyan a un mejor conocimiento de la tauromaquia desde una perspectiva académica y multidisciplinar. Con esta cuarta edición, **Aula Taurina de Sevilla** consolida una iniciativa que busca estimular el pensamiento crítico, la reflexión documentada y el análisis riguroso en torno al mundo del toro.
+
+A través de este reconocimiento, **Aula Taurina de Sevilla** reafirma su compromiso con la formación, la divulgación cultural y el impulso de estudios que profundicen en las raíces, la evolución y la dimensión social de la tauromaquia, entendida como manifestación histórica y cultural.
+
+Las personas interesadas en participar en futuras convocatorias del **Premio Conde de Vistahermosa** podrán solicitar información y formalizar su candidatura mediante el correo electrónico **concursosaulataurina@gmail.com**,`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1000,
+    title: `Jaime Olaizola, ganador del I Premio de Ecología 2026 del Instituto Juan Belmonte y Legados`,
+	image: "/images/jaim.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: `●	El jurado ha concedido el premio a Jaime Olaizola, fundador de ID Forest, una empresa pionera en el sector agroforestal.  
+●	El premio, dotado con 5.000 €, ha sido impulsado por el Instituto Juan Belmonte y Legados como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza.
+●	El acto oficial de entrega del premio se celebrará el próximo 26 de marzo en Madrid.`,
+	fullContent: `**Madrid, 18 de febrero de 2026.-** El jurado del I Premio de Ecología 2026, impulsado por el Instituto Juan Belmonte y Legados, ha acordado conceder el galardón a Jaime Olaizola, investigador y fundador de la empresa ID Forest, empresa de biotecnología dedicada a la reforestación inteligente.
+
+El jurado ha otorgado el reconocimiento a Olaizola por encarnar plenamente los valores que inspiran este premio, destacando su larga trayectoria en la investigación del ecologismo y su firme compromiso con la conciliación entre el campo y la conservación. Su trabajo, en palabras del jurado, “demuestra cómo la ciencia puede proteger tradiciones rurales, adaptadas a los retos climáticos y comunicar sus beneficios al público”.
+
+El premio, dotado con 5.000 euros, nace con el objetivo de dignificar y visibilizar a personas o colectivos que, desde el conocimiento directo del campo y una relación viva con el entorno natural, representan un ecologismo práctico, arraigado y profundamente conectado con la realidad rural.
+
+En un contexto de creciente desconexión entre el mundo urbano y el rural, el premio reconoce perfiles que encarnan un modelo de autenticidad, compromiso y responsabilidad cotidiana con la tierra, y que ejercen una influencia social o cultural significativa en la defensa del territorio.
+
+Además del reconocimiento económico, Jaime Olaizola participará en un documental audiovisual que Legados realizará con el objetivo de dar visibilidad a su labor y contribuir a amplificar su mensaje y su ejemplo. El acto oficial de entrega del premio tendrá lugar el próximo 26 de marzo en el Senado.
+
+**Menciones honoríficas**
+
+El jurado ha acordado asimismo conceder las siguientes menciones honoríficas:
+
+* Hermanas Pareja-Obregón (categoría menor o igual a 35 años): un proyecto ganadero familiar de relevo generacional femenino, por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones
+* Asociación Raza Ovina Lojeña por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes aspiracionales.
+
+**Un premio para fortalecer el vínculo entre sociedad y naturaleza**
+
+El I Premio de Ecología 2026 recibió numerosas candidaturas de perfiles de ámbitos diversos — agricultura regenerativa, ganadería extensiva, cultura y patrimonio rural, empresa, divulgación — que acreditaron una experiencia real y un compromiso sostenido con el medio rural, conforme a las bases de la convocatoria.
+
+Con esta iniciativa, el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio y la cultura rural, mientras que Legados consolida su labor de protección del patrimonio ambiental y natural de España.
+
+**Sobre el Instituto Juan Belmonte y Legados**
+
+**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
+
+**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1001,
+    title: `Roca Rey entrega al Papa León XIV el capote de paseo del Señor de los Milagros en el Vaticano`,
+	image: "/images/entrreg.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El torero peruano Roca Rey mantiene una audiencia con el Papa León XIV y le hace entrega de una pieza de profundo valor simbólico, solicitando su bendición para todos los taurinos",
+	fullContent: `En la mañana de hoy, Andrés Roca Rey ha mantenido una audiencia en el Vaticano con el Papa León XIV, en el marco de un encuentro marcado por la cercanía y el significado personal del acto.
+Durante la audiencia, Roca Rey hizo entrega de una pieza muy especial: el capote de paseo del Señor de los Milagros, símbolo de profunda devoción y gran valor sentimental para el torero. El diestro explicó su deseo de entregar este capote para que el Vaticano y el Santo Padre conservaran un recuerdo del mundo del toro, solicitando además una oración y bendición para todos los taurinos, especialmente para aquellos que arriesgan su vida en el ruedo. Asimismo, quiso agradecer el cálido recibimiento recibido.
+El capote de paseo del Señor de los Milagros representa un vínculo especial con el Perú. Roca Rey señaló que, al haber vivido el Santo Padre muchos años en tierras peruanas y siendo él peruano, suponía para él un honor y un orgullo entregarle esta pieza, que desde hoy quedará en sus manos como símbolo de fe, tradición y unión entre culturas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1002,
+    title: `«Granadino», de Hermanos Sánchez Herrero, premiado como toro más bravo del Carnaval del Toro 2026`,
+	image: "/images/brav.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El ejemplar nº23, que participó en el encierro del martes, ha sido reconocido por el jurado como el más bravo del programa taurino del Carnaval mirobrigense.",
+	imageCaption: "Imagen de Noticias Ciudad Rodrigo",
+	fullContent: `El jurado del Premio al Toro más Bravo ha dado a conocer la mañana del Miércoles de Ceniza el nombre del astado que obtiene el galardón al toro más bravo de la edición 2026. El reconocimiento ha recaído en «Granadino», el ejemplar Nº23 de la ganadería Hermanos Sánchez Herrero lidiado durante la jornada del martes dentro del programa festivo mirobrigense. La deliberación y el fallo se han producido como ya es costumbre en el Salón de Plenos Consistorial.
+La entrega del galardón tendrá lugar el próximo sábado 21 de febrero, a las 20:30 horas, en el Teatro Nuevo “Fernando Arrabal”, en el marco de la celebración de los II Premios Carnaval del Toro, en una cita que pone el broche institucional a la festividad. 
+Con este anuncio, el Carnaval del Toro continúa escribiendo su crónica de 2026, ya con nombre propio en el capítulo reservado a la bravura.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1003,
     title: `David de Miranda conquista México y llama a la puerta de las grandes ferias`,
 	image: "/images/puerta.jpg",
@@ -240,6 +379,145 @@ Cerró la tarde **Clovis Germain**, triunfador de la 70ª edición del Bolsín T
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 210,
+    title: `ahora esta imagen, pero no pongas negrita de más, fíjate en el texto bien, analízalo con lupa`,
+	image: "/images/ndp.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El galardón reconoce la labor de la Fundación en la defensa, protección y puesta en valor del toro de lidia como parte esencial del patrimonio cultural de España",
+	fullContent: `La Fundación del Toro de Lidia ha sido distinguida con el **Premio de Honor del Jurado en la VI Edición de los Premios Fundación Zaballos para la Defensa de los Derechos Constitucionales**, ceremonia que tendrá lugar el próximo viernes, 27 de febrero, a las 20:00h en el Hotel Intercontinental de Madrid, bajo la presidencia de honor de Su Majestad el Rey D. Felipe VI.
+
+Victorino Martín, presidente de la Fundación del Toro de Lidia, recogerá el galardón en representación de la institución durante una gala que reunirá a destacadas personalidades del ámbito jurídico, cultural, institucional y empresarial de España.
+
+La Fundación Zaballos otorga este reconocimiento en atención a la **gran labor que realiza la Fundación del Toro de Lidia en la defensa, promoción y puesta en valor del toro de lidia como parte fundamental del patrimonio cultural de España**, según consta en la motivación del jurado.
+
+El jurado de la VI Edición, integrado por juristas, magistrados, académicosy representantes de la sociedad civil española, ha valorado la trayectoria de la Fundación y su papel en la defensa de los derechos constitucionales vinculados a la cultura, el patrimonio y la libertad.
+
+Los Premios de la Fundación Zaballos son una iniciativa con la que la entidad reconoce cada año a personas e instituciones destacadas por su contribución a la defensa de los derechos constitucionales, el impulso de valores cívicos y el compromiso social.
+
+El acto estará conducido por los periodistas Ana Terradillos, Javier Barroso y Patricia Betancort, será amenizado con intervenciones artísticas como: Las sopranos Pilar Jurado y Klaudya , el compositor y pianista Juan Antonio Simarro, y el grupo musical Chaíto & Palosanto, en una gala que combina reconocimiento institucional y expresión cultural.
+Los premios de la VI Gala se estructuran en dos categorías: Premios del Patronato y Premios del Jurado.
+En los Premios del Patronato, el Premio Internacional se concede a D. Ricardo Benjamín Salinas Pliego. El Premio Nacional se otorga a la Policía Nacional, que será recogido por el Ilustrísimo Señor D. Francisco Pardo Piqueras, Director General de la Policía.
+En cuanto a los Premios del Jurado, los galardonados son:
+* Excelentísima Señora Doña María Isabel Perelló Doménech, Premio a la Independencia Judicial.
+* D. José María Álvarez-Pallete López, Premio a su compromiso permanente con el progreso social y su visión innovadora en la modernización de infraestructuras.
+* D. Matías Prats Luque, Premio al Periodismo Responsable y Humano.
+* Fundación Toro de Lidia, Premio a la Protección del Toro de Lidia como Patrimonio Cultural de España.
+* D. Pablo Sánchez Bergasa, Premio a la Innovación y al Talento Altruista.
+* D. Juan Carlos Unzué Labiano, Premio por su Lucha Incansable en favor de los Enfermos de ELA.
+
+**Sobre la Fundación Toro de Lidia:**
+	La Fundación Toro de Lidia es una organización sin ánimo de lucro cuyo fin principal es la defensa, promoción y divulgación de la tauromaquia en España. Actúa como el interlocutor referente del sector taurino, agrupando a toreros, ganaderos, empresarios y aficionados para proteger y fomentar el espectáculo taurino.
+
+**Para acreditaciones de prensa y asistencia a la gala mandar email a:**
+**comunicaciones@zaballos.es**
+
+**Fundación Zaballos**
+<a
+  www.fundacionzaballos.es
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.fundacionzaballos.es
+</a>`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 211,
+    title: `Aula Taurina de Sevilla concede el ‘IV Premio Conde de Vistahermosa’ al sevillano Pablo López Rioboo`,
+	image: "/images/cond.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "•	El autor ha sido galardonado por una importante obra que sostiene un estudio profundo sobre la evolución del toro bravo",
+	fullContent: `**Aula Taurina de Sevilla** ha concedido el **IV Premio Conde de Vistahermosa** a D. **Pablo López Rioboo** por su trabajo titulado “***La evolución del toro conforme al toreo: análisis de la bravura***”, una investigación que profundiza en la transformación del toro bravo a lo largo del tiempo en relación directa con la evolución de las suertes y los conceptos del toreo.
+
+El estudio premiado aborda, con enfoque analítico y rigor académico, la manera en que la selección genética, la crianza y las exigencias artísticas del toreo han influido en la configuración del toro actual, poniendo el acento en la bravura como elemento esencial y definitorio de la lidia. El jurado ha valorado especialmente la solidez metodológica del trabajo, su aportación al debate contemporáneo sobre el toro de lidia y su contribución al conocimiento científico e histórico del ámbito taurino.
+
+El galardón cuenta con el patrocinio de la **Real Maestranza de Caballería de Sevilla**, institución de larga tradición en el apoyo y la promoción de la cultura taurina. El premio consiste en dos abonos de **Grada Especial** para la **Temporada Taurina de Sevilla 2026**, así como en la **Medalla de la Orden de la Real Maestranza**, distinción que simboliza el reconocimiento al mérito y al compromiso con el estudio y la defensa del patrimonio taurino.
+
+El **Premio Conde de Vistahermosa** nace con el propósito de fomentar la investigación en materia taurina, especialmente entre los jóvenes, promoviendo trabajos de carácter científico, histórico o social que contribuyan a un mejor conocimiento de la tauromaquia desde una perspectiva académica y multidisciplinar. Con esta cuarta edición, **Aula Taurina de Sevilla** consolida una iniciativa que busca estimular el pensamiento crítico, la reflexión documentada y el análisis riguroso en torno al mundo del toro.
+
+A través de este reconocimiento, **Aula Taurina de Sevilla** reafirma su compromiso con la formación, la divulgación cultural y el impulso de estudios que profundicen en las raíces, la evolución y la dimensión social de la tauromaquia, entendida como manifestación histórica y cultural.
+
+Las personas interesadas en participar en futuras convocatorias del **Premio Conde de Vistahermosa** podrán solicitar información y formalizar su candidatura mediante el correo electrónico **concursosaulataurina@gmail.com**,`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 212,
+    title: `Jaime Olaizola, ganador del I Premio de Ecología 2026 del Instituto Juan Belmonte y Legados`,
+	image: "/images/jaim.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: `●	El jurado ha concedido el premio a Jaime Olaizola, fundador de ID Forest, una empresa pionera en el sector agroforestal.  
+●	El premio, dotado con 5.000 €, ha sido impulsado por el Instituto Juan Belmonte y Legados como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza.
+●	El acto oficial de entrega del premio se celebrará el próximo 26 de marzo en Madrid.`,
+	fullContent: `**Madrid, 18 de febrero de 2026.-** El jurado del I Premio de Ecología 2026, impulsado por el Instituto Juan Belmonte y Legados, ha acordado conceder el galardón a Jaime Olaizola, investigador y fundador de la empresa ID Forest, empresa de biotecnología dedicada a la reforestación inteligente.
+
+El jurado ha otorgado el reconocimiento a Olaizola por encarnar plenamente los valores que inspiran este premio, destacando su larga trayectoria en la investigación del ecologismo y su firme compromiso con la conciliación entre el campo y la conservación. Su trabajo, en palabras del jurado, “demuestra cómo la ciencia puede proteger tradiciones rurales, adaptadas a los retos climáticos y comunicar sus beneficios al público”.
+
+El premio, dotado con 5.000 euros, nace con el objetivo de dignificar y visibilizar a personas o colectivos que, desde el conocimiento directo del campo y una relación viva con el entorno natural, representan un ecologismo práctico, arraigado y profundamente conectado con la realidad rural.
+
+En un contexto de creciente desconexión entre el mundo urbano y el rural, el premio reconoce perfiles que encarnan un modelo de autenticidad, compromiso y responsabilidad cotidiana con la tierra, y que ejercen una influencia social o cultural significativa en la defensa del territorio.
+
+Además del reconocimiento económico, Jaime Olaizola participará en un documental audiovisual que Legados realizará con el objetivo de dar visibilidad a su labor y contribuir a amplificar su mensaje y su ejemplo. El acto oficial de entrega del premio tendrá lugar el próximo 26 de marzo en el Senado.
+
+**Menciones honoríficas**
+
+El jurado ha acordado asimismo conceder las siguientes menciones honoríficas:
+
+* Hermanas Pareja-Obregón (categoría menor o igual a 35 años): un proyecto ganadero familiar de relevo generacional femenino, por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones
+* Asociación Raza Ovina Lojeña por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes aspiracionales.
+
+**Un premio para fortalecer el vínculo entre sociedad y naturaleza**
+
+El I Premio de Ecología 2026 recibió numerosas candidaturas de perfiles de ámbitos diversos — agricultura regenerativa, ganadería extensiva, cultura y patrimonio rural, empresa, divulgación — que acreditaron una experiencia real y un compromiso sostenido con el medio rural, conforme a las bases de la convocatoria.
+
+Con esta iniciativa, el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio y la cultura rural, mientras que Legados consolida su labor de protección del patrimonio ambiental y natural de España.
+
+**Sobre el Instituto Juan Belmonte y Legados**
+
+**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
+
+**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 213,
+    title: `Roca Rey entrega al Papa León XIV el capote de paseo del Señor de los Milagros en el Vaticano`,
+	image: "/images/entrreg.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El torero peruano Roca Rey mantiene una audiencia con el Papa León XIV y le hace entrega de una pieza de profundo valor simbólico, solicitando su bendición para todos los taurinos",
+	fullContent: `En la mañana de hoy, Andrés Roca Rey ha mantenido una audiencia en el Vaticano con el Papa León XIV, en el marco de un encuentro marcado por la cercanía y el significado personal del acto.
+Durante la audiencia, Roca Rey hizo entrega de una pieza muy especial: el capote de paseo del Señor de los Milagros, símbolo de profunda devoción y gran valor sentimental para el torero. El diestro explicó su deseo de entregar este capote para que el Vaticano y el Santo Padre conservaran un recuerdo del mundo del toro, solicitando además una oración y bendición para todos los taurinos, especialmente para aquellos que arriesgan su vida en el ruedo. Asimismo, quiso agradecer el cálido recibimiento recibido.
+El capote de paseo del Señor de los Milagros representa un vínculo especial con el Perú. Roca Rey señaló que, al haber vivido el Santo Padre muchos años en tierras peruanas y siendo él peruano, suponía para él un honor y un orgullo entregarle esta pieza, que desde hoy quedará en sus manos como símbolo de fe, tradición y unión entre culturas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 214,
+    title: `«Granadino», de Hermanos Sánchez Herrero, premiado como toro más bravo del Carnaval del Toro 2026`,
+	image: "/images/brav.jpg",
+    category: "Actualidad",
+    date: "18 de Febrero de 2026",
+	excerpt: "El ejemplar nº23, que participó en el encierro del martes, ha sido reconocido por el jurado como el más bravo del programa taurino del Carnaval mirobrigense.",
+	imageCaption: "Imagen de Noticias Ciudad Rodrigo",
+	fullContent: `El jurado del Premio al Toro más Bravo ha dado a conocer la mañana del Miércoles de Ceniza el nombre del astado que obtiene el galardón al toro más bravo de la edición 2026. El reconocimiento ha recaído en «Granadino», el ejemplar Nº23 de la ganadería Hermanos Sánchez Herrero lidiado durante la jornada del martes dentro del programa festivo mirobrigense. La deliberación y el fallo se han producido como ya es costumbre en el Salón de Plenos Consistorial.
+La entrega del galardón tendrá lugar el próximo sábado 21 de febrero, a las 20:30 horas, en el Teatro Nuevo “Fernando Arrabal”, en el marco de la celebración de los II Premios Carnaval del Toro, en una cita que pone el broche institucional a la festividad. 
+Con este anuncio, el Carnaval del Toro continúa escribiendo su crónica de 2026, ya con nombre propio en el capítulo reservado a la bravura.`,
+	author: "Iris Rodríguez",
+    authorLogo: "/images/iris.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 215,
     title: `David de Miranda conquista México y llama a la puerta de las grandes ferias`,
