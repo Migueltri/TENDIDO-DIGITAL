@@ -40,345 +40,228 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1000,
-    title: `La Fundación Zaballos reconoce la labor de la Fundación del Toro de Lidia`,
-	image: "/images/ndp.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: "El galardón reconoce la labor de la Fundación en la defensa, protección y puesta en valor del toro de lidia como parte esencial del patrimonio cultural de España",
-	fullContent: `La Fundación del Toro de Lidia ha sido distinguida con el **Premio de Honor del Jurado en la VI Edición de los Premios Fundación Zaballos para la Defensa de los Derechos Constitucionales**, ceremonia que tendrá lugar el próximo viernes, 27 de febrero, a las 20:00h en el Hotel Intercontinental de Madrid, bajo la presidencia de honor de Su Majestad el Rey D. Felipe VI.
-
-Victorino Martín, presidente de la Fundación del Toro de Lidia, recogerá el galardón en representación de la institución durante una gala que reunirá a destacadas personalidades del ámbito jurídico, cultural, institucional y empresarial de España.
-
-La Fundación Zaballos otorga este reconocimiento en atención a la **gran labor que realiza la Fundación del Toro de Lidia en la defensa, promoción y puesta en valor del toro de lidia como parte fundamental del patrimonio cultural de España**, según consta en la motivación del jurado.
-
-El jurado de la VI Edición, integrado por juristas, magistrados, académicosy representantes de la sociedad civil española, ha valorado la trayectoria de la Fundación y su papel en la defensa de los derechos constitucionales vinculados a la cultura, el patrimonio y la libertad.
-
-Los Premios de la Fundación Zaballos son una iniciativa con la que la entidad reconoce cada año a personas e instituciones destacadas por su contribución a la defensa de los derechos constitucionales, el impulso de valores cívicos y el compromiso social.
-
-El acto estará conducido por los periodistas Ana Terradillos, Javier Barroso y Patricia Betancort, será amenizado con intervenciones artísticas como: Las sopranos Pilar Jurado y Klaudya , el compositor y pianista Juan Antonio Simarro, y el grupo musical Chaíto & Palosanto, en una gala que combina reconocimiento institucional y expresión cultural.
-Los premios de la VI Gala se estructuran en dos categorías: Premios del Patronato y Premios del Jurado.
-En los Premios del Patronato, el Premio Internacional se concede a D. Ricardo Benjamín Salinas Pliego. El Premio Nacional se otorga a la Policía Nacional, que será recogido por el Ilustrísimo Señor D. Francisco Pardo Piqueras, Director General de la Policía.
-En cuanto a los Premios del Jurado, los galardonados son:
-* Excelentísima Señora Doña María Isabel Perelló Doménech, Premio a la Independencia Judicial.
-* D. José María Álvarez-Pallete López, Premio a su compromiso permanente con el progreso social y su visión innovadora en la modernización de infraestructuras.
-* D. Matías Prats Luque, Premio al Periodismo Responsable y Humano.
-* Fundación Toro de Lidia, Premio a la Protección del Toro de Lidia como Patrimonio Cultural de España.
-* D. Pablo Sánchez Bergasa, Premio a la Innovación y al Talento Altruista.
-* D. Juan Carlos Unzué Labiano, Premio por su Lucha Incansable en favor de los Enfermos de ELA.
-
-**Sobre la Fundación Toro de Lidia:**
-	La Fundación Toro de Lidia es una organización sin ánimo de lucro cuyo fin principal es la defensa, promoción y divulgación de la tauromaquia en España. Actúa como el interlocutor referente del sector taurino, agrupando a toreros, ganaderos, empresarios y aficionados para proteger y fomentar el espectáculo taurino.
-
-**Para acreditaciones de prensa y asistencia a la gala mandar email a:**
-**comunicaciones@zaballos.es**
-
-**Fundación Zaballos**
-<a
-  www.fundacionzaballos.es
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.fundacionzaballos.es
-</a>`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1000,
-    title: `Aula Taurina de Sevilla concede el ‘IV Premio Conde de Vistahermosa’ al sevillano Pablo López Rioboo`,
-	image: "/images/cond.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: "•	El autor ha sido galardonado por una importante obra que sostiene un estudio profundo sobre la evolución del toro bravo",
-	fullContent: `**Aula Taurina de Sevilla** ha concedido el **IV Premio Conde de Vistahermosa** a D. **Pablo López Rioboo** por su trabajo titulado “***La evolución del toro conforme al toreo: análisis de la bravura***”, una investigación que profundiza en la transformación del toro bravo a lo largo del tiempo en relación directa con la evolución de las suertes y los conceptos del toreo.
-
-El estudio premiado aborda, con enfoque analítico y rigor académico, la manera en que la selección genética, la crianza y las exigencias artísticas del toreo han influido en la configuración del toro actual, poniendo el acento en la bravura como elemento esencial y definitorio de la lidia. El jurado ha valorado especialmente la solidez metodológica del trabajo, su aportación al debate contemporáneo sobre el toro de lidia y su contribución al conocimiento científico e histórico del ámbito taurino.
-
-El galardón cuenta con el patrocinio de la **Real Maestranza de Caballería de Sevilla**, institución de larga tradición en el apoyo y la promoción de la cultura taurina. El premio consiste en dos abonos de **Grada Especial** para la **Temporada Taurina de Sevilla 2026**, así como en la **Medalla de la Orden de la Real Maestranza**, distinción que simboliza el reconocimiento al mérito y al compromiso con el estudio y la defensa del patrimonio taurino.
-
-El **Premio Conde de Vistahermosa** nace con el propósito de fomentar la investigación en materia taurina, especialmente entre los jóvenes, promoviendo trabajos de carácter científico, histórico o social que contribuyan a un mejor conocimiento de la tauromaquia desde una perspectiva académica y multidisciplinar. Con esta cuarta edición, **Aula Taurina de Sevilla** consolida una iniciativa que busca estimular el pensamiento crítico, la reflexión documentada y el análisis riguroso en torno al mundo del toro.
-
-A través de este reconocimiento, **Aula Taurina de Sevilla** reafirma su compromiso con la formación, la divulgación cultural y el impulso de estudios que profundicen en las raíces, la evolución y la dimensión social de la tauromaquia, entendida como manifestación histórica y cultural.
-
-Las personas interesadas en participar en futuras convocatorias del **Premio Conde de Vistahermosa** podrán solicitar información y formalizar su candidatura mediante el correo electrónico **concursosaulataurina@gmail.com**,`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1000,
-    title: `Jaime Olaizola, ganador del I Premio de Ecología 2026 del Instituto Juan Belmonte y Legados`,
-	image: "/images/jaim.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: `●	El jurado ha concedido el premio a Jaime Olaizola, fundador de ID Forest, una empresa pionera en el sector agroforestal.  
-●	El premio, dotado con 5.000 €, ha sido impulsado por el Instituto Juan Belmonte y Legados como parte de su compromiso con la defensa del entorno y el reconocimiento de trayectorias que fortalecen el vínculo entre sociedad y naturaleza.
-●	El acto oficial de entrega del premio se celebrará el próximo 26 de marzo en Madrid.`,
-	fullContent: `**Madrid, 18 de febrero de 2026.-** El jurado del I Premio de Ecología 2026, impulsado por el Instituto Juan Belmonte y Legados, ha acordado conceder el galardón a Jaime Olaizola, investigador y fundador de la empresa ID Forest, empresa de biotecnología dedicada a la reforestación inteligente.
-
-El jurado ha otorgado el reconocimiento a Olaizola por encarnar plenamente los valores que inspiran este premio, destacando su larga trayectoria en la investigación del ecologismo y su firme compromiso con la conciliación entre el campo y la conservación. Su trabajo, en palabras del jurado, “demuestra cómo la ciencia puede proteger tradiciones rurales, adaptadas a los retos climáticos y comunicar sus beneficios al público”.
-
-El premio, dotado con 5.000 euros, nace con el objetivo de dignificar y visibilizar a personas o colectivos que, desde el conocimiento directo del campo y una relación viva con el entorno natural, representan un ecologismo práctico, arraigado y profundamente conectado con la realidad rural.
-
-En un contexto de creciente desconexión entre el mundo urbano y el rural, el premio reconoce perfiles que encarnan un modelo de autenticidad, compromiso y responsabilidad cotidiana con la tierra, y que ejercen una influencia social o cultural significativa en la defensa del territorio.
-
-Además del reconocimiento económico, Jaime Olaizola participará en un documental audiovisual que Legados realizará con el objetivo de dar visibilidad a su labor y contribuir a amplificar su mensaje y su ejemplo. El acto oficial de entrega del premio tendrá lugar el próximo 26 de marzo en el Senado.
-
-**Menciones honoríficas**
-
-El jurado ha acordado asimismo conceder las siguientes menciones honoríficas:
-
-* Hermanas Pareja-Obregón (categoría menor o igual a 35 años): un proyecto ganadero familiar de relevo generacional femenino, por su papel en la divulgación o defensa activa del mundo rural entre las nuevas generaciones
-* Asociación Raza Ovina Lojeña por su contribución singular a la conservación cultural o natural del territorio mediante prácticas o mensajes aspiracionales.
-
-**Un premio para fortalecer el vínculo entre sociedad y naturaleza**
-
-El I Premio de Ecología 2026 recibió numerosas candidaturas de perfiles de ámbitos diversos — agricultura regenerativa, ganadería extensiva, cultura y patrimonio rural, empresa, divulgación — que acreditaron una experiencia real y un compromiso sostenido con el medio rural, conforme a las bases de la convocatoria.
-
-Con esta iniciativa, el Instituto Juan Belmonte refuerza su compromiso con la defensa del territorio y la cultura rural, mientras que Legados consolida su labor de protección del patrimonio ambiental y natural de España.
-
-**Sobre el Instituto Juan Belmonte y Legados**
-
-**El Instituto Juan Belmonte** es un centro de pensamiento creado por la Fundación Toro de Lidia que reflexiona, desde la tauromaquia, sobre cuestiones universales como derechos y libertades, convivencia y cultura, buscando ser un espacio de debate abierto y plural.
-
-**Legados**, colaborador de esta primera edición del premio, es una organización sin ánimo de lucro que trabaja para proteger el patrimonio ambiental y natural de España: nuestra tierra, las tradiciones y la herencia de lo que nos hace ser hoy lo que somos.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1001,
-    title: `Roca Rey entrega al Papa León XIV el capote de paseo del Señor de los Milagros en el Vaticano`,
-	image: "/images/entrreg.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: "El torero peruano Roca Rey mantiene una audiencia con el Papa León XIV y le hace entrega de una pieza de profundo valor simbólico, solicitando su bendición para todos los taurinos",
-	fullContent: `En la mañana de hoy, Andrés Roca Rey ha mantenido una audiencia en el Vaticano con el Papa León XIV, en el marco de un encuentro marcado por la cercanía y el significado personal del acto.
-Durante la audiencia, Roca Rey hizo entrega de una pieza muy especial: el capote de paseo del Señor de los Milagros, símbolo de profunda devoción y gran valor sentimental para el torero. El diestro explicó su deseo de entregar este capote para que el Vaticano y el Santo Padre conservaran un recuerdo del mundo del toro, solicitando además una oración y bendición para todos los taurinos, especialmente para aquellos que arriesgan su vida en el ruedo. Asimismo, quiso agradecer el cálido recibimiento recibido.
-El capote de paseo del Señor de los Milagros representa un vínculo especial con el Perú. Roca Rey señaló que, al haber vivido el Santo Padre muchos años en tierras peruanas y siendo él peruano, suponía para él un honor y un orgullo entregarle esta pieza, que desde hoy quedará en sus manos como símbolo de fe, tradición y unión entre culturas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1002,
-    title: `«Granadino», de Hermanos Sánchez Herrero, premiado como toro más bravo del Carnaval del Toro 2026`,
-	image: "/images/brav.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: "El ejemplar nº23, que participó en el encierro del martes, ha sido reconocido por el jurado como el más bravo del programa taurino del Carnaval mirobrigense.",
-	imageCaption: "Imagen de Noticias Ciudad Rodrigo",
-	fullContent: `El jurado del Premio al Toro más Bravo ha dado a conocer la mañana del Miércoles de Ceniza el nombre del astado que obtiene el galardón al toro más bravo de la edición 2026. El reconocimiento ha recaído en «Granadino», el ejemplar Nº23 de la ganadería Hermanos Sánchez Herrero lidiado durante la jornada del martes dentro del programa festivo mirobrigense. La deliberación y el fallo se han producido como ya es costumbre en el Salón de Plenos Consistorial.
-La entrega del galardón tendrá lugar el próximo sábado 21 de febrero, a las 20:30 horas, en el Teatro Nuevo “Fernando Arrabal”, en el marco de la celebración de los II Premios Carnaval del Toro, en una cita que pone el broche institucional a la festividad. 
-Con este anuncio, el Carnaval del Toro continúa escribiendo su crónica de 2026, ya con nombre propio en el capítulo reservado a la bravura.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `David de Miranda conquista México y llama a la puerta de las grandes ferias`,
-	image: "/images/puerta.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	fullContent: `El nombre de David de Miranda ya no entiende de fronteras. El diestro onubense, revelación de la pasada campaña en España, ha firmado una carta de presentación de alto impacto en su debut mexicano, saldado con tres orejas en la plaza de Jalostotitlan. Un estreno que confirma que su excelente momento también encuentra eco al otro lado del Atlántico.
-
-**Una faena de peso y personalidad**
-
-Ante "Quitapenas", ejemplar de 490 kilos del hierro de Jose Garfias, De Miranda dejó patente su evolución y poso. Ya con el capote se mostró firme y templado, marcando los tiempos a un toro de buena condición y clase.
-
-Con la muleta construyó una obra maciza, de estructura y profundidad. Especialmente destacadas fueron las series al natural, largas y ligadas, donde el onubense imprimió suavidad y gobierno. El toreo en redondo fue creciendo en intensidad hasta alcanzar un clímax rotundo, conectando con fuerza con los tendidos. Una estocada efectiva rubricó una actuación premiada con dos orejas en ese ejemplar —sumadas a otro trofeo obtenido en su primero— para cerrar la tarde con tres apéndices en su presentación azteca.
-
-**Puerta abierta en Aguascalientes**
-
-El impacto de su debut no ha tardado en traducirse en nuevos compromisos. De Miranda ha sido anunciado en la prestigiosa Feria Nacional de San Marcos, uno de los ciclos de mayor relevancia en América. Será el 9 de mayo en Aguascalientes, donde lidiará toros de Santa Ines y Campo Real, en un cartel que supone un nuevo espaldarazo a su creciente proyección internacional.
-
-**Temporada grande también en Europa**
-
-Mientras su nombre se afianza en México, en España le aguarda una agenda de máxima responsabilidad. Está anunciado en dos tardes en la Plaza de Toros de la Real Maestranza de Sevilla —una de ellas el Domingo de Resurrección— y otras dos comparecencias en la Plaza de Toros de Las Ventas, además de su presencia en citas clave del arranque de curso.
-
-Un calendario de máxima exigencia que refrenda que el gran momento de David de Miranda no es fruto de la casualidad, sino consecuencia de una trayectoria ascendente, firme y cada vez más universal.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `Pozoblanco se viste de Pasión: Talavante lidera un cartel de poder y futuro en el norte cordobés`,
-	image: "/images/pozob.jpg",
-    category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	footerImage1: "/images/pozob1.jpg",
-	fullContent: `La localidad cordobesa de Pozoblanco se prepara para vivir el próximo 28 de marzo, Sábado de Pasión, una tarde de toros marcada por la expectación y el atractivo de un cartel que aúna jerarquía y juventud. A partir de las 18:00 horas, el coso pozoalbense abrirá sus puertas para un festejo mixto que reúne presente y porvenir del escalafón.
-
-Encabeza la combinación Alejandro Talavante, actual referente del toreo y líder del escalafón 2025, nombre imprescindible por su peso artístico y su regularidad en las grandes citas. El extremeño vuelve a un escenario de máxima responsabilidad en una temporada donde está llamado a marcar territorio.
-
-A su lado hará el paseíllo David de Miranda, uno de los nombres propios del pasado curso y torero especialmente vinculado a Pozoblanco, plaza en la que ya dejó huella con actuaciones de resonancia. Regresa ahora respaldado por sus méritos y con el aval de sus triunfos.
-
-Completa el cartel el novillero cordobés Manuel Quintana, joven promesa de la tierra que afronta una oportunidad de oro para reivindicarse ante su afición y consolidarse como uno de los valores emergentes del panorama actual.
-
-**Hierro de garantías para una tarde de altos vuelos**
-
-Para la ocasión se lidiarán toros y novillos de Domingo Hernández, divisa habitual en las grandes ferias y sinónimo de garantía en plazas de responsabilidad. Un encierro que añade alicientes a una cita que ya despierta enorme interés entre los aficionados.
-
-El festejo forma parte de la apuesta decidida de la empresa Caido y Soledad, dirigida por Antonio Tejero, en colaboración con el Ayuntamiento de Pozoblanco, que continúa reforzando el papel de la ciudad como enclave taurino de referencia en el norte de la provincia.
-
-Las entradas están disponibles a través de la web oficial <a
-  torospozoblanco.com
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  torospozoblanco.com
-</a> y podrán adquirirse físicamente desde el 23 de marzo. Todo está dispuesto para que Pozoblanco viva una tarde grande, de esas que marcan la primavera y reafirman su sitio en el calendario taurino andaluz.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1005,
-    title: `Olivenza, kilómetro cero de la temporada: 35 años marcando el compás del escalafón`,
-	image: "/images/locali.jpg",
+    title: `Gonzalo Capdevila, doble debut en plazas de primera categoría`,
+	image: "/images/capd.jpg",
     category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	fullContent: `Cuenta atrás en marcha. En apenas tres semanas, Olivenza volverá a latir al ritmo del toreo y a situarse, una vez más, en el epicentro del arranque del curso taurino. La Feria de Olivenza, que alcanza su 35º aniversario, levantará el telón de la primavera del 6 al 8 de marzo con un abono equilibrado, fiel a su sello: figuras consagradas, nombres en pleno auge y una firme apuesta por la savia nueva.
-
-Bajo la organización de Fusión Internacional por la Tauromaquia, el serial extremeño volverá a medir las primeras sensaciones del escalafón y a dictar el tono competitivo de la campaña.
-
-**Viernes 6: juventud y debut con caballos**
-
-El ciclo arrancará el viernes con una novillada con picadores que pondrá el foco en el futuro. Están anunciados Tomás Bastos, Olga Casado y el extremeño David Gutiérrez —formado en la Escuela Taurina de Badajoz—, quien hará su presentación con caballos ante utreros de Talavante. Una cita que servirá para calibrar el pulso de una nueva generación que pide paso.
-
-**Sábado 7: arte y expectación en terna de altos vuelos**
-
-La tarde del sábado concentra uno de los carteles más atractivos del abono. José María Manzanares, Daniel Luque y Juan Ortega se medirán a un encierro de El Puerto de San Lorenzo en una combinación marcada por el clasicismo, la inspiración y la personalidad de tres espadas llamados a firmar momentos de alto voltaje artístico.
-
-**Domingo 8: doble cita y cierre de máxima categoría**
-
-La jornada dominical llegará con doble sesión.
-
-Por la mañana (11:30 h), terna joven y ambiciosa con Borja Jiménez, David de Miranda y el novillero Marco Pérez, que lidiarán un encierro compartido de Domingo Hernández y La Ventana del Puerto. Una combinación fresca, de ambición declarada y con el aliciente del hambre de triunfo.
-
-El broche llegará por la tarde (17:00 h) con una corrida de Victoriano del Río para un cartel de relumbrón: Alejandro Talavante —que conmemora el 20º aniversario de su alternativa—, Emilio de Justo y Roca Rey. Una terna de peso, mediática y rematada, llamada a convertirse en uno de los grandes focos del inicio de temporada.
-
-Con este planteamiento, Olivenza reafirma su condición de gran escaparate del comienzo de curso, punto de encuentro imprescindible donde se calibran estados de forma, se confirman aspiraciones y se encienden las primeras pasiones del año.
-
-Las localidades ya pueden adquirirse por internet y vía telefónica, además de en las taquillas de la plaza desde el 26 de febrero. Porque, una vez más, la primavera taurina empieza en Extremadura.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+    date: "19 de Febrero de 2026",
+	fullContent: `Gonzalo Capdevila afronta con la máxima ilusión la temporada 2026. Después de que su nombre sonara con fuerza la pasada campaña tras cuajar actuaciones destacadas en el Circuito de Andalucía, Lodosa, Los Molinos, Cadalso de los Vidrios y, sobre todo,
+Villaseca de la Sagra, tiene por delante varios compromisos relevantes. Con apenas una semana de diferencia, Gonzalo Capdevila debutará en dos plazas de primera categoría, una en España y otra en Francia. Sevilla
+En primer lugar, el domingo 17 de mayo pisará por primera vez el albero de la Real Maestranza de Sevilla, alternando con Uceda Vargas y Mariscal Ruiz en la lidia de ejemplares de Murteira Grave.
+Acerca de la cita en el abono maestrante, afirma Capdevila que “Sevilla es un sueño para cualquier torero, una plaza con historia, con exigencia y con una afición que marca el rumbo del toreo. Poder hacer el paseíllo allí es una oportunidad que afronto con ilusión, respeto y una gran responsabilidad”.
+Vic-Fezensac
+Tan sólo seis días después, el sábado 23 de mayo, actuará por primera vez en ruedos franceses, en este caso será en Vic-Fezensac. En esta novillada matinal, el espada de El Puerto de Santa María estará acompañado por Pedro Andrés y Pedro Luis. La terna
+dará cuenta de un encierro de Aguadulce. Gonzalo Capdevila asegura que “tiene un significado muy especial para mí, porque será la primera vez que toree en tierras francesas. Me hace mucha ilusión presentarme ante la afición del país vecino, en una plaza tan reconocida por su seriedad y su personalidad. Es un paso muy importante en mi camino y voy con la firme intención de dar lo mejor de mí”.
+Felicidad y agradecimiento
+El joven diestro gaditano manifiesta su felicidad y agradecimiento “por estar anunciado en dos novilladas tan importantes como son Sevilla y Vic-Fezensac. Son dos plazas de primera categoría, dos escenarios de máxima responsabilidad y prestigio, y para mí supone un orgullo enorme formar parte de sus carteles”. Continúa Gonzalo Capdevila revelando que “estoy preparado, con muchas ganas y con el compromiso de aprovechar estas oportunidades que tanto significan en mi carrera”, concluye el novillero portuense.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Villaseca de la Sagra anuncia los 18 novilleros del XII Alfarero de Plata 2026, con Pedro de la Hermosa y Jaime Torija en representación de la Escuela Taurina de Guadalajara`,
-	image: "/images/xxv.jpg",
+    title: `Los menores de 18 años podrán entrar gratis en las novilladas del Circuito de Madrid`,
+	image: "/images/free.jpg",
     category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	fullContent: `Finalizado el plazo oficial de inscripción, la organización del XII Certamen de Novilladas sin Picadores **“Alfarero de Plata” 2026**, que se celebrará en Villaseca de la Sagra, ha hecho público el listado definitivo de los 18 novilleros que formarán parte de la presente edición.
+    date: "19 de Febrero de 2026",
+	excerpt: "Precios al alcance de todos los aficionados en la sexta edición del Circuito de Madrid. Los mayores de 65 años, menores de 26, amigos de la FTL y grupos, con precio reducido",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce los carteles, tras haberse realizado el sorteo y la presentación oficial el pasado martes. Un total de 9 festejos a celebrarse entre los meses de marzo y julio, en el que 8 novilleros lucharán por alzarse como triunfador de esta edición.
 
-Tras el correspondiente proceso de valoración, los jóvenes seleccionados son:
+Con el fin de promocionar las novilladas entre los más jóvenes, se ha establecido como en ediciones anteriores, unos precios a la altura de todos los aficionados.
+La **entrada general** costará 10€; para **mayores de 65 años**, **menores 26** y **Amigos de la Fundación Toro de Lidia**, el precio establecido es de 5€; los grupos de 10 o más personas, independientemente de la edad, pagarán 5€ por entrada y los **menores de 18 años tendrán la entrada gratuita**, pero con obligación de recogerlas en la taquilla.
 
-1. Fernando Donoso Sánchez
-2. Pedro Ruiz de la Hermosa Alé
-3. José Alejandro Chavarri Maldonado
-4. Manuel León Sánchez
-5. Manuel Díaz de Lope Díaz Rodríguez
-6. David García Cob
-7. Rodrigo Cobo Moreno
-8. Jorge Oliva Delgado
-9. Israel Guirao Engra
-10. Armando Rojo García
-11. Javier Fernández-Baillo Gómez-Lobo
-12. Javier Torres “Bombita”
-13. Noel García Sánchez
-14. Jaime Padilla Morales
-15. Jaime Torija Moreno
-16. Ian Rodríguez Bermejo
-17. Alejandro González Martínez
-18. Rubén Sánchez Abejón
+Los carteles de la fase clasificatoria del Circuito de Madrid 2026 son los siguientes:
+-  Sábado 7 de marzo (18:00h) en **San Agustín del Guadalix**: Novillos de Flor de Jara y El Retamar para Rafael de la Cueva y López Ortega.
+-  Sábado 14 de marzo (12:00h) en **El Álamo**: Novillos de Quintas y Antonio Ordóñez para Mario Vilau y Félix San Román.
+-  Sábado 21 de marzo (18:00h) en **Valdetorres de Jarama**: Novillos de Ángel Luis Peña y El Álamo para Jesús Moreno e Ignacio Garibay, que debutará con picadores.
+-  Domingo 22 de marzo (18:00h) en **Estremera**: Novillos de Guerrero y Carpintero y Ginés Bartolomé para Sergio Rollón y Juan Pablo Ibarra, que debutará con picadores.
 
-Asimismo, la organización ha acordado designar a dos aspirantes en calidad de suplentes, con el objetivo de garantizar el normal desarrollo del certamen ante posibles eventualidades –como lesiones o percances– que pudieran impedir la participación de alguno de los titulares durante el transcurso del **XII Alfarero de Plata** 2026.
-
-Por otra parte, el sorteo que determinará el orden y la composición de las tres novilladas clasificatorias tendrá lugar el próximo lunes 2 de marzo, en el marco de las XXV Jornadas Taurinas de Villaseca de la Sagra, una vez finalizado el coloquio programado para esa jornada.`,
-	author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `Presentados los carteles oficiales del VI Circuito de Novilladas de Madrid`,
-	image: "/images/presentacion.jpg",
+    title: `Sábado de Gloria de altos vuelos en Málaga: Fortes, Ortega y Aguado cierran la etapa de Garzón en La Malagueta`,
+	image: "/images/glor.jpg",
     category: "Actualidad",
-    date: "18 de Febrero de 2026",
-	excerpt: "El certamen, presentado en Las Ventas, reunirá a ocho novilleros en cuatro clasificatorias, tres semifinales y dos finales, con retransmisión en Telemadrid y premio de proyección para el triunfador.",
-	fullContent: `El Circuito de Novilladas de Madrid alcanza este 2026 su sexta edición consolidado como uno de los proyectos más sólidos de promoción del escalafón menor. Nueve festejos – cuatro clasificatorios, tres semifinales y dos finales – darán forma a un certamen que desde 2021 ha servido de trampolín a 46 novilleros con picadores y que este año suma dos nuevos debutantes con caballos: Ignacio Garibay y Juan Pablo Ibarra.
+    date: "19 de Febrero de 2026",
+	excerpt: "Un cartel de arte y simbolismo marcará el 4 de abril en el coso malagueño",
+	footerImage1: "/images/glor1.jpg",
+	footerImage2: "/images/glor2.jpg",
+	fullContent: `La Plaza de Toros de La Malagueta ya tiene fecha clave en su calendario: el próximo 4 de abril, Sábado de Gloria, acogerá una corrida de máximo atractivo con un cartel que combina raíces, pureza y personalidad. Harán el paseíllo Fortes, Juan Ortega y Pablo Aguado, en una tarde que, además de su peso artístico, tendrá un marcado carácter simbólico.
 
-La gala de presentación se celebró el pasado martes en la Sala Antonio Bienvenida de la Plaza de Toros de Las Ventas, con la presencia de Miguel Martín, director gerente del Centro de Asuntos Taurinos; Victorino Martín, presidente de la Fundación Toro de Lidia; y Álvaro Serrano, último triunfador del circuito. Durante el acto se realizó el sorteo que configuró el calendario oficial.
+El festejo, adelantado por El Mundo, supondrá el broche final a la etapa empresarial de Jose Maria Garzon al frente del coso malagueño, cerrando así un ciclo en una de las plazas de primera referencia del panorama nacional.
 
-**Fase Clasificatoria.**
+**Dos hierros de garantías para una terna de inspiración**
 
-Sábado 7 de marzo (18:00 h.), San Agustín de Guadalix. Novillos de Flor de Jara y El Retamar para Rafael de la Cueva y López Ortega.
+En lo ganadero, la corrida reunirá un encierro mixto compuesto por tres toros de Puerto de San Lorenzo y tres de El Pilar, divisas habituales en las grandes ferias y garantía de seriedad y fondo.
 
-Sábado 14 de marzo (12:00 h.), El Álamo. Novillos de Quintas y Antonio Ordóñez para Mario Vilau y Félix San Román.
+La combinación artística del cartel multiplica el interés. La profundidad y el clasicismo de Juan Ortega, el concepto sevillano y estético de Pablo Aguado y la conexión especial de Fortes con su tierra configuran una terna de corte marcadamente artístico, pensada para una tarde de sensibilidad y temple en el albero malagueño.
 
-Sábado 21 de marzo (18:00 h.), Valdetorres de Jarama. Novillos de Ángel Luis Peña y El Álamo para Jesús Moreno e Ignacio Garibay (debut con picadores).
+**Un adiós empresarial con fecha marcada**
 
-Domingo 22 de marzo (18:00 h.), Estremera. Novillos de Guerrero y Carpintero y Ginés Bartolomé para Sergio Rollón y Juan Pablo Ibarra (debut con picadores).
+Más allá del cartel, la cita tendrá una lectura empresarial relevante. El 4 de abril marcará el final de la gestión de José María Garzón en La Malagueta. A partir de junio, la dirección del coso pasará a manos de Tauroemocion, nueva adjudicataria tras imponerse en el concurso público convocado para la explotación de la plaza.
 
-**Semifinales.**
-
-Lunes 1 de abril (18:00 h.), Talamanca de Jarama. Novillos de El Estoque y José González para tres semifinalistas.
-
-Domingo 26 de abril (18:00 h.), Algete. Novillos de Los Eulogios y Cerro Longo para tres semifinalistas.
-
-Domingo 21 de junio (18:00 h.), Villarejo de Salvanés. Novillos de Hermanos Sandoval para los seis semifinalistas.
-
-**Finales.**
-
-Final a tres. Sábado 4 de julio (21:30 h.), Chinchón. Novillos de Fernando Guzmán y San Isidro para los tres finalistas.
-
-Gran Final. Domingo 5 de julio (21:30 h.), San Martín de Valdeiglesias. Novillos de Victoriano del Río, Montealto y Zacarías Moreno para los dos finalistas.
-Las tres últimas novilladas serán retransmitidas en directo por Telemadrid y las dos finales se celebrarán en horario nocturno.
-Como aliciente, el triunfador asegurará su presencia en las novilladas de Arganda del Rey, San Agustín de Guadalix y Cadalso de los Vidrios, premio que supone un paso firme en su proyección dentro del escalafón.`,
-	author: "Iris Rodríguez",
-    authorLogo: "/images/iris.jpg",
+Así, el Sábado de Gloria no será solo una tarde de toros. Será también el cierre de una etapa y el preludio de una nueva era en Málaga. Una fecha señalada en rojo para la afición, que despedirá un ciclo empresarial con un cartel a la altura de la historia de La Malagueta.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1009,
-    title: `Diosleguarde lidera el triunfo en una tarde grande junto a Perera.`,
-	image: "/images/ulticron.jpg",
-    category: "Crónicas",
-    date: "18 de Febrero de 2026",
-	excerpt: "Lleno en Ciudad Rodrigo para una novillada de Juan Manuel Criado donde Perera y Diosleguarde cortaron dos orejas y Clovis Germain dejo una emotiva faena.",
-	imageCaption: "Foto de la Prensa Manuel Diosleguarde",
-	plaza: "Plaza Mayor de Ciudad Rodrigo",
-    ganaderia: "Novillos de las ganadería Juan Manuel Criado",
-	torerosRaw: `Miguel Ángel Perera: Dos orejas.
-Borja Jiménez: Una oreja.
-Manuel Diosleguarde: Dos orejas. 
-Clovis Germain: aplausos.`,
-	fullContent: `Incidencias: tras el paseíllo sonaron los acordes del Himno Nacional. El festejo comenzó seis minutos tarde.
+    id: 1008,
+    title: `Moisés Fraile, el apellido que ya suena a futuro: Ciudad Rodrigo descubre a su nueva esperanza`,
+	image: "/images/hijo.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	excerpt: "El Carnaval del Toro pone el foco en un nombre que aún no puede vestirse de luces… pero ya pisa como torero",
+	fullContent: `En un escenario donde cada año se forjan mitos y se consumen emociones a la velocidad de los encierros, Ciudad Rodrigo volvió a señalar un nombre propio. Y esta vez no fue el de una figura consolidada ni el de un matador con alternativa. Fue el de un muchacho de apenas 14 años que, sin poder aún vestirse de luces sin caballos, ya ha empezado a escribir su historia en el albero mirobrigense.
 
-En el último encierro de este Carnaval del Toro 2026, el toreo se impuso a la exigencia. Lleno en la plaza de toros de Ciudad Rodrigo para presenciar un buen encierro de Juan Manuel Criado que dejó luces variadas y triunfos de mérito bajo el signo de la entrega y el temple.
+El marco no era menor. El exigente Carnaval del Toro, con su mezcla de tradición, presión ambiental y público entendido, no concede regalos. Allí, donde la plaza mide con exactitud el pulso del campo y de la afición, emergió con fuerza un apellido que pesa tanto como un hierro: Fraile.
 
-El extremeño **Miguel Ángel Perera** fue el primero, creando una faena con un novillo que quizás, en otras manos, no hubiera sido tan espectacular. La faena fue de menos a más, empezando con un tercio en el que el animal no decía mucho y terminando con un trasteo que desbordó al público. Frente a un novillo con buena condición y desplazamiento, especialmente por el izquierdo, Perera supo acoplarse con criterio, interpretando la embestida con temple y ligazón. Paseó dos orejas después de una estocada caída pero eficaz, y el novillo fue premiado con la vuelta al ruedo como justo reconocimiento a su juego y nobleza.
+**Un legado antes que una oportunidad**
 
-**Borja Jiménez** dejó un saludo capotero de buen trazo, encajado y con intención, ante un segundo que empujó en el caballo. Ya con la muleta, el sevillano inició la faena con la rodilla flexionada y apoyada en el albero, un comienzo de rodillas que calentó pronto al tendido. El novillo, más complicado que el primero de la tarde, tenía más genio por el pitón izquierdo, echando la cara arriba al final del muletazo y desluciendo el embroque. Hubo series de mérito, siempre con buena colocación y mando. La estocada fue desprendida pero en muy buen sitio; sin embargo, el puntillero levantó al animal cuando parecía doblar definitivamente, lo que obligó a sonar un aviso. Borja Jiménez tuvo que echar mano del descabello, acertando a la primera. Paseó una oreja que pudo haber sido doble de no haberse demorado la caída del novillo.
+Moisés Fraile no compareció como simple nombre de cartel ni como nota exótica en una clase práctica. Su presencia respondía a algo más profundo: es heredero directo de la ganadería El Pilar, hijo y nieto de criadores, formado entre encinas y toros desde la infancia.
 
-**Manuel Diosleguarde** confirmó el momento de madurez que atraviesa, un torero que se adapta a las circunstancias y listo para asumir los retos que le llegan en esta nueva temporada. Le tocó en suerte el novillo más exigente del encierro, en varas empujó con fuerza y bravura, llevando al caballo hasta las tablas. Diosleguarde brindó la faena a Juan Andrés Gonzalo en su última tarde, gesto cargado de simbolismo. El astado mostró mejor condición por el pitón derecho, mientras que por el izquierdo cabeceaba con insistencia, desluciendo el final de los muletazos. Diosleguarde tuvo que ponerlo todo: colocación, paciencia y capacidad de adaptación. Tras un pinchazo, dejó una estocada de ejecución impecable, en el sitio exacto, que hizo rodar al novillo. Dos orejas premiaron una actuación sólida y de peso.
+Criado en el entorno del Campo Charro, ha aprendido antes a leer la mirada de un animal que a entender el peso mediático del oficio. Esa circunstancia, lejos de suavizar su camino, lo endurece. En su casa no hay espacio para las medias tintas, y él lo sabe.
 
-Cerró la tarde **Clovis Germain**, triunfador de la 70ª edición del Bolsín Taurino Mirobrigense. Inició con un saludo de capa de gran personalidad y un quite ajustado por chicuelinas y tafalleras que arrancó aplausos. Frente a un eral bravo y repetidor, que se arrancó con ritmo y transmisión, Germain sostuvo un binomio de respeto y compenetración con su oponente. Empezó la faena desde el centro de la plaza, de rodillas, arrancándose el animal desde lejos, y siguiendo con tandas de muy buen tono. Mostró sus grandes cualidades como novillero, y aunque la espada emborronó el posible gran premio tras un pinchazo, una media, un aviso y varios intentos con el descabello, Ciudad Rodrigo reconoció su buen trasteo. Recibió aplausos.`,
-    author: "Nerea F.Elena",
-    authorLogo: "/images/nere.jpg",
+En la jornada del Sábado de Carnaval, dentro de la clase práctica que puso el broche a la tarde tras el festival, el coso salmantino dirigió su atención hacia él. Cuando el ruido suele apagarse y el público comienza a desconectar, ocurrió lo contrario: la plaza volvió a latir.
+
+**Más que un becerrista**
+
+No se trataba únicamente de un joven debutante. Sobre la arena estaba la representación viva de una estirpe ganadera dando el paso al ruedo. Con la naturalidad del que empieza y la responsabilidad del que entiende de dónde procede.
+
+Compartía cartel con nombres de peso como Diego Urdiales, Alejandro Talavante y Pablo Aguado. Referentes para cualquier aspirante, testigos en esta ocasión del crecimiento de un chico al que han visto evolucionar desde niño en el campo.
+
+La presión, inevitable en un entorno así, no le desbordó. Porque Moisés no procede de un escaparate fabricado ni de una promoción apresurada. Su formación se está cimentando en la base clásica: tentaderos, disciplina, campo y responsabilidad diaria. Un aprendizaje silencioso que se nota cuando pisa la arena.
+
+**Actitud que no se aprende**
+
+Hay algo que las plazas detectan con precisión milimétrica: la autenticidad. Y en Moisés Fraile no se advierte pose ni gesto impostado para la galería. Su actitud responde a la naturalidad de quien ha convivido con el toro antes de conocer los focos.
+
+Ser hijo de una casa ganadera como la de El Puerto de la Calderilla no es una ventaja ligera; es una exigencia constante. Él mismo asume que su apellido no le concede privilegios, sino obligaciones. Y en Ciudad Rodrigo, donde el público no regala nada, esa verdad se percibió.
+
+Aún le falta tiempo para poder enfundarse el traje de luces sin caballos. Pero el Carnaval del Toro ya ha señalado algo evidente: el apellido Fraile no solo se mantiene en el campo. Empieza, también, a abrirse paso en el ruedo.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 206,
+    title: `Gonzalo Capdevila, doble debut en plazas de primera categoría`,
+	image: "/images/capd.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	fullContent: `Gonzalo Capdevila afronta con la máxima ilusión la temporada 2026. Después de que su nombre sonara con fuerza la pasada campaña tras cuajar actuaciones destacadas en el Circuito de Andalucía, Lodosa, Los Molinos, Cadalso de los Vidrios y, sobre todo,
+Villaseca de la Sagra, tiene por delante varios compromisos relevantes. Con apenas una semana de diferencia, Gonzalo Capdevila debutará en dos plazas de primera categoría, una en España y otra en Francia. Sevilla
+En primer lugar, el domingo 17 de mayo pisará por primera vez el albero de la Real Maestranza de Sevilla, alternando con Uceda Vargas y Mariscal Ruiz en la lidia de ejemplares de Murteira Grave.
+Acerca de la cita en el abono maestrante, afirma Capdevila que “Sevilla es un sueño para cualquier torero, una plaza con historia, con exigencia y con una afición que marca el rumbo del toreo. Poder hacer el paseíllo allí es una oportunidad que afronto con ilusión, respeto y una gran responsabilidad”.
+Vic-Fezensac
+Tan sólo seis días después, el sábado 23 de mayo, actuará por primera vez en ruedos franceses, en este caso será en Vic-Fezensac. En esta novillada matinal, el espada de El Puerto de Santa María estará acompañado por Pedro Andrés y Pedro Luis. La terna
+dará cuenta de un encierro de Aguadulce. Gonzalo Capdevila asegura que “tiene un significado muy especial para mí, porque será la primera vez que toree en tierras francesas. Me hace mucha ilusión presentarme ante la afición del país vecino, en una plaza tan reconocida por su seriedad y su personalidad. Es un paso muy importante en mi camino y voy con la firme intención de dar lo mejor de mí”.
+Felicidad y agradecimiento
+El joven diestro gaditano manifiesta su felicidad y agradecimiento “por estar anunciado en dos novilladas tan importantes como son Sevilla y Vic-Fezensac. Son dos plazas de primera categoría, dos escenarios de máxima responsabilidad y prestigio, y para mí supone un orgullo enorme formar parte de sus carteles”. Continúa Gonzalo Capdevila revelando que “estoy preparado, con muchas ganas y con el compromiso de aprovechar estas oportunidades que tanto significan en mi carrera”, concluye el novillero portuense.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 207,
+    title: `Los menores de 18 años podrán entrar gratis en las novilladas del Circuito de Madrid`,
+	image: "/images/free.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	excerpt: "Precios al alcance de todos los aficionados en la sexta edición del Circuito de Madrid. Los mayores de 65 años, menores de 26, amigos de la FTL y grupos, con precio reducido",
+	fullContent: `El **Circuito de Madrid 2026** ya conoce los carteles, tras haberse realizado el sorteo y la presentación oficial el pasado martes. Un total de 9 festejos a celebrarse entre los meses de marzo y julio, en el que 8 novilleros lucharán por alzarse como triunfador de esta edición.
+
+Con el fin de promocionar las novilladas entre los más jóvenes, se ha establecido como en ediciones anteriores, unos precios a la altura de todos los aficionados.
+La **entrada general** costará 10€; para **mayores de 65 años**, **menores 26** y **Amigos de la Fundación Toro de Lidia**, el precio establecido es de 5€; los grupos de 10 o más personas, independientemente de la edad, pagarán 5€ por entrada y los **menores de 18 años tendrán la entrada gratuita**, pero con obligación de recogerlas en la taquilla.
+
+Los carteles de la fase clasificatoria del Circuito de Madrid 2026 son los siguientes:
+-  Sábado 7 de marzo (18:00h) en **San Agustín del Guadalix**: Novillos de Flor de Jara y El Retamar para Rafael de la Cueva y López Ortega.
+-  Sábado 14 de marzo (12:00h) en **El Álamo**: Novillos de Quintas y Antonio Ordóñez para Mario Vilau y Félix San Román.
+-  Sábado 21 de marzo (18:00h) en **Valdetorres de Jarama**: Novillos de Ángel Luis Peña y El Álamo para Jesús Moreno e Ignacio Garibay, que debutará con picadores.
+-  Domingo 22 de marzo (18:00h) en **Estremera**: Novillos de Guerrero y Carpintero y Ginés Bartolomé para Sergio Rollón y Juan Pablo Ibarra, que debutará con picadores.
+
+**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
+El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la Comunidad de Madrid.
+El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 208,
+    title: `Sábado de Gloria de altos vuelos en Málaga: Fortes, Ortega y Aguado cierran la etapa de Garzón en La Malagueta`,
+	image: "/images/glor.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	excerpt: "Un cartel de arte y simbolismo marcará el 4 de abril en el coso malagueño",
+	footerImage1: "/images/glor1.jpg",
+	footerImage2: "/images/glor2.jpg",
+	fullContent: `La Plaza de Toros de La Malagueta ya tiene fecha clave en su calendario: el próximo 4 de abril, Sábado de Gloria, acogerá una corrida de máximo atractivo con un cartel que combina raíces, pureza y personalidad. Harán el paseíllo Fortes, Juan Ortega y Pablo Aguado, en una tarde que, además de su peso artístico, tendrá un marcado carácter simbólico.
+
+El festejo, adelantado por El Mundo, supondrá el broche final a la etapa empresarial de Jose Maria Garzon al frente del coso malagueño, cerrando así un ciclo en una de las plazas de primera referencia del panorama nacional.
+
+**Dos hierros de garantías para una terna de inspiración**
+
+En lo ganadero, la corrida reunirá un encierro mixto compuesto por tres toros de Puerto de San Lorenzo y tres de El Pilar, divisas habituales en las grandes ferias y garantía de seriedad y fondo.
+
+La combinación artística del cartel multiplica el interés. La profundidad y el clasicismo de Juan Ortega, el concepto sevillano y estético de Pablo Aguado y la conexión especial de Fortes con su tierra configuran una terna de corte marcadamente artístico, pensada para una tarde de sensibilidad y temple en el albero malagueño.
+
+**Un adiós empresarial con fecha marcada**
+
+Más allá del cartel, la cita tendrá una lectura empresarial relevante. El 4 de abril marcará el final de la gestión de José María Garzón en La Malagueta. A partir de junio, la dirección del coso pasará a manos de Tauroemocion, nueva adjudicataria tras imponerse en el concurso público convocado para la explotación de la plaza.
+
+Así, el Sábado de Gloria no será solo una tarde de toros. Será también el cierre de una etapa y el preludio de una nueva era en Málaga. Una fecha señalada en rojo para la afición, que despedirá un ciclo empresarial con un cartel a la altura de la historia de La Malagueta.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 209,
+    title: `Moisés Fraile, el apellido que ya suena a futuro: Ciudad Rodrigo descubre a su nueva esperanza`,
+	image: "/images/hijo.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	excerpt: "El Carnaval del Toro pone el foco en un nombre que aún no puede vestirse de luces… pero ya pisa como torero",
+	fullContent: `En un escenario donde cada año se forjan mitos y se consumen emociones a la velocidad de los encierros, Ciudad Rodrigo volvió a señalar un nombre propio. Y esta vez no fue el de una figura consolidada ni el de un matador con alternativa. Fue el de un muchacho de apenas 14 años que, sin poder aún vestirse de luces sin caballos, ya ha empezado a escribir su historia en el albero mirobrigense.
+
+El marco no era menor. El exigente Carnaval del Toro, con su mezcla de tradición, presión ambiental y público entendido, no concede regalos. Allí, donde la plaza mide con exactitud el pulso del campo y de la afición, emergió con fuerza un apellido que pesa tanto como un hierro: Fraile.
+
+**Un legado antes que una oportunidad**
+
+Moisés Fraile no compareció como simple nombre de cartel ni como nota exótica en una clase práctica. Su presencia respondía a algo más profundo: es heredero directo de la ganadería El Pilar, hijo y nieto de criadores, formado entre encinas y toros desde la infancia.
+
+Criado en el entorno del Campo Charro, ha aprendido antes a leer la mirada de un animal que a entender el peso mediático del oficio. Esa circunstancia, lejos de suavizar su camino, lo endurece. En su casa no hay espacio para las medias tintas, y él lo sabe.
+
+En la jornada del Sábado de Carnaval, dentro de la clase práctica que puso el broche a la tarde tras el festival, el coso salmantino dirigió su atención hacia él. Cuando el ruido suele apagarse y el público comienza a desconectar, ocurrió lo contrario: la plaza volvió a latir.
+
+**Más que un becerrista**
+
+No se trataba únicamente de un joven debutante. Sobre la arena estaba la representación viva de una estirpe ganadera dando el paso al ruedo. Con la naturalidad del que empieza y la responsabilidad del que entiende de dónde procede.
+
+Compartía cartel con nombres de peso como Diego Urdiales, Alejandro Talavante y Pablo Aguado. Referentes para cualquier aspirante, testigos en esta ocasión del crecimiento de un chico al que han visto evolucionar desde niño en el campo.
+
+La presión, inevitable en un entorno así, no le desbordó. Porque Moisés no procede de un escaparate fabricado ni de una promoción apresurada. Su formación se está cimentando en la base clásica: tentaderos, disciplina, campo y responsabilidad diaria. Un aprendizaje silencioso que se nota cuando pisa la arena.
+
+**Actitud que no se aprende**
+
+Hay algo que las plazas detectan con precisión milimétrica: la autenticidad. Y en Moisés Fraile no se advierte pose ni gesto impostado para la galería. Su actitud responde a la naturalidad de quien ha convivido con el toro antes de conocer los focos.
+
+Ser hijo de una casa ganadera como la de El Puerto de la Calderilla no es una ventaja ligera; es una exigencia constante. Él mismo asume que su apellido no le concede privilegios, sino obligaciones. Y en Ciudad Rodrigo, donde el público no regala nada, esa verdad se percibió.
+
+Aún le falta tiempo para poder enfundarse el traje de luces sin caballos. Pero el Carnaval del Toro ya ha señalado algo evidente: el apellido Fraile no solo se mantiene en el campo. Empieza, también, a abrirse paso en el ruedo.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 210,
     title: `La Fundación Zaballos reconoce la labor de la Fundación del Toro de Lidia`,
