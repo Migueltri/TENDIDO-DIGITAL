@@ -40,6 +40,62 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1004,
+    title: `Baleares Cambio de Tercio presenta su temporada taurina: cuatro grandes citas de gran nivel en Inca y Muro`,
+	image: "/images/tituu.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	footerImage1: "/images/tituu1.jpg",
+	fullContent: `En un acto cargado de solera y expectación celebrado en el emblemático Círculo Mallorquín, la empresa Balears Cambio de Tercio ha desvelado hoy la ambiciosa temporada taurina que devolverá a las plazas de Inca y Muro su lugar de privilegio en el panorama nacional.
+
+La presentación, conducida por Jorge Conde, ha contado con la presencia de Javier Conde y el empresario Francisco D’Agostino, junto a la destacada ponencia del economista Antonini Jiménez. 
+
+Durante el evento, se ha subrayado que esta programación es fruto de una escucha activa a la afición balear, con el firme compromiso de recuperar el esplendor histórico que las Islas siempre han tenido en la tauromaquia.
+
+**Cartelería de máximo nivel: Temporada 2026**
+
+La temporada se divide en cuatro citas ineludibles que combinan la maestría del toreo a pie, el arte del rejoneo y el prestigio de ganaderías legendarias:
+
+**Plaza de Toros de Inca**
+Domingo de Ramos, 29 de marzo (17:00h):
+• Toros: Samuel Flores.
+• Espadas: Paco Ureña, Jiménez Fortes y David Galván.
+
+Domingo, 17 de mayo (18:30h):
+• Toros: El Capea (para rejones) y La Palmosilla (para lidia a pie).
+• Cartel: El rejoneador Guillermo Hermoso de Mendoza, junto a Borja Jiménez y Marco Pérez.
+
+**Plaza de Toros de Muro**
+Sábado, 20 de junio (18:30h) – Fiestas de San Román:
+• Toros: El Capea.
+• Espadas: Antonio Ferrera, Miguel Ángel Perera y la novillera Olga Casado.
+
+Domingo, 13 de septiembre (18:30h):
+• Toros: 2 toros para rejones y la legendaria ganadería de Miura.
+• Cartel: El rejoneador Ferrer Martín y un emocionante mano a mano entre Damián Castaño y Jesús Enrique Colombo.
+
+
+**Información de venta y abonos**
+Para premiar la fidelidad del aficionado, se ha habilitado un Abono de Temporada con un 10% de descuento sobre el precio final.
+
+• Venta Online: 
+<a
+  www.balearscambiodetercio.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.balearscambiodetercio.com
+</a> (http://www.balearscambiodetercio.com/)
+• Redes Sociales: Sigue toda la actualidad en @bcambiodetercio.of
+• Atención al Cliente: Se habilita el teléfono de información y taquillas 634 732 473.
+
+Balears Cambio de Tercio reafirma así su apuesta por la excelencia, la tradición y el futuro de la tauromaquia en las Islas Baleares, diseñando una temporada que ya se perfila como histórica.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Gonzalo Capdevila, doble debut en plazas de primera categoría`,
 	image: "/images/capd.jpg",
@@ -152,6 +208,62 @@ Aún le falta tiempo para poder enfundarse el traje de luces sin caballos. Pero 
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 205,
+    title: `Baleares Cambio de Tercio presenta su temporada taurina: cuatro grandes citas de gran nivel en Inca y Muro`,
+	image: "/images/tituu.jpg",
+    category: "Actualidad",
+    date: "19 de Febrero de 2026",
+	footerImage1: "/images/tituu1.jpg",
+	fullContent: `En un acto cargado de solera y expectación celebrado en el emblemático Círculo Mallorquín, la empresa Balears Cambio de Tercio ha desvelado hoy la ambiciosa temporada taurina que devolverá a las plazas de Inca y Muro su lugar de privilegio en el panorama nacional.
+
+La presentación, conducida por Jorge Conde, ha contado con la presencia de Javier Conde y el empresario Francisco D’Agostino, junto a la destacada ponencia del economista Antonini Jiménez. 
+
+Durante el evento, se ha subrayado que esta programación es fruto de una escucha activa a la afición balear, con el firme compromiso de recuperar el esplendor histórico que las Islas siempre han tenido en la tauromaquia.
+
+**Cartelería de máximo nivel: Temporada 2026**
+
+La temporada se divide en cuatro citas ineludibles que combinan la maestría del toreo a pie, el arte del rejoneo y el prestigio de ganaderías legendarias:
+
+**Plaza de Toros de Inca**
+Domingo de Ramos, 29 de marzo (17:00h):
+• Toros: Samuel Flores.
+• Espadas: Paco Ureña, Jiménez Fortes y David Galván.
+
+Domingo, 17 de mayo (18:30h):
+• Toros: El Capea (para rejones) y La Palmosilla (para lidia a pie).
+• Cartel: El rejoneador Guillermo Hermoso de Mendoza, junto a Borja Jiménez y Marco Pérez.
+
+**Plaza de Toros de Muro**
+Sábado, 20 de junio (18:30h) – Fiestas de San Román:
+• Toros: El Capea.
+• Espadas: Antonio Ferrera, Miguel Ángel Perera y la novillera Olga Casado.
+
+Domingo, 13 de septiembre (18:30h):
+• Toros: 2 toros para rejones y la legendaria ganadería de Miura.
+• Cartel: El rejoneador Ferrer Martín y un emocionante mano a mano entre Damián Castaño y Jesús Enrique Colombo.
+
+
+**Información de venta y abonos**
+Para premiar la fidelidad del aficionado, se ha habilitado un Abono de Temporada con un 10% de descuento sobre el precio final.
+
+• Venta Online: 
+<a
+  www.balearscambiodetercio.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.balearscambiodetercio.com
+</a> (http://www.balearscambiodetercio.com/)
+• Redes Sociales: Sigue toda la actualidad en @bcambiodetercio.of
+• Atención al Cliente: Se habilita el teléfono de información y taquillas 634 732 473.
+
+Balears Cambio de Tercio reafirma así su apuesta por la excelencia, la tradición y el futuro de la tauromaquia en las Islas Baleares, diseñando una temporada que ya se perfila como histórica.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 206,
     title: `Gonzalo Capdevila, doble debut en plazas de primera categoría`,
