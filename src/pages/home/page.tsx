@@ -169,7 +169,7 @@ Con esta propuesta, la **Diputación de Cádiz** y la **Asociación Nuevos Valor
    },
 	{ 
     id: 1009,
-    title: `LA REAL VENTA DE ANTEQUERA RETOMA LA ACTIVIDAD TAURINA TRAS UNA INVERSIÓN DE 80.000 EUROS`,
+    title: `La real venta de antequera retoma la actividad taurina tras una inversión de 80.000 euros`,
 	image: "/images/real.jpg",
     category: "Actualidad",
     date: "20 de Febrero de 2026",
@@ -316,7 +316,7 @@ Con esta propuesta, la **Diputación de Cádiz** y la **Asociación Nuevos Valor
    },
 	{ 
     id: 204,
-    title: `LA REAL VENTA DE ANTEQUERA RETOMA LA ACTIVIDAD TAURINA TRAS UNA INVERSIÓN DE 80.000 EUROS`,
+    title: `La real venta de antequera retoma la actividad taurina tras una inversión de 80.000 euros`,
 	image: "/images/real.jpg",
     category: "Actualidad",
     date: "20 de Febrero de 2026",
