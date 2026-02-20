@@ -40,174 +40,296 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1004,
-    title: `Baleares Cambio de Tercio presenta su temporada taurina: cuatro grandes citas de gran nivel en Inca y Muro`,
-	image: "/images/tituu.jpg",
-    category: "Actualidad",
-    date: "19 de Febrero de 2026",
-	footerImage1: "/images/tituu1.jpg",
-	fullContent: `En un acto cargado de solera y expectación celebrado en el emblemático Círculo Mallorquín, la empresa Balears Cambio de Tercio ha desvelado hoy la ambiciosa temporada taurina que devolverá a las plazas de Inca y Muro su lugar de privilegio en el panorama nacional.
-
-La presentación, conducida por Jorge Conde, ha contado con la presencia de Javier Conde y el empresario Francisco D’Agostino, junto a la destacada ponencia del economista Antonini Jiménez. 
-
-Durante el evento, se ha subrayado que esta programación es fruto de una escucha activa a la afición balear, con el firme compromiso de recuperar el esplendor histórico que las Islas siempre han tenido en la tauromaquia.
-
-**Cartelería de máximo nivel: Temporada 2026**
-
-La temporada se divide en cuatro citas ineludibles que combinan la maestría del toreo a pie, el arte del rejoneo y el prestigio de ganaderías legendarias:
-
-**Plaza de Toros de Inca**
-Domingo de Ramos, 29 de marzo (17:00h):
-• Toros: Samuel Flores.
-• Espadas: Paco Ureña, Jiménez Fortes y David Galván.
-
-Domingo, 17 de mayo (18:30h):
-• Toros: El Capea (para rejones) y La Palmosilla (para lidia a pie).
-• Cartel: El rejoneador Guillermo Hermoso de Mendoza, junto a Borja Jiménez y Marco Pérez.
-
-**Plaza de Toros de Muro**
-Sábado, 20 de junio (18:30h) – Fiestas de San Román:
-• Toros: El Capea.
-• Espadas: Antonio Ferrera, Miguel Ángel Perera y la novillera Olga Casado.
-
-Domingo, 13 de septiembre (18:30h):
-• Toros: 2 toros para rejones y la legendaria ganadería de Miura.
-• Cartel: El rejoneador Ferrer Martín y un emocionante mano a mano entre Damián Castaño y Jesús Enrique Colombo.
-
-
-**Información de venta y abonos**
-Para premiar la fidelidad del aficionado, se ha habilitado un Abono de Temporada con un 10% de descuento sobre el precio final.
-
-• Venta Online: 
-<a
-  www.balearscambiodetercio.com
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.balearscambiodetercio.com
-</a> (http://www.balearscambiodetercio.com/)
-• Redes Sociales: Sigue toda la actualidad en @bcambiodetercio.of
-• Atención al Cliente: Se habilita el teléfono de información y taquillas 634 732 473.
-
-Balears Cambio de Tercio reafirma así su apuesta por la excelencia, la tradición y el futuro de la tauromaquia en las Islas Baleares, diseñando una temporada que ya se perfila como histórica.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1005,
-    title: `Gonzalo Capdevila, doble debut en plazas de primera categoría`,
-	image: "/images/capd.jpg",
+    title: `Morante rompe el silencio: reaparición en Sevilla y temporada abierta hasta Zaragoza`,
+	image: "/images/rompe.jpg",
     category: "Actualidad",
-    date: "19 de Febrero de 2026",
-	fullContent: `Gonzalo Capdevila afronta con la máxima ilusión la temporada 2026. Después de que su nombre sonara con fuerza la pasada campaña tras cuajar actuaciones destacadas en el Circuito de Andalucía, Lodosa, Los Molinos, Cadalso de los Vidrios y, sobre todo,
-Villaseca de la Sagra, tiene por delante varios compromisos relevantes. Con apenas una semana de diferencia, Gonzalo Capdevila debutará en dos plazas de primera categoría, una en España y otra en Francia. Sevilla
-En primer lugar, el domingo 17 de mayo pisará por primera vez el albero de la Real Maestranza de Sevilla, alternando con Uceda Vargas y Mariscal Ruiz en la lidia de ejemplares de Murteira Grave.
-Acerca de la cita en el abono maestrante, afirma Capdevila que “Sevilla es un sueño para cualquier torero, una plaza con historia, con exigencia y con una afición que marca el rumbo del toreo. Poder hacer el paseíllo allí es una oportunidad que afronto con ilusión, respeto y una gran responsabilidad”.
-Vic-Fezensac
-Tan sólo seis días después, el sábado 23 de mayo, actuará por primera vez en ruedos franceses, en este caso será en Vic-Fezensac. En esta novillada matinal, el espada de El Puerto de Santa María estará acompañado por Pedro Andrés y Pedro Luis. La terna
-dará cuenta de un encierro de Aguadulce. Gonzalo Capdevila asegura que “tiene un significado muy especial para mí, porque será la primera vez que toree en tierras francesas. Me hace mucha ilusión presentarme ante la afición del país vecino, en una plaza tan reconocida por su seriedad y su personalidad. Es un paso muy importante en mi camino y voy con la firme intención de dar lo mejor de mí”.
-Felicidad y agradecimiento
-El joven diestro gaditano manifiesta su felicidad y agradecimiento “por estar anunciado en dos novilladas tan importantes como son Sevilla y Vic-Fezensac. Son dos plazas de primera categoría, dos escenarios de máxima responsabilidad y prestigio, y para mí supone un orgullo enorme formar parte de sus carteles”. Continúa Gonzalo Capdevila revelando que “estoy preparado, con muchas ganas y con el compromiso de aprovechar estas oportunidades que tanto significan en mi carrera”, concluye el novillero portuense.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+    date: "20 de Febrero de 2026",
+	fullContent: `La temporada ya tiene un latido distinto. La reaparición de Morante de la Puebla el próximo Domingo de Resurrección en la Real Maestranza de Caballería de Sevilla no es solo una cita señalada: es uno de los grandes acontecimientos del curso taurino.
+
+El regreso del genio de La Puebla del Río, inicialmente concebido como un encuentro puntual con el coso sevillano, ha tomado una dimensión mayor. Lejos de limitarse a esa tarde tan simbólica, el torero prepara una temporada más extensa de lo previsto, con la firme intención de recorrer el mapa taurino desde Sevilla hasta Zaragoza.
+
+Tras las primeras conversaciones con distintos empresarios —y después de que el periodista Vicente Zabala de la Serna avanzara algunos posibles destinos— el nombre de Morante comienza a sonar con fuerza en plazas como Jerez, Nimes, Aranjuez, Granada, Alicante, El Puerto de Santa María, Ronda o Úbeda, entre otras. Contactos abiertos y una clara voluntad de estar presente en escenarios de peso.
+
+**Compromiso con Zaragoza**
+
+Uno de los movimientos más significativos apunta a la Plaza de toros de Zaragoza. El diestro ha firmado una carta de intenciones comprometiéndose a hacer el paseíllo dos tardes en la próxima Feria del Pilar, siempre que la UTE formada por Ramón Valencia y Casa Matilla resulte adjudicataria del coso maño.
+
+Un gesto que deja entrever que el regreso no será testimonial, sino parte de un proyecto más amplio. Morante no vuelve para asomarse: vuelve para estar.
+
+La incógnita ya no es si reaparece, sino hasta dónde llegará su temporada. Y en un año que pedía arte, personalidad y aroma clásico, la figura del sevillano vuelve a colocarse en el epicentro del toreo.
+
+Sevilla será el prólogo. El resto, si el cuerpo y la inspiración acompañan, puede ser una temporada de quilates.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1006,
-    title: `Los menores de 18 años podrán entrar gratis en las novilladas del Circuito de Madrid`,
-	image: "/images/free.jpg",
+    title: `Cuadri abre fuego en Las Ventas: emoción, verdad y un cartel de compromiso para romper la temporada`,
+	image: "/images/cuadrii.jpg",
     category: "Actualidad",
-    date: "19 de Febrero de 2026",
-	excerpt: "Precios al alcance de todos los aficionados en la sexta edición del Circuito de Madrid. Los mayores de 65 años, menores de 26, amigos de la FTL y grupos, con precio reducido",
-	fullContent: `El **Circuito de Madrid 2026** ya conoce los carteles, tras haberse realizado el sorteo y la presentación oficial el pasado martes. Un total de 9 festejos a celebrarse entre los meses de marzo y julio, en el que 8 novilleros lucharán por alzarse como triunfador de esta edición.
+    date: "20 de Febrero de 2026",
+	fullContent: `La cuenta atrás ya está en marcha. La Plaza de Toros de Las Ventas alzará el telón de su temporada el próximo 22 de marzo (18:00h.) con una corrida marcada en rojo por la afición venteña: los toros de Cuadri serán los encargados de inaugurar el curso en la primera plaza del mundo.
 
-Con el fin de promocionar las novilladas entre los más jóvenes, se ha establecido como en ediciones anteriores, unos precios a la altura de todos los aficionados.
-La **entrada general** costará 10€; para **mayores de 65 años**, **menores 26** y **Amigos de la Fundación Toro de Lidia**, el precio establecido es de 5€; los grupos de 10 o más personas, independientemente de la edad, pagarán 5€ por entrada y los **menores de 18 años tendrán la entrada gratuita**, pero con obligación de recogerlas en la taquilla.
+Hablar de Cuadri es hablar de emoción cruda, de seriedad en el trapío y de ese punto indomable que pone a prueba la verdad de los toreros. El hierro onubense, uno de los más esperados por el público de Madrid, regresa tras su compromiso del Domingo de Ramos de 2024, una tarde en la que dejó huella el imponente 'Bagonero', toro hondo y de mucha caja que encarnó la esencia del encaste y la personalidad de la divisa.
 
-Los carteles de la fase clasificatoria del Circuito de Madrid 2026 son los siguientes:
--  Sábado 7 de marzo (18:00h) en **San Agustín del Guadalix**: Novillos de Flor de Jara y El Retamar para Rafael de la Cueva y López Ortega.
--  Sábado 14 de marzo (12:00h) en **El Álamo**: Novillos de Quintas y Antonio Ordóñez para Mario Vilau y Félix San Román.
--  Sábado 21 de marzo (18:00h) en **Valdetorres de Jarama**: Novillos de Ángel Luis Peña y El Álamo para Jesús Moreno e Ignacio Garibay, que debutará con picadores.
--  Domingo 22 de marzo (18:00h) en **Estremera**: Novillos de Guerrero y Carpintero y Ginés Bartolomé para Sergio Rollón y Juan Pablo Ibarra, que debutará con picadores.
+Para semejante desafío, un cartel del gusto de la afición más torista:
 
-**Un proyecto de la Fiesta del Toro de la Comunidad de Madrid**
-El Circuito de Madrid es el proyecto de novilladas con picadores que se celebra desde hace cinco temporadas en los municipios de la región. Pertenece al proyecto la Fiesta del Toro de la Comunidad de Madrid, donde también se encuentran la Copa Chenel, Kilómetro Cero y Toros de la Comunidad de Madrid.
-El principal objetivo, además de la celebración de festejos y dar oportunidades, es la promoción de los municipios madrileños a través del toro. En la presente temporada, tanto el Circuito de Madrid como la Copa Chenel celebrarán su sexta edición.`,
+**Pepe Moral**, que vuelve a Madrid tras dejar su impronta en los desafíos ganaderos de septiembre, donde saludó sendas ovaciones frente a los exigentes hierros de Dolores Aguirre y Sobral. Torero de fondo y firmeza, sabe lo que es jugarse la vida ante ganaderías de respeto.
+
+**Damián Castaño**, sinónimo de entrega sin reservas. La pasada campaña hizo el paseíllo en dos ocasiones en esta plaza: en el arranque de temporada sufrió una grave cornada de un toro de Adolfo Martín y regresó en San Isidro para medirse a los de Dolores, siempre dando la cara.
+
+**Gómez del Pilar**, otro de los nombres queridos por la parroquia venteña. En el último San Isidro paseó una oreja de un toro de José Escolar y en la corrida concurso de septiembre sumó un nuevo trofeo tras una vuelta al ruedo de peso. Regularidad, firmeza y conocimiento de la plaza como aval.
+
+El cóctel está servido: un hierro de máxima exigencia y tres toreros que no rehúyen la verdad del toro. Madrid quiere emoción. Y Cuadri la garantiza.
+
+**Promoción para asociaciones taurinas**
+
+Las asociaciones y entidades que organizan viajes para este festejo podrán beneficiarse de tarifa de abonado gestionando sus reservas a través del correo: taquillas@plazauno.es.
+
+Las entradas para el público general ya están disponibles. Los abonados podrán adquirir hasta cuatro localidades a precio de abono hasta las 14:00h. del día del festejo. Además, los jóvenes hasta 25 años contarán también con precio especial de abonado.
+
+La temporada comienza como exige Madrid: con seriedad, con emoción y con un toro que no regala nada. El 22 de marzo, Las Ventas vuelve a latir.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `La Peña Taurina de Zufre concede a Emilio Silvera el premio al triunfador de la Feria`,
+	image: "/images/emi.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La **Peña Taurina de Zufre** (Huelva) ha otorgado al matador de toros onubense **Emilio Silvera** el premio al triunfador de la **Feria Taurina** de la localidad, en reconocimiento a la **mejor faena del ciclo**, realizada ante un ejemplar de la ganadería de **Gabriel Rojas**, al que el diestro cortó dos orejas tras una destacada actuación.
+
+La feria taurina de **Zufre** se celebra cada año durante el mes de septiembre en honor a la **Virgen del Puerto**, constituyendo uno de los acontecimientos más señalados del calendario festivo y taurino de la sierra onubense.
+
+La entrega del galardón tendrá lugar el próximo mes de marzo durante **una charla-coloquio** organizada por la **Peña Taurina**, que se celebrará en el **Salón de Actos de la localidad**. En dicho encuentro también participará el novillero **Mariscal Ruiz**, distinguido igualmente como **triunfador en su apartado.**
+
+El acto será presentado por el periodista **Paco Guerrero**, en una jornada que reunirá a aficionados, profesionales y seguidores del mundo del toro, convirtiéndose en un espacio de encuentro y reflexión en torno a la temporada taurina y al presente de la Tauromaquia onubense.
+
+Con esta distinción, la **Peña Taurina de Zufre** reconoce el triunfo artístico y la proyección del matador de toros **Emilio Silvera** ‘hijo’, reafirmando su compromiso con la promoción y defensa de la cultura taurina en la provincia de **Huelva.**`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1007,
-    title: `Sábado de Gloria de altos vuelos en Málaga: Fortes, Ortega y Aguado cierran la etapa de Garzón en La Malagueta`,
-	image: "/images/glor.jpg",
+    id: 1008,
+    title: `La Excma. Diputación de Cádiz impulsa la Competición Provincial de Escuelas Taurinas 2026, un proyecto clave para el futuro del toreo gaditano`,
+	image: "/images/escuelas.jpg",
     category: "Actualidad",
-    date: "19 de Febrero de 2026",
-	excerpt: "Un cartel de arte y simbolismo marcará el 4 de abril en el coso malagueño",
-	footerImage1: "/images/glor1.jpg",
-	footerImage2: "/images/glor2.jpg",
-	fullContent: `La Plaza de Toros de La Malagueta ya tiene fecha clave en su calendario: el próximo 4 de abril, Sábado de Gloria, acogerá una corrida de máximo atractivo con un cartel que combina raíces, pureza y personalidad. Harán el paseíllo Fortes, Juan Ortega y Pablo Aguado, en una tarde que, además de su peso artístico, tendrá un marcado carácter simbólico.
+    date: "20 de Febrero de 2026",
+	fullContent: `La Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, entidad que aglutina a ocho escuelas taurinas gaditanas, ha presentado oficialmente el proyecto **Competición Provincial de las Escuelas Taurinas de la Provincia de Cádiz 2026**, que esta temporada alcanza la **XIV Edición**, una iniciativa destinada al fomento de la cultura taurina y al apoyo de los jóvenes valores del toreo.
 
-El festejo, adelantado por El Mundo, supondrá el broche final a la etapa empresarial de Jose Maria Garzon al frente del coso malagueño, cerrando así un ciclo en una de las plazas de primera referencia del panorama nacional.
+Las escuelas integradas en la Asociación son:
 
-**Dos hierros de garantías para una terna de inspiración**
+· **Escuela Municipal de Tauromaquia Miguel Mateo “Miguelín” de Algeciras**
+· **Asociación Taurina Escuela “Rafael Ortega” de San Fernando**
+· **Escuela Taurina Linense**
+· **Escuela Taurina Francisco Montes “Paquiro” de Chiclana**
+· **Escuela Comarcal Taurina Campo de Gibraltar**
+· **Escuela Cultural de Tauromaquia “La Gallosina” de El Puerto de Santa María**
+· **Escuela Taurina Comarcal de Ubrique**
+· **Escuela Taurina “El Volapié” de Sanlúcar de Barrameda**
 
-En lo ganadero, la corrida reunirá un encierro mixto compuesto por tres toros de Puerto de San Lorenzo y tres de El Pilar, divisas habituales en las grandes ferias y garantía de seriedad y fondo.
+Actualmente, el conjunto de las escuelas reúne a cerca de 150 alumnos **en formación dentro de la provincia de Cádiz**.
 
-La combinación artística del cartel multiplica el interés. La profundidad y el clasicismo de Juan Ortega, el concepto sevillano y estético de Pablo Aguado y la conexión especial de Fortes con su tierra configuran una terna de corte marcadamente artístico, pensada para una tarde de sensibilidad y temple en el albero malagueño.
+**Presentación institucional del proyecto:**
+El encuentro institucional tuvo lugar el pasado martes 17 de febrero en la **Excma. Diputación Provincial de Cádiz**, escenario elegido para la presentación oficial del calendario taurino formativo 2026 y la entrega de material de toreo a las escuelas participantes.
 
-**Un adiós empresarial con fecha marcada**
+El acto contó con la presencia de D. **Francisco Javier Vidal Pérez**, vicepresidente segundo de la Diputación de Cádiz; D. **Manuel Rodríguez Alonso**, Director del Área de Ciudadanía de la Diputación de Cádiz; **D. Eduardo Ordóñez**, Presidente de Asociación Nuevos Valores del Toreo y Fomento de la Fiesta; y los maestros D. **Francisco Ruiz Miguel**, D. **José Luis Feria Fernández “Galloso”** y D. **Juan Carlos Landrove.**
 
-Más allá del cartel, la cita tendrá una lectura empresarial relevante. El 4 de abril marcará el final de la gestión de José María Garzón en La Malagueta. A partir de junio, la dirección del coso pasará a manos de Tauroemocion, nueva adjudicataria tras imponerse en el concurso público convocado para la explotación de la plaza.
+**Desarrollo cronológico del calendario 2026**
+El proyecto se desarrollará a lo largo del último trimestre del año mediante distintas fases formativas y competitivas destinadas a potenciar la preparación práctica de los alumnos.
 
-Así, el Sábado de Gloria no será solo una tarde de toros. Será también el cierre de una etapa y el preludio de una nueva era en Málaga. Una fecha señalada en rojo para la afición, que despedirá un ciclo empresarial con un cartel a la altura de la historia de La Malagueta.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+**6 de octubre de 2026: Presentación oficial y entrega de material**
+Se celebrará en la **Excma. Diputación de Cádiz** para dar a conocer el calendario de espectáculos y reforzar el respaldo institucional al trabajo formativo de las escuelas taurinas.
+
+**17 y 18 de octubre de 2026: Tentaderos públicos en clase práctica**
+Se celebrarán dos tentaderos públicos en plazas de toros aún por designar. Participarán tres alumnos por escuela, alcanzando un total de 24 jóvenes toreros que mostrarán su evolución técnica y artística ante aficionados y profesionales.
+
+**7 de noviembre de 2026: Gran Final de Novillada de Erales**
+La **Plaza de Toros de La Línea de la Concepción** acogerá la gran final del certamen con la lidia de siete erales de una ganadería de prestigio para siete novilleros representantes de las escuelas taurinas gaditanas.
+
+**21 de noviembre de 2026: Becerrada en clase práctica en competición**
+El ciclo culminará con una becerrada de añojos en competición, en la que participarán los alumnos designados por la junta directiva del proyecto, cerrando así el proceso formativo anual.
+
+**Formación, cantera y promoción cultural**
+La **Competición Provincial de Escuelas Taurinas 2026** nace con el objetivo de fortalecer la cantera del toreo, apoyar a los jóvenes con vocación taurina y reconocer la labor educativa, cultural y social que desarrollan las escuelas taurinas de la provincia de **Cádiz**.
+
+Un jurado compuesto por aficionados de reconocido prestigio será el encargado de valorar las actuaciones y designar a los tres primeros clasificados, quienes recibirán los correspondientes trofeos otorgados por los ayuntamientos colaboradores y la organización.
+
+En total, **38 alumnos** participarán activamente en las distintas fases del proyecto, consolidando una iniciativa que aspira a convertirse en referencia dentro del calendario formativo taurino andaluz y contribuir al necesario relevo generacional de la Fiesta.
+ 
+Con esta propuesta, la **Diputación de Cádiz** y la **Asociación Nuevos Valores del Toreo y Fomento de la Fiesta** refuerzan su compromiso con la formación, la difusión cultural y la proyección futura de la **Tauromaquia** en la provincia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
-    id: 1008,
-    title: `Moisés Fraile, el apellido que ya suena a futuro: Ciudad Rodrigo descubre a su nueva esperanza`,
-	image: "/images/hijo.jpg",
+    id: 1009,
+    title: `LA REAL VENTA DE ANTEQUERA RETOMA LA ACTIVIDAD TAURINA TRAS UNA INVERSIÓN DE 80.000 EUROS`,
+	image: "/images/real.jpg",
     category: "Actualidad",
-    date: "19 de Febrero de 2026",
-	excerpt: "El Carnaval del Toro pone el foco en un nombre que aún no puede vestirse de luces… pero ya pisa como torero",
-	fullContent: `En un escenario donde cada año se forjan mitos y se consumen emociones a la velocidad de los encierros, Ciudad Rodrigo volvió a señalar un nombre propio. Y esta vez no fue el de una figura consolidada ni el de un matador con alternativa. Fue el de un muchacho de apenas 14 años que, sin poder aún vestirse de luces sin caballos, ya ha empezado a escribir su historia en el albero mirobrigense.
-
-El marco no era menor. El exigente Carnaval del Toro, con su mezcla de tradición, presión ambiental y público entendido, no concede regalos. Allí, donde la plaza mide con exactitud el pulso del campo y de la afición, emergió con fuerza un apellido que pesa tanto como un hierro: Fraile.
-
-**Un legado antes que una oportunidad**
-
-Moisés Fraile no compareció como simple nombre de cartel ni como nota exótica en una clase práctica. Su presencia respondía a algo más profundo: es heredero directo de la ganadería El Pilar, hijo y nieto de criadores, formado entre encinas y toros desde la infancia.
-
-Criado en el entorno del Campo Charro, ha aprendido antes a leer la mirada de un animal que a entender el peso mediático del oficio. Esa circunstancia, lejos de suavizar su camino, lo endurece. En su casa no hay espacio para las medias tintas, y él lo sabe.
-
-En la jornada del Sábado de Carnaval, dentro de la clase práctica que puso el broche a la tarde tras el festival, el coso salmantino dirigió su atención hacia él. Cuando el ruido suele apagarse y el público comienza a desconectar, ocurrió lo contrario: la plaza volvió a latir.
-
-**Más que un becerrista**
-
-No se trataba únicamente de un joven debutante. Sobre la arena estaba la representación viva de una estirpe ganadera dando el paso al ruedo. Con la naturalidad del que empieza y la responsabilidad del que entiende de dónde procede.
-
-Compartía cartel con nombres de peso como Diego Urdiales, Alejandro Talavante y Pablo Aguado. Referentes para cualquier aspirante, testigos en esta ocasión del crecimiento de un chico al que han visto evolucionar desde niño en el campo.
-
-La presión, inevitable en un entorno así, no le desbordó. Porque Moisés no procede de un escaparate fabricado ni de una promoción apresurada. Su formación se está cimentando en la base clásica: tentaderos, disciplina, campo y responsabilidad diaria. Un aprendizaje silencioso que se nota cuando pisa la arena.
-
-**Actitud que no se aprende**
-
-Hay algo que las plazas detectan con precisión milimétrica: la autenticidad. Y en Moisés Fraile no se advierte pose ni gesto impostado para la galería. Su actitud responde a la naturalidad de quien ha convivido con el toro antes de conocer los focos.
-
-Ser hijo de una casa ganadera como la de El Puerto de la Calderilla no es una ventaja ligera; es una exigencia constante. Él mismo asume que su apellido no le concede privilegios, sino obligaciones. Y en Ciudad Rodrigo, donde el público no regala nada, esa verdad se percibió.
-
-Aún le falta tiempo para poder enfundarse el traje de luces sin caballos. Pero el Carnaval del Toro ya ha señalado algo evidente: el apellido Fraile no solo se mantiene en el campo. Empieza, también, a abrirse paso en el ruedo.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
+    date: "20 de Febrero de 2026",
+	imageCaption: "Imagen de ABC",
+	excerpt: "La Quinta y Fuente Ymbro, entre las ganaderías confirmadas que se podrán ver esta temporada",
+	fullContent: `La Real Venta de Antequera, enclave histórico de la tauromaquia andaluza, recuperará su actividad pocos días después del Domingo de Resurrección. La iniciativa forma parte del proyecto de Lances de Futuro tras asumir la gestión de la Real Maestranza de Caballería de Sevilla, con el apoyo de la familia De la Fuente Rojas.
+Según informa José Manuel Peña en ABC, la inversión prevista asciende a 80.000 euros y se destinará a mejoras en las instalaciones, incluyendo la colocación de nuevos burladeros, comederos, pilones de agua y la renovación de la iluminación. La infraestructura permitirá albergar hasta tres corridas simultáneamente, con la participación prevista de entre cinco y siete ganaderías. Hasta el momento, La Quinta y Fuente Ymbro ya han confirmado su presencia.
+Además, José María Garzón adelantó que se organizarán visitas guiadas gratuitas para alumnos de colegios y escuelas taurinas, mientras que los abonados podrán disfrutar de su entrada habitual. El público general accederá con un precio diseñado para ser accesible.
+Con esta iniciativa, la Real Venta de Antequera no solo refuerza su relevancia histórica, sino que, también apuesta por la difusión de la tauromaquia entre las nuevas generaciones.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 200,
+    title: `Morante rompe el silencio: reaparición en Sevilla y temporada abierta hasta Zaragoza`,
+	image: "/images/rompe.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La temporada ya tiene un latido distinto. La reaparición de Morante de la Puebla el próximo Domingo de Resurrección en la Real Maestranza de Caballería de Sevilla no es solo una cita señalada: es uno de los grandes acontecimientos del curso taurino.
+
+El regreso del genio de La Puebla del Río, inicialmente concebido como un encuentro puntual con el coso sevillano, ha tomado una dimensión mayor. Lejos de limitarse a esa tarde tan simbólica, el torero prepara una temporada más extensa de lo previsto, con la firme intención de recorrer el mapa taurino desde Sevilla hasta Zaragoza.
+
+Tras las primeras conversaciones con distintos empresarios —y después de que el periodista Vicente Zabala de la Serna avanzara algunos posibles destinos— el nombre de Morante comienza a sonar con fuerza en plazas como Jerez, Nimes, Aranjuez, Granada, Alicante, El Puerto de Santa María, Ronda o Úbeda, entre otras. Contactos abiertos y una clara voluntad de estar presente en escenarios de peso.
+
+**Compromiso con Zaragoza**
+
+Uno de los movimientos más significativos apunta a la Plaza de toros de Zaragoza. El diestro ha firmado una carta de intenciones comprometiéndose a hacer el paseíllo dos tardes en la próxima Feria del Pilar, siempre que la UTE formada por Ramón Valencia y Casa Matilla resulte adjudicataria del coso maño.
+
+Un gesto que deja entrever que el regreso no será testimonial, sino parte de un proyecto más amplio. Morante no vuelve para asomarse: vuelve para estar.
+
+La incógnita ya no es si reaparece, sino hasta dónde llegará su temporada. Y en un año que pedía arte, personalidad y aroma clásico, la figura del sevillano vuelve a colocarse en el epicentro del toreo.
+
+Sevilla será el prólogo. El resto, si el cuerpo y la inspiración acompañan, puede ser una temporada de quilates.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 201,
+    title: `Cuadri abre fuego en Las Ventas: emoción, verdad y un cartel de compromiso para romper la temporada`,
+	image: "/images/cuadrii.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La cuenta atrás ya está en marcha. La Plaza de Toros de Las Ventas alzará el telón de su temporada el próximo 22 de marzo (18:00h.) con una corrida marcada en rojo por la afición venteña: los toros de Cuadri serán los encargados de inaugurar el curso en la primera plaza del mundo.
+
+Hablar de Cuadri es hablar de emoción cruda, de seriedad en el trapío y de ese punto indomable que pone a prueba la verdad de los toreros. El hierro onubense, uno de los más esperados por el público de Madrid, regresa tras su compromiso del Domingo de Ramos de 2024, una tarde en la que dejó huella el imponente 'Bagonero', toro hondo y de mucha caja que encarnó la esencia del encaste y la personalidad de la divisa.
+
+Para semejante desafío, un cartel del gusto de la afición más torista:
+
+**Pepe Moral**, que vuelve a Madrid tras dejar su impronta en los desafíos ganaderos de septiembre, donde saludó sendas ovaciones frente a los exigentes hierros de Dolores Aguirre y Sobral. Torero de fondo y firmeza, sabe lo que es jugarse la vida ante ganaderías de respeto.
+
+**Damián Castaño**, sinónimo de entrega sin reservas. La pasada campaña hizo el paseíllo en dos ocasiones en esta plaza: en el arranque de temporada sufrió una grave cornada de un toro de Adolfo Martín y regresó en San Isidro para medirse a los de Dolores, siempre dando la cara.
+
+**Gómez del Pilar**, otro de los nombres queridos por la parroquia venteña. En el último San Isidro paseó una oreja de un toro de José Escolar y en la corrida concurso de septiembre sumó un nuevo trofeo tras una vuelta al ruedo de peso. Regularidad, firmeza y conocimiento de la plaza como aval.
+
+El cóctel está servido: un hierro de máxima exigencia y tres toreros que no rehúyen la verdad del toro. Madrid quiere emoción. Y Cuadri la garantiza.
+
+**Promoción para asociaciones taurinas**
+
+Las asociaciones y entidades que organizan viajes para este festejo podrán beneficiarse de tarifa de abonado gestionando sus reservas a través del correo: taquillas@plazauno.es.
+
+Las entradas para el público general ya están disponibles. Los abonados podrán adquirir hasta cuatro localidades a precio de abono hasta las 14:00h. del día del festejo. Además, los jóvenes hasta 25 años contarán también con precio especial de abonado.
+
+La temporada comienza como exige Madrid: con seriedad, con emoción y con un toro que no regala nada. El 22 de marzo, Las Ventas vuelve a latir.`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 202,
+    title: `La Peña Taurina de Zufre concede a Emilio Silvera el premio al triunfador de la Feria`,
+	image: "/images/emi.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La **Peña Taurina de Zufre** (Huelva) ha otorgado al matador de toros onubense **Emilio Silvera** el premio al triunfador de la **Feria Taurina** de la localidad, en reconocimiento a la **mejor faena del ciclo**, realizada ante un ejemplar de la ganadería de **Gabriel Rojas**, al que el diestro cortó dos orejas tras una destacada actuación.
+
+La feria taurina de **Zufre** se celebra cada año durante el mes de septiembre en honor a la **Virgen del Puerto**, constituyendo uno de los acontecimientos más señalados del calendario festivo y taurino de la sierra onubense.
+
+La entrega del galardón tendrá lugar el próximo mes de marzo durante **una charla-coloquio** organizada por la **Peña Taurina**, que se celebrará en el **Salón de Actos de la localidad**. En dicho encuentro también participará el novillero **Mariscal Ruiz**, distinguido igualmente como **triunfador en su apartado.**
+
+El acto será presentado por el periodista **Paco Guerrero**, en una jornada que reunirá a aficionados, profesionales y seguidores del mundo del toro, convirtiéndose en un espacio de encuentro y reflexión en torno a la temporada taurina y al presente de la Tauromaquia onubense.
+
+Con esta distinción, la **Peña Taurina de Zufre** reconoce el triunfo artístico y la proyección del matador de toros **Emilio Silvera** ‘hijo’, reafirmando su compromiso con la promoción y defensa de la cultura taurina en la provincia de **Huelva.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 203,
+    title: `La Excma. Diputación de Cádiz impulsa la Competición Provincial de Escuelas Taurinas 2026, un proyecto clave para el futuro del toreo gaditano`,
+	image: "/images/escuelas.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, entidad que aglutina a ocho escuelas taurinas gaditanas, ha presentado oficialmente el proyecto **Competición Provincial de las Escuelas Taurinas de la Provincia de Cádiz 2026**, que esta temporada alcanza la **XIV Edición**, una iniciativa destinada al fomento de la cultura taurina y al apoyo de los jóvenes valores del toreo.
+
+Las escuelas integradas en la Asociación son:
+
+· **Escuela Municipal de Tauromaquia Miguel Mateo “Miguelín” de Algeciras**
+· **Asociación Taurina Escuela “Rafael Ortega” de San Fernando**
+· **Escuela Taurina Linense**
+· **Escuela Taurina Francisco Montes “Paquiro” de Chiclana**
+· **Escuela Comarcal Taurina Campo de Gibraltar**
+· **Escuela Cultural de Tauromaquia “La Gallosina” de El Puerto de Santa María**
+· **Escuela Taurina Comarcal de Ubrique**
+· **Escuela Taurina “El Volapié” de Sanlúcar de Barrameda**
+
+Actualmente, el conjunto de las escuelas reúne a cerca de 150 alumnos **en formación dentro de la provincia de Cádiz**.
+
+**Presentación institucional del proyecto:**
+El encuentro institucional tuvo lugar el pasado martes 17 de febrero en la **Excma. Diputación Provincial de Cádiz**, escenario elegido para la presentación oficial del calendario taurino formativo 2026 y la entrega de material de toreo a las escuelas participantes.
+
+El acto contó con la presencia de D. **Francisco Javier Vidal Pérez**, vicepresidente segundo de la Diputación de Cádiz; D. **Manuel Rodríguez Alonso**, Director del Área de Ciudadanía de la Diputación de Cádiz; **D. Eduardo Ordóñez**, Presidente de Asociación Nuevos Valores del Toreo y Fomento de la Fiesta; y los maestros D. **Francisco Ruiz Miguel**, D. **José Luis Feria Fernández “Galloso”** y D. **Juan Carlos Landrove.**
+
+**Desarrollo cronológico del calendario 2026**
+El proyecto se desarrollará a lo largo del último trimestre del año mediante distintas fases formativas y competitivas destinadas a potenciar la preparación práctica de los alumnos.
+
+**6 de octubre de 2026: Presentación oficial y entrega de material**
+Se celebrará en la **Excma. Diputación de Cádiz** para dar a conocer el calendario de espectáculos y reforzar el respaldo institucional al trabajo formativo de las escuelas taurinas.
+
+**17 y 18 de octubre de 2026: Tentaderos públicos en clase práctica**
+Se celebrarán dos tentaderos públicos en plazas de toros aún por designar. Participarán tres alumnos por escuela, alcanzando un total de 24 jóvenes toreros que mostrarán su evolución técnica y artística ante aficionados y profesionales.
+
+**7 de noviembre de 2026: Gran Final de Novillada de Erales**
+La **Plaza de Toros de La Línea de la Concepción** acogerá la gran final del certamen con la lidia de siete erales de una ganadería de prestigio para siete novilleros representantes de las escuelas taurinas gaditanas.
+
+**21 de noviembre de 2026: Becerrada en clase práctica en competición**
+El ciclo culminará con una becerrada de añojos en competición, en la que participarán los alumnos designados por la junta directiva del proyecto, cerrando así el proceso formativo anual.
+
+**Formación, cantera y promoción cultural**
+La **Competición Provincial de Escuelas Taurinas 2026** nace con el objetivo de fortalecer la cantera del toreo, apoyar a los jóvenes con vocación taurina y reconocer la labor educativa, cultural y social que desarrollan las escuelas taurinas de la provincia de **Cádiz**.
+
+Un jurado compuesto por aficionados de reconocido prestigio será el encargado de valorar las actuaciones y designar a los tres primeros clasificados, quienes recibirán los correspondientes trofeos otorgados por los ayuntamientos colaboradores y la organización.
+
+En total, **38 alumnos** participarán activamente en las distintas fases del proyecto, consolidando una iniciativa que aspira a convertirse en referencia dentro del calendario formativo taurino andaluz y contribuir al necesario relevo generacional de la Fiesta.
+ 
+Con esta propuesta, la **Diputación de Cádiz** y la **Asociación Nuevos Valores del Toreo y Fomento de la Fiesta** refuerzan su compromiso con la formación, la difusión cultural y la proyección futura de la **Tauromaquia** en la provincia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 204,
+    title: `LA REAL VENTA DE ANTEQUERA RETOMA LA ACTIVIDAD TAURINA TRAS UNA INVERSIÓN DE 80.000 EUROS`,
+	image: "/images/real.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	imageCaption: "Imagen de ABC",
+	excerpt: "La Quinta y Fuente Ymbro, entre las ganaderías confirmadas que se podrán ver esta temporada",
+	fullContent: `La Real Venta de Antequera, enclave histórico de la tauromaquia andaluza, recuperará su actividad pocos días después del Domingo de Resurrección. La iniciativa forma parte del proyecto de Lances de Futuro tras asumir la gestión de la Real Maestranza de Caballería de Sevilla, con el apoyo de la familia De la Fuente Rojas.
+Según informa José Manuel Peña en ABC, la inversión prevista asciende a 80.000 euros y se destinará a mejoras en las instalaciones, incluyendo la colocación de nuevos burladeros, comederos, pilones de agua y la renovación de la iluminación. La infraestructura permitirá albergar hasta tres corridas simultáneamente, con la participación prevista de entre cinco y siete ganaderías. Hasta el momento, La Quinta y Fuente Ymbro ya han confirmado su presencia.
+Además, José María Garzón adelantó que se organizarán visitas guiadas gratuitas para alumnos de colegios y escuelas taurinas, mientras que los abonados podrán disfrutar de su entrada habitual. El público general accederá con un precio diseñado para ser accesible.
+Con esta iniciativa, la Real Venta de Antequera no solo refuerza su relevancia histórica, sino que, también apuesta por la difusión de la tauromaquia entre las nuevas generaciones.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 205,
     title: `Baleares Cambio de Tercio presenta su temporada taurina: cuatro grandes citas de gran nivel en Inca y Muro`,
