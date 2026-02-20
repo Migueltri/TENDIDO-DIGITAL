@@ -40,6 +40,105 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
+    id: 1002,
+    title: `Carmelo García presenta una magnífica Feria de Mayo de Osuna`,
+	image: "/images/osu.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La empresa **Espectáculos Carmelo García** ha presentado oficialmente en **Osuna** la **Feria Taurina de Mayo 2026**, en un elegante acto celebrado en el **Salón de Actos de la Casa de la Cultura**, que tuvo lugar tras la entrega de los premios a los triunfadores de la Feria Taurina de Osuna 2025 organizada por el Círculo Taurino de Osuna.
+
+El evento, presidido por la alcaldesa de la localidad, Dña. **Rosario Andújar** y el empresario taurino D. **Carmelo García**, ha sido moderado por el periodista D. **Santiago Sánchez Traver**. Así mismo, contó con la presencia de figuras y profesionales del mundo del toro, entre ellas los matadores **Miguel Ángel Perera** y **Borja Jiménez**, el apoderado **Francisco Manuel Morilla** -*en representación del rejoneador Andy Cartagena*-, la rejoneadora **Lea Vicens**, los ganaderos **Hermanos de la Puerta** y el mayoral de la ganadería **Benítez Cubero**.
+
+Durante la presentación se dieron a conocer los carteles oficiales de una atractiva feria que volverá a convertir al histórico **Coso de San Arcadio** en epicentro taurino de la primavera andaluza.
+
+**Carteles oficiales Feria de Mayo 2026:**
+
+**Sábado 16 de mayo:** Corrida de Toros con ejemplares de la ganadería de **Julio de la Puerta** para los diestros **Miguel Ángel Perera**, **Borja Jiménez** y **Marco Pérez.**
+
+**Domingo 17 de mayo**: Corrida de Rejones con reses de la divisa de **Benítez Cubero** para **Andy Cartagena**, **Diego Ventura** y **Lea Vicens.**
+
+El empresario Carmelo García destacó durante su intervención la continuidad del proyecto iniciado el pasado año, subrayando que “Seguimos la línea de trabajo en la que nuestro objetivo es dar esplendor a la Feria Taurina de Osuna y consolidar el trabajo iniciado en la pasada edición, en la que se recuperó el lujo del histórico Coso de San Arcadio con carteles de gran atractivo. En esta nueva edición volvemos a anunciar carteles de máximo nivel, consolidando una programación que combina figuras consagradas, jóvenes valores y ganaderías de reconocido prestigio".
+
+
+Los abonos estarán a la venta por internet a partir de mañana 21 de febrero en **www.espectaculoscarmelogarcia.com** y en taquilla a partir del 29 de abril. Las entradas sueltas estarán a la venta desde el 4 de mayo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1003,
+    title: `David Galván se encomienda a la Patrona de Algeciras y ofrece su temporada taurina 2026`,
+	image: "/images/encomiend.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `En la mañana de hoy 20 de febrero, David Galván ha encomendado su nueva temporada taurina con una visita a la Patrona y Alcaldesa Perpetua de Algeciras, Santa María de la Palma.
+El acto, celebrado en un clima de recogimiento y respeto, supuso un momento de especial carga emocional para el diestro gaditano, que quiso renovar su compromiso personal y espiritual antes de afrontar los compromisos más importantes de la temporada. Una tradición íntimamente ligada a la cultura taurina andaluza, en la que fe e identidad se dan la mano.
+La visita contó con la presencia del Vicario Episcopal del Campo de Gibraltar, el Reverendo Padre Don Juan José Marina Janeiro; del Hermano Mayor de la Venerable Hermandad de Nuestra Señora de la Palma, D. Ismael Villa Vargas; del alcalde de la ciudad, D. José Ignacio Landaluce Calleja, así como representantes institucionales, del Consejo Local de Hermandades y Cofradías, de la Peña Miguelín y miembros de la Junta de Gobierno de la Hermandad.
+Durante el acto, el Hermano Mayor agradeció públicamente al torero el gesto de honrar la imagen de la Patrona, subrayando el fuerte vínculo existente entre la tradición taurina y la devoción popular algecireña. Asimismo, se hizo entrega a David Galván de un detalle conmemorativo por parte de la Junta de Gobierno, en reconocimiento a este acto de fe y ofrecimiento de la temporada.
+Con este gesto, el torero reafirma una vez más su conexión con Algeciras y con una tradición que trasciende lo artístico para situarse en el ámbito de lo cultural, lo espiritual y lo humano, dando comienzo a una temporada marcada por la máxima ilusión y compromiso.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1004,
+    title: `El cuarto Curso Tauromaquia y Cultura, organizado en Sevilla por la Fundación de Estudios Taurinos, estará dedicado a la Tauromaquia en Hispanoamérica`,
+	image: "/images/cuarto.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	excerpt: `Con patrocinio de la Real Maestranza de Caballería de Sevilla y la Real Academia de Buenas Letras, se desarrollará del 3 al 5 de marzo
+
+Interesante programa y ponentes del mundo del periodismo, la universidad y la cultura`,
+	fullContent: `La Fundación de Estudios Taurinos, con el patrocinio de la Real Maestranza de Caballería de Sevilla y la colaboración de la Real Academia Sevillana de Buenas Letras, ha organizado la cuarta edición del Curso Tauromaquia y Cultura, que se desarrollará del 3 al 5 de marzo en Sevilla. 
+ 
+Con la dirección de Fátima Halcón, presidenta de la Fundación de Estudios Taurinos, las jornadas se celebrarán en la sede de la Real Academia Sevillana de Buenas Letras (Calle Abades, 14. Sevilla) y la entrada será libre hasta completar aforo. En esta ocasión las ponencias se centrarán en el análisis de la Tauromaquia en Hispanoamérica.
+
+El ciclo de conferencias abordará la historia y desarrollo de las fiestas de toros en los territorios americanos que dependieron de la Corona española. Se tiene constancia que, en el segundo viaje de Cristóbal Colón en 1493 a América, se transportaron reses de ganado bravo para su reproducción y desarrollo.
+
+A México llegaron años más tarde, cuando Hernán Cortés, al descubrir los amplios pastizales del norte y centro del territorio mexicano, crió este tipo de ganado, no solo para proveer alimentos y pieles, sino también para la lidia. De hecho, se tiene constancia de dos festejos taurinos organizados por el conquistador y celebrados en 1526: uno el 14 de junio, fiesta de San Juan Bautista, en México-Tenochtitlán para celebrar su regreso procedente de Las Hibueras, y el otro el 13 de agosto, fiesta de San Hipólito, para festejar la caída de Tenochtitlán en 1521.
+
+A partir de ese momento, los festejos taurinos se fueron desarrollando por todo el territorio americano, celebrándose para conmemorar cualquier tipo de efeméride real, ocupando esta tipología festiva un lugar preeminente dentro de la sociedad. Las fiestas de toros tuvieron la misma idiosincrasia que las celebradas en España, si bien en algunos lugares, como el altiplano andino, se mezcló la tipología festiva taurina con alguna de carácter indígena, siendo la más conocida la Yawar Fiesta, que mezcla, pues aún se sigue practicando, tradiciones españolas con costumbres andinas personificadas en la lucha entre el cóndor y el toro.
+
+El curso contará con la participación de especialistas en la materia que analizarán las fiestas de toros en los virreinatos de México, Perú y Nueva Granada, así como en la Capitanía General de Chile.
+**Programa**
+
+**DÍA 3 DE MARZO**
+
+17:30h. **Beatriz Robledo**. Subdirectora del Museo de América. Madrid.
+*“Un acercamiento antropológico a la cultura del toro en América. La exposición Más que un lance”.*
+
+18:00h. **Fréderic Saumade**. Université Aix-Marseille.
+*“De la transformación indígena de la Tauromaquia colonial al arraigo de la tradición taurina en México”.*
+
+**DÍA 4 DE MARZO**
+
+19:00h. **Escardiel González Estévez**. Universidad de Sevilla.
+*“Tauromaquia austral: la fiesta en Chile”.*
+
+19:40h. **Jorge Chauca**. Universidad de Málaga.
+*“Virreyes y toros: autoridad y fiesta en la América española de los siglos XVIII y XIX”.*
+
+**DÍA 5 DE MARZO**
+
+19:00h. MESA REDONDA
+**Anya Bartels-Sourmondt**. Fotógrafa
+**José María Garzón**. Empresario taurino
+**Víctor Vázquez**. Patrono de la Fundación de Estudios Taurinos
+**Fátima Halcón**. Presidenta de la Fundación de Estudios Taurinos
+
+-------------------------
+
+**Organiza:** Fundación de Estudios Taurinos
+**Patrocina:** Real Maestranza de Caballería de Sevilla
+**Colabora:** Real Academia Sevillana de Buenas Letras
+**Sede:** Real Academia Sevillana de Buenas Letras. C/ Abades 14- 41004 Sevilla
+
+**ENTRADA LIBRE** hasta completar el aforo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1005,
     title: `Morante rompe el silencio: reaparición en Sevilla y temporada abierta hasta Zaragoza`,
 	image: "/images/rompe.jpg",
@@ -186,6 +285,105 @@ Con esta iniciativa, la Real Venta de Antequera no solo refuerza su relevancia h
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 197,
+    title: `Carmelo García presenta una magnífica Feria de Mayo de Osuna`,
+	image: "/images/osu.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `La empresa **Espectáculos Carmelo García** ha presentado oficialmente en **Osuna** la **Feria Taurina de Mayo 2026**, en un elegante acto celebrado en el **Salón de Actos de la Casa de la Cultura**, que tuvo lugar tras la entrega de los premios a los triunfadores de la Feria Taurina de Osuna 2025 organizada por el Círculo Taurino de Osuna.
+
+El evento, presidido por la alcaldesa de la localidad, Dña. **Rosario Andújar** y el empresario taurino D. **Carmelo García**, ha sido moderado por el periodista D. **Santiago Sánchez Traver**. Así mismo, contó con la presencia de figuras y profesionales del mundo del toro, entre ellas los matadores **Miguel Ángel Perera** y **Borja Jiménez**, el apoderado **Francisco Manuel Morilla** -*en representación del rejoneador Andy Cartagena*-, la rejoneadora **Lea Vicens**, los ganaderos **Hermanos de la Puerta** y el mayoral de la ganadería **Benítez Cubero**.
+
+Durante la presentación se dieron a conocer los carteles oficiales de una atractiva feria que volverá a convertir al histórico **Coso de San Arcadio** en epicentro taurino de la primavera andaluza.
+
+**Carteles oficiales Feria de Mayo 2026:**
+
+**Sábado 16 de mayo:** Corrida de Toros con ejemplares de la ganadería de **Julio de la Puerta** para los diestros **Miguel Ángel Perera**, **Borja Jiménez** y **Marco Pérez.**
+
+**Domingo 17 de mayo**: Corrida de Rejones con reses de la divisa de **Benítez Cubero** para **Andy Cartagena**, **Diego Ventura** y **Lea Vicens.**
+
+El empresario Carmelo García destacó durante su intervención la continuidad del proyecto iniciado el pasado año, subrayando que “Seguimos la línea de trabajo en la que nuestro objetivo es dar esplendor a la Feria Taurina de Osuna y consolidar el trabajo iniciado en la pasada edición, en la que se recuperó el lujo del histórico Coso de San Arcadio con carteles de gran atractivo. En esta nueva edición volvemos a anunciar carteles de máximo nivel, consolidando una programación que combina figuras consagradas, jóvenes valores y ganaderías de reconocido prestigio".
+
+
+Los abonos estarán a la venta por internet a partir de mañana 21 de febrero en **www.espectaculoscarmelogarcia.com** y en taquilla a partir del 29 de abril. Las entradas sueltas estarán a la venta desde el 4 de mayo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 198,
+    title: `David Galván se encomienda a la Patrona de Algeciras y ofrece su temporada taurina 2026`,
+	image: "/images/encomiend.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	fullContent: `En la mañana de hoy 20 de febrero, David Galván ha encomendado su nueva temporada taurina con una visita a la Patrona y Alcaldesa Perpetua de Algeciras, Santa María de la Palma.
+El acto, celebrado en un clima de recogimiento y respeto, supuso un momento de especial carga emocional para el diestro gaditano, que quiso renovar su compromiso personal y espiritual antes de afrontar los compromisos más importantes de la temporada. Una tradición íntimamente ligada a la cultura taurina andaluza, en la que fe e identidad se dan la mano.
+La visita contó con la presencia del Vicario Episcopal del Campo de Gibraltar, el Reverendo Padre Don Juan José Marina Janeiro; del Hermano Mayor de la Venerable Hermandad de Nuestra Señora de la Palma, D. Ismael Villa Vargas; del alcalde de la ciudad, D. José Ignacio Landaluce Calleja, así como representantes institucionales, del Consejo Local de Hermandades y Cofradías, de la Peña Miguelín y miembros de la Junta de Gobierno de la Hermandad.
+Durante el acto, el Hermano Mayor agradeció públicamente al torero el gesto de honrar la imagen de la Patrona, subrayando el fuerte vínculo existente entre la tradición taurina y la devoción popular algecireña. Asimismo, se hizo entrega a David Galván de un detalle conmemorativo por parte de la Junta de Gobierno, en reconocimiento a este acto de fe y ofrecimiento de la temporada.
+Con este gesto, el torero reafirma una vez más su conexión con Algeciras y con una tradición que trasciende lo artístico para situarse en el ámbito de lo cultural, lo espiritual y lo humano, dando comienzo a una temporada marcada por la máxima ilusión y compromiso.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 199,
+    title: `El cuarto Curso Tauromaquia y Cultura, organizado en Sevilla por la Fundación de Estudios Taurinos, estará dedicado a la Tauromaquia en Hispanoamérica`,
+	image: "/images/cuarto.jpg",
+    category: "Actualidad",
+    date: "20 de Febrero de 2026",
+	excerpt: `Con patrocinio de la Real Maestranza de Caballería de Sevilla y la Real Academia de Buenas Letras, se desarrollará del 3 al 5 de marzo
+
+Interesante programa y ponentes del mundo del periodismo, la universidad y la cultura`,
+	fullContent: `La Fundación de Estudios Taurinos, con el patrocinio de la Real Maestranza de Caballería de Sevilla y la colaboración de la Real Academia Sevillana de Buenas Letras, ha organizado la cuarta edición del Curso Tauromaquia y Cultura, que se desarrollará del 3 al 5 de marzo en Sevilla. 
+ 
+Con la dirección de Fátima Halcón, presidenta de la Fundación de Estudios Taurinos, las jornadas se celebrarán en la sede de la Real Academia Sevillana de Buenas Letras (Calle Abades, 14. Sevilla) y la entrada será libre hasta completar aforo. En esta ocasión las ponencias se centrarán en el análisis de la Tauromaquia en Hispanoamérica.
+
+El ciclo de conferencias abordará la historia y desarrollo de las fiestas de toros en los territorios americanos que dependieron de la Corona española. Se tiene constancia que, en el segundo viaje de Cristóbal Colón en 1493 a América, se transportaron reses de ganado bravo para su reproducción y desarrollo.
+
+A México llegaron años más tarde, cuando Hernán Cortés, al descubrir los amplios pastizales del norte y centro del territorio mexicano, crió este tipo de ganado, no solo para proveer alimentos y pieles, sino también para la lidia. De hecho, se tiene constancia de dos festejos taurinos organizados por el conquistador y celebrados en 1526: uno el 14 de junio, fiesta de San Juan Bautista, en México-Tenochtitlán para celebrar su regreso procedente de Las Hibueras, y el otro el 13 de agosto, fiesta de San Hipólito, para festejar la caída de Tenochtitlán en 1521.
+
+A partir de ese momento, los festejos taurinos se fueron desarrollando por todo el territorio americano, celebrándose para conmemorar cualquier tipo de efeméride real, ocupando esta tipología festiva un lugar preeminente dentro de la sociedad. Las fiestas de toros tuvieron la misma idiosincrasia que las celebradas en España, si bien en algunos lugares, como el altiplano andino, se mezcló la tipología festiva taurina con alguna de carácter indígena, siendo la más conocida la Yawar Fiesta, que mezcla, pues aún se sigue practicando, tradiciones españolas con costumbres andinas personificadas en la lucha entre el cóndor y el toro.
+
+El curso contará con la participación de especialistas en la materia que analizarán las fiestas de toros en los virreinatos de México, Perú y Nueva Granada, así como en la Capitanía General de Chile.
+**Programa**
+
+**DÍA 3 DE MARZO**
+
+17:30h. **Beatriz Robledo**. Subdirectora del Museo de América. Madrid.
+*“Un acercamiento antropológico a la cultura del toro en América. La exposición Más que un lance”.*
+
+18:00h. **Fréderic Saumade**. Université Aix-Marseille.
+*“De la transformación indígena de la Tauromaquia colonial al arraigo de la tradición taurina en México”.*
+
+**DÍA 4 DE MARZO**
+
+19:00h. **Escardiel González Estévez**. Universidad de Sevilla.
+*“Tauromaquia austral: la fiesta en Chile”.*
+
+19:40h. **Jorge Chauca**. Universidad de Málaga.
+*“Virreyes y toros: autoridad y fiesta en la América española de los siglos XVIII y XIX”.*
+
+**DÍA 5 DE MARZO**
+
+19:00h. MESA REDONDA
+**Anya Bartels-Sourmondt**. Fotógrafa
+**José María Garzón**. Empresario taurino
+**Víctor Vázquez**. Patrono de la Fundación de Estudios Taurinos
+**Fátima Halcón**. Presidenta de la Fundación de Estudios Taurinos
+
+-------------------------
+
+**Organiza:** Fundación de Estudios Taurinos
+**Patrocina:** Real Maestranza de Caballería de Sevilla
+**Colabora:** Real Academia Sevillana de Buenas Letras
+**Sede:** Real Academia Sevillana de Buenas Letras. C/ Abades 14- 41004 Sevilla
+
+**ENTRADA LIBRE** hasta completar el aforo.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 200,
     title: `Morante rompe el silencio: reaparición en Sevilla y temporada abierta hasta Zaragoza`,
