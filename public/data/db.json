@@ -1,6 +1,25 @@
 {
-  "articles": [],
+  "articles": [
+    {
+      "id": "mlwiym25u3uwov3esj",
+      "title": "´dsFWEDAS",
+      "summary": "fweqtwtgrf",
+      "content": "fewqfregweqfewf",
+      "category": "Actualidad",
+      "authorId": "1",
+      "imageUrl": "https://picsum.photos/800/600",
+      "imageCaption": "",
+      "photoCredit": "",
+      "contentImages": [],
+      "date": "2026-02-21T16:20:04.753Z",
+      "isPublished": true,
+      "bullfightLocation": "",
+      "bullfightCattle": "",
+      "bullfightSummary": "",
+      "bullfightResults": []
+    }
+  ],
   "authors": [],
   "archivedArticles": [],
-  "lastUpdated": "2026-02-21T16:19:59.570Z"
+  "lastUpdated": "2026-02-21T16:20:16.346Z"
 }
