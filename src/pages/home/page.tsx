@@ -12724,6 +12724,32 @@ function formatTimeAgo(dateString: string): string {
             };
           });
 
+		  {/* Bloque de Imagen de Portada con Pie de Foto */}
+<figure className="relative w-full mb-8">
+    <img 
+        src={article.imageUrl} 
+        alt={article.title} 
+        className="w-full h-auto object-cover rounded-lg" // Tus clases actuales
+    />
+    
+    {/* Solo mostramos el pie si existe caption o crédito */}
+    {(article.imageCaption || article.photoCredit) && (
+        <figcaption className="mt-2 text-sm text-gray-500 flex justify-between items-center border-b border-gray-100 pb-2">
+            {/* Descripción de la foto */}
+            <span className="italic">
+                {article.imageCaption}
+            </span>
+            
+            {/* Autor de la foto (Crédito) */}
+            {article.photoCredit && (
+                <span className="text-xs font-bold uppercase tracking-wide ml-4 text-gray-400">
+                    📷 {article.photoCredit}
+                </span>
+            )}
+        </figcaption>
+    )}
+</figure>
+
         const combinedRawList = [...processedArticles, ...latestNews];
         const uniqueNewsMap = new Map();
         
