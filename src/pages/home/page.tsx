@@ -40,251 +40,98 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1002,
-    title: `Carmelo García presenta una magnífica Feria de Mayo de Osuna`,
-	image: "/images/osu.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `La empresa **Espectáculos Carmelo García** ha presentado oficialmente en **Osuna** la **Feria Taurina de Mayo 2026**, en un elegante acto celebrado en el **Salón de Actos de la Casa de la Cultura**, que tuvo lugar tras la entrega de los premios a los triunfadores de la Feria Taurina de Osuna 2025 organizada por el Círculo Taurino de Osuna.
-
-El evento, presidido por la alcaldesa de la localidad, Dña. **Rosario Andújar** y el empresario taurino D. **Carmelo García**, ha sido moderado por el periodista D. **Santiago Sánchez Traver**. Así mismo, contó con la presencia de figuras y profesionales del mundo del toro, entre ellas los matadores **Miguel Ángel Perera** y **Borja Jiménez**, el apoderado **Francisco Manuel Morilla** -*en representación del rejoneador Andy Cartagena*-, la rejoneadora **Lea Vicens**, los ganaderos **Hermanos de la Puerta** y el mayoral de la ganadería **Benítez Cubero**.
-
-Durante la presentación se dieron a conocer los carteles oficiales de una atractiva feria que volverá a convertir al histórico **Coso de San Arcadio** en epicentro taurino de la primavera andaluza.
-
-**Carteles oficiales Feria de Mayo 2026:**
-
-**Sábado 16 de mayo:** Corrida de Toros con ejemplares de la ganadería de **Julio de la Puerta** para los diestros **Miguel Ángel Perera**, **Borja Jiménez** y **Marco Pérez.**
-
-**Domingo 17 de mayo**: Corrida de Rejones con reses de la divisa de **Benítez Cubero** para **Andy Cartagena**, **Diego Ventura** y **Lea Vicens.**
-
-El empresario Carmelo García destacó durante su intervención la continuidad del proyecto iniciado el pasado año, subrayando que “Seguimos la línea de trabajo en la que nuestro objetivo es dar esplendor a la Feria Taurina de Osuna y consolidar el trabajo iniciado en la pasada edición, en la que se recuperó el lujo del histórico Coso de San Arcadio con carteles de gran atractivo. En esta nueva edición volvemos a anunciar carteles de máximo nivel, consolidando una programación que combina figuras consagradas, jóvenes valores y ganaderías de reconocido prestigio".
-
-
-Los abonos estarán a la venta por internet a partir de mañana 21 de febrero en **www.espectaculoscarmelogarcia.com** y en taquilla a partir del 29 de abril. Las entradas sueltas estarán a la venta desde el 4 de mayo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1003,
-    title: `David Galván se encomienda a la Patrona de Algeciras y ofrece su temporada taurina 2026`,
-	image: "/images/encomiend.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `En la mañana de hoy 20 de febrero, David Galván ha encomendado su nueva temporada taurina con una visita a la Patrona y Alcaldesa Perpetua de Algeciras, Santa María de la Palma.
-El acto, celebrado en un clima de recogimiento y respeto, supuso un momento de especial carga emocional para el diestro gaditano, que quiso renovar su compromiso personal y espiritual antes de afrontar los compromisos más importantes de la temporada. Una tradición íntimamente ligada a la cultura taurina andaluza, en la que fe e identidad se dan la mano.
-La visita contó con la presencia del Vicario Episcopal del Campo de Gibraltar, el Reverendo Padre Don Juan José Marina Janeiro; del Hermano Mayor de la Venerable Hermandad de Nuestra Señora de la Palma, D. Ismael Villa Vargas; del alcalde de la ciudad, D. José Ignacio Landaluce Calleja, así como representantes institucionales, del Consejo Local de Hermandades y Cofradías, de la Peña Miguelín y miembros de la Junta de Gobierno de la Hermandad.
-Durante el acto, el Hermano Mayor agradeció públicamente al torero el gesto de honrar la imagen de la Patrona, subrayando el fuerte vínculo existente entre la tradición taurina y la devoción popular algecireña. Asimismo, se hizo entrega a David Galván de un detalle conmemorativo por parte de la Junta de Gobierno, en reconocimiento a este acto de fe y ofrecimiento de la temporada.
-Con este gesto, el torero reafirma una vez más su conexión con Algeciras y con una tradición que trasciende lo artístico para situarse en el ámbito de lo cultural, lo espiritual y lo humano, dando comienzo a una temporada marcada por la máxima ilusión y compromiso.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1004,
-    title: `El cuarto Curso Tauromaquia y Cultura, organizado en Sevilla por la Fundación de Estudios Taurinos, estará dedicado a la Tauromaquia en Hispanoamérica`,
-	image: "/images/cuarto.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	excerpt: `Con patrocinio de la Real Maestranza de Caballería de Sevilla y la Real Academia de Buenas Letras, se desarrollará del 3 al 5 de marzo
-
-Interesante programa y ponentes del mundo del periodismo, la universidad y la cultura`,
-	fullContent: `La Fundación de Estudios Taurinos, con el patrocinio de la Real Maestranza de Caballería de Sevilla y la colaboración de la Real Academia Sevillana de Buenas Letras, ha organizado la cuarta edición del Curso Tauromaquia y Cultura, que se desarrollará del 3 al 5 de marzo en Sevilla. 
- 
-Con la dirección de Fátima Halcón, presidenta de la Fundación de Estudios Taurinos, las jornadas se celebrarán en la sede de la Real Academia Sevillana de Buenas Letras (Calle Abades, 14. Sevilla) y la entrada será libre hasta completar aforo. En esta ocasión las ponencias se centrarán en el análisis de la Tauromaquia en Hispanoamérica.
-
-El ciclo de conferencias abordará la historia y desarrollo de las fiestas de toros en los territorios americanos que dependieron de la Corona española. Se tiene constancia que, en el segundo viaje de Cristóbal Colón en 1493 a América, se transportaron reses de ganado bravo para su reproducción y desarrollo.
-
-A México llegaron años más tarde, cuando Hernán Cortés, al descubrir los amplios pastizales del norte y centro del territorio mexicano, crió este tipo de ganado, no solo para proveer alimentos y pieles, sino también para la lidia. De hecho, se tiene constancia de dos festejos taurinos organizados por el conquistador y celebrados en 1526: uno el 14 de junio, fiesta de San Juan Bautista, en México-Tenochtitlán para celebrar su regreso procedente de Las Hibueras, y el otro el 13 de agosto, fiesta de San Hipólito, para festejar la caída de Tenochtitlán en 1521.
-
-A partir de ese momento, los festejos taurinos se fueron desarrollando por todo el territorio americano, celebrándose para conmemorar cualquier tipo de efeméride real, ocupando esta tipología festiva un lugar preeminente dentro de la sociedad. Las fiestas de toros tuvieron la misma idiosincrasia que las celebradas en España, si bien en algunos lugares, como el altiplano andino, se mezcló la tipología festiva taurina con alguna de carácter indígena, siendo la más conocida la Yawar Fiesta, que mezcla, pues aún se sigue practicando, tradiciones españolas con costumbres andinas personificadas en la lucha entre el cóndor y el toro.
-
-El curso contará con la participación de especialistas en la materia que analizarán las fiestas de toros en los virreinatos de México, Perú y Nueva Granada, así como en la Capitanía General de Chile.
-**Programa**
-
-**DÍA 3 DE MARZO**
-
-17:30h. **Beatriz Robledo**. Subdirectora del Museo de América. Madrid.
-*“Un acercamiento antropológico a la cultura del toro en América. La exposición Más que un lance”.*
-
-18:00h. **Fréderic Saumade**. Université Aix-Marseille.
-*“De la transformación indígena de la Tauromaquia colonial al arraigo de la tradición taurina en México”.*
-
-**DÍA 4 DE MARZO**
-
-19:00h. **Escardiel González Estévez**. Universidad de Sevilla.
-*“Tauromaquia austral: la fiesta en Chile”.*
-
-19:40h. **Jorge Chauca**. Universidad de Málaga.
-*“Virreyes y toros: autoridad y fiesta en la América española de los siglos XVIII y XIX”.*
-
-**DÍA 5 DE MARZO**
-
-19:00h. MESA REDONDA
-**Anya Bartels-Sourmondt**. Fotógrafa
-**José María Garzón**. Empresario taurino
-**Víctor Vázquez**. Patrono de la Fundación de Estudios Taurinos
-**Fátima Halcón**. Presidenta de la Fundación de Estudios Taurinos
-
--------------------------
-
-**Organiza:** Fundación de Estudios Taurinos
-**Patrocina:** Real Maestranza de Caballería de Sevilla
-**Colabora:** Real Academia Sevillana de Buenas Letras
-**Sede:** Real Academia Sevillana de Buenas Letras. C/ Abades 14- 41004 Sevilla
-
-**ENTRADA LIBRE** hasta completar el aforo.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Morante rompe el silencio: reaparición en Sevilla y temporada abierta hasta Zaragoza`,
-	image: "/images/rompe.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `La temporada ya tiene un latido distinto. La reaparición de Morante de la Puebla el próximo Domingo de Resurrección en la Real Maestranza de Caballería de Sevilla no es solo una cita señalada: es uno de los grandes acontecimientos del curso taurino.
-
-El regreso del genio de La Puebla del Río, inicialmente concebido como un encuentro puntual con el coso sevillano, ha tomado una dimensión mayor. Lejos de limitarse a esa tarde tan simbólica, el torero prepara una temporada más extensa de lo previsto, con la firme intención de recorrer el mapa taurino desde Sevilla hasta Zaragoza.
-
-Tras las primeras conversaciones con distintos empresarios —y después de que el periodista Vicente Zabala de la Serna avanzara algunos posibles destinos— el nombre de Morante comienza a sonar con fuerza en plazas como Jerez, Nimes, Aranjuez, Granada, Alicante, El Puerto de Santa María, Ronda o Úbeda, entre otras. Contactos abiertos y una clara voluntad de estar presente en escenarios de peso.
-
-**Compromiso con Zaragoza**
-
-Uno de los movimientos más significativos apunta a la Plaza de toros de Zaragoza. El diestro ha firmado una carta de intenciones comprometiéndose a hacer el paseíllo dos tardes en la próxima Feria del Pilar, siempre que la UTE formada por Ramón Valencia y Casa Matilla resulte adjudicataria del coso maño.
-
-Un gesto que deja entrever que el regreso no será testimonial, sino parte de un proyecto más amplio. Morante no vuelve para asomarse: vuelve para estar.
-
-La incógnita ya no es si reaparece, sino hasta dónde llegará su temporada. Y en un año que pedía arte, personalidad y aroma clásico, la figura del sevillano vuelve a colocarse en el epicentro del toreo.
-
-Sevilla será el prólogo. El resto, si el cuerpo y la inspiración acompañan, puede ser una temporada de quilates.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Cuadri abre fuego en Las Ventas: emoción, verdad y un cartel de compromiso para romper la temporada`,
-	image: "/images/cuadrii.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `La cuenta atrás ya está en marcha. La Plaza de Toros de Las Ventas alzará el telón de su temporada el próximo 22 de marzo (18:00h.) con una corrida marcada en rojo por la afición venteña: los toros de Cuadri serán los encargados de inaugurar el curso en la primera plaza del mundo.
-
-Hablar de Cuadri es hablar de emoción cruda, de seriedad en el trapío y de ese punto indomable que pone a prueba la verdad de los toreros. El hierro onubense, uno de los más esperados por el público de Madrid, regresa tras su compromiso del Domingo de Ramos de 2024, una tarde en la que dejó huella el imponente 'Bagonero', toro hondo y de mucha caja que encarnó la esencia del encaste y la personalidad de la divisa.
-
-Para semejante desafío, un cartel del gusto de la afición más torista:
-
-**Pepe Moral**, que vuelve a Madrid tras dejar su impronta en los desafíos ganaderos de septiembre, donde saludó sendas ovaciones frente a los exigentes hierros de Dolores Aguirre y Sobral. Torero de fondo y firmeza, sabe lo que es jugarse la vida ante ganaderías de respeto.
-
-**Damián Castaño**, sinónimo de entrega sin reservas. La pasada campaña hizo el paseíllo en dos ocasiones en esta plaza: en el arranque de temporada sufrió una grave cornada de un toro de Adolfo Martín y regresó en San Isidro para medirse a los de Dolores, siempre dando la cara.
-
-**Gómez del Pilar**, otro de los nombres queridos por la parroquia venteña. En el último San Isidro paseó una oreja de un toro de José Escolar y en la corrida concurso de septiembre sumó un nuevo trofeo tras una vuelta al ruedo de peso. Regularidad, firmeza y conocimiento de la plaza como aval.
-
-El cóctel está servido: un hierro de máxima exigencia y tres toreros que no rehúyen la verdad del toro. Madrid quiere emoción. Y Cuadri la garantiza.
-
-**Promoción para asociaciones taurinas**
-
-Las asociaciones y entidades que organizan viajes para este festejo podrán beneficiarse de tarifa de abonado gestionando sus reservas a través del correo: taquillas@plazauno.es.
-
-Las entradas para el público general ya están disponibles. Los abonados podrán adquirir hasta cuatro localidades a precio de abono hasta las 14:00h. del día del festejo. Además, los jóvenes hasta 25 años contarán también con precio especial de abonado.
-
-La temporada comienza como exige Madrid: con seriedad, con emoción y con un toro que no regala nada. El 22 de marzo, Las Ventas vuelve a latir.`,
-	author: "Rubén Sánchez",
-    authorLogo: "/images/rubens.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `La Peña Taurina de Zufre concede a Emilio Silvera el premio al triunfador de la Feria`,
-	image: "/images/emi.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `La **Peña Taurina de Zufre** (Huelva) ha otorgado al matador de toros onubense **Emilio Silvera** el premio al triunfador de la **Feria Taurina** de la localidad, en reconocimiento a la **mejor faena del ciclo**, realizada ante un ejemplar de la ganadería de **Gabriel Rojas**, al que el diestro cortó dos orejas tras una destacada actuación.
-
-La feria taurina de **Zufre** se celebra cada año durante el mes de septiembre en honor a la **Virgen del Puerto**, constituyendo uno de los acontecimientos más señalados del calendario festivo y taurino de la sierra onubense.
-
-La entrega del galardón tendrá lugar el próximo mes de marzo durante **una charla-coloquio** organizada por la **Peña Taurina**, que se celebrará en el **Salón de Actos de la localidad**. En dicho encuentro también participará el novillero **Mariscal Ruiz**, distinguido igualmente como **triunfador en su apartado.**
-
-El acto será presentado por el periodista **Paco Guerrero**, en una jornada que reunirá a aficionados, profesionales y seguidores del mundo del toro, convirtiéndose en un espacio de encuentro y reflexión en torno a la temporada taurina y al presente de la Tauromaquia onubense.
-
-Con esta distinción, la **Peña Taurina de Zufre** reconoce el triunfo artístico y la proyección del matador de toros **Emilio Silvera** ‘hijo’, reafirmando su compromiso con la promoción y defensa de la cultura taurina en la provincia de **Huelva.**`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `La Excma. Diputación de Cádiz impulsa la Competición Provincial de Escuelas Taurinas 2026, un proyecto clave para el futuro del toreo gaditano`,
-	image: "/images/escuelas.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	fullContent: `La Asociación Nuevos Valores del Toreo y Fomento de la Fiesta, entidad que aglutina a ocho escuelas taurinas gaditanas, ha presentado oficialmente el proyecto **Competición Provincial de las Escuelas Taurinas de la Provincia de Cádiz 2026**, que esta temporada alcanza la **XIV Edición**, una iniciativa destinada al fomento de la cultura taurina y al apoyo de los jóvenes valores del toreo.
-
-Las escuelas integradas en la Asociación son:
-
-· **Escuela Municipal de Tauromaquia Miguel Mateo “Miguelín” de Algeciras**
-· **Asociación Taurina Escuela “Rafael Ortega” de San Fernando**
-· **Escuela Taurina Linense**
-· **Escuela Taurina Francisco Montes “Paquiro” de Chiclana**
-· **Escuela Comarcal Taurina Campo de Gibraltar**
-· **Escuela Cultural de Tauromaquia “La Gallosina” de El Puerto de Santa María**
-· **Escuela Taurina Comarcal de Ubrique**
-· **Escuela Taurina “El Volapié” de Sanlúcar de Barrameda**
-
-Actualmente, el conjunto de las escuelas reúne a cerca de 150 alumnos **en formación dentro de la provincia de Cádiz**.
-
-**Presentación institucional del proyecto:**
-El encuentro institucional tuvo lugar el pasado martes 17 de febrero en la **Excma. Diputación Provincial de Cádiz**, escenario elegido para la presentación oficial del calendario taurino formativo 2026 y la entrega de material de toreo a las escuelas participantes.
-
-El acto contó con la presencia de D. **Francisco Javier Vidal Pérez**, vicepresidente segundo de la Diputación de Cádiz; D. **Manuel Rodríguez Alonso**, Director del Área de Ciudadanía de la Diputación de Cádiz; **D. Eduardo Ordóñez**, Presidente de Asociación Nuevos Valores del Toreo y Fomento de la Fiesta; y los maestros D. **Francisco Ruiz Miguel**, D. **José Luis Feria Fernández “Galloso”** y D. **Juan Carlos Landrove.**
-
-**Desarrollo cronológico del calendario 2026**
-El proyecto se desarrollará a lo largo del último trimestre del año mediante distintas fases formativas y competitivas destinadas a potenciar la preparación práctica de los alumnos.
-
-**6 de octubre de 2026: Presentación oficial y entrega de material**
-Se celebrará en la **Excma. Diputación de Cádiz** para dar a conocer el calendario de espectáculos y reforzar el respaldo institucional al trabajo formativo de las escuelas taurinas.
-
-**17 y 18 de octubre de 2026: Tentaderos públicos en clase práctica**
-Se celebrarán dos tentaderos públicos en plazas de toros aún por designar. Participarán tres alumnos por escuela, alcanzando un total de 24 jóvenes toreros que mostrarán su evolución técnica y artística ante aficionados y profesionales.
-
-**7 de noviembre de 2026: Gran Final de Novillada de Erales**
-La **Plaza de Toros de La Línea de la Concepción** acogerá la gran final del certamen con la lidia de siete erales de una ganadería de prestigio para siete novilleros representantes de las escuelas taurinas gaditanas.
-
-**21 de noviembre de 2026: Becerrada en clase práctica en competición**
-El ciclo culminará con una becerrada de añojos en competición, en la que participarán los alumnos designados por la junta directiva del proyecto, cerrando así el proceso formativo anual.
-
-**Formación, cantera y promoción cultural**
-La **Competición Provincial de Escuelas Taurinas 2026** nace con el objetivo de fortalecer la cantera del toreo, apoyar a los jóvenes con vocación taurina y reconocer la labor educativa, cultural y social que desarrollan las escuelas taurinas de la provincia de **Cádiz**.
-
-Un jurado compuesto por aficionados de reconocido prestigio será el encargado de valorar las actuaciones y designar a los tres primeros clasificados, quienes recibirán los correspondientes trofeos otorgados por los ayuntamientos colaboradores y la organización.
-
-En total, **38 alumnos** participarán activamente en las distintas fases del proyecto, consolidando una iniciativa que aspira a convertirse en referencia dentro del calendario formativo taurino andaluz y contribuir al necesario relevo generacional de la Fiesta.
- 
-Con esta propuesta, la **Diputación de Cádiz** y la **Asociación Nuevos Valores del Toreo y Fomento de la Fiesta** refuerzan su compromiso con la formación, la difusión cultural y la proyección futura de la **Tauromaquia** en la provincia.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1009,
-    title: `La real venta de antequera retoma la actividad taurina tras una inversión de 80.000 euros`,
-	image: "/images/real.jpg",
-    category: "Actualidad",
-    date: "20 de Febrero de 2026",
-	imageCaption: "Imagen de ABC",
-	excerpt: "La Quinta y Fuente Ymbro, entre las ganaderías confirmadas que se podrán ver esta temporada",
-	fullContent: `La Real Venta de Antequera, enclave histórico de la tauromaquia andaluza, recuperará su actividad pocos días después del Domingo de Resurrección. La iniciativa forma parte del proyecto de Lances de Futuro tras asumir la gestión de la Real Maestranza de Caballería de Sevilla, con el apoyo de la familia De la Fuente Rojas.
-Según informa José Manuel Peña en ABC, la inversión prevista asciende a 80.000 euros y se destinará a mejoras en las instalaciones, incluyendo la colocación de nuevos burladeros, comederos, pilones de agua y la renovación de la iluminación. La infraestructura permitirá albergar hasta tres corridas simultáneamente, con la participación prevista de entre cinco y siete ganaderías. Hasta el momento, La Quinta y Fuente Ymbro ya han confirmado su presencia.
-Además, José María Garzón adelantó que se organizarán visitas guiadas gratuitas para alumnos de colegios y escuelas taurinas, mientras que los abonados podrán disfrutar de su entrada habitual. El público general accederá con un precio diseñado para ser accesible.
-Con esta iniciativa, la Real Venta de Antequera no solo refuerza su relevancia histórica, sino que, también apuesta por la difusión de la tauromaquia entre las nuevas generaciones.`,
-	author: "Inés Sáez",
-    authorLogo: "/images/nereasa.jpg",
+    title: `“Mi toreo es clásico, con verdad y pureza” - Entrevista a Aaron Palacio`,
+    image: "/images/entreee.jpg",
+    category: "Entrevistas",
+    date: "21 de Febrero de 2026",
+	footerImage1: "/images/entrepri.jpg",
+	footerImage2: "/images/entrepri1.jpg",
+	fullContent: `**Aarón Palacio** se perfila como una de las figuras emergentes del toreo español que más está dando que hablar en las últimas temporadas. Natural de Biota (Zaragoza) y formado con paso firme en el escalafón menor, Aarón Palacio ha convertido en realidad el paso del novillero prometedor al matador de toros con voz propia.
+
+Tras una etapa novilleril repleta de éxitos —con actuaciones destacadas en plazas como Sevilla, Pamplona o Madrid y trofeos que avalan su progresión—, tomó la alternativa el 20 de septiembre de 2025 en Nîmes, en un acontecimiento que se cerró con tres orejas y salida a hombros, gesto que marcó un hito en su carrera.
+
+Hoy, con apenas veintiún años y la mirada puesta en consolidar su lugar entre los nombres de referencia del toreo actual, Aarón Palacio se presenta ante el aficionado con un concepto de toreo sólido, una ambición que no se agota y una madurez impropia para su edad.
+
+**Tu alternativa en Nîmes fue una de las más resonantes de la temporada, con tres orejas y salida a hombros; ¿qué sensaciones recuerdas de esa tarde histórica y qué cambió en ti a partir de ese momento?**
+
+Bueno, pues la verdad que la tarde de Nîmes fue posiblemente la más importante de mi vida. Lo primero por por que me hice matador de toros, Y lo segundo porque la verdad que que fue una tarde muy emotiva, todo fue como como esperábamos y como soñábamos y es una tarde que al final pues recuerdas, tengo recuerdos muy bonitos, que como la salida a hombros, la intensidad con con que la gente me me cantaba los olés en la plaza y bueno, torear al lado también de de dos figuras del toreo, que al final es donde nosotros queremos estar, ahí con ellos, pues es una alegría y por lo que lucho cada día.
+
+**Has sido premiado con el Trofeo Ciudad de Logroño y el “Capote de Paseo” por tu faena en la Feria de San Mateo; ¿qué representa para ti este tipo de reconocimientos y cómo influye en tu confianza?**
+
+Bueno, pues esos trofeos son muy importantes. Por por lo que representan y bueno, para para mí todas esas cosas es son motivación y confianza también en que las cosas salen, que con esfuerzo y con ilusión cada paso es importante y se dan esos pasos. Y la verdad que el Capote de Paseo de de Logroño pues es un premio que que me hacía mucha ilusión tener y que gracias a Dios lo tengo ahora y ojalá me pueda llevar muchos más.
+
+**Antes de ser matador ya habías generado gran expectación como novillero en plazas como Sevilla, Madrid o Bilbao; ¿cómo afrontaste la transición entre novillero y matador de toros?**
+
+La verdad que la transición tampoco me costó mucho. Es verdad que hoy en día hay novilladas en donde los novillos son casi igual de grandes que que los toros, y lo único que ha cambiado pues al final es los compañeros de cartel. Que que mientras yo era novillero pues mis compañeros son son novilleros que más o menos pues están a tu nivel, que que están en una situación parecida a la tuya, y cuando ya pasas al siguiente escalafón pues, las figuras del toreo, que yo he tenido la suerte de en cuatro corridas de toros torear tres corridas de toros de las cuatro tres han sido con con figuras del toreo, pues es verdad que que la presión aumenta, la responsabilidad aumenta y cada triunfo creo que que cuenta mucho más.
+
+**Fuiste formado en la Escuela Taurina Mar de Nubes y tu madre, que no era aficionada al principio, ahora te acompaña en las plazas; ¿cómo ha evolucionado tu relación familiar con el toreo y qué papel juega ese apoyo en tu carrera?**
+
+Sí, bueno, mi familia me apoyan todos mucho, la mayoría me acompañan a la mayoría de sitios donde toreo y bueno, creo que es imprescindible, que tu entorno te apoye, te te acompañe y sientas su cariño porque eso es lo que te hace al final es tener más ilusión, quererle dedicar más tiempo aun si cabe al toreo y además pues de hacerlo con la seguridad de que de que todas tus personas cercanas pues te apoyan, te acompañan, creen en ti, tanto como tú o más y creo que es muy importante.
+
+**Estás anunciado en la Feria de Abril de Sevilla compartiendo cartel con figuras importantes; ¿qué expectativas tienes al torear en La Maestranza en una feria tan emblemática?**
+
+Bueno, las expectativas lo máximo, salir por la Puerta del príncipe, estar muy bien, que la gente vea mi mi mejor versión y y puedan ver el toreo que que siento y que llevo dentro. Y bueno, creo que que Sevilla es una plaza que que siempre me ha ido muy bien, que desde niño me ha encantado y ojalá que este año pues pueda rematar todo eso que con lo que sueño, que las tardes de novillero pues por una cosa o por otra al final no se han podido rematar del todo y salir por la Puerta del Príncipe este año, que sería pues para mí una ilusión tremenda.
+
+**La tauromaquia y el público cambian con el tiempo; ¿cómo crees que puede evolucionar tu concepto del toreo en los próximos años y qué tipo de torero quieres ser dentro de esa evolución?**
+
+Bueno, yo creo que el toreo aunque es verdad que en muchos aspectos tiene que evolucionar al final el toreo como tal es algo clásico, tradicional y que es verdad que que los tiempos cambian, la forma de torear cambia, pero creo que que siempre es bonito, que el toreo tenga eso de de antes y y a mí por lo menos pues me gusta mucho recordar y ver vídeos de de toreros de antes porque porque al final creo que eso es es la base del toreo y lo que a mí me gusta. Y aunque hoy en día pues es verdad que que hoy hay una técnica impresionante, hay una una forma de de torear que es casi perfecta, creo que también es importante pues eso, fijarse en en esos toreros de antes e intentar hacer que que toda esa personalidad que tenían, esa raza, esas ganas de querer ser torero pues que sigan en nuestro toreo y así es como yo lo veo y como yo lo intento hacer cada día.
+
+**¿Como definirías tu concepto del toreo o como lo sientes?**
+
+Yo intento hacer un toreo clásico, intento siempre entrenar y y torear como lo he sentido desde el día en que cogí una muleta y un capote por primera vez. Y y así es como me gusta torear, De manera clásica, intentando hacer todo con verdad, con con pureza y bueno, unos días se consigue más, otros menos porque en el toreo hay hay un animal que que interviene mucho, Casi diría que que el total de de la faena y bueno, muchas veces pues es verdad que ese animal no te deja expresar lo que llevas dentro al cien por cien, pero pero aun así es importante pues cada día superarse para para que salga el animal que salga pues eh torear como uno lo siente y y triunfar con el animal que salga por la puerta.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+    { 
+    id: 196,
+    title: `“Mi toreo es clásico, con verdad y pureza” - Entrevista a Aaron Palacio`,
+    image: "/images/entreee.jpg",
+    category: "Entrevistas",
+    date: "21 de Febrero de 2026",
+	footerImage1: "/images/entrepri.jpg",
+	footerImage2: "/images/entrepri1.jpg",
+	fullContent: `**Aarón Palacio** se perfila como una de las figuras emergentes del toreo español que más está dando que hablar en las últimas temporadas. Natural de Biota (Zaragoza) y formado con paso firme en el escalafón menor, Aarón Palacio ha convertido en realidad el paso del novillero prometedor al matador de toros con voz propia.
+
+Tras una etapa novilleril repleta de éxitos —con actuaciones destacadas en plazas como Sevilla, Pamplona o Madrid y trofeos que avalan su progresión—, tomó la alternativa el 20 de septiembre de 2025 en Nîmes, en un acontecimiento que se cerró con tres orejas y salida a hombros, gesto que marcó un hito en su carrera.
+
+Hoy, con apenas veintiún años y la mirada puesta en consolidar su lugar entre los nombres de referencia del toreo actual, Aarón Palacio se presenta ante el aficionado con un concepto de toreo sólido, una ambición que no se agota y una madurez impropia para su edad.
+
+**Tu alternativa en Nîmes fue una de las más resonantes de la temporada, con tres orejas y salida a hombros; ¿qué sensaciones recuerdas de esa tarde histórica y qué cambió en ti a partir de ese momento?**
+
+Bueno, pues la verdad que la tarde de Nîmes fue posiblemente la más importante de mi vida. Lo primero por por que me hice matador de toros, Y lo segundo porque la verdad que que fue una tarde muy emotiva, todo fue como como esperábamos y como soñábamos y es una tarde que al final pues recuerdas, tengo recuerdos muy bonitos, que como la salida a hombros, la intensidad con con que la gente me me cantaba los olés en la plaza y bueno, torear al lado también de de dos figuras del toreo, que al final es donde nosotros queremos estar, ahí con ellos, pues es una alegría y por lo que lucho cada día.
+
+**Has sido premiado con el Trofeo Ciudad de Logroño y el “Capote de Paseo” por tu faena en la Feria de San Mateo; ¿qué representa para ti este tipo de reconocimientos y cómo influye en tu confianza?**
+
+Bueno, pues esos trofeos son muy importantes. Por por lo que representan y bueno, para para mí todas esas cosas es son motivación y confianza también en que las cosas salen, que con esfuerzo y con ilusión cada paso es importante y se dan esos pasos. Y la verdad que el Capote de Paseo de de Logroño pues es un premio que que me hacía mucha ilusión tener y que gracias a Dios lo tengo ahora y ojalá me pueda llevar muchos más.
+
+**Antes de ser matador ya habías generado gran expectación como novillero en plazas como Sevilla, Madrid o Bilbao; ¿cómo afrontaste la transición entre novillero y matador de toros?**
+
+La verdad que la transición tampoco me costó mucho. Es verdad que hoy en día hay novilladas en donde los novillos son casi igual de grandes que que los toros, y lo único que ha cambiado pues al final es los compañeros de cartel. Que que mientras yo era novillero pues mis compañeros son son novilleros que más o menos pues están a tu nivel, que que están en una situación parecida a la tuya, y cuando ya pasas al siguiente escalafón pues, las figuras del toreo, que yo he tenido la suerte de en cuatro corridas de toros torear tres corridas de toros de las cuatro tres han sido con con figuras del toreo, pues es verdad que que la presión aumenta, la responsabilidad aumenta y cada triunfo creo que que cuenta mucho más.
+
+**Fuiste formado en la Escuela Taurina Mar de Nubes y tu madre, que no era aficionada al principio, ahora te acompaña en las plazas; ¿cómo ha evolucionado tu relación familiar con el toreo y qué papel juega ese apoyo en tu carrera?**
+
+Sí, bueno, mi familia me apoyan todos mucho, la mayoría me acompañan a la mayoría de sitios donde toreo y bueno, creo que es imprescindible, que tu entorno te apoye, te te acompañe y sientas su cariño porque eso es lo que te hace al final es tener más ilusión, quererle dedicar más tiempo aun si cabe al toreo y además pues de hacerlo con la seguridad de que de que todas tus personas cercanas pues te apoyan, te acompañan, creen en ti, tanto como tú o más y creo que es muy importante.
+
+**Estás anunciado en la Feria de Abril de Sevilla compartiendo cartel con figuras importantes; ¿qué expectativas tienes al torear en La Maestranza en una feria tan emblemática?**
+
+Bueno, las expectativas lo máximo, salir por la Puerta del príncipe, estar muy bien, que la gente vea mi mi mejor versión y y puedan ver el toreo que que siento y que llevo dentro. Y bueno, creo que que Sevilla es una plaza que que siempre me ha ido muy bien, que desde niño me ha encantado y ojalá que este año pues pueda rematar todo eso que con lo que sueño, que las tardes de novillero pues por una cosa o por otra al final no se han podido rematar del todo y salir por la Puerta del Príncipe este año, que sería pues para mí una ilusión tremenda.
+
+**La tauromaquia y el público cambian con el tiempo; ¿cómo crees que puede evolucionar tu concepto del toreo en los próximos años y qué tipo de torero quieres ser dentro de esa evolución?**
+
+Bueno, yo creo que el toreo aunque es verdad que en muchos aspectos tiene que evolucionar al final el toreo como tal es algo clásico, tradicional y que es verdad que que los tiempos cambian, la forma de torear cambia, pero creo que que siempre es bonito, que el toreo tenga eso de de antes y y a mí por lo menos pues me gusta mucho recordar y ver vídeos de de toreros de antes porque porque al final creo que eso es es la base del toreo y lo que a mí me gusta. Y aunque hoy en día pues es verdad que que hoy hay una técnica impresionante, hay una una forma de de torear que es casi perfecta, creo que también es importante pues eso, fijarse en en esos toreros de antes e intentar hacer que que toda esa personalidad que tenían, esa raza, esas ganas de querer ser torero pues que sigan en nuestro toreo y así es como yo lo veo y como yo lo intento hacer cada día.
+
+**¿Como definirías tu concepto del toreo o como lo sientes?**
+
+Yo intento hacer un toreo clásico, intento siempre entrenar y y torear como lo he sentido desde el día en que cogí una muleta y un capote por primera vez. Y y así es como me gusta torear, De manera clásica, intentando hacer todo con verdad, con con pureza y bueno, unos días se consigue más, otros menos porque en el toreo hay hay un animal que que interviene mucho, Casi diría que que el total de de la faena y bueno, muchas veces pues es verdad que ese animal no te deja expresar lo que llevas dentro al cien por cien, pero pero aun así es importante pues cada día superarse para para que salga el animal que salga pues eh torear como uno lo siente y y triunfar con el animal que salga por la puerta.`,
+    author: "Eduardo Elvira",
+    authorLogo: "/images/edu4.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 197,
     title: `Carmelo García presenta una magnífica Feria de Mayo de Osuna`,
