@@ -42,8 +42,22 @@
       "role": "Redacción",
       "imageUrl": "/images/ines.jpg",
       "systemRole": "EDITOR"
+    },
+    {
+      "id": "6",
+      "name": "Antonio Tortosa",
+      "role": "Redacción",
+      "imageUrl": "/images/antonio.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "8",
+      "name": "Enrique Salazar",
+      "role": "Redacción",
+      "imageUrl": "/images/enrique.jpg",
+      "systemRole": "EDITOR"
     }
   ],
   "archivedArticles": [],
-  "lastUpdated": "2026-02-21T15:57:46.536Z"
+  "lastUpdated": "2026-02-21T15:57:47.850Z"
 }
