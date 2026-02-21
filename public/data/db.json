@@ -62,7 +62,8 @@
       "bullfightLocation": "",
       "bullfightCattle": "",
       "bullfightSummary": "",
-      "bullfightResults": []
+      "bullfightResults": [],
+      "lastModified": "2026-02-21T15:58:59.624Z"
     }
   ],
   "authors": [
@@ -72,8 +73,57 @@
       "role": "Director",
       "imageUrl": "/images/eduardo.jpg",
       "systemRole": "ADMIN"
+    },
+    {
+      "id": "2",
+      "name": "Nerea F.Elena",
+      "role": "Redacción",
+      "imageUrl": "/images/nerea.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "3",
+      "name": "Manolo Herrera",
+      "role": "Redacción",
+      "imageUrl": "/images/manolo.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "4",
+      "name": "Rubén Sánchez",
+      "role": "Redacción",
+      "imageUrl": "/images/ruben.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "5",
+      "name": "Iris Rodríguez",
+      "role": "Redacción",
+      "imageUrl": "/images/iris.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "7",
+      "name": "Inés Sáez",
+      "role": "Redacción",
+      "imageUrl": "/images/ines.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "6",
+      "name": "Antonio Tortosa",
+      "role": "Redacción",
+      "imageUrl": "/images/antonio.jpg",
+      "systemRole": "EDITOR"
+    },
+    {
+      "id": "8",
+      "name": "Enrique Salazar",
+      "role": "Redacción",
+      "imageUrl": "/images/enrique.jpg",
+      "systemRole": "EDITOR"
     }
   ],
   "archivedArticles": [],
-  "lastUpdated": "2026-02-21T15:59:00.121Z"
+  "lastUpdated": "2026-02-21T15:59:12.345Z"
 }
