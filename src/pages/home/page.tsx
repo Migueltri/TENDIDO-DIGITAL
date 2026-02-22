@@ -40,54 +40,381 @@
 
 const featuredNews: NewsItem[] = [	
 	{ 
-    id: 1009,
-    title: `“Mi toreo es clásico, con verdad y pureza” - Entrevista a Aaron Palacio`,
-    image: "/images/entreee.jpg",
+    id: 1006,
+    title: `Celso Ortega “yo a mi padre lo veía como un superhéroe sin capa yo quería ser el”`,
+	image: "/images/portadaentre.jpg",
     category: "Entrevistas",
-    date: "21 de Febrero de 2026",
-	footerImage1: "/images/entrepri.jpg",
-	footerImage2: "/images/entrepri1.jpg",
-	fullContent: `**Aarón Palacio** se perfila como una de las figuras emergentes del toreo español que más está dando que hablar en las últimas temporadas. Natural de Biota (Zaragoza) y formado con paso firme en el escalafón menor, Aarón Palacio ha convertido en realidad el paso del novillero prometedor al matador de toros con voz propia.
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/WhatsApp Image 2026-02-22 at 13.59.50.jpg",
+	footerImage2: "/images/WhatsApp Image 2026-02-22 at 13.59.50 (1).jpg",
+	footerImage3: "/images/WhatsApp Image 2026-02-22 at 13.59.51.jpg",
+	footerImage4: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (1).jpg",
+	footerImage5: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (2).jpg",
+	fullContent: `Hay nombres que están ligado a la historia taurina, de un país, de una región o de un pueblo o ciudad, ese es el caso del aspirante al que hoy entrevistamos, es el tercer eslabón de una dinastía torera de **El Puerto de Santa María**, la inicio su abuelo el novillero **Cesar Ortega**, la continuo su padre el matador de toros **Celso Ortega** y ahora es el que tiene ilusionado a toda una ciudad tan taurina como **El Puerto de Santa María**.
 
-Tras una etapa novilleril repleta de éxitos —con actuaciones destacadas en plazas como Sevilla, Pamplona o Madrid y trofeos que avalan su progresión—, tomó la alternativa el 20 de septiembre de 2025 en Nîmes, en un acontecimiento que se cerró con tres orejas y salida a hombros, gesto que marcó un hito en su carrera.
+El actual **Celso Ortega** no deja de tener de su padre recuerdo pocos de niños y videos, su padre falleció muy pronto con 45 altos cuando el año 2016 estaba llegando a su fin.
 
-Hoy, con apenas veintiún años y la mirada puesta en consolidar su lugar entre los nombres de referencia del toreo actual, Aarón Palacio se presenta ante el aficionado con un concepto de toreo sólido, una ambición que no se agota y una madurez impropia para su edad.
+Pero de su padre los que hemos visto torear a ambos podemos decir que ha heredado la pureza de su torero y su temple natural.
 
-**Tu alternativa en Nîmes fue una de las más resonantes de la temporada, con tres orejas y salida a hombros; ¿qué sensaciones recuerdas de esa tarde histórica y qué cambió en ti a partir de ese momento?**
+Hoy como he comentado anteriormente una ciudad con la historia y el badajee taurino de **El Puerto de Santa María** se muestra ilusionada y con toda la esperanza puesta en el hijo del matador de toros **Celso Ortega** hoy la ilusión es **Celso Ortega**
 
-Bueno, pues la verdad que la tarde de Nîmes fue posiblemente la más importante de mi vida. Lo primero por por que me hice matador de toros, Y lo segundo porque la verdad que que fue una tarde muy emotiva, todo fue como como esperábamos y como soñábamos y es una tarde que al final pues recuerdas, tengo recuerdos muy bonitos, que como la salida a hombros, la intensidad con con que la gente me me cantaba los olés en la plaza y bueno, torear al lado también de de dos figuras del toreo, que al final es donde nosotros queremos estar, ahí con ellos, pues es una alegría y por lo que lucho cada día.
+**Celso, llevar el nombre de tu padre “Celso Ortega” supone hablar de dinastía ¿Qué significa para ti esa responsabilidad?**
 
-**Has sido premiado con el Trofeo Ciudad de Logroño y el “Capote de Paseo” por tu faena en la Feria de San Mateo; ¿qué representa para ti este tipo de reconocimientos y cómo influye en tu confianza?**
+Es una responsabilidad muy bonita pero que hay que saber llevar es un orgullo para mi llevar el mismo nombre y mismo apellido
 
-Bueno, pues esos trofeos son muy importantes. Por por lo que representan y bueno, para para mí todas esas cosas es son motivación y confianza también en que las cosas salen, que con esfuerzo y con ilusión cada paso es importante y se dan esos pasos. Y la verdad que el Capote de Paseo de de Logroño pues es un premio que que me hacía mucha ilusión tener y que gracias a Dios lo tengo ahora y ojalá me pueda llevar muchos más.
+**El pasado 28 de julio hiciste tu presentación de luces y además en tu plaza en El Puerto de Santa María ¿Fue como siempre soñaste?**
 
-**Antes de ser matador ya habías generado gran expectación como novillero en plazas como Sevilla, Madrid o Bilbao; ¿cómo afrontaste la transición entre novillero y matador de toros?**
+Fue un sueño hecho realidad era el traje de alternativa de mi padre y era un peso muy grande que lo lleve con gran orgullo respecto a la tarde fue una tarde soñada con la que cada niño que sueña con ser torero es su meta y sobre todo en mi ciudad con mi gente salió todo rodado gracias a Dios y es y Sera el mejor día de mi vida
 
-La verdad que la transición tampoco me costó mucho. Es verdad que hoy en día hay novilladas en donde los novillos son casi igual de grandes que que los toros, y lo único que ha cambiado pues al final es los compañeros de cartel. Que que mientras yo era novillero pues mis compañeros son son novilleros que más o menos pues están a tu nivel, que que están en una situación parecida a la tuya, y cuando ya pasas al siguiente escalafón pues, las figuras del toreo, que yo he tenido la suerte de en cuatro corridas de toros torear tres corridas de toros de las cuatro tres han sido con con figuras del toreo, pues es verdad que que la presión aumenta, la responsabilidad aumenta y cada triunfo creo que que cuenta mucho más.
+**Ese día y las tarde que toreasteis posteriormente, te pusiste trajes de luces de tu padre ¿Qué sentisteis?**
 
-**Fuiste formado en la Escuela Taurina Mar de Nubes y tu madre, que no era aficionada al principio, ahora te acompaña en las plazas; ¿cómo ha evolucionado tu relación familiar con el toreo y qué papel juega ese apoyo en tu carrera?**
+sí, me he puesto el grana y oro y sentí a mi padre la verdad y el orgullo de llevar su nombre y poder lucir sus ternos
 
-Sí, bueno, mi familia me apoyan todos mucho, la mayoría me acompañan a la mayoría de sitios donde toreo y bueno, creo que es imprescindible, que tu entorno te apoye, te te acompañe y sientas su cariño porque eso es lo que te hace al final es tener más ilusión, quererle dedicar más tiempo aun si cabe al toreo y además pues de hacerlo con la seguridad de que de que todas tus personas cercanas pues te apoyan, te acompañan, creen en ti, tanto como tú o más y creo que es muy importante.
+**¿Cómo definirías tu concepto del toreo?**
 
-**Estás anunciado en la Feria de Abril de Sevilla compartiendo cartel con figuras importantes; ¿qué expectativas tienes al torear en La Maestranza en una feria tan emblemática?**
+A mí me gusta el toreo clásico y puro ya a partir de ahí Sera el público el que juzgue mi toreo, pero lo que yo siento toreando es el toreo puro con la mano baja
 
-Bueno, las expectativas lo máximo, salir por la Puerta del príncipe, estar muy bien, que la gente vea mi mi mejor versión y y puedan ver el toreo que que siento y que llevo dentro. Y bueno, creo que que Sevilla es una plaza que que siempre me ha ido muy bien, que desde niño me ha encantado y ojalá que este año pues pueda rematar todo eso que con lo que sueño, que las tardes de novillero pues por una cosa o por otra al final no se han podido rematar del todo y salir por la Puerta del Príncipe este año, que sería pues para mí una ilusión tremenda.
+**Cuando vas a torear, ¿cómo vives ese día, esos momentos antes?**
 
-**La tauromaquia y el público cambian con el tiempo; ¿cómo crees que puede evolucionar tu concepto del toreo en los próximos años y qué tipo de torero quieres ser dentro de esa evolución?**
+esos días antes siempre suelen ser de muchos nervios y de mucha responsabilidad sobre todo de no fallar a los míos y no hacerles perder el tiempo, me dijeron una vez que hay que disfrutar desde que te anuncias en un cartel y disfrutar los días de entreno de preparación y de todo lo que conlleva los días previos a un festejo.
 
-Bueno, yo creo que el toreo aunque es verdad que en muchos aspectos tiene que evolucionar al final el toreo como tal es algo clásico, tradicional y que es verdad que que los tiempos cambian, la forma de torear cambia, pero creo que que siempre es bonito, que el toreo tenga eso de de antes y y a mí por lo menos pues me gusta mucho recordar y ver vídeos de de toreros de antes porque porque al final creo que eso es es la base del toreo y lo que a mí me gusta. Y aunque hoy en día pues es verdad que que hoy hay una técnica impresionante, hay una una forma de de torear que es casi perfecta, creo que también es importante pues eso, fijarse en en esos toreros de antes e intentar hacer que que toda esa personalidad que tenían, esa raza, esas ganas de querer ser torero pues que sigan en nuestro toreo y así es como yo lo veo y como yo lo intento hacer cada día.
+**¿Cuándo nace realmente tu vocación y como se lo toma tu madre?**
 
-**¿Como definirías tu concepto del toreo o como lo sientes?**
+Mi vocación desde pequeño tengo vídeos robándole los trapos de la cocina a mi madre, yo a mi padre lo veía como un superhéroe sin capa yo quería ser el disfrute mucho el poco tiempo que estuve con él me enseñó mucho y respeto que tenía por esta profesión, mi madre no se lo tomo mal ella disfruta viendo lo que me hace feliz y ya lo había vivido con mi padre lo que si me dijo que si quería ser torero me tenía que esforzar y no estar a medio pelo como se suele decir es dura conmigo y se lo agradezco porque me hace esforzarme más y cuando sea figura del toreo si dios quiere le compraré una finca para disfrutarla todos juntos
 
-Yo intento hacer un toreo clásico, intento siempre entrenar y y torear como lo he sentido desde el día en que cogí una muleta y un capote por primera vez. Y y así es como me gusta torear, De manera clásica, intentando hacer todo con verdad, con con pureza y bueno, unos días se consigue más, otros menos porque en el toreo hay hay un animal que que interviene mucho, Casi diría que que el total de de la faena y bueno, muchas veces pues es verdad que ese animal no te deja expresar lo que llevas dentro al cien por cien, pero pero aun así es importante pues cada día superarse para para que salga el animal que salga pues eh torear como uno lo siente y y triunfar con el animal que salga por la puerta.`,
-    author: "Eduardo Elvira",
-    authorLogo: "/images/edu4.jpg",
+**¿Qué sueños tienes ahora mismo con respecto al toreo?**
+
+Ahora mismo me gusta vivir en el presente y sueño con estar mejor cada tarde y que la gente vea que hay un novillero en él Puerto con mucha ilusión y muchas ganas de decir algo en el toreo
+
+**Decía Juan Belmonte aquello de “se torea como se es”. ¿Qué te parece?**
+
+Una verdad como un piano cada uno tiene una personalidad y esa es la diferencia de un torero a otro
+
+**¿Te parece que es importante la liturgia y el romanticismo en el toreo, o crees que es algo ya pasado?**
+
+La esencia es lo que mantiene viva el toreo y eso no se puede perder nunca el día que se pierda tendremos un problema
+
+**¿Cuáles son tus objetivos a corto o medio plazo?**
+
+Como he dicho antes lo primero torear el máximo número de festejos y ganarme un puesto en el escalafón novilleril
+
+**¿Qué le quita el sueño a Celso Ortega por las noches?**
+
+El nombre que llevo y la responsabilidad que conlleva, pero sobretodo el no defraudar a mi gente
+
+**¿Cuál sería tu cartel de toreros preferido?**
+
+Mi cartel preferido te voy a decir uno antiguo y otro de ahora
+
+El antiguo sería El maestro José Luis Galloso y el maestro José María Manzanares padre
+
+Y de ahora
+	El maestro Diego Urdiales y el maestro José Antonio Morante de la Puebla`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `David de Miranda recibe en Linares el prestigioso Trofeo Manolete de la Real Feria de San Agustín 2025`,
+	image: "/images/kdchspisdbc.jpg",
+    category: "Actualidad",
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/11.jpg",
+	footerImage2: "/images/11 1.jpg",
+	footerImage3: "/images/11 2.jpg",
+	fullContent: `La histórica **Capilla del Hospital de los Marqueses de Linares** acogió en la noche de ayer *-21 de febrero-* la gala de entrega del prestigioso **Trofeo Manolete de la Real Feria de San Agustín 2025**, un reconocimiento que consolida al diestro onubense **David de Miranda** como uno de los nombres propios del momento en la tauromaquia actual.
+
+El galardón, otorgado por el Ayuntamiento de **Linares**, fue entregado por la alcaldesa de la ciudad, **Auxiliadora del Olmo**, en un acto institucional que reunió a autoridades, profesionales del sector taurino y una amplia representación de la afición.
+
+El **Trofeo Manolete** reconoce la actuación protagonizada por **David de Miranda** el pasado **30 de agosto de 2025**, durante la **Real Feria de San Agustín**, en su debut en el coso linarense. Aquella tarde, el torero firmó una faena de gran pureza y profundidad frente al toro “*Pagano*”, número 132, de la ganadería de **Ganadería Juan Pedro Domecq**, actuación que fue premiada por unanimidad del jurado calificador.
+
+Su intervención ante el cuarto toro de la corrida terminó por convertirle en triunfador indiscutible del ciclo ferial, conquistando a una de las aficiones más exigentes y con mayor tradición del panorama taurino nacional.
+
+La ceremonia, presentada por el escritor **Miguel Vega**, estuvo acompañada musicalmente por la **Agrupación Musical Linares 1875** bajo la dirección de **Francisco Infantes Ortiz**, aportando solemnidad a una noche en la que tradición, cultura y memoria taurina se dieron la mano bajo la evocación permanente del maestro **Manuel Rodríguez 'Manolete'**.
+
+Durante su intervención, la alcaldesa destacó la dimensión artística y la evolución profesional del torero onubense, subrayando la importancia del toreo dentro de la identidad cultural de la ciudad. Del mismo modo, recordó el vínculo inseparable entre Linares y la figura de Manolete: “***En definitiva, Linares es tauromaquia; Linares es Manolete, y hoy rendimos homenaje al maestro recordando una de esas tardes inolvidables, la que vivimos el pasado 30 de agosto con una faena que ya forma parte de nuestra historia, y por la que hoy entregamos este merecido Trofeo Manolete al torero David de Miranda***”.
+
+Un emocionado, **David de Miranda** agradeció el reconocimiento poniendo en valor la trascendencia simbólica del galardón: “***Recibir esta noche un premio que lleva el nombre del maestro de maestros, Manuel Rodríguez 'Manolete', en esta tierra que guarda su memoria con tanto respeto y tanta verdad, es algo que me sobrecoge profundamente***”.
+
+El diestro expresó además el significado personal y profesional que supone este reconocimiento en su carrera: “***No encuentro palabras suficientes para expresar la emoción que siento. Es la primera vez que recibo este galardón, y lo hago con una ilusión inmensa, casi de niño, pero también con el peso hermoso de la responsabilidad. Porque cuando el nombre que encabeza un premio es el de Manolete, uno entiende que no se trata solo de un reconocimiento, sino de un compromiso: el compromiso de seguir honrando la pureza, la entrega y la verdad que él representó. Gracias, Linares, por tanto. Gracias por esta noche que guardaré para siempre en mi memoria y en mi corazón***”.
+
+Con la entrega del **Trofeo Manolete 2025**, **Linares** vuelve a reivindicar su histórica vinculación con la tauromaquia y su apuesta institucional por la defensa, promoción y difusión de la cultura del toro, premiando la excelencia artística y reconociendo a un torero que ha logrado conectar con la esencia más pura del toreo.
+
+El reconocimiento recibido por **David de Miranda** no solo distingue una actuación sobresaliente, sino que refuerza el valor simbólico de un premio que mantiene viva la memoria del maestro **Manolete** y proyecta hacia el futuro los valores fundamentales de la tauromaquia: verdad, emoción y autenticidad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `Sanlúcar la Mayor, seis orejas y dos puertas grande `,
+	image: "/images/sanluuuuu.jpg",
+    category: "Crónicas",
+    date: "22 de Febrero de 2026",
+	plaza: "Plaza de toros de Sanlúcar la Mayor (Sevilla).-  Corrida de Toros",
+    ganaderia: "José Luis Osborne",
+	torerosRaw: `Oliva Soto, Oreja y Palmas
+Lama de Góngora, Oreja tras aviso y Dos orejas
+Calerito, Vuelta al ruedo y Dos orejas`,
+	fullContent: `Esta tarde con una temperatura casi primaveral, ha arrancado la temporada taurina en tierras andaluzas, y lo a echo en la localidad sevillana de **Sanlúcar la Mayor.**
+
+El triunfador del festejo ha sido **Lama de Góngora**, que ha cuajado dos buenas faenas a dos buenos ejemplares de **Osborne**, recompensadas con un total de tres orejas. 
+
+**Oliva Soto** sumó un trofeo y por su parte **Juan Pedro Garcia “Calerito”**, que dio una vuelta al ruedo en su primer, en el sexto tras sufrir una voltereta. le cortó las dos orejas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1009,
+    title: `David de Miranda recibe el IV Premio Nacional “La Divisa” de Trigueros y reafirma su ambición ante una temporada clave`,
+	image: "/images/22.jpg",
+    category: "Actualidad",
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/22 (1).jpg",
+	footerImage2: "/images/22 (2).jpg",
+	footerImage3: "/images/22 (3).jpg",
+	footerImage4: "/images/22 (4).jpg",
+	fullContent: `El matador de toros triguereño **David de Miranda** ha sido distinguido con el **IV Premio Nacional “La Divisa”**, un prestigioso reconocimiento concedido por la **Peña Taurina La Divisa de Trigueros** en reconocimiento a “***su excelente temporada 2025***”.
+
+La entrega del galardón tuvo lugar el viernes 20 de febrero, dentro del **XXXII Ciclo Cultural Taurino** organizado por la entidad, en un acto celebrado con lleno absoluto en el **Antiguo Convento del Carmen de Trigueros**, donde se destacó su trayectoria reciente y su condición de triunfador de la pasada temporada.
+
+**Una entrada cargada de emoción**
+
+El torero fue recibido con una ovación clamorosa al acceder al escenario del salón de actos del centro cívico, visiblemente emocionado ante el cariño de sus paisanos.
+
+La mesa presidencial estuvo integrada por el propio diestro, la periodista taurina **Beatriz García** -*encargada de moderar el encuentro*-, el alcalde de la localidad, **Vidal Blanco**, y el empresario taurino **José Cutiño**, responsable de la plaza de toros de **Olivenza**, donde el espada onubense actuará el próximo 8 de marzo.
+
+**Olivenza, punto de partida de una temporada especial**
+
+Durante su intervención, **José Cutiño** destacó la importancia de la actuación de **David de Miranda** en **Málaga**, calificándola como “***una de las cosas más importantes que han ocurrido en el toreo***”, subrayando que por ello el torero debía estar presente en **Olivenza**.
+
+El cartel de la matinal del 8 de marzo reunirá a **Borja Jiménez**, **David de Miranda** y **Marco Pérez**, con toros de las ganaderías **Domingo Hernández** y **La Ventana del Puerto**, en una feria considerada escaparate del inicio de la temporada taurina.
+
+El propio matador confesó sentirse “***muy ilusionado y un privilegiado por abrir temporada en Olivenza al cumplirse mi décimo aniversario como matador de toros***”.
+
+**La experiencia americana y el aprendizaje vital**
+
+Tras su reciente periplo por **Latinoamérica**, donde sumó triunfos en plazas de **Colombia**, **México** y **Perú**, el torero reflexionó sobre la dureza de aquellas campañas: “*Cuando vuelvo ya he gastado una vida. Es un esfuerzo grande jugarse la vida allí, pero nos sirve como aventura y experiencia que ayuda a madurar*”.
+
+El diestro recordó el contraste vivido respecto al pasado reciente: “***El año pasado por estas fechas solo contaba con tres corridas de toros y hoy ya tengo once corridas firmadas y dos festivales***”. Pese al momento ascendente, reconoció la exigencia personal que se impone: “*No sé cuánto podré aguantar por mi manera de entender el toreo*”, aunque aseguró vivir el presente con “***una ilusión desbordante***” y consciente de que la temporada que comienza “**es clave**” en su carrera, con compromisos ya anunciados en **Sevilla, Madrid** y **Valencia**.
+
+**Málaga y Sevilla, el punto de inflexión**
+
+**David de Miranda** evocó los momentos decisivos de su trayectoria, agradeciendo especialmente el apoyo constante de su tierra: “*Nunca me sentí solo; Huelva siempre me arropó*”. El torero recordó “la dificultad emocional tras cortar **tres orejas en Sevilla** y atravesar posteriormente un periodo incierto. “*Después de aquella Puerta del Príncipe solo tenía Málaga... era el todo o nada*”. Sobre aquella tarde decisiva explicó: “*La faena de Málaga ha marcado mi trayectoria, un antes y un después. Brindé aquel segundo toro para ganar tiempo y pensar*”.
+
+**Nueva etapa profesional y evolución artística**
+
+De cara a la **temporada 2026**, el matador inicia una nueva etapa con apoderado, mostrándose “*muy feliz por poder aprender el camino de alguien que ya lo ha recorrido*”. Sincerándose ante los aficionados, admitió: “*El negocio taurino me da miedo y mi toreo tiene que evolucionar*”. Señaló como espejo profesional al maestro **Enrique Ponce**, a quien definió como “*un enfermo del toreo*”, destacando además el atractivo momento que vive la tauromaquia: “*Son tiempos bonitos para el aficionado por el cambio generacional inevitable y por la rivalidad entre figuras y jóvenes que buscan su sitio*”.
+
+**Un torero forjado en el campo**
+
+Definiéndose como “*torero de tapias y no de escuela*”, recordó con gratitud a **Miguel Ángel Millares** y **Fernando Cuadri**, fundamentales en su formación a través de tentaderos que -según afirmó- “*te hacen aprender por obligación*”. Entre los toros más significativos de su carrera mencionó a “*Enamorado*”, “*Despreciado*” y “*Tabarro*”, animales que le aportaron crecimiento profesional y la paciencia necesaria “*para esperar el momento*”.
+
+**La raíz personal del triunfo**
+
+Especialmente emotiva resultó la parte más íntima del acto, donde el matador puso en valor el papel de su entorno: “*Mi pueblo es pieza fundamental; aunque he pasado por el olvido, mi gente nunca se olvidó de mí*”. Recordó con emoción su infancia en el campo junto a su tío abuelo **José Ramos**, quebrándose su voz al hablar de sus padres, “**ejemplares**” para él y sus hermanos. Visiblemente emocionado, compartió lágrimas al referirse a su hermano **Juan Manuel Pérez**, a quien considera su referente paterno, así como a su esposa, **María del Carmen de la Rosa**, de quien destacó “**la dificultad de ser la mujer de un torero, siempre en la sombra y compartiendo los mismos miedos**”.
+
+**Reconocimiento especial**
+
+Durante el acto, la **Peña Taurina** concedió además una mención al exnovillero **Alejandro Urbano**, al que **David de Miranda** definió como “*un pilar fundamental y ejemplo de que lo imposible se lucha y se consigue*”.
+
+El **IV Premio Nacional “La Divisa”** confirma así el momento de madurez profesional y humana de un torero que encara la temporada 2026 con responsabilidad, ambición y plena conciencia del momento decisivo que atraviesa su carrera.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
     { 
+    id: 192,
+    title: `Celso Ortega “yo a mi padre lo veía como un superhéroe sin capa yo quería ser el”`,
+	image: "/images/portadaentre.jpg",
+    category: "Entrevistas",
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/WhatsApp Image 2026-02-22 at 13.59.50.jpg",
+	footerImage2: "/images/WhatsApp Image 2026-02-22 at 13.59.50 (1).jpg",
+	footerImage3: "/images/WhatsApp Image 2026-02-22 at 13.59.51.jpg",
+	footerImage4: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (1).jpg",
+	footerImage5: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (2).jpg",
+	fullContent: `Hay nombres que están ligado a la historia taurina, de un país, de una región o de un pueblo o ciudad, ese es el caso del aspirante al que hoy entrevistamos, es el tercer eslabón de una dinastía torera de **El Puerto de Santa María**, la inicio su abuelo el novillero **Cesar Ortega**, la continuo su padre el matador de toros **Celso Ortega** y ahora es el que tiene ilusionado a toda una ciudad tan taurina como **El Puerto de Santa María**.
+
+El actual **Celso Ortega** no deja de tener de su padre recuerdo pocos de niños y videos, su padre falleció muy pronto con 45 altos cuando el año 2016 estaba llegando a su fin.
+
+Pero de su padre los que hemos visto torear a ambos podemos decir que ha heredado la pureza de su torero y su temple natural.
+
+Hoy como he comentado anteriormente una ciudad con la historia y el badajee taurino de **El Puerto de Santa María** se muestra ilusionada y con toda la esperanza puesta en el hijo del matador de toros **Celso Ortega** hoy la ilusión es **Celso Ortega**
+
+**Celso, llevar el nombre de tu padre “Celso Ortega” supone hablar de dinastía ¿Qué significa para ti esa responsabilidad?**
+
+Es una responsabilidad muy bonita pero que hay que saber llevar es un orgullo para mi llevar el mismo nombre y mismo apellido
+
+**El pasado 28 de julio hiciste tu presentación de luces y además en tu plaza en El Puerto de Santa María ¿Fue como siempre soñaste?**
+
+Fue un sueño hecho realidad era el traje de alternativa de mi padre y era un peso muy grande que lo lleve con gran orgullo respecto a la tarde fue una tarde soñada con la que cada niño que sueña con ser torero es su meta y sobre todo en mi ciudad con mi gente salió todo rodado gracias a Dios y es y Sera el mejor día de mi vida
+
+**Ese día y las tarde que toreasteis posteriormente, te pusiste trajes de luces de tu padre ¿Qué sentisteis?**
+
+sí, me he puesto el grana y oro y sentí a mi padre la verdad y el orgullo de llevar su nombre y poder lucir sus ternos
+
+**¿Cómo definirías tu concepto del toreo?**
+
+A mí me gusta el toreo clásico y puro ya a partir de ahí Sera el público el que juzgue mi toreo, pero lo que yo siento toreando es el toreo puro con la mano baja
+
+**Cuando vas a torear, ¿cómo vives ese día, esos momentos antes?**
+
+esos días antes siempre suelen ser de muchos nervios y de mucha responsabilidad sobre todo de no fallar a los míos y no hacerles perder el tiempo, me dijeron una vez que hay que disfrutar desde que te anuncias en un cartel y disfrutar los días de entreno de preparación y de todo lo que conlleva los días previos a un festejo.
+
+**¿Cuándo nace realmente tu vocación y como se lo toma tu madre?**
+
+Mi vocación desde pequeño tengo vídeos robándole los trapos de la cocina a mi madre, yo a mi padre lo veía como un superhéroe sin capa yo quería ser el disfrute mucho el poco tiempo que estuve con él me enseñó mucho y respeto que tenía por esta profesión, mi madre no se lo tomo mal ella disfruta viendo lo que me hace feliz y ya lo había vivido con mi padre lo que si me dijo que si quería ser torero me tenía que esforzar y no estar a medio pelo como se suele decir es dura conmigo y se lo agradezco porque me hace esforzarme más y cuando sea figura del toreo si dios quiere le compraré una finca para disfrutarla todos juntos
+
+**¿Qué sueños tienes ahora mismo con respecto al toreo?**
+
+Ahora mismo me gusta vivir en el presente y sueño con estar mejor cada tarde y que la gente vea que hay un novillero en él Puerto con mucha ilusión y muchas ganas de decir algo en el toreo
+
+**Decía Juan Belmonte aquello de “se torea como se es”. ¿Qué te parece?**
+
+Una verdad como un piano cada uno tiene una personalidad y esa es la diferencia de un torero a otro
+
+**¿Te parece que es importante la liturgia y el romanticismo en el toreo, o crees que es algo ya pasado?**
+
+La esencia es lo que mantiene viva el toreo y eso no se puede perder nunca el día que se pierda tendremos un problema
+
+**¿Cuáles son tus objetivos a corto o medio plazo?**
+
+Como he dicho antes lo primero torear el máximo número de festejos y ganarme un puesto en el escalafón novilleril
+
+**¿Qué le quita el sueño a Celso Ortega por las noches?**
+
+El nombre que llevo y la responsabilidad que conlleva, pero sobretodo el no defraudar a mi gente
+
+**¿Cuál sería tu cartel de toreros preferido?**
+
+Mi cartel preferido te voy a decir uno antiguo y otro de ahora
+
+El antiguo sería El maestro José Luis Galloso y el maestro José María Manzanares padre
+
+Y de ahora
+	El maestro Diego Urdiales y el maestro José Antonio Morante de la Puebla`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 193,
+    title: `David de Miranda recibe en Linares el prestigioso Trofeo Manolete de la Real Feria de San Agustín 2025`,
+	image: "/images/kdchspisdbc.jpg",
+    category: "Actualidad",
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/11.jpg",
+	footerImage2: "/images/11 1.jpg",
+	footerImage3: "/images/11 2.jpg",
+	fullContent: `La histórica **Capilla del Hospital de los Marqueses de Linares** acogió en la noche de ayer *-21 de febrero-* la gala de entrega del prestigioso **Trofeo Manolete de la Real Feria de San Agustín 2025**, un reconocimiento que consolida al diestro onubense **David de Miranda** como uno de los nombres propios del momento en la tauromaquia actual.
+
+El galardón, otorgado por el Ayuntamiento de **Linares**, fue entregado por la alcaldesa de la ciudad, **Auxiliadora del Olmo**, en un acto institucional que reunió a autoridades, profesionales del sector taurino y una amplia representación de la afición.
+
+El **Trofeo Manolete** reconoce la actuación protagonizada por **David de Miranda** el pasado **30 de agosto de 2025**, durante la **Real Feria de San Agustín**, en su debut en el coso linarense. Aquella tarde, el torero firmó una faena de gran pureza y profundidad frente al toro “*Pagano*”, número 132, de la ganadería de **Ganadería Juan Pedro Domecq**, actuación que fue premiada por unanimidad del jurado calificador.
+
+Su intervención ante el cuarto toro de la corrida terminó por convertirle en triunfador indiscutible del ciclo ferial, conquistando a una de las aficiones más exigentes y con mayor tradición del panorama taurino nacional.
+
+La ceremonia, presentada por el escritor **Miguel Vega**, estuvo acompañada musicalmente por la **Agrupación Musical Linares 1875** bajo la dirección de **Francisco Infantes Ortiz**, aportando solemnidad a una noche en la que tradición, cultura y memoria taurina se dieron la mano bajo la evocación permanente del maestro **Manuel Rodríguez 'Manolete'**.
+
+Durante su intervención, la alcaldesa destacó la dimensión artística y la evolución profesional del torero onubense, subrayando la importancia del toreo dentro de la identidad cultural de la ciudad. Del mismo modo, recordó el vínculo inseparable entre Linares y la figura de Manolete: “***En definitiva, Linares es tauromaquia; Linares es Manolete, y hoy rendimos homenaje al maestro recordando una de esas tardes inolvidables, la que vivimos el pasado 30 de agosto con una faena que ya forma parte de nuestra historia, y por la que hoy entregamos este merecido Trofeo Manolete al torero David de Miranda***”.
+
+Un emocionado, **David de Miranda** agradeció el reconocimiento poniendo en valor la trascendencia simbólica del galardón: “***Recibir esta noche un premio que lleva el nombre del maestro de maestros, Manuel Rodríguez 'Manolete', en esta tierra que guarda su memoria con tanto respeto y tanta verdad, es algo que me sobrecoge profundamente***”.
+
+El diestro expresó además el significado personal y profesional que supone este reconocimiento en su carrera: “***No encuentro palabras suficientes para expresar la emoción que siento. Es la primera vez que recibo este galardón, y lo hago con una ilusión inmensa, casi de niño, pero también con el peso hermoso de la responsabilidad. Porque cuando el nombre que encabeza un premio es el de Manolete, uno entiende que no se trata solo de un reconocimiento, sino de un compromiso: el compromiso de seguir honrando la pureza, la entrega y la verdad que él representó. Gracias, Linares, por tanto. Gracias por esta noche que guardaré para siempre en mi memoria y en mi corazón***”.
+
+Con la entrega del **Trofeo Manolete 2025**, **Linares** vuelve a reivindicar su histórica vinculación con la tauromaquia y su apuesta institucional por la defensa, promoción y difusión de la cultura del toro, premiando la excelencia artística y reconociendo a un torero que ha logrado conectar con la esencia más pura del toreo.
+
+El reconocimiento recibido por **David de Miranda** no solo distingue una actuación sobresaliente, sino que refuerza el valor simbólico de un premio que mantiene viva la memoria del maestro **Manolete** y proyecta hacia el futuro los valores fundamentales de la tauromaquia: verdad, emoción y autenticidad.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 194,
+    title: `Sanlúcar la Mayor, seis orejas y dos puertas grande `,
+	image: "/images/sanluuuuu.jpg",
+    category: "Crónicas",
+    date: "22 de Febrero de 2026",
+	plaza: "Plaza de toros de Sanlúcar la Mayor (Sevilla).-  Corrida de Toros",
+    ganaderia: "José Luis Osborne",
+	torerosRaw: `Oliva Soto, Oreja y Palmas
+Lama de Góngora, Oreja tras aviso y Dos orejas
+Calerito, Vuelta al ruedo y Dos orejas`,
+	fullContent: `Esta tarde con una temperatura casi primaveral, ha arrancado la temporada taurina en tierras andaluzas, y lo a echo en la localidad sevillana de **Sanlúcar la Mayor.**
+
+El triunfador del festejo ha sido **Lama de Góngora**, que ha cuajado dos buenas faenas a dos buenos ejemplares de **Osborne**, recompensadas con un total de tres orejas. 
+
+**Oliva Soto** sumó un trofeo y por su parte **Juan Pedro Garcia “Calerito”**, que dio una vuelta al ruedo en su primer, en el sexto tras sufrir una voltereta. le cortó las dos orejas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 195,
+    title: `David de Miranda recibe el IV Premio Nacional “La Divisa” de Trigueros y reafirma su ambición ante una temporada clave`,
+	image: "/images/22.jpg",
+    category: "Actualidad",
+    date: "22 de Febrero de 2026",
+	footerImage1: "/images/22 (1).jpg",
+	footerImage2: "/images/22 (2).jpg",
+	footerImage3: "/images/22 (3).jpg",
+	footerImage4: "/images/22 (4).jpg",
+	fullContent: `El matador de toros triguereño **David de Miranda** ha sido distinguido con el **IV Premio Nacional “La Divisa”**, un prestigioso reconocimiento concedido por la **Peña Taurina La Divisa de Trigueros** en reconocimiento a “***su excelente temporada 2025***”.
+
+La entrega del galardón tuvo lugar el viernes 20 de febrero, dentro del **XXXII Ciclo Cultural Taurino** organizado por la entidad, en un acto celebrado con lleno absoluto en el **Antiguo Convento del Carmen de Trigueros**, donde se destacó su trayectoria reciente y su condición de triunfador de la pasada temporada.
+
+**Una entrada cargada de emoción**
+
+El torero fue recibido con una ovación clamorosa al acceder al escenario del salón de actos del centro cívico, visiblemente emocionado ante el cariño de sus paisanos.
+
+La mesa presidencial estuvo integrada por el propio diestro, la periodista taurina **Beatriz García** -*encargada de moderar el encuentro*-, el alcalde de la localidad, **Vidal Blanco**, y el empresario taurino **José Cutiño**, responsable de la plaza de toros de **Olivenza**, donde el espada onubense actuará el próximo 8 de marzo.
+
+**Olivenza, punto de partida de una temporada especial**
+
+Durante su intervención, **José Cutiño** destacó la importancia de la actuación de **David de Miranda** en **Málaga**, calificándola como “***una de las cosas más importantes que han ocurrido en el toreo***”, subrayando que por ello el torero debía estar presente en **Olivenza**.
+
+El cartel de la matinal del 8 de marzo reunirá a **Borja Jiménez**, **David de Miranda** y **Marco Pérez**, con toros de las ganaderías **Domingo Hernández** y **La Ventana del Puerto**, en una feria considerada escaparate del inicio de la temporada taurina.
+
+El propio matador confesó sentirse “***muy ilusionado y un privilegiado por abrir temporada en Olivenza al cumplirse mi décimo aniversario como matador de toros***”.
+
+**La experiencia americana y el aprendizaje vital**
+
+Tras su reciente periplo por **Latinoamérica**, donde sumó triunfos en plazas de **Colombia**, **México** y **Perú**, el torero reflexionó sobre la dureza de aquellas campañas: “*Cuando vuelvo ya he gastado una vida. Es un esfuerzo grande jugarse la vida allí, pero nos sirve como aventura y experiencia que ayuda a madurar*”.
+
+El diestro recordó el contraste vivido respecto al pasado reciente: “***El año pasado por estas fechas solo contaba con tres corridas de toros y hoy ya tengo once corridas firmadas y dos festivales***”. Pese al momento ascendente, reconoció la exigencia personal que se impone: “*No sé cuánto podré aguantar por mi manera de entender el toreo*”, aunque aseguró vivir el presente con “***una ilusión desbordante***” y consciente de que la temporada que comienza “**es clave**” en su carrera, con compromisos ya anunciados en **Sevilla, Madrid** y **Valencia**.
+
+**Málaga y Sevilla, el punto de inflexión**
+
+**David de Miranda** evocó los momentos decisivos de su trayectoria, agradeciendo especialmente el apoyo constante de su tierra: “*Nunca me sentí solo; Huelva siempre me arropó*”. El torero recordó “la dificultad emocional tras cortar **tres orejas en Sevilla** y atravesar posteriormente un periodo incierto. “*Después de aquella Puerta del Príncipe solo tenía Málaga... era el todo o nada*”. Sobre aquella tarde decisiva explicó: “*La faena de Málaga ha marcado mi trayectoria, un antes y un después. Brindé aquel segundo toro para ganar tiempo y pensar*”.
+
+**Nueva etapa profesional y evolución artística**
+
+De cara a la **temporada 2026**, el matador inicia una nueva etapa con apoderado, mostrándose “*muy feliz por poder aprender el camino de alguien que ya lo ha recorrido*”. Sincerándose ante los aficionados, admitió: “*El negocio taurino me da miedo y mi toreo tiene que evolucionar*”. Señaló como espejo profesional al maestro **Enrique Ponce**, a quien definió como “*un enfermo del toreo*”, destacando además el atractivo momento que vive la tauromaquia: “*Son tiempos bonitos para el aficionado por el cambio generacional inevitable y por la rivalidad entre figuras y jóvenes que buscan su sitio*”.
+
+**Un torero forjado en el campo**
+
+Definiéndose como “*torero de tapias y no de escuela*”, recordó con gratitud a **Miguel Ángel Millares** y **Fernando Cuadri**, fundamentales en su formación a través de tentaderos que -según afirmó- “*te hacen aprender por obligación*”. Entre los toros más significativos de su carrera mencionó a “*Enamorado*”, “*Despreciado*” y “*Tabarro*”, animales que le aportaron crecimiento profesional y la paciencia necesaria “*para esperar el momento*”.
+
+**La raíz personal del triunfo**
+
+Especialmente emotiva resultó la parte más íntima del acto, donde el matador puso en valor el papel de su entorno: “*Mi pueblo es pieza fundamental; aunque he pasado por el olvido, mi gente nunca se olvidó de mí*”. Recordó con emoción su infancia en el campo junto a su tío abuelo **José Ramos**, quebrándose su voz al hablar de sus padres, “**ejemplares**” para él y sus hermanos. Visiblemente emocionado, compartió lágrimas al referirse a su hermano **Juan Manuel Pérez**, a quien considera su referente paterno, así como a su esposa, **María del Carmen de la Rosa**, de quien destacó “**la dificultad de ser la mujer de un torero, siempre en la sombra y compartiendo los mismos miedos**”.
+
+**Reconocimiento especial**
+
+Durante el acto, la **Peña Taurina** concedió además una mención al exnovillero **Alejandro Urbano**, al que **David de Miranda** definió como “*un pilar fundamental y ejemplo de que lo imposible se lucha y se consigue*”.
+
+El **IV Premio Nacional “La Divisa”** confirma así el momento de madurez profesional y humana de un torero que encara la temporada 2026 con responsabilidad, ambición y plena conciencia del momento decisivo que atraviesa su carrera.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 196,
     title: `“Mi toreo es clásico, con verdad y pureza” - Entrevista a Aaron Palacio`,
     image: "/images/entreee.jpg",
