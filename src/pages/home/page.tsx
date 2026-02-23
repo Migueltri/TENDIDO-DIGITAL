@@ -41,194 +41,246 @@
 const featuredNews: NewsItem[] = [	
 	{ 
     id: 1006,
-    title: `Celso Ortega “yo a mi padre lo veía como un superhéroe sin capa yo quería ser el”`,
-	image: "/images/portadaentre.jpg",
-    category: "Entrevistas",
-    date: "22 de Febrero de 2026",
-	footerImage1: "/images/WhatsApp Image 2026-02-22 at 13.59.50.jpg",
-	footerImage2: "/images/WhatsApp Image 2026-02-22 at 13.59.50 (1).jpg",
-	footerImage3: "/images/WhatsApp Image 2026-02-22 at 13.59.51.jpg",
-	footerImage4: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (1).jpg",
-	footerImage5: "/images/WhatsApp Image 2026-02-22 at 13.59.51 (2).jpg",
-	fullContent: `Hay nombres que están ligado a la historia taurina, de un país, de una región o de un pueblo o ciudad, ese es el caso del aspirante al que hoy entrevistamos, es el tercer eslabón de una dinastía torera de **El Puerto de Santa María**, la inicio su abuelo el novillero **Cesar Ortega**, la continuo su padre el matador de toros **Celso Ortega** y ahora es el que tiene ilusionado a toda una ciudad tan taurina como **El Puerto de Santa María**.
+    title: `Álvaro Lorenzo, en el Hospital Nacional de Parapléjicos: “gracias a todos los que habéis hecho posible poder llevar a cabo este sueño”`,
+	image: "/images/r.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	excerpt: "El diestro toledano visitó junto a autoridades y empresa el centro para presentar su gesta frente a seis toros del 28 de marzo; Los beneficios se destinarán a la nueva ludoteca",
+	footerImage1: "/images/r1.jpg",
+	footerImage2: "/images/r2.jpg",
+	footerImage3: "/images/r3.jpg",
+	fullContent: `El Hospital Nacional de Parapléjicos de Toledo ha acogido esta mañana la presentación oficial de la corrida en la que Álvaro Lorenzo está anunciado en solitario con toros de seis ganaderías, con el objetivo de recaudar fondos para el que sin duda es el centro de referencia mundial de las lesiones medulares.
 
-El actual **Celso Ortega** no deja de tener de su padre recuerdo pocos de niños y videos, su padre falleció muy pronto con 45 altos cuando el año 2016 estaba llegando a su fin.
+El acto, que contó con la presencia entre las autoridades del alcalde de Toledo, Carlos Velázquez y la presidenta de la diputación, Conchi Cedillo, sirvió también para que la empresa Eventos Mare Nostrum hiciera entrega del talón de 8.229 euros, fondos recaudados en el festejo de 2025, una accidentada novillada en lo climatológico y que fue echada adelante por el pundonor de los actuantes: Marco Pérez y Pedro Rufo.
 
-Pero de su padre los que hemos visto torear a ambos podemos decir que ha heredado la pureza de su torero y su temple natural.
+Introdujo el mismo Sagrario Carabaño, directora de gestión del Hospital, quien agradeció a todos su presencia e hizo hincapié en el crecimiento de una causa **“que cada año se consolida y que para esta edición tiene un objetivo claro, la construcción de la ludoteca del centro”.**
 
-Hoy como he comentado anteriormente una ciudad con la historia y el badajee taurino de **El Puerto de Santa María** se muestra ilusionada y con toda la esperanza puesta en el hijo del matador de toros **Celso Ortega** hoy la ilusión es **Celso Ortega**
+Álvaro Lorenzo, gran protagonista por afrontar de manera totalmente altruista una gesta ante seistoros que aglutina lo más granado de la cabaña brava española: Miura, Victorino Martín, Alcurrucén, Victoriano del Río, Garcigrande y El Freixo, manifestó que **“es un compromiso muy importante en mi carrera, quizá el que más, pero creo que la ocasión y el fin lo merecen. Deseo estar a la altura que requiere la cita. Mi agradecimiento también a todos los ganaderos, a todas las cuadrillas y a los que van a participar de manera solidaria en la corrida, a todos los que nos van a ayudar para que quede la mayor ayuda posible para el hospital. Por supuesto, también a la empresa, que desde el primer momento me lo ha puesto todo muy fácil a la hora de rubricar este sueño”.**
 
-**Celso, llevar el nombre de tu padre “Celso Ortega” supone hablar de dinastía ¿Qué significa para ti esa responsabilidad?**
+Nacho Lloret, director de la empresa Eventos Mare Nostrum, afirmó en su intervención que **“este acto es señal de que hacemos las cosas bien, como demuestra la presencia de las principales autoridades. La motivación de la construcción de la ludoteca es el mayor de los alicientes y es de justicia resaltar la acogida del Hospital al mundo del toro sin complejos desde la primera edición, en tiempos en los que muchos se ponen de perfil”.**
 
-Es una responsabilidad muy bonita pero que hay que saber llevar es un orgullo para mi llevar el mismo nombre y mismo apellido
+El empresario alicantino, para referirse a la composición del cartel, comentó: **“Cuando Álvaro me comentó su idea por el mes de octubre, además de que él está implicado en el proyecto del doctor Julian Taylor desde 2024, tuve claro que se alineaban muchos motivos para decir que sí sin dudarlo. ¿Por qué? Porque fue uno de los toreros que mejor ha toreado el año pasado, porque cumple diez años de alternativay porque es toledano. Si además de todo eso, cuando empezamos a pensar en las ganaderías, se juntan las seis que hoy anunciamos, un elenco inmejorable… y ves la ilusión de todos los ganaderos por apartar un toro para la corrida, es para estar agradecido. Ojalá todo redunde en el mejor resultado posible, que la ludoteca sea una realidad y que culmine con el triunfo de Álvaro para que celebre como se merece esos diez años de alternativa”.**
 
-**El pasado 28 de julio hiciste tu presentación de luces y además en tu plaza en El Puerto de Santa María ¿Fue como siempre soñaste?**
+Eduardo Martín-Peñato, presidente de la Comunidad de Propietarios de la plaza de toros de Toledo, institución que se vuelca también con el festejo, afirmó que **“es el tercer año que estamos aquí, esto es sobre todo un proyecto basado en la generosidad. Represento a 365 familias toledanas que tienen el objetivo de apoyar a la cultura a través de los toros y hechos toledanos. El agradecimiento tiene que ser para todos, porque aquí no hay más intereses que ayudar a este hospital y eso incluye a todos, empresa, torero e instituciones. Esto es un proyecto que tiene futuro y ojalá estemos aquí muchos años más”.**
 
-Fue un sueño hecho realidad era el traje de alternativa de mi padre y era un peso muy grande que lo lleve con gran orgullo respecto a la tarde fue una tarde soñada con la que cada niño que sueña con ser torero es su meta y sobre todo en mi ciudad con mi gente salió todo rodado gracias a Dios y es y Sera el mejor día de mi vida
+La presidenta de la Diputación, Conchi Cedillo, quiso en primer lugar“**agradecer la invitación de lo que será un gran día, estoy convencida de ello**”, para proseguir manifestando que **“el hospital es un referente a nivel mundial, lo conozco de primera mano. Ese compromiso con el paciente y sus familias os hace muy grandes. Esa ludoteca que está por venir es el mejor premio posible para el esfuerzo de Álvaro. Las instituciones estamos para apoyar, es nuestra obligación hacerlo”.**
 
-**Ese día y las tarde que toreasteis posteriormente, te pusiste trajes de luces de tu padre ¿Qué sentisteis?**
+Cerró el acto el alcalde de la ciudad imperial, CarlosVelázquez. **“Estamos aquí para tratar entre todos de que la plaza de Toledo esté llena el 28 de marzo y que sea una tarde memorable para nuestro querido torero toledano Álvaro Lorenzo y que sirva de lanzamiento para el gran año que le espera. Hay que tener mucho valor y compromiso para encerrarse con seis toros, en tu ciudad natal y con esas ganaderías. Quería hacer una mención especial también a la empresa Eventos Mare Nostrum, que están consiguiendo que las corridas de toros no sean un evento más, sino que formen parte de la excelencia cultural de la ciudad. Y qué decir del hospital, que lleva 52 años trabajando en una labor extraordinaria que le ha llevado a ser referencia mundial”.**
 
-sí, me he puesto el grana y oro y sentí a mi padre la verdad y el orgullo de llevar su nombre y poder lucir sus ternos
+La jornada finalizó con la visita de todos los intervinientes al Hospital, en la que pudieron conocer de primera mano los últimos avances en lesiones medulares, así como el lugar en el que estará ubicada la nueva ludoteca, adaptada para pacientes de todas las edades.
 
-**¿Cómo definirías tu concepto del toreo?**
+**Un espacio para la participación y la creatividad**
+La futura ludoteca se ubicará en el Servicio de Rehabilitación Complementaria, en la segunda planta del antiguo edificio de terapia, y nace con un propósito claro: convertir el tiempo libre en una herramienta de bienestary rehabilitación, ofreciendo un entorno seguro, accesible y estimulante para jugar, aprendery relacionarse, eliminando barreras físicasy cognitivasy reforzando la autonomía y la igualdad de oportunidades.
 
-A mí me gusta el toreo clásico y puro ya a partir de ahí Sera el público el que juzgue mi toreo, pero lo que yo siento toreando es el toreo puro con la mano baja
+Entendida como un espacio de ocio inclusivo, la ludoteca integrará materialesy dinámicas adaptadas para favorecer la participación de las personas con lesión medular. Su objetivo general será impulsar el desarrollo integral promover la socialización, la creatividad, la adquisición de valoresy el aprendizaje cognitivo y psicomotor en un entorno lúdico.
 
-**Cuando vas a torear, ¿cómo vives ese día, esos momentos antes?**
+Las actividades que tengan lugar en este espacio se orientarán a potenciar habilidades cognitivas, afectivas, socialesy psicomotoras; a facilitar la convivenciay a reforzar la autoestimay la autonomía con un enfoque que también actúe como apoyo para las familias cuando sea necesario.
 
-esos días antes siempre suelen ser de muchos nervios y de mucha responsabilidad sobre todo de no fallar a los míos y no hacerles perder el tiempo, me dijeron una vez que hay que disfrutar desde que te anuncias en un cartel y disfrutar los días de entreno de preparación y de todo lo que conlleva los días previos a un festejo.
+El espacio contará con actividades de integración y participación socialy con recursos de juego inclusivo pensados para diferentes edadesy necesidades. Entre las propuestas se contemplan juegosy dinámicas como la herradura, minigolf, la rana, pesca, dardos o petanca, así como opciones con adaptación específica como Scalextric y PlayStation con mandos adaptados, además de futbolín adaptado y máquina de pinball.
 
-**¿Cuándo nace realmente tu vocación y como se lo toma tu madre?**
+En el ámbito de juegos de mesa, se incorporarán formatos inclusivos como juegos gigantes con piezas de gran tamaño y colores contrastados (ajedrez, dominó, bloques), Memory con pictogramas y tres en raya con fichas de relieve o texturas. Para el público infantil, habrá también juegos de construcción, muñecosy coches teledirigidos adaptados, entre otros materiales.
 
-Mi vocación desde pequeño tengo vídeos robándole los trapos de la cocina a mi madre, yo a mi padre lo veía como un superhéroe sin capa yo quería ser el disfrute mucho el poco tiempo que estuve con él me enseñó mucho y respeto que tenía por esta profesión, mi madre no se lo tomo mal ella disfruta viendo lo que me hace feliz y ya lo había vivido con mi padre lo que si me dijo que si quería ser torero me tenía que esforzar y no estar a medio pelo como se suele decir es dura conmigo y se lo agradezco porque me hace esforzarme más y cuando sea figura del toreo si dios quiere le compraré una finca para disfrutarla todos juntos
+La ludoteca incluirá igualmente talleres de musicoterapia, con el uso de instrumentos de percusión sencillos y adaptados para facilitar la expresión emocional. Todo ello estará respaldado por un equipo de monitores de ocioy tiempo libre, con un enfoque centrado en la participación, la cooperacióny el desarrollo integral, ajustando cada actividad a las necesidades de cada persona.
 
-**¿Qué sueños tienes ahora mismo con respecto al toreo?**
-
-Ahora mismo me gusta vivir en el presente y sueño con estar mejor cada tarde y que la gente vea que hay un novillero en él Puerto con mucha ilusión y muchas ganas de decir algo en el toreo
-
-**Decía Juan Belmonte aquello de “se torea como se es”. ¿Qué te parece?**
-
-Una verdad como un piano cada uno tiene una personalidad y esa es la diferencia de un torero a otro
-
-**¿Te parece que es importante la liturgia y el romanticismo en el toreo, o crees que es algo ya pasado?**
-
-La esencia es lo que mantiene viva el toreo y eso no se puede perder nunca el día que se pierda tendremos un problema
-
-**¿Cuáles son tus objetivos a corto o medio plazo?**
-
-Como he dicho antes lo primero torear el máximo número de festejos y ganarme un puesto en el escalafón novilleril
-
-**¿Qué le quita el sueño a Celso Ortega por las noches?**
-
-El nombre que llevo y la responsabilidad que conlleva, pero sobretodo el no defraudar a mi gente
-
-**¿Cuál sería tu cartel de toreros preferido?**
-
-Mi cartel preferido te voy a decir uno antiguo y otro de ahora
-
-El antiguo sería El maestro José Luis Galloso y el maestro José María Manzanares padre
-
-Y de ahora
-	El maestro Diego Urdiales y el maestro José Antonio Morante de la Puebla`,
+**Un espacio amplio, luminoso con material accesible**
+Desde el punto de vista del diseño, el proyecto prioriza una accesibilidad completa: un espacio amplio y luminoso, con mobiliario adecuado para personas con movilidad reducida y un enfoque desde el punto de vista sensorial que ofrezca estimulación visual, auditivay táctil, incorporando rinconestranquilos cuando sea conveniente.
+Con este modelo, el Hospital prevé beneficios directos en autonomía — posibilitando explorary jugar al propio ritmo—, inclusión social —favoreciendo convivenciay tolerancia— y desarrollo integral —impulsando creatividad, imaginación y habilidades cognitivasy motoras.`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1007,
-    title: `David de Miranda recibe en Linares el prestigioso Trofeo Manolete de la Real Feria de San Agustín 2025`,
-	image: "/images/kdchspisdbc.jpg",
+    title: `David de Miranda y Argentina, el lunes 2 de marzo en los Mano a mano de la Fundación Cajasol`,
+	image: "/images/porta.jpg",
     category: "Actualidad",
-    date: "22 de Febrero de 2026",
-	footerImage1: "/images/11.jpg",
-	footerImage2: "/images/11 1.jpg",
-	footerImage3: "/images/11 2.jpg",
-	fullContent: `La histórica **Capilla del Hospital de los Marqueses de Linares** acogió en la noche de ayer *-21 de febrero-* la gala de entrega del prestigioso **Trofeo Manolete de la Real Feria de San Agustín 2025**, un reconocimiento que consolida al diestro onubense **David de Miranda** como uno de los nombres propios del momento en la tauromaquia actual.
+    date: "23 de Febrero de 2026",
+	footerImage1: "/images/argen.jpg",
+	excerpt: `El ciclo llega a su edición número 75 con un cartel netamente onubense
 
-El galardón, otorgado por el Ayuntamiento de **Linares**, fue entregado por la alcaldesa de la ciudad, **Auxiliadora del Olmo**, en un acto institucional que reunió a autoridades, profesionales del sector taurino y una amplia representación de la afición.
+El encuentro se desarrollará a las 8 de la tarde con entrada libre`,
+	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 75 con cartel netamente onubense que intentará buscar conexiones entre el mundo del toro y el flamenco. El acto estará protagonizado por el matador de toros **David de Miranda** y la cantaora **Argentina**, un cartel que une a dos grandes valores artísticos de la provincia de Huelva. En esta ocasión, el Mano a mano **se celebra en lunes**, en concreto el próximo **2 de marzo** en el Teatro Cajasol, con entrada por la calle Chicarreros, 1. El acto comenzará a las ocho de la tarde (**20.00 horas**).
 
-El **Trofeo Manolete** reconoce la actuación protagonizada por **David de Miranda** el pasado **30 de agosto de 2025**, durante la **Real Feria de San Agustín**, en su debut en el coso linarense. Aquella tarde, el torero firmó una faena de gran pureza y profundidad frente al toro “*Pagano*”, número 132, de la ganadería de **Ganadería Juan Pedro Domecq**, actuación que fue premiada por unanimidad del jurado calificador.
+El periodista **José Enrique Moreno** será de nuevo el encargado de conducir este encuentro, que tiene como título 'El toro y el cante' y en el que a buen seguro ambos mundos conectarán a la perfección, saliendo a relucir sus puntos en común.
 
-Su intervención ante el cuarto toro de la corrida terminó por convertirle en triunfador indiscutible del ciclo ferial, conquistando a una de las aficiones más exigentes y con mayor tradición del panorama taurino nacional.
+**David de Miranda** fue el gran triunfador de la pasada Feria de Abril al salir por la Puerta del Príncipe la tarde del 10 de mayo, colocándose en primera línea de atención del aficionado y accediendo a las grandes ferias de la temporada. Alternativado en 2016, abrió la Puerta Grande de Madrid en 2019 y se ha ganado a pulso un lugar relevante en el toreo, superando graves lesiones y percances de envergadura. Nadie ha regalado nada a David de Miranda, que es por méritos propios uno de los grandes alicientes de la temporada.
 
-La ceremonia, presentada por el escritor **Miguel Vega**, estuvo acompañada musicalmente por la **Agrupación Musical Linares 1875** bajo la dirección de **Francisco Infantes Ortiz**, aportando solemnidad a una noche en la que tradición, cultura y memoria taurina se dieron la mano bajo la evocación permanente del maestro **Manuel Rodríguez 'Manolete'**.
+María López Tristancho, conocida artísticamente como **Argentina**, es una de las grandes del flamenco en la actualidad. Onubense de nacimiento, desde muy pequeña comenzó a dar clases de baile flamenco pero muy pronto salió a relucir su potencial para el cante, publicando su primer álbum en solitario en el año 2006. Desde entonces, su carrera no ha parado de crecer, colocándose en la primera fila de este arte con reconocimiento nacional e internacional. Es una artista de gran versatilidad que ha fusionado flamenco con otros géneros como fado o son cubano.
 
-Durante su intervención, la alcaldesa destacó la dimensión artística y la evolución profesional del torero onubense, subrayando la importancia del toreo dentro de la identidad cultural de la ciudad. Del mismo modo, recordó el vínculo inseparable entre Linares y la figura de Manolete: “***En definitiva, Linares es tauromaquia; Linares es Manolete, y hoy rendimos homenaje al maestro recordando una de esas tardes inolvidables, la que vivimos el pasado 30 de agosto con una faena que ya forma parte de nuestra historia, y por la que hoy entregamos este merecido Trofeo Manolete al torero David de Miranda***”.
+**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
 
-Un emocionado, **David de Miranda** agradeció el reconocimiento poniendo en valor la trascendencia simbólica del galardón: “***Recibir esta noche un premio que lleva el nombre del maestro de maestros, Manuel Rodríguez 'Manolete', en esta tierra que guarda su memoria con tanto respeto y tanta verdad, es algo que me sobrecoge profundamente***”.
+---------------------------------------------------------------------------------------------------------
+-
 
-El diestro expresó además el significado personal y profesional que supone este reconocimiento en su carrera: “***No encuentro palabras suficientes para expresar la emoción que siento. Es la primera vez que recibo este galardón, y lo hago con una ilusión inmensa, casi de niño, pero también con el peso hermoso de la responsabilidad. Porque cuando el nombre que encabeza un premio es el de Manolete, uno entiende que no se trata solo de un reconocimiento, sino de un compromiso: el compromiso de seguir honrando la pureza, la entrega y la verdad que él representó. Gracias, Linares, por tanto. Gracias por esta noche que guardaré para siempre en mi memoria y en mi corazón***”.
-
-Con la entrega del **Trofeo Manolete 2025**, **Linares** vuelve a reivindicar su histórica vinculación con la tauromaquia y su apuesta institucional por la defensa, promoción y difusión de la cultura del toro, premiando la excelencia artística y reconociendo a un torero que ha logrado conectar con la esencia más pura del toreo.
-
-El reconocimiento recibido por **David de Miranda** no solo distingue una actuación sobresaliente, sino que refuerza el valor simbólico de un premio que mantiene viva la memoria del maestro **Manolete** y proyecta hacia el futuro los valores fundamentales de la tauromaquia: verdad, emoción y autenticidad.`,
+**Ciclo: Los Mano a mano de la Fundación Cajasol**
+**Fecha: LUNES 2 de marzo de 2026**
+**Hora: 20.00**
+**Lugar: Teatro Cajasol. C/ Chicarreros, 1.**
+**Invitados: David de Miranda y Argentina**
+**Tema:** *El toro y el cante*`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1008,
-    title: `Sanlúcar la Mayor, seis orejas y dos puertas grande `,
-	image: "/images/sanluuuuu.jpg",
-    category: "Crónicas",
-    date: "22 de Febrero de 2026",
-	plaza: "Plaza de toros de Sanlúcar la Mayor (Sevilla).-  Corrida de Toros",
-    ganaderia: "José Luis Osborne",
-	torerosRaw: `Oliva Soto, Oreja y Palmas
-Lama de Góngora, Oreja tras aviso y Dos orejas
-Calerito, Vuelta al ruedo y Dos orejas`,
-	fullContent: `Esta tarde con una temperatura casi primaveral, ha arrancado la temporada taurina en tierras andaluzas, y lo a echo en la localidad sevillana de **Sanlúcar la Mayor.**
+    title: `Morante también hará el paseíllo en Nimes`,
+	image: "/images/nimes.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	excerpt: "Simón Casas confirma en sus redes el regreso del torero sevillano al coso francés el próximo 23 de mayo.",
+	fullContent: `El empresario francés Simón Casas ha hecho oficial la presencia de Morante de la Puebla en la próxima Feria de Pentecostés de Nimes. El anuncio se produjo a través de una publicación en su perfil de Instagram, donde aparece junto al diestro sevillano, una imagen que generó una inmediata expectación entre los aficionados.
 
-El triunfador del festejo ha sido **Lama de Góngora**, que ha cuajado dos buenas faenas a dos buenos ejemplares de **Osborne**, recompensadas con un total de tres orejas. 
+Según confirmó el propio empresario, Morante hará el paseíllo el 23 de mayo en el coso francés, sumando así una nueva cita a su temporada 2026. La comparecencia en Nimes se convierte en la tercera plaza confirmada en el calendario del torero de La Puebla del Río, tras su anunciada participación en la Feria de Abril de Sevilla, donde está previsto que actúe en cuatro tardes. Otros escenarios de relevancia, como Ronda, permanecen aún pendientes de concretar su presencia. Aunque nada oficial, también podría hacer el paseíllo en plazas como Jerez o Zaragoza, incluso en dos tardes en el coso de la Misericordia. 
 
-**Oliva Soto** sumó un trofeo y por su parte **Juan Pedro Garcia “Calerito”**, que dio una vuelta al ruedo en su primer, en el sexto tras sufrir una voltereta. le cortó las dos orejas.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+De este modo, lo que en un principio podía interpretarse como una reaparición centrada únicamente en su tierra se perfila ya como una temporada con mayor alcance. La decisión de Morante de asumir varios compromisos consolida su presencia en plazas de peso, una circunstancia que incrementa el interés del aficionado y refuerza la apuesta de los empresarios que cuentan con su nombre en los carteles.
+
+A la espera de que la empresa haga oficiales los carteles completos, la confirmación de Morante sitúa nuevamente su nombre en el centro de la actualidad taurina y otorga un impulso significativo al abono del coso galo.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
    },
 	{ 
     id: 1009,
-    title: `David de Miranda recibe el IV Premio Nacional “La Divisa” de Trigueros y reafirma su ambición ante una temporada clave`,
-	image: "/images/22.jpg",
+    title: `El Mene rompe con su apoderado`,
+	image: "/images/meneç.jpg",
     category: "Actualidad",
-    date: "22 de Febrero de 2026",
-	footerImage1: "/images/22 (1).jpg",
-	footerImage2: "/images/22 (2).jpg",
-	footerImage3: "/images/22 (3).jpg",
-	footerImage4: "/images/22 (4).jpg",
-	fullContent: `El matador de toros triguereño **David de Miranda** ha sido distinguido con el **IV Premio Nacional “La Divisa”**, un prestigioso reconocimiento concedido por la **Peña Taurina La Divisa de Trigueros** en reconocimiento a “***su excelente temporada 2025***”.
+    date: "23 de Febrero de 2026",
+	excerpt: "El Mene se queda libre, en busca de un nuevo apoderado para la temporada 2026. Con el objetivo de tomar la alternativa.",
+	fullContent: `El novillero con picadores Iker Fernández, conocido como “El Mene”, ha puesto fin a su relación profesional con quien había sido su apoderado y mentor, Andrés Sánchez. La decisión, adoptada por el propio torero, marca un nuevo rumbo en la trayectoria del aragonés, que el pasado año cerró la temporada como líder del escalafón tras sumar 36 paseíllos y cortar 28 orejas.
 
-La entrega del galardón tuvo lugar el viernes 20 de febrero, dentro del **XXXII Ciclo Cultural Taurino** organizado por la entidad, en un acto celebrado con lleno absoluto en el **Antiguo Convento del Carmen de Trigueros**, donde se destacó su trayectoria reciente y su condición de triunfador de la pasada temporada.
+Durante la última campaña, “El Mene” dejó su firma en plazas de primera línea. Actuó en cuatro ocasiones en Madrid y también formó parte de carteles en Valencia, Zaragoza y Sevilla. Su nombre estuvo igualmente presente en citas destacadas del circuito de novilladas, como las celebradas en Villaseca de la Sagra y Arganda del Rey, consolidando así su proyección dentro del escalafón menor.
 
-**Una entrada cargada de emoción**
+En lo que va de temporada, el único compromiso cumplido por el novillero ha sido su actuación del 14 de febrero en el Carnaval del Toro de Ciudad Rodrigo. Más allá de esa fecha, su calendario permanece vacío, una circunstancia que el propio novillero reconocía recientemente en declaraciones a Mundotoro.
 
-El torero fue recibido con una ovación clamorosa al acceder al escenario del salón de actos del centro cívico, visiblemente emocionado ante el cariño de sus paisanos.
-
-La mesa presidencial estuvo integrada por el propio diestro, la periodista taurina **Beatriz García** -*encargada de moderar el encuentro*-, el alcalde de la localidad, **Vidal Blanco**, y el empresario taurino **José Cutiño**, responsable de la plaza de toros de **Olivenza**, donde el espada onubense actuará el próximo 8 de marzo.
-
-**Olivenza, punto de partida de una temporada especial**
-
-Durante su intervención, **José Cutiño** destacó la importancia de la actuación de **David de Miranda** en **Málaga**, calificándola como “***una de las cosas más importantes que han ocurrido en el toreo***”, subrayando que por ello el torero debía estar presente en **Olivenza**.
-
-El cartel de la matinal del 8 de marzo reunirá a **Borja Jiménez**, **David de Miranda** y **Marco Pérez**, con toros de las ganaderías **Domingo Hernández** y **La Ventana del Puerto**, en una feria considerada escaparate del inicio de la temporada taurina.
-
-El propio matador confesó sentirse “***muy ilusionado y un privilegiado por abrir temporada en Olivenza al cumplirse mi décimo aniversario como matador de toros***”.
-
-**La experiencia americana y el aprendizaje vital**
-
-Tras su reciente periplo por **Latinoamérica**, donde sumó triunfos en plazas de **Colombia**, **México** y **Perú**, el torero reflexionó sobre la dureza de aquellas campañas: “*Cuando vuelvo ya he gastado una vida. Es un esfuerzo grande jugarse la vida allí, pero nos sirve como aventura y experiencia que ayuda a madurar*”.
-
-El diestro recordó el contraste vivido respecto al pasado reciente: “***El año pasado por estas fechas solo contaba con tres corridas de toros y hoy ya tengo once corridas firmadas y dos festivales***”. Pese al momento ascendente, reconoció la exigencia personal que se impone: “*No sé cuánto podré aguantar por mi manera de entender el toreo*”, aunque aseguró vivir el presente con “***una ilusión desbordante***” y consciente de que la temporada que comienza “**es clave**” en su carrera, con compromisos ya anunciados en **Sevilla, Madrid** y **Valencia**.
-
-**Málaga y Sevilla, el punto de inflexión**
-
-**David de Miranda** evocó los momentos decisivos de su trayectoria, agradeciendo especialmente el apoyo constante de su tierra: “*Nunca me sentí solo; Huelva siempre me arropó*”. El torero recordó “la dificultad emocional tras cortar **tres orejas en Sevilla** y atravesar posteriormente un periodo incierto. “*Después de aquella Puerta del Príncipe solo tenía Málaga... era el todo o nada*”. Sobre aquella tarde decisiva explicó: “*La faena de Málaga ha marcado mi trayectoria, un antes y un después. Brindé aquel segundo toro para ganar tiempo y pensar*”.
-
-**Nueva etapa profesional y evolución artística**
-
-De cara a la **temporada 2026**, el matador inicia una nueva etapa con apoderado, mostrándose “*muy feliz por poder aprender el camino de alguien que ya lo ha recorrido*”. Sincerándose ante los aficionados, admitió: “*El negocio taurino me da miedo y mi toreo tiene que evolucionar*”. Señaló como espejo profesional al maestro **Enrique Ponce**, a quien definió como “*un enfermo del toreo*”, destacando además el atractivo momento que vive la tauromaquia: “*Son tiempos bonitos para el aficionado por el cambio generacional inevitable y por la rivalidad entre figuras y jóvenes que buscan su sitio*”.
-
-**Un torero forjado en el campo**
-
-Definiéndose como “*torero de tapias y no de escuela*”, recordó con gratitud a **Miguel Ángel Millares** y **Fernando Cuadri**, fundamentales en su formación a través de tentaderos que -según afirmó- “*te hacen aprender por obligación*”. Entre los toros más significativos de su carrera mencionó a “*Enamorado*”, “*Despreciado*” y “*Tabarro*”, animales que le aportaron crecimiento profesional y la paciencia necesaria “*para esperar el momento*”.
-
-**La raíz personal del triunfo**
-
-Especialmente emotiva resultó la parte más íntima del acto, donde el matador puso en valor el papel de su entorno: “*Mi pueblo es pieza fundamental; aunque he pasado por el olvido, mi gente nunca se olvidó de mí*”. Recordó con emoción su infancia en el campo junto a su tío abuelo **José Ramos**, quebrándose su voz al hablar de sus padres, “**ejemplares**” para él y sus hermanos. Visiblemente emocionado, compartió lágrimas al referirse a su hermano **Juan Manuel Pérez**, a quien considera su referente paterno, así como a su esposa, **María del Carmen de la Rosa**, de quien destacó “**la dificultad de ser la mujer de un torero, siempre en la sombra y compartiendo los mismos miedos**”.
-
-**Reconocimiento especial**
-
-Durante el acto, la **Peña Taurina** concedió además una mención al exnovillero **Alejandro Urbano**, al que **David de Miranda** definió como “*un pilar fundamental y ejemplo de que lo imposible se lucha y se consigue*”.
-
-El **IV Premio Nacional “La Divisa”** confirma así el momento de madurez profesional y humana de un torero que encara la temporada 2026 con responsabilidad, ambición y plena conciencia del momento decisivo que atraviesa su carrera.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
+El aragonés manifestaba su incertidumbre ante la falta de contratos y expresaba con claridad su objetivo inmediato: dar el paso a matador de toros. Tras encabezar el escalafón de novilleros, considera que la alternativa es una opción coherente con su trayectoria y confía en que pueda concretarse lo antes posible para que, a partir de ahí, su futuro dependa exclusivamente de su desempeño en el ruedo.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
-    { 
+   { 
+    id: 188,
+    title: `Álvaro Lorenzo, en el Hospital Nacional de Parapléjicos: “gracias a todos los que habéis hecho posible poder llevar a cabo este sueño”`,
+	image: "/images/r.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	excerpt: "El diestro toledano visitó junto a autoridades y empresa el centro para presentar su gesta frente a seis toros del 28 de marzo; Los beneficios se destinarán a la nueva ludoteca",
+	footerImage1: "/images/r1.jpg",
+	footerImage2: "/images/r2.jpg",
+	footerImage3: "/images/r3.jpg",
+	fullContent: `El Hospital Nacional de Parapléjicos de Toledo ha acogido esta mañana la presentación oficial de la corrida en la que Álvaro Lorenzo está anunciado en solitario con toros de seis ganaderías, con el objetivo de recaudar fondos para el que sin duda es el centro de referencia mundial de las lesiones medulares.
+
+El acto, que contó con la presencia entre las autoridades del alcalde de Toledo, Carlos Velázquez y la presidenta de la diputación, Conchi Cedillo, sirvió también para que la empresa Eventos Mare Nostrum hiciera entrega del talón de 8.229 euros, fondos recaudados en el festejo de 2025, una accidentada novillada en lo climatológico y que fue echada adelante por el pundonor de los actuantes: Marco Pérez y Pedro Rufo.
+
+Introdujo el mismo Sagrario Carabaño, directora de gestión del Hospital, quien agradeció a todos su presencia e hizo hincapié en el crecimiento de una causa **“que cada año se consolida y que para esta edición tiene un objetivo claro, la construcción de la ludoteca del centro”.**
+
+Álvaro Lorenzo, gran protagonista por afrontar de manera totalmente altruista una gesta ante seistoros que aglutina lo más granado de la cabaña brava española: Miura, Victorino Martín, Alcurrucén, Victoriano del Río, Garcigrande y El Freixo, manifestó que **“es un compromiso muy importante en mi carrera, quizá el que más, pero creo que la ocasión y el fin lo merecen. Deseo estar a la altura que requiere la cita. Mi agradecimiento también a todos los ganaderos, a todas las cuadrillas y a los que van a participar de manera solidaria en la corrida, a todos los que nos van a ayudar para que quede la mayor ayuda posible para el hospital. Por supuesto, también a la empresa, que desde el primer momento me lo ha puesto todo muy fácil a la hora de rubricar este sueño”.**
+
+Nacho Lloret, director de la empresa Eventos Mare Nostrum, afirmó en su intervención que **“este acto es señal de que hacemos las cosas bien, como demuestra la presencia de las principales autoridades. La motivación de la construcción de la ludoteca es el mayor de los alicientes y es de justicia resaltar la acogida del Hospital al mundo del toro sin complejos desde la primera edición, en tiempos en los que muchos se ponen de perfil”.**
+
+El empresario alicantino, para referirse a la composición del cartel, comentó: **“Cuando Álvaro me comentó su idea por el mes de octubre, además de que él está implicado en el proyecto del doctor Julian Taylor desde 2024, tuve claro que se alineaban muchos motivos para decir que sí sin dudarlo. ¿Por qué? Porque fue uno de los toreros que mejor ha toreado el año pasado, porque cumple diez años de alternativay porque es toledano. Si además de todo eso, cuando empezamos a pensar en las ganaderías, se juntan las seis que hoy anunciamos, un elenco inmejorable… y ves la ilusión de todos los ganaderos por apartar un toro para la corrida, es para estar agradecido. Ojalá todo redunde en el mejor resultado posible, que la ludoteca sea una realidad y que culmine con el triunfo de Álvaro para que celebre como se merece esos diez años de alternativa”.**
+
+Eduardo Martín-Peñato, presidente de la Comunidad de Propietarios de la plaza de toros de Toledo, institución que se vuelca también con el festejo, afirmó que **“es el tercer año que estamos aquí, esto es sobre todo un proyecto basado en la generosidad. Represento a 365 familias toledanas que tienen el objetivo de apoyar a la cultura a través de los toros y hechos toledanos. El agradecimiento tiene que ser para todos, porque aquí no hay más intereses que ayudar a este hospital y eso incluye a todos, empresa, torero e instituciones. Esto es un proyecto que tiene futuro y ojalá estemos aquí muchos años más”.**
+
+La presidenta de la Diputación, Conchi Cedillo, quiso en primer lugar“**agradecer la invitación de lo que será un gran día, estoy convencida de ello**”, para proseguir manifestando que **“el hospital es un referente a nivel mundial, lo conozco de primera mano. Ese compromiso con el paciente y sus familias os hace muy grandes. Esa ludoteca que está por venir es el mejor premio posible para el esfuerzo de Álvaro. Las instituciones estamos para apoyar, es nuestra obligación hacerlo”.**
+
+Cerró el acto el alcalde de la ciudad imperial, CarlosVelázquez. **“Estamos aquí para tratar entre todos de que la plaza de Toledo esté llena el 28 de marzo y que sea una tarde memorable para nuestro querido torero toledano Álvaro Lorenzo y que sirva de lanzamiento para el gran año que le espera. Hay que tener mucho valor y compromiso para encerrarse con seis toros, en tu ciudad natal y con esas ganaderías. Quería hacer una mención especial también a la empresa Eventos Mare Nostrum, que están consiguiendo que las corridas de toros no sean un evento más, sino que formen parte de la excelencia cultural de la ciudad. Y qué decir del hospital, que lleva 52 años trabajando en una labor extraordinaria que le ha llevado a ser referencia mundial”.**
+
+La jornada finalizó con la visita de todos los intervinientes al Hospital, en la que pudieron conocer de primera mano los últimos avances en lesiones medulares, así como el lugar en el que estará ubicada la nueva ludoteca, adaptada para pacientes de todas las edades.
+
+**Un espacio para la participación y la creatividad**
+La futura ludoteca se ubicará en el Servicio de Rehabilitación Complementaria, en la segunda planta del antiguo edificio de terapia, y nace con un propósito claro: convertir el tiempo libre en una herramienta de bienestary rehabilitación, ofreciendo un entorno seguro, accesible y estimulante para jugar, aprendery relacionarse, eliminando barreras físicasy cognitivasy reforzando la autonomía y la igualdad de oportunidades.
+
+Entendida como un espacio de ocio inclusivo, la ludoteca integrará materialesy dinámicas adaptadas para favorecer la participación de las personas con lesión medular. Su objetivo general será impulsar el desarrollo integral promover la socialización, la creatividad, la adquisición de valoresy el aprendizaje cognitivo y psicomotor en un entorno lúdico.
+
+Las actividades que tengan lugar en este espacio se orientarán a potenciar habilidades cognitivas, afectivas, socialesy psicomotoras; a facilitar la convivenciay a reforzar la autoestimay la autonomía con un enfoque que también actúe como apoyo para las familias cuando sea necesario.
+
+El espacio contará con actividades de integración y participación socialy con recursos de juego inclusivo pensados para diferentes edadesy necesidades. Entre las propuestas se contemplan juegosy dinámicas como la herradura, minigolf, la rana, pesca, dardos o petanca, así como opciones con adaptación específica como Scalextric y PlayStation con mandos adaptados, además de futbolín adaptado y máquina de pinball.
+
+En el ámbito de juegos de mesa, se incorporarán formatos inclusivos como juegos gigantes con piezas de gran tamaño y colores contrastados (ajedrez, dominó, bloques), Memory con pictogramas y tres en raya con fichas de relieve o texturas. Para el público infantil, habrá también juegos de construcción, muñecosy coches teledirigidos adaptados, entre otros materiales.
+
+La ludoteca incluirá igualmente talleres de musicoterapia, con el uso de instrumentos de percusión sencillos y adaptados para facilitar la expresión emocional. Todo ello estará respaldado por un equipo de monitores de ocioy tiempo libre, con un enfoque centrado en la participación, la cooperacióny el desarrollo integral, ajustando cada actividad a las necesidades de cada persona.
+
+**Un espacio amplio, luminoso con material accesible**
+Desde el punto de vista del diseño, el proyecto prioriza una accesibilidad completa: un espacio amplio y luminoso, con mobiliario adecuado para personas con movilidad reducida y un enfoque desde el punto de vista sensorial que ofrezca estimulación visual, auditivay táctil, incorporando rinconestranquilos cuando sea conveniente.
+Con este modelo, el Hospital prevé beneficios directos en autonomía — posibilitando explorary jugar al propio ritmo—, inclusión social —favoreciendo convivenciay tolerancia— y desarrollo integral —impulsando creatividad, imaginación y habilidades cognitivasy motoras.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 189,
+    title: `David de Miranda y Argentina, el lunes 2 de marzo en los Mano a mano de la Fundación Cajasol`,
+	image: "/images/porta.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	footerImage1: "/images/argen.jpg",
+	excerpt: `El ciclo llega a su edición número 75 con un cartel netamente onubense
+
+El encuentro se desarrollará a las 8 de la tarde con entrada libre`,
+	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 75 con cartel netamente onubense que intentará buscar conexiones entre el mundo del toro y el flamenco. El acto estará protagonizado por el matador de toros **David de Miranda** y la cantaora **Argentina**, un cartel que une a dos grandes valores artísticos de la provincia de Huelva. En esta ocasión, el Mano a mano **se celebra en lunes**, en concreto el próximo **2 de marzo** en el Teatro Cajasol, con entrada por la calle Chicarreros, 1. El acto comenzará a las ocho de la tarde (**20.00 horas**).
+
+El periodista **José Enrique Moreno** será de nuevo el encargado de conducir este encuentro, que tiene como título 'El toro y el cante' y en el que a buen seguro ambos mundos conectarán a la perfección, saliendo a relucir sus puntos en común.
+
+**David de Miranda** fue el gran triunfador de la pasada Feria de Abril al salir por la Puerta del Príncipe la tarde del 10 de mayo, colocándose en primera línea de atención del aficionado y accediendo a las grandes ferias de la temporada. Alternativado en 2016, abrió la Puerta Grande de Madrid en 2019 y se ha ganado a pulso un lugar relevante en el toreo, superando graves lesiones y percances de envergadura. Nadie ha regalado nada a David de Miranda, que es por méritos propios uno de los grandes alicientes de la temporada.
+
+María López Tristancho, conocida artísticamente como **Argentina**, es una de las grandes del flamenco en la actualidad. Onubense de nacimiento, desde muy pequeña comenzó a dar clases de baile flamenco pero muy pronto salió a relucir su potencial para el cante, publicando su primer álbum en solitario en el año 2006. Desde entonces, su carrera no ha parado de crecer, colocándose en la primera fila de este arte con reconocimiento nacional e internacional. Es una artista de gran versatilidad que ha fusionado flamenco con otros géneros como fado o son cubano.
+
+**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
+
+---------------------------------------------------------------------------------------------------------
+-
+
+**Ciclo: Los Mano a mano de la Fundación Cajasol**
+**Fecha: LUNES 2 de marzo de 2026**
+**Hora: 20.00**
+**Lugar: Teatro Cajasol. C/ Chicarreros, 1.**
+**Invitados: David de Miranda y Argentina**
+**Tema:** *El toro y el cante*`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 190,
+    title: `Morante también hará el paseíllo en Nimes`,
+	image: "/images/nimes.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	excerpt: "Simón Casas confirma en sus redes el regreso del torero sevillano al coso francés el próximo 23 de mayo.",
+	fullContent: `El empresario francés Simón Casas ha hecho oficial la presencia de Morante de la Puebla en la próxima Feria de Pentecostés de Nimes. El anuncio se produjo a través de una publicación en su perfil de Instagram, donde aparece junto al diestro sevillano, una imagen que generó una inmediata expectación entre los aficionados.
+
+Según confirmó el propio empresario, Morante hará el paseíllo el 23 de mayo en el coso francés, sumando así una nueva cita a su temporada 2026. La comparecencia en Nimes se convierte en la tercera plaza confirmada en el calendario del torero de La Puebla del Río, tras su anunciada participación en la Feria de Abril de Sevilla, donde está previsto que actúe en cuatro tardes. Otros escenarios de relevancia, como Ronda, permanecen aún pendientes de concretar su presencia. Aunque nada oficial, también podría hacer el paseíllo en plazas como Jerez o Zaragoza, incluso en dos tardes en el coso de la Misericordia. 
+
+De este modo, lo que en un principio podía interpretarse como una reaparición centrada únicamente en su tierra se perfila ya como una temporada con mayor alcance. La decisión de Morante de asumir varios compromisos consolida su presencia en plazas de peso, una circunstancia que incrementa el interés del aficionado y refuerza la apuesta de los empresarios que cuentan con su nombre en los carteles.
+
+A la espera de que la empresa haga oficiales los carteles completos, la confirmación de Morante sitúa nuevamente su nombre en el centro de la actualidad taurina y otorga un impulso significativo al abono del coso galo.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 191,
+    title: `El Mene rompe con su apoderado`,
+	image: "/images/meneç.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	excerpt: "El Mene se queda libre, en busca de un nuevo apoderado para la temporada 2026. Con el objetivo de tomar la alternativa.",
+	fullContent: `El novillero con picadores Iker Fernández, conocido como “El Mene”, ha puesto fin a su relación profesional con quien había sido su apoderado y mentor, Andrés Sánchez. La decisión, adoptada por el propio torero, marca un nuevo rumbo en la trayectoria del aragonés, que el pasado año cerró la temporada como líder del escalafón tras sumar 36 paseíllos y cortar 28 orejas.
+
+Durante la última campaña, “El Mene” dejó su firma en plazas de primera línea. Actuó en cuatro ocasiones en Madrid y también formó parte de carteles en Valencia, Zaragoza y Sevilla. Su nombre estuvo igualmente presente en citas destacadas del circuito de novilladas, como las celebradas en Villaseca de la Sagra y Arganda del Rey, consolidando así su proyección dentro del escalafón menor.
+
+En lo que va de temporada, el único compromiso cumplido por el novillero ha sido su actuación del 14 de febrero en el Carnaval del Toro de Ciudad Rodrigo. Más allá de esa fecha, su calendario permanece vacío, una circunstancia que el propio novillero reconocía recientemente en declaraciones a Mundotoro.
+
+El aragonés manifestaba su incertidumbre ante la falta de contratos y expresaba con claridad su objetivo inmediato: dar el paso a matador de toros. Tras encabezar el escalafón de novilleros, considera que la alternativa es una opción coherente con su trayectoria y confía en que pueda concretarse lo antes posible para que, a partir de ahí, su futuro dependa exclusivamente de su desempeño en el ruedo.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 192,
     title: `Celso Ortega “yo a mi padre lo veía como un superhéroe sin capa yo quería ser el”`,
 	image: "/images/portadaentre.jpg",
