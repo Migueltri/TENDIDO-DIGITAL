@@ -38,7 +38,33 @@
   showAuthorHeader?: boolean;
 }
 
-const featuredNews: NewsItem[] = [	
+const featuredNews: NewsItem[] = [
+	{ 
+    id: 1005,
+    title: `Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio`,
+	image: "/images/recibir.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	footerImage1: "/images/interr.jpg",
+	fullContent: `El Próximo sábado 28 de febrero, es el día de **Andalucía**, una fecha marcada en el calendario para los andaluces, como cada año el gobierno de la Junta de **Andalucía** entrega las medallas de oro de **Andalucía** distintas personalidades de los distintos ámbitos que la sociedad andaluza.
+
+Poco a poco el presidente de los andaluces **Juanmanuel Moreno Bonilla**, va anunciando los premiados, hace unos días anuncio que la **Medalla de Andalucía** a los Valores Humanos, la Solidaridad y la Concordia **al pueblo de Adamuz** y este fin de semana el presidente de la Junta anuncia que el cantante onubense **Manuel Carrasco** y la actriz sevillana **Paz Vega**, recibirán el máximo reconocimiento de la comunidad autónoma el 28 de Febrero Hijos Predilectos de Andalucía 2026
+
+Y hoy lunes en su cuenta de Instagram a anunciado que **Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio**
+
+Este es el texto íntegro del mensaje del presidente andaluz
+
+Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio este #28F.
+
+Leyenda, figura que ha trascendido la Historia de la Tauromaquia e impulsor del mundo del toro y de nuestras tradiciones.
+
+En su capote está el temple, la pureza, la emoción y el genio de Andalucía.
+
+Le respetamos, le admiramos y le queremos`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 1006,
     title: `Álvaro Lorenzo, en el Hospital Nacional de Parapléjicos: “gracias a todos los que habéis hecho posible poder llevar a cabo este sueño”`,
@@ -161,6 +187,32 @@ El aragonés manifestaba su incertidumbre ante la falta de contratos y expresaba
 ];
 
 const latestNews: NewsItem[] = [
+    { 
+    id: 187,
+    title: `Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio`,
+	image: "/images/recibir.jpg",
+    category: "Actualidad",
+    date: "23 de Febrero de 2026",
+	footerImage1: "/images/interr.jpg",
+	fullContent: `El Próximo sábado 28 de febrero, es el día de **Andalucía**, una fecha marcada en el calendario para los andaluces, como cada año el gobierno de la Junta de **Andalucía** entrega las medallas de oro de **Andalucía** distintas personalidades de los distintos ámbitos que la sociedad andaluza.
+
+Poco a poco el presidente de los andaluces **Juanmanuel Moreno Bonilla**, va anunciando los premiados, hace unos días anuncio que la **Medalla de Andalucía** a los Valores Humanos, la Solidaridad y la Concordia **al pueblo de Adamuz** y este fin de semana el presidente de la Junta anuncia que el cantante onubense **Manuel Carrasco** y la actriz sevillana **Paz Vega**, recibirán el máximo reconocimiento de la comunidad autónoma el 28 de Febrero Hijos Predilectos de Andalucía 2026
+
+Y hoy lunes en su cuenta de Instagram a anunciado que **Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio**
+
+Este es el texto íntegro del mensaje del presidente andaluz
+
+Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio este #28F.
+
+Leyenda, figura que ha trascendido la Historia de la Tauromaquia e impulsor del mundo del toro y de nuestras tradiciones.
+
+En su capote está el temple, la pureza, la emoción y el genio de Andalucía.
+
+Le respetamos, le admiramos y le queremos`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
    { 
     id: 188,
     title: `Álvaro Lorenzo, en el Hospital Nacional de Parapléjicos: “gracias a todos los que habéis hecho posible poder llevar a cabo este sueño”`,
