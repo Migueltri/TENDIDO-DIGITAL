@@ -40,146 +40,25 @@
 
 const featuredNews: NewsItem[] = [
 	{ 
-    id: 1005,
-    title: `Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio`,
-	image: "/images/recibir.jpg",
-    category: "Actualidad",
-    date: "23 de Febrero de 2026",
-	footerImage1: "/images/interr.jpg",
-	fullContent: `El Próximo sábado 28 de febrero, es el día de **Andalucía**, una fecha marcada en el calendario para los andaluces, como cada año el gobierno de la Junta de **Andalucía** entrega las medallas de oro de **Andalucía** distintas personalidades de los distintos ámbitos que la sociedad andaluza.
-
-Poco a poco el presidente de los andaluces **Juanmanuel Moreno Bonilla**, va anunciando los premiados, hace unos días anuncio que la **Medalla de Andalucía** a los Valores Humanos, la Solidaridad y la Concordia **al pueblo de Adamuz** y este fin de semana el presidente de la Junta anuncia que el cantante onubense **Manuel Carrasco** y la actriz sevillana **Paz Vega**, recibirán el máximo reconocimiento de la comunidad autónoma el 28 de Febrero Hijos Predilectos de Andalucía 2026
-
-Y hoy lunes en su cuenta de Instagram a anunciado que **Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio**
-
-Este es el texto íntegro del mensaje del presidente andaluz
-
-Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio este #28F.
-
-Leyenda, figura que ha trascendido la Historia de la Tauromaquia e impulsor del mundo del toro y de nuestras tradiciones.
-
-En su capote está el temple, la pureza, la emoción y el genio de Andalucía.
-
-Le respetamos, le admiramos y le queremos`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `Álvaro Lorenzo, en el Hospital Nacional de Parapléjicos: “gracias a todos los que habéis hecho posible poder llevar a cabo este sueño”`,
-	image: "/images/r.jpg",
-    category: "Actualidad",
-    date: "23 de Febrero de 2026",
-	excerpt: "El diestro toledano visitó junto a autoridades y empresa el centro para presentar su gesta frente a seis toros del 28 de marzo; Los beneficios se destinarán a la nueva ludoteca",
-	footerImage1: "/images/r1.jpg",
-	footerImage2: "/images/r2.jpg",
-	footerImage3: "/images/r3.jpg",
-	fullContent: `El Hospital Nacional de Parapléjicos de Toledo ha acogido esta mañana la presentación oficial de la corrida en la que Álvaro Lorenzo está anunciado en solitario con toros de seis ganaderías, con el objetivo de recaudar fondos para el que sin duda es el centro de referencia mundial de las lesiones medulares.
-
-El acto, que contó con la presencia entre las autoridades del alcalde de Toledo, Carlos Velázquez y la presidenta de la diputación, Conchi Cedillo, sirvió también para que la empresa Eventos Mare Nostrum hiciera entrega del talón de 8.229 euros, fondos recaudados en el festejo de 2025, una accidentada novillada en lo climatológico y que fue echada adelante por el pundonor de los actuantes: Marco Pérez y Pedro Rufo.
-
-Introdujo el mismo Sagrario Carabaño, directora de gestión del Hospital, quien agradeció a todos su presencia e hizo hincapié en el crecimiento de una causa **“que cada año se consolida y que para esta edición tiene un objetivo claro, la construcción de la ludoteca del centro”.**
-
-Álvaro Lorenzo, gran protagonista por afrontar de manera totalmente altruista una gesta ante seistoros que aglutina lo más granado de la cabaña brava española: Miura, Victorino Martín, Alcurrucén, Victoriano del Río, Garcigrande y El Freixo, manifestó que **“es un compromiso muy importante en mi carrera, quizá el que más, pero creo que la ocasión y el fin lo merecen. Deseo estar a la altura que requiere la cita. Mi agradecimiento también a todos los ganaderos, a todas las cuadrillas y a los que van a participar de manera solidaria en la corrida, a todos los que nos van a ayudar para que quede la mayor ayuda posible para el hospital. Por supuesto, también a la empresa, que desde el primer momento me lo ha puesto todo muy fácil a la hora de rubricar este sueño”.**
-
-Nacho Lloret, director de la empresa Eventos Mare Nostrum, afirmó en su intervención que **“este acto es señal de que hacemos las cosas bien, como demuestra la presencia de las principales autoridades. La motivación de la construcción de la ludoteca es el mayor de los alicientes y es de justicia resaltar la acogida del Hospital al mundo del toro sin complejos desde la primera edición, en tiempos en los que muchos se ponen de perfil”.**
-
-El empresario alicantino, para referirse a la composición del cartel, comentó: **“Cuando Álvaro me comentó su idea por el mes de octubre, además de que él está implicado en el proyecto del doctor Julian Taylor desde 2024, tuve claro que se alineaban muchos motivos para decir que sí sin dudarlo. ¿Por qué? Porque fue uno de los toreros que mejor ha toreado el año pasado, porque cumple diez años de alternativay porque es toledano. Si además de todo eso, cuando empezamos a pensar en las ganaderías, se juntan las seis que hoy anunciamos, un elenco inmejorable… y ves la ilusión de todos los ganaderos por apartar un toro para la corrida, es para estar agradecido. Ojalá todo redunde en el mejor resultado posible, que la ludoteca sea una realidad y que culmine con el triunfo de Álvaro para que celebre como se merece esos diez años de alternativa”.**
-
-Eduardo Martín-Peñato, presidente de la Comunidad de Propietarios de la plaza de toros de Toledo, institución que se vuelca también con el festejo, afirmó que **“es el tercer año que estamos aquí, esto es sobre todo un proyecto basado en la generosidad. Represento a 365 familias toledanas que tienen el objetivo de apoyar a la cultura a través de los toros y hechos toledanos. El agradecimiento tiene que ser para todos, porque aquí no hay más intereses que ayudar a este hospital y eso incluye a todos, empresa, torero e instituciones. Esto es un proyecto que tiene futuro y ojalá estemos aquí muchos años más”.**
-
-La presidenta de la Diputación, Conchi Cedillo, quiso en primer lugar“**agradecer la invitación de lo que será un gran día, estoy convencida de ello**”, para proseguir manifestando que **“el hospital es un referente a nivel mundial, lo conozco de primera mano. Ese compromiso con el paciente y sus familias os hace muy grandes. Esa ludoteca que está por venir es el mejor premio posible para el esfuerzo de Álvaro. Las instituciones estamos para apoyar, es nuestra obligación hacerlo”.**
-
-Cerró el acto el alcalde de la ciudad imperial, CarlosVelázquez. **“Estamos aquí para tratar entre todos de que la plaza de Toledo esté llena el 28 de marzo y que sea una tarde memorable para nuestro querido torero toledano Álvaro Lorenzo y que sirva de lanzamiento para el gran año que le espera. Hay que tener mucho valor y compromiso para encerrarse con seis toros, en tu ciudad natal y con esas ganaderías. Quería hacer una mención especial también a la empresa Eventos Mare Nostrum, que están consiguiendo que las corridas de toros no sean un evento más, sino que formen parte de la excelencia cultural de la ciudad. Y qué decir del hospital, que lleva 52 años trabajando en una labor extraordinaria que le ha llevado a ser referencia mundial”.**
-
-La jornada finalizó con la visita de todos los intervinientes al Hospital, en la que pudieron conocer de primera mano los últimos avances en lesiones medulares, así como el lugar en el que estará ubicada la nueva ludoteca, adaptada para pacientes de todas las edades.
-
-**Un espacio para la participación y la creatividad**
-La futura ludoteca se ubicará en el Servicio de Rehabilitación Complementaria, en la segunda planta del antiguo edificio de terapia, y nace con un propósito claro: convertir el tiempo libre en una herramienta de bienestary rehabilitación, ofreciendo un entorno seguro, accesible y estimulante para jugar, aprendery relacionarse, eliminando barreras físicasy cognitivasy reforzando la autonomía y la igualdad de oportunidades.
-
-Entendida como un espacio de ocio inclusivo, la ludoteca integrará materialesy dinámicas adaptadas para favorecer la participación de las personas con lesión medular. Su objetivo general será impulsar el desarrollo integral promover la socialización, la creatividad, la adquisición de valoresy el aprendizaje cognitivo y psicomotor en un entorno lúdico.
-
-Las actividades que tengan lugar en este espacio se orientarán a potenciar habilidades cognitivas, afectivas, socialesy psicomotoras; a facilitar la convivenciay a reforzar la autoestimay la autonomía con un enfoque que también actúe como apoyo para las familias cuando sea necesario.
-
-El espacio contará con actividades de integración y participación socialy con recursos de juego inclusivo pensados para diferentes edadesy necesidades. Entre las propuestas se contemplan juegosy dinámicas como la herradura, minigolf, la rana, pesca, dardos o petanca, así como opciones con adaptación específica como Scalextric y PlayStation con mandos adaptados, además de futbolín adaptado y máquina de pinball.
-
-En el ámbito de juegos de mesa, se incorporarán formatos inclusivos como juegos gigantes con piezas de gran tamaño y colores contrastados (ajedrez, dominó, bloques), Memory con pictogramas y tres en raya con fichas de relieve o texturas. Para el público infantil, habrá también juegos de construcción, muñecosy coches teledirigidos adaptados, entre otros materiales.
-
-La ludoteca incluirá igualmente talleres de musicoterapia, con el uso de instrumentos de percusión sencillos y adaptados para facilitar la expresión emocional. Todo ello estará respaldado por un equipo de monitores de ocioy tiempo libre, con un enfoque centrado en la participación, la cooperacióny el desarrollo integral, ajustando cada actividad a las necesidades de cada persona.
-
-**Un espacio amplio, luminoso con material accesible**
-Desde el punto de vista del diseño, el proyecto prioriza una accesibilidad completa: un espacio amplio y luminoso, con mobiliario adecuado para personas con movilidad reducida y un enfoque desde el punto de vista sensorial que ofrezca estimulación visual, auditivay táctil, incorporando rinconestranquilos cuando sea conveniente.
-Con este modelo, el Hospital prevé beneficios directos en autonomía — posibilitando explorary jugar al propio ritmo—, inclusión social —favoreciendo convivenciay tolerancia— y desarrollo integral —impulsando creatividad, imaginación y habilidades cognitivasy motoras.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `David de Miranda y Argentina, el lunes 2 de marzo en los Mano a mano de la Fundación Cajasol`,
-	image: "/images/porta.jpg",
-    category: "Actualidad",
-    date: "23 de Febrero de 2026",
-	footerImage1: "/images/argen.jpg",
-	excerpt: `El ciclo llega a su edición número 75 con un cartel netamente onubense
-
-El encuentro se desarrollará a las 8 de la tarde con entrada libre`,
-	fullContent: `El Ciclo 'Los Mano a mano' de la Fundación Cajasol llega a su edición número 75 con cartel netamente onubense que intentará buscar conexiones entre el mundo del toro y el flamenco. El acto estará protagonizado por el matador de toros **David de Miranda** y la cantaora **Argentina**, un cartel que une a dos grandes valores artísticos de la provincia de Huelva. En esta ocasión, el Mano a mano **se celebra en lunes**, en concreto el próximo **2 de marzo** en el Teatro Cajasol, con entrada por la calle Chicarreros, 1. El acto comenzará a las ocho de la tarde (**20.00 horas**).
-
-El periodista **José Enrique Moreno** será de nuevo el encargado de conducir este encuentro, que tiene como título 'El toro y el cante' y en el que a buen seguro ambos mundos conectarán a la perfección, saliendo a relucir sus puntos en común.
-
-**David de Miranda** fue el gran triunfador de la pasada Feria de Abril al salir por la Puerta del Príncipe la tarde del 10 de mayo, colocándose en primera línea de atención del aficionado y accediendo a las grandes ferias de la temporada. Alternativado en 2016, abrió la Puerta Grande de Madrid en 2019 y se ha ganado a pulso un lugar relevante en el toreo, superando graves lesiones y percances de envergadura. Nadie ha regalado nada a David de Miranda, que es por méritos propios uno de los grandes alicientes de la temporada.
-
-María López Tristancho, conocida artísticamente como **Argentina**, es una de las grandes del flamenco en la actualidad. Onubense de nacimiento, desde muy pequeña comenzó a dar clases de baile flamenco pero muy pronto salió a relucir su potencial para el cante, publicando su primer álbum en solitario en el año 2006. Desde entonces, su carrera no ha parado de crecer, colocándose en la primera fila de este arte con reconocimiento nacional e internacional. Es una artista de gran versatilidad que ha fusionado flamenco con otros géneros como fado o son cubano.
-
-**La entrada es libre hasta completar el aforo. NO es necesario retirar invitación.**
-
----------------------------------------------------------------------------------------------------------
--
-
-**Ciclo: Los Mano a mano de la Fundación Cajasol**
-**Fecha: LUNES 2 de marzo de 2026**
-**Hora: 20.00**
-**Lugar: Teatro Cajasol. C/ Chicarreros, 1.**
-**Invitados: David de Miranda y Argentina**
-**Tema:** *El toro y el cante*`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `Morante también hará el paseíllo en Nimes`,
-	image: "/images/nimes.jpg",
-    category: "Actualidad",
-    date: "23 de Febrero de 2026",
-	excerpt: "Simón Casas confirma en sus redes el regreso del torero sevillano al coso francés el próximo 23 de mayo.",
-	fullContent: `El empresario francés Simón Casas ha hecho oficial la presencia de Morante de la Puebla en la próxima Feria de Pentecostés de Nimes. El anuncio se produjo a través de una publicación en su perfil de Instagram, donde aparece junto al diestro sevillano, una imagen que generó una inmediata expectación entre los aficionados.
-
-Según confirmó el propio empresario, Morante hará el paseíllo el 23 de mayo en el coso francés, sumando así una nueva cita a su temporada 2026. La comparecencia en Nimes se convierte en la tercera plaza confirmada en el calendario del torero de La Puebla del Río, tras su anunciada participación en la Feria de Abril de Sevilla, donde está previsto que actúe en cuatro tardes. Otros escenarios de relevancia, como Ronda, permanecen aún pendientes de concretar su presencia. Aunque nada oficial, también podría hacer el paseíllo en plazas como Jerez o Zaragoza, incluso en dos tardes en el coso de la Misericordia. 
-
-De este modo, lo que en un principio podía interpretarse como una reaparición centrada únicamente en su tierra se perfila ya como una temporada con mayor alcance. La decisión de Morante de asumir varios compromisos consolida su presencia en plazas de peso, una circunstancia que incrementa el interés del aficionado y refuerza la apuesta de los empresarios que cuentan con su nombre en los carteles.
-
-A la espera de que la empresa haga oficiales los carteles completos, la confirmación de Morante sitúa nuevamente su nombre en el centro de la actualidad taurina y otorga un impulso significativo al abono del coso galo.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
     id: 1009,
-    title: `El Mene rompe con su apoderado`,
-	image: "/images/meneç.jpg",
+    title: `Borja Jiménez anuncia en Sevilla su gran gesta en solitario en Las Ventas como homenaje al legado de Ignacio Sánchez Mejías`,
+	image: "/images/varis.jpg",
     category: "Actualidad",
-    date: "23 de Febrero de 2026",
-	excerpt: "El Mene se queda libre, en busca de un nuevo apoderado para la temporada 2026. Con el objetivo de tomar la alternativa.",
-	fullContent: `El novillero con picadores Iker Fernández, conocido como “El Mene”, ha puesto fin a su relación profesional con quien había sido su apoderado y mentor, Andrés Sánchez. La decisión, adoptada por el propio torero, marca un nuevo rumbo en la trayectoria del aragonés, que el pasado año cerró la temporada como líder del escalafón tras sumar 36 paseíllos y cortar 28 orejas.
+    date: "24 de Febrero de 2026",
+	excerpt: "El acto celebrado en Pino Montano congregó a destacadas figuras del toreo y representantes del ámbito cultural.",
+	footerImage1: "/images/varis1.jpg",
+	footerImage2: "/images/varis2.jpg",
+	fullContent: `Sevilla volvió a situar en primer plano su memoria cultural con la presentación de la corrida “In Memoriam de Ignacio Sánchez Mejías”, un acto que puso el acento en la dimensión histórica y cultural del toreo más allá del propio festejo.
 
-Durante la última campaña, “El Mene” dejó su firma en plazas de primera línea. Actuó en cuatro ocasiones en Madrid y también formó parte de carteles en Valencia, Zaragoza y Sevilla. Su nombre estuvo igualmente presente en citas destacadas del circuito de novilladas, como las celebradas en Villaseca de la Sagra y Arganda del Rey, consolidando así su proyección dentro del escalafón menor.
+La cita estuvo conducida por Antonio García Barbeito, quien centró su intervención en la figura de Sánchez Mejías como referente de una etapa en la que tauromaquia y pensamiento caminaron de la mano, especialmente en su vinculación con la Generación del 27. Durante su intervención, estableció un paralelismo entre aquel torero intelectual y la trayectoria actual de Borja Jiménez.
 
-En lo que va de temporada, el único compromiso cumplido por el novillero ha sido su actuación del 14 de febrero en el Carnaval del Toro de Ciudad Rodrigo. Más allá de esa fecha, su calendario permanece vacío, una circunstancia que el propio novillero reconocía recientemente en declaraciones a Mundotoro.
+Barbeito subrayó la aportación de Sánchez Mejías a la proyección cultural del toreo en el primer tercio del siglo XX y señaló que, salvando las distancias históricas, el gesto de Borja Jiménez de anunciarse en solitario supone una muestra de determinación y compromiso profesional. El torero sevillano lidiará toros de Toros de Cortés y Domingo Hernández el próximo 7 de junio en la plaza de Las Ventas, una de las citas de mayor exigencia del calendario.
 
-El aragonés manifestaba su incertidumbre ante la falta de contratos y expresaba con claridad su objetivo inmediato: dar el paso a matador de toros. Tras encabezar el escalafón de novilleros, considera que la alternativa es una opción coherente con su trayectoria y confía en que pueda concretarse lo antes posible para que, a partir de ahí, su futuro dependa exclusivamente de su desempeño en el ruedo.`,
+El acto reunió a una amplia representación institucional y social, reflejo de la relevancia del acontecimiento. Entre las autoridades asistentes se encontraban Ricardo Sánchez Antúnez, delegado del Gobierno de la Junta de Andalucía; Patricia del Pozo Fernández, consejera de Cultura y Deporte, quien clausuró el acto con una intervención en defensa de la cultura, de la figura de Sánchez Mejías y de la tauromaquia; Juan Manuel Ávila, senador por la provincia; y Álvaro Pimentel, teniente de alcalde del Ayuntamiento de Sevilla.
+
+También estuvieron presentes miembros de la familia Sánchez Mejías, los ganaderos Pablo del Río, Concha Hernández y Marcos Pérez, así como toreros retirados de reconocido prestigio como Espartaco, referente en la trayectoria de Borja Jiménez; Paco Ojeda; José Antonio Campuzano; Miguel Báez Litri; Pepín Liria; Raúl Gracia “El Tato”; y Dávila Miura. Entre las personalidades del ámbito cultural y social asistieron igualmente Ramón Calderón y Bertín Osborne.
+
+La presentación puso así el foco en la figura de Ignacio Sánchez Mejías y en la proyección de una corrida que combinará homenaje, responsabilidad profesional y proyección cultural en una de las plazas más relevantes del toreo.`,
     author: "Antonio Tortosa",
     authorLogo: "/images/anto.jpg",
     showAuthorHeader: true
@@ -187,6 +66,30 @@ El aragonés manifestaba su incertidumbre ante la falta de contratos y expresaba
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 186,
+    title: `Borja Jiménez anuncia en Sevilla su gran gesta en solitario en Las Ventas como homenaje al legado de Ignacio Sánchez Mejías`,
+	image: "/images/varis.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: "El acto celebrado en Pino Montano congregó a destacadas figuras del toreo y representantes del ámbito cultural.",
+	footerImage1: "/images/varis1.jpg",
+	footerImage2: "/images/varis2.jpg",
+	fullContent: `Sevilla volvió a situar en primer plano su memoria cultural con la presentación de la corrida “In Memoriam de Ignacio Sánchez Mejías”, un acto que puso el acento en la dimensión histórica y cultural del toreo más allá del propio festejo.
+
+La cita estuvo conducida por Antonio García Barbeito, quien centró su intervención en la figura de Sánchez Mejías como referente de una etapa en la que tauromaquia y pensamiento caminaron de la mano, especialmente en su vinculación con la Generación del 27. Durante su intervención, estableció un paralelismo entre aquel torero intelectual y la trayectoria actual de Borja Jiménez.
+
+Barbeito subrayó la aportación de Sánchez Mejías a la proyección cultural del toreo en el primer tercio del siglo XX y señaló que, salvando las distancias históricas, el gesto de Borja Jiménez de anunciarse en solitario supone una muestra de determinación y compromiso profesional. El torero sevillano lidiará toros de Toros de Cortés y Domingo Hernández el próximo 7 de junio en la plaza de Las Ventas, una de las citas de mayor exigencia del calendario.
+
+El acto reunió a una amplia representación institucional y social, reflejo de la relevancia del acontecimiento. Entre las autoridades asistentes se encontraban Ricardo Sánchez Antúnez, delegado del Gobierno de la Junta de Andalucía; Patricia del Pozo Fernández, consejera de Cultura y Deporte, quien clausuró el acto con una intervención en defensa de la cultura, de la figura de Sánchez Mejías y de la tauromaquia; Juan Manuel Ávila, senador por la provincia; y Álvaro Pimentel, teniente de alcalde del Ayuntamiento de Sevilla.
+
+También estuvieron presentes miembros de la familia Sánchez Mejías, los ganaderos Pablo del Río, Concha Hernández y Marcos Pérez, así como toreros retirados de reconocido prestigio como Espartaco, referente en la trayectoria de Borja Jiménez; Paco Ojeda; José Antonio Campuzano; Miguel Báez Litri; Pepín Liria; Raúl Gracia “El Tato”; y Dávila Miura. Entre las personalidades del ámbito cultural y social asistieron igualmente Ramón Calderón y Bertín Osborne.
+
+La presentación puso así el foco en la figura de Ignacio Sánchez Mejías y en la proyección de una corrida que combinará homenaje, responsabilidad profesional y proyección cultural en una de las plazas más relevantes del toreo.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
     { 
     id: 187,
     title: `Morante de la Puebla recibirá la Medalla de Andalucía a la Cultura y el Patrimonio`,
