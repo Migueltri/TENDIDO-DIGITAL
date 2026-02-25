@@ -40,7 +40,123 @@
 
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1003,
+    title: `Villaluenga del Rosario abre la temporada taurina en la provincia de Cádiz`,
+	image: "/images/villa.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "Villaluenga del Rosario acoge este domingo 1 de marzo una novillada organizada por la Escuela Taurina Comarcal de Ubrique",
+	footerImage1: "/images/villalu.jpg",
+	fullContent: `Una interesante novillada sin picadores en formato de clase práctica organizada por la escuela ubriqueña en colaboración con el Ayuntamiento de la localidad y que será retransmitida por Canal Sur TV. 
+Se lidiarán novillos de Hato Blanco para los alumnos
+Javier Torres “Bombita” de la ET de Ubrique
+Manuel Real “Realito” de la ET de Camas
+Mario Torres de la ET de Ubrique
+Oscar Campos de la ET “Yiyo” de Madrid
+Juan Manuel Viruez de la ET de Ubrique
+Celso Ortega de la ET la Gallosina de El Puerto de Santa Maria`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1004,
+    title: `Ilusión y futuro en la visita de David Galván al Colegio Montaigne de Jerez `,
+	image: "/images/ilu.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	fullContent: `**El Colegio Montaigne de Jerez (Compañía de María)** ha vivido esta mañana una jornada muy especial con la visita del torero **David Galván**, que compartió su experiencia y su pasión con más de medio centenar de escolares.
+El encuentro, impulsado por **Elena Aguilar**, dio comienzo con una didáctica y emotiva charla moderada por Óscar Torres, en la que participó activamente el joven alumno Mario, quien preparó la intervención con enorme ilusión y dedicación.
+Tras el coloquio, David Galván dedicó tiempo a firmar postales a todos los niños y niñas, antes de que la jornada culminara con una improvisada y entrañable clase de toreo de salón en el Patio Árabe del Colegio Montaigne, una auténtica joya arquitectónica. Allí, los alumnos, muleta en mano, llenaron el espacio de sonrisas, ilusión y alegría, convirtiendo el momento en una experiencia inolvidable.
+En ese mismo entorno, los escolares compartieron con David Galván una de sus tradiciones más especiales: cada miércoles, durante el recreo, se reúnen para torear en el patio, en un espacio reservado para ello y señalado con un cartel muy significativo que reza: “**Prohibido el paso. SOLO TOREROS**”. Un gesto sencillo que refleja la pasión, el respeto y la ilusión con la que viven el toreo desde edades tempranas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Víctor Puerto disertará en Club Zaudín de Sevilla la conferencia “Del ruedo a la consulta: Aprendiendo a torear el miedo”`,
+	image: "/images/diser.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "El ato contará con la participación de la doctora Carmen Jodar y ambos ofrecerán una reflexión conjunta sobre cómo afrontar el miedo en contextos extremos y cotidianos",
+	fullContent: `El **Aula Cultural Zaudín** celebrará el próximo **26 de febrero de 2026** una nueva sesión de su ciclo de conferencias bajo el título ***“Del ruedo a la consulta: aprendiendo a torear el miedo”***, una propuesta divulgativa que abordará la gestión del miedo desde perspectivas complementarias: la tauromaquia y la medicina.
+
+El encuentro tendrá lugar a las **19:30 horas** en la **Sala Taurina del Club Zaudín Golf**, espacio habitual de actividades culturales y formativas en el área metropolitana de **Sevilla.**
+
+La conferencia contará con la participación de la doctora **Carmen Jodar** y del maestro **Víctor Puerto**, quienes ofrecerán una reflexión conjunta sobre cómo afrontar el miedo en contextos extremos y cotidianos.
+
+Bajo la premisa de que un torero -**Víctor Puerto**- frente al toro y un médico -**Carmen Jodar**- ante el sufrimiento humano comparten desafíos emocionales similares, la charla analizará qué tienen en común ambas profesiones: la presencia inevitable del miedo y la decisión consciente de no permitir que este determine las acciones personales o profesionales.
+
+El acto propone una conversación inspiradora centrada en comprender cómo funciona el miedo, de qué manera puede bloquear a las personas y cómo es posible aprender a convivir con él y transformarlo en una herramienta de crecimiento. Como resume el planteamiento del encuentro, ***“el miedo no se vence: se aprende a torear”***.
+
+Con esta iniciativa, el **Aula Cultural Zaudín** continúa impulsando actividades que combinan cultura, pensamiento y experiencias vitales, fomentando el diálogo entre disciplinas y acercando al público reflexiones útiles para la vida personal y profesional. La asistencia requiere reserva previa a través de los canales oficiales del **Club Zaudín Golf.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `David de Miranda recoge en Sevilla el XIX Memorial Manolo Vázquez del Real Club de Andalucía ‘El Aero’`,
+	image: "/images/memo.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	imageCaption: "Foto deF Alejandro del Castillo",
+	fullContent: `El matador de toros onubense **David de Miranda** ha recogido en **Sevilla** el **XIX Trofeo Memorial Manolo Vázquez**, galardón concedido por la tertulia taurina del **Real Club de Andalucía El Aero** para reconocer el acontecimiento más destacado de la temporada taurina en la **Plaza de Toros de la Real Maestranza de Caballería de Sevilla**.
+
+El acto de entrega se celebró el martes 24 de febrero en la sede social del club, situada en la calle Álvarez Quintero de la capital hispalense, en una ceremonia que reunió a destacadas personalidades del ámbito institucional y taurino. Presidió el acto el delegado del Gobierno de la Junta de Andalucía en Sevilla, **Ricardo Sánchez Antúnez**, acompañado por el presidente del club, **Enrique Moreno de la Cova**, el ganadero **Carlos Urquijo** y **Manuel Vázquez Gago**, hijo del recordado maestro que da nombre al premio.
+
+El jurado, presidido igualmente por **Manuel Vázquez Gago**, acordó por unanimidad conceder la distinción al diestro de **Trigueros** tras valorar el impacto artístico y taurino de su actuación en la Feria de Abril de Sevilla 2025.
+
+Durante aquella cita, **David de Miranda** firmó uno de los triunfos más rotundos del serial al cortar tres orejas, resultado que le permitió abrir la **Puerta del Príncipe** de la **Plaza de Toros de la Maestranza**, uno de los máximos reconocimientos de la tauromaquia y símbolo de las grandes gestas en el histórico **Coso del Baratillo**.
+
+El **Memorial Manolo Vázquez** alcanza con esta convocatoria su XIX. El galardón fue creado con el propósito de preservar el legado artístico y humano del maestro sevillano **Manolo Vázquez**, figura esencial del toreo clásico vinculada al **Barrio de San Bernardo**.
+
+A lo largo de sus anteriores ediciones, el premio ha distinguido a relevantes figuras del toreo y del ámbito ganadero como **Enrique Ponce**, **César Rincón**, **José María Manzanares**, **Julián López El Juli** -*en dos ocasiones*-, la ganadería **Núñez del Cuvillo**, **Lama de Góngora**, los ganaderos **Miura**, **Pepe Moral**, **Eduardo Dávila Miura**, **Morante de la Puebla** -*galardonado en cuatro ocasiones*-, **Antonio Ferrera**, **Juan José Padilla**, **Pablo Aguado** y **Juan Ortega**.
+
+Como es tradición, el trofeo consiste en una estatuilla realizada por el escultor e imaginero sevillano **Luis Álvarez Duarte**, reproducción de un conocido busto del torero conservado por la familia Vázquez.
+
+Con esta distinción, el **Real Club de Andalucía 'El Aero'** reconoce la dimensión artística del triunfo de **David de Miranda** en la pasada **Feria de Abril**, consolidando una actuación que ha quedado señalada como uno de los hitos más relevantes de la reciente temporada taurina sevillana.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `Las Ventas acogerá la presentación de  Taurofantasy`,
+	image: "/images/taurofanta.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	fullContent: `El próximo **martes 3 de marzo a las 18:30h** tendrá lugar en la **Sala Antonio Bienvenida de Las Ventas** la presentación de **Taurofantasy**, el primer fantasy taurino que revoluciona la forma de vivir el toreo.
+
+Taurofantasy traslada al universo de los toros la fórmula que ha conquistado a millones de aficionados al fútbol a través de los juegos fantasy: estrategia, gestión, emoción y competición a lo largo de toda una temporada. En este caso, los participantes se convierten en apoderados virtuales, gestionando un presupuesto ficticio para apoderar toreros y competir con otros usuarios en función de los resultados obtenidos en los ruedos.
+
+Una iniciativa que nace con el objetivo de acercar la tauromaquia a nuevas audiencias y de ofrecer a los aficionados una experiencia inédita de conexión con la Fiesta, combinando la pasión por los toros con la dinámica participativa y competitiva de los juegos de gestión deportiva.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `Al borde del colapso: el grito desesperado de Lagartijo acaba en el hospital tras nueve días sin comer`,
+	image: "/images/borde.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	footerImage1: "/images/bordeeç.jpg",
+	fullContent: `La protesta extrema del matador de toros cordobés Javier Moreno Lagartijo ha desembocado en una situación límite. La huelga de hambre que inició el pasado 17 de febrero, como último recurso para reclamar una oportunidad profesional, ha tenido un desenlace crítico con su ingreso urgente en el Hospital Reina Sofía de Córdoba.
+
+Durante varios días, el diestro permaneció acampado frente a la Plaza de Toros de Los Califas, protagonizando una imagen tan impactante como dolorosa: la de un torero olvidado, debilitándose a la intemperie para hacerse oír. El progresivo deterioro físico terminó por hacer insostenible la situación.
+Tras ser trasladado en ambulancia, el estado del torero era alarmante. Fuentes cercanas al entorno del matador, citadas por Diario de Sevilla, describen un cuadro preocupante: extrema debilidad, temblores constantes, desorientación y serias dificultades para articular palabras, consecuencia directa de nueve días sin ingerir alimento alguno.
+
+El ingreso hospitalario pone fin —al menos de forma forzada— a una protesta que ha sacudido con fuerza a la afición cordobesa y al mundo taurino en general. El gesto de Lagartijo no solo ha evidenciado el límite físico al que puede llegar un profesional del toro, sino que reabre un debate incómodo y profundo sobre el abandono, la falta de oportunidades y el silencio que rodea a muchos toreros cuando se apagan los focos.
+
+Una llamada de auxilio que ya no se expresa con palabras, sino con el cuerpo, y que deja una pregunta en el aire: ¿quién escucha cuando un torero lo arriesga todo fuera del ruedo?`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1009,
     title: `Sergio Pérez de Gregorio inicia un nuevo camino junto a Manolo Sánchez`,
 	image: "/images/grego.jpg",
     category: "Actualidad",
@@ -54,176 +170,126 @@ La nueva alianza con Manolo Sánchez marca así el comienzo de un capítulo que 
 	author: "Inés Sáez",
     authorLogo: "/images/nereasa.jpg",
     showAuthorHeader: true
-   },
-	{ 
-    id: 1005,
-    title: `Granada celebrará su tradicional festival taurino solidario, a favor de la Asociación Síndrome de Down y la Fundación UAPO`,
-	image: "/images/festi.jpg",
-    category: "Actualidad",
-    date: "24 de Febrero de 2026",
-	excerpt: "El festival se celebrará el domingo 12 de abril, con un cartel de gran atractivo.",
-	fullContent: `La plaza de toros de Granada volverá a acoger uno de los festejos más solidarios de su temporada con la celebración del tradicional festival benéfico destinado a apoyar a la Asociación Síndrome de Down y a la Fundación UAPO. La cita combinará compromiso social y figuras destacadas del toreo en una jornada muy esperada por la afición.
-
-El festival se celebrará el **domingo 12 de abril** y contará con la participación del rejoneador **Sebastián Fernández** y los matadores **‘El Fandi’, Sebastián Castella, Daniel Luque y Pablo Aguado**, además de la novillera **Olga Casado**. Para la ocasión se lidiarán reses de las ganaderías **Hermanos García y Olga Jiménez**.
-
-Con este atractivo cartel, la ciudad nazarí se prepara para vivir una de las tardes más señaladas de su calendario taurino, en la que la solidaridad volverá a ocupar un lugar protagonista. La venta de entradas comenzará el 16 de marzo para abonados y el 19 de marzo para el público en general, a través de la web <a
-  www.funtausa.com
-  target="_blank"
-  rel="noopener noreferrer"
-  style="color:#2563eb; text-decoration:underline; font-weight:500;"
->
-  www.funtausa.com
-</a> y del teléfono 620 048 583.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1006,
-    title: `La Real Maestranza de Caballería renueva su compromiso como patrocinador oficial del Circuito de Novilladas de Andalucía`,
-	image: "/images/real.jpg",
-    category: "Actualidad",
-    date: "24 de Febrero de 2026",
-	excerpt: "La institución ha sido sede y escenario de las presentaciones de los carteles de las tres últimas ediciones del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía",
-	fullContent: `La **Real Maestranza de Caballería de Sevilla** volverá a ser **patrocinador oficial del Circuito de Novilladas de Andalucía**, consolidando así su firme compromiso con la tauromaquia y con un certamen que se ha erigido, por méritos propios, en uno de los más prestigiosos del mundo dentro del escalafón de novilleros con picadores.
-
-Esta renovación refuerza el vínculo entre **una de las instituciones históricas más relevantes de la ciudad de Sevilla** y un proyecto que ha demostrado ser clave en el desarrollo y proyección de las carreras de los novilleros andaluces. A lo largo de sus ediciones, el Circuito se ha convertido en plataforma imprescindible para que los jóvenes valores de la tierra puedan mostrarse en plazas de primera línea, adquirir experienciay dar pasos decisivos en su trayectoria profesional.
-
-La **Real Maestranza** no solo respalda el certamen desde el ámbito institucional, sino que además **ha sido sede y escenario de las presentaciones y del desvelamiento de carteles en las tres últimas ediciones del Circuito**, reafirmando su implicación activa en la promoción del mismo. El pasado viernes 13 de febrero, el emblemático **Salón de Carteles** acogió la presentación oficial de los carteles de la séptima edición, en un acto que volvió a poner de manifiesto la dimensión y la consolidación del proyecto.
-
-El **Circuito de Novilladas de Andalucía**, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía**, recorrerá este año seis plazas de la comunidad, distribuidas en cinco provincias andaluzas. En esta nueva edición participarán nueve novilleros y seis ganaderías andaluzas, en un formato que combina competitividad, promoción y defensa del campo bravo.
-
-**La séptima edición arrancará el próximo 7 de marzo en Lucena**, dando inicio a un nuevo capítulo de un certamen que no solo garantiza oportunidades reales a los jóvenes toreros, sino que también **contribuye a dinamizar el tejido cultural, social y económico vinculado a la tauromaquia en Andalucía**.
-
-Con este respaldo renovado, la **Real Maestranza de Caballería de Sevilla reafirma su apuesta por el futuro del toreo** y por una cantera que encuentra en el **Circuito de Novilladas de Andalucía** un escaparate determinante para su crecimiento y consolidación profesional.
-
-Un certamen consolidado como referencia nacional gracias al compromiso institucional
-
-El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1007,
-    title: `La A.A.E.T. “Pedro Romero” concede sus primeros galardones y anuncia la presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026`,
-	image: "/images/aso.jpg",
-    category: "Actualidad",
-    date: "24 de Febrero de 2026",
-	excerpt: `Unos premios correspondientes a la temporada 2025, reconociendo las categorías de “Mejor Novillada”, “Mejor Novillo” y “Mejor Novillero”
-
-La nueva temporada de las Escuelas Andaluzas se presentará el próximo 20 de marzo en el Salón de Carteles de la Real Maestranza de Caballería de Sevilla`,
-	fullContent: `La **Asociación Andaluza de Escuelas Taurinas 'Pedro Romero'** ha dado a conocer oficialmente los galardones correspondientes a la **Temporada 2025**, reconociendo las categorías de *"Mejor Novillada"*, *"Mejor Novillo"* y *"Mejor Novillero"*.
-
-Se trata de unos premios que la entidad concede por primera vez con el objetivo de poner en valor el trabajo desarrollado por ganaderías, escuelas taurinas y jóvenes novilleros participantes en los ciclos formativos celebrados durante el pasado año.
-
-Los galardones han contado con el patrocinio del **Gran Hotel El Coto** en la categoría de **"Mejor Novillada"**, **PTV Telecom** en el apartado de **"Mejor Novillo"**, y la empresa **Guadix Fruit&Logistic** como patrocinadora del premio al **"Mejor Novillero"**.
-
-Mejor Novillada sin Picadores 2025
-El premio a la **"Mejor Novillada sin Picadores"** ha recaído en la ganadería **El Torero** por **"el magnífico encierro lidiado durante la 'Gran Semifinal' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur, celebrada el 23 de agosto de 2025 en la Plaza de Toros de Montoro.**
-
-Los novillos destacaron por su excelente presentación, bravura, codicia y entrega durante la lidia. Especial mención obtuvo el quinto ejemplar, premiado con la vuelta al ruedo. En conjunto se cortaron **diez orejas**, firmándose una extraordinaria tarde de triunfos que culminó con cuatro salidas a hombros por la 'Puerta Grande'.
-
-Mejor Novillo 2025
-El galardón al **"Mejor Novillo"** ha sido concedido a *'Desgreñado'*, herrado con el número 6 y **lidiado en sexto** lugar el **15 de junio de 2025** en la localidad gaditana de **Villaluenga del Rosario**.
-
-El astado, perteneciente a la ganadería **Las Monjas**, fue ***"premiado con la vuelta al ruedo tras su sobresaliente comportamiento"***. El festejo fue anunciado como **'Novillada de Reservas' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur**.
-
-Este ejemplar propició además el importante triunfo del novillero de la Escuela Taurina de Ronda, **Rojas Ramírez**, quien **cortó dos orejas con fuerte petición de rabo.**
-
-Mejor Novillero 2025
-El premio al **Mejor Novillero** ha recaído en el alumno de la Escuela Taurina de Ubrique, **Javier Torres “Bombita”**, proclamado **'Triunfador' del XXXI Ciclo de Novilladas sin Picadores tras la final celebrada el 30 de agosto de 2025 en Villacarrillo.**
-
-El joven novillero, perteneciente a una reconocida dinastía taurina y dotado de una acusada personalidad artística, ***"firmó una actuación sobresaliente en la que logró cuatro orejas, con fuerte petición de rabo en su segundo oponente, consolidándose como una de las grandes promesas del escalafón sin picadores"***.
-
-Presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026
-La Asociación ha anunciado igualmente que el **Proyecto de Fomento de la Cultura Taurina de Andalucía 2026** será presentado oficialmente el próximo **viernes 20 de marzo** en el **Salón de Carteles de la Real Maestranza de Caballería de Sevilla.**
-
-Este nuevo curso taurino de las **Escuelas Andaluzas** desarrollará durante la presente temporada el **XXXII Ciclo de Novilladas sin Picadores**, el **XXVIII Ciclo de Becerradas** y el **XXVII Encuentro Andaluz de Escuelas Taurinas**, pilares fundamentales del proyecto formativo y de promoción de nuevos valores de la tauromaquia andaluza.
-
-En el transcurso del mismo acto se hará entrega de la **Insignia de Oro** de la Asociación al matador de toros **Luis Reina**, exdirector de la Escuela Taurina de Badajoz, en reconocimiento a su trayectoria profesional y a su destacada labor en la formación de jóvenes toreros.
-
-Con estos reconocimientos y el anuncio del nuevo proyecto cultural, la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** reafirma su compromiso con la promoción, enseñanza y difusión de la cultura taurina, consolidando el papel de las escuelas como base esencial del futuro de la tauromaquia.`,
-	author: "Manolo Herrera",
-    authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1008,
-    title: `Valencia sueña en voz alta: la Feria de Fallas 2026 ya late`,
-	image: "/images/charla.jpg",
-    category: "Actualidad",
-    date: "24 de Febrero de 2026",
-	fullContent: `La tarde no fue de clarines ni de paseíllo, pero sí de *palabras que huelen a albero*. En torno a la **Feria de Fallas 2026**, la plaza de Plaza de Toros de Valencia volvió a sentirse eje del toreo. Porque **Valencia no es una plaza más**: es *termómetro, trampolín y memoria viva*.
-
-Aquí, como se dijo con rotundidad, *el público es generoso*. Y un triunfo en su ruedo **puede cambiar el signo de una temporada**. Lo saben los toreros y lo sabe la empresa.
-
-El empresario Víctor Zabala habló sin rodeos: desde su llegada se ha producido *una revolución*. Las cifras respaldan el discurso: **un 12-13% más de venta de entradas** confirma que los carteles han calado.
-
-Valencia —insistió— es una plaza que **relanza a los toreros a la gloria**. Y el 9 de octubre, es un día marcado para los valencianos en los que se han llevado a cabo carteles de bandera y quien sabe si podrían haber más corridas para esa fecha. También dejó caer un deseo que ilusiona: tras Fallas se hablará con Morante de la Puebla para contar con él en futuras citas.
-
-Sobre los grandes nombres, destacó que a Roca Rey se le ofrecieron tres tardes y ha reforzado el día 19, configurando **uno de los carteles de la temporada**.
-
-Para Víctor Hernández, estar anunciado en Valencia es un privilegio. No es una plaza cualquiera: ha sido *cuna de grandes figuras*, escenario donde el eco del pasado aún resuena en los tendidos.
-
-Pero Hernández no tiene prisa.
-
-"El toreo va muy rápido y la gente se cansa rápido. Yo prefiero andar despacio, saborear el momento y quedar marcado en la historia."
-
-En tiempos de consumo fugaz, su apuesta es la pausa. **Busca dejar huella**, no solo cortar orejas. Cree que el futuro del toreo está en toreros quizá menos vistos, en dar oportunidades reales para comprobar quién puede alcanzar la gloria. Su carrera —dice— avanza acorde al reconocimiento recibido.
-
-Y cuando surge la comparación con su compañero de cartel, Marco Pérez, responde con serenidad: "Soy quien soy". Sin entrar en duelos ajenos.
-
-Si para Hernández es privilegio, para Samuel Navalón es algo más profundo: **el cartel le quita el sueño**.
-
-Debutar como matador en la plaza de su tierra convierte esa tarde en *el día más importante de su vida*. La ilusión es compartida: la suya y la de una afición que sueña con verlo convertirse en referente, como en su día lo fueron Vicente Ruiz "El Soro" y Enrique Ponce.
-
-Samuel habla con naturalidad, casi con fe:
-
-"Mi carrera va acorde a mi reconocimiento y a mis triunfos, como Dios ha querido. Lo que ilusiona es lo que está en la mano de uno mismo."
-
-Y lanza una reflexión generacional: no hay que renunciar a disfrutar como los jóvenes de su edad; **solo saber cuándo y cómo**. Porque el toreo es una profesión celosa, que exige compromiso y saber renunciar.
-
-Hernández también recordó que las limitaciones y compromisos de la profesión no le han pesado: *era su sueño y estaba dispuesto a todo*. Ese es el hilo invisible que une a quienes se juegan la vida en el ruedo.
-
-Desde la Diputación se anunció además la intención de invertir en la plaza, tanto por bienestar animal como por la necesidad de que un coso como el de Valencia esté en las mejores condiciones posibles. Porque la historia merece escenario digno.
-
-La sensación final fue clara: **Valencia vuelve a ser punto de partida**. Una plaza que impulsa, que mide y que consagra. Donde un triunfo no es solo una estadística, sino un impulso vital.
-
-La Feria de Fallas 2026 aún no ha comenzado, pero ya se respira algo especial.
-
-Y cuando Valencia sueña… el toreo escucha.`,
-	author: "Enrique Salazar",
-    authorLogo: "/images/enrisala.jpg",
-    showAuthorHeader: true
-   },
-	{ 
-    id: 1009,
-    title: `Borja Jiménez anuncia en Sevilla su gran gesta en solitario en Las Ventas como homenaje al legado de Ignacio Sánchez Mejías`,
-	image: "/images/varis.jpg",
-    category: "Actualidad",
-    date: "24 de Febrero de 2026",
-	excerpt: "El acto celebrado en Pino Montano congregó a destacadas figuras del toreo y representantes del ámbito cultural.",
-	footerImage1: "/images/varis1.jpg",
-	footerImage2: "/images/varis2.jpg",
-	fullContent: `Sevilla volvió a situar en primer plano su memoria cultural con la presentación de la corrida “In Memoriam de Ignacio Sánchez Mejías”, un acto que puso el acento en la dimensión histórica y cultural del toreo más allá del propio festejo.
-
-La cita estuvo conducida por Antonio García Barbeito, quien centró su intervención en la figura de Sánchez Mejías como referente de una etapa en la que tauromaquia y pensamiento caminaron de la mano, especialmente en su vinculación con la Generación del 27. Durante su intervención, estableció un paralelismo entre aquel torero intelectual y la trayectoria actual de Borja Jiménez.
-
-Barbeito subrayó la aportación de Sánchez Mejías a la proyección cultural del toreo en el primer tercio del siglo XX y señaló que, salvando las distancias históricas, el gesto de Borja Jiménez de anunciarse en solitario supone una muestra de determinación y compromiso profesional. El torero sevillano lidiará toros de Toros de Cortés y Domingo Hernández el próximo 7 de junio en la plaza de Las Ventas, una de las citas de mayor exigencia del calendario.
-
-El acto reunió a una amplia representación institucional y social, reflejo de la relevancia del acontecimiento. Entre las autoridades asistentes se encontraban Ricardo Sánchez Antúnez, delegado del Gobierno de la Junta de Andalucía; Patricia del Pozo Fernández, consejera de Cultura y Deporte, quien clausuró el acto con una intervención en defensa de la cultura, de la figura de Sánchez Mejías y de la tauromaquia; Juan Manuel Ávila, senador por la provincia; y Álvaro Pimentel, teniente de alcalde del Ayuntamiento de Sevilla.
-
-También estuvieron presentes miembros de la familia Sánchez Mejías, los ganaderos Pablo del Río, Concha Hernández y Marcos Pérez, así como toreros retirados de reconocido prestigio como Espartaco, referente en la trayectoria de Borja Jiménez; Paco Ojeda; José Antonio Campuzano; Miguel Báez Litri; Pepín Liria; Raúl Gracia “El Tato”; y Dávila Miura. Entre las personalidades del ámbito cultural y social asistieron igualmente Ramón Calderón y Bertín Osborne.
-
-La presentación puso así el foco en la figura de Ignacio Sánchez Mejías y en la proyección de una corrida que combinará homenaje, responsabilidad profesional y proyección cultural en una de las plazas más relevantes del toreo.`,
-    author: "Antonio Tortosa",
-    authorLogo: "/images/anto.jpg",
-    showAuthorHeader: true
    }
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 175,
+    title: `Villaluenga del Rosario abre la temporada taurina en la provincia de Cádiz`,
+	image: "/images/villa.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "Villaluenga del Rosario acoge este domingo 1 de marzo una novillada organizada por la Escuela Taurina Comarcal de Ubrique",
+	footerImage1: "/images/villalu.jpg",
+	fullContent: `Una interesante novillada sin picadores en formato de clase práctica organizada por la escuela ubriqueña en colaboración con el Ayuntamiento de la localidad y que será retransmitida por Canal Sur TV. 
+Se lidiarán novillos de Hato Blanco para los alumnos
+Javier Torres “Bombita” de la ET de Ubrique
+Manuel Real “Realito” de la ET de Camas
+Mario Torres de la ET de Ubrique
+Oscar Campos de la ET “Yiyo” de Madrid
+Juan Manuel Viruez de la ET de Ubrique
+Celso Ortega de la ET la Gallosina de El Puerto de Santa Maria`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 176,
+    title: `Ilusión y futuro en la visita de David Galván al Colegio Montaigne de Jerez `,
+	image: "/images/ilu.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	fullContent: `**El Colegio Montaigne de Jerez (Compañía de María)** ha vivido esta mañana una jornada muy especial con la visita del torero **David Galván**, que compartió su experiencia y su pasión con más de medio centenar de escolares.
+El encuentro, impulsado por **Elena Aguilar**, dio comienzo con una didáctica y emotiva charla moderada por Óscar Torres, en la que participó activamente el joven alumno Mario, quien preparó la intervención con enorme ilusión y dedicación.
+Tras el coloquio, David Galván dedicó tiempo a firmar postales a todos los niños y niñas, antes de que la jornada culminara con una improvisada y entrañable clase de toreo de salón en el Patio Árabe del Colegio Montaigne, una auténtica joya arquitectónica. Allí, los alumnos, muleta en mano, llenaron el espacio de sonrisas, ilusión y alegría, convirtiendo el momento en una experiencia inolvidable.
+En ese mismo entorno, los escolares compartieron con David Galván una de sus tradiciones más especiales: cada miércoles, durante el recreo, se reúnen para torear en el patio, en un espacio reservado para ello y señalado con un cartel muy significativo que reza: “**Prohibido el paso. SOLO TOREROS**”. Un gesto sencillo que refleja la pasión, el respeto y la ilusión con la que viven el toreo desde edades tempranas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 177,
+    title: `Víctor Puerto disertará en Club Zaudín de Sevilla la conferencia “Del ruedo a la consulta: Aprendiendo a torear el miedo”`,
+	image: "/images/diser.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "El ato contará con la participación de la doctora Carmen Jodar y ambos ofrecerán una reflexión conjunta sobre cómo afrontar el miedo en contextos extremos y cotidianos",
+	fullContent: `El **Aula Cultural Zaudín** celebrará el próximo **26 de febrero de 2026** una nueva sesión de su ciclo de conferencias bajo el título ***“Del ruedo a la consulta: aprendiendo a torear el miedo”***, una propuesta divulgativa que abordará la gestión del miedo desde perspectivas complementarias: la tauromaquia y la medicina.
+
+El encuentro tendrá lugar a las **19:30 horas** en la **Sala Taurina del Club Zaudín Golf**, espacio habitual de actividades culturales y formativas en el área metropolitana de **Sevilla.**
+
+La conferencia contará con la participación de la doctora **Carmen Jodar** y del maestro **Víctor Puerto**, quienes ofrecerán una reflexión conjunta sobre cómo afrontar el miedo en contextos extremos y cotidianos.
+
+Bajo la premisa de que un torero -**Víctor Puerto**- frente al toro y un médico -**Carmen Jodar**- ante el sufrimiento humano comparten desafíos emocionales similares, la charla analizará qué tienen en común ambas profesiones: la presencia inevitable del miedo y la decisión consciente de no permitir que este determine las acciones personales o profesionales.
+
+El acto propone una conversación inspiradora centrada en comprender cómo funciona el miedo, de qué manera puede bloquear a las personas y cómo es posible aprender a convivir con él y transformarlo en una herramienta de crecimiento. Como resume el planteamiento del encuentro, ***“el miedo no se vence: se aprende a torear”***.
+
+Con esta iniciativa, el **Aula Cultural Zaudín** continúa impulsando actividades que combinan cultura, pensamiento y experiencias vitales, fomentando el diálogo entre disciplinas y acercando al público reflexiones útiles para la vida personal y profesional. La asistencia requiere reserva previa a través de los canales oficiales del **Club Zaudín Golf.**`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 178,
+    title: `David de Miranda recoge en Sevilla el XIX Memorial Manolo Vázquez del Real Club de Andalucía ‘El Aero’`,
+	image: "/images/memo.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	imageCaption: "Foto deF Alejandro del Castillo",
+	fullContent: `El matador de toros onubense **David de Miranda** ha recogido en **Sevilla** el **XIX Trofeo Memorial Manolo Vázquez**, galardón concedido por la tertulia taurina del **Real Club de Andalucía El Aero** para reconocer el acontecimiento más destacado de la temporada taurina en la **Plaza de Toros de la Real Maestranza de Caballería de Sevilla**.
+
+El acto de entrega se celebró el martes 24 de febrero en la sede social del club, situada en la calle Álvarez Quintero de la capital hispalense, en una ceremonia que reunió a destacadas personalidades del ámbito institucional y taurino. Presidió el acto el delegado del Gobierno de la Junta de Andalucía en Sevilla, **Ricardo Sánchez Antúnez**, acompañado por el presidente del club, **Enrique Moreno de la Cova**, el ganadero **Carlos Urquijo** y **Manuel Vázquez Gago**, hijo del recordado maestro que da nombre al premio.
+
+El jurado, presidido igualmente por **Manuel Vázquez Gago**, acordó por unanimidad conceder la distinción al diestro de **Trigueros** tras valorar el impacto artístico y taurino de su actuación en la Feria de Abril de Sevilla 2025.
+
+Durante aquella cita, **David de Miranda** firmó uno de los triunfos más rotundos del serial al cortar tres orejas, resultado que le permitió abrir la **Puerta del Príncipe** de la **Plaza de Toros de la Maestranza**, uno de los máximos reconocimientos de la tauromaquia y símbolo de las grandes gestas en el histórico **Coso del Baratillo**.
+
+El **Memorial Manolo Vázquez** alcanza con esta convocatoria su XIX. El galardón fue creado con el propósito de preservar el legado artístico y humano del maestro sevillano **Manolo Vázquez**, figura esencial del toreo clásico vinculada al **Barrio de San Bernardo**.
+
+A lo largo de sus anteriores ediciones, el premio ha distinguido a relevantes figuras del toreo y del ámbito ganadero como **Enrique Ponce**, **César Rincón**, **José María Manzanares**, **Julián López El Juli** -*en dos ocasiones*-, la ganadería **Núñez del Cuvillo**, **Lama de Góngora**, los ganaderos **Miura**, **Pepe Moral**, **Eduardo Dávila Miura**, **Morante de la Puebla** -*galardonado en cuatro ocasiones*-, **Antonio Ferrera**, **Juan José Padilla**, **Pablo Aguado** y **Juan Ortega**.
+
+Como es tradición, el trofeo consiste en una estatuilla realizada por el escultor e imaginero sevillano **Luis Álvarez Duarte**, reproducción de un conocido busto del torero conservado por la familia Vázquez.
+
+Con esta distinción, el **Real Club de Andalucía 'El Aero'** reconoce la dimensión artística del triunfo de **David de Miranda** en la pasada **Feria de Abril**, consolidando una actuación que ha quedado señalada como uno de los hitos más relevantes de la reciente temporada taurina sevillana.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 179,
+    title: `Las Ventas acogerá la presentación de  Taurofantasy`,
+	image: "/images/taurofanta.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	fullContent: `El próximo **martes 3 de marzo a las 18:30h** tendrá lugar en la **Sala Antonio Bienvenida de Las Ventas** la presentación de **Taurofantasy**, el primer fantasy taurino que revoluciona la forma de vivir el toreo.
+
+Taurofantasy traslada al universo de los toros la fórmula que ha conquistado a millones de aficionados al fútbol a través de los juegos fantasy: estrategia, gestión, emoción y competición a lo largo de toda una temporada. En este caso, los participantes se convierten en apoderados virtuales, gestionando un presupuesto ficticio para apoderar toreros y competir con otros usuarios en función de los resultados obtenidos en los ruedos.
+
+Una iniciativa que nace con el objetivo de acercar la tauromaquia a nuevas audiencias y de ofrecer a los aficionados una experiencia inédita de conexión con la Fiesta, combinando la pasión por los toros con la dinámica participativa y competitiva de los juegos de gestión deportiva.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 180,
+    title: `Al borde del colapso: el grito desesperado de Lagartijo acaba en el hospital tras nueve días sin comer`,
+	image: "/images/borde.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	footerImage1: "/images/bordeeç.jpg",
+	fullContent: `La protesta extrema del matador de toros cordobés Javier Moreno Lagartijo ha desembocado en una situación límite. La huelga de hambre que inició el pasado 17 de febrero, como último recurso para reclamar una oportunidad profesional, ha tenido un desenlace crítico con su ingreso urgente en el Hospital Reina Sofía de Córdoba.
+
+Durante varios días, el diestro permaneció acampado frente a la Plaza de Toros de Los Califas, protagonizando una imagen tan impactante como dolorosa: la de un torero olvidado, debilitándose a la intemperie para hacerse oír. El progresivo deterioro físico terminó por hacer insostenible la situación.
+Tras ser trasladado en ambulancia, el estado del torero era alarmante. Fuentes cercanas al entorno del matador, citadas por Diario de Sevilla, describen un cuadro preocupante: extrema debilidad, temblores constantes, desorientación y serias dificultades para articular palabras, consecuencia directa de nueve días sin ingerir alimento alguno.
+
+El ingreso hospitalario pone fin —al menos de forma forzada— a una protesta que ha sacudido con fuerza a la afición cordobesa y al mundo taurino en general. El gesto de Lagartijo no solo ha evidenciado el límite físico al que puede llegar un profesional del toro, sino que reabre un debate incómodo y profundo sobre el abandono, la falta de oportunidades y el silencio que rodea a muchos toreros cuando se apagan los focos.
+
+Una llamada de auxilio que ya no se expresa con palabras, sino con el cuerpo, y que deja una pregunta en el aire: ¿quién escucha cuando un torero lo arriesga todo fuera del ruedo?`,
+	author: "Rubén Sánchez",
+    authorLogo: "/images/rubens.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 181,
     title: `Sergio Pérez de Gregorio inicia un nuevo camino junto a Manolo Sánchez`,
