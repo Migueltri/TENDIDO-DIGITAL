@@ -40,6 +40,164 @@
 
 const featuredNews: NewsItem[] = [
 	{ 
+    id: 1004,
+    title: `Sergio Pérez de Gregorio inicia un nuevo camino junto a Manolo Sánchez`,
+	image: "/images/grego.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "El peñarandino firma un nuevo apoderamiento con el objetivo de impulsar su carrera de cara a la próxima temporada.",
+	fullContent: `El rejoneador Sergio Pérez de Gregorio ha anunciado el inicio de una nueva etapa en su carrera profesional tras firmar un apoderamiento con Manolo Sánchez.
+El acuerdo, hecho público a través de sus redes sociales del salmantino, supone un paso importante en su trayectoria, que afronta esta unión “con mucha ilusión y responsabilidad”, tal y como él mismo ha manifestado. Pérez de Gregorio ha destacado la confianza que le aporta estar rodeado de “una persona con experiencia y compromiso”, mostrando plena convicción en que el trabajo y el sacrificio serán claves para alcanzar grandes metas esta temporada.
+Con este movimiento, Sergio Pérez de Gregorio se prepara para afrontar una temporada que se presenta ilusionante, con la mirada puesta en consolidar su nombre en los carteles.
+“Vamos a por una gran temporada”, concluía el torero en su mensaje de agradecimiento a los aficionados que le apoyan de forma constante.
+La nueva alianza con Manolo Sánchez marca así el comienzo de un capítulo que aspira a traducirse en mayores oportunidades y en la confirmación del crecimiento profesional del torero a caballo.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1005,
+    title: `Granada celebrará su tradicional festival taurino solidario, a favor de la Asociación Síndrome de Down y la Fundación UAPO`,
+	image: "/images/festi.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: "El festival se celebrará el domingo 12 de abril, con un cartel de gran atractivo.",
+	fullContent: `La plaza de toros de Granada volverá a acoger uno de los festejos más solidarios de su temporada con la celebración del tradicional festival benéfico destinado a apoyar a la Asociación Síndrome de Down y a la Fundación UAPO. La cita combinará compromiso social y figuras destacadas del toreo en una jornada muy esperada por la afición.
+
+El festival se celebrará el **domingo 12 de abril** y contará con la participación del rejoneador **Sebastián Fernández** y los matadores **‘El Fandi’, Sebastián Castella, Daniel Luque y Pablo Aguado**, además de la novillera **Olga Casado**. Para la ocasión se lidiarán reses de las ganaderías **Hermanos García y Olga Jiménez**.
+
+Con este atractivo cartel, la ciudad nazarí se prepara para vivir una de las tardes más señaladas de su calendario taurino, en la que la solidaridad volverá a ocupar un lugar protagonista. La venta de entradas comenzará el 16 de marzo para abonados y el 19 de marzo para el público en general, a través de la web <a
+  www.funtausa.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.funtausa.com
+</a> y del teléfono 620 048 583.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1006,
+    title: `La Real Maestranza de Caballería renueva su compromiso como patrocinador oficial del Circuito de Novilladas de Andalucía`,
+	image: "/images/real.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: "La institución ha sido sede y escenario de las presentaciones de los carteles de las tres últimas ediciones del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía",
+	fullContent: `La **Real Maestranza de Caballería de Sevilla** volverá a ser **patrocinador oficial del Circuito de Novilladas de Andalucía**, consolidando así su firme compromiso con la tauromaquia y con un certamen que se ha erigido, por méritos propios, en uno de los más prestigiosos del mundo dentro del escalafón de novilleros con picadores.
+
+Esta renovación refuerza el vínculo entre **una de las instituciones históricas más relevantes de la ciudad de Sevilla** y un proyecto que ha demostrado ser clave en el desarrollo y proyección de las carreras de los novilleros andaluces. A lo largo de sus ediciones, el Circuito se ha convertido en plataforma imprescindible para que los jóvenes valores de la tierra puedan mostrarse en plazas de primera línea, adquirir experienciay dar pasos decisivos en su trayectoria profesional.
+
+La **Real Maestranza** no solo respalda el certamen desde el ámbito institucional, sino que además **ha sido sede y escenario de las presentaciones y del desvelamiento de carteles en las tres últimas ediciones del Circuito**, reafirmando su implicación activa en la promoción del mismo. El pasado viernes 13 de febrero, el emblemático **Salón de Carteles** acogió la presentación oficial de los carteles de la séptima edición, en un acto que volvió a poner de manifiesto la dimensión y la consolidación del proyecto.
+
+El **Circuito de Novilladas de Andalucía**, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía**, recorrerá este año seis plazas de la comunidad, distribuidas en cinco provincias andaluzas. En esta nueva edición participarán nueve novilleros y seis ganaderías andaluzas, en un formato que combina competitividad, promoción y defensa del campo bravo.
+
+**La séptima edición arrancará el próximo 7 de marzo en Lucena**, dando inicio a un nuevo capítulo de un certamen que no solo garantiza oportunidades reales a los jóvenes toreros, sino que también **contribuye a dinamizar el tejido cultural, social y económico vinculado a la tauromaquia en Andalucía**.
+
+Con este respaldo renovado, la **Real Maestranza de Caballería de Sevilla reafirma su apuesta por el futuro del toreo** y por una cantera que encuentra en el **Circuito de Novilladas de Andalucía** un escaparate determinante para su crecimiento y consolidación profesional.
+
+Un certamen consolidado como referencia nacional gracias al compromiso institucional
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1007,
+    title: `La A.A.E.T. “Pedro Romero” concede sus primeros galardones y anuncia la presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026`,
+	image: "/images/aso.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: `Unos premios correspondientes a la temporada 2025, reconociendo las categorías de “Mejor Novillada”, “Mejor Novillo” y “Mejor Novillero”
+
+La nueva temporada de las Escuelas Andaluzas se presentará el próximo 20 de marzo en el Salón de Carteles de la Real Maestranza de Caballería de Sevilla`,
+	fullContent: `La **Asociación Andaluza de Escuelas Taurinas 'Pedro Romero'** ha dado a conocer oficialmente los galardones correspondientes a la **Temporada 2025**, reconociendo las categorías de *"Mejor Novillada"*, *"Mejor Novillo"* y *"Mejor Novillero"*.
+
+Se trata de unos premios que la entidad concede por primera vez con el objetivo de poner en valor el trabajo desarrollado por ganaderías, escuelas taurinas y jóvenes novilleros participantes en los ciclos formativos celebrados durante el pasado año.
+
+Los galardones han contado con el patrocinio del **Gran Hotel El Coto** en la categoría de **"Mejor Novillada"**, **PTV Telecom** en el apartado de **"Mejor Novillo"**, y la empresa **Guadix Fruit&Logistic** como patrocinadora del premio al **"Mejor Novillero"**.
+
+Mejor Novillada sin Picadores 2025
+El premio a la **"Mejor Novillada sin Picadores"** ha recaído en la ganadería **El Torero** por **"el magnífico encierro lidiado durante la 'Gran Semifinal' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur, celebrada el 23 de agosto de 2025 en la Plaza de Toros de Montoro.**
+
+Los novillos destacaron por su excelente presentación, bravura, codicia y entrega durante la lidia. Especial mención obtuvo el quinto ejemplar, premiado con la vuelta al ruedo. En conjunto se cortaron **diez orejas**, firmándose una extraordinaria tarde de triunfos que culminó con cuatro salidas a hombros por la 'Puerta Grande'.
+
+Mejor Novillo 2025
+El galardón al **"Mejor Novillo"** ha sido concedido a *'Desgreñado'*, herrado con el número 6 y **lidiado en sexto** lugar el **15 de junio de 2025** en la localidad gaditana de **Villaluenga del Rosario**.
+
+El astado, perteneciente a la ganadería **Las Monjas**, fue ***"premiado con la vuelta al ruedo tras su sobresaliente comportamiento"***. El festejo fue anunciado como **'Novillada de Reservas' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur**.
+
+Este ejemplar propició además el importante triunfo del novillero de la Escuela Taurina de Ronda, **Rojas Ramírez**, quien **cortó dos orejas con fuerte petición de rabo.**
+
+Mejor Novillero 2025
+El premio al **Mejor Novillero** ha recaído en el alumno de la Escuela Taurina de Ubrique, **Javier Torres “Bombita”**, proclamado **'Triunfador' del XXXI Ciclo de Novilladas sin Picadores tras la final celebrada el 30 de agosto de 2025 en Villacarrillo.**
+
+El joven novillero, perteneciente a una reconocida dinastía taurina y dotado de una acusada personalidad artística, ***"firmó una actuación sobresaliente en la que logró cuatro orejas, con fuerte petición de rabo en su segundo oponente, consolidándose como una de las grandes promesas del escalafón sin picadores"***.
+
+Presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026
+La Asociación ha anunciado igualmente que el **Proyecto de Fomento de la Cultura Taurina de Andalucía 2026** será presentado oficialmente el próximo **viernes 20 de marzo** en el **Salón de Carteles de la Real Maestranza de Caballería de Sevilla.**
+
+Este nuevo curso taurino de las **Escuelas Andaluzas** desarrollará durante la presente temporada el **XXXII Ciclo de Novilladas sin Picadores**, el **XXVIII Ciclo de Becerradas** y el **XXVII Encuentro Andaluz de Escuelas Taurinas**, pilares fundamentales del proyecto formativo y de promoción de nuevos valores de la tauromaquia andaluza.
+
+En el transcurso del mismo acto se hará entrega de la **Insignia de Oro** de la Asociación al matador de toros **Luis Reina**, exdirector de la Escuela Taurina de Badajoz, en reconocimiento a su trayectoria profesional y a su destacada labor en la formación de jóvenes toreros.
+
+Con estos reconocimientos y el anuncio del nuevo proyecto cultural, la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** reafirma su compromiso con la promoción, enseñanza y difusión de la cultura taurina, consolidando el papel de las escuelas como base esencial del futuro de la tauromaquia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 1008,
+    title: `Valencia sueña en voz alta: la Feria de Fallas 2026 ya late`,
+	image: "/images/charla.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	fullContent: `La tarde no fue de clarines ni de paseíllo, pero sí de *palabras que huelen a albero*. En torno a la **Feria de Fallas 2026**, la plaza de Plaza de Toros de Valencia volvió a sentirse eje del toreo. Porque **Valencia no es una plaza más**: es *termómetro, trampolín y memoria viva*.
+
+Aquí, como se dijo con rotundidad, *el público es generoso*. Y un triunfo en su ruedo **puede cambiar el signo de una temporada**. Lo saben los toreros y lo sabe la empresa.
+
+El empresario Víctor Zabala habló sin rodeos: desde su llegada se ha producido *una revolución*. Las cifras respaldan el discurso: **un 12-13% más de venta de entradas** confirma que los carteles han calado.
+
+Valencia —insistió— es una plaza que **relanza a los toreros a la gloria**. Y el 9 de octubre, es un día marcado para los valencianos en los que se han llevado a cabo carteles de bandera y quien sabe si podrían haber más corridas para esa fecha. También dejó caer un deseo que ilusiona: tras Fallas se hablará con Morante de la Puebla para contar con él en futuras citas.
+
+Sobre los grandes nombres, destacó que a Roca Rey se le ofrecieron tres tardes y ha reforzado el día 19, configurando **uno de los carteles de la temporada**.
+
+Para Víctor Hernández, estar anunciado en Valencia es un privilegio. No es una plaza cualquiera: ha sido *cuna de grandes figuras*, escenario donde el eco del pasado aún resuena en los tendidos.
+
+Pero Hernández no tiene prisa.
+
+"El toreo va muy rápido y la gente se cansa rápido. Yo prefiero andar despacio, saborear el momento y quedar marcado en la historia."
+
+En tiempos de consumo fugaz, su apuesta es la pausa. **Busca dejar huella**, no solo cortar orejas. Cree que el futuro del toreo está en toreros quizá menos vistos, en dar oportunidades reales para comprobar quién puede alcanzar la gloria. Su carrera —dice— avanza acorde al reconocimiento recibido.
+
+Y cuando surge la comparación con su compañero de cartel, Marco Pérez, responde con serenidad: "Soy quien soy". Sin entrar en duelos ajenos.
+
+Si para Hernández es privilegio, para Samuel Navalón es algo más profundo: **el cartel le quita el sueño**.
+
+Debutar como matador en la plaza de su tierra convierte esa tarde en *el día más importante de su vida*. La ilusión es compartida: la suya y la de una afición que sueña con verlo convertirse en referente, como en su día lo fueron Vicente Ruiz "El Soro" y Enrique Ponce.
+
+Samuel habla con naturalidad, casi con fe:
+
+"Mi carrera va acorde a mi reconocimiento y a mis triunfos, como Dios ha querido. Lo que ilusiona es lo que está en la mano de uno mismo."
+
+Y lanza una reflexión generacional: no hay que renunciar a disfrutar como los jóvenes de su edad; **solo saber cuándo y cómo**. Porque el toreo es una profesión celosa, que exige compromiso y saber renunciar.
+
+Hernández también recordó que las limitaciones y compromisos de la profesión no le han pesado: *era su sueño y estaba dispuesto a todo*. Ese es el hilo invisible que une a quienes se juegan la vida en el ruedo.
+
+Desde la Diputación se anunció además la intención de invertir en la plaza, tanto por bienestar animal como por la necesidad de que un coso como el de Valencia esté en las mejores condiciones posibles. Porque la historia merece escenario digno.
+
+La sensación final fue clara: **Valencia vuelve a ser punto de partida**. Una plaza que impulsa, que mide y que consagra. Donde un triunfo no es solo una estadística, sino un impulso vital.
+
+La Feria de Fallas 2026 aún no ha comenzado, pero ya se respira algo especial.
+
+Y cuando Valencia sueña… el toreo escucha.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 1009,
     title: `Borja Jiménez anuncia en Sevilla su gran gesta en solitario en Las Ventas como homenaje al legado de Ignacio Sánchez Mejías`,
 	image: "/images/varis.jpg",
@@ -66,6 +224,164 @@ La presentación puso así el foco en la figura de Ignacio Sánchez Mejías y en
 ];
 
 const latestNews: NewsItem[] = [
+	{ 
+    id: 181,
+    title: `Sergio Pérez de Gregorio inicia un nuevo camino junto a Manolo Sánchez`,
+	image: "/images/grego.jpg",
+    category: "Actualidad",
+    date: "25 de Febrero de 2026",
+	excerpt: "El peñarandino firma un nuevo apoderamiento con el objetivo de impulsar su carrera de cara a la próxima temporada.",
+	fullContent: `El rejoneador Sergio Pérez de Gregorio ha anunciado el inicio de una nueva etapa en su carrera profesional tras firmar un apoderamiento con Manolo Sánchez.
+El acuerdo, hecho público a través de sus redes sociales del salmantino, supone un paso importante en su trayectoria, que afronta esta unión “con mucha ilusión y responsabilidad”, tal y como él mismo ha manifestado. Pérez de Gregorio ha destacado la confianza que le aporta estar rodeado de “una persona con experiencia y compromiso”, mostrando plena convicción en que el trabajo y el sacrificio serán claves para alcanzar grandes metas esta temporada.
+Con este movimiento, Sergio Pérez de Gregorio se prepara para afrontar una temporada que se presenta ilusionante, con la mirada puesta en consolidar su nombre en los carteles.
+“Vamos a por una gran temporada”, concluía el torero en su mensaje de agradecimiento a los aficionados que le apoyan de forma constante.
+La nueva alianza con Manolo Sánchez marca así el comienzo de un capítulo que aspira a traducirse en mayores oportunidades y en la confirmación del crecimiento profesional del torero a caballo.`,
+	author: "Inés Sáez",
+    authorLogo: "/images/nereasa.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 182,
+    title: `Granada celebrará su tradicional festival taurino solidario, a favor de la Asociación Síndrome de Down y la Fundación UAPO`,
+	image: "/images/festi.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: "El festival se celebrará el domingo 12 de abril, con un cartel de gran atractivo.",
+	fullContent: `La plaza de toros de Granada volverá a acoger uno de los festejos más solidarios de su temporada con la celebración del tradicional festival benéfico destinado a apoyar a la Asociación Síndrome de Down y a la Fundación UAPO. La cita combinará compromiso social y figuras destacadas del toreo en una jornada muy esperada por la afición.
+
+El festival se celebrará el **domingo 12 de abril** y contará con la participación del rejoneador **Sebastián Fernández** y los matadores **‘El Fandi’, Sebastián Castella, Daniel Luque y Pablo Aguado**, además de la novillera **Olga Casado**. Para la ocasión se lidiarán reses de las ganaderías **Hermanos García y Olga Jiménez**.
+
+Con este atractivo cartel, la ciudad nazarí se prepara para vivir una de las tardes más señaladas de su calendario taurino, en la que la solidaridad volverá a ocupar un lugar protagonista. La venta de entradas comenzará el 16 de marzo para abonados y el 19 de marzo para el público en general, a través de la web <a
+  www.funtausa.com
+  target="_blank"
+  rel="noopener noreferrer"
+  style="color:#2563eb; text-decoration:underline; font-weight:500;"
+>
+  www.funtausa.com
+</a> y del teléfono 620 048 583.`,
+    author: "Antonio Tortosa",
+    authorLogo: "/images/anto.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 183,
+    title: `La Real Maestranza de Caballería renueva su compromiso como patrocinador oficial del Circuito de Novilladas de Andalucía`,
+	image: "/images/real.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: "La institución ha sido sede y escenario de las presentaciones de los carteles de las tres últimas ediciones del certamen impulsado por la Fundación Toro de Lidia y la Junta de Andalucía",
+	fullContent: `La **Real Maestranza de Caballería de Sevilla** volverá a ser **patrocinador oficial del Circuito de Novilladas de Andalucía**, consolidando así su firme compromiso con la tauromaquia y con un certamen que se ha erigido, por méritos propios, en uno de los más prestigiosos del mundo dentro del escalafón de novilleros con picadores.
+
+Esta renovación refuerza el vínculo entre **una de las instituciones históricas más relevantes de la ciudad de Sevilla** y un proyecto que ha demostrado ser clave en el desarrollo y proyección de las carreras de los novilleros andaluces. A lo largo de sus ediciones, el Circuito se ha convertido en plataforma imprescindible para que los jóvenes valores de la tierra puedan mostrarse en plazas de primera línea, adquirir experienciay dar pasos decisivos en su trayectoria profesional.
+
+La **Real Maestranza** no solo respalda el certamen desde el ámbito institucional, sino que además **ha sido sede y escenario de las presentaciones y del desvelamiento de carteles en las tres últimas ediciones del Circuito**, reafirmando su implicación activa en la promoción del mismo. El pasado viernes 13 de febrero, el emblemático **Salón de Carteles** acogió la presentación oficial de los carteles de la séptima edición, en un acto que volvió a poner de manifiesto la dimensión y la consolidación del proyecto.
+
+El **Circuito de Novilladas de Andalucía**, impulsado por la **Fundación Toro de Lidia** y la **Junta de Andalucía**, recorrerá este año seis plazas de la comunidad, distribuidas en cinco provincias andaluzas. En esta nueva edición participarán nueve novilleros y seis ganaderías andaluzas, en un formato que combina competitividad, promoción y defensa del campo bravo.
+
+**La séptima edición arrancará el próximo 7 de marzo en Lucena**, dando inicio a un nuevo capítulo de un certamen que no solo garantiza oportunidades reales a los jóvenes toreros, sino que también **contribuye a dinamizar el tejido cultural, social y económico vinculado a la tauromaquia en Andalucía**.
+
+Con este respaldo renovado, la **Real Maestranza de Caballería de Sevilla reafirma su apuesta por el futuro del toreo** y por una cantera que encuentra en el **Circuito de Novilladas de Andalucía** un escaparate determinante para su crecimiento y consolidación profesional.
+
+Un certamen consolidado como referencia nacional gracias al compromiso institucional
+
+El **Circuito de Novilladas de Andalucía, promovido por la Junta de Andalucía y la Fundación Toro de Lidia** , se ha convertido en un referente nacional en la promoción del toreo base, apostando por el relevo generacional, la vertebración del territorio y la puesta en valor de las ganaderías y profesionales andaluces, con un formato que combina exigencia, visibilidad y proyección mediática. Su celebración es posible gracias al apoyo de **Diputación de Málaga, Diputación de Granada, Diputación de Huelva, Diputación de Córdoba, Diputación de Cádiz, Instituto Andaluz de la Juventud, Fundación Caja Rural del Sur y Fundación Cajasol** .`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 184,
+    title: `La A.A.E.T. “Pedro Romero” concede sus primeros galardones y anuncia la presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026`,
+	image: "/images/aso.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	excerpt: `Unos premios correspondientes a la temporada 2025, reconociendo las categorías de “Mejor Novillada”, “Mejor Novillo” y “Mejor Novillero”
+
+La nueva temporada de las Escuelas Andaluzas se presentará el próximo 20 de marzo en el Salón de Carteles de la Real Maestranza de Caballería de Sevilla`,
+	fullContent: `La **Asociación Andaluza de Escuelas Taurinas 'Pedro Romero'** ha dado a conocer oficialmente los galardones correspondientes a la **Temporada 2025**, reconociendo las categorías de *"Mejor Novillada"*, *"Mejor Novillo"* y *"Mejor Novillero"*.
+
+Se trata de unos premios que la entidad concede por primera vez con el objetivo de poner en valor el trabajo desarrollado por ganaderías, escuelas taurinas y jóvenes novilleros participantes en los ciclos formativos celebrados durante el pasado año.
+
+Los galardones han contado con el patrocinio del **Gran Hotel El Coto** en la categoría de **"Mejor Novillada"**, **PTV Telecom** en el apartado de **"Mejor Novillo"**, y la empresa **Guadix Fruit&Logistic** como patrocinadora del premio al **"Mejor Novillero"**.
+
+Mejor Novillada sin Picadores 2025
+El premio a la **"Mejor Novillada sin Picadores"** ha recaído en la ganadería **El Torero** por **"el magnífico encierro lidiado durante la 'Gran Semifinal' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur, celebrada el 23 de agosto de 2025 en la Plaza de Toros de Montoro.**
+
+Los novillos destacaron por su excelente presentación, bravura, codicia y entrega durante la lidia. Especial mención obtuvo el quinto ejemplar, premiado con la vuelta al ruedo. En conjunto se cortaron **diez orejas**, firmándose una extraordinaria tarde de triunfos que culminó con cuatro salidas a hombros por la 'Puerta Grande'.
+
+Mejor Novillo 2025
+El galardón al **"Mejor Novillo"** ha sido concedido a *'Desgreñado'*, herrado con el número 6 y **lidiado en sexto** lugar el **15 de junio de 2025** en la localidad gaditana de **Villaluenga del Rosario**.
+
+El astado, perteneciente a la ganadería **Las Monjas**, fue ***"premiado con la vuelta al ruedo tras su sobresaliente comportamiento"***. El festejo fue anunciado como **'Novillada de Reservas' del XXXI Ciclo de Novilladas sin Picadores retransmitido por Canal Sur**.
+
+Este ejemplar propició además el importante triunfo del novillero de la Escuela Taurina de Ronda, **Rojas Ramírez**, quien **cortó dos orejas con fuerte petición de rabo.**
+
+Mejor Novillero 2025
+El premio al **Mejor Novillero** ha recaído en el alumno de la Escuela Taurina de Ubrique, **Javier Torres “Bombita”**, proclamado **'Triunfador' del XXXI Ciclo de Novilladas sin Picadores tras la final celebrada el 30 de agosto de 2025 en Villacarrillo.**
+
+El joven novillero, perteneciente a una reconocida dinastía taurina y dotado de una acusada personalidad artística, ***"firmó una actuación sobresaliente en la que logró cuatro orejas, con fuerte petición de rabo en su segundo oponente, consolidándose como una de las grandes promesas del escalafón sin picadores"***.
+
+Presentación del Proyecto de Fomento de la Cultura Taurina de Andalucía 2026
+La Asociación ha anunciado igualmente que el **Proyecto de Fomento de la Cultura Taurina de Andalucía 2026** será presentado oficialmente el próximo **viernes 20 de marzo** en el **Salón de Carteles de la Real Maestranza de Caballería de Sevilla.**
+
+Este nuevo curso taurino de las **Escuelas Andaluzas** desarrollará durante la presente temporada el **XXXII Ciclo de Novilladas sin Picadores**, el **XXVIII Ciclo de Becerradas** y el **XXVII Encuentro Andaluz de Escuelas Taurinas**, pilares fundamentales del proyecto formativo y de promoción de nuevos valores de la tauromaquia andaluza.
+
+En el transcurso del mismo acto se hará entrega de la **Insignia de Oro** de la Asociación al matador de toros **Luis Reina**, exdirector de la Escuela Taurina de Badajoz, en reconocimiento a su trayectoria profesional y a su destacada labor en la formación de jóvenes toreros.
+
+Con estos reconocimientos y el anuncio del nuevo proyecto cultural, la **Asociación Andaluza de Escuelas Taurinas “Pedro Romero”** reafirma su compromiso con la promoción, enseñanza y difusión de la cultura taurina, consolidando el papel de las escuelas como base esencial del futuro de la tauromaquia.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 185,
+    title: `Valencia sueña en voz alta: la Feria de Fallas 2026 ya late`,
+	image: "/images/charla.jpg",
+    category: "Actualidad",
+    date: "24 de Febrero de 2026",
+	fullContent: `La tarde no fue de clarines ni de paseíllo, pero sí de *palabras que huelen a albero*. En torno a la **Feria de Fallas 2026**, la plaza de Plaza de Toros de Valencia volvió a sentirse eje del toreo. Porque **Valencia no es una plaza más**: es *termómetro, trampolín y memoria viva*.
+
+Aquí, como se dijo con rotundidad, *el público es generoso*. Y un triunfo en su ruedo **puede cambiar el signo de una temporada**. Lo saben los toreros y lo sabe la empresa.
+
+El empresario Víctor Zabala habló sin rodeos: desde su llegada se ha producido *una revolución*. Las cifras respaldan el discurso: **un 12-13% más de venta de entradas** confirma que los carteles han calado.
+
+Valencia —insistió— es una plaza que **relanza a los toreros a la gloria**. Y el 9 de octubre, es un día marcado para los valencianos en los que se han llevado a cabo carteles de bandera y quien sabe si podrían haber más corridas para esa fecha. También dejó caer un deseo que ilusiona: tras Fallas se hablará con Morante de la Puebla para contar con él en futuras citas.
+
+Sobre los grandes nombres, destacó que a Roca Rey se le ofrecieron tres tardes y ha reforzado el día 19, configurando **uno de los carteles de la temporada**.
+
+Para Víctor Hernández, estar anunciado en Valencia es un privilegio. No es una plaza cualquiera: ha sido *cuna de grandes figuras*, escenario donde el eco del pasado aún resuena en los tendidos.
+
+Pero Hernández no tiene prisa.
+
+"El toreo va muy rápido y la gente se cansa rápido. Yo prefiero andar despacio, saborear el momento y quedar marcado en la historia."
+
+En tiempos de consumo fugaz, su apuesta es la pausa. **Busca dejar huella**, no solo cortar orejas. Cree que el futuro del toreo está en toreros quizá menos vistos, en dar oportunidades reales para comprobar quién puede alcanzar la gloria. Su carrera —dice— avanza acorde al reconocimiento recibido.
+
+Y cuando surge la comparación con su compañero de cartel, Marco Pérez, responde con serenidad: "Soy quien soy". Sin entrar en duelos ajenos.
+
+Si para Hernández es privilegio, para Samuel Navalón es algo más profundo: **el cartel le quita el sueño**.
+
+Debutar como matador en la plaza de su tierra convierte esa tarde en *el día más importante de su vida*. La ilusión es compartida: la suya y la de una afición que sueña con verlo convertirse en referente, como en su día lo fueron Vicente Ruiz "El Soro" y Enrique Ponce.
+
+Samuel habla con naturalidad, casi con fe:
+
+"Mi carrera va acorde a mi reconocimiento y a mis triunfos, como Dios ha querido. Lo que ilusiona es lo que está en la mano de uno mismo."
+
+Y lanza una reflexión generacional: no hay que renunciar a disfrutar como los jóvenes de su edad; **solo saber cuándo y cómo**. Porque el toreo es una profesión celosa, que exige compromiso y saber renunciar.
+
+Hernández también recordó que las limitaciones y compromisos de la profesión no le han pesado: *era su sueño y estaba dispuesto a todo*. Ese es el hilo invisible que une a quienes se juegan la vida en el ruedo.
+
+Desde la Diputación se anunció además la intención de invertir en la plaza, tanto por bienestar animal como por la necesidad de que un coso como el de Valencia esté en las mejores condiciones posibles. Porque la historia merece escenario digno.
+
+La sensación final fue clara: **Valencia vuelve a ser punto de partida**. Una plaza que impulsa, que mide y que consagra. Donde un triunfo no es solo una estadística, sino un impulso vital.
+
+La Feria de Fallas 2026 aún no ha comenzado, pero ya se respira algo especial.
+
+Y cuando Valencia sueña… el toreo escucha.`,
+	author: "Enrique Salazar",
+    authorLogo: "/images/enrisala.jpg",
+    showAuthorHeader: true
+   },
 	{ 
     id: 186,
     title: `Borja Jiménez anuncia en Sevilla su gran gesta en solitario en Las Ventas como homenaje al legado de Ignacio Sánchez Mejías`,
@@ -197,7 +513,7 @@ María López Tristancho, conocida artísticamente como **Argentina**, es una de
 **Tema:** *El toro y el cante*`,
 	author: "Manolo Herrera",
     authorLogo: "/images/manoloherrera.jpg",
-    showAuthorHeader: true
+    showAuthorHeader: true,
    },
 	{ 
     id: 190,
