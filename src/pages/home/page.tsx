@@ -38,6 +38,28 @@
   showAuthorHeader?: boolean;
 }
 
+import fs from 'fs';
+import path from 'path';
+
+export async function obtenerNoticias() {
+  // 1. Leer el archivo db.json directamente (evita problemas de caché de Vercel)
+  const filePath = path.join(process.cwd(), 'public', 'data', 'db.json');
+  
+  try {
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const db = JSON.parse(fileContents);
+    
+    // 2. Filtrar SOLO las noticias activas (las que tienen el tick verde en el panel)
+    const noticiasActivas = db.articles.filter(noticia => noticia.isPublished === true);
+    
+    // 3. Ordenar de más nueva a más antigua
+    return noticiasActivas.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  } catch (error) {
+    console.error("Error leyendo las noticias:", error);
+    return [];
+  }
+}
+
 const featuredNews: NewsItem[] = [
 	{ 
     id: 1003,
