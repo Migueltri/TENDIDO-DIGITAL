@@ -13424,6 +13424,7 @@ function formatTimeAgo(dateString: string): string {
   useEffect(() => {
     const loadData = async () => {
       try {
+        // 1. Descargamos el archivo db.json que genera el panel
         const response = await fetch(`/data/db.json?v=${new Date().getTime()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
@@ -13431,6 +13432,7 @@ function formatTimeAgo(dateString: string): string {
         const fetchedAuthors = data.authors || [];
         const fetchedArticles = data.articles || [];
 
+        // 2. Procesamos las noticias del panel (solo las publicadas)
         const processedArticles = fetchedArticles
           .filter((a: any) => a.isPublished)
           .map((a: any) => {
@@ -13448,6 +13450,7 @@ function formatTimeAgo(dateString: string): string {
               title: a.title,
               image: a.imageUrl,
               category: a.category,
+              // Formateamos la fecha para que se vea bien
               date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
               rawDate: a.date,
               excerpt: a.summary,
@@ -13462,48 +13465,34 @@ function formatTimeAgo(dateString: string): string {
             };
           });
 
-		  {/* Bloque de Imagen de Portada con Pie de Foto */}
-<figure className="relative w-full mb-8">
-    <img 
-        src={article.imageUrl} 
-        alt={article.title} 
-        className="w-full h-auto object-cover rounded-lg" // Tus clases actuales
-    />
-    
-    {/* Solo mostramos el pie si existe caption o crédito */}
-    {(article.imageCaption || article.photoCredit) && (
-        <figcaption className="mt-2 text-sm text-gray-500 flex justify-between items-center border-b border-gray-100 pb-2">
-            {/* Descripción de la foto */}
-            <span className="italic">
-                {article.imageCaption}
-            </span>
-            
-            {/* Autor de la foto (Crédito) */}
-            {article.photoCredit && (
-                <span className="text-xs font-bold uppercase tracking-wide ml-4 text-gray-400">
-                    📷 {article.photoCredit}
-                </span>
-            )}
-        </figcaption>
-    )}
-</figure>
-
+        // 3. Juntamos las noticias del panel con las antiguas (latestNews)
         const combinedRawList = [...processedArticles, ...latestNews];
-        const uniqueNewsMap = new Map();
         
+        // 4. Eliminamos duplicados por si acaso
+        const uniqueNewsMap = new Map();
         combinedRawList.forEach(news => {
           if (!uniqueNewsMap.has(news.id)) uniqueNewsMap.set(news.id, news);
         });
 
         const finalNewsList = Array.from(uniqueNewsMap.values());
-        finalNewsList.sort((a, b) => new Date(b.rawDate || "").getTime() - new Date(a.rawDate || "").getTime());
+        
+        // 5. ORDENAMOS TODAS LAS NOTICIAS POR FECHA (Las más nuevas primero)
+        finalNewsList.sort((a, b) => {
+            // Intentamos usar rawDate si existe, si no, intentamos parsear 'date'
+            const dateA = a.rawDate ? new Date(a.rawDate).getTime() : new Date(a.date).getTime();
+            const dateB = b.rawDate ? new Date(b.rawDate).getTime() : new Date(b.date).getTime();
+            return dateB - dateA;
+        });
 
+        // 6. Guardamos la lista final combinada y ordenada
         setCombinedNews(finalNewsList);
 
+        // 7. Calculamos las noticias de las últimas 48h para el slider superior
         const now = new Date().getTime();
         let breakingNews = finalNewsList.filter(n => {
-          if (!n.rawDate) return false;
-          return (now - new Date(n.rawDate).getTime()) / 36e5 <= 48;
+          const newsDate = n.rawDate ? new Date(n.rawDate).getTime() : new Date(n.date).getTime();
+          if (isNaN(newsDate)) return false;
+          return (now - newsDate) / 36e5 <= 48;
         });
 
         if (breakingNews.length === 0 && finalNewsList.length > 0) {
@@ -13513,7 +13502,7 @@ function formatTimeAgo(dateString: string): string {
 
       } catch (error) {
         console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
-        const fallbackList = [...latestNews].sort((a, b) => new Date(b.rawDate || "").getTime() - new Date(a.rawDate || "").getTime());
+        const fallbackList = [...latestNews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setCombinedNews(fallbackList);
         setNews24h(fallbackList.slice(0, 3)); 
       }
@@ -13521,52 +13510,6 @@ function formatTimeAgo(dateString: string): string {
 
     loadData();
   }, []);
-
-  // --- 2. RELOJ AISLADO ---
-  useEffect(() => {
-    const interval = setInterval(() => setCurrentTime(new Date()), 60000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // --- 3. SLIDER PROTEGIDO CONTRA ARRAYS VACÍOS ---
-  useEffect(() => {
-    if (!featuredNews || featuredNews.length === 0) return;
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [featuredNews?.length]);
-
-  // --- 4. SCROLL OPTIMIZADO PARA NO SATURAR EL RENDERIZADO ---
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setScrollY(window.scrollY);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // --- 5. CONTROL DE MODALES CORREGIDO ---
-  useEffect(() => {
-    if (isNewsModalOpen || isChronicleModalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [isNewsModalOpen, isChronicleModalOpen]);
-	
-useEffect(() => {
-  const interval = setInterval(() => setCurrentTime(new Date()), 60000); // cada minuto
-  return () => clearInterval(interval);
-}, []);
 
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
