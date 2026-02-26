@@ -58,25 +58,6 @@
       "bullfightResults": []
     },
     {
-      "id": "mlzgekylqheupbev1bb",
-      "title": "bf h trtr",
-      "summary": " rewfre fre",
-      "content": "&nbsp;ferwf erf re f",
-      "category": "Actualidad",
-      "authorId": "1",
-      "imageUrl": "https://picsum.photos/800/600",
-      "imageCaption": "",
-      "photoCredit": "",
-      "contentImages": [],
-      "date": "2026-02-23T17:31:49.519Z",
-      "isPublished": true,
-      "bullfightLocation": "",
-      "bullfightCattle": "",
-      "bullfightSummary": "",
-      "bullfightResults": [],
-      "lastModified": "2026-02-23T17:32:09.929Z"
-    },
-    {
       "id": "mm0gpiqj6zsdx3dtnq8",
       "title": "hoiwoieb`sobd",
       "summary": "",
@@ -375,7 +356,28 @@
       "lastModified": "2026-02-22T18:29:17.057Z",
       "archivedAt": "2026-02-26T10:52:34.374Z",
       "archivedBy": "1"
+    },
+    {
+      "id": "mlzgekylqheupbev1bb",
+      "title": "bf h trtr",
+      "summary": " rewfre fre",
+      "content": "&nbsp;ferwf erf re f",
+      "category": "Actualidad",
+      "authorId": "1",
+      "imageUrl": "https://picsum.photos/800/600",
+      "imageCaption": "",
+      "photoCredit": "",
+      "contentImages": [],
+      "date": "2026-02-23T17:31:49.519Z",
+      "isPublished": true,
+      "bullfightLocation": "",
+      "bullfightCattle": "",
+      "bullfightSummary": "",
+      "bullfightResults": [],
+      "lastModified": "2026-02-23T17:32:09.929Z",
+      "archivedAt": "2026-02-26T10:52:45.816Z",
+      "archivedBy": "1"
     }
   ],
-  "lastUpdated": "2026-02-26T10:52:36.615Z"
+  "lastUpdated": "2026-02-26T10:52:48.113Z"
 }
