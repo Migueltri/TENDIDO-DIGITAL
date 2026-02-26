@@ -1,4 +1,4 @@
-  import React, { useState, useEffect } from "react";
+  import React, { useEffect, useState } from 'react';
   interface BaseArticle {
   id: number;
   title: string;
@@ -13386,6 +13386,10 @@ const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
 // Estado para actualizar automáticamente el tiempo relativo
 const [currentTime, setCurrentTime] = useState(new Date());
+
+export default function UltimasNoticias() {
+  const [noticias, setNoticias] = useState([]);
+  const [loading, setLoading] = useState(true);
 
 	// Muestra la hora tal como la escribiste en tus datos
 function formatExactDate(dateString: string): string {
