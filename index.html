@@ -13,18 +13,6 @@
     <meta name="author" content="TENDIDO DIGITAL" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://tendidodigital.com/" />
-
-    {/* Así se muestra el título */}
-<h1 className="text-3xl font-bold">{noticia.title}</h1>
-
-{/* Así se muestra la imagen */}
-<img src={noticia.imageUrl} alt={noticia.title} className="w-full rounded-lg" />
-
-{/* ESTO ES LO MÁS IMPORTANTE: Así se muestra el contenido con el formato exacto del panel */}
-<div 
-  className="contenido-noticia"
-  dangerouslySetInnerHTML={{ __html: noticia.content }} 
-/>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
