@@ -68,6 +68,43 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 </script>
+
+<div id="articulo-completo" class="max-w-4xl mx-auto py-10 px-4">
+    <p>Cargando noticia...</p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener el ID de la noticia desde la URL (ej: noticia.html?id=12345)
+    const urlParams = new URLSearchParams(window.location.search);
+    const idNoticia = urlParams.get('id');
+
+    fetch('/data/db.json?t=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+            const articulo = data.articles.find(n => n.id === idNoticia);
+            
+            if (articulo) {
+                const fecha = new Date(articulo.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+                
+                document.getElementById('articulo-completo').innerHTML = `
+                    <span class="text-red-600 font-bold uppercase tracking-wider text-sm">${articulo.category}</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4 leading-tight">${articulo.title}</h1>
+                    <p class="text-gray-500 mb-8">${fecha}</p>
+                    
+                    <img src="${articulo.imageUrl}" class="w-full rounded-2xl mb-10 shadow-md" alt="${articulo.title}">
+                    
+                    <!-- AQUÍ SE INYECTA EL FORMATO EXACTO DEL PANEL -->
+                    <div class="prose prose-lg max-w-none text-gray-800">
+                        ${articulo.content}
+                    </div>
+                `;
+            } else {
+                document.getElementById('articulo-completo').innerHTML = '<h1>Noticia no encontrada</h1>';
+            }
+        });
+});
+</script>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
