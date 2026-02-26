@@ -16,7 +16,8 @@
       "bullfightLocation": "",
       "bullfightCattle": "",
       "bullfightSummary": "",
-      "bullfightResults": []
+      "bullfightResults": [],
+      "lastModified": "2026-02-26T13:26:13.327Z"
     }
   ],
   "authors": [
@@ -137,5 +138,5 @@
       "archivedBy": "1"
     }
   ],
-  "lastUpdated": "2026-02-26T13:26:17.228Z"
+  "lastUpdated": "2026-02-26T13:26:22.388Z"
 }
