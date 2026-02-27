@@ -15292,26 +15292,18 @@ TENDIDO DIGITAL
 </div>
 
 {/* Galería de Imágenes */}
-{news.contentImages && news.contentImages.length > 0 && (
-  <div className="mt-6 pt-4 border-t border-gray-200">
-    <h4 className="text-lg font-bold text-gray-900 mb-3">
-      Galería de imágenes
-    </h4>
+{selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
+  <div className="mt-10">
+    <h3 className="text-lg font-semibold mb-3">Galería de imágenes</h3>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {news.contentImages.map((img, idx) => {
+      {selectedNews.contentImages.map((img, idx) => {
         const url = typeof img === "string" ? img : img.url;
         const caption = typeof img === "string" ? "" : img.caption;
         return (
-          <div key={idx} className="flex flex-col">
-            <img
-              src={url}
-              alt={caption || `Imagen ${idx + 1}`}
-              className="rounded-xl shadow-md object-cover w-full h-auto"
-            />
-            {caption && (
-              <p className="text-gray-500 text-xs italic mt-1">{caption}</p>
-            )}
-          </div>
+          <figure key={idx}>
+            <img src={url} alt={caption || `Imagen ${idx + 1}`} className="rounded-lg shadow" />
+            {caption && <figcaption className="text-sm text-gray-500 mt-1">{caption}</figcaption>}
+          </figure>
         );
       })}
     </div>
@@ -15392,6 +15384,81 @@ TENDIDO DIGITAL
       {selectedNews.footerImage4Caption && (
         <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
           {selectedNews.footerImage4Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+		  {selectedNews.footerImage5 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage5}
+        alt={selectedNews.footerImage3Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage5Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage5Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+		  {selectedNews.footerImage6 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage6}
+        alt={selectedNews.footerImage6Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage6Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage6Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+		  {selectedNews.footerImage7 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage7}
+        alt={selectedNews.footerImage7Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage7Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage7Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+		  {selectedNews.footerImage8 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage8}
+        alt={selectedNews.footerImage8Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage8Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage8Caption}
+        </p>
+      )}
+    </div>
+  )}
+
+		  {selectedNews.footerImage9 && (
+    <div className="flex flex-col items-center">
+      <img
+        src={selectedNews.footerImage9}
+        alt={selectedNews.footerImage9Caption || selectedNews.title}
+        className="w-full max-w-4xl rounded-md"
+      />
+      {selectedNews.footerImage9Caption && (
+        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
+          {selectedNews.footerImage9Caption}
         </p>
       )}
     </div>
