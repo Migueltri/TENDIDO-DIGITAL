@@ -12483,6 +12483,103 @@ Ahora es momento de reflexión, tomar conciencia de lo que ha ido sucediendo dur
 // Crónicas taurinas
 const chronicles: Chronicle[] = [
 	{ 
+    id: 4991,
+    title: `Sanlúcar la Mayor, seis orejas y dos puertas grande `,
+	image: "/images/sanluuuuu.jpg",
+    category: "Crónicas",
+    date: "22 de Febrero de 2026",
+	plaza: "Plaza de toros de Sanlúcar la Mayor (Sevilla).-  Corrida de Toros",
+    ganaderia: "José Luis Osborne",
+	torerosRaw: `Oliva Soto, Oreja y Palmas
+Lama de Góngora, Oreja tras aviso y Dos orejas
+Calerito, Vuelta al ruedo y Dos orejas`,
+	fullContent: `Esta tarde con una temperatura casi primaveral, ha arrancado la temporada taurina en tierras andaluzas, y lo a echo en la localidad sevillana de **Sanlúcar la Mayor.**
+
+El triunfador del festejo ha sido **Lama de Góngora**, que ha cuajado dos buenas faenas a dos buenos ejemplares de **Osborne**, recompensadas con un total de tres orejas. 
+
+**Oliva Soto** sumó un trofeo y por su parte **Juan Pedro Garcia “Calerito”**, que dio una vuelta al ruedo en su primer, en el sexto tras sufrir una voltereta. le cortó las dos orejas.`,
+	author: "Manolo Herrera",
+    authorLogo: "/images/manoloherrera.jpg",
+    showAuthorHeader: true
+   },
+	{ 
+    id: 4992,
+    title: "Diosleguarde lidera el triunfo en una tarde grande junto a Perera",
+	image: "/images/ulticron.jpg",
+    category: "Crónicas",
+    date: "18 de Febrero de 2026",
+	excerpt: "Lleno en Ciudad Rodrigo para una novillada de Juan Manuel Criado donde Perera y Diosleguarde cortaron dos orejas y Clovis Germain dejo una emotiva faena.",
+	imageCaption: "Foto de la Prensa Manuel Diosleguarde",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganadería Juan Manuel Criado",
+	torerosRaw: `Miguel Ángel Perera: Dos orejas.
+Borja Jiménez: Una oreja.
+Manuel Diosleguarde: Dos orejas. 
+Clovis Germain: aplausos.`,
+	fullContent: `Incidencias: tras el paseíllo sonaron los acordes del Himno Nacional. El festejo comenzó seis minutos tarde.
+
+En el último encierro de este Carnaval del Toro 2026, el toreo se impuso a la exigencia. Lleno en la plaza de toros de Ciudad Rodrigo para presenciar un buen encierro de Juan Manuel Criado que dejó luces variadas y triunfos de mérito bajo el signo de la entrega y el temple.
+
+El extremeño *Miguel Ángel Perera* fue el primero, creando una faena con un novillo que quizás, en otras manos, no hubiera sido tan espectacular. La faena fue de menos a más, empezando con un tercio en el que el animal no decía mucho y terminando con un trasteo que desbordó al público. Frente a un novillo con buena condición y desplazamiento, especialmente por el izquierdo, Perera supo acoplarse con criterio, interpretando la embestida con temple y ligazón. Paseó dos orejas después de una estocada caída pero eficaz, y el novillo fue premiado con la vuelta al ruedo como justo reconocimiento a su juego y nobleza.
+
+*Borja Jiménez* dejó un saludo capotero de buen trazo, encajado y con intención, ante un segundo que empujó en el caballo. Ya con la muleta, el sevillano inició la faena con la rodilla flexionada y apoyada en el albero, un comienzo de rodillas que calentó pronto al tendido. El novillo, más complicado que el primero de la tarde, tenía más genio por el pitón izquierdo, echando la cara arriba al final del muletazo y desluciendo el embroque. Hubo series de mérito, siempre con buena colocación y mando. La estocada fue desprendida pero en muy buen sitio; sin embargo, el puntillero levantó al animal cuando parecía doblar definitivamente, lo que obligó a sonar un aviso. Borja Jiménez tuvo que echar mano del descabello, acertando a la primera. Paseó una oreja que pudo haber sido doble de no haberse demorado la caída del novillo.
+
+*Manuel Diosleguarde* confirmó el momento de madurez que atraviesa, un torero que se adapta a las circunstancias y listo para asumir los retos que le llegan en esta nueva temporada. Le tocó en suerte el novillo más exigente del encierro, en varas empujó con fuerza y bravura, llevando al caballo hasta las tablas. Diosleguarde brindó la faena a Juan Andrés Gonzalo en su última tarde, gesto cargado de simbolismo. El astado mostró mejor condición por el pitón derecho, mientras que por el izquierdo cabeceaba con insistencia, desluciendo el final de los muletazos. Diosleguarde tuvo que ponerlo todo: colocación, paciencia y capacidad de adaptación. Tras un pinchazo, dejó una estocada de ejecución impecable, en el sitio exacto, que hizo rodar al novillo. Dos orejas premiaron una actuación sólida y de peso.
+
+Cerró la tarde *Clovis Germain*, triunfador de la 70ª edición del Bolsín Taurino Mirobrigense. Inició con un saludo de capa de gran personalidad y un quite ajustado por chicuelinas y tafalleras que arrancó aplausos. Frente a un eral bravo y repetidor, que se arrancó con ritmo y transmisión, Germain sostuvo un binomio de respeto y compenetración con su oponente. Empezó la faena desde el centro de la plaza, de rodillas, arrancándose el animal desde lejos, y siguiendo con tandas de muy buen tono. Mostró sus grandes cualidades como novillero, y aunque la espada emborronó el posible gran premio tras un pinchazo, una media, un aviso y varios intentos con el descabello, Ciudad Rodrigo reconoció su buen trasteo. Recibió aplausos.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+{ 
+    id: 4993,
+    title: "Exigente encierro de Sánchez Herrero en el Carnaval del toro",
+	image: "/images/ciudro.jpg",
+    category: "Crónicas",
+    date: "16 de Febrero de 2026",
+	excerpt: "La bravura desigual del hierro salmantino puso a prueba a la terna en una tarde de entrega, volteretas y un debut con picadores cargado de personalidad.",
+	imageCaption: "Imagen de Mateo G.J.",
+	plaza: "Plaza Mayor de Ciudad Rodrigo",
+    ganaderia: "Novillos de las ganadería Sánchez Herrero",
+	torerosRaw: `Tomás Bastos: una oreja.
+Julio Méndez: una oreja.
+Félix San Román: ovación. 
+Diego Mateos: aplausos.`,
+	fullContent: `En la plaza de toros de Ciudad Rodrigo, con tres cuartos largos de entrada en los tendidos, se celebró la novillada con picadores de la Ganadería Sánchez Herrero, que ofreció un encierro de matices: bravura y repetición en algunos, teclas y exigencias en otros.
+
+Abrió cartel *Tomás Bastos* ante un primero bravo y repetidor por el pitón derecho, pero con peligro y genio por el izquierdo. El novillero dejó verónicas de buen trazo en el recibo capotero, asentando la faena desde el saludo. En varas, el novillo empujó con un solo pitón, mostrando la condición desigual que después confirmaría. Con la muleta, Bastos entendió pronto que el triunfo pasaba por el derecho, por donde dejó series templadas. Firme en el sitio y paciente ante las dificultades del izquierdo, construyó una labor de mérito. Media estocada, aviso y descabello precedieron a la concesión de una oreja.
+
+*Julio Méndez* se las vio ante un segundo negro, deslucido y justo de entrega, que apenas aguantó dos tandas por el izquierdo. En el recibo sufrió una fuerte voltereta que no hizo que mermara su determinación. Tras un tercio de varas donde el novillo apenas quiso pelea, Méndez inició la faena con la rodilla flexionada en la tierra, gesto que animó a los tendidos, y dejó naturales de buen corte, asentándose también por el derecho. Supo exprimir lo poco que ofrecía el astado. Tras pinchazo y estocada, paseó una oreja.
+
+El tercero, castaño de capa, fue bravo y noble, uno de los ejemplares más completos de la tarde. *Félix San Román* lo saludó con buen aire capotero y el novillo empujó con entrega en el caballo. El trasteo comenzó por abajo, marcando dominio, y por el derecho llegaron tandas templadas y ligadas, corriendo la mano con gusto. Por el izquierdo se recreó el novillero, dejando muletazos de mayor expresión. La espada, sin embargo, enfrió el posible premio: estocada y descabello que dejaron todo en ovación.
+
+Cerró plaza el salmantino *Diego Mateos*, que debutaba con picadores. Recibió a porta gayola a un cuarto pegajoso con el capote y exigente desde el inicio. El novillo tenía teclas y se quedaba corto, siendo el pitón derecho el único potable. Diego inició por lo bajo, asentando la embestida, y logró extraer derechazos de mérito, dejando entrever su concepto y personalidad en el ruedo mirobrigense. Fue una faena meritoria ante las condiciones del oponente. Pinchazo, estocada, aviso y varios intentos con el descabello
+
+hicieron que las opciones de triunfo desaparecieran. Recibió aplausos por parte de los espectadores.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+   { 
+    id: 4994,
+    title: "Vanegas y Herrero encienden el coso de tablas en una tarde de lleno absoluto",
+    ganaderia: "Erales de la ganadería de Toros de Orive y una res de El Canario para Víctor Herrero",
+	torerosRaw: `Íñigo Norte: palmas.
+Fernando Vanegas: dos orejas.
+Francisco Rodríguez Perera: una oreja
+Pedro Caminero: palmas.
+Víctor Herrero: dos orejas.`,
+	fullContent: `En esta segunda tarde de abono, el Carnaval volvió a demostrar que Ciudad Rodrigo tiene pulso propio cuando suenan los clarines. Lleno en los tendidos y un gran ambiente para este festejo mixto, novillada sin picadores para los finalistas del Bolsín Taurino Mirobrigense y rejones.
+Comenzó la tarde con *Íñigo Norte* ante un eral de Toros de Orive que, de salida, apuntó bravura y alegría. El novillero salmantino lo recibió con gran disposición, pero a medida que avanzó la lidia, el novillo se mostró falto de fuerzas, lo que hizo que la faena fuera a menos. Norte trató de aguantarlo con pulso y temple, dejando derechazos estimables hacia el final. La espada, con un pinchazo hondo y descabello, diluyó cualquier opción de premio, recibiendo palmas por parte de los espectadores. 
+Sin embargo, la tarde creció con *Fernando Vanegas*, donde mostró una gran variedad capotera y puso banderillas él mismo, conectando automáticamente con el tendido. Una vez con la muleta en la mano, supo realizar una faena ligada, aprovechando al máximo al eral de Orive siendo, hasta ahora, el más completo de estos carnavales, teniendo calidad, transmisión y recorrido. Vanegas entendió bien las distancias y construyó una labor de ambición y firmeza. Con una buena estocada, fue premiado con dos orejas. Por su parte, el novillo recibió una vuelta al ruedo. 
+Le llegó el turno al extremeño *Francisco Rodríguez*, quien se enfrentó a un oponente de embestida a media altura con algún rebrinco que afeaba el muletazo. El pacense dejó detalles de gusto con el capote y pasajes interesantes con la muleta, con una actitud a la que nada se le puede reprochar. Logró cortar una oreja como premio a su disposición.
+Cerró la terna novilleril *Pedro Caminero*. La tarde, ya más fría, enfrió el ánimo en los tendidos. Caminero no terminó de encontrar las distancias ni el sitio que demandaba el animal. Enganchones y desarmes deslucieron el conjunto de la faena. Mató tras un aviso y fue aplaudido por el público. 
+Por último, *Víctor Herrero*, que por segundo año consecutivo hacía el paseíllo en esta gran plaza gracias al impulso de los tablaos. Asumió de nuevo el reto de torear en este coso rectangular, que si ya de normal dificulta la lidia, a caballo aún más. El novillo, ahora de la ganadería de El Canario, no aportó una gran colaboración, estaba distraído y no transmitía mucho, obligando al rejoneador a ponerlo todo. Tirando de oficio y entrega, montando hasta cuatro caballos, lo más vistoso llego con un castaño de cabos blancos. Arriesgó en terrenos comprometidos y dejo pasajes de gran mérito en un escenario para nada sencillo. Mató al segundo intento y paseo dos orejas, muy pedidas por el público.`,
+    author: "Nerea F.Elena",
+    authorLogo: "/images/nere.jpg",
+    showAuthorHeader: true
+   },
+	{ 
     id: 4995,
     title: `Sábado en el Carnaval del Toro de Ciudad Rodrigo`,
 	image: "/images/ciud.jpg",
