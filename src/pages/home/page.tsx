@@ -14039,6 +14039,15 @@ const SponsorBanner = () => (
                       className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
                     />
+
+					{/* Debajo de la imagen principal */}
+{(article.imageCaption || article.photoCredit) && (
+  <div className="mt-3 text-sm text-gray-500 flex justify-between">
+    <span>{article.imageCaption}</span>
+    {article.photoCredit && <span className="italic">Foto: {article.photoCredit}</span>}
+  </div>
+)}
+					  
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 left-4">
                       <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
@@ -14119,6 +14128,12 @@ Noticias Guardadas
                   className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
+				  {/* Subtítulo / Entradilla */}
+{article.summary && (
+  <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
+    {article.summary}
+  </p>
+)}
                 <div className="absolute top-4 left-4">
                   <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
                     {post.category}
@@ -14263,6 +14278,37 @@ if (activeTab === 'cronicas') {
     )}
   </div>
 </div>
+
+					{/* Galería de Imágenes */}
+{article.contentImages && article.contentImages.length > 0 && (
+  <div className="mt-12 pt-8 border-t border-gray-200">
+    <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de Imágenes</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {article.contentImages.map((img, idx) => {
+        // Manejar compatibilidad por si la imagen es antigua (solo texto) o nueva (objeto)
+        const url = typeof img === 'string' ? img : img.url;
+        const caption = typeof img === 'string' ? '' : img.caption;
+        const credit = typeof img === 'string' ? '' : img.credit;
+
+        return (
+          <div key={idx} className="flex flex-col">
+            <img 
+              src={url} 
+              alt={caption || `Imagen de galería ${idx + 1}`} 
+              className="w-full h-auto rounded-xl shadow-md object-cover aspect-video"
+            />
+            {(caption || credit) && (
+              <div className="mt-2 text-sm text-gray-500 flex justify-between">
+                <span>{caption}</span>
+                {credit && <span className="italic">Foto: {credit}</span>}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+)}
 					
 {/* Resultados de los toreros */}
 {(chronicle.toreros || []).length > 0 && (
@@ -15246,18 +15292,52 @@ TENDIDO DIGITAL
   </div>
 </div>
 
+	  {/* Galería de Imágenes */}
+{article.contentImages && article.contentImages.length > 0 && (
+  <div className="mt-12 pt-8 border-t border-gray-200">
+    <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de Imágenes</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {article.contentImages.map((img, idx) => {
+        // Manejar compatibilidad por si la imagen es antigua (solo texto) o nueva (objeto)
+        const url = typeof img === 'string' ? img : img.url;
+        const caption = typeof img === 'string' ? '' : img.caption;
+        const credit = typeof img === 'string' ? '' : img.credit;
+
+        return (
+          <div key={idx} className="flex flex-col">
+            <img 
+              src={url} 
+              alt={caption || `Imagen de galería ${idx + 1}`} 
+              className="w-full h-auto rounded-xl shadow-md object-cover aspect-video"
+            />
+            {(caption || credit) && (
+              <div className="mt-2 text-sm text-gray-500 flex justify-between">
+                <span>{caption}</span>
+                {credit && <span className="italic">Foto: {credit}</span>}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+)}
+
   </>
 ) : (
   /* Formato normal para noticias */
-  <div className="prose prose-xl max-w-none">
+<div 
+  className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-a:underline prose-img:rounded-xl"
+  dangerouslySetInnerHTML={{ __html: article.content }}
+>
     <div
       className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
         selectedNews.boldContent ? "font-bold" : ""
       }`}
     >
 {renderArticleContent(selectedNews.fullContent)}
-    </div>
   </div>
+	</div>
 )}
 		  
         {/* Imágenes finales tipo portada */}
