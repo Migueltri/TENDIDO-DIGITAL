@@ -15317,7 +15317,7 @@ TENDIDO DIGITAL
   /* Formato normal para noticias */
 <div 
   className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-a:underline prose-img:rounded-xl"
-  dangerouslySetInnerHTML={{ __html: article.content }}
+  dangerouslySetInnerHTML={{ __html: selectedNews.content }}
 >
     <div
       className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
