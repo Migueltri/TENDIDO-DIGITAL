@@ -15291,29 +15291,25 @@ TENDIDO DIGITAL
   </div>
 </div>
 
-	  {/* Galería de Imágenes */}
-{article.contentImages && article.contentImages.length > 0 && (
-  <div className="mt-12 pt-8 border-t border-gray-200">
-    <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de Imágenes</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {article.contentImages.map((img, idx) => {
-        // Manejar compatibilidad por si la imagen es antigua (solo texto) o nueva (objeto)
-        const url = typeof img === 'string' ? img : img.url;
-        const caption = typeof img === 'string' ? '' : img.caption;
-        const credit = typeof img === 'string' ? '' : img.credit;
-
+{/* Galería de Imágenes */}
+{news.contentImages && news.contentImages.length > 0 && (
+  <div className="mt-6 pt-4 border-t border-gray-200">
+    <h4 className="text-lg font-bold text-gray-900 mb-3">
+      Galería de imágenes
+    </h4>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {news.contentImages.map((img, idx) => {
+        const url = typeof img === "string" ? img : img.url;
+        const caption = typeof img === "string" ? "" : img.caption;
         return (
           <div key={idx} className="flex flex-col">
-            <img 
-              src={url} 
-              alt={caption || `Imagen de galería ${idx + 1}`} 
-              className="w-full h-auto rounded-xl shadow-md object-cover aspect-video"
+            <img
+              src={url}
+              alt={caption || `Imagen ${idx + 1}`}
+              className="rounded-xl shadow-md object-cover w-full h-auto"
             />
-            {(caption || credit) && (
-              <div className="mt-2 text-sm text-gray-500 flex justify-between">
-                <span>{caption}</span>
-                {credit && <span className="italic">Foto: {credit}</span>}
-              </div>
+            {caption && (
+              <p className="text-gray-500 text-xs italic mt-1">{caption}</p>
             )}
           </div>
         );
