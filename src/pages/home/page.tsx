@@ -32,6 +32,8 @@
   footerImage7Caption?: string;	  
   footerImage8?: string;
   footerImage8Caption?: string;
+  footerImage9?: string;
+  footerImage9Caption?: string;
   boldContent?: boolean;
   author?: string;
   authorLogo?: string;
