@@ -14280,21 +14280,20 @@ if (activeTab === 'cronicas') {
 </div>
 
 					{/* Galería de Imágenes */}
-{article.contentImages && article.contentImages.length > 0 && (
+{chronicle.contentImages && chronicle.contentImages.length > 0 && (
   <div className="mt-12 pt-8 border-t border-gray-200">
     <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de Imágenes</h3>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {article.contentImages.map((img, idx) => {
-        // Manejar compatibilidad por si la imagen es antigua (solo texto) o nueva (objeto)
-        const url = typeof img === 'string' ? img : img.url;
-        const caption = typeof img === 'string' ? '' : img.caption;
-        const credit = typeof img === 'string' ? '' : img.credit;
+      {chronicle.contentImages.map((img, idx) => {
+        const url = typeof img === "string" ? img : img.url;
+        const caption = typeof img === "string" ? "" : img.caption;
+        const credit = typeof img === "string" ? "" : img.credit;
 
         return (
           <div key={idx} className="flex flex-col">
-            <img 
-              src={url} 
-              alt={caption || `Imagen de galería ${idx + 1}`} 
+            <img
+              src={url}
+              alt={caption || `Imagen de galería ${idx + 1}`}
               className="w-full h-auto rounded-xl shadow-md object-cover aspect-video"
             />
             {(caption || credit) && (
