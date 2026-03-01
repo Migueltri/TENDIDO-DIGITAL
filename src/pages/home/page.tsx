@@ -11,6 +11,8 @@
   torerosRaw?: string[];
   image: string;
   imageCaption?: string;
+  photoCredit?: string;
+  contentImages?: any[];
   video?: string;
   resumen?: string;
   detalles?: string;
@@ -13548,6 +13550,9 @@ function formatTimeAgo(dateString: string): string {
               id: a.id,
               title: a.title,
               image: a.imageUrl,
+			  imageCaption: a.imageCaption, // AÑADIR ESTO
+              photoCredit: a.photoCredit,   // AÑADIR ESTO
+              contentImages: a.contentImages, // AÑADIR ESTO
               category: a.category,
               // Formateamos la fecha para que se vea bien
               date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
@@ -15290,10 +15295,11 @@ TENDIDO DIGITAL
           alt={selectedNews.title}
           className="w-full h-auto rounded-md"
         />
-        {selectedNews.imageCaption && (
-          <p className="text-gray-500 text-xs italic text-right w-full mt-1">
-            {selectedNews.imageCaption}
-          </p>
+        {(selectedNews.imageCaption || selectedNews.photoCredit) && (
+          <div className="text-gray-500 text-xs italic flex justify-between w-full mt-1 px-1">
+            <span>{selectedNews.imageCaption}</span>
+            {selectedNews.photoCredit && <span>Foto: {selectedNews.photoCredit}</span>}
+          </div>
         )}
       </div>
     </div>
@@ -15392,16 +15398,22 @@ TENDIDO DIGITAL
 
 {/* Galería de Imágenes */}
 {selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
-  <div className="mt-10">
-    <h3 className="text-lg font-semibold mb-3">Galería de imágenes</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {selectedNews.contentImages.map((img, idx) => {
+  <div className="mt-10 pt-8 border-t border-gray-200">
+    <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de imágenes</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {selectedNews.contentImages.map((img: any, idx: number) => {
         const url = typeof img === "string" ? img : img.url;
         const caption = typeof img === "string" ? "" : img.caption;
+        const credit = typeof img === "string" ? "" : img.credit;
         return (
-          <figure key={idx}>
-            <img src={url} alt={caption || `Imagen ${idx + 1}`} className="rounded-lg shadow" />
-            {caption && <figcaption className="text-sm text-gray-500 mt-1">{caption}</figcaption>}
+          <figure key={idx} className="flex flex-col">
+            <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto rounded-xl shadow-md object-cover aspect-video" />
+            {(caption || credit) && (
+              <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
+                <span>{caption}</span>
+                {credit && <span>Foto: {credit}</span>}
+              </figcaption>
+            )}
           </figure>
         );
       })}
@@ -15412,18 +15424,45 @@ TENDIDO DIGITAL
   </>
 ) : (
   /* Formato normal para noticias */
-<div 
-  className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-a:underline prose-img:rounded-xl"
-  dangerouslySetInnerHTML={{ __html: selectedNews.content }}
->
-    <div
-      className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
-        selectedNews.boldContent ? "font-bold" : ""
-      }`}
+  <div>
+    <div 
+      className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-a:underline prose-img:rounded-xl"
+      dangerouslySetInnerHTML={{ __html: selectedNews.content }}
     >
-{renderArticleContent(selectedNews.fullContent)}
+        <div
+          className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
+            selectedNews.boldContent ? "font-bold" : ""
+          }`}
+        >
+        {renderArticleContent(selectedNews.fullContent)}
+      </div>
+    </div>
+
+    {/* Galería de Imágenes para Noticias Normales */}
+    {selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
+      <div className="mt-10 pt-8 border-t border-gray-200">
+        <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de imágenes</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {selectedNews.contentImages.map((img: any, idx: number) => {
+            const url = typeof img === "string" ? img : img.url;
+            const caption = typeof img === "string" ? "" : img.caption;
+            const credit = typeof img === "string" ? "" : img.credit;
+            return (
+              <figure key={idx} className="flex flex-col">
+                <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto rounded-xl shadow-md object-cover aspect-video" />
+                {(caption || credit) && (
+                  <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
+                    <span>{caption}</span>
+                    {credit && <span>Foto: {credit}</span>}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    )}
   </div>
-	</div>
 )}
 		  
         {/* Imágenes finales tipo portada */}
