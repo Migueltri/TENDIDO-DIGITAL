@@ -1,25 +1,6 @@
 {
   "articles": [
     {
-      "id": "mm9akslub1xgrfz1mr8",
-      "title": "prueba 23",
-      "summary": "rrrrrrrrrrrrrrrrrr",
-      "content": "rrrrrrrrrrrrrrrrrrrrrrrr",
-      "category": "Actualidad",
-      "authorId": "1",
-      "imageUrl": "https://picsum.photos/800/600",
-      "imageCaption": "",
-      "photoCredit": "",
-      "contentImages": [],
-      "date": "2026-03-02T14:46:23.423Z",
-      "isPublished": true,
-      "bullfightLocation": "",
-      "bullfightCattle": "",
-      "bullfightSummary": "",
-      "bullfightResults": [],
-      "lastModified": "2026-03-02T14:46:33.936Z"
-    },
-    {
       "id": "mm511sqx7r2sne5hfqr",
       "title": "Morante actuará dos tardes en la Feria taurina del Caballo 2026 de Jerez",
       "summary": "La Casa Matilla gestora de la Plaza de Toros de Jerez, se da a conocer la imagen gráfica que ilustrará el cartel de la Feria taurina del Caballo 2026",
@@ -179,6 +160,27 @@
     }
   ],
   "archivedArticles": [
+    {
+      "id": "mm9akslub1xgrfz1mr8",
+      "title": "prueba 23",
+      "summary": "rrrrrrrrrrrrrrrrrr",
+      "content": "rrrrrrrrrrrrrrrrrrrrrrrr",
+      "category": "Actualidad",
+      "authorId": "1",
+      "imageUrl": "https://picsum.photos/800/600",
+      "imageCaption": "",
+      "photoCredit": "",
+      "contentImages": [],
+      "date": "2026-03-02T14:46:23.423Z",
+      "isPublished": true,
+      "bullfightLocation": "",
+      "bullfightCattle": "",
+      "bullfightSummary": "",
+      "bullfightResults": [],
+      "lastModified": "2026-03-02T14:46:33.936Z",
+      "archivedAt": "2026-03-02T14:48:06.716Z",
+      "archivedBy": "1"
+    },
     {
       "id": "mm9al8s7qwwr8hqa84f",
       "title": "pruebasaaaaaaaaaaarrr",
@@ -418,5 +420,5 @@
       "archivedBy": "1"
     }
   ],
-  "lastUpdated": "2026-03-02T14:48:01.707Z"
+  "lastUpdated": "2026-03-02T14:48:07.201Z"
 }
