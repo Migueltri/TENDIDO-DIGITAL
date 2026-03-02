@@ -13906,7 +13906,7 @@ const splitToreros = (raw?: string | string[]) => {
   return paragraphs.map((p, i) => (
     <p
       key={i}
-      className="text-gray-700 text-sm leading-relaxed mb-4"
+      className="text-gray-700 text-sm leading-relaxed mb-4 prose prose-a:text-blue-600 prose-a:underline hover:prose-a:text-blue-800"
       dangerouslySetInnerHTML={{ __html: toHtml(p) }}
     />
   ));
