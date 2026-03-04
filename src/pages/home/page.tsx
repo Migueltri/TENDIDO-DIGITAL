@@ -13526,7 +13526,9 @@ function formatTimeAgo(dateString: string): string {
     const loadData = async () => {
       try {
         // 1. Descargamos el archivo db.json que genera el panel
-        const response = await fetch(`/data/db.json?v=${new Date().getTime()}`);
+        // Añadir "?t=" + Date.now() obliga a la web a descargar la versión más reciente siempre
+const url = 'https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public/data/db.json?t=' + Date.now();
+const response = await fetch(url, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const data = await response.json();
