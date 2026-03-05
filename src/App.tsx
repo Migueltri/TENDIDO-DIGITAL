@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminPage from './pages/admin/gestor'; 
 import Home from './pages/home/page';
+import Noticia from './pages/noticia/page'; 
 
 export default function App() {
   return (
@@ -8,10 +9,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminPage />} />
-        {/* Ruta dinámica para capturar los enlaces de las noticias */}
+        
+        {/* Al estar importado arriba, esto ya no dará ReferenceError */}
         <Route path="/noticia/:id" element={<Noticia />} />
         
-        {/* Ruta comodín para capturar enlaces rotos (404) */}
         <Route path="*" element={
           <div className="flex items-center justify-center min-h-screen text-xl font-bold text-gray-800">
             Error 404 - Página no encontrada
