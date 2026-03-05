@@ -13568,7 +13568,7 @@ const response = await fetch(url, { cache: 'no-store' });
               author: finalName,
               authorLogo: finalPic,
               showAuthorHeader: true,
-              authorId: a.authorId
+              authorId: a.authorId,
 			  isFeatured: a.isFeatured
             };
           });
