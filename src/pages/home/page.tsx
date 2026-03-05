@@ -13569,6 +13569,7 @@ const response = await fetch(url, { cache: 'no-store' });
               authorLogo: finalPic,
               showAuthorHeader: true,
               authorId: a.authorId
+			  isFeatured: a.isFeatured
             };
           });
 
@@ -14119,10 +14120,10 @@ const SponsorBanner = () => (
                     />
 
 					{/* Debajo de la imagen principal */}
-{(article.imageCaption || article.photoCredit) && (
+{(news.imageCaption || news.photoCredit) && (
   <div className="mt-3 text-sm text-gray-500 flex justify-between">
-    <span>{article.imageCaption}</span>
-    {article.photoCredit && <span className="italic">Foto: {article.photoCredit}</span>}
+    <span>{news.imageCaption}</span>
+    {news.photoCredit && <span className="italic">Foto: {news.photoCredit}</span>}
   </div>
 )}
 					  
