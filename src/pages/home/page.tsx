@@ -13855,65 +13855,52 @@ const getFilteredNews = () => {
   });
 };
 
-// convierte el contenido en párrafos y transforma **bold** a <strong>
-// mantiene cualquier HTML ya presente (p. ej. <a ...>) usando dangerouslySetInnerHTML
+// Función corregida: Unifica el estilo tipográfico y respeta el HTML del CMS
 const renderArticleContent = (text?: string | null) => {
   if (!text) return null;
 
-  // Normaliza saltos y recorta
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  // 1. Detectar si el texto viene del nuevo CMS (HTML) o es antiguo (Markdown duro)
+  const isHTML = /<[a-z][\s\S]*>/i.test(text);
 
-  // 1) Intento normal: dividir por dobles saltos de línea
+  if (isHTML) {
+    // Si es del CMS, forzamos un estilo tipográfico coherente usando "prose" de Tailwind.
+    // Esto bloquea cualquier cambio de fuente externo y unifica los tamaños.
+    return (
+      <div 
+        className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-headings:font-bold prose-headings:text-gray-900 prose-img:rounded-xl"
+        dangerouslySetInnerHTML={{ __html: text }} 
+      />
+    );
+  }
+
+  // 2. Si es noticia antigua, aplicamos la lógica anterior pero protegida dentro del mismo contenedor
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
   let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
 
-  // 2) Si no hay dobles saltos y el texto es largo, dividir por párrafos cada 2-3 oraciones
   if (paragraphs.length === 1 && normalized.length > 200) {
-    // separación por oraciones (aprox usando punto+símbolo)
     const sentences = normalized.split(/(?<=[.?!])\s+/);
-    const groupSize = 2; // agrupar 2 oraciones por párrafo (ajusta si quieres)
+    const groupSize = 2;
     paragraphs = [];
     for (let i = 0; i < sentences.length; i += groupSize) {
       paragraphs.push(sentences.slice(i, i + groupSize).join(' ').trim());
     }
   }
 
-const splitToreros = (raw?: string | string[]) => {
-  if (!raw) return [];
-  if (Array.isArray(raw)) return raw.filter(Boolean).map(r => r.trim());
-  return String(raw)
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n')
-    .split('\n')
-    .map(l => l.trim())
-    .filter(Boolean);
+  const toHtml = (p: string) => p
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/\n+/g, ' ');
+
+  return (
+    <div className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800">
+      {paragraphs.map((p, i) => (
+        <p key={i} className="mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+      ))}
+    </div>
+  );
 };
-
-  // 3) Si sigue siendo uno y hay comas largas, romper por comas con sentido (fallback)
-  if (paragraphs.length === 1 && normalized.length > 1000) {
-    const parts = normalized.split(/, /);
-    paragraphs = [];
-    for (let i = 0; i < parts.length; i += 4) {
-      paragraphs.push(parts.slice(i, i + 4).join(', ').trim());
-    }
-  }
-
-  // Función que convierte **bold** y limita HTML esperado
-  const toHtml = (p: string) =>
-    p
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/[“”]/g, '"')
-      .replace(/[‘’]/g, "'")
-      .replace(/\n+/g, ' ');
-
-  return paragraphs.map((p, i) => (
-    <p
-      key={i}
-      className="text-gray-700 text-sm leading-relaxed mb-4 prose prose-a:text-blue-600 prose-a:underline hover:prose-a:text-blue-800"
-      dangerouslySetInnerHTML={{ __html: toHtml(p) }}
-    />
-  ));
-};
-
+	
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
     key={news.id}
