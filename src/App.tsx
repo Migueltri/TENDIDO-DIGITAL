@@ -1,6 +1,8 @@
-import { BrowserRouter , Routes , Route } de "react-router-dom" ;       
-import AdminPage desde './pages/admin/gestor' ;    
-import Inicio desde './pages/home/page' ;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminPage from './pages/admin/gestor'; 
+import Home from './pages/home/page';
+// IMPORTANTE: Asegúrate de importar Noticia si lo vas a usar en la línea 10
+// import Noticia from './páginas/noticia/page'; 
 
 export default function App() {
   return (
@@ -8,15 +10,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminPage />} />
-        {/* Ruta dinámica para capturar los enlaces de las noticias */}
-        <Route path="/noticia/:id" element={<Noticia />} />
-        
-        {/* Ruta comodín para capturar enlaces rotos (404) */}
-        <Route path="*" element={
-          <div className="flex items-center justify-center min-h-screen text-xl font-bold text-gray-800">
-            Error 404 - Página no encontrada
-          </div>
-        } />
+        {/* Descomenta la siguiente línea cuando tengas el import de Noticia arriba */}
+        {/* <Route path="/noticia/:id" element={<Noticia />} /> */}
       </Routes>
     </BrowserRouter>
   );
