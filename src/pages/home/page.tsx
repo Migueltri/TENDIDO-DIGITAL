@@ -13886,34 +13886,6 @@ const renderArticleContent = (text?: string | null) => {
   );
 };
 	
-  // 2. Si es noticia antigua, aplicamos la lógica anterior pero protegida dentro del mismo contenedor
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-  if (paragraphs.length === 1 && normalized.length > 200) {
-    const sentences = normalized.split(/(?<=[.?!])\s+/);
-    const groupSize = 2;
-    paragraphs = [];
-    for (let i = 0; i < sentences.length; i += groupSize) {
-      paragraphs.push(sentences.slice(i, i + groupSize).join(' ').trim());
-    }
-  }
-
-  const toHtml = (p: string) => p
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/[“”]/g, '"')
-    .replace(/[‘’]/g, "'")
-    .replace(/\n+/g, ' ');
-
-  return (
-    <div className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800">
-      {paragraphs.map((p, i) => (
-        <p key={i} className="mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
-      ))}
-    </div>
-  );
-};
-	
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
     key={news.id}
