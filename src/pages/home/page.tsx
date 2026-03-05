@@ -13595,17 +13595,15 @@ const response = await fetch(url, { cache: 'no-store' });
         setCombinedNews(finalNewsList);
 
         // 7. Calculamos las noticias de las últimas 48h para el slider superior
-        const now = new Date().getTime();
-        let breakingNews = finalNewsList.filter(n => {
-          const newsDate = n.rawDate ? new Date(n.rawDate).getTime() : new Date(n.date).getTime();
-          if (isNaN(newsDate)) return false;
-          return (now - newsDate) / 36e5 <= 48;
-        });
+		// Filtrar las noticias marcadas con la estrella desde el CMS
+let breakingNews = finalNewsList.filter(n => n.isFeatured === true);
 
-        if (breakingNews.length === 0 && finalNewsList.length > 0) {
-          breakingNews = finalNewsList.slice(0, 3);
-        }
-        setNews24h(breakingNews);
+// Sistema de seguridad: si no hay ninguna destacada, muestra las 3 más nuevas
+if (breakingNews.length === 0 && finalNewsList.length > 0) {
+    breakingNews = finalNewsList.slice(0, 3);
+}
+
+setNews24h(breakingNews);
 
       } catch (error) {
         console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
@@ -13856,16 +13854,12 @@ const getFilteredNews = () => {
   });
 };
 
-// Función corregida: Unifica el estilo tipográfico y respeta el HTML del CMS
 const renderArticleContent = (text?: string | null) => {
   if (!text) return null;
 
-  // 1. Detectar si el texto viene del nuevo CMS (HTML) o es antiguo (Markdown duro)
   const isHTML = /<[a-z][\s\S]*>/i.test(text);
 
   if (isHTML) {
-    // Si es del CMS, forzamos un estilo tipográfico coherente usando "prose" de Tailwind.
-    // Esto bloquea cualquier cambio de fuente externo y unifica los tamaños.
     return (
       <div 
         className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-headings:font-bold prose-headings:text-gray-900 prose-img:rounded-xl"
@@ -13874,6 +13868,24 @@ const renderArticleContent = (text?: string | null) => {
     );
   }
 
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  const toHtml = (p: string) => p
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/\n+/g, ' ');
+
+  return (
+    <div className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800">
+      {paragraphs.map((p, i) => (
+        <p key={i} className="mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+      ))}
+    </div>
+  );
+};
+	
   // 2. Si es noticia antigua, aplicamos la lógica anterior pero protegida dentro del mismo contenedor
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
   let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
