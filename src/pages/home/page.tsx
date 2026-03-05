@@ -40,6 +40,7 @@
   author?: string;
   authorLogo?: string;
   showAuthorHeader?: boolean;
+  isFeatured?: boolean;
 }
 
 import fs from 'fs';
