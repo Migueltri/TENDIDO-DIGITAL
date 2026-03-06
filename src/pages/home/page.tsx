@@ -13879,11 +13879,11 @@ const renderArticleContent = (text?: string | null) => {
     .replace(/\n+/g, ' ');
 
   return (
-    <div className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800">
-      {paragraphs.map((p, i) => (
-        <p key={i} className="mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
-      ))}
-    </div>
+<div 
+  className="prose prose-lg max-w-none text-gray-900 !font-serif !antialiased leading-relaxed"
+  style={{fontFamily: "'Lora', serif"}} // Forzamos la letra específica Lora
+  dangerouslySetInnerHTML={{ __html: article.content }} 
+/>
   );
 };
 	
