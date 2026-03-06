@@ -13888,7 +13888,7 @@ const renderArticleContent = (text?: string | null) => {
 
       <div 
         className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: article.content }} 
+        dangerouslySetInnerHTML={{ __html: news.content.content }} 
       />
     </>
   );
