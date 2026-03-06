@@ -13878,12 +13878,19 @@ const renderArticleContent = (text?: string | null) => {
     .replace(/[‘’]/g, "'")
     .replace(/\n+/g, ' ');
 
-  return (
-    <div className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800">
-      {paragraphs.map((p, i) => (
-        <p key={i} className="mb-4" dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
-      ))}
-    </div>
+ return (
+    <>
+      <style>{`
+        .texto-noticia-forzado, .texto-noticia-forzado * {
+          font-family: 'Lora', serif !important;
+        }
+      `}</style>
+
+      <div 
+        className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed"
+        dangerouslySetInnerHTML={{ __html: article.content }} 
+      />
+    </>
   );
 };
 	
