@@ -13860,15 +13860,35 @@ const renderArticleContent = (text?: string | null) => {
 
   const isHTML = /<[a-z][\s\S]*>/i.test(text);
 
+  // El CSS forzado que siempre se va a inyectar, independientemente del formato de la noticia
+  const forcedStyle = (
+    <style>{`
+      .texto-noticia-forzado, .texto-noticia-forzado * {
+        font-family: 'Lora', serif !important;
+        font-size: 1.125rem !important;
+        line-height: 1.75 !important;
+      }
+      /* Protegemos los títulos para que no se encojan */
+      .texto-noticia-forzado h1, .texto-noticia-forzado h2, .texto-noticia-forzado h3 {
+        font-size: revert !important;
+      }
+    `}</style>
+  );
+
+  // 1. SI LA NOTICIA ES HTML (Las noticias nuevas del editor)
   if (isHTML) {
     return (
-      <div 
-        className="prose max-w-none text-gray-800 font-serif leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-headings:font-bold prose-headings:text-gray-900 prose-img:rounded-xl"
-        dangerouslySetInnerHTML={{ __html: text }} 
-      />
+      <>
+        {forcedStyle}
+        <div 
+          className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl"
+          dangerouslySetInnerHTML={{ __html: text }} 
+        />
+      </>
     );
   }
 
+  // 2. SI LA NOTICIA ES TEXTO PLANO (Las noticias antiguas)
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
   let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
 
@@ -13878,25 +13898,14 @@ const renderArticleContent = (text?: string | null) => {
     .replace(/[‘’]/g, "'")
     .replace(/\n+/g, ' ');
 
- return (
+  return (
     <>
-      <style>{`
-        .texto-noticia-forzado, .texto-noticia-forzado * {
-          font-family: 'Lora', serif !important;
-          font-size: 1.125rem !important; /* Fuerza un tamaño base más grande */
-          line-height: 1.75 !important;   /* Fuerza un espaciado cómodo para leer */
-        }
-        
-        /* Protegemos los títulos para que no se encojan */
-        .texto-noticia-forzado h1, .texto-noticia-forzado h2, .texto-noticia-forzado h3 {
-          font-size: revert !important;
-        }
-      `}</style>
-
-      <div 
-        className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: news.content }} 
-      />
+      {forcedStyle}
+      <div className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl">
+        {paragraphs.map((p, idx) => (
+          <p key={idx} dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+        ))}
+      </div>
     </>
   );
 };
