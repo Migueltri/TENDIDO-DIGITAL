@@ -13883,12 +13883,19 @@ const renderArticleContent = (text?: string | null) => {
       <style>{`
         .texto-noticia-forzado, .texto-noticia-forzado * {
           font-family: 'Lora', serif !important;
+          font-size: 1.125rem !important; /* Fuerza un tamaño base más grande */
+          line-height: 1.75 !important;   /* Fuerza un espaciado cómodo para leer */
+        }
+        
+        /* Protegemos los títulos para que no se encojan */
+        .texto-noticia-forzado h1, .texto-noticia-forzado h2, .texto-noticia-forzado h3 {
+          font-size: revert !important;
         }
       `}</style>
 
       <div 
         className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: news.content.content }} 
+        dangerouslySetInnerHTML={{ __html: news.content }} 
       />
     </>
   );
