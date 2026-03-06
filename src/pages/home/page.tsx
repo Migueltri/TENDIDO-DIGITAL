@@ -13878,12 +13878,19 @@ const renderArticleContent = (text?: string | null) => {
     .replace(/[‘’]/g, "'")
     .replace(/\n+/g, ' ');
 
-  return (
-<div 
-  className="prose prose-lg max-w-none text-gray-900 !font-serif !antialiased leading-relaxed"
-  style={{fontFamily: "'Lora', serif"}} // Forzamos la letra específica Lora
-  dangerouslySetInnerHTML={{ __html: article.content }} 
-/>
+ return (
+    <>
+      <style>{`
+        .texto-noticia-forzado, .texto-noticia-forzado * {
+          font-family: 'Lora', serif !important;
+        }
+      `}</style>
+
+      <div 
+        className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed"
+        dangerouslySetInnerHTML={{ __html: article.content }} 
+      />
+    </>
   );
 };
 	
