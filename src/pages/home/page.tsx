@@ -13995,12 +13995,7 @@ block: 'start'
 }
 setIsMenuOpen(false);
 };
-
-// Función para abrir modal de noticia
-// --- BLOQUE 2: LECTOR DE ENLACES Y BOTÓN ATRÁS ---
-  
-  // 1. Lector automático: Abre la noticia si vienes de un enlace compartido
-  useEffect(() => {
+	
   // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Porque combinedNews ya existe)
   useEffect(() => {
     if (combinedNews.length === 0) return; // Esperamos a que estén listas las nuevas
