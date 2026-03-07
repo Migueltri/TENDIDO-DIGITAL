@@ -13776,6 +13776,19 @@ setSavedPosts(prev => {
 });
 };
 
+	const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
+if (e) {
+e.stopPropagation();
+}
+setSharePost(post);
+setIsShareModalOpen(true);
+};
+
+const closeShareModal = () => {
+setIsShareModalOpen(false);
+setSharePost(null);
+};
+
 // --- BLOQUE 1: BOTONES DE COMPARTIR (VERSIÓN ROBUSTA) ---
   const generateShareUrl = (articleId: number | string) => {
     const encodedId = btoa(`news-${articleId}`);
