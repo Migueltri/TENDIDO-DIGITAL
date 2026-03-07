@@ -13531,9 +13531,8 @@ function formatTimeAgo(dateString: string): string {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // 1. Descargamos el archivo db.json que genera el panel
-        // Añadir "?t=" + Date.now() obliga a la web a descargar la versión más reciente siempre
-const url = 'https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public/data/db.json?t=' + Date.now();
+// 1. Descargamos el archivo db.json del repositorio CORRECTO
+const url = 'https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL/main/public/data/db.json?t=' + Date.now();
 const response = await fetch(url, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
@@ -13600,32 +13599,44 @@ const response = await fetch(url, { cache: 'no-store' });
         // 6. Guardamos la lista final combinada y ordenada
         setCombinedNews(finalNewsList);
 
-// 7. NUEVA LÓGICA: El panel superior mostrará TODAS las noticias del día más reciente
+// 7. NUEVA LÓGICA BLINDADA: Panel superior con el día más reciente
       let breakingNews = [];
       if (finalNewsList.length > 0) {
-        // 1. Forzar orden estricto de más nueva a más vieja para asegurar que el índice [0] es hoy
-        finalNewsList.sort((a, b) => {
-            const dA = new Date(a.rawDate || a.date).getTime();
-            const dB = new Date(b.rawDate || b.date).getTime();
-            return (isNaN(dB) ? 0 : dB) - (isNaN(dA) ? 0 : dA);
+        
+        // 1. Asignamos un valor numérico (timestamp) a cada noticia para ordenarlas sin fallos
+        const newsWithTime = [...finalNewsList].map(n => {
+           let t = 0;
+           let dayStr = "Desconocido";
+           
+           if (n.rawDate) {
+               const d = new Date(n.rawDate);
+               t = isNaN(d.getTime()) ? 0 : d.getTime();
+               // Extraemos la fecha exacta cortando por la "T" o por el espacio
+               dayStr = String(n.rawDate).split('T')[0].split(' ')[0]; 
+           } else if (n.date) {
+               // Noticias antiguas escritas a mano
+               t = 10000 - (n.id || 0); // Timestamp falso muy bajo para que queden al final
+               dayStr = n.date;
+           }
+           return { ...n, _timestamp: t, _dayStr: dayStr };
         });
-        
-        const mostRecentNews = finalNewsList[0];
-        
-        // 2. Extractor radical: Corta todo lo que haya después de la "T" para aislar el día
-        const getDayString = (item: any) => {
-           const val = item.rawDate || item.date || "";
-           if (val.includes('T')) return val.split('T')[0];
-           return val; // Fallback para las noticias antiguas en texto plano
-        };
 
-        const targetDay = getDayString(mostRecentNews);
+        // 2. Ordenamos de más nueva a más vieja de forma matemática
+        newsWithTime.sort((a, b) => b._timestamp - a._timestamp);
+        
+        // 3. El día objetivo es el de la noticia que haya quedado primera
+        const targetDay = newsWithTime[0]._dayStr;
 
-        // 3. Filtrar todas las noticias de ese día
-        breakingNews = finalNewsList.filter(n => getDayString(n) === targetDay);
+        // 4. Filtramos y limpiamos
+        breakingNews = newsWithTime.filter(n => n._dayStr === targetDay).map(n => {
+            const clean = { ...n };
+            delete clean._timestamp;
+            delete clean._dayStr;
+            return clean;
+        });
       }
       
-      // 4. Salvavidas: Si por algún error de base de datos la lista queda vacía, forzamos las 4 más nuevas
+      // 5. Salvavidas: Si algo falla masivamente, mostramos las 4 últimas
       if (breakingNews.length === 0 && finalNewsList.length > 0) {
         breakingNews = finalNewsList.slice(0, 4);
       }
