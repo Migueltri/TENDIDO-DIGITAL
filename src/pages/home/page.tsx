@@ -15006,7 +15006,7 @@ return (
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
-                  <p className="text-white/80">tendidodigitall@gmail.com</p>
+                  <p className="text-white/80">Portaltendidodigital@gmail.com</p>
                 </div>
               </div>
             </div>
