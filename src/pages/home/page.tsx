@@ -13473,50 +13473,6 @@ type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
 export default function Home() {
-// Lector de enlaces compartidos
-  useEffect(() => {
-    // Solo ejecutamos esto si ya tenemos noticias cargadas
-    if (combinedNews.length === 0) return;
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const encodedParam = urlParams.get('p');
-
-    if (encodedParam) {
-      try {
-        // Descodificamos "bmV3cy0yMA==" -> "news-20"
-        const decodedString = atob(encodedParam);
-        const articleId = decodedString.replace('news-', '');
-
-        // Buscamos la noticia en nuestra base de datos
-        const articleToOpen = combinedNews.find(n => String(n.id) === String(articleId));
-
-        if (articleToOpen) {
-          // Truco clave para el botón "Atrás": 
-          // 1. Sobreescribimos el historial con la portada vacía
-          window.history.replaceState({ page: 'home' }, '', '/');
-          // 2. Añadimos el estado de la noticia encima
-          window.history.pushState({ page: 'article' }, '', `/?p=${encodedParam}`);
-
-          // ABRIMOS LA NOTICIA (Usa la variable de estado que utilices para abrir tu modal/pantalla completa)
-          setSelectedArticle(articleToOpen); 
-        }
-      } catch (e) {
-        console.error("El enlace compartido es inválido o está corrupto.");
-      }
-    }
-  }, [combinedNews]); // Es vital que dependa de combinedNews para que espere a que bajen de GitHub
-
-	// Interceptar el botón "Atrás" del móvil/navegador
-  useEffect(() => {
-    const handlePopState = (event: PopStateEvent) => {
-      // Si el usuario retrocede, cerramos el modal de la noticia en lugar de salir de la web
-      setSelectedArticle(null); 
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
-	
 const [currentSlide, setCurrentSlide] = useState(0);
   
   // 1. Empezamos vacíos para no pintar noticias viejas
@@ -14045,6 +14001,8 @@ setIsMenuOpen(false);
   
   // 1. Lector automático: Abre la noticia si vienes de un enlace compartido
   useEffect(() => {
+  // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Porque combinedNews ya existe)
+  useEffect(() => {
     if (combinedNews.length === 0) return; // Esperamos a que estén listas las nuevas
 
     const params = new URLSearchParams(window.location.search);
@@ -14059,7 +14017,7 @@ setIsMenuOpen(false);
         // Buscamos en combinedNews, que ya contiene todas
         const selected = combinedNews.find((n) => String(n.id) === String(idString));
         if (selected) {
-          setSelectedNews(selected);
+          setSelectedNews(selected as any);
           setIsNewsModalOpen(true);
           document.body.style.overflow = "hidden";
           document.body.style.position = "fixed";
@@ -14071,9 +14029,9 @@ setIsMenuOpen(false);
         console.error("Error decodificando parámetro p:", error);
       }
     }
-  }, [combinedNews]); // La clave para que no falle con noticias de la app
+  }, [combinedNews]);
 
-  // 2. Controlador del botón "Atrás" físico del móvil
+  // 3. TAMBIÉN PEGAS AQUÍ EL CONTROLADOR DEL BOTÓN ATRÁS
   useEffect(() => {
     const handlePopState = (event: PopStateEvent) => {
       setIsNewsModalOpen(false);
