@@ -13599,28 +13599,47 @@ const response = await fetch(url, { cache: 'no-store' });
         // 6. Guardamos la lista final combinada y ordenada
         setCombinedNews(finalNewsList);
 
-// 7. LÓGICA DEL PANEL: DÍA MÁS RECIENTE
+// 7. LÓGICA DEFINITIVA DEL PANEL: Matemáticas en lugar de texto
       let breakingNews = [];
       if (finalNewsList.length > 0) {
         
-        // El CMS ya guarda la base de datos ordenada de más nueva a más vieja.
-        // La posición [0] SIEMPRE es la noticia más reciente que existe.
-        const newestNews = finalNewsList[0];
-
-        // Extractor de texto puro: aísla el día sin usar funciones de tiempo que fallan
-        const getDayLabel = (n: any) => {
-            if (n.rawDate) return String(n.rawDate).split('T')[0]; // Ej: "2026-03-07"
-            if (n.date) return String(n.date).trim(); // Ej: "7 de Marzo de 2026"
-            return "Sin fecha";
+        // Función que convierte cualquier fecha (sea del formato que sea) en milisegundos numéricos
+        const getRealTime = (item: any) => {
+          if (item.rawDate) return new Date(item.rawDate).getTime();
+          if (item.date) {
+             const parsed = new Date(item.date).getTime();
+             return isNaN(parsed) ? 0 : parsed;
+          }
+          return 0;
         };
 
-        const targetDay = getDayLabel(newestNews);
+        // 1. Ordenamos TODA la lista por tiempo real (de mayor a menor milisegundo)
+        const sortedNews = [...finalNewsList].sort((a, b) => getRealTime(b) - getRealTime(a));
 
-        // Filtramos para meter al panel SOLO las que compartan exactamente esa misma etiqueta de día
-        breakingNews = finalNewsList.filter(n => getDayLabel(n) === targetDay);
+        // 2. Cogemos la más nueva con 100% de seguridad
+        const newest = sortedNews[0];
+        const newestTime = getRealTime(newest);
+
+        // 3. Extraemos Día, Mes y Año numéricos exactos de esa noticia
+        if (newestTime > 0) {
+           const newestDateObj = new Date(newestTime);
+           const targetYear = newestDateObj.getFullYear();
+           const targetMonth = newestDateObj.getMonth();
+           const targetDay = newestDateObj.getDate();
+
+           // 4. Metemos al panel todas las noticias que tengan exactamente ese Día, Mes y Año
+           breakingNews = sortedNews.filter(n => {
+              const nTime = getRealTime(n);
+              if (nTime === 0) return false;
+              const nDate = new Date(nTime);
+              return nDate.getFullYear() === targetYear &&
+                     nDate.getMonth() === targetMonth &&
+                     nDate.getDate() === targetDay;
+           });
+        }
       }
       
-      // Salvavidas de emergencia por si hay datos corruptos
+      // Salvavidas
       if (breakingNews.length === 0 && finalNewsList.length > 0) {
         breakingNews = finalNewsList.slice(0, 4);
       }
@@ -14299,6 +14318,32 @@ Noticias Guardadas
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
               onClick={() => openNewsModal(post)}
             >
+{/* FLECHAS DE NAVEGACIÓN MANUALES */}
+      {news24h.length > 1 && (
+        <>
+          <button 
+            onClick={(e) => {
+              e.stopPropagation(); // Evita que se abra la noticia al pulsar la flecha
+              setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
+            }}
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            aria-label="Anterior noticia"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              setCurrentSlide(prev => (prev + 1) % news24h.length);
+            }}
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            aria-label="Siguiente noticia"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </>
+      )}
               <div className="relative overflow-hidden">
                 <img
                   src={post.image}
