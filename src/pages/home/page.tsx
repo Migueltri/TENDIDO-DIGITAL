@@ -15586,7 +15586,7 @@ TENDIDO DIGITAL
       </div>
     </div>
 
-	 {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) --- */}
+	 {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) - ESTILO TEXTO PLANO --- */}
           <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-center gap-4 md:hidden">
             
             <button 
@@ -15594,11 +15594,14 @@ TENDIDO DIGITAL
                 e.stopPropagation();
                 if (typeof toggleSavedPost === 'function') toggleSavedPost(selectedNews);
               }} 
-              className="flex-1 flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-3 rounded-xl font-medium border border-gray-200 transition-colors"
+              className="flex-1 flex items-center justify-center gap-2 text-gray-900 font-bold py-2 hover:text-brand-red transition-colors bg-transparent border-none"
             >
-              <i className="ri-bookmark-line text-lg"></i>
+              <i className="ri-bookmark-line text-xl"></i>
               <span>Guardar</span>
             </button>
+
+            {/* Pequeña línea divisoria para separar ambas opciones elegantemente */}
+            <div className="w-px h-5 bg-gray-300"></div>
 
             <button 
               onClick={(e) => {
@@ -15606,9 +15609,9 @@ TENDIDO DIGITAL
                 setSharePost(selectedNews);
                 setIsShareModalOpen(true);
               }} 
-              className="flex-1 flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-4 py-3 rounded-xl font-medium shadow-sm transition-colors"
+              className="flex-1 flex items-center justify-center gap-2 text-gray-900 font-bold py-2 hover:text-brand-red transition-colors bg-transparent border-none"
             >
-              <i className="ri-share-forward-line text-lg"></i>
+              <i className="ri-share-forward-line text-xl"></i>
               <span>Compartir</span>
             </button>
 
