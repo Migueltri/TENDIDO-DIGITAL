@@ -13531,128 +13531,119 @@ function formatTimeAgo(dateString: string): string {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // 1. Descargamos el archivo db.json del repositorio del CMS (Donde la app realmente guarda los datos)
-const url = 'https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public/data/db.json?t=' + Date.now();
-const response = await fetch(url, { cache: 'no-store' });
+        const url = 'https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public/data/db.json?t=' + Date.now();
+        const response = await fetch(url, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
         const data = await response.json();
+        
         const fetchedAuthors = data.authors || [];
         const fetchedArticles = data.articles || [];
 
-        // 2. Procesamos las noticias del panel (solo las publicadas)
         const processedArticles = fetchedArticles
           .filter((a: any) => a.isPublished)
           .map((a: any) => {
             const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
             let finalName = "Tendido Digital";
             let finalPic = "/images/tendidodigitallogosimple.png";
-
+            
             if (realAuthor) {
-              finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
-              finalPic = realAuthor.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(realAuthor.name)}&background=random&color=fff`;
+                finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
+                finalPic = realAuthor.imageUrl || finalPic;
             }
-
+            
             return {
               id: a.id,
               title: a.title,
-              image: a.imageUrl,
-			  imageCaption: a.imageCaption, // AÑADIR ESTO
-              photoCredit: a.photoCredit,   // AÑADIR ESTO
-              contentImages: a.contentImages, // AÑADIR ESTO
+              date: a.date, 
+              rawDate: a.date, 
               category: a.category,
-              // Formateamos la fecha para que se vea bien
-              date: new Date(a.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }),
-              rawDate: a.date,
+              image: a.imageUrl,
+              imageCaption: a.imageCaption,
+              photoCredit: a.photoCredit,
+              contentImages: a.contentImages,
               excerpt: a.summary,
               fullContent: a.content,
-              plaza: a.bullfightLocation,
-              ganaderia: a.bullfightCattle,
-              torerosRaw: a.bullfightResults ? a.bullfightResults.map((r: any) => `${r.bullfighter}: ${r.result}`).join('\n') : '',
               author: finalName,
               authorLogo: finalPic,
               showAuthorHeader: true,
-              authorId: a.authorId,
-			  isFeatured: a.isFeatured
+              isFeatured: a.isFeatured,
+              plaza: a.bullfightLocation,
+              ganaderia: a.bullfightCattle,
+              detalles: a.bullfightSummary,
+              toreros: a.bullfightResults?.map((r:any)=>r.bullfighter),
+              resultado: a.bullfightResults?.map((r:any)=>r.result)
             };
           });
 
-        // 3. Juntamos las noticias del panel con las antiguas (latestNews)
-        const combinedRawList = [...processedArticles, ...latestNews];
+        const combined = [...processedArticles, ...latestNews];
         
-        // 4. Eliminamos duplicados por si acaso
-        const uniqueNewsMap = new Map();
-        combinedRawList.forEach(news => {
-          if (!uniqueNewsMap.has(news.id)) uniqueNewsMap.set(news.id, news);
-        });
+        const uniqueNews = combined.reduce((acc, current) => {
+          const x = acc.find((item: any) => String(item.id) === String(current.id));
+          if (!x) return acc.concat([current]);
+          return acc;
+        }, []);
 
-        const finalNewsList = Array.from(uniqueNewsMap.values());
-        
-        // 5. ORDENAMOS TODAS LAS NOTICIAS POR FECHA (Las más nuevas primero)
-        finalNewsList.sort((a, b) => {
-            // Intentamos usar rawDate si existe, si no, intentamos parsear 'date'
-            const dateA = a.rawDate ? new Date(a.rawDate).getTime() : new Date(a.date).getTime();
-            const dateB = b.rawDate ? new Date(b.rawDate).getTime() : new Date(b.date).getTime();
-            return dateB - dateA;
-        });
-
-        // 6. Guardamos la lista final combinada y ordenada
-        setCombinedNews(finalNewsList);
-
-// 7. LÓGICA DEFINITIVA DEL PANEL: Matemáticas en lugar de texto
-      let breakingNews = [];
-      if (finalNewsList.length > 0) {
-        
-        // Función que convierte cualquier fecha (sea del formato que sea) en milisegundos numéricos
+        // MOTOR DE FECHAS INFALIBLE: Entiende inglés, español y formatos raros
         const getRealTime = (item: any) => {
-          if (item.rawDate) return new Date(item.rawDate).getTime();
+          if (item.rawDate) {
+              const t = new Date(item.rawDate).getTime();
+              if (!isNaN(t)) return t;
+          }
           if (item.date) {
              const parsed = new Date(item.date).getTime();
-             return isNaN(parsed) ? 0 : parsed;
+             if (!isNaN(parsed)) return parsed;
+             const meses: Record<string, number> = { "enero":0, "febrero":1, "marzo":2, "abril":3, "mayo":4, "junio":5, "julio":6, "agosto":7, "septiembre":8, "octubre":9, "noviembre":10, "diciembre":11 };
+             const partes = String(item.date).toLowerCase().split(' ');
+             if (partes.length >= 5) {
+                 const dia = parseInt(partes[0]);
+                 const mes = meses[partes[2]];
+                 const ano = parseInt(partes[4]);
+                 if (!isNaN(dia) && mes !== undefined && !isNaN(ano)) {
+                     return new Date(ano, mes, dia).getTime();
+                 }
+             }
           }
-          return 0;
+          return 0; 
         };
 
-        // 1. Ordenamos TODA la lista por tiempo real (de mayor a menor milisegundo)
-        const sortedNews = [...finalNewsList].sort((a, b) => getRealTime(b) - getRealTime(a));
+        // 6. Ordenamos TODO matemáticamente para no fallar jamás
+        const finalNewsList = uniqueNews.sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
+        setCombinedNews(finalNewsList);
 
-        // 2. Cogemos la más nueva con 100% de seguridad
-        const newest = sortedNews[0];
-        const newestTime = getRealTime(newest);
+        // 7. LÓGICA DEL PANEL (SLIDER): Extrae exactamente el último día que exista
+        let breakingNews = [];
+        if (finalNewsList.length > 0) {
+            const newestTime = getRealTime(finalNewsList[0]);
+            
+            if (newestTime > 0) {
+               const newestDateObj = new Date(newestTime);
+               const targetYear = newestDateObj.getFullYear();
+               const targetMonth = newestDateObj.getMonth();
+               const targetDay = newestDateObj.getDate();
 
-        // 3. Extraemos Día, Mes y Año numéricos exactos de esa noticia
-        if (newestTime > 0) {
-           const newestDateObj = new Date(newestTime);
-           const targetYear = newestDateObj.getFullYear();
-           const targetMonth = newestDateObj.getMonth();
-           const targetDay = newestDateObj.getDate();
-
-           // 4. Metemos al panel todas las noticias que tengan exactamente ese Día, Mes y Año
-           breakingNews = sortedNews.filter(n => {
-              const nTime = getRealTime(n);
-              if (nTime === 0) return false;
-              const nDate = new Date(nTime);
-              return nDate.getFullYear() === targetYear &&
-                     nDate.getMonth() === targetMonth &&
-                     nDate.getDate() === targetDay;
-           });
+               breakingNews = finalNewsList.filter((n: any) => {
+                  const nTime = getRealTime(n);
+                  if (nTime === 0) return false;
+                  const nDate = new Date(nTime);
+                  return nDate.getFullYear() === targetYear &&
+                         nDate.getMonth() === targetMonth &&
+                         nDate.getDate() === targetDay;
+               });
+            }
         }
-      }
-      
-      // Salvavidas
-      if (breakingNews.length === 0 && finalNewsList.length > 0) {
-        breakingNews = finalNewsList.slice(0, 4);
-      }
-      
-      setNews24h(breakingNews);
+        
+        // Salvavidas por si falla la conexión
+        if (breakingNews.length === 0 && finalNewsList.length > 0) {
+          breakingNews = finalNewsList.slice(0, 4);
+        }
+        
+        setNews24h(breakingNews);
 
       } catch (error) {
-        console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
-        const fallbackList = [...latestNews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-        setCombinedNews(fallbackList);
-        setNews24h(fallbackList.slice(0, 3));
+        console.error("Fallo al cargar db.json", error);
+        setCombinedNews(latestNews);
+        setNews24h(latestNews.slice(0, 3));
       } finally {
-        // 3. Ya tenemos los datos, apagamos la pantalla de carga
         setIsAppLoading(false);
       }
     };
@@ -14608,80 +14599,110 @@ return (
   <>
 	  
     {/* Hero Carousel */}
-    <section
-  id="inicio"
-  className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center bg-white"
->
-      {featuredNews.map((news, index) => (
-        <div
-          key={news.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        >
-<img
-  src={news.image}
-  alt={news.title}
-  className="absolute inset-0 w-full h-full object-cover"
-  loading="lazy"
-/>
-
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent pointer-events-none"></div>
-
-          <div className="absolute inset-x-0 bottom-8 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-center px-4 sm:px-8 text-center">
-            <div className="max-w-3xl">
-              <div className="flex items-center justify-center mb-4 space-x-3">
-                <span className="inline-flex items-center bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
-                  <i className="ri-fire-line mr-2"></i>
-                  {news.category}
-                </span>
-                <span className="text-gray-500 text-sm">{formatTimeAgo(news.date)}</span>
+  {/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H / DESTACADAS) */}
+      <section id="inicio" className="relative pt-4 md:pt-8 pb-8 md:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="relative rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-2xl group min-h-[60vh] md:min-h-[75vh] flex items-end">
+          
+          {news24h.map((post, index) => (
+            <div
+              key={post.id}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${
+                index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+              }`}
+              onClick={() => openNewsModal(post)}
+            >
+              {/* Imagen de fondo */}
+              <div className="absolute inset-0 bg-black">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out opacity-90"
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent"></div>
               </div>
 
-             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-lg">
-             {news.title}
-             </h1>
-
-              {news.excerpt && (
-                <p className="text-base sm:text-lg text-gray-200 mb-6 leading-relaxed drop-shadow-md">
-                  {news.excerpt}
-                </p>
-              )}
-
-              <div className="flex flex-wrap justify-center gap-4 mt-4">
-                <button
-                  onClick={() => openNewsModal(news)}
-                  className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg cursor-pointer text-sm sm:text-base"
-                >
-                  Leer noticia completa
-                </button>
-                <button
-                  onClick={() => scrollToSection('actualidad')}
-                  className="bg-white/30 backdrop-blur-md text-white px-6 py-3 rounded-full font-bold hover:bg-white/40 transition duration-300 text-sm sm:text-base"
-                >
-                  Ver más noticias
-                </button>
+              {/* Contenido (Textos sobre la imagen) */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-20">
+                <div className="max-w-4xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <span className="bg-brand-red text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg backdrop-blur-sm">
+                      {post.category}
+                    </span>
+                    <span className="text-gray-300 text-xs md:text-sm font-medium flex items-center">
+                      <i className="ri-time-line mr-1"></i> {formatTimeAgo(post.date)}
+                    </span>
+                  </div>
+                  <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-200 text-base md:text-xl lg:text-2xl line-clamp-2 md:line-clamp-3 mb-6 max-w-3xl drop-shadow-md">
+                    {post.excerpt || post.summary}
+                  </p>
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openNewsModal(post);
+                    }}
+                    className="bg-white/10 hover:bg-brand-red text-white border border-white/30 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-md flex items-center group/btn"
+                  >
+                    Leer noticia completa 
+                    <i className="ri-arrow-right-line ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
+                  </button>
+                </div>
               </div>
             </div>
+          ))}
+
+          {/* FLECHAS DE NAVEGACIÓN MANUALES (Solo salen si hay más de 1 noticia en el día) */}
+          {news24h.length > 1 && (
+            <>
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation(); 
+                  setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
+                }}
+                className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+                aria-label="Anterior noticia"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide(prev => (prev + 1) % news24h.length);
+                }}
+                className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+                aria-label="Siguiente noticia"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </>
+          )}
+
+          {/* Indicadores (Puntitos de abajo) */}
+          <div className="absolute bottom-6 md:bottom-8 right-6 md:right-12 flex space-x-3 z-30">
+            {news24h.map((_, index) => (
+              <button
+                key={index}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide(index);
+                }}
+                className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
+                  index === currentSlide 
+                    ? "w-8 md:w-12 bg-brand-red" 
+                    : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
+                }`}
+                aria-label={`Ir a la noticia ${index + 1}`}
+              />
+            ))}
           </div>
+
         </div>
-      ))}
-
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3 bg-black/40 p-3 rounded-full backdrop-blur-md">
-        {featuredNews.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide
-                ? "bg-white scale-125 shadow-lg"
-                : "bg-white/50 hover:bg-white/80"
-            }`}
-          />
-        ))}
-      </div>
-    </section>
-
+      </section>
+	  
     {/* Flecha izquierda */}
 <button
   onClick={() =>
