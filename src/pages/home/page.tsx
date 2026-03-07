@@ -13599,44 +13599,28 @@ const response = await fetch(url, { cache: 'no-store' });
         // 6. Guardamos la lista final combinada y ordenada
         setCombinedNews(finalNewsList);
 
-// 7. NUEVA LÓGICA BLINDADA: Panel superior con el día más reciente
+// 7. LÓGICA DEL PANEL: DÍA MÁS RECIENTE
       let breakingNews = [];
       if (finalNewsList.length > 0) {
         
-        // 1. Asignamos un valor numérico a cada noticia para ordenarlas sin fallos
-        const newsWithTime = [...finalNewsList].map(n => {
-           let t = 0;
-           let dayStr = "Desconocido";
-           
-           if (n.rawDate) {
-               const d = new Date(n.rawDate);
-               t = isNaN(d.getTime()) ? 0 : d.getTime();
-               dayStr = String(n.rawDate).split('T')[0]; // Extrae el formato "2026-03-07"
-           } else if (n.date) {
-               // Intento de leer la fecha antigua
-               const d = new Date(n.date);
-               t = isNaN(d.getTime()) ? (10000 - (n.id || 0)) : d.getTime(); 
-               dayStr = n.date;
-           }
-           return { ...n, _timestamp: t, _dayStr: dayStr };
-        });
+        // El CMS ya guarda la base de datos ordenada de más nueva a más vieja.
+        // La posición [0] SIEMPRE es la noticia más reciente que existe.
+        const newestNews = finalNewsList[0];
 
-        // 2. Ordenamos de más nueva a más vieja matemáticamente
-        newsWithTime.sort((a, b) => b._timestamp - a._timestamp);
-        
-        // 3. El día objetivo es el de la noticia más reciente que exista en la base de datos
-        const targetDay = newsWithTime[0]._dayStr;
+        // Extractor de texto puro: aísla el día sin usar funciones de tiempo que fallan
+        const getDayLabel = (n: any) => {
+            if (n.rawDate) return String(n.rawDate).split('T')[0]; // Ej: "2026-03-07"
+            if (n.date) return String(n.date).trim(); // Ej: "7 de Marzo de 2026"
+            return "Sin fecha";
+        };
 
-        // 4. Filtramos para meter al panel solo las de ese día
-        breakingNews = newsWithTime.filter(n => n._dayStr === targetDay).map(n => {
-            const clean = { ...n };
-            delete clean._timestamp;
-            delete clean._dayStr;
-            return clean;
-        });
+        const targetDay = getDayLabel(newestNews);
+
+        // Filtramos para meter al panel SOLO las que compartan exactamente esa misma etiqueta de día
+        breakingNews = finalNewsList.filter(n => getDayLabel(n) === targetDay);
       }
       
-      // 5. Salvavidas: Si algo falla, mostramos las 4 últimas
+      // Salvavidas de emergencia por si hay datos corruptos
       if (breakingNews.length === 0 && finalNewsList.length > 0) {
         breakingNews = finalNewsList.slice(0, 4);
       }
