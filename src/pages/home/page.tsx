@@ -14596,110 +14596,105 @@ if (activeTab === 'cronicas') {
 
 // Contenido principal (inicio)
 return (
-  <>
+  <>  
 	  
     {/* Hero Carousel */}
-  {/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H / DESTACADAS) */}
-      <section id="inicio" className="relative pt-4 md:pt-8 pb-8 md:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-2xl group min-h-[60vh] md:min-h-[75vh] flex items-end">
-          
-          {news24h.map((post, index) => (
-            <div
-              key={post.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${
-                index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
-              }`}
-              onClick={() => openNewsModal(post)}
-            >
-              {/* Imagen de fondo */}
-              <div className="absolute inset-0 bg-black">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out opacity-90"
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/50 to-transparent"></div>
-              </div>
+	{/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H) - DISEÑO PANTALLA COMPLETA */}
+      <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-black">
+        {news24h.map((post, index) => (
+          <div
+            key={post.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${
+              index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+            }`}
+            onClick={() => openNewsModal(post)}
+          >
+            {/* Imagen de fondo a pantalla completa */}
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out opacity-90"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+            {/* Degradado negro inferior para que el texto siempre se lea bien */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
 
-              {/* Contenido (Textos sobre la imagen) */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-20">
-                <div className="max-w-4xl">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <span className="bg-brand-red text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg backdrop-blur-sm">
-                      {post.category}
-                    </span>
-                    <span className="text-gray-300 text-xs md:text-sm font-medium flex items-center">
-                      <i className="ri-time-line mr-1"></i> {formatTimeAgo(post.date)}
-                    </span>
-                  </div>
-                  <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
-                    {post.title}
-                  </h2>
-                  <p className="text-gray-200 text-base md:text-xl lg:text-2xl line-clamp-2 md:line-clamp-3 mb-6 max-w-3xl drop-shadow-md">
-                    {post.excerpt || post.summary}
-                  </p>
-                  <button 
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      openNewsModal(post);
-                    }}
-                    className="bg-white/10 hover:bg-brand-red text-white border border-white/30 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-md flex items-center group/btn"
-                  >
-                    Leer noticia completa 
-                    <i className="ri-arrow-right-line ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
-                  </button>
+            {/* Contenido (Textos sobre la imagen) */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-16 lg:p-24 z-20 flex flex-col justify-end h-full">
+              <div className="max-w-5xl">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="bg-brand-red text-white px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg">
+                    {post.category}
+                  </span>
+                  <span className="text-gray-200 text-sm font-medium drop-shadow-md">
+                    <i className="ri-time-line mr-1"></i> {formatTimeAgo(post.date)}
+                  </span>
                 </div>
+                <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-xl">
+                  {post.title}
+                </h2>
+                <p className="text-gray-200 text-lg md:text-2xl line-clamp-2 md:line-clamp-3 mb-8 max-w-4xl drop-shadow-md">
+                  {post.excerpt || post.summary}
+                </p>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openNewsModal(post);
+                  }}
+                  className="bg-brand-red hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center group/btn w-max shadow-xl"
+                >
+                  Leer noticia completa 
+                  <i className="ri-arrow-right-line ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
+                </button>
               </div>
             </div>
-          ))}
-
-          {/* FLECHAS DE NAVEGACIÓN MANUALES (Solo salen si hay más de 1 noticia en el día) */}
-          {news24h.length > 1 && (
-            <>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation(); 
-                  setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
-                }}
-                className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-                aria-label="Anterior noticia"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-              </button>
-              
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentSlide(prev => (prev + 1) % news24h.length);
-                }}
-                className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-                aria-label="Siguiente noticia"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-              </button>
-            </>
-          )}
-
-          {/* Indicadores (Puntitos de abajo) */}
-          <div className="absolute bottom-6 md:bottom-8 right-6 md:right-12 flex space-x-3 z-30">
-            {news24h.map((_, index) => (
-              <button
-                key={index}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentSlide(index);
-                }}
-                className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
-                  index === currentSlide 
-                    ? "w-8 md:w-12 bg-brand-red" 
-                    : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
-                }`}
-                aria-label={`Ir a la noticia ${index + 1}`}
-              />
-            ))}
           </div>
+        ))}
 
+        {/* FLECHAS DE NAVEGACIÓN MANUALES */}
+        {news24h.length > 1 && (
+          <>
+            <button 
+              onClick={(e) => {
+                e.stopPropagation(); 
+                setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
+              }}
+              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+              aria-label="Anterior noticia"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrentSlide(prev => (prev + 1) % news24h.length);
+              }}
+              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+              aria-label="Siguiente noticia"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </>
+        )}
+
+        {/* Indicadores (Puntitos de abajo) */}
+        <div className="absolute bottom-8 right-8 md:bottom-12 md:right-16 flex space-x-3 z-30">
+          {news24h.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrentSlide(index);
+              }}
+              className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
+                index === currentSlide 
+                  ? "w-10 md:w-16 bg-brand-red" 
+                  : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
+              }`}
+              aria-label={`Ir a la noticia ${index + 1}`}
+            />
+          ))}
         </div>
       </section>
 	  
