@@ -13776,33 +13776,35 @@ setSavedPosts(prev => {
 });
 };
 
-const openShareModal = (post: NewsItem | OpinionArticle | Chronicle, e?: React.MouseEvent) => {
-if (e) {
-e.stopPropagation();
-}
-setSharePost(post);
-setIsShareModalOpen(true);
-};
+// --- BLOQUE 1: BOTONES DE COMPARTIR (VERSIÓN ROBUSTA) ---
+  const generateShareUrl = (articleId: number | string) => {
+    const encodedId = btoa(`news-${articleId}`);
+    return `${window.location.origin}/?p=${encodedId}`;
+  };
 
-const closeShareModal = () => {
-setIsShareModalOpen(false);
-setSharePost(null);
-};
+  // Función maestra: Busca la noticia activa en cualquier estado posible
+  const getArticleToShare = () => {
+    return sharePost || selectedNews || selectedChronicle;
+  };
 
-const shareToWhatsApp = () => {
-    if (sharePost) {
-      const url = generateShareUrl(sharePost.id);
-      const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${url}`;
+  const shareToWhatsApp = () => {
+    const article = getArticleToShare();
+    if (article) {
+      const url = generateShareUrl(article.id);
+      const text = `¡Mira esta noticia taurina! ${article.title} - ${url}`;
       const shareUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
       window.open(shareUrl, '_blank', 'noopener,noreferrer');
       closeShareModal();
+    } else {
+      alert("Error: No se ha detectado ninguna noticia para compartir.");
     }
   };
 
   const shareToTwitter = () => {
-    if (sharePost) {
-      const url = generateShareUrl(sharePost.id);
-      const text = `${sharePost.title} - vía @tendidodigital`;
+    const article = getArticleToShare();
+    if (article) {
+      const url = generateShareUrl(article.id);
+      const text = `${article.title} - vía @tendidodigital`;
       const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
       window.open(shareUrl, '_blank', 'noopener,noreferrer');
       closeShareModal();
@@ -13810,8 +13812,9 @@ const shareToWhatsApp = () => {
   };
 
   const shareToFacebook = () => {
-    if (sharePost) {
-      const url = generateShareUrl(sharePost.id);
+    const article = getArticleToShare();
+    if (article) {
+      const url = generateShareUrl(article.id);
       const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
       window.open(shareUrl, '_blank', 'noopener,noreferrer');
       closeShareModal();
@@ -13819,17 +13822,18 @@ const shareToWhatsApp = () => {
   };
 
   const copyLink = async () => {
-    try {
-      if (sharePost) {
-        const url = generateShareUrl(sharePost.id);
+    const article = getArticleToShare();
+    if (article) {
+      try {
+        const url = generateShareUrl(article.id);
         const link = `${url}&utm_source=ig_web_copy_link`;
         await navigator.clipboard.writeText(link);
-        setContactMessage("¡Enlace copiado al portapapeles!");
+        alert("¡Enlace copiado al portapapeles!");
         closeShareModal();
-        setTimeout(() => setContactMessage(""), 3000);
+      } catch (error) {
+        console.error("Error al copiar enlace:", error);
+        alert("Tu navegador no permite copiar automáticamente. Enlace: " + generateShareUrl(article.id));
       }
-    } catch (error) {
-      console.error("Error al copiar enlace:", error);
     }
   };
 
