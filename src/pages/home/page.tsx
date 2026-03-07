@@ -13600,16 +13600,28 @@ const response = await fetch(url, { cache: 'no-store' });
         // 6. Guardamos la lista final combinada y ordenada
         setCombinedNews(finalNewsList);
 
-        // 7. Calculamos las noticias de las últimas 48h para el slider superior
-		// Filtrar las noticias marcadas con la estrella desde el CMS
-let breakingNews = finalNewsList.filter(n => n.isFeatured === true);
+// 7. NUEVA LÓGICA: El panel superior mostrará TODAS las noticias del día más reciente
+      let breakingNews = [];
+      if (finalNewsList.length > 0) {
+        // Cogemos la noticia más nueva de toda la base de datos
+        const mostRecentNews = finalNewsList[0];
+        
+        // Función para extraer solo el "Día" (ignorando la hora)
+        const getDayString = (item: any) => {
+           if (item.rawDate) {
+              // Formato de la app: "2026-03-07T21:00:00.000Z" -> Nos quedamos con "2026-03-07"
+              return item.rawDate.split('T')[0];
+           }
+           // Formato antiguo: "7 de Marzo de 2026"
+           return item.date;
+        };
 
-// Sistema de seguridad: si no hay ninguna destacada, muestra las 3 más nuevas
-if (breakingNews.length === 0 && finalNewsList.length > 0) {
-    breakingNews = finalNewsList.slice(0, 3);
-}
+        const targetDay = getDayString(mostRecentNews);
 
-setNews24h(breakingNews);
+        // Filtramos para quedarnos solo con las noticias que sean de ese mismo día exacto
+        breakingNews = finalNewsList.filter(n => getDayString(n) === targetDay);
+      }
+      setNews24h(breakingNews);
 
       } catch (error) {
         console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
@@ -14108,12 +14120,18 @@ document.body.style.position = "";
 document.body.style.width = "";
 };
 
-useEffect(() => {
-const timer = setInterval(() => {
-setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
-}, 3000);
-return () => clearInterval(timer);
-}, [featuredNews.length]);
+// Temporizador del Slider Principal (Corregido)
+  useEffect(() => {
+    // Si no hay noticias cargadas, detenemos la ejecución para evitar errores
+    if (news24h.length === 0) return;
+    
+    const timer = setInterval(() => {
+      // Usamos la longitud dinámica del día actual (news24h) en lugar de listas estáticas
+      setCurrentSlide((prev) => (prev + 1) % news24h.length);
+    }, 5000); // Subido a 5 segundos para que dé tiempo a leer los titulares cómodamente
+    
+    return () => clearInterval(timer);
+  }, [news24h.length]);
 
 useEffect(() => {
 const handleScroll = () => setScrollY(window.scrollY);
