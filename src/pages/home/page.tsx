@@ -14112,27 +14112,6 @@ setIsMenuOpen(false);
     window.history.pushState({ page: 'home' }, '', '/');
   };
 
-  const openChronicleModal = (chronicle: Chronicle) => {
-    setSelectedChronicle(chronicle);
-    setIsChronicleModalOpen(true);
-    document.body.style.overflow = "hidden";
-    document.body.style.position = "fixed";
-    document.body.style.width = "100%";
-
-    const encodedId = btoa(`news-${chronicle.id}`);
-    window.history.pushState({ page: 'chronicle' }, '', `/?p=${encodedId}`);
-  };
-
-  const closeChronicleModal = () => {
-    setIsChronicleModalOpen(false);
-    setSelectedChronicle(null);
-    document.body.style.overflow = "auto";
-    document.body.style.position = "";
-    document.body.style.width = "";
-    
-    window.history.pushState({ page: 'home' }, '', '/');
-  };
-
 // En tu componente del modal, asegúrate de que tenga estos estilos:
 const modalStyles = {
   overflowY: "auto", // Habilita desplazamiento vertical
