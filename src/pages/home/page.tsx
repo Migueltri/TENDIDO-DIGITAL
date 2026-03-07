@@ -13474,8 +13474,13 @@ type Chronicle = BaseArticle;
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
-const [combinedNews, setCombinedNews] = useState<NewsItem[]>(latestNews);
+  
+  // 1. Empezamos vacíos para no pintar noticias viejas
+const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
 const [news24h, setNews24h] = useState<NewsItem[]>([]);
+  
+  // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
+const [isAppLoading, setIsAppLoading] = useState(true);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -13610,10 +13615,12 @@ setNews24h(breakingNews);
         console.error("Fallo al cargar db.json. Mostrando solo noticias antiguas:", error);
         const fallbackList = [...latestNews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setCombinedNews(fallbackList);
-        setNews24h(fallbackList.slice(0, 3)); 
+        setNews24h(fallbackList.slice(0, 3));
+      } finally {
+        // 3. Ya tenemos los datos, apagamos la pantalla de carga
+        setIsAppLoading(false);
       }
     };
-
     loadData();
   }, []);
 
@@ -14085,8 +14092,18 @@ document.body.style.overflow = 'unset';
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
 
-const SponsorBanner = () => (
-  <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+// 4. Si está cargando, mostramos un spinner elegante y bloqueamos el renderizado antiguo
+  if (isAppLoading) {
+      return (
+          <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+              <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+              <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+          </div>
+      );
+  }
+
+  const SponsorBanner = () => (
+      <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
     <a
       href="https://tauromania.es"
       target="_blank"
