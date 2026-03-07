@@ -13473,6 +13473,50 @@ type OpinionArticle = BaseArticle;
 type Chronicle = BaseArticle;
 
 export default function Home() {
+// Lector de enlaces compartidos
+  useEffect(() => {
+    // Solo ejecutamos esto si ya tenemos noticias cargadas
+    if (combinedNews.length === 0) return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const encodedParam = urlParams.get('p');
+
+    if (encodedParam) {
+      try {
+        // Descodificamos "bmV3cy0yMA==" -> "news-20"
+        const decodedString = atob(encodedParam);
+        const articleId = decodedString.replace('news-', '');
+
+        // Buscamos la noticia en nuestra base de datos
+        const articleToOpen = combinedNews.find(n => String(n.id) === String(articleId));
+
+        if (articleToOpen) {
+          // Truco clave para el botón "Atrás": 
+          // 1. Sobreescribimos el historial con la portada vacía
+          window.history.replaceState({ page: 'home' }, '', '/');
+          // 2. Añadimos el estado de la noticia encima
+          window.history.pushState({ page: 'article' }, '', `/?p=${encodedParam}`);
+
+          // ABRIMOS LA NOTICIA (Usa la variable de estado que utilices para abrir tu modal/pantalla completa)
+          setSelectedArticle(articleToOpen); 
+        }
+      } catch (e) {
+        console.error("El enlace compartido es inválido o está corrupto.");
+      }
+    }
+  }, [combinedNews]); // Es vital que dependa de combinedNews para que espere a que bajen de GitHub
+
+	// Interceptar el botón "Atrás" del móvil/navegador
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      // Si el usuario retrocede, cerramos el modal de la noticia en lugar de salir de la web
+      setSelectedArticle(null); 
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+	
 const [currentSlide, setCurrentSlide] = useState(0);
   
   // 1. Empezamos vacíos para no pintar noticias viejas
@@ -13790,48 +13834,48 @@ setSharePost(null);
 };
 
 const shareToWhatsApp = () => {
-  if (sharePost) {
-    const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${window.location.origin}`;
-    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const shareToTwitter = () => {
-  if (sharePost) {
-    const text = `${sharePost.title} - vía @tendidodigital`;
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.origin)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const shareToFacebook = () => {
-  if (sharePost) {
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-    closeShareModal();
-  }
-};
-
-const copyLink = async () => {
-  try {
     if (sharePost) {
-      // Creamos un enlace único por ID
-      const encoded = btoa(`news-${sharePost.id}`); // Cada id produce un string único
-      const link = `${window.location.origin}/?p=${encoded}&utm_source=ig_web_copy_link`;
-
-      await navigator.clipboard.writeText(link);
-      setContactMessage("¡Enlace copiado al portapapeles!");
+      const url = generateShareUrl(sharePost.id);
+      const text = `¡Mira esta noticia taurina! ${sharePost.title} - ${url}`;
+      const shareUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+      window.open(shareUrl, '_blank', 'noopener,noreferrer');
       closeShareModal();
-
-      setTimeout(() => setContactMessage(""), 3000);
     }
-  } catch (error) {
-    console.error("Error al copiar enlace:", error);
-  }
-};
+  };
+
+  const shareToTwitter = () => {
+    if (sharePost) {
+      const url = generateShareUrl(sharePost.id);
+      const text = `${sharePost.title} - vía @tendidodigital`;
+      const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+      window.open(shareUrl, '_blank', 'noopener,noreferrer');
+      closeShareModal();
+    }
+  };
+
+  const shareToFacebook = () => {
+    if (sharePost) {
+      const url = generateShareUrl(sharePost.id);
+      const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+      window.open(shareUrl, '_blank', 'noopener,noreferrer');
+      closeShareModal();
+    }
+  };
+
+  const copyLink = async () => {
+    try {
+      if (sharePost) {
+        const url = generateShareUrl(sharePost.id);
+        const link = `${url}&utm_source=ig_web_copy_link`;
+        await navigator.clipboard.writeText(link);
+        setContactMessage("¡Enlace copiado al portapapeles!");
+        closeShareModal();
+        setTimeout(() => setContactMessage(""), 3000);
+      }
+    } catch (error) {
+      console.error("Error al copiar enlace:", error);
+    }
+  };
 
 // Obtener posts filtrados según la pestaña activa
 const getFilteredPosts = () => {
@@ -13997,53 +14041,97 @@ setIsMenuOpen(false);
 };
 
 // Función para abrir modal de noticia
-useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const p = params.get('p');
-
-  if (p) {
-    try {
-      // Rellenar base64 solo si hace falta
-      let padded = p;
-      while (padded.length % 4 !== 0) padded += "=";
-
-      const decoded = atob(padded);
-      const idString = decoded.replace("news-", "");
-      const id = parseInt(idString, 10);
-
-      const allPosts = [...featuredNews, ...latestNews];
-      const selected = allPosts.find((n) => n.id === id);
-
-      if (selected) {
-        setSelectedNews(selected);
-        setIsNewsModalOpen(true);
-       document.body.style.overflow = "hidden";
-       document.body.style.position = "fixed";
-       document.body.style.width = "100%";
-      }
-    } catch (error) {
-      console.error("Error decodificando parámetro p:", error);
-    }
-  }
-}, []);
+// --- BLOQUE 2: LECTOR DE ENLACES Y BOTÓN ATRÁS ---
   
-// Abrir modal de noticia
-const openNewsModal = (news: NewsItem | OpinionArticle) => {
-  setSelectedNews(news);
-  setIsNewsModalOpen(true);
-  document.body.style.overflow = "hidden";
-  document.body.style.position = "fixed";
-  document.body.style.width = "100%";
-};
+  // 1. Lector automático: Abre la noticia si vienes de un enlace compartido
+  useEffect(() => {
+    if (combinedNews.length === 0) return; // Esperamos a que estén listas las nuevas
 
-// Cerrar modal de noticia
-const closeNewsModal = () => {
-  setIsNewsModalOpen(false);
-  setSelectedNews(null);
-  document.body.style.overflow = "auto";
-  document.body.style.position = "";
-  document.body.style.width = "";
-};
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get('p');
+    if (p) {
+      try {
+        let padded = p;
+        while (padded.length % 4 !== 0) padded += "=";
+        const decoded = atob(padded);
+        const idString = decoded.replace("news-", "");
+        
+        // Buscamos en combinedNews, que ya contiene todas
+        const selected = combinedNews.find((n) => String(n.id) === String(idString));
+        if (selected) {
+          setSelectedNews(selected);
+          setIsNewsModalOpen(true);
+          document.body.style.overflow = "hidden";
+          document.body.style.position = "fixed";
+          document.body.style.width = "100%";
+          // Sustituimos la URL inicial para no duplicar el historial
+          window.history.replaceState({ page: 'article' }, '', `/?p=${p}`);
+        }
+      } catch (error) {
+        console.error("Error decodificando parámetro p:", error);
+      }
+    }
+  }, [combinedNews]); // La clave para que no falle con noticias de la app
+
+  // 2. Controlador del botón "Atrás" físico del móvil
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      setIsNewsModalOpen(false);
+      setSelectedNews(null);
+      setIsChronicleModalOpen(false);
+      setSelectedChronicle(null);
+      document.body.style.overflow = "auto";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // 3. Funciones para Modales (añaden y quitan la URL al hacer clic)
+  const openNewsModal = (news: NewsItem | OpinionArticle) => {
+    setSelectedNews(news);
+    setIsNewsModalOpen(true);
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    
+    // Al abrir manual, cambiamos la URL arriba
+    const encodedId = btoa(`news-${news.id}`);
+    window.history.pushState({ page: 'article' }, '', `/?p=${encodedId}`);
+  };
+
+  const closeNewsModal = () => {
+    setIsNewsModalOpen(false);
+    setSelectedNews(null);
+    document.body.style.overflow = "auto";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    
+    // Al cerrar con la X, limpiamos la URL
+    window.history.pushState({ page: 'home' }, '', '/');
+  };
+
+  const openChronicleModal = (chronicle: Chronicle) => {
+    setSelectedChronicle(chronicle);
+    setIsChronicleModalOpen(true);
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+
+    const encodedId = btoa(`news-${chronicle.id}`);
+    window.history.pushState({ page: 'chronicle' }, '', `/?p=${encodedId}`);
+  };
+
+  const closeChronicleModal = () => {
+    setIsChronicleModalOpen(false);
+    setSelectedChronicle(null);
+    document.body.style.overflow = "auto";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    
+    window.history.pushState({ page: 'home' }, '', '/');
+  };
 
 // En tu componente del modal, asegúrate de que tenga estos estilos:
 const modalStyles = {
