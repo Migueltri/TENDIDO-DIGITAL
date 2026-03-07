@@ -13603,24 +13603,33 @@ const response = await fetch(url, { cache: 'no-store' });
 // 7. NUEVA LÓGICA: El panel superior mostrará TODAS las noticias del día más reciente
       let breakingNews = [];
       if (finalNewsList.length > 0) {
-        // Cogemos la noticia más nueva de toda la base de datos
+        // 1. Forzar orden estricto de más nueva a más vieja para asegurar que el índice [0] es hoy
+        finalNewsList.sort((a, b) => {
+            const dA = new Date(a.rawDate || a.date).getTime();
+            const dB = new Date(b.rawDate || b.date).getTime();
+            return (isNaN(dB) ? 0 : dB) - (isNaN(dA) ? 0 : dA);
+        });
+        
         const mostRecentNews = finalNewsList[0];
         
-        // Función para extraer solo el "Día" (ignorando la hora)
+        // 2. Extractor radical: Corta todo lo que haya después de la "T" para aislar el día
         const getDayString = (item: any) => {
-           if (item.rawDate) {
-              // Formato de la app: "2026-03-07T21:00:00.000Z" -> Nos quedamos con "2026-03-07"
-              return item.rawDate.split('T')[0];
-           }
-           // Formato antiguo: "7 de Marzo de 2026"
-           return item.date;
+           const val = item.rawDate || item.date || "";
+           if (val.includes('T')) return val.split('T')[0];
+           return val; // Fallback para las noticias antiguas en texto plano
         };
 
         const targetDay = getDayString(mostRecentNews);
 
-        // Filtramos para quedarnos solo con las noticias que sean de ese mismo día exacto
+        // 3. Filtrar todas las noticias de ese día
         breakingNews = finalNewsList.filter(n => getDayString(n) === targetDay);
       }
+      
+      // 4. Salvavidas: Si por algún error de base de datos la lista queda vacía, forzamos las 4 más nuevas
+      if (breakingNews.length === 0 && finalNewsList.length > 0) {
+        breakingNews = finalNewsList.slice(0, 4);
+      }
+      
       setNews24h(breakingNews);
 
       } catch (error) {
