@@ -13539,6 +13539,19 @@ function formatTimeAgo(dateString: string): string {
         const fetchedAuthors = data.authors || [];
         const fetchedArticles = data.articles || [];
 
+        // 1. EL TRADUCTOR: Convierte el número feo o formato ISO a "7 de Marzo de 2026"
+        const formatSpanishDate = (dateVal: any) => {
+            if (!dateVal) return "";
+            // Si ya viene bien escrito (noticias viejas), no lo toca
+            if (typeof dateVal === 'string' && dateVal.toLowerCase().includes(' de ')) return dateVal;
+            
+            const d = new Date(dateVal);
+            if (isNaN(d.getTime())) return String(dateVal); // Si falla, devuelve lo que haya
+            
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            return `${d.getDate()} de ${meses[d.getMonth()]} de ${d.getFullYear()}`;
+        };
+
         const processedArticles = fetchedArticles
           .filter((a: any) => a.isPublished)
           .map((a: any) => {
@@ -13554,8 +13567,8 @@ function formatTimeAgo(dateString: string): string {
             return {
               id: a.id,
               title: a.title,
-              date: a.date, 
-              rawDate: a.date, 
+              date: formatSpanishDate(a.date), // FECHA PARA LOS USUARIOS: "7 de Marzo de 2026"
+              rawDate: a.date,                 // FECHA PARA EL ORDENADOR: El número largo para que el panel no falle
               category: a.category,
               image: a.imageUrl,
               imageCaption: a.imageCaption,
