@@ -15586,49 +15586,31 @@ TENDIDO DIGITAL
       </div>
     </div>
 
-	  {/* --- BARRA INFERIOR DE ACCIONES (Forzada para Móvil y PC) --- */}
-          <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-4">
+	 {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) --- */}
+          <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-center gap-4 md:hidden">
             
-            {/* Zona del autor */}
-            <div className="flex items-center gap-3 w-full md:w-auto">
-              <img 
-                src={selectedNews.authorLogo || '/images/tendidodigitallogosimple.png'} 
-                alt={selectedNews.author} 
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-gray-200 shadow-sm" 
-              />
-              <div className="text-left">
-                <p className="text-sm font-bold text-gray-900">{selectedNews.author}</p>
-                <p className="text-xs text-gray-500">{selectedNews.date}</p>
-              </div>
-            </div>
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                if (typeof toggleSavedPost === 'function') toggleSavedPost(selectedNews);
+              }} 
+              className="flex-1 flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-3 rounded-xl font-medium border border-gray-200 transition-colors"
+            >
+              <i className="ri-bookmark-line text-lg"></i>
+              <span>Guardar</span>
+            </button>
 
-            {/* Botones de Guardar y Compartir (Siempre visibles gracias a flex y w-full) */}
-            <div className="flex items-center gap-3 w-full md:w-auto mt-2 md:mt-0">
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  // Si tu función de guardar se llama distinto, cámbiala aquí:
-                  if (typeof toggleSavedPost === 'function') toggleSavedPost(selectedNews);
-                }} 
-                className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-700 px-4 py-3 md:py-2.5 rounded-xl font-medium border border-gray-200 transition-colors"
-              >
-                <i className="ri-bookmark-line text-lg"></i>
-                <span>Guardar</span>
-              </button>
-
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  // Forzamos la apertura del modal de compartir que ya tienes programado
-                  setSharePost(selectedNews);
-                  setIsShareModalOpen(true);
-                }} 
-                className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-4 py-3 md:py-2.5 rounded-xl font-medium shadow-sm transition-colors"
-              >
-                <i className="ri-share-forward-line text-lg"></i>
-                <span>Compartir</span>
-              </button>
-            </div>
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                setSharePost(selectedNews);
+                setIsShareModalOpen(true);
+              }} 
+              className="flex-1 flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-4 py-3 rounded-xl font-medium shadow-sm transition-colors"
+            >
+              <i className="ri-share-forward-line text-lg"></i>
+              <span>Compartir</span>
+            </button>
 
           </div>
           {/* --- FIN BARRA INFERIOR --- */}
