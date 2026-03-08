@@ -14308,56 +14308,40 @@ Noticias Guardadas
               key={post.id} 
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
               onClick={() => openNewsModal(post)}
-			{post.isPinned && (
-  <div className="absolute top-4 right-4 z-30 bg-blue-600 text-white px-3 py-1.5 rounded-md shadow-lg flex items-center gap-1 font-bold text-xs uppercase tracking-wider backdrop-blur-sm border border-blue-400/50">
-    <i className="ri-pushpin-2-fill text-sm"></i> Fijada
-  </div>
-)}
             >
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
-      {/* FLECHAS DE NAVEGACIÓN MANUALES */}
-        {news24h.length > 1 && (
-          <>
-			  
-            <button
-  onClick={(e) => {
-    e.stopPropagation();
-                setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
-              }}
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-              aria-label="Anterior noticia"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            </button>
-            <button
-  onClick={(e) => {
-    e.stopPropagation();
-    setCurrentSlide(prev => (prev + 1) % news24h.length);
-              }}
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-              aria-label="Siguiente noticia"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
-          </>
-        )}
-             	<div className="relative overflow-hidden">
+      {news24h.length > 1 && (
+        <>
+          <button 
+            onClick={(e) => {
+              e.stopPropagation(); // Evita que se abra la noticia al pulsar la flecha
+              setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
+            }}
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            aria-label="Anterior noticia"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              setCurrentSlide(prev => (prev + 1) % news24h.length);
+            }}
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            aria-label="Siguiente noticia"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </>
+      )}
+              <div className="relative overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Indicador de Noticia Fijada (Chincheta) */}
-                {post.isPinned && (
-                  <div className="absolute top-4 right-4 z-30 bg-blue-600 text-white px-3 py-1.5 rounded-md shadow-lg flex items-center gap-1 font-bold text-xs uppercase tracking-wider backdrop-blur-sm border border-blue-400/50">
-                    <i className="ri-pushpin-2-fill text-sm"></i> Fijada
-                  </div>
-                )}
-              </div>
-				
 				  {/* Subtítulo / Entradilla */}
 {article.summary && (
   <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
