@@ -14330,9 +14330,9 @@ Noticias Guardadas
             </button>
             
             <button 
-              onClick={(e) => {
-                e.stopPropagation();
-                setCurrentSlide(prev => (prev + 1) % news24h.length);
+  onClick={(e) => {
+    e.stopPropagation();
+    setCurrentSlide(prev => (prev + 1) % news24h.length);
               }}
               className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
               aria-label="Siguiente noticia"
