@@ -14330,7 +14330,8 @@ Noticias Guardadas
             </button>
             
             <button
-  onClick={(e) => {
+			{...post}	
+			onClick={(e) => {
     e.stopPropagation();
     setCurrentSlide(prev => (prev + 1) % news24h.length);
               }}
