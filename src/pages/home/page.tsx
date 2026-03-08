@@ -14752,7 +14752,17 @@ return (
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {getFilteredNews()
+                {[...getFilteredNews()]
+                  .sort((a: any, b: any) => {
+                    // 1. Prioridad absoluta a las noticias fijadas
+                    if (a.isPinned && !b.isPinned) return -1;
+                    if (!a.isPinned && b.isPinned) return 1;
+                    
+                    // 2. Orden secundario por fecha cronológica
+                    const dateA = new Date(a.date || 0).getTime();
+                    const dateB = new Date(b.date || 0).getTime();
+                    return (isNaN(dateB) ? 0 : dateB) - (isNaN(dateA) ? 0 : dateA);
+                  })
                   .slice(0, visibleNewsCount)
                   .map((news) => (
                     <article
