@@ -13619,15 +13619,41 @@ function formatTimeAgo(dateString: string): string {
           return 0; 
         };
 
-        // 6. Ordenamos: Primero las FIJADAS, luego por FECHA matemática
-const finalNewsList = uniqueNews.sort((a: any, b: any) => {
-    // Si una está fijada y la otra no, la fijada va primero
-    if (a.isPinned && !b.isPinned) return -1;
-    if (!a.isPinned && b.isPinned) return 1;
-    
-    // Si ambas están fijadas o ninguna lo está, ordenamos por fecha normal
-    return getRealTime(b) - getRealTime(a);
-});
+        // 6. Ordenamos TODO estrictamente por fecha primero
+        const timeSortedNews = [...uniqueNews].sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
+
+        // 7. Extraer noticias del DÍA MÁS RECIENTE para el Slider
+        let breakingNews: any[] = [];
+        if (timeSortedNews.length > 0) {
+            let newestTime = getRealTime(timeSortedNews[0]);
+            if (newestTime > 0) {
+                const newestDateObj = new Date(newestTime);
+                breakingNews = timeSortedNews.filter((n: any) => {
+                    const nTime = getRealTime(n);
+                    if (nTime === 0) return false;
+                    const nDate = new Date(nTime);
+                    return nDate.getFullYear() === newestDateObj.getFullYear() &&
+                           nDate.getMonth() === newestDateObj.getMonth() &&
+                           nDate.getDate() === newestDateObj.getDate();
+                });
+            }
+        }
+        if (breakingNews.length === 0 && timeSortedNews.length > 0) {
+            breakingNews = timeSortedNews.slice(0, 4);
+        }
+
+        // 8. Aplicamos la prioridad de FIJADAS
+        const finalNewsList = timeSortedNews.sort((a: any, b: any) => {
+            if (a.isPinned && !b.isPinned) return -1;
+            if (!a.isPinned && b.isPinned) return 1;
+            return 0; // Mantienen el orden de fecha si ambas están fijadas o ninguna lo está
+        });
+
+        // 9. Inyectar las fijadas también en el Slider gigante para máxima visibilidad
+        const pinnedNews = finalNewsList.filter(n => n.isPinned);
+        const sliderNews = [...pinnedNews, ...breakingNews.filter(n => !n.isPinned)].slice(0, 6);
+
+        setNews24h(sliderNews.length > 0 ? sliderNews : finalNewsList.slice(0, 4));
         setCombinedNews(finalNewsList);
 
         // 7. LÓGICA DEL PANEL (SLIDER): Extrae exactamente el último día que exista
@@ -14752,17 +14778,7 @@ return (
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {[...getFilteredNews()]
-                  .sort((a: any, b: any) => {
-                    // 1. Prioridad absoluta a las noticias fijadas
-                    if (a.isPinned && !b.isPinned) return -1;
-                    if (!a.isPinned && b.isPinned) return 1;
-                    
-                    // 2. Orden secundario por fecha cronológica
-                    const dateA = new Date(a.date || 0).getTime();
-                    const dateB = new Date(b.date || 0).getTime();
-                    return (isNaN(dateB) ? 0 : dateB) - (isNaN(dateA) ? 0 : dateA);
-                  })
+                {getFilteredNews()
                   .slice(0, visibleNewsCount)
                   .map((news) => (
                     <article
