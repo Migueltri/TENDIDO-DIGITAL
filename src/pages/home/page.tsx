@@ -14615,8 +14615,10 @@ return (
   <>  
 	  
     {/* Hero Carousel */}
-	{/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H) - DISEÑO PANTALLA COMPLETA */}
+      {/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H) - DISEÑO PANTALLA COMPLETA */}
       <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-black">
+        
+        {/* Bucle de noticias (Fondo y textos) */}
         {news24h.map((post, index) => (
           <div
             key={post.id}
@@ -14632,7 +14634,7 @@ return (
               className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out opacity-90"
               loading={index === 0 ? "eager" : "lazy"}
             />
-            {/* Degradado negro inferior para que el texto siempre se lea bien */}
+            {/* Degradado negro inferior */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
 
             {/* Contenido (Textos sobre la imagen) */}
@@ -14667,7 +14669,7 @@ return (
           </div>
         ))}
 
-        {/* FLECHAS DE NAVEGACIÓN MANUALES */}
+        {/* FLECHAS DE NAVEGACIÓN MANUALES (FUERA DEL BUCLE, PARA QUE NO SE ROMPA) */}
         {news24h.length > 1 && (
           <>
             <button 
