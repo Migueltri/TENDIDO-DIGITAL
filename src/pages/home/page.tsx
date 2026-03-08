@@ -15534,7 +15534,10 @@ TENDIDO DIGITAL
         const credit = typeof img === "string" ? "" : img.credit;
         return (
           <figure key={idx} className="flex flex-col">
-            <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto rounded-xl shadow-md object-cover aspect-video" />
+            {/* --- AQUÍ ESTÁ EL CAMBIO PARA PERMITIR FOTOS VERTICALES --- */}
+            <div className="relative w-full rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+              <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto max-h-[70vh] object-contain drop-shadow-md" />
+            </div>
             {(caption || credit) && (
               <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
                 <span>{caption}</span>
@@ -15565,7 +15568,7 @@ TENDIDO DIGITAL
       </div>
     </div>
 
-	 {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) - ESTILO TEXTO PLANO --- */}
+     {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) - ESTILO TEXTO PLANO --- */}
           <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-center gap-4 md:hidden">
             
             <button 
@@ -15608,7 +15611,10 @@ TENDIDO DIGITAL
             const credit = typeof img === "string" ? "" : img.credit;
             return (
               <figure key={idx} className="flex flex-col">
-                <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto rounded-xl shadow-md object-cover aspect-video" />
+                {/* --- AQUÍ ESTÁ EL CAMBIO TAMBIÉN --- */}
+                <div className="relative w-full rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+                  <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto max-h-[70vh] object-contain drop-shadow-md" />
+                </div>
                 {(caption || credit) && (
                   <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
                     <span>{caption}</span>
@@ -15623,7 +15629,7 @@ TENDIDO DIGITAL
     )}
   </div>
 )}
-		  
+          
         {/* Imágenes finales tipo portada */}
 <div className="mt-12 space-y-10 flex flex-col items-center">
   {selectedNews.footerImage1 && (
