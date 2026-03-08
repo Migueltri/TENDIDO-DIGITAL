@@ -14765,13 +14765,13 @@ return (
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         
-                        {/* Indicador de Noticia Fijada (Diseño Sutil) */}
+                        {/* Indicador de Noticia Fijada (Cuadrícula) */}
                         {news.isPinned && (
                           <div 
-                            className="absolute top-4 right-4 z-30 bg-black/30 text-white/90 w-8 h-8 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 shadow-sm"
+                            className="absolute top-4 right-4 z-30 bg-black/60 text-white w-8 h-8 flex items-center justify-center rounded-full backdrop-blur-md border border-white/30 shadow-md"
                             title="Noticia Fijada"
                           >
-                            <i className="ri-pushpin-2-fill text-sm"></i>
+                            <i className="ri-pushpin-2-fill text-base"></i>
                           </div>
                         )}
 
