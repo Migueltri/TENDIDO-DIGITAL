@@ -13656,32 +13656,11 @@ function formatTimeAgo(dateString: string): string {
         setNews24h(sliderNews.length > 0 ? sliderNews : finalNewsList.slice(0, 4));
         setCombinedNews(finalNewsList);
 
-        // 7. LÓGICA DEL PANEL (SLIDER): Extrae exactamente el último día que exista
-        let breakingNews = [];
-        if (finalNewsList.length > 0) {
-            const newestTime = getRealTime(finalNewsList[0]);
-            
-            if (newestTime > 0) {
-               const newestDateObj = new Date(newestTime);
-               const targetYear = newestDateObj.getFullYear();
-               const targetMonth = newestDateObj.getMonth();
-               const targetDay = newestDateObj.getDate();
-
-               breakingNews = finalNewsList.filter((n: any) => {
-                  const nTime = getRealTime(n);
-                  if (nTime === 0) return false;
-                  const nDate = new Date(nTime);
-                  return nDate.getFullYear() === targetYear &&
-                         nDate.getMonth() === targetMonth &&
-                         nDate.getDate() === targetDay;
-               });
-            }
-        }
-			
-        finally {
+      } finally {
         setIsAppLoading(false);
       }
     };
+
     loadData();
   }, []);
 
