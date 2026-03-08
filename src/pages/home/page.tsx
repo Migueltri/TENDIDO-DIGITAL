@@ -13619,8 +13619,15 @@ function formatTimeAgo(dateString: string): string {
           return 0; 
         };
 
-        // 6. Ordenamos TODO matemáticamente para no fallar jamás
-        const finalNewsList = uniqueNews.sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
+        // 6. Ordenamos: Primero las FIJADAS, luego por FECHA matemática
+const finalNewsList = uniqueNews.sort((a: any, b: any) => {
+    // Si una está fijada y la otra no, la fijada va primero
+    if (a.isPinned && !b.isPinned) return -1;
+    if (!a.isPinned && b.isPinned) return 1;
+    
+    // Si ambas están fijadas o ninguna lo está, ordenamos por fecha normal
+    return getRealTime(b) - getRealTime(a);
+});
         setCombinedNews(finalNewsList);
 
         // 7. LÓGICA DEL PANEL (SLIDER): Extrae exactamente el último día que exista
@@ -14301,6 +14308,11 @@ Noticias Guardadas
               key={post.id} 
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
               onClick={() => openNewsModal(post)}
+			{post.isPinned && (
+  <div className="absolute top-4 right-4 z-30 bg-blue-600 text-white px-3 py-1.5 rounded-md shadow-lg flex items-center gap-1 font-bold text-xs uppercase tracking-wider backdrop-blur-sm border border-blue-400/50">
+    <i className="ri-pushpin-2-fill text-sm"></i> Fijada
+  </div>
+)}
             >
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
       {news24h.length > 1 && (
