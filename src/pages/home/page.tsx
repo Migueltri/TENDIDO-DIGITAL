@@ -14341,13 +14341,23 @@ Noticias Guardadas
             </button>
           </>
         )}
-              <div className="relative overflow-hidden">
+             	<div className="relative overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                {/* Indicador de Noticia Fijada (Chincheta) */}
+                {post.isPinned && (
+                  <div className="absolute top-4 right-4 z-30 bg-blue-600 text-white px-3 py-1.5 rounded-md shadow-lg flex items-center gap-1 font-bold text-xs uppercase tracking-wider backdrop-blur-sm border border-blue-400/50">
+                    <i className="ri-pushpin-2-fill text-sm"></i> Fijada
+                  </div>
+                )}
+              </div>
+				
 				  {/* Subtítulo / Entradilla */}
 {article.summary && (
   <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
