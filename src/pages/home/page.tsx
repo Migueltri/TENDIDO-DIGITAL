@@ -13677,6 +13677,24 @@ function formatTimeAgo(dateString: string): string {
                });
             }
         }
+        
+        // Salvavidas por si falla la conexión
+        if (breakingNews.length === 0 && finalNewsList.length > 0) {
+          breakingNews = finalNewsList.slice(0, 4);
+        }
+        
+        setNews24h(breakingNews);
+
+      } catch (error) {
+        console.error("Fallo al cargar db.json", error);
+        setCombinedNews(latestNews);
+        setNews24h(latestNews.slice(0, 3));
+      } finally {
+        setIsAppLoading(false);
+      }
+    };
+    loadData();
+  }, []);
 
 // Estados para interacciones sociales (sin contadores de likes)
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
