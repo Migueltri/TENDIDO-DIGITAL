@@ -14183,11 +14183,6 @@ document.body.style.overflow = 'unset';
           </div>
       );
   }
-
-  const SponsorBanner = () => (
-      <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-  </div>
-);
 	
   if (activeTab === "entrevistas") {
     const entrevistas = latestNews.filter((item) =>
@@ -14826,7 +14821,6 @@ return (
           </button>
         </div>
       </article>
-      {(index + 1) % 3 === 0 && <SponsorBanner />}
     </React.Fragment>
   ))}
 			  </div>
