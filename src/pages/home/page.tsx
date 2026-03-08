@@ -14800,43 +14800,88 @@ return (
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-{getFilteredNews()
-  .slice(0, visibleNewsCount)
-  .map((news, index) => (
-    <React.Fragment key={news.id}>
-      <article
-        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100"
-        onClick={() => openNewsModal(news)}
-      >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={news.image}
-                    alt={news.title}
-                    className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div className="absolute top-4 left-4">
-            <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg backdrop-blur-sm">
-              {news.category}
-            </span>
-          </div>
-        </div>
-        <div className="p-6">
-          <span className="text-gray-500 text-sm">{formatExactDate(news.date)}</span>
-          <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight tracking-tight">
-            {news.title}
-          </h3>
-          <p className="text-gray-600 text-sm leading-relaxed mb-4">{news.excerpt}</p>
-          <button className="text-red-600 hover:text-red-700 font-bold text-sm cursor-pointer whitespace-nowrap flex items-center group">
-            Leer más <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-          </button>
-        </div>
-      </article>
-    </React.Fragment>
-  ))}
-			  </div>
+              {getFilteredNews()
+                .slice(0, visibleNewsCount)
+                .map((news, index) => (
+                  <React.Fragment key={news.id}>
+                    <article
+                      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100 flex flex-col h-full"
+                      onClick={() => openNewsModal(news)}
+                    >
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={news.image}
+                          alt={news.title}
+                          className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Indicador de Noticia Fijada */}
+                        {news.isPinned && (
+                          <div className="absolute top-4 right-4 z-30 bg-blue-600 text-white px-3 py-1.5 rounded-md shadow-lg flex items-center gap-1 font-bold text-xs uppercase tracking-wider backdrop-blur-sm border border-blue-400/50">
+                            <i className="ri-pushpin-2-fill text-sm"></i> Fijada
+                          </div>
+                        )}
 
+                        <div className="absolute top-4 left-4">
+                          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                            {news.category}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div className="p-6 flex flex-col flex-1">
+                        <div className="flex items-center text-gray-500 text-xs mb-3 font-medium">
+                          <i className="ri-calendar-line mr-1.5 text-brand-red"></i>
+                          <span>{news.date}</span>
+                          {news.author && (
+                            <>
+                              <span className="mx-2">•</span>
+                              <i className="ri-user-line mr-1.5 text-brand-red"></i>
+                              <span className="truncate max-w-[120px]">{news.author}</span>
+                            </>
+                          )}
+                        </div>
+                        
+                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-red transition-colors duration-300 leading-snug line-clamp-2">
+                          {news.title}
+                        </h3>
+                        
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                          {news.excerpt || news.summary}
+                        </p>
+                        
+                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                          <div className="flex space-x-3">
+                            <button
+                              onClick={(e) => toggleSave(news.id, e)}
+                              className={`p-2 rounded-full transition-colors ${
+                                savedPosts.has(news.id)
+                                  ? "bg-yellow-50 text-yellow-600"
+                                  : "bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+                              }`}
+                              aria-label="Guardar"
+                            >
+                              <i className={savedPosts.has(news.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+                            </button>
+                            <button
+                              onClick={(e) => openShareModal(news, e)}
+                              className="p-2 rounded-full bg-gray-50 text-gray-400 hover:bg-brand-red hover:text-white transition-colors"
+                              aria-label="Compartir"
+                            >
+                              <i className="ri-share-line"></i>
+                            </button>
+                          </div>
+                          <span className="text-brand-red font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform">
+                            Leer más <i className="ri-arrow-right-s-line ml-1"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+                  </React.Fragment>
+                ))}
+            </div>
 			
           {/* Load More Button */}
           {visibleNewsCount < getFilteredNews().length && (
