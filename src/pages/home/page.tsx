@@ -14501,7 +14501,7 @@ if (activeTab === 'cronicas') {
             <img
               src={url}
               alt={caption || `Imagen de galería ${idx + 1}`}
-              className="w-full h-auto rounded-xl shadow-md object-cover aspect-video"
+              className="w-full h-auto rounded-xl shadow-md object-cover"
             />
             {(caption || credit) && (
               <div className="mt-2 text-sm text-gray-500 flex justify-between">
