@@ -41,6 +41,7 @@
   authorLogo?: string;
   showAuthorHeader?: boolean;
   isFeatured?: boolean;
+  isPinned?: boolean;
 }
 
 import fs from 'fs';
@@ -13580,6 +13581,7 @@ function formatTimeAgo(dateString: string): string {
               authorLogo: finalPic,
               showAuthorHeader: true,
               isFeatured: a.isFeatured,
+			  isPinned: a.isPinned,
               plaza: a.bullfightLocation,
               ganaderia: a.bullfightCattle,
               detalles: a.bullfightSummary,
