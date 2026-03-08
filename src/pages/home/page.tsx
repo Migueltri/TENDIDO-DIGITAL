@@ -14186,21 +14186,6 @@ document.body.style.overflow = 'unset';
 
   const SponsorBanner = () => (
       <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 flex flex-col items-center justify-center my-8 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-    <a
-      href="https://tauromania.es"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center space-y-3"
-    >
-      <img
-        src="/images/tauromania.png"
-        alt="TauroManía logo"
-        className="w-52 md:w-64 object-contain"
-      />
-      <p className="text-gray-700 font-medium text-sm text-center">
-        Colaboración <span className="font-bold text-yellow-600">- TauroManía</span>
-      </p>
-    </a>
   </div>
 );
 	
