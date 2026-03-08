@@ -14318,9 +14318,10 @@ Noticias Guardadas
       {/* FLECHAS DE NAVEGACIÓN MANUALES */}
         {news24h.length > 1 && (
           <>
-            <button 
-              onClick={(e) => {
-                e.stopPropagation(); 
+			  
+            <button
+  onClick={(e) => {
+    e.stopPropagation();
                 setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
               }}
               className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
@@ -14330,8 +14331,7 @@ Noticias Guardadas
             </button>
             
             <button
-			{...post}	
-			onClick={(e) => {
+  onClick={(e) => {
     e.stopPropagation();
     setCurrentSlide(prev => (prev + 1) % news24h.length);
               }}
