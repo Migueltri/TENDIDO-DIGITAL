@@ -14764,7 +14764,17 @@ return (
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
+
+						{/* Indicador de Noticia Fijada (Slider) */}
+            {post.isPinned && (
+              <div 
+                className="absolute top-6 right-6 z-30 bg-black/60 text-white w-10 h-10 flex items-center justify-center rounded-full backdrop-blur-md border border-white/30 shadow-md"
+                title="Noticia Fijada"
+              >
+                <i className="ri-pushpin-2-fill text-lg"></i>
+              </div>
+            )}
+						  
                         {/* Indicador de Noticia Fijada (Cuadrícula) */}
                         {news.isPinned && (
                           <div 
