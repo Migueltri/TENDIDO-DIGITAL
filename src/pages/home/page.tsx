@@ -13949,10 +13949,7 @@ const renderArticleContent = (text?: string | null) => {
     return (
       <>
         {forcedStyle}
-        <div 
-          className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl"
-          dangerouslySetInnerHTML={{ __html: text }} 
-        />
+        <div className="text-gray-700 text-lg leading-relaxed mt-12" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
       </>
     );
   }
