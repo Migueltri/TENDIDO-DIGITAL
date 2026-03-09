@@ -15321,18 +15321,40 @@ TENDIDO DIGITAL
 {/* MODAL DE NOTICIA - DISEÑO ULTRA PREMIUM (Estilo Editorial) */}
   {isNewsModalOpen && selectedNews && (
     <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
-      {/* Botón Cerrar Flotante (Estilo Minimalista) */}
-      <button
-        onClick={() => {
-          setIsNewsModalOpen(false);
-          setSelectedNews(null);
-          document.body.style.overflow = "auto";
-        }}
-        className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl"
-      >
-        <i className="ri-close-line text-2xl"></i>
-      </button>
 
+{/* BARRA DE NAVEGACIÓN SUPERIOR (STICKY) */}
+        <nav className="sticky top-0 z-[60] bg-white/80 backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
+          <div 
+            className="flex items-center gap-3 cursor-pointer group"
+            onClick={() => {
+              setIsNewsModalOpen(false);
+              setSelectedNews(null);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              document.body.style.overflow = "auto";
+            }}
+          >
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
+              <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+            </div>
+            <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
+              TENDIDO DIGITAL
+            </span>
+          </div>
+
+          <button 
+            onClick={() => {
+              setIsNewsModalOpen(false);
+              setSelectedNews(null);
+              document.body.style.overflow = "auto";
+            }}
+            className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
+          >
+            <i className="ri-arrow-left-line text-xl"></i>
+            <span className="hidden md:inline">Volver</span>
+          </button>
+        </nav>
+		
+      {/* Botón Cerrar Flotante (Estilo Minimalista) */}
       <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
         {/* 1. HERO IMAGE (70% de la pantalla) */}
