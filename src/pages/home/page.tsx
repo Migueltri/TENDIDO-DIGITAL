@@ -1,5 +1,4 @@
   import React, { useState, useEffect } from "react";
-  import 'remixicon/fonts/remixicon.css'
   interface BaseArticle {
   id: number;
   title: string;
@@ -14907,43 +14906,48 @@ return (
             </form>
           </div>
 
-<div className="bg-[#1a1a1a] p-8 rounded-[2rem] shadow-xl text-center">
-  <h3 className="text-white text-xl font-bold mb-6 tracking-tight">Síguenos</h3>
-  
-  <div className="grid grid-cols-3 gap-4">
-    {/* Botón Instagram */}
-    <a 
-      href="TU_ENLACE_AQUI" 
-      target="_blank" 
+{/* Social Media */}
+<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
+  <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg"
+      className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20"
     >
-      <i className="ri-instagram-line text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">Instagram</span>
+      <i className="ri-instagram-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">Instagram</span>
     </a>
 
-    {/* Botón TikTok */}
-    <a 
-      href="TU_ENLACE_AQUI" 
-      target="_blank" 
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com/@portaltendidodigital"
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-black p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg border border-gray-800"
+      className="bg-black hover:bg-gray-900 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-gray-700"
     >
-      <i className="ri-tiktok-fill text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">TikTok</span>
+      <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">TikTok</span>
     </a>
 
-    {/* Botón X (Twitter) */}
-    <a 
-      href="TU_ENLACE_AQUI" 
-      target="_blank" 
+    {/* X (Twitter) */}
+    <a
+      href="https://x.com/ptendidodigital"
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-[#000000] p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg border border-gray-800"
+      className="bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20"
     >
-      <i className="ri-twitter-x-fill text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">X (Twitter)</span>
+      <i className="ri-twitter-x-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">X (Twitter)</span>
     </a>
+
   </div>
+</div>
+</div>
+</div>
 </div>
 
     {/* Sección de Contacto */}
@@ -15165,164 +15169,167 @@ return (
 }
 
 return (
-  <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-    
-    {/* Header */}
-    <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
-          
-          {/* 1. BLOQUE DEL LOGO */}
-          <div className="flex items-center group cursor-pointer" onClick={() => window.location.href = "/"}>
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
-              <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
-            </div>
-            <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
-              TENDIDO DIGITAL
-            </span>
-          </div>
+<div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
+{/* Header */}
+<header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div className="flex justify-between items-center h-16 md:h-20">
+<div className="flex items-center group">
+<div className="relative">
+<img
+  src="/images/tendidodigitallogosimple.png"
+  alt="Tendido Digital"
+  className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
+  style={{ mixBlendMode: "multiply" }}
+/>
+<div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+</div>
+<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+TENDIDO DIGITAL
+</span>
+</div>
 
-          {/* 2. BLOQUE DEL MENÚ DE NAVEGACIÓN */}
-          <nav className="hidden md:flex space-x-4 lg:space-x-8">
-            <button
-              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Inicio
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Todas
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Actualidad
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => setActiveTab('cronicas')} 
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Crónicas
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => setActiveTab('entrevistas')} 
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Entrevistas
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Opinión
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-            <button 
-              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-                activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-              }`}
-            >
-              Contacto
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-                activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </button>
-          </nav>
-
+        {/* Navigation */}
+        <nav className="hidden md:flex space-x-4 lg:space-x-8">
           <button 
-            className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Abrir menú"
+            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+              activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+            }`}
           >
-            <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
+            Inicio
+            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+              activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
+          </button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Todas
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
+          <button 
+            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+              activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+            }`}
+          >
+            Actualidad
+            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+              activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
+          </button>
+          <button 
+            onClick={() => setActiveTab('cronicas')} 
+            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+              activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+            }`}
+          >
+            Crónicas
+            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+              activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
+          </button>
+          <button 
+  onClick={() => setActiveTab('entrevistas')} 
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Entrevistas
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+    newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+  }`}
+>
+  Opinión
+  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+    newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</button>
+          <button 
+            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+              activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+            }`}
+          >
+            Contacto
+            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+              activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
+          </button>
+        </nav>
+
+        <button 
+          className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Abrir menú"
+        >
+          <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
+        </button>
+      </div>
+    </div>
+
+    {/* Mobile menu */}
+    {isMenuOpen && (
+      <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
+        <div className="px-4 pt-4 pb-6 space-y-2">
+          <button 
+            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+          >
+            Inicio
+          </button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Todas
+</button>
+          <button 
+            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+          >
+            Actualidad
+          </button>
+          <button 
+            onClick={() => setActiveTab('cronicas')} 
+            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+          >
+            Crónicas
+          </button>
+          <button 
+  onClick={() => setActiveTab('entrevistas')} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Entrevistas
+</button>
+          <button 
+  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
+  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+>
+  Opinión
+</button>
+          <button 
+            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+          >
+            Contacto
           </button>
         </div>
       </div>
-
-      {/* 3. MENU MÓVIL */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
-          <div className="px-4 pt-4 pb-6 space-y-2">
-            <button 
-              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Inicio
-            </button>
-            <button 
-              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Todas
-            </button>
-            <button 
-              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Actualidad
-            </button>
-            <button 
-              onClick={() => setActiveTab('cronicas')} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Crónicas
-            </button>
-            <button 
-              onClick={() => setActiveTab('entrevistas')} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Entrevistas
-            </button>
-            <button 
-              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Opinión
-            </button>
-            <button 
-              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-            >
-              Contacto
-            </button>
-          </div>
-        </div>
-      )}
-    </header>
+    )}
+  </header>
 
   {/* Contenido principal */}
   {renderContent()}
@@ -15649,8 +15656,8 @@ return (
 	
 {/* Modal de Compartir */}
 {isShareModalOpen && sharePost && (
-        <div className="fixed inset-0 bg-black/50 z-[120] flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
+  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+    <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
       <div className="text-center mb-6">
         <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
           <i className="ri-share-line text-white text-2xl"></i>
@@ -15675,15 +15682,22 @@ return (
           <span className="font-medium">Compartir en Facebook</span>
         </button>
 
-        <button
-              onClick={closeShareModal}
-              className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all"
-            >
-              Cancelar
+        <button onClick={copyLink} className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
+          <i className="ri-link text-xl"></i>
+          <span className="font-medium">Copiar enlace</span>
+        </button>
+      </div>
+
+      <button
+        onClick={closeShareModal}
+        className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
+      >
+        Cancelar
             </button>
           </div>
         </div>
       )}
+
     </div>
   );
 }
