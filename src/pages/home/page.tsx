@@ -14761,71 +14761,81 @@ return (
               <div className="flex flex-col gap-12"> {/* Cambiamos grid por flex col para un estilo editorial */}
                 {getFilteredNews()
                   .slice(0, visibleNewsCount)
-                  .map((news) => (
+                  .map((news) => {
+                    // Defensa 1: Si la noticia viene corrupta de la base de datos, la saltamos sin petar la web
+                    if (!news) return null; 
+
+                    return (
                     <article
-                      key={news.id}
-                      className="group relative flex flex-col md:flex-row bg-white rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 cursor-pointer border border-gray-100"
-                      onClick={() => openNewsModal(news)}
+                      key={news.id || Math.random()}
+                      className="group relative flex flex-col md:flex-row bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer border border-gray-100"
+                      onClick={() => typeof openNewsModal === 'function' && openNewsModal(news)}
                     >
-                      {/* Imagen con contenedor dinámico */}
-                      <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden">
-                        <img
-                          src={news.image}
-                          alt={news.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
+                      <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
+                        {news.image && (
+                          <img
+                            src={news.image}
+                            alt={news.title || "Noticia Taurina"}
+                            loading="lazy" 
+                            decoding="async"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          />
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
-                        {/* Indicador de Noticia Fijada (SVG que ya arreglamos) */}
+                        {/* Indicador de Noticia Fijada (Mantenemos tu SVG) */}
                         {news.isPinned && (
                           <div className="absolute top-4 left-4 z-30 bg-black/60 text-white w-9 h-9 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                               <path d="M22.3137 10.1716L13.8284 1.68629L12.4142 3.1005L13.1213 3.80761L8.87868 8.05025L5.34315 7.34315L3.92893 8.75736L8.17157 13L3.22183 17.9497L4.63604 19.364L9.58579 14.4142L13.8284 18.6569L15.2426 17.2426L14.5355 13.7071L18.7782 9.46447L19.4853 10.1716L20.8995 8.75736L22.3137 10.1716Z"></path>
                             </svg>
                           </div>
                         )}
                       </div>
 
-                      {/* Contenido de la Noticia */}
-                      <div className="flex-1 p-8 md:p-10 flex flex-col justify-center">
-                        <div className="flex items-center gap-4 mb-4">
-                          <span className="bg-red-50 text-red-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-red-100">
-                            {news.category}
-                          </span>
-                          <span className="text-gray-400 text-sm font-medium flex items-center">
+                      {/* Contenido protegido contra nulos */}
+                      <div className="flex-1 p-6 md:p-10 flex flex-col justify-center">
+                        <div className="flex items-center gap-3 mb-4 flex-wrap">
+                          {news.category && (
+                            <span className="bg-red-50 text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-red-100">
+                              {news.category}
+                            </span>
+                          )}
+                          <span className="text-gray-500 text-sm font-medium flex items-center">
                             <i className="ri-calendar-line mr-2"></i>
-                            {news.date}
+                            {news.date || ""}
                           </span>
                         </div>
 
-                        <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 leading-tight">
-                          {news.title}
+                        <h3 className="text-xl md:text-3xl font-extrabold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-tight">
+                          {news.title || "Sin título"}
                         </h3>
 
-                        <p className="text-gray-600 text-lg leading-relaxed mb-6 line-clamp-2 md:line-clamp-3 font-light">
-                          {news.excerpt || news.summary}
+                        <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6 line-clamp-2 md:line-clamp-3 font-light">
+                          {news.excerpt || news.summary || ""}
                         </p>
 
-                        <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-50">
-                          <div className="flex items-center text-gray-900 font-bold group-hover:translate-x-2 transition-transform duration-300">
+                        <div className="flex items-center justify-between mt-auto pt-5 border-t border-gray-50">
+                          <div className="flex items-center text-gray-900 font-bold group-hover:translate-x-2 transition-transform duration-300 text-sm md:text-base">
                             Leer artículo completo
                             <i className="ri-arrow-right-line ml-2 text-red-600"></i>
                           </div>
                           
                           <div className="flex gap-2">
                             <button
-                              onClick={(e) => { e.stopPropagation(); toggleSave(news.id); }}
-                              className={`p-3 rounded-full transition-all ${
-                                savedPosts.has(news.id) ? "bg-yellow-50 text-yellow-600" : "text-gray-400 hover:bg-gray-100"
+                              onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(news.id); }}
+                              className={`p-2 md:p-3 rounded-full transition-all ${
+                                savedPosts?.has(news.id) ? "bg-yellow-50 text-yellow-600" : "text-gray-400 hover:bg-gray-100"
                               }`}
                             >
-                              <i className={savedPosts.has(news.id) ? "ri-bookmark-fill text-xl" : "ri-bookmark-line text-xl"}></i>
+                              <i className={savedPosts?.has(news.id) ? "ri-bookmark-fill text-lg md:text-xl" : "ri-bookmark-line text-lg md:text-xl"}></i>
                             </button>
                           </div>
                         </div>
                       </div>
                     </article>
-                  ))}
+                  )})}
               </div>
 				
               {visibleNewsCount < getFilteredNews().length && (
