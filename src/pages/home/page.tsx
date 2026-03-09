@@ -13967,7 +13967,7 @@ const renderArticleContent = (text?: string | null) => {
   return (
     <>
       {forcedStyle}
-      <div className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-brand-red prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl">
+      <div className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-red-600 prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl">
         {paragraphs.map((p, idx) => (
           <p key={idx} dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
         ))}
@@ -14313,7 +14313,7 @@ Noticias Guardadas
               e.stopPropagation(); // Evita que se abra la noticia al pulsar la flecha
               setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
             }}
-            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
             aria-label="Anterior noticia"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -14324,7 +14324,7 @@ Noticias Guardadas
               e.stopPropagation();
               setCurrentSlide(prev => (prev + 1) % news24h.length);
             }}
-            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-brand-red text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
             aria-label="Siguiente noticia"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -14633,7 +14633,7 @@ return (
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-16 lg:p-24 z-20 flex flex-col justify-end h-full">
               <div className="max-w-5xl">
                 <div className="flex items-center space-x-4 mb-4">
-                  <span className="bg-brand-red text-white px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg">
+                  <span className="bg-red-600 text-white px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg">
                     {post.category}
                   </span>
                   <span className="text-gray-200 text-sm font-medium drop-shadow-md">
@@ -14651,7 +14651,7 @@ return (
                     e.stopPropagation();
                     openNewsModal(post);
                   }}
-                  className="bg-brand-red hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center group/btn w-max shadow-xl"
+                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center group/btn w-max shadow-xl"
                 >
                   Leer noticia completa 
                   <i className="ri-arrow-right-line ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
@@ -14669,7 +14669,7 @@ return (
                 e.stopPropagation(); 
                 setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
               }}
-              className="pointer-events-auto bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
+              className="pointer-events-auto bg-black/40 hover:bg-red-600 text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
               aria-label="Anterior noticia"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -14680,7 +14680,7 @@ return (
                 e.stopPropagation();
                 setCurrentSlide(prev => (prev + 1) % news24h.length);
               }}
-              className="pointer-events-auto bg-black/40 hover:bg-brand-red text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
+              className="pointer-events-auto bg-black/40 hover:bg-red-600 text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
               aria-label="Siguiente noticia"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -14699,7 +14699,7 @@ return (
               }}
               className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
                 index === currentSlide 
-                  ? "w-10 md:w-16 bg-brand-red" 
+                  ? "w-10 md:w-16 bg-red-600" 
                   : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
               }`}
               aria-label={`Ir a la noticia ${index + 1}`}
@@ -14798,18 +14798,18 @@ return (
                       
                       <div className="p-6 flex flex-col flex-1">
                         <div className="flex items-center text-gray-500 text-xs mb-3 font-medium">
-                          <i className="ri-calendar-line mr-1.5 text-brand-red"></i>
+                          <i className="ri-calendar-line mr-1.5 text-red-600"></i>
                           <span>{news.date}</span>
                           {news.author && (
                             <>
                               <span className="mx-2">•</span>
-                              <i className="ri-user-line mr-1.5 text-brand-red"></i>
+                              <i className="ri-user-line mr-1.5 text-red-600"></i>
                               <span className="truncate max-w-[120px]">{news.author}</span>
                             </>
                           )}
                         </div>
                         
-                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-red transition-colors duration-300 leading-snug line-clamp-2">
+                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-snug line-clamp-2">
                           {news.title}
                         </h3>
                         
@@ -14832,13 +14832,13 @@ return (
                             </button>
                             <button
                               onClick={(e) => openShareModal(news, e)}
-                              className="p-2 rounded-full bg-gray-50 text-gray-400 hover:bg-brand-red hover:text-white transition-colors"
+                              className="p-2 rounded-full bg-gray-50 text-gray-400 hover:bg-red-600 hover:text-white transition-colors"
                               aria-label="Compartir"
                             >
                               <i className="ri-share-line"></i>
                             </button>
                           </div>
-                          <span className="text-brand-red font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform">
+                          <span className="text-red-600 font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform">
                             Leer más <i className="ri-arrow-right-s-line ml-1"></i>
                           </span>
                         </div>
@@ -14852,7 +14852,7 @@ return (
                   <button
                     onClick={loadMoreNews}
                     disabled={isLoadingMore}
-                    className="bg-white text-brand-red border-2 border-brand-red px-8 py-3 rounded-full font-bold hover:bg-brand-red hover:text-white transition-all duration-300 shadow-md flex items-center justify-center mx-auto disabled:opacity-70"
+                    className="bg-white text-red-600 border-2 border-red-600 px-8 py-3 rounded-full font-bold hover:bg-red-600 hover:text-white transition-all duration-300 shadow-md flex items-center justify-center mx-auto disabled:opacity-70"
                   >
                     {isLoadingMore ? (
                       <><i className="ri-loader-4-line animate-spin mr-2"></i> Cargando...</>
@@ -15346,7 +15346,7 @@ TENDIDO DIGITAL
           setSelectedNews(null);
           document.body.style.overflow = "auto";
         }}
-        className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl"
+        className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl"
       >
         <i className="ri-close-line text-2xl"></i>
       </button>
@@ -15360,7 +15360,7 @@ TENDIDO DIGITAL
           
           <div className="absolute bottom-32 md:bottom-40 left-0 right-0 px-6 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
             {selectedNews.category && (
-              <span className="bg-brand-red text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">
+              <span className="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">
                 {selectedNews.category}
               </span>
             )}
@@ -15377,21 +15377,21 @@ TENDIDO DIGITAL
             {/* Metadatos Minimalistas */}
             <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
               <div className="flex items-center">
-                <i className="ri-calendar-line text-brand-red mr-2 text-xl"></i> {selectedNews.date}
+                <i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedNews.date}
               </div>
               {selectedNews.author && (
                 <div className="flex items-center">
                   {selectedNews.authorLogo ? (
                     <img src={selectedNews.authorLogo} alt={selectedNews.author} className="h-8 w-8 rounded-full object-cover mr-3 shadow-sm" />
                   ) : (
-                    <i className="ri-user-line text-brand-red mr-2 text-xl"></i>
+                    <i className="ri-user-line text-red-600 mr-2 text-xl"></i>
                   )}
                   <span className="text-gray-900 font-bold">{selectedNews.author}</span>
                 </div>
               )}
               {selectedNews.plaza && (
                 <div className="flex items-center">
-                  <i className="ri-map-pin-line text-brand-red mr-2 text-xl"></i> {selectedNews.plaza}
+                  <i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedNews.plaza}
                 </div>
               )}
             </div>
@@ -15407,7 +15407,7 @@ TENDIDO DIGITAL
             {((selectedNews.torerosRaw) || (selectedNews.toreros && selectedNews.toreros.length > 0)) && (
               <div className="mb-20 bg-gray-50 rounded-3xl p-8 md:p-10 border border-gray-100 shadow-inner">
                 <h3 className="font-bold text-gray-900 mb-8 flex items-center text-sm md:text-base uppercase tracking-[0.2em]">
-                  <i className="ri-award-line text-brand-red mr-3 text-xl"></i> Ficha del Festejo
+                  <i className="ri-award-line text-red-600 mr-3 text-xl"></i> Ficha del Festejo
                 </h3>
                 
                 {selectedNews.ganaderia && (
@@ -15423,14 +15423,14 @@ TENDIDO DIGITAL
                         return (
                           <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
                             <p className="font-extrabold text-gray-900 text-lg">{nombre}</p>
-                            <p className="text-brand-red font-medium mt-2">{resultado}</p>
+                            <p className="text-red-600 font-medium mt-2">{resultado}</p>
                           </div>
                         );
                       })
                     : selectedNews.toreros?.map((torero: string, index: number) => (
                         <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
                           <p className="font-extrabold text-gray-900 text-lg">{torero}</p>
-                          <p className="text-brand-red font-medium mt-2">{selectedNews.resultado?.[index] || ""}</p>
+                          <p className="text-red-600 font-medium mt-2">{selectedNews.resultado?.[index] || ""}</p>
                         </div>
                       ))
                   }
@@ -15439,7 +15439,7 @@ TENDIDO DIGITAL
             )}
 
             {/* TEXTO PRINCIPAL (Diseño Editorial Serif) */}
-            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 prose-headings:font-bold prose-headings:text-gray-900 prose-p:leading-relaxed prose-a:text-brand-red hover:prose-a:text-red-800 prose-img:rounded-3xl prose-img:shadow-xl mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-brand-red first-letter:mr-4 first-letter:float-left first-letter:leading-none">
+            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 prose-headings:font-bold prose-headings:text-gray-900 prose-p:leading-relaxed prose-a:text-red-600 hover:prose-a:text-red-800 prose-img:rounded-3xl prose-img:shadow-xl mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
               <div className={selectedNews.boldContent ? "font-bold" : ""}>
                 {renderArticleContent(
                   (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "")
@@ -15471,7 +15471,7 @@ TENDIDO DIGITAL
                 <i className={savedPosts.has(selectedNews.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
                 {savedPosts.has(selectedNews.id) ? "Guardada" : "Guardar para después"}
               </button>
-              <button onClick={(e) => { e.stopPropagation(); openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-brand-red text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
+              <button onClick={(e) => { e.stopPropagation(); openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
                 <i className="ri-share-line"></i> Compartir Noticia
               </button>
             </div>
@@ -15485,7 +15485,7 @@ TENDIDO DIGITAL
   {/* MODAL DE CRÓNICAS - DISEÑO ULTRA PREMIUM */}
   {isChronicleModalOpen && selectedChronicle && (
     <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
-      <button onClick={closeChronicleModal} className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl">
+      <button onClick={closeChronicleModal} className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl">
         <i className="ri-close-line text-2xl"></i>
       </button>
 
@@ -15496,7 +15496,7 @@ TENDIDO DIGITAL
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-32 md:bottom-40 left-0 right-0 px-6 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
-            <span className="bg-brand-red text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">LA RESEÑA</span>
+            <span className="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">LA RESEÑA</span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] drop-shadow-2xl">{selectedChronicle.title}</h1>
           </div>
         </div>
@@ -15505,14 +15505,14 @@ TENDIDO DIGITAL
           <div className="max-w-4xl mx-auto">
             
             <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
-              <div className="flex items-center"><i className="ri-calendar-line text-brand-red mr-2 text-xl"></i> {selectedChronicle.date}</div>
-              {selectedChronicle.plaza && <div className="flex items-center"><i className="ri-map-pin-line text-brand-red mr-2 text-xl"></i> {selectedChronicle.plaza}</div>}
+              <div className="flex items-center"><i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedChronicle.date}</div>
+              {selectedChronicle.plaza && <div className="flex items-center"><i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedChronicle.plaza}</div>}
             </div>
 
             {selectedChronicle.torerosRaw && (
               <div className="mb-20 bg-gray-50 rounded-3xl p-8 md:p-10 border border-gray-100 shadow-inner">
                 <h3 className="font-bold text-gray-900 mb-8 flex items-center text-sm md:text-base uppercase tracking-[0.2em]">
-                  <i className="ri-award-line text-brand-red mr-3 text-xl"></i> Ficha del Festejo
+                  <i className="ri-award-line text-red-600 mr-3 text-xl"></i> Ficha del Festejo
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {selectedChronicle.torerosRaw.trim().split("\n").filter(Boolean).map((line: string, i: number) => {
@@ -15520,7 +15520,7 @@ TENDIDO DIGITAL
                     return (
                       <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
                         <p className="font-extrabold text-gray-900 text-lg">{nombre}</p>
-                        <p className="text-brand-red font-medium mt-2">{resultado}</p>
+                        <p className="text-red-600 font-medium mt-2">{resultado}</p>
                       </div>
                     );
                   })}
@@ -15528,7 +15528,7 @@ TENDIDO DIGITAL
               </div>
             )}
 
-            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-brand-red first-letter:mr-4 first-letter:float-left first-letter:leading-none">
+            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
               {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
             </div>
 
@@ -15537,7 +15537,7 @@ TENDIDO DIGITAL
                 <i className={savedPosts.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
                 {savedPosts.has(selectedChronicle.id) ? "Guardada" : "Guardar Crónica"}
               </button>
-              <button onClick={() => openShareModal(selectedChronicle)} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-brand-red text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
+              <button onClick={() => openShareModal(selectedChronicle)} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
                 <i className="ri-share-line"></i> Compartir
               </button>
             </div>
