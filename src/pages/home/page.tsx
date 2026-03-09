@@ -15594,10 +15594,13 @@ TENDIDO DIGITAL
         className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
       >
         Cancelar
-      </button>
-    </div>
-  </div>
-)}
+            </button>
+          </div>
+        </div>
+      )}
 
-</div>
-);
+    </div>
+  );
+}
+
+export default Home;
