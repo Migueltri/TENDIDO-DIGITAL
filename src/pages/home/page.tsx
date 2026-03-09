@@ -15165,162 +15165,164 @@ return (
 }
 
 return (
-<div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
-{/* Header */}
-<header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div className="flex justify-between items-center h-16 md:h-20">
-<div className="flex items-center group cursor-pointer" onClick={() => window.location.href = "/"}>
-  <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
-    <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
-  </div>
-  <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
-      TENDIDO DIGITAL
-    </span>
-  </div> {/* <--- ESTE ES EL CIERRE QUE PROBABLEMENTE TE FALTA */}
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
+    
+    {/* Header */}
+    <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 md:h-20">
+          
+          {/* 1. BLOQUE DEL LOGO */}
+          <div className="flex items-center group cursor-pointer" onClick={() => window.location.href = "/"}>
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
+              <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
+            </div>
+            <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
+              TENDIDO DIGITAL
+            </span>
+          </div>
 
-  {/* 2. BLOQUE DEL MENÚ */}
-  {/* Navigation */}
-  <nav className="hidden md:flex space-x-4 lg:space-x-8">
-    <button
-            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Inicio
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Todas
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Actualidad
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-            onClick={() => setActiveTab('cronicas')} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Crónicas
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-          <button 
-  onClick={() => setActiveTab('entrevistas')} 
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Entrevistas
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
-  className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-    newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-  }`}
->
-  Opinión
-  <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-    newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
-  }`}></span>
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-            className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
-              activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
-            }`}
-          >
-            Contacto
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
-              activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}></span>
-          </button>
-        </nav>
+          {/* 2. BLOQUE DEL MENÚ DE NAVEGACIÓN */}
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
+            <button
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Inicio
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'inicio' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Todas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'todas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Actualidad
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'actualidad' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Crónicas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'cronicas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Entrevistas
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'entrevistas' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Opinión
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                newsFilter === 'opinion' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
+                activeTab === 'contacto' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
+              }`}
+            >
+              Contacto
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-300 ${
+                activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </button>
+          </nav>
 
-        <button 
-          className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Abrir menú"
-        >
-          <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
-        </button>
-      </div>
-    </div>
-
-    {/* Mobile menu */}
-    {isMenuOpen && (
-      <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
-        <div className="px-4 pt-4 pb-6 space-y-2">
           <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            className="md:hidden p-3 rounded-xl text-gray-900 hover:bg-red-50 hover:text-red-600 transition-all duration-300 cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Abrir menú"
           >
-            Inicio
-          </button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Todas
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Actualidad
-          </button>
-          <button 
-            onClick={() => setActiveTab('cronicas')} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Crónicas
-          </button>
-          <button 
-  onClick={() => setActiveTab('entrevistas')} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Entrevistas
-</button>
-          <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
-  className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
->
-  Opinión
-</button>
-          <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
-            className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
-          >
-            Contacto
+            <i className={`text-2xl transition-transform duration-300 ${isMenuOpen ? 'ri-close-line rotate-180' : 'ri-menu-line'}`}></i>
           </button>
         </div>
       </div>
-    )}
-  </header>
+
+      {/* 3. MENU MÓVIL */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 shadow-lg">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Todas
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Actualidad
+            </button>
+            <button 
+              onClick={() => setActiveTab('cronicas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Crónicas
+            </button>
+            <button 
+              onClick={() => setActiveTab('entrevistas')} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Entrevistas
+            </button>
+            <button 
+              onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Opinión
+            </button>
+            <button 
+              onClick={() => {setActiveTab('inicio'); scrollToSection('contacto');}} 
+              className="block w-full text-left px-4 py-3 text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-lg transition-all duration-300 cursor-pointer font-medium"
+            >
+              Contacto
+            </button>
+          </div>
+        </div>
+      )}
+    </header>
 
   {/* Contenido principal */}
   {renderContent()}
