@@ -15412,8 +15412,9 @@ TENDIDO DIGITAL
               )}
             </div>
 
+            {/* Entradilla (Subtítulo más pequeño como pidió) */}
             {selectedNews?.excerpt && (
-              <p className="text-xl md:text-3xl text-gray-900 font-light leading-relaxed mb-16 italic font-serif">
+              <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed mb-10 italic border-l-4 border-red-600 pl-6">
                 "{selectedNews.excerpt}"
               </p>
             )}
@@ -15453,9 +15454,9 @@ TENDIDO DIGITAL
               </div>
             )}
 
-            {/* TEXTO PRINCIPAL */}
-            <div className="prose prose-lg md:prose-xl max-w-none text-gray-800 prose-headings:font-bold prose-headings:text-gray-900 prose-p:leading-relaxed prose-a:text-red-600 prose-img:rounded-2xl mt-10 first-letter:text-6xl md:first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
-              <div className={selectedNews?.boldContent ? "font-bold" : ""}>
+            {/* TEXTO PRINCIPAL (Más grande y sin la letra capitular roja) */}
+            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 prose-headings:font-bold prose-p:leading-relaxed prose-a:text-red-600 mt-8">
+              <div className={`text-xl md:text-2xl ${selectedNews?.boldContent ? "font-bold" : ""}`}>
                 {typeof renderArticleContent === 'function' && renderArticleContent(
                   String(selectedNews?.fullContent || selectedNews?.excerpt || selectedNews?.detalles || selectedNews?.content || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**")
                 )}
