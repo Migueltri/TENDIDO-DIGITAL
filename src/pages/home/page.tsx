@@ -14163,12 +14163,6 @@ document.body.style.width = "";
   }, [news24h.length]);
 
 useEffect(() => {
-const handleScroll = () => setScrollY(window.scrollY);
-window.addEventListener('scroll', handleScroll);
-return () => window.removeEventListener('scroll', handleScroll);
-}, []);
-
-useEffect(() => {
 return () => {
 if (isNewsModalOpen || isChronicleModalOpen) {
 document.body.style.overflow = 'unset';
@@ -14837,6 +14831,19 @@ return (
                     </article>
                   )})}
               </div>
+
+				{/* NUEVO BOTÓN MANUAL DE CARGAR MÁS (Salva la RAM del móvil) */}
+              {visibleNewsCount < getFilteredNews().length && (
+                <div className="mt-16 flex justify-center">
+                  <button
+                    onClick={() => setVisibleNewsCount(prev => prev + 6)}
+                    className="bg-white border-2 border-gray-200 text-gray-800 hover:border-red-600 hover:text-red-600 px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-2"
+                  >
+                    <i className="ri-loader-3-line animate-spin-slow"></i>
+                    Cargar más noticias
+                  </button>
+                </div>
+              )}
 				
               {visibleNewsCount < getFilteredNews().length && (
                 <div className="mt-12 text-center">
