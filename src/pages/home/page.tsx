@@ -15317,75 +15317,72 @@ TENDIDO DIGITAL
   {/* Contenido principal */}
   {renderContent()}
 
-{/* MODAL DE NOTICIA - DISEÑO ULTRA PREMIUM (Estilo Editorial) */}
+{/* MODAL DE NOTICIA - DISEÑO ULTRA PREMIUM (Blindado contra errores) */}
   {isNewsModalOpen && selectedNews && (
     <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
-
-{/* BARRA DE NAVEGACIÓN SUPERIOR (LIMPIA URL) */}
-        <nav className="sticky top-0 z-[60] bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
-          <div 
-            className="flex items-center gap-3 cursor-pointer group"
-            onClick={() => {
-              setIsNewsModalOpen(false);
-              setSelectedNews(null);
-              document.body.style.overflow = "auto";
-              // Esto limpia la URL y te deja en la raíz
-              window.location.href = "/"; 
-            }}
-          >
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
-              <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
-            </div>
-            <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
-              TENDIDO DIGITAL
-            </span>
+      
+      {/* BARRA DE NAVEGACIÓN SUPERIOR */}
+      <nav className="sticky top-0 z-[110] bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
+        <div 
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={() => {
+            setIsNewsModalOpen(false);
+            setSelectedNews(null);
+            document.body.style.overflow = "auto";
+            window.location.href = "/";
+          }}
+        >
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
+            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
+          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
+            TENDIDO DIGITAL
+          </span>
+        </div>
 
-          <button 
-            onClick={() => {
-              setIsNewsModalOpen(false);
-              setSelectedNews(null);
-              document.body.style.overflow = "auto";
-              // Esto limpia la URL y quita el ?p=...
-              window.history.pushState({}, "", "/"); 
-            }}
-            className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
-          >
-            <i className="ri-arrow-left-line text-xl"></i>
-            <span className="hidden md:inline">Volver</span>
-          </button>
-        </nav>
-		
-      {/* Botón Cerrar Flotante (Estilo Minimalista) */}
+        <button 
+          onClick={() => {
+            setIsNewsModalOpen(false);
+            setSelectedNews(null);
+            document.body.style.overflow = "auto";
+            window.history.pushState({}, "", "/");
+          }}
+          className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
+        >
+          <i className="ri-arrow-left-line text-xl"></i>
+          <span className="hidden md:inline">Volver</span>
+        </button>
+      </nav>
+
       <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
-        {/* 1. HERO IMAGE (Cabecera Optimizada para visibilidad) */}
+        {/* 1. HERO IMAGE */}
         <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
-          <img src={selectedNews.image} alt={selectedNews.title} className="w-full h-full object-cover object-top" />
+          <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
           
-          <div className="absolute bottom-28 md:bottom-36 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
-            {selectedNews.category && (
+          <div className="absolute bottom-10 md:bottom-20 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
+            {selectedNews?.category && (
               <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block shadow-lg border border-red-400/30">
                 {selectedNews.category}
               </span>
             )}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
-              {selectedNews.title}
+              {selectedNews?.title || ""}
             </h1>
           </div>
         </div>
 
-        {/* 2. TARJETA DE CONTENIDO SUPERPUESTA (El efecto WOW) */}
-        <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-24 md:-mt-32 p-6 md:p-16 lg:p-24 z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.3)] min-h-screen">
+        {/* 2. TARJETA DE CONTENIDO SUPERPUESTA */}
+        <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-10 p-6 md:p-16 lg:p-24 z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.3)] min-h-screen">
           <div className="max-w-4xl mx-auto">
             
-            {/* Metadatos Minimalistas */}
+            {/* Metadatos */}
             <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
               <div className="flex items-center">
-                <i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedNews.date}
+                <i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedNews?.date || ""}
               </div>
-              {selectedNews.author && (
+              {selectedNews?.author && (
                 <div className="flex items-center">
                   {selectedNews.authorLogo ? (
                     <img src={selectedNews.authorLogo} alt={selectedNews.author} className="h-8 w-8 rounded-full object-cover mr-3 shadow-sm" />
@@ -15395,37 +15392,38 @@ TENDIDO DIGITAL
                   <span className="text-gray-900 font-bold">{selectedNews.author}</span>
                 </div>
               )}
-              {selectedNews.plaza && (
+              {selectedNews?.plaza && (
                 <div className="flex items-center">
                   <i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedNews.plaza}
                 </div>
               )}
             </div>
 
-            {/* Entradilla */}
-            {selectedNews.excerpt && (
+            {selectedNews?.excerpt && (
               <p className="text-2xl md:text-4xl text-gray-900 font-light leading-relaxed mb-16 italic font-serif">
                 "{selectedNews.excerpt}"
               </p>
             )}
 
-            {/* BLOQUE DE RESULTADOS (Aislado con gran margen inferior) */}
-            {((selectedNews.torerosRaw) || (selectedNews.toreros && selectedNews.toreros.length > 0)) && (
+            {/* BLOQUE DE RESULTADOS PROTEGIDO */}
+            {(selectedNews?.torerosRaw || (Array.isArray(selectedNews?.toreros) && selectedNews.toreros.length > 0)) && (
               <div className="mb-20 bg-gray-50 rounded-3xl p-8 md:p-10 border border-gray-100 shadow-inner">
                 <h3 className="font-bold text-gray-900 mb-8 flex items-center text-sm md:text-base uppercase tracking-[0.2em]">
                   <i className="ri-award-line text-red-600 mr-3 text-xl"></i> Ficha del Festejo
                 </h3>
                 
-                {selectedNews.ganaderia && (
+                {selectedNews?.ganaderia && (
                   <div className="mb-8 pb-6 border-b border-gray-200">
                     <p className="text-gray-800 text-lg"><span className="font-bold text-gray-400 uppercase text-sm tracking-wider block mb-1">Ganadería</span> {selectedNews.ganaderia}</p>
                   </div>
                 )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {selectedNews.torerosRaw 
-                    ? selectedNews.torerosRaw.trim().split("\n").filter(Boolean).map((line: string, i: number) => {
-                        const [nombre, resultado] = line.split(":").map((s: string) => s.trim());
+                  {selectedNews?.torerosRaw 
+                    ? String(selectedNews.torerosRaw).trim().split("\n").filter(Boolean).map((line: string, i: number) => {
+                        const parts = line.split(":");
+                        const nombre = parts[0] ? parts[0].trim() : "";
+                        const resultado = parts[1] ? parts[1].trim() : "";
                         return (
                           <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
                             <p className="font-extrabold text-gray-900 text-lg">{nombre}</p>
@@ -15433,10 +15431,10 @@ TENDIDO DIGITAL
                           </div>
                         );
                       })
-                    : selectedNews.toreros?.map((torero: string, index: number) => (
+                    : Array.isArray(selectedNews?.toreros) && selectedNews.toreros.map((torero: string, index: number) => (
                         <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
                           <p className="font-extrabold text-gray-900 text-lg">{torero}</p>
-                          <p className="text-red-600 font-medium mt-2">{selectedNews.resultado?.[index] || ""}</p>
+                          <p className="text-red-600 font-medium mt-2">{Array.isArray(selectedNews?.resultado) ? selectedNews.resultado[index] : ""}</p>
                         </div>
                       ))
                   }
@@ -15444,23 +15442,23 @@ TENDIDO DIGITAL
               </div>
             )}
 
-            {/* TEXTO PRINCIPAL (Diseño Editorial Serif) */}
+            {/* TEXTO PRINCIPAL */}
             <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 prose-headings:font-bold prose-headings:text-gray-900 prose-p:leading-relaxed prose-a:text-red-600 hover:prose-a:text-red-800 prose-img:rounded-3xl prose-img:shadow-xl mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
-              <div className={selectedNews.boldContent ? "font-bold" : ""}>
-                {renderArticleContent(
-                  (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "")
-                    .replace ? (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**") : (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "")
+              <div className={selectedNews?.boldContent ? "font-bold" : ""}>
+                {typeof renderArticleContent === 'function' && renderArticleContent(
+                  String(selectedNews?.fullContent || selectedNews?.excerpt || selectedNews?.detalles || selectedNews?.content || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**")
                 )}
               </div>
             </div>
 
             {/* Galería Premium */}
-            {selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
+            {Array.isArray(selectedNews?.contentImages) && selectedNews.contentImages.length > 0 && (
               <div className="mt-24 pt-16 border-t border-gray-100">
                 <h3 className="text-3xl font-extrabold mb-10 text-gray-900 tracking-tight">Galería</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {selectedNews.contentImages.map((img: any, idx: number) => {
-                    const url = typeof img === "string" ? img : img.url;
+                    const url = typeof img === "string" ? img : img?.url;
+                    if (!url) return null;
                     return (
                       <div key={idx} className="relative group rounded-3xl overflow-hidden shadow-lg bg-gray-100">
                         <img src={url} alt={`Imagen ${idx + 1}`} className="w-full h-auto max-h-[60vh] object-contain group-hover:scale-105 transition-transform duration-700" />
@@ -15473,11 +15471,104 @@ TENDIDO DIGITAL
 
             {/* Botonera Flotante Inferior */}
             <div className="mt-24 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button onClick={(e) => { e.stopPropagation(); toggleSave(selectedNews.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg transition-all ${savedPosts.has(selectedNews.id) ? "bg-gray-900 text-white shadow-xl" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
-                <i className={savedPosts.has(selectedNews.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
-                {savedPosts.has(selectedNews.id) ? "Guardada" : "Guardar para después"}
+              <button onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(selectedNews?.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg transition-all ${savedPosts?.has(selectedNews?.id) ? "bg-gray-900 text-white shadow-xl" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
+                <i className={savedPosts?.has(selectedNews?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+                {savedPosts?.has(selectedNews?.id) ? "Guardada" : "Guardar para después"}
               </button>
-              <button onClick={(e) => { e.stopPropagation(); openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
+              <button onClick={(e) => { e.stopPropagation(); typeof openShareModal === 'function' && openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
+                <i className="ri-share-line"></i> Compartir Noticia
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+
+  {/* MODAL DE CRÓNICAS - DISEÑO ULTRA PREMIUM (Blindado contra errores) */}
+  {isChronicleModalOpen && selectedChronicle && (
+    <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
+      
+      <nav className="sticky top-0 z-[110] bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
+        <div 
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={() => {
+            closeChronicleModal();
+            window.location.href = "/";
+          }}
+        >
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
+            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+          </div>
+          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
+            TENDIDO DIGITAL
+          </span>
+        </div>
+
+        <button 
+          onClick={() => {
+            closeChronicleModal();
+            window.history.pushState({}, "", "/");
+          }}
+          className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
+        >
+          <i className="ri-arrow-left-line text-xl"></i>
+          <span className="hidden md:inline">Volver</span>
+        </button>
+      </nav>
+
+      <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
+        
+        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
+          <img src={selectedChronicle?.image || ""} alt={selectedChronicle?.title || "Crónica"} className="w-full h-full object-cover object-top" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+          
+          <div className="absolute bottom-10 md:bottom-20 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
+            <span className="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">LA RESEÑA</span>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">{selectedChronicle?.title || ""}</h1>
+          </div>
+        </div>
+
+        <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-10 p-6 md:p-16 lg:p-24 z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.3)] min-h-screen">
+          <div className="max-w-4xl mx-auto">
+            
+            <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
+              <div className="flex items-center"><i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedChronicle?.date || ""}</div>
+              {selectedChronicle?.plaza && <div className="flex items-center"><i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedChronicle.plaza}</div>}
+            </div>
+
+            {selectedChronicle?.torerosRaw && (
+              <div className="mb-20 bg-gray-50 rounded-3xl p-8 md:p-10 border border-gray-100 shadow-inner">
+                <h3 className="font-bold text-gray-900 mb-8 flex items-center text-sm md:text-base uppercase tracking-[0.2em]">
+                  <i className="ri-award-line text-red-600 mr-3 text-xl"></i> Ficha del Festejo
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {String(selectedChronicle.torerosRaw).trim().split("\n").filter(Boolean).map((line: string, i: number) => {
+                    const parts = line.split(":");
+                    const nombre = parts[0] ? parts[0].trim() : "";
+                    const resultado = parts[1] ? parts[1].trim() : "";
+                    return (
+                      <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
+                        <p className="font-extrabold text-gray-900 text-lg">{nombre}</p>
+                        <p className="text-red-600 font-medium mt-2">{resultado}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
+              {typeof renderArticleContent === 'function' && renderArticleContent(String(selectedChronicle?.fullContent || selectedChronicle?.detalles || ""))}
+            </div>
+
+            <div className="mt-24 flex flex-col sm:flex-row items-center justify-center gap-6">
+              <button onClick={() => typeof toggleSave === 'function' && toggleSave(selectedChronicle?.id)} className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg transition-all ${savedPosts?.has(selectedChronicle?.id) ? "bg-gray-900 text-white shadow-xl" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
+                <i className={savedPosts?.has(selectedChronicle?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+                {savedPosts?.has(selectedChronicle?.id) ? "Guardada" : "Guardar Crónica"}
+              </button>
+              <button onClick={() => typeof openShareModal === 'function' && openShareModal(selectedChronicle)} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
                 <i className="ri-share-line"></i> Compartir Noticia
               </button>
             </div>
