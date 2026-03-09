@@ -14771,7 +14771,7 @@ return (
                             className="absolute top-4 right-4 z-30 bg-black/60 text-white w-8 h-8 flex items-center justify-center rounded-full backdrop-blur-md border border-white/30 shadow-md"
                             title="Noticia Fijada"
                           >
-                            <i className="ri-pushpin-2-fill text-base"></i>
+                            <i className="ri-pushpin-fill text-base"></i>
                           </div>
                         )}
 
