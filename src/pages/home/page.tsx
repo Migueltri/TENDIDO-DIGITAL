@@ -15359,18 +15359,18 @@ TENDIDO DIGITAL
       {/* Botón Cerrar Flotante (Estilo Minimalista) */}
       <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
-        {/* 1. HERO IMAGE (70% de la pantalla) */}
-        <div className="relative w-full h-[60vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
-          <img src={selectedNews.image} alt={selectedNews.title} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        {/* 1. HERO IMAGE (Cabecera Optimizada para visibilidad) */}
+        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
+          <img src={selectedNews.image} alt={selectedNews.title} className="w-full h-full object-cover object-top" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
           
-          <div className="absolute bottom-32 md:bottom-40 left-0 right-0 px-6 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
+          <div className="absolute bottom-28 md:bottom-36 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
             {selectedNews.category && (
-              <span className="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block shadow-lg border border-red-400/30">
+              <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block shadow-lg border border-red-400/30">
                 {selectedNews.category}
               </span>
             )}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] drop-shadow-2xl">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
               {selectedNews.title}
             </h1>
           </div>
@@ -15498,7 +15498,7 @@ TENDIDO DIGITAL
       <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
         <div className="relative w-full h-[60vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
-          <img src={selectedChronicle.image} alt={selectedChronicle.title} className="w-full h-full object-cover" />
+          <img src={selectedChronicle.image} alt={selectedChronicle.title} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-32 md:bottom-40 left-0 right-0 px-6 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
