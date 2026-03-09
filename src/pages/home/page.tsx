@@ -15336,605 +15336,275 @@ TENDIDO DIGITAL
   {/* Contenido principal */}
   {renderContent()}
 
-  {/* Modal de Noticia - Pantalla Completa */}
- {isNewsModalOpen && selectedNews && (
-  <div
-    className="fixed inset-0 bg-white z-50 overflow-y-auto"
-    style={{
-      overflowX: "hidden",
-      overflowY: "auto",
-      maxHeight: "100vh",
-      WebkitOverflowScrolling: "touch"
-    }}
-  >
-	  {/* TOREROS - SI LA NOTICIA TAMBIÉN LOS TIENE */}
-{selectedNews?.torerosRaw && (
-  <div className="bg-white border border-gray-200 rounded-xl p-5 mb-8 shadow-sm">
-    <h3 className="font-bold text-gray-900 mb-4 flex items-center">
-      <i className="ri-user-star-line text-red-600 mr-2"></i>
-      Resultados
-    </h3>
+  {/* Modal de Noticia - Pantalla Completa (DISEÑO PREMIUM) */}
+  {isNewsModalOpen && selectedNews && (
+    <div className="fixed inset-0 z-[100] flex items-end md:items-center justify-center sm:p-6 animate-fadeIn">
+      {/* Fondo oscuro con desenfoque */}
+      <div
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
+        onClick={() => {
+          setIsNewsModalOpen(false);
+          setSelectedNews(null);
+          document.body.style.overflow = "auto";
+        }}
+      ></div>
 
-    <div className="space-y-3">
-      {selectedNews.torerosRaw
-        .trim()
-        .split("\n")
-        .filter(Boolean)
-        .map((line, i) => {
-          const [nombre, resultado] = line.split(":").map(s => s.trim());
-          return (
-            <div key={i} className="flex items-start bg-red-50 border border-red-200 p-4 rounded-lg">
-              <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
-              <div>
-                <p className="font-bold text-gray-900">{nombre}</p>
-                <p className="text-gray-700 text-sm">{resultado}</p>
+      {/* Contenedor Principal */}
+      <div className="relative bg-gray-50 w-full max-w-5xl h-[95vh] md:h-auto md:max-h-[90vh] overflow-y-auto md:rounded-3xl shadow-2xl flex flex-col transform transition-transform" style={{ WebkitOverflowScrolling: "touch" }}>
+        
+        {/* Botón Cerrar */}
+        <button
+          onClick={() => {
+            setIsNewsModalOpen(false);
+            setSelectedNews(null);
+            document.body.style.overflow = "auto";
+          }}
+          className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all shadow-lg"
+        >
+          <i className="ri-close-line text-2xl"></i>
+        </button>
+
+        {/* 1. CABECERA INMERSIVA (Hero Image) */}
+        <div className="relative w-full h-80 md:h-[450px] shrink-0 bg-gray-900">
+          <img src={selectedNews.image} alt={selectedNews.title} className="w-full h-full object-cover opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+          
+          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
+            {selectedNews.category && (
+              <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-md">
+                {selectedNews.category}
+              </span>
+            )}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-xl max-w-4xl">
+              {selectedNews.title}
+            </h1>
+          </div>
+          {(selectedNews.imageCaption || selectedNews.photoCredit) && (
+            <div className="absolute bottom-3 right-6 text-white/70 text-xs italic z-20 drop-shadow-md">
+              {selectedNews.imageCaption} {selectedNews.photoCredit && `| Foto: ${selectedNews.photoCredit}`}
+            </div>
+          )}
+        </div>
+
+        {/* 2. CUERPO DE LA NOTICIA (Tarjeta superpuesta) */}
+        <div className="relative bg-white rounded-t-3xl md:rounded-t-[3rem] -mt-10 p-6 md:p-12 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.15)] flex-1">
+          
+          {/* Metadatos (Autor, Fecha, Plaza) */}
+          <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-10 pb-6 border-b border-gray-100 font-medium">
+            <div className="flex items-center">
+              <i className="ri-calendar-line text-red-600 mr-2 text-lg"></i>
+              {selectedNews.date}
+            </div>
+            {selectedNews.author && (
+              <div className="flex items-center">
+                {selectedNews.authorLogo && <img src={selectedNews.authorLogo} alt={selectedNews.author} className="h-6 w-6 rounded-full object-cover mr-2" />}
+                <i className={!selectedNews.authorLogo ? "ri-user-line text-red-600 mr-2 text-lg" : ""}></i>
+                {selectedNews.author}
+              </div>
+            )}
+            {selectedNews.plaza && (
+              <div className="flex items-center">
+                <i className="ri-map-pin-line text-red-600 mr-2 text-lg"></i>
+                {selectedNews.plaza}
+              </div>
+            )}
+          </div>
+
+          {/* Entradilla / Resumen */}
+          {selectedNews.excerpt && (
+            <p className="text-2xl md:text-3xl text-gray-800 font-light leading-relaxed mb-12 italic border-l-4 border-red-600 pl-6 md:pl-8">
+              {selectedNews.excerpt}
+            </p>
+          )}
+
+          {/* 3. BLOQUE DE RESULTADOS / TOREROS (Con mb-16 garantizado) */}
+          {selectedNews.torerosRaw ? (
+            <div className="mb-16 bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-6 flex items-center text-lg uppercase tracking-wider">
+                <i className="ri-award-line text-red-600 mr-2"></i> Balance del festejo
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {selectedNews.torerosRaw.trim().split("\n").filter(Boolean).map((line: string, i: number) => {
+                  const [nombre, resultado] = line.split(":").map((s: string) => s.trim());
+                  return (
+                    <div key={i} className="flex items-start bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                      <div className="w-10 h-10 bg-red-50 text-red-600 rounded-full flex items-center justify-center mr-4 shrink-0"><i className="ri-user-star-line"></i></div>
+                      <div>
+                        <p className="font-bold text-gray-900">{nombre}</p>
+                        <p className="text-gray-600 text-sm mt-1">{resultado}</p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          );
-        })}
-    </div>
-  </div>
-)}
-	  
-    {/* Header del modal */}
-    <div className="sticky top-0 bg-white backdrop-blur-md z-10 border-b border-gray-200 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <a
-  href="/"
-  className="flex items-center group cursor-pointer"
-  onClick={() => {
-    // Por si estás en un modal, lo cerramos también
-    setIsNewsModalOpen(false);
-    setSelectedNews(null);
-    document.body.style.overflow = "auto";
-    document.body.style.position = "";
-    document.body.style.width = "";
-  }}
->
-  <img
-    src="/images/tendidodigitallogosimple.png"
-    alt="Tendido Digital"
-    className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-transform duration-300 group-hover:scale-110"
-  />
-  <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent group-hover:brightness-125">
-    TENDIDO DIGITAL
-  </span>
-</a>
-        </div>
-      </div>
-    </div>
-
-    {/* Imagen principal */}
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="flex flex-col items-center">
-        <img
-          src={selectedNews.image}
-          alt={selectedNews.title}
-          className="w-full h-auto rounded-md"
-        />
-        {(selectedNews.imageCaption || selectedNews.photoCredit) && (
-          <div className="text-gray-500 text-xs italic flex justify-between w-full mt-1 px-1">
-            <span>{selectedNews.imageCaption}</span>
-            {selectedNews.photoCredit && <span>Foto: {selectedNews.photoCredit}</span>}
-          </div>
-        )}
-      </div>
-    </div>
-
-    {/* Contenido del artículo */}
-    <div className="bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {selectedNews.showAuthorHeader ? (
-  <div className="flex items-center mb-8 space-x-3">
-    {selectedNews.authorLogo && (
-      <img
-        src={selectedNews.authorLogo}
-        alt={selectedNews.author}
-        className="h-8 w-8 rounded-full object-cover"
-      />
-    )}
-    <p className="text-gray-500 text-sm flex items-center flex-wrap">
-      <span className="mr-1">por</span>
-      <span className="text-red-600 font-bold mr-2">
-        {selectedNews.author || "Tendido Digital"}
-      </span>
-      <span className="text-gray-400">— {selectedNews.date}</span>
-    </p>
-  </div>
-) : (
-  // Por si no se activa showAuthorHeader, se mantiene el pequeño bloque original con la fecha
-  <div className="flex items-center mb-6">
-    <span className="text-gray-500 text-sm font-medium">{selectedNews.date}</span>
-  </div>
-)}
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
-          {selectedNews.title}
-        </h1>
-
-        {selectedNews.excerpt && (
-          <p className="text-xl text-gray-600 leading-relaxed mb-12 font-medium">
-            {selectedNews.excerpt}
-          </p>
-        )}
-{/* Contenido de la crónica o noticia */}
-{selectedNews.category === "Crónicas" ? (
-  <>
-    {/* Datos principales */}
-    <div className="bg-gray-50 rounded-xl p-6 mb-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base">
-        <p>
-          <span className="font-semibold text-gray-900">Plaza: </span>
-          <span className="text-gray-800">{selectedNews.plaza || "No especificada"}</span>
-        </p>
-        <p>
-          <span className="font-semibold text-gray-900">Ganadería: </span>
-          <span className="text-red-600 font-semibold">{selectedNews.ganaderia || "No indicada"}</span>
-        </p>
-      </div>
-    </div>
-
-{/* Resumen o cuerpo (separado en párrafos) */}
-<div className="bg-red-50 rounded-xl p-6 border-l-4 border-red-500 mb-10 shadow-sm">
-  <h3 className="font-bold text-gray-900 flex items-center mb-3">
-    <i className="ri-file-text-line text-red-600 mr-2"></i>
-    Resumen del festejo
-  </h3>
-
-{/* Resultados (ahora sí, después del resumen) */}
-{(selectedNews.toreros || []).length > 0 && (
-  <div className="space-y-3 mt-6">
-    <h4 className="font-bold text-gray-900 text-lg mb-3 flex items-center">
-      <i className="ri-award-line mr-2 text-red-600"></i> Resultados
-    </h4>
-    {(selectedNews.toreros || []).map((torero, index) => (
-      <div
-        key={index}
-        className="flex items-start bg-white border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200"
-      >
-        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-        <div className="flex-1">
-          <p className="font-bold text-gray-900 text-lg mb-1">{torero}</p>
-          <p className="text-gray-700 text-sm">
-            {selectedNews.resultado?.[index] || ""}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-)}
-
-  {/* Cuerpo separado en párrafos y con **bold** convertido */}
-  <div className="text-gray-700 text-lg leading-relaxed">
-    {renderArticleContent(
-      // si hay fullContent lo usamos, si no usamos excerpt o detalles
-      (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "")
-        .replace ? (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**") : (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || "")
-    )}
-  </div>
-</div>
-
-{/* Galería de Imágenes */}
-{selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
-  <div className="mt-10 pt-8 border-t border-gray-200">
-    <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de imágenes</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {selectedNews.contentImages.map((img: any, idx: number) => {
-        const url = typeof img === "string" ? img : img.url;
-        const caption = typeof img === "string" ? "" : img.caption;
-        const credit = typeof img === "string" ? "" : img.credit;
-        return (
-          <figure key={idx} className="flex flex-col">
-            {/* --- AQUÍ ESTÁ EL CAMBIO PARA PERMITIR FOTOS VERTICALES --- */}
-            <div className="relative w-full rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
-              <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto max-h-[70vh] object-contain drop-shadow-md" />
-            </div>
-            {(caption || credit) && (
-              <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
-                <span>{caption}</span>
-                {credit && <span>Foto: {credit}</span>}
-              </figcaption>
-            )}
-          </figure>
-        );
-      })}
-    </div>
-  </div>
-)}
-
-  </>
-) : (
-  /* Formato normal para noticias */
-  <div>
-    <div 
-      className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-a:underline prose-img:rounded-xl"
-      dangerouslySetInnerHTML={{ __html: selectedNews.content }}
-    >
-        <div
-          className={`text-gray-700 leading-relaxed text-lg space-y-4 ${
-            selectedNews.boldContent ? "font-bold" : ""
-          }`}
-        >
-        {renderArticleContent(selectedNews.fullContent)}
-      </div>
-    </div>
-
-     {/* --- BARRA INFERIOR DE ACCIONES (SOLO MÓVIL) - ESTILO TEXTO PLANO --- */}
-          <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-center gap-4 md:hidden">
-            
-            <button 
-              onClick={(e) => {
-                e.stopPropagation();
-                if (typeof toggleSavedPost === 'function') toggleSavedPost(selectedNews);
-              }} 
-              className="flex-1 flex items-center justify-center gap-2 text-gray-900 font-bold py-2 hover:text-brand-red transition-colors bg-transparent border-none"
-            >
-              <i className="ri-bookmark-line text-xl"></i>
-              <span>Guardar</span>
-            </button>
-
-            {/* Pequeña línea divisoria para separar ambas opciones elegantemente */}
-            <div className="w-px h-5 bg-gray-300"></div>
-
-            <button 
-              onClick={(e) => {
-                e.stopPropagation();
-                setSharePost(selectedNews);
-                setIsShareModalOpen(true);
-              }} 
-              className="flex-1 flex items-center justify-center gap-2 text-gray-900 font-bold py-2 hover:text-brand-red transition-colors bg-transparent border-none"
-            >
-              <i className="ri-share-forward-line text-xl"></i>
-              <span>Compartir</span>
-            </button>
-
-          </div>
-          {/* --- FIN BARRA INFERIOR --- */}
-
-    {/* Galería de Imágenes para Noticias Normales */}
-    {selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
-      <div className="mt-10 pt-8 border-t border-gray-200">
-        <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Galería de imágenes</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {selectedNews.contentImages.map((img: any, idx: number) => {
-            const url = typeof img === "string" ? img : img.url;
-            const caption = typeof img === "string" ? "" : img.caption;
-            const credit = typeof img === "string" ? "" : img.credit;
-            return (
-              <figure key={idx} className="flex flex-col">
-                {/* --- AQUÍ ESTÁ EL CAMBIO TAMBIÉN --- */}
-                <div className="relative w-full rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
-                  <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto max-h-[70vh] object-contain drop-shadow-md" />
+          ) : (selectedNews.toreros && selectedNews.toreros.length > 0) ? (
+            <div className="mb-16 bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-6 flex items-center text-lg uppercase tracking-wider">
+                <i className="ri-award-line text-red-600 mr-2"></i> Balance del festejo
+              </h3>
+              {selectedNews.ganaderia && (
+                <div className="mb-6 pb-4 border-b border-gray-200">
+                  <p className="text-gray-700 font-medium"><i className="ri-vip-crown-line text-red-600 mr-2"></i> <span className="font-bold">Ganadería:</span> {selectedNews.ganaderia}</p>
                 </div>
-                {(caption || credit) && (
-                  <figcaption className="mt-2 text-sm text-gray-500 flex justify-between italic px-1">
-                    <span>{caption}</span>
-                    {credit && <span>Foto: {credit}</span>}
-                  </figcaption>
-                )}
-              </figure>
-            );
-          })}
-        </div>
-      </div>
-    )}
-  </div>
-)}
-          
-        {/* Imágenes finales tipo portada */}
-<div className="mt-12 space-y-10 flex flex-col items-center">
-  {selectedNews.footerImage1 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage1}
-        alt={selectedNews.footerImage1Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage1Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage1Caption}
-        </p>
-      )}
-    </div>
-  )}
+              )}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {selectedNews.toreros.map((torero: string, index: number) => (
+                  <div key={index} className="flex items-start bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                    <div className="w-10 h-10 bg-red-50 text-red-600 rounded-full flex items-center justify-center mr-4 shrink-0"><i className="ri-user-star-line"></i></div>
+                    <div>
+                      <p className="font-bold text-gray-900">{torero}</p>
+                      <p className="text-gray-600 text-sm mt-1">{selectedNews.resultado?.[index] || ""}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
 
-  {selectedNews.footerImage2 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage2}
-        alt={selectedNews.footerImage2Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage2Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage2Caption}
-        </p>
-      )}
-    </div>
-  )}
+          {/* 4. TEXTO PRINCIPAL (Con mt-8 garantizado y letra capitular) */}
+          <div className="prose prose-lg md:prose-xl max-w-none text-gray-800 prose-headings:font-bold prose-a:text-red-600 hover:prose-a:text-red-800 prose-img:rounded-2xl mt-8 first-letter:text-7xl first-letter:font-bold first-letter:text-red-600 first-letter:mr-3 first-letter:float-left">
+            <div className={selectedNews.boldContent ? "font-bold" : ""}>
+              {renderArticleContent(
+                (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "")
+                  .replace ? (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "").replace(/(\*{1,2})(.*?)\1/g, "**$2**") : (selectedNews.fullContent || selectedNews.excerpt || selectedNews.detalles || selectedNews.content || "")
+              )}
+            </div>
+          </div>
 
-	  {selectedNews.footerImage3 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage3}
-        alt={selectedNews.footerImage3Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage3Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage3Caption}
-        </p>
-      )}
-    </div>
-  )}
+          {/* Galería de Imágenes (Manteniendo tu funcionalidad) */}
+          {selectedNews.contentImages && selectedNews.contentImages.length > 0 && (
+            <div className="mt-16 pt-10 border-t border-gray-100">
+              <h3 className="text-2xl font-bold mb-8 text-gray-900">Galería de imágenes</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {selectedNews.contentImages.map((img: any, idx: number) => {
+                  const url = typeof img === "string" ? img : img.url;
+                  const caption = typeof img === "string" ? "" : img.caption;
+                  const credit = typeof img === "string" ? "" : img.credit;
+                  return (
+                    <figure key={idx} className="flex flex-col">
+                      <div className="relative w-full rounded-2xl overflow-hidden bg-gray-50 flex items-center justify-center">
+                        <img src={url} alt={caption || `Imagen ${idx + 1}`} className="w-full h-auto max-h-[70vh] object-contain drop-shadow-md" />
+                      </div>
+                      {(caption || credit) && (
+                        <figcaption className="mt-3 text-sm text-gray-500 flex justify-between italic px-2">
+                          <span>{caption}</span>
+                          {credit && <span>Foto: {credit}</span>}
+                        </figcaption>
+                      )}
+                    </figure>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
-	  {selectedNews.footerImage4 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage4}
-        alt={selectedNews.footerImage4Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage4Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage4Caption}
-        </p>
-      )}
-    </div>
-  )}
+          {/* Imágenes de Footer (Manteniendo tu funcionalidad) */}
+          <div className="mt-16 space-y-12">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => {
+              const imgUrl = selectedNews[`footerImage${num}`];
+              const imgCap = selectedNews[`footerImage${num}Caption`];
+              if (!imgUrl) return null;
+              return (
+                <div key={`footer-${num}`} className="flex flex-col items-center">
+                  <img src={imgUrl} alt={imgCap || selectedNews.title} className="w-full max-w-4xl rounded-2xl shadow-md" />
+                  {imgCap && <p className="text-gray-500 text-sm italic text-right w-full mt-3 max-w-4xl">{imgCap}</p>}
+                </div>
+              );
+            })}
+          </div>
 
-		  {selectedNews.footerImage5 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage5}
-        alt={selectedNews.footerImage3Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage5Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage5Caption}
-        </p>
-      )}
-    </div>
-  )}
-
-		  {selectedNews.footerImage6 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage6}
-        alt={selectedNews.footerImage6Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage6Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage6Caption}
-        </p>
-      )}
-    </div>
-  )}
-
-		  {selectedNews.footerImage7 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage7}
-        alt={selectedNews.footerImage7Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage7Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage7Caption}
-        </p>
-      )}
-    </div>
-  )}
-
-		  {selectedNews.footerImage8 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage8}
-        alt={selectedNews.footerImage8Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage8Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage8Caption}
-        </p>
-      )}
-    </div>
-  )}
-
-		  {selectedNews.footerImage9 && (
-    <div className="flex flex-col items-center">
-      <img
-        src={selectedNews.footerImage9}
-        alt={selectedNews.footerImage9Caption || selectedNews.title}
-        className="w-full max-w-4xl rounded-md"
-      />
-      {selectedNews.footerImage9Caption && (
-        <p className="text-gray-500 text-xs italic text-right w-full mt-1 max-w-4xl">
-          {selectedNews.footerImage9Caption}
-        </p>
-      )}
-    </div>
-  )}
-</div>
-		  
-        {/* Acciones del artículo */}
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between mt-4">
-          <div className="flex items-center space-x-6">
+          {/* Acciones Finales (Guardar / Compartir) */}
+          <div className="mt-16 pt-8 border-t border-gray-100 flex items-center justify-between">
             <button
-              onClick={() => toggleSave(selectedNews.id)}
-              className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
+              onClick={(e) => { e.stopPropagation(); toggleSave(selectedNews.id); }}
+              className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all ${
                 savedPosts.has(selectedNews.id)
-                  ? "text-yellow-600 bg-yellow-50"
-                  : "text-gray-600 hover:text-yellow-600 hover:bg-yellow-50"
+                  ? "bg-yellow-50 text-yellow-600 border border-yellow-200"
+                  : "bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100"
               }`}
             >
-              <i className={`${savedPosts.has(selectedNews.id) ? "ri-bookmark-fill" : "ri-bookmark-line"} text-xl`}></i>
-              <span className="font-medium hidden sm:block">
-                {savedPosts.has(selectedNews.id) ? "Guardado" : "Guardar"}
-              </span>
+              <i className={savedPosts.has(selectedNews.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+              <span className="hidden sm:inline">{savedPosts.has(selectedNews.id) ? "Guardada" : "Guardar noticia"}</span>
             </button>
 
             <button
-              onClick={() => openShareModal(selectedNews)}
-              className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
+              onClick={(e) => { e.stopPropagation(); openShareModal(selectedNews); }}
+              className="flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 text-white hover:bg-red-700 transition-all shadow-md"
             >
-              <i className="ri-share-line text-xl"></i>
-              <span className="font-medium hidden sm:block">Compartir</span>
+              <i className="ri-share-line"></i> Compartir
             </button>
           </div>
 
-          <div className="w-full sm:w-auto text-center">
-            <button
-  onClick={closeNewsModal}
-  className="text-gray-800 hover:text-red-500 p-2 rounded-full hover:bg-gray-100 transition-all duration-300"
-  aria-label="Cerrar modal"
->
-  <i className="ri-close-line text-2xl"></i>
-</button>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-)}
+  )}
 
-{/* Modal de Crónica - Pantalla Completa */}
-{isChronicleModalOpen && selectedChronicle && (
- <div className="fixed inset-0 bg-white z-50 overflow-y-auto">
-    <div className="min-h-screen">
-		{/* TOREROS + RESULTADOS (solo crónicas) */}
-{selectedChronicle?.torerosRaw && (
-  <div className="bg-white border border-gray-200 rounded-xl p-5 mb-8 shadow-sm">
-    <h3 className="font-bold text-gray-900 mb-4 flex items-center">
-      <i className="ri-user-star-line text-red-600 mr-2"></i>
-      Resultados
-    </h3>
+  {/* Modal de Crónica - Pantalla Completa (DISEÑO PREMIUM IGUALADO) */}
+  {isChronicleModalOpen && selectedChronicle && (
+    <div className="fixed inset-0 z-[100] flex items-end md:items-center justify-center sm:p-6 animate-fadeIn">
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity" onClick={closeChronicleModal}></div>
+      <div className="relative bg-gray-50 w-full max-w-5xl h-[95vh] md:h-auto md:max-h-[90vh] overflow-y-auto md:rounded-3xl shadow-2xl flex flex-col transform transition-transform" style={{ WebkitOverflowScrolling: "touch" }}>
+        
+        <button onClick={closeChronicleModal} className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all shadow-lg">
+          <i className="ri-close-line text-2xl"></i>
+        </button>
 
-    <div className="space-y-3">
-      {selectedChronicle.torerosRaw
-        .trim()
-        .split("\n")
-        .filter(Boolean)
-        .map((line, i) => {
-          const [nombre, resultado] = line.split(":").map(s => s.trim());
-          return (
-            <div
-              key={i}
-              className="flex items-start bg-red-50 border border-red-200 p-4 rounded-lg"
-            >
-              <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></div>
-              <div>
-                <p className="font-bold text-gray-900">{nombre}</p>
-                <p className="text-gray-700 text-sm">{resultado}</p>
+        <div className="relative w-full h-80 md:h-[450px] shrink-0 bg-gray-900">
+          <img src={selectedChronicle.image} alt={selectedChronicle.title} className="w-full h-full object-cover opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
+            <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block shadow-md">LA RESEÑA</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-xl max-w-4xl">{selectedChronicle.title}</h1>
+          </div>
+        </div>
+
+        <div className="relative bg-white rounded-t-3xl md:rounded-t-[3rem] -mt-10 p-6 md:p-12 z-20 shadow-[0_-10px_40px_rgba(0,0,0,0.15)] flex-1">
+          
+          <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-10 pb-6 border-b border-gray-100 font-medium">
+            <div className="flex items-center"><i className="ri-calendar-line text-red-600 mr-2 text-lg"></i>{selectedChronicle.date}</div>
+            {selectedChronicle.plaza && <div className="flex items-center"><i className="ri-map-pin-line text-red-600 mr-2 text-lg"></i>{selectedChronicle.plaza}</div>}
+          </div>
+
+          {selectedChronicle.torerosRaw && (
+            <div className="mb-16 bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-6 flex items-center text-lg uppercase tracking-wider"><i className="ri-award-line text-red-600 mr-2"></i> Balance del festejo</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {selectedChronicle.torerosRaw.trim().split("\n").filter(Boolean).map((line: string, i: number) => {
+                  const [nombre, resultado] = line.split(":").map((s: string) => s.trim());
+                  return (
+                    <div key={i} className="flex items-start bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                      <div className="w-10 h-10 bg-red-50 text-red-600 rounded-full flex items-center justify-center mr-4 shrink-0"><i className="ri-user-star-line"></i></div>
+                      <div>
+                        <p className="font-bold text-gray-900">{nombre}</p>
+                        <p className="text-gray-600 text-sm mt-1">{resultado}</p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          );
-        })}
-    </div>
-  </div>
-)}
-		
-      {/* Header */}
-      <div className="sticky top-0 bg-white backdrop-blur-md z-10 border-b border-gray-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <img
-                src="/images/tendidodigitallogosimple.png"
-                alt="Tendido Digital"
-                className="h-12 w-auto opacity-60 hover:opacity-100 transition-all duration-300 group-hover:scale-110 filter brightness-125"
-              />
-              <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">
-                TENDIDO DIGITAL
-              </span>
-            </div>
-            <button
-              onClick={closeChronicleModal}
-              className="text-white hover:text-red-400 p-2 rounded-full hover:bg-gray-800 transition-all duration-300"
-              aria-label="Cerrar modal"
-            >
-              <i className="ri-close-line text-2xl"></i>
+          )}
+
+          <div className="prose prose-lg md:prose-xl max-w-none text-gray-800 mt-8 first-letter:text-7xl first-letter:font-bold first-letter:text-red-600 first-letter:mr-3 first-letter:float-left">
+            {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
+          </div>
+
+          <div className="mt-16 pt-8 border-t border-gray-100 flex items-center justify-between">
+            <button onClick={() => toggleSave(selectedChronicle.id)} className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all ${savedPosts.has(selectedChronicle.id) ? "bg-yellow-50 text-yellow-600 border border-yellow-200" : "bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100"}`}>
+              <i className={savedPosts.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+              <span className="hidden sm:inline">{savedPosts.has(selectedChronicle.id) ? "Guardada" : "Guardar crónica"}</span>
+            </button>
+            <button onClick={() => openShareModal(selectedChronicle)} className="flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 text-white hover:bg-red-700 transition-all shadow-md">
+              <i className="ri-share-line"></i> Compartir
             </button>
           </div>
-        </div>
-      </div>
 
-      {/* Imagen principal */}
-      <div className="relative h-[40vh] md:h-[60vh] overflow-hidden">
-        <img
-          src={selectedChronicle.image}
-          alt={selectedChronicle.title}
-          className="w-full h-full object-cover object-top"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-        <div className="absolute bottom-8 left-8">
-          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
-            LA RESEÑA
-          </span>
-        </div>
-      </div>
-
-      {/* Contenido */}
-      <div className="bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex items-center mb-6">
-            <span className="text-gray-500 text-sm font-medium">{selectedChronicle.date}</span>
-            <span className="mx-2 text-gray-300">•</span>
-            <span className="text-red-600 text-sm font-medium">{selectedChronicle.plaza}</span>
-          </div>
-
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
-            {selectedChronicle.title}
-          </h1>
-
-          <div className="bg-gray-50 rounded-2xl p-8 mb-8">
- 		  <h2 className="font-semibold text-gray-900 mb-2">Detalles:</h2>
-		  <div className="text-gray-700">
-		  {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
-		  </div>
-		  </div>
-	
-          <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-            <div className="flex items-center space-x-6">
-              <button
-                onClick={() => toggleSave(selectedChronicle.id)}
-                className={`flex items-center space-x-2 transition-all duration-300 p-3 rounded-full ${
-                  savedPosts.has(selectedChronicle.id)
-                    ? "text-yellow-600 bg-yellow-50"
-                    : "text-gray-600 hover:text-yellow-600 hover:bg-yellow-50"
-                }`}
-                aria-label={savedPosts.has(selectedChronicle.id) ? "Quitar de guardados" : "Guardar crónica"}
-              >
-                <i className={`${savedPosts.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"} text-xl`}></i>
-                <span className="font-medium">
-                  {savedPosts.has(selectedChronicle.id) ? "Guardado" : "Guardar"}
-                </span>
-              </button>
-
-              <button
-                onClick={() => openShareModal(selectedChronicle)}
-                className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 p-3 rounded-full hover:bg-blue-50"
-                aria-label="Compartir crónica"
-              >
-                <i className="ri-share-line text-xl"></i>
-                <span className="font-medium">Compartir</span>
-              </button>
-            </div>
-
-            <button
-              onClick={closeChronicleModal}
-              className="bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-xl cursor-pointer whitespace-nowrap text-sm md:text-base border border-red-400/20"
-            >
-              Volver a crónicas
-            </button>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-)}
+  )}
 
 {/* Modal de Compartir */}
 {isShareModalOpen && sharePost && (
