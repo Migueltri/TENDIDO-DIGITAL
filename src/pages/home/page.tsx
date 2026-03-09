@@ -15174,14 +15174,15 @@ return (
   <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
     <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
   </div>
-  <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent group-hover:brightness-125 tracking-tight">
-              TENDIDO DIGITAL
-            </span>
-          </div>
-          
-          {/* Navigation */}
-          <nav className="hidden md:flex space-x-4 lg:space-x-8">
-          <button 
+  <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
+      TENDIDO DIGITAL
+    </span>
+  </div> {/* <--- ESTE ES EL CIERRE QUE PROBABLEMENTE TE FALTA */}
+
+  {/* 2. BLOQUE DEL MENÚ */}
+  {/* Navigation */}
+  <nav className="hidden md:flex space-x-4 lg:space-x-8">
+    <button
             onClick={() => {setActiveTab('inicio'); scrollToSection('inicio');}} 
             className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
               activeTab === 'inicio' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
