@@ -14906,43 +14906,48 @@ return (
             </form>
           </div>
 
-<div className="bg-[#1a1a1a] p-8 rounded-[2rem] shadow-xl text-center">
-  <h3 className="text-white text-xl font-bold mb-6 tracking-tight">Síguenos</h3>
-  
-  <div className="grid grid-cols-3 gap-4">
-    {/* Botón Instagram */}
-    <a 
-      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
-      target="_blank" 
+{/* Social Media */}
+<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
+  <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg"
+      className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20"
     >
-      <i className="ri-instagram-line text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">Instagram</span>
+      <i className="ri-instagram-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">Instagram</span>
     </a>
 
-    {/* Botón TikTok */}
-    <a 
-      href="https://www.tiktok.com/@portaltendidodigital" 
-      target="_blank" 
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com/@portaltendidodigital"
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-black p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg border border-gray-800"
+      className="bg-black hover:bg-gray-900 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-gray-700"
     >
-      <i className="ri-tiktok-fill text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">TikTok</span>
+      <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">TikTok</span>
     </a>
 
-    {/* Botón X (Twitter) */}
-    <a 
-      href="https://x.com/ptendidodigital" 
-      target="_blank" 
+    {/* X (Twitter) */}
+    <a
+      href="https://x.com/ptendidodigital"
+      target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center justify-center bg-[#000000] p-4 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg border border-gray-800"
+      className="bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20"
     >
-      <i className="ri-twitter-x-fill text-3xl text-white mb-1"></i>
-      <span className="text-white text-[10px] font-bold uppercase tracking-tighter">X (Twitter)</span>
+      <i className="ri-twitter-x-fill text-2xl mb-2 block"></i>
+      <span className="text-sm font-medium">X (Twitter)</span>
     </a>
+
   </div>
+</div>
+</div>
+</div>
 </div>
 
     {/* Sección de Contacto */}
@@ -15169,14 +15174,20 @@ return (
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div className="flex justify-between items-center h-16 md:h-20">
-<div className="flex items-center group cursor-pointer" onClick={() => window.location.href = "/"}>
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
-              <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
-            </div>
-            <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
-              TENDIDO DIGITAL
-            </span>
-          </div>
+<div className="flex items-center group">
+<div className="relative">
+<img
+  src="/images/tendidodigitallogosimple.png"
+  alt="Tendido Digital"
+  className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
+  style={{ mixBlendMode: "multiply" }}
+/>
+<div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+</div>
+<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+TENDIDO DIGITAL
+</span>
+</div>
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
@@ -15335,6 +15346,7 @@ return (
             setIsNewsModalOpen(false);
             setSelectedNews(null);
             document.body.style.overflow = "auto";
+            window.location.href = "/";
           }}
         >
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
@@ -15350,6 +15362,7 @@ return (
             setIsNewsModalOpen(false);
             setSelectedNews(null);
             document.body.style.overflow = "auto";
+            window.history.pushState({}, "", "/");
           }}
           className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
         >
@@ -15578,35 +15591,14 @@ return (
   {/* MODAL DE CRÓNICAS - DISEÑO ULTRA PREMIUM */}
   {isChronicleModalOpen && selectedChronicle && (
     <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
-      
-      {/* NUEVA BARRA DE NAVEGACIÓN SUPERIOR (Sustituye a la X flotante) */}
-      <nav className="sticky top-0 z-[110] bg-white md:bg-white/90 md:backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
-        <div 
-          className="flex items-center gap-3 cursor-pointer group"
-          onClick={closeChronicleModal}
-        >
-          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
-            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
-          </div>
-          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
-            TENDIDO DIGITAL
-          </span>
-        </div>
+      <button onClick={closeChronicleModal} className="fixed top-6 right-6 z-[110] bg-white/10 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-xl transition-all border border-white/20 shadow-2xl">
+        <i className="ri-close-line text-2xl"></i>
+      </button>
 
-        <button 
-          onClick={closeChronicleModal}
-          className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
-        >
-          <i className="ri-arrow-left-line text-xl"></i>
-          <span className="hidden md:inline">Volver</span>
-        </button>
-      </nav>
-
-      <div className="w-full h-full overflow-y-auto overflow-x-hidden bg-gray-50" style={{ WebkitOverflowScrolling: "touch" }}>
+      <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
-        {/* Imagen Cabecera */}
-        <div className="relative w-full h-[60vh] md:h-[70vh] shrink-0 sticky top-0 z-0 bg-gray-900">
-          <img src={selectedChronicle.image} alt={selectedChronicle.title} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
+        <div className="relative w-full h-[60vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
+          <img src={selectedChronicle.image} alt={selectedChronicle.title} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-32 md:bottom-40 left-0 right-0 px-6 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
@@ -15615,7 +15607,6 @@ return (
           </div>
         </div>
 
-        {/* Tarjeta Blanca Principal */}
         <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-24 md:-mt-32 p-6 md:p-16 lg:p-24 z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.3)] min-h-screen">
           <div className="max-w-4xl mx-auto">
             
@@ -15624,19 +15615,18 @@ return (
               {selectedChronicle.plaza && <div className="flex items-center"><i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedChronicle.plaza}</div>}
             </div>
 
-            {/* Ficha del Festejo (Protegida) */}
             {selectedChronicle.torerosRaw && (
               <div className="mb-20 bg-gray-50 rounded-3xl p-8 md:p-10 border border-gray-100 shadow-inner">
                 <h3 className="font-bold text-gray-900 mb-8 flex items-center text-sm md:text-base uppercase tracking-[0.2em]">
                   <i className="ri-award-line text-red-600 mr-3 text-xl"></i> Ficha del Festejo
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {String(selectedChronicle.torerosRaw).trim().split("\n").filter(Boolean).map((line: string, i: number) => {
+                  {selectedChronicle.torerosRaw.trim().split("\n").filter(Boolean).map((line: string, i: number) => {
                     const [nombre, resultado] = line.split(":").map((s: string) => s.trim());
                     return (
                       <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 hover:shadow-md transition-shadow">
-                        <p className="font-extrabold text-gray-900 text-lg">{nombre || ""}</p>
-                        <p className="text-red-600 font-medium mt-2">{resultado || ""}</p>
+                        <p className="font-extrabold text-gray-900 text-lg">{nombre}</p>
+                        <p className="text-red-600 font-medium mt-2">{resultado}</p>
                       </div>
                     );
                   })}
@@ -15644,16 +15634,14 @@ return (
               </div>
             )}
 
-            {/* Texto Principal */}
             <div className="prose prose-xl md:prose-2xl max-w-none text-gray-800 mt-10 first-letter:text-8xl first-letter:font-black first-letter:text-red-600 first-letter:mr-4 first-letter:float-left first-letter:leading-none">
-              {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles || "")}
+              {renderArticleContent(selectedChronicle.fullContent || selectedChronicle.detalles)}
             </div>
 
-            {/* Botones Flotantes */}
             <div className="mt-24 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button onClick={() => toggleSave(selectedChronicle.id)} className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg transition-all ${savedPosts?.has(selectedChronicle.id) ? "bg-gray-900 text-white shadow-xl" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
-                <i className={savedPosts?.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
-                {savedPosts?.has(selectedChronicle.id) ? "Guardada" : "Guardar Crónica"}
+              <button onClick={() => toggleSave(selectedChronicle.id)} className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg transition-all ${savedPosts.has(selectedChronicle.id) ? "bg-gray-900 text-white shadow-xl" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
+                <i className={savedPosts.has(selectedChronicle.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
+                {savedPosts.has(selectedChronicle.id) ? "Guardada" : "Guardar Crónica"}
               </button>
               <button onClick={() => openShareModal(selectedChronicle)} className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full font-bold text-lg bg-red-600 text-white hover:bg-red-700 transition-all shadow-xl hover:shadow-red-500/30">
                 <i className="ri-share-line"></i> Compartir
