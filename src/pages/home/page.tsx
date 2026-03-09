@@ -15170,19 +15170,13 @@ return (
 <header className={`bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 ${scrollY > 50 ? 'shadow-xl bg-white' : ''}`}>
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div className="flex justify-between items-center h-16 md:h-20">
-<div className="flex items-center group">
-<div className="relative">
-<img
-  src="/images/tendidodigitallogosimple.png"
-  alt="Tendido Digital"
-  className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
-  style={{ mixBlendMode: "multiply" }}
-/>
-<div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-</div>
-<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
-TENDIDO DIGITAL
-</span>
+<div className="flex items-center group cursor-pointer" onClick={() => window.location.href = "/"}>
+  <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-500 border-2 border-white/20">
+    <img src="/images/tendidodigitallogosimple.png" alt="Tendido Digital" className="w-full h-full object-contain" />
+  </div>
+  <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent">
+    TENDIDO DIGITAL
+  </span>
 </div>
 
         {/* Navigation */}
@@ -15652,8 +15646,8 @@ TENDIDO DIGITAL
 	
 {/* Modal de Compartir */}
 {isShareModalOpen && sharePost && (
-  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-    <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+        <div className="fixed inset-0 bg-black/50 z-[120] flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
       <div className="text-center mb-6">
         <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
           <i className="ri-share-line text-white text-2xl"></i>
@@ -15678,22 +15672,15 @@ TENDIDO DIGITAL
           <span className="font-medium">Compartir en Facebook</span>
         </button>
 
-        <button onClick={copyLink} className="w-full flex items-center justify-center space-x-3 bg-gray-600 hover:bg-gray-700 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
-          <i className="ri-link text-xl"></i>
-          <span className="font-medium">Copiar enlace</span>
-        </button>
-      </div>
-
-      <button
-        onClick={closeShareModal}
-        className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all duration-300"
-      >
-        Cancelar
+        <button
+              onClick={closeShareModal}
+              className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-medium transition-all"
+            >
+              Cancelar
             </button>
           </div>
         </div>
       )}
-
     </div>
   );
 }
