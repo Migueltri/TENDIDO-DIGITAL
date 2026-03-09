@@ -13481,7 +13481,7 @@ const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
 const [news24h, setNews24h] = useState<NewsItem[]>([]);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
-const [isAppLoading, setIsAppLoading] = useState(true);
+const [isAppLoading, setIsAppLoading] = useState(false);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
