@@ -13651,9 +13651,12 @@ function formatTimeAgo(dateString: string): string {
             return 0; // Mantienen el orden de fecha si ambas están fijadas o ninguna lo está
         });
 
-        // 9. Inyectar las fijadas también en el Slider gigante para máxima visibilidad
+        // 9. Inyectar TODAS las fijadas en el Slider gigante sin límite de cantidad
         const pinnedNews = finalNewsList.filter(n => n.isPinned);
-        const sliderNews = [...pinnedNews, ...breakingNews.filter(n => !n.isPinned)].slice(0, 6);
+        const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 4); // Deja hasta 4 normales de relleno
+        
+        // Juntamos las fijadas (sin límite) + las normales
+        const sliderNews = [...pinnedNews, ...unpinnedBreaking];
 
         setNews24h(sliderNews.length > 0 ? sliderNews : finalNewsList.slice(0, 4));
         setCombinedNews(finalNewsList);
