@@ -14617,6 +14617,16 @@ return (
             {/* Degradado negro inferior */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
 
+			  {/* Indicador de Noticia Fijada (Slider) */}
+            {post.isPinned && (
+              <div 
+                className="absolute top-6 right-6 md:top-8 md:right-8 z-30 bg-black/60 text-white w-10 h-10 flex items-center justify-center rounded-full backdrop-blur-md border border-white/30 shadow-md"
+                title="Noticia Fijada"
+              >
+                <i className="ri-pushpin-fill text-lg"></i>
+              </div>
+            )}
+
             {/* Contenido (Textos sobre la imagen) */}
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-16 lg:p-24 z-20 flex flex-col justify-end h-full">
               <div className="max-w-5xl">
