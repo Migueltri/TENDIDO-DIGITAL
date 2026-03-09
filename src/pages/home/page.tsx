@@ -14759,94 +14759,76 @@ return (
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col gap-12"> {/* Cambiamos grid por flex col para un estilo editorial */}
                 {getFilteredNews()
                   .slice(0, visibleNewsCount)
                   .map((news) => (
                     <article
                       key={news.id}
-                      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer group border border-gray-100 flex flex-col h-full"
+                      className="group relative flex flex-col md:flex-row bg-white rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 cursor-pointer border border-gray-100"
                       onClick={() => openNewsModal(news)}
                     >
-                      <div className="relative overflow-hidden">
+                      {/* Imagen con contenedor dinámico */}
+                      <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden">
                         <img
                           src={news.image}
                           alt={news.title}
-                          className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                          loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
-                        {/* Indicador de Noticia Fijada (Cuadrícula) */}
+                        {/* Indicador de Noticia Fijada (SVG que ya arreglamos) */}
                         {news.isPinned && (
-                          <div 
-                            className="absolute top-4 right-4 z-30 bg-black/60 text-white w-8 h-8 flex items-center justify-center rounded-full backdrop-blur-md border border-white/30 shadow-md"
-                            title="Noticia Fijada"
-                          >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                          <div className="absolute top-4 left-4 z-30 bg-black/60 text-white w-9 h-9 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                               <path d="M22.3137 10.1716L13.8284 1.68629L12.4142 3.1005L13.1213 3.80761L8.87868 8.05025L5.34315 7.34315L3.92893 8.75736L8.17157 13L3.22183 17.9497L4.63604 19.364L9.58579 14.4142L13.8284 18.6569L15.2426 17.2426L14.5355 13.7071L18.7782 9.46447L19.4853 10.1716L20.8995 8.75736L22.3137 10.1716Z"></path>
                             </svg>
                           </div>
                         )}
+                      </div>
 
-                        <div className="absolute top-4 left-4">
-                          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                      {/* Contenido de la Noticia */}
+                      <div className="flex-1 p-8 md:p-10 flex flex-col justify-center">
+                        <div className="flex items-center gap-4 mb-4">
+                          <span className="bg-red-50 text-red-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-red-100">
                             {news.category}
                           </span>
+                          <span className="text-gray-400 text-sm font-medium flex items-center">
+                            <i className="ri-calendar-line mr-2"></i>
+                            {news.date}
+                          </span>
                         </div>
-                      </div>
-                      
-                      <div className="p-6 flex flex-col flex-1">
-                        <div className="flex items-center text-gray-500 text-xs mb-3 font-medium">
-                          <i className="ri-calendar-line mr-1.5 text-red-600"></i>
-                          <span>{news.date}</span>
-                          {news.author && (
-                            <>
-                              <span className="mx-2">•</span>
-                              <i className="ri-user-line mr-1.5 text-red-600"></i>
-                              <span className="truncate max-w-[120px]">{news.author}</span>
-                            </>
-                          )}
-                        </div>
-                        
-                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 leading-snug line-clamp-2">
+
+                        <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 leading-tight">
                           {news.title}
                         </h3>
-                        
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+
+                        <p className="text-gray-600 text-lg leading-relaxed mb-6 line-clamp-2 md:line-clamp-3 font-light">
                           {news.excerpt || news.summary}
                         </p>
-                        
-                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
-                          <div className="flex space-x-3">
+
+                        <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-50">
+                          <div className="flex items-center text-gray-900 font-bold group-hover:translate-x-2 transition-transform duration-300">
+                            Leer artículo completo
+                            <i className="ri-arrow-right-line ml-2 text-red-600"></i>
+                          </div>
+                          
+                          <div className="flex gap-2">
                             <button
-                              onClick={(e) => toggleSave(news.id, e)}
-                              className={`p-2 rounded-full transition-colors ${
-                                savedPosts.has(news.id)
-                                  ? "bg-yellow-50 text-yellow-600"
-                                  : "bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+                              onClick={(e) => { e.stopPropagation(); toggleSave(news.id); }}
+                              className={`p-3 rounded-full transition-all ${
+                                savedPosts.has(news.id) ? "bg-yellow-50 text-yellow-600" : "text-gray-400 hover:bg-gray-100"
                               }`}
-                              aria-label="Guardar"
                             >
-                              <i className={savedPosts.has(news.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i>
-                            </button>
-                            <button
-                              onClick={(e) => openShareModal(news, e)}
-                              className="p-2 rounded-full bg-gray-50 text-gray-400 hover:bg-red-600 hover:text-white transition-colors"
-                              aria-label="Compartir"
-                            >
-                              <i className="ri-share-line"></i>
+                              <i className={savedPosts.has(news.id) ? "ri-bookmark-fill text-xl" : "ri-bookmark-line text-xl"}></i>
                             </button>
                           </div>
-                          <span className="text-red-600 font-bold text-sm flex items-center group-hover:translate-x-1 transition-transform">
-                            Leer más <i className="ri-arrow-right-s-line ml-1"></i>
-                          </span>
                         </div>
                       </div>
                     </article>
                   ))}
               </div>
-
+				
               {visibleNewsCount < getFilteredNews().length && (
                 <div className="mt-12 text-center">
                   <button
