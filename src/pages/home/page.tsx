@@ -15374,7 +15374,7 @@ TENDIDO DIGITAL
       <div className="w-full h-full overflow-y-auto overflow-x-hidden bg-gray-50" style={{ WebkitOverflowScrolling: "touch" }}>
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
-        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-10 bg-gray-900">
+        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
           <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
@@ -15531,7 +15531,7 @@ TENDIDO DIGITAL
 
       <div className="w-full h-full overflow-y-auto overflow-x-hidden bg-gray-50" style={{ WebkitOverflowScrolling: "touch" }}>
         
-        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-10 bg-gray-900">
+        <div className="relative w-full h-[55vh] md:h-[70vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
           <img src={selectedChronicle?.image || ""} alt={selectedChronicle?.title || "Crónica"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
