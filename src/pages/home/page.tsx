@@ -14803,26 +14803,28 @@ return (
               <div className="flex flex-col gap-12"> {/* Cambiamos grid por flex col para un estilo editorial */}
                 {getFilteredNews()
                   .slice(0, visibleNewsCount)
-                  .map((news) => {
+                  .map((news, index) => {
                     // Defensa 1: Si la noticia viene corrupta de la base de datos, la saltamos sin petar la web
                     if (!news) return null; 
 
                     return (
                     <div key={news.id || Math.random()} className="flex flex-col gap-4">
                       {/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="block w-full hover:opacity-80 transition-opacity z-10"
->
-  <img 
-    src="/images/bannertomas.jpg"
-    alt="Prensa Tomás González" 
-    className="w-full h-auto object-contain" 
-  />
-</a>
+{index > 0 && index % 3 === 0 && (
+  <a 
+    href="https://www.instagram.com/prensa.tomas.gonzalez" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    onClick={(e) => e.stopPropagation()} 
+    className="block w-full hover:opacity-80 transition-opacity z-10"
+  >
+    <img 
+      src="/images/bannertomas.jpg" 
+      alt="Prensa Tomás González" 
+      className="w-full h-auto object-contain" 
+    />
+  </a>
+)}
 {/* FIN TIRA INSTAGRAM PORTADA */}
                       
                       <article
