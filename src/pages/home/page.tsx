@@ -14369,6 +14369,18 @@ Noticias Guardadas
         </>
       )}
               <div className="relative overflow-hidden">
+				  {/* INICIO TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-black text-white py-2 px-3 rounded-t-xl hover:bg-gray-800 transition-colors z-10 relative"
+>
+  <i className="ri-instagram-line text-lg mr-2"></i>
+  <span className="font-bold text-xs tracking-widest uppercase">Prensa Tomás González</span>
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
                 <img
                   src={post.image}
                   alt={post.title}
@@ -15428,17 +15440,6 @@ TENDIDO DIGITAL
                 {selectedNews.category}
               </span>
             )}
-			  {/* INICIO TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="flex items-center justify-center w-full bg-black text-white py-3 px-4 mb-4 shadow-sm hover:bg-gray-800 transition-colors"
->
-  <i className="ri-instagram-line text-xl mr-2"></i>
-  <span className="font-bold text-sm tracking-widest uppercase">Prensa Tomás González</span>
-</a>
-{/* FIN TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
               {selectedNews?.title || ""}
             </h1>
