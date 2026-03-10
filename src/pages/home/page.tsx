@@ -14373,31 +14373,6 @@ Noticias Guardadas
               onClick={() => openNewsModal(post)}
             >
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
-      {news24h.length > 1 && (
-        <>
-          <button 
-            onClick={(e) => {
-              e.stopPropagation(); // Evita que se abra la noticia al pulsar la flecha
-              setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
-            }}
-            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-            aria-label="Anterior noticia"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
-          
-          <button 
-            onClick={(e) => {
-              e.stopPropagation();
-              setCurrentSlide(prev => (prev + 1) % news24h.length);
-            }}
-            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-red-600 text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all z-30 shadow-lg backdrop-blur-sm border border-white/20"
-            aria-label="Siguiente noticia"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
-        </>
-      )}
               <div className="relative overflow-hidden">
                 <img
                   src={post.image}
@@ -14733,7 +14708,32 @@ return (
         ))}
 
         {/* FLECHAS DE NAVEGACIÓN MANUALES */}
-		  
+        {news24h.length > 1 && (
+          <div className="absolute inset-0 pointer-events-none flex items-center justify-between px-4 md:px-8 z-30">
+            <button 
+              onClick={(e) => {
+                e.stopPropagation(); 
+                setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
+              }}
+              className="pointer-events-auto bg-black/40 hover:bg-red-600 text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
+              aria-label="Anterior noticia"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrentSlide(prev => (prev + 1) % news24h.length);
+              }}
+              className="pointer-events-auto bg-black/40 hover:bg-red-600 text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
+              aria-label="Siguiente noticia"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        )}
+
         {/* Indicadores (Puntitos de abajo) */}
         <div className="absolute bottom-8 right-8 md:bottom-12 md:right-16 flex space-x-3 z-30">
           {news24h.map((_, index) => (
