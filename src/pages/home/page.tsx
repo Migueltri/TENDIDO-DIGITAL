@@ -14430,7 +14430,11 @@ Noticias Guardadas
             <h3 className="text-xl font-bold text-gray-900 mb-2">No hay noticias guardadas</h3>
             <p className="text-gray-600 mb-6">Guarda tus noticias favoritas para leerlas más tarde</p>
             <button 
-              onClick={() => setActiveTab('inicio')}
+              onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('todas'); 
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}}
               className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-full font-bold hover:from-red-700 hover:to-red-600 transition-all duration-300"
             >
               Explorar noticias
@@ -15264,7 +15268,11 @@ TENDIDO DIGITAL
             }`}></span>
           </button>
           <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('todas'); scrollToSection('actualidad'); }}
+  onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('actualidad'); 
+  document.getElementById('actualidad')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+}}
   className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
     newsFilter === 'todas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
   }`}
@@ -15275,7 +15283,11 @@ TENDIDO DIGITAL
   }`}></span>
 </button>
           <button 
-            onClick={() => {setActiveTab('inicio'); scrollToSection('actualidad');}} 
+            onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('actualidad'); 
+  document.getElementById('actualidad')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+}} 
             className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
               activeTab === 'actualidad' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
             }`}
@@ -15286,7 +15298,11 @@ TENDIDO DIGITAL
             }`}></span>
           </button>
           <button 
-            onClick={() => setActiveTab('cronicas')} 
+            onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('cronicas'); 
+  document.getElementById('actualidad')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+}}
             className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
               activeTab === 'cronicas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
             }`}
@@ -15297,7 +15313,11 @@ TENDIDO DIGITAL
             }`}></span>
           </button>
           <button 
-  onClick={() => setActiveTab('entrevistas')} 
+  onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('entrevistas'); 
+  document.getElementById('actualidad')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+}}
   className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
     activeTab === 'entrevistas' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
   }`}
@@ -15308,7 +15328,11 @@ TENDIDO DIGITAL
   }`}></span>
 </button>
           <button 
-  onClick={() => { setActiveTab('inicio'); setNewsFilter('opinion'); scrollToSection('actualidad'); }}
+  onClick={() => { 
+  setActiveTab('inicio'); 
+  setNewsFilter('opinion'); 
+  document.getElementById('actualidad')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+}}
   className={`relative font-semibold transition-all duration-300 cursor-pointer group text-sm lg:text-base tracking-wide ${
     newsFilter === 'opinion' ? 'text-red-600' : 'text-gray-900 hover:text-red-600'
   }`}
