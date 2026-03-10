@@ -15507,25 +15507,19 @@ TENDIDO DIGITAL
               </div>
             )}
 
-            <div className="flex items-center gap-3 mt-4 w-full">
-  {/* Botón Guardar */}
-  <button 
-    onClick={AQUI_TU_ONCLICK_DE_GUARDAR} 
-    className="flex-1 h-11 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
-  >
-    <i className="ri-bookmark-line text-lg"></i>
-    <span className="font-semibold text-sm">Guardar</span>
-  </button>
-
-  {/* Botón Compartir */}
-  <button 
-    onClick={() => shareNative(selectedItem)} 
-    className="flex-1 h-11 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
-  >
-    <i className="ri-share-line text-lg"></i>
-    <span className="font-semibold text-sm">Compartir</span>
-  </button>
-</div>
+            {/* Botones Flotantes */}
+            <div className="mt-20 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(selectedNews?.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold transition-all ${savedPosts?.has(selectedNews?.id) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
+                <i className={savedPosts?.has(selectedNews?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i> Guardar
+              </button>
+              <button 
+  onClick={() => shareNative(selectedNews)} 
+  className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-full transition-colors ml-2"
+>
+  <i className="ri-share-line text-lg"></i>
+  <span className="font-semibold text-sm">Compartir noticia</span>
+</button>
+            </div>
 
           </div>
         </div>
@@ -15693,6 +15687,13 @@ TENDIDO DIGITAL
 {isShareModalOpen && sharePost && (
   <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
     <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl transform transition-all duration-300">
+      <div className="text-center mb-6">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+          <i className="ri-share-line text-white text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">Compartir Noticia</h3>
+        <p className="text-gray-600 text-sm">Comparte esta noticia con tus amigos</p>
+      </div>
 
       <div className="space-y-3 mb-6">
         <button onClick={shareToWhatsApp} className="w-full flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-105">
