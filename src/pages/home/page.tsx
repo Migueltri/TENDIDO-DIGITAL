@@ -14954,39 +14954,42 @@ return (
 <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
   <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+{/* INICIO NUEVO PANEL DE REDES SOCIALES */}
+<div className="grid grid-cols-3 gap-3 mt-4">
+  {/* Botón Instagram */}
+  <a 
+    href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-rose-50 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+  >
+    <i className="ri-instagram-fill text-3xl text-gray-400 group-hover:text-rose-600 mb-2 transition-colors"></i>
+    <span className="text-xs font-extrabold text-gray-500 group-hover:text-rose-600 uppercase tracking-wide transition-colors">Instagram</span>
+  </a>
 
-    {/* Instagram */}
-    <a
-      href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg=="
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-pink-600 hover:bg-pink-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-pink-500/20"
-    >
-      <i className="ri-instagram-fill text-2xl mb-2 block"></i>
-      <span className="text-sm font-medium">Instagram</span>
-    </a>
+  {/* Botón TikTok */}
+  <a 
+    href="https://www.tiktok.com/@portaltendidodigital" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-gray-100 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+  >
+    <i className="ri-tiktok-fill text-3xl text-gray-400 group-hover:text-black mb-2 transition-colors"></i>
+    <span className="text-xs font-extrabold text-gray-500 group-hover:text-black uppercase tracking-wide transition-colors">TikTok</span>
+  </a>
 
-    {/* TikTok */}
-    <a
-      href="https://www.tiktok.com/@portaltendidodigital"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-black hover:bg-gray-900 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-gray-700"
-    >
-      <i className="ri-tiktok-fill text-2xl mb-2 block"></i>
-      <span className="text-sm font-medium">TikTok</span>
-    </a>
-
-    {/* X (Twitter) */}
-    <a
-      href="https://x.com/ptendidodigital"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center transition-all duration-300 transform hover:scale-105 cursor-pointer border border-blue-500/20"
-    >
-      <i className="ri-twitter-x-fill text-2xl mb-2 block"></i>
-      <span className="text-sm font-medium">X (Twitter)</span>
-    </a>
+  {/* Botón Twitter */}
+  <a 
+    href="https://x.com/ptendidodigital" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-sky-50 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+  >
+    <i className="ri-twitter-fill text-3xl text-gray-400 group-hover:text-sky-500 mb-2 transition-colors"></i>
+    <span className="text-xs font-extrabold text-gray-500 group-hover:text-sky-500 uppercase tracking-wide transition-colors">Twitter</span>
+  </a>
+</div>
+{/* FIN NUEVO PANEL DE REDES SOCIALES */}
 
   </div>
 </div>
