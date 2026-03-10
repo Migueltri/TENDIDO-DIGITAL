@@ -15419,17 +15419,6 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
-          {/* INICIO TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="flex items-center justify-center w-full bg-gray-900 text-white py-3 px-4 mb-5 rounded-lg shadow-sm hover:bg-gray-800 transition-colors"
->
-  <i className="ri-instagram-line text-xl mr-2"></i>
-  <span className="font-bold text-sm tracking-wide uppercase">Prensa Tomás González</span>
-</a>
-{/* FIN TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
 		    <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
@@ -15439,6 +15428,17 @@ TENDIDO DIGITAL
                 {selectedNews.category}
               </span>
             )}
+			  {/* INICIO TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="flex items-center justify-center w-full bg-black text-white py-3 px-4 mb-4 shadow-sm hover:bg-gray-800 transition-colors"
+>
+  <i className="ri-instagram-line text-xl mr-2"></i>
+  <span className="font-bold text-sm tracking-widest uppercase">Prensa Tomás González</span>
+</a>
+{/* FIN TIRA INSTAGRAM PRENSA TOMAS GONZALEZ */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
               {selectedNews?.title || ""}
             </h1>
