@@ -14812,6 +14812,18 @@ return (
                       {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
                         {news.image && (
+						{/* INICIO TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
+>
+  <i className="ri-instagram-line text-base mr-2"></i>
+  Prensa Tomás González
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
                           <img
                             src={news.image}
                             alt={news.title || "Noticia Taurina"}
@@ -15419,18 +15431,6 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
-			{/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-black text-white py-2 px-3 rounded-t-xl hover:bg-gray-800 transition-colors z-10 relative"
->
-  <i className="ri-instagram-line text-lg mr-2"></i>
-  <span className="font-bold text-xs tracking-widest uppercase">Prensa Tomás González</span>
-</a>
-{/* FIN TIRA INSTAGRAM PORTADA */}
 		    <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
@@ -15529,18 +15529,6 @@ TENDIDO DIGITAL
                     if (!url) return null;
                     return (
                       <div key={idx} className="relative rounded-2xl overflow-hidden bg-gray-100">
-						{/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
->
-  <i className="ri-instagram-line text-base mr-2"></i>
-  Prensa Tomás González
-</a>
-{/* FIN TIRA INSTAGRAM PORTADA */}
                         {/* loading="lazy" es vital aquí */}
                         <img src={url} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
                       </div>
