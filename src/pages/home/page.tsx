@@ -14800,6 +14800,18 @@ return (
                 {getFilteredNews()
                   .slice(0, visibleNewsCount)
                   .map((news) => {
+					{/* INICIO TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
+>
+  <i className="ri-instagram-line text-base mr-2"></i>
+  Prensa Tomás González
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
                     // Defensa 1: Si la noticia viene corrupta de la base de datos, la saltamos sin petar la web
                     if (!news) return null; 
 
