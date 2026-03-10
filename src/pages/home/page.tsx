@@ -13528,6 +13528,21 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
+// Detectar enlaces de noticias compartidas al abrir la web
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
+    
+    if (noticiaId) {
+      // Sustituye 'todasLasNoticias' por el nombre real de tu array/lista de noticias
+      const noticiaDirecta = todasLasNoticias.find(n => n.id.toString() === noticiaId);
+      if (noticiaDirecta) {
+        setSelectedNews(noticiaDirecta);
+        setIsNewsModalOpen(true);
+      }
+    }
+  }, []);
+	
 // --- 1. CARGA DE DATOS UNIFICADA Y SEGURA ---
   useEffect(() => {
     const loadData = async () => {
@@ -14110,7 +14125,7 @@ setIsMenuOpen(false);
     
     // Al abrir manual, cambiamos la URL arriba
     const encodedId = btoa(`news-${news.id}`);
-    window.history.pushState({ page: 'article' }, '', `/?p=${encodedId}`);
+    window.history.pushState({ id: news.id }, "", "?noticia=" + news.id);
   };
 
   const closeNewsModal = () => {
@@ -15362,7 +15377,7 @@ TENDIDO DIGITAL
             setIsNewsModalOpen(false);
             setSelectedNews(null);
             document.body.style.overflow = "auto";
-            window.history.pushState({}, "", "/");
+            window.history.pushState({}, "", window.location.pathname);
           }}
           className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
         >
