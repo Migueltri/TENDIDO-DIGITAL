@@ -14951,49 +14951,51 @@ return (
           </div>
 
 {/* Social Media */}
-<div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-lg border border-gray-700">
   <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-{/* INICIO NUEVO PANEL DE REDES SOCIALES */}
-<div className="grid grid-cols-3 gap-3 mt-4">
-  {/* Botón Instagram */}
+{/* INICIO PANEL SÍGUENOS PREMIUM */}
+<div className="grid grid-cols-3 gap-2 w-full mt-5 mb-8">
+  {/* Tarjeta Instagram */}
   <a 
-    href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
+    href="PEGAR_AQUI_TU_ENLACE_INSTAGRAM" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-rose-50 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+    className="flex flex-col items-center justify-center p-3 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-pink-200 group transition-all duration-300"
   >
-    <i className="ri-instagram-fill text-3xl text-gray-400 group-hover:text-rose-600 mb-2 transition-colors"></i>
-    <span className="text-xs font-extrabold text-gray-500 group-hover:text-rose-600 uppercase tracking-wide transition-colors">Instagram</span>
+    <div className="w-12 h-12 rounded-full bg-pink-50 flex items-center justify-center mb-2 group-hover:bg-pink-500 transition-colors duration-300">
+      <i className="ri-instagram-fill text-2xl text-pink-600 group-hover:text-white transition-colors duration-300"></i>
+    </div>
+    <span className="text-[10px] font-extrabold text-gray-500 group-hover:text-pink-600 uppercase tracking-widest transition-colors">Instagram</span>
   </a>
 
-  {/* Botón TikTok */}
+  {/* Tarjeta TikTok */}
   <a 
-    href="https://www.tiktok.com/@portaltendidodigital" 
+    href="PEGAR_AQUI_TU_ENLACE_TIKTOK" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-gray-100 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+    className="flex flex-col items-center justify-center p-3 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-gray-300 group transition-all duration-300"
   >
-    <i className="ri-tiktok-fill text-3xl text-gray-400 group-hover:text-black mb-2 transition-colors"></i>
-    <span className="text-xs font-extrabold text-gray-500 group-hover:text-black uppercase tracking-wide transition-colors">TikTok</span>
+    <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mb-2 group-hover:bg-black transition-colors duration-300">
+      <i className="ri-tiktok-fill text-2xl text-black group-hover:text-white transition-colors duration-300"></i>
+    </div>
+    <span className="text-[10px] font-extrabold text-gray-500 group-hover:text-black uppercase tracking-widest transition-colors">TikTok</span>
   </a>
 
-  {/* Botón Twitter */}
+  {/* Tarjeta Twitter / X */}
   <a 
-    href="https://x.com/ptendidodigital" 
+    href="PEGAR_AQUI_TU_ENLACE_TWITTER" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex flex-col items-center justify-center bg-gray-50 hover:bg-sky-50 border border-gray-100 py-4 px-2 rounded-xl transition-all duration-300 hover:shadow-md group"
+    className="flex flex-col items-center justify-center p-3 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-sky-200 group transition-all duration-300"
   >
-    <i className="ri-twitter-fill text-3xl text-gray-400 group-hover:text-sky-500 mb-2 transition-colors"></i>
-    <span className="text-xs font-extrabold text-gray-500 group-hover:text-sky-500 uppercase tracking-wide transition-colors">Twitter</span>
+    <div className="w-12 h-12 rounded-full bg-sky-50 flex items-center justify-center mb-2 group-hover:bg-sky-500 transition-colors duration-300">
+      <i className="ri-twitter-fill text-2xl text-sky-500 group-hover:text-white transition-colors duration-300"></i>
+    </div>
+    <span className="text-[10px] font-extrabold text-gray-500 group-hover:text-sky-500 uppercase tracking-widest transition-colors">Twitter</span>
   </a>
 </div>
-{/* FIN NUEVO PANEL DE REDES SOCIALES */}
+{/* FIN PANEL SÍGUENOS PREMIUM */}
 
   </div>
-</div>
-</div>
 </div>
 </div>
 
