@@ -14401,6 +14401,14 @@ Noticias Guardadas
                     >
                       <i className={`${savedPosts.has(post.id) ? 'ri-bookmark-fill' : 'ri-bookmark-line'} text-lg`}></i>
                     </button>
+                    
+                    <button 
+                      onClick={(e) => openShareModal(post, e)}
+                      className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
+                      aria-label="Compartir noticia"
+                    >
+                      <i className="ri-share-line text-lg"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -15524,13 +15532,9 @@ TENDIDO DIGITAL
               <button onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(selectedNews?.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold transition-all ${savedPosts?.has(selectedNews?.id) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
                 <i className={savedPosts?.has(selectedNews?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i> Guardar
               </button>
-              <button 
-                      onClick={(e) => openShareModal(post, e)}
-                      className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
-                      aria-label="Compartir noticia"
-                    >
-                      <i className="ri-share-line text-lg"></i>
-                    </button>
+              <button onClick={(e) => { e.stopPropagation(); typeof openShareModal === 'function' && openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold bg-red-600 text-white">
+                <i className="ri-share-line"></i> Compartir
+              </button>
             </div>
 
           </div>
