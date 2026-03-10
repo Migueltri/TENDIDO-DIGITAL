@@ -14806,16 +14806,17 @@ return (
                     return (
                     <div key={news.id || Math.random()} className="flex flex-col gap-4">
                       {/* INICIO TIRA INSTAGRAM PORTADA */}
-                      <a 
-                        href="https://www.instagram.com/prensa.tomas.gonzalez" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full bg-black text-white py-2.5 px-4 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors rounded-xl shadow-sm"
-                      >
-                        <i className="ri-instagram-line text-lg mr-2"></i>
-                        Prensa Tomás González
-                      </a>
-                      {/* FIN TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-transparent text-black py-2 px-4 text-sm md:text-base font-black uppercase tracking-[0.2em] hover:text-red-600 transition-colors"
+>
+  <i className="ri-instagram-line text-2xl mr-3"></i>
+  Prensa Tomás González
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
                       
                       <article
                       className="group relative flex flex-col md:flex-row bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer border border-gray-100"
