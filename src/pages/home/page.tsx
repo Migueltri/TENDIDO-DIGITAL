@@ -15529,6 +15529,18 @@ TENDIDO DIGITAL
                     if (!url) return null;
                     return (
                       <div key={idx} className="relative rounded-2xl overflow-hidden bg-gray-100">
+						{/* INICIO TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
+>
+  <i className="ri-instagram-line text-base mr-2"></i>
+  Prensa Tomás González
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
                         {/* loading="lazy" es vital aquí */}
                         <img src={url} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
                       </div>
