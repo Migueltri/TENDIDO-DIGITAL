@@ -14800,41 +14800,29 @@ return (
                 {getFilteredNews()
                   .slice(0, visibleNewsCount)
                   .map((news) => {
-					{/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
->
-  <i className="ri-instagram-line text-base mr-2"></i>
-  Prensa Tomás González
-</a>
-{/* FIN TIRA INSTAGRAM PORTADA */}
                     // Defensa 1: Si la noticia viene corrupta de la base de datos, la saltamos sin petar la web
                     if (!news) return null; 
 
                     return (
-                    <article
-                      key={news.id || Math.random()}
+                    <div key={news.id || Math.random()} className="flex flex-col gap-4">
+                      {/* INICIO TIRA INSTAGRAM PORTADA */}
+                      <a 
+                        href="https://www.instagram.com/prensa.tomas.gonzalez" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-full bg-black text-white py-2.5 px-4 text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors rounded-xl shadow-sm"
+                      >
+                        <i className="ri-instagram-line text-lg mr-2"></i>
+                        Prensa Tomás González
+                      </a>
+                      {/* FIN TIRA INSTAGRAM PORTADA */}
+                      
+                      <article
                       className="group relative flex flex-col md:flex-row bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer border border-gray-100"
                       onClick={() => typeof openNewsModal === 'function' && openNewsModal(news)}
                     >
                       {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
-						{/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-black text-white py-2 px-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors z-10"
->
-  <i className="ri-instagram-line text-base mr-2"></i>
-  Prensa Tomás González
-</a>
-{/* FIN TIRA INSTAGRAM PORTADA */}
                         {news.image && (
                           <img
                             src={news.image}
