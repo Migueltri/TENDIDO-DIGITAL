@@ -13688,26 +13688,6 @@ function formatTimeAgo(dateString: string): string {
 const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
 const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 const [sharePost, setSharePost] = useState<NewsItem | OpinionArticle | Chronicle | null>(null);
-
-const shareNative = async (noticia: any) => {
-    if (!noticia) return;
-    const urlConId = `${window.location.origin}${window.location.pathname}?noticia=${noticia.id}`;
-    
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: noticia.title || 'Tendido Digital',
-          text: `Mira esta noticia: ${noticia.title}`,
-          url: urlConId,
-        });
-      } catch (error) {
-        console.log('Error compartiendo', error);
-      }
-    } else {
-      navigator.clipboard.writeText(urlConId);
-      alert('Enlace copiado: ' + urlConId);
-    }
-  };
 	
 // Estados para formularios
 const [newsletterEmail, setNewsletterEmail] = useState('');
