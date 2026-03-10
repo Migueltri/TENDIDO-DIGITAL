@@ -13689,6 +13689,26 @@ const [savedPosts, setSavedPosts] = useState<Set<number>>(new Set());
 const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 const [sharePost, setSharePost] = useState<NewsItem | OpinionArticle | Chronicle | null>(null);
 
+const shareNative = async (noticia: any) => {
+    if (!noticia) return;
+    const urlConId = `${window.location.origin}${window.location.pathname}?noticia=${noticia.id}`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: noticia.title || 'Tendido Digital',
+          text: `Mira esta noticia: ${noticia.title}`,
+          url: urlConId,
+        });
+      } catch (error) {
+        console.log('Error compartiendo', error);
+      }
+    } else {
+      navigator.clipboard.writeText(urlConId);
+      alert('Enlace copiado: ' + urlConId);
+    }
+  };
+	
 // Estados para formularios
 const [newsletterEmail, setNewsletterEmail] = useState('');
 const [isNewsletterSubmitting, setIsNewsletterSubmitting] = useState(false);
@@ -13703,6 +13723,25 @@ message: ''
 const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 const [contactMessage, setContactMessage] = useState('');
 
+// DEEP LINKING: Lector automático de enlaces compartidos
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
+    
+    // Unimos los arrays de noticias principales que he visto en tu código
+    const todasLasNoticias = [...(typeof featuredNews !== 'undefined' ? featuredNews : []), ...(typeof latestNews !== 'undefined' ? latestNews : [])];
+    
+    if (noticiaId && todasLasNoticias.length > 0) {
+      const noticiaAObir = todasLasNoticias.find(n => String(n.id) === String(noticiaId));
+      if (noticiaAObir) {
+        // Retrasamos 200ms para asegurar que la web cargó antes de abrir el modal
+        setTimeout(() => {
+           openNewsModal(noticiaAObir);
+        }, 200);
+      }
+    }
+  }, []);
+	
 // Schema.org JSON-LD para SEO
 useEffect(() => {
 const schemaData = {
@@ -15507,19 +15546,29 @@ TENDIDO DIGITAL
               </div>
             )}
 
-            {/* Botones Flotantes */}
-            <div className="mt-20 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(selectedNews?.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold transition-all ${savedPosts?.has(selectedNews?.id) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
-                <i className={savedPosts?.has(selectedNews?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i> Guardar
-              </button>
-              <button 
-  onClick={() => shareNative(selectedNews)} 
-  className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-full transition-colors ml-2"
->
-  <i className="ri-share-line text-lg"></i>
-  <span className="font-semibold text-sm">Compartir noticia</span>
-</button>
-            </div>
+            {/* CONTENEDOR BOTONES GEMELOS */}
+<div className="flex items-center gap-3 mt-4 w-full">
+  {/* Botón Guardar */}
+  <button 
+    onClick={(e) => { 
+  e.stopPropagation(); 
+  typeof toggleSave === 'function' && toggleSave(selectedNews?.id); 
+}}
+    className="flex-1 h-12 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
+  >
+    <i className="ri-bookmark-line text-lg"></i>
+    <span className="font-semibold text-sm">Guardar</span>
+  </button>
+
+  {/* Botón Compartir */}
+  <button 
+    onClick={() => shareNative(selectedNews)} 
+    className="flex-1 h-12 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
+  >
+    <i className="ri-share-line text-lg"></i>
+    <span className="font-semibold text-sm">Compartir</span>
+  </button>
+</div>
 
           </div>
         </div>
