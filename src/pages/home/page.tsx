@@ -14091,33 +14091,22 @@ block: 'start'
 setIsMenuOpen(false);
 };
 	
-  // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Porque combinedNews ya existe)
+  // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Deep Linking ?noticia=123)
   useEffect(() => {
-    if (combinedNews.length === 0) return; // Esperamos a que estén listas las nuevas
+    if (combinedNews.length === 0) return;
 
     const params = new URLSearchParams(window.location.search);
-    const p = params.get('p');
-    if (p) {
-      try {
-        let padded = p;
-        while (padded.length % 4 !== 0) padded += "=";
-        const decoded = atob(padded);
-        const idString = decoded.replace("news-", "");
-        
-        // Buscamos en combinedNews, que ya contiene todas
-        const selected = combinedNews.find((n) => String(n.id) === String(idString));
+    const noticiaId = params.get('noticia');
+    if (noticiaId) {
+        const selected = combinedNews.find((n) => String(n.id) === String(noticiaId));
         if (selected) {
           setSelectedNews(selected as any);
           setIsNewsModalOpen(true);
           document.body.style.overflow = "hidden";
           document.body.style.position = "fixed";
           document.body.style.width = "100%";
-          // Sustituimos la URL inicial para no duplicar el historial
-          window.history.replaceState({ page: 'article' }, '', `/?p=${p}`);
+          window.history.replaceState({ page: 'article' }, '', `/?noticia=${noticiaId}`);
         }
-      } catch (error) {
-        console.error("Error decodificando parámetro p:", error);
-      }
     }
   }, [combinedNews]);
 
@@ -15423,15 +15412,6 @@ TENDIDO DIGITAL
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
               {selectedNews?.title || ""}
             </h1>
-			  {/* INICIO BOTON COMPARTIR NATIVO */}
-<button 
-  onClick={() => shareNative(selectedNews)} 
-  className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg mt-4 transition-colors"
->
-  <i className="ri-share-line text-lg"></i>
-  <span className="font-semibold text-sm">Compartir Noticia</span>
-</button>
-{/* FIN BOTON COMPARTIR NATIVO */}
           </div>
         </div>
 
@@ -15532,9 +15512,13 @@ TENDIDO DIGITAL
               <button onClick={(e) => { e.stopPropagation(); typeof toggleSave === 'function' && toggleSave(selectedNews?.id); }} className={`w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold transition-all ${savedPosts?.has(selectedNews?.id) ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
                 <i className={savedPosts?.has(selectedNews?.id) ? "ri-bookmark-fill" : "ri-bookmark-line"}></i> Guardar
               </button>
-              <button onClick={(e) => { e.stopPropagation(); typeof openShareModal === 'function' && openShareModal(selectedNews); }} className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold bg-red-600 text-white">
-                <i className="ri-share-line"></i> Compartir
-              </button>
+              <button 
+  onClick={() => shareNative(selectedNews)} 
+  className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-full transition-colors ml-2"
+>
+  <i className="ri-share-line text-lg"></i>
+  <span className="font-semibold text-sm">Compartir noticia</span>
+</button>
             </div>
 
           </div>
