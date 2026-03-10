@@ -14811,7 +14811,6 @@ return (
                     >
                       {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
-                        {news.image && (
 						{/* INICIO TIRA INSTAGRAM PORTADA */}
 <a 
   href="https://www.instagram.com/prensa.tomas.gonzalez" 
@@ -14824,6 +14823,7 @@ return (
   Prensa Tomás González
 </a>
 {/* FIN TIRA INSTAGRAM PORTADA */}
+                        {news.image && (
                           <img
                             src={news.image}
                             alt={news.title || "Noticia Taurina"}
