@@ -14956,7 +14956,7 @@ return (
 <div className="flex flex-col gap-3 w-full mt-4 mb-8">
   {/* Tarjeta Instagram */}
   <a 
-    href="PEGAR_AQUI_TU_ENLACE_INSTAGRAM" 
+    href="https://www.instagram.com/portaltendidodigital?igsh=MWZrYWZkN2dnc2dzMg==" 
     target="_blank" 
     rel="noopener noreferrer"
     className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-red-600 hover:shadow-lg transition-all duration-300 group"
@@ -14977,7 +14977,7 @@ return (
 
   {/* Tarjeta TikTok */}
   <a 
-    href="PEGAR_AQUI_TU_ENLACE_TIKTOK" 
+    href="https://www.tiktok.com/@portaltendidodigital" 
     target="_blank" 
     rel="noopener noreferrer"
     className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-black hover:shadow-lg transition-all duration-300 group"
@@ -14998,7 +14998,7 @@ return (
 
   {/* Tarjeta Twitter / X */}
   <a 
-    href="PEGAR_AQUI_TU_ENLACE_TWITTER" 
+    href="https://x.com/ptendidodigital" 
     target="_blank" 
     rel="noopener noreferrer"
     className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-gray-900 hover:shadow-lg transition-all duration-300 group"
