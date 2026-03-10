@@ -14952,48 +14952,72 @@ return (
 
 {/* Social Media */}
   <h3 className="text-xl font-bold mb-6 text-center tracking-tight">Síguenos</h3>
-{/* INICIO PANEL SÍGUENOS VERTICAL PREMIUM */}
+{/* INICIO PANEL SÍGUENOS EDITORIAL */}
 <div className="flex flex-col gap-3 w-full mt-4 mb-8">
-  {/* Botón Instagram */}
+  {/* Tarjeta Instagram */}
   <a 
     href="PEGAR_AQUI_TU_ENLACE_INSTAGRAM" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex items-center w-full p-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-pink-200 group transition-all duration-300"
+    className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-red-600 hover:shadow-lg transition-all duration-300 group"
   >
-    <div className="w-10 h-10 rounded-full bg-pink-50 flex shrink-0 items-center justify-center mr-4 group-hover:bg-pink-500 transition-colors duration-300">
-      <i className="ri-instagram-line text-xl text-pink-600 group-hover:text-white transition-colors duration-300"></i>
+    <div className="w-12 h-12 flex shrink-0 items-center justify-center bg-gray-50 rounded-full group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:to-pink-600 transition-all duration-300 mr-4">
+      <svg className="w-6 h-6 text-gray-700 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+      </svg>
     </div>
-    <span className="font-bold text-gray-700 group-hover:text-pink-600 transition-colors">Instagram</span>
+    <div className="flex flex-col flex-1">
+      <span className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-sm uppercase tracking-wider">Instagram</span>
+      <span className="text-xs text-gray-500 font-medium">@portaltendidodigital</span>
+    </div>
+    <svg className="w-5 h-5 text-gray-300 group-hover:text-red-500 transition-colors ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
   </a>
 
-  {/* Botón TikTok */}
+  {/* Tarjeta TikTok */}
   <a 
     href="PEGAR_AQUI_TU_ENLACE_TIKTOK" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex items-center w-full p-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-gray-300 group transition-all duration-300"
+    className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-black hover:shadow-lg transition-all duration-300 group"
   >
-    <div className="w-10 h-10 rounded-full bg-gray-50 flex shrink-0 items-center justify-center mr-4 group-hover:bg-black transition-colors duration-300">
-      <i className="ri-tiktok-fill text-xl text-black group-hover:text-white transition-colors duration-300"></i>
+    <div className="w-12 h-12 flex shrink-0 items-center justify-center bg-gray-50 rounded-full group-hover:bg-black transition-all duration-300 mr-4">
+      <svg className="w-6 h-6 text-gray-700 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.96-.5 3.96-1.72 5.39-1.11 1.32-2.8 2.14-4.5 2.27-2.31.18-4.73-.55-6.28-2.22-1.27-1.38-1.85-3.32-1.6-5.21.22-1.74 1.17-3.32 2.58-4.33 1.34-1 3.12-1.42 4.81-1.16.27.05.54.12.8.21v4.06c-.22-.05-.44-.1-.66-.12-.86-.06-1.74.07-2.48.51-.77.45-1.29 1.25-1.4 2.14-.14 1.05.28 2.14 1.05 2.84.77.7 1.91 1.03 2.96.88.94-.13 1.78-.71 2.27-1.5.34-.55.5-1.2.51-1.85V.02z"/>
+      </svg>
     </div>
-    <span className="font-bold text-gray-700 group-hover:text-black transition-colors">TikTok</span>
+    <div className="flex flex-col flex-1">
+      <span className="font-bold text-gray-900 group-hover:text-black transition-colors text-sm uppercase tracking-wider">TikTok</span>
+      <span className="text-xs text-gray-500 font-medium">Vídeos y actualidad</span>
+    </div>
+    <svg className="w-5 h-5 text-gray-300 group-hover:text-black transition-colors ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
   </a>
 
-  {/* Botón Twitter / X */}
+  {/* Tarjeta Twitter / X */}
   <a 
     href="PEGAR_AQUI_TU_ENLACE_TWITTER" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="flex items-center w-full p-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-sky-200 group transition-all duration-300"
+    className="flex items-center w-full p-4 bg-white border border-gray-200 rounded-2xl hover:border-gray-900 hover:shadow-lg transition-all duration-300 group"
   >
-    <div className="w-10 h-10 rounded-full bg-sky-50 flex shrink-0 items-center justify-center mr-4 group-hover:bg-sky-500 transition-colors duration-300">
-      <i className="ri-twitter-fill text-xl text-sky-500 group-hover:text-white transition-colors duration-300"></i>
+    <div className="w-12 h-12 flex shrink-0 items-center justify-center bg-gray-50 rounded-full group-hover:bg-gray-900 transition-all duration-300 mr-4">
+      <svg className="w-5 h-5 text-gray-700 group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
     </div>
-    <span className="font-bold text-gray-700 group-hover:text-sky-500 transition-colors">Twitter</span>
+    <div className="flex flex-col flex-1">
+      <span className="font-bold text-gray-900 group-hover:text-gray-900 transition-colors text-sm uppercase tracking-wider">X (Twitter)</span>
+      <span className="text-xs text-gray-500 font-medium">Última hora</span>
+    </div>
+    <svg className="w-5 h-5 text-gray-300 group-hover:text-gray-900 transition-colors ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
   </a>
 </div>
-{/* FIN PANEL SÍGUENOS VERTICAL PREMIUM */}
+{/* FIN PANEL SÍGUENOS EDITORIAL */}
 			
   </div>
 </div>
