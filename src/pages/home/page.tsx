@@ -13703,22 +13703,29 @@ message: ''
 const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 const [contactMessage, setContactMessage] = useState('');
 
-// DEEP LINKING: Lector automático de enlaces compartidos
+// DEEP LINKING ROBUSTO: Espera a que los datos existan para abrir la noticia
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const noticiaId = params.get('noticia');
-    
-    // Unimos los arrays de noticias principales que he visto en tu código
-    const todasLasNoticias = [...(typeof featuredNews !== 'undefined' ? featuredNews : []), ...(typeof latestNews !== 'undefined' ? latestNews : [])];
-    
-    if (noticiaId && todasLasNoticias.length > 0) {
-      const noticiaAObir = todasLasNoticias.find(n => String(n.id) === String(noticiaId));
-      if (noticiaAObir) {
-        // Retrasamos 200ms para asegurar que la web cargó antes de abrir el modal
-        setTimeout(() => {
-           openNewsModal(noticiaAObir);
-        }, 200);
-      }
+
+    if (noticiaId) {
+      // Creamos un escáner que revisa cada 300 milisegundos si ya cargaron las noticias
+      const intentarAbrir = setInterval(() => {
+        // Intentamos obtener las noticias desde tu función principal o arrays
+        const noticiasDisponibles = typeof getFilteredNews === 'function' ? getFilteredNews() : [];
+        
+        if (noticiasDisponibles && noticiasDisponibles.length > 0) {
+          const noticiaAObir = noticiasDisponibles.find((n: any) => String(n.id) === String(noticiaId));
+          
+          if (noticiaAObir && typeof openNewsModal === 'function') {
+            openNewsModal(noticiaAObir);
+            clearInterval(intentarAbrir); // Éxito: abrimos la noticia y matamos el escáner
+          }
+        }
+      }, 300);
+
+      // Límite de seguridad: si después de 5 segundos la noticia no existe o la red va muy lenta, apagamos el escáner para no saturar el móvil del usuario
+      setTimeout(() => clearInterval(intentarAbrir), 5000);
     }
   }, []);
 	
