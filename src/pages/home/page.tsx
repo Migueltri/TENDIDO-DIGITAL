@@ -15522,10 +15522,9 @@ TENDIDO DIGITAL
         </div>
       </div>
     </div>
-  )}
+	)}
 
-  {/* MODAL DE CRÓNICAS - DISEÑO ULTRA PREMIUM (Optimizado) */}
-  {isChronicleModalOpen && selectedChronicle && (
+{isChronicleModalOpen && selectedChronicle && (
     <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
       
       <nav className="sticky top-0 z-[110] bg-white md:bg-white/90 md:backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
@@ -15723,7 +15722,6 @@ TENDIDO DIGITAL
           </div>
         </div>
       )}
-	</div>
 	</>
   );
 }
