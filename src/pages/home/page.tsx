@@ -13910,6 +13910,27 @@ setSharePost(null);
     }
   };
 
+	const shareNative = async (noticia: any) => {
+    if (!noticia) return;
+    const urlConId = `${window.location.origin}${window.location.pathname}?noticia=${noticia.id}`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: noticia.title || 'Tendido Digital',
+          text: `Mira esta noticia: ${noticia.title}`,
+          url: urlConId,
+        });
+      } catch (error) {
+        console.log('Error compartiendo', error);
+      }
+    } else {
+      // Fallback si está en PC: solo copia el enlace
+      navigator.clipboard.writeText(urlConId);
+      alert('Enlace copiado: ' + urlConId);
+    }
+  };
+
 // Obtener posts filtrados según la pestaña activa
 const getFilteredPosts = () => {
 const allPosts = [...featuredNews, ...latestNews];
@@ -15402,6 +15423,15 @@ TENDIDO DIGITAL
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
               {selectedNews?.title || ""}
             </h1>
+			  {/* INICIO BOTON COMPARTIR NATIVO */}
+<button 
+  onClick={() => shareNative(selectedNews)} 
+  className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg mt-4 transition-colors"
+>
+  <i className="ri-share-line text-lg"></i>
+  <span className="font-semibold text-sm">Compartir Noticia</span>
+</button>
+{/* FIN BOTON COMPARTIR NATIVO */}
           </div>
         </div>
 
