@@ -14373,13 +14373,6 @@ Noticias Guardadas
               onClick={() => openNewsModal(post)}
             >
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
 				  {/* Subtítulo / Entradilla */}
 {article.summary && (
   <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
