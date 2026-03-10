@@ -15517,9 +15517,10 @@ TENDIDO DIGITAL
               </button>
             </div>
 
-          </div>
+         </div>
         </div>
       </div>
+    </div>
   )}
 
   {/* MODAL DE CRÓNICAS - DISEÑO ULTRA PREMIUM (Optimizado) */}
