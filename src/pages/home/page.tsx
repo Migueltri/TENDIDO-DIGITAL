@@ -14388,18 +14388,6 @@ Noticias Guardadas
                 </div>
               </div>
               <div className="p-6">
-				{/* INICIO TIRA INSTAGRAM PORTADA */}
-<a 
-  href="https://www.instagram.com/prensa.tomas.gonzalez" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-black text-white py-2 px-3 rounded-t-xl hover:bg-gray-800 transition-colors z-10 relative"
->
-  <i className="ri-instagram-line text-lg mr-2"></i>
-  <span className="font-bold text-xs tracking-widest uppercase">Prensa Tomás González</span>
-</a>
-{/* FIN TIRA INSTAGRAM PORTADA */}
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-gray-500 text-sm">{post.date}</span>
                 </div>
@@ -15431,6 +15419,18 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
+			{/* INICIO TIRA INSTAGRAM PORTADA */}
+<a 
+  href="https://www.instagram.com/prensa.tomas.gonzalez" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()} 
+  className="flex items-center justify-center w-full bg-black text-white py-2 px-3 rounded-t-xl hover:bg-gray-800 transition-colors z-10 relative"
+>
+  <i className="ri-instagram-line text-lg mr-2"></i>
+  <span className="font-bold text-xs tracking-widest uppercase">Prensa Tomás González</span>
+</a>
+{/* FIN TIRA INSTAGRAM PORTADA */}
 		    <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
