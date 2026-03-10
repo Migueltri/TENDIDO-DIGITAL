@@ -14811,10 +14811,13 @@ return (
   target="_blank" 
   rel="noopener noreferrer"
   onClick={(e) => e.stopPropagation()} 
-  className="flex items-center justify-center w-full bg-transparent text-black py-2 px-4 text-sm md:text-base font-black uppercase tracking-[0.2em] hover:text-red-600 transition-colors"
+  className="block w-full hover:opacity-80 transition-opacity z-10"
 >
-  <i className="ri-instagram-line text-2xl mr-3"></i>
-  Prensa Tomás González
+  <img 
+    src="/images/bannertomas.jpg"
+    alt="Prensa Tomás González" 
+    className="w-full h-auto object-contain" 
+  />
 </a>
 {/* FIN TIRA INSTAGRAM PORTADA */}
                       
