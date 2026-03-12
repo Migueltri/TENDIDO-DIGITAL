@@ -13548,7 +13548,7 @@ function formatTimeAgo(dateString: string): string {
     const loadData = async () => {
       try {
         const cmsUrl = `https://tendido-digital-cms.vercel.app/data/dataDB.json?t=${Date.now()}`;
-        const response = await fetch(url, { cache: 'no-store' });
+        const response = await fetch(cmsUrl, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         
