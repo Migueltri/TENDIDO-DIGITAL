@@ -48,8 +48,8 @@ import fs from 'fs';
 import path from 'path';
 
 export async function obtenerNoticias() {
-  // 1. Leer el archivo db.json directamente (evita problemas de caché de Vercel)
-  const filePath = path.join(process.cwd(), 'public', 'data', 'db.json');
+  // 1. Leer el archivo dataDB.json directamente (evita problemas de caché de Vercel)
+  const filePath = path.join(process.cwd(), 'public', 'data', 'dataDB.json');
   
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8');
@@ -13548,7 +13548,6 @@ function formatTimeAgo(dateString: string): string {
     const loadData = async () => {
       try {
         const cmsUrl = `https://tendido-digital-cms.vercel.app/data/dataDB.json?t=${Date.now()}`;
-		let response = await fetch(cmsUrl);
         const response = await fetch(url, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
