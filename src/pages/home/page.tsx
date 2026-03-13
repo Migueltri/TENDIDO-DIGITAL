@@ -15452,11 +15452,21 @@ TENDIDO DIGITAL
 
         <button 
           onClick={() => {
-            setIsNewsModalOpen(false);
-            setSelectedNews(null);
-            document.body.style.overflow = "auto";
-            window.history.pushState({}, "", window.location.pathname);
-          }}
+  // 1. Cerramos el modal usando tu función o estado
+  if (typeof closeNewsModal === 'function') {
+    closeNewsModal();
+  } else if (typeof setIsNewsModalOpen === 'function') {
+    setIsNewsModalOpen(false);
+  }
+  
+  // 2. Desbloqueamos el scroll del cuerpo de la página
+  document.body.style.overflow = "auto";
+  document.body.style.position = "";
+  document.body.style.width = "";
+  
+  // 3. Limpiamos el ID de la URL para evitar bucles
+  window.history.replaceState({}, '', window.location.pathname);
+}}
           className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
         >
           <i className="ri-arrow-left-line text-xl"></i>
