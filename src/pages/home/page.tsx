@@ -14052,7 +14052,7 @@ const renderArticleContent = (text?: string | null) => {
   return (
     <>
       {forcedStyle}
-      <div className="prose prose-lg max-w-none text-gray-900 texto-noticia-forzado leading-relaxed prose-p:mb-4 prose-a:text-red-600 prose-a:underline hover:prose-a:text-red-800 prose-img:rounded-xl">
+      <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed font-serif prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-a:underline prose-a:font-bold">
         {paragraphs.map((p, idx) => (
           <p key={idx} dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
         ))}
