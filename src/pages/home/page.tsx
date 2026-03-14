@@ -15605,7 +15605,16 @@ TENDIDO DIGITAL
 
   {/* Botón Compartir */}
   <button 
-    onClick={() => shareNative(selectedNews)} 
+    onClick={(e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  // Llamamos a la función blindada que creamos antes
+  if (typeof shareNative === 'function') {
+    shareNative(selectedNews); // IMPORTANTE: Si la variable de tu noticia abierta se llama diferente a 'selectedNews' (por ejemplo 'noticia' o 'news'), pon ese nombre aquí.
+  } else {
+    alert("Error: La función shareNative no está definida en este componente.");
+  }
+}}
     className="flex-1 h-12 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
   >
     <i className="ri-share-line text-lg"></i>
