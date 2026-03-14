@@ -13703,44 +13703,37 @@ message: ''
 const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 const [contactMessage, setContactMessage] = useState('');
 
-// DEEP LINKING: Escáner de fuerza bruta
+// DEEP LINKING BLINDADO: Ignora filtros y busca en todas las bases
   useEffect(() => {
-    const url = new URL(window.location.href);
-    const noticiaId = url.searchParams.get('noticia');
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
 
-    if (!noticiaId || noticiaId === 'undefined' || noticiaId === 'null') return;
+    if (noticiaId) {
+      let intentos = 0;
+      const escaner = setInterval(() => {
+        intentos++;
+        try {
+          // Juntamos absolutamente TODAS las noticias en un solo array ignorando los filtros activos
+          const todas = [
+            ...(typeof getFilteredNews === 'function' ? getFilteredNews() : []),
+            ...(typeof latestNews !== 'undefined' ? latestNews : []),
+            ...(typeof featuredNews !== 'undefined' ? featuredNews : [])
+          ];
+          
+          const noticiaEncontrada = todas.find((n: any) => n && String(n.id) === String(noticiaId));
+          
+          if (noticiaEncontrada && typeof openNewsModal === 'function') {
+            openNewsModal(noticiaEncontrada);
+            clearInterval(escaner); // Éxito: abrimos y destruimos el escáner
+          }
+        } catch (e) {
+          console.error("Fallo buscando noticia", e);
+        }
 
-    // Función destructiva que busca en todas partes
-    const buscarYAbrir = () => {
-      // Unimos todas las fuentes de datos posibles de tu código
-      const todasLasNoticias = [
-        ...(typeof getFilteredNews === 'function' ? getFilteredNews() : []),
-        ...(typeof latestNews !== 'undefined' ? latestNews : []),
-        ...(typeof featuredNews !== 'undefined' ? featuredNews : [])
-      ];
-
-      const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
-
-      if (noticiaEncontrada && typeof openNewsModal === 'function') {
-        openNewsModal(noticiaEncontrada);
-        return true; // Éxito
-      }
-      return false; // No encontrada aún
-    };
-
-    // Bucle de asedio: Intenta abrir la noticia cada 200ms durante 6 segundos
-    let intentos = 0;
-    const asedio = setInterval(() => {
-      intentos++;
-      const abierta = buscarYAbrir();
-      
-      // Si la abrió, o si ya intentó demasiadas veces (tiempo agotado), matamos el bucle
-      if (abierta || intentos > 30) {
-        clearInterval(asedio);
-      }
-    }, 200);
-
-    return () => clearInterval(asedio);
+        // Límite de seguridad: Si pasan 5 segundos (25 intentos) apagamos para no bloquear el móvil
+        if (intentos > 25) clearInterval(escaner);
+      }, 200);
+    }
   }, []);
 	
 // Schema.org JSON-LD para SEO
@@ -13950,33 +13943,28 @@ setSharePost(null);
     }
   };
 
-	const shareNative = async (noticia: any) => {
-    // 1. Control de errores estricto
-    if (!noticia) {
-      alert("ERROR: La variable de la noticia está vacía. Revisa el onClick del botón.");
+const shareNative = async (noticia: any) => {
+    if (!noticia || !noticia.id) {
+      alert("ERROR CRÍTICO: La noticia no tiene ID. El enlace no funcionará.");
       return;
     }
-    if (!noticia.id) {
-      alert("ERROR: La noticia existe, pero no tiene un 'id'. No se puede generar el enlace único.");
-      return;
-    }
-
-    // 2. Generar URL limpia (forzamos la barra diagonal para evitar fallos de ruta)
-    const urlConId = `${window.location.origin}/?noticia=${noticia.id}`;
+    
+    // Forzamos la estructura exacta de la URL desde la raíz
+    const urlDefinitiva = `${window.location.origin}/?noticia=${noticia.id}`;
     
     if (navigator.share) {
       try {
         await navigator.share({
           title: noticia.title || 'Tendido Digital',
-          text: `Mira esta noticia: ${noticia.title}`,
-          url: urlConId,
+          text: `Mira esta noticia en Tendido Digital: ${noticia.title}`,
+          url: urlDefinitiva,
         });
       } catch (error) {
-        console.log('Error compartiendo', error);
+        console.log('Compartir cancelado o con error', error);
       }
     } else {
-      navigator.clipboard.writeText(urlConId);
-      alert('ENLACE COPIADO CORRECTAMENTE:\n' + urlConId);
+      navigator.clipboard.writeText(urlDefinitiva);
+      alert('Enlace copiado:\n' + urlDefinitiva);
     }
   };
 
