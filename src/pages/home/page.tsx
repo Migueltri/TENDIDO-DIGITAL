@@ -13944,27 +13944,43 @@ setSharePost(null);
   };
 
 const shareNative = async (noticia: any) => {
-    if (!noticia || !noticia.id) {
-      alert("ERROR CRÍTICO: La noticia no tiene ID. El enlace no funcionará.");
-      return;
+    let idValido = null;
+    let titulo = 'Tendido Digital';
+
+    // 1. Intentamos sacar el ID de la variable que le pasa el botón
+    if (noticia && noticia.id) {
+      idValido = noticia.id;
+      titulo = noticia.title || titulo;
+    } else {
+      // 2. Si el botón falla y manda basura, rescatamos el ID directamente de la URL actual
+      const params = new URLSearchParams(window.location.search);
+      idValido = params.get('noticia');
     }
-    
-    // Forzamos la estructura exacta de la URL desde la raíz
-    const urlDefinitiva = `${window.location.origin}/?noticia=${noticia.id}`;
-    
+
+    // 3. Construimos la URL infalible
+    const urlDefinitiva = idValido
+      ? `${window.location.origin}/?noticia=${idValido}`
+      : window.location.href; // Fallback extremo para que nunca pete
+
+    // 4. Ejecutamos la acción de compartir nativa del móvil
     if (navigator.share) {
       try {
         await navigator.share({
-          title: noticia.title || 'Tendido Digital',
-          text: `Mira esta noticia en Tendido Digital: ${noticia.title}`,
+          title: titulo,
+          text: `Mira esta noticia en Tendido Digital: ${titulo}`,
           url: urlDefinitiva,
         });
       } catch (error) {
-        console.log('Compartir cancelado o con error', error);
+        console.log('Compartir cancelado por el usuario');
       }
     } else {
-      navigator.clipboard.writeText(urlDefinitiva);
-      alert('Enlace copiado:\n' + urlDefinitiva);
+      // Fallback para PC: copiar al portapapeles sin bloquear la pantalla entera
+      try {
+        await navigator.clipboard.writeText(urlDefinitiva);
+        alert('Enlace de la noticia copiado correctamente.');
+      } catch (e) {
+        console.log('Error copiando al portapapeles');
+      }
     }
   };
 
