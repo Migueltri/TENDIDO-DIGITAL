@@ -14038,7 +14038,7 @@ const renderArticleContent = (text?: string | null) => {
     return (
       <>
         {forcedStyle}
-        <div className="text-gray-700 text-lg leading-relaxed mt-12" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
+        <div className="text-gray-700 text-lg leading-relaxed mt-12 [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
       </>
     );
   }
