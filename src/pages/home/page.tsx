@@ -13703,38 +13703,40 @@ message: ''
 const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 const [contactMessage, setContactMessage] = useState('');
 
-// DEEP LINKING BLINDADO: Ignora filtros y busca en todas las bases
+// DEEP LINKING: Lee la URL y fuerza la apertura de la noticia compartida
   useEffect(() => {
+    // 1. Leemos si hay un ID en el enlace (ej: ?noticia=123)
     const params = new URLSearchParams(window.location.search);
     const noticiaId = params.get('noticia');
 
     if (noticiaId) {
+      // 2. Creamos un escáner que busque la noticia cada 500ms (dando tiempo a que la base de datos cargue)
       let intentos = 0;
-      const escaner = setInterval(() => {
+      const buscador = setInterval(() => {
         intentos++;
-        try {
-          // Juntamos absolutamente TODAS las noticias en un solo array ignorando los filtros activos
-          const todas = [
-            ...(typeof getFilteredNews === 'function' ? getFilteredNews() : []),
-            ...(typeof latestNews !== 'undefined' ? latestNews : []),
-            ...(typeof featuredNews !== 'undefined' ? featuredNews : [])
-          ];
-          
-          const noticiaEncontrada = todas.find((n: any) => n && String(n.id) === String(noticiaId));
-          
-          if (noticiaEncontrada && typeof openNewsModal === 'function') {
-            openNewsModal(noticiaEncontrada);
-            clearInterval(escaner); // Éxito: abrimos y destruimos el escáner
-          }
-        } catch (e) {
-          console.error("Fallo buscando noticia", e);
+        
+        // 3. Juntamos todas tus listas de noticias para que busque en todos los apartados a la vez
+        const todasLasNoticias = [
+          ...(typeof latestNews !== 'undefined' ? latestNews : []),
+          ...(typeof featuredNews !== 'undefined' ? featuredNews : []),
+          ...(typeof getFilteredNews === 'function' ? getFilteredNews() : [])
+        ];
+
+        // 4. Buscamos la coincidencia exacta
+        const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
+
+        if (noticiaEncontrada && typeof openNewsModal === 'function') {
+          openNewsModal(noticiaEncontrada); // ¡Bingo! La abrimos en pantalla
+          clearInterval(buscador); // Destruimos el escáner porque ya hizo su trabajo
         }
 
-        // Límite de seguridad: Si pasan 5 segundos (25 intentos) apagamos para no bloquear el móvil
-        if (intentos > 25) clearInterval(escaner);
-      }, 200);
+        // 5. Límite de seguridad: Si pasan 6 segundos (12 intentos) y no la encuentra, paramos para no reventar la memoria del móvil
+        if (intentos >= 12) {
+          clearInterval(buscador);
+        }
+      }, 500);
     }
-  }, []);
+  }, []); // Dependencias vacías para que se ejecute solo al arrancar la web
 	
 // Schema.org JSON-LD para SEO
 useEffect(() => {
@@ -15607,12 +15609,12 @@ TENDIDO DIGITAL
   <button 
     onClick={(e) => {
   e.preventDefault();
-  e.stopPropagation();
-  // Llamamos a la función blindada que creamos antes
+  // Llamamos directamente al sistema nativo, ignorando ventanas rotas
   if (typeof shareNative === 'function') {
-    shareNative(selectedNews); // IMPORTANTE: Si la variable de tu noticia abierta se llama diferente a 'selectedNews' (por ejemplo 'noticia' o 'news'), pon ese nombre aquí.
+    // IMPORTANTE: Asegúrate de que 'selectedNews' es el nombre de la variable que guarda tu noticia actual. Si es 'news' o 'noticia', cámbialo aquí.
+    shareNative(selectedNews); 
   } else {
-    alert("Error: La función shareNative no está definida en este componente.");
+    alert("Error: Falta la función shareNative.");
   }
 }}
     className="flex-1 h-12 flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors"
