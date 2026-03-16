@@ -13476,9 +13476,9 @@ type Chronicle = BaseArticle;
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
   
-  // 1. Carga en 0 segundos: Inyectamos las listas locales para evitar el pantallazo negro
-  const [combinedNews, setCombinedNews] = useState<NewsItem[]>([...featuredNews, ...latestNews]);
-  const [news24h, setNews24h] = useState<NewsItem[]>([...featuredNews]);
+  // 1. Empezamos vacíos para que las noticias definitivas aparezcan limpias sin saltos visuales
+  const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
+  const [news24h, setNews24h] = useState<NewsItem[]>([]);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(false);
