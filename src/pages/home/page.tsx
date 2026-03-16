@@ -13482,6 +13482,13 @@ const [currentSlide, setCurrentSlide] = useState(0);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(true);
+// Control exacto de la pantalla de carga (0.8 segundos)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAppLoading(false);
+    }, 800); 
+    return () => clearTimeout(timer);
+  }, []);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
