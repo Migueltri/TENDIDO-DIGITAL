@@ -13481,7 +13481,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
   const [news24h, setNews24h] = useState<NewsItem[]>([]);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
-const [isAppLoading, setIsAppLoading] = useState(false);
+const [isAppLoading, setIsAppLoading] = useState(true);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -13677,7 +13677,7 @@ function formatTimeAgo(dateString: string): string {
         setCombinedNews(finalNewsList);
 
       } finally {
-        setIsAppLoading(false);
+        setIsAppLoading(true);
       }
     };
 
@@ -13999,6 +13999,16 @@ const renderArticleContent = (text?: string | null) => {
       }
     `}</style>
   );
+
+	// Pantalla de carga ágil para enmascarar la conexión a la base de datos
+  if (isAppLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+      </div>
+    );
+  }
 
   // 1. SI LA NOTICIA ES HTML (Las noticias nuevas del editor)
   if (isHTML) {
