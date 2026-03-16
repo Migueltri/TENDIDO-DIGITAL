@@ -13482,13 +13482,6 @@ const [currentSlide, setCurrentSlide] = useState(0);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(true);
-// Control exacto de la pantalla de carga (0.8 segundos)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAppLoading(false);
-    }, 800); 
-    return () => clearTimeout(timer);
-  }, []);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -14006,8 +13999,8 @@ const renderArticleContent = (text?: string | null) => {
     `}</style>
   );
 
-	// Pantalla de carga ágil para enmascarar la conexión a la base de datos
-  if (isAppLoading) {
+// Si la lista de noticias está vacía, bloqueamos la pantalla en blanco con el cargador
+  if (combinedNews.length === 0) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
         <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
