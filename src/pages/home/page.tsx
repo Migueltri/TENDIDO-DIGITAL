@@ -13702,41 +13702,6 @@ message: ''
 });
 const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 const [contactMessage, setContactMessage] = useState('');
-
-// DEEP LINKING: Lee la URL y fuerza la apertura de la noticia compartida
-  useEffect(() => {
-    // 1. Leemos si hay un ID en el enlace (ej: ?noticia=123)
-    const params = new URLSearchParams(window.location.search);
-    const noticiaId = params.get('noticia');
-
-    if (noticiaId) {
-      // 2. Creamos un escáner que busque la noticia cada 500ms (dando tiempo a que la base de datos cargue)
-      let intentos = 0;
-      const buscador = setInterval(() => {
-        intentos++;
-        
-        // 3. Juntamos todas tus listas de noticias para que busque en todos los apartados a la vez
-        const todasLasNoticias = [
-          ...(typeof latestNews !== 'undefined' ? latestNews : []),
-          ...(typeof featuredNews !== 'undefined' ? featuredNews : []),
-          ...(typeof getFilteredNews === 'function' ? getFilteredNews() : [])
-        ];
-
-        // 4. Buscamos la coincidencia exacta
-        const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
-
-        if (noticiaEncontrada && typeof openNewsModal === 'function') {
-          openNewsModal(noticiaEncontrada); // ¡Bingo! La abrimos en pantalla
-          clearInterval(buscador); // Destruimos el escáner porque ya hizo su trabajo
-        }
-
-        // 5. Límite de seguridad: Si pasan 6 segundos (12 intentos) y no la encuentra, paramos para no reventar la memoria del móvil
-        if (intentos >= 12) {
-          clearInterval(buscador);
-        }
-      }, 500);
-    }
-  }, []); // Dependencias vacías para que se ejecute solo al arrancar la web
 	
 // Schema.org JSON-LD para SEO
 useEffect(() => {
@@ -14696,7 +14661,6 @@ return (
             <button 
               onClick={(e) => {
                 e.stopPropagation(); 
-                setCurrentSlide(prev => (prev === 0 ? news24h.length - 1 : prev - 1));
               }}
               className="pointer-events-auto bg-black/40 hover:bg-red-600 text-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full transition-all shadow-lg backdrop-blur-sm border border-white/20"
               aria-label="Anterior noticia"
