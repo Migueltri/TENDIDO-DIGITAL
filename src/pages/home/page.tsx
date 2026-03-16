@@ -15679,7 +15679,7 @@ TENDIDO DIGITAL
 
       <div className="w-full h-full overflow-y-auto overflow-x-hidden" style={{ WebkitOverflowScrolling: "touch" }}>
         
-        <div className="relative w-full h-[60vh] md:h-[70vh] shrink-0 sticky top-0 -z-10">
+        <div className="relative w-full h-[60vh] md:h-[70vh] bg-gray-100 animate-pulse shrink-0 sticky top-0 -z-10">
           <img src={selectedChronicle.image} alt={selectedChronicle.title} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
