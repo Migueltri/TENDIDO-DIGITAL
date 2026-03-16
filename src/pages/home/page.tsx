@@ -14229,19 +14229,6 @@ document.body.style.position = "";
 document.body.style.width = "";
 };
 
-// Temporizador del Slider Principal (Corregido)
-  useEffect(() => {
-    // Si no hay noticias cargadas, detenemos la ejecución para evitar errores
-    if (news24h.length === 0) return;
-    
-    const timer = setInterval(() => {
-      // Usamos la longitud dinámica del día actual (news24h) en lugar de listas estáticas
-      setCurrentSlide((prev) => (prev + 1) % news24h.length);
-    }, 5000); // Subido a 5 segundos para que dé tiempo a leer los titulares cómodamente
-    
-    return () => clearInterval(timer);
-  }, [news24h.length]);
-
 useEffect(() => {
 return () => {
 if (isNewsModalOpen || isChronicleModalOpen) {
