@@ -13476,9 +13476,9 @@ type Chronicle = BaseArticle;
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
   
-  // 1. Empezamos vacíos para no pintar noticias viejas
-const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
-const [news24h, setNews24h] = useState<NewsItem[]>([]);
+  // 1. Carga en 0 segundos: Inyectamos las listas locales para evitar el pantallazo negro
+  const [combinedNews, setCombinedNews] = useState<NewsItem[]>([...featuredNews, ...latestNews]);
+  const [news24h, setNews24h] = useState<NewsItem[]>([...featuredNews]);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(false);
@@ -14249,16 +14249,6 @@ document.body.style.overflow = 'unset';
 }
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
-
-// 4. Si está cargando, mostramos un spinner elegante y bloqueamos el renderizado antiguo
-  if (isAppLoading) {
-      return (
-          <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
-              <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
-              <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
-          </div>
-      );
-  }
 	
   if (activeTab === "entrevistas") {
     const entrevistas = latestNews.filter((item) =>
