@@ -13684,7 +13684,6 @@ function formatTimeAgo(dateString: string): string {
         setCombinedNews(finalNewsList);
 
       } finally {
-        setIsAppLoading(false);
       }
     };
 
