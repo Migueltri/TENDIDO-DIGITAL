@@ -13530,8 +13530,9 @@ function formatTimeAgo(dateString: string): string {
 
 	// Detectar enlaces de noticias compartidas al abrir la web
   useEffect(() => {
-    const noticiaId = params.get('noticia');
-    
+    const urlParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+	const urlNoticia = urlParams.get('noticia');
+	  
     if (noticiaId) {
       // Sustituye 'todasLasNoticias' por el nombre real de tu array/lista de noticias
       const noticiaDirecta = todasLasNoticias.find(n => n.id.toString() === noticiaId);
