@@ -13920,7 +13920,7 @@ const shareNative = async (noticia: any) => {
       titulo = noticia.title || titulo;
     } else {
       // 2. Si el botón falla y manda basura, rescatamos el ID directamente de la URL actual
-      const params = new URLSearchParams(window.location.search);
+      const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
       idValido = params.get('noticia');
     }
 
