@@ -13914,15 +13914,41 @@ const shareNative = async (noticia: any) => {
     let idValido = null;
     let titulo = 'Tendido Digital';
 
-    // 1. Intentamos sacar el ID de la variable que le pasa el botón
-    if (noticia && noticia.id) {
-      idValido = noticia.id;
-      titulo = noticia.title || titulo;
-    } else {
-      // 2. Si el botón falla y manda basura, rescatamos el ID directamente de la URL actual
-      const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-      idValido = params.get('noticia');
-    }
+    // Escáner de noticias protegido y optimizado
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
+
+    if (!noticiaId) return;
+
+    let intentos = 0;
+    const buscador = setInterval(() => {
+      intentos++;
+      
+      // Abortamos si no encuentra nada en 10 segundos para evitar fugas de memoria
+      if (intentos > 20) {
+        clearInterval(buscador);
+        return;
+      }
+
+      const todasLasNoticias = [
+        ...(typeof latestNews !== 'undefined' ? latestNews : []),
+        ...(typeof featuredNews !== 'undefined' ? featuredNews : []),
+        ...(typeof getFilteredNews === 'function' ? getFilteredNews() : [])
+      ];
+
+      const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
+
+      if (noticiaEncontrada && typeof openNewsModal === 'function') {
+        openNewsModal(noticiaEncontrada);
+        clearInterval(buscador);
+      }
+    }, 500);
+
+    return () => clearInterval(buscador);
+  }, [latestNews, featuredNews, getFilteredNews]);
 
     // 3. Construimos la URL infalible
     const urlDefinitiva = idValido
