@@ -14031,16 +14031,6 @@ const renderArticleContent = (text?: string | null) => {
     `}</style>
   );
 
-// Pantalla de carga obligatoria mientras se descargan las noticias
-  if (isAppLoading) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 z-50 fixed inset-0">
-        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
-        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
-      </div>
-    );
-  }
-
   // 1. SI LA NOTICIA ES HTML (Las noticias nuevas del editor)
   if (isHTML) {
     return (
