@@ -14167,7 +14167,7 @@ setIsMenuOpen(false);
 };
     
     // Al cerrar con la X, limpiamos la URL
-    window.history.pushState({ page: 'home' }, '', '/');
+    if (typeof window !== 'undefined') window.history.pushState({ page: 'home' }, '', '/');
 
 // En tu componente del modal, asegúrate de que tenga estos estilos:
 const modalStyles = {
