@@ -15547,15 +15547,23 @@ TENDIDO DIGITAL
                     const url = typeof img === "string" ? img : img?.url;
                     if (!url) return null;
                     return (
-                      <div key={idx} className="relative rounded-2xl overflow-hidden bg-gray-100">
-                        {/* loading="lazy" es vital aquí */}
-                        <img src={url} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
-                      </div>
-                    );
-                  })}
+                <div key={idx} className="flex flex-col">
+                  <div className="relative rounded-2xl overflow-hidden bg-gray-100">
+                    {/* loading="lazy" es vital aquí */}
+                    <img src={url} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
+                  </div>
+                  
+                  {/* INICIO PIE DE FOTO GALERÍA */}
+                  {typeof img !== "string" && (img.caption || img.credit) && (
+                    <div className="text-sm text-gray-500 mt-3 text-center italic font-serif px-2 leading-relaxed">
+                      {img.caption && <span>{img.caption}</span>}
+                      {img.caption && img.credit && <span className="mx-2 text-gray-400">|</span>}
+                      {img.credit && <span>Foto: {img.credit}</span>}
+                    </div>
+                  )}
+                  {/* FIN PIE DE FOTO GALERÍA */}
                 </div>
-              </div>
-            )}
+              );
 
             {/* CONTENEDOR BOTONES GEMELOS */}
 <div className="flex items-center gap-3 mt-4 w-full">
