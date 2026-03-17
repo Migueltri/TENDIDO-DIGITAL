@@ -13999,10 +13999,10 @@ const renderArticleContent = (text?: string | null) => {
     `}</style>
   );
 
-// Si la lista de noticias está vacía, bloqueamos la pantalla en blanco con el cargador
+// Pantalla de carga obligatoria mientras se descargan las noticias
   if (combinedNews.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 z-50 fixed inset-0">
         <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
         <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
       </div>
