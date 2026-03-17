@@ -13530,9 +13530,9 @@ function formatTimeAgo(dateString: string): string {
 
 	// Detectar enlaces de noticias compartidas al abrir la web
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const noticiaId = params.get('noticia');
-    
+    const urlParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+	const urlNoticia = urlParams.get('noticia');
+	  
     if (noticiaId) {
       // Sustituye 'todasLasNoticias' por el nombre real de tu array/lista de noticias
       const noticiaDirecta = todasLasNoticias.find(n => n.id.toString() === noticiaId);
@@ -14120,26 +14120,17 @@ block: 'start'
 }
 setIsMenuOpen(false);
 };
+
+// Pantalla de carga inquebrantable en el arranque
+  if (isAppLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 z-50 fixed inset-0">
+        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+      </div>
+    );
+  }
 	
-  // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Deep Linking ?noticia=123)
-  useEffect(() => {
-    if (combinedNews.length === 0) return;
-
-    const params = new URLSearchParams(window.location.search);
-    const noticiaId = params.get('noticia');
-    if (noticiaId) {
-        const selected = combinedNews.find((n) => String(n.id) === String(noticiaId));
-        if (selected) {
-          setSelectedNews(selected as any);
-          setIsNewsModalOpen(true);
-          document.body.style.overflow = "hidden";
-          document.body.style.position = "fixed";
-          document.body.style.width = "100%";
-          window.history.replaceState({ page: 'article' }, '', `/?noticia=${noticiaId}`);
-        }
-    }
-  }, [combinedNews]);
-
   // 3. TAMBIÉN PEGAS AQUÍ EL CONTROLADOR DEL BOTÓN ATRÁS
   useEffect(() => {
     const handlePopState = (event: PopStateEvent) => {
