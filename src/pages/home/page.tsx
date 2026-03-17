@@ -13482,6 +13482,11 @@ const [currentSlide, setCurrentSlide] = useState(0);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(true);
+// Cortocircuito: Obliga a mostrar la web a los 3 segundos máximo ante cualquier fallo de red
+  useEffect(() => {
+    const seguro = setTimeout(() => setIsAppLoading(false), 3000);
+    return () => clearTimeout(seguro);
+  }, []);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -14042,7 +14047,14 @@ const renderArticleContent = (text?: string | null) => {
       <>
         {forcedStyle}
         <div className="text-gray-700 text-lg leading-relaxed mt-12 font-sans [&_*]:!font-sans [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
-      </>
+      {/* Pantalla de carga segura en capa flotante */}
+        {isAppLoading && (
+          <div className="flex flex-col items-center justify-center bg-gray-50 z-[99999] fixed inset-0">
+            <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+            <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+          </div>
+        )}
+	  </>
     );
   }
 
@@ -14146,16 +14158,6 @@ block: 'start'
 }
 setIsMenuOpen(false);
 };
-
-// Pantalla de carga inquebrantable en el arranque
-  if (isAppLoading) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 z-50 fixed inset-0">
-        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
-        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
-      </div>
-    );
-  }
 	
   // 3. TAMBIÉN PEGAS AQUÍ EL CONTROLADOR DEL BOTÓN ATRÁS
   useEffect(() => {
