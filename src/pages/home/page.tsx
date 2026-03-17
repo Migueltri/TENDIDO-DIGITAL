@@ -13482,11 +13482,6 @@ const [currentSlide, setCurrentSlide] = useState(0);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(true);
-// Cortocircuito: Obliga a mostrar la web a los 3 segundos máximo ante cualquier fallo de red
-  useEffect(() => {
-    const seguro = setTimeout(() => setIsAppLoading(false), 3000);
-    return () => clearTimeout(seguro);
-  }, []);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [scrollY, setScrollY] = useState(0);
 const [selectedNews, setSelectedNews] = useState<NewsItem | OpinionArticle | null>(null);
@@ -13535,9 +13530,9 @@ function formatTimeAgo(dateString: string): string {
 
 	// Detectar enlaces de noticias compartidas al abrir la web
   useEffect(() => {
-    const urlParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-	const urlNoticia = urlParams.get('noticia');
-	  
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
+    
     if (noticiaId) {
       // Sustituye 'todasLasNoticias' por el nombre real de tu array/lista de noticias
       const noticiaDirecta = todasLasNoticias.find(n => n.id.toString() === noticiaId);
@@ -13919,41 +13914,15 @@ const shareNative = async (noticia: any) => {
     let idValido = null;
     let titulo = 'Tendido Digital';
 
-    // Escáner de noticias protegido y optimizado
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const params = new URLSearchParams(window.location.search);
-    const noticiaId = params.get('noticia');
-
-    if (!noticiaId) return;
-
-    let intentos = 0;
-    const buscador = setInterval(() => {
-      intentos++;
-      
-      // Abortamos si no encuentra nada en 10 segundos para evitar fugas de memoria
-      if (intentos > 20) {
-        clearInterval(buscador);
-        return;
-      }
-
-      const todasLasNoticias = [
-        ...(typeof latestNews !== 'undefined' ? latestNews : []),
-        ...(typeof featuredNews !== 'undefined' ? featuredNews : []),
-        ...(typeof getFilteredNews === 'function' ? getFilteredNews() : [])
-      ];
-
-      const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
-
-      if (noticiaEncontrada && typeof openNewsModal === 'function') {
-        openNewsModal(noticiaEncontrada);
-        clearInterval(buscador);
-      }
-    }, 500);
-
-    return () => clearInterval(buscador);
-  }, [latestNews, featuredNews, getFilteredNews]);
+    // 1. Intentamos sacar el ID de la variable que le pasa el botón
+    if (noticia && noticia.id) {
+      idValido = noticia.id;
+      titulo = noticia.title || titulo;
+    } else {
+      // 2. Si el botón falla y manda basura, rescatamos el ID directamente de la URL actual
+      const params = new URLSearchParams(window.location.search);
+      idValido = params.get('noticia');
+    }
 
     // 3. Construimos la URL infalible
     const urlDefinitiva = idValido
@@ -14047,14 +14016,7 @@ const renderArticleContent = (text?: string | null) => {
       <>
         {forcedStyle}
         <div className="text-gray-700 text-lg leading-relaxed mt-12 font-sans [&_*]:!font-sans [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
-      {/* Pantalla de carga segura en capa flotante */}
-        {isAppLoading && (
-          <div className="flex flex-col items-center justify-center bg-gray-50 z-[99999] fixed inset-0">
-            <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
-            <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
-          </div>
-        )}
-	  </>
+      </>
     );
   }
 
@@ -14159,6 +14121,25 @@ block: 'start'
 setIsMenuOpen(false);
 };
 	
+  // 2. AHORA SÍ: PEGAS EL LECTOR AUTOMÁTICO (Deep Linking ?noticia=123)
+  useEffect(() => {
+    if (combinedNews.length === 0) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const noticiaId = params.get('noticia');
+    if (noticiaId) {
+        const selected = combinedNews.find((n) => String(n.id) === String(noticiaId));
+        if (selected) {
+          setSelectedNews(selected as any);
+          setIsNewsModalOpen(true);
+          document.body.style.overflow = "hidden";
+          document.body.style.position = "fixed";
+          document.body.style.width = "100%";
+          window.history.replaceState({ page: 'article' }, '', `/?noticia=${noticiaId}`);
+        }
+    }
+  }, [combinedNews]);
+
   // 3. TAMBIÉN PEGAS AQUÍ EL CONTROLADOR DEL BOTÓN ATRÁS
   useEffect(() => {
     const handlePopState = (event: PopStateEvent) => {
@@ -14193,6 +14174,9 @@ setIsMenuOpen(false);
   document.body.style.overflow = "auto";
   window.history.pushState({}, "", "/"); 
 };
+    
+    // Al cerrar con la X, limpiamos la URL
+    window.history.pushState({ page: 'home' }, '', '/');
 
 // En tu componente del modal, asegúrate de que tenga estos estilos:
 const modalStyles = {
