@@ -13533,14 +13533,14 @@ function formatTimeAgo(dateString: string): string {
   return rtf.format(-Math.floor(diff / 31536000), "year");
 }
 
-	// Detectar enlaces de noticias compartidas al abrir la web
+// Detectar enlaces de noticias compartidas al abrir la web
   useEffect(() => {
-    const urlParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-	const urlNoticia = urlParams.get('noticia');
-	  
+    if (typeof window === 'undefined') return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const noticiaId = urlParams.get('noticia');
     if (noticiaId) {
-      // Sustituye 'todasLasNoticias' por el nombre real de tu array/lista de noticias
-      const noticiaDirecta = todasLasNoticias.find(n => n.id.toString() === noticiaId);
+      const todasLasNoticias = [...(typeof latestNews !== 'undefined' ? latestNews : []), ...(typeof featuredNews !== 'undefined' ? featuredNews : [])];
+      const noticiaDirecta = todasLasNoticias.find((n: any) => n.id.toString() === noticiaId);
       if (noticiaDirecta) {
         setSelectedNews(noticiaDirecta);
         setIsNewsModalOpen(true);
@@ -13916,44 +13916,8 @@ setSharePost(null);
   };
 
 const shareNative = async (noticia: any) => {
-    let idValido = null;
-    let titulo = 'Tendido Digital';
-
-    // Escáner de noticias protegido y optimizado
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const params = new URLSearchParams(window.location.search);
-    const noticiaId = params.get('noticia');
-
-    if (!noticiaId) return;
-
-    let intentos = 0;
-    const buscador = setInterval(() => {
-      intentos++;
-      
-      // Abortamos si no encuentra nada en 10 segundos para evitar fugas de memoria
-      if (intentos > 20) {
-        clearInterval(buscador);
-        return;
-      }
-
-      const todasLasNoticias = [
-        ...(typeof latestNews !== 'undefined' ? latestNews : []),
-        ...(typeof featuredNews !== 'undefined' ? featuredNews : []),
-        ...(typeof getFilteredNews === 'function' ? getFilteredNews() : [])
-      ];
-
-      const noticiaEncontrada = todasLasNoticias.find((n: any) => n && String(n.id) === String(noticiaId));
-
-      if (noticiaEncontrada && typeof openNewsModal === 'function') {
-        openNewsModal(noticiaEncontrada);
-        clearInterval(buscador);
-      }
-    }, 500);
-
-    return () => clearInterval(buscador);
-  }, [latestNews, featuredNews, getFilteredNews]);
+    let idValido = noticia?.id || null;
+    let titulo = noticia?.title || 'Tendido Digital';
 
     // 3. Construimos la URL infalible
     const urlDefinitiva = idValido
@@ -14012,63 +13976,42 @@ const getFilteredNews = () => {
 };
 
 const renderArticleContent = (text?: string | null) => {
-  if (!text) return null;
+    if (!text) return null;
+    const isHTML = /<[a-z][\s\S]*>/i.test(text);
 
-  const isHTML = /<[a-z][\s\S]*>/i.test(text);
+    const forcedStyle = (
+      <style>{`
+        .texto-noticia-forzado, .texto-noticia-forzado * { font-family: 'Lora', serif !important; font-size: 1.125rem !important; line-height: 1.75 !important; }
+        .texto-noticia-forzado h1, .texto-noticia-forzado h2, .texto-noticia-forzado h3 { font-size: revert !important; }
+      `}</style>
+    );
 
-  // El CSS forzado que siempre se va a inyectar, independientemente del formato de la noticia
-  const forcedStyle = (
-    <style>{`
-      .texto-noticia-forzado, .texto-noticia-forzado * {
-        font-family: 'Lora', serif !important;
-        font-size: 1.125rem !important;
-        line-height: 1.75 !important;
-      }
-      /* Protegemos los títulos para que no se encojan */
-      .texto-noticia-forzado h1, .texto-noticia-forzado h2, .texto-noticia-forzado h3 {
-        font-size: revert !important;
-      }
-    `}</style>
-  );
+    if (isHTML) {
+      return (
+        <>
+          {forcedStyle}
+          <div className="text-gray-700 text-lg leading-relaxed mt-12 font-sans [&_*]:!font-sans [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
+        </>
+      );
+    }
 
-  // 1. SI LA NOTICIA ES HTML (Las noticias nuevas del editor)
-  if (isHTML) {
+    const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+    let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    const toHtml = (p: string) => p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\n+/g, ' ');
+
     return (
       <>
         {forcedStyle}
-        <div className="text-gray-700 text-lg leading-relaxed mt-12 font-sans [&_*]:!font-sans [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all" dangerouslySetInnerHTML={{ __html: selectedNews.fullContent }} />
-      {/* Pantalla de carga segura en capa flotante */}
-        {isAppLoading && (
-          <div className="flex flex-col items-center justify-center bg-gray-50 z-[99999] fixed inset-0">
-            <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
-            <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
-          </div>
-        )}
-	  </>
+        <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed font-serif prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-a:underline prose-a:font-bold">
+          {paragraphs.map((p, idx) => (
+            <p key={idx} dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
+          ))}
+        </div>
+      </>
     );
-  }
-
-  // 2. SI LA NOTICIA ES TEXTO PLANO (Las noticias antiguas)
-  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-  let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-  const toHtml = (p: string) => p
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/[“”]/g, '"')
-    .replace(/[‘’]/g, "'")
-    .replace(/\n+/g, ' ');
-
-  return (
-    <>
-      {forcedStyle}
-      <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed font-serif prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-a:underline prose-a:font-bold">
-        {paragraphs.map((p, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{ __html: toHtml(p) }} />
-        ))}
-      </div>
-    </>
-  );
-};
+  };
 	
 const CrónicaLayout = ({ news }: { news: any }) => (
   <article
@@ -14217,6 +14160,16 @@ document.body.style.overflow = 'unset';
 }
 };
 }, [isNewsModalOpen, isChronicleModalOpen]);
+
+	// Pantalla de carga oficial e indestructible
+  if (isAppLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 fixed inset-0 z-[99999]">
+        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+      </div>
+    );
+  }
 	
   if (activeTab === "entrevistas") {
     const entrevistas = latestNews.filter((item) =>
