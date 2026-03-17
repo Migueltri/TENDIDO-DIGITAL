@@ -14165,9 +14165,6 @@ setIsMenuOpen(false);
   document.body.style.overflow = "auto";
   window.history.pushState({}, "", "/"); 
 };
-    
-    // Al cerrar con la X, limpiamos la URL
-    if (typeof window !== 'undefined') window.history.pushState({ page: 'home' }, '', '/');
 
 // En tu componente del modal, asegúrate de que tenga estos estilos:
 const modalStyles = {
