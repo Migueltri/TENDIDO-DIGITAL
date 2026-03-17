@@ -15452,7 +15452,23 @@ TENDIDO DIGITAL
         {/* 2. TARJETA DE CONTENIDO SUPERPUESTA */}
         <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-10 p-6 md:p-16 lg:p-24 z-20 shadow-2xl min-h-screen">
           <div className="max-w-4xl mx-auto">
-            
+
+{/* INICIO PIE DE FOTO Y AUTOR */}
+          {(selectedNews.imageCaption || selectedNews.photoCredit) && (
+            <div className="text-sm text-gray-500 italic mb-6 font-serif">
+              {selectedNews.imageCaption && (
+                <span>{selectedNews.imageCaption}</span>
+              )}
+              {selectedNews.imageCaption && selectedNews.photoCredit && (
+                <span className="mx-2">|</span>
+              )}
+              {selectedNews.photoCredit && (
+                <span>Foto: {selectedNews.photoCredit}</span>
+              )}
+            </div>
+          )}
+          {/* FIN PIE DE FOTO Y AUTOR */}
+			  
             {/* Metadatos */}
             <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
               <div className="flex items-center"><i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedNews?.date || ""}</div>
