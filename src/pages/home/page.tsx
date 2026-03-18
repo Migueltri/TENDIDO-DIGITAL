@@ -13536,17 +13536,22 @@ function formatTimeAgo(dateString: string): string {
 // Detectar enlaces de noticias compartidas al abrir la web
   useEffect(() => {
     if (typeof window === 'undefined') return;
+
     const urlParams = new URLSearchParams(window.location.search);
     const noticiaId = urlParams.get('noticia');
-    if (noticiaId) {
-      const todasLasNoticias = [...(typeof latestNews !== 'undefined' ? latestNews : []), ...(typeof featuredNews !== 'undefined' ? featuredNews : [])];
-      const noticiaDirecta = todasLasNoticias.find((n: any) => n.id.toString() === noticiaId);
+
+    // Solo buscamos si hay un ID en la URL y la lista de noticias ya se ha descargado
+    if (noticiaId && combinedNews && combinedNews.length > 0) {
+      const noticiaDirecta = combinedNews.find((n: any) => n.id.toString() === noticiaId);
+      
       if (noticiaDirecta) {
         setSelectedNews(noticiaDirecta);
         setIsNewsModalOpen(true);
+        // Limpiamos la URL para que no se reabra si el usuario recarga la página
+        window.history.replaceState({}, '', window.location.pathname);
       }
     }
-  }, []);
+  }, [combinedNews]);
 
 // --- 1. CARGA DE DATOS UNIFICADA Y SEGURA ---
   useEffect(() => {
