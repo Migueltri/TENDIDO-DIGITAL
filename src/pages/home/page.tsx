@@ -14220,7 +14220,7 @@ document.body.style.overflow = 'unset';
 {(news.imageCaption || news.photoCredit) && (
   <div className="mt-3 text-sm text-gray-500 flex justify-between">
     <span>{news.imageCaption}</span>
-    {news.photoCredit && <span className="italic">Foto: {news.photoCredit}</span>}
+    {news.photoCredit && <span className="italic"> {news.photoCredit}</span>}
   </div>
 )}
 					  
@@ -14490,7 +14490,7 @@ if (activeTab === 'cronicas') {
             {(caption || credit) && (
               <div className="mt-2 text-sm text-gray-500 flex justify-between">
                 <span>{caption}</span>
-                {credit && <span className="italic">Foto: {credit}</span>}
+                {credit && <span className="italic"> {credit}</span>}
               </div>
             )}
           </div>
@@ -15441,7 +15441,7 @@ TENDIDO DIGITAL
                 <span className="mx-2">|</span>
               )}
               {selectedNews.photoCredit && (
-                <span>Foto: {selectedNews.photoCredit}</span>
+                <span> {selectedNews.photoCredit}</span>
               )}
             </div>
           )}
@@ -15536,7 +15536,7 @@ TENDIDO DIGITAL
                             <div className="text-sm text-gray-500 mt-3 text-center italic font-serif px-2 leading-relaxed">
                               {img.caption && <span>{img.caption}</span>}
                               {img.caption && img.credit && <span className="mx-2 text-gray-400">|</span>}
-                              {img.credit && <span>Foto: {img.credit}</span>}
+                              {img.credit && <span> {img.credit}</span>}
                             </div>
                           )}
                           {/* FIN PIE DE FOTO GALERÍA */}
