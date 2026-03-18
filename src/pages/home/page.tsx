@@ -14253,6 +14253,16 @@ document.body.style.overflow = 'unset';
       </div>
     );
   }
+
+// Pantalla de carga indestructible
+  if (isAppLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 z-[99999] fixed inset-0">
+        <div className="w-16 h-16 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin mb-4"></div>
+        <p className="text-gray-600 font-medium animate-pulse">Cargando actualidad taurina...</p>
+      </div>
+    );
+  }
 	
 const renderContent = () => {
 if (activeTab === 'guardados') {
