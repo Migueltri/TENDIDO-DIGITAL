@@ -59,7 +59,20 @@ export async function obtenerNoticias() {
     const noticiasActivas = db.articles.filter(noticia => noticia.isPublished === true);
     
     // 3. Ordenar de más nueva a más antigua
-    return noticiasActivas.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    return noticiasActivas.sort((a, b) => {
+    const orderA = a.customOrder || 0;
+    const orderB = b.customOrder || 0;
+    
+    // Si ambas tienen prioridad numérica, se ordenan entre ellas (1, 2, 3...)
+    if (orderA > 0 && orderB > 0) return orderA - orderB;
+    
+    // Si solo una tiene prioridad, esa va primero
+    if (orderA > 0) return -1;
+    if (orderB > 0) return 1;
+    
+    // Si ninguna tiene prioridad (ambas en 0), se ordenan por fecha (la más nueva primero)
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+})
   } catch (error) {
     console.error("Error leyendo las noticias:", error);
     return [];
