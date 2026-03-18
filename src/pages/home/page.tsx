@@ -13691,7 +13691,7 @@ function formatTimeAgo(dateString: string): string {
 
         // 9. Inyectar TODAS las fijadas en el Slider gigante sin límite de cantidad
         const pinnedNews = finalNewsList.filter(n => n.isPinned);
-        const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 20);
+        const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
         
         // Juntamos las fijadas (sin límite) + las normales
         const sliderNews = [...pinnedNews, ...unpinnedBreaking];
