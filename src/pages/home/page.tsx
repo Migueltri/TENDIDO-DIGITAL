@@ -14008,9 +14008,15 @@ const renderArticleContent = (text?: string | null) => {
       return (
         <>
           {forcedStyle}
-          <div className="text-gray-700 text-lg leading-relaxed mt-12 font-sans [&_*]:!font-sans [&_a]:text-blue-600 [&_a]:underline [&_a]:decoration-blue-600/30 hover:[&_a]:decoration-blue-600 [&_a]:cursor-pointer [&_a]:font-semibold [&_a]:transition-all"
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
+          {/* CONTENIDO PRINCIPAL BLINDADO (Fuerza tipografía uniforme y limpia puntuación) */}
+                    <div 
+                        className="text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6"
+                        dangerouslySetInnerHTML={{ 
+                            __html: (selectedNews.fullContent || selectedNews.content || "")
+                                .replace(/(?:\s|&nbsp;)+\./g, '.') // Aplasta cualquier espacio o espacio fantasma antes de un punto
+                                .replace(/<p>\s*\.<\/p>/g, '.')    // Elimina saltos de línea que solo tengan un punto aislado
+                        }} 
+                    />
         </>
       );
     }
