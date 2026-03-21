@@ -14021,7 +14021,7 @@ const renderArticleContent = (text?: string | null) => {
                     <div 
                         className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
                         dangerouslySetInnerHTML={{ 
-                            __html: (selectedNews.fullContent || selectedNews.content || "")
+                            __html: (text || "")
                                 .replace(/(?:\s|&nbsp;)+\./g, '.') 
                                 .replace(/<p>\s*\.<\/p>/g, '.')    
                         }} 
@@ -15425,7 +15425,7 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
-		    <img src={getInstantImageUrl(selectedNews.imageUrl)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
+		    <img src={getInstantImageUrl(selectedNews.imageUrl || selectedNews.image)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-24 md:bottom-32 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
