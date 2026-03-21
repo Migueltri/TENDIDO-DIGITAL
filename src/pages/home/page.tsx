@@ -15437,25 +15437,28 @@ TENDIDO DIGITAL
           </div>
         </div>
 
-        {/* 2. TARJETA DE CONTENIDO SUPERPUESTA */}
-        <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-10 p-6 md:p-16 lg:p-24 z-20 shadow-2xl min-h-screen">
-          <div className="max-w-4xl mx-auto">
-
-{/* INICIO PIE DE FOTO Y AUTOR */}
-          {(selectedNews.imageCaption || selectedNews.photoCredit) && (
+        {/* CONTENEDOR LIMPIO DE PORTADA Y PIE DE FOTO */}
+          <div className="w-full mb-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl mb-4 bg-gray-100">
+              <img 
+                src={getInstantImageUrl(selectedNews.imageUrl)} 
+                alt={selectedNews.title || "Portada de la noticia"} 
+                className="w-full max-h-[70vh] object-cover" 
+              />
+            </div>
+            
             <div className="text-sm text-gray-500 italic mb-6 font-serif">
-                {selectedNews.imageCaption && (
-                  <span>{selectedNews.imageCaption}</span>
-                )}
-                {selectedNews.imageCaption && selectedNews.photoCredit && (
-                  <span className="mx-2 text-gray-400">|</span>
-                )}
-                {selectedNews.photoCredit && (
-                  <span>Foto: {selectedNews.photoCredit}</span>
-                )}
-              </div>
-          )}
-          {/* FIN PIE DE FOTO Y AUTOR */}
+              {selectedNews.imageCaption && (
+                <span>{selectedNews.imageCaption}</span>
+              )}
+              {selectedNews.imageCaption && selectedNews.photoCredit && (
+                <span className="mx-2 text-gray-400">|</span>
+              )}
+              {selectedNews.photoCredit && (
+                <span>Foto: {selectedNews.photoCredit}</span>
+              )}
+            </div>
+          </div>
 			  
             {/* Metadatos */}
             <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
