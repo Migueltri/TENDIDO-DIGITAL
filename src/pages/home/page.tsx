@@ -14057,7 +14057,8 @@ const CrónicaLayout = ({ news }: { news: any }) => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-1">
           <div className="relative overflow-hidden rounded-xl">
-            <img src={getInstantImageUrl(article.imageUrl)}
+            <img
+              src={news.image}
               alt={news.title}
               className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
               loading="lazy"
@@ -14220,7 +14221,8 @@ document.body.style.overflow = 'unset';
                 <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border border-gray-100">
                   {/* Imagen */}
                   <div className="relative overflow-hidden">
-                    <img src={getInstantImageUrl(article.imageUrl)}
+                    <img
+                      src={news.image}
                       alt={news.title}
                       className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
@@ -14755,7 +14757,8 @@ return (
                       {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
                         {news.image && (
-                          <img src={getInstantImageUrl(article.imageUrl)}
+                          <img
+                            src={news.image}
                             alt={news.title || "Noticia Taurina"}
                             loading="lazy" 
                             decoding="async"
