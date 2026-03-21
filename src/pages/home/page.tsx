@@ -15084,12 +15084,10 @@ return (
           }}
           className="flex items-center cursor-pointer group"
         >
-          <img
-            src="/images/tendidodigitallogosimple.png"
-            alt="Tendido Digital"
-            className="h-12 w-auto opacity-90 group-hover:opacity-100 transition-transform duration-300 group-hover:scale-105"
-          />
-          <span className="ml-3 text-lg font-bold bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent group-hover:brightness-125">
+          <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 relative">
+            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+          </div>
+          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tight">
             TENDIDO DIGITAL
           </span>
         </div>
