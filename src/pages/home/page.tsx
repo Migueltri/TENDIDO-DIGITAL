@@ -44,13 +44,16 @@
   isPinned?: boolean;
 }
 
-// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS
+// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN DEFINITIVA)
 const getInstantImageUrl = (url: any) => {
     if (!url || typeof url !== 'string') return '';
-    if (url.startsWith('/images/')) {
-        return `https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public${url}`;
-    }
-    return url;
+    if (url.startsWith('http') || url.startsWith('data:image')) return url;
+    if (url.includes('tendidodigitallogosimple')) return url;
+    
+    let cleanPath = url.startsWith('/') ? url.substring(1) : url;
+    if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
+    
+    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
 export async function obtenerNoticias() {
@@ -15422,7 +15425,7 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
-		    <img src={getInstantImageUrl(selectedNews.imageUrl)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
+		    <img src={getInstantImageUrl(article.imageUrl || article.image)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-24 md:bottom-32 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
@@ -15538,7 +15541,7 @@ TENDIDO DIGITAL
                         <div key={idx} className="flex flex-col">
                           <div className="relative rounded-2xl overflow-hidden bg-gray-100">
                             {/* loading="lazy" es vital aquí */}
-                            <img src={getInstantImageUrl(url)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
+                            <img src={getInstantImageUrl(selectedNews.imageUrl || selectedNews.image)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
                           </div>
                           
                           {/* INICIO PIE DE FOTO GALERÍA */}
