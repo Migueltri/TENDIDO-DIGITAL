@@ -14060,8 +14060,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-1">
           <div className="relative overflow-hidden rounded-xl">
-            <img
-              src={getInstantImageUrl(news.image)} alt={news.title} className="rounded-xl w-full loading="lazy" />
+            <img src={getInstantImageUrl(news.image)} alt={news.title} className="rounded-xl w-full h-48 object-cover" />
           </div>
         </div>
 
