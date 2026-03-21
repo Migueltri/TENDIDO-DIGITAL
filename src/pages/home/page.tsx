@@ -44,10 +44,12 @@
   isPinned?: boolean;
 }
 
-// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN DEFINITIVA)
+// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN ESTABLE)
 const getInstantImageUrl = (url: any) => {
-    // Si no hay foto, devuelve un fondo gris con el logo para que nunca salga en negro
-    if (!url || typeof url !== 'string') return 'https://ui-avatars.com/api/?name=Noticia&background=1f2937&color=ffffff';
+    // Si la noticia no tiene foto, ponemos el logo de la web para evitar fondos negros
+    if (!url || typeof url !== 'string' || url.trim() === '') {
+        return '/tendidodigitallogosimple.png';
+    }
     
     if (url.startsWith('http') || url.startsWith('data:image')) return url;
     if (url.includes('tendidodigitallogosimple')) return url;
@@ -55,9 +57,7 @@ const getInstantImageUrl = (url: any) => {
     let cleanPath = url.startsWith('/') ? url.substring(1) : url;
     if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
     
-    // Forzamos la actualización inmediata de la foto
-    const cacheBuster = new Date().getTime();
-    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}?t=${cacheBuster}`;
+    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
 export async function obtenerNoticias() {
@@ -13675,39 +13675,46 @@ function formatTimeAgo(dateString: string): string {
         // 6. Ordenamos TODO estrictamente por fecha primero
         const timeSortedNews = [...uniqueNews].sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
 
-        // 7. Extraer noticias de HOY ESTRICTAMENTE para el Slider
-let breakingNews: any[] = [];
-if (timeSortedNews.length > 0) {
-  const todayObj = new Date();
-  breakingNews = timeSortedNews.filter((n: any) => {
-    const nTime = getRealTime(n);
-    if (nTime === 0) return false;
-    const nDate = new Date(nTime);
-    // Solo noticias que coincidan exactamente con la fecha de hoy
-    return nDate.getFullYear() === todayObj.getFullYear() &&
-           nDate.getMonth() === todayObj.getMonth() &&
-           nDate.getDate() === todayObj.getDate();
-  });
-}
+        // 7. Extraer noticias ESTRICTAMENTE DE HOY para el Slider
+      let breakingNews: any[] = [];
+      const todayObj = new Date();
+      breakingNews = timeSortedNews.filter((n: any) => {
+        const nTime = getRealTime(n);
+        if (nTime === 0) return false;
+        const nDate = new Date(nTime);
+        return nDate.getFullYear() === todayObj.getFullYear() &&
+               nDate.getMonth() === todayObj.getMonth() &&
+               nDate.getDate() === todayObj.getDate();
+      });
 
-// 8. Aplicamos la prioridad de FIJADAS
-const finalNewsList = timeSortedNews.sort((a: any, b: any) => {
-  if (a.isPinned && !b.isPinned) return -1;
-  if (!a.isPinned && b.isPinned) return 1;
-  return 0; // Mantienen el orden de fecha si ambas están fijadas o ninguna lo está
-});
+      // 8. Aplicamos la prioridad de FIJADAS
+      const finalNewsList = [...timeSortedNews].sort((a: any, b: any) => {
+        if (a.isPinned && !b.isPinned) return -1;
+        if (!a.isPinned && b.isPinned) return 1;
+        return 0; 
+      });
 
-// 9. Inyectar TODAS las fijadas en el Slider gigante sin límite de cantidad
-const pinnedNews = finalNewsList.filter(n => n.isPinned);
-const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
+      // 9. Construimos el Slider (Fijadas + Noticias de Hoy)
+      const pinnedNews = finalNewsList.filter(n => n.isPinned);
+      const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
+      let sliderNews = [...pinnedNews, ...unpinnedBreaking];
 
-// Juntamos las fijadas (sin límite) + las normales estrictamente de hoy
-const sliderNews = [...pinnedNews, ...unpinnedBreaking];
+      // 10. SALVAVIDAS: Si no hay noticias hoy, mostramos el logo en vez de un bloque negro roto
+      if (sliderNews.length === 0) {
+        sliderNews = [{
+          id: 999999,
+          title: "Tendido Digital - La actualidad taurina al instante",
+          category: "Última Hora",
+          date: new Date().toISOString(),
+          excerpt: "Mantente informado con todas las noticias, crónicas y entrevistas del mundo del toro.",
+          image: "/tendidodigitallogosimple.png",
+          fullContent: "Bienvenido a Tendido Digital."
+        }];
+      }
 
-// Aplicamos el estado (sin "parches" para que desaparezcan las de ayer)
-setNews24h(sliderNews);
-        setCombinedNews(finalNewsList);
-		setIsAppLoading(false);
+      setNews24h(sliderNews);
+      setCombinedNews(finalNewsList);
+	  setIsAppLoading(false);
 
       } finally {
       }
@@ -14002,9 +14009,12 @@ const getFilteredNews = () => {
   });
 };
 
-const renderArticleContent = (text?: string | null) => {
+const renderArticleContent = (text?: any) => {
     if (!text) return null;
-    const isHTML = /<[a-z][\s\S]*>/i.test(text);
+    
+    // BLINDAJE ANTICRASH
+    const safeText = typeof text === 'string' ? text : String(text);
+    const isHTML = /<[a-z][\s\S]*>/i.test(safeText);
 
     const forcedStyle = (
       <style>{`
@@ -14017,29 +14027,22 @@ const renderArticleContent = (text?: string | null) => {
       return (
         <>
           {forcedStyle}
-          {/* CONTENIDO PRINCIPAL BLINDADO (Fuerza tipografía uniforme y limpia puntuación) */}
-                    <div 
-                        className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
-                        dangerouslySetInnerHTML={{ 
-                            __html: (text || "")
-                                .replace(/(?:\s|&nbsp;)+\./g, '.') 
-                                .replace(/<p>\s*\.<\/p>/g, '.')    
-                        }} 
-                    />
+          <div 
+              className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
+              dangerouslySetInnerHTML={{ 
+                  __html: safeText
+                      .replace(/(?:\s|&nbsp;)+\./g, '.') 
+                      .replace(/<p>\s*\.<\/p>/g, '.')    
+              }} 
+          />
         </>
       );
     }
 
-    // Motor automático de Última Hora: Aísla estrictamente las noticias del día más reciente
-  let noticiasUltimaHora = [];
-  if (combinedNews && combinedNews.length > 0) {
-    // 1. Ordenamos para asegurar que la primera noticia es la más nueva cronológicamente
-    const ordenadas = [...combinedNews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    // 2. Extraemos el día exacto (YYYY-MM-DD) de esa noticia más reciente
-    const fechaMasNueva = ordenadas[0].date.substring(0, 10);
-    // 3. Filtramos aniquilando cualquier noticia que no sea de ese día exacto
-    noticiasUltimaHora = ordenadas.filter(n => n.date.substring(0, 10) === fechaMasNueva);
-  }
+    // RESTAURAMOS LAS VARIABLES QUE SE HABÍAN BORRADO POR ERROR
+    const normalized = safeText.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+    let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    const toHtml = (p: string) => p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\n+/g, ' ');
 
     return (
       <>
