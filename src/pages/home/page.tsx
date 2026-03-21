@@ -13500,14 +13500,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
   
   // 1. Empezamos vacíos para que las noticias definitivas aparezcan limpias sin saltos visuales
   const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
-  // FILTRO ESTRICTO 24 HORAS
-  const news24h = (publishedNews || []).filter(post => {
-    if (!post.date) return false;
-    const postDate = new Date(post.date).getTime();
-    const now = new Date().getTime();
-    const twentyFourHours = 24 * 60 * 60 * 1000;
-    return (now - postDate) <= twentyFourHours;
-  });
+  const [news24h, setNews24h] = useState<NewsItem[]>([]);
   
   // 2. Nuevo estado: Bloquea la web hasta que bajen las noticias nuevas
 const [isAppLoading, setIsAppLoading] = useState(true);
