@@ -14013,6 +14013,7 @@ const getFilteredNews = () => {
 const renderArticleContent = (text?: any) => {
     if (!text) return null;
     
+    // BLINDAJE ANTICRASH: Pase lo que pase, lo convertimos a texto seguro.
     const safeText = typeof text === 'string' ? text : String(text);
     const isHTML = /<[a-z][\s\S]*>/i.test(safeText);
 
@@ -15551,7 +15552,7 @@ TENDIDO DIGITAL
                         <div key={idx} className="flex flex-col">
                           <div className="relative rounded-2xl overflow-hidden bg-gray-100">
                             {/* loading="lazy" es vital aquí */}
-                            <img src={getInstantImageUrl(selectedNews.imageUrl || selectedNews.image)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
+                            <img src={getInstantImageUrl(url)} alt={\Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />`
                           </div>
                           
                           {/* INICIO PIE DE FOTO GALERÍA */}
