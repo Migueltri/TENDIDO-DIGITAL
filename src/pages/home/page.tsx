@@ -15372,7 +15372,117 @@ TENDIDO DIGITAL
   {renderContent()}
 
 {/* MODAL DE NOTICIA - DISEÑO ULTRA PREMIUM (Optimizado para Móviles) */}
-              {/* BLOQUE DE RESULTADOS */}
+  {isNewsModalOpen && selectedNews && (
+    <div className="fixed inset-0 z-[100] flex flex-col animate-fadeIn bg-black">
+      
+      {/* BARRA DE NAVEGACIÓN SUPERIOR (Sin blur en móvil para ahorrar RAM) */}
+      <nav className="sticky top-0 z-[110] bg-white md:bg-white/90 md:backdrop-blur-md border-b border-gray-100 px-4 md:px-8 py-4 flex items-center justify-between">
+        <div 
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={() => {
+            setIsNewsModalOpen(false);
+            setSelectedNews(null);
+            document.body.style.overflow = "auto";
+            window.location.href = "/";
+          }}
+        >
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
+            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+          </div>
+          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
+            TENDIDO DIGITAL
+          </span>
+        </div>
+
+        <button 
+          onClick={() => {
+  // 1. Cerramos el modal usando tu función o estado
+  if (typeof closeNewsModal === 'function') {
+    closeNewsModal();
+  } else if (typeof setIsNewsModalOpen === 'function') {
+    setIsNewsModalOpen(false);
+  }
+  
+  // 2. Desbloqueamos el scroll del cuerpo de la página
+  document.body.style.overflow = "auto";
+  document.body.style.position = "";
+  document.body.style.width = "";
+  
+  // 3. Limpiamos el ID de la URL para evitar bucles
+  window.history.replaceState({}, '', window.location.pathname);
+}}
+          className="flex items-center gap-2 text-gray-500 hover:text-red-600 font-bold transition-colors"
+        >
+          <i className="ri-arrow-left-line text-xl"></i>
+          <span className="hidden md:inline">Volver</span>
+        </button>
+      </nav>
+
+      <div className="w-full h-full overflow-y-auto overflow-x-hidden bg-gray-50" style={{ WebkitOverflowScrolling: "touch" }}>
+        
+        {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
+        <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
+		    <img src={getInstantImageUrl(selectedNews.imageUrl)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          
+          <div className="absolute bottom-24 md:bottom-32 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
+            {selectedNews?.category && (
+              <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block shadow-lg">
+                {selectedNews.category}
+              </span>
+            )}
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.1] drop-shadow-2xl max-w-4xl">
+              {selectedNews?.title || ""}
+            </h1>
+          </div>
+        </div>
+
+        {/* 2. TARJETA DE CONTENIDO SUPERPUESTA */}
+        <div className="relative bg-white rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-10 p-6 md:p-16 lg:p-24 z-20 shadow-2xl min-h-screen">
+          <div className="max-w-4xl mx-auto">
+
+{/* INICIO PIE DE FOTO Y AUTOR */}
+          {(selectedNews.imageCaption || selectedNews.photoCredit) && (
+            <div className="text-sm text-gray-500 italic mb-6 font-serif">
+              {selectedNews.imageCaption && (
+                <span>{selectedNews.imageCaption}</span>
+              )}
+              {selectedNews.imageCaption && selectedNews.photoCredit && (
+                <span className="mx-2">|</span>
+              )}
+              {selectedNews.photoCredit && (
+                <span> {selectedNews.photoCredit}</span>
+              )}
+            </div>
+          )}
+          {/* FIN PIE DE FOTO Y AUTOR */}
+			  
+            {/* Metadatos */}
+            <div className="flex flex-wrap items-center gap-6 text-gray-500 text-sm md:text-base mb-12 pb-8 border-b border-gray-100 font-medium">
+              <div className="flex items-center"><i className="ri-calendar-line text-red-600 mr-2 text-xl"></i> {selectedNews?.date || ""}</div>
+              {selectedNews?.author && (
+                <div className="flex items-center">
+                  {selectedNews.authorLogo ? (
+                    <img src={selectedNews.authorLogo} alt={selectedNews.author} loading="lazy" className="h-8 w-8 rounded-full object-cover mr-3 shadow-sm" />
+                  ) : (
+                    <i className="ri-user-line text-red-600 mr-2 text-xl"></i>
+                  )}
+                  <span className="text-gray-900 font-bold">{selectedNews.author}</span>
+                </div>
+              )}
+              {selectedNews?.plaza && (
+                <div className="flex items-center"><i className="ri-map-pin-line text-red-600 mr-2 text-xl"></i> {selectedNews.plaza}</div>
+              )}
+            </div>
+
+            {/* Entradilla (Subtítulo más pequeño como pidió) */}
+            {selectedNews?.excerpt && (
+              <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed mb-10 italic border-l-4 border-red-600 pl-6">
+                "{selectedNews.excerpt}"
+              </p>
+            )}
+
+            {/* BLOQUE DE RESULTADOS */}
             {(selectedNews?.torerosRaw || (Array.isArray(selectedNews?.toreros) && selectedNews.toreros.length > 0)) && (
               <div className="mb-16 bg-gray-50 rounded-3xl p-6 md:p-10 border border-gray-100">
                 <h3 className="font-bold text-gray-900 mb-6 flex items-center text-sm md:text-base uppercase tracking-widest">
