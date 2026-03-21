@@ -15444,16 +15444,16 @@ TENDIDO DIGITAL
 {/* INICIO PIE DE FOTO Y AUTOR */}
           {(selectedNews.imageCaption || selectedNews.photoCredit) && (
             <div className="text-sm text-gray-500 italic mb-6 font-serif">
-              {selectedNews.imageCaption && (
-                <span>{selectedNews.imageCaption}</span>
-              )}
-              {selectedNews.imageCaption && selectedNews.photoCredit && (
-                <span className="mx-2">|</span>
-              )}
-              {selectedNews.photoCredit && (
-                <span> {selectedNews.photoCredit}</span>
-              )}
-            </div>
+                {selectedNews.imageCaption && (
+                  <span>{selectedNews.imageCaption}</span>
+                )}
+                {selectedNews.imageCaption && selectedNews.photoCredit && (
+                  <span className="mx-2 text-gray-400">|</span>
+                )}
+                {selectedNews.photoCredit && (
+                  <span>Foto: {selectedNews.photoCredit}</span>
+                )}
+              </div>
           )}
           {/* FIN PIE DE FOTO Y AUTOR */}
 			  
