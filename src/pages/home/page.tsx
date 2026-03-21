@@ -46,14 +46,18 @@
 
 // TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN DEFINITIVA)
 const getInstantImageUrl = (url: any) => {
-    if (!url || typeof url !== 'string') return '';
+    // Si no hay foto, devuelve un fondo gris con el logo para que nunca salga en negro
+    if (!url || typeof url !== 'string') return 'https://ui-avatars.com/api/?name=Noticia&background=1f2937&color=ffffff';
+    
     if (url.startsWith('http') || url.startsWith('data:image')) return url;
     if (url.includes('tendidodigitallogosimple')) return url;
     
     let cleanPath = url.startsWith('/') ? url.substring(1) : url;
     if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
     
-    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
+    // Forzamos la actualización inmediata de la foto
+    const cacheBuster = new Date().getTime();
+    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}?t=${cacheBuster}`;
 };
 
 export async function obtenerNoticias() {
@@ -13671,41 +13675,37 @@ function formatTimeAgo(dateString: string): string {
         // 6. Ordenamos TODO estrictamente por fecha primero
         const timeSortedNews = [...uniqueNews].sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
 
-        // 7. Extraer noticias del DÍA MÁS RECIENTE para el Slider
-        let breakingNews: any[] = [];
-        if (timeSortedNews.length > 0) {
-            let newestTime = getRealTime(timeSortedNews[0]);
-            if (newestTime > 0) {
-                const newestDateObj = new Date(newestTime);
-                breakingNews = timeSortedNews.filter((n: any) => {
-                    const nTime = getRealTime(n);
-                    if (nTime === 0) return false;
-                    const nDate = new Date(nTime);
-                    return nDate.getFullYear() === newestDateObj.getFullYear() &&
-                           nDate.getMonth() === newestDateObj.getMonth() &&
-                           nDate.getDate() === newestDateObj.getDate();
-                });
-            }
-        }
-        if (breakingNews.length === 0 && timeSortedNews.length > 0) {
-            breakingNews = timeSortedNews.slice(0, 4);
-        }
+        // 7. Extraer noticias de HOY ESTRICTAMENTE para el Slider
+let breakingNews: any[] = [];
+if (timeSortedNews.length > 0) {
+  const todayObj = new Date();
+  breakingNews = timeSortedNews.filter((n: any) => {
+    const nTime = getRealTime(n);
+    if (nTime === 0) return false;
+    const nDate = new Date(nTime);
+    // Solo noticias que coincidan exactamente con la fecha de hoy
+    return nDate.getFullYear() === todayObj.getFullYear() &&
+           nDate.getMonth() === todayObj.getMonth() &&
+           nDate.getDate() === todayObj.getDate();
+  });
+}
 
-        // 8. Aplicamos la prioridad de FIJADAS
-        const finalNewsList = timeSortedNews.sort((a: any, b: any) => {
-            if (a.isPinned && !b.isPinned) return -1;
-            if (!a.isPinned && b.isPinned) return 1;
-            return 0; // Mantienen el orden de fecha si ambas están fijadas o ninguna lo está
-        });
+// 8. Aplicamos la prioridad de FIJADAS
+const finalNewsList = timeSortedNews.sort((a: any, b: any) => {
+  if (a.isPinned && !b.isPinned) return -1;
+  if (!a.isPinned && b.isPinned) return 1;
+  return 0; // Mantienen el orden de fecha si ambas están fijadas o ninguna lo está
+});
 
-        // 9. Inyectar TODAS las fijadas en el Slider gigante sin límite de cantidad
-        const pinnedNews = finalNewsList.filter(n => n.isPinned);
-        const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
-        
-        // Juntamos las fijadas (sin límite) + las normales
-        const sliderNews = [...pinnedNews, ...unpinnedBreaking];
+// 9. Inyectar TODAS las fijadas en el Slider gigante sin límite de cantidad
+const pinnedNews = finalNewsList.filter(n => n.isPinned);
+const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
 
-        setNews24h(sliderNews.length > 0 ? sliderNews : finalNewsList.slice(0, 4));
+// Juntamos las fijadas (sin límite) + las normales estrictamente de hoy
+const sliderNews = [...pinnedNews, ...unpinnedBreaking];
+
+// Aplicamos el estado (sin "parches" para que desaparezcan las de ayer)
+setNews24h(sliderNews);
         setCombinedNews(finalNewsList);
 		setIsAppLoading(false);
 
