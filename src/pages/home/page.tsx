@@ -44,15 +44,16 @@
   isPinned?: boolean;
 }
 
-// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN DEFINITIVA)
-const getInstantImageUrl = (url: any) => {
+// TRADUCTOR DE IMÁGENES AL CMS (VERSIÓN CMS)
+const getCMSImageUrl = (url: any) => {
     if (!url || typeof url !== 'string') return '';
-    if (url.startsWith('http') || url.startsWith('data:image')) return url;
-    if (url.includes('tendidodigitallogosimple')) return url;
+    // Si ya es Base64 (foto nueva pegándose) o URL completa, la dejamos
+    if (url.startsWith('data:image') || url.startsWith('http')) return url;
     
     let cleanPath = url.startsWith('/') ? url.substring(1) : url;
     if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
     
+    // Ruta absoluta a donde se guardaron físicamente las fotos en TENDIDO-DIGITAL-CMS
     return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
