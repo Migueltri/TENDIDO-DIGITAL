@@ -44,14 +44,24 @@
   isPinned?: boolean;
 }
 
-// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS
+// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (BLINDADO)
 const getInstantImageUrl = (url: any) => {
     if (!url || typeof url !== 'string') return '';
-    // Las mayúsculas aquí son VITALES para que GitHub no devuelva error 404
-    if (url.startsWith('/images/')) {
-        return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public${url}`;
+    
+    // 1. Si es una ruta web completa o código Base64, está perfecta
+    if (url.startsWith('http') || url.startsWith('data:image')) return url;
+
+    // 2. Si es el logo por defecto de la web, lo dejamos en paz
+    if (url.includes('tendidodigitallogosimple')) return url;
+
+    // 3. Detectar si le falta el 'images/' (el script de optimización guardó solo el nombre)
+    let cleanPath = url.startsWith('/') ? url.substring(1) : url;
+    if (!cleanPath.startsWith('images/')) {
+        cleanPath = `images/${cleanPath}`;
     }
-    return url;
+
+    // 4. Montar la ruta absoluta hacia tu CMS
+    return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
 export async function obtenerNoticias() {
@@ -14019,7 +14029,7 @@ const renderArticleContent = (text?: string | null) => {
                     <div 
                         className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
                         dangerouslySetInnerHTML={{ 
-                            __html: (selectedNews.fullContent || selectedNews.content || "")
+                            __html: String(selectedNews.fullContent || selectedNews.content || "")
                                 .replace(/(?:\s|&nbsp;)+\./g, '.') 
                                 .replace(/<p>\s*\.<\/p>/g, '.')    
                         }} 
