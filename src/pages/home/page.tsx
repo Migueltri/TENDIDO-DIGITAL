@@ -14030,9 +14030,16 @@ const renderArticleContent = (text?: string | null) => {
       );
     }
 
-    const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
-    let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-    const toHtml = (p: string) => p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\n+/g, ' ');
+    // Motor automático de Última Hora: Aísla estrictamente las noticias del día más reciente
+  let noticiasUltimaHora = [];
+  if (combinedNews && combinedNews.length > 0) {
+    // 1. Ordenamos para asegurar que la primera noticia es la más nueva cronológicamente
+    const ordenadas = [...combinedNews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    // 2. Extraemos el día exacto (YYYY-MM-DD) de esa noticia más reciente
+    const fechaMasNueva = ordenadas[0].date.substring(0, 10);
+    // 3. Filtramos aniquilando cualquier noticia que no sea de ese día exacto
+    noticiasUltimaHora = ordenadas.filter(n => n.date.substring(0, 10) === fechaMasNueva);
+  }
 
     return (
       <>
