@@ -15539,7 +15539,7 @@ TENDIDO DIGITAL
                         <div key={idx} className="flex flex-col">
                           <div className="relative rounded-2xl overflow-hidden bg-gray-100">
                             {/* loading="lazy" es vital aquí */}
-                            src={getInstantImageUrl(selectedNews.imageUrl || selectedNews.image)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
+                            <img src={getInstantImageUrl(selectedNews.imageUrl || selectedNews.image)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
                           </div>
                           
                           {/* INICIO PIE DE FOTO GALERÍA */}
