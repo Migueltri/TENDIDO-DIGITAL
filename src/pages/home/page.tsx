@@ -47,6 +47,15 @@
 import fs from 'fs';
 import path from 'path';
 
+// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS
+const getInstantImageUrl = (url: any) => {
+    if (!url || typeof url !== 'string') return '';
+    if (url.startsWith('/images/')) {
+        return `https://raw.githubusercontent.com/migueltri/tendido-digital-cms/main/public${url}`;
+    }
+    return url;
+};
+
 export async function obtenerNoticias() {
   // 1. Leer el archivo dataDB.json directamente (evita problemas de caché de Vercel)
   const filePath = path.join(process.cwd(), 'public', 'data', 'dataDB.json');
@@ -14051,8 +14060,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-1">
           <div className="relative overflow-hidden rounded-xl">
-            <img
-              src={news.image}
+            <img src={getInstantImageUrl(article.imageUrl)}
               alt={news.title}
               className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
               loading="lazy"
@@ -14215,8 +14223,7 @@ document.body.style.overflow = 'unset';
                 <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border border-gray-100">
                   {/* Imagen */}
                   <div className="relative overflow-hidden">
-                    <img
-                      src={news.image}
+                    <img src={getInstantImageUrl(article.imageUrl)}
                       alt={news.title}
                       className="w-full h-48 md:h-56 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
@@ -14751,8 +14758,7 @@ return (
                       {/* Imagen con Lazy Loading estricto para salvar la RAM del móvil */}
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
                         {news.image && (
-                          <img
-                            src={news.image}
+                          <img src={getInstantImageUrl(article.imageUrl)}
                             alt={news.title || "Noticia Taurina"}
                             loading="lazy" 
                             decoding="async"
@@ -15418,7 +15424,7 @@ TENDIDO DIGITAL
         
         {/* 1. HERO IMAGE (decoding async para no bloquear el móvil) */}
         <div className="relative w-full h-[70vh] md:h-[85vh] shrink-0 sticky top-0 -z-0 bg-gray-900">
-		    <img src={selectedNews?.image || ""} alt={selectedNews?.title || "Noticia"} decoding="async" className="w-full h-full object-cover object-top opacity-90" />
+		    <img src={getInstantImageUrl(selectedNews.imageUrl)} alt={selectedNews.title} loading="lazy" className="w-full h-full object-cover object-top opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           
           <div className="absolute bottom-24 md:bottom-32 left-0 right-0 px-5 md:px-16 lg:px-24 max-w-6xl mx-auto z-10">
@@ -15534,7 +15540,7 @@ TENDIDO DIGITAL
                         <div key={idx} className="flex flex-col">
                           <div className="relative rounded-2xl overflow-hidden bg-gray-100">
                             {/* loading="lazy" es vital aquí */}
-                            <img src={url} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
+                            <img src={getInstantImageUrl(url)} alt={`Imagen ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto max-h-[60vh] object-contain" />
                           </div>
                           
                           {/* INICIO PIE DE FOTO GALERÍA */}
