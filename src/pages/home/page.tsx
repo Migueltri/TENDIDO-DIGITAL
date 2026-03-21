@@ -14061,9 +14061,7 @@ const CrónicaLayout = ({ news }: { news: any }) => (
         <div className="lg:col-span-1">
           <div className="relative overflow-hidden rounded-xl">
             <img
-              src={news.image}
-              alt={news.title}
-              className="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-sm"
+              src={getInstantImageUrl(news.image)} alt={news.title} className="rounded-xl w-full
               loading="lazy"
             />
           </div>
@@ -14325,8 +14323,7 @@ Noticias Guardadas
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
               <div className="relative overflow-hidden">
                 <img
-                  src={post.image}
-                  alt={post.title}
+                  src={getInstantImageUrl(post.image)} alt={post.title}
                   className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -14761,8 +14758,7 @@ return (
                       <div className="relative w-full md:w-[40%] h-64 md:h-auto overflow-hidden bg-gray-100 shrink-0">
                         {news.image && (
                           <img
-                            src={news.image}
-                            alt={news.title || "Noticia Taurina"}
+                            src={getInstantImageUrl(news.image)} alt={news.title || "Noticia Taurina"}
                             loading="lazy" 
                             decoding="async"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
