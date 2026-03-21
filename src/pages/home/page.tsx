@@ -44,9 +44,6 @@
   isPinned?: boolean;
 }
 
-import fs from 'fs';
-import path from 'path';
-
 // TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS
 const getInstantImageUrl = (url: any) => {
     if (!url || typeof url !== 'string') return '';
