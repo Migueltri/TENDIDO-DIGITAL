@@ -14010,9 +14010,13 @@ const getFilteredNews = () => {
   });
 };
 
-const renderArticleContent = (text?: string | null) => {
+const renderArticleContent = (text?: any) => {
     if (!text) return null;
-    const isHTML = /<[a-z][\s\S]*>/i.test(text);
+    
+    // BLINDAJE: Si el dato está corrupto y no es un string, lo forzamos. 
+    // Esto evita que .test() o .replace() hagan explotar la página.
+    const safeText = typeof text === 'string' ? text : String(text);
+    const isHTML = /<[a-z][\s\S]*>/i.test(safeText);
 
     const forcedStyle = (
       <style>{`
@@ -14026,19 +14030,19 @@ const renderArticleContent = (text?: string | null) => {
         <>
           {forcedStyle}
           {/* CONTENIDO PRINCIPAL BLINDADO (Fuerza tipografía uniforme y limpia puntuación) */}
-                    <div 
-                        className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
-                        dangerouslySetInnerHTML={{ 
-                            __html: String(selectedNews.fullContent || selectedNews.content || "")
-                                .replace(/(?:\s|&nbsp;)+\./g, '.') 
-                                .replace(/<p>\s*\.<\/p>/g, '.')    
-                        }} 
-                    />
+          <div 
+              className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
+              dangerouslySetInnerHTML={{ 
+                  __html: safeText
+                      .replace(/(?:\s|&nbsp;)+\./g, '.') 
+                      .replace(/<p>\s*\.<\/p>/g, '.')    
+              }} 
+          />
         </>
       );
     }
 
-    const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+    const normalized = safeText.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
     let paragraphs = normalized.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
     const toHtml = (p: string) => p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\n+/g, ' ');
 
