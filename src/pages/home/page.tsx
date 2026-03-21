@@ -47,13 +47,9 @@
 // TRADUCTOR DE IMÁGENES AL CMS (VERSIÓN CMS)
 const getCMSImageUrl = (url: any) => {
     if (!url || typeof url !== 'string') return '';
-    // Si ya es Base64 (foto nueva pegándose) o URL completa, la dejamos
     if (url.startsWith('data:image') || url.startsWith('http')) return url;
-    
     let cleanPath = url.startsWith('/') ? url.substring(1) : url;
     if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
-    
-    // Ruta absoluta a donde se guardaron físicamente las fotos en TENDIDO-DIGITAL-CMS
     return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
@@ -14321,7 +14317,7 @@ Noticias Guardadas
 {/* FLECHAS DE NAVEGACIÓN MANUALES */}
               <div className="relative overflow-hidden">
                 <img
-                  src={getInstantImageUrl(post.image)} alt={post.title}
+                  src={getCMSImageUrl(post.image)} alt={post.title}
                   className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -14493,7 +14489,7 @@ if (activeTab === 'cronicas') {
         return (
           <div key={idx} className="flex flex-col">
             <img
-              src={url}
+              src={getCMSImageUrl(url)}
               alt={caption || `Imagen de galería ${idx + 1}`}
               className="w-full h-auto rounded-xl shadow-md object-cover"
             />
