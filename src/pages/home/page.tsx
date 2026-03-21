@@ -14013,8 +14013,6 @@ const getFilteredNews = () => {
 const renderArticleContent = (text?: any) => {
     if (!text) return null;
     
-    // BLINDAJE: Si el dato está corrupto y no es un string, lo forzamos. 
-    // Esto evita que .test() o .replace() hagan explotar la página.
     const safeText = typeof text === 'string' ? text : String(text);
     const isHTML = /<[a-z][\s\S]*>/i.test(safeText);
 
@@ -14029,7 +14027,7 @@ const renderArticleContent = (text?: any) => {
       return (
         <>
           {forcedStyle}
-          {/* CONTENIDO PRINCIPAL BLINDADO (Fuerza tipografía uniforme y limpia puntuación) */}
+          {/* CONTENIDO PRINCIPAL BLINDADO */}
           <div 
               className={`text-[1.1rem] md:text-[1.15rem] font-medium text-gray-800 leading-[1.8] [&_*]:!font-sans [&_*]:!text-[1.1rem] md:[&_*]:!text-[1.15rem] [&_*]:!font-medium [&_*]:!text-gray-800 [&_*]:!leading-[1.8] [&_strong]:!font-black [&_b]:!font-black space-y-6`}
               dangerouslySetInnerHTML={{ 
