@@ -48,7 +48,7 @@
 const getInstantImageUrl = (url: any) => {
     // Si la noticia no tiene foto, ponemos el logo de la web para evitar fondos negros
     if (!url || typeof url !== 'string' || url.trim() === '') {
-        return '/tendidodigitallogosimple.png';
+        return 'public/tendidodigitallogosimple.jpg';
     }
     
     if (url.startsWith('http') || url.startsWith('data:image')) return url;
@@ -13622,7 +13622,7 @@ function formatTimeAgo(dateString: string): string {
               date: formatSpanishDate(a.date), // FECHA PARA LOS USUARIOS: "7 de Marzo de 2026"
               rawDate: a.date,                 // FECHA PARA EL ORDENADOR: El número largo para que el panel no falle
               category: a.category,
-              image: a.imageUrl,
+              image: a.imageUrl || a.image,
               imageCaption: a.imageCaption,
               photoCredit: a.photoCredit,
               contentImages: a.contentImages,
