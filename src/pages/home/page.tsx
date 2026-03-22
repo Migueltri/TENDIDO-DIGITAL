@@ -13518,7 +13518,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
 const [isAppLoading, setIsAppLoading] = useState(true);
 // Cortocircuito: Obliga a mostrar la web a los 3 segundos máximo ante cualquier fallo de red
   useEffect(() => {
-    const seguro = setTimeout(() => setIsAppLoading(false), 3000);
+    const seguro = setTimeout(() => setIsAppLoading(false), 8000);
     return () => clearTimeout(seguro);
   }, []);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14597,7 +14597,7 @@ return (
 	  
     {/* Hero Carousel */}
       {/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H) - DISEÑO PANTALLA COMPLETA */}
-      <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-black">
+      <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-gray-100 animate-pulse">
         
         {/* Bucle de noticias (Fondo y textos) */}
         {news24h.map((post, index) => (
