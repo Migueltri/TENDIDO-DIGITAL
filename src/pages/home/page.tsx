@@ -14661,22 +14661,6 @@ return (
           </div>
         ))}
 
-        {/* Flechas de navegación manual */}
-        <button 
-          onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
-        >
-          <i className="ri-arrow-left-s-line text-2xl"></i>
-        </button>
-        
-        <button 
-          onClick={(e) => { e.stopPropagation(); nextSlide(); }} 
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
-        >
-          <i className="ri-arrow-right-s-line text-2xl"></i>
-        </button>
-      </div>
-
 	  {/* Flechas de navegación manual */}
         <button 
           onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
