@@ -13707,17 +13707,10 @@ function formatTimeAgo(dateString: string): string {
       const unpinnedBreaking = breakingNews.filter(n => !n.isPinned).slice(0, 3);
       let sliderNews = [...pinnedNews, ...unpinnedBreaking];
 
-      // 10. SALVAVIDAS: Si no hay noticias hoy, mostramos el logo en vez de un bloque negro roto
+      // 10. SALVAVIDAS ANTI-NEGRO: Si al cambiar de día no has subido noticias nuevas,
+      // rellenamos el panel con las 3 últimas noticias para que NUNCA se quede vacío ni en negro.
       if (sliderNews.length === 0) {
-        sliderNews = [{
-          id: 999999,
-          title: "Tendido Digital - La actualidad taurina al instante",
-          category: "Última Hora",
-          date: new Date().toISOString(),
-          excerpt: "Mantente informado con todas las noticias, crónicas y entrevistas del mundo del toro.",
-          image: "/images/tendidodigitallogosimple.jpg",
-          fullContent: "Bienvenido a Tendido Digital."
-        }];
+        sliderNews = finalNewsList.slice(0, 3);
       }
 
       setNews24h(sliderNews);
