@@ -14661,19 +14661,21 @@ return (
           </div>
         ))}
 
-	  {/* Flechas de navegación manual */}
+	  {/* Flechas de navegación manual (RESTAURADAS A TAMAÑO GRANDE) */}
         <button 
           onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
+          className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-4 z-20 transition-all shadow-2xl scale-100 hover:scale-110"
+          aria-label="Noticia anterior"
         >
-          <i className="ri-arrow-left-s-line text-2xl"></i>
+          <i className="ri-arrow-left-s-line text-4xl"></i>
         </button>
         
         <button 
           onClick={(e) => { e.stopPropagation(); nextSlide(); }} 
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
+          className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-4 z-20 transition-all shadow-2xl scale-100 hover:scale-110"
+          aria-label="Siguiente noticia"
         >
-          <i className="ri-arrow-right-s-line text-2xl"></i>
+          <i className="ri-arrow-right-s-line text-4xl"></i>
         </button>
 
       {/* Indicadores (Puntitos de abajo) */}
