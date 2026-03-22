@@ -14764,15 +14764,6 @@ return (
                           />
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        {/* Indicador de Noticia Fijada (Mantenemos tu SVG) */}
-                        {news.isPinned && (
-                          <div className="absolute top-4 left-4 z-30 bg-black/60 text-white w-9 h-9 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                              <path d="M22.3137 10.1716L13.8284 1.68629L12.4142 3.1005L13.1213 3.80761L8.87868 8.05025L5.34315 7.34315L3.92893 8.75736L8.17157 13L3.22183 17.9497L4.63604 19.364L9.58579 14.4142L13.8284 18.6569L15.2426 17.2426L14.5355 13.7071L18.7782 9.46447L19.4853 10.1716L20.8995 8.75736L22.3137 10.1716Z"></path>
-                            </svg>
-                          </div>
-                        )}
                       </div>
 
                       {/* Contenido protegido contra nulos */}
