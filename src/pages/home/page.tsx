@@ -44,16 +44,24 @@
   isPinned?: boolean;
 }
 
-// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN ESTABLE)
+// TRADUCTOR INSTANTÁNEO DE IMÁGENES AL CMS (VERSIÓN DEFINITIVA)
 const getInstantImageUrl = (url: any) => {
-    // Si la noticia no tiene foto, ponemos el logo de la web para evitar fondos negros
+    // 1. Si no hay foto, ponemos el logo real de la web para evitar fondos negros
     if (!url || typeof url !== 'string' || url.trim() === '') {
-        return '/images/tendidodigitallogosimple.jpg';
+        return 'images/tendidodigitallogosimple.jpg';
     }
     
+    // 2. Si ya es una ruta web, la dejamos pasar
     if (url.startsWith('http') || url.startsWith('data:image')) return url;
-    if (url.includes('tendidodigitallogosimple')) return url;
+    if (url.includes('tendidodigitallogosimple')) return 'images/tendidodigitallogosimple.jpg';
     
+    // 3. INTELIGENCIA: Si la imagen es antigua/local (ej. "/images/villa.jpg") la cargamos normal.
+    // Las del CMS (GitHub) suelen llamarse "image_..." o tener guiones.
+    if (url.startsWith('/images/') && !url.includes('image_') && !url.includes('-')) {
+        return url; 
+    }
+
+    // 4. Si es del CMS, la conectamos con GitHub
     let cleanPath = url.startsWith('/') ? url.substring(1) : url;
     if (!cleanPath.startsWith('images/')) cleanPath = `images/${cleanPath}`;
     
@@ -15094,7 +15102,7 @@ return (
           className="flex items-center cursor-pointer group"
         >
           <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 relative">
-            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src="images/tendidodigitallogosimple.jpg" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tight">
             TENDIDO DIGITAL
@@ -15200,7 +15208,7 @@ return (
 <div className="flex items-center group">
 <div className="relative">
 <img
-  src="/images/tendidodigitallogosimple.png"
+  src="images/tendidodigitallogosimple.jpg"
   alt="Tendido Digital"
   className="h-12 w-auto opacity-100 brightness-100 transition-transform duration-300 group-hover:scale-105"
   style={{ mixBlendMode: "multiply" }}
@@ -15393,7 +15401,7 @@ TENDIDO DIGITAL
           }}
         >
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
-            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src="images/tendidodigitallogosimple.jpg" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
             TENDIDO DIGITAL
@@ -15615,7 +15623,7 @@ TENDIDO DIGITAL
           }}
         >
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-110 transition-transform">
-            <img src="/images/tendidodigitallogosimple.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src="images/tendidodigitallogosimple.jpg" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent tracking-tighter">
             TENDIDO DIGITAL
