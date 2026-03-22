@@ -13509,6 +13509,15 @@ type Chronicle = BaseArticle;
 
 export default function Home() {
 const [currentSlide, setCurrentSlide] = useState(0);
+
+	// Motor de navegación manual del carrusel principal
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (news24h && news24h.length > 0 ? (prev === news24h.length - 1 ? 0 : prev + 1) : 0));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (news24h && news24h.length > 0 ? (prev === 0 ? news24h.length - 1 : prev - 1) : 0));
+  };
   
   // 1. Empezamos vacíos para que las noticias definitivas aparezcan limpias sin saltos visuales
   const [combinedNews, setCombinedNews] = useState<NewsItem[]>([]);
