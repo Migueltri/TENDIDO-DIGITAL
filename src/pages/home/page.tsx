@@ -48,7 +48,7 @@
 const getInstantImageUrl = (url: any) => {
     // Si la noticia no tiene foto, ponemos el logo de la web para evitar fondos negros
     if (!url || typeof url !== 'string' || url.trim() === '') {
-        return 'public/tendidodigitallogosimple.jpg';
+        return '/images/tendidodigitallogosimple.jpg';
     }
     
     if (url.startsWith('http') || url.startsWith('data:image')) return url;
