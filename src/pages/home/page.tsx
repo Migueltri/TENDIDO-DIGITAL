@@ -14661,21 +14661,21 @@ return (
           </div>
         ))}
 
-	  {/* Flechas de navegación manual (Estilo original restaurado) */}
+	  {/* Flechas de navegación manual (Estilo original EXACTO) */}
         <button 
           onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
-          className="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-20 transition-all shadow-xl hover:scale-110"
+          className="absolute left-3 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-red-600 rounded-full p-2 z-20 transition-all shadow-lg hover:scale-110"
           aria-label="Noticia anterior"
         >
-          <i className="ri-arrow-left-s-line text-2xl md:text-3xl"></i>
+          <i className="ri-arrow-left-s-line text-3xl"></i>
         </button>
         
         <button 
           onClick={(e) => { e.stopPropagation(); nextSlide(); }} 
-          className="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-20 transition-all shadow-xl hover:scale-110"
+          className="absolute right-3 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-red-600 rounded-full p-2 z-20 transition-all shadow-lg hover:scale-110"
           aria-label="Siguiente noticia"
         >
-          <i className="ri-arrow-right-s-line text-2xl md:text-3xl"></i>
+          <i className="ri-arrow-right-s-line text-3xl"></i>
         </button>
 
       {/* Indicadores (Puntitos de abajo) */}
