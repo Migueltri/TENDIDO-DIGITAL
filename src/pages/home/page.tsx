@@ -10229,7 +10229,7 @@ Toros de Victoriano del Río y Garcigrande
 
 –Borja Jiménez como único espada`,
   author: "Arnau Argulló",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -10477,7 +10477,7 @@ Ganaderías como Cuadri, Saltillo, Palha, Partido de Resina o Dolores Aguirre fi
 
 García Garrido también confirmó la ausencia de algunos hierros emblemáticos debido a la falta de reses disponibles, entre ellos Miura, Santiago Domecq y Baltasar Ibán. En cuanto a Valdellán —cuya presencia generó interés durante la tertulia—, el empresario señaló que su participación continúa siendo una incógnita de cara al próximo año.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images//images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -10504,7 +10504,7 @@ El Colegio Montaigne Compañía de María, con su escuela taurina en el patio-re
 Al final, todos compartieron la sensación de que el toreo, más allá de ser un arte, es una pasión que se lleva en el corazón desde la infancia y que, como los sueños, nunca se debe dejar de perseguir.`,
   footerImage1: "/images/davidmiranda2.jpg",
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images//images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -10554,7 +10554,7 @@ Sus triunfos en plazas de primera categoría, como **Sevilla o Málaga**, lo sit
 
 Tras finalizar su relación profesional con José Luis Pereda a finales de septiembre, el torero emprende ahora, de la mano de Enrique Ponce, un nuevo proyecto con la mirada puesta en 2026.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images//images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -10685,7 +10685,7 @@ Víctor Hernández se ha revelado como una de las grandes sorpresas de la tempor
 
 El equipo de apoderamiento se completará con **Roberto Ortega** , quien continuará al cargo del joven matador de toros.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images//images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -10704,7 +10704,7 @@ Para el festejo de rejones, la ganadería seleccionada vuelve a ser **El Capea �
 
 Con este anuncio, la Casa de Misericordia de Pamplona supera el primer hito organizativo de una feria taurina que gestiona de manera ininterrumpida desde 1922.`,
   author: "Tendido Digital",
-  authorLogo: "/images/tendidodigitallogosimple.png",
+  authorLogo: "/images//images/tendidodigitallogosimple.jpg",
   showAuthorHeader: true
   },
 	{ 
@@ -13617,7 +13617,7 @@ function formatTimeAgo(dateString: string): string {
           .map((a: any) => {
             const realAuthor = fetchedAuthors.find((au: any) => String(au.id) === String(a.authorId));
             let finalName = "Tendido Digital";
-            let finalPic = "/images/tendidodigitallogosimple.png";
+            let finalPic = "/images/tendidodigitallogosimple.jpg";
             
             if (realAuthor) {
                 finalName = realAuthor.name.trim().toLowerCase() === 'redacción' ? "Equipo Tendido" : realAuthor.name;
@@ -13715,7 +13715,7 @@ function formatTimeAgo(dateString: string): string {
           category: "Última Hora",
           date: new Date().toISOString(),
           excerpt: "Mantente informado con todas las noticias, crónicas y entrevistas del mundo del toro.",
-          image: "/tendidodigitallogosimple.png",
+          image: "/images/tendidodigitallogosimple.jpg",
           fullContent: "Bienvenido a Tendido Digital."
         }];
       }
