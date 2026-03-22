@@ -13622,7 +13622,7 @@ function formatTimeAgo(dateString: string): string {
               date: formatSpanishDate(a.date), // FECHA PARA LOS USUARIOS: "7 de Marzo de 2026"
               rawDate: a.date,                 // FECHA PARA EL ORDENADOR: El número largo para que el panel no falle
               category: a.category,
-              image: a.imageUrl,
+              image: a.imageUrl || a.image,
               imageCaption: a.imageCaption,
               photoCredit: a.photoCredit,
               contentImages: a.contentImages,
@@ -13712,8 +13712,16 @@ function formatTimeAgo(dateString: string): string {
         }];
       }
 
-      setNews24h(sliderNews);
-      setCombinedNews(finalNewsList);
+      // Juntamos las fijadas (sin límite) + las normales estrictamente de hoy
+let sliderNews = [...pinnedNews, ...unpinnedBreaking];
+
+// SALVAVIDAS: Si hoy no hay noticias y no hay fijadas, mostramos las 3 más recientes para que NUNCA salga el panel en negro
+if (sliderNews.length === 0) {
+  sliderNews = timeSortedNews.slice(0, 3);
+}
+
+// Aplicamos el estado
+setNews24h(sliderNews);
 	  setIsAppLoading(false);
 
       } finally {
