@@ -14597,7 +14597,7 @@ return (
 	  
     {/* Hero Carousel */}
       {/* 1. SLIDER PRINCIPAL (NOTICIAS ÚLTIMAS 24H) - DISEÑO PANTALLA COMPLETA */}
-      <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-gray-100 animate-pulse">
+      <section id="inicio" className="relative w-full h-[85vh] md:h-screen min-h-[600px] group overflow-hidden bg-black">
         
         {/* Bucle de noticias (Fondo y textos) */}
         {news24h.map((post, index) => (
