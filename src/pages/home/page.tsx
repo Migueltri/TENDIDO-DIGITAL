@@ -14609,12 +14609,11 @@ return (
             onClick={() => openNewsModal(post)}
           >
             {/* Imagen de fondo a pantalla completa */}
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out opacity-90"
-              loading={index === 0 ? "eager" : "lazy"}
-            />
+            <img 
+  src={getInstantImageUrl(post.image || post.imageUrl)} 
+  alt={post.title || "Noticia Tendido Digital"} 
+  className="absolute inset-0 w-full h-full object-cover transition-transform duration-10000 hover:scale-105" 
+/>
             {/* Degradado negro inferior */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
 
