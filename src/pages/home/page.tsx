@@ -14662,41 +14662,40 @@ return (
         ))}
 
         {/* Flechas de navegación manual */}
-          <button 
-            onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
-          >
-            <i className="ri-arrow-left-s-line text-2xl"></i>
-          </button>
-          
-          <button 
-            onClick={(e) => { e.stopPropagation(); nextSlide(); }} 
-            className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
-          >
-            <i className="ri-arrow-right-s-line text-2xl"></i>
-          </button>
-  )}
-</div>
+        <button 
+          onClick={(e) => { e.stopPropagation(); prevSlide(); }} 
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
+        >
+          <i className="ri-arrow-left-s-line text-2xl"></i>
+        </button>
+        
+        <button 
+          onClick={(e) => { e.stopPropagation(); nextSlide(); }} 
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/80 text-white rounded-full p-2 z-20 transition-all"
+        >
+          <i className="ri-arrow-right-s-line text-2xl"></i>
+        </button>
+      </div>
 
-        {/* Indicadores (Puntitos de abajo) */}
-        <div className="absolute bottom-8 right-8 md:bottom-12 md:right-16 flex space-x-3 z-30">
-          {news24h.map((_, index) => (
-            <button
-              key={index}
-              onClick={(e) => {
-                e.stopPropagation();
-                setCurrentSlide(index);
-              }}
-              className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
-                index === currentSlide 
-                  ? "w-10 md:w-16 bg-red-600" 
-                  : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
-              }`}
-              aria-label={`Ir a la noticia ${index + 1}`}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Indicadores (Puntitos de abajo) */}
+      <div className="absolute bottom-8 right-8 md:bottom-12 md:right-16 flex space-x-3 z-30">
+        {news24h.map((_, index) => (
+          <button
+            key={index}
+            onClick={(e) => {
+              e.stopPropagation();
+              setCurrentSlide(index);
+            }}
+            className={`transition-all duration-500 rounded-full h-2 md:h-3 ${
+              index === currentSlide 
+                ? "w-10 md:w-16 bg-red-600" 
+                : "w-2 md:w-3 bg-white/50 hover:bg-white/80"
+            }`}
+            aria-label={`Ir a la noticia ${index + 1}`}
+          />
+        ))}
+      </div>
+    </section>
 
     {/* Main Content */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
