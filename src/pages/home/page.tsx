@@ -13702,16 +13702,15 @@ function formatTimeAgo(dateString: string): string {
 
       // 8. Aplicamos la prioridad de FIJADAS
       const finalNewsList = [...timeSortedNews].sort((a: any, b: any) => {
-        // 1º Filtro: Compatibilidad con el antiguo botón de "Fijar" (isPinned)
         if (a.isPinned && !b.isPinned) return -1;
         if (!a.isPinned && b.isPinned) return 1;
 
-        // 2º Filtro: Nuestro nuevo sistema de Prioridad (4, 3, 2, 1, 0)
-        const orderA = a.customOrder || 0;
-        const orderB = b.customOrder || 0;
+        // CONVERSIÓN ESTRICTA A NÚMERO (Aquí estaba el fallo de la web)
+        const orderA = Number(a.customOrder) || 0;
+        const orderB = Number(b.customOrder) || 0;
+        
         if (orderA !== orderB) return orderB - orderA; 
 
-        // 3º Filtro: Si hay empate (ej: todas son 0), manda la fecha más reciente
         return getRealTime(b) - getRealTime(a); 
       });
 
@@ -14275,7 +14274,7 @@ document.body.style.overflow = 'unset';
                       {news.title}
                     </h3>
                     {news.excerpt && (
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                      <p className="text-sm text-gray-600 mt-2 line-clamp-2 whitespace-pre-line">
                         {news.excerpt}
                       </p>
                     )}
