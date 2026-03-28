@@ -13686,7 +13686,7 @@ function formatTimeAgo(dateString: string): string {
         };
 
         // 6. Ordenamos TODO estrictamente por fecha primero
-        const timeSortedNews = [...uniqueNews].sort((a: any, b: any) => getRealTime(b) - getRealTime(a));
+        const timeSortedNews = [...uniqueNews]; // Mantenemos la variable viva por si el código la necesita luego
 
         // 7. Extraer noticias ESTRICTAMENTE DE HOY para el Slider
       let breakingNews: any[] = [];
@@ -13702,9 +13702,17 @@ function formatTimeAgo(dateString: string): string {
 
       // 8. Aplicamos la prioridad de FIJADAS
       const finalNewsList = [...timeSortedNews].sort((a: any, b: any) => {
+        // 1º Filtro: Compatibilidad con el antiguo botón de "Fijar" (isPinned)
         if (a.isPinned && !b.isPinned) return -1;
         if (!a.isPinned && b.isPinned) return 1;
-        return 0; 
+
+        // 2º Filtro: Nuestro nuevo sistema de Prioridad (4, 3, 2, 1, 0)
+        const orderA = a.customOrder || 0;
+        const orderB = b.customOrder || 0;
+        if (orderA !== orderB) return orderB - orderA; 
+
+        // 3º Filtro: Si hay empate (ej: todas son 0), manda la fecha más reciente
+        return getRealTime(b) - getRealTime(a); 
       });
 
       // 9. Construimos el Slider (Fijadas + Noticias de Hoy)
