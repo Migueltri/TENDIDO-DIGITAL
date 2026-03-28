@@ -69,25 +69,27 @@ const getInstantImageUrl = (url: any) => {
 };
 
 export async function obtenerNoticias() {
-  // 1. Leer el archivo dataDB.json directamente (evita problemas de caché de Vercel)
-  const filePath = path.join(process.cwd(), 'public', 'data', 'dataDB.json');
-  
   try {
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const db = JSON.parse(fileContents);
+    // 1. Descarga el JSON en tiempo real desde el repositorio para no bloquear la compilación
+    const url = 'https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/data/dataDB.json?t=' + new Date().getTime();
+    const response = await fetch(url, { cache: 'no-store' });
     
-    // 2. Filtrar SOLO las noticias activas (las que tienen el tick verde en el panel)
-    const noticiasActivas = db.articles.filter(noticia => noticia.isPublished === true);
+    if (!response.ok) throw new Error("Fallo al descargar la base de datos");
     
-    // 3. Ordenar por prioridad (4 al 1) y luego por fecha
-    return noticiasActivas.sort((a, b) => {
-      const orderA = a.customOrder || 0;
-      const orderB = b.customOrder || 0;
+    const db = await response.json();
+    
+    // 2. Filtramos SOLO las noticias activas
+    const noticiasActivas = db.articles.filter((noticia: any) => noticia.isPublished === true);
+    
+    // 3. Orden MAESTRO: Prioridad (4,3,2,1) y luego Fecha
+    return noticiasActivas.sort((a: any, b: any) => {
+      const orderA = Number(a.customOrder) || 0;
+      const orderB = Number(b.customOrder) || 0;
       
-      // Si tienen distinta prioridad, el número mayor va estrictamente primero (4, 3, 2, 1, 0)
+      // Si tienen distinta prioridad, el número mayor va estrictamente primero
       if (orderA !== orderB) return orderB - orderA;
       
-      // Si tienen la misma prioridad (ej: ambas son 0, o ambas son 4), manda la fecha más reciente
+      // Si hay empate, manda la fecha más reciente
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
   } catch (error) {
