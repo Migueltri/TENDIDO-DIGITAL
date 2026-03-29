@@ -71,8 +71,11 @@ const getInstantImageUrl = (url: any) => {
 export async function obtenerNoticias() {
   try {
     // 1. Descarga el JSON en tiempo real desde el repositorio para no bloquear la compilación
-    const url = 'https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/data/dataDB.json?t=' + new Date().getTime();
-    const response = await fetch(url, { cache: 'no-store' });
+    const url = 'https://api.github.com/repos/Migueltri/TENDIDO-DIGITAL-CMS/contents/public/data/dataDB.json';
+    const response = await fetch(url, { 
+      headers: { 'Accept': 'application/vnd.github.v3.raw' },
+      cache: 'no-store' 
+    });
     
     if (!response.ok) throw new Error("Fallo al descargar la base de datos");
     
