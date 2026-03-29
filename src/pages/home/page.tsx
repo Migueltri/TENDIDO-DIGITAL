@@ -13652,7 +13652,8 @@ function formatTimeAgo(dateString: string): string {
               ganaderia: a.bullfightCattle,
               detalles: a.bullfightSummary,
               toreros: a.bullfightResults?.map((r:any)=>r.bullfighter),
-              resultado: a.bullfightResults?.map((r:any)=>r.result)
+              resultado: a.bullfightResults?.map((r:any)=>r.result),
+			  customOrder: Number(a.customOrder) || 0
             };
           });
 
