@@ -86,15 +86,20 @@ export async function obtenerNoticias() {
     
     // 3. Orden MAESTRO: Prioridad (4,3,2,1) y luego Fecha
     return noticiasActivas.sort((a: any, b: any) => {
-      const orderA = Number(a.customOrder) || 0;
-      const orderB = Number(b.customOrder) || 0;
+      // 1. Calculamos si la noticia es estrictamente de "hoy" (comparando a las 00:00)
+      const isToday = (dateStr: string) => new Date(dateStr).setHours(0,0,0,0) === new Date().setHours(0,0,0,0);
+
+      // 2. Si es de hoy, leemos su prioridad real (4, 3...). Si es de ayer, forzamos un 0.
+      const orderA = isToday(a.date) ? (Number(a.customOrder) || 0) : 0;
+      const orderB = isToday(b.date) ? (Number(b.customOrder) || 0) : 0;
       
-      // Si tienen distinta prioridad, el número mayor va estrictamente primero
+      // 3. Ordenamos: el número mayor va primero
       if (orderA !== orderB) return orderB - orderA;
       
-      // Si hay empate, manda la fecha más reciente
+      // 4. En caso de empate (o si ambas son de ayer), ordenamos por fecha
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
+	  
   } catch (error) {
     console.error("Error leyendo las noticias:", error);
     return [];
