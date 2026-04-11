@@ -68,6 +68,8 @@ const getInstantImageUrl = (url: any) => {
     return `https://raw.githubusercontent.com/Migueltri/TENDIDO-DIGITAL-CMS/main/public/${cleanPath}`;
 };
 
+await new Promise(resolve => setTimeout(resolve, 2000));
+
 export async function obtenerNoticias() {
   try {
     // 1. Descarga el JSON en tiempo real desde el repositorio para no bloquear la compilación
