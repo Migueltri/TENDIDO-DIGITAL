@@ -15314,12 +15314,13 @@ TENDIDO DIGITAL
               activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
             }`}></span>
           </button>
-			{/* Buscador Integrado en Cabecera (Diseño Limpio con Lupa) */}
-    <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
+			{/* Buscador Integrado en Cabecera (Diseño Limpio con IMAGEN) */}
+    <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1 relative z-10">
       <div className="relative">
-        {/* Aquí está el icono de la lupa */}
+        
+        {/* Aquí está literalmente tu IMAGEN de la lupa */}
         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-          <i className="ri-search-line text-gray-500 text-lg"></i>
+          <img src="images/lupa.png" alt="Icono Lupa" className="w-6 h-6 object-contain" />
         </div>
         
         <input
@@ -15327,7 +15328,7 @@ TENDIDO DIGITAL
           placeholder="Buscar..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-11 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
+          className="w-full pl-12 pr-10 py-3 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-lg shadow-inner"
         />
         
         {searchQuery && (
