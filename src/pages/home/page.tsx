@@ -13546,6 +13546,7 @@ const [visibleNewsCount, setVisibleNewsCount] = useState(15);
 const [isLoadingMore, setIsLoadingMore] = useState(false);
 const [activeTab, setActiveTab] = useState('inicio');
 const [newsFilter, setNewsFilter] = useState('todas');
+const [searchQuery, setSearchQuery] = useState('');
 // Estado para actualizar automáticamente el tiempo relativo
 const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -14736,8 +14737,35 @@ return (
                 </div>
               </div>
 
+              {/* Buscador de Noticias */}
+              <div className="w-full mb-8 relative z-10">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <i className="ri-search-line text-gray-400 text-xl"></i>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-12 pr-12 py-4 bg-white border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-all text-gray-800 text-lg shadow-sm"
+                />
+                {searchQuery && (
+                  <button 
+                    onClick={() => setSearchQuery('')}
+                    className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-red-600 transition-colors"
+                  >
+                    <i className="ri-close-line text-2xl"></i>
+                  </button>
+                )}
+              </div>
+
               <div className="flex flex-col gap-12"> {/* Cambiamos grid por flex col para un estilo editorial */}
                 {getFilteredNews()
+                  .filter((news: any) => {
+                    if (!searchQuery.trim()) return true;
+                    const query = searchQuery.toLowerCase();
+                    return news?.title?.toLowerCase().includes(query) || news?.excerpt?.toLowerCase().includes(query) || news?.summary?.toLowerCase().includes(query);
+                  })
                   .slice(0, visibleNewsCount)
                   .map((news, index) => {
                     // Defensa 1: Si la noticia viene corrupta de la base de datos, la saltamos sin petar la web
