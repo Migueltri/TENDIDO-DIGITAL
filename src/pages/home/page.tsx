@@ -15210,29 +15210,6 @@ return (
 />
 <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 </div>
-{/* Buscador Integrado en Cabecera */}
-    <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
-      <div className="relative">
-        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <i className="ri-search-line text-gray-400"></i>
-        </div>
-        <input
-          type="text"
-          placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
-        />
-        {searchQuery && (
-          <button 
-            onClick={() => setSearchQuery('')}
-            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-red-600 transition-colors"
-          >
-            <i className="ri-close-line text-lg"></i>
-          </button>
-        )}
-      </div>
-    </div>
 <span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
 TENDIDO DIGITAL
 </span>
@@ -15337,6 +15314,29 @@ TENDIDO DIGITAL
               activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
             }`}></span>
           </button>
+			{/* Buscador Integrado en Cabecera */}
+    <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
+      <div className="relative">
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i className="ri-search-line text-gray-400"></i>
+        </div>
+        <input
+          type="text"
+          placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full pl-10 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
+        />
+        {searchQuery && (
+          <button 
+            onClick={() => setSearchQuery('')}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-red-600 transition-colors"
+          >
+            <i className="ri-close-line text-lg"></i>
+          </button>
+        )}
+      </div>
+    </div>
         </nav>
 
         <button 
