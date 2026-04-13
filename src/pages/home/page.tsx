@@ -15314,19 +15314,22 @@ TENDIDO DIGITAL
               activeTab === 'contacto' ? 'w-full' : 'w-0 group-hover:w-full'
             }`}></span>
           </button>
-			{/* Buscador Integrado en Cabecera */}
+			{/* Buscador Integrado en Cabecera (Diseño Limpio con Lupa) */}
     <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
       <div className="relative">
-        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <i className="ri-search-line text-gray-400"></i>
+        {/* Aquí está el icono de la lupa */}
+        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+          <i className="ri-search-line text-gray-500 text-lg"></i>
         </div>
+        
         <input
           type="text"
-          placeholder="images/lupa.png"
+          placeholder="Buscar..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
+          className="w-full pl-11 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
         />
+        
         {searchQuery && (
           <button 
             onClick={() => setSearchQuery('')}
