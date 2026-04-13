@@ -14736,29 +14736,7 @@ return (
                   <button onClick={() => setNewsFilter('opinion')} className={`px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer whitespace-nowrap font-semibold text-sm md:text-base ${newsFilter === 'opinion' ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border border-red-400/20' : 'text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600 hover:bg-red-50'}`}>Opinión</button>
                 </div>
               </div>
-
-              {/* Buscador de Noticias */}
-              <div className="w-full mb-8 relative z-10">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <i className="ri-search-line text-gray-400 text-xl"></i>
-                </div>
-                <input
-                  type="text"
-                  placeholder="🔎"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-12 py-4 bg-white border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-all text-gray-800 text-lg shadow-sm"
-                />
-                {searchQuery && (
-                  <button 
-                    onClick={() => setSearchQuery('')}
-                    className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-red-600 transition-colors"
-                  >
-                    <i className="ri-close-line text-2xl"></i>
-                  </button>
-                )}
-              </div>
-
+				
               <div className="flex flex-col gap-12"> {/* Cambiamos grid por flex col para un estilo editorial */}
                 {getFilteredNews()
                   .filter((news: any) => {
@@ -15236,6 +15214,30 @@ return (
 TENDIDO DIGITAL
 </span>
 </div>
+
+	{/* Buscador Integrado en Cabecera */}
+    <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
+      <div className="relative">
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i className="ri-search-line text-gray-400"></i>
+        </div>
+        <input
+          type="text"
+          placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full pl-10 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
+        />
+        {searchQuery && (
+          <button 
+            onClick={() => setSearchQuery('')}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-red-600 transition-colors"
+          >
+            <i className="ri-close-line text-lg"></i>
+          </button>
+        )}
+      </div>
+    </div>
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
