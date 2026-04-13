@@ -15322,7 +15322,7 @@ TENDIDO DIGITAL
         </div>
         <input
           type="text"
-          placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
+          placeholder="images/lupa.png"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full pl-10 pr-10 py-2 bg-gray-100 border border-transparent rounded-full focus:bg-white focus:border-red-600 focus:ring-2 focus:ring-red-600/20 focus:outline-none transition-all text-gray-800 text-sm shadow-inner"
