@@ -14744,7 +14744,7 @@ return (
                 </div>
                 <input
                   type="text"
-                  placeholder="Buscar noticia (Ej: La tauromaquia gana protagonismo...)"
+                  placeholder="🔎"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full pl-12 pr-12 py-4 bg-white border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-all text-gray-800 text-lg shadow-sm"
