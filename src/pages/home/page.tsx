@@ -15210,12 +15210,7 @@ return (
 />
 <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 </div>
-<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
-TENDIDO DIGITAL
-</span>
-</div>
-
-	{/* Buscador Integrado en Cabecera */}
+{/* Buscador Integrado en Cabecera */}
     <div className="w-full max-w-2xl mx-auto px-4 pb-3 pt-1">
       <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -15238,6 +15233,10 @@ TENDIDO DIGITAL
         )}
       </div>
     </div>
+<span className="ml-2 md:ml-4 text-xl md:text-3xl font-bold bg-gradient-to-r from-red-700 to-yellow-600 bg-clip-text text-transparent tracking-tight">
+TENDIDO DIGITAL
+</span>
+</div>
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4 lg:space-x-8">
